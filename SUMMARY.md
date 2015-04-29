@@ -37,7 +37,7 @@
        * [Conditionals](4-3-2_conditionals.md)
        * [Logic Gates](4-3-3_logic-gates.md)
        * [Logic Exercise](4-3-4_exercise.md)
-   * Strings
+   * [Strings](4-4_strings.md)
        * Creating
        * Querying
        * Manipulating
