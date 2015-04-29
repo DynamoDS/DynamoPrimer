@@ -4,4 +4,5 @@
 * [First Chapter](chapter1.md)
 * Introduction
    * Preface
+   * Getting Started
 
