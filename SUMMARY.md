@@ -27,7 +27,7 @@
        * [Data Hierarchy](4-1-2_data-hierarchy.md)
        * [Data Exercise](4-1-3_exercise.md)
    * [Math](4-2_math.md)
-       * Constants
+       * [Constants](4-2-1_constants.md)
        * Operators
        * Functions
        * Formulas
