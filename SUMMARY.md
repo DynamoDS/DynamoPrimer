@@ -25,4 +25,5 @@
    * Data
    * Math
    * Logic
+   * Strings
 
