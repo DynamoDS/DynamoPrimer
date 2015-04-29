@@ -12,4 +12,5 @@
    * The Quick Start Guide
    * Dynamo in Action
 * Hello Dynamo!
+* The Anatomy of a Dynamo Definition
 
