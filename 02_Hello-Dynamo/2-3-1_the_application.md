@@ -1,12 +1,23 @@
 ### 2.3.1 The Application
 
-"Lets get started"
+("Lets get started")
 
-Overview of the application window
+(Overview of the application window)
 
 ![Diagram of window - callouts](images/Placeholder.png)
 
 ####2.3.1.1	Main Menus
+
+(Overview of the menus - some of what is found here is in the toolbar - but not all )
+
+![Callouts](images/Placeholder.png)
+> 1. File
+2. Edit
+3. View
+4. Packages
+5. Settings
+6. Help
+
 #####2.3.1.1.1	Settings
 #####2.3.1.1.2	Samples and Help
 Samples by Group
