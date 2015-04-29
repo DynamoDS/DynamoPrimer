@@ -12,5 +12,6 @@
    * The Quick Start Guide
    * Dynamo in Action
 * Hello Dynamo!
+   * Dynamo Platform
 * The Anatomy of a Dynamo Definition
 
