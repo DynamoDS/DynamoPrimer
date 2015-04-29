@@ -28,7 +28,7 @@
        * [Data Exercise](4-1-3_exercise.md)
    * [Math](4-2_math.md)
        * [Constants](4-2-1_constants.md)
-       * Operators
+       * [Operators](4-2-2_operators.md)
        * Functions
        * Formulas
        * Math Exercise
