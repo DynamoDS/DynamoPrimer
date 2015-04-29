@@ -40,5 +40,6 @@
    * Strings
        * Creating
        * Querying
+       * Manipulating
    * Color
 
