@@ -17,5 +17,6 @@
    * The Dynamo UI
        * The Application
        * The Workflow
+       * File Types and File Management
 * The Anatomy of a Dynamo Definition
 
