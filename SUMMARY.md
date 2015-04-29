@@ -33,7 +33,7 @@
        * [Formulas](4-2-4_formulas.md)
        * [Math Exercise](4-2-5_exercise .md)
    * [Logic](4-3_logic.md)
-       * Booleans
+       * [Booleans](4-3-1_booleans.md)
        * Conditionals
        * Logic Gates
        * Logic Exercise
