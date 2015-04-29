@@ -24,6 +24,7 @@
 * The Building Blocks of Programs
    * Data
        * Data Types
+       * Data Hierarchy
    * Math
    * Logic
    * Strings
