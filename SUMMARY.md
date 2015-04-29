@@ -13,5 +13,6 @@
    * Dynamo in Action
 * Hello Dynamo!
    * Dynamo Platform
+   * Launching Dynamo
 * The Anatomy of a Dynamo Definition
 
