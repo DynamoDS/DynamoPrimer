@@ -25,6 +25,7 @@
    * Data
        * Data Types
        * Data Hierarchy
+       * Data Exercise
    * Math
    * Logic
    * Strings
