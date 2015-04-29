@@ -7,6 +7,7 @@ To download... (text)
 
 ###2.2.2. Installing
 Select run... (text)
+
 ![](images/2-2/2-2-2_Installing-01.jpg)
 
 ![](images/2-2/2-2-2_Installing-02.jpg)
