@@ -17,6 +17,7 @@
        * [The Application](02_Hello-Dynamo/2-3-1_the_application.md)
        * [The Workflow](02_Hello-Dynamo/2-3-2_the_workflow.md)
        * [File Types and File Management](02_Hello-Dynamo/2-3-3_file_types_and_management.md)
+       * The Library
 * [The Anatomy of a Dynamo Definition](03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.md)
    * [Dynamo Libraries](03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_libraries.md)
    * [Dynamo Nodes](03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_nodes.md)
