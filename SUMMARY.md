@@ -8,7 +8,7 @@
        * [What is Visual Programming?](01_Introduction/1-2-2_what_is_visual_programming.md)
        * [Key Concepts](01_Introduction/1-2-3_key_concepts.md)
        * [The Graph](01_Introduction/1-2-4_the_graph.md)
-   * The Quick Start Guide
+   * [The Quick Start Guide](01_Introduction/1-3_the_quick_start_guide.md)
    * Dynamo in Action
 * [Hello Dynamo!](02_Hello-Dynamo/2_hello_dynamo.md)
    * [Dynamo Platform](02_Hello-Dynamo/2-1_dynamo_platform.md)
