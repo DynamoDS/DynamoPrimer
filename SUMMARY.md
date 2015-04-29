@@ -43,4 +43,5 @@
        * Manipulating
        * Strings Exercise
    * Color
+       * Creating
 
