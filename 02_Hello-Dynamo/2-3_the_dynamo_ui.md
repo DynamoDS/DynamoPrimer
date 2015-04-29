@@ -2,4 +2,4 @@
 
 _Introduction Text_
 
-![Diagram of window](images/Placeholder.png)
+![zones from application window](images/Placeholder.png)
