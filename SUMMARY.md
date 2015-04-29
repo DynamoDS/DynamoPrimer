@@ -19,7 +19,7 @@
        * The Workflow
        * File Types and File Management
 * [The Anatomy of a Dynamo Definition](03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.md)
-   * Dynamo Libraries
+   * [Dynamo Libraries](03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_libraries.md)
    * Dynamo Nodes
    * Best Practices
 
