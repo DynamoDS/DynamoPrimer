@@ -28,7 +28,7 @@
        * [Data Exercise](04_The-Building-Blocks-of-Programs/4-1-3_exercise.md)
    * [Math](04_The-Building-Blocks-of-Programs/4-2_math.md)
        * [Constants](04_The-Building-Blocks-of-Programs/4-2-1_constants.md)
-       * [Operators](4-2-2_operators.md)
+       * [Operators](04_The-Building-Blocks-of-Programs/4-2-2_operators.md)
        * [Functions](4-2-3_functions.md)
        * [Formulas](4-2-4_formulas.md)
        * [Math Exercise](4-2-5_exercise .md)
