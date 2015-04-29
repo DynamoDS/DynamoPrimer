@@ -2,4 +2,4 @@
 
 ####Introduction text... 
 
-![big image for full page](images/Placeholder.png)
+![big image for full page](images/PlaceholderTemplate-tall.png)
