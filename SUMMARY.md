@@ -24,7 +24,7 @@
 * [The Building Blocks of Programs](4_the-building-blocks-of-programs.md)
    * [Data](4-1_data.md)
        * [Data Types](4-1-1_data-types.md)
-       * Data Hierarchy
+       * [Data Hierarchy](4-1-2_data-hierarchy.md)
        * Data Exercise
    * Math
        * Constants
