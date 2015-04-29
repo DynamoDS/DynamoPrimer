@@ -1,7 +1,7 @@
 # Summary
 
 * [About](README.md)
-* Introduction
+* [Introduction](01_Introduction/1_introduction.md)
    * Preface
    * Getting Started
        * What is Dynamo?
