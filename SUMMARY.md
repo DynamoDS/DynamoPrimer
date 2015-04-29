@@ -31,7 +31,7 @@
        * [Operators](04_The-Building-Blocks-of-Programs/4-2-2_operators.md)
        * [Functions](04_The-Building-Blocks-of-Programs/4-2-3_functions.md)
        * [Formulas](04_The-Building-Blocks-of-Programs/4-2-4_formulas.md)
-       * [Math Exercise](4-2-5_exercise .md)
+       * [Math Exercise](04_The-Building-Blocks-of-Programs/4-2-5_exercise .md)
    * [Logic](4-3_logic.md)
        * [Booleans](4-3-1_booleans.md)
        * [Conditionals](4-3-2_conditionals.md)
