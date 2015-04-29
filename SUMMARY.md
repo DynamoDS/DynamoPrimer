@@ -9,4 +9,5 @@
        * What is Visual Programming?
        * Key Concepts
        * The Graph
+   * The Quick Start Guide
 
