@@ -64,7 +64,7 @@
 #####2.3.1.4.2	Node Layer (Depth)
 #####2.3.1.4.3	Double Clicking
 #####2.3.1.4.4  Navigation
-####2.3.1.5	Execution Bar – ie Running the Workspace
+
 
 
 #####2.3.1.1.1	Help 
