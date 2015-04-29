@@ -38,7 +38,7 @@
        * [Logic Gates](4-3-3_logic-gates.md)
        * [Logic Exercise](4-3-4_exercise.md)
    * [Strings](4-4_strings.md)
-       * Creating
+       * [Creating](4-4-1_creating.md)
        * Querying
        * Manipulating
        * Strings Exercise
