@@ -40,7 +40,7 @@
    * [Strings](4-4_strings.md)
        * [Creating](4-4-1_creating.md)
        * [Querying](4-4-2_querying.md)
-       * Manipulating
+       * [Manipulating](4-4-3_manipulating.md)
        * Strings Exercise
    * Color
        * Creating
