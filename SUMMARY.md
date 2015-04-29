@@ -32,7 +32,7 @@
        * [Functions](4-2-3_functions.md)
        * [Formulas](4-2-4_formulas.md)
        * [Math Exercise](4-2-5_exercise .md)
-   * Logic
+   * [Logic](4-3_logic.md)
        * Booleans
        * Conditionals
        * Logic Gates
