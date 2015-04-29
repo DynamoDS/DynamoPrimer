@@ -26,7 +26,7 @@
        * [Data Types](4-1-1_data-types.md)
        * [Data Hierarchy](4-1-2_data-hierarchy.md)
        * [Data Exercise](4-1-3_exercise.md)
-   * Math
+   * [Math](4-2_math.md)
        * Constants
        * Operators
        * Functions
