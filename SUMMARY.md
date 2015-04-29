@@ -7,7 +7,7 @@
        * [What is Dynamo?](01_Introduction/1-2-1_what_is_dynamo.md)
        * [What is Visual Programming?](01_Introduction/1-2-2_what_is_visual_programming.md)
        * [Key Concepts](01_Introduction/1-2-3_key_concepts.md)
-       * The Graph
+       * [The Graph](01_Introduction/1-2-4_the_graph.md)
    * The Quick Start Guide
    * Dynamo in Action
 * [Hello Dynamo!](02_Hello-Dynamo/2_hello_dynamo.md)
