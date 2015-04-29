@@ -44,4 +44,5 @@
        * Strings Exercise
    * Color
        * Creating
+       * Querying
 
