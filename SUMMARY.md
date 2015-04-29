@@ -46,4 +46,5 @@
        * Creating
        * Querying
        * Range
+       * Color Exercise
 
