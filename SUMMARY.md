@@ -41,5 +41,6 @@
        * Creating
        * Querying
        * Manipulating
+       * Strings Exercise
    * Color
 
