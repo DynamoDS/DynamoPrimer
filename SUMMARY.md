@@ -35,7 +35,7 @@
    * [Logic](4-3_logic.md)
        * [Booleans](4-3-1_booleans.md)
        * [Conditionals](4-3-2_conditionals.md)
-       * Logic Gates
+       * [Logic Gates](4-3-3_logic-gates.md)
        * Logic Exercise
    * Strings
        * Creating
