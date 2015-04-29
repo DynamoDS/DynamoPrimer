@@ -26,4 +26,5 @@
    * Math
    * Logic
    * Strings
+   * Color
 
