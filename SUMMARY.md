@@ -40,7 +40,7 @@
    * [Strings](04_The-Building-Blocks-of-Programs/4-4_strings.md)
        * [Creating](04_The-Building-Blocks-of-Programs/4-4-1_creating.md)
        * [Querying](04_The-Building-Blocks-of-Programs/4-4-2_querying.md)
-       * [Manipulating](4-4-3_manipulating.md)
+       * [Manipulating](04_The-Building-Blocks-of-Programs/4-4-3_manipulating.md)
        * [Strings Exercise](4-4-4_exercise.md)
    * [Color](4-5_color.md)
        * [Creating](4-5-1_creating.md)
