@@ -15,5 +15,6 @@
    * Dynamo Platform
    * Launching Dynamo
    * The Dynamo UI
+       * The Application
 * The Anatomy of a Dynamo Definition
 
