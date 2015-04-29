@@ -33,6 +33,7 @@
        * Formulas
        * Math Exercise
    * Logic
+       * Booleans
    * Strings
    * Color
 
