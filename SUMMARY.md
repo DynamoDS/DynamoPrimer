@@ -39,7 +39,7 @@
        * [Logic Exercise](4-3-4_exercise.md)
    * [Strings](4-4_strings.md)
        * [Creating](4-4-1_creating.md)
-       * Querying
+       * [Querying](4-4-2_querying.md)
        * Manipulating
        * Strings Exercise
    * Color
