@@ -13,7 +13,7 @@
    * Dynamo in Action
 * [Hello Dynamo!](02_Hello-Dynamo/2_hello_dynamo.md)
    * [Dynamo Platform](02_Hello-Dynamo/2-1_dynamo_platform.md)
-   * Launching Dynamo
+   * [Launching Dynamo](02_Hello-Dynamo/2-2_launching_dynamo.md)
    * The Dynamo UI
        * The Application
        * The Workflow
