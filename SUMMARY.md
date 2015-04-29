@@ -28,6 +28,7 @@
        * Data Exercise
    * Math
        * Constants
+       * Operators
    * Logic
    * Strings
    * Color
