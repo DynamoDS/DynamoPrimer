@@ -27,6 +27,7 @@
        * Data Hierarchy
        * Data Exercise
    * Math
+       * Constants
    * Logic
    * Strings
    * Color
