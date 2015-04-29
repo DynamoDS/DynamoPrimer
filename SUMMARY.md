@@ -31,6 +31,7 @@
        * Operators
        * Functions
        * Formulas
+       * Math Exercise
    * Logic
    * Strings
    * Color
