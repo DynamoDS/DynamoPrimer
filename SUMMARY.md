@@ -6,4 +6,5 @@
    * Preface
    * Getting Started
        * What is Dynamo?
+       * What is Visual Programming
 
