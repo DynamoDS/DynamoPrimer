@@ -11,7 +11,7 @@
        * The Graph
    * The Quick Start Guide
    * Dynamo in Action
-* Hello Dynamo!
+* [Hello Dynamo!](02_Hello-Dynamo/2_hello_dynamo.md)
    * Dynamo Platform
    * Launching Dynamo
    * The Dynamo UI
