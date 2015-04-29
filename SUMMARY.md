@@ -47,5 +47,5 @@
        * [Querying](4-5-2_querying.md)
        * [Range](4-5-3_range.md)
        * [Color Exercise](4-5-4_exercise.md)
-* Appendix
+* [Appendix](appendix.md)
 
