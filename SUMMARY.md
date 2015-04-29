@@ -44,7 +44,7 @@
        * [Strings Exercise](04_The-Building-Blocks-of-Programs/4-4-4_exercise.md)
    * [Color](04_The-Building-Blocks-of-Programs/4-5_color.md)
        * [Creating](04_The-Building-Blocks-of-Programs/4-5-1_creating.md)
-       * [Querying](4-5-2_querying.md)
+       * [Querying](04_The-Building-Blocks-of-Programs/4-5-2_querying.md)
        * [Range](4-5-3_range.md)
        * [Color Exercise](4-5-4_exercise.md)
 * [Appendix](appendix.md)
