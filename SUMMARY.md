@@ -24,4 +24,5 @@
 * The Building Blocks of Programs
    * Data
    * Math
+   * Logic
 
