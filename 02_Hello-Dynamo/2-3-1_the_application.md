@@ -1,8 +1,13 @@
 ### 2.3.1 The Application
 
-_Introduction Text_
+_..."Lets get started"_
+
+_Overview of the application window_
+
+(Insert Image - Diagram of window)
 
 ####2.3.1.1	Windows Title Bar
+(i
 ####2.3.1.2	Main Menus
 #####2.3.1.2.1	Settings
 #####2.3.1.2.2	Help and Samples
