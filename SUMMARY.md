@@ -23,6 +23,7 @@
    * [Best Practices](03_Anatomy-of-a-Dynamo-Definition/3-3_best_practices.md)
 * The Building Blocks of Programs
    * Data
+       * Data Types
    * Math
    * Logic
    * Strings
