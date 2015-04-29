@@ -43,7 +43,7 @@
        * [Manipulating](4-4-3_manipulating.md)
        * [Strings Exercise](4-4-4_exercise.md)
    * [Color](4-5_color.md)
-       * Creating
+       * [Creating](4-5-1_creating.md)
        * Querying
        * Range
        * Color Exercise
