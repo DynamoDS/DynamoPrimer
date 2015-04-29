@@ -2,3 +2,4 @@
 
 _Introduction Text_
 
+![Diagram of window](images/Placeholder.png)
