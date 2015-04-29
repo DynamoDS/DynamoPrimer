@@ -2,7 +2,7 @@
 
 * [About](README.md)
 * [Introduction](01_Introduction/1_introduction.md)
-   * Preface
+   * [Preface](01_Introduction/1-1_preface.md)
    * Getting Started
        * What is Dynamo?
        * What is Visual Programming?
