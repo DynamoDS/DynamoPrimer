@@ -14,7 +14,7 @@
 * [Hello Dynamo!](02_Hello-Dynamo/2_hello_dynamo.md)
    * [Dynamo Platform](02_Hello-Dynamo/2-1_dynamo_platform.md)
    * [Launching Dynamo](02_Hello-Dynamo/2-2_launching_dynamo.md)
-   * The Dynamo UI
+   * [The Dynamo UI](02_Hello-Dynamo/2-3_the_dynamo_ui.md)
        * The Application
        * The Workflow
        * File Types and File Management
