@@ -34,6 +34,7 @@
        * Math Exercise
    * Logic
        * Booleans
+       * Conditionals
    * Strings
    * Color
 
