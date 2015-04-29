@@ -3,7 +3,7 @@
 * [About](README.md)
 * [Introduction](01_Introduction/1_introduction.md)
    * [Preface](01_Introduction/1-1_preface.md)
-   * Getting Started
+   * [Getting Started](01_Introduction/1-2_getting_started.md)
        * What is Dynamo?
        * What is Visual Programming?
        * Key Concepts
