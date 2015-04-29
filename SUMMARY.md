@@ -35,6 +35,7 @@
    * Logic
        * Booleans
        * Conditionals
+       * Logic Gates
    * Strings
    * Color
 
