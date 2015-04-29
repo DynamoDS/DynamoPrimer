@@ -30,6 +30,7 @@
        * Constants
        * Operators
        * Functions
+       * Formulas
    * Logic
    * Strings
    * Color
