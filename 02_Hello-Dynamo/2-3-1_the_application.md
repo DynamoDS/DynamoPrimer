@@ -2,9 +2,7 @@
 
 ("Lets get started")
 
-(Overview of the application window)
-
-![Diagram of window - callouts](images/Placeholder.png)
+(Overview of the application window - reiterate the zones of the windoe)
 
 ####2.3.1.1	Main Menus
 
@@ -17,24 +15,6 @@
 4. Packages
 5. Settings
 6. Help
-
-#####2.3.1.1.1	Settings
-#####2.3.1.1.2	Samples and Help
-Samples by Group
-
-Show in Folder
-
--
-
-Report A Bug
-
-Go To Project Website
-
-Go To Project Wiki
-
-**Display Start Page**
-
-**About**
 
 ####2.3.1.2	Toolbar
 
@@ -49,12 +29,56 @@ Go To Project Wiki
 5. Redo - Redo your the next action
 6. Export Workspace as Image - Export the visible workspace as a PNG file
 
-####2.3.1.3	The Libraries
+####2.3.1.3	Library
+(The Library is where all the Nodes are found. One can interact with it through browsing or searching. Describe the hover over functionality and the shift to icons) 
+
 #####2.3.1.3.1	Browsing
+(An indication of breakdown of Groupings)
+![Callouts on sections of library](images/Placeholder.png)
+>1. Analyze - description
+2. Builtin Functions - description
+3. Core - description
+4. Geometry - description
+5. Migration - description
+6. Office - description
+7. Operators - description
+8. Tessellation - description
+
+![Click through - callout the heirarchy of the library](images/Placeholder.png)
+>1. Category - description
+2. Subcategory - description
+3. Create/Actions/Query
+4. Show More
+
+![Hover over functionality - callout the parts of the pop up](images/Placeholder.png)
+>1. Icon - larger version of the icon in the Library Menu
+2. Description - plain language description of the Node
+3. Input(s) - name,  data type, and data structure  
+4. Output(s) - data type and structure
+
 #####2.3.1.3.2	Searching
+(
+
 ####2.3.1.4	The Workspace
 #####2.3.1.4.1	Tabs (main and custom node)
 #####2.3.1.4.2	Node Layer (Depth)
 #####2.3.1.4.3	Double Clicking
 #####2.3.1.4.4  Navigation
-####2.3.1.5	Execution Bar – ie Running the Workflow
+####2.3.1.5	Execution Bar – ie Running the Workspace
+
+
+#####2.3.1.1.1	Help 
+
+(description of where to go first - this primer and the resources should get you started )
+
+* **Samples by Group**
+* **Show in Folder**
+* -
+* **Report A Bug**
+* **Go To Project Website**
+* **Go To Project Wiki**
+* -
+* **Display Start Page**
+* **About**
+
+#####2.3.1.1.2	Settings
