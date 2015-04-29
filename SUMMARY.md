@@ -29,7 +29,7 @@
    * [Math](4-2_math.md)
        * [Constants](4-2-1_constants.md)
        * [Operators](4-2-2_operators.md)
-       * Functions
+       * [Functions](4-2-3_functions.md)
        * Formulas
        * Math Exercise
    * Logic
