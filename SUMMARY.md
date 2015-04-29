@@ -45,4 +45,5 @@
    * Color
        * Creating
        * Querying
+       * Range
 
