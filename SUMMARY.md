@@ -12,7 +12,7 @@
    * The Quick Start Guide
    * Dynamo in Action
 * [Hello Dynamo!](02_Hello-Dynamo/2_hello_dynamo.md)
-   * Dynamo Platform
+   * [Dynamo Platform](02_Hello-Dynamo/2-1_dynamo_platform.md)
    * Launching Dynamo
    * The Dynamo UI
        * The Application
