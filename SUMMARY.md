@@ -14,5 +14,6 @@
 * Hello Dynamo!
    * Dynamo Platform
    * Launching Dynamo
+   * The Dynamo UI
 * The Anatomy of a Dynamo Definition
 
