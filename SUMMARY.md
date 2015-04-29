@@ -26,7 +26,7 @@
        * [Data Types](04_The-Building-Blocks-of-Programs/4-1-1_data-types.md)
        * [Data Hierarchy](04_The-Building-Blocks-of-Programs/4-1-2_data-hierarchy.md)
        * [Data Exercise](04_The-Building-Blocks-of-Programs/4-1-3_exercise.md)
-   * [Math](4-2_math.md)
+   * [Math](04_The-Building-Blocks-of-Programs/4-2_math.md)
        * [Constants](4-2-1_constants.md)
        * [Operators](4-2-2_operators.md)
        * [Functions](4-2-3_functions.md)
