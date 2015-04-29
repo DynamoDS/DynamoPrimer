@@ -30,7 +30,7 @@
        * [Constants](04_The-Building-Blocks-of-Programs/4-2-1_constants.md)
        * [Operators](04_The-Building-Blocks-of-Programs/4-2-2_operators.md)
        * [Functions](04_The-Building-Blocks-of-Programs/4-2-3_functions.md)
-       * [Formulas](4-2-4_formulas.md)
+       * [Formulas](04_The-Building-Blocks-of-Programs/4-2-4_formulas.md)
        * [Math Exercise](4-2-5_exercise .md)
    * [Logic](4-3_logic.md)
        * [Booleans](4-3-1_booleans.md)
