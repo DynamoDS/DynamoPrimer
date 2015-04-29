@@ -15,7 +15,7 @@
    * [Dynamo Platform](02_Hello-Dynamo/2-1_dynamo_platform.md)
    * [Launching Dynamo](02_Hello-Dynamo/2-2_launching_dynamo.md)
    * [The Dynamo UI](02_Hello-Dynamo/2-3_the_dynamo_ui.md)
-       * The Application
+       * [The Application](02_Hello-Dynamo/2-3-1_the_application.md)
        * The Workflow
        * File Types and File Management
 * [The Anatomy of a Dynamo Definition](03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.md)
