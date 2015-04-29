@@ -45,7 +45,7 @@
    * [Color](4-5_color.md)
        * [Creating](4-5-1_creating.md)
        * [Querying](4-5-2_querying.md)
-       * Range
+       * [Range](4-5-3_range.md)
        * Color Exercise
 * Appendix
 
