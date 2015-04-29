@@ -21,7 +21,7 @@
    * [Dynamo Libraries](03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_libraries.md)
    * [Dynamo Nodes](03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_nodes.md)
    * [Best Practices](03_Anatomy-of-a-Dynamo-Definition/3-3_best_practices.md)
-* [The Building Blocks of Programs](4_the-building-blocks-of-programs.md)
+* [The Building Blocks of Programs](04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.md)
    * [Data](4-1_data.md)
        * [Data Types](4-1-1_data-types.md)
        * [Data Hierarchy](4-1-2_data-hierarchy.md)
