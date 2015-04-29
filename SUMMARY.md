@@ -39,5 +39,6 @@
        * Logic Exercise
    * Strings
        * Creating
+       * Querying
    * Color
 
