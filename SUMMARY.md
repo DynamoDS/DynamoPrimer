@@ -30,7 +30,7 @@
        * [Constants](4-2-1_constants.md)
        * [Operators](4-2-2_operators.md)
        * [Functions](4-2-3_functions.md)
-       * Formulas
+       * [Formulas](4-2-4_formulas.md)
        * Math Exercise
    * Logic
        * Booleans
