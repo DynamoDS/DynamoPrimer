@@ -18,7 +18,7 @@
        * The Application
        * The Workflow
        * File Types and File Management
-* The Anatomy of a Dynamo Definition
+* [The Anatomy of a Dynamo Definition](03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.md)
    * Dynamo Libraries
    * Dynamo Nodes
    * Best Practices
