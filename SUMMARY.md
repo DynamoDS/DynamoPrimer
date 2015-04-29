@@ -47,4 +47,5 @@
        * Querying
        * Range
        * Color Exercise
+* Appendix
 
