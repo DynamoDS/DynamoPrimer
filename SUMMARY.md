@@ -16,5 +16,6 @@
    * Launching Dynamo
    * The Dynamo UI
        * The Application
+       * The Workflow
 * The Anatomy of a Dynamo Definition
 
