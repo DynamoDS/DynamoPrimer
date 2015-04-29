@@ -38,5 +38,6 @@
        * Logic Gates
        * Logic Exercise
    * Strings
+       * Creating
    * Color
 
