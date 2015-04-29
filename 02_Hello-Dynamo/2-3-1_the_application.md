@@ -4,7 +4,7 @@
 
 Overview of the application window
 
-![Diagram of window](images/Placeholder.png)
+![Diagram of window - callouts](images/Placeholder.png)
 
 ####2.3.1.1	Windows Title Bar
 
