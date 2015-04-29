@@ -38,7 +38,7 @@
        * [Logic Gates](04_The-Building-Blocks-of-Programs/4-3-3_logic-gates.md)
        * [Logic Exercise](04_The-Building-Blocks-of-Programs/4-3-4_exercise.md)
    * [Strings](04_The-Building-Blocks-of-Programs/4-4_strings.md)
-       * [Creating](4-4-1_creating.md)
+       * [Creating](04_The-Building-Blocks-of-Programs/4-4-1_creating.md)
        * [Querying](4-4-2_querying.md)
        * [Manipulating](4-4-3_manipulating.md)
        * [Strings Exercise](4-4-4_exercise.md)
