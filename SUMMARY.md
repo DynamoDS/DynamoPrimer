@@ -23,7 +23,7 @@
    * [Best Practices](03_Anatomy-of-a-Dynamo-Definition/3-3_best_practices.md)
 * [The Building Blocks of Programs](4_the-building-blocks-of-programs.md)
    * [Data](4-1_data.md)
-       * Data Types
+       * [Data Types](4-1-1_data-types.md)
        * Data Hierarchy
        * Data Exercise
    * Math
