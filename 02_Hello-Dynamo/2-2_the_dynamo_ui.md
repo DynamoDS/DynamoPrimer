@@ -41,7 +41,7 @@ Dynamo's Toolbar contains a series of buttons for quick access to working with f
 The Library contains all of the loaded Nodes including the core Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Libary are organized hierarchically by category and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data. 
 
 #####2.2.3.1	Browsing
-By default, the Library will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
+By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
 
 ![Callouts on sections of library](images/Placeholder.png)
 >1. Analyze - description
@@ -72,21 +72,33 @@ From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The wi
 #####2.2.3.2	Searching
 If you now with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, the Node is added to the center of the Workspace.
 
+![callout the sections from the search results](images/Placeholder.png)
+>1. Search Field
+2. Best Fit Result / Selected
+3. Alternate Matches
+
+###2.3.4	Settings
+From geometric to user settings, these options can be found in the **Settings** menu. Here you can opt in or out for sharing your user data to improve Dynamo as well as define the application's decimal point precision and geometry render quality.
+
+> Note: Remember that Dynamo's units are generic. 
+
+![show menu](images/Placeholder.png)
+
+>1. Enabling Reporting
+2. Render Quality
+3. Number Format
+
+###2.3.5	Help 
+If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to check the version of Dynamo installed and whether it is up to date through the **About** option.
+
+![show menu](images/Placeholder.png)
+
+>1. Samples
+2. Report A Bug
+3. Go To Project Website
+4. Go To Project Wiki
+5. Display Start Page
+6. About
 
 
-
-#####2.2.1.1.1	Help 
-(description of where to go first - this primer and the resources should get you started )
-
-* **Samples by Group**
-* **Show in Folder**
-* -
-* **Report A Bug**
-* **Go To Project Website**
-* **Go To Project Wiki**
-* -
-* **Display Start Page**
-* **About**
-
-#####2.2.1.1.2	Settings
 
