@@ -1,10 +1,10 @@
 ## 2.1 THE DYNAMO PLATFORM
 
-_Introduction Text_
+Before we start using Dynamo, it's important to understand the various ways in which the application can run and what software Dynamo plays well with.  
 
-###2.1.1	Sandbox
+###2.1.1	Dynamo Studio
 
-###2.1.2	Dynamo the Add-on 
+###2.1.2	Dynamo and Friends
 
 ####2.1.2.1	Revit
 
