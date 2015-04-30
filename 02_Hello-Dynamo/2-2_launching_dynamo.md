@@ -12,7 +12,7 @@ Here you can download the "bleeding edge" development versions or go to the [Dyn
 ![Callouts for toolbar](images/Placeholder.png)
 
 ###2.1.2. Installing
-Browse to the directory of the downloaded installer and run the executable.
+Browse to the directory of the downloaded installer and run the executable file.
 
 ![](images/2-2/2-2-2_Installing-01.jpg)
 
