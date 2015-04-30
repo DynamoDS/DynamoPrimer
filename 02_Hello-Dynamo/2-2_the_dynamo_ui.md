@@ -2,7 +2,7 @@
 
 The User Interface (UI) for Dynamo is organized into five main regions, the largest of which is the workspace where we compose our logical graphs.
 
-![zones from application window](images/Placeholder.png)
+![zones from application window](images/02_a.png)
 
 >1. Menus
 2. Toolbar
@@ -16,7 +16,7 @@ Let's dive deeper into the UI and explore the functionality of each region.
 
 The Dropdown Menus are a great place to find some of the basic funcationity of the Dynamo application. Like most Windows software, actions related to managing files and operations for selection and content editing are found in the first two menus. The remaining menus are more specific to Dynamo. 
 
-![Callouts](images/Placeholder.png)
+![Callouts](images/02_b.png)
 > 1. File
 2. Edit
 3. View
@@ -28,7 +28,7 @@ The Dropdown Menus are a great place to find some of the basic funcationity of t
 
 Dynamo's Toolbar contains a series of buttons for quick access to working with files as well as Undo [Ctrl + Z] and Redo [Ctrl + Y] commands. On the far right is another button that will export a snapshot of the workspace, which is extremely useful for documentation and sharing.
 
-![Callouts for toolbar](images/Placeholder.png)
+![Callouts for toolbar](images/02_c.png)
 
 > 1. New - Create a new .dyn file
 2. Open - Open an existing .dyn (workspace) or .dyf (custom node) file
@@ -43,7 +43,7 @@ The Library contains all of the loaded Nodes including the core Nodes that come 
 #####2.2.3.1	Browsing
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
 
-![Callouts on sections of library](images/Placeholder.png)
+![Callouts on sections of library](images/02_e.png)
 >1. Analyze - description
 2. Builtin Functions - description
 3. Core - description
@@ -55,7 +55,7 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 
 Browse the Library by clicking through the menus. Click the Geometry > Circle. Note the new portion of the menu that is revealed and specifically the **Create** and **Query** Labels. 
 
-![Click through - callout the heirarchy of the library](images/Placeholder.png)
+![Click through - callout the heirarchy of the library](images/02_f.png)
 >1. Category - description
 2. Subcategory - description
 3. Create/Actions/Query
@@ -63,7 +63,7 @@ Browse the Library by clicking through the menus. Click the Geometry > Circle. N
 
 From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The window reveals more detailed information about the Node beyond its name and icon. This offers us a quick way to understand what the Node does, what it will require for inputs, and what it will give as an output.  
 
-![Hover over functionality - callout the parts of the pop up](images/Placeholder.png)
+![Hover over functionality - callout the parts of the pop up](images/02_g.png)
 >1. Icon - larger version of the icon in the Library Menu
 2. Description - plain language description of the Node
 3. Input(s) - name,  data type, and data structure  
@@ -72,7 +72,7 @@ From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The wi
 #####2.2.3.2	Searching
 If you now with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, the Node is added to the center of the Workspace.
 
-![callout the sections from the search results](images/Placeholder.png)
+![callout the sections from the search results](images/02_h.png)
 >1. Search Field
 2. Best Fit Result / Selected
 3. Alternate Matches
