@@ -13,7 +13,7 @@
    * [Dynamo in Action](01_Introduction/1-4_dynamo_in_action.md)
 * [Hello Dynamo!](02_Hello-Dynamo/2_hello_dynamo.md)
    * [Installing and Launching Dynamo](02_Hello-Dynamo/2-2_launching_dynamo.md)
-   * [The Dynamo UI](02_Hello-Dynamo/2-3_the_dynamo_ui.md)
+   * [The Dynamo User Interface](02_Hello-Dynamo/2-3_the_dynamo_ui.md)
        * [The Application](02_Hello-Dynamo/2-3-1_the_application.md)
        * [The Workflow](02_Hello-Dynamo/2-3-2_the_workflow.md)
        * [File Types and File Management](02_Hello-Dynamo/2-3-3_file_types_and_management.md)
