@@ -11,21 +11,33 @@ The Dynamo **Workspace** is where we develop our graphs, but it's also where we 
 3. Preview Mode
 4. Double Clicking
 
-###2.3.1 Tabs (main and custom node)
+###2.3.1 Tabs
 The active Workspace tab allows you to navigate and edit your graph. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the New Node by Selection right-click option when Nodes are selected. 
 
 > Note: Each type of Tab will display a different background colors to indicate whether you are working in a **Home** or **Custom Node** Workspace.
 
 ![two tabs](images/Placeholder.png)
 
-###2.3.2 Navigation
+###2.3.2 Graph versus 3D View Navigation
 * Pan, Zoom, Select, Zoom Selected
 * Mouse buttons
 * Buttons
 
 ![basic navigation call out](images/Placeholder.png)
 
-###2.3.3 Double Clicking
+###2.3.3 Hello Mouse
 
+* Left Click
+* Right Click
+* Scroll Wheel
+* Middle Button 
+
+Mouse Action | Graph View | 3D View
+--- | --- | ---
+Left Click | Select | N/A
+Right Click | Context Menu | Zoom Options
+Middle Click | Pan | Pan
+Scroll | Zoom In/Out | Zoom In/Out
+Double Click | Create Code Block | N/A
 
 ![basic navigation call out](images/Placeholder.png)
