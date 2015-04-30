@@ -31,7 +31,8 @@ Dynamo's Toolbar contains a series of buttons for quick access to working with f
 The Library contains all of the loaded Nodes including the core Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Libary are organized hierarchically by category and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data. 
 
 #####2.2.1.3.1	Browsing
-Browse the Library by clicking through the menus. Click the Geometry > Circle > and hover your mouse over **ByCenterPointRadius**. 
+By default, the Library will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
+
 ![Callouts on sections of library](images/Placeholder.png)
 >1. Analyze - description
 2. Builtin Functions - description
@@ -42,13 +43,15 @@ Browse the Library by clicking through the menus. Click the Geometry > Circle > 
 7. Operators - description
 8. Tessellation - description
 
-Browse the Library by clicking through the menus
+Browse the Library by clicking through the menus. Click the Geometry > Circle. Note the new portion of the menu that is revealed and specifically the **Create** and **Query** Labels. 
 
 ![Click through - callout the heirarchy of the library](images/Placeholder.png)
 >1. Category - description
 2. Subcategory - description
 3. Create/Actions/Query
 4. Show More
+
+From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The window reveals more detailed information about the Node beyond its name and icon. This offers us a quick way to understand what the Node does, what it will require for inputs, and what it will give as an output.  
 
 ![Hover over functionality - callout the parts of the pop up](images/Placeholder.png)
 >1. Icon - larger version of the icon in the Library Menu
