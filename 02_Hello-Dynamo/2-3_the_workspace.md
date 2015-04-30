@@ -27,12 +27,11 @@ The active Workspace tab allows you to navigate and edit your graph. When you op
 
 ###2.3.3 Hello Mouse
 
-* Left Click
-* Right Click
-* Scroll Wheel
-* Middle Button 
+(Insert Text)
 
-Mouse Action | Graph View | 3D View
+![basic navigation call out](images/Placeholder.png)
+
+**Mouse Action** | **Graph View** | **3D View**
 --- | --- | ---
 Left Click | Select | N/A
 Right Click | Context Menu | Zoom Options
@@ -40,4 +39,3 @@ Middle Click | Pan | Pan
 Scroll | Zoom In/Out | Zoom In/Out
 Double Click | Create Code Block | N/A
 
-![basic navigation call out](images/Placeholder.png)
