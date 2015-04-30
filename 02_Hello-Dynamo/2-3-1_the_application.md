@@ -1,10 +1,10 @@
-### 2.3.1 The Application
+### 2.2.1 The Application
 
 ("Lets get started")
 
 (Overview of the application window - reiterate the zones of the window)
 
-####2.3.1.1	Main Menus
+####2.2.1.1	Main Menus
 
 (Overview of the menus - some of what is found here is in the toolbar - but not all )
 
@@ -16,7 +16,7 @@
 5. Settings
 6. Help
 
-####2.3.1.2	Toolbar
+####2.2.1.2	Toolbar
 
 (Insert Text...)
 
@@ -29,10 +29,10 @@
 5. Redo - Redo your the next action
 6. Export Workspace as Image - Export the visible workspace as a PNG file
 
-####2.3.1.3	Library
+####2.2.1.3	Library
 (The Library is where all the Nodes are found. One can interact with it through browsing or searching. Describe the hover over functionality and the shift to icons. When selected, the Node is added to the center of your current view of the Workspace.) 
 
-#####2.3.1.3.1	Browsing
+#####2.2.1.3.1	Browsing
 (An indication of breakdown of Groupings)
 ![Callouts on sections of library](images/Placeholder.png)
 >1. Analyze - description
@@ -56,18 +56,18 @@
 3. Input(s) - name,  data type, and data structure  
 4. Output(s) - data type and structure
 
-#####2.3.1.3.2	Searching
+#####2.2.1.3.2	Searching
 (When you are not editing a value in the workspace, the cursor is always present in the search field for the libraries. The search will return a best fit, with breadcrumbs for where the Node can be found, and a list of alternate matches... note about quickness of adding objects)
 
-####2.3.1.4	The Workspace
-#####2.3.1.4.1	Tabs (main and custom node)
-#####2.3.1.4.2	Node Layer (Depth)
-#####2.3.1.4.3	Double Clicking
-#####2.3.1.4.4  Navigation
+####2.2.1.4	The Workspace
+#####2.2.1.4.1	Tabs (main and custom node)
+#####2.2.1.4.2	Node Layer (Depth)
+#####2.2.1.4.3	Double Clicking
+#####2.2.1.4.4  Navigation
 
 
 
-#####2.3.1.1.1	Help 
+#####2.2.1.1.1	Help 
 (description of where to go first - this primer and the resources should get you started )
 
 * **Samples by Group**
@@ -80,4 +80,4 @@
 * **Display Start Page**
 * **About**
 
-#####2.3.1.1.2	Settings
+#####2.2.1.1.2	Settings
