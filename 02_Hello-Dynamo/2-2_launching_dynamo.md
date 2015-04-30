@@ -1,6 +1,6 @@
 ## 2.1 Installing and Launching Dynamo
 
-_Introduction Text_
+Dynamo is an active development project with downloadable installers for both stable and development or "daily" versions. 
 
 ###2.1.1. Downloading
 To download... (text)
