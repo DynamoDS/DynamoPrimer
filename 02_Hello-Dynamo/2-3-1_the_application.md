@@ -1,12 +1,10 @@
 ### 2.2.1 The Application
 
-("Lets get started")
+Let's dive deeper into the UI and explore the functionality of each region. 
 
-(Overview of the application window - reiterate the zones of the window)
+####2.2.1.1 Menus
 
-####2.2.1.1	Main Menus
-
-(Overview of the menus - some of what is found here is in the toolbar - but not all )
+The Dropdown Menus are a great place to find some of the basic funcationity of the Dynamo application. Like most Windows software, actions related to managing files and operations for selection and content editing are found in the first two menus. The remaining menus are more specific to Dynamo. 
 
 ![Callouts](images/Placeholder.png)
 > 1. File
@@ -18,7 +16,7 @@
 
 ####2.2.1.2	Toolbar
 
-(Insert Text...)
+Dynamo's Toolbar contains a series of buttons for quick access to working with files as well as Undo [Ctrl + Z] and Redo [Ctrl + Y] commands. On the far right is another button that will export a snapshot of the workspace, which is extremely useful for documentation and sharing.
 
 ![Callouts for toolbar](images/Placeholder.png)
 
@@ -30,10 +28,10 @@
 6. Export Workspace as Image - Export the visible workspace as a PNG file
 
 ####2.2.1.3	Library
-(The Library is where all the Nodes are found. One can interact with it through browsing or searching. Describe the hover over functionality and the shift to icons. When selected, the Node is added to the center of your current view of the Workspace.) 
+The Library contains all of the loaded Nodes including the core Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Libary are organized hierarchically by category and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data. 
 
 #####2.2.1.3.1	Browsing
-(An indication of breakdown of Groupings)
+Browse the Library by clicking through the menus. Click the Geometry > Circle > and hover your mouse over **ByCenterPointRadius**. 
 ![Callouts on sections of library](images/Placeholder.png)
 >1. Analyze - description
 2. Builtin Functions - description
@@ -43,6 +41,8 @@
 6. Office - description
 7. Operators - description
 8. Tessellation - description
+
+Browse the Library by clicking through the menus
 
 ![Click through - callout the heirarchy of the library](images/Placeholder.png)
 >1. Category - description
