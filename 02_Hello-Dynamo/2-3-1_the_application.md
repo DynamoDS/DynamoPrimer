@@ -60,7 +60,7 @@ From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The wi
 4. Output(s) - data type and structure
 
 #####2.2.1.3.2	Searching
-(When you are not editing a value in the workspace, the cursor is always present in the search field for the libraries. The search will return a best fit, with breadcrumbs for where the Node can be found, and a list of alternate matches... note about quickness of adding objects)
+If you now with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, the Node is added to the center of the Workspace.
 
 ####2.2.1.4	The Workspace
 #####2.2.1.4.1	Tabs (main and custom node)
