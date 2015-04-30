@@ -2,7 +2,7 @@
 
 ("Lets get started")
 
-(Overview of the application window - reiterate the zones of the windoe)
+(Overview of the application window - reiterate the zones of the window)
 
 ####2.3.1.1	Main Menus
 
