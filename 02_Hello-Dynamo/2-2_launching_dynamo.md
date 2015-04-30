@@ -19,7 +19,7 @@ Browse to the directory of the downloaded installer and run the executable file.
 Here we need to decide if we want to include the components that connect Dynamo to other installed applications such as Revit. For more information on the Dynamo Platform, see **Chapter 1.2.2**.
 
 ###2.1.3. Launching
-To launch ... (text)
+To launch Dynamo ... (text)
 
 ![](images/2-2/2-2-3_Launching-01.jpg)
 
