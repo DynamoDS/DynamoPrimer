@@ -12,7 +12,7 @@
    * [The Quick Start Guide](01_Introduction/1-3_the_quick_start_guide.md)
    * [Dynamo in Action](01_Introduction/1-4_dynamo_in_action.md)
 * [Hello Dynamo!](02_Hello-Dynamo/2_hello_dynamo.md)
-   * [Installing and Launching Dynamo](02_Hello-Dynamo/2-2_launching_dynamo.md)
+   * [Installing and Launching Dynamo](02_Hello-Dynamo/2-1_launching_dynamo.md)
    * [The User Interface](02_Hello-Dynamo/2-3_the_dynamo_ui.md)
    * The Workspace
    * [The Workflow](02_Hello-Dynamo/2-3-2_the_workflow.md)
