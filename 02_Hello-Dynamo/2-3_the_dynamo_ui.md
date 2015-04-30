@@ -1,4 +1,4 @@
-## 2.3 The Dynamo UI
+## 2.2 The Dynamo UI
 
 _Introduction Text_
 
