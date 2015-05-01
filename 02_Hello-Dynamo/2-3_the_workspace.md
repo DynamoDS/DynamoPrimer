@@ -18,13 +18,14 @@ The active Workspace tab allows you to navigate and edit your graph. When you op
 
 > Note: You may have only one Home Workspace open at a time; however, you may have multiple Custom Node Workspaces open in additional tabs.
 
-###2.3.2 Graph versus 3D View Navigation
-In Dynamo
-* Pan, Zoom, Select, Zoom Selected
-* Mouse buttons
-* Buttons
+###2.3.2 Graph versus 3D Preview Navigation
+In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometry) are both rendered in the Workspace. By default the Graph is the active preview, so using the Navigation buttons or middle mouse button to pan and zoom will move us through the Graph. Toggling between active previews can be achieved three ways:
 
 ![basic navigation call out](images/2-3/03-PreviewNavigations.jpg)
+
+> 1. Preview Toggle Buttons in the Workspace
+2. Right clicking in the Workspace and selecting *Switch to ... View*
+3. Keyboard shortcut (Ctrl + B)
 
 ###2.3.3 Hello Mouse!
 
