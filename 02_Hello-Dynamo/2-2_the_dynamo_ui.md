@@ -2,7 +2,7 @@
 
 The User Interface (UI) for Dynamo is organized into five main regions, the largest of which is the workspace where we compose our logical graphs.
 
-![zones from application window](images/02_a.png)
+![User Interface Regions](images/2-2/01-UI-Regions.png)
 
 >1. Menus
 2. Toolbar
@@ -16,19 +16,19 @@ Let's dive deeper into the UI and explore the functionality of each region.
 
 The Dropdown Menus are a great place to find some of the basic funcationity of the Dynamo application. Like most Windows software, actions related to managing files and operations for selection and content editing are found in the first two menus. The remaining menus are more specific to Dynamo. 
 
-![Callouts](images/02_b.png)
-> 1. File
-2. Edit
-3. View
-4. Packages
-5. Settings
-6. Help
+![Dropdown Menus](images/2-2/02-Menus.png)
+> 1. File - description
+2. Edit - description
+3. View - description
+4. Packages - description
+5. Settings - description
+6. Help - description
 
 ####2.2.2	Toolbar
 
 Dynamo's Toolbar contains a series of buttons for quick access to working with files as well as Undo [Ctrl + Z] and Redo [Ctrl + Y] commands. On the far right is another button that will export a snapshot of the workspace, which is extremely useful for documentation and sharing.
 
-![Callouts for toolbar](images/02_c.png)
+![NEEDS UPDATE-full width - Toolbar](images/02_c.png)
 
 > 1. New - Create a new .dyn file
 2. Open - Open an existing .dyn (workspace) or .dyf (custom node) file
