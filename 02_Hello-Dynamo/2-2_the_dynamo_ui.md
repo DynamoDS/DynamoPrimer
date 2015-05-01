@@ -28,7 +28,7 @@ The Dropdown Menus are a great place to find some of the basic funcationity of t
 
 Dynamo's Toolbar contains a series of buttons for quick access to working with files as well as Undo [Ctrl + Z] and Redo [Ctrl + Y] commands. On the far right is another button that will export a snapshot of the workspace, which is extremely useful for documentation and sharing.
 
-![NEEDS UPDATE-full width - Toolbar](images/2-2/Toolbar.png)
+![NEEDS UPDATE-full width - Toolbar](images/2-2/03-Toolbar.png)
 
 > 1. New - Create a new .dyn file
 2. Open - Open an existing .dyn (workspace) or .dyf (custom node) file
@@ -43,7 +43,7 @@ The Library contains all of the loaded Nodes including the core Nodes that come 
 #####2.2.3.1	Browsing
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
 
-![NEEDS UPDATE-full width - Library Categories](images/02_e.png)
+![NEEDS UPDATE-full width - Library Categories](images/2-2/04-LibraryCategories.png)
 >1. Analyze - description
 2. Builtin Functions - description
 3. Core - description
@@ -55,15 +55,15 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 
 Browse the Library by clicking through the menus. Click the Geometry > Circle. Note the new portion of the menu that is revealed and specifically the **Create** and **Query** Labels. 
 
-![Click through - callout the heirarchy of the library](images/02_f.png)
+![NEEDS UPDATE-use full width - Browsing the Library](images/2-2/05-LibraryBrowsing.png)
 >1. Category - description
 2. Subcategory - description
-3. Create/Actions/Query
-4. Show More
+3. Create/Actions/Query - description
+4. Node - description
 
 From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The window reveals more detailed information about the Node beyond its name and icon. This offers us a quick way to understand what the Node does, what it will require for inputs, and what it will give as an output.  
 
-![Hover over functionality - callout the parts of the pop up](images/02_g.png)
+![Node Pop Up Window](images/2-2/06-NodePopup.png)
 >1. Icon - larger version of the icon in the Library Menu
 2. Description - plain language description of the Node
 3. Input(s) - name,  data type, and data structure  
@@ -72,7 +72,7 @@ From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The wi
 #####2.2.3.2	Searching
 If you now with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, the Node is added to the center of the Workspace.
 
-![callout the sections from the search results](images/02_h.png)
+![NEEDS UPDATE-callouts Searching the Library](images/2-2/07-LibrarySearching.png)
 >1. Search Field
 2. Best Fit Result / Selected
 3. Alternate Matches
