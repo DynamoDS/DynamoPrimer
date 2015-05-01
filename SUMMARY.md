@@ -5,7 +5,7 @@
    * [Preface](01_Introduction/1-1_preface.md)
    * [What is Dynamo?](01_Introduction/1-2-1_what_is_dynamo.md)
    * [The Dynamo Platform](01_Introduction/1-3_dynamo_platform.md)
-   * [What is Visual Programming?](01_Introduction/1-2-2_what_is_visual_programming.md)
+   * [What is Visual Programming?](01_Introduction/1-4_what_is_visual_programming.md)
    * [Key Concepts](01_Introduction/1-2-3_key_concepts.md)
    * [The Graph](01_Introduction/1-2-4_the_graph.md)
    * [Dynamo in Action](01_Introduction/1-4_dynamo_in_action.md)
