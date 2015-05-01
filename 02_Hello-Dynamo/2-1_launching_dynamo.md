@@ -5,7 +5,7 @@ Dynamo is an active open-source development project with downloadable installers
 ###2.1.1. Downloading
 To download the official released version of Dynamo, visit the [Dynamo website](http://dynamobim.com/). Start the download of Version 0.8.0 immediately by clicking from the homepage or browse to the dedicated download page. 
 
-![website homepage](images/01_a.png)
+![NEEDS UPDATE - website homepage](images/01_a.png)
 
 Here you can download the "bleeding edge" development versions or go to the [Dynamo Github](https://github.com/DynamoDS/Dynamo) project.
 
@@ -21,8 +21,8 @@ Here we need to decide if we want to include the components that connect Dynamo 
 ###2.1.3. Launching
 To launch Dynamo, browse to the Windows Start Menu > Dynamo > **Dynamo 0.8.1**. This will open the stand-alone version and present Dynamo's *Start Page*. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources. 
 
-![Dynamo start page](images/01_d.png)
+![NEEDS UPDATE - labels Dynamo start page](images/01_d.png)
 
 Open the first sample file to open your first workspace and confirm Dynamo is working correctly. Click Samples > Basics > **Basics_Basic01.dyn**. 
 
-![](images/01_e.png)
+![NEEDS UPDATE](images/01_e.png)
