@@ -1,7 +1,7 @@
-### 1.2.2 What is Visual Programming?
+### 1.4 What is Visual Programming?
 
 _Introduction Text_
 
-####1.2.2.1	Programming Defined
+####1.4.1	Programming Defined
 
-####1.2.2.2	Visual Programming Defined
+####1.4.2	Visual Programming Defined
