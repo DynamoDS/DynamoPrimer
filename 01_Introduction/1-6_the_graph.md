@@ -1,6 +1,6 @@
-### 1.2.4 The Graph
+### 1.6 The Graph
 
 _Introduction Text_
 
-####1.2.4.1	Elements
-####1.2.4.2	Flow
+####1.6.1	Elements
+####1.6.2	Flow
