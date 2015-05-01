@@ -15,7 +15,7 @@
    * [The Workspace](02_Hello-Dynamo/2-3_the_workspace.md)
    * [The Workflow](02_Hello-Dynamo/2-4_the_workflow.md)
    * [File Types and File Management](02_Hello-Dynamo/2-5_file_types_and_management.md)
-   * [The Quick Start Guide](01_Introduction/1-3_the_quick_start_guide.md)
+   * [The Quick Start Guide](02_Hello-Dynamo/2-6_the_quick_start_guide.md)
 * [The Anatomy of a Dynamo Definition](03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.md)
    * [Dynamo Libraries](03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_libraries.md)
    * [Dynamo Nodes](03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_nodes.md)
