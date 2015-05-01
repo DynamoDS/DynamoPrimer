@@ -19,17 +19,24 @@ The active Workspace tab allows you to navigate and edit your graph. When you op
 > Note: You may have only one Home Workspace open at a time; however, you may have multiple Custom Node Workspaces open in additional tabs.
 
 ###2.3.2 Graph versus 3D View Navigation
+In Dynamo
 * Pan, Zoom, Select, Zoom Selected
 * Mouse buttons
 * Buttons
 
 ![basic navigation call out](images/2-3/03-PreviewNavigations.jpg)
 
-###2.3.3 Hello Mouse
+###2.3.3 Hello Mouse!
 
-(Insert Text)
+Based on which Preview mode is active, your mouse buttons will do different options. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking. 
 
-![basic navigation call out](images/Placeholder.png)
+![basic navigation call out](images/2-3/04-HelloMouse.jpg)
+
+>1. Right Click on the Workspace
+2. Right Click on a Node
+3. Right Click on a Note
+
+Here's a table of mouse interactions per Preview: 
 
 **Mouse Action** | **Graph Preview** | **3D Preview**
 --- | --- | ---
@@ -38,4 +45,3 @@ Right Click | Context Menu | Zoom Options
 Middle Click | Pan | Pan
 Scroll | Zoom In/Out | Zoom In/Out
 Double Click | Create Code Block | N/A
-
