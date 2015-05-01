@@ -28,7 +28,7 @@ The Dropdown Menus are a great place to find some of the basic funcationity of t
 
 Dynamo's Toolbar contains a series of buttons for quick access to working with files as well as Undo [Ctrl + Z] and Redo [Ctrl + Y] commands. On the far right is another button that will export a snapshot of the workspace, which is extremely useful for documentation and sharing.
 
-![NEEDS UPDATE-full width - Toolbar](images/02_c.png)
+![NEEDS UPDATE-full width - Toolbar](images/2-2/Toolbar.png)
 
 > 1. New - Create a new .dyn file
 2. Open - Open an existing .dyn (workspace) or .dyf (custom node) file
@@ -43,7 +43,7 @@ The Library contains all of the loaded Nodes including the core Nodes that come 
 #####2.2.3.1	Browsing
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
 
-![Callouts on sections of library](images/02_e.png)
+![NEEDS UPDATE-full width - Library Categories](images/02_e.png)
 >1. Analyze - description
 2. Builtin Functions - description
 3. Core - description
