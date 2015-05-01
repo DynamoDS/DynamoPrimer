@@ -1,9 +1,9 @@
-### 1.2.3 Key Concepts
+### 1.5 Key Concepts
 
 _Introduction Text_
 
-####1.2.3.1	Numbers
-####1.2.3.2	Parameters
-####1.2.3.3	Constants
-####1.2.3.4	Operators
-####1.2.3.5	Functions
+####1.5.1	Numbers
+####1.5.2	Parameters
+####1.5.3	Constants
+####1.5.4	Operators
+####1.5.5	Functions
