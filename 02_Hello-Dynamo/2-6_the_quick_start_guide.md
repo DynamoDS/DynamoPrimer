@@ -27,32 +27,28 @@ We also will need Point By Coordinates, Number Input, and Number Slider Nodes.
 ![NEEDS UPDATE - Objects Added](images/Placeholder.png)
 
 > 1. Geometry > Point > Point by Coordinates
+2. Geometry > Geometry > Distance To
 2. Core > Input > Number
 3. Core > Input > Number Slider
 
 ###2.4.3 Connecting Nodes with Wires
+Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wires. These connections will define the flow of data through the Graph. 
 
-### Executing the Graph
+![NEEDS UPDATE - Connections made](images/Placeholder.png)
+> 1. Number to Point by Coordinates
+2. Number Sliders to Point by Coordinates
+3. Point by Coordinates (2) to Distance To
+4. Point by Coordinates and Distance To to Circle by Center Point and Radius
 
-### Adding complexity
+###2.4.4 Executing the Graph
+Text
+
+###2.4.5 Adding Detail
+Text
+
+###2.4.6 Adding complexity
+Text
 
 ![NEEDS UPDATE - Hand Sketch of Array of Circles](images/Placeholder.png)
 
 
-###2.6.1	Dynamo Interface
-###2.6.2	Dynamo Elements 
-Nodes, Ports, Wires
-###2.6.3	Your first Graph 
-
-
-## 2.4 The Workflow
-
-_Introduction Text_
-
-###2.4.1	Navigation
-####2.4.1.1	View Settings
-####2.4.1.2	Graph versus geometry navigation
-###2.4.2	Nodes
-###2.4.3	Wires
-
-###2.4.4	Execution Bar – ie Running the Workspace
