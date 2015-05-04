@@ -41,10 +41,16 @@ Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wir
 4. Point by Coordinates and Distance To to Circle by Center Point and Radius
 
 ###2.4.4 Executing the Graph
-Text
+With our Graph defined, all we need to do is tell Dynamo to execute it. By clicking on Run in the Execution Bar, the Nodes will be activated, data will pass through the Wires, and we should see the results of the Graph in the 
+
+![NEEDS UPDATE - After Run](images/Placeholder.png)
+> 1. Click Run - In Manual Mode, we need to Click Run to execute the graph
+2. Node Preview - Hovering your mouse over the box on the lower right corner of a Node will give you a pop up of the results
+3. 3D Preview - If any of our Nodes create geometry, we will see it in the 3D Preview.
 
 ###2.4.5 Adding Detail
-Text
+
+![NEEDS UPDATE - After Run](images/Placeholder.png)
 
 ###2.4.6 Adding complexity
 Text
