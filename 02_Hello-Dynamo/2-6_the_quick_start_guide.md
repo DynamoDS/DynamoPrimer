@@ -57,8 +57,9 @@ If our Graph is working, we should see a circle in the 3D Preview that is passin
 3. Code Block to Circle By Center Point and Radius
 
 ###2.4.6 Adding complexity
-Text
+Starting simple and building complexity is an effective way to incrementally develop the Graph. Once it is working for one circle, let's apply the power of the Graph to more than one circle. Instead of one center point, if we use a grid of points and accomodate the change in the resulting data structure, our Graph will now create many circles - each with a unique radius value defined by the calibrated distance to the Attractor Point.
 
 ![NEEDS UPDATE - Hand Sketch of Array of Circles](images/Placeholder.png)
-
-
+>1. 
+2. 
+3. 
