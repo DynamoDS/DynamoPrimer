@@ -5,8 +5,19 @@ The Library contains the Nodes we add to the Workspace to define logical graphs 
 ###3.1.1	Organizational Scheme and Naming Conventions
 
 
-###3.1.2	Broad Categories
-####3.1.2.1	Inputs
-####3.1.2.2	Core/Geometry/Operators
-####3.1.2.3	Watch
-####3.1.2.4	Code Blocks
+###3.1.2	Library Categories
+* Analyze
+* Builtin Functions
+* Core
+* Geometery
+* Migration
+* Office
+* Operators
+
+
+###3.1.3 Frequently Used Nodes
+
+####3.1.3.1	Inputs
+####3.1.3.2	Core/Geometry/Operators
+####3.1.3.3	Watch
+####3.1.3.4	Code Blocks
