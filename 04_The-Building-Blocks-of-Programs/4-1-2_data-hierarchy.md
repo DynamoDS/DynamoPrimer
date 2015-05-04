@@ -1,6 +1,4 @@
-### Types
+### 4.1.2 Hierarchy
 #### Numbers
-#### Booleans
-#### Strings
-#### Geometry
-#### "Null"
+#### Item(s)
+#### List(s)
