@@ -18,7 +18,7 @@
    * [The Quick Start Guide](02_Hello-Dynamo/2-6_the_quick_start_guide.md)
 * [The Anatomy of a Dynamo Definition](03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.md)
    * [Dynamo Libraries](03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_libraries.md)
-   * [Dynamo Nodes](03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_nodes.md)
+   * [Nodes and Wires](03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_nodes.md)
    * [Best Practices](03_Anatomy-of-a-Dynamo-Definition/3-3_best_practices.md)
 * [The Building Blocks of Programs](04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.md)
    * [Data](04_The-Building-Blocks-of-Programs/4-1_data.md)
