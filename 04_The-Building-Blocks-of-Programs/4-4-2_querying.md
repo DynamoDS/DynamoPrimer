@@ -1,1 +1,1 @@
-### 4.4.2 Manipulating Strings
+### 4.4.2 Querying Strings
