@@ -62,4 +62,4 @@ Starting simple and building complexity is an effective way to incrementally dev
 ![NEEDS UPDATE - updated graph](images/Placeholder.png)
 >1. Sequence - definition
 2. Flatten - definition
-3. 
+3. 3D Preview
