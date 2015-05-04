@@ -23,6 +23,9 @@ To launch Dynamo, browse to the Windows Start Menu > Dynamo > **Dynamo 0.8.1**. 
 
 ![NEEDS UPDATE - labels Dynamo start page](images/2-1/04-DynamoStartpage.png)
 
+>1. Item
+2. Item
+
 Open the first sample file to open your first workspace and confirm Dynamo is working correctly. Click Samples > Basics > **Basics_Basic01.dyn**. 
 
 ![NEEDS UPDATE - drop shadow - Basics_Basic01](images/2-1/05-Basics_Basic01.jpg)
