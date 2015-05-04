@@ -49,8 +49,11 @@ With our Graph defined, all we need to do is tell Dynamo to execute it. By click
 3. 3D Preview - If any of our Nodes create geometry, we will see it in the 3D Preview.
 
 ###2.4.5 Adding Detail
+If our Graph is working, we should see a circle in the 3D Preview that is passing through our Attractor Point. This is great but we may want to add more detail or more controls to the Graph. Let's adjust the input to the circle Node so that we can calibrate the influence on the radius. Add another Number Slider to the Workspace then double click on a blank area of the Workspace to add a Code Block Node. Edit the field in the Code Block, specifying "X/Y".
 
-![NEEDS UPDATE - After Run](images/Placeholder.png)
+![NEEDS UPDATE - Code Block included](images/Placeholder.png)
+>1. 
+2. 
 
 ###2.4.6 Adding complexity
 Text
