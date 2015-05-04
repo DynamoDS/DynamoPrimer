@@ -1,0 +1,120 @@
+<Workspace Version="0.8.1.1233" X="380.099861730852" Y="431.315499629601" zoom="0.303218433226488" Name="Home" RunType="Automatic" RunPeriod="100" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <DSCoreNodesUI.Input.DoubleSlider guid="3f212073-809f-497d-b4a2-69c38261bc71" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Number Slider" x="69.6224055821737" y="424.607610452357" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double>3.6</System.Double>
+      <Range min="0" max="10" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <Dynamo.Nodes.DSFunction guid="a3265569-1287-4634-b25f-b7cfa9806ef5" type="Dynamo.Nodes.DSFunction" nickname="Point.ByCoordinates" x="507.457422585193" y="358.372816661516" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <DSCoreNodesUI.NumberRange guid="dd8dda32-2982-439d-a4ab-0b38c15f02c4" type="DSCoreNodesUI.NumberRange" nickname="Number Range" x="127.626393161819" y="711.117770791283" isVisible="true" isUpstreamVisible="true" lacing="Longest" />
+    <DSCoreNodesUI.Input.DoubleSlider guid="8feaebf0-49c5-4e69-b3ef-b7afe91eb0c3" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Number Slider" x="-220.245315666547" y="905.904695809299" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double>1.12</System.Double>
+      <Range min="0.5" max="5" step="0.01" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <Dynamo.Nodes.DSFunction guid="4d429947-1874-453e-80fc-02a37ae61e7f" type="Dynamo.Nodes.DSFunction" nickname="Point.ByCoordinates" x="374.061718565945" y="719.40766979691" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="dbfa014e-998d-4726-92b7-805c10633ce8" type="Dynamo.Nodes.DSFunction" nickname="Geometry.DistanceTo" x="808.676705293662" y="358.372816661516" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Geometry.DistanceTo@Autodesk.DesignScript.Geometry.Geometry" />
+    <Dynamo.Nodes.DSFunction guid="c64ae857-f7fb-46e9-9b09-f9d672b73c56" type="Dynamo.Nodes.DSFunction" nickname="Math.RemapRange" x="1252.40026462148" y="833.853184609186" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.Math.RemapRange@double[],double,double">
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="4eaba889-4716-4104-8c52-5a6ba724c99b" type="Dynamo.Nodes.DSFunction" nickname="Circle.ByCenterPointRadius" x="1939.15599895795" y="413.248511566892" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius@Autodesk.DesignScript.Geometry.Point,double">
+      <PortInfo index="1" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="3b3e8dd2-c6c2-4dfa-924a-1e4b6bc0d213" type="Dynamo.Nodes.DSFunction" nickname="/" x="1014.80895485702" y="844.660517320243" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="/@var[]..[],var[]..[]" />
+    <Dynamo.Nodes.DoubleInput guid="591b95b5-a758-4da2-8b57-a8fbd6e0fd12" type="Dynamo.Nodes.DoubleInput" nickname="Number" x="920.942693193713" y="914.548142120742" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="4.000" />
+    </Dynamo.Nodes.DoubleInput>
+    <DSCoreNodesUI.Input.IntegerSlider guid="3f4868f5-70e9-4cca-a523-474ff9839ad5" type="DSCoreNodesUI.Input.IntegerSlider" nickname="Integer Slider" x="69.6224055821737" y="490.842404243197" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Int32>3</System.Int32>
+      <Range min="0" max="10" step="1" />
+    </DSCoreNodesUI.Input.IntegerSlider>
+    <Dynamo.Nodes.DoubleInput guid="b663bba8-b23e-4385-b51c-e772ead7350e" type="Dynamo.Nodes.DoubleInput" nickname="Number" x="17.9271661800647" y="699.049485808063" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="0" />
+    </Dynamo.Nodes.DoubleInput>
+    <Dynamo.Nodes.DoubleInput guid="be9b8124-b732-4518-842a-637c929ff080" type="Dynamo.Nodes.DoubleInput" nickname="Number" x="11.9271661800647" y="765.200429110989" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="10" />
+    </Dynamo.Nodes.DoubleInput>
+    <Dynamo.Nodes.Watch guid="e3bbe009-83c3-4b70-9a3a-988bae178162" type="Dynamo.Nodes.Watch" nickname="Watch" x="2708.01808923216" y="464.932845679048" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <Dynamo.Nodes.Watch guid="cefc0205-2ad6-49cd-9abb-4cf76aada9d8" type="Dynamo.Nodes.Watch" nickname="Watch" x="2708.01808923216" y="88.0078407539072" isVisible="true" isUpstreamVisible="true" lacing="Disabled" />
+    <DSCoreNodesUI.Formula guid="9f176577-1d9b-49d6-ae19-e0c3e10c0215" type="DSCoreNodesUI.Formula" nickname="Formula" x="1045.61828232766" y="969.441753625388" isVisible="true" isUpstreamVisible="true" lacing="Shortest">
+      <FormulaText>x/2</FormulaText>
+    </DSCoreNodesUI.Formula>
+    <DSCoreNodesUI.Formula guid="2032731a-03f6-450b-9a08-bb8370b7e359" type="DSCoreNodesUI.Formula" nickname="Formula" x="1249.86667437891" y="617.084325173152" isVisible="true" isUpstreamVisible="true" lacing="Shortest">
+      <FormulaText>IF(numbers&gt;5,.15,x/2)</FormulaText>
+    </DSCoreNodesUI.Formula>
+    <DSCoreNodesUI.BoolSelector guid="6b743da8-ac8b-4404-bf79-3d8e0114d8a3" type="DSCoreNodesUI.BoolSelector" nickname="Boolean" x="1257.53239292964" y="308.049725199643" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Boolean>False</System.Boolean>
+    </DSCoreNodesUI.BoolSelector>
+    <DSCoreNodesUI.Input.DoubleSlider guid="626c16a3-9fd2-4593-b369-ea9467bf1d64" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Number Slider" x="71.9390455386632" y="354.190134276924" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double>0</System.Double>
+      <Range min="0" max="10" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Formula guid="8eb7a5e5-987a-4d5b-a033-4953d461419b" type="DSCoreNodesUI.Formula" nickname="Formula" x="1736.76620110486" y="643.663077774558" isVisible="true" isUpstreamVisible="true" lacing="Shortest">
+      <FormulaText>IF(boolean,x,y)</FormulaText>
+    </DSCoreNodesUI.Formula>
+    <Dynamo.Nodes.DSFunction guid="c8c6d01e-b651-4720-bd8f-5c21befd8038" type="Dynamo.Nodes.DSFunction" nickname="Curve.ExtrudeAsSolid" x="2434.31295719699" y="579.014857081068" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Curve.ExtrudeAsSolid@Autodesk.DesignScript.Geometry.Vector,double">
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="062c932f-d5f8-4d5a-9ac1-c3fae27cdd62" type="Dynamo.Nodes.DSFunction" nickname="Vector.ZAxis" x="2254.85255765116" y="405.54529563794" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Vector.ZAxis" />
+    <Dynamo.Nodes.DSFunction guid="7abb2d10-8311-4b72-b5d7-5e040d491189" type="Dynamo.Nodes.DSFunction" nickname="Curve.Extrude" x="2432.77502962186" y="211.668149436409" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Curve.Extrude@Autodesk.DesignScript.Geometry.Vector,double">
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="3f212073-809f-497d-b4a2-69c38261bc71" start_index="0" end="a3265569-1287-4634-b25f-b7cfa9806ef5" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a3265569-1287-4634-b25f-b7cfa9806ef5" start_index="0" end="dbfa014e-998d-4726-92b7-805c10633ce8" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="dd8dda32-2982-439d-a4ab-0b38c15f02c4" start_index="0" end="4d429947-1874-453e-80fc-02a37ae61e7f" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="dd8dda32-2982-439d-a4ab-0b38c15f02c4" start_index="0" end="4d429947-1874-453e-80fc-02a37ae61e7f" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8feaebf0-49c5-4e69-b3ef-b7afe91eb0c3" start_index="0" end="dd8dda32-2982-439d-a4ab-0b38c15f02c4" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8feaebf0-49c5-4e69-b3ef-b7afe91eb0c3" start_index="0" end="3b3e8dd2-c6c2-4dfa-924a-1e4b6bc0d213" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8feaebf0-49c5-4e69-b3ef-b7afe91eb0c3" start_index="0" end="9f176577-1d9b-49d6-ae19-e0c3e10c0215" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8feaebf0-49c5-4e69-b3ef-b7afe91eb0c3" start_index="0" end="2032731a-03f6-450b-9a08-bb8370b7e359" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4d429947-1874-453e-80fc-02a37ae61e7f" start_index="0" end="dbfa014e-998d-4726-92b7-805c10633ce8" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4d429947-1874-453e-80fc-02a37ae61e7f" start_index="0" end="4eaba889-4716-4104-8c52-5a6ba724c99b" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="dbfa014e-998d-4726-92b7-805c10633ce8" start_index="0" end="c64ae857-f7fb-46e9-9b09-f9d672b73c56" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="dbfa014e-998d-4726-92b7-805c10633ce8" start_index="0" end="2032731a-03f6-450b-9a08-bb8370b7e359" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="dbfa014e-998d-4726-92b7-805c10633ce8" start_index="0" end="c8c6d01e-b651-4720-bd8f-5c21befd8038" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="dbfa014e-998d-4726-92b7-805c10633ce8" start_index="0" end="7abb2d10-8311-4b72-b5d7-5e040d491189" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c64ae857-f7fb-46e9-9b09-f9d672b73c56" start_index="0" end="8eb7a5e5-987a-4d5b-a033-4953d461419b" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4eaba889-4716-4104-8c52-5a6ba724c99b" start_index="0" end="c8c6d01e-b651-4720-bd8f-5c21befd8038" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4eaba889-4716-4104-8c52-5a6ba724c99b" start_index="0" end="7abb2d10-8311-4b72-b5d7-5e040d491189" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3b3e8dd2-c6c2-4dfa-924a-1e4b6bc0d213" start_index="0" end="c64ae857-f7fb-46e9-9b09-f9d672b73c56" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="591b95b5-a758-4da2-8b57-a8fbd6e0fd12" start_index="0" end="3b3e8dd2-c6c2-4dfa-924a-1e4b6bc0d213" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3f4868f5-70e9-4cca-a523-474ff9839ad5" start_index="0" end="a3265569-1287-4634-b25f-b7cfa9806ef5" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b663bba8-b23e-4385-b51c-e772ead7350e" start_index="0" end="dd8dda32-2982-439d-a4ab-0b38c15f02c4" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="be9b8124-b732-4518-842a-637c929ff080" start_index="0" end="dd8dda32-2982-439d-a4ab-0b38c15f02c4" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="9f176577-1d9b-49d6-ae19-e0c3e10c0215" start_index="0" end="c64ae857-f7fb-46e9-9b09-f9d672b73c56" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="2032731a-03f6-450b-9a08-bb8370b7e359" start_index="0" end="8eb7a5e5-987a-4d5b-a033-4953d461419b" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="6b743da8-ac8b-4404-bf79-3d8e0114d8a3" start_index="0" end="8eb7a5e5-987a-4d5b-a033-4953d461419b" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="626c16a3-9fd2-4593-b369-ea9467bf1d64" start_index="0" end="a3265569-1287-4634-b25f-b7cfa9806ef5" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8eb7a5e5-987a-4d5b-a033-4953d461419b" start_index="0" end="4eaba889-4716-4104-8c52-5a6ba724c99b" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c8c6d01e-b651-4720-bd8f-5c21befd8038" start_index="0" end="e3bbe009-83c3-4b70-9a3a-988bae178162" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="062c932f-d5f8-4d5a-9ac1-c3fae27cdd62" start_index="0" end="c8c6d01e-b651-4720-bd8f-5c21befd8038" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="062c932f-d5f8-4d5a-9ac1-c3fae27cdd62" start_index="0" end="7abb2d10-8311-4b72-b5d7-5e040d491189" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="7abb2d10-8311-4b72-b5d7-5e040d491189" start_index="0" end="cefc0205-2ad6-49cd-9abb-4cf76aada9d8" end_index="0" portType="0" />
+  </Connectors>
+  <Notes>
+    <Dynamo.Models.NoteModel guid="1747c1b7-8163-40a7-a41e-0ffdfd867726" text="The three numbers make the three properties required for a point." x="498.396285526483" y="287.875253377674" />
+    <Dynamo.Models.NoteModel guid="4d1c67d3-4eca-4bee-972a-8d38b28511c6" text="There are several different ways to make a number." x="85.6224055821737" y="311.138022870676" />
+    <Dynamo.Models.NoteModel guid="e7f11d54-154b-48d7-85ec-0de43217fea3" text="Defining a number range creates a list." x="129.207016582294" y="671.884728824686" />
+    <Dynamo.Models.NoteModel guid="747ec09e-2572-440f-9e28-091616589f1b" text="By changing the lacing to &quot;Cross Product&quot;, we create a grid of points." x="376.345830949258" y="665.818428395132" />
+    <Dynamo.Models.NoteModel guid="618ebdc3-8f54-4214-82a6-b67807afb7c9" text="Remapping a range is a fundamental method for parametric modeling: we're using a one data source to drive another.  The data is remapped so that circles fit within the grid." x="1254.58512316244" y="984.20448345503" />
+    <Dynamo.Models.NoteModel guid="8a29c431-9d6d-4715-990b-d468491a402a" text="Curve.Extrude creates surfaces." x="2421.34697713203" y="160.701008061443" />
+    <Dynamo.Models.NoteModel guid="7eff5188-959a-4f1c-a124-775fec39277f" text="Curve.ExtrudeAsSolid creates solids." x="2421.44558559365" y="531.240558543597" />
+    <Dynamo.Models.NoteModel guid="dd5497a7-9075-41ba-b327-70f347548861" text="Create circles with radius relative to distance from reference point." x="1936.16113931896" y="361.088549430128" />
+    <Dynamo.Models.NoteModel guid="9b06b3a5-498c-4727-aabe-d8f433146649" text="Calculate distance from reference point to grid point." x="801.944434482214" y="288.767899568476" />
+    <Dynamo.Models.NoteModel guid="234f83c2-7e2e-480a-9084-35126874ea4e" text="In the two batteries above, one case uses the 'division' battery, while the other uses the 'formula' battery.  The two are operating in the same way here, but we have more flexibility with the 'formula' battery." x="842.711834750862" y="1074.26760517773" />
+    <Dynamo.Models.NoteModel guid="edfdf060-fe46-4576-abfb-bdf8fd628a91" text="An alternative option to the remap range statment is a conditional formula.  The formula above will separate the cylinders into two different radius values." x="1252.41662283659" y="739.837152037366" />
+    <Dynamo.Models.NoteModel guid="a8f6be21-bffd-4d4c-a90d-fae1abd7e876" text="With this formula, we can toggle two separate design approoaches for defining the radius of each circle." x="1743.7100394844" y="804.180998271819" />
+    <Dynamo.Models.NoteModel guid="6e519a3b-879a-45da-adb8-852906d578e6" text="Change the boolean here to toggle different schemes." x="1258.36907391154" y="247.398615626643" />
+  </Notes>
+  <Annotations />
+</Workspace>
