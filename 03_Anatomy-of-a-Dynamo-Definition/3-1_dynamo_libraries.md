@@ -1,6 +1,6 @@
-## 3.1 DYNAMO LIBRARIES
+## 3.1 DYNAMO LIBRARY
 
-_Introduction Text_
+The Library contains   is a browser for picking and searching for nodes.
 
 ###3.1.1	Organizational Scheme and Naming Conventions
 ###3.1.2	Broad Categories
