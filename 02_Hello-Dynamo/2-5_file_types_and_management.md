@@ -1,3 +1,3 @@
-# 2.3.3 File Types and Management
+## 2.3 File Types and Management
 
 _Introduction Text_
