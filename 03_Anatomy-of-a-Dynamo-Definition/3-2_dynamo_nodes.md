@@ -1,4 +1,4 @@
-## 3.2 DYNAMO NODES
+## 3.2 NODES AND WIRES
 
 _Introduction Text_
 
@@ -9,3 +9,10 @@ _Introduction Text_
 ###3.2.3	Notifications (Errors and Warnings)
 ###3.2.4	Data Preview
 ###3.2.5	Context Menu
+
+###3.2.6 Wires
+spline vs polyline
+
+###3.2.7 Viewing Data
+watch
+watch3d
