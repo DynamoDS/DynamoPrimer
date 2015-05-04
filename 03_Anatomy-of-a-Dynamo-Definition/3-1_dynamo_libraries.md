@@ -4,6 +4,9 @@ The Library contains the Nodes we add to the Workspace to define logical graphs 
 
 ###3.1.1	Organizational Scheme and Naming Conventions
 
+* Hierarchy
+* Naming (input.number)
+
 
 ###3.1.2	Library Categories
 * Analyze
@@ -16,8 +19,16 @@ The Library contains the Nodes we add to the Workspace to define logical graphs 
 
 
 ###3.1.3 Frequently Used Nodes
+Text
 
 ####3.1.3.1	Inputs
+* Number
+* Sliders
+* Boolean
+
 ####3.1.3.2	Core/Geometry/Operators
+
 ####3.1.3.3	Watch
+
+
 ####3.1.3.4	Code Blocks
