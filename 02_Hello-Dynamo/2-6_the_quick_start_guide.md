@@ -1,4 +1,4 @@
-## 2.6 THE QUICK START GUIDE
+## 2.4 GETTING STARTED
 
 _Introduction Text_
 
