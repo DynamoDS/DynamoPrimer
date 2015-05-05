@@ -73,8 +73,9 @@ If you now with relative specificity which Node you want to add to your Workspac
 
 ![NEEDS UPDATE-callouts Searching the Library](images/2-2/07-LibrarySearching.png)
 >1. Search Field
-2. Best Fit Result / Selected
-3. Alternate Matches
+2. Best Fit Result 
+3. Result Pop Up
+4. Alternate Matches
 
 ###2.3.4	Settings
 From geometric to user settings, these options can be found in the **Settings** menu. Here you can opt in or out for sharing your user data to improve Dynamo as well as define the application's decimal point precision and geometry render quality.
@@ -84,8 +85,8 @@ From geometric to user settings, these options can be found in the **Settings** 
 ![show menu](images/2-2/08-Help.jpg)
 
 >1. Enabling Reporting
-2. Render Quality
-3. Number Format
+2.  Number Format
+3. Render Quality
 
 ###2.3.5	Help 
 If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to check the version of Dynamo installed and whether it is up to date through the **About** option.
