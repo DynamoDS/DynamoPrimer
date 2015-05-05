@@ -51,7 +51,6 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 5. Migration - description
 6. Office - description
 7. Operators - description
-8. Tessellation - description
 
 Browse the Library by clicking through the menus. Click the Geometry > Circle. Note the new portion of the menu that is revealed and specifically the **Create** and **Query** Labels. 
 
@@ -64,8 +63,8 @@ Browse the Library by clicking through the menus. Click the Geometry > Circle. N
 From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The window reveals more detailed information about the Node beyond its name and icon. This offers us a quick way to understand what the Node does, what it will require for inputs, and what it will give as an output.  
 
 ![Node Pop Up Window](images/2-2/06-NodePopup.png)
->1. Icon - larger version of the icon in the Library Menu
-2. Description - plain language description of the Node
+>1. Description - plain language description of the Node 
+2. Icon - larger version of the icon in the Library Menu
 3. Input(s) - name,  data type, and data structure  
 4. Output(s) - data type and structure
 
