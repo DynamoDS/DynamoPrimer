@@ -4,8 +4,10 @@ You can parse through large amounts of data quickly by querying strings.  We'll 
 ####String.Split
 The image below considers a string of data coming from an external spreadsheet.  The string represents the vertices of a rectangle in the XY-Plane.
 ![StringSplit](images/4-4/4-4-1-04.jpg)
-> The image above represents the splitting of a sdtring into an array of four items:
-1. The ";" separator splits each vertex of the rectangle.
+> 1. The ";" separator splits each vertex of the rectangle.
+
+![StringSplit]()
+> 1. The "
 
 ####String.IndexOf
 Before performing parsing through 
