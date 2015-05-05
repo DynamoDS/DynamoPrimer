@@ -16,7 +16,7 @@
    * [Getting Started](02_Hello-Dynamo/2-6_the_quick_start_guide.md)
    * [File Types and File Management](02_Hello-Dynamo/2-5_file_types_and_management.md)
 * [The Anatomy of a Visual Program](03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.md)
-   * Nodes
+   * [Nodes](03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.md)
    * [Libraries](03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_libraries.md)
    * [Wires](03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_nodes.md)
    * [Best Practices](03_Anatomy-of-a-Dynamo-Definition/3-3_best_practices.md)
