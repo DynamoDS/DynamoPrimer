@@ -3,7 +3,7 @@ Since a string is a generic text object, they host a wide range of applications.
 
 ####Concatenate
 Concatenate is a method of merging two strings together in order. This takes each literal string in a list and creates one merged string.
-![Concatenate](images/4-4/4-4-1-02.png)
+![Concatenate](images/4-4/4-4-1-005.png)
 > The image above represents the concatenation of three strings:
 1. Add or subtract strings to the concatenation by clicking the +/- buttons int he center of the battery.
 2. The output gives one concatenated string, with spaces and punctuation included.
