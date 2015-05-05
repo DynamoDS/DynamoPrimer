@@ -17,6 +17,7 @@
    * [File Types and File Management](02_Hello-Dynamo/2-5_file_types_and_management.md)
 * [The Anatomy of a Visual Program](03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.md)
    * [Dynamo Libraries](03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_libraries.md)
+       * Nodes
    * [Nodes and Wires](03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_nodes.md)
    * [Best Practices](03_Anatomy-of-a-Dynamo-Definition/3-3_best_practices.md)
 * [The Building Blocks of Programs](04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.md)
