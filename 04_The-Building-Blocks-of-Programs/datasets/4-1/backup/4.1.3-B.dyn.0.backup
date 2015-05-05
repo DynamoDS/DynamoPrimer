@@ -1,0 +1,61 @@
+<Workspace Version="0.8.0.1112" X="234.629468289659" Y="-97.180035313927" zoom="0.732023572298787" Name="Home" RunType="Automatic" RunPeriod="100" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Nodes.DoubleInput guid="ba860ac1-df81-4ce9-a4b6-87f95cffc27c" type="Dynamo.Nodes.DoubleInput" nickname="Number" x="305.893726479154" y="358.372816661516" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="0" />
+    </Dynamo.Nodes.DoubleInput>
+    <DSCoreNodesUI.Input.DoubleSlider guid="3f212073-809f-497d-b4a2-69c38261bc71" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Number Slider" x="69.6224055821737" y="424.607610452357" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double>0.8</System.Double>
+      <Range min="0" max="10" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <Dynamo.Nodes.DSFunction guid="a3265569-1287-4634-b25f-b7cfa9806ef5" type="Dynamo.Nodes.DSFunction" nickname="Point.ByCoordinates" x="507.457422585193" y="358.372816661516" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <DSCoreNodesUI.NumberRange guid="dd8dda32-2982-439d-a4ab-0b38c15f02c4" type="DSCoreNodesUI.NumberRange" nickname="Number Range" x="127.626393161819" y="711.117770791283" isVisible="true" isUpstreamVisible="true" lacing="Longest" />
+    <DSCoreNodesUI.Input.DoubleSlider guid="8feaebf0-49c5-4e69-b3ef-b7afe91eb0c3" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Number Slider" x="-217.072833819935" y="831.351372413915" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double>1.22</System.Double>
+      <Range min="0.5" max="5" step="0.01" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <Dynamo.Nodes.DSFunction guid="4d429947-1874-453e-80fc-02a37ae61e7f" type="Dynamo.Nodes.DSFunction" nickname="Point.ByCoordinates" x="496.20226966051" y="705.131501487156" isVisible="true" isUpstreamVisible="true" lacing="CrossProduct" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="dbfa014e-998d-4726-92b7-805c10633ce8" type="Dynamo.Nodes.DSFunction" nickname="Geometry.DistanceTo" x="966.073996107723" y="341.139536645378" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Geometry.DistanceTo@Autodesk.DesignScript.Geometry.Geometry" />
+    <DSCoreNodesUI.Input.IntegerSlider guid="3f4868f5-70e9-4cca-a523-474ff9839ad5" type="DSCoreNodesUI.Input.IntegerSlider" nickname="Integer Slider" x="69.6224055821737" y="490.842404243197" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Int32>10</System.Int32>
+      <Range min="0" max="10" step="1" />
+    </DSCoreNodesUI.Input.IntegerSlider>
+    <Dynamo.Nodes.DoubleInput guid="b663bba8-b23e-4385-b51c-e772ead7350e" type="Dynamo.Nodes.DoubleInput" nickname="Number" x="17.9271661800647" y="699.049485808063" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="0" />
+    </Dynamo.Nodes.DoubleInput>
+    <Dynamo.Nodes.DoubleInput guid="be9b8124-b732-4518-842a-637c929ff080" type="Dynamo.Nodes.DoubleInput" nickname="Number" x="11.9271661800647" y="765.200429110989" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double value="10" />
+    </Dynamo.Nodes.DoubleInput>
+    <Dynamo.Nodes.DSFunction guid="d369666b-3a08-44ec-8f70-0c75eee86d71" type="Dynamo.Nodes.DSFunction" nickname="Line.ByStartPointEndPoint" x="981.228364612668" y="560.789807546988" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Line.ByStartPointEndPoint@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="ba860ac1-df81-4ce9-a4b6-87f95cffc27c" start_index="0" end="a3265569-1287-4634-b25f-b7cfa9806ef5" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3f212073-809f-497d-b4a2-69c38261bc71" start_index="0" end="a3265569-1287-4634-b25f-b7cfa9806ef5" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a3265569-1287-4634-b25f-b7cfa9806ef5" start_index="0" end="dbfa014e-998d-4726-92b7-805c10633ce8" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a3265569-1287-4634-b25f-b7cfa9806ef5" start_index="0" end="d369666b-3a08-44ec-8f70-0c75eee86d71" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="dd8dda32-2982-439d-a4ab-0b38c15f02c4" start_index="0" end="4d429947-1874-453e-80fc-02a37ae61e7f" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="dd8dda32-2982-439d-a4ab-0b38c15f02c4" start_index="0" end="4d429947-1874-453e-80fc-02a37ae61e7f" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8feaebf0-49c5-4e69-b3ef-b7afe91eb0c3" start_index="0" end="dd8dda32-2982-439d-a4ab-0b38c15f02c4" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4d429947-1874-453e-80fc-02a37ae61e7f" start_index="0" end="dbfa014e-998d-4726-92b7-805c10633ce8" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4d429947-1874-453e-80fc-02a37ae61e7f" start_index="0" end="d369666b-3a08-44ec-8f70-0c75eee86d71" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3f4868f5-70e9-4cca-a523-474ff9839ad5" start_index="0" end="a3265569-1287-4634-b25f-b7cfa9806ef5" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b663bba8-b23e-4385-b51c-e772ead7350e" start_index="0" end="dd8dda32-2982-439d-a4ab-0b38c15f02c4" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="be9b8124-b732-4518-842a-637c929ff080" start_index="0" end="dd8dda32-2982-439d-a4ab-0b38c15f02c4" end_index="1" portType="0" />
+  </Connectors>
+  <Notes>
+    <Dynamo.Models.NoteModel text="The three numbers make the three properties required for a point." x="498.396285526483" y="287.875253377674" />
+    <Dynamo.Models.NoteModel text="There are several different ways to make a number." x="85.6224055821737" y="311.138022870676" />
+    <Dynamo.Models.NoteModel text="Defining a number range creates a list." x="129.207016582294" y="671.884728824686" />
+    <Dynamo.Models.NoteModel text="By changing the lacing to &quot;Cross Product&quot;, we create a grid of points." x="498.486382043823" y="651.542260085378" />
+    <Dynamo.Models.NoteModel text="Calculate distance from reference point to grid point." x="959.341725296274" y="271.534619552338" />
+    <Dynamo.Models.NoteModel text="A line has the same input, and allows us to represent the relationship visually." x="978.13479393459" y="504.093287472612" />
+  </Notes>
+</Workspace>
