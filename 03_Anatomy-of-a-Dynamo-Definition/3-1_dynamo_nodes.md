@@ -1,8 +1,11 @@
 ## 3.1 NODES 
 
-In Dynamo, Nodes are the objects you add to the Workspace and connect to form a Visual Program. Each Node performs an operation - ranging from as simple as storing a number to creating geometry. 
+In Dynamo, Nodes are the objects you add to the Workspace and connect to form a Visual Program. Each Node performs an operation - sometimes as simple as storing a number to more complex actions such as creating or querying geometry. 
 
-###3.1.1	Ports
+###3.1.1 Anatomy of a Node
+
+###3.2.1	Ports
+
 ####3.1.1.1	Data Types
 ####3.1.1.2	Default Values
 ###3.1.2	Tool Tips
