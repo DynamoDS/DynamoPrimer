@@ -7,25 +7,32 @@ In Dynamo, Nodes are the objects you add to the Workspace and connect to form a 
 
 ![NEEDS UPDATE - Node Breakdown Point by Coordinates](images/Placeholder.png)
 >1. Name
-2. Ports
-3. Ports
-4. 
+2. Main
+3. Ports (In and Out)
+4. Data Preview
+5. Lacing Icon
 
 ###3.1.2 Ports
+The Inputs and Outputs for Nodes are called Ports and are the receptors for Wires. Data comes into the Node through Ports on the left and flows out of the Node after it has executed its operation on the right. Ports expect to receive data of a certain type. For instance, connecting a number such as 2.75 to the Ports on a Point By Coordinates Node will successfully result in creating a Point; however, if we supply "Red" to the same Port it will result in an error.
+
+> Tip: Hover over a Port to see a tooltip containing the data type expected.
+
+![NEEDS UPDATE - Ports](images/Placeholder.png)
+
 * Label
 * Tool Tip
 * * Data Type
 * * Description
 
 ###3.1.3 States
-(Text)
+Dynamo 
 
 ![NEEDS UPDATE - Node States](images/Placeholder.png)
 
->1. Inactive - Nodes with a light grey Name background are inactive or waiting for data
-2. Active - Nodes with a dark grey Name background are active
-3. Warning - Nodes that are unsuccesfully executing are Yellow 
-4. Selected - Nodes with an Aqua border are currently selected
+>1. Inactive - Grey Nodes are inactive and need to be connected with Wires to be part of the Program Flow in the active Workspace.
+2. Active - Nodes with a Dark Grey Name background are well-connected and have all of their inputs successfully connected. They are part of the active Program Flow.
+3. Warning - Yellow Nodes are in an Error state. 
+4. Selected - Currently selected Nodes have an Aqua highlight on their border. 
 
 If your Visual Program contains warning or errors, Dynamo will provide additional information about the problem. Any Node that is Yellow will also have a tooltip above the Name. Hover your mouse over the tooltip to expand it. 
 
