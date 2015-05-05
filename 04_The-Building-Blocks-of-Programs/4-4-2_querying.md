@@ -16,10 +16,3 @@ The image below considers a string of data coming from an external spreadsheet. 
 While the list of items above may look like numbers, they are still regarded as individual strings in Dynamo.  In order to create points, their data type needs to be converted from a string to a number.  This is done with the String.ToNumber battery:
 ![StringToNumber](images/4-4/4-4-1-004.png)
 > 1. The "
-
-####String.IndexOf
-Before performing parsing through 
-![Concatenate](images/4-4/4-4-1-02.png)
-> The image above represents the concatenation of three strings:
-1. Add or subtract strings to the concatenation by clicking the +/- buttons int he center of the battery.
-2. The output gives one concatenated string, with spaces and punctuation included.
