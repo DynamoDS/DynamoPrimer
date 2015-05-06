@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ## 4.2.2 Arithmetic Operators
 Operators are a set of components that use
 algebraic functions with two numeric input values, which result in one output
@@ -66,5 +64,4 @@ The round operations will 'round' to the closest number in the range.
 ```
 Round(11/6) = Round(1.833) = 2```
 
->>>>>>> origin/EK
 

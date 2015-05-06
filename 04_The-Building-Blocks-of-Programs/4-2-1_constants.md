@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ## 4.2.1 Constants
 
 ###Pi
@@ -15,4 +12,4 @@ The number *e* is a mathematical constant which is based on the natural logarith
 ![](../images/icons/DSCore-Math-GoldenRatio-Large.png)
 
 Another irrational constant, the golden ratio defines that two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities.  This ratio appears often in geometry and biological systems, and is considered for a wide-range of applications ranging from the practical to the aesthetic.
->>>>>>> origin/EK
+
