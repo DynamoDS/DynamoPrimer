@@ -82,7 +82,7 @@ From geometric to user settings, these options can be found in the **Settings** 
 
 > Note: Remember that Dynamo's units are generic.
 
-![show menu](images/2-2/08-Help.jpg)
+![show menu](images/2-2/08-Settings.png)
 
 >1. Enabling Reporting
 2. Render Quality
@@ -91,7 +91,7 @@ From geometric to user settings, these options can be found in the **Settings** 
 ###2.3.5	Help
 If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to check the version of Dynamo installed and whether it is up to date through the **About** option.
 
-![show menu](images/2-2/09-Settings.jpg)
+![show menu](images/2-2/09-Help.png)
 
 >1. Samples
 2. Report A Bug
