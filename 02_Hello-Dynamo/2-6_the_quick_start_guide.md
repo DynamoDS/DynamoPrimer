@@ -3,9 +3,9 @@
 _Introduction Text_
 
 ###2.6.1	Dynamo Interface
-###2.6.2	Dynamo Elements 
+###2.6.2	Dynamo Elements
 Nodes, Ports, Wires
-###2.6.3	Your first Graph 
+###2.6.3	Your first Graph
 
 
 ## 2.4 The Workflow
