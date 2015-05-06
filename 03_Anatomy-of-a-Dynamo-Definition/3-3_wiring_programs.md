@@ -1,4 +1,4 @@
-## 3.2 NODES AND WIRES
+## 3.2 WIRING PROGRAMS
 
 _Introduction Text_
 
