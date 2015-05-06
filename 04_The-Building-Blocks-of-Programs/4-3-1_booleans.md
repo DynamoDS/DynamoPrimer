@@ -12,6 +12,6 @@ limited range. We use booleans to evaluate conditions.
 At the most basic level, Dynamo has a boolean battery which functions as a light switch for logical operations:
 
 ![bool](images/4-3/4-3-1/01-battery.png)
-> The boolean battery in Dynamo is a basic radio button, toggling between true and false.
+> The boolean battery is a basic radio button, toggling between true and false.
 
 
