@@ -38,7 +38,7 @@ Dynamo's Toolbar contains a series of buttons for quick access to working with f
 6. Export Workspace as Image - Export the visible workspace as a PNG file
 
 ####2.2.3	Library
-The Library contains all of the loaded Nodes including the core Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Libary are organized hierarchically by category and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data.
+The Library contains all of the loaded Nodes including the default Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Libary are organized hierarchically within libraries, categories, and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data.
 
 #####2.2.3.1	Browsing
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.

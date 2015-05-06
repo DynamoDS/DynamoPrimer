@@ -1,6 +1,6 @@
 ##2.3 The Workspace
 
-The Dynamo **Workspace** is where we develop our graphs, but it's also where we preview any resulting geometry. Wether we are working in a Home Workspace or a Custom Node, we can navigate with our mouse or the buttons at top right. Toggling between modes at bottom right switches which preview we navigate. 
+The Dynamo **Workspace** is where we develop our visual programs, but it's also where we preview any resulting geometry. Wether we are working in a Home Workspace or a Custom Node, we can navigate with our mouse or the buttons at top right. Toggling between modes at bottom right switches which preview we navigate.
 
 > Note: Nodes and geometry have a draw order so you may have objects rendered on top of each other. This can be confusing when adding multiple nodes in sequence as they may be rendered in the same position in the Workspace.
 
@@ -12,7 +12,7 @@ The Dynamo **Workspace** is where we develop our graphs, but it's also where we 
 4. Double Clicking
 
 ###2.3.1 Tabs
-The active Workspace tab allows you to navigate and edit your graph. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the New Node by Selection right-click option when Nodes are selected. 
+The active Workspace tab allows you to navigate and edit your graph. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the New Node by Selection right-click option when Nodes are selected.
 
 ![NEEDS UPDATE-callouts Tabs](images/2-3/02-Tabs.jpg)
 
@@ -29,7 +29,7 @@ In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometr
 
 ###2.3.3 Hello Mouse!
 
-Based on which Preview mode is active, your mouse buttons will do different options. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking. 
+Based on which Preview mode is active, your mouse buttons will do different options. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking.
 
 ![basic navigation call out](images/2-3/04-HelloMouse.jpg)
 
@@ -37,7 +37,7 @@ Based on which Preview mode is active, your mouse buttons will do different opti
 2. Right Click on a Node
 3. Right Click on a Note
 
-Here's a table of mouse interactions per Preview: 
+Here's a table of mouse interactions per Preview:
 
 **Mouse Action** | **Graph Preview** | **3D Preview**
 --- | --- | ---

@@ -34,4 +34,4 @@ Open the first sample file to open your first workspace and confirm Dynamo is wo
 
 ![NEEDS UPDATE - drop shadow - Basics_Basic01](images/2-1/05-Basics_Basic01.jpg)
 
-If this file successfully loads, click Run at the bottom left and you should be able to execute your first graph.
+If this file successfully loads, click Run at the bottom left and you should be able to execute your first visual program.

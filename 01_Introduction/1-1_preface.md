@@ -5,7 +5,7 @@
 Welcome Text
 - background, previous versions, ml dynamo activities
 - our excitement to have developed this primer (where dynamo is going)
-- the ambitions around the project (fundamental concepts, cross-disciplinary ie use the sandbox, 
+- the ambitions around the project (fundamental concepts, cross-disciplinary ie use the sandbox,
 - this is guide to the current dynamo version
 - team signature
 

@@ -3,20 +3,20 @@
 Now that we have familiarized ourselves with the interface layout and navigating the Workspace, our next step is to understand the typical workflow for developing a graph in Dynamo. Let's get started by creating a dynamically sized circle and then create an array of circles with varying radii.
 
 ###2.4.1. Defining Objectives and Relationships
-Before we add anything to the Dynamo Workspace, it is key that we have a solid understanding of what we are trying to achieve and what the significant relationships will be. Remember that anytime we are connecting two Nodes, we are creating an explicit link between them - we may change the flow of data later, but once connected we've commited to that relationship. In this exercise we want to create a circle (*Objective*) where the radius input is defined by a distance to a nearby point (*Relationship*). 
+Before we add anything to the Dynamo Workspace, it is key that we have a solid understanding of what we are trying to achieve and what the significant relationships will be. Remember that anytime we are connecting two Nodes, we are creating an explicit link between them - we may change the flow of data later, but once connected we've commited to that relationship. In this exercise we want to create a circle (*Objective*) where the radius input is defined by a distance to a nearby point (*Relationship*).
 
 ![NEEDS UPDATE - Hand Sketch of Circle](images/Placeholder.png)
 
-> A point that defines a distance-based relationship is commonly referred to as an "Attractor." Here the distance to our Attractor Point will be used to specify how big our circle should be. 
+> A point that defines a distance-based relationship is commonly referred to as an "Attractor." Here the distance to our Attractor Point will be used to specify how big our circle should be.
 
 ###2.4.2. Adding Nodes to the Workspace
-Now that we have our Objectives and Relationships sketched we can begin creating our graph. We need the Nodes that will represent the sequence of actions Dynamo will execute. Since we know we are trying to create a circle, let's start by locating a Node that do so. Using the Search field or browing through the Library, we will find that there is more than one way to create a circle. 
+Now that we have our Objectives and Relationships sketched we can begin creating our graph. We need the Nodes that will represent the sequence of actions Dynamo will execute. Since we know we are trying to create a circle, let's start by locating a Node that do so. Using the Search field or browing through the Library, we will find that there is more than one way to create a circle.
 
 ![NEEDS UPDATE-shadows and callouts - Browse and Search](images/2-4/01-BrowseAndSearch.png)
 > 1. Browse to Geometry > Circle > Circle By Point and Radius
 2. Search > "Circle by Point..."
 
-Let's add the Circle By Point and Radius Node to the Workspace by clicking on it in the Library - this should add the Node to the center of the Workspace. 
+Let's add the Circle By Point and Radius Node to the Workspace by clicking on it in the Library - this should add the Node to the center of the Workspace.
 
 ![NEEDS UPDATE-callouts - Circle Added](images/2-4/02-CircleAdded.png)
 
@@ -32,7 +32,7 @@ We also will need Point By Coordinates, Number Input, and Number Slider Nodes.
 3. Core > Input > Number Slider
 
 ###2.4.3 Connecting Nodes with Wires
-Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wires. These connections will define the flow of data through the Graph. 
+Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wires. These connections will define the flow of data through the Graph.
 
 ![NEEDS UPDATE - Connections made](images/2-4/04-NodesConnected.png)
 > 1. Number to Point by Coordinates
@@ -41,7 +41,7 @@ Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wir
 4. Point by Coordinates and Distance To to Circle by Center Point and Radius
 
 ###2.4.4 Executing the Graph
-With our Graph defined, all we need to do is tell Dynamo to execute it. By clicking on Run in the Execution Bar, the Nodes will be activated, data will pass through the Wires, and we should see the results of the Graph in the 
+With our Graph defined, all we need to do is tell Dynamo to execute it. By clicking on Run in the Execution Bar, the Nodes will be activated, data will pass through the Wires, and we should see the results of the Graph in the
 
 ![NEEDS UPDATE - After Run](images/2-4/05-GraphExecuted.png)
 > 1. Click Run - In Manual Mode, we need to Click Run to execute the graph
