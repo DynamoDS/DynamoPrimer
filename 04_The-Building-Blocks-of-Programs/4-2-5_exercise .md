@@ -1,9 +1,28 @@
-###Fibonacci Spiral
+##Math Exercise - Fibonacci Spiral
 
 ![](images/4-2/4-2-5/01.png)
 >In the first step, we define a number sequence based on three inputs: start, amount and step.  This sequence represents the 't' in the parametric equation, so we want to use a list that's large enough to define a spiral.
 
 ![](images/4-2/4-2-5/02.png)
+
+![](images/4-2/4-2-5/03.png)
+
+![](images/4-2/4-2-5/03aaa.png)
+> 1. **Polycurve.ByPoints:** Point.ByCoordinates into *points*.  We can leave *connectLastToFirst* without an input because we aren't making a closed curve.  This creates a spiral which passes through each point defined in the previous step.
+
+We've now completed the Fibonacci Spiral!  We'll now branch into two separate exercises from here, which we'll call the Nautilus and the Sunflower.  These are abstractions of natural systems, but the two different applications of the Fibonacci spiral will make sense visually.
+###Nautilus
+![](images/4-2/4-2-5/03.png)
+
+![](images/4-2/4-2-5/03aa.png)
+
+![](images/4-2/4-2-5/03a.png)
+
+###Sunflower
+
+
+
+
 
 ![](images/4-2/4-2-5/03.png)
 
@@ -13,9 +32,8 @@
 
 ![](images/4-2/4-2-5/06.png)
 
-![](images/4-2/4-2-5/07.png)
 
-![](images/4-2/4-2-5/08.png)
->1. Curve.ParameterAtPoint: The input for the curve is the Polycurve.ByPoints battery and the input for the point list is Point.ByCoordinates.  With this battery, we get a normalized parameter along the curve, which is a setup for the step to follow.
-2. Curve.PlaneAtParameter: The curve input is Polycurve.ByPoints and the param input is the battery from the previous step.  This gives us a perpendicular frame to the curve at each point.
-3.  Add a Circle.ByPlaneRadius battery to the canvas.
+
+
+
+
