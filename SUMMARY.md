@@ -45,6 +45,6 @@
        * [Querying](04_the-building-blocks-of-programs/4-5-2_querying.md)
        * [Range](04_The-Building-Blocks-of-Programs/4-5-3_range.md)
        * [Color Preview](04_The-Building-Blocks-of-Programs/4-5-4_preview.md)
-       * [Color Exercise](04_The-Building-Blocks-of-Programs/4-5-5_exercise.md)
+       * [Color Exercise](04_the-building-blocks-of-programs/4-5-5_exercise.md)
 * [Appendix](appendix.md)
 
