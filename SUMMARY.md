@@ -14,7 +14,6 @@
    * [The User Interface](02_Hello-Dynamo/2-2_the_dynamo_ui.md)
    * [The Workspace](02_Hello-Dynamo/2-3_the_workspace.md)
    * [Getting Started](02_Hello-Dynamo/2-6_the_quick_start_guide.md)
-   * [File Types and File Management](02_Hello-Dynamo/2-5_file_types_and_management.md)
 * [The Anatomy of a Visual Program](03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.md)
    * [Nodes](03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.md)
    * [Library](03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.md)
