@@ -1,4 +1,4 @@
-## 3.3 BEST PRACTICESssss
+## 3.4 BEST PRACTICES
 
 _Introduction Text_
 
