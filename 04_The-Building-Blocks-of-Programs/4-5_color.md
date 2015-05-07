@@ -9,7 +9,7 @@
 
 
 ###4.5.2 Querying
-**RGB Space -** The colors in the table below query the properties used to define the color: Alpha, Red, Green, and Blue.  Note that the Color.Components battery gives us all four as different outputs, so this is definitely the battery of preference if you want to extract the properties of a color.
+**RGB Space -** The colors in the table below query the properties used to define the color: Alpha, Red, Green, and Blue.  Note that the Color.Components battery gives us all four as different outputs, which makes this battery preferable for querying the  properties of a color.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- | -- |
@@ -19,7 +19,7 @@
 | ![](../images/icons/DSCore-Color-Blue-Large.png) | Blue | Color.Blue | color | B |
 | ![](../images/icons/DSCore-Color-Components-Large.png) | Components | Color.Components | color | A,R,G,B |
 
-**HSB Space - ** The colors in the table below correspond to HSB, a different color space.  Dividing the color into hue, saturation, and brightness values is often more intuitive for how we interpret color.  If we want to edit a color, we can ask ourselves: What color should it be? How colorful should it be? How light or dark should it be?  This is the breakdown of hue, saturation, and brightness respectively.
+**HSB Space - ** The colors in the table below correspond to the HSB color space.  Dividing the color into hue, saturation, and brightness is arguably more intuitive for how we  interpret color: What color should it be? How colorful should it be? And how light or dark should the color be?  This is the breakdown of hue, saturation, and brightness respectively.
 
 | Icon | Query Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- | -- |
@@ -44,7 +44,7 @@ The best way to become familiar with the color gradient is to test it out intera
 
 The **Display.ByGeometry** battery gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** battery.  Both of these batteries are discussed in the Color exercise at the end of this section.
 ###4.5.5 Color Exercise
-This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **code block** (3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
+This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **code block** (3.3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
 
 ![](images/4-5/4-5-5/11.png)
 > 1. **Code Block:** Define the two code blocks with the formulas above.  This is a quick parametric method for creating a spiral.
@@ -99,7 +99,7 @@ The size of the spheres demonstrates the parametric array defined by a reference
 > 1. **Display.ByGeometryColor:** Connect *Sphere.ByCenterPointRadius* into the *geometry* input and the *Color Range* into the *color* input. We now have a smooth gradient across the domain of the curve.
 
 ![](images/4-5/4-5-5/01.png)
-> If we change the value of the *number slider* from earlier in the definition, the colors and sizes update.  Colors and radius size are directly relate in this case.
+> If we change the value of the *number slider* from earlier in the definition, the colors and sizes update.  Colors and radius size are directly related in this case: we now have a visual link between two parameters!
 
 
 

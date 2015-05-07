@@ -1,7 +1,9 @@
 ## 4.4 Strings
 
 ### 4.4.1 Creating Strings
-
+| Icon | Name | Syntax| Inputs | Outputs |
+| -- | -- | -- | -- | -- | -- |-- |
+| ![](../images/icons/Dynamo-Nodes-StringInput-Large.png) | String | String | Text Box | string |
 Formally, a string is a sequence of characters representing a literal constant or some type of variable. Informally, a string is programming lingo for text.  We've worked with numbers (integers and decimal ones) to drive parameters, and we can do the same with text.
 
 ![String Examples](images/4-4/4-4-1-005.png)
@@ -10,10 +12,15 @@ Formally, a string is a sequence of characters representing a literal constant o
 Strings can be used for a wide range of applications, including defining custom parameters, annotating documentation sets, and parsing through text-based data sets. The string battery is located in the Core>Input category of the Dynamo UI.
 
 ### 4.4.2 Querying Strings
-
 You can parse through large amounts of data quickly by querying strings.  We'll talk about some basic operations which can speed up a workflow and help for software interoperability.
-####String.Split
-The image below considers a string of data coming from an external spreadsheet.  The string represents the vertices of a rectangle in the XY-Plane.
+
+**String.Split - ** The image below considers a string of data coming from an external spreadsheet.  The string represents the vertices of a rectangle in the XY-Plane.  Let's break down some string split operations in miniature exercise.
+
+| Icon | Name | Syntax| Inputs | Outputs |
+| -- | -- | -- | -- | -- | -- |-- |
+| ![](../images/icons/DSCore-String-Split-Large.png) | String Split | String.Split | str, separator(s) | string[] |
+
+
 ![StringSplit](images/4-4/4-4-1-001.png)
 > 1. The ";" separator splits each vertex of the rectangle.
 
@@ -44,7 +51,7 @@ The join method is very similar to concatenate, except it has an added layer of 
 > The image above represents the joining of two strings:
 1. The separator input allows one to create a string which divides the joined strings.
 
-### 4.4.4 Strings Exercise
+### 4.4.4 String Exercise
 In this exercise, we're going to use methods of querying and manipulating strings to deconstruct the final stanza of Robert Frost's [Stopping By Woods on a Snowy Evening](http://www.poetryfoundation.org/poem/171621).  Not the most practical application, but it will help us to grasp conceptual string actions as we apply them to legible lines of rhythm and rhyme.
 
 
