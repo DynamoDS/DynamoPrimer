@@ -44,7 +44,7 @@ The best way to become familiar with the color gradient is to test it out intera
 
 The **Display.ByGeometry** battery gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** battery.  Both of these batteries are discussed in the Color exercise at the end of this section.
 ###4.5.5 Color Exercise
-This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **code block** (3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
+This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **code block** (3.3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
 
 ![](images/4-5/4-5-5/11.png)
 > 1. **Code Block:** Define the two code blocks with the formulas above.  This is a quick parametric method for creating a spiral.
