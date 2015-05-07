@@ -82,7 +82,7 @@ The round operations will 'round' to the closest number in the range.
 Round(11/6) = Round(1.833) = 2```
 
 ## 4.2.3 Functions
-#### Math.RemapRange
+#### Remap Range
 ![](../images/icons/DSCore-Math-RemapRange-Large.png)
 
 This is one of the most important functions in parametric modeling.  The component maps a set of values in one domain into another domain, while maintaining the same distribution ratio.
@@ -91,7 +91,7 @@ This is one of the most important functions in parametric modeling.  The compone
 
 Determines the average (mean) of a list of numbers.
 #### Sum
-![](../images/icons/DSCore-Math-RemapRange-Large.png)
+![](../images/icons/DSCore-Math-Sum-Large.png)
 
 Determines the sum of a list of numbers.
 #### Random/RandomList
@@ -109,11 +109,22 @@ In summary, trigonometric functions are functions of an angle, relating the angl
 
 
 #### Inverse Trigonometric Functions
-![](../images/icons/DSCore-Math-Asin-Large.png) ![](../images/icons/DSCore-Math-Acos-Large.png) ![](../images/icons/DSCore-Math-Atan-Large.png)
+| Icon | Name| Syntax| Formula |
+| -- | -- | -- | -- |
+| ![](../images/icons/DSCore-Math-ASin-Large.png) | arcsine| Math.Asin | ![](images/4-2/asin.png) |
+| ![](../images/icons/DSCore-Math-Acos-Large.png) | arccosine | Math.Acos | ![](images/4-2/acos.png) |
+| ![](../images/icons/DSCore-Math-Atan-Large.png) | arctangent | Math.Atan | ![](images/4-2/atan.png) |
+
+
 
 Inverse trigonometric functions use a ratio as an input, with the resultant output being an angle.  The output in Dynamo is degrees.  These are less commonly used in modeling.
 #### Hyperbolic Functions
-![](../images/icons/DSCore-Math-Sinh-Large.png) ![](../images/icons/DSCore-Math-Cosh-Large.png) ![](../images/icons/DSCore-Math-Tanh-Large.png)
+| Icon | Name| Syntax| Formula |
+| -- | -- | -- | -- |
+| ![](../images/icons/DSCore-Math-Sinh-Large.png) | sinh | Math.Sinh | ![](images/4-2/sinh.png) |
+| ![](../images/icons/DSCore-Math-Cosh-Large.png) | cosh | Math.Cosh | ![](images/4-2/cosh.png) |
+| ![](../images/icons/DSCore-Math-Tanh-Large.png) | tanh | Math.Tanh | ![](images/4-2/tanh.png)![](images/4-2/tanh2.png) |
+
 
 Even less common in trigonometry are the hyperbolic functions, which are analogs to the trigonometric functions.  These functions have applications in physics, fluid dynamics, and complex analysis, but are outside of the scope of this primer.
 #### Math.RadiansToDegrees/Math.DegreesToRadians
