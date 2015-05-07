@@ -1,5 +1,5 @@
 #4 THE BUILDING BLOCKS OF PROGRAMS
 
-####Intro text 
+####Intro text
 
 (Insert Image)
