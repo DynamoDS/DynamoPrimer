@@ -109,24 +109,24 @@ In summary, trigonometric functions are functions of an angle, relating the angl
 
 
 #### Inverse Trigonometric Functions
+
+Inverse trigonometric functions use a ratio as an input, with the resultant output being an angle.  The output in Dynamo is degrees.  These are less commonly used in modeling.
+
 | Icon | Name| Syntax| Formula |
 | -- | -- | -- | -- |
 | ![](../images/icons/DSCore-Math-ASin-Large.png) | arcsine| Math.Asin | ![](images/4-2/asin.png) |
 | ![](../images/icons/DSCore-Math-Acos-Large.png) | arccosine | Math.Acos | ![](images/4-2/acos.png) |
 | ![](../images/icons/DSCore-Math-Atan-Large.png) | arctangent | Math.Atan | ![](images/4-2/atan.png) |
 
-
-
-Inverse trigonometric functions use a ratio as an input, with the resultant output being an angle.  The output in Dynamo is degrees.  These are less commonly used in modeling.
 #### Hyperbolic Functions
+Even less common in trigonometry are the hyperbolic functions, which are analogs to the trigonometric functions.  These functions have applications in physics, fluid dynamics, and complex analysis, but are outside of the scope of this primer.
+
 | Icon | Name| Syntax| Formula |
 | -- | -- | -- | -- |
 | ![](../images/icons/DSCore-Math-Sinh-Large.png) | sinh | Math.Sinh | ![](images/4-2/sinh.png) |
 | ![](../images/icons/DSCore-Math-Cosh-Large.png) | cosh | Math.Cosh | ![](images/4-2/cosh.png) |
 | ![](../images/icons/DSCore-Math-Tanh-Large.png) | tanh | Math.Tanh | ![](images/4-2/tanh.png)![](images/4-2/tanh2.png) |
 
-
-Even less common in trigonometry are the hyperbolic functions, which are analogs to the trigonometric functions.  These functions have applications in physics, fluid dynamics, and complex analysis, but are outside of the scope of this primer.
 #### Math.RadiansToDegrees/Math.DegreesToRadians
 ![](../images/icons/DSCore-Math-RadiansToDegrees-Large.png) ![](../images/icons/DSCore-Math-DegreesToRadians-Large.png)
 
