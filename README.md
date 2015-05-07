@@ -1,7 +1,7 @@
 #The Dynamo Primer
 ##First Edition V1.0
 
-![Dynamo Logo](../images/dynamo_logo_dark-trim.png)
+![Dynamo Logo](images/dynamo_logo_dark-trim.png)
 
 > Dynamo is a platform for toolmakers to make better tools by providing access to the core of Autodesk software allowing us to connect the dots.
 
