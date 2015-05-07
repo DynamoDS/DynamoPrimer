@@ -13,16 +13,16 @@ Version 1.0 of this primer includes the first four chapters of a planned twelve 
 We are excited to go on this journey together. Let's get started!
 
 ### Software and Resources
-**Dynamo 0.8**
-The current stable release of Dynamo is Version 0.8.
+**Dynamo 0.8** The current stable release of Dynamo is Version 0.8.
+
 http://dynamobim.com/download/
 
-*DynamoBIM*
-The best source for additional information, learning content, and forums is the DynamoBIM website.
+**DynamoBIM** The best source for additional information, learning content, and forums is the DynamoBIM website.
+
 http://dynamobim.org
 
-*Dynamo GitHub*
-Dynamo is an open-source development project on Github. To contribute check out DynamoDS hosted by Ian Keough.
+**Dynamo GitHub** Dynamo is an open-source development project on Github. To contribute check out DynamoDS hosted by Ian Keough.
+
 https://github.com/ikeough/Dynamo
 
 ### Acknowledgements
