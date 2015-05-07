@@ -11,7 +11,8 @@ Wires connect the output Port from one Node to the input Port of another Node. T
 ###3.2.2 Creating Wires
 We create a Wire by left-clicking our mouse on a Port and then left-clicking on the port of another Node to create a connection. While we are in the process of making a connection, the Wire will appear dashed and will snap to become solid lines when successfully connected.
 
-> Tip: Before complet
+> Tip: Before completing the connection with your second click, let the Wire snap to 
+
 ![NEEDS UPDATE](images/3-2/Placeholder.png)
 
 ###3.2.3 Editing Wires
