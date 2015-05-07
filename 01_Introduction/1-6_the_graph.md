@@ -1,6 +1,6 @@
-### 1.6 The Graph
+### 1.3 What's in a Program?
 
 _Introduction Text_
 
-####1.6.1	Elements
-####1.6.2	Flow
+####1.3.1	Elements
+####1.3.2	Flow
