@@ -81,7 +81,48 @@ The round operations will 'round' to the closest number in the range.
 ```
 Round(11/6) = Round(1.833) = 2```
 
-### 4.2.3 Functions
+## 4.2.3 Functions
+#### Math.RemapRange
+![](../images/icons/DSCore-Math-RemapRange-Large.png)
+
+This is one of the most important functions in parametric modeling.  The component maps a set of values in one domain into another domain, while maintaining the same distribution ratio.
+#### Average
+![](../images/icons/DSCore-Math-Average-Large.png)
+
+Determines the average (mean) of a list of numbers.
+#### Sum
+![](../images/icons/DSCore-Math-RemapRange-Large.png)
+
+Determines the sum of a list of numbers.
+#### Random/RandomList
+![](../images/icons/DSCore-Math-Random-double-double-Large.png) ![](../images/icons/DSCore-Math-RandomList-Large.png)
+
+Create a random number or a random list of numbers.
+#### Trigonometric Functions
+In summary, trigonometric functions are functions of an angle, relating the angles of a triangle to the lengths of its sides.  The input in Dynamo is degrees.
+
+| Icon | Name| Syntax| Ratio | Formula |
+| -- | -- | -- | -- | -- |
+| ![](../images/icons/DSCore-Math-Sin-Large.png) | sine| Math.Sin | opposite/hypotenuse | ![](images/4-2/sin.png)  |
+| ![](../images/icons/DSCore-Math-Cos-Large.png) | cosine | Math.Cos | adjacent/hypotenuse | ![](images/4-2/cos.png) |
+| ![](../images/icons/DSCore-Math-Tan-Large.png) | tangent | Math.Tan | opposite/adjacent | ![](images/4-2/tan.png) |
+
+
+#### Inverse Trigonometric Functions
+![](../images/icons/DSCore-Math-Asin-Large.png) ![](../images/icons/DSCore-Math-Acos-Large.png) ![](../images/icons/DSCore-Math-Atan-Large.png)
+
+Inverse trigonometric functions use a ratio as an input, with the resultant output being an angle.  The output in Dynamo is degrees.  These are less commonly used in modeling.
+#### Hyperbolic Functions
+![](../images/icons/DSCore-Math-Sinh-Large.png) ![](../images/icons/DSCore-Math-Cosh-Large.png) ![](../images/icons/DSCore-Math-Tanh-Large.png)
+
+Even less common in trigonometry are the hyperbolic functions, which are analogs to the trigonometric functions.  These functions have applications in physics, fluid dynamics, and complex analysis, but are outside of the scope of this primer.
+#### Math.RadiansToDegrees/Math.DegreesToRadians
+![](../images/icons/DSCore-Math-RadiansToDegrees-Large.png) ![](../images/icons/DSCore-Math-DegreesToRadians-Large.png)
+
+Convert Radians to Degrees.  This is a handy battery for quickly converting angle units.  Dynamo works in degrees by default for inputs and outputs.
+
+
+
 
 ### 4.2.4 Formulas
 
