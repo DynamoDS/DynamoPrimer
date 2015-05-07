@@ -1,6 +1,6 @@
 ## 4.5 Color
 
-###4.5.2 Creating
+###4.5.1 Creating
 ![](../images/icons/DSCore-Color-ByARGB-Large.png)
 ###4.5.2 Querying
 ![](../images/icons/DSCore-Color-Alpha-Large.png)
@@ -13,10 +13,13 @@
 ![](../images/icons/DSCore-Color-Hue-Large.png)
 ![](../images/icons/DSCore-Color-Saturation-Large.png)
 ![](../images/icons/DSCore-Color-Brightness-Large.png)
-###4.5.3 Manipulating
-###4.5.4 Range
-###4.5.5 Color Preview
-###4.5.6 Color Exercise
+###4.5.3 Range
+![](images/4-5/range.png)
+###4.5.4 Color Preview
+![](images/4-5/cuboids.png)
+
+The Display.ByGeometry
+###4.5.5 Color Exercise
 This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **code block** (3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
 
 ![](images/4-5/4-5-5/11.png)
@@ -55,7 +58,7 @@ The size of the spheres demonstrates the parametric array defined by a reference
 
 ![](images/4-5/4-5-5/05.png)
 >  1. **Color Range:** Add top the canvas.  When hovering over the *value* input, we notice that the numbers requested are between 0 and 1.  We need to remap the numbers from the *Geometry.DistanceTo* output so that they are compatible with this domain.
-2. **Sphere.ByCenterPointRadius:** For the time being, let's disable the preview on this battery (*Right Click > Preview*)
+ 2. **Sphere.ByCenterPointRadius:** For the time being, let's disable the preview on this battery (*Right Click > Preview*)
 
 ![](images/4-5/4-5-5/04.png)
 > 1. **Math.RemapRange:** This process should look familiar. Connect the *Geometry.DistanceTo* output into the numnbers input.
@@ -72,7 +75,7 @@ The size of the spheres demonstrates the parametric array defined by a reference
 > 1. **Display.ByGeometryColor:** Connect *Sphere.ByCenterPointRadius* into the *geometry* input and the *Color Range* into the *color* input. We now have a smooth gradient across the domain of the curve.
 
 ![](images/4-5/4-5-5/01.png)
-> If we change the value of the *number slider* from earlier in the definition, the colors and sizes update.  Colors and radius size are directly relate in this case.  In fact, you can use the colors as an analytical legend for demonstrating a range of values.
+> If we change the value of the *number slider* from earlier in the definition, the colors and sizes update.  Colors and radius size are directly relate in this case.
 
 
 
