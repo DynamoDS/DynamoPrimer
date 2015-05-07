@@ -9,16 +9,23 @@ Wires connect the output Port from one Node to the input Port of another Node. T
 ![NEEDS UPDATE](images/3-2/00-ProgramFlow.png)
 
 ###3.2.2 Creating Wires
-We create a Wire by left-clicking our mouse on a Port and then left-clicking on the port of another Node to create a connection. While we are in the process of making a connection, the Wire will appear dashed and will snap to become solid lines when successfully connected.
+We create a Wire by left-clicking our mouse on a Port and then left-clicking on the port of another Node to create a connection. While we are in the process of making a connection, the Wire will appear dashed and will snap to become solid lines when successfully connected. The data will always flow through this Wire from output to input; however, we may create the wire in either direction in terms of the sequence of clicking on the connected Ports.
 
-> Tip: Before complet
-![NEEDS UPDATE](images/3-2/Placeholder.png)
+> Tip: Before completing the connection with your second click, allow the Wire snap to a Port and hover your mouse there to see the Port tooltip.
+
+![NEEDS UPDATE](images/3-2/01-CreatingWires.png)
+>1. Click on the ```seq``` output Port of the Number Sequence Node
+2. As you are moving your mouse towards another Port, the Wire is dashed
+3. Click on the ```y``` input Port of the Point.ByCoordiantes to complete the connection
 
 ###3.2.3 Editing Wires
+Frequently we will want to adjust the Program Flow in our Visual Program by editing the connections represented by the Wires. To edit a Wire, left-click on the input Port of the Node that is already connected. You now have two options:
 
-To disconnect a Wire, left-click on the output Node and pull the Wire away.
+![NEEDS UPDATE - make three rows from editing pngs](images/3-2/02-EditingWires.png)
 
-![NEEDS UPDATE](images/3-2/Placeholder.png)
+> 1. To change the connection to an input Port, left-click on another input Port
+1. To remove the Wire, pull the Wire away and left-click on the Workspace
+
 
 ###3.2.4 Wire Previews
 By default, our Wires will be previewed with a gray stroke. When a Node is selected, it will render any connecting Wire with the same aqua highlight as the Node.
