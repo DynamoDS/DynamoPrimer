@@ -1,10 +1,22 @@
 ## 4.5 Color
 
 ###4.5.2 Creating
+![](../images/icons/DSCore-Color-ByARGB-Large.png)
 ###4.5.2 Querying
-###4.5.3 Range
-###4.5.4 Color Preview
-###4.5.5 Color Exercise
+![](../images/icons/DSCore-Color-Alpha-Large.png)
+![](../images/icons/DSCore-Color-Red-Large.png)
+![](../images/icons/DSCore-Color-Green-Large.png)
+![](../images/icons/DSCore-Color-Blue-Large.png)
+
+![](../images/icons/DSCore-Color-Components-Large.png)
+
+![](../images/icons/DSCore-Color-Hue-Large.png)
+![](../images/icons/DSCore-Color-Saturation-Large.png)
+![](../images/icons/DSCore-Color-Brightness-Large.png)
+###4.5.3 Manipulating
+###4.5.4 Range
+###4.5.5 Color Preview
+###4.5.6 Color Exercise
 This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **code block** (3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
 
 ![](images/4-5/4-5-5/11.png)
