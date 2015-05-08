@@ -159,6 +159,9 @@ Even less common in trigonometry are the hyperbolic functions, which are analogs
 | ![](../images/icons/DSCore-Math-DegreesToRadians-Large.png) | Degrees to Radians | Math.DegreesToRadians | degrees | radians |
 
 ### 4.2.4 Formulas
+| Icon | Name | Syntax| Inputs | Outputs |
+| -- | -- | -- | -- | -- | -- |-- |
+| ![](../images/icons/DSCoreNodesUI-Formula-Large.png) | Formula | Formula | Text box | objects, numbers,strings,lists... |
 
 ##Math Exercise - Fibonacci Spiral
 ###Parametric Formula
@@ -197,7 +200,7 @@ We've now completed the Fibonacci Spiral!  Let's take this further into two sepa
 
 ![](images/4-2/4-2-5/03a.png)
 > 1. **Circle.ByCenterPointRadius:** To create a more dynamic array of circles, we plug the original number sequence (the '*t*' sequence) into the radius value.
-2. **Number Sequence:** This is the original array of '*t*'.  By pluggin this into the radius value, the circle centers are still diverging further from the origin, but the radius of the circles are increasing, creating a funky Fibonacci circle graph.
+2. **Number Sequence:** This is the original array of '*t*'.  By pluggin this into the radius value, the circle centers are still diverging further from the origin, but the radius of the circles are increasing, creating a funky Fibonacci circle graph.  Bonus points if you make it 3D!
 
 ###Sunflower
 Now that we've made a circular Nautilus shell, let's jump into parametric grids.  We're going to use a basic rotate on the Fibonacci Spiral to create a Fibonacci grid, and the result is modeled after the [growth of sunflower seeds.](http://ms.unimelb.edu.au/~segerman/papers/sunflower_spiral_fibonacci_metric.pdf)
