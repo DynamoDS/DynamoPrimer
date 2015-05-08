@@ -13,18 +13,23 @@ limited range. We use booleans to evaluate conditions.
 
 At the most basic level, Dynamo has a boolean battery which functions as a light switch for logical operations.  This is a fundamental element for making conditional evaluation.
 
-
-
 ### 4.3.2 "If"
+The "If" statement is a key concept in programming: "If *this* is true, then *that* happens, otherwise *something else* happens.  The statement's decision is driven by a boolean, and the two results are defined by the user.  There are multiple ways to define an "If" statement in Dynamo:
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCoreNodesUI-Logic-If-Large.png) | If | If | test, true, false | result|
 | ![](../images/icons/DSCoreNodesUI-Formula-Large.png) | Formula | IF(x,y,z) | x, y, z | result |
 | ![](../images/icons/Dynamo-Nodes-CodeBlockNodeModel-Large.png) | Code Block | (x?y:z)| x, y, z | result|
+Let's go over a brief example on each of these three nodes in action using the conditional "If" statement:
+
 ![](images/4-3/Ifs.png)
+> In this image, the *boolean* is set to *true*, which means that the result is a string reading: *"this is the result if true".*  The three batteries creating the *If* statement are working identically here.
+
 ![](images/4-3/Ifs2.png)
-### 4.3.3 Conditional Operators
+> Again, the batteries are working identically.  If the *boolean* is changed to *false*, our result is the number *Pi*, as defined in the original *If* statement.
+
+### 4.3.3 Relational Operators
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/lt-Large.png) | Less Than | < | x,y | boolean(s)|
@@ -33,13 +38,12 @@ At the most basic level, Dynamo has a boolean battery which functions as a light
 | ![](../images/icons/ge-Large.png) | Greater Than or Equal To | >=| x, y | boolean(s)|
 | ![](../images/icons/eq-Large.png) | Equal To | ==| x, y | boolean(s)|
 | ![](../images/icons/nq-Large.png) | Not Equal To | !=| x| boolean(s)|
+Relational operators receive one or more inputs, and output a boolean depending on the result of a specific test.  In summary, these are the "*greater than, less than*" tests.  The demo below gives us an example.
 
 ![](images/4-3/largesmall.png)
+> The result of each test is a boolean.  In the *less than* test, *2* is indeed *less than 5*, o the result is *true*. In the *greater than* test, *2* is not *greater than 5*, so the result is *false*.
 
 ### 4.3.4 Logic Gates
-![bool](images/4-3/4-3-1/venn1.png)
-> The diagram above represents an array of boolean possiblities.  These are used as logical operators for computational modeling.
-
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCore-Logic-And-Large.png) | And | && | x, y | boolean(s)|
@@ -48,17 +52,30 @@ At the most basic level, Dynamo has a boolean battery which functions as a light
 | ![](../images/icons/DSCore-Logic-Or-Large.png) | Or| Or| bool0, bool1... | boolean(s)|
 | ![](../images/icons/DSCore-Logic-Xor-Large.png) | Xor |Logic.Xor| a, b | boolean(s)|
 | ![](../images/icons/Not-Large.png) | Not |Not| x | boolean(s)|
+In its simplest form, a logic gate receives two booleans and outputs one boolean.  These are based on fundamental sets, much like a [Venn Diagram](http://en.wikipedia.org/wiki/Venn_diagram).  Dynamo uses the basic gates of *And*, *Or*, and *Xor*.
+
+**And/&& -** In the table above, the two batteries for *And* may be confusing.  Here is how they're different:
+
 ![](images/4-3/andand.png)
+> The *&&* battery receives two inputs.  The *And* battery receives two inputs by default (middle icon), but one can click the *+/-* to add or subtract more inputs (right icon with 4 inputs). Other than that, the two are functionally identical. So go with *And* battery.
+
+**Xor -**This battery returns a true value if and only if *one* of the values is *true*.
+
+
+![](images/4-3/onetrue.png)
+> This image show the four combinations of two booleans. If both values are *true*, a *false* is returned.  If both values are *false*, a *false* is also returned.  The *true* value is return if and only if *one* of the values is *true*.  This rounds out the three main logic gates for two booleans.
+
 
 ### 4.3.5 Filter
-> The diagram above represents an array of boolean possiblities.  These are used as logical operators for computational modeling.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCore-List-FilterByBoolMask-Large.png) | Filter By Boolean Mask | List.FilterByBoolMask | list, mask | in, out|
 
+*List.FilterByBoolMask* is a great tool for geometry operations. After conducting a conditional test on an array of elements, one can parse through those elements with this battery.  In the exercise below, we demonstrate this in detail.
+
 ### 4.3.6 Exercise
-####Evens/Odds
+####Even/Odd
 This preliminary exercise uses logic to separate a list of numbers into a list of even numbers and a list of odd numbers.
 
 ![](images/4-3/01.png)
@@ -71,7 +88,7 @@ This preliminary exercise uses logic to separate a list of numbers into a list o
 6. **List.FilterByBoolMask -** this battery will filter the values into two different lists based on the input boolean.  Plug the original *number range* into the *list* input and the *equality test** output into the *mask* input.  The *in* output represents true values while the *out* output represents false values.
 7. **Watch - ** as a result, we now have a list of even numbers and a list of odd numbers. We've used logical operators to separate lists into patterns!
 
-####Even/Odd Zippers
+####Zipper
 Building off of the logic established in the first exercise, let's apply this setup into a modeling operation.
 
 ![](images/4-3/02.png)
