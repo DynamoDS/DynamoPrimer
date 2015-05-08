@@ -159,6 +159,9 @@ Even less common in trigonometry are the hyperbolic functions, which are analogs
 | ![](../images/icons/DSCore-Math-DegreesToRadians-Large.png) | Degrees to Radians | Math.DegreesToRadians | degrees | radians |
 
 ### 4.2.4 Formulas
+| Icon | Name | Syntax| Inputs | Outputs |
+| -- | -- | -- | -- | -- | -- |-- |
+| ![](../images/icons/DSCoreNodesUI-Formula-Large.png) | Formula | Formula | Text box | objects, numbers,strings,lists... |
 
 ##Math Exercise - Fibonacci Spiral
 ###Parametric Formula
