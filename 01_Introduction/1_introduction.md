@@ -1,5 +1,5 @@
 # 1 INTRODUCTION
 
-####Introduction text... 
+####Introduction text...
 
 ![big image for full page](images/PlaceholderTemplate-tall.png)
