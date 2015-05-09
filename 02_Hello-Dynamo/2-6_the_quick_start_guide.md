@@ -32,7 +32,7 @@ We also will need Point By Coordinates, Number Input, and Number Slider Nodes.
 3. Core > Input > Number Slider
 
 ###2.4.3 Connecting Nodes with Wires
-Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wires. These connections will define the flow of data through the Graph.
+Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wires. These connections will define the flow of data.
 
 ![NEEDS UPDATE - Connections made](images/2-4/04-NodesConnected.png)
 > 1. Number to Point by Coordinates
@@ -41,7 +41,7 @@ Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wir
 4. Point by Coordinates and Distance To to Circle by Center Point and Radius
 
 ###2.4.4 Executing the Graph
-With our Graph defined, all we need to do is tell Dynamo to execute it. By clicking on Run in the Execution Bar, the Nodes will be activated, data will pass through the Wires, and we should see the results of the Graph in the
+With our Program Flow defined, all we need to do is tell Dynamo to execute it. By clicking on Run in the Execution Bar, the Nodes will be activated, data will pass through the Wires, and we should see the results in the 3d Preview.
 
 ![NEEDS UPDATE - After Run](images/2-4/05-GraphExecuted.png)
 > 1. Click Run - In Manual Mode, we need to Click Run to execute the graph
@@ -49,15 +49,15 @@ With our Graph defined, all we need to do is tell Dynamo to execute it. By click
 3. 3D Preview - If any of our Nodes create geometry, we will see it in the 3D Preview.
 
 ###2.4.5 Adding Detail
-If our Graph is working, we should see a circle in the 3D Preview that is passing through our Attractor Point. This is great but we may want to add more detail or more controls to the Graph. Let's adjust the input to the circle Node so that we can calibrate the influence on the radius. Add another Number Slider to the Workspace then double click on a blank area of the Workspace to add a Code Block Node. Edit the field in the Code Block, specifying "X/Y".
+If our program is working, we should see a circle in the 3D Preview that is passing through our Attractor Point. This is great but we may want to add more detail or more controls to the Graph. Let's adjust the input to the circle Node so that we can calibrate the influence on the radius. Add another Number Slider to the Workspace then double-click on a blank area of the Workspace to add a Code Block Node. Edit the field in the Code Block, specifying ```X/Y```.
 
 ![NEEDS UPDATE - Code Block included](images/2-4/06-CodeBlock.png)
->1. Code Block - definition
+>1. Code Block
 2. Distance To and Number Slider to Code Block
 3. Code Block to Circle By Center Point and Radius
 
 ###2.4.6 Adding complexity
-Starting simple and building complexity is an effective way to incrementally develop the Graph. Once it is working for one circle, let's apply the power of the Graph to more than one circle. Instead of one center point, if we use a grid of points and accomodate the change in the resulting data structure, our Graph will now create many circles - each with a unique radius value defined by the calibrated distance to the Attractor Point.
+Starting simple and building complexity is an effective way to incrementally develop the program. Once it is working for one circle, let's apply the power of the program to more than one circle. Instead of one center point, if we use a grid of points and accomodate the change in the resulting data structure, our program will now create many circles - each with a unique radius value defined by the calibrated distance to the Attractor Point.
 
 ![NEEDS UPDATE - updated graph](images/2-4/07-AddingComplexity.png)
 >1. Sequence - definition
