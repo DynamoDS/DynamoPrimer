@@ -17,12 +17,12 @@ Once we've installed the application, Dynamo will enable us to work within a Vis
 > Add elements, connect, and we off and running with creating Visual Programs.
 
 ###1.1.3 The Community
-Dynamo wouldn't be what it is without a strong group of avid users and contributers. Engage the community by following the Blog, adding your work to the Gallery, or discuss Dynamo the Forum.
+Dynamo wouldn't be what it is without a strong group of avid users and active contributers. Engage the community by following the Blog, adding your work to the Gallery, or discuss Dynamo the Forum.
 
 ![The Forum](images/1-1/02-Community.png)
 
 ###1.1.4 The Platform
-Dynamo is envisioned as a tool for tool-makers to make more tools and use any Autodesk product that has an API and the source code for the project is open-source, enabling us to extend its functionality to our hearts content. Check out the project on Github and browse the Works in Progress of users customizing Dynamo.
+Dynamo is envisioned as a tool for tool-makers to make tools and use any Autodesk product that has an API. The source code for the project is open-source, enabling us to extend its functionality to our hearts content. Check out the project on Github and browse the Works in Progress of users customizing Dynamo.
 
 ![The Repo](images/1-1/03-TheRepo.png)
 > Browse, Fork, and start extending Dynamo for your needs
