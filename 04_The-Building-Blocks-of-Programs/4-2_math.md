@@ -6,20 +6,20 @@
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCore-Math-PI-Large.png) | Pi | Math.PI | none | double |
 
-**Pi -** is a mathematical constant which represents the ratio of circle's circumference to its diameter.  The value is commonly used in trigonmetric functions and is one of the more prevalent constants used in parametric modeling.
+**Pi -** is a mathematical constant which represents the ratio of circle's circumference to its diameter.  The value is commonly used in trigonmetric functions and is one of the more prevalent constants used in parametric modeling. A rounded value for *Pi* is *3.14159*.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCore-Math-E-Large.png) | e | Math.E | none | double |
 
-**e -** The number *e* is a mathematical constant which is based on the natural logarithm.  Like *pi*, *e* is an irrational number which is commonly used in mathematics. The number is fundamental to growth prediction, and shows itself often in the fields of biology and economics.
+**e -** The number *e* is a mathematical constant which is based on the natural logarithm.  Like *pi*, *e* is an irrational number which is commonly used in mathematics. The number is fundamental to growth prediction, and shows itself often in the fields of biology and economics. A rounded value for *e* is *2.71828*.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCore-Math-GoldenRatio-Large.png) | phi | Math.GoldenRatio | none | double |
 
 
-**φ: The Golden Ratio - **Another irrational constant, the golden ratio defines that two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities.  This ratio appears often in geometry and biological systems, and is considered for a wide-range of applications ranging from the practical to the aesthetic.
+**φ: The Golden Ratio - **Another irrational constant, the golden ratio defines that two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities.  This ratio appears often in geometry and biological systems, and is considered for a wide-range of applications ranging from the practical to the aesthetic. A rounded value for *φ* is *1.61804*.
 
 ## 4.2.2 Arithmetic Operators
 Operators are a set of components that use
@@ -158,8 +158,14 @@ Even less common in trigonometry are the hyperbolic functions, which are analogs
 | ![](../images/icons/DSCore-Math-RadiansToDegrees-Large.png) | Radians To Degrees | Math.RadiansToDegrees | radians | degrees |
 | ![](../images/icons/DSCore-Math-DegreesToRadians-Large.png) | Degrees to Radians | Math.DegreesToRadians | degrees | radians |
 
-### 4.2.4 Formulas
+### 4.2.4 Formula
+| Icon | Name | Syntax| Inputs | Outputs |
+| -- | -- | -- | -- | -- | -- |-- |
+| ![](../images/icons/DSCoreNodesUI-Formula-Large.png) | Formula | Formula | Text box | objects, numbers,strings,lists... |
 
+**Formula - **All of the functions described above, and many more, can be defined explicitly in the formula node. This node is compatible with a range of expressions, as well as conditional statements and other equations.
+
+For a similar node which expands this ability even further, check out the **code block**.  The code block will be discussed in detail in a future section.
 ##Math Exercise - Fibonacci Spiral
 ###Parametric Formula
 ![](images/4-2/4-2-5/01.png)
@@ -197,7 +203,7 @@ We've now completed the Fibonacci Spiral!  Let's take this further into two sepa
 
 ![](images/4-2/4-2-5/03a.png)
 > 1. **Circle.ByCenterPointRadius:** To create a more dynamic array of circles, we plug the original number sequence (the '*t*' sequence) into the radius value.
-2. **Number Sequence:** This is the original array of '*t*'.  By pluggin this into the radius value, the circle centers are still diverging further from the origin, but the radius of the circles are increasing, creating a funky Fibonacci circle graph.
+2. **Number Sequence:** This is the original array of '*t*'.  By pluggin this into the radius value, the circle centers are still diverging further from the origin, but the radius of the circles are increasing, creating a funky Fibonacci circle graph.  Bonus points if you make it 3D!
 
 ###Sunflower
 Now that we've made a circular Nautilus shell, let's jump into parametric grids.  We're going to use a basic rotate on the Fibonacci Spiral to create a Fibonacci grid, and the result is modeled after the [growth of sunflower seeds.](http://ms.unimelb.edu.au/~segerman/papers/sunflower_spiral_fibonacci_metric.pdf)
