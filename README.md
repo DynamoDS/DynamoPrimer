@@ -11,8 +11,10 @@ You have just opened the First Edition of the Dynamo Primer, a comprehensive gui
 Version 1.0 of this primer includes the first four chapters of a planned twelve chapters to be released in the coming months. These first chapters focus on the essentials you will need to get up and running using the "Sandbox" version of **Dynamo 0.8**. The power of Dynamo as a platform resides in the ability for us to develop visual programs for a wide array of creative softwares from the Autodesk suite so later chapters will survey some of the most exciting connections.
 
 We are excited to go on this journey together. Let's get started!
-###### Mode Lab
-![Mode Lab Logo](images/MODELAB_Logo.png)
+##### Mode Lab
+http://modelab.is
+![Mode Lab Logo](images/MODELAB_Logo-innovation.png)
+---
 
 ### Software and Resources
 **Dynamo 0.8** The current stable release of Dynamo is Version 0.8.
@@ -30,7 +32,7 @@ https://github.com/ikeough/Dynamo
 ### Acknowledgements
 A special thanks to Ian Keough for initiating and guiding the Dynamo project.
 
-Thank you to Matt Jezyk, Ian Keough, Zach Kron, and Colin McCrone for enthusiastic collaboration and the opportunity to participate on a wider array of Dynamo projects.
+Thank you to Matt Jezyk, Ian Keough, Zach Kron, and Colin McCrone for enthusiastic collaboration and the opportunity to participate on a wide array of Dynamo projects.
 
 ### License
 This primer's text, illustrations, and datasets are licensed under a (**confirm**) License.
