@@ -2,10 +2,8 @@
 
 * [About](README.md)
 * [Introduction](01_Introduction/1_introduction.md)
-   * [What is Dynamo?](01_Introduction/1-2_what_is_dynamo.md)
    * [What is Visual Programming?](01_Introduction/1-4_what_is_visual_programming.md)
-   * [What's in a Program?](01_Introduction/1-6_the_graph.md)
-   * [Key Concepts](01_Introduction/1-5_key_concepts.md)
+   * [What is Dynamo?](01_Introduction/1-2_what_is_dynamo.md)
    * [Dynamo in Action](01_Introduction/1-7_dynamo_in_action.md)
 * [Hello Dynamo!](02_Hello-Dynamo/2_hello_dynamo.md)
    * [Installing and Launching Dynamo](02_Hello-Dynamo/2-1_launching_dynamo.md)

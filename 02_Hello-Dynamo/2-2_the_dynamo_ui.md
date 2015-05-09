@@ -17,18 +17,18 @@ Let's dive deeper into the UI and explore the functionality of each region.
 The Dropdown Menus are a great place to find some of the basic funcationity of the Dynamo application. Like most Windows software, actions related to managing files and operations for selection and content editing are found in the first two menus. The remaining menus are more specific to Dynamo.
 
 ![Dropdown Menus](images/2-2/02-Menus.png)
-> 1. File - description
-2. Edit - description
-3. View - description
-4. Packages - description
-5. Settings - description
-6. Help - description
+> 1. File
+2. Edit
+3. View
+4. Packages
+5. Settings
+6. Help
 
 ####2.2.2	Toolbar
 
 Dynamo's Toolbar contains a series of buttons for quick access to working with files as well as Undo [Ctrl + Z] and Redo [Ctrl + Y] commands. On the far right is another button that will export a snapshot of the workspace, which is extremely useful for documentation and sharing.
 
-![NEEDS UPDATE-full width - Toolbar](images/2-2/03-Toolbar.png)
+![Needs Update-split location Toolbar](images/2-2/03-Toolbar.png)
 
 > 1. New - Create a new .dyn file
 2. Open - Open an existing .dyn (workspace) or .dyf (custom node) file
@@ -44,22 +44,22 @@ The Library contains all of the loaded Nodes including the default Nodes that co
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
 
 ![NEEDS UPDATE-full width - Library Categories](images/2-2/04-LibraryCategories.png)
->1. Analyze - description
-2. Builtin Functions - description
-3. Core - description
-4. Geometry - description
-5. Migration - description
-6. Office - description
-7. Operators - description
-8. Tessellation - description
+>1. Analyze
+2. Builtin Functions
+3. Core
+4. Geometry
+5. Migration
+6. Office
+7. Operators
+8. Tessellation
 
 Browse the Library by clicking through the menus. Click the Geometry > Circle. Note the new portion of the menu that is revealed and specifically the **Create** and **Query** Labels.
 
 ![NEEDS UPDATE-use full width - Browsing the Library](images/2-2/05-LibraryBrowsing.png)
->1. Category - description
-2. Subcategory - description
-3. Create/Actions/Query - description
-4. Node - description
+>1. Category
+2. Subcategory
+3. Create/Actions/Query
+4. Node
 
 From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The window reveals more detailed information about the Node beyond its name and icon. This offers us a quick way to understand what the Node does, what it will require for inputs, and what it will give as an output.
 
@@ -70,7 +70,7 @@ From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The wi
 4. Output(s) - data type and structure
 
 #####2.2.3.2	Searching
-If you now with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, the Node is added to the center of the Workspace.
+If you know with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, the Node is added to the center of the Workspace.
 
 ![NEEDS UPDATE-callouts Searching the Library](images/2-2/07-LibrarySearching.png)
 >1. Search Field
