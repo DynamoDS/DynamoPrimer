@@ -1,5 +1,26 @@
 ## 4.1 Data
 
+### 4.1.1 What is Data?
+
+### 4.1.2 How
+
+
+A list represents a collection of items placed into one structure of data:
+* I have five fingers (*items*) on my hand (*list*).
+* There are ten houses (*items*) on my street (*list*).
+
+
+When using lists and items in a computational modeling setting, it is important to focus on data structure and to know how to navigate through these hierarchies.
+
+The major thing to know about data structure in Dynamo: **with respect to data structure, lists are regarded as items.**  In other words, Dynamo functions with a top-down hierarchy for data structure. What does this mean?  Let's walk-through it with an example:
+
+![lists](images/4-1/listbreakdown.png)
+> 1. A **Number Sequence** battery defines a list of numbers by using a *start*, *amount*, and *step* input. With these batteries, we've created two separate lists of ten numbers, one which ranges from *100-109* and another which ranges from *0-9*.
+2. The **List.GetItemAtIndex** battery selects an item in a list at a specific index.  When choosing *0*, we get the first item in the list (*100* in this case).
+3. Applying the same process to the second list, we get a value of *0*, the first item in the list.
+4. Now we merge the two lists into one by using the **List.Create** battery.  Notice that the battery creates a *list of lists.* This changes the structure of the data.
+5. When using **List.GetItemAtIndex** again, with index set to *0*, we get the first list in the list of lists.  This is what it means to treat a list as an item, which is somewhat different from other scripting languages. We will get more advanced on list manipulation and data structure in later chapters.
+
 
 
 ### 4.2.2 Exercise
