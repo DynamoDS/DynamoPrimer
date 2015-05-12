@@ -29,7 +29,7 @@ When our Visual Program gets big, it is helpful to identify the larger steps tha
 2. Use the keyboard shortcut Ctrl+G
 3. Right-click on the Workspace and select "Create Group"
 
-Once a Group is created we can edit its settings, such as the title and color
+Once a Group is created we can edit its settings, such as the title and color.
 ![NEEDS UPDATE](images/3-4/05-Groups02.png)
 
 > Tip: Using both Notes and Groups is an effective way to annotate your file and increase readability.
