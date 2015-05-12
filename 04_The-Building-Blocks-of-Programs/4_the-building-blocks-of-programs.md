@@ -1,5 +1,5 @@
 #4 THE BUILDING BLOCKS OF PROGRAMS
 
-####Intro text
+#### Intro text
 
-(Insert Image)
+![Building Blocks Main](images/4/The Building Blocks of Program-01.png)
