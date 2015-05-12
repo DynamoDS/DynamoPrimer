@@ -9,9 +9,9 @@ limited range. We use booleans to evaluate conditions.
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCoreNodesUI-BoolSelector-Large.png) | Boolean | -- | True/False Radio Button | Boolean |
-> The boolean battery in Dynamo is a basic radio button, toggling between true and false.
+> The boolean Node in Dynamo is a basic radio button, toggling between true and false.
 
-At the most basic level, Dynamo has a boolean battery which functions as a light switch for logical operations.  This is a fundamental element for making conditional evaluation.
+At the most basic level, Dynamo has a boolean Node which functions as a light switch for logical operations.  This is a fundamental element for making conditional evaluation.
 
 ### "If"
 The "If" statement is a key concept in programming: "If *this* is true, then *that* happens, otherwise *something else* happens.  The statement's decision is driven by a boolean, and the two results are defined by the user.  There are multiple ways to define an "If" statement in Dynamo:
@@ -24,10 +24,10 @@ The "If" statement is a key concept in programming: "If *this* is true, then *th
 Let's go over a brief example on each of these three nodes in action using the conditional "If" statement:
 
 ![](images/4-3/Ifs.png)
-> In this image, the *boolean* is set to *true*, which means that the result is a string reading: *"this is the result if true".*  The three batteries creating the *If* statement are working identically here.
+> In this image, the *boolean* is set to *true*, which means that the result is a string reading: *"this is the result if true".*  The three Nodes creating the *If* statement are working identically here.
 
 ![](images/4-3/Ifs2.png)
-> Again, the batteries are working identically.  If the *boolean* is changed to *false*, our result is the number *Pi*, as defined in the original *If* statement.
+> Again, the Nodes are working identically.  If the *boolean* is changed to *false*, our result is the number *Pi*, as defined in the original *If* statement.
 
 ### Relational Operators
 | Icon | Name | Syntax| Inputs | Outputs |
@@ -54,12 +54,12 @@ Relational operators receive one or more inputs, and output a boolean depending 
 | ![](../images/icons/Not-Large.png) | Not |Not| x | boolean(s)|
 In its simplest form, a logic gate receives two booleans and outputs one boolean.  These are based on fundamental sets, much like a [Venn Diagram](http://en.wikipedia.org/wiki/Venn_diagram).  Dynamo uses the basic gates of *And*, *Or*, and *Xor*.
 
-**And/&& -** In the table above, the two batteries for *And* may be confusing.  Here is how they're different:
+**And/&& -** In the table above, the two Nodes for *And* may be confusing.  Here is how they're different:
 
 ![](images/4-3/andand.png)
-> The *&&* battery receives two inputs.  The *And* battery receives two inputs by default (middle icon), but one can click the *+/-* to add or subtract more inputs (right icon with 4 inputs). Other than that, the two are functionally identical. So go with *And* battery.
+> The *&&* Node receives two inputs. The *And* Node receives two inputs by default (middle icon), but one can click the *+/-* to add or subtract more inputs (right icon with 4 inputs). Other than that, the two are functionally identical. So go with *And* Node.
 
-**Xor -**This battery returns a true value if and only if *one* of the values is *true*.
+**Xor -** This Node returns a true value if and only if *one* of the values is *true*.
 
 
 ![](images/4-3/onetrue.png)
