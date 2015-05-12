@@ -42,11 +42,12 @@ If your answer contained graphics, then **Visual Programming** is definitely for
 ![Basic Visual Program ](images/1-1/03-BasicVisualProgram.png)
 
 ```
-myPoint = Geometry.PointByCoordinates(0.0,0.0,0.0);
+myPoint = Point.ByCoordinates(0.0,0.0,0.0);
 x = 5.6;
 y = 11.5;
-attractorPoint = Geometry.PointByCoordinates(x,y,0.0);
-(continued)
+attractorPoint = Point.ByCoordinates(x,y,0.0);
+dist = myPoint.DistanceTo(attractorPoint);
+myCircle = Circle.ByCenterPointRadius(myPoint,dist);
 ```
 
 The visual characteristic to programming in such a way frequently speaks to creative professionals and definitely lowers the barrier to entry. Dynamo falls in the Visual Programming paradigm, but as we will see later, we can still use textual programming in the application as well.
