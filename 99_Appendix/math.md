@@ -62,6 +62,7 @@ Sqrt(4) = 2```
 
 ```
 |-10| = 10 and |10| = 10```
+
 **Modulo -** The modulo operation refers to the remainder after a division.
 
 | Icon | Name | Syntax| Inputs | Outputs |

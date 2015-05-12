@@ -1,9 +1,5 @@
 ## 4.2 Math
-
-* Working with Numbers
-* Operators > functions > formula
-* Great way to start exploring patterns
-
+If the simplest form of data is numbers, the easiest way to relate those numbers is through Mathematics. From simple operators like divide to trigonometric functions to more complex formlas, Math is a great way to start exploring numeric relationships and patterns.
 
 ##Math Exercise - Fibonacci Spiral
 ###Parametric Formula
