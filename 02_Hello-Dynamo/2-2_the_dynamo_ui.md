@@ -1,6 +1,6 @@
 ## 2.2. The Dynamo User Interface
 
-The User Interface (UI) for Dynamo is organized into five main regions, the largest of which is the workspace where we compose our logical graphs.
+The User Interface (UI) for Dynamo is organized into five main regions, the largest of which is the workspace where we compose our visual programs.
 
 ![User Interface Regions](images/2-2/01-UI-Regions.png)
 
@@ -56,9 +56,9 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 Browse the Library by clicking through the menus. Click the Geometry > Circle. Note the new portion of the menu that is revealed and specifically the **Create** and **Query** Labels.
 
 ![NEEDS UPDATE-use full width - Browsing the Library](images/2-2/05-LibraryBrowsing.png)
->1. Category
-2. Subcategory
-3. Create/Actions/Query
+>1. Library
+2. Category
+3. Subcategory: Create/Actions/Query
 4. Node
 
 From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The window reveals more detailed information about the Node beyond its name and icon. This offers us a quick way to understand what the Node does, what it will require for inputs, and what it will give as an output.
@@ -70,9 +70,9 @@ From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The wi
 4. Output(s) - data type and structure
 
 #####2.2.3.2.	Searching
-If you know with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, the Node is added to the center of the Workspace.
+If you know with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, the highlighted Node is added to the center of the Workspace.
 
-![NEEDS UPDATE-callouts Searching the Library](images/2-2/07-LibrarySearching.png)
+![Searching the Library](images/2-2/07-LibrarySearching.png)
 >1. Search Field
 2. Best Fit Result / Selected
 3. Alternate Matches
