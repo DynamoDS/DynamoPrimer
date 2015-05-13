@@ -1,6 +1,6 @@
 ## 3.3. DYNAMO LIBRARY
 
-The Library contains the Nodes we add to the Workspace to define Visual Programs for execution. In the Library, we can search for or browse to Nodes. The Nodes contained here - the basic Nodes installed, Custom Nodes we define, and Nodes from the Package Manager that we add to Dynamo - are organizaed hierachically by category. Let's review this organization and explore the key Nodes we will use frequently.
+The **Dynamo Library** contains the Nodes we add to the Workspace to define Visual Programs for execution. In the Library, we can search for or browse to Nodes. The Nodes contained here - the basic Nodes installed, Custom Nodes we define, and Nodes from the Package Manager that we add to Dynamo - are organizaed hierachically by category. Let's review this organization and explore the key Nodes we will use frequently.
 
 ###3.3.1.	Library of Libraries
 The Dynamo **Library** that we interface with in the application is actually a collection of functional libraries, each containing Nodes grouped by Category. While this may seem obtuse at first, it is a flexible framework for organizing the Nodes that come with the default installation of Dynamo - and it's even better down the road when we start extending this base functionality with Custom Nodes and additional Packages.
@@ -57,15 +57,15 @@ The Watch Nodes are essential to managing the data that is flowing through your 
 
 ![Watch and Watch3D](images/3-3/04-WatchNodes.png)
 
-> 1. Watch - Note that when you select an item in teh Watch Node it will be tagged in the Watch3D and 3D Previews
+> 1. Watch - Note that when you select an item in the Watch Node it will be tagged in the Watch3D and 3D Previews
 2. Watch3D - Grab the bottom right grip to resize and navigate with you mouse the same way you would in the 3D Preview
 
 ####3.3.2.3. Code Block
-**Code Block** Nodes can be used to define a block of code with lines separated by semi-colons. This can be as simple as ```X/Y```. We can also use Code Blocks as a short cut to defining a Number Input or call to another Node's functionality. The syntax to do so follows the Naming Convention of the **Dynamo textual language** in **Section 3.2.3**. Let's try to make a Circle with this shortcut:
+**Code Block** Nodes can be used to define a block of code with lines separated by semi-colons. This can be as simple as ```X/Y```. We can also use Code Blocks as a short cut to defining a Number Input or call to another Node's functionality. The syntax to do so follows the Naming Convention of the Dynamo textual language in Section 3.2.3. Let's try to make a Circle with this shortcut:
 
 ![Code Block Shortcut](images/3-3/05-CodeBlock.png)
 
->1. Double Click to create a **Code Block Node**
+>1. Double Click to create a **Code Block** Node
 2. Type ```Circle.ByCenterPointRadius(x,y);```
 3. Clicking on the Workspace to clear the selection should add ```x``` and ```y``` inputs automatically
 4. Create a **Point.ByCoordinates** Node and a **Number Slider** then connect them to the inputs of the Code Block
