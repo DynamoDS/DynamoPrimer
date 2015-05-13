@@ -24,7 +24,7 @@ The Inputs and Outputs for Nodes are called Ports and act as the receptors for W
 ###3.1.3. States
 Dynamo gives an indication of the state of the execution of your Visual Program by rendering Nodes with different color schemes based on each Node's status. Furthermore, hovering or right-clicking over the Name or Ports presents additional information and options.
 
-![NEEDS UPDATE-dropshadow - States](images/3-1/02-States.png)
+![States](images/3-1/02-States2.png)
 
 >1. Inactive - Grey Nodes are inactive and need to be connected with Wires to be part of the Program Flow in the active Workspace
 2. Active - Nodes with a Dark Grey Name background are well-connected and have all of their inputs successfully connected
@@ -38,7 +38,7 @@ If your Visual Program contains warning or errors, Dynamo will provide additiona
 
 ![Node Errors Tooltip](images/3-1/03-WarningTooltip.png)
 
-> 1. Warning Tooltip - "Null" or no data cannot be understood as a Double ie a number
+> 1. Warning Tooltip - "Null" or no data cannot be understood as a Double ie. a number
 2. Use the Watch Node to examine the input data
 3. Upstream the Number Node is storing "Red" not a number
 
