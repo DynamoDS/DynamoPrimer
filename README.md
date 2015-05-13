@@ -3,20 +3,29 @@
 
 ![Dynamo Logo](images/dynamo_logo_dark-trim.png)
 
-> Dynamo is a platform for toolmakers to make better tools by providing access to the core of Autodesk software thereby enabling us to connect the dots.
+> Dynamo is an open source visual programming platform for designers.
 
 ### Welcome
-You have just opened the First Edition of the Dynamo Primer, a comprehensive guide to visual programming for the ecosystem of Autodesk design software. This primer is an on-going, collaborative project between the development team at Autodesk, Mode Lab, and you to document and explore: fundamental concepts; best practices; cross-disciplinary applications; and more with Dynamo.
+You have just opened the First Edition of the Dynamo Primer, a comprehensive guide to visual programming in Autodesk Dynamo. This primer is an on-going project to share fundamental concepts around programming and geometry, best practices, cross-disciplinary applications; and more with the Dynamo Platform.
 
-Version 1.0 of this primer includes the first four chapters of a planned twelve chapters to be released in the coming months. These first chapters focus on the essentials you will need to get up and running using the "Sandbox" version of **Dynamo**. The power of Dynamo as a platform resides in the ability for us to develop visual programs for a wide array of creative softwares from the Autodesk suite so later chapters will survey some of the most exciting connections.
+The power of Dynamo can be found in how it enables a wide variety of design-related activities. Exploring visual programming for the first time, connecting workflows present in different software, extending your day-to-day tools, and engaging an active community of users, contributers, and developers are all readily accessible ways to get started. In the midst of this activity and exciting opportunity for working with Dynamo, we need a document of the same caliber.
 
-We are excited to go on this journey together. Let's get started!
+Version 1.0 of this Primer includes the first four chapters of a planned twelve chapters to be written by Mode Lab and released in the coming months. These first chapters focus on the essentials you will need to get up and running developing your own visual programs with Dynamo. Here's what you can expect to learn from the primer:
+
+* **Context** - What exactly is "Visual Progamming" and what are the concepts I need to understand to dive in to Dynamo?
+* **Getting Started** - How do I get Dynamo and create my first program?
+* **What's in a Program** - What are the functional parts of Dynamo and how do I use them?
+* **Building Blocks** - What is "Data" and what are some fundamental types I can start using in my programs?
+
+This is an exciting time to be learning about, working with, and developing for Dynamo. Let's get started!
 
 ---
 ### The Dynamo Primer Project
-This project was initiated by Matt Jezyk and the Dynamo Development team. The First Edition has been developed by **Mode Lab**. http://modelab.is
+The Dynamo Primer is an open source project, initiated by Matt Jezyk and the Dynamo Development team at Autodesk.
 
-![Mode Lab Logo](images/MODELAB_Logo-innovation.png)
+**Mode Lab** was commissioned to write the First Edition of the primer. http://modelab.is
+
+![Mode Lab Logo](images/MODELAB_Logo.png)
 
 ### Acknowledgements
 
