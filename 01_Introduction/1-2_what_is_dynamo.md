@@ -14,10 +14,10 @@ Dynamo, the application, is a software that can be downloaded and run in either 
 Once we've installed the application, Dynamo will enable us to work within a Visual Programming process wherein we connect elements together to define the relationships and the sequences of actions that compose custom algorithms. We can use our algorithms for a wide array of applications - from processing data to generating geometry - all without writing a lick of ```code```.
 
 ![A Visual Program](images/1-2/01-ProgramFlow.png)
-> Add elements, connect, and we off and running with creating Visual Programs.
+> Add elements, connect, and we are off and running with creating Visual Programs.
 
 ###1.2.3. The Community
-Dynamo wouldn't be what it is without a strong group of avid users and active contributers. Engage the community by following the Blog, adding your work to the Gallery, or discuss Dynamo the Forum.
+Dynamo wouldn't be what it is without a strong group of avid users and active contributers. Engage the community by following the Blog, adding your work to the Gallery, or discuss Dynamo in the Forum.
 
 ![The Forum](images/1-2/02-Community.png)
 

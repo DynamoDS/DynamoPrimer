@@ -9,7 +9,7 @@ The Dynamo **Workspace** is where we develop our visual programs, but it's also 
 >1. Tabs
 2. Zoom/Pan Buttons
 3. Preview Mode
-4. Double Clicking
+4. Double Clicking on the Workspace
 
 ###2.3.1. Tabs
 The active Workspace tab allows you to navigate and edit your graph. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the New Node by Selection right-click option when Nodes are selected.
@@ -29,7 +29,7 @@ In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometr
 
 ###2.3.3. Hello Mouse!
 
-Based on which Preview mode is active, your mouse buttons will do different options. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking.
+Based on which Preview mode is active, your mouse buttons will act differently. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking.
 
 ![Hello Mouse](images/2-3/04-HelloMouse.png)
 
