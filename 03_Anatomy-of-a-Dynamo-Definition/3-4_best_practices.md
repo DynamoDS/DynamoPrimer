@@ -1,8 +1,8 @@
-## 3.4 MANAGING YOUR PROGRAM
+## 3.4. MANAGING YOUR PROGRAM
 
 Working within a Visual Programming process can be a powerful creative activity, but very quickly the Program Flow and key user inputs can be obscured by complexity and/or layout of the Workspace. Let's review some best practices for managing your program.
 
-###3.4.1	Alignment
+###3.4.1.	Alignment
 Once we have added more than a few Nodes to the Workspace, we may want to re-organize the layout of the Nodes for clarity's sake. By selecting more than one Node and right-clicking on the Workspace, the pop up window includes an **Align Selection** menu with justification and distribition options in X and Y.
 
 ![NEEDS UPDATE](images/3-4/00-Align.png)
@@ -10,7 +10,7 @@ Once we have added more than a few Nodes to the Workspace, we may want to re-org
 2. Right-click on the Workspace
 3. Use the **Align Selection** options
 
-###3.4.2	Notes
+###3.4.2.	Notes
 With some experience, we may be able to "read" the Visual Program by reviewing the Node Names and following the Program Flow. For users of all experience levels, it is good practice to include plain language labels and descriptions. Dynamo has a **Notes** Node with an editable text field to do so. We can add Notes to the Workspace in two ways:
 
 ![NEEDS UPDATE](images/3-4/01-Notes01.png)
@@ -21,7 +21,7 @@ Once the Note is added to the Workspace a text field will pop up allowing us to 
 
 ![NEEDS UPDATE](images/3-4/02-Notes02.png)
 
-###3.4.3	Grouping
+###3.4.3.	Grouping
 When our Visual Program gets big, it is helpful to identify the larger steps that will be executed. We can highlight larger collections of Nodes with a **Group** to label them with a colored rectangle in the background and a title. There are three ways to make a Group with more than one Node selected:
 
 ![NEEDS UPDATE](images/3-4/04-Groups01.png)

@@ -1,8 +1,8 @@
-### 1.1 What is Visual Programming?
+### 1.1. What is Visual Programming?
 
 Creative practice frequently involves establishing visual, systemic, or geometric relationships between the parts of a design. More times than not, these relationships are developed by a procedural workflow that gets us from concept to result. Perhaps without knowing it, we are working algorithmically - definiting a step-by-step set of actions that follow a basic logic of input, processing, and output. Programming allows us to continue to work this way but by formalizing our algorithms.
 
-###1.1.1 Algorithms in Hand
+###1.1.1. Algorithms in Hand
 While offering some powerful opporutinites, the term **Algorithm** can carry some misconceptions with it. Algorithms can generate unexpected, wild, or cool things, but they are not magic. In fact, they are pretty plain in and of themselves. Let's use a tangible example like an origami crane. We start with a square piece of paper (input), follow a series of folding steps (processing actions), and result in a crane (output).
 
 ![Origami Crane](images/1-1/00-OrigamiCrane.png)
@@ -29,12 +29,12 @@ paper, coloured side up. Fold in half and open. Then fold in half the other way.
 
 ![Needs Update- Origami Crane](images/1-1/01-OrigamiCraneInstructions.png)
 
-###1.1.2	Programming Defined
+###1.1.2.	Programming Defined
 Using either of these sets of instructions should result in a crane and if you followed along yourself, you've applied an algorithm. The only difference is the way in which we read the formalization of that set of instructions and that leads us to **Programming**. Programming, frequently shortened from *Computer Programming*, is the act of formalizing the processing of a series of actions into an executable program. If we turned the above instructions for a creating crane into a format our computer can read and execute, we are Programming.
 
 The key to and first hurdle we will find in Programming, is that we have to rely on some form of abstraction to communicate effectively with our computer. That takes the form of any number of Programming Languages, such as Javascript, Python, C. If we can write out a repeatable set of instructions, like for the origami crane, we only need to translate it for the computer. We are on our way to having the computer be able to make a crane or even a multitude of different cranes where each one is slightly different. This is the power of Programming - the computer will repeatedly execute whatever task, or set of tasks, we assign to it, without delay and without human error.
 
-####1.1.3	Visual Programming Defined
+####1.1.3.	Visual Programming Defined
 If you were tasked with writing instructions for folding an origami crane, how would you go about it? Would you make them with graphics, text, or some combination between the two?
 
 If your answer contained graphics, then **Visual Programming** is definitely for you. The process is essentially the same for both Programming and Visual Programming. They utilize the same framework of formalization; however, we define the instructions and relationships of our program through a graphical (or "Visual") user interface. Instead of typing text bound by syntax, we connect pre-packaged nodes together. Here's a comparison of the same algorithm - "draw a circle through a point" - programmed with nodes versus code:

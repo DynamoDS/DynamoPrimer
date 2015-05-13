@@ -1,7 +1,7 @@
-## 4.2 Math
+## 4.2. Math
 If the simplest form of data is numbers, the easiest way to relate those numbers is through Mathematics. From simple operators like divide to trigonometric functions to more complex formlas, Math is a great way to start exploring numeric relationships and patterns.
 
-### 4.2.1 Arithmetic Operators
+### 4.2.1. Arithmetic Operators
 Operators are a set of components that use algebraic functions with two numeric input values, which result in one output value (addition, subtraction, multiplication, division, etc.). These can be found under Operators>Actions.
 
 | Icon | Name | Syntax| Inputs | Outputs |
@@ -11,7 +11,7 @@ Operators are a set of components that use algebraic functions with two numeric 
 | ![](../images/icons/mul-Large.png) | Multiply | * | var[]...[], var[]...[] | var[]...[] |
 | ![](../images/icons/div-Large.png) | Divide | / | var[]...[], var[]...[] | var[]...[] |
 
-### 4.2.2 Parametric Formula
+### 4.2.2. Parametric Formula
 From Operators, the next logical step is to combine operators and variables to form a more complex relationship through **Formulas**. Let's make a Formula that can be controlled by input parameters, like sliders.
 
 ![](images/4-2/4-2-5/01.png)
@@ -29,8 +29,8 @@ The step above has created a list of numbers to define the parametric domain.  T
 5. **Math.Cos and Math.Sin:**  These two trigonmetric function will differentiating the x-coordinate and the y-coordinate, respectively, of each parametric point.
 6.  **Watch: **We now see that our output is two lists, these will be the *x* and *y* coordinates of the points used to generate the spiral.
 
-### 4.2.3 From Formula to Geometry
-Now, the bulk of Nodes from the previous step will work fine, but it is a lot of work.  To create a more efficient workflow, have a look at **Code Blocks** (section 3.2.3) to define a string of Dynamo expressions into one node.  In this next series steps, we'll look at using the parametric equation to draw the Fibonacci spiral.
+### 4.2.3. From Formula to Geometry
+Now, the bulk of Nodes from the previous step will work fine, but it is a lot of work.  To create a more efficient workflow, have a look at **Code Blocks** (section 3.3.2.3) to define a string of Dynamo expressions into one node.  In this next series steps, we'll look at using the parametric equation to draw the Fibonacci spiral.
 ![](images/4-2/4-2-5/03.png)
 > 1. **Point.ByCoordinates:** Conect the upper multiplication node into the '*x*' input and the lower into the '*y*' input. We now see a parametric spiral of points on the screen.
 
@@ -38,7 +38,8 @@ Now, the bulk of Nodes from the previous step will work fine, but it is a lot of
 > 1. **Polycurve.ByPoints:** Conect Point.ByCoordinates from the previous step into *points*.  We can leave *connectLastToFirst* without an input because we aren't making a closed curve.  This creates a spiral which passes through each point defined in the previous step.
 
 We've now completed the Fibonacci Spiral!  Let's take this further into two separate exercises from here, which we'll call the Nautilus and the Sunflower.  These are abstractions of natural systems, but the two different applications of the Fibonacci spiral will be well represented.
-### 4.2.4 Nautilus
+
+### 4.2.4. From Spiral to Nautilus
 
 ![](images/4-2/4-2-5/03.png)
 > 1. As a jumping off point, let's start with the same step from the previous exercise: creating a spiral array of points with the **Point.ByCoordinates** Node.
@@ -51,7 +52,7 @@ We've now completed the Fibonacci Spiral!  Let's take this further into two sepa
 > 1. **Circle.ByCenterPointRadius:** To create a more dynamic array of circles, we plug the original number sequence (the '*t*' sequence) into the radius value.
 2. **Number Sequence:** This is the original array of '*t*'.  By pluggin this into the radius value, the circle centers are still diverging further from the origin, but the radius of the circles are increasing, creating a funky Fibonacci circle graph.  Bonus points if you make it 3D!
 
-### 4.2.5 Sunflower
+### 4.2.5 From Nautilus to Phyllotaxis Pattern
 Now that we've made a circular Nautilus shell, let's jump into parametric grids.  We're going to use a basic rotate on the Fibonacci Spiral to create a Fibonacci grid, and the result is modeled after the [growth of sunflower seeds.](http://ms.unimelb.edu.au/~segerman/papers/sunflower_spiral_fibonacci_metric.pdf)
 
 ![](images/4-2/4-2-5/03.png)
