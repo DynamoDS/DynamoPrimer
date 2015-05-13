@@ -1,14 +1,14 @@
-## 4.5 Color
+## 4.5. Color
+Color is a great data type for creating compelling visuals as well as for rendering difference in the output from your Visual Program. When working with abstract data and varying numbers, sometimes it's difficult to see what's changing and to what degree. This is a great application for colors.
 
-
-### 4.5.1 Creating Colors
+### 4.5.1. Creating Colors
 Colors in Dynamo are created using ARGB inputs.This corresponds to the Alpha, Red, Green, and Blue channels. The alpha represents the *transparency* of the color, while the other three are used as primary colors to generate the whole spectrum of color in concert.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCore-Color-ByARGB-Large.png) | ARGB Color | Color.ByARGB | A,R,G,B | color |
 
-### 4.5.2 Querying Color Values
+### 4.5.2. Querying Color Values
 The colors in the table below query the properties used to define the color: Alpha, Red, Green, and Blue.  Note that the Color.Components Node gives us all four as different outputs, which makes this Node preferable for querying the properties of a color.
 
 | Icon | Name | Syntax| Inputs | Outputs |
@@ -27,7 +27,7 @@ The colors in the table below correspond to the **HSB color space**.  Dividing t
 | ![](../images/icons/DSCore-Color-Saturation-Large.png) | Saturation | Color.Saturation | color | Saturation |
 | ![](../images/icons/DSCore-Color-Brightness-Large.png) | Brightness | Color.Brightness | color | Brightness |
 
-### 4.5.3 Color Range
+### 4.5.3. Color Range
 The color range is similar to the **Remap Range** Node from section 4.2: it remaps a list of numbers into another domain.  But instead of mapping to a *number* domain, it maps to a *color gradient* based on input numbers ranging from 0 to 1.
 
 The current Node works well, but it can be a little awkward to get everything working the first time around. The best way to become familiar with the color gradient is to test it out interactively. Let's do a quick exercise to review how to setup a gradient with output colors corresponding to numbers.
@@ -38,13 +38,13 @@ The current Node works well, but it can be a little awkward to get everything wo
 3. **Define Indices: ** Create a list to define the grip positions of each color (ranging from 0 to 1).  Notice the value of 0.75 for green.  This places the green color 3/4 of the way across the horizontal gradient in the color range slider.
 4. **Code Block: ** Input values (between 0 and 1) to translate to colors.
 
-### 4.5.4 Color Preview
+### 4.5.4. Color Preview
 The **Display.ByGeometry** Node gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** Node.
 
 ![](images/4-5/cuboids.png)
 
 
-###4.5.5 Color Exercise
+###4.5.5. Color Exercise
 This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **Code Block** (3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
 
 ![](images/4-5/4-5-5/11.png)
