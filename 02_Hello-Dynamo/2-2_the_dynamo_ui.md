@@ -43,6 +43,8 @@ The Library contains all of the loaded Nodes, including the default Nodes that c
 #####2.2.3.1.	Browsing
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
 
+> We will focus on the default collection of Nodes now, but note that we will extend this Library with Custom Nodes, additional libraries, and the Package Manager later.
+
 ![NEEDS UPDATE-full width - Library Categories](images/2-2/04-LibraryCategories.png)
 >1. Analyze
 2. Builtin Functions
@@ -51,7 +53,6 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 5. Migration
 6. Office
 7. Operators
-8. Tessellation
 
 Browse the Library by clicking through the menus. Click the Geometry > Circle. Note the new portion of the menu that is revealed and specifically the **Create** and **Query** Labels.
 
@@ -70,7 +71,7 @@ From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The wi
 4. Output(s) - data type and structure
 
 #####2.2.3.2.	Searching
-If you know with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, the highlighted Node is added to the center of the Workspace.
+If you know with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, or click on the item in the truncated browser, the highlighted Node is added to the center of the Workspace.
 
 ![Searching the Library](images/2-2/07-LibrarySearching.png)
 >1. Search Field

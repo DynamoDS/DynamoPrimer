@@ -6,9 +6,14 @@
 > Dynamo is an open source visual programming platform for designers.
 
 ### Welcome
-You have just opened the First Edition of the Dynamo Primer, a comprehensive guide to visual programming in Autodesk Dynamo. This primer is an on-going project to share fundamental concepts around programming and geometry, best practices, cross-disciplinary applications; and more with the Dynamo Platform.
 
-The power of Dynamo can be found in how it enables a wide variety of design-related activities. Exploring visual programming for the first time, connecting workflows present in different software, extending your day-to-day tools, and engaging an active community of users, contributers, and developers are all readily accessible ways to get started. In the midst of this activity and exciting opportunity for working with Dynamo, we need a document of the same caliber.
+The power of Dynamo can be found in a wide variety of design-related activities. Dynamo enables an expanding list of readiliy accessible ways for you to get started:
+* **Explore** visual programming for the first time
+* **Connect** workflows in various software
+* **Engage** an active community of users, contributors, and developers
+* **Develop** an open-source platform for continued improvement
+
+In the midst of this activity and exciting opportunity for working with Dynamo, we need a document of the same caliber, the Dynamo Primer.
 
 Version 1.0 of this Primer includes the first four chapters of a planned twelve chapters to be written by Mode Lab and released in the coming months. These first chapters focus on the essentials you will need to get up and running developing your own visual programs with Dynamo. Here's what you can expect to learn from the primer:
 
