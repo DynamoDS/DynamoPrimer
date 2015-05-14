@@ -14,7 +14,7 @@ Let's dive deeper into the UI and explore the functionality of each region.
 
 ####2.2.1. Menus
 
-The Dropdown Menus are a great place to find some of the basic funcationity of the Dynamo application. Like most Windows software, actions related to managing files and operations for selection and content editing are found in the first two menus. The remaining menus are more specific to Dynamo.
+The Dropdown Menus are a great place to find some of the basic functionality of the Dynamo application. Like most Windows software, actions related to managing files and operations for selection and content editing are found in the first two menus. The remaining menus are more specific to Dynamo.
 
 ![Dropdown Menus](images/2-2/02-Menus.png)
 > 1. File
@@ -38,7 +38,7 @@ Dynamo's Toolbar contains a series of buttons for quick access to working with f
 6. Export Workspace as Image - Export the visible workspace as a PNG file
 
 ####2.2.3.	Library
-The Library contains all of the loaded Nodes including the default Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Libary are organized hierarchically within libraries, categories, and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data.
+The Library contains all of the loaded Nodes, including the default Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Libary are organized hierarchically within libraries, categories, and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data.
 
 #####2.2.3.1.	Browsing
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
@@ -89,7 +89,7 @@ From geometric to user settings, these options can be found in the **Settings** 
 3. Number Format
 
 ###2.3.5.	Help
-If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to check the version of Dynamo installed and whether it is up to date through the **About** option.
+If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to, check the version of Dynamo installed and whether it is up to date through the **About** option.
 
 ![show menu](images/2-2/09-Help.png)
 

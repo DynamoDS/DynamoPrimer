@@ -10,7 +10,7 @@ Before we add anything to the Dynamo Workspace, it is key that we have a solid u
 > A point that defines a distance-based relationship is commonly referred to as an "Attractor." Here the distance to our Attractor Point will be used to specify how big our circle should be.
 
 ###2.4.2. Adding Nodes to the Workspace
-Now that we have our Objectives and Relationships sketched we can begin creating our graph. We need the Nodes that will represent the sequence of actions Dynamo will execute. Since we know we are trying to create a circle, let's start by locating a Node that do so. Using the Search field or browing through the Library, we will find that there is more than one way to create a circle.
+Now that we have our Objectives and Relationships sketched we can begin creating our graph. We need the Nodes that will represent the sequence of actions Dynamo will execute. Since we know we are trying to create a circle, let's start by locating a Node that does so. Using the Search field or browing through the Library, we will find that there is more than one way to create a circle.
 
 ![Browse and Search](images/2-4/01-BrowseAndSearch.png)
 > 1. Browse to Geometry > Circle > **CircleByPointRadius**
@@ -20,7 +20,7 @@ Let's add the **CircleByPointRadius** Node to the Workspace by clicking on it in
 
 ![Circle Added](images/2-4/02-CircleAdded.png)
 
-> 1. The Circle.ByPointandRadius Node in the Library
+> 1. The CircleByPointandRadius Node in the Library
 2. Clicking the Node in the Library adds it to the Workspace
 
 We also will need **PointByCoordinates**, **Number Input**, and **Number Slider** Nodes.
@@ -46,11 +46,11 @@ With our Program Flow defined, all we need to do is tell Dynamo to execute it. B
 
 ![After Run](images/2-4/05-GraphExecuted.png)
 > 1. Click Run - In Manual Mode, we need to Click Run to execute the graph
-2. Node Preview - Hovering your mouse over the box on the lower right corner of a Node will give you a pop up of the results
+2. Node Preview - Hovering your mouse over the box on the lower right corner of a Node will give you a pop-up of the results
 3. 3D Preview - If any of our Nodes create geometry, we will see it in the 3D Preview.
 
 ###2.4.5. Adding Detail
-If our program is working, we should see a circle in the 3D Preview that is passing through our Attractor Point. This is great but we may want to add more detail or more controls. Let's adjust the input to the circle Node so that we can calibrate the influence on the radius. Add another **Number Slider** to the Workspace then double click on a blank area of the Workspace to add a **Code Block** Node. Edit the field in the Code Block, specifying ```X/Y```.
+If our program is working, we should see a circle in the 3D Preview that is passing through our Attractor Point. This is great, but we may want to add more detail or more controls. Let's adjust the input to the circle Node so that we can calibrate the influence on the radius. Add another **Number Slider** to the Workspace, then double click on a blank area of the Workspace to add a **Code Block** Node. Edit the field in the Code Block, specifying ```X/Y```.
 
 ![Code Block included](images/2-4/06-CodeBlock.png)
 >1. **Code Block**

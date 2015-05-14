@@ -51,14 +51,14 @@ Input Nodes are the primary means for the User of our Visual Program - be that y
 7. File Path
 
 ####3.3.2.2.	Watch
-The Watch Nodes are essential to managing the data that is flowing through your Visual Program. While you can view the result of a Node through the Node data preview, you may want to keep in revealed in a **Watch** Node or see the geometry results through a **Watch3D** Node. Both of these are found in the View Category in the Core Library.
+The Watch Nodes are essential to managing the data that is flowing through your Visual Program. While you can view the result of a Node through the Node data preview, you may want to keep it revealed in a **Watch** Node or see the geometry results through a **Watch3D** Node. Both of these are found in the View Category in the Core Library.
 
 > Tip: Occasionally the 3D Preview can be distracting when your Visual Program contains a lot of Nodes. Consider unchecking the Showing Background Preview option in the Settings Menu and using a Watch3D Node to preview your geometry.
 
 ![Watch and Watch3D](images/3-3/04-WatchNodes.png)
 
-> 1. Watch - Note that when you select an item in teh Watch Node it will be tagged in the Watch3D and 3D Previews
-2. Watch3D - Grab the bottom right grip to resize and navigate with you mouse the same way you would in the 3D Preview
+> 1. Watch - Note that when you select an item in the Watch Node it will be tagged in the Watch3D and 3D Previews
+2. Watch3D - Grab the bottom right grip to resize and navigate with your mouse the same way you would in the 3D Preview
 
 ####3.3.2.3. Code Block
 **Code Block** Nodes can be used to define a block of code with lines separated by semi-colons. This can be as simple as ```X/Y```. We can also use Code Blocks as a short cut to defining a Number Input or call to another Node's functionality. The syntax to do so follows the Naming Convention of the **Dynamo textual language** in **Section 3.2.3**. Let's try to make a Circle with this shortcut:
@@ -69,7 +69,7 @@ The Watch Nodes are essential to managing the data that is flowing through your 
 2. Type ```Circle.ByCenterPointRadius(x,y);```
 3. Clicking on the Workspace to clear the selection should add ```x``` and ```y``` inputs automatically
 4. Create a **Point.ByCoordinates** Node and a **Number Slider** then connect them to the inputs of the Code Block
-5. The result of executing the Viaual Program should be a circle in the 3D Preview
+5. The result of executing the Visual Program should be a circle in the 3D Preview
 
 
 
