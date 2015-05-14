@@ -5,61 +5,64 @@ Now that we have familiarized ourselves with the interface layout and navigating
 ###2.4.1. Defining Objectives and Relationships
 Before we add anything to the Dynamo Workspace, it is key that we have a solid understanding of what we are trying to achieve and what the significant relationships will be. Remember that anytime we are connecting two Nodes, we are creating an explicit link between them - we may change the flow of data later, but once connected we've commited to that relationship. In this exercise we want to create a circle (*Objective*) where the radius input is defined by a distance to a nearby point (*Relationship*).
 
-![NEEDS UPDATE - Hand Sketch of Circle](images/Placeholder.png)
+![Hand Sketch of Circle](images/2-4/00-Hand-Sketch-of-Circle.png)
 
 > A point that defines a distance-based relationship is commonly referred to as an "Attractor." Here the distance to our Attractor Point will be used to specify how big our circle should be.
 
 ###2.4.2. Adding Nodes to the Workspace
-Now that we have our Objectives and Relationships sketched we can begin creating our graph. We need the Nodes that will represent the sequence of actions Dynamo will execute. Since we know we are trying to create a circle, let's start by locating a Node that do so. Using the Search field or browing through the Library, we will find that there is more than one way to create a circle.
+Now that we have our Objectives and Relationships sketched we can begin creating our graph. We need the Nodes that will represent the sequence of actions Dynamo will execute. Since we know we are trying to create a circle, let's start by locating a Node that does so. Using the Search field or browing through the Library, we will find that there is more than one way to create a circle.
 
-![NEEDS UPDATE-shadows and callouts - Browse and Search](images/2-4/01-BrowseAndSearch.png)
-> 1. Browse to Geometry > Circle > Circle By Point and Radius
+![Browse and Search](images/2-4/01-BrowseAndSearch.png)
+> 1. Browse to Geometry > Circle > **Circle.ByPointRadius**
 2. Search > "Circle by Point..."
 
-Let's add the Circle By Point and Radius Node to the Workspace by clicking on it in the Library - this should add the Node to the center of the Workspace.
+Let's add the **Circle.ByPointRadius** Node to the Workspace by clicking on it in the Library - this should add the Node to the center of the Workspace.
 
-![NEEDS UPDATE-callouts - Circle Added](images/2-4/02-CircleAdded.png)
+![Circle Added](images/2-4/02-CircleAdded.png)
 
-> 1. The Circle.ByPointandRadius Node
+> 1. The Circle.ByPointandRadius Node in the Library
+2. Clicking the Node in the Library adds it to the Workspace
 
-We also will need Point By Coordinates, Number Input, and Number Slider Nodes.
+We also will need **Point.ByCoordinates**, **Number Input**, and **Number Slider** Nodes.
 
-![NEEDS UPDATE-callouts - Objects Added](images/2-4/03-NodesAdded.png)
+![Objects Added](images/2-4/03-NodesAdded.png)
 
-> 1. Geometry > Point > Point by Coordinates
-2. Geometry > Geometry > Distance To
-2. Core > Input > Number
-3. Core > Input > Number Slider
+> 1. Geometry > Point > **Point.ByCoordinates**
+2. Geometry > Geometry > **DistanceTo**
+2. Core > Input > **Number**
+3. Core > Input > **Number Slider**
 
-###2.4.3 Connecting Nodes with Wires
+###2.4.3. Connecting Nodes with Wires
 Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wires. These connections will define the flow of data.
 
-![NEEDS UPDATE - Connections made](images/2-4/04-NodesConnected.png)
-> 1. Number to Point by Coordinates
-2. Number Sliders to Point by Coordinates
-3. Point by Coordinates (2) to Distance To
-4. Point by Coordinates and Distance To to Circle by Center Point and Radius
+![Connections made](images/2-4/04-NodesConnected.png)
+> 1. **Number** to **Point.ByCoordinates**
+2. **Number Sliders** to **Point.ByCoordinates**
+3. **Point.ByCoordinates** (2) to **DistanceTo**
+4. **Point.ByCoordinates** and **DistanceTo** to **Circle.ByCenterPointRadius**
 
-###2.4.4 Executing the Graph
+###2.4.4. Executing the Program
 With our Program Flow defined, all we need to do is tell Dynamo to execute it. By clicking on Run in the Execution Bar, the Nodes will be activated, data will pass through the Wires, and we should see the results in the 3d Preview.
 
-![NEEDS UPDATE - After Run](images/2-4/05-GraphExecuted.png)
+![After Run](images/2-4/05-GraphExecuted.png)
 > 1. Click Run - In Manual Mode, we need to Click Run to execute the graph
-2. Node Preview - Hovering your mouse over the box on the lower right corner of a Node will give you a pop up of the results
+2. Node Preview - Hovering your mouse over the box on the lower right corner of a Node will give you a pop-up of the results
 3. 3D Preview - If any of our Nodes create geometry, we will see it in the 3D Preview.
 
-###2.4.5 Adding Detail
-If our program is working, we should see a circle in the 3D Preview that is passing through our Attractor Point. This is great but we may want to add more detail or more controls to the Graph. Let's adjust the input to the circle Node so that we can calibrate the influence on the radius. Add another Number Slider to the Workspace then double-click on a blank area of the Workspace to add a Code Block Node. Edit the field in the Code Block, specifying ```X/Y```.
+###2.4.5. Adding Detail
+If our program is working, we should see a circle in the 3D Preview that is passing through our Attractor Point. This is great, but we may want to add more detail or more controls. Let's adjust the input to the circle Node so that we can calibrate the influence on the radius. Add another **Number Slider** to the Workspace, then double click on a blank area of the Workspace to add a **Code Block** Node. Edit the field in the Code Block, specifying ```X/Y```.
 
-![NEEDS UPDATE - Code Block included](images/2-4/06-CodeBlock.png)
->1. Code Block
-2. Distance To and Number Slider to Code Block
-3. Code Block to Circle By Center Point and Radius
+![Code Block included](images/2-4/06-CodeBlock.png)
+>1. **Code Block**
+2. **DistanceTo** and **Number Slider** to **Code Block**
+3. **Code Block** to **Circle.ByCenterPointRadius**
 
-###2.4.6 Adding complexity
-Starting simple and building complexity is an effective way to incrementally develop the program. Once it is working for one circle, let's apply the power of the program to more than one circle. Instead of one center point, if we use a grid of points and accomodate the change in the resulting data structure, our program will now create many circles - each with a unique radius value defined by the calibrated distance to the Attractor Point.
+###2.4.6. Adding complexity
+Starting simple and building complexity is an effective way to incrementally develop our program. Once it is working for one circle, let's apply the power of the program to more than one circle. Instead of one center point, if we use a grid of points and accomodate the change in the resulting data structure, our program will now create many circles - each with a unique radius value defined by the calibrated distance to the Attractor Point.
 
-![NEEDS UPDATE - updated graph](images/2-4/07-AddingComplexity.png)
->1. Sequence - definition
-2. Flatten - definition
-3. 3D Preview
+![Updated graph](images/2-4/07-AddingComplexity.png)
+>1. Add a **Number Sequence** Node and replace the inputs of **Point.ByCoordinates** - Right Click Point.ByCoordinates and select Lacing > Cross Reference
+2. Add a **Flatten** Node after  Point.ByCoordinates
+3. The 3D Preview will update with a grid of circles
+
+
