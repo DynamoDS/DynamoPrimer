@@ -9,7 +9,7 @@ Most Nodes in Dynamo are composed of five parts. While there are exceptions, suc
 2. Main - The main body of the Node - Right-clicking here presents options at the level of the whole Node
 3. Ports (In and Out) - The receptors for Wires that supply the input data to the Node as well as the results of the Node's action
 4. Data Preview - Hover or click to see a tooltip describing the results of the Node's action
-5. Lacing Icon - Indicates the Lacing option specified
+5. Lacing Icon - Indicates the Lacing option specified for matching list inputs (more on that later)
 
 ###3.1.2. Ports
 The Inputs and Outputs for Nodes are called Ports and act as the receptors for Wires. Data comes into the Node through Ports on the left and flows out of the Node after it has executed its operation on the right. Ports expect to receive data of a certain type. For instance, connecting a number such as *2.75* to the Ports on a Point By Coordinates Node will successfully result in creating a Point; however, if we supply *"Red"* to the same Port it will result in an error.
