@@ -5,7 +5,7 @@ Dynamo is an active open-source development project with downloadable installers
 ###2.1.1. Downloading
 To download the official released version of Dynamo, visit the [Dynamo website](http://dynamobim.com/). Start the download of Version 0.8.0 immediately by clicking from the homepage or browse to the dedicated download page.
 
-![NEEDS UPDATE - website homepage](images/2-1/01-DynamoHomepage.png)
+![website homepage](images/2-1/01-DynamoHomepage.png)
 > 1. Watch a video on Computational Design with Dyanmo for Architecture
 2. Or browse to the download page
 

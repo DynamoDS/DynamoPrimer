@@ -12,7 +12,7 @@ The Dynamo **Workspace** is where we develop our visual programs, but it's also 
 4. Double Clicking on the Workspace
 
 ###2.3.1. Tabs
-The active Workspace tab allows you to navigate and edit your graph. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the New Node by Selection right-click option when Nodes are selected.
+The active Workspace tab allows you to navigate and edit your program. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the *New Node by Selection* right click option when Nodes are selected (more eon this functionality later).
 
 ![Tabs](images/2-3/02-Tabs.png)
 
