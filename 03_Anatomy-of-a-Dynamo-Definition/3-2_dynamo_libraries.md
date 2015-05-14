@@ -51,7 +51,7 @@ Input Nodes are the primary means for the User of our Visual Program - be that y
 7. File Path
 
 ####3.3.2.2.	Watch
-The Watch Nodes are essential to managing the data that is flowing through your Visual Program. While you can view the result of a Node through the Node data preview, you may want to keep in revealed in a **Watch** Node or see the geometry results through a **Watch3D** Node. Both of these are found in the View Category in the Core Library.
+The Watch Nodes are essential to managing the data that is flowing through your Visual Program. While you can view the result of a Node through the Node data preview, you may want to keep it revealed in a **Watch** Node or see the geometry results through a **Watch3D** Node. Both of these are found in the View Category in the Core Library.
 
 > Tip: Occasionally the 3D Preview can be distracting when your Visual Program contains a lot of Nodes. Consider unchecking the Showing Background Preview option in the Settings Menu and using a Watch3D Node to preview your geometry.
 
@@ -69,7 +69,7 @@ The Watch Nodes are essential to managing the data that is flowing through your 
 2. Type ```Circle.ByCenterPointRadius(x,y);```
 3. Clicking on the Workspace to clear the selection should add ```x``` and ```y``` inputs automatically
 4. Create a **Point.ByCoordinates** Node and a **Number Slider** then connect them to the inputs of the Code Block
-5. The result of executing the Viaual Program should be a circle in the 3D Preview
+5. The result of executing the Visual Program should be a circle in the 3D Preview
 
 
 

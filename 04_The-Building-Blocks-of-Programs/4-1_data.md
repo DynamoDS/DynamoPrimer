@@ -11,7 +11,7 @@ Data is a set of values of qualitative or quantitative variables. The simplest f
 3. Action (A Node) without Data Inputs returns a generic function
 
 ### 4.1.2. Beware of Nulls
-The ```'null'``` type represents the absense of data. While this is abstract you will likely come across this while working with Visual Programming. If an action doesn't create a valid result, the Node will return a null. Testing for nulls and removing nulls from data structure is a crucial part to creating robust programs.
+The ```'null'``` type represents the absence of data. While this is an abstract concept, you will likely come across this while working with Visual Programming. If an action doesn't create a valid result, the Node will return a null. Testing for nulls and removing nulls from data structure is a crucial part to creating robust programs.
 
 | Icon | Name/Syntax | Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |
@@ -30,7 +30,7 @@ A list represents a collection of items placed into one structure of data:
 2. The **List.GetItemAtIndex** battery selects an item in a list at a specific index.  When choosing *0*, we get the first item in the list (*100* in this case).
 3. Applying the same process to the second list, we get a value of *0*, the first item in the list.
 4. Now we merge the two lists into one by using the **List.Create** battery.  Notice that the battery creates a *list of lists.* This changes the structure of the data.
-5. When using **List.GetItemAtIndex** again, with index set to *0*, we get the first list in the list of lists.  This is what it means to treat a list as an item, which is somewhat different from other scripting languages. We will get more advanced on list manipulation and data structure in later chapters.
+5. When using **List.GetItemAtIndex** again, with index set to *0*, we get the first list in the list of lists.  This is what it means to treat a list as an item, which is somewhat different from other scripting languages. We will get more advanced with list manipulation and data structure in later chapters.
 
 The key concept to understand about data hierachy in Dynamo: **with respect to data structure, lists are regarded as items.**  In other words, Dynamo functions with a top-down process for understanding data structures. What does this mean? Let's walk-through it with an example.
 
@@ -72,7 +72,7 @@ At this point, we've created an awesome thickening cylinder thing.  This is one 
 
 ![](images/4-1/10.png)
 > This step is more involved so let's walk through it slowly: the end goal is to create a list of numbers which define the locations of each cylinder in a row.
-1. **Multiplication -** First, we want to multiply the value from the previous step by 2. The value from the previous step represents a radius, and we want move the cylinder the full diameter.
+1. **Multiplication -** First, we want to multiply the value from the previous step by 2. The value from the previous step represents a radius, and we want to move the cylinder the full diameter.
 2. **Number Sequence -** we create an array of numbers with this battery.  The first input is the *multiplication* battery from the previous step into the *step* value.  The *start* value can be set to *0.0* using a *number* battery.
 3.  **Integer Slider - ** For the *amount* value, we connect an integer slider. This will define how many cylinders are created.
 4. **Output - ** This list shows us the distance moved for each cylinder in the array, and is parametrically driven by the original sliders.

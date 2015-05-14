@@ -21,16 +21,16 @@ The step above has created a list of numbers to define the parametric domain.  T
 ![](images/4-2/4-2-5/y.gif)=![](images/4-2/4-2-5/goldenSpiral2.gif). The group of Nodes below represent this equation in visual programming form.
 
 ![](images/4-2/4-2-5/02.png)
-> When stepping through the group of Nodes, try to pay attention the parallel between the visual program and written equation.
+> When stepping through the group of Nodes, try to pay attention to the parallel between the visual program and written equation.
 1. **Number Slider:** Add two number sliders to the canvas.  These sliders will represent the *a* and the *b* variables of the parametric equation.  These represent a constant which is flexible, or parameters which we can adjust towards a desired outcome.
 2. ** * :** The multiplication Node is represented by an aseterisk.  We'll use this repeatedly to connect multiplying variables
-3. **Math.RadiansToDegrees:** The '*t*' values need to be translate to degrees for their evaluation in the trigonometric functions.  Remember, Dynamo defaults to degrees for evaluating these functions.
+3. **Math.RadiansToDegrees:** The '*t*' values need to be translated to degrees for their evaluation in the trigonometric functions.  Remember, Dynamo defaults to degrees for evaluating these functions.
 4. **Math.Pow:** as a function of the '*t*' and the number '*e*' this creates the Fibonacci sequence.
-5. **Math.Cos and Math.Sin:**  These two trigonmetric function will differentiating the x-coordinate and the y-coordinate, respectively, of each parametric point.
+5. **Math.Cos and Math.Sin:**  These two trigonmetric functions will differentiate the x-coordinate and the y-coordinate, respectively, of each parametric point.
 6.  **Watch: **We now see that our output is two lists, these will be the *x* and *y* coordinates of the points used to generate the spiral.
 
 ### 4.2.3. From Formula to Geometry
-Now, the bulk of Nodes from the previous step will work fine, but it is a lot of work.  To create a more efficient workflow, have a look at **Code Blocks** (section 3.3.2.3) to define a string of Dynamo expressions into one node.  In this next series steps, we'll look at using the parametric equation to draw the Fibonacci spiral.
+Now, the bulk of Nodes from the previous step will work fine, but it is a lot of work.  To create a more efficient workflow, have a look at **Code Blocks** (section 3.3.2.3) to define a string of Dynamo expressions into one node.  In this next series of steps, we'll look at using the parametric equation to draw the Fibonacci spiral.
 ![](images/4-2/4-2-5/03.png)
 > 1. **Point.ByCoordinates:** Conect the upper multiplication node into the '*x*' input and the lower into the '*y*' input. We now see a parametric spiral of points on the screen.
 
@@ -50,7 +50,7 @@ We've now completed the Fibonacci Spiral!  Let's take this further into two sepa
 
 ![](images/4-2/4-2-5/03a.png)
 > 1. **Circle.ByCenterPointRadius:** To create a more dynamic array of circles, we plug the original number sequence (the '*t*' sequence) into the radius value.
-2. **Number Sequence:** This is the original array of '*t*'.  By pluggin this into the radius value, the circle centers are still diverging further from the origin, but the radius of the circles are increasing, creating a funky Fibonacci circle graph.  Bonus points if you make it 3D!
+2. **Number Sequence:** This is the original array of '*t*'.  By plugging this into the radius value, the circle centers are still diverging further from the origin, but the radius of the circles are increasing, creating a funky Fibonacci circle graph.  Bonus points if you make it 3D!
 
 ### 4.2.5 From Nautilus to Phyllotaxis Pattern
 Now that we've made a circular Nautilus shell, let's jump into parametric grids.  We're going to use a basic rotate on the Fibonacci Spiral to create a Fibonacci grid, and the result is modeled after the [growth of sunflower seeds.](http://ms.unimelb.edu.au/~segerman/papers/sunflower_spiral_fibonacci_metric.pdf)

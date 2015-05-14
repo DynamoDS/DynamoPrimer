@@ -1,6 +1,6 @@
 ##2. Installing and Launching Dynamo
 
-Dynamo is an active open-source development project with downloadable installers for both official and pre-release ie. "daily build" versions. Download the official release to get started or contribute to what Dynamo becomes through the daily builds or Github project.
+Dynamo is an active open-source development project with downloadable installers for both official and pre-release, ie. "daily build" versions. Download the official release to get started, or contribute to what Dynamo becomes through the daily builds or Github project.
 
 ###2.1.1. Downloading
 To download the official released version of Dynamo, visit the [Dynamo website](http://dynamobim.com/). Start the download of Version 0.8.0 immediately by clicking from the homepage or browse to the dedicated download page.
