@@ -17,7 +17,7 @@ Once we've installed the application, Dynamo will enable us to work within a Vis
 > Add elements, connect, and we are off and running with creating Visual Programs.
 
 ###1.2.3. The Community
-Dynamo wouldn't be what it is without a strong group of avid users and active contributers. Engage the community by following the Blog, adding your work to the Gallery, or discuss Dynamo in the Forum.
+Dynamo wouldn't be what it is without a strong group of avid users and active contributers. Engage the community by following the Blog, adding your work to the Gallery, or discussing Dynamo in the Forum.
 
 ![The Forum](images/1-2/02-Community.png)
 
