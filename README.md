@@ -3,12 +3,12 @@
 
 ![Dynamo Logo](images/dynamo_logo_dark-trim.png)
 
-> Dynamo is a platform for toolmakers to make better tools by providing access to the core of Autodesk software thereby enabling us to connect the dots.
+> Dynamo is a platform for toolmakers to make better tools by providing access to the core of Autodesk software, thereby enabling us to connect the dots.
 
 ### Welcome
 You have just opened the First Edition of the Dynamo Primer, a comprehensive guide to visual programming for the ecosystem of Autodesk design software. This primer is an on-going, collaborative project between the development team at Autodesk, Mode Lab, and you to document and explore: fundamental concepts; best practices; cross-disciplinary applications; and more with Dynamo.
 
-Version 1.0 of this primer includes the first four chapters of a planned twelve chapters to be released in the coming months. These first chapters focus on the essentials you will need to get up and running using the "Sandbox" version of **Dynamo**. The power of Dynamo as a platform resides in the ability for us to develop visual programs for a wide array of creative softwares from the Autodesk suite so later chapters will survey some of the most exciting connections.
+Version 1.0 of this primer includes the first four chapters of a planned twelve chapters to be released in the coming months. These first chapters focus on the essentials you will need to get up and running using the "Sandbox" version of **Dynamo**. The power of Dynamo as a platform resides in the ability for us to develop visual programs for a wide array of creative softwares from the Autodesk suite, so later chapters will survey some of the most exciting connections.
 
 We are excited to go on this journey together. Let's get started!
 
@@ -33,7 +33,7 @@ http://dynamobim.com/download/
 
 http://dynamobim.org
 
-**Dynamo GitHub** Dynamo is an open-source development project on Github. To contribute check out DynamoDS hosted by Ian Keough.
+**Dynamo GitHub** Dynamo is an open-source development project on Github. To contribute, check out DynamoDS hosted by Ian Keough.
 
 https://github.com/ikeough/Dynamo
 

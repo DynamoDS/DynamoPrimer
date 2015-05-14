@@ -1,6 +1,6 @@
 ### 1.1. What is Visual Programming?
 
-Creative practice frequently involves establishing visual, systemic, or geometric relationships between the parts of a design. More times than not, these relationships are developed by a procedural workflow that gets us from concept to result. Perhaps without knowing it, we are working algorithmically - definiting a step-by-step set of actions that follow a basic logic of input, processing, and output. Programming allows us to continue to work this way but by formalizing our algorithms.
+Creative practice frequently involves establishing visual, systemic, or geometric relationships between the parts of a design. More times than not, these relationships are developed by a procedural workflow that gets us from concept to result. Perhaps without knowing it, we are working algorithmically - defining a step-by-step set of actions that follow a basic logic of input, processing, and output. Programming allows us to continue to work this way but by formalizing our algorithms.
 
 ###1.1.1. Algorithms in Hand
 While offering some powerful opportunities, the term **Algorithm** can carry some misconceptions with it. Algorithms can generate unexpected, wild, or cool things, but they are not magic. In fact, they are pretty plain in and of themselves. Let's use a tangible example like an origami crane. We start with a square piece of paper (input), follow a series of folding steps (processing actions), and result in a crane (output).
