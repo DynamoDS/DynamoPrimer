@@ -64,7 +64,7 @@ With the reference point created, we now compare the distance from the reference
 > 1. **Geometry.DistanceTo:** Connect *Curve.PointAtParameter* output into the *input*.  Connect *Point.ByCoordinates* into the *geometry input.
 2. **Watch:** The resultant output shows a list of distances from each helical point to the reference point along the curve.
 
-Our next step is drive parameters with the list of distances from the helical points to the reference point.  We use these distance values to define the radii of a series of spheres along the curve. In order to keep the spheres a suitable size, we need to *remap* the values for distance.
+Our next step is to drive parameters with the list of distances from the helical points to the reference point.  We use these distance values to define the radii of a series of spheres along the curve. In order to keep the spheres a suitable size, we need to *remap* the values for distance.
 
 ![](images/4-5/4-5-5/08.png)
 > 1. **Math.RemapRange:** Connect *Geometry.DistanceTo* output inot the numbers input.
