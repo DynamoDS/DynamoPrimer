@@ -1,15 +1,15 @@
-## 4.5 Color
+## 4.5. Color
+Color is a great data type for creating compelling visuals as well as for rendering difference in the output from your Visual Program. When working with abstract data and varying numbers, sometimes it's difficult to see what's changing and to what degree. This is a great application for colors.
 
-###4.5.1 Creating
-**Color.ByARGB -** Colors in Dynamo are created using ARGB inputs. This corresponds to the Alpha, Red, Green, and Blue values.  The alpha represents the *transparency* of the color, while the other three are used as primary colors to generate the whole spectrum of color in concert.
+### 4.5.1. Creating Colors
+Colors in Dynamo are created using ARGB inputs.This corresponds to the Alpha, Red, Green, and Blue channels. The alpha represents the *transparency* of the color, while the other three are used as primary colors to generate the whole spectrum of color in concert.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCore-Color-ByARGB-Large.png) | ARGB Color | Color.ByARGB | A,R,G,B | color |
 
-
-###4.5.2 Querying
-**RGB Space -** The colors in the table below query the properties used to define the color: Alpha, Red, Green, and Blue.  Note that the Color.Components battery gives us all four as different outputs, which makes this battery preferable for querying the  properties of a color.
+### 4.5.2. Querying Color Values
+The colors in the table below query the properties used to define the color: Alpha, Red, Green, and Blue.  Note that the Color.Components Node gives us all four as different outputs, which makes this Node preferable for querying the properties of a color.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- | -- |
@@ -19,7 +19,7 @@
 | ![](../images/icons/DSCore-Color-Blue-Large.png) | Blue | Color.Blue | color | B |
 | ![](../images/icons/DSCore-Color-Components-Large.png) | Components | Color.Components | color | A,R,G,B |
 
-**HSB Space - ** The colors in the table below correspond to the HSB color space.  Dividing the color into hue, saturation, and brightness is arguably more intuitive for how we  interpret color: What color should it be? How colorful should it be? And how light or dark should the color be?  This is the breakdown of hue, saturation, and brightness respectively.
+The colors in the table below correspond to the **HSB color space**.  Dividing the color into hue, saturation, and brightness is arguably more intuitive for how we  interpret color: What color should it be? How colorful should it be? And how light or dark should the color be?  This is the breakdown of hue, saturation, and brightness respectively.
 
 | Icon | Query Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- | -- |
@@ -27,10 +27,10 @@
 | ![](../images/icons/DSCore-Color-Saturation-Large.png) | Saturation | Color.Saturation | color | Saturation |
 | ![](../images/icons/DSCore-Color-Brightness-Large.png) | Brightness | Color.Brightness | color | Brightness |
 
-###4.5.3 Color Range
-The color range is similar to the **Remap Range** battery from section 4.2: it remaps a list of numbers into another domain.  But instead of mapping to a *number* domain, it maps to a *color gradient* based on input numbers ranging from 0 to 1.
+### 4.5.3. Color Range
+The color range is similar to the **Remap Range** Node from section 4.2: it remaps a list of numbers into another domain.  But instead of mapping to a *number* domain, it maps to a *color gradient* based on input numbers ranging from 0 to 1.
 
-The current battery works well, but it can be a little awkward to get everything working the first time around.  Below is a miniature exercise for how to setup a gradient with output colors corresponding to numbers.
+The current Node works well, but it can be a little awkward to get everything working the first time around. The best way to become familiar with the color gradient is to test it out interactively. Let's do a quick exercise to review how to setup a gradient with output colors corresponding to numbers.
 
 ![](images/4-5/range.png)
 >1. **Define three colors: ** Using a code block node, define *red, green*, and *blue* by plugging in the appropriate combinations of *0* and *255*.
@@ -38,22 +38,23 @@ The current battery works well, but it can be a little awkward to get everything
 3. **Define Indices: ** Create a list to define the grip positions of each color (ranging from 0 to 1).  Notice the value of 0.75 for green.  This places the green color 3/4 of the way across the horizontal gradient in the color range slider.
 4. **Code Block: ** Input values (between 0 and 1) to translate to colors.
 
-The best way to become familiar with the color gradient is to test it out interactively.  See the Color Exercise at the end of this section to try it in action.
-###4.5.4 Color Preview
+### 4.5.4. Color Preview
+The **Display.ByGeometry** Node gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** Node.
+
 ![](images/4-5/cuboids.png)
 
-The **Display.ByGeometry** battery gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** battery.  Both of these batteries are discussed in the Color exercise at the end of this section.
-###4.5.5 Color Exercise
-This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **code block** (3.3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
+
+###4.5.5. Color Exercise
+This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **Code Block** (3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
 
 ![](images/4-5/4-5-5/11.png)
 > 1. **Code Block:** Define the two code blocks with the formulas above.  This is a quick parametric method for creating a spiral.
-2. **Point.ByCoordinates:**Plug the three outputs from the code block into the coordinates for the battery.
+2. **Point.ByCoordinates:**Plug the three outputs from the code block into the coordinates for the Node.
 
 We now see an array of points creating a helix.  The next step is to create a curve through the poitns so that we can visualize the helix.
 
 ![](images/4-5/4-5-5/10.png)
-> 1. **PolyCurve.ByPoints:** Connect the *Point.ByCoordinates* output into the *points* input for the battery.  We get a helical curve.
+> 1. **PolyCurve.ByPoints:** Connect the *Point.ByCoordinates* output into the *points* input for the Node.  We get a helical curve.
 2. **Curve.PointAtParameter:** Connect the *PolyCurve.ByPoints* output into the *curve* input. The purpose of this step is to create a parametric attractor point which slides along the curve.  Since the curve is evaluating a point at parameter, we'll need to input a *param* value betwen 0 and 1.
 3.  **Number Slider:** After adding to the canvas, change the *min* value to *0.0*, the *max* value to *1.0*, and the *step* value to *.01*.  Plug the slider output into the *param* input for *Curve.PointAtParameter*.  We now see a point along the length of the helix, represented by a percentage of the slider (0 at the start point, 1 at the end point).
 
@@ -63,12 +64,12 @@ With the reference point created, we now compare the distance from the reference
 > 1. **Geometry.DistanceTo:** Connect *Curve.PointAtParameter* output into the *input*.  Connect *Point.ByCoordinates* into the *geometry input.
 2. **Watch:** The resultant output shows a list of distances from each helical point to the reference point along the curve.
 
-Our next step is drive parameters with the list of distances from the helical points to the reference point.  We use these distance values to define the radii of a series of spheres along the curve. In order to keep the spheres a suitable size, we need to *remap* the values for distance.
+Our next step is to drive parameters with the list of distances from the helical points to the reference point.  We use these distance values to define the radii of a series of spheres along the curve. In order to keep the spheres a suitable size, we need to *remap* the values for distance.
 
 ![](images/4-5/4-5-5/08.png)
 > 1. **Math.RemapRange:** Connect *Geometry.DistanceTo* output inot the numbers input.
 2. **Code Block:** connect a code block with a value of *0.01* into the *newMin* input and a code block with a value of *1* into the *newMax* input.
-3. **Watch:** connect the *Math.RemapRange* output into one battery and the *Geometry.DistanceTo* output into another.  Compare the results.
+3. **Watch:** connect the *Math.RemapRange* output into one Node and the *Geometry.DistanceTo* output into another.  Compare the results.
 
 This step has remapped the list of distance to be a smaller range.  We can edit the *newMin* and *newMax* values however we see fit.  The values will remap and will have the same *distribution ratio* across the domain.
 
@@ -82,7 +83,7 @@ The size of the spheres demonstrates the parametric array defined by a reference
 
 ![](images/4-5/4-5-5/05.png)
 >  1. **Color Range:** Add top the canvas.  When hovering over the *value* input, we notice that the numbers requested are between 0 and 1.  We need to remap the numbers from the *Geometry.DistanceTo* output so that they are compatible with this domain.
- 2. **Sphere.ByCenterPointRadius:** For the time being, let's disable the preview on this battery (*Right Click > Preview*)
+ 2. **Sphere.ByCenterPointRadius:** For the time being, let's disable the preview on this Node (*Right Click > Preview*)
 
 ![](images/4-5/4-5-5/04.png)
 > 1. **Math.RemapRange:** This process should look familiar. Connect the *Geometry.DistanceTo* output into the numnbers input.

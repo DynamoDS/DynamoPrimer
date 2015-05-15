@@ -1,5 +1,5 @@
-#4 THE BUILDING BLOCKS OF PROGRAMS
+#4. THE BUILDING BLOCKS OF PROGRAMS
 
-####Intro text
+##### Once we are ready to dive deeper into developing Visual Programs, we will need a deeper understanding of the building blocks we will use. This chapter introduces fundamental concepts around data - the stuff that travels through the Wires of our Dynamo program.
 
-(Insert Image)
+![Building Blocks Main](images/4/The Building Blocks of Program-01.png)
