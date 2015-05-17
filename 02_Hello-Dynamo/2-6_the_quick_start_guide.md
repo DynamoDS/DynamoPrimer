@@ -42,10 +42,10 @@ Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wir
 4. **Point.ByCoordinates** and **DistanceTo** to **Circle.ByCenterPointRadius**
 
 ###2.4.4. Executing the Program
-With our Program Flow defined, all we need to do is tell Dynamo to execute it. By clicking on Run in the Execution Bar, the Nodes will be activated, data will pass through the Wires, and we should see the results in the 3d Preview.
+With our Program Flow defined, all we need to do is tell Dynamo to execute it. Once our program is executed (either Automatically or when we click Run in Manual Mode), data will pass through the Wires, and we should see the results in the 3d Preview.
 
 ![After Run](images/2-4/05-GraphExecuted.png)
-> 1. Click Run - In Manual Mode, we need to Click Run to execute the graph
+> 1. (Click Run) - If the Execution Bar is in Manual Mode, we need to Click Run to execute the graph
 2. Node Preview - Hovering your mouse over the box on the lower right corner of a Node will give you a pop-up of the results
 3. 3D Preview - If any of our Nodes create geometry, we will see it in the 3D Preview.
 
