@@ -37,8 +37,9 @@ To launch Dynamo, browse to the Windows Start Menu > Dynamo > **Dynamo 0.8.1**. 
 
 Open the first sample file to open your first workspace and confirm Dynamo is working correctly. Click Samples > Basics > **Basics_Basic01.dyn**.
 
-![NEEDS UPDATE - drop shadow - Basics_Basic01](images/2-1/05-Basics_Basic01.png)
+![NEEDS UPDATE - Basics_Basic01](images/2-1/05-Basics_Basic01.png)
 > 1. Confirm that the Execution Bar says "Automatic" or click Run
-2. Confirm that this Watch Node shows a result
+2. Follow the instructions and connect the **Number** Node to the **+** Node
+3. Confirm that this Watch Node shows a result
 
 If this file successfully loads, you should be able to execute your first visual program with Dynamo.
