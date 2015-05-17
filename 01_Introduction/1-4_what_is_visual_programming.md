@@ -52,6 +52,9 @@ attractorPoint = Point.ByCoordinates(x,y,0.0);
 dist = myPoint.DistanceTo(attractorPoint);
 myCircle = Circle.ByCenterPointRadius(myPoint,dist);
 ```
+The results of our algorithm:
 
-The visual characteristic to programming in such a way frequently speaks to creative professionals and definitely lowers the barrier to entry. Dynamo falls in the Visual Programming paradigm, but as we will see later, we can still use textual programming in the application as well.
+![Circle Through Point ](images/1-1/04-CircleThroughPoint.png)
+
+The visual characteristic to programming in such a way lowers the barrier to entry and frequently speaks to designers. Dynamo falls in the Visual Programming paradigm, but as we will see later, we can still use textual programming in the application as well.
 
