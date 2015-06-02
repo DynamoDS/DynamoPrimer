@@ -1,13 +1,13 @@
-## 4.4 Strings
+## 4.4. Strings
 Formally, a **String** is a sequence of characters representing a literal constant or some type of variable. Informally, a string is programming lingo for text.  We've worked with numbers, both integers and decimal numbers, to drive parameters and we can do the same with text.
 
-### 4.4.1 Creating Strings
+### 4.4.1. Creating Strings
 Strings can be used for a wide range of applications, including defining custom parameters, annotating documentation sets, and parsing through text-based data sets. The string Node is located in the Core>Input Category.
 
 ![String Examples](images/4-4/4-4-1-005.png)
 > The sample Nodes above are strings.  A number can be represented as a string, as can a letter, or an entire array of text.
 
-### 4.4.2 Querying Strings
+### 4.4.2. Querying Strings
 You can parse through large amounts of data quickly by querying strings.  We'll talk about some basic operations which can speed up a workflow and help for software interoperability.
 
 The image below considers a string of data coming from an external spreadsheet.  The string represents the vertices of a rectangle in the XY-Plane.  Let's break down some string split operations in miniature exercise:
@@ -28,7 +28,7 @@ While the list of items above may look like numbers, they are still regarded as 
 ![StringToNumber](images/4-4/4-4-1-004.png)
 > 1. With some basic additional operations, we now have a rectangle drawn at the origin based on the original string input.
 
-### 4.4.3 Manipulating Strings
+### 4.4.3. Manipulating Strings
 Since a string is a generic text object, they host a wide range of applications.  Let's take a look at some of the major actions in the Core>String Category in Dynamo:
 
 This is a method of merging two strings together in order. This takes each literal string in a list and creates one merged string.
@@ -45,7 +45,7 @@ If you've worked in Excel, you may have come across a CSV file.  This stands for
 > The image above represents the joining of two strings:
 1. The separator input allows one to create a string which divides the joined strings.
 
-### 4.4.4 Working with Strings
+### 4.4.4. Working with Strings
 In this exercise, we're going to use methods of querying and manipulating strings to deconstruct the final stanza of Robert Frost's [Stopping By Woods on a Snowy Evening](http://www.poetryfoundation.org/poem/171621).  Not the most practical application, but it will help us to grasp conceptual string actions as we apply them to legible lines of rhythm and rhyme.
 
 ![Split String](images/4-4/4-4-4/00.png)
