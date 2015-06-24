@@ -34,5 +34,6 @@
    * [n-Dimensional Lists](06_Designing-with-Lists/6-4_n-dimensional-lists.md)
 * [Appendix](Appendix/A_appendix.md)
   * [Item](Appendix/A-1_resources.md)
-  * [Item](Appendix/A-2_index-of-nodes.md)
+  * [Index of Nodes](Appendix/A-2_index-of-nodes.md)
+  * [Index of Nodes Case Study](Appendix/A-2b_index-of-nodes-CaseStudy.md)
   * [Item](Appendix/A-3_example-files.md)

@@ -161,6 +161,8 @@ Geometry
 |Geometry.DistanceTo|Obtain the distance from this Geometry to another.|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.DistanceTo.Large.png)
 |Geometry.Rotate<br>(basePlane)|Rotates an object around the Plane origin and normal by a specified degree.|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.Rotate.Plane-double.Large.png)
 
+
+
 ####Geometry.Plane
 ||||
 |--|--|--|
