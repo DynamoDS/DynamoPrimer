@@ -35,5 +35,4 @@
 * [Appendix](Appendix/A_appendix.md)
   * [Item](Appendix/A-1_resources.md)
   * [Index of Nodes](Appendix/A-2_index-of-nodes.md)
-  * [Index of Nodes Case Study](Appendix/A-2b_index-of-nodes-CaseStudy.md)
   * [Item](Appendix/A-3_example-files.md)
