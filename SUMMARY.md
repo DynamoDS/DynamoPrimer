@@ -35,4 +35,4 @@
 * [Appendix](Appendix/A_appendix.md)
   * [Item](Appendix/A-1_resources.md)
   * [Index of Nodes](Appendix/A-2_index-of-nodes.md)
-  * [Item](Appendix/A-3_example-files.md)
+  * [Example Files](Appendix/A-3_example-files.md)
