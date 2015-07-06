@@ -35,7 +35,7 @@
 * [Code Blocks and Dynamo Language](07_Code-Block/7_Code-Blocks-and-Dynamo-Language.md)
    * [What's a Code Block](07_Code-Block/7-1_what-is-a-code-block.md)
    * [Dynamo Lanuage Syntax](07_Code-Block/7-2_dynamo-lanuage-syntax.md)
-   * [Analogs - "Obsolete" nodes](07_Code-Block/7-3_analogs-aka-obsolete-nodes.md)
+   * [Shorthand](07_Code-Block/7-3_shorthand.md)
    * [Functions](07_Code-Block/7-4_functions.md)
 * [Dynamo for Revit](08_Dynamo-for-Revit/8_Dynamo-for-Revit.md)
    * [The Revit Connection](08_Dynamo-for-Revit/8-1_The-Revit-Connection.md)

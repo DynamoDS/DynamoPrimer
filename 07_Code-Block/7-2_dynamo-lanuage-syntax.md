@@ -18,7 +18,8 @@ You’ll find that your library is organized with these categories in mind. Meth
 ![UI Example](images/7-2/CB-PointByCoordinates.png)
 ### "." Format
 Text
-
+### What About Lacing?
+Text
 ### Exercise
 Text
 ![Exercise](images/7-2/Exercise/10.png)
