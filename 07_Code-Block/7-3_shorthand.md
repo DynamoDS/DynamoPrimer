@@ -1,34 +1,49 @@
 ## Shorthand
-Text
+There are a few basic shorthand methods in the code block which, simply put, make data management *a lot* easier.  We'll break down the basics below and discuss how this shorthand can be used both for creating and querying data.
 
-### Inputs
-Text
-
-### Operators
-Text
-
-### Numbers, strings, and formulas
-In addition to inputs and operators, code blocks are flexible towards data types.  The user can quickly define numbers, strings, and formulas and the code block will deliver.  In the image below, you can see the "old school" way of doing things is a little long-winded: the user searches for the intended node in the interface, adds the node to the canvas, and then inputs the data.  With code block, the user can double-click on the canvas to pull up the node, and type in the correct data type with basic syntax.
-![Obsolete Nodes](images/7-3/obsolete01.png)
->The number, string, and formula nodes are three examples of Dynamo nodes which are arguably obsolete in comparison to the code block.
 
 ### Ranges
-Similarly, the method for defining ranges and sequences can be reduced to basic shorthand.  Use the image below as a guide to the ".." syntax for defining a list of numerical data with code block. After getting the hang of this notation, creating numerical data is a really efficient process:
+The method for defining ranges and sequences can be reduced to basic shorthand.  Use the image below as a guide to the ".." syntax for defining a list of numerical data with code block. After getting the hang of this notation, creating numerical data is a really efficient process:
 ![Obsolete Ranges](images/7-3/obsolete02.png)
+> 1. In this example, a number range is replaced by basic code block syntax defining the ```beginning..end..step-size;
+```.  Represented numerically, we get: ```0..10..1;
+```
+2. Notice that the syntax ```0..10..1;
+``` is equivalent to ```0..10;
+```.  A step-size of 1 is the default value for the shorthand notation. So ```0..10;
+``` will give a sequence from 0 to 10 with a step-size of 1.
+3. The number sequence example is similar, except we use a *"#"* to state that we want 15 values in the list, rather than a list which goes up to 15.  In this case, we are defining: ```beginning..#ofSteps..step-size:
+```.  The actual syntax for the sequence is ```0..#15..2
+```
+4. Using the *"#"* from the previous step, we now place it in the *"step-size"* portion of the syntax.  Now, we have a number range spanning from the *"beginning"* to the *"end"* and the *"step-size"* notation evenly distributes a number of values between the two: ```beginning..end..#ofSteps
+```
+
+
+
+
+
 
 ### Advanced Ranges
-![Ranges](images/7-3/01.png)
+Creating advanced ranges allows us to work with list of lists in a simple fashion.  In the examples below, we're isolating a variable from the primary range notation, and creating another range of that list.
 ![Ranges](images/7-3/03.png)
+>1. Creating nested ranges, compare the notation with a *"#"* vs. the notation without.  The same logic applies as in basic ranges, except it gets a little more complex.
+2. We can define a sub-range at any place within the primary range, and notice that we can have two sub-ranges as well.
+3. By controlling the *"end"* value in a range, we create more ranges of differing lengths.
+
 ![Ranges](images/7-3/02.png)
+> As a logic exercise, compare the two shorthands above and try to parse through how *subranges* and the *"#"* notation drive the resultant output.
 
-### What About Lacing?
-Lacing with nodes is somewhat different from lacing with code block.  With nodes, the user right clicks on the battery and selects the lacing option to perform.  With code block, you the user has much more control as to how the data is structured.  The code block shorthand method uses *replication guides* to set how several one-dimensional lists should be paired. Numbers in angled brackets "<>" define the hierarchy of the resulting nested list: <1>,<2>,<3>, etc.
-![Lacing](images/7-3/lacing.png)
+###  Make lists and get items from a list
+In addition to making lists with shorthand, we can also create lists on the fly.  These list can contain a wide range of element types and can also be queried (remember, lists are objects in themselves).  To summarize, with code block you make lists with braces (a.k.a. “curly brackets”) and you query items from a list with brackets (a.k.a. “square brackets”):
 
-> 1. In this example, we have lists of 2 x-values and 5 y-values. If we don’t use replication guides with these mismatched lists, we get two points as a result, the same as the length of the shortest list. Using replication guides, we can find all of the possible combinations of 2 and 5 coordinates (or, a *Cross Product*).
-2. With this notation, we can also specify which list will be dominant: 2 lists of 5 things or 5 lists of 2 things. In the example, changing the order of the replication guides makes the result a list of rows of points or a list of columns of points in a grid.
+![Querying Lists](images/7-3/cbn07.png)
+>1. Create lists quickly with strings and query them using the item index.
+2. Create lists with variables and query using the range shorthand notation.
 
+And manging with nested lists is a similar process. Be aware of the list order and recall using multiple sets of square brackets:
 
+![Querying Lists](images/7-3/cbn08.png)
+>1.  Define a list of lists and query a nested list with two bracket notations.
 
 
 
