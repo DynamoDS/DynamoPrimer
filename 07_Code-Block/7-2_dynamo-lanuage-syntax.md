@@ -18,8 +18,13 @@ You’ll find that your library is organized with these categories in mind. Meth
 ![UI Example](images/7-2/CB-PointByCoordinates.png)
 ### "." Format
 Text
-### What About Lacing?
-Text
+
+### Flexibility
+With Code Blocks, a user has flexibility to decide how to specify inputs. Here are several different ways to make the point (10, 5, 0):
+![Flexibility](images/7-2/flexibility.png)
+
+As you learn more of the available functions in the library, and you know what you want, you might even find that typing “Point.ByCoordinates” is faster than searching in the library and finding the proper node.
+
 ### Exercise
 Text
 ![Exercise](images/7-2/Exercise/10.png)
