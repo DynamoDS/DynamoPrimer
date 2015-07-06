@@ -17,19 +17,31 @@ In addition to inputs and operators, code blocks are flexible towards data types
 
 
 ### Exercise
-![Exercise](images/7-3/Exercise/10.png)
+![Exercise](images/7-3/Exercise/13.png)
 >1. Descriptive Text
 2. Second step of descriptive text
 
-![Exercise](images/7-3/Exercise/01.png)
+![Exercise](images/7-3/Exercise/12.png)
 >1. Descriptive Text
 2. Second step of descriptive text
 
-![Exercise](images/7-3/Exercise/07.png)
+![Exercise](images/7-3/Exercise/11.png)
 >1. Descriptive Text
 2. Second step of descriptive text
 
 ![Exercise](images/7-3/Exercise/06.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-3/Exercise/10.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-3/Exercise/09.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-3/Exercise/07.png)
 >1. Descriptive Text
 2. Second step of descriptive text
 
@@ -49,18 +61,10 @@ In addition to inputs and operators, code blocks are flexible towards data types
 >1. Descriptive Text
 2. Second step of descriptive text
 
-![Exercise](images/7-3/Exercise/03.png)
+![Exercise](images/7-3/Exercise/01.png)
 >1. Descriptive Text
 2. Second step of descriptive text
 
-![Exercise](images/7-3/Exercise/02.png)
->1. Descriptive Text
-2. Second step of descriptive text
-
-![Exercise](images/7-3/Exercise/09.png)
->1. Descriptive Text
-2. Second step of descriptive text
-
-![Exercise](images/7-3/Exercise/08.png)
+![Exercise](images/7-3/Exercise/00.png)
 >1. Descriptive Text
 2. Second step of descriptive text

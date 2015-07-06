@@ -21,5 +21,51 @@ Text
 
 ### Exercise
 Text
+![Exercise](images/7-2/Exercise/10.png)
+>1. Descriptive Text
+2. Second step of descriptive text
 
+![Exercise](images/7-2/Exercise/01.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-2/Exercise/07.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-2/Exercise/06.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-2/Exercise/05.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-2/Exercise/04.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-2/Exercise/03.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-2/Exercise/02.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-3/Exercise/03.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-2/Exercise/02.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-2/Exercise/09.png)
+>1. Descriptive Text
+2. Second step of descriptive text
+
+![Exercise](images/7-2/Exercise/08.png)
+>1. Descriptive Text
+2. Second step of descriptive text
 
