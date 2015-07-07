@@ -1,4 +1,4 @@
-## Geometry Overview 
+## Geometry Overview
 Text
 
 ### The Basics
