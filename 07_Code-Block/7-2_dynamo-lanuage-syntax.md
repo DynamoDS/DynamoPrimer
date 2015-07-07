@@ -63,9 +63,8 @@ To show the power of code block, we are going to translate an existing attractor
 ![Exercise](images/7-2/Exercise/01.png)
 > Begin by recreating the definition in the image above (or by opening the sample file).
 1. Notice that the lacing on *Point.ByCoordinates* has been set to *Cross Product*.
-2. This definition creates an attractor field which is driven by a reference point.
-3. Each point in a grid is moved up in the Z direction based on its distance to the reference point.
-4. A surface is recreated and thickened, creating a bulge in the geometry relative to the distance to the reference point.
+2. Each point in a grid is moved up in the Z direction based on its distance to the reference point.
+3. A surface is recreated and thickened, creating a bulge in the geometry relative to the distance to the reference point.
 
 ![Exercise](images/7-2/Exercise/07.png)
 >1. Starting from the beginning, let's define the reference point first: ```Point.ByCoordinates(x,y,0);
@@ -106,11 +105,11 @@ To show the power of code block, we are going to translate an existing attractor
 
 
 ###Node To Code
-We would be remiss if skipped over what is arguably the coolest new feature in Dynamo: node to code.  This is still under development as of writing this, but this process automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
+We would be remiss if we skipped over what is arguably the coolest new feature in Dynamo: node to code.  This is still under development as of writing this, but this process automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
 
 ![Exercise](images/7-2/Exercise/09.png)
->1. Start with the existing visual script from step 1 of the exercise. Select all of the nodes, right click on the canvas, and select *Node to Code*.  Simple as that.
+> Start with the existing visual script from step 1 of the exercise. Select all of the nodes, right click on the canvas, and select *Node to Code*.  Simple as that.
 
 ![Exercise](images/7-2/Exercise/08.png)
->1. Dynamo has automated a text based version of the visual graph, lacing and all. Test this out on your visual scripts and release the power of the code block!
+> Dynamo has automated a text based version of the visual graph, lacing and all. Test this out on your visual scripts and release the power of the code block!
 
