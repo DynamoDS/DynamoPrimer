@@ -2,10 +2,11 @@
 You may have noticed a common theme in the names of nodes in Dynamo: each node uses a *"."* syntax without spaces.  This is because the text at the top of each node respresents the actual syntax for scripting, and the *"."* (or *dot notation*) separates an element from the possible methods we can call.  This creates an easy translation from visual scripting to text-based scripting. Let's look at *Point.ByCoordinates* and show how we can create a point using the code block:
 
 ![NodeNames](images/7-2/cbn02.png)
-> 1. We're calling *Point.ByCoordinates* in the code block and specifying the inputs in the same order as the out-of-the-box node *(X,Y)*.
-2. The code block syntax ```Point.ByCoordinates(0,10);
+> The code block syntax ```Point.ByCoordinates(0,10);
 ```
 gives the same result as a *Point.ByCoordinates* battery in Dynamo, except we're able to create a point using one battery.  This is more efficient than the connecting a separate node into *"X"* and *"Y"*.
+1. By using *Point.ByCoordinates* in the code block, we are specifying the inputs in the same order as the out-of-the-box node *(X,Y)*.
+
 
 ###Calling Nodes
 You can call any regular node in the library through a Code Block as long as the node isn’t a special *“UI” node*: those with a special user interface feature. For instance, you can call *Circle.ByCenterPointRadius*, but it wouldn’t make much sense to call a *Watch 3D* node.
@@ -49,8 +50,7 @@ Lacing with nodes is somewhat different from lacing with code block.  With nodes
 ``` is equivalent to ```{0,1}
 ``` and ```-3..-7
 ```is equivalent to ```
-{-3,-4,-5,-6,-7}```
-2. The result gives us lists of 2 x-values and 5 y-values. If we don’t use replication guides with these mismatched lists, we get a list of two point, which is length of the shortest list. Using replication guides, we can find all of the possible combinations of 2 and 5 coordinates (or, a *Cross Product*).
+{-3,-4,-5,-6,-7}```. The result gives us lists of 2 x-values and 5 y-values. If we don’t use replication guides with these mismatched lists, we get a list of two points, which is the length of the shortest list. Using replication guides, we can find all of the possible combinations of 2 and 5 coordinates (or, a *Cross Product*).
 2. Using the syntax ```Point.ByCoordinates(x_vals<1>,y_vals<2>);
 ``` we get **two** lists with **five** items in each list.
 3. Using the syntax ```Point.ByCoordinates(x_vals<2>,y_vals<1>);
@@ -63,15 +63,14 @@ To show the power of code block, we are going to translate an existing attractor
 ![Exercise](images/7-2/Exercise/01.png)
 > Begin by recreating the definition in the image above (or by opening the sample file).
 1. Notice that the lacing on *Point.ByCoordinates* has been set to *Cross Product*.
-2. This definition creates an attractor field which is driven by a reference point.
-3. Each point in a grid is moved up in the Z direction based on its distance to the reference point.
-4. A surface is recreated and thickened, creating a bulge in the geometry relative to the distance to the reference point.
+2. Each point in a grid is moved up in the Z direction based on its distance to the reference point.
+3. A surface is recreated and thickened, creating a bulge in the geometry relative to the distance to the reference point.
 
 ![Exercise](images/7-2/Exercise/07.png)
 >1. Starting from the beginning, let's define the reference point first: ```Point.ByCoordinates(x,y,0);
 ```.  We use the same *Point.ByCoordinates* syntax as is specified on the top of the reference point node.
 2. The variables *x* and *y* are inserted into the code block so that we may update these dynamically with sliders.
-3.  Add some sliders to the code block inputs which range from *-50* to *50*. This way, we can span the default Dynamo grid.
+3.  Add some sliders to the code block inputs which range from *-50* to *50*. This way, we can span across the default Dynamo grid.
 
 ![Exercise](images/7-2/Exercise/06.png)
 >1. In the second line of the code block, we define a shorthand to replace the number sequence node: ```coordsXY = (-50..50..#11);
@@ -106,11 +105,11 @@ To show the power of code block, we are going to translate an existing attractor
 
 
 ###Node To Code
-We would be remiss if skipped over what is arguably the coolest new feature in Dynamo: node to code.  This is still under development as of writing this, but this process automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
+We would be remiss if we skipped over what is arguably the coolest new feature in Dynamo: node to code.  This is still under development as of writing this, but this process automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
 
 ![Exercise](images/7-2/Exercise/09.png)
->1. Start with the existing visual script from step 1 of the exercise. Select all of the nodes, right click on the canvas, and select *Node to Code*.  Simple as that.
+> 1. Start with the existing visual script from step 1 of the exercise. Select all of the nodes, right click on the canvas, and select *Node to Code*.  Simple as that.
 
 ![Exercise](images/7-2/Exercise/08.png)
->1. Dynamo has automated a text based version of the visual graph, lacing and all. Test this out on your visual scripts and release the power of the code block!
+> Dynamo has automated a text based version of the visual graph, lacing and all. Test this out on your visual scripts and release the power of the code block!
 
