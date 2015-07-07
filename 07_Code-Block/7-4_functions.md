@@ -37,8 +37,11 @@ In this exercise, we will make a generic definition that will create spheres fro
 
 ![Exercise](images/7-4/Exercise/10.png)
 >1. Create a code block and introduce our definition by using the line of code:
-```def sphereByZ(inputPt){};
-```.  The *inputPt* is the name we've given to represent the points that will drive the function.  This is called an argument. As of now, the function isn't doing anything, but we'll build up this function in the following steps.
+```
+def sphereByZ(inputPt){
+};
+```
+  The *inputPt* is the name we've given to represent the points that will drive the function.  As of now, the function isn't doing anything, but we'll build up this function in the steps to come.
 
 ![Exercise](images/7-4/Exercise/09.png)
 >1. Adding to the code block function, we place a comment and a sphereRadius variable which queries the Z position of each point.  Remember, *inputPt.Z* does not need parenetheses as a method.  This is a *query* of an existing element's properties, so no inputs are necessary:
