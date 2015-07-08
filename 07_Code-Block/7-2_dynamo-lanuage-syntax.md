@@ -44,7 +44,7 @@ Query-type methods get a property of an object. Since the object itself is the i
 
 ### How About Lacing?
 Lacing with nodes is somewhat different from lacing with code block.  With nodes, the user right clicks on the battery and selects the lacing option to perform.  With code block, the user has much more control as to how the data is structured.  The code block shorthand method uses *replication guides* to set how several one-dimensional lists should be paired. Numbers in angled brackets "<>" define the hierarchy of the resulting nested list: <1>,<2>,<3>, etc.
-![Lacing](images/7-3/lacing.png)
+![Lacing](images/7-2/lacing.png)
 
 > 1. In this example, we use a shorthand to define two ranges (more on shorthand in the following section of this chapter).  In short, ```0..1;
 ``` is equivalent to ```{0,1}
