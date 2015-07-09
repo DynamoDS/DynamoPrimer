@@ -43,6 +43,7 @@
    * [Editing](08_Dynamo-for-Revit/8-3_Editing.md)
    * [Creating](08_Dynamo-for-Revit/8-4_Creating.md)
    * [Customizing](08_Dynamo-for-Revit/8-5_Customizing.md)
+   * [Documenting](08_Dynamo-for-Revit/8-6_Documenting.md)
 * [Appendix](Appendix/A_appendix.md)
   * [Item](Appendix/A-1_resources.md)
   * [Index of Nodes](Appendix/A-2_index-of-nodes.md)
