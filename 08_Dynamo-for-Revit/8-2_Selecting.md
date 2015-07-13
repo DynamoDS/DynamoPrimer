@@ -1,14 +1,30 @@
 ## Selecting
-Text
+Revit is a data-rich environment.  This gives us a range of selection abilities which expands far beyond "point-and-click".  We can query the Revit database and dynamically link Revit elements to Dynamo geometry while performing parametric operations.
 
-### Selection
-Text
+![UI](images/8-2/selectionUI.png)
+> The Revit library in the UI offers a "Selection" category which enables multiple ways to select geometry.
+
+To select Revit elements properly, it's important to have a full-understanding of the Revit element hierarchy. Want to select all the walls in a project? Select by category.  Want to select every Eames chair in your mid-century modern lobby? Select by family.  Before jumping into an exercise, let's do a quick review of the Revit hierarchy.
+
 #### Revit Hierarchy
-Text
-#### Database Navigation
-Text
-### Revit Types / Families
-Text
+![UI](images/8-2/hierarchy.png)
+
+Remember the taxonomy from Biology? Kingdom, Phylum, Class, Order, Family, Genus, Species? Revit elements are categorized in a similar manner.  On a basic level, the Revit hierarchy can be broken down into Categories, Families, Types, and Instances.  An instance is an individual model element (with a unique ID) while a category defines a generic group (like "walls" or "floors").  With the Revit database organized in this manner, we can select one element and choose all similar elements based on a specified level in the hierarchy.
+
+#### Database Navigation with Dynamo nodes
+The three images below breakdown the main categories for Revit element selection in Dynamo. These are great tools to use in combination, and we'll explore some of these in the following exercises.
+
+![UI](images/8-2/pointandclick.png)
+> Point-and-click is the easiest way to directly select a Revit element.  You can select a full model element, or parts of its topology (like a face or an edge).  This remains dynamically linked to that Revit object, so when the Revit file updates its location or parameters, the referenced Dynamo element will update in the graph.
+
+![UI](images/8-2/dropdown.png)
+> Dropdown menus create a list of all accessible elements in a Revit project.  You can use this to reference Revit elements which are not necessarily visible in a view.  This is a great tool for querying existing elements or creating new ones in a Revit project or family editor.
+
+![UI](images/8-2/allelements.png)
+> You can also select Revit elementy by specific tiers in the Revit hierarchy.  This is a powerful option for customizing large arrays of data in preparation for documentation or generative instantiation and customization.
+
+With the three images above in mind, let's dive into an exercise which selects elements from a basic Revit project in preparation for the parametric applications we'll create in the remaining sections of this chapter.
+
 ### Exercise
 ![Exercise](images/8-2/Exercise/12.png)
 > In this example Revit file, we have three element types of a simple building.  We're going to use this as an example for selecting Revit elements within the context of the Revit hierachy:

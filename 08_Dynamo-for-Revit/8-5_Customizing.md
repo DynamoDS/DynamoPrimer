@@ -1,20 +1,22 @@
 ## Customizing
-Text
-
-### Creating Custom Parameters / Analysis
-Text
+While we previously looked at editing a basic building mass, we want to dive deeper into the Dynamo/Revit link by editing a large number of elements in one go. Customizing on a large scale becomes more complex as data structures require more advanced list operations.  However, the underlying principles behind their execution is fundamentally the same.  Let's study some opportunities for analysis from a set of adaptive components.
 
 #### Point Location
-Text
+Suppose we've created a range of adaptive components and want to edit parameters based on their point locations.  The points, for example, could drive a thickness parameter which is related to the area of the element. Or, they could drive an opacity parameter related to solar exposure throughout the year. Dynamo allows the connection of analysis to parameters in a few easy steps, and we'll explore a basic version in the exercise below.
 
-#### Deviation
-Text
+![Points](images/8-5/points.png)
+> Query the adaptive points of a selected adaptive component by using the AdaptiveComponent.Locations node.  This allows us to work with an abstracted version of a Revit element for analysis.
 
-#### Solar Analysis
-Text
+By extracting the point location of adaptive components, we can run a range of analysis for that element.  A four-point adaptive component will allow you to study the deviation from plane for a given panel for example.
+
+#### Solar Orientation Analysis
+![Points](images/8-5/points.png)
+> Use remapping to map a set of a data into a parameter range.  This is fundamental tool used in a parametric model, and we'll demonstrate it in the exercise below.
+
+Using Dynamo, the point locations of adaptive components can be used to create a best-fit plane each element.  We can also query the sun position in the Revit file and study the plane's relative orientation to the sun in comparison to other adaptive components.  Let's set that up in the exercise below by creating an algorithmic roofscape.
 
 ### Exercise
-This exercise will expand on the techniques demonstrated in the previous section.  In this case, we are defining a parametric surface from Revit elements, instantiating four-point adaptive components
+This exercise will expand on the techniques demonstrated in the previous section.  In this case, we are defining a parametric surface from Revit elements, instantiating four-point adaptive components and then editing them based on orientation to the sun.
 
 ![Exercise](images/8-5/Exercise/00.png)
 > 1. Beginning by selecting two edges with the "Select Edge" node.  The two edges are the long spans of the atrium.

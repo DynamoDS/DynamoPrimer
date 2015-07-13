@@ -1,17 +1,11 @@
-## Customizing
-Text
-
-### Creating Custom Parameters / Analysis
-Text
-
-#### Point Location
-Text
+## Documenting
+Editing parameters for documentation follows suit with the lessons learned in prior sections.  In this section, we'll look at editing parameters which don't affect the geometric properties of an element, but instead prepare a Revit file for documentation.
 
 #### Deviation
-Text
+In the exercise below, we'll use a basic deviation from plane node to create a Revit sheet for documentation. Each panel on our parametrically defined roof structure has a different value for deviation, and we want to call out the range of values using color and by scheduling out the adaptive points to hand off to a facade consultant, engineer, or contractor.
 
-#### Solar Analysis
-Text
+![deviation](images/8-6/deviation.png)
+> The deviation from plane node will calculate the distance that the set of four points varies from the best-fit plane between them.  This is a quick and easy way to study constructability.
 
 ### Exercise
 Start with the Revit file for this section (or continue from the previous section).  This file has an array of ETFE panels on the roof.  We'll reference these panels for this exercise.
@@ -48,7 +42,7 @@ Setting the Aperture Ratio doesn't clearly demonstrate the deviation of panels o
 3. Hovering over the value input, we can see that the values for the input must be between 0 and 1 in order to map a color to each value.  We need to remap the deviation values to this range.
 
 ![Exercise](images/8-6/Exercise/10.png)
-> 1. Using Math.RemapRange, remap the planar deviation values to a range between 0 and 1.
+> 1. Using Math.RemapRange, remap the planar deviation values to a range between 0 and 1 (note: you can use the "MapTo" node to define a source domains as well).
 2. Plug the results into a Color Range node.
 3. Notice our output is a range of colors instead of a range of numbers.
 4. If you're set to Manual, hit Run.  You should be able to get away with being set to Automatic from this point forward.
@@ -73,7 +67,7 @@ Setting the Aperture Ratio doesn't clearly demonstrate the deviation of panels o
 > 1. Selecting one ETFE panel in Revit, we see that there are four instance parameters, XYZ1, XYZ2, XYZ3, and XYZ4.  These are all blank after they're correctly.  These are text-based parameters and need values.  We'll use Dynamo to write the adaptive point locations to each parameter.  This helps interoperability if the geometry needs to be sent to an engineer of facade consultant.
 
 ![Exercise](images/8-6/Exercise/03.png)
-> In a sample sheet, we have a large, empty schedule.
+> In a sample sheet, we have a large, empty schedule.  The XYZ parameters are shared parameters in the Revit file, which allows us to add them to the schedule.
 
 ![Exercise](images/8-6/Exercise/02.png)
 > Zooming in, the XYZ parameters are yet to be filled in.  The first two parameters are taken care of by Revit.

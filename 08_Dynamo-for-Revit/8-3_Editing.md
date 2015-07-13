@@ -1,26 +1,22 @@
 ## Editing
-Text
+A powerful feature of Dynamo is that you can edit parameters on a parametric level.  For example, a generative algorithm or the results of a simulation can be used to drive the parameters of an array of elements. This way, a set of instances from the same family can have custom properties in your Revit project.
+### Type and Instance Parameters
+![Exercise](images/8-5/Exercise/32.png)
+> 1. Instance parameters define the aperture of the panels on the roof surface, ranging from an Aperture Ratio of 0.1 to 0.4.
+2. Type-based parameters are applied to every element on the surface because they are the same family type.  The material of each panel, for example,  can be driven by a type-based parameter.
 
-### Hierarchy
-Text
-### Type Parameters
-Text
-### Instance Parameters
-Text
-#### Parameter Types
-Text
+![Exercise](images/8-3/params.png)
+>1. If you've set up a Revit family before, remember that you have to assign a parameter type (string, number, dimension, etc.) Be sure to use the correct data type when assigning parameters from Dynamo.
+2. You can also use Dynamo in combination with parametric constraints defined in a Revit family's properties.
+
+As a quick review of parameters in Revit, we recall that there are type parameters and instance parameters.  Both can be edited from Dynamo, but we'll work with instance parameters in the exercise below.
+
 #### Units
-Text
-### Patterning (Algorithm)
-Text
-#### Modulo
-Text
-#### Filter by Boolean Mask
-Text
-### Facades and Formulas
-Text
-#### Family Types and Selection
-Text
+As of version 0.8, Dynamo is fundamentally unitless.  This allows Dynamo to remain an abstract visual programming environment. Dynamo nodes that interact with Revit dimensions will reference The Revit project's units.  For example, if you are setting a length parameter in Revit from Dynamo, the number in Dynamo for the value will correspond to the default units in the Revit project.  The exercise below works in meters.
+
+![Exercise](images/8-3/units.png)
+> For a quick conversion of units, use the "Convert Between Units" node.  This is a handy tool for converting Length, Area, and Volume units on the fly.
+
 ### Exercise
 This exercise focuses on editing Revit elements without performing geometric operation in Dynamo.  We're not importing Dynamo geometry here, just editing parameters in a Revit project.  This exercise is basic, and to the more advanced Revit users, notice that these are instance parameters of a mass, but the same logic can be applied to an array of elements to customize on a large scale. This is all done with the "Element.SetParameterByName" node.
 
