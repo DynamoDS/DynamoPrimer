@@ -72,7 +72,7 @@ Let's increase the complexity.  Suppose we wanted to perform an operation on the
 
 
 ###Exercise
-Now, we're really going to step it up a notch.  In this exercise, we'll work with both improted surfaces, creating a complex data hierarchy.  Still, our aim is to complete the same operation with the same underlying logic.
+Now, we're going to go even one step further.  In this exercise, we'll work with both imported surfaces, creating a complex data hierarchy.  Still, our aim is to complete the same operation with the same underlying logic.
 
 ![Exercise](images/6-4/Exercise/C/12.png)
 > 1. Begin with the imported file from previous exercise.
