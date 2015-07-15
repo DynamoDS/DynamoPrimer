@@ -1,17 +1,4 @@
-## Geometry Overview
-Text
-
-### The Basics
-Text
-
-### Geometry Hierarchy
-Text
-
-### Geomety in Dynamo Studio versus Geometry in other Autodesk Software
-Text
-
-### Geomety in Dynamo versus other Software
-Text
+## Working with Lists
 
 ### Inputs and Outputs
 ![Input Examples](images/6-2/Polycurve.Inputs.png)
@@ -20,11 +7,24 @@ Text
 3.  On the other hand, the "centerPoint" input for Cirle.ByCenterPointRadius asks for "Point".  This battery looks for one point, as an item, to define the center point of the circle.  This is why we get five circles from the input data.
 4.  Recognizing these difference with inputs in Dynamo helps to better understand how the batteries are operating when managing data.
 
-###Lacing
-![Input Examples](images/6-2/shortestList.png)
-![Input Examples](images/6-2/longestList.png)
-![Input Examples](images/6-2/crossProduct.png)
 
+###List.Count
+![Count](images/6-2/count.png)
 
+###List.FilterByBooleanMask
+![cull](images/6-2/cull1.png)
+![cull](images/6-2/cull2.png)
+![cull](images/6-2/cull3.png)
 
+###List.GetItemAtIndex
+![index](images/6-2/index.png)
+
+###Insert
+![insert](images/6-2/insert.png)
+
+###List.Reverse
+![reverse](images/6-2/reverse.png)
+
+###List.ShiftIndices
+![shift](images/6-2/shift.png)
 
