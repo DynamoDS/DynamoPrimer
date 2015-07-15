@@ -1,15 +1,31 @@
-## Geometry Overview
+## Vectors, Planes, and Coordinate Systems
 Text
 
-### The Basics
+> Roger, Roger. What's our vector, Victor?
+
+#### - *Airplane*
+
+![Vectors, Planes, and Coordinates](images/5-2/VectorsPlanesCoodinates.png)
+
+
+### What's a Vector?
 Text
 
-### Geometry Hierarchy
+![Vector](images/5-2/Vector.png)
+
+![Vector Details](images/5-2/Vector-Detailed.png)
+
+### What's a Plane?
 Text
 
-### Geomety in Dynamo Studio versus Geometry in other Autodesk Software
+![Plane](images/5-2/Plane.png)
+
+### What's a Coordinate System?
 Text
 
-### Geomety in Dynamo versus other Software
+![Coordinate System](images/5-2/CoordinateSystem.png)
+> Add alternative coordinate systems - cylindrical, spherical
+
+### Exercise
 Text
 
