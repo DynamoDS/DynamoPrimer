@@ -1,5 +1,5 @@
 ## What's a List?
-Text
+
 ### Zero-Based Index
 
 One thing that might seem odd at first is that the first index number of a list
@@ -30,22 +30,29 @@ Imagine a node which creates line segments between points (Line.ByStartPointEndP
 
 As you can see there are different ways in which we can draw lines between these sets of points. Lacing options are found by right-clicking the center of a node and choosing the "Lacing" menu.
 
+###Base File
+![Input Examples](images/6-1/lacing.png)
+ > 1. To demonstrate the lacing operations below, we'll use this base file to define shortest list, longest list, and cross product.  We'll change the lacing on Point.ByCoordinates, but won't change anything else about the graph above.
+
 ####Shortest List
 The simplest way is to connect the inputs one-on-one until one of the streams runs dry. This is called the “Shortest List” algorithm:
 
 ![Input Examples](images/6-1/shortestListDiagram.png)
+
 ![Input Examples](images/6-1/shortestList.png)
 
 ####Longest List
 The “Longest List” algorithm keeps connecting inputs until all streams run dry. This is the default behavior for components:
 
 ![Input Examples](images/6-1/longestListDiagram.png)
+
 ![Input Examples](images/6-1/longestList.png)
 
 ####Cross Product
 Finally, the “Cross Product” method makes all possible connections:
 
 ![Input Examples](images/6-1/crossProductDiagram.png)
+
 ![Input Examples](images/6-1/crossProduct.png)
 
 

@@ -1,6 +1,7 @@
 ## n-Dimensional Lists
-Text
-
+Data structure can expand far beyond a two-dimensional list of lists.  Since lists are items in and of themselves in Dynamo, we can create data with as many dimensions as possible.  This is difficult to explain visually, but we've set up a few exercises in this chapter which focus on working with lists which are greater than two dimensions.
+###Mapping and Combinations
+Mapping is arguably the most complex part of data management in Dynamo, and is especially relevant when working with complex hierarchies of lists.  With the series of exercises below, we'll demonstrate when to use mapping and combinations as data becomes multi-dimensional.
 
 ###Exercise
 This exercise is the first in a series of three which focuses on articulating imported geometry.  Each part in this series of exercises will increase in complexity in data structure.
