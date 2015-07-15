@@ -161,6 +161,7 @@ Geometry
 ||ACTIONS||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.DistanceTo.Large.png)|**Geometry.DistanceTo**<br>Obtain the distance from this Geometry to another.|![IMAGE](images/nodes/Geometry.DistanceTo.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.Rotate.Plane-double.Large.png)|**Geometry.Rotate** (basePlane)<br>Rotates an object around the Plane origin and normal by a specified degree.|![IMAGE](images/nodes/Geometry.Rotate_BasePlane.png)
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.Translate.Vector-double.Large.png)|**Geometry.Translate**<br>Translates any geometry type by the given distance in the given direction.|![IMAGE](images/nodes/Geometry.Translate.png)
 
 ####Geometry.Line
 ||||
@@ -173,6 +174,13 @@ Geometry
 ||QUERY||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Line.Direction.Large.png)|**Line.Direction**<br>The direction of the Curve.|![IMAGE](images/nodes/Line.Direction.png)
 
+
+####Geometry.NurbsSurface
+||||
+|--|--|--|
+||Create||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsSurface.ByControlPoints.Large.png)|**NurbsSurface.ByControlPoints**<br>Create a NurbsSurface by using explicit control Points with specified U and V degrees.|![IMAGE](images/nodes/NurbsSurface.ByControlPoints.png)
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsSurface.ByPoints.Large.png)|**NurbsSurface.ByPoints**<br>Creates a NurbsSurface with specified interpolated points and U and V degrees. The resultant surface will pass through all of the points.|![IMAGE](images/nodes/NurbsSurface.ByPoints.png)
 
 ####Geometry.Plane
 ||||
@@ -187,12 +195,26 @@ Geometry
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.ByCoordinates.double-double.Large.png)|**Point.ByCoordinates** (2d)<br> Form a Point in the XY plane given two 2 Cartesian coordinates.  The Z component is 0.|![IMAGE](images/nodes/Point.ByCoordinates_2D.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.ByCoordinates.double-double-double.Large.png)|**Point.ByCoordinates** (3d)<br>Form a Point given 3 Cartesian coordinates.|![IMAGE](images/nodes/Point.ByCoordinates_3D.png)
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.Origin.Large.png)|**Point.Origin**<br>Get the Origin point (0,0,0)|![IMAGE](images/nodes/Point.Origin.png)
+||ACTIONS||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.Add.Large.png)|**Point.Add**<br>Add a vector to a point. The same as Translate (Vector).|![IMAGE](images/nodes/Point.Add.png)
+||QUERY||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.X.Large.png)|**Point.X**<br>Get the X component of a point|![IMAGE](images/nodes/Point.X.png)
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.Y.Large.png)|**Point.Y**<br>Get the Y component of a point|![IMAGE](images/nodes/Point.Y.png)
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.X.Large.png)|**Point.Z**<br>Get the Z component of a point|![IMAGE](images/nodes/Point.Z.png)
+
 
 ####Geometry.Polycurve
 ||||
 |--|--|--|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.PolyCurve.ByPoints.Large.png)|**Polycurve.ByPoints**<br>Make PolyCurve from sequence of lines connecting points. For closed curve last point should be in the same location as the start point.|![IMAGE](images/nodes/PolyCurve.ByPoints.png)
+
+####Geometry.Rectangle
+||||
+|--|--|--|
+||CREATE||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Rectangle.ByWidthHeight.Plane-double-double.Large.png)|**Rectangle.ByWidthLength** (Plane)<br>Create a Rectangle centered at input Plane root, with input width (Plane X axis length) and (Plane Y axis length).|![IMAGE](images/nodes/Rectangle.ByWidthLength.png)
 
 ####Geometry.Sphere
 ||||
@@ -203,7 +225,10 @@ Geometry
 ####Geometry.Surface
 ||||
 |--|--|--|
+||CREATE||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.ByPatch.Large.png)|**Surface.ByPatch**<br>Create a Surface by filling in the interior of a closed boundary defined by input Curves.|![IMAGE](images/nodes/Surface.ByPatch.png)
 ||ACTIONS||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.PointAtParameter.Large.png)|**Surface.PointAtParameter**<br>Return the Point at a specified U and V parameters.|![IMAGE](images/nodes/Surface.PointAtParameter.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.Thicken.double.Large.png)|**Surface.Thicken**<br>Thicken Surface into a Solid, extruding in the direction of Surface normals on both sides of the Surface.|![IMAGE](images/nodes/Surface.Thicken.png)
 
 ####Geometry.UV
