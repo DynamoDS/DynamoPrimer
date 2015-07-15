@@ -1,15 +1,35 @@
 ## List of Lists
 Text
-#Top-Down Hierarchy
-###Flatten
-###Flatten-N
-###Transpose
-###List.Count Example
-###Code Block Creation
-###Code Block Query
-###Mapping
+###Top-Down Hierarchy
+![top-down](images/6-3/top-down.png)
 
-###Exercise
+###Flatten
+
+![Exercise](images/6-3/Exercise/Flatten-31.png)
+
+![Exercise](images/6-3/Exercise/Flatten-30.png)
+
+###Chop
+![Chop](images/6-3/chop-01.jpg)
+
+![Exercise](images/6-3/Exercise/Chop-03.png)
+
+![Exercise](images/6-3/Exercise/Chop-02.png)
+
+![Exercise](images/6-3/Exercise/Chop-01.png)
+
+![Exercise](images/6-3/Exercise/Chop-00.png)
+
+###List.Map and List.Combine
+A List.Map/Combine applies a set function to an input list, but one step down in the hierarchy. Combinations are the same as Maps, except combinations can have multiple inputs corresponding to the input of a given function.
+
+#### Exercise - List.Map
+
+As a quick introduction, let's review the List.Count node from a previous section.
+
+![Exercise](images/6-2/count.png)
+> The List.Count node counts all of the items in a list. We'll use this to demonstrate how List.Map works.
+
 ![Exercise](images/6-3/Exercise/A/05.png)
 > 1. Insert two lines of code into the code block:
 ```
@@ -32,11 +52,25 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 
 ![Exercise](images/6-3/Exercise/A/03.png)
 > 1. By using a List.Map node, we take a step down in the hierarchy and perform a "function" at this level.
-2. Notice that the List.Count node has no input. It is being used as a function, so the List.Count node will be applied to every individual list one step down in the hierarchy.
+2. Notice that the List.Count node has no input. It is being used as a function, so the List.Count node will be applied to every individual list one step down in the hierarchy.  The blank input of List.Count corresponds to the list input of List.Map.
 3. The results of List.Count now gives a list of 5 items, each with a value of 3.  This represents the length of each sublist.
 
+#### Exercise - List.Combine
+
+![Exercise](images/6-3/Exercise/Combine-33.png)
+
+![Exercise](images/6-3/Exercise/Combine-32.png)
+
+![Exercise](images/6-3/Exercise/Combine-31.png)
+
+![Exercise](images/6-3/Exercise/Combine-30.png)
+
+###Transpose
+![Transpose](images/6-3/transpose1.jpg)
+
+#### Exercise - List.Transpose
 ![Exercise](images/6-3/Exercise/A/02.png)
-> Let's delete the List.Count nodes and move on to some geometry to see how the data structured.
+> Let's delete the List.Count nodes from the previous exercise and move on to some geometry to see how the data structured.
 1. Connect a PolyCurve.ByPoints to the output of the watch node from Point.ByCoordinates.
 2. The output shows 5 polycurves, and we can see the curves in our Dynamo preview.  The Dynamo node is looking for a list of points (or a list of lists of points in this case) and creating a single polycurve from them.  Essentially, each list has converted to a curve in the data structure.
 
@@ -49,6 +83,13 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 > 1. A List.Transpose node will switch all of the items with all of the lists in a list of lists.  This sounds complicated, but it's the same logic as transpose in Microsoft Excel: switching columns with rows in a data structure.
 2. Notice the abstract result: the transpose changed the list structure from a 5 lists with 3 items each to 3 lists with 5 items each.
 3. Notice the geometric result: using PolyCurve.ByPoints, we get 3 polycurves in the perependicular direction to the original curves.
+
+###Code Block Creation
+![CB](images/6-3/cbCreation.png)
+
+
+###Code Block Query
+![CB](images/6-3/cbQuery.png)
 
 ###Exercise
 This exercise uses some of the logic established in the previous one to edit a surface. Our goal here is intuitive, but the data structure navigation will be more involved.  We want to articulate a surface by moving a control point.

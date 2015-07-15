@@ -1,6 +1,7 @@
 ## n-Dimensional Lists
-Text
-
+Data structure can expand far beyond a two-dimensional list of lists.  Since lists are items in and of themselves in Dynamo, we can create data with as many dimensions as possible.  This is difficult to explain visually, but we've set up a few exercises in this chapter which focus on working with lists which are greater than two dimensions.
+###Mapping and Combinations
+Mapping is arguably the most complex part of data management in Dynamo, and is especially relevant when working with complex hierarchies of lists.  With the series of exercises below, we'll demonstrate when to use mapping and combinations as data becomes multi-dimensional.
 
 ###Exercise
 This exercise is the first in a series of three which focuses on articulating imported geometry.  Each part in this series of exercises will increase in complexity in data structure.
@@ -78,62 +79,75 @@ Now, we're going to go even one step further.  In this exercise, we'll work with
 > 1. Begin with the imported file from previous exercise.
 
 ![Exercise](images/6-4/Exercise/C/11.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. As in the previous exerice, use the Surface.Offset node to offset by a value of 10.
+2. Notice from the output, that we've created two surfaces with the offset node.
 
 ![Exercise](images/6-4/Exercise/C/10.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. In the same manner as the previous exercise, define a code block with these two lines of code:
+```
+0..1..#20;
+0..1..#10;
+```
+2. Connect these outputs to two Surface.PointAtParameter nodes, each with lacing set to "Cross Product".  One of these nodes is connected to the original surfaces, while the other is connected to the offset surfaces.
 
 ![Exercise](images/6-4/Exercise/C/09.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. As in the previous exercise, connect the outputs to two NurbsCurve.ByPoints nodes.
+2. Looking at the output of the NurbsCurve.ByPoints, notice that this is a list of two lists, which is more complex than the previous exercise.  The data is categorized by the underlying surface, so we've added another tier to the data structured.
+3. Notice that things become more complex in the Surface.PointAtParameter node. In this case we have a list of lists of lists
 
 ![Exercise](images/6-4/Exercise/C/08.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. Using the List.Create node, we merge the nurbs curves into one data structure, creating a list of lists of lists.
+2. By connecting a Surface.ByLoft node, we get a version of the original surfaces, as they each remain in their own list as created from the original data structure.
 
 ![Exercise](images/6-4/Exercise/C/07.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. In the previous exercise, we were able to use a List.Transpose to create a ribbed structure.  This won't work here.  A transpose should be used on a two-dimensional list, and since we have a three-dimensional list, an operation of "flipping columns and rows" won't work as easily.  Remember, lists are objects, so List.Transpose will flip our lists with out sublists, but won't flip the nurbs curves one list further down in the hierarchy.
 
 ![Exercise](images/6-4/Exercise/C/06.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. List.Combine will work better for us here.  We want to use List.Map and List.Combine nodes when we get to more complex data structures.
+2. Using List.Create as the "combinator", we create a data structure that will work better for us.
 
 ![Exercise](images/6-4/Exercise/C/05.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. The data structure still needs to be transposed at one step down on the hierarchy.  To do this we'll use List.Map.  This is working like List.Combine, except with one input list, rather than two or more.
+2. The function we'll apply to List.Map is List.Transpose, which will flip the columns and rows of the sublists within our main list.
 
 ![Exercise](images/6-4/Exercise/C/04.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. Finally, we can loft the nurbs curves together with a proper data hierarchy, giving us a ribbed structure.
 
 ![Exercise](images/6-4/Exercise/C/03.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. Let's add some depth to the geometry with a Surface.Thicken node.
 
 ![Exercise](images/6-4/Exercise/C/02.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. It'll be nice to add a surface backing two this structure, so we'll use List.GetItemAtIndex to select the back surface from the lofted surfaces from the previous steps.
 
 ![Exercise](images/6-4/Exercise/C/01.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. And thickening these selected surfaces, our articulation is complete.
 
 ![Exercise](images/6-4/Exercise/C/00.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> Not the most comfortable rocking chair ever, but it's got a lot of data going on.
 
-![Exercise](images/6-4/Exercise/32.png)
-> 1. Descriptive Text
-2. More descriptive Text
+![Exercise](images/6-4/Exercise/C/32.png)
+> Last step, let's reverse the direction of the striated members.  As we used transpose in the previous exercise, we'll do something similar here.
+1. Since we have one more tier to the hierarchy, so we need to use List.Map with a List.Tranpose function to change the direction of our nurbs curves.
 
 ![Exercise](images/6-4/Exercise/C/31.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> 1. We may want to increase the number of treads, so we can change the code block to
+```
+0..1..#20;
+0..1..#10;
+```
 
 ![Exercise](images/6-4/Exercise/C/30.png)
-> 1. Descriptive Text
-2. More descriptive Text
+> The first version of the rocking chair was sleek, so our second model offers an off-road, sport-utility version of recumbency.
+
+
+
+
+
+
+
+
+
+
+
+
 
