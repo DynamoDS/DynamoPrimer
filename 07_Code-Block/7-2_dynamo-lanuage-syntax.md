@@ -2,7 +2,7 @@
 You may have noticed a common theme in the names of nodes in Dynamo: each node uses a *"."* syntax without spaces.  This is because the text at the top of each node respresents the actual syntax for scripting, and the *"."* (or *dot notation*) separates an element from the possible methods we can call.  This creates an easy translation from visual scripting to text-based scripting. Let's look at *Point.ByCoordinates* and show how we can create a point using the code block:
 
 ![NodeNames](images/7-2/cbn02.png)
-> The code block syntax ```Point.ByCoordinates(0,10);
+> The *code block* syntax ```Point.ByCoordinates(0,10);
 ```
 gives the same result as a *Point.ByCoordinates* battery in Dynamo, except we're able to create a point using one battery.  This is more efficient than the connecting a separate node into *"X"* and *"Y"*.
 1. By using *Point.ByCoordinates* in the code block, we are specifying the inputs in the same order as the out-of-the-box node *(X,Y)*.
@@ -24,7 +24,7 @@ You’ll find that the library is organized with these categories in mind. Metho
 ####Create
 The "Create" category will construct geometry from scratch.  We input values in the code block from left-to-right.  These inputs are in the same order as the inputs on the node from top-to-bottom:
 ![NodeNames](images/7-2/demo1.png)
-> Comparing the Line.ByStartPointEndPoint node and the corresponding syntax in the code block, we get the same results.
+> Comparing the *Line.ByStartPointEndPoint* node and the corresponding syntax in the code block, we get the same results.
 
 ####Action
 
@@ -33,8 +33,8 @@ An action is something you do to an object of that type. Dynamo uses *dot notati
 ![NodeNames](images/7-2/cbn04.png)
 
 
-> 1. The Point.Add node is an action-type node, so the syntax works a little differently.
-2. The inputs are (1) the point, and (2) the vector to add to it. In a Code Block, we've named the point (the thing) “pt”. To add a vector named “vec” to “pt,” we would write pt.Add(vec), or: thing, dot, action. The Add action only has one input, or all the inputs from the Point.Add node minus the first one. The first input for the Point.Add node is the point itself.
+> 1. The *Point.Add *node is an action-type node, so the syntax works a little differently.
+2. The inputs are (1) the *point*, and (2) the *vector* to add to it. In a *Code Block*, we've named the point (the thing) *“pt”*. To add a vector named *“vec” *to *“pt”*, we would write *pt.Add(vec)*, or: thing, dot, action. The Add action only has one input, or all the inputs from the *Point.Add *node minus the first one. The first input for the *Point.Add *node is the point itself.
 
 ####Query
 
@@ -50,7 +50,7 @@ Lacing with nodes is somewhat different from lacing with code block.  With nodes
 ``` is equivalent to ```{0,1}
 ``` and ```-3..-7
 ```is equivalent to ```
-{-3,-4,-5,-6,-7}```. The result gives us lists of 2 x-values and 5 y-values. If we don’t use replication guides with these mismatched lists, we get a list of two points, which is the length of the shortest list. Using replication guides, we can find all of the possible combinations of 2 and 5 coordinates (or, a *Cross Product*).
+{-3,-4,-5,-6,-7}```. The result gives us lists of 2 x-values and 5 y-values. If we don’t use replication guides with these mismatched lists, we get a list of two points, which is the length of the shortest list. Using replication guides, we can find all of the possible combinations of 2 and 5 coordinates (or, a **Cross Product**).
 2. Using the syntax ```Point.ByCoordinates(x_vals<1>,y_vals<2>);
 ``` we get **two** lists with **five** items in each list.
 3. Using the syntax ```Point.ByCoordinates(x_vals<2>,y_vals<1>);
@@ -70,17 +70,17 @@ To show the power of code block, we are going to translate an existing attractor
 >1. Starting from the beginning, let's define the reference point first: ```Point.ByCoordinates(x,y,0);
 ```.  We use the same *Point.ByCoordinates* syntax as is specified on the top of the reference point node.
 2. The variables *x* and *y* are inserted into the code block so that we may update these dynamically with sliders.
-3.  Add some sliders to the code block inputs which range from *-50* to *50*. This way, we can span across the default Dynamo grid.
+3.  Add some *sliders* to the *code block* inputs which range from *-50* to *50*. This way, we can span across the default Dynamo grid.
 
 ![Exercise](images/7-2/Exercise/06.png)
->1. In the second line of the code block, we define a shorthand to replace the number sequence node: ```coordsXY = (-50..50..#11);
+>1. In the second line of the *code block*, we define a shorthand to replace the number sequence node: ```coordsXY = (-50..50..#11);
 ```
 .  We'll discuss this more in the next section.  For now, notice that this shorthand is equivalent to the *Number Sequence* node in the visual script.
 
 ![Exercise](images/7-2/Exercise/05.png)
 >1. Now, we want to create a grid of points from the *coordsXY* sequence.  To do this, we want to use the *Point.ByCoordinates* syntax, but also need to initiate a *Cross Product* of the list in the same manner that we did in the visual script.  To do this, we type the line: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);
 ```.  The angled brackets denote the cross product reference.
-2. Notice in the *Watch 3D* node that we have a grid of points across the Dynamo grid.
+2. Notice in the *Watch3D* node that we have a grid of points across the Dynamo grid.
 
 ![Exercise](images/7-2/Exercise/04.png)
 >1. Now for the tricky part: We want to move the grid of points up based on their distance to the reference point.  First, let's call this new set of points *transPts*. And since a translation is an action on an existing element, rather than using ```Geometry.Translate...

@@ -29,52 +29,52 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 2. This is the truss system we'll created with Dynamo, linked intelligently to the Revit mass.
 
 ![Exercise](images/8-4/Exercise/08.png)
-> We've used the "Select Model Element" and "Select Face" nodes, now we're taking one step further down in the geometry hierarchy and using "Select Edge".  With the Dynamo solver set to run "Automatic", the graph will continually update to changes in the Revit file. The edge we are selecting is tied dynamically to the Revit element topology.  As long as the topology does not change, the connection remains linked between Revit and Dynamo.
-1. Select the top most curve of the glazing facade.  This spans the full length of the building.  If you're having trouble selecting the edge, remember to choose the selection in Revit by hovering over the edge and hitting "Tab" until the desired edge is highlighted.
-2. Using two "Select Edge" nodes, select each edge representing the cant at the middle of the facade.
+> We've used the *"Select Model Element"* and *"Select Face"* nodes, now we're taking one step further down in the geometry hierarchy and using *"Select Edge"*.  With the Dynamo solver set to run *"Automatic"*, the graph will continually update to changes in the Revit file. The edge we are selecting is tied dynamically to the Revit element topology.  As long as the topology does not change, the connection remains linked between Revit and Dynamo.
+1. Select the top most curve of the glazing facade.  This spans the full length of the building.  If you're having trouble selecting the edge, remember to choose the selection in Revit by hovering over the edge and hitting *"Tab"* until the desired edge is highlighted.
+2. Using two *"Select Edge"* nodes, select each edge representing the cant at the middle of the facade.
 3. Do the same for the bottom edges of the facade in Revit.
-4. The watch nodes reveal that we now have lines in Dynamo.  This is automatically converted to Dynamo geometry since the edges themselves are not Revit elements.  These curves are the references we'll use to instantiate adaptive trusses across the facade.
+4. The *Watch* nodes reveal that we now have lines in Dynamo.  This is automatically converted to Dynamo geometry since the edges themselves are not Revit elements.  These curves are the references we'll use to instantiate adaptive trusses across the facade.
 
 ![Exercise](images/8-4/Exercise/07.png)
-> We first need to join the curves and merge them into one list.  This way we can "group" the curves to perform geometry operations.
+> We first need to join the curves and merge them into one list.  This way we can *"group"* the curves to perform geometry operations.
 1. Create a list for the two curves at the middle of the facade.
-2. Join the two curves into a Polycurve by plugging the List.Create component into a Polycurve.ByJoinedCurves node.
+2. Join the two curves into a Polycurve by plugging the *List.Create* component into a *Polycurve.ByJoinedCurves* node.
 3. Create a list for the two curves at the bottom of the facade.
-4. Join the two curves into a Polycurve by plugging the List.Create component into a Polycurve.ByJoinedCurves node.
+4. Join the two curves into a Polycurve by plugging the *List.Create* component into a *Polycurve.ByJoinedCurves* node.
 5. Finally, join the three main curves (one line and two polycurves) into one list.
 
 ![Exercise](images/8-4/Exercise/06.png)
 > We want to take advantage of the top curve, which is a line, and represents the full span of the facade.  We'll create planes along this line to intersect with the set of curves we've grouped together in a list.
-1. With a code block, define a range using the syntax: ```0..1..#numberOfTrusses;
+1. With a *code block*, define a range using the syntax: ```0..1..#numberOfTrusses;
 ```
-2. Plug an integer slider into the input for the code block.  As you could have guessed, this will represent the number of trusses. Notice that the slider controls the number of items in the range defined from 0 to 1.
-3. Plug the code block into the param input of a "Curve.PlaneAtParameter" node, and plug the top edgeinto the curve input.  This will give us ten planes, evenly distributed across the span of the facade.
+2. Plug an *integer slider *into the input for the code block.  As you could have guessed, this will represent the number of trusses. Notice that the slider controls the number of items in the range defined from *0 *to *1*.
+3. Plug the *code block* into the *param* input of a *"Curve.PlaneAtParameter"* node, and plug the top edge into the *curve* input.  This will give us ten planes, evenly distributed across the span of the facade.
 
 ![Exercise](images/8-4/Exercise/05.png)
 > A plane is an abstract piece of geometry, representing a two dimensional space which is infinite.  Planes are great for contouring and intersecting, as we are setting up in this step.
-1. Using the Geometry.Intersect node, plug the Curve.PlaneAtParameter into the "entity" input of the Geometry.Intersect node.  Plug the main List.Create node into the geometry input.  We now see points in the Dynamo viewport representing the intersection of each curve with the defined planes.
+1. Using the *Geometry.Intersect* node, plug the *Curve.PlaneAtParameter* into the *entity* input of the *Geometry.Intersect* node.  Plug the main *List.Create* node into the *geometry* input.  We now see points in the Dynamo viewport representing the intersection of each curve with the defined planes.
 
 ![Exercise](images/8-4/Exercise/04.png)
-> Notice the output is a list of lists of lists. Too many lists for our purposes.  We want to do a partial flatten here.  We need to take one step down on the list and flatten the result.  To do this, we use the List.Map operation, as discussed in the list chapter of the primer.
-1. Plug the Geometry.Intersect node into the list input of List.Map.
-2. Plug a Flatten node into the f(x) input of List.Map.  The results gives 3 list, each with a count equal to the number of trusses.
-3.We need to change this data. If we want to instantiate the truss, we have to use the same number of adaptive points as defined in the family.  This is a three point adaptive component, so instead of three lists with 10 items each (numberOfTrusses), we want 10 lists of three items each.  This way we can create 10 adaptive components.
-3. Plug the List.Map into a List.Transpose node.  Now we have the desired data output.
-4. To confirm that the data is correct, add a Polygon.ByPoints node to the canvas and double check with the Dynamo preview.
+> Notice the output is a list of lists of lists. Too many lists for our purposes.  We want to do a partial flatten here.  We need to take one step down on the list and flatten the result.  To do this, we use the *List.Map* operation, as discussed in the list chapter of the primer.
+1. Plug the *Geometry.Intersect* node into the list input of *List.Map*.
+2. Plug a *Flatten* node into the f(x) input of *List.Map*.  The results gives 3 list, each with a count equal to the number of trusses.
+3. We need to change this data. If we want to instantiate the truss, we have to use the same number of adaptive points as defined in the family.  This is a three point adaptive component, so instead of three lists with 10 items each (numberOfTrusses), we want 10 lists of three items each.  This way we can create 10 adaptive components.
+3. Plug the *List.Map* into a *List.Transpose* node.  Now we have the desired data output.
+4. To confirm that the data is correct, add a *Polygon.ByPoints* node to the canvas and double check with the Dynamo preview.
 
 ![Exercise](images/8-4/Exercise/03.png)
 > In the same way we created the polygons, we array the adaptive components.
-1. Add an AdaptiveComponent.ByPoints node to the canvas, plug the List.Transpose node into the points input.
-2. Using a Family Types node, select the "AdaptiveTruss" family, and plug this into the familySymbol input of the AdaptiveComponent.ByPoints node.
+1. Add an *AdaptiveComponent.ByPoints* node to the canvas, plug the *List.Transpose* node into the *points* input.
+2. Using a *Family Types* node, select the *"AdaptiveTruss"* family, and plug this into the *familySymbol* input of the *AdaptiveComponent.ByPoints* node.
 
 ![Exercise](images/8-4/Exercise/02.png)
 > Checking in Revit, we now have the ten trusses evenly spaced across the facade!
 
 ![Exercise](images/8-4/Exercise/01.png)
-> 1. "Flexing" the graph, we turn up the numberOfTrusses to 40 by changing the slider.  Lots of trusses, not very realistic, but the parametric link is working.
+> 1. "Flexing" the graph, we turn up the *numberOfTrusses* to *40* by changing the *slider*.  Lots of trusses, not very realistic, but the parametric link is working.
 
 ![Exercise](images/8-4/Exercise/00.png)
-> 1. Taming the truss system, let's compromise with a value of 15 for numberOfTrusses.
+> 1. Taming the truss system, let's compromise with a value of *15* for *numberOfTrusses*.
 
 ![Exercise](images/8-4/Exercise/00a.png)
 > And for the final test, by selecting the mass in Revit and editing instance parameters, we can change the form of the building and watch the truss follow suit.  Remember, this Dynamo graph has to be open in order to see this update, and the link will be broken as soon as it's closed.

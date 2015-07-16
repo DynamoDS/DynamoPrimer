@@ -12,16 +12,11 @@ The method for defining ranges and sequences can be reduced to basic shorthand. 
 ``` is equivalent to ```0..10;
 ```.  A step-size of 1 is the default value for the shorthand notation. So ```0..10;
 ``` will give a sequence from 0 to 10 with a step-size of 1.
-3. The number sequence example is similar, except we use a *"#"* to state that we want 15 values in the list, rather than a list which goes up to 15.  In this case, we are defining: ```beginning..#ofSteps..step-size:
+3. The *number sequence* example is similar, except we use a *"#"* to state that we want 15 values in the list, rather than a list which goes up to 15.  In this case, we are defining: ```beginning..#ofSteps..step-size:
 ```.  The actual syntax for the sequence is ```0..#15..2
 ```
-4. Using the *"#"* from the previous step, we now place it in the *"step-size"* portion of the syntax.  Now, we have a number range spanning from the *"beginning"* to the *"end"* and the *"step-size"* notation evenly distributes a number of values between the two: ```beginning..end..#ofSteps
+4. Using the *"#"* from the previous step, we now place it in the *"step-size"* portion of the syntax.  Now, we have a *number range* spanning from the *"beginning"* to the *"end"* and the *"step-size"* notation evenly distributes a number of values between the two: ```beginning..end..#ofSteps
 ```
-
-
-
-
-
 
 ### Advanced Ranges
 Creating advanced ranges allows us to work with list of lists in a simple fashion.  In the examples below, we're isolating a variable from the primary range notation, and creating another range of that list.
