@@ -1,17 +1,27 @@
 ## n-Dimensional Lists
-Data structure can expand far beyond a two-dimensional list of lists.  Since lists are items in and of themselves in Dynamo, we can create data with as many dimensions as possible.  This is difficult to explain visually, but we've set up a few exercises in this chapter which focus on working with lists which are greater than two dimensions.
-###Mapping and Combinations
+Further down the rabbit-hole, let's add even more tiers to hierarchy. Data structure can expand far beyond a two-dimensional list of lists.  Since lists are items in and of themselves in Dynamo, we can create data with as many dimensions as possible.
+
+The analogy we'll work with here are Russian Nesting Dolls.  Each list can be regarded as one container holding multiple items. Each list has its own properties and is also regarded as its own object.
+
+![Dolls](images/6-4/bytes.jpg)
+> A set of Russian Nesting Dolls (designed by [Art Lebedev](http://www.artlebedev.com/everything/matryoshkus/)) is an analogy for n-Dimensional lists.  Each layer represents a list, and each list contains items within it.  In Dynamo's case, each container can have multiple containers inside (representing the items of each list).
+
+n-Dimensional lists are difficult to explain visually, but we've set up a few exercises in this chapter which focus on working with lists which venture beyond two dimensions.
+
+##Mapping and Combinations
 Mapping is arguably the most complex part of data management in Dynamo, and is especially relevant when working with complex hierarchies of lists.  With the series of exercises below, we'll demonstrate when to use mapping and combinations as data becomes multi-dimensional.
 
-###Exercise
-This exercise is the first in a series of three which focuses on articulating imported geometry.  Each part in this series of exercises will increase in complexity in data structure.
+Preliminary introductions to List.Map and List.Combine can be found in the previous section. In the last exercise below, we'll use these nodes on a complex data structure.
+
+###Exercise - 2D Lists - Basic
+This exercise is the first in a series of three which focuses on articulating imported geometry.  Each part in this series of exercises will increase in the complexity of data structure.
 
 ![Exercise](images/6-4/Exercise/A/04.png)
 > 1. Let's begin with the .sat file in the exercise file folder.  We can grab this file using the File Path node.
 2. With Geometry.ImportFromSAT, the geometry is imported into our Dynamo preview as two surfaces.
 
 ![Exercise](images/6-4/Exercise/A/03.png)
-> For this exercise, we want to keep it simple and work with one of the surface.
+> For this exercise, we want to keep it simple and work with one of the surfaces.
 1. Let's select the index of 1 to grab the upper surface.  We do this with List.GetItemAtIndex node.
 
 ![Exercise](images/6-4/Exercise/A/02.png)
@@ -33,7 +43,7 @@ This exercise is the first in a series of three which focuses on articulating im
 2. Connecting the output of List.Transpose to NurbsCurve.ByPoints, we now get five curves running horizontally across the surface.
 
 
-###Exercise
+###Exercise - 2D Lists - Advanced
 Let's increase the complexity.  Suppose we wanted to perform an operation on the curves created from the previous exercise.  Perhaps we want to relate these curves to another surface and loft between them.  This requires more attention to data structure, but the underlying logic is the same.
 
 ![Exercise](images/6-4/Exercise/B/07.png)
@@ -72,7 +82,7 @@ Let's increase the complexity.  Suppose we wanted to perform an operation on the
 > 1. Stepping back a few steps, if we want to switch the orienation of the curves in the ribbed structure, we want to use a List.Transpose before before connect to NurbsCurve.ByPoints.  This will flip the columns and rows, giving us 5 horizontal ribs.
 
 
-###Exercise
+###Exercise - 3D Lists
 Now, we're going to go even one step further.  In this exercise, we'll work with both imported surfaces, creating a complex data hierarchy.  Still, our aim is to complete the same operation with the same underlying logic.
 
 ![Exercise](images/6-4/Exercise/C/12.png)

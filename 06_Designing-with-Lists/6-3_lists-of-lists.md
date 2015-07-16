@@ -1,22 +1,68 @@
-## List of Lists
-Text
-###Top-Down Hierarchy
-![top-down](images/6-3/top-down.png)
+## Lists of Lists
+Let's add one more tier to the hierarchy.  If we take the deck of cards from the original example and create a box which contains multiple decks, the box now represents a list of decks, and each deck represents a list of cards.  This is a list of lists.  For the analogy in this section, the red box below contains a list of coin rolls, and each roll contains a list of pennies.
 
-###Flatten
+![Coins](images/6-3/coins.jpg)
+
+What **queries** can we make from the list of lists? This accesses existing properties.
+* Number of rolls in the red box? 20.
+* Number of pennies in each roll? 50.
+* Number of pennies in the red box? 1,000.
+* Material of red box? Aluminum.
+* Material of coin roll? Paper.
+* Material of penny? 97.5% zinc and 2.5% copper.
+
+What **actions** can we perform on the list of lists? This changes the list of lists based on a given operation.
+* Select a specific roll of pennies.
+* Select a specific penny.
+* Rearrange the rolls of pennies.
+* Flip the orientation of the rolls from horizontal to vertical.
+
+Again, Dynamo has an analagous node for each one of the operations above. Since we're working with abstract data and not physical objects, we need a set of rules to govern how we move up and down the data hierarchy.
+
+When dealing with lists of lists, the data is layered and complex, but this provides an opportunity to do some awesome parametric operations.  Let's break down the fundamentals and discuss a few more operations in the lessons below.
+
+##Top-Down Hierarchy
+
+The fundamental concept to learn from this section: **Dynamo treats lists as objects in and of themselves**.  This top-down hierarchy is developed with object-oriented programming in mind.  Rather than selecting sub-elements with a command like List.GetItemAtIndex, Dynamo will select that index of the main list in the data structure.  And that item can be another list.  Let's break it down with an example image:
+
+#### Exercise - Top-Down Hierarchy
+
+![top-down](images/6-3/top-down.png)
+>1. With code block, we've defined two ranges:```
+0..2;
+0..3;
+```
+2. These ranges are connected to a Point.ByCoordinates node with lacing set to "Cross Product".  This creates a grid of points, and also returns a list of lists as an output.
+3. Notice that the watch node gives 3 lists with 4 items in each list.
+4. When using List.GetItemAtIndex, with an index of 0, Dynamo selects the first list and all of its contents.  Other programs may select the first item of every list in the data structure, but Dynamo employs a top-down hierarchy when dealing with data.
+
+###Flatten and List.Flatten
+Flatten removes all tiers of data from a data structure. This is helpful when the data hierarchies are not necessary for your operation, but it can be risky because it removes information.  The example below shows the result of flattening a list of data.
+
+#### Exercise - Flatten
 
 ![Exercise](images/6-3/Exercise/Flatten-31.png)
+> 1. Insert one line of code to define a range in code block:```
+-250..-150..#4;
+```
+2. Pluggin the code block into the x and y input of a Point.ByCoordinates node, we set the lacing to "Cross Product" to get a grid of points.
+3. The watch node shows that we have a list of lists.
+4. A PolyCurve.ByPoints node will reference each list and create a respective polycurve.  Notice in the Dynamo preview that we have four polycurve representing each row in the grid.
 
 ![Exercise](images/6-3/Exercise/Flatten-30.png)
+>1. By inserting a flatten before the polycurve node, we've created one single list for all of the points.  The polycurve node references a list to create one curve, and since all of the points are on one list, we get one zig-zag polycurve which runs throughout the entire list of points.
+
+There are also options for flattening isolated tiers of data.  Using the List.Flatten node, you can define a set number of data tiers to flatten from the top of the hierarchy.  This is a really helpful tool if you're struggling with complex data structures which are not necessarily relevant to your workflow.  And another option is to use the flatten node as a function in List.Map.  We'll discuss List.Map more below.
 
 ###Chop
+When parametric modeling, there are also times where you'll want to add more data structure to an existing list.  There are many nodes available for this as well, and chop is the most basic version.  With chop, we can partition a list into sublists with a set number of items.
+
+#### Exercise - List.Chop
+
 ![Chop](images/6-3/chop-01.jpg)
+> A List.Chop with a subLength of 2 creates 4 lists with 2 items each.
 
-![Exercise](images/6-3/Exercise/Chop-03.png)
-
-![Exercise](images/6-3/Exercise/Chop-02.png)
-
-![Exercise](images/6-3/Exercise/Chop-01.png)
+The chop command divides lists based on a given list length. In some ways, chop is the opposite of flatten: rather than removing data structure, it adds new tiers to it.  This is a helpful tool for geometric operations like the example below.
 
 ![Exercise](images/6-3/Exercise/Chop-00.png)
 
@@ -56,16 +102,43 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 3. The results of List.Count now gives a list of 5 items, each with a value of 3.  This represents the length of each sublist.
 
 #### Exercise - List.Combine
+In this exercise, we'll use a similar logic to List.Map, but with multiple elements.  In this case, we want to divide a list of curves by a unique number of points.
 
 ![Exercise](images/6-3/Exercise/Combine-33.png)
+> 1. Using the code block, define a range using the syntax: ```..20..#4;
+``` and a value of ```20;
+``` below that line.
+2. Connect the code block to two Point.ByCoordinates nodes.
+3. Create a Line.ByStartPointEndPoint from the Point.ByCoordinates nodes.
+4. The watch node shows four lines.
 
 ![Exercise](images/6-3/Exercise/Combine-32.png)
+> 1. Below the graph for line creation, we want to create four distinct ranges to divide the lines uniquely. We do this with the following lines of code:
+```
+0..1..#3;
+0..1..#4;
+0..1..#5;
+0..1..#6;
+```
+2. With a List.Create node, we merge the four lines from the code block into one list.
+3. The Watch node reveals a list of lists.
 
 ![Exercise](images/6-3/Exercise/Combine-31.png)
+> 1. Curve.PointAtParameter will not work by connecting the lines directly into the parameter values.  We need to step one level down on the hierarchy. For this, we'll use List.Combine.
 
 ![Exercise](images/6-3/Exercise/Combine-30.png)
+> By using List.Combine, we can successfully divide each line by the given ranges.  This gets a little tricky, so we'll break it down in-depth.
+1. First, add a Curve.PointAtParameter node to the canvas.  This will be the "function" or "combinator" that we apply to List.Combine node. More on that in a second.
+2. Add a List.Combine node to the canvas.  Hit the "+" or "-" to add or subtract inputs. In this case, we'll use the default two inputs on the node.
+3. We want to plug the Curve.PointAtParameter node into the "comb" input of List.Combine. And one more important node: be sure to right-click the "param" input of Curve.PointAtParameter and uncheck "use default value". Default values in Dynamo inputs have to be removed when running a node as a function.
+4. We know we have two inputs, the lines and the parameters to create points. But how do we connect them to the List.Combine inputs and in what order?
+5. The empty inputs of Curve.PointAtParameter, from top-to-bottom need to be filled in the combinator in the same order.  So, the lines are plugged into list1 of List.Combine.
+6. Following suit, the parameter value are plugged into the list2 input of List.Combine.
+7. The Watch node and the Dynamo preview shows us that we have 4 lines, each divided based on the code-block ranges.
 
 ###Transpose
+Transpose is a fundamental function when dealing with lists of lists. Just as in spreadsheet programs, a transpose flips the columns and rows of a data structure. We'll demonstrate this with a basic matrix below, and in the following section, we'll demonstrate how a transpose can be use to create geometric relationships.
+
 ![Transpose](images/6-3/transpose1.jpg)
 
 #### Exercise - List.Transpose
@@ -85,13 +158,17 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 3. Notice the geometric result: using PolyCurve.ByPoints, we get 3 polycurves in the perependicular direction to the original curves.
 
 ###Code Block Creation
+Code block shorthand uses "{}" to define a list.  This is a much faseter and fluid way to create list than the List.Create node. Code block is discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple expressions can be defined with code block.
+
 ![CB](images/6-3/cbCreation.png)
 
 
 ###Code Block Query
+Code block shorthand is uses "[]" as a quick and easy way to select specific items that you want from a complex data structure. Code block is discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple data types can be queried with code block.
+
 ![CB](images/6-3/cbQuery.png)
 
-###Exercise
+###Exercise - Querying and Inserting Data
 This exercise uses some of the logic established in the previous one to edit a surface. Our goal here is intuitive, but the data structure navigation will be more involved.  We want to articulate a surface by moving a control point.
 
 ![Exercise](images/6-3/Exercise/B/06.png)
