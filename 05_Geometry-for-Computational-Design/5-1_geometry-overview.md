@@ -18,12 +18,19 @@ Text
 
 ![Geometry Hiearchy](images/5-1/GeometryHierarchy.jpg)
 
+
 ### Geomety in Dynamo Studio versus Geometry in other Autodesk Software
 Text
 
 * Geometry in Dynamo native
 * Imported Geometry
+
+![Geometry in Dynamo](images/5-1/GeometryOrganization.jpg)
+
+
+![Geometry in Dynamo](images/5-1/GeometryInDynamo.jpg)
+
+### Going Further with Geometry
+Text
 * Referenced Geometry from other software
 * Extended capatbiliites (mesh toolkit)
-*
-
