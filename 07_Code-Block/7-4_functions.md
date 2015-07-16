@@ -36,7 +36,7 @@ In this exercise, we will make a generic definition that will create spheres fro
 > Let's begin with a number range of ten values spanning from 0 to 100.  Plug these into a *Point.ByCoordinates* nodes to create a diagonal line.
 
 ![Exercise](images/7-4/Exercise/10.png)
->1. Create a code block and introduce our definition by using the line of code:
+>1. Create a *code block* and introduce our definition by using the line of code:
 ```
 def sphereByZ(inputPt){
 };
@@ -44,7 +44,7 @@ def sphereByZ(inputPt){
   The *inputPt* is the name we've given to represent the points that will drive the function.  As of now, the function isn't doing anything, but we'll build up this function in the steps to come.
 
 ![Exercise](images/7-4/Exercise/09.png)
->1. Adding to the code block function, we place a comment and a sphereRadius variable which queries the Z position of each point.  Remember, *inputPt.Z* does not need parenetheses as a method.  This is a *query* of an existing element's properties, so no inputs are necessary:
+>1. Adding to the *code block* function, we place a comment and a *sphereRadius* variable which queries the *Z* position of each point.  Remember, *inputPt.Z* does not need parenetheses as a method.  This is a *query* of an existing element's properties, so no inputs are necessary:
 ```
 def sphereByZ(inputPt,radiusRatio)
 {
@@ -54,18 +54,18 @@ sphereRadius=inputPt.Z;
 ```
 
 ![Exercise](images/7-4/Exercise/08.png)
->1. Now, let's recall the function we've created in another code block. If we double-click on the canvas to create a new code block, and type in *sphereB*, we notice that Dynamo suggest the *sphereByZ* function that we've defined. Your function has been added to the intellisense library! Pretty cool.
+>1. Now, let's recall the function we've created in another *code block*. If we double-click on the canvas to create a new *code block*, and type in *sphereB*, we notice that Dynamo suggest the *sphereByZ* function that we've defined. Your function has been added to the intellisense library! Pretty cool.
 
 ![Exercise](images/7-4/Exercise/07.png)
 >1. Now we call the function and create a variable called *Pt* to plug in the points created in the earlier steps:
 ```sphereByZ(Pt)
 ```
-2. We notice from the output that we have all null values.  Why is this? When we defined the function, we are calculating the sphereRadius variable, but we did not define what the function should *return* as an *output*.  We can fix this in the next step.
+2. We notice from the output that we have all null values.  Why is this? When we defined the function, we are calculating the *sphereRadius* variable, but we did not define what the function should *return* as an *output*.  We can fix this in the next step.
 
 ![Exercise](images/7-4/Exercise/06.png)
 >1. An important step, we need to define the output of the function by adding the line ```return = sphereRadius;
 ``` to the *sphereByZ* function.
-2. Now we see that the output of the code block gives us the Z coordinates of each point.
+2. Now we see that the output of the *code block* gives us the Z coordinates of each point.
 
 
 ![Exercise](images/7-4/Exercise/05.png)
