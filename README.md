@@ -23,7 +23,7 @@ Version 1.0 of this Primer includes the first four chapters of a planned twelve 
 * **What's in a Program** - What are the functional parts of Dynamo and how do I use them?
 * **Building Blocks** - What is "Data" and what are some fundamental types I can start using in my programs?
 * **Geometry for Design** - How do I work with geometric elements in Dynamo?
-* **Lists, Lists, Lists ** - How to do I manage and coordinate my data structures?
+* **Lists, Lists, Lists** - How to do I manage and coordinate my data structures?
 * **Code in Nodes** - How can I start extending Dynamo with my own code?
 * **Computational BIM** - How can I use Dynamo with a Revit model?
 
