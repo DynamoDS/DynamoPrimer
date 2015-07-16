@@ -1,14 +1,29 @@
 ## Working with Lists
+Now that we've established what a list is, let's talk about operations we can perform on it. Imagine a list as a deck of playing cards.  A deck is the list and each playing card represents an item.
 
-### Inputs and Outputs
-![Input Examples](images/6-2/Polycurve.Inputs.png)
-> 1. The input data for PolyCurve.ByPoints and Circle.ByCenterPointRadius are the same, however the Polycurve battery gives us one polycurve while the Circle.ByCenterPointRadius battery gives us 5 circles with centers at each point.  Intuitively this makes sense: the polycurve is drawn as a curve connecting the 5 points, while the circles create a differenct circle at each point.  So what's happening with the data?
-2. However over the "points" input for Polycurve.ByPoints, we see that the input is looking for "Point[]".  This represents a list of points, and to create a polycurve, the input needs to be a list for each polycurve.  This battery will therefore condense each list into one polycurve.
-3.  On the other hand, the "centerPoint" input for Cirle.ByCenterPointRadius asks for "Point".  This battery looks for one point, as an item, to define the center point of the circle.  This is why we get five circles from the input data.
-4.  Recognizing these difference with inputs in Dynamo helps to better understand how the batteries are operating when managing data.
+![cards](images/6-2/playingCards.jpg)
+
+What **queries** can we make from the list? This accesses existing properties.
+* Number of cards in the deck? 52.
+* Number of suits? 4.
+* Material? Paper.
+* Length? 3.5" or 89mm.
+* Width? 2.5" or 64mm.
+
+What **actions** can we perform on the list? This changes the list based on a given operation.
+* We can shuffle the deck.
+* We can sort the deck by value.
+* We can sort the deck by suit.
+* We can split the deck.
+* We can partition the deck by dealing out individual hands.
+* We can select a specific card in the deck.
+
+All of the operations listed above have analogous Dynamo nodes for working with lists of generic data.  The lessons below will demonstrate some of the fundamental operations we can perform on lists.
 
 ##List Operations
 The image below is the base graph we will be using to demonstrate basic list operations. We'll explore how to manage data within a list and demonstrate the visual results.
+
+#### Exercise - List Operations
 
 ![Exercise](images/6-2/Exercise/40.png)
 > 1. Begin with a code block with a value of ```500;
@@ -31,6 +46,8 @@ The image below is the base graph we will be using to demonstrate basic list ope
 ![Count](images/6-2/count.png)
 > The List.Count node is straightforward: it counts the number of values in a list and returns that number.  This node gets more nuanced as we work with lists of lists, but we'll demonstrate that in the coming sections.
 
+#### Exercise - List.Count
+
 ![Count](images/6-2/Exercise/35.png)
 > 1. The List.Count node returns the number of lines in the Line.ByStartPointEndPoint node.  The value is 10 in this case, which agrees with the number of points created from the original code block node.
 
@@ -38,6 +55,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 ![index](images/6-2/index.png)
 > List.GetItemAtIndex is a fundamental way to query an item in the list.  In the image above, we are using an index of "2" to query the point labeled "C".
 
+#### Exercise - List.GetItemAtIndex
 ![Exercise](images/6-2/Exercise/33.png)
 >1. Using the List.GetItemAtIndex node, we are selecting index "0", or the first item in the list of lines.
 2. The Watch 3D node reveals that we've selected one line. Note: to get the image above, be sure to disable the preview of Line.ByStartPointEndPoint.
@@ -46,6 +64,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 ![reverse](images/6-2/reverse.png)
 > List.Reverse reverses the order of all of the items in a list.
 
+#### Exercise - List.Reverse
 ![Exercise](images/6-2/Exercise/34.png)
 >1. To properly visualize the reversed list of lines, create more lines by changing the code block to ```0..1..#100;
 ```
@@ -57,6 +76,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 ![shift](images/6-2/shift.png)
 > List.ShiftIndices is a good tool for creating twists or helical patterns, or any other similar data manipulation.  This node shifts the items in a list a given number of indices.
 
+#### Exercise - List.ShiftIndices
 ![Exercise](images/6-2/Exercise/31.png)
 >1. In the same process as the reverse list, insert a List.ShiftIndices into the Curve.PointAtParameter and Line.ByStartPointEndPoint.
 2. Using a code block, designated a value of "1" to shift the list one index.
@@ -69,6 +89,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 ![cull](images/6-2/cull2.png)
 > List.FilterByBooleanMask will remove certain items based on a list of booleans, or values reading "true" or "false".
 
+#### Exercise - List.FilterByBooleanMask
 ![Exercise](images/6-2/Exercise/30.png)
 > In order to create a list of values reading "true" or "false", we need to a little more work...
 1. Using a code block, define an expression with the syntax: ```0..List.Count(list);
