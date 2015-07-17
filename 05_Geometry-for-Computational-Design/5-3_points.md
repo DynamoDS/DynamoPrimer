@@ -1,5 +1,5 @@
 ## Points
-If Geometry is the language of a model, then Points are the alphabet. Points are the foundation upon which all other geometry is created - we need at least two Points to create a Curve, we need at least three Points to make a Polygon or a Mesh Face, and so on.
+If Geometry is the language of a model, then Points are the alphabet. Points are the foundation upon which all other geometry is created - we need at least two Points to create a Curve, we need at least three Points to make a Polygon or a Mesh Face, and so on. Defining the position, order, and relationship among Points (try a Sine Function) allows us to define higher order geometry like things we recognize as Circles or Curves.
 
 ![Point to Curve](images/5-3/PointsAsBuildingBlocks-1.png)
 
@@ -18,3 +18,7 @@ Points can exist in a two-dimensional Coordinate System as well. Convention has 
 
 Although it might seem counter intuitive, Parameters for both Curves and Surfaces are continuous and extend beyond the edge of the given geometry. Since the shapes that define the Parameter Space reside in a three-dimensional World Coordinate System, we can always translate a Parametric Coordinate into a "World" Coordinate. The point [0.2, 0.5] on the surface for example is the same as point [1.8, 2.0, 4.1] in world coordinates.
 
+![Points in Dynamo](images/5-3/Dynamo-Points.png)
+> 1. Point in assumed World XYZ Coordinates
+2. Point relative to a given Coordinate System (Cylindrical)
+3. Point as UV Coordinate on a Surface

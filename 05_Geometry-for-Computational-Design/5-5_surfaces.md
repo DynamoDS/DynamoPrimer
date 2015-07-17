@@ -1,9 +1,8 @@
 ## Surfaces
-Text
-interpolate
+Lorem
 
 ### What's a Surface?
-Text
+Lorem
 
 ![Surface](images/5-5/SurfaceParameter.png)
 
@@ -11,7 +10,7 @@ Text
 
 
 ### NURBS Surfaces
-Text
+Lorem
 weights
 uv space
 
@@ -20,7 +19,7 @@ uv space
 ![NURBS Surface](images/5-5/NURBSsurface-Degree.png)
 
 ### Polysurfaces
-Text
+Lorem
 Joined surfaces
 
 ![PolySurface](images/5-5/PolySurface.png)
