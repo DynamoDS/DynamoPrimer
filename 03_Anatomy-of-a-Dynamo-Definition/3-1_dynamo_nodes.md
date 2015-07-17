@@ -1,8 +1,8 @@
-## 3.1. NODES
+##NODES
 
 In Dynamo, **Nodes** are the objects you connect to form a Visual Program. Each **Node** performs an operation - sometimes that may be as simple as storing a number or it may be a more complex action such as creating or querying geometry.
 
-###3.1.1. Anatomy of a Node
+###Anatomy of a Node
 Most Nodes in Dynamo are composed of five parts. While there are exceptions, such as Input Nodes, the anatomy of each Node can be described as follows:
 ![Node Breakdown Point by Coordinates](images/3-1/00-AnatomyOfANode.png)
 >1. Name - The Name of the Node with a Category.Name naming convention
@@ -11,7 +11,7 @@ Most Nodes in Dynamo are composed of five parts. While there are exceptions, suc
 4. Data Preview - Hover or click to see a tooltip describing the results of the Node's action
 5. Lacing Icon - Indicates the Lacing option specified for matching list inputs (more on that later)
 
-###3.1.2. Ports
+### Ports
 The Inputs and Outputs for Nodes are called Ports and act as the receptors for Wires. Data comes into the Node through Ports on the left and flows out of the Node after it has executed its operation on the right. Ports expect to receive data of a certain type. For instance, connecting a number such as *2.75* to the Ports on a Point By Coordinates Node will successfully result in creating a Point; however, if we supply *"Red"* to the same Port it will result in an error.
 
 > Tip: Hover over a Port to see a tooltip containing the data type expected.
@@ -21,7 +21,7 @@ The Inputs and Outputs for Nodes are called Ports and act as the receptors for W
 2. Tool Tip
 3. Data Type
 
-###3.1.3. States
+###States
 Dynamo gives an indication of the state of the execution of your Visual Program by rendering Nodes with different color schemes based on each Node's status. Furthermore, hovering or right-clicking over the Name or Ports presents additional information and options.
 
 ![States](images/3-1/02-States2.png)

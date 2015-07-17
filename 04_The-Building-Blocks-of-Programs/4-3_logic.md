@@ -1,10 +1,10 @@
-## 4.3. Logic
+##Logic
 **Logic**, or more specifically, **Conditional Logic**, allows us to specify an action or set of actions based on a test. After evaluating the test, we will have a Boolean value representing ```True``` or ```False``` that we can use to control the Program Flow.
 
-### 4.3.1. Booleans
+###Booleans
 Numeric variables can store a whole range of different numbers. Boolean variables can only store two values referred to as True or False, Yes or No, 1 or 0. We rarely use booleans to perform calculations because of their limited range.
 
-### 4.3.2. Conditional Statements
+###Conditional Statements
 The "If" statement is a key concept in programming: "If *this* is true, then *that* happens, otherwise *something else* happens. The resulting action of the statement is driven by a boolean value. There are multiple ways to define an "If" statement in Dynamo:
 
 | Icon | Name | Syntax| Inputs | Outputs |
@@ -20,7 +20,7 @@ Let's go over a brief example on each of these three nodes in action using the c
 ![](images/4-3/Ifs2.png)
 > Again, the Nodes are working identically.  If the *boolean* is changed to *false*, our result is the number *Pi*, as defined in the original *If* statement.
 
-### 4.3.3. Filtering a List
+###Filtering a List
 Let's use logic to separate a list of numbers into a list of even numbers and a list of odd numbers.
 
 ![](images/4-3/01.png)
@@ -33,7 +33,7 @@ Let's use logic to separate a list of numbers into a list of even numbers and a 
 6. **List.FilterByBoolMask -** this Node will filter the values into two different lists based on the input boolean.  Plug the original *number range* into the *list* input and the *equality test** output into the *mask* input.  The *in* output represents true values while the *out* output represents false values.
 7. **Watch - ** as a result, we now have a list of even numbers and a list of odd numbers. We've used logical operators to separate lists into patterns!
 
-### 4.3.4. From Logic to Geometry
+###From Logic to Geometry
 Building off of the logic established in the first exercise, let's apply this setup into a modeling operation.
 
 ![](images/4-3/02.png)
@@ -64,7 +64,7 @@ The method here for the inputs: use number nodes for more static properties and 
 2. **Watch -** a watch node for *in* and a watch node for *out* shows that we have two lists representing even indices and odd indices.  These points are ordered in the same way on the curve, which we demonstrate in the next step.
 
 ![](images/4-3/08.png)
-> 1. **Cuboid.ByLengths -** recreate the connections seen in the image above to get a zipper along the sine curve. A cuboid is just a box here, and we're defining it's size based on the curve point in the center of hte box.  The logic of the even/odd divide should now be clear in the model.
+> 1. **Cuboid.ByLengths -** recreate the connections seen in the image above to get a zipper along the sine curve. A cuboid is just a box here, and we're defining its size based on the curve point in the center of hte box.  The logic of the even/odd divide should now be clear in the model.
 
 ![](images/4-3/matrix.png)
 > 1. **Number Slider -** stepping back to the beginning of the definition, we can flex the number slider and watch the zipper update.  The top row of images represents a range values for the top number slider. This is the frequency of the wave.
