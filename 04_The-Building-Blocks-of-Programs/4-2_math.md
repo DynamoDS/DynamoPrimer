@@ -1,5 +1,5 @@
 ##Math
-If the simplest form of data is numbers, the easiest way to relate those numbers is through Mathematics. From simple operators like divide to trigonometric functions to more complex formlas, Math is a great way to start exploring numeric relationships and patterns.
+If the simplest form of data is numbers, the easiest way to relate those numbers is through Mathematics. From simple operators like divide to trigonometric functions, to more complex formulas, Math is a great way to start exploring numeric relationships and patterns.
 
 ###Arithmetic Operators
 Operators are a set of components that use algebraic functions with two numeric input values, which result in one output value (addition, subtraction, multiplication, division, etc.). These can be found under Operators>Actions.
@@ -42,7 +42,7 @@ We've now completed the Fibonacci Spiral!  Let's take this further into two sepa
 ###From Spiral to Nautilus
 
 ![](images/4-2/4-2-5/03.png)
-> 1. As a jumping off point, let's start with the same step from the previous exercise: creating a spiral array of points with the **Point.ByCoordinates** Node.
+> 1. As a jumping-off point, let's start with the same step from the previous exercise: creating a spiral array of points with the **Point.ByCoordinates** Node.
 
 ![](images/4-2/4-2-5/03aa.png)
 > 1. **Polycurve.ByPoints:** Again, this is the Node from the pervious exercise, which we'll use as a reference.
@@ -50,13 +50,13 @@ We've now completed the Fibonacci Spiral!  Let's take this further into two sepa
 
 ![](images/4-2/4-2-5/03a.png)
 > 1. **Circle.ByCenterPointRadius:** To create a more dynamic array of circles, we plug the original number sequence (the '*t*' sequence) into the radius value.
-2. **Number Sequence:** This is the original array of '*t*'.  By plugging this into the radius value, the circle centers are still diverging further from the origin, but the radius of the circles are increasing, creating a funky Fibonacci circle graph.  Bonus points if you make it 3D!
+2. **Number Sequence:** This is the original array of '*t*'.  By plugging this into the radius value, the circle centers are still diverging further from the origin, but the radius of the circles is increasing, creating a funky Fibonacci circle graph.  Bonus points if you make it 3D!
 
 ###From Nautilus to Phyllotaxis Pattern
 Now that we've made a circular Nautilus shell, let's jump into parametric grids.  We're going to use a basic rotate on the Fibonacci Spiral to create a Fibonacci grid, and the result is modeled after the [growth of sunflower seeds.](http://ms.unimelb.edu.au/~segerman/papers/sunflower_spiral_fibonacci_metric.pdf)
 
 ![](images/4-2/4-2-5/03.png)
-> 1. Again, as a jumping off point, let's start with the same step from the previous exercise: creating a spiral array of points with the **Point.ByCoordinates** Node.
+> 1. Again, as a jumping-off point, let's start with the same step from the previous exercise: creating a spiral array of points with the **Point.ByCoordinates** Node.
 
 ![](images/4-2/4-2-5/04.png)
 > 1. **Geometry.Rotate:** There are several Geometry.Rotate options; be certain you've chosen the Node with *geometry*,*basePlane*, and *degrees* as its inputs.  Connect **Point.ByCoordinates** into the geometry input.
