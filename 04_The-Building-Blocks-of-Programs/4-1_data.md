@@ -18,7 +18,7 @@ The ```'null'``` type represents the absence of data. While this is an abstract 
 | ![](../images/icons/DSCore-Object-IsNull-Large.png) | Object.IsNull | obj | bool |
 
 ###Data Structures
-When we are Visual Programming, we can very quickly generate a lot of data and require a means of managing its hierarchy. This is the role of Data Structures, the organizational schemes in which we store data. The specifics of Data Structures and how to use them, vary from programming language to programming language. In Dynamo, we add hierarchy to our data through Lists. We will explore this in depth in later chapters, but let's start simply:
+When we are Visual Programming, we can very quickly generate a lot of data and require a means of managing its hierarchy. This is the role of Data Structures, the organizational schemes in which we store data. The specifics of Data Structures and how to use them vary from programming language to programming language. In Dynamo, we add hierarchy to our data through Lists. We will explore this in depth in later chapters, but let's start simply:
 
 A list represents a collection of items placed into one structure of data:
 * I have five fingers (*items*) on my hand (*list*).
@@ -32,7 +32,7 @@ A list represents a collection of items placed into one structure of data:
 4. Now we merge the two lists into one by using the **List.Create** battery.  Notice that the battery creates a *list of lists.* This changes the structure of the data.
 5. When using **List.GetItemAtIndex** again, with index set to *0*, we get the first list in the list of lists.  This is what it means to treat a list as an item, which is somewhat different from other scripting languages. We will get more advanced with list manipulation and data structure in later chapters.
 
-The key concept to understand about data hierachy in Dynamo: **with respect to data structure, lists are regarded as items.**  In other words, Dynamo functions with a top-down process for understanding data structures. What does this mean? Let's walk-through it with an example.
+The key concept to understand about data hierachy in Dynamo: **with respect to data structure, lists are regarded as items.**  In other words, Dynamo functions with a top-down process for understanding data structures. What does this mean? Let's walk through it with an example.
 
 ### Using Data to Make a Chain of Cylinders
 In this first example, we assemble a shelled cylinder which walks through the geometry hierarchy discussed in this section.
@@ -68,7 +68,7 @@ We've now created a parametric shelled cylinder with these sliders.  Try to flex
 At this point, we've created an awesome thickening cylinder thing.  This is one object currently, let's look at how to create an array of cylinders that remains dynamically linked.  To do this, we're going to create a list of cylinders, rather than working with a single item.
 
 ![](images/4-1/9.png)
-> 1. **Addition (+) -** Our goal is to add a row of cylinder next to the cylinder we've created.  If we want to add one cylinder adjacent to the current one, we need to consider both radius of the cylinder and the thickness of its shell.  We get this number by adding the two values of the sliders.
+> 1. **Addition (+) -** Our goal is to add a row of cylinders next to the cylinder we've created.  If we want to add one cylinder adjacent to the current one, we need to consider both radius of the cylinder and the thickness of its shell.  We get this number by adding the two values of the sliders.
 
 ![](images/4-1/10.png)
 > This step is more involved so let's walk through it slowly: the end goal is to create a list of numbers which define the locations of each cylinder in a row.
