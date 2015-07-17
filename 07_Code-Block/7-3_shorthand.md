@@ -2,6 +2,32 @@
 There are a few basic shorthand methods in the code block which, simply put, make data management *a lot* easier.  We'll break down the basics below and discuss how this shorthand can be used both for creating and querying data.
 
 
+| Node(s) | Code Block Equivalent |
+| -- | -- |
+| ![IMAGE](images/7-3/table/number.png)  |![IMAGE](images/7-3/table/numberCB.png)  |
+|||
+| ![IMAGE](images/7-3/table/string.png)  | ![IMAGE](images/7-3/table/stringCB.png)  |
+|||
+| ![IMAGE](images/7-3/table/sequence.png)|![IMAGE](images/7-3/table/sequenceCB.png) |
+|||
+| ![IMAGE](images/7-3/table/range.png)|![IMAGE](images/7-3/table/rangeCB.png) |
+|||
+| ![IMAGE](images/7-3/table/getItem.png)  | ![IMAGE](images/7-3/table/getItemCB.png)  |
+|||
+| ![IMAGE](images/7-3/table/list.png)  | ![IMAGE](images/7-3/table/listCB.png)  |
+|||
+| ![IMAGE](images/7-3/table/concat.png) | ![IMAGE](images/7-3/table/concatCB.png) |
+|||
+| ![IMAGE](images/7-3/table/if.png) | ![IMAGE](images/7-3/table/ifCB.png) |
+
+
+###Additional Syntax
+| Node(s) | Code Block Equivalent | Note |
+| -- | -- | -- |
+| Any operator (+, &&, >=, Not, etc.) |+, &&, >=, !, etc.| Note that “Not” becomes “!” but the node is called “Not” to distinguish from “Factorial”|
+| Boolean True | true; | Note lower case |
+| Boolean False | false; | Note lower case |
+
 ### Ranges
 The method for defining ranges and sequences can be reduced to basic shorthand.  Use the image below as a guide to the ".." syntax for defining a list of numerical data with code block. After getting the hang of this notation, creating numerical data is a really efficient process:
 ![Obsolete Ranges](images/7-3/obsolete02.png)
