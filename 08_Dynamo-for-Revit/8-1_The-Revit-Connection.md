@@ -15,10 +15,10 @@ Using the core Dynamo nodes in tandem with custom Revit ones, a user can substan
 
 ### Running Dynamo in Revit
 ![Connection](images/8-1/01.png)
->1. In a Revit projector family editor, navigate to Addins and click Dynamo. Take note: Dynamo will run only in the file in which it was opened.
+>1. In a Revit projector family editor, navigate to Addins and click *Dynamo*. Take note: Dynamo will run only in the file in which it was opened.
 
 ![Connection](images/8-1/00.png)
->1. When openinig Dynamo in Revit, there is a new category called "Revit".  This is a comprehensive addition to the UI which offers nodes specifically catering to Revit workflows.
+>1. When openinig Dynamo in Revit, there is a new category called *"Revit"*.  This is a comprehensive addition to the UI which offers nodes specifically catering to Revit workflows.
 
 ### Community
 Since Dynamo was originally created for AEC, its large and growing community is a great resource for learning from and connecting with experts in the industry.  Dynamo’s community is made of architects, engineers, programmers, and designers who all have a passion for sharing and making.

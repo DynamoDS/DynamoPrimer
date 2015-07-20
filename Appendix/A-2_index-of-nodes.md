@@ -1,4 +1,4 @@
-<style>                            
+<style>
 td {background-color:#F9F9F9; vertical-align:top}
 td img{width:100%}
 .book .book-body .page-wrapper .page-inner section.normal table td:nth-child(1){width:50px;padding-right:2px;padding-left: 2px;vertical-align: top}
