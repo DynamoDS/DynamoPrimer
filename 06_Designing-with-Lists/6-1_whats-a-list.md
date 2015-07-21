@@ -29,11 +29,21 @@ is to connect a watch node to another node's output. By default, the watch node 
 The index numbers are a crucial element when working with lists.
 
 ### Inputs and Outputs
+The input data for *PolyCurve.ByPoints* and *Circle.ByCenterPointRadius* are the same, however the Polycurve node gives us one polycurve while the Circle node gives us 5 circles with centers at each point.  Intuitively this makes sense: the polycurve is drawn as a curve connecting the 5 points, while the circles create a differenct circle at each point.  So what's happening with the data?
+
+Hovering over the *points* input for *Polycurve.ByPoints*, we see that the input is looking for *"Point[]"*. Notice the brackets at the end. This represents a list of points, and to create a polycurve, the input needs to be a list for each polycurve.  This node will therefore condense each list into one polycurve.
+
+On the other hand, the *centerPoint* input for *Circle.ByCenterPointRadius* asks for *"Point"*.  This node looks for one point, as an item, to define the center point of the circle.  This is why we get five circles from the input data.
+
+Recognizing these difference with inputs in Dynamo helps to better understand how the nodes are operating when managing data.
+
+
 ![Input Examples](images/6-2/Polycurve.Inputs.png)
-> 1. The input data for *PolyCurve.ByPoints* and *Circle.ByCenterPointRadius* are the same, however the Polycurve node gives us one polycurve while the Circle node gives us 5 circles with centers at each point.  Intuitively this makes sense: the polycurve is drawn as a curve connecting the 5 points, while the circles create a differenct circle at each point.  So what's happening with the data?
-2. Hovering over the *points* input for *Polycurve.ByPoints*, we see that the input is looking for *"Point[]"*.  This represents a list of points, and to create a polycurve, the input needs to be a list for each polycurve.  This node will therefore condense each list into one polycurve.
-3.  On the other hand, the *centerPoint* input for *Circle.ByCenterPointRadius* asks for *"Point"*.  This node looks for one point, as an item, to define the center point of the circle.  This is why we get five circles from the input data.
-4.  Recognizing these difference with inputs in Dynamo helps to better understand how the nodes are operating when managing data.
+> 1. The *points* input for *PolyCurve.ByPoints* is looking for *"Point[]"*.  This represents a list of points.
+2. The output for *PolyCurve.ByPoints* is a single PolyCurve created from a list of five points.
+3. The *centerPoint* input for *Circle.ByCenterPointRadius* asks for *"Point"*.
+4. The output for *Circle.ByCenterPointRadius* is a list of five circles, whose centers correspond to the original list of points.
+
 
 ###Lacing
 Data matching is a problem without a clean solution. It occurs when a node has access to differently sized inputs. Changing the data matching algorithm can lead to vastly different results.
