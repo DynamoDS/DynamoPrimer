@@ -2,4 +2,4 @@
 
 ##### Text
 
-(image)
+![IMAGE](images/6/Designing With Lists-01.png)
