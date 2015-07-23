@@ -26,6 +26,10 @@ The three images below breakdown the main categories for Revit element selection
 With the three images above in mind, let's dive into an exercise which selects elements from a basic Revit project in preparation for the parametric applications we'll create in the remaining sections of this chapter.
 
 ### Exercise
+>Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+1. [Selecting.dyn](datasets/8-2/Selecting.dyn)
+2. [ARCH-Selecing-BaseFile.rvt](datasets/8-2/ARCH-Selecting-BaseFile.rvt)
+
 ![Exercise](images/8-2/Exercise/12.png)
 > In this example Revit file, we have three element types of a simple building.  We're going to use this as an example for selecting Revit elements within the context of the Revit hierachy:
 1. Building Mass

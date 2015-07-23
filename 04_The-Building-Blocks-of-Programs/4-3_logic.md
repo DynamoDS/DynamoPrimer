@@ -21,6 +21,8 @@ Let's go over a brief example on each of these three nodes in action using the c
 > Again, the Nodes are working identically.  If the *boolean* is changed to *false*, our result is the number *Pi*, as defined in the original *If* statement.
 
 ###Filtering a List
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Logic.dyn](datasets/4-3/Building Blocks of Programs - Logic.dyn). A full list of example files can be found in the Appendix.
+
 Let's use logic to separate a list of numbers into a list of even numbers and a list of odd numbers.
 
 ![](images/4-3/01.png)

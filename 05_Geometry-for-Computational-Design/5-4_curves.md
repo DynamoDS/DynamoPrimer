@@ -23,7 +23,7 @@ All Curves also possess a number of properties or characteristics which can be u
 
 ![Line](images/5-4/Line.png)
 
-When we connect two Lines together, we have a Polyline. Here we have the most straightforward represenation of what a Control Point is. Editing any of these point locations will change the shape of the Polyline. If the Polyline is closed, we have a Polygon. If the Polygon's edge lengths are all equal, it is described as regular.
+When we connect two Lines together, we have a **Polyline**. Here we have the most straightforward represenation of what a Control Point is. Editing any of these point locations will change the shape of the Polyline. If the Polyline is closed, we have a Polygon. If the Polygon's edge lengths are all equal, it is described as regular.
 
 ![Polyline + Polygon](images/5-4/Polyline.jpg)
 
@@ -46,9 +46,20 @@ As we add more complexity to the Parametric Functions that define a shape, we ca
 **Knots**: Knots are a list of (Degree+N-1) numbers, where N is the number of Control Points.
 
 ![NURBS Curve Degree](images/5-4/NURBScurve_Degree.png)
+> 1. Degree = 1
+2. Degree = 2
+3. Degree = 3
+
+Note that the higher the degree value, the more Control Points are used to interpolate the resulting Curve.
+
+Let's make a sine curve in Dynamo using two different methods to create NURBS Curves to compare the results.
+
 
 ![NURBS in Dynamo](images/5-4/Dynamo_Curves.png)
+> 1. *NurbsCurve.ByControlPoints* uses the List of Points as Control Points
+2. *NurbsCurve.ByPoints* draws a Curve through the List of Points
 
+>Download the example file that accompanies this image (Right click and "Save Link As..."): [Geometry for Computational Design - Curves.dyn](datasets/5-4/Geometry for Computational Design - Curves.dyn). A full list of example files can be found in the Appendix.
 
 
 
