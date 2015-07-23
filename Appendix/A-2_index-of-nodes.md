@@ -70,6 +70,7 @@ Core
 |--|--|--|
 ||CREATE||
 |![IMAGE](images/A-2/DSCore.List.Create.Large.png)|**List.Create**<br>Makes a new list out of the given inputs.|![IMAGE](images/nodes/List.Create.png)
+|![IMAGE](images/A-2/DSCore.List.Combine.Large.png)|**List.Combine**<br>Applies a combinator to each element in two sequences|![IMAGE](images/nodes/List.Combine.png)
 |![IMAGE](images/A-2/DSCoreNodesUI.NumberRange.Large.png)|**Number Range**<br>Creates a sequence of numbers in the specified range.|![IMAGE](images/nodes/NumberRange.png)
 |![IMAGE](images/A-2/DSCoreNodesUI.NumberSeq.Large.png)|**Number Sequence**<br>Creates a sequence of numbers.|![IMAGE](images/nodes/NumberSequence.png)
 ||ACTIONS||
@@ -78,7 +79,12 @@ Core
 |![IMAGE](images/A-2/DSCore.List.Flatten.Large.png)|**List.Flatten**<br>Flattens a nested list of lists by a certain amount.|![IMAGE](images/nodes/List.Flatten.png)
 |![IMAGE](images/A-2/DSCore.List.FilterByBoolMask.Large.png)|**List.FilterByBoolMask**<br>Filters a sequence by looking up corresponding indices in a separate list of booleans.|![IMAGE](images/nodes/List.FilterByBoolMask.png)
 |![IMAGE](images/A-2/DSCore.List.GetItemAtIndex.Large.png)|**List.GetItemAtIndex**<br>Gets an item from the given list that's located at the specified index.|![IMAGE](images/nodes/List.GetItemAtIndex.png)
+|![IMAGE](images/A-2/DSCore.List.Map.Large.png)|**List.Map**<br>Applies a function over all elements of a list, generating a new list from the results|![IMAGE](images/nodes/List.Map.png)
+|![IMAGE](images/A-2/DSCore.List.Reverse.Large.png)|**List.Reverse**<br>Creates a new list containing the items of the given list but in reverse order|![IMAGE](images/nodes/List.Reverse.png)
+|![IMAGE](images/A-2/DSCore.List.ReplaceItemAtIndex.Large.png)|**List.ReplaceItemAtIndex**<br>Replace an item from the given list that's located at the specified index|![IMAGE](images/nodes/List.ReplaceItemAtIndex.png)
+|![IMAGE](images/A-2/DSCore.List.ShiftIndices.Large.png)|**List.ShiftIndices**<br>Shifts indices in the list to the right by the given amount|![IMAGE](images/nodes/List.ShiftIndices.png)
 |![IMAGE](images/A-2/DSCore.List.TakeEveryNthItem.Large.png)|**List.TakeEveryNthItem**<br>Fetches items from the given list at indices that are multiples of the given value, after the given offset.|![IMAGE](images/nodes/List.TakeEveryNthItem.png)
+|![IMAGE](images/A-2/DSCore.List.Transpose.Large.png)|**List.Transpose**<br>Swaps rows and columns in a list of lists. If there are some rows that are shorter than others, null values are inserted as place holders in the resultant array such that it is always rectangular|![IMAGE](images/nodes/List.Transpose.png)
 
 ####Core.Logic
 ||||
@@ -141,6 +147,14 @@ Geometry
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius.Large.png)|**Circle.ByCenterPointRadius**<br>Creates a Circle with input center Point and radius in the world XY plane, with world Z as normal.|![IMAGE](images/nodes/Circle.ByCenterPointRadius.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Circle.ByPlaneRadius.Large.png)|**Circle.ByPlaneRadius**<br>Create a Circle centered at the input Plane origin (root), lying in the input Plane, with given radius.|![IMAGE](images/nodes/Circle.ByPlaneRadius.png)
 
+####Geometry.CoordinateSystem
+||||
+|--|--|--|
+||CREATE||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.CoordinateSystem.ByOrigin.Point.Large.png)|**CoordinateSystem.ByOrigin**<br>Create a CoordinateSystem with origin at input Point, with X and Y Axes set as WCS X and Y axes|![IMAGE](images/nodes/CoordinateSystem.ByOrigin.png)
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.CoordinateSystem.ByCylindricalCoordinates.Large.png)|**CoordinateSystem.ByCyclindricalCoordinates**<br>Creates a CoordinateSystem at the specified cylindrical coordinate parameters with respet to the specified coordinate system|![IMAGE](images/nodes/CoordinateSystem.ByCylindricalCoordinates.png)
+
+
 ####Geometry.Cuboid
 ||||
 |--|--|--|
@@ -160,6 +174,8 @@ Geometry
 |--|--|--|
 ||ACTIONS||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.DistanceTo.Large.png)|**Geometry.DistanceTo**<br>Obtain the distance from this Geometry to another.|![IMAGE](images/nodes/Geometry.DistanceTo.png)
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Explode.Large.png)|**Geometry.Explode**<br>Separates compound or non-separated elements into their component parts|![IMAGE](images/nodes/Geometry.Explode.png)
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.ImportFromSAT.var.Large.png)|**Geometry.ImportFromSAT**<br>List of imported geometries|![IMAGE](images/nodes/Geometry.ImportFromSAT.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.Rotate.Plane-double.Large.png)|**Geometry.Rotate** (basePlane)<br>Rotates an object around the Plane origin and normal by a specified degree.|![IMAGE](images/nodes/Geometry.Rotate_BasePlane.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.Translate.Vector-double.Large.png)|**Geometry.Translate**<br>Translates any geometry type by the given distance in the given direction.|![IMAGE](images/nodes/Geometry.Translate.png)
 
@@ -174,6 +190,12 @@ Geometry
 ||QUERY||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Line.Direction.Large.png)|**Line.Direction**<br>The direction of the Curve.|![IMAGE](images/nodes/Line.Direction.png)
 
+####Geometry.NurbsCurve
+||||
+|--|--|--|
+||Create||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsCurve.ByControlPoints.Point1-int.Large.png)|**NurbsCurve.ByControlPoints**<br>Create a BSplineCurve by using explicit control points.|![IMAGE](images/nodes/NurbsCurve.ByControlPoints.png)
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsCurve.ByPoints.Point1-int.Large.png)|**NurbsCurve.ByPoints**<br>Create a BSplineCurve by interpolating between points|![IMAGE](images/nodes/NurbsCurve.ByPoints.png)qcomm
 
 ####Geometry.NurbsSurface
 ||||
@@ -193,6 +215,7 @@ Geometry
 ||||
 |--|--|--|
 ||CREATE||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.ByCartesianCoordinates.Large.png)|**Point.ByCartesianCoordinates**<br>Form a Point in th egiven coordinate system with 3 cartesian coordinates|![IMAGE](images/nodes/Point.ByCartesianCoordinates.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.ByCoordinates.double-double.Large.png)|**Point.ByCoordinates** (2d)<br> Form a Point in the XY plane given two 2 Cartesian coordinates.  The Z component is 0.|![IMAGE](images/nodes/Point.ByCoordinates_2D.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.ByCoordinates.double-double-double.Large.png)|**Point.ByCoordinates** (3d)<br>Form a Point given 3 Cartesian coordinates.|![IMAGE](images/nodes/Point.ByCoordinates_3D.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.Origin.Large.png)|**Point.Origin**<br>Get the Origin point (0,0,0)|![IMAGE](images/nodes/Point.Origin.png)
@@ -226,8 +249,10 @@ Geometry
 ||||
 |--|--|--|
 ||CREATE||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.ByLoft.Curve1.Large.png)|**Surface.ByLoft**<br>Create a Surface by lofting between input cross section Curves|![IMAGE](images/nodes/Surface.ByLoft.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.ByPatch.Large.png)|**Surface.ByPatch**<br>Create a Surface by filling in the interior of a closed boundary defined by input Curves.|![IMAGE](images/nodes/Surface.ByPatch.png)
 ||ACTIONS||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.Offset.Large.png)|**Surface.Offset**<br>Offset Surface in direction of Surface normal by specified distance|![IMAGE](images/nodes/Surface.Offset.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.PointAtParameter.Large.png)|**Surface.PointAtParameter**<br>Return the Point at a specified U and V parameters.|![IMAGE](images/nodes/Surface.PointAtParameter.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.Thicken.double.Large.png)|**Surface.Thicken**<br>Thicken Surface into a Solid, extruding in the direction of Surface normals on both sides of the Surface.|![IMAGE](images/nodes/Surface.Thicken.png)
 
@@ -241,9 +266,13 @@ Geometry
 ||||
 |--|--|--|
 ||CREATE||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Vector.ByCoordinates.double-double-double.Large.png)|**Vector.ByCoordinates**<br>Form a Vector by 3 Euclidean coordinates|![IMAGE](images/nodes/Vector.ByCoordinates.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Vector.XAxis.Large.png)|**Vector.XAxis**<br>Gets the canonical X axis Vector (1,0,0)|![IMAGE](images/nodes/Vector.XAxis.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Vector.YAxis.Large.png)|**Vector.YAxis**<br>Gets the canonical Y axis Vector (0,1,0)|![IMAGE](images/nodes/Vector.YAxis.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Vector.ZAxis.Large.png)|**Vector.ZAxis**<br>Gets the canonical Z axis Vector (0,0,1)|![IMAGE](images/nodes/Vector.ZAxis.png)
+||ACTIONS||
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Vector.Normalized.Large.png)|**Vector.Normalized**<br>Get the normalized version of a vector|![IMAGE](images/nodes/Vector.Normalized.png)
+
 
 
 Operators
