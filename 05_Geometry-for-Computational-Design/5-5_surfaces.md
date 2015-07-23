@@ -51,3 +51,14 @@ In the case of NURBS surfaces, there are two directions implied by the geometry,
 ![PolySurface](images/5-5/PolySurface.png)
 
 Sometimes called patches, joining Surfaces in this manner allows us to make more complex shapes as well as define detail across the seam. Conveniently we can apply a fillet or chamfer operation to the edges of a Polysurface.
+
+Let's import and evaluate a Surface at a Parameter in Dynamo to see what kind of information we can extract.
+
+![Surfaces in Dynamo](images/5-5/Dynamo_Surfaces.png)
+> 1. *Surface.PointAtParameter* returns the Point at a given UV Coordinate
+2. *Surface.NormalAtParameter* returns the Normal Vector at a given UV Coordinate
+3. *Surface.GetIsoline* returns the Isoparametric Curve at a U or V Coordinate - note the isoDirection input.
+
+
+
+

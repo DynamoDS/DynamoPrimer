@@ -1,5 +1,3 @@
-# GEOMETRY FOR COMPUTATIONAL DESIGN
-
-##### Text
+# Appendix
 
 (image)
