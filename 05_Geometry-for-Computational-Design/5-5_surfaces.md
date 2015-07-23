@@ -54,10 +54,16 @@ Sometimes called patches, joining Surfaces in this manner allows us to make more
 
 Let's import and evaluate a Surface at a Parameter in Dynamo to see what kind of information we can extract.
 
+
+
 ![Surfaces in Dynamo](images/5-5/Dynamo_Surfaces.png)
 > 1. *Surface.PointAtParameter* returns the Point at a given UV Coordinate
 2. *Surface.NormalAtParameter* returns the Normal Vector at a given UV Coordinate
 3. *Surface.GetIsoline* returns the Isoparametric Curve at a U or V Coordinate - note the isoDirection input.
+
+>Download the example files that accompanies this image (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+1. [Geometry for Computational Design - Surfaces.dyn](datasets/5-5/Geometry for Computational Design - Surfaces.dyn)
+2. [Surface.sat](datasets/5-5/Surface.sat)
 
 
 

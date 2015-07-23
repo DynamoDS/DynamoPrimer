@@ -30,6 +30,7 @@ Dimensionality is a convenient way to start categorizing Geometry but it's not n
 ![Geometry Hierarchy](images/5-1/GeometryHierarchy.jpg)
 
 ### Geometry in Dynamo Studio
+
 So what does this mean for using Dynamo? Understanding the Geometry types and how they are related will allow us to navigate the collection of **Geometry Nodes** available to us in the Library. The Geometry Nodes are organized alphabetically as opposed to hierarchically - here we've highlighted them relative to the chart above.
 
 ![Geometry in Dynamo](images/5-1/GeometryOrganization.png)
@@ -42,9 +43,12 @@ So what does this mean for using Dynamo? Understanding the Geometry types and ho
 
 Additionally, making models in Dynamo and connecting the preview of what we see in the Background Preview to the flow of data in our graph should become more intuitive over time.
 
+
 ![Geometry in Dynamo](images/5-1/GeometryInDynamo.png)
 > 1. Note the assumed coordinate system rendered by the grid and colored axes
 3. Selected Nodes will render the corresponding geometry (if the Node creates geometry) in the background the highlight color
+
+>Download the example file that accompanies this image (Right click and "Save Link As..."): [Geometry for Computational Design - Geometry Overview.dyn](datasets/5-1/Geometry for Computational Design - Geometry Overview.dyn). A full list of example files can be found in the Appendix.
 
 ### Going Further with Geometry
 Creating models in Dynamo is not limited to what we can generate with Nodes. Here are some key ways to take your process to the next level with Geometry:
