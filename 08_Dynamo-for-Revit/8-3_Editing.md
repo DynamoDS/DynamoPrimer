@@ -18,6 +18,10 @@ As of version 0.8, Dynamo is fundamentally unitless.  This allows Dynamo to rema
 > For a quick conversion of units, use the *"Convert Between Units"* node.  This is a handy tool for converting Length, Area, and Volume units on the fly.
 
 ### Exercise
+>Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+1. [Editing.dyn](datasets/8-3/Editing.dyn)
+2. [ARCH-Editing-BaseFile.rvt](datasets/8-3/ARCH-Editing-BaseFile.rvt)
+
 This exercise focuses on editing Revit elements without performing geometric operation in Dynamo.  We're not importing Dynamo geometry here, just editing parameters in a Revit project.  This exercise is basic, and to the more advanced Revit users, notice that these are instance parameters of a mass, but the same logic can be applied to an array of elements to customize on a large scale. This is all done with the "Element.SetParameterByName" node.
 
 ![Exercise](images/8-3/Exercise/04.png)

@@ -8,6 +8,10 @@ In the exercise below, we'll use a basic deviation from plane node to create a R
 > The deviation from plane node will calculate the distance that the set of four points varies from the best-fit plane between them.  This is a quick and easy way to study constructability.
 
 ### Exercise
+>Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+1. [Documenting.dyn](datasets/8-6/Documenting.dyn)
+2. [ARCH-Documenting-BaseFile.rvt](datasets/8-6/ARCH-Documenting-BaseFile.rvt)
+
 Start with the Revit file for this section (or continue from the previous section).  This file has an array of ETFE panels on the roof.  We'll reference these panels for this exercise.
 
 ![Exercise](images/8-6/Exercise/17.png)

@@ -16,6 +16,11 @@ By extracting the point location of adaptive components, we can run a range of a
 Using Dynamo, the point locations of adaptive components can be used to create a best-fit plane each element.  We can also query the sun position in the Revit file and study the plane's relative orientation to the sun in comparison to other adaptive components.  Let's set that up in the exercise below by creating an algorithmic roofscape.
 
 ### Exercise
+>Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+1. [Customizing.dyn](datasets/8-5/Customizing.dyn)
+2. [ARCH-Customizing-BaseFile.rvt](datasets/8-5/ARCH-Customizing-BaseFile.rvt)
+
+
 This exercise will expand on the techniques demonstrated in the previous section.  In this case, we are defining a parametric surface from Revit elements, instantiating four-point adaptive components and then editing them based on orientation to the sun.
 
 ![Exercise](images/8-5/Exercise/00.png)

@@ -14,6 +14,11 @@ Mapping is arguably the most complex part of data management in Dynamo, and is e
 Preliminary introductions to List.Map and List.Combine can be found in the previous section. In the last exercise below, we'll use these nodes on a complex data structure.
 
 ###Exercise - 2D Lists - Basic
+>Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+1.[n-Dimensional-Lists.dyn](datasets/6-4/n-Dimensional-Lists.dyn)
+2.[n-Dimensional-Lists.sat](datasets/6-4/n-Dimensional-Lists.sat)
+
+
 This exercise is the first in a series of three which focuses on articulating imported geometry.  Each part in this series of exercises will increase in the complexity of data structure.
 
 ![Exercise](images/6-4/Exercise/A/04.png)

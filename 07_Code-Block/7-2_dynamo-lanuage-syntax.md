@@ -76,7 +76,10 @@ Lacing with nodes is somewhat different from lacing with code block.  With nodes
 
 
 With this notation, we can also specify which list will be dominant: 2 lists of 5 things or 5 lists of 2 things. In the example, changing the order of the replication guides makes the result a list of rows of points or a list of columns of points in a grid.
+
 ### Exercise
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Dynamo-Syntax_Attractor-Surface.dyn](datasets/7-2/Dynamo-Syntax_Attractor-Surface.dyn)
+
 To show the power of code block, we are going to translate an existing attractor field definition into code block form.  Working with an existing definition demonstrates how code block relates to visual scripting, and is helpful for learning Design Script syntax.
 ![Exercise](images/7-2/Exercise/01.png)
 > Begin by recreating the definition in the image above (or by opening the sample file).
