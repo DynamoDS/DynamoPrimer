@@ -1,17 +1,13 @@
 ## Solids
-Text
-Describe volume
+Lorem
 
 ### What's a Solid
-Text
-Spheres, Boxes, and Cones
+Lorem
 
 ![Solids](images/5-6/Solids.png)
 
 ### Operations
-Text
-Unions
-
+Lorem
 ![Solid Boolean](images/5-6/SolidBooleans.png)
 
 
