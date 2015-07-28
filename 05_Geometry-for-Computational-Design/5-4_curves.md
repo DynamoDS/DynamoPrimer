@@ -1,5 +1,5 @@
 ## Curves
-Curves are the first Geometric Data Type we've covered that start to have what be might be more familiar set of shape descriptive properties - How curvey or straight? How long or short? And remember that Points are still our building blocks for defining anything from a line to a spline and all the Curve types in between.
+Curves are the first Geometric Data Type we've covered that have a more familiar set of shape descriptive properties - How curvey or straight? How long or short? And remember that Points are still our building blocks for defining anything from a line to a spline and all the Curve types in between.
 
 ![Curve Types](images/5-4/CurveTypes.png)
 > 1. Line
@@ -23,7 +23,7 @@ All Curves also possess a number of properties or characteristics which can be u
 
 ![Line](images/5-4/Line.png)
 
-When we connect two Lines together, we have a **Polyline**. Here we have the most straightforward represenation of what a Control Point is. Editing any of these point locations will change the shape of the Polyline. If the Polyline is closed, we have a Polygon. If the Polygon's edge lengths are all equal, it is described as regular.
+When we connect two Lines together, we have a **Polyline**. Here we have a straightforward represenation of what a Control Point is. Editing any of these point locations will change the shape of the Polyline. If the Polyline is closed, we have a Polygon. If the Polygon's edge lengths are all equal, it is described as regular.
 
 ![Polyline + Polygon](images/5-4/Polyline.jpg)
 
@@ -37,13 +37,13 @@ As we add more complexity to the Parametric Functions that define a shape, we ca
 
 ![NURBS Curve](images/5-4/NURBScurve.png)
 
-**Degree**: The Degree is a positive whole number. This number is usually 1, 2, 3 or 5, but can be any positive whole number. The Degree of the Curve determines the range of influence the Control Points have on a Curve; where the higher the degree, the larger the range. NURBS lines and polylines are usually Degree 1 and most free-form Curves are Degree 3 or 5.
+**Degree**: The Degree of the Curve determines the range of influence the Control Points have on a Curve; where the higher the degree, the larger the range. The Degree is a positive whole number. This number is usually 1, 2, 3 or 5, but can be any positive whole number. NURBS lines and polylines are usually Degree 1 and most free-form Curves are Degree 3 or 5.
 
 **Control Points**: The Control Points are a list of at least Degree+1 Points. One of the easiest ways to change the shape of a NURBS Curve is to move its Control Points.
 
 **Weight**: Control Points have an associated number called a Weight. Weights are usually positive numbers. When a Curve’s Control Points all have the same weight (usually 1), the Curve is called non-rational, otherwise the Curve is called rational. Most NURBS curves are non-rational.
 
-**Knots**: Knots are a list of (Degree+N-1) numbers, where N is the number of Control Points.
+**Knots**: Knots are a list of (Degree+N-1) numbers, where N is the number of Control Points. The Knots are used together with the weights to control the influence of the Control Points on the resulting Curve. One use for Knots is to create kinks at certain points in the curve.
 
 ![NURBS Curve Degree](images/5-4/NURBScurve_Degree.png)
 > 1. Degree = 1
