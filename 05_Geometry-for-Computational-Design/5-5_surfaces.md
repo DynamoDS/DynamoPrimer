@@ -8,8 +8,8 @@ A Surface is a mathematical shape defined by a function and two parameters, Inst
 > 1. Surface
 2. U Isocurve
 3. V Isocurve
-4. UV Coordinate (Point)
-5. Perpendicular Frame (Plane)
+4. UV Coordinate
+5. Perpendicular Plane
 6. Normal Vector
 
 **Surface Domain**: A surface domain is defined as the range of (U,V) parameters that evaluate into a three dimensional point on that surface. The domain in each dimension (U or V) is usually described as two numbers (U Min to U Max) and (V Min to V Max).
@@ -24,9 +24,9 @@ Although the shape of the Surface by not look "rectangular" and it locally may h
 
 ![Surface Coordinate](images/5-5/SurfaceCoordinate.png)
 
-**Perpendicular Frame**: A Plane that is perpendicular to both U and V Isocurves at a given UV Coordinate.
+**Perpendicular Plane**: A Plane that is perpendicular to both U and V Isocurves at a given UV Coordinate.
 
-**Normal Vector**: A Vector defining the direction of "up" relative to the Perpendicular Frame.
+**Normal Vector**: A Vector defining the direction of "up" relative to the Perpendicular Plane.
 
 
 ### NURBS Surfaces
