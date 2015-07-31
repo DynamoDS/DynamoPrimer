@@ -14,7 +14,7 @@ is always 0; not 1. So, when we talk about the first item of a list, we actually
 the item that corresponds to index number 0.
 
 For example, if we were to count the number of fingers we have on our right
-hand, chances are that you would have counted from 1 to 5. However,Dynamo would count this list from 0 to 4.
+hand, chances are that you would have counted from 1 to 5. However, Dynamo would count this list from 0 to 4.  While this may seem a little stranger to programming beginners, the zero-based index is standard practice in most computation systems.
 
 ![items](images/6-1/items.png)
 
@@ -29,20 +29,22 @@ is to connect a watch node to another node's output. By default, the watch node 
 The index numbers are a crucial element when working with lists.
 
 ### Inputs and Outputs
-The input data for *PolyCurve.ByPoints* and *Circle.ByCenterPointRadius* are the same, however the Polycurve node gives us one polycurve while the Circle node gives us 5 circles with centers at each point.  Intuitively this makes sense: the polycurve is drawn as a curve connecting the 5 points, while the circles create a differenct circle at each point.  So what's happening with the data?
-
-Hovering over the *points* input for *Polycurve.ByPoints*, we see that the input is looking for *"Point[]"*. Notice the brackets at the end. This represents a list of points, and to create a polycurve, the input needs to be a list for each polycurve.  This node will therefore condense each list into one polycurve.
-
-On the other hand, the *centerPoint* input for *Circle.ByCenterPointRadius* asks for *"Point"*.  This node looks for one point, as an item, to define the center point of the circle.  This is why we get five circles from the input data.
-
-Recognizing these difference with inputs in Dynamo helps to better understand how the nodes are operating when managing data.
-
+Pertaining to lists, inputs and outputs vary depending on the Dynamo node being used.  As an example, let's use a list of 5 points and connect this output to two different Dynamo nodes: *PolyCurve.ByPoints *and *Circle.ByCenterPointRadius*:
 
 ![Input Examples](images/6-2/Polycurve.Inputs.png)
 > 1. The *points* input for *PolyCurve.ByPoints* is looking for *"Point[]"*.  This represents a list of points.
 2. The output for *PolyCurve.ByPoints* is a single PolyCurve created from a list of five points.
 3. The *centerPoint* input for *Circle.ByCenterPointRadius* asks for *"Point"*.
 4. The output for *Circle.ByCenterPointRadius* is a list of five circles, whose centers correspond to the original list of points.
+
+The input data for *PolyCurve.ByPoints* and *Circle.ByCenterPointRadius* are the same, however the Polycurve node gives us one polycurve while the Circle node gives us 5 circles with centers at each point.  Intuitively this makes sense: the polycurve is drawn as a curve connecting the 5 points, while the circles create a different circle at each point.  So what's happening with the data?
+
+Hovering over the *points* input for *Polycurve.ByPoints*, we see that the input is looking for *"Point[]"*. Notice the brackets at the end. This represents a list of points, and to create a polycurve, the input needs to be a list for each polycurve.  This node will therefore condense each list into one polycurve.
+
+On the other hand, the *centerPoint* input for *Circle.ByCenterPointRadius* asks for *"Point"*.  This node looks for one point, as an item, to define the center point of the circle.  This is why we get five circles from the input data.  Recognizing these difference with inputs in Dynamo helps to better understand how the nodes are operating when managing data.
+
+
+
 
 
 ###Lacing
@@ -61,7 +63,7 @@ To demonstrate the lacing operations below, we'll use this base file to define s
  > 1. We'll change the lacing on *Point.ByCoordinates*, but won't change anything else about the graph above.
 
 ####Shortest List
-The simplest way is to connect the inputs one-on-one until one of the streams runs dry. This is called the “Shortest List” algorithm:
+The simplest way is to connect the inputs one-on-one until one of the streams runs dry. This is called the “Shortest List” algorithm. This is the default behavior for Dynamo nodes:
 
 ![Input Examples](images/6-1/shortestListDiagram.png)
 
@@ -69,7 +71,7 @@ The simplest way is to connect the inputs one-on-one until one of the streams ru
 > By changing the lacing to *shortest list*, we get a basic diagonal line composed of five points. Five points is the length of the lesser list, so the shortest list lacing stops after it reaches the end of one list.
 
 ####Longest List
-The “Longest List” algorithm keeps connecting inputs until all streams run dry. This is the default behavior for components:
+The “Longest List” algorithm keeps connecting inputs until all streams run dry:
 
 ![Input Examples](images/6-1/longestListDiagram.png)
 

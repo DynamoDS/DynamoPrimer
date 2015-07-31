@@ -9,8 +9,9 @@ To select Revit elements properly, it's important to have a full-understanding o
 #### Revit Hierarchy
 ![UI](images/8-2/hierarchy.png)
 
-Remember the taxonomy from Biology? Kingdom, Phylum, Class, Order, Family, Genus, Species? Revit elements are categorized in a similar manner.  On a basic level, the Revit hierarchy can be broken down into Categories, Families, Types, and Instances.  An instance is an individual model element (with a unique ID) while a category defines a generic group (like "walls" or "floors").  With the Revit database organized in this manner, we can select one element and choose all similar elements based on a specified level in the hierarchy.
+Remember the taxonomy from Biology? Kingdom, Phylum, Class, Order, Family, Genus, Species? Revit elements are categorized in a similar manner.  On a basic level, the Revit hierarchy can be broken down into Categories, Families, Types*, and Instances.  An instance is an individual model element (with a unique ID) while a category defines a generic group (like "walls" or "floors").  With the Revit database organized in this manner, we can select one element and choose all similar elements based on a specified level in the hierarchy.
 
+**Note - Types in Revit are defined differently from types in programming.  In Revit, a type refers to a branch of the hierarchy, rather than a "data type".*
 #### Database Navigation with Dynamo nodes
 The three images below breakdown the main categories for Revit element selection in Dynamo. These are great tools to use in combination, and we'll explore some of these in the following exercises.
 
@@ -60,8 +61,14 @@ In this case, we're working with simple geometry, so we want to bring the geomet
 ![Exercise](images/8-2/Exercise/07.png)
 > 1. The previous step was a little cumbersome.  We can do this much faster with the *"Select Face"* node.  This allows us to isolate a face that is not an element itself in the Revit project.  The same interaction applies as *"Select Model Element"*, except we select the surface rather than the full element.
 
+![Exercise](images/8-2/Exercise/selectFaces.png)
+> Suppose we want to isolate the main facade walls of the building.  We can use the *"Select Faces"* node to do this. Click the "Select" button and then select the four main facades in Revit.
+
+![Exercise](images/8-2/Exercise/finishButton-01.png)
+> 1. After selecting the four walls, make sure you click the *"Finish"* button in Revit.
+
 ![Exercise](images/8-2/Exercise/06.png)
-> 1. Suppose we want to isolate the main facade walls of the building.  We can use the *"Select Faces"* node to do this.  After selecting the four walls, make sure you click the *"Finish"* button in Revit.
+> 1. The faces are now imported into Dynamo as surfaces.
 
 ![Exercise](images/8-2/Exercise/05.png)
 > 1. Now, let's take a look at the beams over the atrium.  Using the *"Select Model Element"* node, select one of the beams.
@@ -70,11 +77,13 @@ In this case, we're working with simple geometry, so we want to bring the geomet
 
 ![Exercise](images/8-2/Exercise/04.png)
 > A question that may come up often in Revit/Dynamo workflows: how do I select one element and get all similar elements?  Since the selected Revit element contains all of its hierarchical information, we can query its family type and select all elements of that type.
-1.  Plug the beam element into a *FamilyInstance.Symbol* node.
+1.  Plug the beam element into a *FamilyInstance.Symbol** node.
 2. The *Watch* node reveals that the output is now a family symbol rather than a Revit element.
 3. *FamilyInstance.Symbol* is a simple query, so we can do this in the code block just as easily with ```
 x.Symbol;```
  and get the same results.
+
+**Note - a family symbol is Revit API terminology for family type. Since this may cause some confusion, it will be updated in upcoming releases.*
 
 ![Exercise](images/8-2/Exercise/03.png)
 > 1. To select the remaining beams, we use the *"All Elements of Family Type"* node.

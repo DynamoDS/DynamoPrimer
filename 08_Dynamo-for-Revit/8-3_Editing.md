@@ -39,7 +39,9 @@ This exercise focuses on editing Revit elements without performing geometric ope
 ```
 2. Define another *code block* with a list of the same length as the parameter names.  In this case, we name variables (without quotes) which create inputs for the *code block.*  Plug the *sliders* into each respective input: ```{bw,bl,bh,ao,io.lu};
 ```
-3. Connect the *code block *to the *"Element.SetParameterByName"* node.  With run automatically checked, we will automatically see results.
+3. Connect the *code block *to the *"Element.SetParameterByName*"* node.  With run automatically checked, we will automatically see results.
+
+**Note - this demonstration works with instance parameters, but not type parameters.*
 
 ![Exercise](images/8-3/Exercise/01.png)
 Just as in Revit, many of these parameters are dependent on each other.  There are of course combinations where the geometry may break.  We can remedy this issue with defined formulas in the parameter properties, or we can setup a similar logic with math operations in Dynamo (this is an additional challenge if you'd like to expand on the exercise).
