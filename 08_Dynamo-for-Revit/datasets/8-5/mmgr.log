@@ -1,0 +1,12 @@
+*** Beginning ASM Leak Dump ***
+Heap auditing not enabled
+
+*** Statistics ***
+No leaks
+0 allocations for 0 bytes
+0 deletes for 0 bytes
+High-water-mark: 0 bytes
+Mismatched caller pointers: 0
+Mismatched sizes pointers: 0
+Pre-initialization allocations: 0
+*** End ASM Memory Statistics ***
