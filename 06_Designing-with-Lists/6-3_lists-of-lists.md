@@ -166,13 +166,13 @@ Transpose is a fundamental function when dealing with lists of lists. Just as in
 3. Notice the geometric result: using *PolyCurve.ByPoints*, we get 3 polycurves in the perependicular direction to the original curves.
 
 ###Code Block Creation
-Code block shorthand uses "{}" to define a list.  This is a much faseter and fluid way to create list than the List.Create node. Code block is discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple expressions can be defined with code block.
+Code block shorthand uses "{}" to define a list.  This is a much faster and more fluid way to create list than the List.Create node. Code block is discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple expressions can be defined with code block.
 
 ![CB](images/6-3/cbCreation.png)
 
 
 ###Code Block Query
-Code block shorthand is uses "[]" as a quick and easy way to select specific items that you want from a complex data structure. Code block is discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple data types can be queried with code block.
+Code block shorthand is uses "[]" as a quick and easy way to select specific items that you want from a complex data structure. Code blocks are discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple data types can be queried with code block.
 
 ![CB](images/6-3/cbQuery.png)
 
