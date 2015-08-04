@@ -7,14 +7,14 @@ When we buy groceries, we put all of the purchased items into a bag.  This bag i
 
 In Dynamo, list data is ordered, and the first item in each list has an index "0".  Below, we'll discuss how lists are defined in Dynamo and how multiple lists relate to one another.
 
-## Zero-Based Index
+## Zero-Based Indices
 
-One thing that might seem odd at first is that the first index number of a list
+One thing that might seem odd at first is that the first index of a list
 is always 0; not 1. So, when we talk about the first item of a list, we actually mean
-the item that corresponds to index number 0.
+the item that corresponds to index 0.
 
-For example, if we were to count the number of fingers we have on our right
-hand, chances are that you would have counted from 1 to 5. However, Dynamo would count this list from 0 to 4.  While this may seem a little stranger to programming beginners, the zero-based index is standard practice in most computation systems.
+For example, if you were to count the number of fingers we have on our right
+hand, chances are that you would have counted from 1 to 5. However, if you were to put your fingers in a list, Dynamo would have given them indices from 0 to 4.  While this may seem a little strange to programming beginners, the zero-based index is standard practice in most computation systems.
 
 ![items](images/6-1/items.png)
 
@@ -24,12 +24,12 @@ numbers. They can be any data type that Dynamo supports, such as points,
 curves, surfaces, families, etc.
 
 Often times the easiest way to take a look at the type of data stored in a list
-is to connect a watch node to another node's output. By default, the watch node automatically shows all index numbers to the left side of the list and displays the data items on the right.
+is to connect a watch node to another node's output. By default, the watch node automatically shows all indices to the left side of the list and displays the data items on the right.
 
-The index numbers are a crucial element when working with lists.
+These indices are a crucial element when working with lists.
 
 ### Inputs and Outputs
-Pertaining to lists, inputs and outputs vary depending on the Dynamo node being used.  As an example, let's use a list of 5 points and connect this output to two different Dynamo nodes: *PolyCurve.ByPoints *and *Circle.ByCenterPointRadius*:
+Pertaining to lists, inputs and outputs vary depending on the Dynamo node being used.  As an example, let's use a list of 5 points and connect this output to two different Dynamo nodes: *PolyCurve.ByPoints* and *Circle.ByCenterPointRadius*:
 
 ![Input Examples](images/6-2/Polycurve.Inputs.png)
 > 1. The *points* input for *PolyCurve.ByPoints* is looking for *"Point[]"*.  This represents a list of points.
@@ -73,7 +73,7 @@ The simplest way is to connect the inputs one-on-one until one of the streams ru
 > By changing the lacing to *shortest list*, we get a basic diagonal line composed of five points. Five points is the length of the lesser list, so the shortest list lacing stops after it reaches the end of one list.
 
 ####Longest List
-The “Longest List” algorithm keeps connecting inputs until all streams run dry:
+The “Longest List” algorithm keeps connecting inputs, reusing elements, until all streams run dry:
 
 ![Input Examples](images/6-1/longestListDiagram.png)
 
