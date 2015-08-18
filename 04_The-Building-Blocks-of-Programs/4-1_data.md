@@ -35,6 +35,8 @@ A list represents a collection of items placed into one structure of data:
 The key concept to understand about data hierachy in Dynamo: **with respect to data structure, lists are regarded as items.**  In other words, Dynamo functions with a top-down process for understanding data structures. What does this mean? Let's walk through it with an example.
 
 ### Using Data to Make a Chain of Cylinders
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Data.dyn](datasets/4-1/Building Blocks of Programs - Data.dyn). A full list of example files can be found in the Appendix.
+
 In this first example, we assemble a shelled cylinder which walks through the geometry hierarchy discussed in this section.
 ![](images/4-1/1.png)
 > 1. **Point.ByCoordinates -** after adding the battery to canvas, we see a point at the origin of the Dynamo preview grid.  The default values of the *x,y*, and *z* inputs are *0.0*, giving us a point at this location.

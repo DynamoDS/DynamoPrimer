@@ -25,6 +25,7 @@ All of the operations listed above have analogous Dynamo nodes for working with 
 The image below is the base graph we will be using to demonstrate basic list operations. We'll explore how to manage data within a list and demonstrate the visual results.
 
 #### Exercise - List Operations
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-Operations.dyn](datasets/6-2/List-Operations.dyn). A full list of example files can be found in the Appendix.
 
 ![Exercise](images/6-2/Exercise/40.png)
 > 1. Begin with a *code block* with a value of ```500;
@@ -48,6 +49,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 > The *List.Count* node is straightforward: it counts the number of values in a list and returns that number.  This node gets more nuanced as we work with lists of lists, but we'll demonstrate that in the coming sections.
 
 #### Exercise - List.Count
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-Count.dyn](datasets/6-2/List-Count.dyn). A full list of example files can be found in the Appendix.
 
 ![Count](images/6-2/Exercise/35.png)
 > 1. The *List.Count* node returns the number of lines in the *Line.ByStartPointEndPoint* node.  The value is 10 in this case, which agrees with the number of points created from the original *code block* node.
@@ -57,6 +59,8 @@ The image below is the base graph we will be using to demonstrate basic list ope
 > *List.GetItemAtIndex* is a fundamental way to query an item in the list.  In the image above, we are using an index of *"2"* to query the point labeled* "C"*.
 
 #### Exercise - List.GetItemAtIndex
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-GetItemAtIndex.dyn](datasets/6-2/List-GetItemAtIndex.dyn). A full list of example files can be found in the Appendix.
+
 ![Exercise](images/6-2/Exercise/33.png)
 >1. Using the *List.GetItemAtIndex* node, we are selecting index *"0"*, or the first item in the list of lines.
 2. The *Watch3D* node reveals that we've selected one line. Note: to get the image above, be sure to disable the preview of *Line.ByStartPointEndPoint*.
@@ -66,6 +70,8 @@ The image below is the base graph we will be using to demonstrate basic list ope
 > *List.Reverse* reverses the order of all of the items in a list.
 
 #### Exercise - List.Reverse
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-Reverse.dyn](datasets/6-2/List-Reverse.dyn). A full list of example files can be found in the Appendix.
+
 ![Exercise](images/6-2/Exercise/34.png)
 >1. To properly visualize the reversed list of lines, create more lines by changing the code block to ```0..1..#100;
 ```
@@ -78,6 +84,8 @@ The image below is the base graph we will be using to demonstrate basic list ope
 > *List.ShiftIndices* is a good tool for creating twists or helical patterns, or any other similar data manipulation.  This node shifts the items in a list a given number of indices.
 
 #### Exercise - List.ShiftIndices
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-ShiftIndices.dyn](datasets/6-2/List-ShiftIndices.dyn). A full list of example files can be found in the Appendix.
+
 ![Exercise](images/6-2/Exercise/31.png)
 >1. In the same process as the reverse list, insert a *List.ShiftIndices* into the *Curve.PointAtParameter* and *Line.ByStartPointEndPoint*.
 2. Using a *code block*, designated a value of *"1"* to shift the list one index.
@@ -91,6 +99,8 @@ The image below is the base graph we will be using to demonstrate basic list ope
 > *List.FilterByBooleanMask* will remove certain items based on a list of booleans, or values reading "true" or "false".
 
 #### Exercise - List.FilterByBooleanMask
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-FilterByBooleanMask.dyn](datasets/6-2/List-FilterByBooleanMask.dyn). A full list of example files can be found in the Appendix.
+
 ![Exercise](images/6-2/Exercise/30.png)
 > In order to create a list of values reading "true" or "false", we need to a little more work...
 1. Using a *code block*, define an expression with the syntax: ```0..List.Count(list);

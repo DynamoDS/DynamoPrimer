@@ -27,8 +27,6 @@
    * [Points](05_Geometry-for-Computational-Design/5-3_points.md)
    * [Curves](05_Geometry-for-Computational-Design/5-4_curves.md)
    * [Surfaces](05_Geometry-for-Computational-Design/5-5_surfaces.md)
-   * [Solids](05_Geometry-for-Computational-Design/5-6_solids.md)
-   * [Meshes](05_Geometry-for-Computational-Design/5-7_meshes.md)
 * [Designing with Lists](06_Designing-with-Lists/6_designing-with-lists.md)
    * [What's a List](06_Designing-with-Lists/6-1_whats-a-list.md)
    * [Working with Lists](06_Designing-with-Lists/6-2_working-with-lists.md)
@@ -50,4 +48,3 @@
    * [Item](Appendix/A-1_resources.md)
    * [Index of Nodes](Appendix/A-2_index-of-nodes.md)
    * [Example Files](Appendix/A-3_example-files.md)
-

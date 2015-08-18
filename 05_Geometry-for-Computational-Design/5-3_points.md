@@ -19,7 +19,10 @@ Points can exist in a two-dimensional Coordinate System as well. Convention has 
 
 Although it might seem counter intuitive, Parameters for both Curves and Surfaces are continuous and extend beyond the edge of the given geometry. Since the shapes that define the Parameter Space reside in a three-dimensional World Coordinate System, we can always translate a Parametric Coordinate into a "World" Coordinate. The point [0.2, 0.5] on the surface for example is the same as point [1.8, 2.0, 4.1] in world coordinates.
 
+
 ![Points in Dynamo](images/5-3/Dynamo-Points.png)
 > 1. Point in assumed World XYZ Coordinates
 2. Point relative to a given Coordinate System (Cylindrical)
 3. Point as UV Coordinate on a Surface
+
+>Download the example file that accompanies this image (Right click and "Save Link As..."): [Geometry for Computational Design - Points.dyn](datasets/5-3/Geometry for Computational Design - Points.dyn). A full list of example files can be found in the Appendix.

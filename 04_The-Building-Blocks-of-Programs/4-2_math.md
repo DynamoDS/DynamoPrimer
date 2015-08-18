@@ -12,6 +12,8 @@ Operators are a set of components that use algebraic functions with two numeric 
 | ![](../images/icons/div-Large.png) | Divide | / | var[]...[], var[]...[] | var[]...[] |
 
 ###Parametric Formula
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Math.dyn](datasets/4-2/Building Blocks of Programs - Math.dyn). A full list of example files can be found in the Appendix.
+
 From Operators, the next logical step is to combine operators and variables to form a more complex relationship through **Formulas**. Let's make a Formula that can be controlled by input parameters, like sliders.
 
 ![](images/4-2/4-2-5/01.png)

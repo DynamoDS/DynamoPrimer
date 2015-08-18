@@ -22,6 +22,9 @@ The workflow we'll setup in the exercise below allows us to access all of this d
 The exercise below will walk through how Dynamo references data for Revit element creation.  To generate multiple adaptive components, we define a list of lists, where each list has three points representing each point of the adaptive component.  We'll keep this in mind as we manage the data structures in Dynamo.
 
 ### Exercise
+>Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+1. [Creating.dyn](datasets/8-4/Creating.dyn)
+2. [ARCH-Creating-BaseFile.rvt](datasets/8-4/ARCH-Creating-BaseFile.rvt)
 
 ![Exercise](images/8-4/Exercise/10.png)
 > Beginning with the example file from this section (or continuing with the Revit file from the previous session), we see the same Revit mass.

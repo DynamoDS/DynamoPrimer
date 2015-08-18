@@ -58,6 +58,8 @@ Imagine a node which creates line segments between points (Line.ByStartPointEndP
 As you can see there are different ways in which we can draw lines between these sets of points. Lacing options are found by right-clicking the center of a node and choosing the "Lacing" menu.
 
 ###Base File
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Lacing.dyn](datasets/6-1/Lacing.dyn). A full list of example files can be found in the Appendix.
+
 To demonstrate the lacing operations below, we'll use this base file to define shortest list, longest list, and cross product.
 
 ![Input Examples](images/6-1/lacing.png)

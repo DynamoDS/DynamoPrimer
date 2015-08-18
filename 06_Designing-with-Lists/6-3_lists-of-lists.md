@@ -27,6 +27,7 @@ When dealing with lists of lists, the data is layered and complex, but this prov
 The fundamental concept to learn from this section: **Dynamo treats lists as objects in and of themselves**.  This top-down hierarchy is developed with object-oriented programming in mind.  Rather than selecting sub-elements with a command like List.GetItemAtIndex, Dynamo will select that index of the main list in the data structure.  And that item can be another list.  Let's break it down with an example image:
 
 #### Exercise - Top-Down Hierarchy
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Top-Down-Hierarchy.dyn](datasets/6-3/Top-Down-Hierarchy.dyn). A full list of example files can be found in the Appendix.
 
 ![top-down](images/6-3/top-down.png)
 >1. With *code block*, we've defined two ranges:```
@@ -41,6 +42,7 @@ The fundamental concept to learn from this section: **Dynamo treats lists as obj
 Flatten removes all tiers of data from a data structure. This is helpful when the data hierarchies are not necessary for your operation, but it can be risky because it removes information.  The example below shows the result of flattening a list of data.
 
 #### Exercise - Flatten
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Flatten.dyn](datasets/6-3/Flatten.dyn). A full list of example files can be found in the Appendix.
 
 ![Exercise](images/6-3/Exercise/Flatten-31.png)
 > 1. Insert one line of code to define a range in *code block*:```
@@ -59,6 +61,7 @@ There are also options for flattening isolated tiers of data.  Using the List.Fl
 When parametric modeling, there are also times where you'll want to add more data structure to an existing list.  There are many nodes available for this as well, and chop is the most basic version.  With chop, we can partition a list into sublists with a set number of items.
 
 #### Exercise - List.Chop
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Chop.dyn](datasets/6-3/Chop.dyn). A full list of example files can be found in the Appendix.
 
 ![Chop](images/6-3/chop-01.jpg)
 > A *List.Chop *with a *subLength* of 2 creates 4 lists with 2 items each.
@@ -71,6 +74,7 @@ The chop command divides lists based on a given list length. In some ways, chop 
 A List.Map/Combine applies a set function to an input list, but one step down in the hierarchy. Combinations are the same as Maps, except combinations can have multiple inputs corresponding to the input of a given function.
 
 #### Exercise - List.Map
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Map.dyn](datasets/6-3/Map.dyn). A full list of example files can be found in the Appendix.
 
 As a quick introduction, let's review the List.Count node from a previous section.
 
@@ -103,6 +107,8 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 3. The results of *List.Count* now gives a list of 5 items, each with a value of 3.  This represents the length of each sublist.
 
 #### Exercise - List.Combine
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Combine.dyn](datasets/6-3/Combine.dyn). A full list of example files can be found in the Appendix.
+
 In this exercise, we'll use a similar logic to List.Map, but with multiple elements.  In this case, we want to divide a list of curves by a unique number of points.
 
 ![Exercise](images/6-3/Exercise/Combine-33.png)
@@ -143,6 +149,8 @@ Transpose is a fundamental function when dealing with lists of lists. Just as in
 ![Transpose](images/6-3/transpose1.jpg)
 
 #### Exercise - List.Transpose
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Transpose.dyn](datasets/6-3/Transpose.dyn). A full list of example files can be found in the Appendix.
+
 ![Exercise](images/6-3/Exercise/A/02.png)
 > Let's delete the *List.Count* nodes from the previous exercise and move on to some geometry to see how the data structured.
 1. Connect a *PolyCurve.ByPoints* to the output of the watch node from *Point.ByCoordinates*.
@@ -170,6 +178,8 @@ Code block shorthand is uses "[]" as a quick and easy way to select specific ite
 ![CB](images/6-3/cbQuery.png)
 
 ###Exercise - Querying and Inserting Data
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [ReplaceItems.dyn](datasets/6-3/ReplaceItems.dyn). A full list of example files can be found in the Appendix.
+
 This exercise uses some of the logic established in the previous one to edit a surface. Our goal here is intuitive, but the data structure navigation will be more involved.  We want to articulate a surface by moving a control point.
 
 ![Exercise](images/6-3/Exercise/B/06.png)

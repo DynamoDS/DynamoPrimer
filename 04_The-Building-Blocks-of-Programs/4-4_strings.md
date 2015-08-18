@@ -8,6 +8,8 @@ Strings can be used for a wide range of applications, including defining custom 
 > The sample Nodes above are strings.  A number can be represented as a string, as can a letter, or an entire array of text.
 
 ###Querying Strings
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Strings.dyn](datasets/4-5/Building Blocks of Programs - Strings.dyn). A full list of example files can be found in the Appendix.
+
 You can parse through large amounts of data quickly by querying strings.  We'll talk about some basic operations which can speed up a workflow and help for software interoperability.
 
 The image below considers a string of data coming from an external spreadsheet.  The string represents the vertices of a rectangle in the XY-Plane.  Let's break down some string split operations in miniature exercise:

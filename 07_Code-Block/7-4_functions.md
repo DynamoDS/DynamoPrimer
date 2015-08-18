@@ -30,6 +30,8 @@ FunctionName(in1,in2);
 
 
 ### Exercise
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Functions_SphereByZ.dyn](datasets/7-4/Functions_SphereByZ.dyn)
+
 In this exercise, we will make a generic definition that will create spheres from an input list of points.  The radius of these spheres are driven by the Z property of each point.
 
 ![Exercise](images/7-4/Exercise/11.png)
