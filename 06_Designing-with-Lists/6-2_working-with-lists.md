@@ -1,7 +1,8 @@
 ## Working with Lists
 Now that we've established what a list is, let's talk about operations we can perform on it. Imagine a list as a deck of playing cards.  A deck is the list and each playing card represents an item.
 
-![cards](images/6-2/playingCards.jpg)
+![cards](images/6-2/Playing_cards_modified.jpg)
+> Photo by [Christian Gidlöf](https://commons.wikimedia.org/wiki/File:Playing_cards_modified.jpg)
 
 What **queries** can we make from the list? This accesses existing properties.
 * Number of cards in the deck? 52.

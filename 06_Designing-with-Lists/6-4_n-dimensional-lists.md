@@ -3,8 +3,8 @@ Further down the rabbit-hole, let's add even more tiers to hierarchy. Data struc
 
 The analogy we'll work with here are Russian Nesting Dolls.  Each list can be regarded as one container holding multiple items. Each list has its own properties and is also regarded as its own object.
 
-![Dolls](images/6-4/bytes.jpg)
-> A set of Russian Nesting Dolls (designed by [Art Lebedev](http://www.artlebedev.com/everything/matryoshkus/)) is an analogy for n-Dimensional lists.  Each layer represents a list, and each list contains items within it.  In Dynamo's case, each container can have multiple containers inside (representing the items of each list).
+![Dolls](images/6-4/145493363_fc9ff5164f_o.jpg)
+> A set of Russian Nesting Dolls (Photo by  [Zeta](https://www.flickr.com/photos/beppezizzi/145493363)) is an analogy for n-Dimensional lists.  Each layer represents a list, and each list contains items within it.  In Dynamo's case, each container can have multiple containers inside (representing the items of each list).
 
 n-Dimensional lists are difficult to explain visually, but we've set up a few exercises in this chapter which focus on working with lists which venture beyond two dimensions.
 
