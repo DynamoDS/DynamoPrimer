@@ -1,7 +1,8 @@
 ## Lists of Lists
 Let's add one more tier to the hierarchy.  If we take the deck of cards from the original example and create a box which contains multiple decks, the box now represents a list of decks, and each deck represents a list of cards.  This is a list of lists.  For the analogy in this section, the red box below contains a list of coin rolls, and each roll contains a list of pennies.
 
-![Coins](images/6-3/coins.jpg)
+![Coins](images/6-3/coins-521245_640.jpg)
+> Photo by [Dori](https://commons.wikimedia.org/wiki/File:Stack_of_coins_0214.jpg).
 
 What **queries** can we make from the list of lists? This accesses existing properties.
 * Number of rolls in the red box? 20.
