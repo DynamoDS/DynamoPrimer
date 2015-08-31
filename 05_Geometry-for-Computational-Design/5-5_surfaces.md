@@ -1,22 +1,22 @@
 ## Surfaces
-As we move from using Curves to using Surfaces in a model, we can now begin to represent objects we see in our three dimensional world. While Curves are not always planar ie. three dimensional the space they define is always bound to one dimension. Surfaces give us another dimension a collecton of additional properties we can use within other modeling operations.
+As we move from using Curves to using Surfaces in a model, we can now begin to represent objects we see in our three dimensional world. While Curves are not always planar ie. they are three dimensional, the space they define is always bound to one dimension. Surfaces give us another dimension and a collection of additional properties we can use within other modeling operations.
 
 ### What's a Surface?
-A Surface is a mathematical shape defined by two functions that utilize a range of parameter values. Instead of ```t``` for Curves, we use ```U``` and ```V``` to describe the corresponding parameter space. This means we have more data to draw from when working with this type of Geometry. For example, Curves have tangent vectors and normal planes (which can rotate or twist along its length), whereas Surfaces have normal vectors and tangent planes that will be consistent in their orientation.
+A Surface is a mathematical shape defined by a function and two parameters, Instead of ```t``` for Curves, we use ```U``` and ```V``` to describe the corresponding parameter space. This means we have more geometrical data to draw from when working with this type of Geometry. For example, Curves have tangent vectors and normal planes (which can rotate or twist along the curve's length), whereas Surfaces have normal vectors and tangent planes that will be consistent in their orientation.
 
 ![Surface](images/5-5/Surface.png)
 > 1. Surface
 2. U Isocurve
 3. V Isocurve
-4. UV Coordinate (Point)
-5. Perpendicular Frame (Plane)
+4. UV Coordinate
+5. Perpendicular Plane
 6. Normal Vector
 
 **Surface Domain**: A surface domain is defined as the range of (U,V) parameters that evaluate into a three dimensional point on that surface. The domain in each dimension (U or V) is usually described as two numbers (U Min to U Max) and (V Min to V Max).
 
 ![Surface](images/5-5/SurfaceParameter.png)
 
-Although the shape of the Surface by not look "rectangular" and it locally may have a tighter or looser set of isocurves, its "space" defined by its domain is always two dimensional. In Dynamo, Surfaces are always understood to have a domain defined by a minimum of 0.0 and maximum of V in both U and V directions.
+Although the shape of the Surface by not look "rectangular" and it locally may have a tighter or looser set of isocurves, the "space" defined by its domain is always two dimensional. In Dynamo, Surfaces are always understood to have a domain defined by a minimum of 0.0 and maximum of 1.0 in both U and V directions. Planar or trimmed Surfaces may have different domains.
 
 **Isocurve** (or Isoparametric Curve): A curve defined by a constant U or V value on the surface and a domain of values for the corresponding other U or V direction.
 
@@ -24,9 +24,9 @@ Although the shape of the Surface by not look "rectangular" and it locally may h
 
 ![Surface Coordinate](images/5-5/SurfaceCoordinate.png)
 
-**Perpendicular Frame**: A Plane that is perpendicular to both U and V Isocurves at a given UV Coordinate.
+**Perpendicular Plane**: A Plane that is perpendicular to both U and V Isocurves at a given UV Coordinate.
 
-**Normal Vector**: A Vector defining the direction of "up" relative to the Perpendicular Frame.
+**Normal Vector**: A Vector defining the direction of "up" relative to the Perpendicular Plane.
 
 
 ### NURBS Surfaces

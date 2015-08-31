@@ -5,7 +5,7 @@ If Geometry is the language of a model, then Points are the alphabet. Points are
 >1. A Circle using the functions ```x=r*cos(t)``` and ```y=r*sin(t)```
 2. A Sine Curve using the functions ```x=(t)``` and ```y=r*sin(t)```
 ### What's a Point?
-A Point is defined by nothing more than one or more values called coordinates. How many coordinate values we need to define the Point depends upon the Coordinate System or context in which it resides. The simplest form a of a Point exists in our three-dimensional World Coordinate System and has three coordinates [X,Y,Z].
+A Point is defined by nothing more than one or more values called coordinates. How many coordinate values we need to define the Point depends upon the Coordinate System or context in which it resides. The most common kind of Point in Dynamo exists in our three-dimensional World Coordinate System and has three coordinates [X,Y,Z].
 
 ![Point](images/5-3/Point.png)
 
