@@ -5,18 +5,16 @@ Let's add one more tier to the hierarchy.  If we take the deck of cards from the
 > Photo by [Dori](https://commons.wikimedia.org/wiki/File:Stack_of_coins_0214.jpg).
 
 What **queries** can we make from the list of lists? This accesses existing properties.
-* Number of rolls in the red box? 20.
-* Number of pennies in each roll? 50.
-* Number of pennies in the red box? 1,000.
-* Material of red box? Aluminum.
-* Material of coin roll? Paper.
-* Material of penny? 97.5% zinc and 2.5% copper.
+* Number of coin types? 2.
+* Coin type values? $0.01 and $0.25.
+* Material of quarters? 75% copper and 25% nickel.
+* Material of pennies? 97.5% zinc and 2.5% copper.
 
 What **actions** can we perform on the list of lists? This changes the list of lists based on a given operation.
-* Select a specific roll of pennies.
-* Select a specific penny.
-* Rearrange the rolls of pennies.
-* Flip the orientation of the rolls from horizontal to vertical.
+* Select a specific stack of quarters or pennies.
+* Select a specific quarter or penny.
+* Rearrange the stacks of quarters and pennies.
+* Shuffle the stacks together.
 
 Again, Dynamo has an analagous node for each one of the operations above. Since we're working with abstract data and not physical objects, we need a set of rules to govern how we move up and down the data hierarchy.
 
