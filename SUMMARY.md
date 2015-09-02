@@ -38,7 +38,6 @@
    * [Shorthand](07_Code-Block/7-3_shorthand.md)
    * [Functions](07_Code-Block/7-4_functions.md)
 * [Dynamo for Revit](08_Dynamo-for-Revit/8_Dynamo-for-Revit.md)
-   * [The Revit Connection](08_Dynamo-for-Revit/8-1_The-Revit-Connection.md)
    * [Selecting](08_Dynamo-for-Revit/8-2_Selecting.md)
    * [Editing](08_Dynamo-for-Revit/8-3_Editing.md)
    * [Creating](08_Dynamo-for-Revit/8-4_Creating.md)
@@ -57,5 +56,7 @@
    * [Zero-Touch](10_Packages/10-5_Zero-Touch.md)
 * [Appendix](Appendix/A_appendix.md)
    * [Item](Appendix/A-1_resources.md)
+   * [The Revit Connection](08_Dynamo-for-Revit/8-1_The-Revit-Connection.md)
    * [Index of Nodes](Appendix/A-2_index-of-nodes.md)
    * [Example Files](Appendix/A-3_example-files.md)
+
