@@ -4,7 +4,7 @@
 
 In these exercises, we'll explore elementary Python scripts in Dynamo for Revit.  The exercise will focus on dealing with Revit files and elements, as well as the communication between Revit and Dynamo.
 
-![Exercise](images/7-4/Exercise/Revit/Images/RevitPython - 10.png)
+![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 10.png)
 > Let's begin with a number range of ten values spanning from 0 to 100.  Plug these into a *Point.ByCoordinates* nodes to create a diagonal line.
 
 
