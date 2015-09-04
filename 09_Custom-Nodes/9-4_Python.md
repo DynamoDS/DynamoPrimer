@@ -27,9 +27,7 @@ OUT=[doc,uiapp,app]
 ### Exercise 02
 >Create a new Revit Family - Conceptual Mass. Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. 
 
-In this, we'll make a simple Model Curve in Revit using the Dynamo Python node.  
-
-
+In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Python node.  
 
 
 
