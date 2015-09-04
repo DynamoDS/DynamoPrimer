@@ -1,114 +1,154 @@
-## Code Block Functions
-Functions can be created in a code block and recalled elsewhere in a Dynamo definition.  This creates another layer of control in a parametric file, and can be viewed as a text-based version of a custom node.  In this case, the "parent" code block is readily accessible and can be located anywhere on the graph.  No wires needed!
+## What is Zero-Touch?
 
-### Parent
-The first line has the key word “def”, then the function name, then the names of inputs in parentheses. Braces define the body of the function. Return a value with “return =”. Code Blocks that define a function do not have input or output ports because they are called from other Code Blocks.
-![Parents](images/7-4/21.png)
+
+### Case Study - Importing AForge
+
+### Exercise 1 - Edge Detection
+
+![Exercise](images/10-5/Exercise/AForge- 23.png)
+> First, we want to import an image to work with. Add a *File Path* node to the canvas and select "soapbubbles.jpg" from the Exercise folder (photo cred: [flickr](https://www.flickr.com/photos/wwworks/667298782)).
+
+![Exercise](images/10-5/Exercise/AForge- 21.png)
+> 1. The File Path node simply provides a String of the path to the image we've selected.  We need to convert this File Path to an image in the Dynamo environment.
+2. Connect the File Path node to the File.FromPath node.
+3. To convert this File into an Image, we'll use the Image.ReadFromFile node.
+4. Last, let's see the result! Drop a Watch Image node onto the canvas and connect to Image.ReadFromFile.  We haven't used AForge yet, but we've successfully imported and image into Dynamo.
+
+![Exercise](images/10-5/Exercise/AForge- 18.png)
+> Under AForge.Imaging.AForge.Filters (in the navigation menu), you'll notice that there is a wide array of filters available.  We're going to use one of these filters now to desaturate an image based on threshold values.
+1. Drop three sliders onto the canvas, change their ranges to be from 0 to 1 and their step values to be 0.01.
+2. Add the Grayscale.Grayscale node to the canvas.  This is an AForge filter which applies a grayscale filter to an image.  Connect the three sliders from step 1 into cr, cg, and cb.  Change the top and bottom sliders to have a value of 1 and the middle slider to have a value of 0.
+3. In order to apply the Grayscale filter, we need an action to perform on our image.  For this, we use IFilter.Apply.  Connect the image into the image input and Grayscale.Grayscale into the iFilter input.
+4. Plugging into a Watch Image node, we get a desaturated image.
+
+![Exercise](images/10-5/Exercise/AForge- 19.png)
+> We can have control over how to desaturate this image base on threshold values for red, green, and blue.  These are defined by the inputs to the Grayscale.Grayscale node.  Notice that the image looks pretty dim - this is because the green value is set to 0 from our slider.
+1. Change the top and bottom sliders to have a value of 0 and the middle slider to have a value of 1. This way we get a more legible desaturated image.
+
+![Exercise](images/10-5/Exercise/AForge- 17.png)
+> Let's use the desaturated image, and apply another filter on top of it.  The desaturated image has some contrast, so we we're going to test some edge detection.
+1. Add a SobelEdgeDetector.SobelEdgeDetector node to the canvas.  Connect this as the IFilter to a new IFilter node, and connect the desaturated image to the image input of the IFilter node.
+2. The Sobel Edge Detector has highlighted the edges in a new image.
+
+![Exercise](images/10-5/Exercise/AForge- 16.png)
+> Zooming in, the edge detector has called out the outlines of the bubbles with pixels.  The AForge library has tools to take results like this and create Dynamo geometry. We'll explore that in the next exercise.
+
+### Exercise 2 - Rectangle Creation
+
+![Exercise](images/10-5/Exercise/AForge- 15.png)
+> 1. With the File Path node, navigate to grid.jpg in the exercise folder.
+2. Connect the remaining series of nodes above to reveal a course parametric grid.
+
+In this next step, we want to reference the white squares in the image and conver them to actual Dynamo geometry. AForge has a lot of powerful Computer Vision tools, and here we're going to use a particularly important one for the library called [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
+
+![Exercise](images/10-5/Exercise/AForge- 14.png)
+> 1. After adding a BlobCounter to the canvas, we need a way to process the image (similar to the IFilter tool in the previous exercise). Unfortunately the "Process Image" node is the not immediately visible in the Dynamo library.  This is because the function may not be visible in the AForge source code.  In order to fix this, we'll need to find a work-around.
+
+![Exercise](images/10-5/Exercise/AForge- 13.png)
+> 1. Add a Python node to the canvas.
+
 ```
-/*This is a multi-line comment,
-which continues for
-multiple lines*/
+import clr
+clr.AddReference('AForge.Imaging')
+from AForge.Imaging import *
 
-def FunctionName(input1,input2)
-{
-//This is a comment
-sum = input1+input2;
-return = sum;
-};
+bc= BlobCounter()
+bc.ProcessImage(IN[0])
+OUT=bc
+
+```
+> Add the code above to the Python node.  This code imports the AForge library and then process the imported image.
+
+![Exercise](images/10-5/Exercise/AForge- 11.png)
+> Connecting the image output to the Python node input, we get an AForge.Imaging.BlobCounter result from the Python node.
+
+The next steps will do some tricks that demonstrate familiarity with the [AForge Imaging API](http://www.aforgenet.com/framework/docs/html/d087503e-77da-dc47-0e33-788275035a90.htm).  It's not necessary to learn all of this for Dynamo work.  This is more of a demonstration of working with external libraries within the flexibility of the Dynamo environment.
+
+![Exercise](images/10-5/Exercise/AForge- 10.png)
+> 1. Connect the output of the Python script to BlobCounterBase.GetObjectRectangles.  This reads objects in an image, based on a threshold value, and extracts quantified rectangles from the pixel space.
+
+![Exercise](images/10-5/Exercise/AForge- 09.png)
+> 1. Adding another Python node to the canvas, connect to the GetObjectRectangles, and input the code below.  This will create a organized list of Dynamo objects.
+
+```
+OUT = []
+for rec in IN[0]:
+	subOUT=[]
+	subOUT.append(rec.X)
+	subOUT.append(rec.Y)
+	subOUT.append(rec.Width)
+	subOUT.append(rec.Height)
+	OUT.append(subOUT)
+	```
+
+![Exercise](images/10-5/Exercise/AForge- 06.png)
+> 1. Transpose the output of the Python node from the previous step.  This creates 4 lists, each representing X,Y, Width, and Height for each rectangle.
+>2. Using Code Block, we organize the data into a structure that accommodates the Rectangle.ByCornerPoints node (code below).
+
+```
+recData;
+x0=List.GetItemAtIndex(recData,0);
+y0=List.GetItemAtIndex(recData,1);
+width=List.GetItemAtIndex(recData,2);
+height=List.GetItemAtIndex(recData,3);
+x1=x0+width;
+y1=y0+height;
+p0=Autodesk.Point.ByCoordinates(x0,y0);
+p1=Autodesk.Point.ByCoordinates(x0,y1);
+p2=Autodesk.Point.ByCoordinates(x1,y1);
+p3=Autodesk.Point.ByCoordinates(x1,y0);
 ```
 
-### Children
-Call the function with another Code Block in the same file by giving the name and the same number of arguments. It works just like the out-of-the-box nodes in your library.
+![Exercise](images/10-5/Exercise/AForge- 05.png)
+> Zooming out, we have an array of rectangles representing the white squares in the image.  Through programming, we've done something (roughly) similar to a live trace in Illustrator!
 
-![Children](images/7-4/20.png)
+![Exercise](images/10-5/Exercise/AForge- 04.png)
+> We still need some cleanup, however.  Zooming in, we can see that we have a bunch of small, unwanted, rectangles.
+
+![Exercise](images/10-5/Exercise/AForge- 03.png)
+> 1. We get rid of the unwanted rectangles by inserting a Python node in between the GetObjectRectangles node and another Python node.  The node's code is below, and removes all rectangles which are below a given size.
+
 ```
-FunctionName(in1,in2);
-```
+rectangles=IN[0]
+OUT=[]
+for rec in rectangles:
+ if rec.Width>8 and rec.Height>8:
+  OUT.append(rec)
+  ```
+
+![Exercise](images/10-5/Exercise/AForge- 01.png)
+> With the superfluous rectangles gone, just for kicks, let's create a surface from these rectangles and extrude them by a distance based on their areas.
+
+![Exercise](images/10-5/Exercise/AForge- 00.png)
+> 1. Last, change the both_sides input to false and we get an extrusion in one direction.  Dip this baby in resin and you've got yourself one super nerdy table.
+
+This is a basic example, but the concepts outlined here are transferrable to exciting real-world applications.  Computer vision can be used for a whole host of processes. To name a few: barcode readers, perspective matching, [projection mapping](https://www.youtube.com/watch?v=XSR0Xady02o), and [augmented reality](http://aforgenet.com/aforge/articles/gratf_ar/). For more advanced topics with AForge related to this exercise, have a read-through [this article](http://aforgenet.com/articles/shape_checker/).
 
 
 
 
 
-### Exercise
->Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Functions_SphereByZ.dyn](datasets/7-4/Functions_SphereByZ.dyn)
-
-In this exercise, we will make a generic definition that will create spheres from an input list of points.  The radius of these spheres are driven by the Z property of each point.
-
-![Exercise](images/7-4/Exercise/11.png)
-> Let's begin with a number range of ten values spanning from 0 to 100.  Plug these into a *Point.ByCoordinates* nodes to create a diagonal line.
-
-![Exercise](images/7-4/Exercise/10.png)
->1. Create a *code block* and introduce our definition by using the line of code:
-```
-def sphereByZ(inputPt){
-};
-```
-  The *inputPt* is the name we've given to represent the points that will drive the function.  As of now, the function isn't doing anything, but we'll build up this function in the steps to come.
-
-![Exercise](images/7-4/Exercise/09.png)
->1. Adding to the *code block* function, we place a comment and a *sphereRadius* variable which queries the *Z* position of each point.  Remember, *inputPt.Z* does not need parenetheses as a method.  This is a *query* of an existing element's properties, so no inputs are necessary:
-```
-def sphereByZ(inputPt,radiusRatio)
-{
-//get Z Value, use it to drive radius of sphere
-sphereRadius=inputPt.Z;
-};
-```
-
-![Exercise](images/7-4/Exercise/08.png)
->1. Now, let's recall the function we've created in another *code block*. If we double-click on the canvas to create a new *code block*, and type in *sphereB*, we notice that Dynamo suggest the *sphereByZ* function that we've defined. Your function has been added to the intellisense library! Pretty cool.
-
-![Exercise](images/7-4/Exercise/07.png)
->1. Now we call the function and create a variable called *Pt* to plug in the points created in the earlier steps:
-```sphereByZ(Pt)
-```
-2. We notice from the output that we have all null values.  Why is this? When we defined the function, we are calculating the *sphereRadius* variable, but we did not define what the function should *return* as an *output*.  We can fix this in the next step.
-
-![Exercise](images/7-4/Exercise/06.png)
->1. An important step, we need to define the output of the function by adding the line ```return = sphereRadius;
-``` to the *sphereByZ* function.
-2. Now we see that the output of the *code block* gives us the Z coordinates of each point.
 
 
-![Exercise](images/7-4/Exercise/05.png)
-> Let's create actual spheres now by editing the *Parent* function.
-1. We first define a sphere with the line of code:
-```sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
-```
-2. Next, we change the return value to be the *sphere* instead of the *sphereRadius*: ```return = sphere;
-```.  This gives us some giant spheres in our Dynamo preview!
 
 
-![Exercise](images/7-4/Exercise/04.png)
->1. To temper the size of these spheres, let's update the *sphereRadius* value by adding a divider: ```sphereRadius = inputPt.Z/20;
-```.  Now we can see the separate spheres and start to make sense of the relationship between radius and Z value.
 
-![Exercise](images/7-4/Exercise/03.png)
->1. On the *Point.ByCoordinates* node, by changing the lacing from *Shortest List* to *Cross Product*, we create a grid of points.  The *sphereByZ* function is still in full effect, so the points all create spheres with radii based on Z values.
 
-![Exercise](images/7-4/Exercise/02.png)
->1. And just to test the waters, we plug the original list of numbers into the X input for *Point.ByCoordinates*.  We now have a cube of spheres.
-2. Note: if this takes a long time to calculate on your computer, try to change *#10* to something like *#5*.
 
-![Exercise](images/7-4/Exercise/01.png)
-> 1. Remember, the *sphereByZ* function we've created is a generic function, so we can recall the helix from an earlier lesson and apply the function to it.
 
-![Exercise](images/7-4/Exercise/20.png)
-> One final step: let's drive the radius ratio with a user defined parameter.  To do this, we need to create a new input for the function and also replace the *20* divider with a parameter.
-1. Update the *sphereByZ* definition to:
-```
-def sphereByZ(inputPt,radiusRatio)
-{
-//get Z Value, use it to drive radius of sphere
-sphereRadius=inputPt.Z/radiusRatio;
-//Define Sphere Geometry
-sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
-//Define output for function
-return = sphere;
-};```
-2. Update the children code blocks by adding a *ratio* variable to the input: ```sphereByZ(Pt,ratio);
-```
-Plug a slider into the newly created code block input and vary the size of the radii based on the radius ratio.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
