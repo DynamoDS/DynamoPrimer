@@ -1,122 +1,137 @@
-## Code Block Functions
-Functions can be created in a code block and recalled elsewhere in a Dynamo definition.  This creates another layer of control in a parametric file, and can be viewed as a text-based version of a custom node.  In this case, the "parent" code block is readily accessible and can be located anywhere on the graph.  No wires needed!
+### Exercise 01
+>Create a new Revit Project.  Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. 
 
-### Parent
-The first line has the key word “def”, then the function name, then the names of inputs in parentheses. Braces define the body of the function. Return a value with “return =”. Code Blocks that define a function do not have input or output ports because they are called from other Code Blocks.
-![Parents](images/7-4/21.png)
+In these exercises, we'll explore elementary Python scripts in Dynamo for Revit.  The exercise will focus on dealing with Revit files and elements, as well as the communication between Revit and Dynamo.
+
+![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 10.png)
+> This is a cut and dry method for retrieving the *doc*, *uiapp*, and *app* of the Revit file linked to your Dynamo sesson.  Programmers who have worked in the Revit API before may notice the items in the watch list.  If these items do not look familiar, that's ok, we'll be using other examples in the exercises below.  
+
+Here is how we're importing Revit Services and retrieving the document data in Dynamo:
+![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 06.png)
+> A look at the Python node in Dynamo. The commented code is below.
+
 ```
-/*This is a multi-line comment,
-which continues for
-multiple lines*/
+import clr
+# Import DocumentManager
+clr.AddReference("RevitServices")
+import RevitServices
+from RevitServices.Persistence import DocumentManager
 
-def FunctionName(input1,input2)
-{
-//This is a comment
-sum = input1+input2;
-return = sum;
-};
-```
+doc = DocumentManager.Instance.CurrentDBDocument
+uiapp = DocumentManager.Instance.CurrentUIApplication
+app = uiapp.Application
 
-### Children
-Call the function with another Code Block in the same file by giving the name and the same number of arguments. It works just like the out-of-the-box nodes in your library.
-
-![Children](images/7-4/20.png)
-```
-FunctionName(in1,in2);
-```
-
-
-
-
-
-### Exercise
->Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Functions_SphereByZ.dyn](datasets/7-4/Functions_SphereByZ.dyn)
-
-In this exercise, we will make a generic definition that will create spheres from an input list of points.  The radius of these spheres are driven by the Z property of each point.
-
-![Exercise](images/7-4/Exercise/11.png)
-> Let's begin with a number range of ten values spanning from 0 to 100.  Plug these into a *Point.ByCoordinates* nodes to create a diagonal line.
-
-![Exercise](images/7-4/Exercise/10.png)
->1. Create a *code block* and introduce our definition by using the line of code:
-```
-def sphereByZ(inputPt){
-};
-```
-  The *inputPt* is the name we've given to represent the points that will drive the function.  As of now, the function isn't doing anything, but we'll build up this function in the steps to come.
-
-![Exercise](images/7-4/Exercise/09.png)
->1. Adding to the *code block* function, we place a comment and a *sphereRadius* variable which queries the *Z* position of each point.  Remember, *inputPt.Z* does not need parenetheses as a method.  This is a *query* of an existing element's properties, so no inputs are necessary:
-```
-def sphereByZ(inputPt,radiusRatio)
-{
-//get Z Value, use it to drive radius of sphere
-sphereRadius=inputPt.Z;
-};
+#Assign your output to the OUT variable
+#OUT is defined as a list of three items
+OUT=[doc,uiapp,app]
 ```
 
-![Exercise](images/7-4/Exercise/08.png)
->1. Now, let's recall the function we've created in another *code block*. If we double-click on the canvas to create a new *code block*, and type in *sphereB*, we notice that Dynamo suggest the *sphereByZ* function that we've defined. Your function has been added to the intellisense library! Pretty cool.
 
-![Exercise](images/7-4/Exercise/07.png)
->1. Now we call the function and create a variable called *Pt* to plug in the points created in the earlier steps:
-```sphereByZ(Pt)
+### Exercise 02
+>Create a new Revit Family - Conceptual Mass. Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. 
+
+In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Python node.  
+
+![](images/9-4/Exercise/Revit/Images/RevitPython - 08.png)
+> Begin with the set of nodes in the image above.  We'll first create two reference point in Revit from Dynamo nodes. 
+1. **Important note - when performing Revit operations, be certain that the run mode has been set to "Manual". Otherwise the program will crash.**
+2. Create a code block and give it a value of "0;"
+3. Plug this value into a ReferencePoint.ByCoordinates node for X,Y, and Z inputs.
+4. Create three sliders, ranging from -100 to 100 with a step size of 1.
+5. Connect each slider to a ReferencePoint.ByCoordinates node.
+6. Add a Python node to the canvas, click the "+" button on the node to add another input and plug the two references points into each input.  Open the Python node.
+
+![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 07.png)
+> A look at the Python node in Dynamo. The commented code is below.
+1. **System.Array:** Revit needs a System Array as an input (rather than a Python list). This is just one more line of code, but paying attention to argument types will facilitate Python programming in Revit.
+
 ```
-2. We notice from the output that we have all null values.  Why is this? When we defined the function, we are calculating the *sphereRadius* variable, but we did not define what the function should *return* as an *output*.  We can fix this in the next step.
+import clr
 
-![Exercise](images/7-4/Exercise/06.png)
->1. An important step, we need to define the output of the function by adding the line ```return = sphereRadius;
-``` to the *sphereByZ* function.
-2. Now we see that the output of the *code block* gives us the Z coordinates of each point.
+# Import RevitNodes
+clr.AddReference("RevitNodes")
+import Revit
+# Import Revit elements
+from Revit.Elements import *
+import System
 
+#define inputs
+startRefPt = IN[0]
+endRefPt = IN[1]
 
-![Exercise](images/7-4/Exercise/05.png)
-> Let's create actual spheres now by editing the *Parent* function.
-1. We first define a sphere with the line of code:
-```sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
+#define system array to match with required inputs
+refPtArray = System.Array[ReferencePoint]([startRefPt, endRefPt])
+#create curve by reference points in Revit
+OUT = CurveByPoints.ByReferencePoints(refPtArray)
+
 ```
-2. Next, we change the return value to be the *sphere* instead of the *sphereRadius*: ```return = sphere;
-```.  This gives us some giant spheres in our Dynamo preview!
 
+### Exercise 03
+>This exercise remains simple, but drives home the topics of connecting data and geometry from Revit to Dynamo and back.  Let's begin by opening Revit-StructuralFraming.rvt. Once opened, load Dynamo and open the file Revit-StructuralFraming.dyn.
 
-![Exercise](images/7-4/Exercise/04.png)
->1. To temper the size of these spheres, let's update the *sphereRadius* value by adding a divider: ```sphereRadius = inputPt.Z/20;
-```.  Now we can see the separate spheres and start to make sense of the relationship between radius and Z value.
+![](images/9-4/Exercise/Revit/Images/RevitPython - 04.png)
+> This Revit file is about as basic as it gets. To reference curves, one drawn on Level 1 and the other drawn on Level 2. We want to get these curves into Dynamo and maintain a live link.  
 
-![Exercise](images/7-4/Exercise/03.png)
->1. On the *Point.ByCoordinates* node, by changing the lacing from *Shortest List* to *Cross Product*, we create a grid of points.  The *sphereByZ* function is still in full effect, so the points all create spheres with radii based on Z values.
+![](images/9-4/Exercise/Revit/Images/RevitPython - 01a.png)
+> In this file we have a set of nodes plugging into five inputs of a Python node.  
+1. **Select Model Element Nodes:** Hit the select button for each and select a corresponding curve in Revit.
+2. **Code Block:** using the syntax *"0..1..#x;"*, connect an integer slider ranging from 0 to 20 into the *x* input.  This designates the number of beams to draw between the two curves.
+3. **Structural Framing Types:** We'll choose the default W12x26 beam here from the dropdown menu.  
+4. **Levels:** select "Level 1".
 
-![Exercise](images/7-4/Exercise/02.png)
->1. And just to test the waters, we plug the original list of numbers into the X input for *Point.ByCoordinates*.  We now have a cube of spheres.
-2. Note: if this takes a long time to calculate on your computer, try to change *#10* to something like *#5*.
+![](images/9-4/Exercise/Revit/Images/RevitPython - 00.png)
+> This code in Python is a little more dense, but the comments within the code describe what's happening the process:
 
-![Exercise](images/7-4/Exercise/01.png)
-> 1. Remember, the *sphereByZ* function we've created is a generic function, so we can recall the helix from an earlier lesson and apply the function to it.
-
-![Exercise](images/7-4/Exercise/20.png)
-> One final step: let's drive the radius ratio with a user defined parameter.  To do this, we need to create a new input for the function and also replace the *20* divider with a parameter.
-1. Update the *sphereByZ* definition to:
 ```
-def sphereByZ(inputPt,radiusRatio)
-{
-//get Z Value, use it to drive radius of sphere
-sphereRadius=inputPt.Z/radiusRatio;
-//Define Sphere Geometry
-sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
-//Define output for function
-return = sphere;
-};```
-2. Update the children code blocks by adding a *ratio* variable to the input: ```sphereByZ(Pt,ratio);
+import clr
+#import Dynamo Geometry
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+# Import RevitNodes
+clr.AddReference("RevitNodes")
+import Revit
+# Import Revit elements
+from Revit.Elements import *
+import System
+
+#Query Revit elements and convert them to Dynamo Curves
+crvA=IN[0].Curves[0]
+crvB=IN[1].Curves[0]
+
+#Define input Parameters
+framingType=IN[3]
+designLevel=IN[4]
+
+#Define "out" as a list
+OUT=[]
+
+for val in IN[2]:
+	#Define Dynamo Points on each curve
+	ptA=Curve.PointAtParameter(crvA,val)
+	ptB=Curve.PointAtParameter(crvB,val)
+	#Create Dynamo line
+	beamCrv=Line.ByStartPointEndPoint(ptA,ptB)
+	#create Revit Element from Dynamo Curves
+	beam = StructuralFraming.BeamByCurve(beamCrv,designLevel,framingType)
+	#convert Revit Element into list of Dynamo Surfaces
+	OUT.append(beam.Faces)
+
 ```
-Plug a slider into the newly created code block input and vary the size of the radii based on the radius ratio.
+![](images/9-4/Exercise/Revit/Images/RevitPython - 03.png)
+> In Revit, we have an array of beams spanning the two curves as structural elements. Note: this isn't a realistic example...the structural elements are used as an example for native Revit instances created from Dynamo.
+![](images/9-4/Exercise/Revit/Images/RevitPython - 05.png)
+> In Dynamo, we can see the results as well. The beams in the Watch3D node refer to the geometry queried from the Revit elements.
 
+Notice that we have a continuous process of translating data from the Revit Environment to the Dynamo Environment. In summary, here's how the process plays out:
 
+1. Select Revit element
+2. Convert Revit element to Dynamo Curve
+3. Divide Dynamo curve into a series of Dynamo points
+4. Use the Dynamo points between two curves to create Dynamo lines
+5. Create Revit beams by referencing Dynamo lines
+6. Output Dynamo surfaces by querying the geometry of Revit beams
 
+This may sound a little heavy handed, but the script makes it as simple as editing the curve in Revit and re-running the solver (although you may have to delete the previous beams when doing so).
 
-
-
-
-
-
-
-
+![](images/9-4/Exercise/Revit/Images/RevitPython - 01.png)
+> With an update to the refernce curves in Revit, we get a new array of beams.
