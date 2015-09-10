@@ -1,26 +1,29 @@
 In this example, we will write a python script that creates patterns from a solid module, and turn it into a custom node.
 First, let’s create our solid module using Dynamo nodes. 
-[image1]
 
-> 1.	Rectangle.ByWidthLength: Create a rectangle that will be the base of our solid
-2.	Surface.ByPatch: Connect the rectangle to the ‘closedCurve’ input to create the bottom surface
+![](images/9-4/Exercise/Python/python01.png)
 
-[image2]
->1.	Geometry.Translate: Connect the rectangle to the ‘geometry’ input to move it up, using a code block to specify the base thickness of our solid
-2.	Polygon.Points: Query the translated rectangle to extract the corner points
-3.	Geometry.Translate: Use a code block to create a list of four values corresponding to the four points, translating one corner of the solid up
-4.	Polygon.ByPoints: Use the translated points to reconstruct the top polygon
-5.	Surface.ByPatch: Connect the polygon to create the top surface
+> 1. **Rectangle.ByWidthLength:** Create a rectangle that will be the base of our solid
+2.	**Surface.ByPatch:** Connect the rectangle to the ‘*closedCurve*’ input to create the bottom surface
+
+![](images/9-4/Exercise/Python/python02.png)
+>1.	**Geometry.Translate:** Connect the rectangle to the ‘*geometry*’ input to move it up, using a code block to specify the base thickness of our solid
+2.	**Polygon.Points:** Query the translated rectangle to extract the corner points
+3.	**Geometry.Translate:** Use a code block to create a list of four values corresponding to the four points, translating one corner of the solid up
+4.	**Polygon.ByPoints:** Use the translated points to reconstruct the top polygon
+5.	**Surface.ByPatch:** Connect the polygon to create the top surface
+
 Now that we have our top and bottom surfaces, let’s loft between the two profiles to create the sides of the solid.
 
-[image3]
->1.	List.Create: Connect the bottom rectangle and the top polygon to the index inputs
-2.	Surface.ByLoft: Loft the two profiles to create the sides of the solid
-3.	List.Create: Connect the top, side, and bottom surfaces to the index inputs to create a list of surfaces
-4.	Solid.ByJoinedSurfaces: Join the surfaces to create the solid module
+![](images/9-4/Exercise/Python/python03.png)
+>1.	**List.Create:** Connect the bottom rectangle and the top polygon to the index inputs
+2.	**Surface.ByLoft:** Loft the two profiles to create the sides of the solid
+3.	**List.Create:** Connect the top, side, and bottom surfaces to the index inputs to create a list of surfaces
+4.	**Solid.ByJoinedSurfaces:** Join the surfaces to create the solid module
 
 Now that we have our solid, let’s drop a Python Script node onto the canvas. Double click the node to open the python editor.
-[image4]
+
+![](images/9-4/Exercise/Python/python04.png)
 > The default content of the script editor imports the Autodesk.DesignScript.Geometry library, and defines the input (IN) and output (OUT) of the node. Note that the node can accept multiple inputs that will be stored as a list, while only one output can be specified.
 
 [image5]
