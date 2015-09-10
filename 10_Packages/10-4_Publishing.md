@@ -15,10 +15,10 @@
 2. The "Group" field defines which group to find the custom nodes in the Dynamo UI.
 3. Publish by clicking "Publish Locally". If you're following along, be certain to click *"Publish Locally"* and **not** *"Publish Online"*; we don't want a bunch of duplicate packages on the Package Manager.
 
+![](images/10-4/Publishing/packages - ui.png)
+> 1. After publishing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library.
+
 ![](images/10-4/Publishing/Packages - 01.png)
-> After publishing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library.
-
-
 
 ![](images/10-4/Publishing/Packages - 00.png)
 ![](images/10-4/Publishing/Packages - 02.png)
