@@ -26,12 +26,12 @@ Now that we have our solid, let’s drop a Python Script node onto the canvas. D
 ![](images/9-4/Exercise/Python/python04.png)
 > The default content of the script editor imports the Autodesk.DesignScript.Geometry library, and defines the input (IN) and output (OUT) of the node. Note that the node can accept multiple inputs that will be stored as a list, while only one output can be specified.
 
-[image5]
+![](images/9-4/Exercise/Python/python05.png)
 > To add additional inputs to the node, close the editor and click the + icon on the node. The inputs are named IN[0], IN[1], etc. to indicate that they represent items in a list.
 
 Let’s start by defining our inputs and output. 
 
-[image]
+![](images/9-4/Exercise/Python/python06.png)
 ```
 #The solid module to be arrayed
 solid = IN[0]
@@ -49,6 +49,9 @@ OUT = solids
 ```
 
 Next we need to think about what information is required in order to array our solid module. First, we will need to know the dimensions of the solid to determine the translation distance. Due to a bounding box bug, we will have to use the edge curve geometry to create a bounding box.
+
+![](images/9-4/Exercise/Python/python07.png)
+> A look at the Python node in Dynamo. The commented code is below.
 
 ```
 # Create an empty list for the edge curves
@@ -69,7 +72,10 @@ yDist = bbox.MaxPoint.Y-bbox.MinPoint.Y
 xDist = bbox.MaxPoint.X-bbox.MinPoint.X
 ```
 
-Since we will be both translating and rotating the solid modules, let’s use the Geometry.Transform operation. By looking at the Geometry.Transform node, we know that we will need a source coordinate system and a target coordinate system to transform the solid. The source is the context coordinate system of our solid, while the target will be a different coordinate system for each arrayed module. That means we will have to loop through the x and y values to transform the coordinate system differently each time. See the commented code below:
+Since we will be both translating and rotating the solid modules, let’s use the Geometry.Transform operation. By looking at the Geometry.Transform node, we know that we will need a source coordinate system and a target coordinate system to transform the solid. The source is the context coordinate system of our solid, while the target will be a different coordinate system for each arrayed module. That means we will have to loop through the x and y values to transform the coordinate system differently each time. 
+
+![](images/9-4/Exercise/Python/python08.png)
+> A look at the Python node in Dynamo. The commented code is below.
 
 ```
 #create number ranges for X and Y
@@ -86,21 +92,17 @@ for i in xRange:
 		toCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i+j%seed)))
 		vec = Vector.ByCoordinates((xDist*i),(yDist*j),0)
 		toCoord = toCoord.Translate(vec)
-		#Transform the solid from the source coordinate system to the target coordinate system and append to the list
+		#Transform the solid from the source coord system to the target coord system and append to the list
 		solids.append(solid.Transform(fromCoord,toCoord))
 ```
 
-[image]
+![](images/9-4/Exercise/Python/python09.png)
 
 > Save the Python script by clicking ‘Accept Changes’ and plug the input values into the node. You should see a pattern of solids.
 
-[image]
+![](images/9-4/Exercise/Python/python10.png)
 
-> Try changing the seed value to create different patterns. 
-
-[image]
-
-> You can also change the parameters of the solid module itself for different effects.
+> Try changing the seed value to create different patterns. You can also change the parameters of the solid module itself for different effects.
 
 Now that we have created a useful python script, let’s save it as a custom node. Select the python script node, right-click and select ‘New Node From Selection.’ 
 
