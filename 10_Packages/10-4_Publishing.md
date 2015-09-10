@@ -17,6 +17,7 @@ There are many ways to publish a package. Below is the process that we advise: p
 
 ![](images/10-4/Publishing/packages - ui.png)
 > 1. After publishing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library.
+<<<<<<< HEAD
 
 ![](images/10-4/Publishing/Packages - 01.png)
 > Now let's look at the root directory to see how Dynamo has formatted the package we just created. Do this by clicking *Packages>Manage Packages...*
@@ -30,6 +31,10 @@ There are many ways to publish a package. Below is the process that we advise: p
 2. The *dyf* folder houses the custom nodes.  Opening this will reveal all of the custom nodes (.dyf files) for this package.
 3. The extra folder houses all additional files.  These files are likely to be Dynamo Files (.dyn) or any additional files required (.xls, .jpeg, .sat, etc.).
 4. The pkg file is a basic text file defining the package settings. This is automated in Dynamo, but can be edited if you want to get into the details.
+=======
+
+![](images/10-4/Publishing/Packages - 01.png)
+>>>>>>> origin/EK3
 
 ![](images/10-4/Publishing/Packages - 00.png)
 > **Note: please do not follow along with this step unless you are actually publishing a package of your own!**
