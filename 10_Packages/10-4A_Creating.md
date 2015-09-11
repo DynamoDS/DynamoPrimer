@@ -3,10 +3,15 @@
 Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through the process for developing a set of custom nodes into a published Dynamo Package.  This case study builds on lessons from the previous chapter, and the final package we'll create is a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.
 
 ###MapToSurface
-In the previous chapter, we explored ways for panelizing a surface in Dynamo based on curves defined in the XY plane. This case study extends these concepts for more complex geometry.  We're going to install this package as built in order to demonstrate how it was developed.
+In the previous chapter, we explored ways for panelizing a surface in Dynamo based on curves defined in the XY plane. This case study extends these concepts for more complex geometry.  We're going to install this package as built in order to demonstrate how it was developed.  In the next section, we'll demonstrate how this package was published.
 
 ###Installing the Package
-There are many ways to publish a package. The [folder](datasets/10-4/MapToSurfaceFiles.zip) you've downloaded hosts these files.  Place these files into a folder in a permanent location and install the package in Dynamo.
+![](images/10-4/Creating/Packages - 14.png)
+> This is the easy part. In Dynamo, navigate to *"Packages>Search for a Package..."*
+
+![](images/10-4/Creating/Packages - 13.png)
+> Search for the package *"MapToSurface"* (all one word).
+1. When the package is found, click on the big download error to the left of the package name.  This will install the package into Dynamo.
 
 ###Custom Nodes
 The package we're creating uses 5 custom nodes that we've built for reference. Let's walk through what each node does below.  Some custom nodes build off of other custom nodes, and the graphs have a layout for other users to understand in a straightforward manner.
