@@ -2,6 +2,15 @@
 
 In the previous sections, we dove into the details of how our *MapToSurface* package is setup with custom nodes and example files.  But how do we publish a package that has been developed locally?  This case study demonstrates how to publish a package from a set of files in a local folder.
 
+###Uninstalling a Package
+Before we jump into publishing the MapToSurface package, if you installed the package from the previous lesson, uninstall it so that you're not working with identical packages. 
+
+![](images/10-4/Publishing/Packages - 01.png)
+> Begin by going to *Packages>Manage Packages...*
+
+![](images/10-4/Publishing/uninstall.png)
+> Select the button corresponding to *"MapToSurface"* and select *"Uninstall..."*. Then restart Dynamo. When reopening, when you check the *"Manage Packages"* window, the *MapToSurface* should no longer be there. Now we're ready to start from the beginning!
+
 ###Exercise
 There are many ways to publish a package. Below is the process that we advise: publishing locally, developing locally, and then publishing online.  We'll start with a folder containing all of the files in the package.
 
