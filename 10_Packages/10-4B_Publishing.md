@@ -1,5 +1,21 @@
-###Exercise
-There are many ways to publish a package. Below is the process that we advise: publishing locally, developing locally, and then publishing online.
+##Publishing a Package
+
+In the previous sections, we dove into the details of how our *MapToSurface* package is setup with custom nodes and example files.  But how do we publish a package that has been developed locally?  This case study demonstrates how to publish a package from a set of files in a local folder.
+
+There are many ways to publish a package. Below is the process that we advise: publish locally, develop locally, and then publish online.  We'll start with a folder containing all of the files in the package.
+
+###Uninstalling a Package
+Before we jump into publishing the MapToSurface package, if you installed the package from the previous lesson, uninstall it so that you're not working with identical packages. 
+
+![](images/10-4/Publishing/Packages - 01.png)
+> Begin by going to *Packages>Manage Packages...*
+
+![](images/10-4/Publishing/uninstall.png)
+> Select the button corresponding to *"MapToSurface"* and select *"Uninstall..."*. Then restart Dynamo. When reopening, when you check the *"Manage Packages"* window, the *MapToSurface* should no longer be there. Now we're ready to start from the beginning!
+
+###Publishing a Package Locally
+
+>Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [MapToSurfaceFiles.zip](datasets/10-4/MapToSurfaceFiles.zip)
 
 ![](images/10-4/Publishing/Packages - 08.png)
 > This is the first submission for our package, and we've placed all of the example files and custom nodes into one folder.  With this folder prepared, we're ready to upload to the Dynamo Package Manager.
@@ -31,8 +47,10 @@ There are many ways to publish a package. Below is the process that we advise: p
 3. The extra folder houses all additional files.  These files are likely to be Dynamo Files (.dyn) or any additional files required (.xls, .jpeg, .sat, etc.).
 4. The pkg file is a basic text file defining the package settings. This is automated in Dynamo, but can be edited if you want to get into the details.
 
+###Publishing a Package Online
+
 ![](images/10-4/Publishing/Packages - 00.png)
 > **Note: please do not follow along with this step unless you are actually publishing a package of your own!**
-1. When you're ready to publish, in the "Manage Packages" window, select the o the right of MapToSurface and choose *Publish...*
+1. When you're ready to publish, in the "Manage Packages" window, select the button the right of MapToSurface and choose *Publish...*
 2. If you're updating a package that has already been published, choose "Publish Version" and Dynamo will update your package online based on the new files in that package's root directory. Simple as that!
 
