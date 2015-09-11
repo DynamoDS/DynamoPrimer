@@ -48,6 +48,7 @@
    * [Creating a Custom Node](09_Custom-Nodes/9-2_Creating.md)
    * [Adding to Your Library](09_Custom-Nodes/9-3_Library.md)
    * [Python](09_Custom-Nodes/9-4_Python.md)
+   * [Python and Revit](09_Custom-Nodes/9-5_Python-Revit.md)
 * [Packages](10_Packages/10-Packages.md)
    * [Package Introduction](10_Packages/10-1_Introduction.md)
    * [Dynamo Package Manager](10_Packages/10-2_Package-Manager.md)
