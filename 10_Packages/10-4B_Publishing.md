@@ -1,6 +1,6 @@
 ##Publishing a Package
 
-In the previous sections, we dove into the details of how our *MapToSurface* package is setup with custom nodes and example files.  But how do we develop and publish a package that has been developed locally?  This case study demonstrates how to publish a package from a set of files in a local folder.
+In the previous sections, we dove into the details of how our *MapToSurface* package is setup with custom nodes and example files.  But how do we publish a package that has been developed locally?  This case study demonstrates how to publish a package from a set of files in a local folder.
 
 ###Exercise
 There are many ways to publish a package. Below is the process that we advise: publishing locally, developing locally, and then publishing online.  We'll start with a folder containing all of the files in the package.
