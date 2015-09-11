@@ -1,38 +1,47 @@
-###Exercise
+###Custom Nodes
 There are many ways to publish a package. Below is the process that we advise: publishing locally, developing locally, and then publishing online.
 
-![](images/10-4/Publishing/Packages - 08.png)
-> This is the first submission for our package, and we've placed all of the example files and custom nodes into one folder.  With this folder prepared, we're ready to upload to the Dynamo Package Manager.
-1. This folder contains five custom nodes.
-2. This folder also contains four example files to show the user how to work with the custom nodes.
+![](images/10-4/Creating/Packages - 12.png)
+> This is a simple package with five custom nodes. In the steps below, we'll briefly talk about each custom node's setup.
 
-![](images/10-4/Publishing/Packages - 07.png)
-> In Dynamo, begin by clicking *Packages>Publish New Package...*
+![](images/10-4/Creating/Packages - 11.png)
+> **PointsToSurface:** This is a basic custom node, and one from which all of the other mapping nodes are based.  Simply put, the node maps a point from a source surface UV coordinate to the location of the target surface UV coordinate.  And since points are the most primitive geometry, from which more complex geometry is built, we can use this logic to map 2D, and even 3D geometry from one surface to another.
 
-![](images/10-4/Publishing/Packages - 03.png)
-> In the *"Publish a Dynamo Package"* window, we've filled out the relevant forms on the left of the window.
-1. By clicking *"Add File"*, we've also added the files from the folder structure on the right side of the screen. Notice that we've added every file, custom node (.dyf) or or example file (.dyn), indiscriminately. Dynamo will categories these items when we publish the package.
-2. The "Group" field defines which group to find the custom nodes in the Dynamo UI.
-3. Publish by clicking "Publish Locally". If you're following along, be certain to click *"Publish Locally"* and **not** *"Publish Online"*; we don't want a bunch of duplicate packages on the Package Manager.
+![](images/10-4/Creating/Packages - 10.png)
+> **PolygonsToSurface:** the logic of extending mapped points from 1D geometry to 2D geometry is demonstrated simply with polygons here.  Notice that we have nested the *"PointsToSurface"* node into this custom node.  This way we can map the points of each polygon to the surface, and then regenerate the polygon from those mapped points.  By maintaining the proper data structure (a list of lists of points), we're able to keep the polygons separate after they're reduced to a set of points.
 
-![](images/10-4/Publishing/packages - ui.png)
-> 1. After publishing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library.
+![](images/10-4/Creating/Packages - 09.png)
+> **NurbsCrvtoSurface:** The same logic applies here as in the *"PolygonsToSurface"* node. But instead of mapping polygonal points, we're mapping control points of a nurbs curve.
 
-![](images/10-4/Publishing/Packages - 01.png)
-> Now let's look at the root directory to see how Dynamo has formatted the package we just created. Do this by clicking *Packages>Manage Packages...*
+![](images/10-4/Creating/Packages - 08.png)
+> **OffsetPointsToSurface:** This node gets a little more complex, but the concept is simple: like the *"PointsToSurface"* node, this node maps points from one surface to another. However, it also considers points which are not on the original source surface, gets their distance to the closest UV parameter, and maps this distance to the target surface normal at the corresponding UV coordinate.  This will make more sense when looking at the example files.
 
-![](images/10-4/Publishing/packages - showRoot.png)
-> In the manage packages window, click on the three vertical dots to the right of *"MapToSurface"* and choose *"Show Root Directory".*
+![](images/10-4/Creating/Packages - 07.png)
+> **SampleSrf:** This is a simple node which creates a parametric surface to map from the source grid to an undulating surface in the example files.
 
-![](images/10-4/Publishing/Packages - 02.png)
-> Notice that the root directory is in the local location of your package (remember, we published the package "locally").  Dynamo is currently referencing this folder to read custom nodes. It's therefore important to locally publish the directory to a permanent folder location (ie: not your desktop). Here is the Dynamo package folder breakdown:
-1. The *bin* folder houses .dll files created with C# or Zero-Touch libraries.  We don't have any for this package so this folder is blank for this example.
-2. The *dyf* folder houses the custom nodes.  Opening this will reveal all of the custom nodes (.dyf files) for this package.
-3. The extra folder houses all additional files.  These files are likely to be Dynamo Files (.dyn) or any additional files required (.xls, .jpeg, .sat, etc.).
-4. The pkg file is a basic text file defining the package settings. This is automated in Dynamo, but can be edited if you want to get into the details.
+###Example Files
+![](images/10-4/Creating/Packages - 06.png)
+> **01-PanelingWithPolygons:** This example file demonstrates how *"PointsToSurface"* may be used to panelize a surface based on a grid of rectangles.  This should look familiar, as we demonstrated a similar workflow in the previous chapter ("Custom Nodes").
 
-![](images/10-4/Publishing/Packages - 00.png)
-> **Note: please do not follow along with this step unless you are actually publishing a package of your own!**
-1. When you're ready to publish, in the "Manage Packages" window, select the o the right of MapToSurface and choose *Publish...*
-2. If you're updating a package that has already been published, choose "Publish Version" and Dynamo will update your package online based on the new files in that package's root directory. Simple as that!
+![](images/10-4/Creating/Packages - 05.png)
+> **02-PanelingWithPolygons-II:** Using a similar workflow, this exercise file shows a setup for mapping circles (or polygons representing circles) from one surface to another.  This uses the *"PolygonsToSurface"* node.
+
+![](images/10-4/Creating/Packages - 04.png)
+> **03-NurbsCrvsAndSurface:** This example file adds some complexity by working with the "NurbsCrvToSurface" node. The target surface is offset a given distance and the nurbs curve is mapped to the original target surface and the offset surface.  From there, the two mapped curves are lofted to create a surface, which is then thickened.  This resulting solid has an undulation that is representative of the target surface normals.
+
+![](images/10-4/Creating/Packages - 03A.png)
+> **04-PleatedPolysurface-OffsetPoints:** This example file demonstrates how to map a pleated polysurface from a source surface to a target surface.  The source and target surface are a rectangular surface spanning the grid and a revolved surface, respectively.
+
+![](images/10-4/Creating/Packages - 03.png)
+> **04-PleatedPolysurface-OffsetPoints:** The source polysurface mapped from the source surface to the target surface.
+
+![](images/10-4/Creating/Packages - 01.png)
+> **05-SVG-Import:** Since the custom nodes are able to map different types of curves, this last file references an SVG file exported from Illustrator and maps the imported curves to a target surface
+
+![](images/10-4/Creating/Packages - 00.png)
+> **05-SVG-Import:** Using Python, the SVG curves are translated from SVG format to Dynamo polycurves.
+
+![](images/10-4/Creating/Packages - 02.png)
+> **05-SVG-Import:** The imported curves are mapped to a target surface. This allows us to explicitly (point-and-click) design a panelization in illustrator, import into Dynamo, and apply to a target surface.
+
 
