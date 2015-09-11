@@ -30,8 +30,12 @@ The package we're creating uses 5 custom nodes that we've built for reference. L
 > **SampleSrf:** This is a simple node which creates a parametric surface to map from the source grid to an undulating surface in the example files.
 
 ###Example Files
-The example files can be found in the package's root folder (In Dynamo, navigate this folder by going to *Packages>Manage Packages...*).  In the *Manage Packages* window, find "MapToSurface" and click on the three vertical dots to the right of it.  Then, select *"Go to root folder...".*
+The example files can be found in the package's root folder (In Dynamo, navigate this folder by going to *Packages>Manage Packages...*). 
 
+![](images/10-4/Publishing/packages - showRoot.png)
+> In the manage packages window, click on the three vertical dots to the right of *"MapToSurface"* and choose *"Show Root Directory".* 
+
+With the root directory open, navigate to the "extra" folder, which houses all of the files in the package which are not custom nodes.  This is where examples files (if they exist) are stored for Dynamo packages.  The screenshots below discuss the concepts demonstrated in each example file.
 
 ![](images/10-4/Creating/Packages - 06.png)
 > **01-PanelingWithPolygons:** This example file demonstrates how *"PointsToSurface"* may be used to panelize a surface based on a grid of rectangles.  This should look familiar, as we demonstrated a similar workflow in the previous chapter ("Custom Nodes").
