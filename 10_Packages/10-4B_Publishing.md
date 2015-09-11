@@ -1,6 +1,8 @@
 ###Exercise
 There are many ways to publish a package. Below is the process that we advise: publishing locally, developing locally, and then publishing online.
 
+>Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [MapToSurfaceFiles.zip](datasets/10-4/MapToSurfaceFiles.zip)
+
 ![](images/10-4/Publishing/Packages - 08.png)
 > This is the first submission for our package, and we've placed all of the example files and custom nodes into one folder.  With this folder prepared, we're ready to upload to the Dynamo Package Manager.
 1. This folder contains five custom nodes.
