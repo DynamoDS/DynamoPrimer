@@ -1,4 +1,9 @@
+##Python
+###Loops
+###Compare to DS (See http://dynamobim.com/math-transit/) 
 
+
+###Exercise
 
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Python_Custom-Node.dyn](datasets/9-4/Python_Custom-Node.dyn)
 
