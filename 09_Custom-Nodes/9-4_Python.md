@@ -110,19 +110,19 @@ for i in xRange:
 
 Now that we have created a useful python script, let’s save it as a custom node. Select the python script node, right-click and select ‘New Node From Selection.’ 
 
-[Image]
+![](images/9-4/Exercise/Python/python11.png)
 
 > Assign a name, description, and category.
 
 This will open a new canvas in which to edit the custom node. 
 
-[Image]
+![](images/9-4/Exercise/Python/python12.png)
 
-> 1. Inputs: Change the input names to be more descriptive and add data types and default values. 
-2.	Output: Change the output name
+> 1. **Inputs:** Change the input names to be more descriptive and add data types and default values. 
+2.	**Output:** Change the output name
 Save the node as a .dyf file
 
-[Image]
+![](images/9-4/Exercise/Python/python13.png)
 
 > The custom node reflects the changes we just made.
 
