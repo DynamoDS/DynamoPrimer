@@ -1,3 +1,7 @@
+
+
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Python_Custom-Node.dyn](datasets/9-4/Python_Custom-Node.dyn)
+
 In this example, we will write a python script that creates patterns from a solid module, and turn it into a custom node.
 First, let’s create our solid module using Dynamo nodes. 
 
