@@ -2,7 +2,7 @@
 Copy
 ### Creating a Custom Node from an Existing Graph
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
-[Dynamo-Syntax_Attractor-Surface.dyn](datasets/7-2/Dynamo-Syntax_Attractor-Surface.dyn)
+[UVmapping_Custom-Node.dyn](datasets/9-2/UVmapping_Custom-Node.dyn)
 
 Let’s start by creating a graph that we want to nest into a Custom Node. In this example, we will create a program that maps polygons from a base surface to a target surface, using UV coordinates.  For more information on surfaces and UV space, see chapter 5.5.
 
