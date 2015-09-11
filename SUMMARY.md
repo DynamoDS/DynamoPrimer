@@ -52,7 +52,7 @@
    * [Package Introduction](10_Packages/10-1_Introduction.md)
    * [Dynamo Package Manager](10_Packages/10-2_Package-Manager.md)
    * [Mesh Toolkit](10_Packages/10-3_Mesh-Toolkit.md)
-   * [Creating a Package](10_Packages/10-4A_Creating.md)
+   * [Deconstructing a Package](10_Packages/10-4A_Creating.md)
    * [Publishing a Package](10_Packages/10-4B_Publishing.md)
    * [Zero-Touch](10_Packages/10-5_Zero-Touch.md)
 * [Appendix](Appendix/A_appendix.md)
