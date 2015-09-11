@@ -1,14 +1,23 @@
-##Creating a Package
+##Developing a Package
 
-Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through the process for developing a set of custom nodes into a published Dynamo Package.  This case study builds on lessons from the previous chapter, and the final package we'll create is a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.
+Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through how a package is setup by deconstructing an existing one.  This case study builds on lessons from the previous chapter, providing a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.
 
 ###MapToSurface
-In the previous chapter, we explored ways for panelizing a surface in Dynamo based on curves defined in the XY plane. This case study extends these concepts for more complex geometry.
+In the previous chapter, we explored ways for panelizing a surface in Dynamo based on curves defined in the XY plane. This case study extends these concepts for more complex geometry.  We're going to install this package as built in order to demonstrate how it was developed.  In the next section, we'll demonstrate how this package was published.
 
->Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Dynamo-Syntax_Attractor-Surface.dyn](datasets/10-4/MapToSurfaceFiles.zip)
+###Installing the Package
+![](images/10-4/Creating/Packages - 14.png)
+> This is the easy part. In Dynamo, navigate to *"Packages>Search for a Package..."*
+
+![](images/10-4/Creating/Packages - 13.png)
+> Search for the package *"MapToSurface"* (all one word).
+1. When the package is found, click on the big download error to the left of the package name.  This will install the package into Dynamo.
+
+![](images/10-4/Publishing/packages - ui.png)
+> 1. After installing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library. With the package now installed, let's walk through how it's setup.
 
 ###Custom Nodes
-The package we're creating uses 5 custom nodes that we've built for reference. There are many ways to publish a package. Below is the process that we advise: publishing locally, developing locally, and then publishing online.
+The package we're creating uses 5 custom nodes that we've built for reference. Let's walk through what each node does below.  Some custom nodes build off of other custom nodes, and the graphs have a layout for other users to understand in a straightforward manner.
 
 ![](images/10-4/Creating/Packages - 12.png)
 > This is a simple package with five custom nodes. In the steps below, we'll briefly talk about each custom node's setup.
@@ -29,6 +38,13 @@ The package we're creating uses 5 custom nodes that we've built for reference. T
 > **SampleSrf:** This is a simple node which creates a parametric surface to map from the source grid to an undulating surface in the example files.
 
 ###Example Files
+The example files can be found in the package's root folder (In Dynamo, navigate this folder by going to *Packages>Manage Packages...*). 
+
+![](images/10-4/Publishing/packages - showRoot.png)
+> In the manage packages window, click on the three vertical dots to the right of *"MapToSurface"* and choose *"Show Root Directory".* 
+
+With the root directory open, navigate to the *"extra"* folder, which houses all of the files in the package which are not custom nodes.  This is where examples files (if they exist) are stored for Dynamo packages.  The screenshots below discuss the concepts demonstrated in each example file.
+
 ![](images/10-4/Creating/Packages - 06.png)
 > **01-PanelingWithPolygons:** This example file demonstrates how *"PointsToSurface"* may be used to panelize a surface based on a grid of rectangles.  This should look familiar, as we demonstrated a similar workflow in the previous chapter ("Custom Nodes").
 
