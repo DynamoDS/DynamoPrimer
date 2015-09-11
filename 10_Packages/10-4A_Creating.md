@@ -13,6 +13,11 @@ In the previous chapter, we explored ways for panelizing a surface in Dynamo bas
 > Search for the package *"MapToSurface"* (all one word).
 1. When the package is found, click on the big download error to the left of the package name.  This will install the package into Dynamo.
 
+![](images/10-4/Publishing/packages - ui.png)
+> 1. After installing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library.
+
+With the package now installed, let's walk through how it's setup.
+
 ###Custom Nodes
 The package we're creating uses 5 custom nodes that we've built for reference. Let's walk through what each node does below.  Some custom nodes build off of other custom nodes, and the graphs have a layout for other users to understand in a straightforward manner.
 
@@ -40,7 +45,7 @@ The example files can be found in the package's root folder (In Dynamo, navigate
 ![](images/10-4/Publishing/packages - showRoot.png)
 > In the manage packages window, click on the three vertical dots to the right of *"MapToSurface"* and choose *"Show Root Directory".* 
 
-With the root directory open, navigate to the "extra" folder, which houses all of the files in the package which are not custom nodes.  This is where examples files (if they exist) are stored for Dynamo packages.  The screenshots below discuss the concepts demonstrated in each example file.
+With the root directory open, navigate to the *"extra"* folder, which houses all of the files in the package which are not custom nodes.  This is where examples files (if they exist) are stored for Dynamo packages.  The screenshots below discuss the concepts demonstrated in each example file.
 
 ![](images/10-4/Creating/Packages - 06.png)
 > **01-PanelingWithPolygons:** This example file demonstrates how *"PointsToSurface"* may be used to panelize a surface based on a grid of rectangles.  This should look familiar, as we demonstrated a similar workflow in the previous chapter ("Custom Nodes").
