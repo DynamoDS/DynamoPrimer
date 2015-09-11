@@ -3,6 +3,10 @@ Dynamo has a large assortment of core nodes that you can rely on to build pretty
 
 Custom Nodes are constructed by nesting other nodes and custom nodes inside of a container. When this container node is executed in your graph, everything inside it will be executed.  This can help make your graph clearer and cleaner, as well as allow you to reuse and share a useful combination of nodes.
 
+###Cleaning up Your Graph
+###Adapting to Change
+###Worksharing
+
 ### Creating Custom Nodes
 
 ![Custom Nodes Intro](images/9-1/CustomNodes01.png)
