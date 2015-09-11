@@ -14,9 +14,7 @@ In the previous chapter, we explored ways for panelizing a surface in Dynamo bas
 1. When the package is found, click on the big download error to the left of the package name.  This will install the package into Dynamo.
 
 ![](images/10-4/Publishing/packages - ui.png)
-> 1. After installing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library.
-
-With the package now installed, let's walk through how it's setup.
+> 1. After installing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library. With the package now installed, let's walk through how it's setup.
 
 ###Custom Nodes
 The package we're creating uses 5 custom nodes that we've built for reference. Let's walk through what each node does below.  Some custom nodes build off of other custom nodes, and the graphs have a layout for other users to understand in a straightforward manner.
