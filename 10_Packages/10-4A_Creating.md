@@ -1,6 +1,6 @@
-##Creating a Package
+##Deconstructing a Package
 
-Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through the process for developing a set of custom nodes into a published Dynamo Package.  This case study builds on lessons from the previous chapter, and the final package we'll create is a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.
+Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through how a package is setup by deconstructing an existing one.  This case study builds on lessons from the previous chapter, providing a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.
 
 ###MapToSurface
 In the previous chapter, we explored ways for panelizing a surface in Dynamo based on curves defined in the XY plane. This case study extends these concepts for more complex geometry.  We're going to install this package as built in order to demonstrate how it was developed.  In the next section, we'll demonstrate how this package was published.
