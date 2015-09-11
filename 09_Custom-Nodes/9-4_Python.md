@@ -124,12 +124,12 @@ Save the node as a .dyf file
 
 
 ### Exercise 01
->Create a new Revit Project.  Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. 
+>Create a new Revit Project.  Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
 
 In these exercises, we'll explore elementary Python scripts in Dynamo for Revit.  The exercise will focus on dealing with Revit files and elements, as well as the communication between Revit and Dynamo.
 
 ![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 10.png)
-> This is a cut and dry method for retrieving the *doc*, *uiapp*, and *app* of the Revit file linked to your Dynamo sesson.  Programmers who have worked in the Revit API before may notice the items in the watch list.  If these items do not look familiar, that's ok, we'll be using other examples in the exercises below.  
+> This is a cut and dry method for retrieving the *doc*, *uiapp*, and *app* of the Revit file linked to your Dynamo sesson.  Programmers who have worked in the Revit API before may notice the items in the watch list.  If these items do not look familiar, that's ok, we'll be using other examples in the exercises below.
 
 Here is how we're importing Revit Services and retrieving the document data in Dynamo:
 ![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 06.png)
@@ -153,12 +153,12 @@ OUT=[doc,uiapp,app]
 
 
 ### Exercise 02
->Create a new Revit Family - Conceptual Mass. Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. 
+>Create a new Revit Family - Conceptual Mass. Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
 
-In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Python node.  
+In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Python node.
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 08.png)
-> Begin with the set of nodes in the image above.  We'll first create two reference point in Revit from Dynamo nodes. 
+> Begin with the set of nodes in the image above.  We'll first create two reference point in Revit from Dynamo nodes.
 1. **Important note - when performing Revit operations, be certain that the run mode has been set to "Manual". Otherwise the program will crash.**
 2. Create a code block and give it a value of "0;"
 3. Plug this value into a ReferencePoint.ByCoordinates node for X,Y, and Z inputs.
@@ -195,13 +195,13 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 >This exercise remains simple, but drives home the topics of connecting data and geometry from Revit to Dynamo and back.  Let's begin by opening Revit-StructuralFraming.rvt. Once opened, load Dynamo and open the file Revit-StructuralFraming.dyn.
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 04.png)
-> This Revit file is about as basic as it gets. To reference curves, one drawn on Level 1 and the other drawn on Level 2. We want to get these curves into Dynamo and maintain a live link.  
+> This Revit file is about as basic as it gets. To reference curves, one drawn on Level 1 and the other drawn on Level 2. We want to get these curves into Dynamo and maintain a live link.
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 01a.png)
-> In this file we have a set of nodes plugging into five inputs of a Python node.  
+> In this file we have a set of nodes plugging into five inputs of a Python node.
 1. **Select Model Element Nodes:** Hit the select button for each and select a corresponding curve in Revit.
 2. **Code Block:** using the syntax *"0..1..#x;"*, connect an integer slider ranging from 0 to 20 into the *x* input.  This designates the number of beams to draw between the two curves.
-3. **Structural Framing Types:** We'll choose the default W12x26 beam here from the dropdown menu.  
+3. **Structural Framing Types:** We'll choose the default W12x26 beam here from the dropdown menu.
 4. **Levels:** select "Level 1".
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 00.png)
