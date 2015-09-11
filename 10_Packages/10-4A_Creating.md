@@ -5,10 +5,13 @@ Dynamo offers a variety of ways to create a package for your personal use or for
 ###MapToSurface
 In the previous chapter, we explored ways for panelizing a surface in Dynamo based on curves defined in the XY plane. This case study extends these concepts for more complex geometry.
 
->Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [MapToSurfaceFiles.zip](datasets/10-4/MapToSurfaceFiles.zip)
+
+
+###Installing the Package
+The package we're creating uses 5 custom nodes that we've built for reference. There are many ways to publish a package. The [folder](datasets/10-4/MapToSurfaceFiles.zip) you've downloaded hosts these files.  Place these files into a folder in a permanent location and install the package in Dynamo.
 
 ###Custom Nodes
-The package we're creating uses 5 custom nodes that we've built for reference. There are many ways to publish a package. Below is the process that we advise: publishing locally, developing locally, and then publishing online.
+
 
 ![](images/10-4/Creating/Packages - 12.png)
 > This is a simple package with five custom nodes. In the steps below, we'll briefly talk about each custom node's setup.
