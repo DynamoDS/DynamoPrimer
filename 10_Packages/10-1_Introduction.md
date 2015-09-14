@@ -7,3 +7,16 @@
 http://dynamobim.com/files-folders/
 
 Packages>Manage Packages>Show Root Directory...
+
+
+![](images/10-1/AddingToLibrary- 00.png)
+
+![](images/10-1/AddingToLibrary- 01.png)
+
+![](images/10-1/dpm.png)
+
+![](images/10-1/dpm2.png)
+
+![](images/10-4/Publishing/Packages - 00.png)
+
+![](images/10-4/Publishing/Packages - 01.png)
