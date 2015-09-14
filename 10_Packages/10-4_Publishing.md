@@ -5,11 +5,11 @@ img{width:100%}
 ##Publishing a Package
 
 In the previous sections, we dove into the details of how our *MapToSurface* package is setup with custom nodes and example files.  But how do we publish a package that has been developed locally?  This case study demonstrates how to publish a package from a set of files in a local folder.
-
+![](images/10-4/Creating/Packages - 12.png)
 There are many ways to publish a package. Below is the process that we advise: publish locally, develop locally, and then publish online.  We'll start with a folder containing all of the files in the package.
 
 ###Uninstalling a Package
-Before we jump into publishing the MapToSurface package, if you installed the package from the previous lesson, uninstall it so that you're not working with identical packages. 
+Before we jump into publishing the MapToSurface package, if you installed the package from the previous lesson, uninstall it so that you're not working with an identical packages. 
 
 ![](images/10-4/Publishing/Packages - 01.png)
 > Begin by going to *Packages>Manage Packages...*
