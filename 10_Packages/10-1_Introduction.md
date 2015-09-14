@@ -1,3 +1,7 @@
+<style>
+img{width:100%}
+</style>
+
 ##Packages
 ###What is a package?
 ###Package Manager
