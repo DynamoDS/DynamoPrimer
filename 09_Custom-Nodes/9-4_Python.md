@@ -2,11 +2,11 @@
 img{width:100%}
 </style>
 ##Python
-###Python
+
 Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C++. Python supports modules and packages, and can be embedded into existing applications.
 ###The Python Node
 Like code blocks, python nodes are a scripting interface within a visual programming environment.
-Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. The Python node can be found under Core > Scripting in the library. Double clicking the node opens the python script editor.
+Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. The Python node can be found under *Core>Scripting* in the library. Double clicking the node opens the python script editor.
 
 ![Script Editor](images/9-4/Exercise/Python/python04.png)
 
