@@ -3,9 +3,27 @@ img{width:100%}
 </style>
 
 ##Python
-###Loops
-###Compare to DS (See http://dynamobim.com/math-transit/) 
+###Python
+Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C++. Python supports modules and packages, and can be embedded into existing applications.
+###The Python Node
+Python is a powerful tool that can extend the capabilities of Dynamo. The Python node can be found under Core > Scripting in the library. Double clicking the node opens the python script editor.
 
+![Script Editor](images/9-4/Exercise/Python/python04.png)
+
+> You’ll notice some boilerplate text at the top, which is meant to help you reference the libraries you’ll need. Inputs are stored in the IN array. Values are returned to Dynamo by assigning them to the OUT variable.
+
+The Autodesk.DesignScript.Geometry library allows you to use dot notation similar to Code Blocks. For more information on Dynamo syntax, refer to chapter 7.2 as well as the [Dynamo Language Guide](http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf). Typing a geometry type such as 'Point.' will bring up a list of methods for creating and querying points.
+
+![](images/9-4/Exercise/Python/python14.png)
+
+> Methods include constructors such as *ByCoordinates*, actions like *Add*, and queries like *X*, *Y* and *Z* coordinates.
+
+###Python vs. Code Blocks
+The strength of the python node lies in the ability to use conditionals and loops. A loop is a command to repeat the execution of a block of code. The "for" loop repeats the piece of code for each item in a list, and the "while" loop repeats the code until a defined condition is met. You can also create nested loops to iterate through a list of lists.
+
+An "if" statement tells python to execute a piece of code if a defined condition is met. Multiple conditions can be defined using "elif." Code to execute if none of the conditions are met can be specified using "else".
+
+Code blocks have limited looping and conditional functionality.
 
 ###Exercise
 
@@ -34,15 +52,12 @@ Now that we have our top and bottom surfaces, let’s loft between the two profi
 3.	**List.Create:** Connect the top, side, and bottom surfaces to the index inputs to create a list of surfaces
 4.	**Solid.ByJoinedSurfaces:** Join the surfaces to create the solid module
 
-Now that we have our solid, let’s drop a Python Script node onto the canvas. Double click the node to open the python editor.
-
-![](images/9-4/Exercise/Python/python04.png)
-> The default content of the script editor imports the Autodesk.DesignScript.Geometry library, and defines the input (IN) and output (OUT) of the node. Note that the node can accept multiple inputs that will be stored as a list, while only one output can be specified.
+Now that we have our solid, let’s drop a Python Script node onto the canvas. 
 
 ![](images/9-4/Exercise/Python/python05.png)
 > To add additional inputs to the node, close the editor and click the + icon on the node. The inputs are named IN[0], IN[1], etc. to indicate that they represent items in a list.
 
-Let’s start by defining our inputs and output. 
+Let’s start by defining our inputs and output. Double click the node to open the python editor.
 
 ![](images/9-4/Exercise/Python/python06.png)
 ```
@@ -70,11 +85,8 @@ Next we need to think about what information is required in order to array our s
 # Create an empty list for the edge curves
 crvs = []
 
-#Get edges and convert to curve geometry 
-edges = solid.Edges
-
 #Loop through edges and append corresponding curve geometry to the list
-for edge in edges:
+for edge in solid.Edges:
 	crvs.append(edge.CurveGeometry)
 	
 #Get the bounding box of the curves
@@ -91,16 +103,12 @@ Since we will be both translating and rotating the solid modules, let’s use th
 > A look at the Python node in Dynamo. The commented code is below.
 
 ```
-#create number ranges for X and Y
-xRange = list(range(xCount))
-yRange = list(range(yCount))
-
 #get the source coordinate system
 fromCoord = solid.ContextCoordinateSystem
  
 #Loop through X and Y
-for i in xRange:
-	for j in yRange:
+for i in range(xCount):
+	for j in range(yCount):
 		#Rotate and translate the coordinate system
 		toCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i+j%seed)))
 		vec = Vector.ByCoordinates((xDist*i),(yDist*j),0)
