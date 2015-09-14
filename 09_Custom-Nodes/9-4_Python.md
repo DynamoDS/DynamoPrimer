@@ -4,7 +4,7 @@ Python is a widely used programming language. Python's syntax emphasizes readabi
 ###The Python Node
 Python is a powerful tool that can extend the capabilities of Dynamo. The Python node can be found under Core > Scripting in the library. Double clicking the node opens the python script editor.
 
-[image]
+![Script Editor](images/9-4/Exercise/Python/python04.png)
 
 > You’ll notice some boilerplate text at the top, which is meant to help you reference the libraries you’ll need. Inputs are stored in the IN array. Values are returned to Dynamo by assigning them to the OUT variable.
 
@@ -14,15 +14,12 @@ The Autodesk.DesignScript.Geometry library allows you to use dot notation simila
 
 > Methods include constructors such as *ByCoordinates*, actions like *Add*, and queries like *X*, *Y* and *Z* coordinates.
 
-###Loops and Conditionals
+###Python vs. Code Blocks
 The strength of the python node lies in the ability to use conditionals and loops. A loop is a command to repeat the execution of a block of code. The "for" loop repeats the piece of code for each item in a list, and the "while" loop repeats the code until a defined condition is met. You can also create nested loops to iterate through a list of lists.
 
 An "if" statement tells python to execute a piece of code if a defined condition is met. Multiple conditions can be defined using "elif." Code to execute if none of the conditions are met can be specified using "else".
 
-###Python vs. Code Blocks
-
-
-
+Code blocks have limited looping and conditional functionality.
 
 ###Exercise
 
