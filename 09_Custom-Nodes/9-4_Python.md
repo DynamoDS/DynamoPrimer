@@ -95,7 +95,7 @@ xDist = bbox.MaxPoint.X-bbox.MinPoint.X
 
 Since we will be both translating and rotating the solid modules, let’s use the Geometry.Transform operation. By looking at the Geometry.Transform node, we know that we will need a source coordinate system and a target coordinate system to transform the solid. The source is the context coordinate system of our solid, while the target will be a different coordinate system for each arrayed module. That means we will have to loop through the x and y values to transform the coordinate system differently each time. 
 
-![](images/9-4/Exercise/Python/python08.png)
+![](images/9-4/Exercise/Python/python15.png)
 > A look at the Python node in Dynamo. The commented code is below.
 
 ```
