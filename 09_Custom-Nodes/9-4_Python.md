@@ -10,7 +10,7 @@ Python is a powerful tool that can extend the capabilities of Dynamo. The Python
 
 The Autodesk.DesignScript.Geometry library allows you to use dot notation similar to Code Blocks. For more information on Dynamo syntax, refer to chapter 7.2 as well as the [Dynamo Language Guide](http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf). Typing a geometry type such as 'Point.' will bring up a list of methods for creating and querying points.
 
-[image]
+![](images/9-4/Exercise/Python/python14.png)
 
 > Methods include constructors such as *ByCoordinates*, actions like *Add*, and queries like *X*, *Y* and *Z* coordinates.
 
@@ -48,15 +48,12 @@ Now that we have our top and bottom surfaces, let’s loft between the two profi
 3.	**List.Create:** Connect the top, side, and bottom surfaces to the index inputs to create a list of surfaces
 4.	**Solid.ByJoinedSurfaces:** Join the surfaces to create the solid module
 
-Now that we have our solid, let’s drop a Python Script node onto the canvas. Double click the node to open the python editor.
-
-![](images/9-4/Exercise/Python/python04.png)
-> The default content of the script editor imports the Autodesk.DesignScript.Geometry library, and defines the input (IN) and output (OUT) of the node. Note that the node can accept multiple inputs that will be stored as a list, while only one output can be specified.
+Now that we have our solid, let’s drop a Python Script node onto the canvas. 
 
 ![](images/9-4/Exercise/Python/python05.png)
 > To add additional inputs to the node, close the editor and click the + icon on the node. The inputs are named IN[0], IN[1], etc. to indicate that they represent items in a list.
 
-Let’s start by defining our inputs and output. 
+Let’s start by defining our inputs and output. Double click the node to open the python editor.
 
 ![](images/9-4/Exercise/Python/python06.png)
 ```
