@@ -51,7 +51,7 @@
    * [Python and Revit](09_Custom-Nodes/9-5_Python-Revit.md)
 * [Packages](10_Packages/10-Packages.md)
    * [Package Introduction](10_Packages/10-1_Introduction.md)
-   * [Mesh Toolkit](10_Packages/10-2_Mesh-Toolkit.md)
+   * [Package Case Study - Mesh Toolkit](10_Packages/10-2_Mesh-Toolkit.md)
    * [Developing a Package](10_Packages/10-3_Developing.md)
    * [Publishing a Package](10_Packages/10-4_Publishing.md)
    * [Zero-Touch](10_Packages/10-5_Zero-Touch.md)
