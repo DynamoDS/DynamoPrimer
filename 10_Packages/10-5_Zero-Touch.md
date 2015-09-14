@@ -1,6 +1,6 @@
 ## What is Zero-Touch?
 
-https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development
+This section demonstrates how to use Zero-Touch to import a third party library.  For information on developing your own Zero-Touch Library, reference the [Dynamo wiki page](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development).
 
 ### Case Study - Importing AForge
 
