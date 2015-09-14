@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<style>
+img{width:100%}
+</style>
+>>>>>>> V0.3
 
 ##Python
 <<<<<<< HEAD
