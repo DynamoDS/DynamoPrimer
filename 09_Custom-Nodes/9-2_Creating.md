@@ -1,3 +1,7 @@
+<style>
+img{width:100%}
+</style>
+
 ## Creating a Custom Node
 Copy
 
