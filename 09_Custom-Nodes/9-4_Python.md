@@ -1,6 +1,3 @@
-<style>
-img{width:100%}
-</style>
 
 ##Python
 ###Python
