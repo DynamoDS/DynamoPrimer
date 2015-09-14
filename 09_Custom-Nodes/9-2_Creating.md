@@ -1,5 +1,12 @@
+<style>
+img{width:100%}
+</style>
+
 ## Creating a Custom Node
 Copy
+
+https://github.com/DynamoDS/Dynamo/wiki/How-To-Create-Your-Own-Nodes
+
 ### Creating a Custom Node from an Existing Graph
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
 [UVmapping_Custom-Node.dyn](datasets/9-2/UVmapping_Custom-Node.dyn)

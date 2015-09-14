@@ -1,9 +1,32 @@
-## What is Zero-Touch?
+<style>
+img{width:100%}
+</style>
 
+## What is Zero-Touch?
+Zero-Touch Importing refers to a simple point-and-click method for importing external libraries.  With Zero-Touch, Dynamo will read the public methods of a *.dll* file and convert them to Dynamo nodes. Using this process, a user can import a library which was not necessarily developed for Dynamo and create a host of new nodes.  This opens up a lot of doors for extending your visual programming environment. Granted, there are some limitations (with respect to private and abstract classes in a .dll), the current Zero-Touch functionality demonstrates the cross-platform mentality of the Dynamo Project.
+
+This section demonstrates how to use Zero-Touch to import a third party library.  For information on developing your own Zero-Touch Library, reference the [Dynamo wiki page](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development).
 
 ### Case Study - Importing AForge
+In this case study, we'll show how to import the [AForge](http://www.aforgenet.com/) external *.dll* library.  AForge is a robust library which offers a range of functionality from image processing to artificial intelligence.  We'll reference the imaging class in AForge to do a few image processing exercise below.
+
+>Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Zero-Touch-Examples.zip](datasets/10-5/Zero-Touch-Examples.zip)
+
+![Exercise](images/10-5/aforge.png)
+> 1. Let's beging by downloading AForge. On the [AForge download page](http://www.aforgenet.com/framework/downloads.html), select *[Download Installer]* and install after download has completed. 
+
+![Exercise](images/10-5/import.png)
+>1. In Dynamo, create a new file and select *File > Import Library...*
+
+![Exercise](images/10-5/folder.png)
+>1. In the pop-up window, navigate to the release folder in your Dynamo install. This will likely be in a folder similar to this one: *C:\Program Files (x86)\AForge.NET\Framework\Release*.
+2. **AForge.Imaging.dll:** We only want to use this one file from the AForge library for this case study. Select this *.dll* and hit *"Open".*
+
+![Exercise](images/10-5/library.png)
+>1. Back in Dynamo, you should see an *"AForge" *group of nodes added to your Library Toolbar.  We now have access to the AForge imaging library from our visual program!
 
 ### Exercise 1 - Edge Detection
+Now that the library's imported, we'll start off simple with this first exercise.  We'll do some basic image processing on a sample image to show how AForge image filters.  We'll use the *"Watch Image"* node to show our results and apply filters in Dynamo similar to those in Photoshop 
 
 ![Exercise](images/10-5/Exercise/AForge- 23.png)
 > First, we want to import an image to work with. Add a *File Path* node to the canvas and select "soapbubbles.jpg" from the Exercise folder (photo cred: [flickr](https://www.flickr.com/photos/wwworks/667298782)).
@@ -34,12 +57,13 @@
 > Zooming in, the edge detector has called out the outlines of the bubbles with pixels.  The AForge library has tools to take results like this and create Dynamo geometry. We'll explore that in the next exercise.
 
 ### Exercise 2 - Rectangle Creation
+Now that we're introduced to some basic image processing, let's use an image to drive Dynamo geometry! On an elementary level, in this exercise we're aiming to do a *"Live Trace"* of an image using AForge and Dynamo.  We're going to keep it simple and extract rectangles from a reference image, but there are tools available in AForge for more complex operations.
 
 ![Exercise](images/10-5/Exercise/AForge- 15.png)
 > 1. With the File Path node, navigate to grid.jpg in the exercise folder.
 2. Connect the remaining series of nodes above to reveal a course parametric grid.
 
-In this next step, we want to reference the white squares in the image and conver them to actual Dynamo geometry. AForge has a lot of powerful Computer Vision tools, and here we're going to use a particularly important one for the library called [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
+In this next step, we want to reference the white squares in the image and convert them to actual Dynamo geometry. AForge has a lot of powerful Computer Vision tools, and here we're going to use a particularly important one for the library called [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
 
 ![Exercise](images/10-5/Exercise/AForge- 14.png)
 > 1. After adding a BlobCounter to the canvas, we need a way to process the image (similar to the IFilter tool in the previous exercise). Unfortunately the "Process Image" node is the not immediately visible in the Dynamo library.  This is because the function may not be visible in the AForge source code.  In order to fix this, we'll need to find a work-around.
@@ -122,7 +146,7 @@ for rec in rectangles:
 ![Exercise](images/10-5/Exercise/AForge- 00.png)
 > 1. Last, change the both_sides input to false and we get an extrusion in one direction.  Dip this baby in resin and you've got yourself one super nerdy table.
 
-This is a basic example, but the concepts outlined here are transferrable to exciting real-world applications.  Computer vision can be used for a whole host of processes. To name a few: barcode readers, perspective matching, [projection mapping](https://www.youtube.com/watch?v=XSR0Xady02o), and [augmented reality](http://aforgenet.com/aforge/articles/gratf_ar/). For more advanced topics with AForge related to this exercise, have a read-through [this article](http://aforgenet.com/articles/shape_checker/).
+These are basic examples, but the concepts outlined here are transferable to exciting real-world applications.  Computer vision can be used for a whole host of processes. To name a few: barcode readers, perspective matching, [projection mapping](https://www.youtube.com/watch?v=XSR0Xady02o), and [augmented reality](http://aforgenet.com/aforge/articles/gratf_ar/). For more advanced topics with AForge related to this exercise, have a read-through [this article](http://aforgenet.com/articles/shape_checker/).
 
 
 

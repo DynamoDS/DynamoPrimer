@@ -1,3 +1,7 @@
+<style>
+img{width:100%}
+</style>
+
 ## Custom Nodes
 Dynamo has a large assortment of core nodes that you can rely on to build pretty much any graph you need, but sometimes a quicker, more elegant, and more easily shared solution is to build your own nodes. These can be reused among different projects, they make your program clearer and cleaner, and they can be pushed to the package manager and shared.
 
@@ -7,7 +11,7 @@ Custom Nodes are constructed by nesting other nodes and custom nodes inside of a
 ###Adapting to Change
 ###Worksharing
 
-### Creating Custom Nodes
+### Custom Node Environment
 
 ![Custom Nodes Intro](images/9-1/CustomNodes01.png)
 
