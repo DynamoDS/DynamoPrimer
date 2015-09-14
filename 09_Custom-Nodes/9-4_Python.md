@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-=======
 <style>
 img{width:100%}
 </style>
->>>>>>> V0.3
 
 ##Python
-<<<<<<< HEAD
-=======
 
->>>>>>> V0.3
 Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C++. Python supports modules and packages, and can be embedded into existing applications.
 ###The Python Node
 Like code blocks, python nodes are a scripting interface within a visual programming environment.
