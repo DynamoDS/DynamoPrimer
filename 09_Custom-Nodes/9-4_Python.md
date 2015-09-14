@@ -1,6 +1,5 @@
 
 ##Python
-###Python
 Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C++. Python supports modules and packages, and can be embedded into existing applications.
 ###The Python Node
 Python is a powerful tool that can extend the capabilities of Dynamo. The Python node can be found under Core > Scripting in the library. Double clicking the node opens the python script editor.
