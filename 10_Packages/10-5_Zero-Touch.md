@@ -63,7 +63,7 @@ Now that we're introduced to some basic image processing, let's use an image to 
 > 1. With the File Path node, navigate to grid.jpg in the exercise folder.
 2. Connect the remaining series of nodes above to reveal a course parametric grid.
 
-In this next step, we want to reference the white squares in the image and conver them to actual Dynamo geometry. AForge has a lot of powerful Computer Vision tools, and here we're going to use a particularly important one for the library called [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
+In this next step, we want to reference the white squares in the image and convert them to actual Dynamo geometry. AForge has a lot of powerful Computer Vision tools, and here we're going to use a particularly important one for the library called [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
 
 ![Exercise](images/10-5/Exercise/AForge- 14.png)
 > 1. After adding a BlobCounter to the canvas, we need a way to process the image (similar to the IFilter tool in the previous exercise). Unfortunately the "Process Image" node is the not immediately visible in the Dynamo library.  This is because the function may not be visible in the AForge source code.  In order to fix this, we'll need to find a work-around.
@@ -146,7 +146,7 @@ for rec in rectangles:
 ![Exercise](images/10-5/Exercise/AForge- 00.png)
 > 1. Last, change the both_sides input to false and we get an extrusion in one direction.  Dip this baby in resin and you've got yourself one super nerdy table.
 
-This is a basic example, but the concepts outlined here are transferrable to exciting real-world applications.  Computer vision can be used for a whole host of processes. To name a few: barcode readers, perspective matching, [projection mapping](https://www.youtube.com/watch?v=XSR0Xady02o), and [augmented reality](http://aforgenet.com/aforge/articles/gratf_ar/). For more advanced topics with AForge related to this exercise, have a read-through [this article](http://aforgenet.com/articles/shape_checker/).
+These are basic examples, but the concepts outlined here are transferable to exciting real-world applications.  Computer vision can be used for a whole host of processes. To name a few: barcode readers, perspective matching, [projection mapping](https://www.youtube.com/watch?v=XSR0Xady02o), and [augmented reality](http://aforgenet.com/aforge/articles/gratf_ar/). For more advanced topics with AForge related to this exercise, have a read-through [this article](http://aforgenet.com/articles/shape_checker/).
 
 
 
