@@ -3,7 +3,7 @@ img{width:100%}
 </style>
 
 ##Python
-
+![](images/9-4/pythonlogo.png)
 Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C++. Python supports modules and packages, and can be embedded into existing applications.
 ###The Python Node
 Like code blocks, python nodes are a scripting interface within a visual programming environment.
