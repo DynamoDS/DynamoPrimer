@@ -1,3 +1,9 @@
+<style>
+td {background-color:#F9F9F9; vertical-align:top}
+td img{width:50px;}
+thead {display: none}
+</style>
+
 ## Shorthand
 There are a few basic shorthand methods in the code block which, simply put, make data management *a lot* easier.  We'll break down the basics below and discuss how this shorthand can be used both for creating and querying data.
 
