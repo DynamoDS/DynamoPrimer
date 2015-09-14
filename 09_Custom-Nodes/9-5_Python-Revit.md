@@ -1,3 +1,7 @@
+<style>
+img{width:100%}
+</style>
+
 ##Python and Revit
 ###Platform Specific APIs
 ### Exercise 01
