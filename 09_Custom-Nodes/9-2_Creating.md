@@ -3,15 +3,13 @@ img{width:100%}
 </style>
 
 ## Creating a Custom Node
-Copy
-
-https://github.com/DynamoDS/Dynamo/wiki/How-To-Create-Your-Own-Nodes
+Dynamo offers several different methods for creating custom nodes. You can build custom nodes from scratch, from an existing graph, or explicitly in c#. In this section we will cover building a custom node in the Dynamo UI, from an existing graph. This method is ideal for cleaning up the canvas, as well as packaging a sequence of nodes to reuse elsewhere.
 
 ### Creating a Custom Node from an Existing Graph
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
 [UVmapping_Custom-Node.dyn](datasets/9-2/UVmapping_Custom-Node.dyn)
 
-Let’s start by creating a graph that we want to nest into a Custom Node. In this example, we will create a program that maps polygons from a base surface to a target surface, using UV coordinates.  For more information on surfaces and UV space, see chapter 5.5.
+Let’s start by creating a graph that we want to nest into a custom node. In this example, we will create a program that maps polygons from a base surface to a target surface, using UV coordinates.  For more information on surfaces and UV space, see chapter 5.5.
 
 ![Exercise](images/9-2/UVmapping01.png)
 > 1. **Code Block:** Create a range of 10 numbers between 45 and negative 45 using a code block
