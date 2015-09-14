@@ -4,10 +4,23 @@ Zero-Touch Importing refers to a simple point-and-click method for importing ext
 This section demonstrates how to use Zero-Touch to import a third party library.  For information on developing your own Zero-Touch Library, reference the [Dynamo wiki page](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development).
 
 ### Case Study - Importing AForge
-In this case study, we'll show how to import the AForge external *.dll* library.  AForge is a robust library which offers a range of functionality from image processing to artificial intelligence.  We'll reference the imaging class in AForge to do a few image processing exercise below.
+In this case study, we'll show how to import the [AForge](http://www.aforgenet.com/) external *.dll* library.  AForge is a robust library which offers a range of functionality from image processing to artificial intelligence.  We'll reference the imaging class in AForge to do a few image processing exercise below.
 
+![Exercise](images/10-5/dl.png)
+> 1. Let's beging by downloading AForge. On the [AForge download page](http://www.aforgenet.com/framework/downloads.html), select *[Download Installer]* and install after download has completed. 
+
+![Exercise](images/10-5/import.png)
+>1. In Dynamo, create a new file and select *File > Import Library...*
+
+![Exercise](images/10-5/folder.png)
+>1. In the pop-up window, navigate to the release folder in your Dynamo install. This will likely be in a folder similar to this one: *C:\Program Files (x86)\AForge.NET\Framework\Release*.
+2. **AForge.Imaging.dll:** We only want to use this one file from the AForge library for this case study. Select this *.dll* and hit *"Open".
+*
+![Exercise](images/10-5/library.png)
+>1. Back in Dynamo, you should see an *"AForge" *group of nodes added to your Library Toolbar.  We now have access to the AForge imaging library from our visual program!
 
 ### Exercise 1 - Edge Detection
+Let's start off simple with this first exercise.  We'll do some basic image processing on a sample image to show how AForge image filters.
 
 ![Exercise](images/10-5/Exercise/AForge- 23.png)
 > First, we want to import an image to work with. Add a *File Path* node to the canvas and select "soapbubbles.jpg" from the Exercise folder (photo cred: [flickr](https://www.flickr.com/photos/wwworks/667298782)).
