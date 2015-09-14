@@ -1,3 +1,7 @@
+<style>
+img{width:100%}
+</style>
+
 ##Package Case Study – Mesh Toolkit
 
 https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit
