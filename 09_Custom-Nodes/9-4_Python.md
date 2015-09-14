@@ -1,12 +1,16 @@
 <style>
 img{width:100%}
 </style>
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/SJ
 ##Python
-###Python
+
 Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C++. Python supports modules and packages, and can be embedded into existing applications.
 ###The Python Node
-Python is a powerful tool that can extend the capabilities of Dynamo. The Python node can be found under Core > Scripting in the library. Double clicking the node opens the python script editor.
+Like code blocks, python nodes are a scripting interface within a visual programming environment.
+Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. The Python node can be found under *Core>Scripting* in the library. Double clicking the node opens the python script editor.
 
 ![Script Editor](images/9-4/Exercise/Python/python04.png)
 
@@ -99,7 +103,7 @@ xDist = bbox.MaxPoint.X-bbox.MinPoint.X
 
 Since we will be both translating and rotating the solid modules, let’s use the Geometry.Transform operation. By looking at the Geometry.Transform node, we know that we will need a source coordinate system and a target coordinate system to transform the solid. The source is the context coordinate system of our solid, while the target will be a different coordinate system for each arrayed module. That means we will have to loop through the x and y values to transform the coordinate system differently each time. 
 
-![](images/9-4/Exercise/Python/python08.png)
+![](images/9-4/Exercise/Python/python15.png)
 > A look at the Python node in Dynamo. The commented code is below.
 
 ```
