@@ -7,7 +7,7 @@ Custom Nodes are constructed by nesting other nodes and custom nodes inside of a
 ###Adapting to Change
 ###Worksharing
 
-### Creating Custom Nodes
+### Custom Node Environment
 
 ![Custom Nodes Intro](images/9-1/CustomNodes01.png)
 
