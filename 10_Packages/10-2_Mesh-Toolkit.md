@@ -4,11 +4,12 @@ img{width:100%}
 
 ##Package Case Study – Mesh Toolkit
 
-https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit
-
 The Dynamo Mesh Toolkit provides tools to import meshes from external file formats, create a mesh from Dynamo geometry objects, and manually build meshes by their vertices and indices. The library also provides tools to modify meshes, repair meshes, or extract horizontal slices for use in fabrication.
 
 The Dynamo Mesh Toolkit is part of Autodesk's ongoing mesh research, and as such will continue to grow over the coming years. Expect new methods to appear on the toolkit frequently, and feel free to reach out to the Dynamo team with comments, bugs, and suggestions for new features.
+
+###Why Meshes?
+The exercise below demonstrates some basic mesh operations using the Mesh Toolkit.  In the exercise, we intersect a mesh with a series of planes, which can be computationally expensive using solids.  Since a mesh has a set resolution, we can change its resolution based on the task at hand.  For more details on mesh to solid relationships, you can reference the[ Geometry For Computation Design](../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.md) chapter in this primer.  For more information on Mesh Toolkit, you can reference the [Dynamo Wiki page.](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)
 
 
 ### Exercise
