@@ -34,12 +34,13 @@
 > Zooming in, the edge detector has called out the outlines of the bubbles with pixels.  The AForge library has tools to take results like this and create Dynamo geometry. We'll explore that in the next exercise.
 
 ### Exercise 2 - Rectangle Creation
+Now that we're introduced to some basic image processing, let's use an image to drive Dynamo geometry! On an elementary level, in this exercise we're aiming to do a *"Live Trace"* of an image using AForge and Dynamo.  We're going to keep it simple and extract rectangles from a reference image, but there are tools available in AForge to do significantly more complex operations.
 
 ![Exercise](images/10-5/Exercise/AForge- 15.png)
 > 1. With the File Path node, navigate to grid.jpg in the exercise folder.
 2. Connect the remaining series of nodes above to reveal a course parametric grid.
 
-In this next step, we want to reference the white squares in the image and conver them to actual Dynamo geometry. AForge has a lot of powerful Computer Vision tools, and here we're going to use a particularly important one for the library called [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
+In this next step, we want to reference the white squares in the image and convert them to actual Dynamo geometry. AForge has a lot of powerful Computer Vision tools, and here we're going to use a particularly important one for the library called [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
 
 ![Exercise](images/10-5/Exercise/AForge- 14.png)
 > 1. After adding a BlobCounter to the canvas, we need a way to process the image (similar to the IFilter tool in the previous exercise). Unfortunately the "Process Image" node is the not immediately visible in the Dynamo library.  This is because the function may not be visible in the AForge source code.  In order to fix this, we'll need to find a work-around.
