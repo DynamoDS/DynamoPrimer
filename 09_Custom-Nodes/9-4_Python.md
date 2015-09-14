@@ -1,3 +1,7 @@
+<style>
+img{width:100%}
+</style>
+
 ##Python
 ###Loops
 ###Compare to DS (See http://dynamobim.com/math-transit/) 
