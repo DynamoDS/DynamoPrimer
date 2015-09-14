@@ -1,10 +1,7 @@
 <style>
 img{width:100%}
 </style>
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/SJ
 ##Python
 
 Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C++. Python supports modules and packages, and can be embedded into existing applications.
