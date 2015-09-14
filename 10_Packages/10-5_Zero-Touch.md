@@ -34,7 +34,7 @@
 > Zooming in, the edge detector has called out the outlines of the bubbles with pixels.  The AForge library has tools to take results like this and create Dynamo geometry. We'll explore that in the next exercise.
 
 ### Exercise 2 - Rectangle Creation
-Now that we're introduced to some basic image processing, let's use an image to drive Dynamo geometry! On an elementary level, in this exercise we're aiming to do a *"Live Trace"* of an image using AForge and Dynamo.  We're going to keep it simple and extract rectangles from a reference image, but there are tools available in AForge to do significantly more complex operations.
+Now that we're introduced to some basic image processing, let's use an image to drive Dynamo geometry! On an elementary level, in this exercise we're aiming to do a *"Live Trace"* of an image using AForge and Dynamo.  We're going to keep it simple and extract rectangles from a reference image, but there are tools available in AForge for more complex operations.
 
 ![Exercise](images/10-5/Exercise/AForge- 15.png)
 > 1. With the File Path node, navigate to grid.jpg in the exercise folder.
