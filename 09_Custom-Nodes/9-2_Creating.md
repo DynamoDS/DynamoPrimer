@@ -6,6 +6,8 @@ img{width:100%}
 Dynamo offers several different methods for creating custom nodes. You can build custom nodes from scratch, from an existing graph, or explicitly in c#. In this section we will cover building a custom node in the Dynamo UI, from an existing graph. This method is ideal for cleaning up the canvas, as well as packaging a sequence of nodes to reuse elsewhere.
 
 ### Creating a Custom Node from an Existing Graph
+This example demonstrates a basic method for creating custom nodes from the UI. For a more detailed look into they many alternative ways to create a custom node, you can reference the [custom node page](https://github.com/DynamoDS/Dynamo/wiki/How-To-Create-Your-Own-Nodes) on the Dynamo wiki.
+
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
 [UVmapping_Custom-Node.dyn](datasets/9-2/UVmapping_Custom-Node.dyn)
 
