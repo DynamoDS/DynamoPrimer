@@ -15,23 +15,29 @@ Using this process, you can import a library which was not necessarily developed
 This section demonstrates how to use Zero-Touch to import a third party library.  For information on developing your own Zero-Touch Library, reference the [Dynamo wiki page](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development).
 
 ###Zero-Touch Packages
-Zero-touch packages are a good complement to user-defined custom nodes.  A few packages which use C# libraries are listed in the table below
+Zero-touch packages are a good complement to user-defined custom nodes.  A few packages which use C# libraries are listed in the table below. For more detailed information on packages, visit the section in the Packages section in the Appendix.
 
 <table>
     <tr>
-    <td width="10%">Logo/Image</td>
-    <td width="55%">Name</td>
-    <td>Link</td>
+    <td width="50%">Logo/Image</td>
+    <td width="50%">Name</td>
+
   </tr>
   <tr>
-    <td width="10%">![IMAGE](images/A-4/logo01.png)</td>
-    <td width="55%">**CLOCKWORK FOR DYNAMO**</td>
-    <td>[Visit the Clockwork For Dynamo GitHub](https://github.com/CAAD-RWTH/ClockworkForDynamo)</td>
+    <td width="50%">![IMAGE](images/10-5/toolkit.png)</td>
+    <td width="50%">[**Mesh Toolkit**](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)</td>
   </tr>
   <tr>
-    <td width="10%">![IMAGE](images/A-4/logo02.png)</td>
-    <td width="55%">**BUMBLEBEE FOR DYNAMO**</td>
-    <td>[Visit the Official BumbleBee Site](http://archi-lab.net/bumblebee-dynamo-and-excel-interop/)</td>
+    <td width="50%">![IMAGE](images/10-5/unfold.png)</td>
+    <td width="50%">[**Dynamo Unfold**](http://dynamobim.com/dynamounfold/)</td>
+  </tr>
+  <tr>
+    <td width="50%">![IMAGE](images/10-5/rhynamo.png)</td>
+    <td width="50%">[**Rhynamo**](http://www.case-inc.com/blog/what-is-rhynamo)</td>
+  </tr>
+  <tr>
+    <td width="50%">![IMAGE](images/10-5/optimo.png)</td>
+    <td width="50%">[**Optimo**](https://github.com/BPOpt/Optimo)</td>
   </tr>
 </table>
 
