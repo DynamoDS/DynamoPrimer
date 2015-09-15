@@ -10,12 +10,12 @@ Zero-Touch Importing refers to a simple point-and-click method for importing C# 
 
 ![](images/10-5/annotate.jpg)
 
-Using this process, you can import a library which was not necessarily developed for Dynamo and create a host of new nodes. The current Zero-Touch functionality demonstrates the cross-platform mentality of the Dynamo Project. And while there are some limitations (with respect to private and abstract classes in a .dll), you can import external C# libraries that were not necessarily developed with Dynamo in mind (more on that below
+Using this process, you can import a library which was not necessarily developed for Dynamo and create a host of new nodes. The current Zero-Touch functionality demonstrates the cross-platform mentality of the Dynamo Project. And while there are some limitations (with respect to private and abstract classes in a .dll), you can import external C# libraries that were not necessarily developed with Dynamo in mind (more on that below).
 
 This section demonstrates how to use Zero-Touch to import a third party library.  For information on developing your own Zero-Touch Library, reference the [Dynamo wiki page](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development).
 
 ###Zero-Touch Packages
-There are some guidelines 
+Zero-touch packages are a good complement to user-defined custom nodes.  A few packages which use C# libraries are listed in the table below
 
 <table>
     <tr>
