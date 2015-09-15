@@ -1,5 +1,5 @@
 <style>
-table{box-shadow: 2px 2px 2px #BBBBBB;max-width:70%;display:block;margin-left: auto;   margin-right: auto }
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:100%;display:block;margin-left: auto;   margin-right: auto }
 thead {display: none}
 img{display:block;margin-left: auto;   margin-right: auto }
 </style>
