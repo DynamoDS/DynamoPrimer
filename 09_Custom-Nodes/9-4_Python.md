@@ -1,47 +1,13 @@
 <style>
-img{display:block;margin-left: auto;   margin-right: auto }
+img{width:100%}
 </style>
 
 ##Python
 ![](images/9-4/pythonlogo.png)
-Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages. Python supports modules and packages, and can be embedded into existing applications. The examples in this section assume a basic familiarity with python. See the appendix for a list of general python resources.
-
-###Visual vs. Textual Programming
-Why would one use textual programming in Dynamo's visual programming environment? As was already discussed in chapter 1.1, visual programming has many advantages. It allows the user to create programs without learning special syntax, in an intuitive visual interface. However, a visual program can become cluttered. Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. 
-
-**Visual Program:**
-![](images/9-4/python-nodes.png)
-
-**Textual Program:**
-```
-import clr
-clr.AddReference('ProtoGeometry')
-from Autodesk.DesignScript.Geometry import *
-
-solid = IN[0]
-seed = IN[1]
-xCount = IN[2]
-yCount = IN[3]
-
-solids = []
-
-yDist = solid.BoundingBox.MaxPoint.Y-solid.BoundingBox.MinPoint.Y
-xDist = solid.BoundingBox.MaxPoint.X-solid.BoundingBox.MinPoint.X
-
-for i in xRange:
-	for j in yRange:
-		fromCoord = solid.ContextCoordinateSystem
-		toCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i+j%val)))
-		vec = Vector.ByCoordinates((xDist*i),(yDist*j),0)
-		toCoord = toCoord.Translate(vec)
-		solids.append(solid.Transform(fromCoord,toCoord))
-
-OUT = solids
-```
-
+Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C++. Python supports modules and packages, and can be embedded into existing applications.
 ###The Python Node
 Like code blocks, python nodes are a scripting interface within a visual programming environment.
-The Python node can be found under *Core>Scripting* in the library. Double clicking the node opens the python script editor.
+Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. The Python node can be found under *Core>Scripting* in the library. Double clicking the node opens the python script editor.
 
 ![Script Editor](images/9-4/Exercise/Python/python04.png)
 
@@ -53,6 +19,12 @@ The Autodesk.DesignScript.Geometry library allows you to use dot notation simila
 
 > Methods include constructors such as *ByCoordinates*, actions like *Add*, and queries like *X*, *Y* and *Z* coordinates.
 
+###Python vs. Code Blocks
+The strength of the python node lies in the ability to use conditionals and loops. A loop is a command to repeat the execution of a block of code. The "for" loop repeats the piece of code for each item in a list, and the "while" loop repeats the code until a defined condition is met. You can also create nested loops to iterate through a list of lists.
+
+An "if" statement tells python to execute a piece of code if a defined condition is met. Multiple conditions can be defined using "elif." Code to execute if none of the conditions are met can be specified using "else".
+
+Code blocks have limited looping and conditional functionality.
 
 ###Exercise
 
@@ -90,10 +62,6 @@ Let’s start by defining our inputs and output. Double click the node to open t
 
 ![](images/9-4/Exercise/Python/python06.png)
 ```
-import clr
-clr.AddReference('ProtoGeometry')
-from Autodesk.DesignScript.Geometry import *
-
 #The solid module to be arrayed
 solid = IN[0]
 #A number that determines which rotation pattern to use
@@ -115,18 +83,6 @@ Next we need to think about what information is required in order to array our s
 > A look at the Python node in Dynamo. The commented code is below.
 
 ```
-import clr
-clr.AddReference('ProtoGeometry')
-from Autodesk.DesignScript.Geometry import *
-
-#Inputs
-solid = IN[0]
-seed = IN[1]
-xCount = IN[2]
-yCount = IN[3]
-
-#Create an empty list for the arrayed solids
-solids = []
 # Create an empty list for the edge curves
 crvs = []
 
@@ -140,9 +96,6 @@ bbox = BoundingBox.ByGeometry(crvs)
 #Get the X and Y translation distance based on the bounding box
 yDist = bbox.MaxPoint.Y-bbox.MinPoint.Y
 xDist = bbox.MaxPoint.X-bbox.MinPoint.X
-
-#Assign your output to the OUT variable.
-OUT = solids
 ```
 
 Since we will be both translating and rotating the solid modules, let’s use the Geometry.Transform operation. By looking at the Geometry.Transform node, we know that we will need a source coordinate system and a target coordinate system to transform the solid. The source is the context coordinate system of our solid, while the target will be a different coordinate system for each arrayed module. That means we will have to loop through the x and y values to transform the coordinate system differently each time. 
@@ -151,32 +104,6 @@ Since we will be both translating and rotating the solid modules, let’s use th
 > A look at the Python node in Dynamo. The commented code is below.
 
 ```
-import clr
-clr.AddReference('ProtoGeometry')
-from Autodesk.DesignScript.Geometry import *
-
-#Inputs
-solid = IN[0]
-seed = IN[1]
-xCount = IN[2]
-yCount = IN[3]
-
-#Create an empty list for the arrayed solids
-solids = []
-# Create an empty list for the edge curves
-crvs = []
-
-#Loop through edges and append corresponding curve geometry to the list
-for edge in solid.Edges:
-	crvs.append(edge.CurveGeometry)
-	
-#Get the bounding box of the curves
-bbox = BoundingBox.ByGeometry(crvs)
-
-#Get the X and Y translation distance based on the bounding box
-yDist = bbox.MaxPoint.Y-bbox.MinPoint.Y
-xDist = bbox.MaxPoint.X-bbox.MinPoint.X
-
 #get the source coordinate system
 fromCoord = solid.ContextCoordinateSystem
  
@@ -189,7 +116,6 @@ for i in range(xCount):
 		toCoord = toCoord.Translate(vec)
 		#Transform the solid from the source coord system to the target coord system and append to the list
 		solids.append(solid.Transform(fromCoord,toCoord))
-	
 ```
 
 ![](images/9-4/Exercise/Python/python09.png)

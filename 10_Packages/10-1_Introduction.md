@@ -1,5 +1,5 @@
 <style>
-img{width:100%}
+img{display:block;margin-left: auto;margin-right: auto }
 </style>
 
 ##Packages
