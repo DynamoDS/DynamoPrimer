@@ -1,3 +1,19 @@
+
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB}
+thead {display: none}
+</style>
+
+##Dynamo Packages
+
+<table>
+  <tr>
+    <td width="32%">Basic Numbers</td>
+    <td width="34%">![IMAGE](images/A-4/logo01.png)</td>
+    <td width="34%">**CLOCKWORK FOR DYNAMO**</td>
+  </tr>
+</table>
+
 ## Shorthand
 There are a few basic shorthand methods in the code block which, simply put, make data management *a lot* easier.  We'll break down the basics below and discuss how this shorthand can be used both for creating and querying data.
 
