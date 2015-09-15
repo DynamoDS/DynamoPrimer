@@ -7,9 +7,12 @@ img{display:block;margin-left: auto;   margin-right: auto }
 Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C. Python supports modules and packages, and can be embedded into existing applications. The examples in this section assume a basic familiarity with python. See the appendix for a list of general python resources.
 
 ###Visual vs. Textual Programming
-Why would one use textual programming in Dynamo's visual programming environment? As was already discussed in chapter 1.1, visual programming has many advantages. It allows the user to create programs without learning special syntax, in an intuitive visual interface. However, a visual program can become cluttered. Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. Below is a Dynamo graph, followed by the python code that replaces it.
+Why would one use textual programming in Dynamo's visual programming environment? As was already discussed in chapter 1.1, visual programming has many advantages. It allows the user to create programs without learning special syntax, in an intuitive visual interface. However, a visual program can become cluttered. Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. 
+
+**Visual Program:**
 ![](images/9-4/python-nodes.png)
 
+**Textual Program:**
 ```
 import clr
 clr.AddReference('ProtoGeometry')
