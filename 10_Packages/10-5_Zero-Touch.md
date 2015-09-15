@@ -1,11 +1,50 @@
 <style>
-img{width:100%}
+table{box-shadow: 2px 2px 2px #BBBBBB}
+thead {display: none}
+img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
 ## What is Zero-Touch?
-Zero-Touch Importing refers to a simple point-and-click method for importing external libraries.  With Zero-Touch, Dynamo will read the public methods of a *.dll* file and convert them to Dynamo nodes. Using this process, a user can import a library which was not necessarily developed for Dynamo and create a host of new nodes.  This opens up a lot of doors for extending your visual programming environment. Granted, there are some limitations (with respect to private and abstract classes in a .dll), the current Zero-Touch functionality demonstrates the cross-platform mentality of the Dynamo Project.
+
+Zero-Touch Importing refers to a simple point-and-click method for importing C# libraries.  With Zero-Touch, Dynamo will read the public methods of a *.dll* file and convert them to Dynamo nodes. You can use Zero-Touch to develop your own custom nodes and packages, and to import external libraries into the DYnamo environment.
+
+![](images/10-5/annotate.jpg)
+
+Using this process, you can import a library which was not necessarily developed for Dynamo and create a host of new nodes. The current Zero-Touch functionality demonstrates the cross-platform mentality of the Dynamo Project. And while there are some limitations (with respect to private and abstract classes in a .dll), you can import external C# libraries that were not necessarily developed with Dynamo in mind (more on that below).
 
 This section demonstrates how to use Zero-Touch to import a third party library.  For information on developing your own Zero-Touch Library, reference the [Dynamo wiki page](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development).
+
+###Zero-Touch Packages
+Zero-touch packages are a good complement to user-defined custom nodes.  A few packages which use C# libraries are listed in the table below. For more detailed information on packages, visit the [Packages section ](../Appendix/A-4_temp.md)in the Appendix.
+
+
+<table>
+    <tr>
+    <td width="50%">Logo/Image</td>
+    <td width="50%">Name</td>
+
+  </tr>
+  <tr>
+    <td width="50%">![IMAGE](images/10-5/toolkit.png)</td>
+    <td width="50%">[**Mesh Toolkit**](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)</td>
+  </tr>
+  <tr>
+    <td width="50%">![IMAGE](images/10-5/unfold.png)</td>
+    <td width="50%">[**Dynamo Unfold**](http://dynamobim.com/dynamounfold/)</td>
+  </tr>
+  <tr>
+    <td width="50%">![IMAGE](images/10-5/rhynamo.png)</td>
+    <td width="50%">[**Rhynamo**](http://www.case-inc.com/blog/what-is-rhynamo)</td>
+  </tr>
+  <tr>
+    <td width="50%">![IMAGE](images/10-5/optimo.png)</td>
+    <td width="50%">[**Optimo**](https://github.com/BPOpt/Optimo)</td>
+  </tr>
+</table>
+
+
+
+
 
 ### Case Study - Importing AForge
 In this case study, we'll show how to import the [AForge](http://www.aforgenet.com/) external *.dll* library.  AForge is a robust library which offers a range of functionality from image processing to artificial intelligence.  We'll reference the imaging class in AForge to do a few image processing exercise below.
