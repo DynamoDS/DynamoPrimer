@@ -1,5 +1,5 @@
 <style>
-img{width:100%}
+img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
 ##Publishing a Package
@@ -19,12 +19,14 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 
 ###Publishing a Package Locally
 
+*Note: As of writing this, Dynamo package publication is only enabled in Dynamo Studio or Dynamo for Revit.  Dynamo Sandbox does not have publishing functionality.*
+
 >Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [MapToSurfaceFiles.zip](datasets/10-4/MapToSurfaceFiles.zip)
 
 ![](images/10-4/Publishing/Packages - 08.png)
 > This is the first submission for our package, and we've placed all of the example files and custom nodes into one folder.  With this folder prepared, we're ready to upload to the Dynamo Package Manager.
-1. This folder contains five custom nodes.
-2. This folder also contains four example files to show the user how to work with the custom nodes.
+1. This folder contains five custom nodes (.dyf).
+2. This folder also contains five example files (.dyn) and one imported vector file (.svg). These files will serve as introductory exercises to show the user how to work with the custom nodes.
 
 ![](images/10-4/Publishing/Packages - 07.png)
 > In Dynamo, begin by clicking *Packages>Publish New Package...*
@@ -48,7 +50,7 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 > Notice that the root directory is in the local location of your package (remember, we published the package "locally").  Dynamo is currently referencing this folder to read custom nodes. It's therefore important to locally publish the directory to a permanent folder location (ie: not your desktop). Here is the Dynamo package folder breakdown:
 1. The *bin* folder houses .dll files created with C# or Zero-Touch libraries.  We don't have any for this package so this folder is blank for this example.
 2. The *dyf* folder houses the custom nodes.  Opening this will reveal all of the custom nodes (.dyf files) for this package.
-3. The extra folder houses all additional files.  These files are likely to be Dynamo Files (.dyn) or any additional files required (.xls, .jpeg, .sat, etc.).
+3. The extra folder houses all additional files.  These files are likely to be Dynamo Files (.dyn) or any additional files required (.svg, .xls, .jpeg, .sat, etc.).
 4. The pkg file is a basic text file defining the package settings. This is automated in Dynamo, but can be edited if you want to get into the details.
 
 ###Publishing a Package Online
@@ -58,3 +60,5 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 1. When you're ready to publish, in the "Manage Packages" window, select the button the right of MapToSurface and choose *Publish...*
 2. If you're updating a package that has already been published, choose "Publish Version" and Dynamo will update your package online based on the new files in that package's root directory. Simple as that!
 
+###Publish Version...
+When you update the files in your published package's root folder, you can publish a new version of the package by selecting *"Publish Version..."* in the *Manage Packages* window.  This is a seamless way to make necessary updates to your content and share with the community.  *Publish Version* will only work if you're the maintainer of the package.
