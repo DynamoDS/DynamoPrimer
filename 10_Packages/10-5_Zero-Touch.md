@@ -29,7 +29,7 @@ Zero-touch packages are a good complement to user-defined custom nodes.  A few p
     <td width="50%">[**Mesh Toolkit**](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)</td>
   </tr>
   <tr>
-    <td width="50%">![IMAGE](images/10-5/unfold.png)</td>
+    <td width="50%"><img src="images/10-5/unfold.png"></img></td>
     <td width="50%">[**Dynamo Unfold**](http://dynamobim.com/dynamounfold/)</td>
   </tr>
   <tr>
