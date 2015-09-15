@@ -1,59 +1,24 @@
-
-<style>
-table{box-shadow: 2px 2px 2px #BBBBBB}
-thead {display: none}
-</style>
 ## Shorthand
 There are a few basic shorthand methods in the code block which, simply put, make data management *a lot* easier.  We'll break down the basics below and discuss how this shorthand can be used both for creating and querying data.
 
 
-<table>
-    <tr>
-    <td width="60%">**Data Type**</td>
-    <td width="20%">**Standard Dynamo** </td>
-    <td width="20%">**Code Block Equilvalent**</td>
-  </tr>
-  <tr>
-    <td width="60%"> Numbers</td>
-    <td width="20%">![IMAGE](images/7-3/table/number.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/numberCB.png)</td>
-  </tr>
-  <tr>
-    <td width="60%">Strings</td>
-    <td width="20%">![IMAGE](images/7-3/table/string.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/stringCB.png)</td>
-  </tr>
-  <tr>
-    <td width="60%">Sequences</td>
-    <td width="20%">![IMAGE](images/7-3/table/sequence.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/sequenceCB.png)</td>
-  </tr>
-  <tr>
-    <td width="60%">Ranges</td>
-    <td width="20%">![IMAGE](images/7-3/table/range.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/rangeCB.png)</td>
-  </tr>
-  <tr>
-    <td width="60%">Get Item at Index</td>
-    <td width="20%">![IMAGE](images/7-3/table/getItem.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/getItemCB.png)</td>
-  </tr>
-  <tr>
-    <td width="60%">Create List</td>
-    <td width="20%">![IMAGE](images/7-3/table/list.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/listCB.png)</td>
-  </tr>
-  <tr>
-    <td width="60%">Concatenate Strings</td>
-    <td width="20%">![IMAGE](images/7-3/table/concat.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/concatCB.png)</td>
-  </tr>
-  <tr>
-    <td width="60%">Conditional Statements</td>
-    <td width="20%">![IMAGE](images/7-3/table/if.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/ifCB.png)</td>
-  </tr>
-</table>
+| Node(s) | Code Block Equivalent |
+| -- | -- |
+| ![IMAGE](images/7-3/table/number.png)  |![IMAGE](images/7-3/table/numberCB.png)  |
+|||
+| ![IMAGE](images/7-3/table/string.png)  | ![IMAGE](images/7-3/table/stringCB.png)  |
+|||
+| ![IMAGE](images/7-3/table/sequence.png)|![IMAGE](images/7-3/table/sequenceCB.png) |
+|||
+| ![IMAGE](images/7-3/table/range.png)|![IMAGE](images/7-3/table/rangeCB.png) |
+|||
+| ![IMAGE](images/7-3/table/getItem.png)  | ![IMAGE](images/7-3/table/getItemCB.png)  |
+|||
+| ![IMAGE](images/7-3/table/list.png)  | ![IMAGE](images/7-3/table/listCB.png)  |
+|||
+| ![IMAGE](images/7-3/table/concat.png) | ![IMAGE](images/7-3/table/concatCB.png) |
+|||
+| ![IMAGE](images/7-3/table/if.png) | ![IMAGE](images/7-3/table/ifCB.png) |
 
 
 ###Additional Syntax
