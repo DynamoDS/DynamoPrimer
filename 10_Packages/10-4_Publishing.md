@@ -23,8 +23,8 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 
 ![](images/10-4/Publishing/Packages - 08.png)
 > This is the first submission for our package, and we've placed all of the example files and custom nodes into one folder.  With this folder prepared, we're ready to upload to the Dynamo Package Manager.
-1. This folder contains five custom nodes.
-2. This folder also contains four example files to show the user how to work with the custom nodes.
+1. This folder contains five custom nodes (.dyf).
+2. This folder also contains five example files (.dyn) and one imported vector file (.svg). These files will serve as introductory exercises to show the user how to work with the custom nodes.
 
 ![](images/10-4/Publishing/Packages - 07.png)
 > In Dynamo, begin by clicking *Packages>Publish New Package...*
@@ -58,3 +58,5 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 1. When you're ready to publish, in the "Manage Packages" window, select the button the right of MapToSurface and choose *Publish...*
 2. If you're updating a package that has already been published, choose "Publish Version" and Dynamo will update your package online based on the new files in that package's root directory. Simple as that!
 
+####Publish Version...
+When you update the files in your published package's root folder, you can publish a new version of the package by selecting *"Publish Version..."* in the *Manage Packages* window.  This is a seamless way to make necessary updates to your content and share with the community.  *Publish Version* will only work if you're the maintainer of the package.
