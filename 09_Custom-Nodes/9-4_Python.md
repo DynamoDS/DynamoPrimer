@@ -4,10 +4,41 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ##Python
 ![](images/9-4/pythonlogo.png)
-Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C++. Python supports modules and packages, and can be embedded into existing applications.
+Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages such as Java and C. Python supports modules and packages, and can be embedded into existing applications. The examples in this section assume a basic familiarity with python. See the appendix for a list of general python resources.
+
+###Visual vs. Textual Programming
+Why would one use textual programming in Dynamo's visual programming environment? As was already discussed in chapter 1.1, visual programming has many advantages. It allows the user to create programs without learning special syntax, in an intuitive visual interface. However, a visual program can become cluttered. Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. Below is a Dynamo graph, followed by the python code that replaces it.
+![](images/9-4/python-nodes.png)
+
+```
+import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
+solid = IN[0]
+seed = IN[1]
+xCount = IN[2]
+yCount = IN[3]
+
+solids = []
+
+yDist = solid.BoundingBox.MaxPoint.Y-solid.BoundingBox.MinPoint.Y
+xDist = solid.BoundingBox.MaxPoint.X-solid.BoundingBox.MinPoint.X
+
+for i in xRange:
+	for j in yRange:
+		fromCoord = solid.ContextCoordinateSystem
+		toCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i+j%val)))
+		vec = Vector.ByCoordinates((xDist*i),(yDist*j),0)
+		toCoord = toCoord.Translate(vec)
+		solids.append(solid.Transform(fromCoord,toCoord))
+
+OUT = solids
+```
+
 ###The Python Node
 Like code blocks, python nodes are a scripting interface within a visual programming environment.
-Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. The Python node can be found under *Core>Scripting* in the library. Double clicking the node opens the python script editor.
+The Python node can be found under *Core>Scripting* in the library. Double clicking the node opens the python script editor.
 
 ![Script Editor](images/9-4/Exercise/Python/python04.png)
 
@@ -19,12 +50,6 @@ The Autodesk.DesignScript.Geometry library allows you to use dot notation simila
 
 > Methods include constructors such as *ByCoordinates*, actions like *Add*, and queries like *X*, *Y* and *Z* coordinates.
 
-###Python vs. Code Blocks
-The strength of the python node lies in the ability to use conditionals and loops. A loop is a command to repeat the execution of a block of code. The "for" loop repeats the piece of code for each item in a list, and the "while" loop repeats the code until a defined condition is met. You can also create nested loops to iterate through a list of lists.
-
-An "if" statement tells python to execute a piece of code if a defined condition is met. Multiple conditions can be defined using "elif." Code to execute if none of the conditions are met can be specified using "else".
-
-Code blocks have limited looping and conditional functionality.
 
 ###Exercise
 
