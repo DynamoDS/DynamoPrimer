@@ -9,7 +9,7 @@ Dynamo offers several different methods for creating custom nodes. You can build
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
 [UVmapping_Custom-Node.dyn](datasets/9-2/UVmapping_Custom-Node.dyn)
 
-Let’s start by creating a graph that we want to nest into a custom node. In this example, we will create a program that maps polygons from a base surface to a target surface, using UV coordinates.  For more information on surfaces and UV space, see chapter 5.5.
+Let’s start by creating a graph that we want to nest into a custom node. In this example, we will create a program that maps polygons from a base surface to a target surface, using UV coordinates. This UV mapping process is something we use frequently, making it a good candidate for a custom node. For more information on surfaces and UV space, see chapter 5.5.
 
 ![Exercise](images/9-2/UVmapping01.png)
 > 1. **Code Block:** Create a range of 10 numbers between 45 and negative 45 using a code block
