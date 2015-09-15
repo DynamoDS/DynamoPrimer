@@ -7,6 +7,8 @@ img{width:100%}
 ## What is Zero-Touch?
 Zero-Touch Importing refers to a simple point-and-click method for importing C# libraries.  With Zero-Touch, Dynamo will read the public methods of a *.dll* file and convert them to Dynamo nodes. Using this process, a user can import a library which was not necessarily developed for Dynamo and create a host of new nodes.  This opens up a lot of doors for extending your visual programming environment. Granted, there are some limitations (with respect to private and abstract classes in a .dll), the current Zero-Touch functionality demonstrates the cross-platform mentality of the Dynamo Project.
 
+![](images/10-5/annotate.jpg)
+
 This section demonstrates how to use Zero-Touch to import a third party library.  For information on developing your own Zero-Touch Library, reference the [Dynamo wiki page](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development).
 
 ###Zero-Touch Packages
@@ -28,7 +30,6 @@ There are some guidelines
     <td width="55%">**BUMBLEBEE FOR DYNAMO**</td>
     <td>[Visit the Official BumbleBee Site](http://archi-lab.net/bumblebee-dynamo-and-excel-interop/)</td>
   </tr>
-  
 </table>
 
 
