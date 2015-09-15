@@ -60,5 +60,5 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 1. When you're ready to publish, in the "Manage Packages" window, select the button the right of MapToSurface and choose *Publish...*
 2. If you're updating a package that has already been published, choose "Publish Version" and Dynamo will update your package online based on the new files in that package's root directory. Simple as that!
 
-####Publish Version...
+###Publish Version...
 When you update the files in your published package's root folder, you can publish a new version of the package by selecting *"Publish Version..."* in the *Manage Packages* window.  This is a seamless way to make necessary updates to your content and share with the community.  *Publish Version* will only work if you're the maintainer of the package.
