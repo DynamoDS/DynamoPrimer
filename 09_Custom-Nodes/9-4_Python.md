@@ -90,6 +90,10 @@ Let’s start by defining our inputs and output. Double click the node to open t
 
 ![](images/9-4/Exercise/Python/python06.png)
 ```
+import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
 #The solid module to be arrayed
 solid = IN[0]
 #A number that determines which rotation pattern to use
@@ -111,6 +115,18 @@ Next we need to think about what information is required in order to array our s
 > A look at the Python node in Dynamo. The commented code is below.
 
 ```
+import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
+#Inputs
+solid = IN[0]
+seed = IN[1]
+xCount = IN[2]
+yCount = IN[3]
+
+#Create an empty list for the arrayed solids
+solids = []
 # Create an empty list for the edge curves
 crvs = []
 
@@ -124,6 +140,9 @@ bbox = BoundingBox.ByGeometry(crvs)
 #Get the X and Y translation distance based on the bounding box
 yDist = bbox.MaxPoint.Y-bbox.MinPoint.Y
 xDist = bbox.MaxPoint.X-bbox.MinPoint.X
+
+#Assign your output to the OUT variable.
+OUT = solids
 ```
 
 Since we will be both translating and rotating the solid modules, let’s use the Geometry.Transform operation. By looking at the Geometry.Transform node, we know that we will need a source coordinate system and a target coordinate system to transform the solid. The source is the context coordinate system of our solid, while the target will be a different coordinate system for each arrayed module. That means we will have to loop through the x and y values to transform the coordinate system differently each time. 
@@ -132,6 +151,32 @@ Since we will be both translating and rotating the solid modules, let’s use th
 > A look at the Python node in Dynamo. The commented code is below.
 
 ```
+import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
+#Inputs
+solid = IN[0]
+seed = IN[1]
+xCount = IN[2]
+yCount = IN[3]
+
+#Create an empty list for the arrayed solids
+solids = []
+# Create an empty list for the edge curves
+crvs = []
+
+#Loop through edges and append corresponding curve geometry to the list
+for edge in solid.Edges:
+	crvs.append(edge.CurveGeometry)
+	
+#Get the bounding box of the curves
+bbox = BoundingBox.ByGeometry(crvs)
+
+#Get the X and Y translation distance based on the bounding box
+yDist = bbox.MaxPoint.Y-bbox.MinPoint.Y
+xDist = bbox.MaxPoint.X-bbox.MinPoint.X
+
 #get the source coordinate system
 fromCoord = solid.ContextCoordinateSystem
  
@@ -144,6 +189,7 @@ for i in range(xCount):
 		toCoord = toCoord.Translate(vec)
 		#Transform the solid from the source coord system to the target coord system and append to the list
 		solids.append(solid.Transform(fromCoord,toCoord))
+	
 ```
 
 ![](images/9-4/Exercise/Python/python09.png)
