@@ -26,11 +26,11 @@ Zero-touch packages are a good complement to user-defined custom nodes.  A few p
   </tr>
   <tr>
     <td width="50%"><img src="images/10-5/toolkit.png"></img></td>
-    <td width="50%">[**Mesh Toolkit**](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)</td>
+    <td width="50%"><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Mesh Toolkit</td></a>
   </tr>
   <tr>
     <td width="50%"><img src="images/10-5/unfold.png"></img></td>
-    <td width="50%">[**Dynamo Unfold**](http://dynamobim.com/dynamounfold/)</td>
+    <td width="50%"><a href="http://dynamobim.com/dynamounfold/">Dynamo Unfold</td></a>
   </tr>
   <tr>
     <td width="50%"><img src="images/10-5/rhynamo.png"></img></td>
@@ -38,7 +38,7 @@ Zero-touch packages are a good complement to user-defined custom nodes.  A few p
   </tr>
   <tr>
     <td width="50%"><img src="images/10-5/optimo.png"></img></td>
-    <td width="50%">[**Optimo**](https://github.com/BPOpt/Optimo)</td>
+    <td width="50%"><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
   </tr>
 </table>
 
