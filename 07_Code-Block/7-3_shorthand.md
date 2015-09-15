@@ -1,7 +1,7 @@
-
 <style>
-table{box-shadow: 2px 2px 2px #BBBBBB}
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
 thead {display: none}
+img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 ## Shorthand
 There are a few basic shorthand methods in the code block which, simply put, make data management *a lot* easier.  We'll break down the basics below and discuss how this shorthand can be used both for creating and querying data.
