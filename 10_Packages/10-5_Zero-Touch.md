@@ -20,25 +20,25 @@ Zero-touch packages are a good complement to user-defined custom nodes.  A few p
 
 <table>
     <tr>
-    <td width="50%">Logo/Image</td>
-    <td width="50%">Name</td>
+    <td width="25%">Logo/Image</td>
+    <td width="75%">Name</td>
 
   </tr>
   <tr>
-    <td width="50%"><img src="images/10-5/toolkit.png"></img></td>
-    <td width="50%"><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Mesh Toolkit</td></a>
+    <td width="25%"><img src="images/10-5/toolkit.png"></img></td>
+    <td width="75%"><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Mesh Toolkit</td></a>
   </tr>
   <tr>
-    <td width="50%"><img src="images/10-5/unfold.png"></img></td>
-    <td width="50%"><a href="http://dynamobim.com/dynamounfold/">Dynamo Unfold</td></a>
+    <td width="25%"><img src="images/10-5/unfold.png"></img></td>
+    <td width="75%"><a href="http://dynamobim.com/dynamounfold/">Dynamo Unfold</td></a>
   </tr>
   <tr>
-    <td width="50%"><img src="images/10-5/rhynamo.png"></img></td>
-    <td width="50%"><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
+    <td width="25%"><img src="images/10-5/rhynamo.png"></img></td>
+    <td width="75%"><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
   </tr>
   <tr>
-    <td width="50%"><img src="images/10-5/optimo.png"></img></td>
-    <td width="50%"><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
+    <td width="25%"><img src="images/10-5/optimo.png"></img></td>
+    <td width="75%"><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
   </tr>
 </table>
 
