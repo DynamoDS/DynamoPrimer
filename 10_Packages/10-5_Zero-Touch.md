@@ -1,5 +1,5 @@
 <style>
-table{box-shadow: 2px 2px 2px #BBBBBB}
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:70%;display:block;margin-left: auto;   margin-right: auto }
 thead {display: none}
 img{display:block;margin-left: auto;   margin-right: auto }
 </style>
@@ -18,27 +18,27 @@ This section demonstrates how to use Zero-Touch to import a third party library.
 Zero-touch packages are a good complement to user-defined custom nodes.  A few packages which use C# libraries are listed in the table below. For more detailed information on packages, visit the [Packages section ](../Appendix/A-4_temp.md)in the Appendix.
 
 
-<table width="200px">
+<table width="50%">
     <tr>
-    <td width="25%">Logo/Image</td>
-    <td width="75%">Name</td>
+    <td width="35%">Logo/Image</td>
+    <td>Name</td>
 
   </tr>
   <tr>
-    <td width="25%"><img src="images/10-5/toolkit.png"></img></td>
-    <td width="75%"><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Mesh Toolkit</td></a>
+    <td><img src="images/10-5/toolkit.png"></img></td>
+    <td><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Mesh Toolkit</td></a>
   </tr>
   <tr>
-    <td width="25%"><img src="images/10-5/unfold.png"></img></td>
-    <td width="75%"><a href="http://dynamobim.com/dynamounfold/">Dynamo Unfold</td></a>
+    <td><img src="images/10-5/unfold.png"></img></td>
+    <td><a href="http://dynamobim.com/dynamounfold/">Dynamo Unfold</td></a>
   </tr>
   <tr>
-    <td width="25%"><img src="images/10-5/rhynamo.png"></img></td>
-    <td width="75%"><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
+    <td><img src="images/10-5/rhynamo.png"></img></td>
+    <td><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
   </tr>
   <tr>
-    <td width="25%"><img src="images/10-5/optimo.png"></img></td>
-    <td width="75%"><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
+    <td><img src="images/10-5/optimo.png"></img></td>
+    <td><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
   </tr>
 </table>
 
