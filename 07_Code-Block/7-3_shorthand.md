@@ -8,9 +8,9 @@ There are a few basic shorthand methods in the code block which, simply put, mak
 
 <table>
     <tr>
-    <td width="60%"><b>Data Type</b></td>
-    <td width="20%"><b>Standard Dynamo</b> </td>
-    <td width="20%"><b>Code Block Equilvalent</b></td>
+    <td width="50%"><b>Data Type</b></td>
+    <td width="25%"><b>Standard Dynamo</b> </td>
+    <td width="25%"><b>Code Block Equilvalent</b></td>
   </tr>
   <tr>
     <td> Numbers</td>
