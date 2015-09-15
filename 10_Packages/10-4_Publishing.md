@@ -50,7 +50,7 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 > Notice that the root directory is in the local location of your package (remember, we published the package "locally").  Dynamo is currently referencing this folder to read custom nodes. It's therefore important to locally publish the directory to a permanent folder location (ie: not your desktop). Here is the Dynamo package folder breakdown:
 1. The *bin* folder houses .dll files created with C# or Zero-Touch libraries.  We don't have any for this package so this folder is blank for this example.
 2. The *dyf* folder houses the custom nodes.  Opening this will reveal all of the custom nodes (.dyf files) for this package.
-3. The extra folder houses all additional files.  These files are likely to be Dynamo Files (.dyn) or any additional files required (.xls, .jpeg, .sat, etc.).
+3. The extra folder houses all additional files.  These files are likely to be Dynamo Files (.dyn) or any additional files required (.svg, .xls, .jpeg, .sat, etc.).
 4. The pkg file is a basic text file defining the package settings. This is automated in Dynamo, but can be edited if you want to get into the details.
 
 ###Publishing a Package Online
