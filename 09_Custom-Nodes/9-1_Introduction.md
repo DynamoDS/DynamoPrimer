@@ -30,7 +30,7 @@ Custom Nodes are constructed by nesting other nodes and custom nodes inside of a
 > 1. **Inputs:** input nodes create input ports on the custom node. The syntax for an input node is *input name : datatype = default value(optional)*
 2. **Outputs:** Similar to inputs, these will create output ports on the custom node.
 
-You can save this custom node as a .dyf file and add it to your library under  *File > Import Library*. Once you have imported the custom node, you should see it in the category specified when the node was created.
+You can save this custom node as a .dyf file and add it to your session under  *File > Import Library*. Once you have imported the custom node, you should see it in the category specified when the node was created. 
 
 ![Add to Library](images/9-1/CustomNodes05.png)
 
