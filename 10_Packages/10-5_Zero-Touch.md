@@ -24,9 +24,9 @@ There are some guidelines
     <td>[Visit the Clockwork For Dynamo GitHub](https://github.com/CAAD-RWTH/ClockworkForDynamo)</td>
   </tr>
   <tr>
-    <td width="10%">![IMAGE](images/A-4/logo01.png)</td>
-    <td width="55%">**CLOCKWORK FOR DYNAMO**</td>
-    <td>[Visit the Clockwork For Dynamo GitHub](https://github.com/CAAD-RWTH/ClockworkForDynamo)</td>
+    <td width="10%">![IMAGE](images/A-4/logo02.png)</td>
+    <td width="55%">**BUMBLEBEE FOR DYNAMO**</td>
+    <td>[Visit the Official BumbleBee Site](http://archi-lab.net/bumblebee-dynamo-and-excel-interop/)</td>
   </tr>
   
 </table>
