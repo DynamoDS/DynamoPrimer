@@ -1,6 +1,5 @@
 <style>
 table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
-thead {display: none}
 img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 ## Shorthand
@@ -14,44 +13,44 @@ There are a few basic shorthand methods in the code block which, simply put, mak
     <td width="20%">**Code Block Equilvalent**</td>
   </tr>
   <tr>
-    <td width="60%"> Numbers</td>
-    <td width="20%">![IMAGE](images/7-3/table/number.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/numberCB.png)</td>
+    <td> Numbers</td>
+    <td><img src="images/7-3/table/number.png"></img> </td>
+    <td><img src="images/7-3/table/numberCB.png"></img></td>
   </tr>
   <tr>
-    <td width="60%">Strings</td>
-    <td width="20%">![IMAGE](images/7-3/table/string.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/stringCB.png)</td>
+    <td>Strings</td>
+    <td><img src="images/7-3/table/string.png"></img> </td>
+    <td><img src="images/7-3/table/stringCB.png"></img></td>
   </tr>
   <tr>
-    <td width="60%">Sequences</td>
-    <td width="20%">![IMAGE](images/7-3/table/sequence.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/sequenceCB.png)</td>
+    <td>Sequences</td>
+    <td><img src="images/7-3/table/sequence.png"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.png"></img></td>
   </tr>
   <tr>
-    <td width="60%">Ranges</td>
-    <td width="20%">![IMAGE](images/7-3/table/range.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/rangeCB.png)</td>
+    <td>Ranges</td>
+    <td><img src="images/7-3/table/range.png"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.png"></img></td>
   </tr>
   <tr>
-    <td width="60%">Get Item at Index</td>
-    <td width="20%">![IMAGE](images/7-3/table/getItem.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/getItemCB.png)</td>
+    <td>Get Item at Index</td>
+    <td><img src="images/7-3/table/getItem.png"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.png"></img></td>
   </tr>
   <tr>
-    <td width="60%">Create List</td>
-    <td width="20%">![IMAGE](images/7-3/table/list.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/listCB.png)</td>
+    <td>Create List</td>
+    <td><img src="images/7-3/table/list.png"></img> </td>
+    <td><img src="images/7-3/table/listCB.png"></img></td>
   </tr>
   <tr>
-    <td width="60%">Concatenate Strings</td>
-    <td width="20%">![IMAGE](images/7-3/table/concat.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/concatCB.png)</td>
+    <td>Concatenate Strings</td>
+    <td><img src="images/7-3/table/concat.png"></img> </td>
+    <td><img src="images/7-3/table/concatCB.png"></img></td>
   </tr>
   <tr>
-    <td width="60%">Conditional Statements</td>
-    <td width="20%">![IMAGE](images/7-3/table/if.png) </td>
-    <td width="20%">![IMAGE](images/7-3/table/ifCB.png)</td>
+    <td>Conditional Statements</td>
+    <td><img src="images/7-3/table/if.png"></img> </td>
+    <td><img src="images/7-3/table/ifCB.png"></img></td>
   </tr>
 </table>
 
