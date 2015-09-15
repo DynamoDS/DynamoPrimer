@@ -34,7 +34,7 @@ Zero-touch packages are a good complement to user-defined custom nodes.  A few p
   </tr>
   <tr>
     <td width="50%"><img src="images/10-5/rhynamo.png"></img></td>
-    <td width="50%"><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td>
+    <td width="50%"><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
   </tr>
   <tr>
     <td width="50%"><img src="images/10-5/optimo.png"></img></td>
