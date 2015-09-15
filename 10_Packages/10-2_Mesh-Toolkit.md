@@ -18,12 +18,12 @@ The exercise below demonstrates some basic mesh operations using the Mesh Toolki
 > In Dynamo, go to *Packages > Search for Packages...* in the top menu bar.  In the search field, type *"MeshToolkit"*, all one word, minding the caps.  Click the download arrow for the appropriate package for your version of Dynamo.  Simple as that!
 
 ### Exercise
->Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Mesh-Toolkit_Intersect-Mesh.dyn](datasets/10-3/Mesh-Toolkit_Intersect-Mesh.dyn)
+>Download and unzip the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Mesh-Toolkit.zip](datasets/10-3/Mesh-Toolkit.zip)
 
-In this example, we will look at the Intersect node in the mesh toolkit. We will import a mesh and intersect it with a series of input planes to create slices. This is the starting point for preparing the model for fabrication on a laser cutter, waterjet cutter, or CNC mill.
+Begin by opening *Mesh-Toolkit_Intersect-Mesh.dyn in Dynamo.* In this example, we will look at the Intersect node in the mesh toolkit. We will import a mesh and intersect it with a series of input planes to create slices. This is the starting point for preparing the model for fabrication on a laser cutter, waterjet cutter, or CNC mill.
 
 ![Import Mesh](images/10-3/contour01.png)
->1.	**File Path:** Locate the mesh file to import. Supported file types are .mix and .obj
+>1.	**File Path:** Locate the mesh file to import (*standford_bunny_tri.obj*). Supported file types are .mix and .obj
 2. **Mesh.ImportFile:** Connect the file path to import the mesh
 
 ![Intersect](images/10-3/contour02.png)
