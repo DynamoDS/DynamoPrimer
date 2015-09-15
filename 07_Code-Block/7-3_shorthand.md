@@ -1,4 +1,3 @@
-
 <style>
 table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
 img{display:block;margin-left: auto;   margin-right: auto }
@@ -54,8 +53,6 @@ There are a few basic shorthand methods in the code block which, simply put, mak
     <td><img src="images/7-3/table/ifCB.png"></img></td>
   </tr>
 </table>
-
-
 
 ###Additional Syntax
 | Node(s) | Code Block Equivalent | Note |
