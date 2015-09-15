@@ -1,4 +1,6 @@
 <style>
+table{box-shadow: 2px 2px 2px #BBBBBB}
+thead {display: none}
 img{width:100%}
 </style>
 
