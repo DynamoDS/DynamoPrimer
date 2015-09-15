@@ -1,7 +1,7 @@
 <style>
 table{box-shadow: 2px 2px 2px #BBBBBB}
 thead {display: none}
-img{width:100%}
+img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
 ## What is Zero-Touch?
