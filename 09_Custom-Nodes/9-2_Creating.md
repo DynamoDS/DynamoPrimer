@@ -8,7 +8,7 @@ Dynamo offers several different methods for creating custom nodes. You can build
 ###Custom Nodes for UV Mapping
 In the image below, we map a point from one surface to another using UV coordinates. We'll use this concept to create a panelized surface which references curves in the XY plane. We'll be creating quad panels for our panelization here, but using the same logic, we can create a wide variety of panels with UV mapping. This lends itself well to custom node development...we will likely want to repeat a process similar to this one again. By creating a custom node, we can map points from one surface to another in one graph, or in other Dynamo workflows.
 
-![](images/9-2/uvMap2-01.jpg)
+![](images/9-2/uvMap2-01-01.jpg)
 
 ### Creating a Custom Node from an Existing Graph
 
