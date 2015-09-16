@@ -3,7 +3,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
 ##Adding to Your Library
-We've created a custom node and applied it to a specific process in the our Dynamo graph. And we like this node so much, we want to keep it in our Dynamo library to reference in other graphs.  To do this, we'll publish the node locally. This is the same process as publishing a package, which we'll walk through in more detail in the next chapter.
+We've created a custom node and applied it to a specific process in the our Dynamo graph. And we like this node so much, we want to keep it in our Dynamo library to reference in other graphs.  To do this, we'll publish the node locally. This is a similar process to publishing a package, which we'll walk through in more detail in the next chapter.
 
 ###Publishing a Custom Node Locally
 Let's move forward with the custom node that we created in the previous section. By publishing a node locally, the node will be accessible in your Dynamo library when you open a new session. Without publishing a node, a Dynamo graph which references a custom node must also have that custom node in its folder.
