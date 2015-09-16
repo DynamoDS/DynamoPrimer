@@ -38,18 +38,24 @@ The example above focuses on a package with one custom node, but you use the sam
 
 ![](images/10-1/rd1.png)
 > This will take us to the package's root directory.  Notice that we have 3 folders and a file.
-1. 
+1. The *bin* folder houses .dll files. This Dynamo package was developed using Zero-Touch, so the custom nodes are held in this folder.
+2. The *dyf* folder houses the custom nodes.  This package was not developed using Dynamo custom nodes, so this folder is empty for this package.
+3. The extra folder houses all additional files, including our example files.
+4. The pkg file is a basic text file defining the package settings. We can ignore this for now.
 
+![](images/10-1/rd2.png)
+> Opening the *"extra"* folder, we see a bunch of example files that were downloaded with the install! Not all packages have example files, but this is where you can find them if they are a part of a package.  Let's open up *"SphereUnfold"*.
 
-####Sample Files in the *"extra"* folder
+![](images/10-1/sphereUnfold.png)
+> After opening the file and hitting *"Run"* on the solver, we have an unfolded sphere! Example files like these are helpful for learning how to work with a new Dynamo package.
 
 ###Introduction to the Package Manager
-####Versioning and Dependencies between Packages
+
 
 ####Where are Files Stored Locally?
 http://dynamobim.com/files-folders/
 
-Packages>Manage Packages>Show Root Directory...
+
 
 
 
