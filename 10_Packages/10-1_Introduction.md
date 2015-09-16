@@ -1,5 +1,5 @@
 <style>
-img{display:block;margin-left: auto;margin-right: auto }
+img{width:100%;display:block;margin-left: auto;margin-right: auto }
 </style>
 
 ##Packages
@@ -7,13 +7,13 @@ In short, a package is a collection of custom nodes. The Dynamo Package Manager 
 
 ![](images/10-1/dpm.png)
 
-An open-source project such as Dynamo thrives on this type of community involvement.  With dedicated developers, Dynamo is able to extend its reach to workflows in any industry.  For these reasons, the Dynamo team has made concerted efforts to streamline package development and publishing.  
+An open-source project such as Dynamo thrives on this type of community involvement.  With dedicated third party developers, Dynamo is able to extend its reach to workflows in a range of industries.  For these reasons, the Dynamo team has made concerted efforts to streamline package development and publishing (which will be discussed in more detail in the following sections).  
 
-You can also add example files and reference data to a package. 
+###Installing a Package
+![](images/10-1/stock.png)
+![](images/10-1/buildz.png)
 
-
-###What is a package?
-###Package Manager
+###Introduction to the Package Manager
 ####Versioning and Dependencies between Packages
 ####Sample Files in the *"extra"* folder
 ####Where are Files Stored Locally?
@@ -29,7 +29,3 @@ Packages>Manage Packages>Show Root Directory...
 
 
 ![](images/10-1/dpm2.png)
-
-![](images/10-4/Publishing/Packages - 00.png)
-
-![](images/10-4/Publishing/Packages - 01.png)
