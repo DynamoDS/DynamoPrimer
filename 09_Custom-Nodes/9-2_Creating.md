@@ -3,7 +3,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
 ## Creating a Custom Node
-Dynamo offers several different methods for creating custom nodes. You can build custom nodes from scratch, from an existing graph, or explicitly in c#. In this section we will cover building a custom node in the Dynamo UI, from an existing graph. This method is ideal for cleaning up the canvas, as well as packaging a sequence of nodes to reuse elsewhere.
+Dynamo offers several different methods for creating custom nodes. You can build custom nodes from scratch, from an existing graph, or explicitly in C#. In this section we will cover building a custom node in the Dynamo UI, from an existing graph. This method is ideal for cleaning up the canvas, as well as packaging a sequence of nodes to reuse elsewhere.
 
 ### Creating a Custom Node from an Existing Graph
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
