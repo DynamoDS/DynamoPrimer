@@ -61,7 +61,7 @@ You can also download the package files from the Dynamo Package Manager, but doi
 If you do download files from the Dynamo package manager, or if you would like to see where all of your package files are kept, click on *Settings>Manage Node and Package Paths...*. By clicking on the ellipsis next to the folder directory, you can copy the root folder and delve into the package in your explorer window.  By default, packages are installed in a location similar to this folder path:   *C:/Users/[username]/AppData/Roaming/Dynamo/[Dynamo Version]*.
 
 ###Going Further with Packages
-The Dynamo community is constantly growing and evolving. By exploring the Dynamo Package Manager from time to time, you'll find some exciting new developments. In the following sections, we'll take a more in-depth use at package, from and end-user perspective to become the author of your own Dynamo Package.
+The Dynamo community is constantly growing and evolving. By exploring the Dynamo Package Manager from time to time, you'll find some exciting new developments. In the following sections, we'll take a more in-depth look at packages, from the end-user perspective to authorship of your own Dynamo Package.
 
 
 
