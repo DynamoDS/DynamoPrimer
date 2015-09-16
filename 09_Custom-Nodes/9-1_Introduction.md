@@ -32,17 +32,20 @@ Let's jump into the custom node environment and make a simple node to calculate 
 ![Custom Nodes Dialog](images/9-1/CustomNodes02.png)
 
 > Assign a name, description, and category in the Custom Node Properties dialog.
+1. **Name:** Percentage
+2. **Description**: Calculate the percentage of one value in relation to another.
+3. **Category:** Core.Math
 
 ![Custom Nodes Canvas](images/9-1/CustomNodes03.png)
 
-> This will open a canvas with a yellow background, indicating that you are working inside of a custom node. In this canvas you have access to all of the core Dynamo nodes, as well as the **Input** and **Output** nodes.
+> This will open a canvas with a yellow background, indicating that you are working inside of a custom node. In this canvas you have access to all of the core Dynamo nodes, as well as the **Input** and **Output** nodes, which can be found in *Core>Input*.
 
 ![Custom Nodes Canvas](images/9-1/CustomNodes04.png)
 
 > 1. **Inputs:** input nodes create input ports on the custom node. The syntax for an input node is *input name : datatype = default value(optional)*
 2. **Outputs:** Similar to inputs, these will create output ports on the custom node.
 
-You can save this custom node as a .dyf file and add it to your session under  *File > Import Library*. Once you have imported the custom node, you should see it in the category specified when the node was created. 
+You can save this custom node as a .dyf file and it will automatically be added to your session. For future session, you can import the custom node using  *File > Import Library*. Once you have imported the custom node, you should see it in the category specified when the node was created. 
 
 ![Add to Library](images/9-1/CustomNodes05.png)
 
@@ -50,4 +53,4 @@ You can save this custom node as a .dyf file and add it to your session under  *
 Right: Core > Math with the new custom node
 
 ###Moving Forward
-Now that we've created our first custom node, the next sections will dive deeper into custom node functionality and publication for generic workflows.  In the following section, we'll look at developing a package, using custom nodes, which transfers geometry from one surface to another.
+Now that we've created our first custom node, the next sections will dive deeper into custom node functionality and publication for generic workflows.  In the following section, we'll look at developing a package which transfers geometry from one surface to another.
