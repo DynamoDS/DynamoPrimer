@@ -5,6 +5,8 @@ img{display:block;margin-left: auto;   margin-right: auto }
 ##Adding to Your Library
 We've created a custom node and applied it to a specific process in the our Dynamo graph. And we like this node so much, we want to keep it in our Dynamo library to reference in other graphs.  To do this, we'll publish the node locally. This is the same process as publishing a package, which we'll walk through in more detail in the next chapter.
 
+###Publishing a Custom Node Locally
+Let's move forward with the custom node that we created in the previous section.  Open the .dyf file.
 
 ![](images/9-3/AddingToLibrary- 05.png)
 > After opening the PointsToSurface custom node, we see the graph above in the Dynamo Custom Node Editor.  You can also open up a custom node by double clicking on it in the Dynamo Graph Editor.
@@ -13,7 +15,7 @@ We've created a custom node and applied it to a specific process in the our Dyna
 > 1. To Publish a custom node locally, simply right click on the canvas and select *"Publish This Custom Node..."*
 
 ![](images/9-3/AddingToLibrary- 03.png)
-> Fill out the relevant information similar to the image above and select *"Publish Locally".*
+> Fill out the relevant information similar to the image above and select *"Publish Locally".*.  Note that the Group field defines the main element accessible from the Dynamo menu.
 
 ![](images/9-3/AddingToLibrary- 02.png)
 > Choose a folder to house all of the custom nodes that you plan on publishing locally. Dynamo will check this folder each time it loads, so make sure the folder is in a permanent place.  Navigate to this folder and choose *"Select Folder".* Your Dynamo node is now published locally, and will remain in your Dynamo Toolbar each time you load the program!
