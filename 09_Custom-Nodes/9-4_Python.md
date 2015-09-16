@@ -7,7 +7,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages. Python supports modules and packages, and can be embedded into existing applications. The examples in this section assume a basic familiarity with python. For information how to get up and running with Python, a good resource is the ["Getting Started"](https://www.python.org/about/gettingstarted/) page on [Python.org](https://www.python.org/).
 
 ###Visual vs. Textual Programming
-Why would you use textual programming in Dynamo's visual programming environment? As we discussed in chapter 1.1, visual programming has many advantages. It allows you to create programs without learning special syntax, in an intuitive visual interface. However, a visual program can become cluttered, and can at times fall short of functionality. Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. 
+Why would you use textual programming in Dynamo's visual programming environment? As we discussed in chapter 1.1, visual programming has many advantages. It allows you to create programs without learning special syntax, in an intuitive visual interface. However, a visual program can become cluttered, and can at times fall short of functionality. For example, Python offers much more achieveable methods for writing conditional statements (if/then) and looping.  Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. 
 
 **Visual Program:**
 ![](images/9-4/python-nodes.png)
@@ -86,7 +86,7 @@ Now that we have our solid, let’s drop a Python Script node onto the canvas.
 ![](images/9-4/Exercise/Python/python05.png)
 > To add additional inputs to the node, close the editor and click the + icon on the node. The inputs are named IN[0], IN[1], etc. to indicate that they represent items in a list.
 
-Let’s start by defining our inputs and output. Double click the node to open the python editor.
+Let’s start by defining our inputs and output. Double click the node to open the python editor. 
 
 ![](images/9-4/Exercise/Python/python06.png)
 ```
@@ -109,7 +109,7 @@ solids = []
 OUT = solids
 ```
 
-Next we need to think about what information is required in order to array our solid module. First, we will need to know the dimensions of the solid to determine the translation distance. Due to a bounding box bug, we will have to use the edge curve geometry to create a bounding box.
+This code will make more sense as we progress in the exercise.  Next we need to think about what information is required in order to array our solid module. First, we will need to know the dimensions of the solid to determine the translation distance. Due to a bounding box bug, we will have to use the edge curve geometry to create a bounding box.
 
 ![](images/9-4/Exercise/Python/python07.png)
 > A look at the Python node in Dynamo. The commented code is below.
