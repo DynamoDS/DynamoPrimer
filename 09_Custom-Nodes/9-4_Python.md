@@ -41,7 +41,7 @@ OUT = solids
 
 ###The Python Node
 Like code blocks, python nodes are a scripting interface within a visual programming environment.
-The Python node can be found under *Core>Scripting* in the library. Double clicking the node opens the python script editor.
+The Python node can be found under *Core>Scripting* in the library. Double clicking the node opens the python script editor (you can also right click on the node and select *Edit...*).
 
 ![Script Editor](images/9-4/Exercise/Python/python04.png)
 
