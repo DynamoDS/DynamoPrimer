@@ -3,6 +3,9 @@ img{display:block;margin-left: auto;margin-right: auto }
 </style>
 
 ##Packages
+
+
+
 ###What is a package?
 ###Package Manager
 ####Versioning and Dependencies between Packages
