@@ -51,7 +51,6 @@ In this case study, we'll show how to import the [AForge](http://www.aforgenet.c
 
 >Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Zero-Touch-Examples.zip](datasets/10-5/Zero-Touch-Examples.zip)
 
-![Exercise](images/10-5/aforge.png)
 > 1. Let's beging by downloading AForge. On the [AForge download page](http://www.aforgenet.com/framework/downloads.html), select *[Download Installer]* and install after download has completed. 
 
 ![Exercise](images/10-5/import.png)
