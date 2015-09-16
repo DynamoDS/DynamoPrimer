@@ -50,7 +50,7 @@ The example above focuses on a package with one custom node, but you use the sam
 > After opening the file and hitting *"Run"* on the solver, we have an unfolded sphere! Example files like these are helpful for learning how to work with a new Dynamo package.
 
 ###Introduction to the Package Manager
-
+![](images/10-1/dpm2.png)
 
 ####Where are Files Stored Locally?
 http://dynamobim.com/files-folders/
@@ -64,4 +64,4 @@ http://dynamobim.com/files-folders/
 
 
 
-![](images/10-1/dpm2.png)
+
