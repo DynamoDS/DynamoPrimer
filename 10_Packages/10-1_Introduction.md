@@ -3,7 +3,7 @@ img{display:block;margin-left: auto;margin-right: auto }
 </style>
 
 ##Packages
-In short, a package is a collection of custom nodes. The Dynamo Package Manager is a portal for the community to download any package which has been published online.  These toolsets are usually developed by third parties in order to extend Dynamo's core functionality, accessible to all and ready to download at the click of the button! 
+In short, a package is a collection of custom nodes. The Dynamo Package Manager is a portal for the community to download any package which has been published online.  These toolsets are developed by third parties in order to extend Dynamo's core functionality, accessible to all and ready to download at the click of the button! 
 
 ![](images/10-1/dpm.png)
 
