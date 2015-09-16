@@ -12,7 +12,7 @@ Dynamo offers many core nodes for a wide-range of visual programming tasks. But 
 Custom Nodes are constructed by nesting other nodes and custom nodes inside of a container. When this container node is executed in your graph, everything inside it will be executed.  This can help make your graph clearer and cleaner, as well as allow you to reuse and share a useful combination of nodes.
 
 ###Adapting to Change
-By having multiple copies of one custom node in your graph, you can update all of them by editing the base custom nodes. This allows you to update your graph seamlessly by adapting to any changes that may occur in workflow or design.
+By having multiple copies of one custom node in your graph, you can update all of them by editing the base custom node. This allows you to update your graph seamlessly by adapting to any changes that may occur in workflow or design.
 
 ###Worksharing
 Arguably the best feature of custom nodes is their worksharing capabilities. If a *power user* creates a complex Dynamo graph and hands it off to a designer who is new to Dynamo, he/she can condense the graph to the bare essentials for design interaction.  The custom node can be opened to edit the guts of the graph, but the skin can be kept simple.  With this process, custom nodes allow Dynamo users to design a graph that is clean and intuitive.
