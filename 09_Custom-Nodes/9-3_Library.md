@@ -33,7 +33,7 @@ Let's move forward with the custom node that we created in the previous section.
 > We switched the order of the path names in order to have Dynamo's default path as the package install location.
 
 ![](images/9-3/AddingToLibrary- 06.png)
-> Navigating to this local folder, we can find the original custom node in the *".dyf"* folder, which the  extension for a Dynamo Custom Node file.  We can edit the file in this folder and the node will update in the UI. We can also add more nodes to the main *DynamoCustomNode* folder and Dynamo will add them to your library at restart!
+> Navigating to this local folder, we can find the original custom node in the *".dyf"* folder, which is the extension for a Dynamo Custom Node file.  We can edit the file in this folder and the node will update in the UI. We can also add more nodes to the main *DynamoCustomNode* folder and Dynamo will add them to your library at restart!
 
 ![](images/9-3/library.png)
 > Dynamo will now load each time with *"PointsToSurface"* in the *"DynamoPrimer"* group of your Dynamo library.
