@@ -33,7 +33,7 @@ You should now see a grid of rectangles. Let’s map these rectangles to a targe
 Now that we have a base surface and a set of UV coordinates, we can import a target surface and map the points between surfaces.
 
 ![Exercise](images/9-2/UVmapping03.png)
->1. **File Path:** Select the file path of the surface you want to import. The file type should be .SAT. Click the *"Browse..."* button and navigate to the *sampleSurface.sat* file from the .zip file downloaded above.
+>1. **File Path:** Select the file path of the surface you want to import. The file type should be .SAT. Click the *"Browse..."* button and navigate to the *UVmapping_srf.sat* file from the .zip file downloaded above.
 2. **Geometry.ImportFromSAT:** Connect the file path to import the surface. You should see the imported surface in the geometry preview
 3. **UV:** Connect the UV parameter output to a *UV.U* and a *UV.V* node
 4. **Surface.PointAtParameter:** Connect the imported surface as well as the u and v coordinates. You should now see a grid of 3D points on the target surface
