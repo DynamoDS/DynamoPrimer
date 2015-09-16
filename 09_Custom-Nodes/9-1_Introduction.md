@@ -5,7 +5,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 ## Custom Nodes
 Dynamo offers many core nodes for a wide-range of visual programming tasks. But sometimes a quicker, more elegant, and more easily shared solution is to build your own nodes. These can be reused among different projects, they make your program clearer and cleaner, and they can be pushed to the package manager and shared.
 
-![](images/9-1/customNodeDiagram.png)
+![](images/9-1/customNodeDiagram.jpg)
 
 ###Cleaning up Your Graph
 
