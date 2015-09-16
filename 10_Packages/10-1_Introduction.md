@@ -53,7 +53,7 @@ The example above focuses on a package with one custom node, but you use the sam
 Another way to discover Dynamo packages is to explore the [Dynamo Package Manager](http://dynamopackages.com/) online.  This is a good way to browse for packages, since the repository sorts packages in order of download count and popularity.  Also, it's an easy way to gather information on recent updates for packages, as some Dynamo packages are subjected to versioning and dependencies of Dynamo builds.  
 
 ![](images/10-1/dpm2.png)
-> By clicking on *"Quads from Rectangular Grid"* in the Dynamo Package Manager, I'm able to see it's descriptions, versions, the developer, and possible dependencies.
+> By clicking on *"Quads from Rectangular Grid"* in the Dynamo Package Manager, you can see it's descriptions, versions, the developer, and possible dependencies.
 
 You can also download the package files from the Dynamo Package Manager, but the doing so directly from Dynamo is a more seamless process.
 
