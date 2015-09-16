@@ -26,9 +26,11 @@ Let's move forward with the custom node that we created in the previous section.
 > 1. To check on the custom node folder location, go to *Settings > Manage Node and Package Paths...*
 
 ![](images/9-3/AddingToLibrary- 00.png)
-> In this window we see two paths: *AppData\Roaming\Dynamo...* refers to the default location of Dynamo Packages installed online. *Documents\DynamoCustomNodes...* refers to the location of custom nodes we've published locally. *Note: in the image above, you may want to select the second file path and move this to the top (by clicking on the up arrow to the left of the path names).  That way, when you import nodes from the Dynamo Package Manager, they'll be separated from your locally published nodes.*
+> In this window we see two paths: *AppData\Roaming\Dynamo...* refers to the default location of Dynamo Packages installed online. *Documents\DynamoCustomNodes...* refers to the location of custom nodes we've published locally. *
+1. You may want to move your local folder path down in the list order bove (by selecting the folder path and clicking on the down arrow to the left of the path names).  The top folder is the default path for package installs.  So by keeping the default Dynamo package install path as the default folder, online packages will be separated from your locally published nodes.*
 
-
+![](images/9-3/AddingToLibrary- 00A.png)
+> We switched the order of the path names in order to have Dynamo's default path as the package install location.
 
 ![](images/9-3/AddingToLibrary- 06.png)
 > Navigating to this local folder, we can find the original custom node in the *".dyf"* folder, which the  extension for a Dynamo Custom Node file.  We can edit the file in this folder and the node will update in the UI. We can also add more nodes to the main *DynamoCustomNode* folder and Dynamo will add them to your library at restart!
