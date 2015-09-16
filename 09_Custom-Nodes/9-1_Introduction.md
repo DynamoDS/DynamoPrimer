@@ -6,7 +6,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 Dynamo has a large assortment of core nodes that you can rely on to build pretty much any graph you need, but sometimes a quicker, more elegant, and more easily shared solution is to build your own nodes. These can be reused among different projects, they make your program clearer and cleaner, and they can be pushed to the package manager and shared.
 
 ###Many Ways to Build a Node
-
+There is a wide variety of ways to build custom nodes in Dynamo. In the examples in this chapter, we'll create custom nodes directly from the Dynamo UI.  If you're a programmer and are interested in C# or Zero-Touch formatting, you can reference this page on the Dynamo Wiki for more details.
 
 ###Cleaning up Your Graph
 
