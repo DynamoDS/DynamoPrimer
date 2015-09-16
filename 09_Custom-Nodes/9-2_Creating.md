@@ -48,7 +48,7 @@ The final step is to use the 3D points to construct rectangular surface patches.
 Now let’s select the nodes that we want to nest into a Custom Node, thinking about what we want to be the inputs and outputs of our node. We want our Custom Node to be as flexible as possible, so it should be able to map any polygons, not just rectangles.
 
 ![Exercise](images/9-2/UVmapping05.png)
-> Select the above nodes, right click on the canvas and select *‘node from selection’*
+> Select the above nodes (beginning with *Polygon.Points*), right click on the canvas and select *‘node from selection’*
 
 ![Exercise](images/9-2/UVmapping06.png)
 > In the Custom Node Properties dialog, assign a name, description, and category to the Custom Node.
