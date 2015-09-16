@@ -4,7 +4,29 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ##Python and Revit
 
-Now that we've demonstrate how to use Python scripts in Dynamo, let's take a look at connecting other Python libraries into the scripting environment. In the same way that we imported our Dynamo core nodes 
+Now that we've demonstrate how to use Python scripts in Dynamo, let's take a look at connecting Revit libraries into the scripting environment. Remember, we imported our Dynamo core nodes with the first three lines in the block of code below.  To import the Revit nodes, Revit elements, and the Revit document manager, we only have to add a few more lines:
+
+```
+import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
+# Import RevitNodes
+clr.AddReference("RevitNodes")
+import Revit
+
+# Import Revit elements
+from Revit.Elements import *
+
+# Import DocumentManager
+clr.AddReference("RevitServices")
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+
+import System
+```
+
+This gives us access to the Revit API and offers custom scripting for any Revit task.  By combining the process of visual programming with Revit API scripting, collaboration and tool development improve significantly.  For example, a BIM manager and a schematic designer can work together on the same graph.  In this collaboration, they can improve design and execution of the model.
 
 ![Exercise](images/9-4/pythonRevit.png)
 
