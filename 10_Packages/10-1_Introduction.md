@@ -50,10 +50,15 @@ The example above focuses on a package with one custom node, but you use the sam
 > After opening the file and hitting *"Run"* on the solver, we have an unfolded sphere! Example files like these are helpful for learning how to work with a new Dynamo package.
 
 ###Dynamo Package Manager
+Another way to discover Dynamo packages is to explore the [Dynamo Package Manager](http://dynamopackages.com/) online.  This is a good way to browse for packages, since the repository sorts packages in order of download count and popularity.  Also, it's an easy way to gather information on recent updates for packages, as some Dynamo packages are subjected to versioning and dependencies of Dynamo builds.  
+
 ![](images/10-1/dpm2.png)
+> By clicking on *"Quads from Rectangular Grid"* in the Dynamo Package Manager, I'm able to see it's descriptions, versions, the developer, and possible dependencies.
+
+You can also download the package files from the Dynamo Package Manager, but the doing so directly from Dynamo is a more seamless process.
 
 ####Where are Files Stored Locally?
-http://dynamobim.com/files-folders/
+If you do download files from the Dynamo package manager, or if you would like to see where all of your package files are kept, click on *Settings>Manage Node and Package Paths...*. By clicking on the ellipsis next to the folder directory, you can copy the root folder and delve into the package in your explorer window.  By default, packages are installed in a location similar to  *C:/Users/[username]/AppData/Roaming/Dynamo/[Dynamo Version]*
 
 
 
