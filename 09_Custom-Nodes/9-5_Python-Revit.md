@@ -7,6 +7,9 @@ img{display:block;margin-left: auto;   margin-right: auto }
 ![Exercise](images/9-4/pythonRevit.png)
 
 ###Platform Specific APIs
+
+The plan behind the Dynamo Project is to widen the scope of platform implementation.  As Dynamo adds more programs to the docket, users will have more access to Platform-Specific APIs from the Python scripting environment.
+
 ### Exercise 01
 >Create a new Revit Project.  Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
 
