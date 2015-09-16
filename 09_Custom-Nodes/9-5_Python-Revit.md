@@ -12,7 +12,7 @@ The examples below demonstrate ways to implement Revit-specific operations from 
 
 ###Platform Specific APIs
 
-The plan behind the Dynamo Project is to widen the scope of platform implementation.  As Dynamo adds more programs to the docket, users will gain access to platform-specific APIs from the Python scripting environment.  While Revit is the case study for this section, we can anticipate more chapters in the future which offer comprehensive tutorials on scripting in other platforms.  Additionally, there are many [IronPython](http://ironpython.net/) libraries accessible now which can easily be ported into Dynamo!
+The plan behind the Dynamo Project is to widen the scope of platform implementation.  As Dynamo adds more programs to the docket, users will gain access to platform-specific APIs from the Python scripting environment.  While Revit is the case study for this section, we can anticipate more chapters in the future which offer comprehensive tutorials on scripting in other platforms.  Additionally, there are many [IronPython](http://ironpython.net/) libraries accessible now which can be ported into Dynamo!
 
 ### Exercise 01
 >Create a new Revit Project.  Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
