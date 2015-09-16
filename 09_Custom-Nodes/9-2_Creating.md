@@ -6,6 +6,10 @@ img{display:block;margin-left: auto;   margin-right: auto }
 Dynamo offers several different methods for creating custom nodes. You can build custom nodes from scratch, from an existing graph, or explicitly in C#. In this section we will cover building a custom node in the Dynamo UI, from an existing graph. This method is ideal for cleaning up the canvas, as well as packaging a sequence of nodes to reuse elsewhere.
 
 ### Creating a Custom Node from an Existing Graph
+
+![](images/9-2/uvMap.png)
+> In this image, we map a point from one surface to another using UV coordinates. Let's make some custom nodes to do this with more complex geometry.
+
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
 [UVmapping_Custom-Node.dyn](datasets/9-2/UVmapping_Custom-Node.dyn)
 
