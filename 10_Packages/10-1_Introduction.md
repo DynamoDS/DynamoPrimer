@@ -31,7 +31,7 @@ The example above focuses on a package with one custom node, but you use the sam
 > As in the example above, begin by selecting *Packages>Search for a Package...*.  This time, we'll search for *"DynamoUnfold"*, one word, minding the caps.  When we see the packages, download by clicking the arrow to the left of the package name.  Dynamo Unfold will now be installed in your Dynamo Library.
 
 ![](images/10-1/unfoldLibrary.png)
-> In the Dynamo Library, we have a *DynamoUnfold* Group with multiple categories and custom nodes!
+> In the Dynamo Library, we have a *DynamoUnfold* Group with multiple categories and custom nodes.
 
 ![](images/10-1/manage.png)
 > Now, let's take a look at the package's file structure. Select *"Packages>Manage Packages..."* in Dynamo. We'll see the window above with the two libraries we've installed. Click the button on the right of *DynamoUnfold* and select *"Show Root Directory".*
