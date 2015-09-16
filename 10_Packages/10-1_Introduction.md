@@ -44,7 +44,7 @@ The example above focuses on a package with one custom node, but you use the sam
 4. The pkg file is a basic text file defining the package settings. We can ignore this for now.
 
 ![](images/10-1/rd2.png)
-> Opening the *"extra"* folder, we see a bunch of example files that were downloaded with the install! Not all packages have example files, but this is where you can find them if they are a part of a package.  Let's open up *"SphereUnfold"*.
+> Opening the *"extra"* folder, we see a bunch of example files that were downloaded with the install. Not all packages have example files, but this is where you can find them if they are a part of a package.  Let's open up *"SphereUnfold"*.
 
 ![](images/10-1/sphereUnfold.png)
 > After opening the file and hitting *"Run"* on the solver, we have an unfolded sphere! Example files like these are helpful for learning how to work with a new Dynamo package.
