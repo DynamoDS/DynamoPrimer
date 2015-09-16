@@ -26,7 +26,7 @@ Let's move forward with the custom node that we created in the previous section.
 > 1. To check on the custom node folder location, go to *Settings > Manage Node and Package Paths...*
 
 ![](images/9-3/AddingToLibrary- 00.png)
-> In this window we see two paths: *AppData\Roaming\Dynamo...* refers to the default location of Dynamo Packages installed online. *Documents\DynamoCustomNodes...* refers to the location of custom nodes we've published locally. *Note: in the image above, you may want to select the second file path and move this to the top.  That way, when you import nodes from the Dynamo Package Manager, they'll be separated from your locally published nodes.*
+> In this window we see two paths: *AppData\Roaming\Dynamo...* refers to the default location of Dynamo Packages installed online. *Documents\DynamoCustomNodes...* refers to the location of custom nodes we've published locally. *Note: in the image above, you may want to select the second file path and move this to the top (by clicking on the up arrow to the left of the path names).  That way, when you import nodes from the Dynamo Package Manager, they'll be separated from your locally published nodes.*
 
 
 
