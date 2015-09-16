@@ -27,7 +27,8 @@ The easiest way to install a package is by using the Packages toolbar in your Dy
 ###Package Folders
 The example above focuses on a package with one custom node, but you use the same process for downloading packages with several custom nodes and supporting data files.  Let's demonstrate that down with a more comprehensive package: Dynamo Unfold.
 
-
+![](images/10-1/unfold.png)
+> As in the example above, begin by selecting *Package>Search for a Package...*.  This time, we'll search for *"DynamoUnfold"*, one word, minding the caps.
 
 ####Sample Files in the *"extra"* folder
 
