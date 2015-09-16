@@ -24,9 +24,16 @@ The easiest way to install a package is by using the Packages toolbar in your Dy
 ![](images/10-1/example.png)
 > With a quick code block operation to define a rectangular grid, we've create a list of rectangular panels.
 
+###Package Folders
+The example above focuses on a package with one custom node, but you use the same process for downloading packages with several custom nodes and supporting data files.  Let's demonstrate that down with a more comprehensive package: Dynamo Unfold.
+
+
+
+####Sample Files in the *"extra"* folder
+
 ###Introduction to the Package Manager
 ####Versioning and Dependencies between Packages
-####Sample Files in the *"extra"* folder
+
 ####Where are Files Stored Locally?
 http://dynamobim.com/files-folders/
 
