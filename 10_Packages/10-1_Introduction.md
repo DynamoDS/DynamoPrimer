@@ -28,7 +28,18 @@ The easiest way to install a package is by using the Packages toolbar in your Dy
 The example above focuses on a package with one custom node, but you use the same process for downloading packages with several custom nodes and supporting data files.  Let's demonstrate that down with a more comprehensive package: Dynamo Unfold.
 
 ![](images/10-1/unfold.png)
-> As in the example above, begin by selecting *Package>Search for a Package...*.  This time, we'll search for *"DynamoUnfold"*, one word, minding the caps.
+> As in the example above, begin by selecting *Packages>Search for a Package...*.  This time, we'll search for *"DynamoUnfold"*, one word, minding the caps.  When we see the packages, download by clicking the arrow to the left of the package name.  Dynamo Unfold will now be installed in your Dynamo Library.
+
+![](images/10-1/unfoldLibrary.png)
+> In the Dynamo Library, we have a *DynamoUnfold* Group with multiple categories and custom nodes!
+
+![](images/10-1/manage.png)
+> Now, let's take a look at the package's file structure. Select *"Packages>Manage Packages..."* in Dynamo. We'll see the window above with the two libraries we've installed. Click the button on the right of *DynamoUnfold* and select *"Show Root Directory".*
+
+![](images/10-1/rd1.png)
+> This will take us to the package's root directory.  Notice that we have 3 folders and a file.
+1. 
+
 
 ####Sample Files in the *"extra"* folder
 
