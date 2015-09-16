@@ -53,4 +53,4 @@ You can save this custom node as a .dyf file and it will automatically be added 
 Right: Core > Math with the new custom node
 
 ###Moving Forward
-Now that we've created our first custom node, the next sections will dive deeper into custom node functionality and publication for generic workflows.  In the following section, we'll look at developing a package which transfers geometry from one surface to another.
+Now that we've created our first custom node, the next sections will dive deeper into custom node functionality and publication for generic workflows.  In the following section, we'll look at developing a custom node which transfers geometry from one surface to another.
