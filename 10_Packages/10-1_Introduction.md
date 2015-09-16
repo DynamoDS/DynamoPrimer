@@ -25,7 +25,7 @@ The easiest way to install a package is by using the Packages toolbar in your Dy
 > With a quick code block operation to define a rectangular grid, we've create a list of rectangular panels.
 
 ###Package Folders
-The example above focuses on a package with one custom node, but you use the same process for downloading packages with several custom nodes and supporting data files.  Let's demonstrate that down with a more comprehensive package: Dynamo Unfold.
+The example above focuses on a package with one custom node, but you use the same process for downloading packages with several custom nodes and supporting data files.  Let's demonstrate that now with a more comprehensive package: Dynamo Unfold.
 
 ![](images/10-1/unfold.png)
 > As in the example above, begin by selecting *Packages>Search for a Package...*.  This time, we'll search for *"DynamoUnfold"*, one word, minding the caps.  When we see the packages, download by clicking the arrow to the left of the package name.  Dynamo Unfold will now be installed in your Dynamo Library.
