@@ -15,7 +15,7 @@ Custom Nodes are constructed by nesting other nodes and custom nodes inside of a
 By having multiple copies of one custom node in your graph, you can update all of them by editing the base custom node. This allows you to update your graph seamlessly by adapting to any changes that may occur in workflow or design.
 
 ###Worksharing
-Arguably the best feature of custom nodes is their worksharing capabilities. If a *power user* creates a complex Dynamo graph and hands it off to a designer who is new to Dynamo, he/she can condense the graph to the bare essentials for design interaction.  The custom node can be opened to edit the guts of the graph, but the skin can be kept simple.  With this process, custom nodes allow Dynamo users to design a graph that is clean and intuitive.
+Arguably the best feature of custom nodes is their worksharing capabilities. If a "power user" creates a complex Dynamo graph and hands it off to a designer who is new to Dynamo, he/she can condense the graph to the bare essentials for design interaction.  The custom node can be opened to edit the guts of the graph, but the skin can be kept simple.  With this process, custom nodes allow Dynamo users to design a graph that is clean and intuitive.
 
 ![](images/9-1/customNodeDiagram.jpg)
 
@@ -23,7 +23,7 @@ Arguably the best feature of custom nodes is their worksharing capabilities. If 
 There is a wide variety of ways to build custom nodes in Dynamo. In the examples in this chapter, we'll create custom nodes directly from the Dynamo UI.  If you're a programmer and are interested in C# or Zero-Touch formatting, you can reference [this page ](https://github.com/DynamoDS/Dynamo/wiki/How-To-Create-Your-Own-Nodes)on the Dynamo Wiki for a more in depth review.
 
 ### Custom Node Environment
-Let's jump into the custom node environment and make a simple node to calculate percentage.  The custom node environment is different from the Dynamo graph environment, but the interaction is fundamentally the same. Time to create our first custom node!
+Let's jump into the custom node environment and make a simple node to calculate percentage.  The custom node environment is different from the Dynamo graph environment, but the interaction is fundamentally the same. With that said, let's create our first custom node!
 
 ![Custom Nodes Intro](images/9-1/CustomNodes01.png)
 
