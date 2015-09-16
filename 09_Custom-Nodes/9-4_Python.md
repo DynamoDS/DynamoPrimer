@@ -112,7 +112,7 @@ OUT = solids
 This code will make more sense as we progress in the exercise.  Next we need to think about what information is required in order to array our solid module. First, we will need to know the dimensions of the solid to determine the translation distance. Due to a bounding box bug, we will have to use the edge curve geometry to create a bounding box.
 
 ![](images/9-4/Exercise/Python/python07.png)
-> A look at the Python node in Dynamo. The commented code is below.
+> A look at the Python node in Dynamo. Notice that we're using the same syntax as we see in the titles of the nodes in Dynamo. The commented code is below.
 
 ```
 import clr
