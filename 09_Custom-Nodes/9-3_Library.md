@@ -3,7 +3,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
 ##Adding to Your Library
-We've created a custom node and applied it to a specific process in the our Dynamo graph.
+We've created a custom node and applied it to a specific process in the our Dynamo graph. And we like this node so much, we want to keep it in our Dynamo library to reference in other graphs.  To do this, we'll publish the node locally. This is the same process as publishing a package, which we'll walk through in more detail in the next chapter.
 
 
 ![](images/9-3/AddingToLibrary- 05.png)
