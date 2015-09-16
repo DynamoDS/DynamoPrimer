@@ -5,7 +5,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 ## Custom Nodes
 Dynamo offers many core nodes for a wide-range of visual programming tasks. But sometimes a quicker, more elegant, and more easily shared solution is to build your own nodes. These can be reused among different projects, they make your program clearer and cleaner, and they can be pushed to the package manager and shared.
 
-![](images/9-1/customNodeDiagram.jpg)
+![](images/9-1/cn.jpg)
 
 ###Cleaning up Your Graph
 
@@ -14,10 +14,10 @@ Custom Nodes are constructed by nesting other nodes and custom nodes inside of a
 ###Adapting to Change
 By having multiple copies of one custom node in your graph, you can update all of them by editing the base custom nodes. This allows you to update your graph seamlessly by adapting to any changes that may occur in workflow or design.
 
-![](images/9-1/cn.jpg)
-
 ###Worksharing
 Arguably the best feature of custom nodes is their worksharing capabilities. If a *power user* creates a complex Dynamo graph and hands it off to a designer who is new to Dynamo, he/she can condense the graph to the bare essentials for design interaction.  The custom node can be opened to edit the guts of the graph, but the skin can be kept simple.  With this process, custom nodes allow Dynamo users to design a graph that is clean and intuitive.
+
+![](images/9-1/customNodeDiagram.jpg)
 
 ###Many Ways to Build a Node
 There is a wide variety of ways to build custom nodes in Dynamo. In the examples in this chapter, we'll create custom nodes directly from the Dynamo UI.  If you're a programmer and are interested in C# or Zero-Touch formatting, you can reference [this page ](https://github.com/DynamoDS/Dynamo/wiki/How-To-Create-Your-Own-Nodes)on the Dynamo Wiki for a more in depth review.
