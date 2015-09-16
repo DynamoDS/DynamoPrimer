@@ -104,6 +104,9 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 
 ```
 
+![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 09.png)
+> From Dynamo, we've created two reference points with a line connecting them using Python. Let's take this a little further in the next exercise.
+
 ### Exercise 03
 >This exercise remains simple, but drives home the topics of connecting data and geometry from Revit to Dynamo and back.  Let's begin by opening Revit-StructuralFraming.rvt. Once opened, load Dynamo and open the file Revit-StructuralFraming.dyn.
 
