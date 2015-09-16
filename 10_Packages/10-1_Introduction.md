@@ -1,5 +1,5 @@
 <style>
-img{width:100%;display:block;margin-left: auto;margin-right: auto }
+img{display:block;margin-left: auto;margin-right: auto }
 </style>
 
 ##Packages
@@ -10,8 +10,19 @@ In short, a package is a collection of custom nodes. The Dynamo Package Manager 
 An open-source project such as Dynamo thrives on this type of community involvement.  With dedicated third party developers, Dynamo is able to extend its reach to workflows in a range of industries.  For these reasons, the Dynamo team has made concerted efforts to streamline package development and publishing (which will be discussed in more detail in the following sections).  
 
 ###Installing a Package
-![](images/10-1/stock.png)
+The easiest way to install a package is by using the Packages toolbar in your Dynamo interface.  Let's jump right into it and install one now.  In this quick example, we'll install a popular package for creating quad panels on a grid.
+![](images/10-1/AddingToLibrary- 01.png)
+>1. In Dynamo, go to *Packages>Search For a Package...*
+
+![](images/10-1/AddingToLibrary- 00.png)
+> In the search bar, let's search for "quads from rectangular grid".  After a few moments, you should see all of the packages which match this search query. We want to select the first package with the matching name.
+1. Click on the download arrow to the left of the package name and the package will install. Done!
+
 ![](images/10-1/buildz.png)
+>1. Notice that we now have another group in our Dynamo library called *"buildz"*. This name refers to the [developer](http://buildz.blogspot.com/) of the package, and the custom node is placed in this group. We can begin to use this right away. 
+
+![](images/10-1/example.png)
+> With a quick code block operation to define a rectangular grid, we've create a list of rectangular panels.
 
 ###Introduction to the Package Manager
 ####Versioning and Dependencies between Packages
@@ -22,9 +33,9 @@ http://dynamobim.com/files-folders/
 Packages>Manage Packages>Show Root Directory...
 
 
-![](images/10-1/AddingToLibrary- 00.png)
 
-![](images/10-1/AddingToLibrary- 01.png)
+
+
 
 
 
