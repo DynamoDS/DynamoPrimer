@@ -8,7 +8,7 @@ thead {display: none}
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/logo02.png"></img></td>
-    <td width="55%">**BUMBLEBEE FOR DYNAMO**</td>
+    <td width="55%"><b>BUMBLEBEE FOR DYNAMO</b></td>
     <td><a href="http://archi-lab.net/bumblebee-dynamo-and-excel-interop/">Visit the Official BumbleBee Site</td></a>
   </tr>
   <tr>
@@ -22,7 +22,7 @@ thead {display: none}
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/logo01.png"></img></td>
-    <td width="55%">**CLOCKWORK FOR DYNAMO**</td>
+    <td width="55%"><b>CLOCKWORK FOR DYNAMO</b></td>
     <td><a href="http://archi-lab.net/bumblebee-dynamo-and-excel-interop/">Visit the Clockwork For Dynamo GitHub</td></a>
   </tr>
   <tr>
@@ -36,7 +36,7 @@ thead {display: none}
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/DynamoUnfold_L.png"></img></td>
-    <td width="55%">**DYNAMO UNFOLD**</td>
+    <td width="55%"><b>DYNAMO UNFOLD</b></td>
     <td><a href="https://github.com/mjkkirschner/DynamoUnfold">Visit the DynamoUnfold GitHub</td></a>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ thead {display: none}
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/Firefly_L.png"></img></td>
-    <td width="55%">**FIREFLY FOR DYNAMO**</td>
+    <td width="55%"><b>FIREFLY FOR DYNAMO</b></td>
     <td><a href="http://dynamopackages.com/">Download Firefly at the Dynamo Package Manager</td></a>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ thead {display: none}
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/MeshToolkit_L.png"></img></td>
-    <td width="55%">**MESH TOOLKIT**</td>
+    <td width="55%"><b>MESH TOOLKIT</b></td>
     <td><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Visit the Dynamo Mesh Toolkit GitHub</td></a>
   </tr>
   <tr>
@@ -78,7 +78,7 @@ thead {display: none}
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/Optimo_L.png"></img></td>
-    <td width="55%">**OPTIMO**</td>
+    <td width="55%"><b>OPTIMO</b></td>
     <td><a href="https://github.com/BPOpt/Optimo/wiki/0_-Home">Visit the Optimo GitHub</td></a>
   </tr>
   <tr>
@@ -92,7 +92,7 @@ thead {display: none}
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/Rhynamo_L.png"></img></td>
-    <td width="55%">**RHYNAMO**</td>
+    <td width="55%"><b>RHYNAMO</b></td>
     <td><a href="https://bitbucket.org/caseinc/rhynamo">Visit the Rhynamo Bitbucket</td></a>
   </tr>
   <tr>
