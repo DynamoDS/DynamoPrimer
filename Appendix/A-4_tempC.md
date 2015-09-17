@@ -33,13 +33,13 @@ thead {display: none}
 
 <table>
   <tr>
-    <td width="10%"><img src="images/A-4/ds.png"></img></td>
+    <td width="10%"><img src="images/A-4/ds_L.png"></img></td>
     <td width="55%"><b>DYNAMO SAP</b></td>
     <td><a href="http://core.thorntontomasetti.com/dynamosap-is-now-open-source/">Visit the DynamoSAP Project at Core STudio</td></a>
   </tr>
   <tr>
     <td colspan="2">DynamoSAP is a parametric interface for SAP2000, built on top of Dynamo. The project enables designers and engineers to generatively author and analyze structural systems in SAP, using Dynamo to drive the SAP model. The project prescribes a few common workflows which are described in the included sample files, and provides a wide range of opportunities for automation of typical tasks in SAP. </td>
-    <td><img src="images/A-4/msImage.png"></img></td>
+    <td><img src="images/A-4/sapImage.png"></img></td>
   </tr>
 </table>
 
