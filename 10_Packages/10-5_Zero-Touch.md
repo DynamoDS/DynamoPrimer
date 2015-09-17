@@ -20,8 +20,8 @@ Zero-touch packages are a good complement to user-defined custom nodes.  A few p
 
 <table width="50%">
     <tr>
-    <td width="35%">Logo/Image</td>
-    <td>Name</td>
+    <td width="35%"><b>Logo/Image</b></td>
+    <td><b>Name</b></td>
 
   </tr>
   <tr>
