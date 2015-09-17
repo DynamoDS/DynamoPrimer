@@ -31,7 +31,17 @@ thead {display: none}
   </tr>
 </table>
 
-
+<table>
+  <tr>
+    <td width="10%"><img src="images/A-4/ds.png"></img></td>
+    <td width="55%"><b>DYNAMO SAP</b></td>
+    <td><a href="http://core.thorntontomasetti.com/dynamosap-is-now-open-source/">Visit the DynamoSAP Project at Core STudio</td></a>
+  </tr>
+  <tr>
+    <td colspan="2">DynamoSAP is a parametric interface for SAP2000, built on top of Dynamo. The project enables designers and engineers to generatively author and analyze structural systems in SAP, using Dynamo to drive the SAP model. The project prescribes a few common workflows which are described in the included sample files, and provides a wide range of opportunities for automation of typical tasks in SAP. </td>
+    <td><img src="images/A-4/msImage.png"></img></td>
+  </tr>
+</table>
 
 <table>
   <tr>
@@ -66,8 +76,20 @@ thead {display: none}
     <td><a href="http://provingground.io/tools/lunchbox/">Checkout Lunchbox for Dynamo on the Proving Ground</td></a>
   </tr>
   <tr>
-    <td colspan="2">LunchBox is a collection of reusable geometry and data management nodes. The tools have been tested with Dynamo 0.8.1 and Revit 2016. The tool includes nodes for surface paneling, geometry, Revit data collection, and more!. After installation, search a 'LunchBox' category will appear in Dynamo. For versions compatible with Dynamo 0.6, please install version 2014.6.5 or earlier.  </td>
+    <td colspan="2">LunchBox is a collection of reusable geometry and data management nodes. The tools have been tested with Dynamo 0.8.1 and Revit 2016. The tool includes nodes for surface paneling, geometry, Revit data collection, and more!</td>
     <td><img src="images/A-4/lunchboxImage.jpg"></img></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="10%"><img src="images/A-4/mantisshrimpLogo.png"></img></td>
+    <td width="55%"><b>MANTIS SHRIMP</b></td>
+    <td><a href="https://github.com/ksobon/MantisShrimp">Visit the Mantis Shrimp Project GitHub</td></a>
+  </tr>
+  <tr>
+    <td colspan="2">Mantis Shrimp is a interoperability project that allows you to easily import Grasshopper and/or Rhino geometry into Dynamo.</td>
+    <td><img src="images/A-4/msImage.png"></img></td>
   </tr>
 </table>
 
