@@ -4,6 +4,7 @@ thead {display: none}
 </style>
 
 ##Dynamo Packages
+Here are a list of some of the more popular packages in the Dynamo community. Developers, please add to the list! Remember, the [Dynamo Primer](https://github.com/modelab/dynamo-primer) is open-source!
 
 <table>
   <tr>
@@ -55,7 +56,17 @@ thead {display: none}
   </tr>
 </table>
 
-
+<table>
+  <tr>
+    <td width="10%"><img src="images/A-4/ea_L.png"></img></td>
+    <td width="55%"><b>ENERGY ANALYSIS FOR DYNAMO</b></td>
+    <td><a href="https://github.com/tt-acm/EnergyAnalysisForDynamo">Visit the Energy Analysis for Dynamo Project on GitHub</td></a>
+  </tr>
+  <tr>
+    <td colspan="2">Energy Analysis for Dynamo allows for parametric energy modeling and whole-building energy analysis workflows in Dynamo 0.8. Energy Analysis for Dynamo allows the user to configure the energy model from Autodesk Revit, submit to Green Building Studio for DOE2 energy analysis, and dig into the results returned from the analysis. The package is being developed by Thornton Tomasetti's CORE studio.  </td>
+    <td><img src="images/A-4/eaImage.png"></img></td>
+  </tr>
+</table>
 
 <table>
   <tr>
