@@ -4,29 +4,6 @@ thead {display: none}
 </style>
 
 ##Dynamo Packages
-<table width="50%">
-    <tr>
-    <td width="35%">Logo/Image</td>
-    <td>Name</td>
-
-  </tr>
-  <tr>
-    <td><img src="images/10-5/toolkit.png"></img></td>
-    <td><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Mesh Toolkit</td></a>
-  </tr>
-  <tr>
-    <td><img src="images/10-5/unfold.png"></img></td>
-    <td><a href="http://dynamobim.com/dynamounfold/">Dynamo Unfold</td></a>
-  </tr>
-  <tr>
-    <td><img src="images/10-5/rhynamo.png"></img></td>
-    <td><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
-  </tr>
-  <tr>
-    <td><img src="images/10-5/optimo.png"></img></td>
-    <td><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
-  </tr>
-</table>
 
 <table>
   <tr>
