@@ -63,8 +63,8 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><a href="http://dynamopackages.com/">Download Dynastrator at the Package Manager</td></a>
   </tr>
   <tr>
-    <td colspan="2">Import vector art from Illustrator or the web using .svg.  This allows you to create a drawing in a program like Illustrator and then import into Dynamo for parametric operations. </td>
-    <td><img src="images/A-4/dynastratorImage.png"></img></td>
+    <td colspan="2">Import vector art from Illustrator or the web using .svg.  This allows you to import manually created drawing into Dynamo for parametric operations. </td>
+    <td><img src="images/A-4/dynastratorImage.jpg"></img></td>
   </tr>
 </table>
 
