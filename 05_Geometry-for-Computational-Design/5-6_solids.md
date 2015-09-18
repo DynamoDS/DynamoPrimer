@@ -2,17 +2,28 @@
 Lorem
 
 ### What's a Solid?
-Solids consist of one or more Surfaces that contain volume by way of a closed boundary that defines "in" or "out."
+Solids consist of one or more Surfaces that contain volume by way of a closed boundary that defines "in" or "out." These surfaces must form a "watertight" volume to be considered a solid.
 
 ![Solids](images/5-6/Solids.png)
 
 ### Topology
+Solids are made up of three types of elements: vertices, edges, and faces. Faces are the surfaces that make up the solid. Edges are the lines between adjacent faces, and vertices are the start and end points of those lines. These elements can be queried using the Topology nodes.
 
 ### Operations
-
+Solids can be modified by filleting or chamfering their edges to eliminate sharp corners and angles. The chamfer operation creates a ruled surface between two faces, while a fillet blends between faces to maintain tangency. 
+![](images/5-6/SolidOperations.png)
+>1. Solid Cube
+2. Chamfered Cube
+3. Filleted Cube
 
 ### Boolean Operations
-Solid boolean operations are efficient and time-saving procedures for constructing geometry. A single boolean is actually performing four operations: intersect two or more objects, split them at the intersections, delete unwanted portions of the geometry, and join everything back together. There are three solid boolean operations defining which parts of the geometry are kept.
+Solid boolean operations are methods for combining two or more solids. A single boolean is actually performing four operations: 
+1. **Intersect** two or more objects
+2. **Split** them at the intersections
+3. **Delete** unwanted portions of the geometry
+4. **Join** everything back together 
+
+This makes solid booleans a powerful time-saving process. There are three solid boolean operations defining which parts of the geometry are kept.
 ![Solid Boolean](images/5-6/SolidBooleans.png)
 > 1. **Union:** Remove the overlapping portions of the solids and join them into a single solid
 2. **Difference:** Subtract one solid from another. The solid to be subtracted is referred to as a tool
