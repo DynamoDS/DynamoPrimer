@@ -73,7 +73,7 @@ With the root directory open, navigate to the *"extra"* folder, which houses all
 > **05-SVG-Import:** Since the custom nodes are able to map different types of curves, this last file references an SVG file exported from Illustrator and maps the imported curves to a target surface
 
 ![](images/10-4/Creating/Packages - 00.png)
-> **05-SVG-Import:** By parsing throught the syntax, curves are translated from SVG format to Dynamo polycurves.
+> **05-SVG-Import:** By parsing through the syntax of an .svg file, curves are translated from .xml format to Dynamo polycurves.
 
 ![](images/10-4/Creating/Packages - 02.png)
 > **05-SVG-Import:** The imported curves are mapped to a target surface. This allows us to explicitly (point-and-click) design a panelization in illustrator, import into Dynamo, and apply to a target surface.
