@@ -36,7 +36,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   <tr>
     <td width="10%"><img src="images/A-4/ds_L.png"></img></td>
     <td width="55%"><b>DYNAMO SAP</b></td>
-    <td><a href="http://core.thorntontomasetti.com/dynamosap-is-now-open-source/">Visit the DynamoSAP Project at Core STudio</td></a>
+    <td><a href="http://core.thorntontomasetti.com/dynamosap-is-now-open-source/">Visit the DynamoSAP Project at Core Studio</td></a>
   </tr>
   <tr>
     <td colspan="2">DynamoSAP is a parametric interface for SAP2000, built on top of Dynamo. The project enables designers and engineers to generatively author and analyze structural systems in SAP, using Dynamo to drive the SAP model. The project prescribes a few common workflows which are described in the included sample files, and provides a wide range of opportunities for automation of typical tasks in SAP. </td>
@@ -53,6 +53,18 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   <tr>
     <td colspan="2">This library extends Dynamo/Revit functionality by enabling users to unfold surface and poly-surface geometry. The library allows users to first translate surfaces into planar tessellated topology, then unfold them using Protogeometry tools in Dynamo. This package also includes some experimental nodes as well as a few basic sample files. </td>
     <td><img src="images/A-4/DynamoUnfold_S.png"></img></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="10%"><img src="images/A-4/Dynastrator_L.png"></img></td>
+    <td width="55%"><b>DYNASTRATOR</b></td>
+    <td><a href="http://dynamopackages.com/">Download Dynastrator at the Package Manager</td></a>
+  </tr>
+  <tr>
+    <td colspan="2">Import vector art from Illustrator or the web using .svg.  This allows you to create a drawing in a program like Illustrator and then import into Dynamo for parametric operations. </td>
+    <td><img src="images/A-4/dynastratorImage.png"></img></td>
   </tr>
 </table>
 
