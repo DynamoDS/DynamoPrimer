@@ -44,3 +44,7 @@ Let's use a few boolean operations to create a spiky ball.
 4. **Solid.UnionAll**: Union the cones and the sphere
 5. **Topology.Edges**: Query the edges of the new solid
 6. **Solid.Fillet**: Fillet the edges of the spiky ball
+
+> Download the example files that accompanies this image (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+
+> Geometry for Computational Design - Solids.dyn
