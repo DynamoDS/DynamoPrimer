@@ -6,6 +6,7 @@ Solids consist of one or more Surfaces that contain volume by way of a closed bo
 
 ![Solids](images/5-6/Solids.png)
 
+Solids can be created by joining surfaces or polysurfaces together, or using operations such as loft, sweep, and revolve. Sphere, cube, cone and cylinder primitives are also solids.
 ### Topology
 Solids are made up of three types of elements: vertices, edges, and faces. Faces are the surfaces that make up the solid. Edges are the lines between adjacent faces, and vertices are the start and end points of those lines. These elements can be queried using the Topology nodes.
 
@@ -30,5 +31,6 @@ This makes solid booleans a powerful time-saving process. There are three solid 
 3. **Intersection:** Keep only the intersecting volume of the two solids
 
 In addition to these three operations, Dynamo has Solid.DifferenceAll and Solid.UnionAll nodes for performing difference and union operations with multiple solids. 
-
-[image]
+![](images/5-6/BooleanAll.png)
+> 1. **UnionAll:** Union operation with sphere and outward-facing cones
+2. **DifferenceAll:** Difference operation with sphere and inward-facing cones
