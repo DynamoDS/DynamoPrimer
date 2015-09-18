@@ -1,9 +1,41 @@
 <style>
-img{width:100%}
+img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
 ##Python and Revit
+
+Now that we've demonstrate how to use Python scripts in Dynamo, let's take a look at connecting Revit libraries into the scripting environment. Remember, we imported our Dynamo core nodes with the first three lines in the block of code below.  To import the Revit nodes, Revit elements, and the Revit document manager, we only have to add a few more lines:
+
+```
+import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+
+# Import RevitNodes
+clr.AddReference("RevitNodes")
+import Revit
+
+# Import Revit elements
+from Revit.Elements import *
+
+# Import DocumentManager
+clr.AddReference("RevitServices")
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+
+import System
+```
+
+This gives us access to the Revit API and offers custom scripting for any Revit task.  By combining the process of visual programming with Revit API scripting, collaboration and tool development improve significantly.  For example, a BIM manager and a schematic designer can work together on the same graph.  In this collaboration, they can improve design and execution of the model.
+
+![Exercise](images/9-4/pythonRevit.png)
+
 ###Platform Specific APIs
+
+The plan behind the Dynamo Project is to widen the scope of platform implementation.  As Dynamo adds more programs to the docket, users will gain access to platform-specific APIs from the Python scripting environment.  While Revit is the case study for this section, we can anticipate more chapters in the future which offer comprehensive tutorials on scripting in other platforms.  Additionally, there are many [IronPython](http://ironpython.net/) libraries accessible now which can be imported into Dynamo!
+
+The examples below demonstrate ways to implement Revit-specific operations from Dynamo using Python. For a more detailed review on Python's relationship to Dynamo and Revit, refer to the [Dynamo Wiki page](https://github.com/DynamoDS/Dynamo/wiki/Python-0.6.3-to-0.7.x-Migration). Another useful resource for Python and Revit is the [Revit Python Shell ](https://github.com/architecture-building-systems/revitpythonshell) Project.
+
 ### Exercise 01
 >Create a new Revit Project.  Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
 
@@ -71,6 +103,9 @@ refPtArray = System.Array[ReferencePoint]([startRefPt, endRefPt])
 OUT = CurveByPoints.ByReferencePoints(refPtArray)
 
 ```
+
+![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 09.png)
+> From Dynamo, we've created two reference points with a line connecting them using Python. Let's take this a little further in the next exercise.
 
 ### Exercise 03
 >This exercise remains simple, but drives home the topics of connecting data and geometry from Revit to Dynamo and back.  Let's begin by opening Revit-StructuralFraming.rvt. Once opened, load Dynamo and open the file Revit-StructuralFraming.dyn.

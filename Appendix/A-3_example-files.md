@@ -1,6 +1,6 @@
 ##Dynamo Example Files
 
-#####These example files accompany the Dynamo Primer, and are organized according to Chapter and Section. 
+#####These example files accompany the Dynamo Primer, and are organized according to Chapter and Section.
 >Right click files and use "Save Link As..."
 
 
@@ -8,7 +8,7 @@
 <style>
 td {background-color: #F9F9F9;}
 td:nth-child(1){width:250px;}
-td:nth-child(2){width:550px;}    
+td:nth-child(2){width:550px;}
 table{box-shadow: 2px 2px 2px #BBBBBB}
 </style>
 

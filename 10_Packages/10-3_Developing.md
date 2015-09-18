@@ -1,5 +1,5 @@
 <style>
-img{width:100%}
+img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
 ##Developing a Package
@@ -7,15 +7,20 @@ img{width:100%}
 Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through how a package is setup by deconstructing an existing one.  This case study builds on lessons from the previous chapter, providing a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.
 
 ###MapToSurface
-In the previous chapter, we explored ways for panelizing a surface in Dynamo based on curves defined in the XY plane. This case study extends these concepts for more complex geometry.  We're going to install this package as built in order to demonstrate how it was developed.  In the next section, we'll demonstrate how this package was published.
+We're going to work with a sample packages which demonstrates the UV mapping of points from one surface to another.  We've already built the fundamentals of the tool in the [Creating a Custom Node](../09_Custom-Nodes/9-2_Creating.md) section of this primer.  The files below demonstrate how we can take the concept of UV Mapping and develop a set of tools for a publishable library.
+
+![](images/10-4/uvMap.png)
+> In this image, we map a point from one surface to another using UV coordinates. The package is based on this concept, but with more complex geometry.
 
 ###Installing the Package
+In the previous chapter, we explored ways for panelizing a surface in Dynamo based on curves defined in the XY plane. This case study extends these concepts for more dimensions of geometry.  We're going to install this package as built in order to demonstrate how it was developed.  In the next section, we'll demonstrate how this package was published.
+
 ![](images/10-4/Creating/Packages - 14.png)
 > This is the easy part. In Dynamo, navigate to *"Packages>Search for a Package..."*
 
 ![](images/10-4/Creating/Packages - 13.png)
 > Search for the package *"MapToSurface"* (all one word).
-1. When the package is found, click on the big download error to the left of the package name.  This will install the package into Dynamo.
+1. When the package is found, click on the big download arrow to the left of the package name.  This will install the package into Dynamo.
 
 ![](images/10-4/Publishing/packages - ui.png)
 > 1. After installing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library. With the package now installed, let's walk through how it's setup.
@@ -42,7 +47,7 @@ The package we're creating uses 5 custom nodes that we've built for reference. L
 > **SampleSrf:** This is a simple node which creates a parametric surface to map from the source grid to an undulating surface in the example files.
 
 ###Example Files
-The example files can be found in the package's root folder (In Dynamo, navigate this folder by going to *Packages>Manage Packages...*). 
+The example files can be found in the package's root folder (In Dynamo, navigate to this folder by going to *Packages>Manage Packages...*). 
 
 ![](images/10-4/Publishing/packages - showRoot.png)
 > In the manage packages window, click on the three vertical dots to the right of *"MapToSurface"* and choose *"Show Root Directory".* 
@@ -50,7 +55,7 @@ The example files can be found in the package's root folder (In Dynamo, navigate
 With the root directory open, navigate to the *"extra"* folder, which houses all of the files in the package which are not custom nodes.  This is where examples files (if they exist) are stored for Dynamo packages.  The screenshots below discuss the concepts demonstrated in each example file.
 
 ![](images/10-4/Creating/Packages - 06.png)
-> **01-PanelingWithPolygons:** This example file demonstrates how *"PointsToSurface"* may be used to panelize a surface based on a grid of rectangles.  This should look familiar, as we demonstrated a similar workflow in the previous chapter ("Custom Nodes").
+> **01-PanelingWithPolygons:** This example file demonstrates how *"PointsToSurface"* may be used to panelize a surface based on a grid of rectangles.  This should look familiar, as we demonstrated a similar workflow in the [previous chapter](../09_Custom-Nodes/9-2_Creating.md).
 
 ![](images/10-4/Creating/Packages - 05.png)
 > **02-PanelingWithPolygons-II:** Using a similar workflow, this exercise file shows a setup for mapping circles (or polygons representing circles) from one surface to another.  This uses the *"PolygonsToSurface"* node.
@@ -68,7 +73,7 @@ With the root directory open, navigate to the *"extra"* folder, which houses all
 > **05-SVG-Import:** Since the custom nodes are able to map different types of curves, this last file references an SVG file exported from Illustrator and maps the imported curves to a target surface
 
 ![](images/10-4/Creating/Packages - 00.png)
-> **05-SVG-Import:** Using Python, the SVG curves are translated from SVG format to Dynamo polycurves.
+> **05-SVG-Import:** Using Python string operations, the SVG curves are translated from SVG format to Dynamo polycurves.
 
 ![](images/10-4/Creating/Packages - 02.png)
 > **05-SVG-Import:** The imported curves are mapped to a target surface. This allows us to explicitly (point-and-click) design a panelization in illustrator, import into Dynamo, and apply to a target surface.
