@@ -37,10 +37,10 @@ In addition to these three operations, Dynamo has Solid.DifferenceAll and Solid.
 
 Let's use a few boolean operations to create a spiky ball.
 
-![](images/5-6/spikyBall.png)
+![](images/5-6/spikyBallExample.png)
 > 1. **Sphere.ByCenterPointRadius**: Create base solid
-2. **Topology.Faces**, **Face.SurfaceGeometry** query the faces of the solid and convert to surface geometry- in this case, the sphere has only one face
-3. Code Block: Construct cones with **Cone.ByPointsRadii** using surface points moved along normal vectors
+2. **Topology.Faces**, **Face.SurfaceGeometry**: Query the faces of the solid and convert to surface geometry- in this case, the sphere has only one face
+3. **Cone.ByPointsRadii**: Construct cones using points on the surface
 4. **Solid.UnionAll**: Union the cones and the sphere
-5. **Topology.Edges**: query the edges of the new solid
-6. **Solid.Fillet**: fillet the edges of the spiky ball
+5. **Topology.Edges**: Query the edges of the new solid
+6. **Solid.Fillet**: Fillet the edges of the spiky ball
