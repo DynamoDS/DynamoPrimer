@@ -1,5 +1,5 @@
 #The Dynamo Primer
-##First Edition V1.2
+##First Edition V1.3
 
 ![Dynamo Logo](images/dynamo_logo_dark-trim.png)
 
@@ -26,6 +26,8 @@ Version 1.0 of this Primer includes the first four chapters of a planned twelve 
 * **Lists, Lists, Lists** - How to do I manage and coordinate my data structures?
 * **Code in Nodes** - How can I start extending Dynamo with my own code?
 * **Computational BIM** - How can I use Dynamo with a Revit model?
+* **Custom Nodes** - How can I create my own nodes?
+* **Packages** - How can I share my tools with the community?
 
 This is an exciting time to be learning about, working with, and developing for Dynamo. Let's get started!
 
