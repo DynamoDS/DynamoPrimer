@@ -34,3 +34,13 @@ In addition to these three operations, Dynamo has Solid.DifferenceAll and Solid.
 ![](images/5-6/BooleanAll.png)
 > 1. **UnionAll:** Union operation with sphere and outward-facing cones
 2. **DifferenceAll:** Difference operation with sphere and inward-facing cones
+
+Let's use a few boolean operations to create a spiky ball.
+
+![](images/5-6/spikyBall.png)
+> 1. **Sphere.ByCenterPointRadius**: Create base solid
+2. **Topology.Faces**, **Face.SurfaceGeometry** query the faces of the solid and convert to surface geometry- in this case, the sphere has only one face
+3. Code Block: Construct cones with **Cone.ByPointsRadii** using surface points moved along normal vectors
+4. **Solid.UnionAll**: Union the cones and the sphere
+5. **Topology.Edges**: query the edges of the new solid
+6. **Solid.Fillet**: fillet the edges of the spiky ball
