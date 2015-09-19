@@ -3,11 +3,11 @@ img{display:block;margin-left: auto;margin-right: auto }
 </style>
 
 ##Packages
-In short, a package is a collection of custom nodes. The Dynamo Package Manager is a portal for the community to download any package which has been published online.  These toolsets are developed by third parties in order to extend Dynamo's core functionality, accessible to all and ready to download at the click of the button.
+In short, a Package is a collection of Custom Nodes. The Dynamo Package Manager is a portal for the community to download any package which has been published online.  These toolsets are developed by third parties in order to extend Dynamo's core functionality, accessible to all, and ready to download at the click of the button.
 
 ![](images/10-1/dpm.png)
 
-An open-source project such as Dynamo thrives on this type of community involvement.  With dedicated third party developers, Dynamo is able to extend its reach to workflows in a range of industries.  For these reasons, the Dynamo team has made concerted efforts to streamline package development and publishing (which will be discussed in more detail in the following sections).  
+An open-source project such as Dynamo thrives on this type of community involvement.  With dedicated third party developers, Dynamo is able to extend its reach to workflows across a range of industries. For these reasons, the Dynamo team has made concerted efforts to streamline package development and publishing (which will be discussed in more detail in the following sections).  
 
 ###Installing a Package
 The easiest way to install a package is by using the Packages toolbar in your Dynamo interface.  Let's jump right into it and install one now.  In this quick example, we'll install a popular package for creating quad panels on a grid.

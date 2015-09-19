@@ -77,7 +77,7 @@ In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Pyth
 3. Plug this value into a ReferencePoint.ByCoordinates node for X,Y, and Z inputs.
 4. Create three sliders, ranging from -100 to 100 with a step size of 1.
 5. Connect each slider to a ReferencePoint.ByCoordinates node.
-6. Add a Python node to the canvas, click the "+" button on the node to add another input and plug the two references points into each input.  Open the Python node.
+6. Add a Python node to the workspace, click the "+" button on the node to add another input and plug the two references points into each input.  Open the Python node.
 
 ![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 07.png)
 > A look at the Python node in Dynamo. The commented code is below.
