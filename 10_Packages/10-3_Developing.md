@@ -1,7 +1,3 @@
-<style>
-img{display:block;margin-left: auto;   margin-right: auto }
-</style>
-
 ##Developing a Package
 
 Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through how a package is setup by deconstructing an existing one.  This case study builds on lessons from the previous chapter, providing a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.

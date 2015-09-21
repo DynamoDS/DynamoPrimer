@@ -1,9 +1,3 @@
-<style>
-table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
-thead {display: none}
-img{display:block;margin-left: auto;   margin-right: auto }
-</style>
-
 ## What is Zero-Touch?
 
 Zero-Touch Importing refers to a simple point-and-click method for importing C# libraries.  Dynamo will read the public methods of a *.dll* file and convert them to Dynamo nodes. You can use Zero-Touch to develop your own custom nodes and packages, and to import external libraries into the Dynamo environment.
@@ -18,9 +12,9 @@ This section demonstrates how to use Zero-Touch to import a third party library.
 Zero-touch packages are a good complement to user-defined custom nodes.  A few packages which use C# libraries are listed in the table below. For more detailed information on packages, visit the [Packages section ](../Appendix/A-4_temp.md)in the Appendix.
 
 
-<table width="50%">
+<table width="100%">
     <tr>
-    <td width="35%"><b>Logo/Image</b></td>
+    <td width="50%"><b>Logo/Image</b></td>
     <td><b>Name</b></td>
 
   </tr>
