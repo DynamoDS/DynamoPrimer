@@ -4,10 +4,10 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ##Python
 ![](images/9-4/pythonlogo.png)
-Python is a widely used programming language. Python's syntax emphasizes readability, making it easier to learn than other languages. Python supports modules and packages, and can be embedded into existing applications. The examples in this section assume a basic familiarity with python. For information how to get up and running with Python, a good resource is the ["Getting Started"](https://www.python.org/about/gettingstarted/) page on [Python.org](https://www.python.org/).
+Python is a widely used programming language whose popularity has a lot to do with its style of syntax which emphasizes readability, making it easier to learn than many other languages. Python supports modules and packages, and can be embedded into existing applications. The examples in this section assume a basic familiarity with Python. For information how to get up and running with Python, a good resource is the ["Getting Started"](https://www.python.org/about/gettingstarted/) page on [Python.org](https://www.python.org/).
 
 ###Visual vs. Textual Programming
-Why would you use textual programming in Dynamo's visual programming environment? As we discussed in chapter 1.1, visual programming has many advantages. It allows you to create programs without learning special syntax, in an intuitive visual interface. However, a visual program can become cluttered, and can at times fall short of functionality. For example, Python offers much more achieveable methods for writing conditional statements (if/then) and looping.  Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. 
+Why would you use textual programming in Dynamo's visual programming environment? As we discussed in chapter 1.1, visual programming has many advantages. It allows you to create programs without learning special syntax, in an intuitive visual interface. However, a visual program can become cluttered, and can at times fall short in functionality. For example, Python offers much more achieveable methods for writing conditional statements (if/then) and looping.  Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. 
 
 **Visual Program:**
 ![](images/9-4/python-nodes.png)
@@ -40,7 +40,7 @@ OUT = solids
 ```
 
 ###The Python Node
-Like code blocks, python nodes are a scripting interface within a visual programming environment.
+Like code blocks, Python nodes are a scripting interface within a visual programming environment.
 The Python node can be found under *Core>Scripting* in the library. Double clicking the node opens the python script editor (you can also right click on the node and select *Edit...*).
 
 ![Script Editor](images/9-4/Exercise/Python/python04.png)
@@ -81,7 +81,7 @@ Now that we have our top and bottom surfaces, let’s loft between the two profi
 3.	**List.Create:** Connect the top, side, and bottom surfaces to the index inputs to create a list of surfaces
 4.	**Solid.ByJoinedSurfaces:** Join the surfaces to create the solid module
 
-Now that we have our solid, let’s drop a Python Script node onto the canvas. 
+Now that we have our solid, let’s drop a Python Script node onto the workspace. 
 
 ![](images/9-4/Exercise/Python/python05.png)
 > To add additional inputs to the node, close the editor and click the + icon on the node. The inputs are named IN[0], IN[1], etc. to indicate that they represent items in a list.
@@ -206,7 +206,7 @@ Now that we have created a useful python script, let’s save it as a custom nod
 
 > Assign a name, description, and category.
 
-This will open a new canvas in which to edit the custom node. 
+This will open a new workspace in which to edit the custom node. 
 
 ![](images/9-4/Exercise/Python/python12.png)
 
