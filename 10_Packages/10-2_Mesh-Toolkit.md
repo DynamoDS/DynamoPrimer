@@ -1,7 +1,3 @@
-<style>
-img{display:block;margin-left: auto;   margin-right: auto }
-</style>
-
 ##Package Case Study – Mesh Toolkit
 
 The Dynamo Mesh Toolkit provides tools to import meshes from external file formats, create a mesh from Dynamo geometry objects, and manually build meshes by their vertices and indices. The library also provides tools to modify meshes, repair meshes, or extract horizontal slices for use in fabrication.
