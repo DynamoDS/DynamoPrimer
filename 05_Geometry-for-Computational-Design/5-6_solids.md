@@ -1,3 +1,8 @@
+
+<style>
+img{width:100%}
+</style>
+
 ## Solids
 If we want to construct more complex models that cannot be created from a single surface or define an explicit volume, we must now venture into the realm of Solids (and Polysurfaces). Even a simple cube is complex enough to need six surfaces, one per face. Solids give access to two key concepts that Surfaces do not - a more refined topological description (faces, edges, vertices) and boolean operations.
 
@@ -14,7 +19,7 @@ Solids consist of one or more Surfaces that contain volume by way of a closed bo
 ### Topology
 Solids are made up of three types of elements: vertices, edges, and faces. Faces are the surfaces that make up the Solid. Edges are the Curves that define the connection between adjacent faces, and vertices are the start and end points of those Curves. These elements can be queried using the Topology nodes.
 
-[Image]
+![Topology](images/5-6/topology.png)
 
 >1. Faces
 2. Edges
