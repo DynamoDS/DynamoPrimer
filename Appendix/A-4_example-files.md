@@ -87,3 +87,7 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 |--|--|
 |Creating a Custom Node|[UVMapping-CreatingCustomNode.zip](../09_Custom-Nodes/datasets/9-2/UVMapping-CreatingCustomNode.zip)
 |Publishing to Your Library|[PointsToSurface.dyf](../09_Custom-Nodes/datasets/9-3/PointsToSurface.dyf)
+|Python Nodes|[Python_Custom-Node.dyn](../09_Custom-Nodes/datasets/9-4/Python_Custom-Node.dyn)
+|Python and Revit|[Revit-Doc.dyn](../09_Custom-Nodes/datasets/9-5/Revit-Doc.dyn)
+|Python and Revit|[Revit-ReferenceCurve.dyn](../09_Custom-Nodes/datasets/9-5/Revit-ReferenceCurve.dyn)
+|Python and Revit|[Revit-StructuralFraming.zip](../09_Custom-Nodes/datasets/9-5/Revit-StructuralFraming.zip)
