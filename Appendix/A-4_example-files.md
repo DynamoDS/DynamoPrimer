@@ -95,6 +95,6 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 ####Packages####
 |Section|Download File|
 |--|--|
-|Package Case Study - Mesh Toolkit|[MeshToolkit.zip](../09_Custom-Nodes/datasets/10-2/MeshToolkit.zip)
-|Publishing a Package|[MapToSurface.zip](../09_Custom-Nodes/datasets/10-4/MapToSurface.zip)
-|Zero-Touch Importing|[ZeroTouchImages.zip](../09_Custom-Nodes/datasets/10-5/ZeroTouchImages.zip)
+|Package Case Study - Mesh Toolkit|[MeshToolkit.zip](../10_Packages/datasets/10-2/MeshToolkit.zip)
+|Publishing a Package|[MapToSurface.zip](../10_Packages/datasets/10-4/MapToSurface.zip)
+|Zero-Touch Importing|[ZeroTouchImages.zip](../10_Packages/datasets/10-5/ZeroTouchImages.zip)
