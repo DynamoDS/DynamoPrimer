@@ -15,7 +15,7 @@ With Zero-Touch, you can actually import a library which was not necessarily dev
 This section demonstrates how to use Zero-Touch to import a third party library.  For information on developing your own Zero-Touch Library, reference the [Dynamo wiki page](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development).
 
 ###Zero-Touch Packages
-Zero-touch packages are a good complement to user-defined custom nodes.  A few packages which use C# libraries are listed in the table below. For more detailed information on packages, visit the [Packages section ](../Appendix/A-4_temp.md)in the Appendix.
+Zero-touch packages are a good complement to user-defined custom nodes.  A few packages which use C# libraries are listed in the table below. For more detailed information on packages, visit the [Packages section ](../Appendix/A-3_packages.md)in the Appendix.
 
 
 <table width="50%">
@@ -59,7 +59,7 @@ In this case study, we'll show how to import the [AForge](http://www.aforgenet.c
 >1. Back in Dynamo, you should see an *"AForge" *group of nodes added to your Library Toolbar.  We now have access to the AForge imaging library from our visual program!
 
 ### Exercise 1 - Edge Detection
->Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Zero-Touch-Examples.zip](datasets/10-5/Zero-Touch-Examples.zip)
+>Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [ZeroTouchImages.zip](datasets/10-5/ZeroTouchImages.zip)
 
 Now that the library's imported, we'll start off simple with this first exercise (*01-EdgeDetection.dyn*).  We'll do some basic image processing on a sample image to show how AForge image filters.  We'll use the *"Watch Image"* node to show our results and apply filters in Dynamo similar to those in Photoshop 
 
@@ -93,7 +93,7 @@ Now that the library's imported, we'll start off simple with this first exercise
 
 ### Exercise 2 - Rectangle Creation
 
->Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Zero-Touch-Examples.zip](datasets/10-5/Zero-Touch-Examples.zip)
+>Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [ZeroTouchImages.zip](datasets/10-5/ZeroTouchImages.zip)
 
 Now that we're introduced to some basic image processing, let's use an image to drive Dynamo geometry! On an elementary level, in this exercise we're aiming to do a *"Live Trace"* of an image using AForge and Dynamo.  We're going to keep it simple and extract rectangles from a reference image, but there are tools available in AForge for more complex operations.  We'll be working with *02-RectangleCreation.dyn* from the downloaded exercise files.
 
