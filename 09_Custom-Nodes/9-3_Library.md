@@ -8,7 +8,7 @@ We've just created a custom node and applied it to a specific process in our Dyn
 ###Publishing a Custom Node Locally
 Let's move forward with the custom node that we created in the previous section. By publishing a node locally, the node will be accessible in your Dynamo library when you open a new session. Without publishing a node, a Dynamo graph which references a custom node must also have that custom node in its folder (or the custom node must be imported into Dynamo using *File>Import Library*).
 
->Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [PointsToSurface.dyn](datasets/9-3/PointsToSurface.dyf)
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [PointsToSurface.dyf](datasets/9-3/PointsToSurface.dyf)
 
 ![](images/9-3/AddingToLibrary- 05.png)
 > After opening the PointsToSurface custom node, we see the graph above in the Dynamo Custom Node Editor.  You can also open up a custom node by double clicking on it in the Dynamo Graph Editor.
