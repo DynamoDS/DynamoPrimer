@@ -1,7 +1,3 @@
-<style>
-img{display:block;margin-left: auto;   margin-right: auto }
-</style>
-
 ##Package Case Study – Mesh Toolkit
 
 The Dynamo Mesh Toolkit provides tools to import meshes from external file formats, create a mesh from Dynamo geometry objects, and manually build meshes by their vertices and indices. The library also provides tools to modify meshes, repair meshes, or extract horizontal slices for use in fabrication.
@@ -11,7 +7,7 @@ The Dynamo Mesh Toolkit provides tools to import meshes from external file forma
 The Dynamo Mesh Toolkit is part of Autodesk's ongoing mesh research, and as such will continue to grow over the coming years. Expect new methods to appear on the toolkit frequently, and feel free to reach out to the Dynamo team with comments, bugs, and suggestions for new features.
 
 ###Meshes vs. Solids
-The exercise below demonstrates some basic mesh operations using the Mesh Toolkit.  In the exercise, we intersect a mesh with a series of planes, which can be computationally expensive using solids.  Unlike a solid, a mesh has a set "resolution", and we can define this resolution based on the task at hand.  For more details on mesh to solid relationships, you can reference the[ Geometry For Computation Design](../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.md) chapter in this primer.  For a more thorough examination of Mesh Toolkit, you can reference the [Dynamo Wiki page.](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit) Let's jump into the package in the exercise below.
+The exercise below demonstrates some basic mesh operations using the Mesh Toolkit.  In the exercise, we intersect a mesh with a series of planes, which can be computationally expensive using solids.  Unlike a solid, a mesh has a set "resolution" and is not defined mathematically but topologically, and we can define this resolution based on the task at hand.  For more details on mesh to solid relationships, you can reference the[ Geometry For Computation Design](../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.md) chapter in this primer.  For a more thorough examination of Mesh Toolkit, you can reference the [Dynamo Wiki page.](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit) Let's jump into the package in the exercise below.
 
 ###Install Mesh Toolkit
 ![Import Mesh](images/10-3/mt.png)

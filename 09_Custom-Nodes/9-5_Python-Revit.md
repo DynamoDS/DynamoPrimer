@@ -37,7 +37,7 @@ The plan behind the Dynamo Project is to widen the scope of platform implementat
 The examples below demonstrate ways to implement Revit-specific operations from Dynamo using Python. For a more detailed review on Python's relationship to Dynamo and Revit, refer to the [Dynamo Wiki page](https://github.com/DynamoDS/Dynamo/wiki/Python-0.6.3-to-0.7.x-Migration). Another useful resource for Python and Revit is the [Revit Python Shell ](https://github.com/architecture-building-systems/revitpythonshell) Project.
 
 ### Exercise 01
->Create a new Revit Project.  Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+>Create a new Revit Project.  Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Revit-Doc.dyn](datasets/9-5/Revit-Doc.dyn)
 
 In these exercises, we'll explore elementary Python scripts in Dynamo for Revit.  The exercise will focus on dealing with Revit files and elements, as well as the communication between Revit and Dynamo.
 
@@ -66,18 +66,18 @@ OUT=[doc,uiapp,app]
 
 
 ### Exercise 02
->Create a new Revit Family - Conceptual Mass. Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+>Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Revit-ReferenceCurve.dyn](datasets/9-5/Revit-ReferenceCurve.dyn)
 
 In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Python node.
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 08.png)
-> Begin with the set of nodes in the image above.  We'll first create two reference point in Revit from Dynamo nodes.
+> Begin by creating a new Conceptual Mass family in Revit. Launch Dynamo and create the set of nodes in the image above.  We'll first create two reference point in Revit from Dynamo nodes.
 1. **Important note - when performing Revit operations, be certain that the run mode has been set to "Manual". Otherwise the program will crash.**
 2. Create a code block and give it a value of "0;"
 3. Plug this value into a ReferencePoint.ByCoordinates node for X,Y, and Z inputs.
 4. Create three sliders, ranging from -100 to 100 with a step size of 1.
 5. Connect each slider to a ReferencePoint.ByCoordinates node.
-6. Add a Python node to the canvas, click the "+" button on the node to add another input and plug the two references points into each input.  Open the Python node.
+6. Add a Python node to the workspace, click the "+" button on the node to add another input and plug the two references points into each input.  Open the Python node.
 
 ![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 07.png)
 > A look at the Python node in Dynamo. The commented code is below.
@@ -108,7 +108,9 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 > From Dynamo, we've created two reference points with a line connecting them using Python. Let's take this a little further in the next exercise.
 
 ### Exercise 03
->This exercise remains simple, but drives home the topics of connecting data and geometry from Revit to Dynamo and back.  Let's begin by opening Revit-StructuralFraming.rvt. Once opened, load Dynamo and open the file Revit-StructuralFraming.dyn.
+>Download and unzip the example files that accompany this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Revit-StructuralFraming.zip](datasets/9-5/Revit-StructuralFraming.zip)
+
+>This exercise keeps it simple, but drives home the topics of connecting data and geometry from Revit to Dynamo and back.  Let's begin by opening Revit-StructuralFraming.rvt. Once opened, load Dynamo and open the file Revit-StructuralFraming.dyn.
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 04.png)
 > This Revit file is about as basic as it gets. To reference curves, one drawn on Level 1 and the other drawn on Level 2. We want to get these curves into Dynamo and maintain a live link.

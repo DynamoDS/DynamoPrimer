@@ -3,10 +3,10 @@ img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
 ## Creating a Custom Node
-Dynamo offers several different methods for creating custom nodes. You can build custom nodes from scratch, from an existing graph, or explicitly in C#. In this section we will cover building a custom node in the Dynamo UI, from an existing graph. This method is ideal for cleaning up the canvas, as well as packaging a sequence of nodes to reuse elsewhere.
+Dynamo offers several different methods for creating custom nodes. You can build custom nodes from scratch, from an existing graph, or explicitly in C#. In this section we will cover building a custom node in the Dynamo UI, from an existing graph. This method is ideal for cleaning up the workspace, as well as packaging a sequence of nodes to reuse elsewhere.
 
 ###Custom Nodes for UV Mapping
-In the image below, we map a point from one surface to another using UV coordinates. We'll use this concept to create a panelized surface which references curves in the XY plane. We'll be creating quad panels for our panelization here, but using the same logic, we can create a wide variety of panels with UV mapping. This lends itself well to custom node development...we will likely want to repeat a process similar to this one again. By creating a custom node, we can map points from one surface to another in one graph, or in other Dynamo workflows.
+In the image below, we map a point from one surface to another using UV coordinates. We'll use this concept to create a panelized surface which references curves in the XY plane. We'll be creating quad panels for our panelization here, but using the same logic, we can create a wide variety of panels with UV mapping. This is a great opportunity for custom node development because we will likely want to repeat a process similar to this one again. By creating a custom node, we can map points from one surface to another in one graph, or in other Dynamo workflows.
 
 ![](images/9-2/uvMap2-01-01.jpg)
 
@@ -42,26 +42,26 @@ The final step is to use the 3D points to construct rectangular surface patches.
 
 ![Exercise](images/9-2/UVmapping04.png)
 >1.	**PolyCurve.ByPoints:** Connect the points on the surface to construct a polycurve through the points.
-2. **Boolean:** Add a Boolean to the canvas and connect it to the *‘connectLastToFirst’* input and toggle to True to close the polycurves. You should now see rectangles mapped to the surface
+2. **Boolean:** Add a Boolean to the workspace and connect it to the *‘connectLastToFirst’* input and toggle to True to close the polycurves. You should now see rectangles mapped to the surface
 3. **Surface.ByPatch:** Connect the polycurves to the *‘closedCurve’* input to construct surface patches.
 
 Now let’s select the nodes that we want to nest into a Custom Node, thinking about what we want to be the inputs and outputs of our node. We want our Custom Node to be as flexible as possible, so it should be able to map any polygons, not just rectangles.
 
 ![Exercise](images/9-2/UVmapping05.png)
-> Select the above nodes (beginning with *Polygon.Points*), right click on the canvas and select *‘node from selection’*
+> Select the above nodes (beginning with *Polygon.Points*), right click on the workspace and select *‘node from selection’*
 
 ![Exercise](images/9-2/UVmapping06.png)
 > In the Custom Node Properties dialog, assign a name, description, and category to the Custom Node.
 
 ![Exercise](images/9-2/UVmapping07.png)
-> The Custom Node has considerably cleaned up the canvas. Notice that the inputs and outputs have been named based on the original nodes. Let’s edit the Custom Node to make the names more descriptive.
+> The Custom Node has considerably cleaned up the workspace. Notice that the inputs and outputs have been named based on the original nodes. Let’s edit the Custom Node to make the names more descriptive.
 
 ![Exercise](images/9-2/UVmapping08.png)
-> Double click the Custom Node to edit it. This will open a canvas with a yellow background representing the inside of the node.
+> Double click the Custom Node to edit it. This will open a workspace with a yellow background representing the inside of the node.
 1. **Inputs:** Change the input names to *baseSurface* and *targetSurface*
 2. **Outputs:** Add an additional output for the mapped polygons.
 
->Save the custom node and return to the home canvas.
+>Save the custom node and return to the home workspace.
 
 ![Exercise](images/9-2/UVmapping09.png)
 > The **MapPolygonsToSurface** node reflects the changes we just made.
