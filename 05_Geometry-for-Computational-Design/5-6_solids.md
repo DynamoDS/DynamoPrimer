@@ -19,7 +19,7 @@ Solids consist of one or more Surfaces that contain volume by way of a closed bo
 ### Topology
 Solids are made up of three types of elements: vertices, edges, and faces. Faces are the surfaces that make up the Solid. Edges are the Curves that define the connection between adjacent faces, and vertices are the start and end points of those Curves. These elements can be queried using the Topology nodes.
 
-![Topology](images/5-6/topology.png)
+![Topology](images/5-6/Solid-topology.png)
 
 >1. Faces
 2. Edges
