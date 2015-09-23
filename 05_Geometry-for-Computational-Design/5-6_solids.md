@@ -17,7 +17,7 @@ Solids consist of one or more Surfaces that contain volume by way of a closed bo
 5. A Cube is made of six surfaces joined together to make a Solid.
 
 ### Topology
-Solids are made up of three types of elements: vertices, edges, and faces. Faces are the surfaces that make up the Solid. Edges are the Curves that define the connection between adjacent faces, and vertices are the start and end points of those Curves. These elements can be queried using the Topology nodes.
+Solids are made up of three types of elements: Vertices, Edges, and Faces. Faces are the surfaces that make up the Solid. Edges are the Curves that define the connection between adjacent faces, and vertices are the start and end points of those Curves. These elements can be queried using the Topology nodes.
 
 ![Topology](images/5-6/Solid-topology.png)
 
@@ -34,10 +34,10 @@ Solids can be modified by filleting or chamfering their edges to eliminate sharp
 
 ### Boolean Operations
 Solid boolean operations are methods for combining two or more Solids. A single boolean is actually performing four operations: 
-1. **Intersect** two or more objects
-2. **Split** them at the intersections
-3. **Delete** unwanted portions of the geometry
-4. **Join** everything back together 
+1. **Intersect** two or more objects.
+2. **Split** them at the intersections.
+3. **Delete** unwanted portions of the geometry.
+4. **Join** everything back together. 
 
 This makes Solid booleans a powerful time-saving process. There are three Solid boolean operations defining which parts of the geometry are kept.
 ![Solid Boolean](images/5-6/SolidBooleans.png)
