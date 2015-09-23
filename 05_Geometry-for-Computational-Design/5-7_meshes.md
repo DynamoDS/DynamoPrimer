@@ -33,7 +33,7 @@ A face is an ordered list of three or four vertices. The “surface” represent
 ![](images/5-7/meshFaces.png)
 
 > 1. A quad face made with indices 0, 1, 2, and 3
-2. A triangle face made with indices 1, 4, and 2
+2. A triangle face made with indices 1, 4, and 2 
 Note that the index groups can be shifted in their order - as long as the sequence is ordered in a counter-clockwise manner, the face will be defined correctly
 
 ### Meshes versus NURBS Surfaces
@@ -41,7 +41,7 @@ How is Mesh geometry different from NURBS geometry? When might you want to use o
 
 ####Parameterization
 
-In a previous chapter, we saw that NURBS surfaces are defined by a series of NURBS curves going in two directions. These directions are labeled ``U`` and ``V``, and allow a NURBs surface to be parameterized according to a two-dimensional surface domain. The curves themselves are stored as equations in the computer, allowing the resulting surfaces to be calculated to an arbitarily small degree of precision. It can be difficult, however, to combine multiple NURBS surfaces together. Joining two NURBS surfaces will result in a polysurface, where different sections of the geometry will have different UV parameters and curve definitions.
+In a previous chapter, we saw that NURBS surfaces are defined by a series of NURBS curves going in two directions. These directions are labeled ``U`` and ``V``, and allow a NURBs surface to be parameterized according to a two-dimensional surface domain. The curves themselves are stored as equations in the computer, allowing the resulting surfaces to be calculated to an arbitrarily small degree of precision. It can be difficult, however, to combine multiple NURBS surfaces together. Joining two NURBS surfaces will result in a polysurface, where different sections of the geometry will have different UV parameters and curve definitions.
 
 ![Control Points](images/5-7/NURBSvsMESH-01.jpg)
 > 1. Surface
