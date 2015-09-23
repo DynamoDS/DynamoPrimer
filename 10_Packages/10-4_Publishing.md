@@ -17,7 +17,7 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 
 *Note: As of writing this, Dynamo package publication is only enabled in Dynamo Studio or Dynamo for Revit.  Dynamo Sandbox does not have publishing functionality.*
 
->Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [MapToSurfaceFiles.zip](datasets/10-4/MapToSurfaceFiles.zip)
+>Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [MapToSurface.zip](datasets/10-4/MapToSurface.zip)
 
 ![](images/10-4/Publishing/Packages - 08.png)
 > This is the first submission for our package, and we've placed all of the example files and custom nodes into one folder.  With this folder prepared, we're ready to upload to the Dynamo Package Manager.
