@@ -21,10 +21,10 @@ Dynamo defines Meshes using a Face-Vertex data structure. At its most basic leve
 ####Vertices + Vertex Normals
 The vertices of a Mesh are simply a list of points. The index of the vertices is very important when constructing a Mesh, or getting information about the structure of a Mesh. For each vertex, there is also a corresponding vertex normal (vector) which describes the average direction of the attached faces and helps us understand the "in" and "out" orientation of the Mesh. 
 
-[Insert Image]
+![Vertices + Normals](images/5-7/vertexNormals.png)
 
->1. Vertex
-2. Vertex Normal
+>1. Vertices
+2. Vertex Normals
 
 
 ####Faces
