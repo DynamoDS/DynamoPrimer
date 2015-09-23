@@ -1,25 +1,58 @@
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
+
 ## Shorthand
 There are a few basic shorthand methods in the code block which, simply put, make data management *a lot* easier.  We'll break down the basics below and discuss how this shorthand can be used both for creating and querying data.
 
-
-| Node(s) | Code Block Equivalent |
-| -- | -- |
-| ![IMAGE](images/7-3/table/number.png)  |![IMAGE](images/7-3/table/numberCB.png)  |
-|||
-| ![IMAGE](images/7-3/table/string.png)  | ![IMAGE](images/7-3/table/stringCB.png)  |
-|||
-| ![IMAGE](images/7-3/table/sequence.png)|![IMAGE](images/7-3/table/sequenceCB.png) |
-|||
-| ![IMAGE](images/7-3/table/range.png)|![IMAGE](images/7-3/table/rangeCB.png) |
-|||
-| ![IMAGE](images/7-3/table/getItem.png)  | ![IMAGE](images/7-3/table/getItemCB.png)  |
-|||
-| ![IMAGE](images/7-3/table/list.png)  | ![IMAGE](images/7-3/table/listCB.png)  |
-|||
-| ![IMAGE](images/7-3/table/concat.png) | ![IMAGE](images/7-3/table/concatCB.png) |
-|||
-| ![IMAGE](images/7-3/table/if.png) | ![IMAGE](images/7-3/table/ifCB.png) |
-
+<table>
+    <tr>
+    <td width="50%"><b>Data Type</b></td>
+    <td width="25%"><b>Standard Dynamo</b> </td>
+    <td width="25%"><b>Code Block Equilvalent</b></td>
+  </tr>
+  <tr>
+    <td> Numbers</td>
+    <td><img src="images/7-3/table/number.png"></img> </td>
+    <td><img src="images/7-3/table/numberCB.png"></img></td>
+  </tr>
+  <tr>
+    <td>Strings</td>
+    <td><img src="images/7-3/table/string.png"></img> </td>
+    <td><img src="images/7-3/table/stringCB.png"></img></td>
+  </tr>
+  <tr>
+    <td>Sequences</td>
+    <td><img src="images/7-3/table/sequence.png"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.png"></img></td>
+  </tr>
+  <tr>
+    <td>Ranges</td>
+    <td><img src="images/7-3/table/range.png"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.png"></img></td>
+  </tr>
+  <tr>
+    <td>Get Item at Index</td>
+    <td><img src="images/7-3/table/getItem.png"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.png"></img></td>
+  </tr>
+  <tr>
+    <td>Create List</td>
+    <td><img src="images/7-3/table/list.png"></img> </td>
+    <td><img src="images/7-3/table/listCB.png"></img></td>
+  </tr>
+  <tr>
+    <td>Concatenate Strings</td>
+    <td><img src="images/7-3/table/concat.png"></img> </td>
+    <td><img src="images/7-3/table/concatCB.png"></img></td>
+  </tr>
+  <tr>
+    <td>Conditional Statements</td>
+    <td><img src="images/7-3/table/if.png"></img> </td>
+    <td><img src="images/7-3/table/ifCB.png"></img></td>
+  </tr>
+</table>
 
 ###Additional Syntax
 | Node(s) | Code Block Equivalent | Note |

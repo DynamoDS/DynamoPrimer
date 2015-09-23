@@ -1,6 +1,6 @@
 ##Dynamo Example Files
 
-#####These example files accompany the Dynamo Primer, and are organized according to Chapter and Section. 
+#####These example files accompany the Dynamo Primer, and are organized according to Chapter and Section.
 >Right click files and use "Save Link As..."
 
 
@@ -8,7 +8,7 @@
 <style>
 td {background-color: #F9F9F9;}
 td:nth-child(1){width:250px;}
-td:nth-child(2){width:550px;}    
+td:nth-child(2){width:550px;}
 table{box-shadow: 2px 2px 2px #BBBBBB}
 </style>
 
@@ -81,3 +81,20 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 ||[ARCH-Customizing-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-5/ARCH-Customizing-BaseFile.rvt)
 |Documenting|[Documenting.dyn](../08_Dynamo-for-Revit/datasets/8-6/Documenting.dyn)
 ||[ARCH-Documenting-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-6/ARCH-Documenting-BaseFile.rvt)
+
+####Custom Nodes####
+|Section|Download File|
+|--|--|
+|Creating a Custom Node|[UV-CustomNode.zip](../09_Custom-Nodes/datasets/9-2/UV-CustomNode.zip)
+|Publishing to Your Library|[PointsToSurface.dyf](../09_Custom-Nodes/datasets/9-3/PointsToSurface.dyf)
+|Python Nodes|[Python-CustomNode.dyn](../09_Custom-Nodes/datasets/9-4/Python-CustomNode.dyn)
+|Python and Revit|[Revit-Doc.dyn](../09_Custom-Nodes/datasets/9-5/Revit-Doc.dyn)
+|Python and Revit|[Revit-ReferenceCurve.dyn](../09_Custom-Nodes/datasets/9-5/Revit-ReferenceCurve.dyn)
+|Python and Revit|[Revit-StructuralFraming.zip](../09_Custom-Nodes/datasets/9-5/Revit-StructuralFraming.zip)
+
+####Packages####
+|Section|Download File|
+|--|--|
+|Package Case Study - Mesh Toolkit|[MeshToolkit.zip](../10_Packages/datasets/10-2/MeshToolkit.zip)
+|Publishing a Package|[MapToSurface.zip](../10_Packages/datasets/10-4/MapToSurface.zip)
+|Zero-Touch Importing|[ZeroTouchImages.zip](../10_Packages/datasets/10-5/ZeroTouchImages.zip)
