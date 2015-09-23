@@ -28,7 +28,7 @@ The vertices of a Mesh are simply a list of points. The index of the vertices is
 
 
 ####Faces
-A face is an ordered list of three or four vertices. The “surface” representation of a Mesh face is therefore implied according to the position of the vertices being indexed. We already have the list of vertices that make up the Mesh, so instead of providing individual points to define a face, we instead simply use the index of the vertices. This also allows us to use the same vertex in more than one face.
+A face is an ordered list of three or four vertices. The “surface” representation of a Mesh face is therefore implied according to the position of the vertices being indexed. We already have the list of vertices that make up the Mesh, so instead of providing individual points to define a face, we  simply use the index of the vertices. This also allows us to use the same vertex in more than one face.
 
 ![](images/5-7/meshFaces.png)
 
@@ -57,7 +57,7 @@ In a previous chapter, we saw that NURBS surfaces are defined by a series of NUR
 11. Vertex Normal
 12. Mesh Face / Mesh Face Normal
 
-Meshes, on the other hand, are comprised of a discrete number of exactly defined vertices and faces. The network of vertices generally cannot be defined by simple ``UV`` coordinates, and because the faces are discrete the amount of precision is built into the Mesh and can only be changed by refining the Mesh and added more faces. The lack of UV coordinates, however, allows Meshes the flexibility to handle more complicated geometry with a single Mesh.
+Meshes, on the other hand, are comprised of a discrete number of exactly defined vertices and faces. The network of vertices generally cannot be defined by simple ``UV`` coordinates, and because the faces are discrete the amount of precision is built into the Mesh and can only be changed by refining the Mesh and adding more faces. The lack of UV coordinates, however, allows Meshes the flexibility to handle more complicated geometry with a single Mesh.
 
 
 ###Local vs Global Influence
