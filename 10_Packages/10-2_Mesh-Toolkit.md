@@ -14,7 +14,7 @@ The exercise below demonstrates some basic mesh operations using the Mesh Toolki
 > In Dynamo, go to *Packages > Search for Packages...* in the top menu bar.  In the search field, type *"MeshToolkit"*, all one word, minding the caps.  Click the download arrow for the appropriate package for your version of Dynamo.  Simple as that!
 
 ### Exercise
->Download and unzip the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Mesh-Toolkit.zip](datasets/10-3/Mesh-Toolkit.zip)
+>Download and unzip the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [MeshToolkit.zip](datasets/10-2/MeshToolkit.zip)
 
 Begin by opening *Mesh-Toolkit_Intersect-Mesh.dyn in Dynamo.* In this example, we will look at the Intersect node in the mesh toolkit. We will import a mesh and intersect it with a series of input planes to create slices. This is the starting point for preparing the model for fabrication on a laser cutter, waterjet cutter, or CNC mill.
 
