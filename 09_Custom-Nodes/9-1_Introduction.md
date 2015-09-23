@@ -45,7 +45,7 @@ Let's jump into the custom node environment and make a simple node to calculate 
 > 1. **Inputs:** input nodes create input ports on the custom node. The syntax for an input node is *input name : datatype = default value(optional)*
 2. **Outputs:** Similar to inputs, these will create output ports on the custom node.
 
-You can save this custom node as a .dyf (as opposed to the standard .dyn) file and it will automatically be added to your session. For future session, you can import the custom node using  *File > Import Library*. Once you have imported the custom node, you should see it in the category specified when the node was created. 
+You can save this custom node as a .dyf (as opposed to the standard .dyn) file and it will automatically be added to your session. For future sessions, you can import the custom node using  *File > Import Library*. Once you have imported the custom node, you should see it in the category specified when the node was created. 
 
 ![Add to Library](images/9-1/CustomNodes05.png)
 
@@ -53,4 +53,4 @@ You can save this custom node as a .dyf (as opposed to the standard .dyn) file a
 Right: Core > Math with the new custom node
 
 ###Moving Forward
-Now that we've created our first custom node, the next sections will dive deeper into custom node functionality and how to publish generic workflows.  In the following section, we'll look at developing a custom node which transfers geometry from one surface to another.
+Now that we've created our first custom node, the next sections will dive deeper into custom node functionality and how to publish generic workflows.  In the following section, we'll look at developing a custom node that transfers geometry from one surface to another.
