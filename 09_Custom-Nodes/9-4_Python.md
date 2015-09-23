@@ -4,10 +4,10 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ##Python
 ![](images/9-4/pythonlogo.png)
-Python is a widely used programming language whose popularity has a lot to do with its style of syntax which emphasizes readability, making it easier to learn than many other languages. Python supports modules and packages, and can be embedded into existing applications. The examples in this section assume a basic familiarity with Python. For information how to get up and running with Python, a good resource is the ["Getting Started"](https://www.python.org/about/gettingstarted/) page on [Python.org](https://www.python.org/).
+Python is a widely used programming language whose popularity has a lot to do with its style of syntax. It's highly readable, which makes it easier to learn than many other languages. Python supports modules and packages, and can be embedded into existing applications. The examples in this section assume a basic familiarity with Python. For information about how to get up and running with Python, a good resource is the ["Getting Started"](https://www.python.org/about/gettingstarted/) page on [Python.org](https://www.python.org/).
 
 ###Visual vs. Textual Programming
-Why would you use textual programming in Dynamo's visual programming environment? As we discussed in chapter 1.1, visual programming has many advantages. It allows you to create programs without learning special syntax, in an intuitive visual interface. However, a visual program can become cluttered, and can at times fall short in functionality. For example, Python offers much more achieveable methods for writing conditional statements (if/then) and looping.  Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. 
+Why would you use textual programming in Dynamo's visual programming environment? As we discussed in chapter 1.1, visual programming has many advantages. It allows you to create programs without learning special syntax in an intuitive visual interface. However, a visual program can become cluttered, and can at times fall short in functionality. For example, Python offers much more achieveable methods for writing conditional statements (if/then) and looping.  Python is a powerful tool that can extend the capabilities of Dynamo and allow you to replace many nodes with a few concise lines of code. 
 
 **Visual Program:**
 ![](images/9-4/python-nodes.png)
@@ -63,23 +63,23 @@ First, let’s create our solid module using Dynamo nodes.
 
 ![](images/9-4/Exercise/Python/python01.png)
 
-> 1. **Rectangle.ByWidthLength:** Create a rectangle that will be the base of our solid
-2.	**Surface.ByPatch:** Connect the rectangle to the ‘*closedCurve*’ input to create the bottom surface
+> 1. **Rectangle.ByWidthLength:** Create a rectangle that will be the base of our solid.
+2.	**Surface.ByPatch:** Connect the rectangle to the ‘*closedCurve*’ input to create the bottom surface.
 
 ![](images/9-4/Exercise/Python/python02.png)
->1.	**Geometry.Translate:** Connect the rectangle to the ‘*geometry*’ input to move it up, using a code block to specify the base thickness of our solid
-2.	**Polygon.Points:** Query the translated rectangle to extract the corner points
-3.	**Geometry.Translate:** Use a code block to create a list of four values corresponding to the four points, translating one corner of the solid up
-4.	**Polygon.ByPoints:** Use the translated points to reconstruct the top polygon
-5.	**Surface.ByPatch:** Connect the polygon to create the top surface
+>1.	**Geometry.Translate:** Connect the rectangle to the ‘*geometry*’ input to move it up, using a code block to specify the base thickness of our solid.
+2.	**Polygon.Points:** Query the translated rectangle to extract the corner points.
+3.	**Geometry.Translate:** Use a code block to create a list of four values corresponding to the four points, translating one corner of the solid up.
+4.	**Polygon.ByPoints:** Use the translated points to reconstruct the top polygon.
+5.	**Surface.ByPatch:** Connect the polygon to create the top surface.
 
 Now that we have our top and bottom surfaces, let’s loft between the two profiles to create the sides of the solid.
 
 ![](images/9-4/Exercise/Python/python03.png)
->1.	**List.Create:** Connect the bottom rectangle and the top polygon to the index inputs
-2.	**Surface.ByLoft:** Loft the two profiles to create the sides of the solid
-3.	**List.Create:** Connect the top, side, and bottom surfaces to the index inputs to create a list of surfaces
-4.	**Solid.ByJoinedSurfaces:** Join the surfaces to create the solid module
+>1.	**List.Create:** Connect the bottom rectangle and the top polygon to the index inputs.
+2.	**Surface.ByLoft:** Loft the two profiles to create the sides of the solid.
+3.	**List.Create:** Connect the top, side, and bottom surfaces to the index inputs to create a list of surfaces.
+4.	**Solid.ByJoinedSurfaces:** Join the surfaces to create the solid module.
 
 Now that we have our solid, let’s drop a Python Script node onto the workspace. 
 
@@ -212,7 +212,7 @@ This will open a new workspace in which to edit the custom node.
 
 > 1. **Inputs:** Change the input names to be more descriptive and add data types and default values. 
 2.	**Output:** Change the output name
-Save the node as a .dyf file
+Save the node as a .dyf file.
 
 ![](images/9-4/Exercise/Python/python13.png)
 

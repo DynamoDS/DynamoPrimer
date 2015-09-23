@@ -17,7 +17,7 @@ Solids consist of one or more Surfaces that contain volume by way of a closed bo
 5. A Cube is made of six surfaces joined together to make a Solid.
 
 ### Topology
-Solids are made up of three types of elements: vertices, edges, and faces. Faces are the surfaces that make up the Solid. Edges are the Curves that define the connection between adjacent faces, and vertices are the start and end points of those Curves. These elements can be queried using the Topology nodes.
+Solids are made up of three types of elements: Vertices, Edges, and Faces. Faces are the surfaces that make up the Solid. Edges are the Curves that define the connection between adjacent faces, and vertices are the start and end points of those Curves. These elements can be queried using the Topology nodes.
 
 ![Topology](images/5-6/Solid-topology.png)
 
@@ -34,16 +34,16 @@ Solids can be modified by filleting or chamfering their edges to eliminate sharp
 
 ### Boolean Operations
 Solid boolean operations are methods for combining two or more Solids. A single boolean is actually performing four operations: 
-1. **Intersect** two or more objects
-2. **Split** them at the intersections
-3. **Delete** unwanted portions of the geometry
-4. **Join** everything back together 
+1. **Intersect** two or more objects.
+2. **Split** them at the intersections.
+3. **Delete** unwanted portions of the geometry.
+4. **Join** everything back together. 
 
 This makes Solid booleans a powerful time-saving process. There are three Solid boolean operations defining which parts of the geometry are kept.
 ![Solid Boolean](images/5-6/SolidBooleans.png)
-> 1. **Union:** Remove the overlapping portions of the Solids and join them into a single Solid
+> 1. **Union:** Remove the overlapping portions of the Solids and join them into a single Solid.
 2. **Difference:** Subtract one Solid from another. The Solid to be subtracted is referred to as a tool. Note that you could invert which Solid is the tool to keep the inverse volume.
-3. **Intersection:** Keep only the intersecting volume of the two Solids
+3. **Intersection:** Keep only the intersecting volume of the two Solids.
 
 In addition to these three operations, Dynamo has **Solid.DifferenceAll** and **Solid.UnionAll** nodes for performing difference and union operations with multiple Solids. 
 ![](images/5-6/BooleanAll.png)
@@ -60,4 +60,4 @@ Let's use a few boolean operations to create a spiky ball.
 5. **Topology.Edges**: Query the edges of the new Solid
 6. **Solid.Fillet**: Fillet the edges of the spiky ball
 
-> Download the example files that accompanies this image (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Geometry for Computational Design - Solids.dyn](datasets/5-6/Geometry for Computational Design - Solids.dyn)
+> Download the example files that accompany this image (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Geometry for Computational Design - Solids.dyn](datasets/5-6/Geometry for Computational Design - Solids.dyn)

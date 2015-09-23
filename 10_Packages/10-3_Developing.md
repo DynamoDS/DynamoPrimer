@@ -1,9 +1,9 @@
 ##Developing a Package
 
-Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through how a package is setup by deconstructing an existing one.  This case study builds on lessons from the previous chapter, providing a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.
+Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through how a package is set up by deconstructing an existing one.  This case study builds on lessons from the previous chapter, providing a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.
 
 ###MapToSurface
-We're going to work with a sample packages which demonstrates the UV mapping of points from one surface to another.  We've already built the fundamentals of the tool in the [Creating a Custom Node](../09_Custom-Nodes/9-2_Creating.md) section of this primer.  The files below demonstrate how we can take the concept of UV Mapping and develop a set of tools for a publishable library.
+We're going to work with a sample package which demonstrates the UV mapping of points from one surface to another.  We've already built the fundamentals of the tool in the [Creating a Custom Node](../09_Custom-Nodes/9-2_Creating.md) section of this primer.  The files below demonstrate how we can take the concept of UV Mapping and develop a set of tools for a publishable library.
 
 ![](images/10-4/uvMap.png)
 > In this image, we map a point from one surface to another using UV coordinates. The package is based on this concept, but with more complex geometry.
@@ -19,10 +19,10 @@ In the previous chapter, we explored ways for panelizing a surface in Dynamo bas
 1. When the package is found, click on the big download arrow to the left of the package name.  This will install the package into Dynamo.
 
 ![](images/10-4/Publishing/packages - ui.png)
-> 1. After installing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library. With the package now installed, let's walk through how it's setup.
+> 1. After installing, the custom nodes should be available under the "DynamoPrimer" group or your Dynamo Library. With the package now installed, let's walk through how it's set up.
 
 ###Custom Nodes
-The package we're creating uses 5 custom nodes that we've built for reference. Let's walk through what each node does below.  Some custom nodes build off of other custom nodes, and the graphs have a layout for other users to understand in a straightforward manner.
+The package we're creating uses five custom nodes that we've built for reference. Let's walk through what each node does below.  Some custom nodes build off of other custom nodes, and the graphs have a layout for other users to understand in a straightforward manner.
 
 ![](images/10-4/Creating/Packages - 12.png)
 > This is a simple package with five custom nodes. In the steps below, we'll briefly talk about each custom node's setup.
@@ -66,12 +66,12 @@ With the root directory open, navigate to the *"extra"* folder, which houses all
 > **04-PleatedPolysurface-OffsetPoints:** The source polysurface mapped from the source surface to the target surface.
 
 ![](images/10-4/Creating/Packages - 01.png)
-> **05-SVG-Import:** Since the custom nodes are able to map different types of curves, this last file references an SVG file exported from Illustrator and maps the imported curves to a target surface
+> **05-SVG-Import:** Since the custom nodes are able to map different types of curves, this last file references an SVG file exported from Illustrator and maps the imported curves to a target surface.
 
 ![](images/10-4/Creating/Packages - 00.png)
 > **05-SVG-Import:** By parsing through the syntax of an .svg file, curves are translated from .xml format to Dynamo polycurves.
 
 ![](images/10-4/Creating/Packages - 02.png)
-> **05-SVG-Import:** The imported curves are mapped to a target surface. This allows us to explicitly (point-and-click) design a panelization in illustrator, import into Dynamo, and apply to a target surface.
+> **05-SVG-Import:** The imported curves are mapped to a target surface. This allows us to explicitly (point-and-click) design a panelization in Illustrator, import into Dynamo, and apply to a target surface.
 
 

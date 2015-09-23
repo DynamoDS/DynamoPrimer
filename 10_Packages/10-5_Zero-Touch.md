@@ -44,7 +44,10 @@ Zero-touch packages are a good complement to user-defined custom nodes.  A few p
 
 
 ### Case Study - Importing AForge
-In this case study, we'll show how to import the [AForge](http://www.aforgenet.com/) external *.dll* library.  AForge is a robust library which offers a range of functionality from image processing to artificial intelligence.  We'll reference the imaging class in AForge to do a few image processing exercise below.
+In this case study, we'll show how to import the [AForge](http://www.aforgenet.com/) external *.dll* library.  AForge is a robust library which offers a range of functionality from image processing to artificial intelligence.  We'll reference the imaging class in AForge to do a few image processing exercises below.
+
+
+>Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Zero-Touch-Examples.zip](datasets/10-5/Zero-Touch-Examples.zip).
 
 > 1. Let's beging by downloading AForge. On the [AForge download page](http://www.aforgenet.com/framework/downloads.html), select *[Download Installer]* and install after download has completed. 
 
@@ -59,6 +62,9 @@ In this case study, we'll show how to import the [AForge](http://www.aforgenet.c
 >1. Back in Dynamo, you should see an *"AForge" *group of nodes added to your Library Toolbar.  We now have access to the AForge imaging library from our visual program!
 
 ### Exercise 1 - Edge Detection
+
+Now that the library's imported, we'll start off simple with this first exercise.  We'll do some basic image processing on a sample image to show how AForge image filters.  We'll use the *"Watch Image"* node to show our results and apply filters in Dynamo similar to those in Photoshop. 
+
 >Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [ZeroTouchImages.zip](datasets/10-5/ZeroTouchImages.zip)
 
 Now that the library's imported, we'll start off simple with this first exercise (*01-EdgeDetection.dyn*).  We'll do some basic image processing on a sample image to show how AForge image filters.  We'll use the *"Watch Image"* node to show our results and apply filters in Dynamo similar to those in Photoshop 
@@ -80,7 +86,7 @@ Now that the library's imported, we'll start off simple with this first exercise
 4. Plugging into a Watch Image node, we get a desaturated image.
 
 ![Exercise](images/10-5/Exercise/AForge- 19.png)
-> We can have control over how to desaturate this image base on threshold values for red, green, and blue.  These are defined by the inputs to the Grayscale.Grayscale node.  Notice that the image looks pretty dim - this is because the green value is set to 0 from our slider.
+> We can have control over how to desaturate this image based on threshold values for red, green, and blue.  These are defined by the inputs to the Grayscale.Grayscale node.  Notice that the image looks pretty dim - this is because the green value is set to 0 from our slider.
 1. Change the top and bottom sliders to have a value of 0 and the middle slider to have a value of 1. This way we get a more legible desaturated image.
 
 ![Exercise](images/10-5/Exercise/AForge- 17.png)
@@ -104,7 +110,7 @@ Now that we're introduced to some basic image processing, let's use an image to 
 In this next step, we want to reference the white squares in the image and convert them to actual Dynamo geometry. AForge has a lot of powerful Computer Vision tools, and here we're going to use a particularly important one for the library called [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
 
 ![Exercise](images/10-5/Exercise/AForge- 14.png)
-> 1. After adding a BlobCounter to the canvas, we need a way to process the image (similar to the IFilter tool in the previous exercise). Unfortunately the "Process Image" node is the not immediately visible in the Dynamo library.  This is because the function may not be visible in the AForge source code.  In order to fix this, we'll need to find a work-around.
+> 1. After adding a BlobCounter to the canvas, we need a way to process the image (similar to the IFilter tool in the previous exercise). Unfortunately the "Process Image" node is not immediately visible in the Dynamo library.  This is because the function may not be visible in the AForge source code.  In order to fix this, we'll need to find a work-around.
 
 ![Exercise](images/10-5/Exercise/AForge- 13.png)
 > 1. Add a Python node to the canvas.
@@ -119,7 +125,7 @@ bc.ProcessImage(IN[0])
 OUT=bc
 
 ```
-> Add the code above to the Python node.  This code imports the AForge library and then process the imported image.
+> Add the code above to the Python node.  This code imports the AForge library and then processes the imported image.
 
 ![Exercise](images/10-5/Exercise/AForge- 11.png)
 > Connecting the image output to the Python node input, we get an AForge.Imaging.BlobCounter result from the Python node.
@@ -130,7 +136,7 @@ The next steps will do some tricks that demonstrate familiarity with the [AForge
 > 1. Connect the output of the Python script to BlobCounterBase.GetObjectRectangles.  This reads objects in an image, based on a threshold value, and extracts quantified rectangles from the pixel space.
 
 ![Exercise](images/10-5/Exercise/AForge- 09.png)
-> 1. Adding another Python node to the canvas, connect to the GetObjectRectangles, and input the code below.  This will create a organized list of Dynamo objects.
+> 1. Adding another Python node to the canvas, connect to the GetObjectRectangles, and input the code below.  This will create an organized list of Dynamo objects.
 
 ```
 OUT = []
@@ -165,7 +171,7 @@ p3=Autodesk.Point.ByCoordinates(x1,y0);
 > Zooming out, we have an array of rectangles representing the white squares in the image.  Through programming, we've done something (roughly) similar to a live trace in Illustrator!
 
 ![Exercise](images/10-5/Exercise/AForge- 04.png)
-> We still need some cleanup, however.  Zooming in, we can see that we have a bunch of small, unwanted, rectangles.
+> We still need some cleanup, however.  Zooming in, we can see that we have a bunch of small, unwanted rectangles.
 
 ![Exercise](images/10-5/Exercise/AForge- 03.png)
 > 1. We get rid of the unwanted rectangles by inserting a Python node in between the GetObjectRectangles node and another Python node.  The node's code is below, and removes all rectangles which are below a given size.
@@ -184,7 +190,7 @@ for rec in rectangles:
 ![Exercise](images/10-5/Exercise/AForge- 00.png)
 > 1. Last, change the both_sides input to false and we get an extrusion in one direction.  Dip this baby in resin and you've got yourself one super nerdy table.
 
-These are basic examples, but the concepts outlined here are transferable to exciting real-world applications.  Computer vision can be used for a whole host of processes. To name a few: barcode readers, perspective matching, [projection mapping](https://www.youtube.com/watch?v=XSR0Xady02o), and [augmented reality](http://aforgenet.com/aforge/articles/gratf_ar/). For more advanced topics with AForge related to this exercise, have a read-through [this article](http://aforgenet.com/articles/shape_checker/).
+These are basic examples, but the concepts outlined here are transferable to exciting real-world applications.  Computer vision can be used for a whole host of processes. To name a few: barcode readers, perspective matching, [projection mapping](https://www.youtube.com/watch?v=XSR0Xady02o), and [augmented reality](http://aforgenet.com/aforge/articles/gratf_ar/). For more advanced topics with AForge related to this exercise, have a read through [this article](http://aforgenet.com/articles/shape_checker/).
 
 
 

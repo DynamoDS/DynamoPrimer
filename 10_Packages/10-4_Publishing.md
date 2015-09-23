@@ -1,11 +1,11 @@
 ##Publishing a Package
 
-In the previous sections, we dove into the details of how our *MapToSurface* package is setup with custom nodes and example files.  But how do we publish a package that has been developed locally?  This case study demonstrates how to publish a package from a set of files in a local folder.
+In the previous sections, we dove into the details of how our *MapToSurface* package is set up with custom nodes and example files.  But how do we publish a package that has been developed locally?  This case study demonstrates how to publish a package from a set of files in a local folder.
 ![](images/10-4/Creating/Packages - 12.png)
 There are many ways to publish a package. Below is the process that we advise:** publish locally, develop locally, and then publish online**.  We'll start with a folder containing all of the files in the package.
 
 ###Uninstalling a Package
-Before we jump into publishing the MapToSurface package, if you installed the package from the previous lesson, uninstall it so that you're not working with an identical packages. 
+Before we jump into publishing the MapToSurface package, if you installed the package from the previous lesson, uninstall it so that you're not working with identical packages. 
 
 ![](images/10-4/Publishing/Packages - 01.png)
 > Begin by going to *Packages>Manage Packages...*
@@ -29,7 +29,7 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 
 ![](images/10-4/Publishing/Packages - 03.png)
 > In the *"Publish a Dynamo Package"* window, we've filled out the relevant forms on the left of the window.
-1. By clicking *"Add File"*, we've also added the files from the folder structure on the right side of the screen (to add files which are not .dyf files, be sure to change your file type in the browser window to **"All Files(*.*)"**. Notice that we've added every file, custom node (.dyf) or or example file (.dyn), indiscriminately. Dynamo will categories these items when we publish the package.
+1. By clicking *"Add File"*, we've also added the files from the folder structure on the right side of the screen (to add files which are not .dyf files, be sure to change your file type in the browser window to **"All Files(*.*)"**. Notice that we've added every file, custom node (.dyf) or example file (.dyn), indiscriminately. Dynamo will categories these items when we publish the package.
 2. The "Group" field defines which group to find the custom nodes in the Dynamo UI.
 3. Publish by clicking "Publish Locally". If you're following along, be certain to click *"Publish Locally"* and **not** *"Publish Online"*; we don't want a bunch of duplicate packages on the Package Manager.
 
