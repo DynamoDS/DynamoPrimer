@@ -46,11 +46,9 @@ Zero-touch packages are a good complement to user-defined custom nodes.  A few p
 ### Case Study - Importing AForge
 In this case study, we'll show how to import the [AForge](http://www.aforgenet.com/) external *.dll* library.  AForge is a robust library which offers a range of functionality from image processing to artificial intelligence.  We'll reference the imaging class in AForge to do a few image processing exercises below.
 
-<<<<<<< HEAD
+
 >Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Zero-Touch-Examples.zip](datasets/10-5/Zero-Touch-Examples.zip).
 
-=======
->>>>>>> V0.3
 > 1. Let's beging by downloading AForge. On the [AForge download page](http://www.aforgenet.com/framework/downloads.html), select *[Download Installer]* and install after download has completed. 
 
 ![Exercise](images/10-5/import.png)
@@ -64,13 +62,12 @@ In this case study, we'll show how to import the [AForge](http://www.aforgenet.c
 >1. Back in Dynamo, you should see an *"AForge" *group of nodes added to your Library Toolbar.  We now have access to the AForge imaging library from our visual program!
 
 ### Exercise 1 - Edge Detection
-<<<<<<< HEAD
+
 Now that the library's imported, we'll start off simple with this first exercise.  We'll do some basic image processing on a sample image to show how AForge image filters.  We'll use the *"Watch Image"* node to show our results and apply filters in Dynamo similar to those in Photoshop. 
-=======
+
 >Download and unzip the example files that accompany this package case study (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [ZeroTouchImages.zip](datasets/10-5/ZeroTouchImages.zip)
 
 Now that the library's imported, we'll start off simple with this first exercise (*01-EdgeDetection.dyn*).  We'll do some basic image processing on a sample image to show how AForge image filters.  We'll use the *"Watch Image"* node to show our results and apply filters in Dynamo similar to those in Photoshop 
->>>>>>> V0.3
 
 ![Exercise](images/10-5/Exercise/AForge- 23.png)
 > First, we want to import an image to work with. Add a *File Path* node to the canvas and select "soapbubbles.jpg" from the downloaded exercise folder (photo cred: [flickr](https://www.flickr.com/photos/wwworks/667298782)).
