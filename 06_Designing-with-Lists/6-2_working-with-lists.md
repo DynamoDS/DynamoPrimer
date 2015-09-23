@@ -92,7 +92,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 3. Notice that the change is subtle, but all of the lines in the lower *Watch3D* node have shifted one index when connecting to the other set of points.
 
 ![Exercise](images/6-2/Exercise/32.png)
->1. By changing to *code block* to a larger value, *"30"* for example, we notice a significant difference in the diagonal lines.  The shift is working like an camera's iris in this case, creating a twist in the original cylindrical form.
+>1. By changing to *code block* to a larger value, *"30"* for example, we notice a significant difference in the diagonal lines.  The shift is working like a camera's iris in this case, creating a twist in the original cylindrical form.
 
 ###List.FilterByBooleanMask
 ![cull](images/6-2/cull2.png)

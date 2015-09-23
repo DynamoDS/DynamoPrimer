@@ -27,7 +27,7 @@ Let's move forward with the custom node that we created in the previous section.
 
 ![](images/9-3/AddingToLibrary- 00.png)
 > In this window we see two paths: *AppData\Roaming\Dynamo...* refers to the default location of Dynamo Packages installed online. *Documents\DynamoCustomNodes...* refers to the location of custom nodes we've published locally. *
-1. You may want to move your local folder path down in the list order bove (by selecting the folder path and clicking on the down arrow to the left of the path names).  The top folder is the default path for package installs.  So by keeping the default Dynamo package install path as the default folder, online packages will be separated from your locally published nodes.*
+1. You may want to move your local folder path down in the list order above (by selecting the folder path and clicking on the down arrow to the left of the path names).  The top folder is the default path for package installs.  So by keeping the default Dynamo package install path as the default folder, online packages will be separated from your locally published nodes.*
 
 ![](images/9-3/AddingToLibrary- 00A.png)
 > We switched the order of the path names in order to have Dynamo's default path as the package install location.

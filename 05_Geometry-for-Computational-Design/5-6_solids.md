@@ -41,9 +41,9 @@ Solid boolean operations are methods for combining two or more Solids. A single 
 
 This makes Solid booleans a powerful time-saving process. There are three Solid boolean operations defining which parts of the geometry are kept.
 ![Solid Boolean](images/5-6/SolidBooleans.png)
-> 1. **Union:** Remove the overlapping portions of the Solids and join them into a single Solid
+> 1. **Union:** Remove the overlapping portions of the Solids and join them into a single Solid.
 2. **Difference:** Subtract one Solid from another. The Solid to be subtracted is referred to as a tool. Note that you could invert which Solid is the tool to keep the inverse volume.
-3. **Intersection:** Keep only the intersecting volume of the two Solids
+3. **Intersection:** Keep only the intersecting volume of the two Solids.
 
 In addition to these three operations, Dynamo has **Solid.DifferenceAll** and **Solid.UnionAll** nodes for performing difference and union operations with multiple Solids. 
 ![](images/5-6/BooleanAll.png)
@@ -60,4 +60,4 @@ Let's use a few boolean operations to create a spiky ball.
 5. **Topology.Edges**: Query the edges of the new Solid
 6. **Solid.Fillet**: Fillet the edges of the spiky ball
 
-> Download the example files that accompanies this image (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Geometry for Computational Design - Solids.dyn](datasets/5-6/Geometry for Computational Design - Solids.dyn)
+> Download the example files that accompany this image (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Geometry for Computational Design - Solids.dyn](datasets/5-6/Geometry for Computational Design - Solids.dyn)

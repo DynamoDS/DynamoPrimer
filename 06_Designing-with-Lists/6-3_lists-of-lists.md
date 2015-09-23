@@ -191,7 +191,7 @@ This exercise uses some of the logic established in the previous one to edit a s
 4. The *Watch* node show that we have a list of 3 lists, each with 5 items.
 
 ![Exercise](images/6-3/Exercise/B/05.png)
-> In this step,  we want to query the central point in the grid we've created.  To do this we'll, select the middle point in the middle list.  Makes sense right?
+> In this step,  we want to query the central point in the grid we've created.  To do this we'll select the middle point in the middle list.  Makes sense, right?
 1. To confirm that this is the correct point, we can also click through the watch node items to confirm that we're targeting the correct one.
 2. Using *code block*, we'll write a basic line of code for querying a list of lists:
 ```points[1][2];```
@@ -210,7 +210,7 @@ This exercise uses some of the logic established in the previous one to edit a s
 > Now that we've modified the list, we need to insert this list back into the original data structure: the list of lists.
 1. Following the same logic, use *List.ReplaceItemAtIndex* to replace the middle list with the our modified list.
 2. Notice that the *code blocks* defining the index for these two nodes are 1 and 2, which matches the original query from the *code block* (*points[1][2]*).
-3. By selecting the list at *index 1*, we see the data structure highlighted in the Dynamo preview.  We successful merged the moved point into the original data structure.
+3. By selecting the list at *index 1*, we see the data structure highlighted in the Dynamo preview.  We successfully merged the moved point into the original data structure.
 
 ![Exercise](images/6-3/Exercise/B/01.png)
 > There are many ways to make a surface from this set of points.  In this case, we're going to create a surface by lofting curves together.

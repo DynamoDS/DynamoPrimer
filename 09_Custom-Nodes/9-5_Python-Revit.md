@@ -4,7 +4,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ##Python and Revit
 
-Now that we've demonstrate how to use Python scripts in Dynamo, let's take a look at connecting Revit libraries into the scripting environment. Remember, we imported our Dynamo core nodes with the first three lines in the block of code below.  To import the Revit nodes, Revit elements, and the Revit document manager, we only have to add a few more lines:
+Now that we've demonstrated how to use Python scripts in Dynamo, let's take a look at connecting Revit libraries into the scripting environment. Remember, we imported our Dynamo core nodes with the first three lines in the block of code below.  To import the Revit nodes, Revit elements, and the Revit document manager, we only have to add a few more lines:
 
 ```
 import clr
@@ -42,7 +42,7 @@ The examples below demonstrate ways to implement Revit-specific operations from 
 In these exercises, we'll explore elementary Python scripts in Dynamo for Revit.  The exercise will focus on dealing with Revit files and elements, as well as the communication between Revit and Dynamo.
 
 ![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 10.png)
-> This is a cut and dry method for retrieving the *doc*, *uiapp*, and *app* of the Revit file linked to your Dynamo sesson.  Programmers who have worked in the Revit API before may notice the items in the watch list.  If these items do not look familiar, that's ok, we'll be using other examples in the exercises below.
+> This is a cut and dry method for retrieving the *doc*, *uiapp*, and *app* of the Revit file linked to your Dynamo sesson.  Programmers who have worked in the Revit API before may notice the items in the watch list.  If these items do not look familiar, that's okay; we'll be using other examples in the exercises below.
 
 Here is how we're importing Revit Services and retrieving the document data in Dynamo:
 ![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 06.png)
@@ -71,9 +71,13 @@ OUT=[doc,uiapp,app]
 In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Python node.
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 08.png)
+
+> Begin with the set of nodes in the image above.  We'll first create two reference points in Revit from Dynamo nodes.
+
 > Begin by creating a new Conceptual Mass family in Revit. Launch Dynamo and create the set of nodes in the image above.  We'll first create two reference point in Revit from Dynamo nodes.
+
 1. **Important note - when performing Revit operations, be certain that the run mode has been set to "Manual". Otherwise the program will crash.**
-2. Create a code block and give it a value of "0;"
+2. Create a code block and give it a value of "0;".
 3. Plug this value into a ReferencePoint.ByCoordinates node for X,Y, and Z inputs.
 4. Create three sliders, ranging from -100 to 100 with a step size of 1.
 5. Connect each slider to a ReferencePoint.ByCoordinates node.
@@ -113,7 +117,7 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 >This exercise keeps it simple, but drives home the topics of connecting data and geometry from Revit to Dynamo and back.  Let's begin by opening Revit-StructuralFraming.rvt. Once opened, load Dynamo and open the file Revit-StructuralFraming.dyn.
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 04.png)
-> This Revit file is about as basic as it gets. To reference curves, one drawn on Level 1 and the other drawn on Level 2. We want to get these curves into Dynamo and maintain a live link.
+> This Revit file is about as basic as it gets. Two reference curves: one drawn on Level 1 and the other drawn on Level 2. We want to get these curves into Dynamo and maintain a live link.
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 01a.png)
 > In this file we have a set of nodes plugging into five inputs of a Python node.
@@ -123,7 +127,7 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 4. **Levels:** select "Level 1".
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 00.png)
-> This code in Python is a little more dense, but the comments within the code describe what's happening the process:
+> This code in Python is a little more dense, but the comments within the code describe what's happening in the process:
 
 ```
 import clr
