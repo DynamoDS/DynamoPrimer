@@ -16,7 +16,7 @@ The power of Dynamo can be found in a wide variety of design-related activities.
 
 In the midst of this activity and exciting opportunity for working with Dynamo, we need a document of the same caliber, the Dynamo Primer.
 
-Version 1.0 of this Primer includes the first four chapters of a planned twelve chapters to be written by Mode Lab and released in the coming months. These first chapters focus on the essentials you will need to get up and running developing your own visual programs with Dynamo. Here's what you can expect to learn from the primer:
+Version 1.0 of this Primer includes the first ten chapters developed by Mode Lab. These chapters focus on the essentials you will need to get up and running developing your own visual programs with Dynamo and key insights on how to take Dynamo further. Here's what you can expect to learn from the primer:
 
 * **Context** - What exactly is "Visual Programming" and what are the concepts I need to understand to dive in to Dynamo?
 * **Getting Started** - How do I get Dynamo and create my first program?

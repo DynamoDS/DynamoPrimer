@@ -75,7 +75,6 @@ In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Pyth
 > Begin with the set of nodes in the image above.  We'll first create two reference points in Revit from Dynamo nodes.
 
 > Begin by creating a new Conceptual Mass family in Revit. Launch Dynamo and create the set of nodes in the image above.  We'll first create two reference point in Revit from Dynamo nodes.
-
 1. **Important note - when performing Revit operations, be certain that the run mode has been set to "Manual". Otherwise the program will crash.**
 2. Create a code block and give it a value of "0;".
 3. Plug this value into a ReferencePoint.ByCoordinates node for X,Y, and Z inputs.

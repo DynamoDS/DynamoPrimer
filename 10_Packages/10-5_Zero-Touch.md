@@ -18,9 +18,9 @@ This section demonstrates how to use Zero-Touch to import a third party library.
 Zero-touch packages are a good complement to user-defined custom nodes.  A few packages which use C# libraries are listed in the table below. For more detailed information on packages, visit the [Packages section ](../Appendix/A-3_packages.md)in the Appendix.
 
 
-<table width="50%">
+<table width="100%">
     <tr>
-    <td width="35%"><b>Logo/Image</b></td>
+    <td width="20%"><b>Logo/Image</b></td>
     <td><b>Name</b></td>
 
   </tr>
