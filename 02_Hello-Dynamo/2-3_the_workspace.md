@@ -1,4 +1,4 @@
-##The Workspace
+##2.3. The Workspace
 
 The Dynamo **Workspace** is where we develop our visual programs, but it's also where we preview any resulting geometry. Whether we are working in a Home Workspace or a Custom Node, we can navigate with our mouse or the buttons at top right. Toggling between modes at bottom right switches which preview we navigate.
 
@@ -11,14 +11,14 @@ The Dynamo **Workspace** is where we develop our visual programs, but it's also 
 3. Preview Mode
 4. Double Clicking on the Workspace
 
-###Tabs
+###2.3.1. Tabs
 The active Workspace tab allows you to navigate and edit your program. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the *New Node by Selection* right click option when Nodes are selected (more eon this functionality later).
 
 ![Tabs](images/2-3/02-Tabs.png)
 
 > Note: You may have only one Home Workspace open at a time; however, you may have multiple Custom Node Workspaces open in additional tabs.
 
-###Graph versus 3D Preview Navigation
+###2.3.2. Graph versus 3D Preview Navigation
 In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometry) are both rendered in the Workspace. By default the Graph is the active preview, so using the Navigation buttons or middle mouse button to pan and zoom will move us through the Graph. Toggling between active previews can be achieved three ways:
 
 ![Navigation](images/2-3/03-PreviewNavigations.png)
@@ -27,7 +27,7 @@ In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometr
 2. Right clicking in the Workspace and selecting *Switch to ... View*
 3. Keyboard shortcut (Ctrl + B)
 
-###Hello Mouse!
+###2.3.3. Hello Mouse!
 
 Based on which Preview mode is active, your mouse buttons will act differently. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking.
 
