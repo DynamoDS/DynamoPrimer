@@ -1,5 +1,5 @@
 #The Dynamo Primer
-##First Edition V1.0
+##First Edition V1.3
 
 ![Dynamo Logo](images/dynamo_logo_dark-trim.png)
 
@@ -8,7 +8,7 @@
 ### Welcome
 You have just opened the First Edition of the Dynamo Primer, a comprehensive guide to visual programming in Autodesk Dynamo Studio. This primer is an on-going project to share the fundamentals of programming. Topics include working with computational geometry, best practices for rules-based design, cross-disciplinary programming applications, and more with the Dynamo Platform.
 
-The power of Dynamo can be found in a wide variety of design-related activities. Dynamo enables an expanding list of readiliy accessible ways for you to get started:
+The power of Dynamo can be found in a wide variety of design-related activities. Dynamo enables an expanding list of readily accessible ways for you to get started:
 * **Explore** visual programming for the first time
 * **Connect** workflows in various software
 * **Engage** an active community of users, contributors, and developers
@@ -16,12 +16,18 @@ The power of Dynamo can be found in a wide variety of design-related activities.
 
 In the midst of this activity and exciting opportunity for working with Dynamo, we need a document of the same caliber, the Dynamo Primer.
 
-Version 1.0 of this Primer includes the first four chapters of a planned twelve chapters to be written by Mode Lab and released in the coming months. These first chapters focus on the essentials you will need to get up and running developing your own visual programs with Dynamo. Here's what you can expect to learn from the primer:
+Version 1.0 of this Primer includes the first ten chapters developed by Mode Lab. These chapters focus on the essentials you will need to get up and running developing your own visual programs with Dynamo and key insights on how to take Dynamo further. Here's what you can expect to learn from the primer:
 
-* **Context** - What exactly is "Visual Progamming" and what are the concepts I need to understand to dive in to Dynamo?
+* **Context** - What exactly is "Visual Programming" and what are the concepts I need to understand to dive in to Dynamo?
 * **Getting Started** - How do I get Dynamo and create my first program?
 * **What's in a Program** - What are the functional parts of Dynamo and how do I use them?
 * **Building Blocks** - What is "Data" and what are some fundamental types I can start using in my programs?
+* **Geometry for Design** - How do I work with geometric elements in Dynamo?
+* **Lists, Lists, Lists** - How to do I manage and coordinate my data structures?
+* **Code in Nodes** - How can I start extending Dynamo with my own code?
+* **Computational BIM** - How can I use Dynamo with a Revit model?
+* **Custom Nodes** - How can I create my own nodes?
+* **Packages** - How can I share my tools with the community?
 
 This is an exciting time to be learning about, working with, and developing for Dynamo. Let's get started!
 
@@ -33,7 +39,7 @@ The Dynamo Primer is an open source project, initiated by Matt Jezyk and the Dyn
 
 ![Mode Lab Logo](images/MODELAB_Logo.png)
 
-### Acknowledgements
+### Acknowledgments
 
 A special thanks to Ian Keough for initiating and guiding the Dynamo project.
 
