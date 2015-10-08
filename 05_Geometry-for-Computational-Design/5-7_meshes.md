@@ -1,5 +1,5 @@
 ## Meshes
-In the field of computational modeling, Meshes are one of the most pervasive forms of representing 3D geometry. Mesh geometry can be a light-weight and flexible alternative to working with NURBS, and meshes are used in everything from rendering and visualizations to digital fabrication and 3D printing. 
+In the field of computational modeling, Meshes are one of the most pervasive forms of representing 3D geometry. Mesh geometry can be a light-weight and flexible alternative to working with NURBS, and Meshes are used in everything from rendering and visualizations to digital fabrication and 3D printing. 
 
 ### What's a Mesh?
 A Mesh is a collection of quadrilaterals and triangles that represents a surface or solid geometry. Like Solids, the structure of a Mesh object includes vertices, edges, and faces. There are additional properties that make Meshes unique as well, such as normals.
@@ -11,7 +11,7 @@ A Mesh is a collection of quadrilaterals and triangles that represents a surface
 3. Mesh faces
 
 ### Mesh Elements
-Dynamo defines Meshes using a Face-Vertex data structure. At its most basic level, this structure is simply a collection of points which are grouped into polygons. The points of a Mesh are called vertices, while the polygons are called faces. To create a Mesh we need a list of vertices and a system of grouping those vertices into faces called an index group.
+Dynamo defines Meshes using a Face-Vertex data structure. At its most basic level, this structure is simply a collection of points which are grouped into polygons. The points of a Mesh are called vertices, while the surface-like polygons are called faces. To create a Mesh we need a list of vertices and a system of grouping those vertices into faces called an index group.
 
 ![](images/5-7/meshFacesVertices.png)
 
@@ -57,10 +57,10 @@ In a previous chapter, we saw that NURBS surfaces are defined by a series of NUR
 11. Vertex Normal
 12. Mesh Face / Mesh Face Normal
 
-Meshes, on the other hand, are comprised of a discrete number of exactly defined vertices and faces. The network of vertices generally cannot be defined by simple ``UV`` coordinates, and because the faces are discrete the amount of precision is built into the Mesh and can only be changed by refining the Mesh and adding more faces. The lack of UV coordinates, however, allows Meshes the flexibility to handle more complicated geometry with a single Mesh.
+Meshes, on the other hand, are comprised of a discrete number of exactly defined vertices and faces. The network of vertices generally cannot be defined by simple ``UV`` coordinates, and because the faces are discrete the amount of precision is built into the Mesh and can only be changed by refining the Mesh and adding more faces. The lack of mathematical descriptions allows Meshes to more flexibly handle complex geometry within a single Mesh.
 
 
-###Local vs Global Influence
+###Local versus Global Influence
 
 Another important difference is the extent to which a local change in Mesh or NURBS geometry affects the entire form. Moving one vertex of a Mesh only affects the faces that are adjacent to that vertex. In NURBS surfaces, the extent of the influence is more complicated and depends on the degree of the surface as well as the weights and knots of the control points. In general, however, moving a single control point in a NURBS surface creates a smoother, more extensive change in geometry.
 
@@ -69,7 +69,7 @@ Another important difference is the extent to which a local change in Mesh or NU
 > 1. NURBS Surface - moving a control point has influence that extends across the shape
 2. Mesh geometry - moving a vertex has influence only on adjacent elements
 
-One analogy that can be helpful is to compare a vector image (composed of lines and curves) with a raster image (composed of individual pixels). If you zoom into a vector image, the curves remain crisp and clear, while zooming into a raster image results in seeing individual pixels. In this analogy, NURBS surfaces can be compared to a vector image, while a Mesh behaves similarly to a raster image.
+One analogy that can be helpful is to compare a vector image (composed of lines and curves) with a raster image (composed of individual pixels). If you zoom into a vector image, the curves remain crisp and clear, while zooming into a raster image results in seeing individual pixels become larger. In this analogy, NURBS surfaces can be compared to a vector image because there is a smooth mathematical relationship, while a Mesh behaves similarly to a raster image with a set resolution.
 
 ### Mesh Toolkit
 Dynamo's mesh capabilities can be extended by installing the [Mesh Toolkit](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit) package. The Dynamo Mesh Toolkit provides tools to import Meshes from external file formats, create a Mesh from Dynamo geometry objects, and manually build Meshes by their vertices and indices. The library also provides tools to modify Meshes, repair Meshes, or extract horizontal slices for use in fabrication.
