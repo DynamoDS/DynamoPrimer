@@ -14,10 +14,10 @@ The "If" statement is a key concept in programming: "If *this* is true, then *th
 | ![](../images/icons/Dynamo-Nodes-CodeBlockNodeModel-Large.png) | Code Block | (x?y:z)| x, y, z | result|
 Let's go over a brief example on each of these three nodes in action using the conditional "If" statement:
 
-![](images/4-3/Ifs.png)
+![](images/4-3/IFs.png)
 > In this image, the *boolean* is set to *true*, which means that the result is a string reading: *"this is the result if true".*  The three Nodes creating the *If* statement are working identically here.
 
-![](images/4-3/Ifs2.png)
+![](images/4-3/IFs2.png)
 > Again, the Nodes are working identically.  If the *boolean* is changed to *false*, our result is the number *Pi*, as defined in the original *If* statement.
 
 ###Filtering a List
