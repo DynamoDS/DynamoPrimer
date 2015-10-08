@@ -32,7 +32,7 @@ These indices are a crucial element when working with lists.
 ### Inputs and Outputs
 Pertaining to lists, inputs and outputs vary depending on the Dynamo node being used.  As an example, let's use a list of 5 points and connect this output to two different Dynamo nodes: *PolyCurve.ByPoints* and *Circle.ByCenterPointRadius*:
 
-![Input Examples](images/6-2/Polycurve.Inputs.png)
+![Input Examples](images/6-2/PolyCurve.Inputs.png)
 > 1. The *points* input for *PolyCurve.ByPoints* is looking for *"Point[]"*.  This represents a list of points.
 2. The output for *PolyCurve.ByPoints* is a single PolyCurve created from a list of five points.
 3. The *centerPoint* input for *Circle.ByCenterPointRadius* asks for *"Point"*.
