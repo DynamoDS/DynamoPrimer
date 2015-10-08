@@ -36,7 +36,7 @@ This exercise is the first in a series of three which focuses on articulating im
 0..1..#10;
 0..1..#5;
 ```
-2. With the *Surface.PointAtParmaeter*, connect the two code block values to *u *and *v*.  Change the *lacing* of this node to *"Cross Product"*.
+2. With the *Surface.PointAtParameter*, connect the two code block values to *u *and *v*.  Change the *lacing* of this node to *"Cross Product"*.
 3. The output reveals the data structure, which is also visible in the Dynamo preview.
 
 ![Exercise](images/6-4/Exercise/A/01.png)
