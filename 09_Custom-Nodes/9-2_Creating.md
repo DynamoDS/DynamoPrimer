@@ -1,20 +1,16 @@
-<style>
-img{display:block;margin-left: auto;   margin-right: auto }
-</style>
-
 ## Creating a Custom Node
 Dynamo offers several different methods for creating custom nodes. You can build custom nodes from scratch, from an existing graph, or explicitly in C#. In this section we will cover building a custom node in the Dynamo UI from an existing graph. This method is ideal for cleaning up the workspace, as well as packaging a sequence of nodes to reuse elsewhere.
 
 ###Custom Nodes for UV Mapping
-In the image below, we map a point from one surface to another using UV coordinates. We'll use this concept to create a panelized surface which references curves in the XY plane. We'll be creating quad panels for our panelization here, but using the same logic, we can create a wide variety of panels with UV mapping. This is a great opportunity for custom node development because we will likely want to repeat a process similar to this one again. By creating a custom node, we can map points from one surface to another in one graph, or in other Dynamo workflows.
+In the image below, we map a point from one surface to another using UV coordinates. We'll use this concept to create a panelized surface which references curves in the XY plane. We'll create quad panels for our panelization here, but using the same logic, we can create a wide variety of panels with UV mapping. This is a great opportunity for custom node development because we will be able to repeat a similar process more easily in this graph or in other Dynamo workflows.
 
 ![](images/9-2/uvMap2-01-01.jpg)
 
 ### Creating a Custom Node from an Existing Graph
 
-> Download and unzip the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [UV-CustomNode.zip](datasets/9-2/UV-CustomNode.zip)
+> Download and unzip the example files for this exercise (Right click and choose "Save Link As..."). A full list of example files can be found in the Appendix. [UV-CustomNode.zip](datasets/9-2/UV-CustomNode.zip)
 
-Let’s start by creating a graph that we want to nest into a custom node. In this example, we will create a program that maps polygons from a base surface to a target surface, using UV coordinates. This UV mapping process is something we use frequently, making it a good candidate for a custom node. For more information on surfaces and UV space, see chapter 5.5. The complete graph is *UVmapping_Custom-Node.dyn* from the .zip file downloaded above.
+Let’s start by creating a graph that we want to nest into a custom node. In this example, we will create a graph that maps polygons from a base surface to a target surface, using UV coordinates. This UV mapping process is something we use frequently, making it a good candidate for a custom node. For more information on surfaces and UV space, see section 5.5. The complete graph is *UVmapping_Custom-Node.dyn* from the .zip file downloaded above.
 
 ![Exercise](images/9-2/UVmapping01.png)
 > 1. **Code Block:** Create a range of 10 numbers between 45 and negative 45 using a code block.
