@@ -80,7 +80,7 @@ With this notation, we can also specify which list will be dominant: 2 lists of 
 ### Exercise
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Dynamo-Syntax_Attractor-Surface.dyn](datasets/7-2/Dynamo-Syntax_Attractor-Surface.dyn)
 
-To show the power of code block, we are going to translate an existing attractor field definition into code block form.  Working with an existing definition demonstrates how code block relates to visual scripting, and is helpful for learning Design Script syntax.
+To show the power of code block, we are going to translate an existing attractor field definition into code block form.  Working with an existing definition demonstrates how code block relates to visual scripting, and is helpful for learning DesignScript syntax.
 ![Exercise](images/7-2/Exercise/01.png)
 > Begin by recreating the definition in the image above (or by opening the sample file).
 1. Notice that the lacing on *Point.ByCoordinates* has been set to *Cross Product*.
