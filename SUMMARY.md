@@ -36,7 +36,7 @@
    * [n-Dimensional Lists](06_Designing-with-Lists/6-4_n-dimensional-lists.md)
 * [Code Blocks and DesignScript](07_Code-Block/7_Code-Blocks-and-Design-Script.md)
    * [What's a Code Block](07_Code-Block/7-1_what-is-a-code-block.md)
-   * [DesignScript Syntax](07_Code-Block/7-2_dynamo-lanuage-syntax.md)
+   * [DesignScript Syntax](07_Code-Block/7-2_Design-Script-syntax.md)
    * [Shorthand](07_Code-Block/7-3_shorthand.md)
    * [Functions](07_Code-Block/7-4_functions.md)
 * [Dynamo for Revit](08_Dynamo-for-Revit/8_Dynamo-for-Revit.md)
