@@ -61,10 +61,10 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 ||[n-Dimensional-Lists.sat](../06_Designing-with-Lists/datasets/6-4/n-Dimensional-Lists.sat)
 
 
-####Code Blocks and Dynamo Language####
+####Code Blocks and DesignScript####
 |Section|Download File|
 |--|--|
-|Dynamo Language Syntax|[Dynamo-Syntax_Attractor-Surface.dyn](../07_Code-Block/datasets/7-2/Dynamo-Syntax_Attractor-Surface.dyn)
+|DesignScript Syntax|[Dynamo-Syntax_Attractor-Surface.dyn](../07_Code-Block/datasets/7-2/Dynamo-Syntax_Attractor-Surface.dyn)
 |Shorthand|[Obsolete-Nodes_Sine-Surface.dyn](../07_Code-Block/datasets/7-3/Obsolete-Nodes_Sine-Surface.dyn)
 |Functions|[Functions_SphereByZ.dyn](../07_Code-Block/datasets/7-4/Functions_SphereByZ.dyn)
 
