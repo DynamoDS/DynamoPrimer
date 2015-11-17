@@ -46,3 +46,14 @@ Right Click | Context Menu | Zoom Options
 Middle Click | Pan | Pan
 Scroll | Zoom In/Out | Zoom In/Out
 Double Click | Create Code Block | N/A
+
+###In-Canvas Search
+
+“That was so fast!”. Searching for nodes has never been this easy. Just right-click to bring up the new In-Canvas Search feature and access nodes without ever having to leave the canvas. It has all the great features of Library search like node description tooltips.
+
+![In Canvas Search](images/2-3/05-InCanvasSearch.png)
+
+>1. Right click anywhere on the canvas to bring up the search feature. When the search bar is empty, the drop-down will display some 
+2. test
+3. test
+
