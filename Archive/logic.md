@@ -72,4 +72,4 @@ In its simplest form, a logic gate receives two booleans and outputs one boolean
 | -- | -- | -- | -- | -- | -- |-- |
 | ![](../images/icons/DSCore-List-FilterByBoolMask-Large.png) | Filter By Boolean Mask | List.FilterByBoolMask | list, mask | in, out|
 
-*List.FilterByBoolMask* is a great tool for geometry operations. After conducting a conditional test on an array of elements, one can parse through those elements with this battery.  In the exercise below, we demonstrate this in detail.
+*List.FilterByBoolMask* is a great tool for geometry operations. After conducting a conditional test on an array of elements, one can parse through those elements with this node.  In the exercise below, we demonstrate this in detail.

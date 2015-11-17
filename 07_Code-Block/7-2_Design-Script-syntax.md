@@ -22,7 +22,7 @@ With the apple analogy in mind, let's look at *Point.ByCoordinates* and show how
 ![NodeNames](images/7-2/cbn02.png)
 > The *code block* syntax ```Point.ByCoordinates(0,10);
 ```
-gives the same result as a *Point.ByCoordinates* battery in Dynamo, except we're able to create a point using one battery.  This is more efficient than the connecting a separate node into *"X"* and *"Y"*.
+gives the same result as a *Point.ByCoordinates* node in Dynamo, except we're able to create a point using one node.  This is more efficient than the connecting a separate node into *"X"* and *"Y"*.
 1. By using *Point.ByCoordinates* in the code block, we are specifying the inputs in the same order as the out-of-the-box node *(X,Y)*.
 
 
@@ -61,7 +61,7 @@ Query-type methods get a property of an object. Since the object itself is the i
 ![NodeNames](images/7-2/cbn05.png)
 
 ### How About Lacing?
-Lacing with nodes is somewhat different from lacing with code block.  With nodes, the user right clicks on the battery and selects the lacing option to perform.  With code block, the user has much more control as to how the data is structured.  The code block shorthand method uses *replication guides* to set how several one-dimensional lists should be paired. Numbers in angled brackets "<>" define the hierarchy of the resulting nested list: <1>,<2>,<3>, etc.
+Lacing with nodes is somewhat different from lacing with code block.  With nodes, the user right clicks on the node and selects the lacing option to perform.  With code block, the user has much more control as to how the data is structured.  The code block shorthand method uses *replication guides* to set how several one-dimensional lists should be paired. Numbers in angled brackets "<>" define the hierarchy of the resulting nested list: <1>,<2>,<3>, etc.
 ![Lacing](images/7-2/lacing.png)
 
 > 1. In this example, we use a shorthand to define two ranges (more on shorthand in the following section of this chapter).  In short, ```0..1;
