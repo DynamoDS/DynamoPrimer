@@ -10,7 +10,7 @@
 
 
 ### Querying
-**RGB Space -** The colors in the table below query the properties used to define the color: Alpha, Red, Green, and Blue.  Note that the Color.Components battery gives us all four as different outputs, which makes this battery preferable for querying the  properties of a color.
+**RGB Space -** The colors in the table below query the properties used to define the color: Alpha, Red, Green, and Blue.  Note that the Color.Components node gives us all four as different outputs, which makes this node preferable for querying the  properties of a color.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- | -- |
@@ -29,9 +29,9 @@
 | ![](../images/icons/DSCore-Color-Brightness-Large.png) | Brightness | Color.Brightness | color | Brightness |
 
 ### Color Range
-The color range is similar to the **Remap Range** battery from section 4.2: it remaps a list of numbers into another domain.  But instead of mapping to a *number* domain, it maps to a *color gradient* based on input numbers ranging from 0 to 1.
+The color range is similar to the **Remap Range** node from section 4.2: it remaps a list of numbers into another domain.  But instead of mapping to a *number* domain, it maps to a *color gradient* based on input numbers ranging from 0 to 1.
 
-The current battery works well, but it can be a little awkward to get everything working the first time around.  Below is a miniature exercise for how to setup a gradient with output colors corresponding to numbers.
+The current node works well, but it can be a little awkward to get everything working the first time around.  Below is a miniature exercise for how to setup a gradient with output colors corresponding to numbers.
 
 ![](images/4-5/range.png)
 >1. **Define three colors: ** Using a code block node, define *red, green*, and *blue* by plugging in the appropriate combinations of *0* and *255*.
@@ -43,4 +43,4 @@ The best way to become familiar with the color gradient is to test it out intera
 ### Color Preview
 ![](images/4-5/cuboids.png)
 
-The **Display.ByGeometry** battery gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** battery.  Both of these batteries are discussed in the Color exercise at the end of this section.
+The **Display.ByGeometry** node gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** node.  Both of these batteries are discussed in the Color exercise at the end of this section.

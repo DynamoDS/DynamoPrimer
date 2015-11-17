@@ -152,7 +152,7 @@ Even less common in trigonometry are the hyperbolic functions, which are analogs
 | ![](../images/icons/DSCore-Math-Cosh-Large.png) | cosh | Math.Cosh | ![](images/4-2/cosh.png) |
 | ![](../images/icons/DSCore-Math-Tanh-Large.png) | tanh | Math.Tanh | ![](images/4-2/tanh.png)![](images/4-2/tanh2.png) |
 
-**Math.RadiansToDegrees/Math.DegreesToRadians -**Convert Radians to Degrees.  This is a handy battery for quickly converting angle units.  Dynamo works in degrees by default for inputs and outputs.
+**Math.RadiansToDegrees/Math.DegreesToRadians -**Convert Radians to Degrees.  This is a handy node for quickly converting angle units.  Dynamo works in degrees by default for inputs and outputs.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
