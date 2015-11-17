@@ -49,7 +49,12 @@ Double Click | Create Code Block | N/A
 
 ###In-Canvas Search
 
+By just right clicking on the canvas,  
+
+This feature exposes all the useful functionality of the "Library Search" feature without ever having to leave the Dynamo canvas! Using the "In-Canvas Search" will add some serious speed to your Dynamo work-flow by providing access to node descriptions and tool-tips without taking you away from your place on the graph.  
+
 “That was so fast!”. Searching for nodes has never been this easy. Just right-click to bring up the new In-Canvas Search feature and access nodes without ever having to leave the canvas. It has all the great features of Library search like node description tooltips.
+
 
 ![In Canvas Search](images/2-3/05-InCanvasSearch.png)
 
