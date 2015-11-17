@@ -53,7 +53,7 @@ Double Click | Create Code Block | N/A
 
 ![In Canvas Search](images/2-3/05-InCanvasSearch.png)
 
->1. Right click anywhere on the canvas to bring up the search feature. When the search bar is empty, the drop-down will display some 
-2. test
-3. test
+>1. Right click anywhere on the canvas to bring up the search feature. While the search bar is empty, the drop-down will be a preview menu.
+2. As you type into the search bar, the drop-down menu will continuously update to show the most relevant search results.
+3. Hover over the search results to bring up their corresponding descriptions and tool-tips.
 
