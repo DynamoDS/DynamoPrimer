@@ -1,4 +1,4 @@
-## MANAGING YOUR DATA
+## Managing Your Data
 
 In the previous section we looked at managing programs by aligning, grouping, and annotating nodes to organize the Workspace. These best practices help to reduce some of the complexity of your graph. However, key user inputs may still be unclear to someone unfamiliar with your graph, or unfamiliar with visual programming at all. Inputs such as numbers, strings, code blocks, selection nodes, and sliders may be scattered throughout the Workspace and difficult for another user to find and interact with. One way to manage multiple inputs is by saving Presets.
 
