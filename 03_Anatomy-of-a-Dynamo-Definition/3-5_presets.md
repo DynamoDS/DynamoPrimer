@@ -1,14 +1,17 @@
 ## MANAGING YOUR DATA
 
-In the previous section we looked at managing programs using best practices for aligning, grouping, and organizing nodes.
-Working within a Visual Programming process can be a powerful creative activity, but very quickly the Program Flow and key user inputs can be obscured by complexity and/or layout of the Workspace. Let's review some best practices for managing your program.
+In the previous section we looked at managing programs by aligning, grouping, and annotating nodes to organize the Workspace. These best practices help to reduce some of the complexity of your graph. However, key user inputs may still be unclear to someone unfamiliar with your graph, or unfamiliar with visual programming at all. Inputs such as numbers, strings, code blocks, selection nodes, and sliders may be scattered throughout the Workspace and difficult for another user to find and interact with. One way to manage multiple inputs is by saving Presets.
 
 ###Presets
 
 Presets are a way to take the current value of a selection of input nodes and save them as a preset state. These states can be restored through the Edit>Presets menu. Presets can be used to create and compare design iterations. Presets are saved with the file, making them a useful tool for sharing or requesting feedback. They also allow another user to interact with the graph without having to search for the relevant inputs, or tune a set of values that work well together from a design perspective.
 
+![](images/3-5/presets06.png)
+>1. Preset 1
+>2. Preset 2
+
 ###Creating Presets
-To create a preset, select one or more input nodes such as numbers, strings, code blocks, selection nodes, and sliders. Right-click the canvas and select "Create Preset from Selection", or press Control+T. 
+To create a preset, select one or more input nodes. Right-click the canvas and select "Create Preset from Selection", or press Control+T. 
 Let's take a look at an example. Below is a simple graph that creates a surface by lofting through a series of circles. 
 
 ![Create Preset](images/3-5/presets01.png)
