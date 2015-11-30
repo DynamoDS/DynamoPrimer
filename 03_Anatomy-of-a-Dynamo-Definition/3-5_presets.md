@@ -4,7 +4,7 @@
 
 ###Presets
 
-Presets are a way to take the current value of a selection of input nodes and save them as a preset state. These states can be restored through the Edit>Presets menu. Presets can be used to create and compare design iterations quickly.
+Presets are a way to take the current value of a selection of input nodes and save them as a preset state. These states can be restored through the Edit>Presets menu. Presets can be used to create and compare design iterations. Presets are saved with the file, making them a useful tool for sharing or requesting feedback. They also allow another user to interact with the graph without having to search for the relevant inputs, or tune a set of values that work well together from a design perspective.
 
 ###Creating Presets
 To create a preset, select one or more input nodes such as numbers, strings, code blocks, selection nodes, and sliders. Right-click the canvas and select "Create Preset from Selection", or press Control+T. 
