@@ -1,4 +1,4 @@
-##DYNAMO LIBRARY
+##Dynamo Library
 
 The **Dynamo Library** contains the Nodes we add to the Workspace to define Visual Programs for execution. In the Library, we can search for or browse to Nodes. The Nodes contained here - the basic Nodes installed, Custom Nodes we define, and Nodes from the Package Manager that we add to Dynamo - are organizaed hierachically by category. Let's review this organization and explore the key Nodes we will use frequently.
 
