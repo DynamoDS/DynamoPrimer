@@ -105,6 +105,26 @@ The size of the spheres demonstrates the parametric array defined by a reference
 > If we change the value of the *number slider* from earlier in the definition, the colors and sizes update.  Colors and radius size are directly related in this case: we now have a visual link between two parameters!
 
 
+### 4.5.5. Color On Surfaces
+The **Display.BySurfaceColors** node gives us the ability to map data across a surface using color! This functionality introduces some exciting possibilities for visualizing data obtained through discrete analysis like solar, energy, proximity etc.
 
 
+![](images/4-5/4-5-5/12.PNG)
+
+
+###Surface Color Exercise
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - ColorOnSurface.zip](datasets/4-5/BuildingBlocks of Programs - ColorOnSurface.zip). A full list of example files can be found in the Appendix.
+
+![](images/4-5/4-5-5/13.png)
+> First, we need to create (or reference) a surface to use as an input for the **Display.BySurfaceColors** node. For this example we are lofting between a sine and cosine curve.
+1. This **Group** of nodes is creating points along the Z-axis then displacing them based on sine and cosine functions. The two point lists are then used to generate NURBS curves.
+2. **Surface.ByLoft**: generate an interpolated surface between the list of NURBS curves.
+
+
+![](images/4-5/4-5-5/14.png)
+>1. **File Path**: select an image file to sample for pixel data downstream
+2. use **File.FromPath** to convert the file path to a file then pass into **Image.ReadFromFile** to output an image for sampling
+3. **Image.Pixels**: input an image and provide a sample value to use along the x and y dimensions of the image.
+4. **Slider**: provide sample values for **Image.Pixels**
+5. **Display.BySurfaceColors**: map array of color values across surface along X and Y respectively  
 
