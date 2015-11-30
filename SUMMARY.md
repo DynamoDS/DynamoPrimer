@@ -40,7 +40,6 @@
    * [DesignScript Syntax](07_Code-Block/7-2_Design-Script-syntax.md)
    * [Shorthand](07_Code-Block/7-3_shorthand.md)
    * [Functions](07_Code-Block/7-4_functions.md)
-   * [Node to Code](07_Code-Block/7-5_Node-to-Code.md)
 * [Dynamo for Revit](08_Dynamo-for-Revit/8_Dynamo-for-Revit.md)
    * [The Revit Connection](08_Dynamo-for-Revit/8-1_The-Revit-Connection.md)
    * [Selecting](08_Dynamo-for-Revit/8-2_Selecting.md)
