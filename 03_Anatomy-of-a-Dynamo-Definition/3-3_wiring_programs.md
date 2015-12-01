@@ -1,4 +1,4 @@
-##WIRES
+##Wires
 
 Wires connect between Nodes to create relationships and establish the Flow of our Visual Program. We can think of them literally as electrical wires that carry pulses of data from one object to the next.
 

@@ -77,6 +77,11 @@ Lacing with nodes is somewhat different from lacing with code block.  With nodes
 
 With this notation, we can also specify which list will be dominant: 2 lists of 5 things or 5 lists of 2 things. In the example, changing the order of the replication guides makes the result a list of rows of points or a list of columns of points in a grid.
 
+###Node To Code
+While the code block methods above may take some getting used to, there is a great new feature in Dynamo called "Node to Code" which will make the process easier.  To use this feature,  select an array of nodes in your Dynamo graph, right-click and select "node to code". Dynamo condenses these nodes into a code block, with all of the inputs and outputs!  Not only is this a great tool for learning code block, but it also allows you to work with a more efficient and parametric Dynamo graph.  We'll conclude the exercise below by using node to code, so don't miss it.
+
+![Lacing](images/7-2/nodeToCode.jpg)
+
 ### Exercise
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Dynamo-Syntax_Attractor-Surface.dyn](datasets/7-2/Dynamo-Syntax_Attractor-Surface.dyn)
 
@@ -125,8 +130,8 @@ To show the power of code block, we are going to translate an existing attractor
 ``` In this case we thickened the surface by 5 units in the code, but we could always declare this as a variable (calling it *thickness* for example) and then control that value with a slider.
 
 
-###Node To Code
-We would be remiss if we skipped over what is arguably the coolest new feature in Dynamo: node to code.  This is still under development as of writing this, but this process automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
+###Simplify the Graph with Node to Code
+We would be remiss if we skipped over what is arguably the coolest new feature in Dynamo: node to code.  This process automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
 
 ![Exercise](images/7-2/Exercise/09.png)
 > 1. Start with the existing visual script from step 1 of the exercise. Select all of the nodes, right click on the canvas, and select *Node to Code*.  Simple as that.
