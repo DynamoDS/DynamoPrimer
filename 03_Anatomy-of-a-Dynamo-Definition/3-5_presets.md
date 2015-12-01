@@ -32,3 +32,5 @@ To restore a saved preset, navigate to Edit>Presets>Restore Preset. This will se
 To delete a preset, navigate to Edit>Presets>Delete Preset. This will remove a state from the list of saved states.
 
 ![Deleting Presets](images/3-5/presets05.png)
+
+![](images/3-5/presets07.png)
