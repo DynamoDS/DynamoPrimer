@@ -1,6 +1,8 @@
 ## Managing Your Data
 
-In the previous section we looked at managing programs by aligning, grouping, and annotating nodes to organize the Workspace. These best practices help to reduce some of the complexity of your graph. However, key user inputs may still be unclear to someone unfamiliar with your graph, or unfamiliar with visual programming at all. Inputs such as numbers, strings, code blocks, selection nodes, and sliders may be scattered throughout the Workspace and difficult for another user to find and interact with. One way to manage multiple inputs is by saving Presets.
+In the previous section we looked at managing programs by aligning, grouping, and annotating nodes to organize the Workspace. These best practices help to reduce some of the visual complexity of your graph. Let's dive deeper and organize the complexity of content.  Often, a Dynamo graph has a wide range of parameters which offer countless design iterations.  It helps to organize the range of options so that design decisions can be made - and this is where Presets come in. 
+
+Imagine that you've created a Dynamo graph to share with a team so that each team member can explore the parametric model. Before sharing, you want to be sure that the file is organized and legible for someone unfamiliar with the graph, or unfamiliar with visual programming at all. Inputs such as numbers, strings, code blocks, selection nodes, and sliders should be tidied up with formatting.  And further, the relationships between parameters can be organized into design schemes. The best way to do this is by saving Presets.
 
 ###Presets
 
