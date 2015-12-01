@@ -128,3 +128,5 @@ The **Display.BySurfaceColors** node gives us the ability to map data across a s
 4. **Slider**: provide sample values for **Image.Pixels**
 5. **Display.BySurfaceColors**: map array of color values across surface along X and Y respectively  
 
+![](images/4-5/4-5-5/15.PNG)
+>Close-up preview of the output surface with resolution of 400x300 samples
