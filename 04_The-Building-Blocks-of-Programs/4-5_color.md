@@ -38,7 +38,7 @@ The current Node works well, but it can be a little awkward to get everything wo
 3. **Define Indices: ** Create a list to define the grip positions of each color (ranging from 0 to 1).  Notice the value of 0.75 for green.  This places the green color 3/4 of the way across the horizontal gradient in the color range slider.
 4. **Code Block: ** Input values (between 0 and 1) to translate to colors.
 
-### 4.5.4. Color Preview
+### Color Preview
 The **Display.ByGeometry** Node gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** Node.
 
 ![](images/4-5/cuboids.png)
@@ -105,14 +105,14 @@ The size of the spheres demonstrates the parametric array defined by a reference
 > If we change the value of the *number slider* from earlier in the definition, the colors and sizes update.  Colors and radius size are directly related in this case: we now have a visual link between two parameters!
 
 
-### 4.5.5. Color On Surfaces
-The **Display.BySurfaceColors** node gives us the ability to map data across a surface using color! This functionality introduces some exciting possibilities for visualizing data obtained through discrete analysis like solar, energy, proximity etc.
+### Color On Surfaces
+The **Display.BySurfaceColors** node gives us the ability to map data across a surface using color! This functionality introduces some exciting possibilities for visualizing data obtained through discrete analysis like solar, energy, and proximity. Applying color to a surface in Dynamo is similar to applying a texture to a material in other CAD environments. Let's demonstrate how to use this tool in the brief exercise below.
 
 
 ![](images/4-5/4-5-5/12.PNG)
 
 
-###Surface Color Exercise
+###Color on Surfaces Exercise
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - ColorOnSurface.zip](datasets/4-5/BuildingBlocks of Programs - ColorOnSurface.zip). A full list of example files can be found in the Appendix.
 
 ![](images/4-5/4-5-5/13.png)
