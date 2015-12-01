@@ -38,7 +38,7 @@ The current Node works well, but it can be a little awkward to get everything wo
 3. **Define Indices: ** Create a list to define the grip positions of each color (ranging from 0 to 1).  Notice the value of 0.75 for green.  This places the green color 3/4 of the way across the horizontal gradient in the color range slider.
 4. **Code Block: ** Input values (between 0 and 1) to translate to colors.
 
-### 4.5.4. Color Preview
+### Color Preview
 The **Display.ByGeometry** Node gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** Node.
 
 ![](images/4-5/cuboids.png)
@@ -105,6 +105,28 @@ The size of the spheres demonstrates the parametric array defined by a reference
 > If we change the value of the *number slider* from earlier in the definition, the colors and sizes update.  Colors and radius size are directly related in this case: we now have a visual link between two parameters!
 
 
+### Color On Surfaces
+The **Display.BySurfaceColors** node gives us the ability to map data across a surface using color! This functionality introduces some exciting possibilities for visualizing data obtained through discrete analysis like solar, energy, and proximity. Applying color to a surface in Dynamo is similar to applying a texture to a material in other CAD environments. Let's demonstrate how to use this tool in the brief exercise below.
 
 
+![](images/4-5/4-5-5/12.PNG)
 
+
+###Color on Surfaces Exercise
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - ColorOnSurface.zip](datasets/4-5/BuildingBlocks of Programs - ColorOnSurface.zip). A full list of example files can be found in the Appendix.
+
+![](images/4-5/4-5-5/13.png)
+> First, we need to create (or reference) a surface to use as an input for the **Display.BySurfaceColors** node. For this example we are lofting between a sine and cosine curve.
+1. This **Group** of nodes is creating points along the Z-axis then displacing them based on sine and cosine functions. The two point lists are then used to generate NURBS curves.
+2. **Surface.ByLoft**: generate an interpolated surface between the list of NURBS curves.
+
+
+![](images/4-5/4-5-5/14.png)
+>1. **File Path**: select an image file to sample for pixel data downstream
+2. use **File.FromPath** to convert the file path to a file then pass into **Image.ReadFromFile** to output an image for sampling
+3. **Image.Pixels**: input an image and provide a sample value to use along the x and y dimensions of the image.
+4. **Slider**: provide sample values for **Image.Pixels**
+5. **Display.BySurfaceColors**: map array of color values across surface along X and Y respectively  
+
+![](images/4-5/4-5-5/15.PNG)
+>Close-up preview of the output surface with resolution of 400x300 samples
