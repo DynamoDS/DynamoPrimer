@@ -46,3 +46,14 @@ Right Click | Context Menu | Zoom Options
 Middle Click | Pan | Pan
 Scroll | Zoom In/Out | Zoom In/Out
 Double Click | Create Code Block | N/A
+
+###In-Canvas Search
+
+Using the "In-Canvas Search" will add some serious speed to your Dynamo work-flow by providing you access to node descriptions and tool-tips without taking you away from your place on the graph! By just right-clicking, you can access all the useful functionality of the "Library Search" from wherever you happen to be working on the canvas.
+
+![In Canvas Search](images/2-3/05-InCanvasSearch.png)
+
+>1. Right click anywhere on the canvas to bring up the search feature. While the search bar is empty, the drop-down will be a preview menu.
+2. As you type into the search bar, the drop-down menu will continuously update to show the most relevant search results.
+3. Hover over the search results to bring up their corresponding descriptions and tool-tips.
+
