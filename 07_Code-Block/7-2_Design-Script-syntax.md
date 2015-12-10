@@ -131,7 +131,7 @@ To show the power of code block, we are going to translate an existing attractor
 
 
 ###Simplify the Graph with "Node to Code"
-We would be remiss if we skipped over what is arguably the coolest feature in Dynamo: "Node to Code".  This process automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
+The "Node to Code" feature automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
 
 ![Exercise](images/7-2/Exercise/09.png)
 > 1. Start with the existing visual script from step 1 of the exercise. Select all of the nodes, right click on the canvas, and select *"Node to Code"*.  Simple as that.
