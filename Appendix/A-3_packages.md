@@ -4,7 +4,7 @@ thead {display: none}
 </style>
 
 ##Dynamo Packages
-Here are a list of some of the more popular packages in the Dynamo community. Developers, please add to the list! Remember, the [Dynamo Primer](https://github.com/modelab/dynamo-primer) is open-source!
+Here are a list of some of the more popular packages in the Dynamo community. Developers, please add to the list! Remember, the [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer) is open-source!
 
 <table>
   <tr>
