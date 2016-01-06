@@ -1,4 +1,4 @@
-##MANAGING YOUR PROGRAM
+##Managing Your Program
 
 Working within a Visual Programming process can be a powerful creative activity, but very quickly the Program Flow and key user inputs can be obscured by complexity and/or layout of the Workspace. Let's review some best practices for managing your program.
 

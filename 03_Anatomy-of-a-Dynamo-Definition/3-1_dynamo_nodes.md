@@ -1,4 +1,4 @@
-##NODES
+##Nodes
 
 In Dynamo, **Nodes** are the objects you connect to form a Visual Program. Each **Node** performs an operation - sometimes that may be as simple as storing a number or it may be a more complex action such as creating or querying geometry.
 
