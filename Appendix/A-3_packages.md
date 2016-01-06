@@ -4,7 +4,7 @@ thead {display: none}
 </style>
 
 ##Dynamo Packages
-Here are a list of some of the more popular packages in the Dynamo community. Developers, please add to the list! Remember, the [Dynamo Primer](https://github.com/modelab/dynamo-primer) is open-source!
+Here are a list of some of the more popular packages in the Dynamo community. Developers, please add to the list! Remember, the [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer) is open-source!
 
 <table>
   <tr>
@@ -158,5 +158,15 @@ Here are a list of some of the more popular packages in the Dynamo community. De
 
 
 
-
+<table>
+  <tr>
+    <td width="10%"><img src="images/A-4/Rhythm_L.png"></img></td>
+    <td width="55%"><b>RHYTHM</b></td>
+    <td><a href="https://github.com/sixtysecondrevit/RhythmForDynamo">Visit Rhythm on GitHub</td></a>
+  </tr>
+  <tr>
+    <td colspan="2"> At first glance, Rhythm isn't anything special. It does not involve any sophisticated code or anything of that nature. What Rhythm does represent though, is the result of practical thinking and diligence. The idea is this package helps users maintain Rhythm in Revit with Dynamo. Rhythm primarily consists of out of the box Dynamo nodes used in clever ways as they apply to the Revit environment. </td>
+    <td><img src="images/A-4/Rhythm_Image.png"></img></td>
+  </tr>
+</table>
 
