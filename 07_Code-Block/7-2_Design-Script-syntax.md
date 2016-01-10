@@ -1,4 +1,4 @@
-## Dynamo Language Syntax
+## DesignScript Syntax
 You may have noticed a common theme in the names of nodes in Dynamo: each node uses a *"."* syntax without spaces.  This is because the text at the top of each node respresents the actual syntax for scripting, and the *"."* (or *dot notation*) separates an element from the possible methods we can call.  This creates an easy translation from visual scripting to text-based scripting.
 
 ![NodeNames](images/7-2/apple.jpg)
@@ -22,7 +22,7 @@ With the apple analogy in mind, let's look at *Point.ByCoordinates* and show how
 ![NodeNames](images/7-2/cbn02.png)
 > The *code block* syntax ```Point.ByCoordinates(0,10);
 ```
-gives the same result as a *Point.ByCoordinates* battery in Dynamo, except we're able to create a point using one battery.  This is more efficient than the connecting a separate node into *"X"* and *"Y"*.
+gives the same result as a *Point.ByCoordinates* node in Dynamo, except we're able to create a point using one node.  This is more efficient than the connecting a separate node into *"X"* and *"Y"*.
 1. By using *Point.ByCoordinates* in the code block, we are specifying the inputs in the same order as the out-of-the-box node *(X,Y)*.
 
 
@@ -61,7 +61,7 @@ Query-type methods get a property of an object. Since the object itself is the i
 ![NodeNames](images/7-2/cbn05.png)
 
 ### How About Lacing?
-Lacing with nodes is somewhat different from lacing with code block.  With nodes, the user right clicks on the battery and selects the lacing option to perform.  With code block, the user has much more control as to how the data is structured.  The code block shorthand method uses *replication guides* to set how several one-dimensional lists should be paired. Numbers in angled brackets "<>" define the hierarchy of the resulting nested list: <1>,<2>,<3>, etc.
+Lacing with nodes is somewhat different from lacing with code block.  With nodes, the user right clicks on the node and selects the lacing option to perform.  With code block, the user has much more control as to how the data is structured.  The code block shorthand method uses *replication guides* to set how several one-dimensional lists should be paired. Numbers in angled brackets "<>" define the hierarchy of the resulting nested list: <1>,<2>,<3>, etc.
 ![Lacing](images/7-2/lacing.png)
 
 > 1. In this example, we use a shorthand to define two ranges (more on shorthand in the following section of this chapter).  In short, ```0..1;
@@ -77,10 +77,15 @@ Lacing with nodes is somewhat different from lacing with code block.  With nodes
 
 With this notation, we can also specify which list will be dominant: 2 lists of 5 things or 5 lists of 2 things. In the example, changing the order of the replication guides makes the result a list of rows of points or a list of columns of points in a grid.
 
+###"Node to Code"
+While the code block methods above may take some getting used to, there is a feature in Dynamo called "Node to Code" which will make the process easier.  To use this feature,  select an array of nodes in your Dynamo graph, right-click on the canvas and select "Node to Code". Dynamo condenses these nodes into a code block, with all of the inputs and outputs!  Not only is this a great tool for learning code block, but it also allows you to work with a more efficient and parametric Dynamo graph.  We'll conclude the exercise below by using "Node to Code", so don't miss it.
+
+![Lacing](images/7-2/nodeToCode.jpg)
+
 ### Exercise
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Dynamo-Syntax_Attractor-Surface.dyn](datasets/7-2/Dynamo-Syntax_Attractor-Surface.dyn)
 
-To show the power of code block, we are going to translate an existing attractor field definition into code block form.  Working with an existing definition demonstrates how code block relates to visual scripting, and is helpful for learning Design Script syntax.
+To show the power of code block, we are going to translate an existing attractor field definition into code block form.  Working with an existing definition demonstrates how code block relates to visual scripting, and is helpful for learning DesignScript syntax.
 ![Exercise](images/7-2/Exercise/01.png)
 > Begin by recreating the definition in the image above (or by opening the sample file).
 1. Notice that the lacing on *Point.ByCoordinates* has been set to *Cross Product*.
@@ -125,11 +130,11 @@ To show the power of code block, we are going to translate an existing attractor
 ``` In this case we thickened the surface by 5 units in the code, but we could always declare this as a variable (calling it *thickness* for example) and then control that value with a slider.
 
 
-###Node To Code
-We would be remiss if we skipped over what is arguably the coolest new feature in Dynamo: node to code.  This is still under development as of writing this, but this process automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
+###Simplify the Graph with "Node to Code"
+The "Node to Code" feature automates the entire exercise that we just completed with the click of a button.  Not only is this powerful for creating custom definitions and reusable code blocks, but it is also a really helpful tool to learn how to script in Dynamo:
 
 ![Exercise](images/7-2/Exercise/09.png)
-> 1. Start with the existing visual script from step 1 of the exercise. Select all of the nodes, right click on the canvas, and select *Node to Code*.  Simple as that.
+> 1. Start with the existing visual script from step 1 of the exercise. Select all of the nodes, right click on the canvas, and select *"Node to Code"*.  Simple as that.
 
 ![Exercise](images/7-2/Exercise/08.png)
 > Dynamo has automated a text based version of the visual graph, lacing and all. Test this out on your visual scripts and release the power of the code block!

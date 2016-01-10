@@ -11,7 +11,7 @@ This blog is the most up-to-date collection of articles from the Dynamo team, di
 
 http://dynamobim.com/blog/
 
-**Dynamo Language Guide**
+**DesignScript Guide**
 
 Programming languages are created to express ideas, usually involving logic and calculation. In addition to these objectives, the Dynamo textual language (formerly DesignScript) has been created to express design intentions. It is generally recognized that computational designing is exploratory, and Dynamo tries to support this: we hope you find the language flexible and fast enough to take a design from concept, through design iterations, to your final form. This manual is structured to give a user with no knowledge of either programming or architectural geometry full exposure to a variety of topics in these two intersecting disciplines.
 
