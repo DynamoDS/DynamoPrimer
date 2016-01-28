@@ -58,6 +58,10 @@ http://dynamobim.org
 
 https://github.com/DynamoDS/Dynamo
 
+**Contact** Let us know about any issues with this document.
+
+Dynamo@autodesk.com
+
 ### License
 Copyright 2015 Autodesk
 
