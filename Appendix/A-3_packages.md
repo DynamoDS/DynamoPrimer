@@ -24,7 +24,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   <tr>
     <td width="10%"><img src="images/A-4/logo01.png"></img></td>
     <td width="55%"><b>CLOCKWORK FOR DYNAMO</b></td>
-    <td><a href="http://archi-lab.net/bumblebee-dynamo-and-excel-interop/">Visit the Clockwork For Dynamo GitHub</td></a>
+    <td><a href="https://github.com/CAAD-RWTH/ClockworkForDynamo">Visit the Clockwork For Dynamo GitHub</td></a>
   </tr>
   <tr>
     <td colspan="2">Clockwork is a collection of custom nodes for the Dynamo visual programming environment. It contains many Revit-related nodes, but also lots of nodes for various other purposes such as list management, mathematical operations, string operations, unit conversions, geometric operations (mainly bounding boxes, meshes, planes, points, surfaces, UVs and vectors) and paneling. </td>
