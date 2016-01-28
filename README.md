@@ -54,9 +54,9 @@ http://dynamobim.com/download/
 
 http://dynamobim.org
 
-**Dynamo GitHub** Dynamo is an open-source development project on Github. To contribute, check out DynamoDS hosted by Ian Keough.
+**Dynamo GitHub** Dynamo is an open-source development project on Github. To contribute, check out DynamoDS.
 
-https://github.com/ikeough/Dynamo
+https://github.com/DynamoDS/Dynamo
 
 ### License
 Copyright 2015 Autodesk
