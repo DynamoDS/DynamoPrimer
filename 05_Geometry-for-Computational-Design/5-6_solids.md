@@ -70,5 +70,5 @@ Boolean operations are complex and can be slow to calculate. Use Freeze function
 > To unfreeze the nodes, right-click and uncheck Freeze.
 
 ![Freezing](images/5-6/freeze-04.png)
-> All affected nodes and associated geometry previews should update and revert to the standard preview mode.
+> All affected nodes and associated geometry previews will update and revert to the standard preview mode.
 
