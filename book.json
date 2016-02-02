@@ -13,7 +13,7 @@
         {            
           "label": "Download",
           "icon": "fa fa-file-pdf-o",
-          "url": "/download/download.pdf"
+          "url": "/Appendix/DynamoPrimer-Print.pdf"
         }
       ],
       "favicon":"/images/icons/favicon.ico"
