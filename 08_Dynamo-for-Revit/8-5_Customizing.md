@@ -72,7 +72,9 @@ With the parametric surface, we want to define a way to panelize it in order to 
 > 1. We're about to instantiate a lot of geometry in Revit, so make sure to turn the Dynamo solver to *"Manual"*.
 2. Add a *Family Types* node to the canvas and select *"ROOF-PANEL-4PT"*.
 3. Add an *AdaptiveComponent.ByPoints* node to the canvas, connect *Panel Pts* from the *"LunchBox Quad Grid by Face"* output into the *points* input.  Connect the *Family Types* node to the *familySymbol* input.
-4. Hit *Run*.  Revit will have to think for a bit while the geometry is being created.  If it takes too long, reduce the *code block's* *"15"* to a lower number.  This will reduce the number of panels on the roof.
+4. Hit *Run*.  Revit will have to think* for a bit while the geometry is being created.  If it takes too long, reduce the *code block's* *"15"* to a lower number.  This will reduce the number of panels on the roof.
+
+*Note: If the Dynamo solver is taking a long time to calculate nodes, you may want to use the "freeze" node functionality in order to pause the execution of Revit operations while you develop your graph. For more information on freezing nodes, check out the "Freezing" section in the [solids chapter](../05_Geometry-for-Computational-Design/5-6_solids.md).*
 
 ![Exercise](images/8-5/Exercise/31.png)
 > Back in Revit, we have the array of panels on the roof.
