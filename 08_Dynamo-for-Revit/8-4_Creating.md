@@ -84,5 +84,5 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 ![Exercise](images/8-4/Exercise/00a.png)
 > And for the final test, by selecting the mass in Revit and editing instance parameters, we can change the form of the building and watch the truss follow suit.  Remember, this Dynamo graph has to be open in order to see this update, and the link will be broken as soon as it's closed.
 
-
+*Note: If the Dynamo solver is taking a long time to calculate nodes, you may want to use the "freeze" node functionality in order to pause the execution of Revit operations while you develop your graph. For more information on freezing nodes, check out the "Freezing" section in the [solids chapter](../05_Geometry-for-Computational-Design/5-6_solids.md).*
 
