@@ -42,7 +42,7 @@ If you would like to contribute a new section, edits, or anything else to this p
 ### The Dynamo Primer Project
 The Dynamo Primer is an open source project, initiated by Matt Jezyk and the Dynamo Development team at Autodesk.
 
-**Mode Lab** was commissioned to write the First Edition of the primer. http://modelab.is
+**Mode Lab** was commissioned to write the First Edition of the primer. The team continues to work with Autodesk to provide updates in parallel with Dynamo's development.
 
 [<img src="images/MODELAB_Logo.png">](http://modelab.is)
 
