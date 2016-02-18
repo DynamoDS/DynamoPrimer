@@ -56,3 +56,19 @@ Let's use a few Boolean operations to create a spiky ball.
 6. **Solid.Fillet**: Fillet the Edges of the spiky ball
 
 > Download the example files that accompany this image (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Geometry for Computational Design - Solids.dyn](datasets/5-6/Geometry for Computational Design - Solids.dyn)
+
+### Freezing
+Boolean operations are complex and can be slow to calculate. Use Freeze functionality to suspend the execution of selected nodes and affected downstream nodes.
+
+![Freezing](images/5-6/freeze-01.png)
+> Use the right-click contextual menu to Freeze the Solid Union operation
+
+![Freezing](images/5-6/freeze-02.png)
+> The selected node and all downstream nodes will preview in a light grey ghosted mode, and affected wires will be displayed as dashed lines. The affected geometry preview will also be ghosted. You can now change values upstream without calculating the boolean union.
+
+![Freezing](images/5-6/freeze-03.png)
+> To unfreeze the nodes, right-click and uncheck Freeze.
+
+![Freezing](images/5-6/freeze-04.png)
+> All affected nodes and associated geometry previews will update and revert to the standard preview mode.
+
