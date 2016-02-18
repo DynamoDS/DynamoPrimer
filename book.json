@@ -1,3 +1,22 @@
-   {
-
+{
+  "gitbook": "2.6.x",
+  "plugins": [
+    "-sharing",
+    {
+      "name": "dynamo",
+      "version": "git+https://github.com/DynamoDS/gitbook-plugin-dynamo.git"
+    }
+  ],
+  "pluginsConfig": {
+    "dynamo": {
+      "customLinks":[
+        {            
+          "label": "Download",
+          "icon": "fa fa-file-pdf-o",
+          "url": "/Appendix/DynamoPrimer-Print.pdf"
+        }
+      ],
+      "favicon":"/images/icons/favicon.ico"
+    }
+  }
 }
