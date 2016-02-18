@@ -33,10 +33,10 @@ This is an exciting time to be learning about, working with, and developing for 
 
 ---
 
-### Participate
-The Dynamo Primer project is open source! If you would like to report issues on this project, please post them on our git hub page: https://github.com/DynamoDS/DynamoPrimer/issues
+### Open Source
+The Dynamo Primer project is open source! We're dedicated to providing quality content and appreciate any feedback you may have. If you would like to report an issue on this project, please post them on our git hub page: https://github.com/DynamoDS/DynamoPrimer/issues
 
-If you would like to contribute a new section,edits,or anything else to this project,check out the github wiki to get started: https://github.com/DynamoDS/DynamoPrimer.
+If you would like to contribute a new section, edits, or anything else to this project, check out the github wiki to get started: https://github.com/DynamoDS/DynamoPrimer.
 
 ---
 ### The Dynamo Primer Project
