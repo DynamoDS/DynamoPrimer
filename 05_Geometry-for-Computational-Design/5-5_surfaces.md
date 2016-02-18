@@ -4,8 +4,6 @@ As we move from using Curves to using Surfaces in a model, we can now begin to r
 ### What's a Surface?
 A Surface is a mathematical shape defined by a function and two parameters, Instead of ```t``` for Curves, we use ```U``` and ```V``` to describe the corresponding parameter space. This means we have more geometrical data to draw from when working with this type of Geometry. For example, Curves have tangent vectors and normal planes (which can rotate or twist along the curve's length), whereas Surfaces have normal vectors and tangent planes that will be consistent in their orientation.
 
-[Solids section](5-6_solids.md)
-
 ![Surface](images/5-5/Surface.png)
 > 1. Surface
 2. U Isocurve
