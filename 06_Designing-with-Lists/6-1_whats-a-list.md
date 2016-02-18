@@ -8,7 +8,7 @@ When we buy groceries, we put all of the purchased items into a bag.  This bag i
 
 In Dynamo, list data is ordered, and the first item in each list has an index "0".  Below, we'll discuss how lists are defined in Dynamo and how multiple lists relate to one another.
 
-[Solids section](5-6_solids.md)
+[Solids section](../05_Geometry-for-Computational-Design/5-6_solids.md)
 
 ## Zero-Based Indices
 
