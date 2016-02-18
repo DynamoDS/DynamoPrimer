@@ -4,9 +4,6 @@ If we want to construct more complex models that cannot be created from a single
 ### What's a Solid?
 Solids consist of one or more Surfaces that contain volume by way of a closed boundary that defines "in" or "out." Regardless of how many of these Surfaces there are, they must form a "watertight" volume to be considered a Solid. Solids can be created by joining Surfaces or Polysurfaces together or by using operations such as loft, sweep, and revolve. Sphere, Cube, Cone and Cylinder primitives are also Solids. A Cube with at least one face removed counts as a Polysurface, which has some similar properties, but it is not a Solid.
 
-[Solids section](./05_Geometry-for-Computational-Design/5-6_solids..md)
-
-
 ![Solids](images/5-6/Primitives.png)
 > 1. A Plane is made of a single Surface and is not a Solid.
 2. A Sphere is made of one Surface but *is* a Solid.
