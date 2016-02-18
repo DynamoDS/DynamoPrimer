@@ -32,12 +32,19 @@ Version 1.0 of this Primer includes the first ten chapters developed by Mode Lab
 This is an exciting time to be learning about, working with, and developing for Dynamo. Let's get started!
 
 ---
+
+### Participate
+The Dynamo Primer project is open source! If you would like to report issues on this project, please post them on our git hub page: https://github.com/DynamoDS/DynamoPrimer/issues
+
+If you would like to contribute a new section,edits,or anything else to this project,check out the github wiki to get started: https://github.com/DynamoDS/DynamoPrimer.
+
+---
 ### The Dynamo Primer Project
 The Dynamo Primer is an open source project, initiated by Matt Jezyk and the Dynamo Development team at Autodesk.
 
 **Mode Lab** was commissioned to write the First Edition of the primer. http://modelab.is
 
-![Mode Lab Logo](images/MODELAB_Logo.png)
+[<img src="images/MODELAB_Logo.png">](http://modelab.is)
 
 ### Acknowledgments
 
