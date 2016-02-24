@@ -76,13 +76,13 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 > Checking in Revit, we now have the ten trusses evenly spaced across the facade!
 
 ![Exercise](images/8-4/Exercise/01.png)
-> 1. "Flexing" the graph, we turn up the *numberOfTrusses* to *40* by changing the *slider*.  Lots of trusses, not very realistic, but the parametric link is working.
+> 1. "Flexing" the graph, we turn up the *numberOfTrusses* to *40* by changing the *slider*.  Lots of trusses*, not very realistic, but the parametric link is working.
+
+*Note: By adding 40 new elements to the Revit databse, the solver will take longer to calculate. In cases like these, you may want to use the "freeze" node functionality in order to pause the execution of Revit operations while you develop your graph. For more information on freezing nodes, check out the "Freezing" section in the [solids chapter](../05_Geometry-for-Computational-Design/5-6_solids.md).*
 
 ![Exercise](images/8-4/Exercise/00.png)
 > 1. Taming the truss system, let's compromise with a value of *15* for *numberOfTrusses*.
 
 ![Exercise](images/8-4/Exercise/00a.png)
 > And for the final test, by selecting the mass in Revit and editing instance parameters, we can change the form of the building and watch the truss follow suit.  Remember, this Dynamo graph has to be open in order to see this update, and the link will be broken as soon as it's closed.
-
-
 

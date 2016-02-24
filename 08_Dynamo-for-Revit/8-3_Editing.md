@@ -9,7 +9,9 @@ A powerful feature of Dynamo is that you can edit parameters on a parametric lev
 >1. If you've set up a Revit family before, remember that you have to assign a parameter type (string, number, dimension, etc.) Be sure to use the correct data type when assigning parameters from Dynamo.
 2. You can also use Dynamo in combination with parametric constraints defined in a Revit family's properties.
 
-As a quick review of parameters in Revit, we recall that there are type parameters and instance parameters.  Both can be edited from Dynamo, but we'll work with instance parameters in the exercise below.
+As a quick review of parameters in Revit, we recall that there are type parameters and instance parameters.  Both can be edited from Dynamo, but we'll work with instance parameters in the exercise below. 
+
+Note: As you discover the wide-reaching application of editing parameters, you may want to edit a large quantity of elements in Revit with Dynamo.  This can be a *computationally expensive* operation, meaning that it can be slow. If you're editing a large number of elements, you may want to use the "freeze" node functionality in order to pause the execution of Revit operations while you develop your graph. For more information on freezing nodes, check out the "Freezing" section in the [solids chapter](../05_Geometry-for-Computational-Design/5-6_solids.md).
 
 #### Units
 As of version 0.8, Dynamo is fundamentally unitless.  This allows Dynamo to remain an abstract visual programming environment. Dynamo nodes that interact with Revit dimensions will reference The Revit project's units.  For example, if you are setting a length parameter in Revit from Dynamo, the number in Dynamo for the value will correspond to the default units in the Revit project.  The exercise below works in meters.
