@@ -58,3 +58,14 @@ Using the "In-Canvas Search" will add some serious speed to your Dynamo work-flo
 >1. Right click anywhere on the canvas to bring up the search feature. While the search bar is empty, the drop-down will be a preview menu.
 2. As you type into the search bar, the drop-down menu will continuously update to show the most relevant search results.
 3. Hover over the search results to bring up their corresponding descriptions and tool-tips.
+
+##Clean Up Node Layout
+Keeping your Dynamo canvas organized becomes increasingly important as your files build in complexity. Although we have the **Align Selection** tool to work with small amounts of selected Nodes, Dynamo also features the **Cleanup Node Layout** tool to help with overall file cleanup. 
+
+![Cleanup Node Layout](images/2-3/05-InCanvasSearch.png)
+>1.	Select the Nodes to be automatically organized, or leave all unselected to clean up all nodes in the file. 
+2.	The Cleanup Node Layout feature is accessible under the Edit Tab, or by pressing Ctrl+L.
+
+![Clean Layout](images/2-3/05-InCanvasSearch.png)
+>1.	The nodes will be automatically re-distributed and aligned, cleaning up any staggered or overlapping nodes and aligning them with their neighbors.
+
