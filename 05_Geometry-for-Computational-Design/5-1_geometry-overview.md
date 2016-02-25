@@ -12,7 +12,7 @@ Understanding geometry in the context of algorithms, computing, and complexity, 
 1. Geometry is **Data** - to the computer and Dynamo, a Bunny not much different than a number.
 2. Geometry relies on **Abstraction** - fundamentally, geometric elements are described by numbers, relationships, and formulas within a given spatial coordinate system
 3. Geometry has a **Hierarchy** - points come together to make lines, lines come together to make surfaces, and so on
-4.  Geometry simulataneously describes both **the Part and the Whole** - when we have a curve, it is both the shape as well as all the possible points along it
+4.  Geometry simultaneously describes both **the Part and the Whole** - when we have a curve, it is both the shape as well as all the possible points along it
 
 In practice, these principles mean that we need to be aware of what we are working with (what type of geometry, how was it created, etc.) so that we can fluidly compose, decompose, and recompose different geometries as we develop more complex models.
 
