@@ -64,8 +64,8 @@ Keeping your Dynamo canvas organized becomes increasingly important as your file
 
 ![Cleanup Node Layout](images/2-3/05-InCanvasSearch.png)
 >1.	Select the Nodes to be automatically organized, or leave all unselected to clean up all nodes in the file. 
-2.	The Cleanup Node Layout feature is accessible under the Edit Tab, or by pressing Ctrl+L.
+2.	The Cleanup Node Layout feature is located under the Edit tab.
 
 ![Clean Layout Example](images/2-3/05-InCanvasSearch.png)
->1.	The nodes will be automatically re-distributed and aligned, cleaning up any staggered or overlapping nodes and aligning them with their neighbors.
+>1.	The nodes will be automatically re-distributed and aligned, cleaning up any staggered or overlapping nodes and aligning them with neighboring nodes.
 
