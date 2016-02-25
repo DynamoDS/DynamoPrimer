@@ -35,9 +35,9 @@ Based on which Preview mode is active, your mouse buttons will act differently. 
 
 ![Hello Mouse](images/2-3/04-HelloMouse.png)
 
->1. Right Click on the Workspace
-2. Right Click on a Node
-3. Right Click on a Note
+>1. Right Click on the Workspace.
+2. Right Click on a Node.
+3. Right Click on a Note.
 
 Here's a table of mouse interactions per Preview:
 
