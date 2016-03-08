@@ -96,7 +96,9 @@ x.Symbol;```
 ![Exercise](images/8-2/Exercise/02.png)
 > 1. We can convert all of these five elements to Dynamo geometry too.
 
-What if we had 500 beams?  Converting all of these elements into Dynamo geometry would be really slow. Do we need all of the surfaces to perform the intended parametric operation?  Or can we extract basic information from the beams and perform generative tasks with fundamental geometry?  This is a question that we'll keep in mind as we walk through this chapter. For example, let's take a look at the truss system:
+What if we had 500 beams?  Converting all of these elements into Dynamo geometry would be really slow. If the Dynamo solver is taking a long time to calculate nodes, you may want to use the "freeze" node functionality in order to pause the execution of Revit operations while you develop your graph. For more information on freezing nodes, check out the "Freezing" section in the [solids chapter](../05_Geometry-for-Computational-Design/5-6_solids.md).
+
+In any case, if we were to import 500 beams, do we need all of the surfaces to perform the intended parametric operation?  Or can we extract basic information from the beams and perform generative tasks with fundamental geometry?  This is a question that we'll keep in mind as we walk through this chapter. For example, let's take a look at the truss system:
 
 ![Exercise](images/8-2/Exercise/01.png)
 > Using the same graph of nodes, select the truss element rather than the beam element.  Before doing this, delete the Element.Geometry from the previous step.
