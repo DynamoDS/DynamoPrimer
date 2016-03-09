@@ -78,7 +78,7 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 ![Exercise](images/8-4/Exercise/01.png)
 > 1. "Flexing" the graph, we turn up the *numberOfTrusses* to *40* by changing the *slider*.  Lots of trusses*, not very realistic, but the parametric link is working.
 
-*Note: By adding 40 new elements to the Revit databse, the solver will take longer to calculate. In cases like these, you may want to use the "freeze" node functionality in order to pause the execution of Revit operations while you develop your graph. For more information on freezing nodes, check out the "Freezing" section in the [solids chapter](../05_Geometry-for-Computational-Design/5-6_solids.md).*
+*Note: By adding 40 new elements to the Revit databse, Dynamo will take longer to calculate. In cases like these, you may want to use the "freeze" node functionality in order to pause the execution of Revit operations while you develop your graph. For more information on freezing nodes, check out the "Freezing" section in the [solids chapter](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).*
 
 ![Exercise](images/8-4/Exercise/00.png)
 > 1. Taming the truss system, let's compromise with a value of *15* for *numberOfTrusses*.
