@@ -76,9 +76,7 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 > Checking in Revit, we now have the ten trusses evenly spaced across the facade!
 
 ![Exercise](images/8-4/Exercise/01.png)
-> 1. "Flexing" the graph, we turn up the *numberOfTrusses* to *40* by changing the *slider*.  Lots of trusses*, not very realistic, but the parametric link is working.
-
-*Note: By adding 40 new elements to the Revit databse, Dynamo will take longer to calculate. In cases like these, you may want to use the "freeze" node functionality in order to pause the execution of Revit operations while you develop your graph. For more information on freezing nodes, check out the "Freezing" section in the [solids chapter](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).*
+> 1. "Flexing" the graph, we turn up the *numberOfTrusses* to *40* by changing the *slider*.  Lots of trusses, not very realistic, but the parametric link is working.
 
 ![Exercise](images/8-4/Exercise/00.png)
 > 1. Taming the truss system, let's compromise with a value of *15* for *numberOfTrusses*.
@@ -86,3 +84,28 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 ![Exercise](images/8-4/Exercise/00a.png)
 > And for the final test, by selecting the mass in Revit and editing instance parameters, we can change the form of the building and watch the truss follow suit.  Remember, this Dynamo graph has to be open in order to see this update, and the link will be broken as soon as it's closed.
 
+
+### DirectShape Elements
+Another method for importing parametric Dynamo geometry into Revit is with DirectShape. In summary, the DirectShape element and related classes support the ability to store externally created geometric shapes in a Revit document. The geometry can include closed solids or meshes. DirectShape is primarily intended for importing shapes from other data formats such as IFC or STEP where not enough information is available to create a "real" Revit element.  Like the IFC and STEP workflow, the DirectShape functionality works well with importing Dynamo created geometries into Revit projects as real elements. 
+
+Let's walk through and exercise for importing Dynamo geometry as a DirectShape into our Revit project. Using this method, we can assign an imported geometry's category, material, and name - all while maintaining a parametric link to our Dynamo graph.
+
+### Exercise
+> Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+1. [DirectShape.dyn](datasets/8-4/DirectShape.dyn)
+2. [ARCH-DirectShape-BaseFile.rvt](datasets/8-4/ARCH-DirectShape-BaseFile.rvt)
+
+![Exercise](images/8-4/Exercise/DS-05.png)
+> Begin by opening the sample file for this lesson - ARCH-DirectShape-BaseFile.rvt.
+1. In the 3D view, we see our building mass from the previous lesson.
+2. Along the edge of the atrium is one reference curve, we'll use this as a curve to reference in Dynamo.
+3. Along the opposing edge of the atrium is another reference curve which we'll reference in Dynamo as well.
+
+![Exercise](images/8-4/Exercise/DS-04.png)
+>1. To reference our geometry in Dynamo, we'll use *Select Model Element* for each member in Revit. Select the mass in Revit and import the geometry into Dynamo by Using *Element.Faces* - the mass should now be visible in your Dynamo preview.
+2. Import one reference curve into Dynamo by using *Select Model Element* and *CurveElement.Curve*.
+3. Import the other reference curve into Dynamo by using *Select Model Element* and *CurveElement.Curve*.
+
+![Exercise](images/8-4/Exercise/DS-04.png)
+>1. Zooming out and panning to the right in the sample graph, we see a large group of nodes - these are geometric operations which generate the trellis roof structure visible in the Dynamo preview.  These nodes are generating using the *Node to Code* functionality as discussed in the [code block section](../07_Code-Block/7-2_Design-Script-syntax.md#"NodeToCode") of the primer.
+2. The structure is driven by three major parameters - Diagonal Shift, Camber, and Radius.
