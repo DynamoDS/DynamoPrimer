@@ -24,8 +24,6 @@ The following images show the conditional statements within each **ObjectFilter*
 
 ![ObjectFilter1](images/5-8/ObjectFilter01.jpg)
 
-
-
 >1.	Replace **FileLoader.GetImportedObjects** with **ObjectFilter** to search for specific conditions in the DWG file. – in this case only surface geometry will be imported, removing all curve and line geometry visible in the previous image.
 2.	Connect Filter to **ImportedObject.ConvertToGeometries** to import the filtered geometry.
 
