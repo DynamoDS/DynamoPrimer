@@ -15,7 +15,7 @@ The simplest way to import DWG into Dynamo Studio is by importing the entire fil
 3.	Use the **FileLoader.GetImportedObjects** component to parse the geometry into Dynamo Studio.
 4.	**ImportedObject.ConvertToGeometries** will convert the objects into usable geometry in the Dyanamo workspace.
 
-As shown in the above image, all types of geometry present in the file - surfaces, meshes, curves and lines - are imported into Dynamo.
+As shown in the above image, all types of geometry in the DWG file - surfaces, meshes, curves and lines - are imported into Dynamo.
 
 ### Object Filter
 To specify which geometries are imported from the DWG file, additional **ObjectFilter** nodes can be added to the definition. The **ObjectFilter** node is compatible with either a **FileLoader** or a list of **ImportedObject**, and outputs an **ImportedObject** list.
