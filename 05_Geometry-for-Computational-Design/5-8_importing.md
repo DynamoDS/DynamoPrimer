@@ -1,8 +1,8 @@
 ## ATF Translation Service
-Nodes for importing a DWG into the Dynamo environment can be found under the translation tab. This series of components will browse for a file, import the file contents, and convert it into usable Dynamo geometry. Dynamo also gives us the ability to filter through and select objects, so we are able to call specific objects within a DWG file.
+Nodes for importing a DWG into the Dynamo environment are found under the translation tab. The following examples demonstrate the series of components used to browse for a file, import the file contents, and convert it into usable Dynamo geometry. Dynamo also gives us the ability to filter through and select objects, so we are able to call specific objects within a DWG file.
 
 ###Get Imported Objects
-The simplest way to import DWG date into Dynamo Studio is to import the entire file into the workspace:
+The simplest way to import DWG date into Dynamo Studio is by importing the entire file into the workspace:
 
 [IMAGE 01]
 
@@ -17,6 +17,8 @@ A filtered geometry import is achieved by supplementing the definition with a **
 The following images show stated conditions iin one or more **ObjectFilter** nodes — any **ImportedObject** that satisfies any of the listed conditions will pass through the filter. Filtering can be based on layer label (i.e. layer name), geometry type, diffuse color, etc.
 
 [IMAGE 02]
+
+
 
 >1.	Replace **FileLoader.GetImportedObjects** with **ObjectFilter** to search for specific conditions in the DWG file. – in this case only surface geometry will be imported, removing all curve and line geometry visible in the previous image.
 2.	Connect Filter to **ImportedObject.ConvertToGeometries** to import the filtered geometry.
