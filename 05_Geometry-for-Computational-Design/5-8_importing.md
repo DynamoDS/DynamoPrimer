@@ -1,5 +1,5 @@
 ## ATF Translation Service
-The following examples show a series of components used to browse for a file, import the file contents, and convert it into usable Dynamo geometry. Nodes for importing a DWG into the Dynamo environment are found under the translation tab.  Dynamo also gives us the ability to filter through and select objects so we are able to call specific objects within a DWG file.
+Nodes for importing a DWG into the Dynamo environment are found under the translation tab.  The following examples show a series of components used to browse for a file, import the file contents, and convert it into usable Dynamo geometry. Dynamo also gives us the ability to filter through and select objects so we are able to call specific objects within a DWG file.
 
 ###Get Imported Objects
 The simplest way to import DWG into Dynamo Studio is by importing the entire file into the workspace:
