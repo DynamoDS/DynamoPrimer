@@ -6,7 +6,7 @@
 Nodes for importing a DWG into the Dynamo environment are found under the translation tab.  The following examples show a series of components used to browse for a file, import the file contents, and convert it into usable Dynamo geometry. Dynamo also gives us the ability to filter and select specific objects to import from a DWG file.
 
 ###Get Imported Objects
-The simplest way to import DWG into Dynamo Studio is by importing the entire file into the workspace:
+The simplest way to import DWG into Dynamo Studio is to import the entire file into the workspace:
 
 ![GetImportedObjects](images/5-8/GetImportedObjects.jpg)
 
