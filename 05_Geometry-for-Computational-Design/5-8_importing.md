@@ -4,7 +4,7 @@ Nodes for importing a DWG into the Dynamo environment are found under the transl
 ###Get Imported Objects
 The simplest way to import DWG date into Dynamo Studio is by importing the entire file into the workspace:
 
-[IMAGE 01]
+![GetImportedObjects](images/5-8/GetImportedObjects.jpg)
 
 >1.	Use the File Path component to browse for the DWG file to be imported into Dynamo.
 2.	Connect to **FileLoader.FromPath** to read the file.
@@ -16,14 +16,14 @@ A filtered geometry import is achieved by supplementing the definition with a **
 
 The following images show stated conditions iin one or more **ObjectFilter** nodes — any **ImportedObject** that satisfies any of the listed conditions will pass through the filter. Filtering can be based on layer label (i.e. layer name), geometry type, diffuse color, etc.
 
-[IMAGE 02]
+![ObjectFilter1](images/5-8/ObjectFilter01.jpg)
 
 
 
 >1.	Replace **FileLoader.GetImportedObjects** with **ObjectFilter** to search for specific conditions in the DWG file. – in this case only surface geometry will be imported, removing all curve and line geometry visible in the previous image.
 2.	Connect Filter to **ImportedObject.ConvertToGeometries** to import the filtered geometry.
 
-[IMAGE 03]
+![ObjectFilter2](images/5-8/ObjectFilter02.jpg)
 
 >1.	Replace **FileLoader.GetImportedObjects** with two **ObjectFilter** modules using different conditionals – this will separate the geometry from one file into two different streams.
 2.	Connect Filter to **ImportedObject.ConvertToGeometries** to import the filtered geometry.
@@ -31,7 +31,7 @@ The following images show stated conditions iin one or more **ObjectFilter** nod
 
 ###Explicit Object Selection
 
-[IMAGE 04]
+![Point to Curve](images/5-8/ObjectSelector.jpg)
 >1.	Replace FileLoader.GetImportedObjects with ObjectSelector to call for specific layers and objects within a DWG file.
 2.	Connect Filter to ImportedObject.ConvertToGeometries. 
 
