@@ -1,9 +1,9 @@
 ## Importing Geometry
-
+There are several ways to import geometry - 
 
 ###Importing Geometry from a DWG file
 
-Nodes for importing a DWG into the Dynamo environment are found under the translation tab.  The following examples show a series of components used to browse for a file, import the file contents, and convert it into usable Dynamo geometry. Dynamo also gives us the ability to filter and select specific objects to import from a DWG file.
+Nodes for importing a DWG into the Dynamo environment are found under the *Translation* tab (Note: the these tools are only available in [Dynamo Studio](http://www.autodesk.com/products/dynamo-studio/overview)).  The following examples show a series of components used to browse for a file, import the file contents, and convert it into usable Dynamo geometry. Dynamo also gives us the ability to filter and select specific objects to import from a DWG file - which we'll demonstrate below.  For more information on Importing Geometry from a DWG File, read Ben Goh's [blog post here](http://dynamobim.org/dwg-import-in-dynamo-studio-0-9-1/).
 
 ###Get Imported Objects
 The simplest way to import DWG into Dynamo Studio is to import the entire file into the workspace:
