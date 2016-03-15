@@ -33,7 +33,7 @@ Dimensionality is a convenient way to start categorizing Geometry but it's not n
 
 So what does this mean for using Dynamo? Understanding the Geometry types and how they are related will allow us to navigate the collection of **Geometry Nodes** available to us in the Library. The Geometry Nodes are organized alphabetically as opposed to hierarchically - here we've highlighted them relative to the chart above.
 
-![Geometry in Dynamo](images/5-1/GeometryOrganization.png)
+![Geometry in Dynamo](images/5-1/GeometryOrganization2.png)
 >1. Abstract Types
 2. Points
 3. Curves
