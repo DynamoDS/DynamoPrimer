@@ -106,6 +106,21 @@ Let's walk through and exercise for importing Dynamo geometry as a DirectShape i
 2. Import one reference curve into Dynamo by using *Select Model Element* and *CurveElement.Curve*.
 3. Import the other reference curve into Dynamo by using *Select Model Element* and *CurveElement.Curve*.
 
-![Exercise](images/8-4/Exercise/DS-04.png)
+![Exercise](images/8-4/Exercise/DS-03.png)
 >1. Zooming out and panning to the right in the sample graph, we see a large group of nodes - these are geometric operations which generate the trellis roof structure visible in the Dynamo preview.  These nodes are generating using the *Node to Code* functionality as discussed in the [code block section](../07_Code-Block/7-2_Design-Script-syntax.md#"NodeToCode") of the primer.
-2. The structure is driven by three major parameters - Diagonal Shift, Camber, and Radius.
+2. The structure is driven Vby three major parameters - Diagonal Shift, Camber, and Radius.
+
+![Exercise](images/8-4/Exercise/DS-06.png)
+>Zooming a close-up look of the parameters for this graph.  We can flex these to get different geometry outputs.
+
+![Exercise](images/8-4/Exercise/DS-02.png)
+>1. Dropping the *DirectShape.ByGeometry* node onto the canvas, we see that it has four inputs: **geometry, category, material**, and **name**.
+2. Geometry will be the solid created from the geometry creation portion of the graph
+3. The category input is chosen using the dropdwon *Categories* node. In this case we'll use "Structural Framing".
+4. The material input is selected through the array of nodes above - although it can be more simply defined as "Default" in this case.
+
+![Exercise](images/8-4/Exercise/DS-01.png)
+>After running the solver, back in Revit, we have the imported geometry on the roof in our project. This is a structural framing element, rather than a generic model.  The parametric link to Dynamo remains intact.
+
+![Exercise](images/8-4/Exercise/DS-00.png)
+>1. If we "flex" the Dynamo graph by changing the "Diagonal Shift" parameter to "-2", we just run the solver again and get a new imported DirectShape!
