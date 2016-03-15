@@ -108,7 +108,7 @@ Let's walk through and exercise for importing Dynamo geometry as a DirectShape i
 
 ![Exercise](images/8-4/Exercise/DS-03.png)
 >1. Zooming out and panning to the right in the sample graph, we see a large group of nodes - these are geometric operations which generate the trellis roof structure visible in the Dynamo preview.  These nodes are generating using the *Node to Code* functionality as discussed in the [code block section](../07_Code-Block/7-2_Design-Script-syntax.md#Node) of the primer.
-2. The structure is driven Vby three major parameters - Diagonal Shift, Camber, and Radius.
+2. The structure is driven by three major parameters - Diagonal Shift, Camber, and Radius.
 
 ![Exercise](images/8-4/Exercise/DS-06.png)
 >Zooming a close-up look of the parameters for this graph.  We can flex these to get different geometry outputs.
