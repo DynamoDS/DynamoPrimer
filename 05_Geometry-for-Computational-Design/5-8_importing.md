@@ -1,5 +1,7 @@
 ## Importing Geometry
-There are several ways to import geometry - 
+There are several ways to import geometry into Dynamo. We've demonstrated importing meshes using *Mesh Toolkit* in the previous section - we can also import Solid models from .SAT files and .SVG geometry with the *Dynastrator* plugin. With these processes, we can develop geometry in another platform, load it into Dynamo, and apply parametric operations through visual programming. 
+
+Another method for importing geometry uses a process called *ATF Translation*.  In this case, we can import not just geometry, but a file's structure. For example, we can choose which layers of a .DWG to import rather than importing the entire model. We'll demonstrate this below in more detail.
 
 ###Importing Geometry from a DWG file
 
