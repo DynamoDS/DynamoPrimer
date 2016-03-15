@@ -1,5 +1,5 @@
 ## Geometry Overview
-**Geometry** is the language for design. When a programming language or environment has a geometry kernal at its core, we can unlock the possibilities for designing precise and robust models, automating design routines, and generating design iterations with algorithms.
+**Geometry** is the language for design. When a programming language or environment has a geometry kernel at its core, we can unlock the possibilities for designing precise and robust models, automating design routines, and generating design iterations with algorithms.
 
 ### The Basics
 Geometry, traditionally defined, is the study of shape, size, relative position of figures, and the properties of space. This field has a rich history going back thousands of years. With the advent and popularization of the computer, we gained a powerful tool in defining, exploring, and generating geometry. It is now so easy to calculate the result of complex geometric interactions, the fact that we are doing so is almost transparent.
@@ -31,15 +31,9 @@ Dimensionality is a convenient way to start categorizing Geometry but it's not n
 
 ### Geometry in Dynamo Studio
 
-So what does this mean for using Dynamo? Understanding the Geometry types and how they are related will allow us to navigate the collection of **Geometry Nodes** available to us in the Library. The Geometry Nodes are organized alphabetically as opposed to hierarchically - here we've highlighted them relative to the chart above.
+So what does this mean for using Dynamo? Understanding the Geometry types and how they are related will allow us to navigate the collection of **Geometry Nodes** available to us in the Library. The Geometry Nodes are organized alphabetically as opposed to hierarchically - here they are displayed similar to their layout in the Dynamo interface.
 
-![Geometry in Dynamo](images/5-1/GeometryOrganization.png)
->1. Abstract Types
-2. Points
-3. Curves
-4. Surfaces
-5. Solids
-6. Meshes
+![Geometry in Dynamo](images/5-1/GeometryOrganization2.png)
 
 Additionally, making models in Dynamo and connecting the preview of what we see in the Background Preview to the flow of data in our graph should become more intuitive over time.
 
