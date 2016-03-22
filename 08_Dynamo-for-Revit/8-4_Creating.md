@@ -120,7 +120,7 @@ Let's walk through and exercise for importing Dynamo geometry as a DirectShape i
 4. The material input is selected through the array of nodes above - although it can be more simply defined as "Default" in this case.
 
 ![Exercise](images/8-4/Exercise/DS-01.png)
->After running the solver, back in Revit, we have the imported geometry on the roof in our project. This is a structural framing element, rather than a generic model.  The parametric link to Dynamo remains intact.
+>After running Dynamo, back in Revit, we have the imported geometry on the roof in our project. This is a structural framing element, rather than a generic model.  The parametric link to Dynamo remains intact.
 
 ![Exercise](images/8-4/Exercise/DS-00.png)
->1. If we "flex" the Dynamo graph by changing the "Diagonal Shift" parameter to "-2", we just run the solver again and get a new imported DirectShape!
+>1. If we "flex" the Dynamo graph by changing the "Diagonal Shift" parameter to "-2", we just run Dynamo again and get a new imported DirectShape!
