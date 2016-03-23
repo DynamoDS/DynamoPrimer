@@ -61,12 +61,13 @@ Browse the Library by clicking through the menus. Click the Geometry > Circle. N
 2. Category
 3. Subcategory: Create/Actions/Query
 4. Node
+5. Node Description and properties - this appears when hovering over the node icon.
 
 From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The window reveals more detailed information about the Node beyond its name and icon. This offers us a quick way to understand what the Node does, what it will require for inputs, and what it will give as an output.
 
 ![Node Pop Up Window](images/2-2/06-NodePopup.png)
->1. Icon - larger version of the icon in the Library Menu
-2. Description - plain language description of the Node
+>1. Description - plain language description of the Node
+2. Icon - larger version of the icon in the Library Menu
 3. Input(s) - name,  data type, and data structure
 4. Output(s) - data type and structure
 
@@ -86,8 +87,8 @@ From geometric to user settings, these options can be found in the **Settings** 
 ![show menu](images/2-2/08-Settings.png)
 
 >1. Enabling Reporting
-2. Render Quality
-3. Number Format
+2. Number Format
+3. Render Quality
 
 ###Help
 If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to, check the version of Dynamo installed and whether it is up to date through the **About** option.

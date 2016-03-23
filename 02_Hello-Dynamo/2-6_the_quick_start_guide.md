@@ -66,15 +66,15 @@ Starting simple and building complexity is an effective way to incrementally dev
 3. The 3D Preview will update with a grid of circles
 
 ###Adjusting with Direct Manipulation
-Sometimes numerical manipulation isn't the right approach. Now you can manually push and pull Point geometry when navigating in the background 3D preview. We can control the location of a point from a series of XY and Z values with a **Point.ByCoordinates**. With the Direct Manipulation approach, however, we are able to update the values of the sliders by manually moving the point in the **3D Preview Navigation** mode. This gives us an alternative, more intuitive approach to controlling a set of discrete values that identify a point's location.
+Sometimes numerical manipulation isn't the right approach. Now you can manually push and pull Point geometry when navigating in the background 3D preview. We can also control other geometry that was constructed by a point.  For example, **Sphere.ByCenterPointRadius** is capable of Direct Manipulation as well. We can control the location of a point from a series of X, Y, and Z values with **Point.ByCoordinates**. With the Direct Manipulation approach, however, you are able to update the values of the sliders by manually moving the point in the **3D Preview Navigation** mode. This offers a more intuitive approach to controlling a set of discrete values that identify a point's location.
 
 ![Selected Point](images/2-4/08-SelectedPoint.png)
 >1. To use **Direct Manipulation**, select the panel of the point to be moved – arrows will appear over the point selected.
 2. Switch to **3D Preview Navigation** mode.
 
 ![Direct Point Manipulation](images/2-4/09-DirectPointManipulation.png)
->1. Hover over the point and the XY and Z axes will appear.
-2. Click and drag the colored arrow for corresponding axis of movement, and the **Number Slider** values will update live with the manually moved point.
+>1. Hover over the point and the X, Y, and Z axes will appear.
+2. Click and drag the colored arrow to move the corresponding axis, and the **Number Slider** values will update live with the manually moved point.
 
 ![Updated Sliders](images/2-4/10-UpdatedSliders.png)
 >1. Note that before **Direct Manipulation** only one slider was plugged into the **Point.ByCoordinates** component. When we manually move the point in the X-direction, Dynamo will automatically generate a new **Number Slider** for the X input.
