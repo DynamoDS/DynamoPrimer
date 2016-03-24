@@ -14,20 +14,20 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 
 ####Introduction####
 |Section|Download File|
-|--|--|
+| --- | --- |
 |What is Visual Programming|[Visual Programming - Circle Through Point.dyn](../01_Introduction/datasets/1-1/Visual Programming - Circle Through Point.dyn)
 
 ####Anatomy of a Dynamo Definition####
 
 |Section|Download File|
-|--|--|
+| --- | ---|
 |Presets|[Presets.dyn](../03_Anatomy-of-a-Dynamo-Definition/datasets/3-5/Presets.dyn)
 
 
 ####The Building Blocks of Programs####
 
 |Section|Download File|
-|--|--|
+|---|---|
 |Data|[Building Blocks of Programs - Data.dyn](../04_The-Building-Blocks-of-Programs/datasets/4-1/Building Blocks of Programs - Data.dyn)
 |Math|[Building Blocks of Programs - Math.dyn](../04_The-Building-Blocks-of-Programs/datasets/4-2/Building Blocks of Programs - Math.dyn)
 |Logic|[Building Blocks of Programs - Logic.dyn](../04_The-Building-Blocks-of-Programs/datasets/4-3/Building Blocks of Programs - Logic.dyn)
@@ -36,7 +36,7 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 
 ####Geometry for Computational Design####
 |Section|Download File|
-|--|--|
+|---|---|
 |Geometry Overview|[Geometry for Computational Design - Geometry Overview.dyn](../05_Geometry-for-Computational-Design/datasets/5-1/Geometry for Computational Design - Geometry Overview.dyn)
 |Vectors|[Geometry for Computational Design - Vectors.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Vectors.dyn)
 ||[Geometry for Computational Design - Plane.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Plane.dyn)
@@ -48,7 +48,7 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 
 ####Designing with Lists####
 |Section|Download File|
-|--|--|
+|---|---|
 |What's a List|[Lacing.dyn](../06_Designing-with-Lists/datasets/6-1/Lacing.dyn)
 |Working with Lists|[List-Count.dyn](../06_Designing-with-Lists/datasets/6-2/List-Count.dyn)
 ||[List-FilterByBooleanMask.dyn](../06_Designing-with-Lists/datasets/6-2/List-FilterByBooleanMask.dyn)
@@ -69,14 +69,14 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 
 ####Code Blocks and DesignScript####
 |Section|Download File|
-|--|--|
+|---|---|
 |DesignScript Syntax|[Dynamo-Syntax_Attractor-Surface.dyn](../07_Code-Block/datasets/7-2/Dynamo-Syntax_Attractor-Surface.dyn)
 |Shorthand|[Obsolete-Nodes_Sine-Surface.dyn](../07_Code-Block/datasets/7-3/Obsolete-Nodes_Sine-Surface.dyn)
 |Functions|[Functions_SphereByZ.dyn](../07_Code-Block/datasets/7-4/Functions_SphereByZ.dyn)
 
 ####Dynamo for Revit####
 |Section|Download File|
-|--|--|
+|---|---|
 |Selecting|[Selecting.dyn](../08_Dynamo-for-Revit/datasets/8-2/Selecting.dyn)
 ||[ARCH-Selecing-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-2/ARCH-Selecting-BaseFile.rvt)
 |Editing|[Editing.dyn](../08_Dynamo-for-Revit/datasets/8-3/Editing.dyn)
@@ -90,7 +90,7 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 
 ####Custom Nodes####
 |Section|Download File|
-|--|--|
+|---|---|
 |Creating a Custom Node|[UV-CustomNode.zip](../09_Custom-Nodes/datasets/9-2/UV-CustomNode.zip)
 |Publishing to Your Library|[PointsToSurface.dyf](../09_Custom-Nodes/datasets/9-3/PointsToSurface.dyf)
 |Python Nodes|[Python-CustomNode.dyn](../09_Custom-Nodes/datasets/9-4/Python-CustomNode.dyn)
@@ -100,7 +100,7 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 
 ####Packages####
 |Section|Download File|
-|--|--|
+|---|---|
 |Package Case Study - Mesh Toolkit|[MeshToolkit.zip](../10_Packages/datasets/10-2/MeshToolkit.zip)
 |Publishing a Package|[MapToSurface.zip](../10_Packages/datasets/10-4/MapToSurface.zip)
 |Zero-Touch Importing|[ZeroTouchImages.zip](../10_Packages/datasets/10-5/ZeroTouchImages.zip)

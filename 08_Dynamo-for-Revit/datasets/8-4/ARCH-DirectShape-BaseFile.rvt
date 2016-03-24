@@ -50,8 +50,8 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 
 ![Exercise](images/8-4/Exercise/06.png)
 > We want to take advantage of the top curve, which is a line, and represents the full span of the facade.  We'll create planes along this line to intersect with the set of curves we've grouped together in a list.
-1. With a *code block*, define a range using the syntax: ```0..1..#numberOfTrusses;
-```
+1. With a *code block*, define a range using the syntax:
+```0..1..#numberOfTrusses;```
 2. Plug an *integer slider *into the input for the code block.  As you could have guessed, this will represent the number of trusses. Notice that the slider controls the number of items in the range defined from *0 *to *1*.
 3. Plug the *code block* into the *param* input of a *"Curve.PlaneAtParameter"* node, and plug the top edge into the *curve* input.  This will give us ten planes, evenly distributed across the span of the facade.
 

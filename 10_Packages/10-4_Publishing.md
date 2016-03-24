@@ -2,7 +2,7 @@
 
 In the previous sections, we dove into the details of how our *MapToSurface* package is set up with custom nodes and example files.  But how do we publish a package that has been developed locally?  This case study demonstrates how to publish a package from a set of files in a local folder.
 ![](images/10-4/Creating/Packages - 12.png)
-There are many ways to publish a package. Below is the process that we advise:** publish locally, develop locally, and then publish online**.  We'll start with a folder containing all of the files in the package.
+There are many ways to publish a package. Below is the process that we advise: **publish locally, develop locally, and then publish online**.  We'll start with a folder containing all of the files in the package.
 
 ###Uninstalling a Package
 Before we jump into publishing the MapToSurface package, if you installed the package from the previous lesson, uninstall it so that you're not working with identical packages. 
@@ -29,7 +29,8 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 
 ![](images/10-4/Publishing/Packages - 03.png)
 > In the *"Publish a Dynamo Package"* window, we've filled out the relevant forms on the left of the window.
-1. By clicking *"Add File"*, we've also added the files from the folder structure on the right side of the screen (to add files which are not .dyf files, be sure to change your file type in the browser window to **"All Files(*.*)"**. Notice that we've added every file, custom node (.dyf) or example file (.dyn), indiscriminately. Dynamo will categories these items when we publish the package.
+
+> 1. By clicking *"Add File"*, we've also added the files from the folder structure on the right side of the screen (to add files which are not .dyf files, be sure to change your file type in the browser window to **"All Files(*.*)"**. Notice that we've added every file, custom node (.dyf) or example file (.dyn), indiscriminately. Dynamo will categories these items when we publish the package.
 2. The "Group" field defines which group to find the custom nodes in the Dynamo UI.
 3. Publish by clicking "Publish Locally". If you're following along, be certain to click *"Publish Locally"* and **not** *"Publish Online"*; we don't want a bunch of duplicate packages on the Package Manager.
 
@@ -44,7 +45,8 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 
 ![](images/10-4/Publishing/Packages - 02.png)
 > Notice that the root directory is in the local location of your package (remember, we published the package "locally").  Dynamo is currently referencing this folder to read custom nodes. It's therefore important to locally publish the directory to a permanent folder location (ie: not your desktop). Here is the Dynamo package folder breakdown:
-1. The *bin* folder houses .dll files created with C# or Zero-Touch libraries.  We don't have any for this package so this folder is blank for this example.
+
+> 1. The *bin* folder houses .dll files created with C# or Zero-Touch libraries.  We don't have any for this package so this folder is blank for this example.
 2. The *dyf* folder houses the custom nodes.  Opening this will reveal all of the custom nodes (.dyf files) for this package.
 3. The extra folder houses all additional files.  These files are likely to be Dynamo Files (.dyn) or any additional files required (.svg, .xls, .jpeg, .sat, etc.).
 4. The pkg file is a basic text file defining the package settings. This is automated in Dynamo, but can be edited if you want to get into the details.
@@ -53,7 +55,8 @@ Before we jump into publishing the MapToSurface package, if you installed the pa
 
 ![](images/10-4/Publishing/Packages - 00.png)
 > **Note: please do not follow along with this step unless you are actually publishing a package of your own!**
-1. When you're ready to publish, in the "Manage Packages" window, select the button the right of MapToSurface and choose *Publish...*
+
+> 1. When you're ready to publish, in the "Manage Packages" window, select the button the right of MapToSurface and choose *Publish...*
 2. If you're updating a package that has already been published, choose "Publish Version" and Dynamo will update your package online based on the new files in that package's root directory. Simple as that!
 
 ###Publish Version...

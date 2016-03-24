@@ -5,14 +5,14 @@ Color is a great data type for creating compelling visuals as well as for render
 Colors in Dynamo are created using ARGB inputs.This corresponds to the Alpha, Red, Green, and Blue channels. The alpha represents the *transparency* of the color, while the other three are used as primary colors to generate the whole spectrum of color in concert.
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Color-ByARGB-Large.png) | ARGB Color | Color.ByARGB | A,R,G,B | color |
 
 ###Querying Color Values
 The colors in the table below query the properties used to define the color: Alpha, Red, Green, and Blue.  Note that the Color.Components Node gives us all four as different outputs, which makes this Node preferable for querying the properties of a color.
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Color-Alpha-Large.png) | Alpha | Color.Alpha | color | A |
 | ![](../images/icons/DSCore-Color-Red-Large.png) | Red | Color.Red | color | R |
 | ![](../images/icons/DSCore-Color-Green-Large.png) | Green | Color.Green | color | G |
@@ -22,7 +22,7 @@ The colors in the table below query the properties used to define the color: Alp
 The colors in the table below correspond to the **HSB color space**.  Dividing the color into hue, saturation, and brightness is arguably more intuitive for how we  interpret color: What color should it be? How colorful should it be? And how light or dark should the color be?  This is the breakdown of hue, saturation, and brightness respectively.
 
 | Icon | Query Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Color-Hue-Large.png) | Hue | Color.Hue | color | Hue |
 | ![](../images/icons/DSCore-Color-Saturation-Large.png) | Saturation | Color.Saturation | color | Saturation |
 | ![](../images/icons/DSCore-Color-Brightness-Large.png) | Brightness | Color.Brightness | color | Brightness |
@@ -33,10 +33,10 @@ The color range is similar to the **Remap Range** Node from section 4.2: it rema
 The current Node works well, but it can be a little awkward to get everything working the first time around. The best way to become familiar with the color gradient is to test it out interactively. Let's do a quick exercise to review how to setup a gradient with output colors corresponding to numbers.
 
 ![](images/4-5/range.png)
->1. **Define three colors: ** Using a code block node, define *red, green*, and *blue* by plugging in the appropriate combinations of *0* and *255*.
+>1. **Define three colors:** Using a code block node, define *red, green*, and *blue* by plugging in the appropriate combinations of *0* and *255*.
 2. **Create list:** Merge the three colors into one list.
-3. **Define Indices: ** Create a list to define the grip positions of each color (ranging from 0 to 1).  Notice the value of 0.75 for green.  This places the green color 3/4 of the way across the horizontal gradient in the color range slider.
-4. **Code Block: ** Input values (between 0 and 1) to translate to colors.
+3. **Define Indices:** Create a list to define the grip positions of each color (ranging from 0 to 1).  Notice the value of 0.75 for green.  This places the green color 3/4 of the way across the horizontal gradient in the color range slider.
+4. **Code Block:** Input values (between 0 and 1) to translate to colors.
 
 ### Color Preview
 The **Display.ByGeometry** Node gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** Node.
@@ -45,7 +45,7 @@ The **Display.ByGeometry** Node gives us the ability to color geometry in the Dy
 
 
 ###Color Exercise
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Color.dyn](datasets/4-5/Building Blocks of Programs - Color.dyn). A full list of example files can be found in the Appendix.
+> Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Color.dyn](datasets/4-5/Building Blocks of Programs - Color.dyn). A full list of example files can be found in the Appendix.
 
 This exercise focuses on controlling color parametrically in parallel with geometry. The geometry is a basic helix, which we define below using the **Code Block** (3.2.3). This is a quick and easy way to create a parametric function; and since our focus is on color (rather than geometry), we use the code block to efficiently create the helix without cluttering the canvas.  We will use the code block more frequently as the primer moves to more advanced material.
 
@@ -113,11 +113,12 @@ The **Display.BySurfaceColors** node gives us the ability to map data across a s
 
 
 ###Color on Surfaces Exercise
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - ColorOnSurface.zip](datasets/4-5/BuildingBlocks of Programs - ColorOnSurface.zip). A full list of example files can be found in the Appendix.
+> Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - ColorOnSurface.zip](datasets/4-5/BuildingBlocks of Programs - ColorOnSurface.zip). A full list of example files can be found in the Appendix.
 
 ![](images/4-5/4-5-5/13.png)
 > First, we need to create (or reference) a surface to use as an input for the **Display.BySurfaceColors** node. For this example we are lofting between a sine and cosine curve.
-1. This **Group** of nodes is creating points along the Z-axis then displacing them based on sine and cosine functions. The two point lists are then used to generate NURBS curves.
+
+>1. This **Group** of nodes is creating points along the Z-axis then displacing them based on sine and cosine functions. The two point lists are then used to generate NURBS curves.
 2. **Surface.ByLoft**: generate an interpolated surface between the list of NURBS curves.
 
 
@@ -129,4 +130,4 @@ The **Display.BySurfaceColors** node gives us the ability to map data across a s
 5. **Display.BySurfaceColors**: map array of color values across surface along X and Y respectively  
 
 ![](images/4-5/4-5-5/15.PNG)
->Close-up preview of the output surface with resolution of 400x300 samples
+> Close-up preview of the output surface with resolution of 400x300 samples

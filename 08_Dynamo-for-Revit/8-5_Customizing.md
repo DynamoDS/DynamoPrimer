@@ -29,9 +29,8 @@ This exercise will expand on the techniques demonstrated in the previous section
 3. Create a surface between the two edges with a *Surface.ByLoft*.
 
 ![Exercise](images/8-5/Exercise/01.png)
-> 1. Using *code block*, define a range from 0 to 1 with 10 evenly spaced values: ```0..1..#10;
-```
-2. Plug the *code block* into the *u *and *v* inputs of a *Surface.PointAtParameter* node, and plug the *Surface.ByLoft* node into the *surface* input.  Right click the node and change the *lacing* to *Cross Product*.  This will give a gird of points on the surface.
+> 1. Using *code block*, define a range from 0 to 1 with 10 evenly spaced values: ```0..1..#10;```
+2. Plug the *code block* into the *u* and *v* inputs of a *Surface.PointAtParameter* node, and plug the *Surface.ByLoft* node into the *surface* input.  Right click the node and change the *lacing* to *Cross Product*.  This will give a gird of points on the surface.
 
 This grid of points serves as the control points for a parametrically defined surface.  We want to extract the u and v positions of each one of these points so that we can plug them into a parametric formula and keep the same data structure.  We can do this by querying the parameter locations of the points we just created.
 
@@ -42,8 +41,8 @@ This grid of points serves as the control points for a parametrically defined su
 4. The outputs show the corresponding *u* and *v* values for every point of the surface.  We now have a range from *0* to *1* for each value, in the proper data structure, so we're ready to apply a parametric algorithm.
 
 ![Exercise](images/8-5/Exercise/03.png)
-> 1. Add a *code block* to the canvas and enter the code: ```
-Math.Sin(u*180)*Math.Sin(v*180)*w;``` This is a parametric function which creates a sine mound from a flat surface.
+> 1. Add a *code block* to the canvas and enter the code: ```Math.Sin(u*180)*Math.Sin(v*180)*w;```
+ This is a parametric function which creates a sine mound from a flat surface.
 2. The *u* input connects to *UV.U*.
 3. The *v* input connects to *UV.V*.
 4. The *w* input represents the *amplitude* of the shape, so we attach a *number slider* to it.

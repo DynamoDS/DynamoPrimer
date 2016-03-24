@@ -5,7 +5,7 @@
 **Color.ByARGB -** Colors in Dynamo are created using ARGB inputs. This corresponds to the Alpha, Red, Green, and Blue values.  The alpha represents the *transparency* of the color, while the other three are used as primary colors to generate the whole spectrum of color in concert.
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Color-ByARGB-Large.png) | ARGB Color | Color.ByARGB | A,R,G,B | color |
 
 
@@ -13,7 +13,7 @@
 **RGB Space -** The colors in the table below query the properties used to define the color: Alpha, Red, Green, and Blue.  Note that the Color.Components node gives us all four as different outputs, which makes this node preferable for querying the  properties of a color.
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Color-Alpha-Large.png) | Alpha | Color.Alpha | color | A |
 | ![](../images/icons/DSCore-Color-Red-Large.png) | Red | Color.Red | color | R |
 | ![](../images/icons/DSCore-Color-Green-Large.png) | Green | Color.Green | color | G |
@@ -23,7 +23,7 @@
 **HSB Space - ** The colors in the table below correspond to the HSB color space.  Dividing the color into hue, saturation, and brightness is arguably more intuitive for how we  interpret color: What color should it be? How colorful should it be? And how light or dark should the color be?  This is the breakdown of hue, saturation, and brightness respectively.
 
 | Icon | Query Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- | -- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Color-Hue-Large.png) | Hue | Color.Hue | color | Hue |
 | ![](../images/icons/DSCore-Color-Saturation-Large.png) | Saturation | Color.Saturation | color | Saturation |
 | ![](../images/icons/DSCore-Color-Brightness-Large.png) | Brightness | Color.Brightness | color | Brightness |

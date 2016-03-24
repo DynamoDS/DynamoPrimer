@@ -28,12 +28,14 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 
 ![Exercise](images/8-4/Exercise/10.png)
 > Beginning with the example file from this section (or continuing with the Revit file from the previous session), we see the same Revit mass.
-1. This is the file as opened.
+
+> 1. This is the file as opened.
 2. This is the truss system we'll created with Dynamo, linked intelligently to the Revit mass.
 
 ![Exercise](images/8-4/Exercise/08.png)
 > We've used the *"Select Model Element"* and *"Select Face"* nodes, now we're taking one step further down in the geometry hierarchy and using *"Select Edge"*.  With the Dynamo solver set to run *"Automatic"*, the graph will continually update to changes in the Revit file. The edge we are selecting is tied dynamically to the Revit element topology.  As long as the topology* does not change, the connection remains linked between Revit and Dynamo.
-1. Select the top most curve of the glazing facade.  This spans the full length of the building.  If you're having trouble selecting the edge, remember to choose the selection in Revit by hovering over the edge and hitting *"Tab"* until the desired edge is highlighted.
+
+> 1. Select the top most curve of the glazing facade.  This spans the full length of the building.  If you're having trouble selecting the edge, remember to choose the selection in Revit by hovering over the edge and hitting *"Tab"* until the desired edge is highlighted.
 2. Using two *"Select Edge"* nodes, select each edge representing the cant at the middle of the facade.
 3. Do the same for the bottom edges of the facade in Revit.
 4. The *Watch* nodes reveal that we now have lines in Dynamo.  This is automatically converted to Dynamo geometry since the edges themselves are not Revit elements.  These curves are the references we'll use to instantiate adaptive trusses across the facade.
@@ -42,7 +44,8 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 
 ![Exercise](images/8-4/Exercise/07.png)
 > We first need to join the curves and merge them into one list.  This way we can *"group"* the curves to perform geometry operations.
-1. Create a list for the two curves at the middle of the facade.
+
+> 1. Create a list for the two curves at the middle of the facade.
 2. Join the two curves into a Polycurve by plugging the *List.Create* component into a *Polycurve.ByJoinedCurves* node.
 3. Create a list for the two curves at the bottom of the facade.
 4. Join the two curves into a Polycurve by plugging the *List.Create* component into a *Polycurve.ByJoinedCurves* node.
@@ -50,14 +53,15 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 
 ![Exercise](images/8-4/Exercise/06.png)
 > We want to take advantage of the top curve, which is a line, and represents the full span of the facade.  We'll create planes along this line to intersect with the set of curves we've grouped together in a list.
-1. With a *code block*, define a range using the syntax: ```0..1..#numberOfTrusses;
-```
+
+> 1. With a *code block*, define a range using the syntax: ```0..1..#numberOfTrusses;```
 2. Plug an *integer slider *into the input for the code block.  As you could have guessed, this will represent the number of trusses. Notice that the slider controls the number of items in the range defined from *0 *to *1*.
 3. Plug the *code block* into the *param* input of a *"Curve.PlaneAtParameter"* node, and plug the top edge into the *curve* input.  This will give us ten planes, evenly distributed across the span of the facade.
 
 ![Exercise](images/8-4/Exercise/05.png)
 > A plane is an abstract piece of geometry, representing a two dimensional space which is infinite.  Planes are great for contouring and intersecting, as we are setting up in this step.
-1. Using the *Geometry.Intersect* node, plug the *Curve.PlaneAtParameter* into the *entity* input of the *Geometry.Intersect* node.  Plug the main *List.Create* node into the *geometry* input.  We now see points in the Dynamo viewport representing the intersection of each curve with the defined planes.
+
+> 1. Using the *Geometry.Intersect* node, plug the *Curve.PlaneAtParameter* into the *entity* input of the *Geometry.Intersect* node.  Plug the main *List.Create* node into the *geometry* input.  We now see points in the Dynamo viewport representing the intersection of each curve with the defined planes.
 
 ![Exercise](images/8-4/Exercise/04.png)
 > Notice the output is a list of lists of lists. Too many lists for our purposes.  We want to do a partial flatten here.  We need to take one step down on the list and flatten the result.  To do this, we use the *List.Map* operation, as discussed in the list chapter of the primer.
@@ -92,7 +96,8 @@ Let's walk through and exercise for importing Dynamo geometry as a DirectShape i
 
 ### Exercise
 > Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
-1. [DirectShape.dyn](datasets/8-4/DirectShape.dyn)
+
+> 1. [DirectShape.dyn](datasets/8-4/DirectShape.dyn)
 2. [ARCH-DirectShape-BaseFile.rvt](datasets/8-4/ARCH-DirectShape-BaseFile.rvt)
 
 ![Exercise](images/8-4/Exercise/DS-05.png)

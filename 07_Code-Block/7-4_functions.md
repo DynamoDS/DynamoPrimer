@@ -59,24 +59,25 @@ sphereRadius=inputPt.Z;
 >1. Now, let's recall the function we've created in another *code block*. If we double-click on the canvas to create a new *code block*, and type in *sphereB*, we notice that Dynamo suggest the *sphereByZ* function that we've defined. Your function has been added to the intellisense library! Pretty cool.
 
 ![Exercise](images/7-4/Exercise/07.png)
->1. Now we call the function and create a variable called *Pt* to plug in the points created in the earlier steps:
-```sphereByZ(Pt)
-```
+>1. Now we call the function and create a variable called *Pt* to plug in the points created in the earlier steps: ```sphereByZ(Pt)```
 2. We notice from the output that we have all null values.  Why is this? When we defined the function, we are calculating the *sphereRadius* variable, but we did not define what the function should *return* as an *output*.  We can fix this in the next step.
 
 ![Exercise](images/7-4/Exercise/06.png)
->1. An important step, we need to define the output of the function by adding the line ```return = sphereRadius;
-``` to the *sphereByZ* function.
+>1. An important step, we need to define the output of the function by adding the line ```return = sphereRadius;``` to the *sphereByZ* function.
 2. Now we see that the output of the *code block* gives us the Z coordinates of each point.
 
 
 ![Exercise](images/7-4/Exercise/05.png)
 > Let's create actual spheres now by editing the *Parent* function.
 1. We first define a sphere with the line of code:
-```sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
 ```
-2. Next, we change the return value to be the *sphere* instead of the *sphereRadius*: ```return = sphere;
-```.  This gives us some giant spheres in our Dynamo preview!
+sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
+```
+2. Next, we change the return value to be the *sphere* instead of the *sphereRadius*:
+```
+return = sphere;
+```
+This gives us some giant spheres in our Dynamo preview!
 
 
 ![Exercise](images/7-4/Exercise/04.png)
@@ -105,9 +106,10 @@ sphereRadius=inputPt.Z/radiusRatio;
 sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
 //Define output for function
 return = sphere;
-};```
-2. Update the children code blocks by adding a *ratio* variable to the input: ```sphereByZ(Pt,ratio);
+};
 ```
+
+2. Update the children code blocks by adding a *ratio* variable to the input: ```sphereByZ(Pt,ratio);```
 Plug a slider into the newly created code block input and vary the size of the radii based on the radius ratio.
 
 
