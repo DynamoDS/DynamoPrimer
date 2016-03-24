@@ -28,31 +28,35 @@ With the three images above in mind, let's dive into an exercise which selects e
 
 ### Exercise
 >Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
-1. [Selecting.dyn](datasets/8-2/Selecting.dyn)
+
+>1. [Selecting.dyn](datasets/8-2/Selecting.dyn)
 2. [ARCH-Selecing-BaseFile.rvt](datasets/8-2/ARCH-Selecting-BaseFile.rvt)
 
 ![Exercise](images/8-2/Exercise/12.png)
 > In this example Revit file, we have three element types of a simple building.  We're going to use this as an example for selecting Revit elements within the context of the Revit hierachy:
-1. Building Mass
+
+>1. Building Mass
 2. Trusses (Adaptive Components)
 3. Beams (Structural Framing)
 
 ![Exercise](images/8-2/Exercise/11.png)
 > What conclusions can we draw from the elements currently in the Revit project view?  And how far down the hierarchy do we need to go to select the appropriate elements?  This will of course become a more complex task when working on a large project. There are a lot of options available: we can select elements by categories, levels, families, instances, etc.
-1. Since we're working with a basic setup, let's select the building mass by choosing *"Mass"* in the Categories dropdown node.  This can be found in the Revit>Selection tab.
+
+> 1. Since we're working with a basic setup, let's select the building mass by choosing *"Mass"* in the Categories dropdown node.  This can be found in the Revit>Selection tab.
 2. The output of the Mass category is just the category itself.  We need to select the elements.  To do this, we use the *"All Elements of Category"* node.
 3. A *Watch* node reveals that we've selected the BldgMass.
 
 At this point, notice that we don't see any geometry in Dynamo. We've selected a Revit element, but have not converted the element into Dynamo geometry.  This is an important separation.  If you were to select a large number of elements, you don't want to preview all of them in Dynamo because this would slow everything down.  Dynamo is a tool to manage a Revit project without necessarily performing geometry operations, and we'll look at that in the next section of this chapter.
 
-In this case, we're working with simple geometry, so we want to bring the geometry into the Dynamo preview.  The "BldgMass" in  the watch node above has a green number* next to it.  This represents the element's ID and tells us that we are dealing with a Revit element, not Dynamo geometry.The next step is to convert this Revit element into geometry in Dynamo.
+In this case, we're working with simple geometry, so we want to bring the geometry into the Dynamo preview.  The "BldgMass" in  the watch node above has a *green number* next to it.  This represents the element's ID and tells us that we are dealing with a Revit element, not Dynamo geometry.The next step is to convert this Revit element into geometry in Dynamo.
 
 ![Exercise](images/8-2/Exercise/10.png)
 > 1. Using the *Element.Faces* node, we get a list of surfaces representing each face of the Revit Mass.  We can now see the geometry in the Dynamo viewport and start to reference the face for parametric operations.
 
 ![Exercise](images/8-2/Exercise/09.png)
 > Here's an alternative method.  In this case, we're stepping away from selecting via the Revit Hierarchy *("All Elements of Category")* and electing to explicitly select geometry in Revit.
-1.  Using the *"Select Model Element"* node, click the *"select" *(or *"change"*) button.  In the Revit viewport, select the desired element.  In this case, we're selecting the building mass.
+
+> 1.  Using the *"Select Model Element"* node, click the *"select"* (or *"change"*) button.  In the Revit viewport, select the desired element.  In this case, we're selecting the building mass.
 2.  Rather than *Element.Faces*, we can select the full mass as one solid geometry using *Element.Geometry*.  This selects all of the geometry contained within that mass.
 3.  Using *Geometry.Explode,* we can get the list of surfaces again. These two nodes work the same as *Element.Faces* but offer alternative options for delving into the geometry of a Revit element.
 
@@ -81,11 +85,9 @@ In this case, we're working with simple geometry, so we want to bring the geomet
 
 ![Exercise](images/8-2/Exercise/04.png)
 > A question that may come up often in Revit/Dynamo workflows: how do I select one element and get all similar elements?  Since the selected Revit element contains all of its hierarchical information, we can query its family type and select all elements of that type.
-1.  Plug the beam element into a *FamilyInstance.Symbol** node.
+> 1.  Plug the beam element into a *FamilyInstance.Symbol** node.
 2. The *Watch* node reveals that the output is now a family symbol rather than a Revit element.
-3. *FamilyInstance.Symbol* is a simple query, so we can do this in the code block just as easily with ```
-x.Symbol;```
- and get the same results.
+3. *FamilyInstance.Symbol* is a simple query, so we can do this in the code block just as easily with ```x.Symbol;``` and get the same results.
 
 **Note - a family symbol is Revit API terminology for family type. Since this may cause some confusion, it will be updated in upcoming releases.*
 

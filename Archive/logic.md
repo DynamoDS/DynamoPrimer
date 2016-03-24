@@ -7,7 +7,7 @@ variables can only store two values referred to as Yes or No, True or False,
 limited range. We use booleans to evaluate conditions.
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCoreNodesUI-BoolSelector-Large.png) | Boolean | -- | True/False Radio Button | Boolean |
 > The boolean Node in Dynamo is a basic radio button, toggling between true and false.
 
@@ -17,7 +17,7 @@ At the most basic level, Dynamo has a boolean Node which functions as a light sw
 The "If" statement is a key concept in programming: "If *this* is true, then *that* happens, otherwise *something else* happens.  The statement's decision is driven by a boolean, and the two results are defined by the user.  There are multiple ways to define an "If" statement in Dynamo:
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCoreNodesUI-Logic-If-Large.png) | If | If | test, true, false | result|
 | ![](../images/icons/DSCoreNodesUI-Formula-Large.png) | Formula | IF(x,y,z) | x, y, z | result |
 | ![](../images/icons/Dynamo-Nodes-CodeBlockNodeModel-Large.png) | Code Block | (x?y:z)| x, y, z | result|
@@ -31,7 +31,7 @@ Let's go over a brief example on each of these three nodes in action using the c
 
 ### Relational Operators
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/lt-Large.png) | Less Than | < | x,y | boolean(s)|
 | ![](../images/icons/le-Large.png) | Less Than or Equal To | <=| x, y | boolean(s) |
 | ![](../images/icons/gt-Large.png) |Greater Than |>| x, y | boolean(s)|
@@ -45,7 +45,7 @@ Relational operators receive one or more inputs, and output a boolean depending 
 
 ### Logic Gates
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-Logic-And-Large.png) | And | && | x, y | boolean(s)|
 | ![](../images/icons/and-Large.png) | And | And | bool0,bool1... | boolean(s) |
 | ![](../images/icons/or-Large.png) | Or |//| x, y | boolean(s)|
@@ -69,7 +69,7 @@ In its simplest form, a logic gate receives two booleans and outputs one boolean
 ### Filter
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-List-FilterByBoolMask-Large.png) | Filter By Boolean Mask | List.FilterByBoolMask | list, mask | in, out|
 
 *List.FilterByBoolMask* is a great tool for geometry operations. After conducting a conditional test on an array of elements, one can parse through those elements with this node.  In the exercise below, we demonstrate this in detail.

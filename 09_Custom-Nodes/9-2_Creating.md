@@ -54,7 +54,8 @@ Now let’s select the nodes that we want to nest into a Custom Node, thinking a
 
 ![Exercise](images/9-2/UVmapping08.png)
 > Double click the Custom Node to edit it. This will open a workspace with a yellow background representing the inside of the node.
-1. **Inputs:** Change the input names to *baseSurface* and *targetSurface*.
+
+> 1. **Inputs:** Change the input names to *baseSurface* and *targetSurface*.
 2. **Outputs:** Add an additional output for the mapped polygons.
 
 >Save the custom node and return to the home workspace.

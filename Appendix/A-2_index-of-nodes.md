@@ -21,7 +21,7 @@ Bulitin Functions
 --
 
 ||||
-|--|--|--|
+|---|---|---|
 |![IMAGE](images/A-2/Count.Large.png)|**Count**<br>Returns number of items in the specified list.|![IMAGE](images/nodes/Count.png)
 |![IMAGE](images/A-2/Flatten.Large.png)|**Flatten**<br>Returns the flattened 1D list of the multidimensional input list.|![IMAGE](images/nodes/Flatten.png)
 |![IMAGE](images/A-2/Map.Large.png)|**Map**<br>Maps a value into an input range|![IMAGE](images/nodes/Map.png)
@@ -31,7 +31,7 @@ Core
 
 ####Core.Color
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/DSCore.Color.ByARGB.Large.png)|**Color.ByARGB**<br>Construct a color by alpha, red, green, and blue components.|![IMAGE](images/nodes/Color.ByARGB.png)
 |![IMAGE](images/A-2/DSCoreNodesUI.ColorRange.Large.png)|**Color Range**<br>Get a color from a color gradient between a start color and an end color.|![IMAGE](images/nodes/ColorRange.png)
@@ -48,13 +48,13 @@ Core
 
 ####Core.Display
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Display.ByGeometryColor.png)|**Display.ByGeometryColor**<br>Displays geometry using a color.|![IMAGE](images/nodes/Display.ByGeometryColor.png)
 
 ####Core.Input
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/DSCoreNodesUI.BoolSelector.Large.png)|**Boolean**<br>Selection between a true and false.|![IMAGE](images/nodes/Boolean.png)
 |![IMAGE](images/A-2/Dynamo.Nodes.CodeBlockNodeModel.Large.png)|**Code Block**<br>Allows for DesignScript code to be authored directly.|![IMAGE](images/nodes/CodeBlock.png)
@@ -67,7 +67,7 @@ Core
 
 ####Core.List
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/DSCore.List.Create.Large.png)|**List.Create**<br>Makes a new list out of the given inputs.|![IMAGE](images/nodes/List.Create.png)
 |![IMAGE](images/A-2/DSCore.List.Combine.Large.png)|**List.Combine**<br>Applies a combinator to each element in two sequences|![IMAGE](images/nodes/List.Combine.png)
@@ -88,7 +88,7 @@ Core
 
 ####Core.Logic
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/DSCoreNodesUI.Logic.If.Large.png)|**If**<br>Conditional statement. Checks the boolean value of the test input. If the test input is true, the result outputs the true input, otherwise the result outputs the false input.|![IMAGE](images/nodes/If.png)
 
@@ -96,7 +96,7 @@ Core
 
 ####Core.Math
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/DSCore.Math.Cos.Large.png)|**Math.Cos**<br>Fines the cosine of an angle.|![IMAGE](images/nodes/Math.Cos.png)
 |![IMAGE](images/A-2/DSCore.Math.DegreesToRadians.Large.png)|**Math.DegreesToRadians**<br>Converts an angle in degrees to an angle in radians.|![IMAGE](images/nodes/Math.DegreesToRadians.png)
@@ -109,19 +109,19 @@ Core
 
 ####Core.Object
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/DSCore.Object.IsNull.Large.png)|**Object.IsNull**<br>Determines if the given object is null.|![IMAGE](images/nodes/Object.IsNull.png)
 
 ####Core.Scripting
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/DSCore.Scripting.Formula.Large.png)|**Formula**<br>Evaluates mathematical formulas. Uses NCalc for evaluation. See http://ncalc.codeplex.com |![IMAGE](images/nodes/Formula.png)
 
 ####Core.String
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/DSCore.String.Concat.Large.png)|**String.Concat**<br>Concatenates multiple strings into a single string.|![IMAGE](images/nodes/String.Concat.png)
 |![IMAGE](images/A-2/DSCore.String.Contains.Large.png)|**String.Contains**<br>Determines if the given string contains the given substring.|![IMAGE](images/nodes/String.Contains.png)
@@ -132,7 +132,7 @@ Core
 
 ####Core.View
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/Dynamo.Nodes.Watch.Large.png)|**View.Watch**<br>Visualize the output of node.|![IMAGE](images/nodes/Watch.png)
 |![IMAGE](images/A-2/Dynamo.Nodes.Watch3D.Large.png)|**View.Watch 3D**<br>Shows a dynamic preview of geometry.|![IMAGE](images/nodes/Watch3D.png)
@@ -142,14 +142,14 @@ Geometry
 
 ####Geometry.Circle
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius.Large.png)|**Circle.ByCenterPointRadius**<br>Creates a Circle with input center Point and radius in the world XY plane, with world Z as normal.|![IMAGE](images/nodes/Circle.ByCenterPointRadius.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Circle.ByPlaneRadius.Large.png)|**Circle.ByPlaneRadius**<br>Create a Circle centered at the input Plane origin (root), lying in the input Plane, with given radius.|![IMAGE](images/nodes/Circle.ByPlaneRadius.png)
 
 ####Geometry.CoordinateSystem
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.CoordinateSystem.ByOrigin.Point.Large.png)|**CoordinateSystem.ByOrigin**<br>Create a CoordinateSystem with origin at input Point, with X and Y Axes set as WCS X and Y axes|![IMAGE](images/nodes/CoordinateSystem.ByOrigin.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.CoordinateSystem.ByCylindricalCoordinates.Large.png)|**CoordinateSystem.ByCyclindricalCoordinates**<br>Creates a CoordinateSystem at the specified cylindrical coordinate parameters with respet to the specified coordinate system|![IMAGE](images/nodes/CoordinateSystem.ByCylindricalCoordinates.png)
@@ -157,21 +157,21 @@ Geometry
 
 ####Geometry.Cuboid
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Cuboid.ByLengths.Point-double-double-double.Large.png)|**Cuboid.ByLengths** (origin)<br>Create a Cuboid centered at input Point, with specified width, length, and height.|![IMAGE](images/nodes/Cuboid.ByLengths_Origin.png)
 
 
 ####Geometry.Curve
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Curve.Extrude.double.Large.png)|**Curve.Extrude** (distance)<br>Extrudes a Curve in the normal Vector direction.|![IMAGE](images/nodes/Curve.Extrude_Distance.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Curve.PointAtParameter.Large.png)|**Curve.PointAtParameter**<br>Get a Point on the Curve at a specified parameter between StartParameter() and EndParameter().|![IMAGE](images/nodes/Curve.PointAtParameter.png)
 
 ####Geometry.Geometry
 ||||
-|--|--|--|
+|---|---|---|
 ||ACTIONS||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Geometry.DistanceTo.Large.png)|**Geometry.DistanceTo**<br>Obtain the distance from this Geometry to another.|![IMAGE](images/nodes/Geometry.DistanceTo.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Explode.Large.png)|**Geometry.Explode**<br>Separates compound or non-separated elements into their component parts|![IMAGE](images/nodes/Geometry.Explode.png)
@@ -181,7 +181,7 @@ Geometry
 
 ####Geometry.Line
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Line.ByBestFitThroughPoints.Large.png)|**Line.ByBestFitThroughPoints**<br>Creates a Line best approximating a scatter plot of Points.|![IMAGE](images/nodes/Line.ByBestFitThroughPoints.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Line.ByStartPointDirectionLength.Large.png)|**Line.ByStartPointDirectionLength**<br>Create a straight Line starting at Point, extending in Vector direction by specified length.|![IMAGE](images/nodes/Line.ByStartPointDirectionLength.png)
@@ -192,28 +192,28 @@ Geometry
 
 ####Geometry.NurbsCurve
 ||||
-|--|--|--|
+|---|---|---|
 ||Create||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsCurve.ByControlPoints.Point1-int.Large.png)|**NurbsCurve.ByControlPoints**<br>Create a BSplineCurve by using explicit control points.|![IMAGE](images/nodes/NurbsCurve.ByControlPoints.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsCurve.ByPoints.Point1-int.Large.png)|**NurbsCurve.ByPoints**<br>Create a BSplineCurve by interpolating between points|![IMAGE](images/nodes/NurbsCurve.ByPoints.png)qcomm
 
 ####Geometry.NurbsSurface
 ||||
-|--|--|--|
+|---|---|---|
 ||Create||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsSurface.ByControlPoints.Large.png)|**NurbsSurface.ByControlPoints**<br>Create a NurbsSurface by using explicit control Points with specified U and V degrees.|![IMAGE](images/nodes/NurbsSurface.ByControlPoints.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.NurbsSurface.ByPoints.Large.png)|**NurbsSurface.ByPoints**<br>Creates a NurbsSurface with specified interpolated points and U and V degrees. The resultant surface will pass through all of the points.|![IMAGE](images/nodes/NurbsSurface.ByPoints.png)
 
 ####Geometry.Plane
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Plane.ByOriginNormal.Large.png)|**Plane.ByOriginNormal**<br>Create a Plane centered at root Point, with input normal Vector.|![IMAGE](images/nodes/Plane.ByOriginNormal.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Plane.XY.Large.png)|**Plane.XY**<br>Creates a plane in the world XY|![IMAGE](images/nodes/Plane.XY.png)
 
 ####Geometry.Point
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.ByCartesianCoordinates.Large.png)|**Point.ByCartesianCoordinates**<br>Form a Point in th egiven coordinate system with 3 cartesian coordinates|![IMAGE](images/nodes/Point.ByCartesianCoordinates.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Point.ByCoordinates.double-double.Large.png)|**Point.ByCoordinates** (2d)<br> Form a Point in the XY plane given two 2 Cartesian coordinates.  The Z component is 0.|![IMAGE](images/nodes/Point.ByCoordinates_2D.png)
@@ -229,25 +229,25 @@ Geometry
 
 ####Geometry.Polycurve
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.PolyCurve.ByPoints.Large.png)|**Polycurve.ByPoints**<br>Make PolyCurve from sequence of lines connecting points. For closed curve last point should be in the same location as the start point.|![IMAGE](images/nodes/PolyCurve.ByPoints.png)
 
 ####Geometry.Rectangle
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Rectangle.ByWidthHeight.Plane-double-double.Large.png)|**Rectangle.ByWidthLength** (Plane)<br>Create a Rectangle centered at input Plane root, with input width (Plane X axis length) and (Plane Y axis length).|![IMAGE](images/nodes/Rectangle.ByWidthLength.png)
 
 ####Geometry.Sphere
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Sphere.ByCenterPointRadius.Large.png)|**Sphere.ByCenterPointRadius**<br>Create a Solid Sphere centered at the input Point, with given radius.|![IMAGE](images/nodes/Sphere.ByCenterPointRadius.png)
 
 ####Geometry.Surface
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.ByLoft.Curve1.Large.png)|**Surface.ByLoft**<br>Create a Surface by lofting between input cross section Curves|![IMAGE](images/nodes/Surface.ByLoft.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.ByPatch.Large.png)|**Surface.ByPatch**<br>Create a Surface by filling in the interior of a closed boundary defined by input Curves.|![IMAGE](images/nodes/Surface.ByPatch.png)
@@ -258,13 +258,13 @@ Geometry
 
 ####Geometry.UV
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.UV.ByCoordinates.Large.png)|**UV.ByCoordinates**<br>Create a UV from two doubles.|![IMAGE](images/nodes/UV.ByCoordinates.png)
 
 ####Geometry.Vector
 ||||
-|--|--|--|
+|---|---|---|
 ||CREATE||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Vector.ByCoordinates.double-double-double.Large.png)|**Vector.ByCoordinates**<br>Form a Vector by 3 Euclidean coordinates|![IMAGE](images/nodes/Vector.ByCoordinates.png)
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Vector.XAxis.Large.png)|**Vector.XAxis**<br>Gets the canonical X axis Vector (1,0,0)|![IMAGE](images/nodes/Vector.XAxis.png)
@@ -278,7 +278,7 @@ Geometry
 Operators
 --
 ||||
-|--|--|--|
+|---|---|---|
 |![IMAGE](images/A-2/add.Large.png)|**+**<br>Addition|![IMAGE](images/nodes/Addition.png)
 |![IMAGE](images/A-2/sub.Large.png)|**-**<br>Subtraction|![IMAGE](images/nodes/Subtraction.png)
 |![IMAGE](images/A-2/mul.Large.png)|**\***<br>Multiplication|![IMAGE](images/nodes/Multiplication.png)

@@ -75,7 +75,8 @@ In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Pyth
 > Begin with the set of nodes in the image above.  We'll first create two reference points in Revit from Dynamo nodes.
 
 > Begin by creating a new Conceptual Mass family in Revit. Launch Dynamo and create the set of nodes in the image above.  We'll first create two reference point in Revit from Dynamo nodes.
-1. **Important note - when performing Revit operations, be certain that the run mode has been set to "Manual". Otherwise the program will crash.**
+
+> 1. **Important note - when performing Revit operations, be certain that the run mode has been set to "Manual". Otherwise the program will crash.**
 2. Create a code block and give it a value of "0;".
 3. Plug this value into a ReferencePoint.ByCoordinates node for X,Y, and Z inputs.
 4. Create three sliders, ranging from -100 to 100 with a step size of 1.
@@ -84,7 +85,8 @@ In this exercise, we'll make a simple Model Curve in Revit using the Dynamo Pyth
 
 ![Exercise](images/9-4/Exercise/Revit/Images/RevitPython - 07.png)
 > A look at the Python node in Dynamo. The commented code is below.
-1. **System.Array:** Revit needs a System Array as an input (rather than a Python list). This is just one more line of code, but paying attention to argument types will facilitate Python programming in Revit.
+
+> 1. **System.Array:** Revit needs a System Array as an input (rather than a Python list). This is just one more line of code, but paying attention to argument types will facilitate Python programming in Revit.
 
 ```
 import clr
@@ -120,7 +122,8 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 01a.png)
 > In this file we have a set of nodes plugging into five inputs of a Python node.
-1. **Select Model Element Nodes:** Hit the select button for each and select a corresponding curve in Revit.
+
+> 1. **Select Model Element Nodes:** Hit the select button for each and select a corresponding curve in Revit.
 2. **Code Block:** using the syntax *"0..1..#x;"*, connect an integer slider ranging from 0 to 20 into the *x* input.  This designates the number of beams to draw between the two curves.
 3. **Structural Framing Types:** We'll choose the default W12x26 beam here from the dropdown menu.
 4. **Levels:** select "Level 1".

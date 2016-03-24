@@ -15,7 +15,8 @@ Preliminary introductions to List.Map and List.Combine can be found in the previ
 
 ###Exercise - 2D Lists - Basic
 >Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
-1.[n-Dimensional-Lists.dyn](datasets/6-4/n-Dimensional-Lists.dyn)
+
+>1.[n-Dimensional-Lists.dyn](datasets/6-4/n-Dimensional-Lists.dyn)
 2.[n-Dimensional-Lists.sat](datasets/6-4/n-Dimensional-Lists.sat)
 
 

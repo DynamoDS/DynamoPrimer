@@ -1,9 +1,10 @@
 ## Strings
 
 ### Creating Strings
-**String - ** Formally, a String is a sequence of characters representing a literal constant or some type of variable. Informally, a string is programming lingo for text.  We've worked with numbers, both integers and decimal numbers, to drive parameters and we can do the same with text.
+**String -** Formally, a String is a sequence of characters representing a literal constant or some type of variable. Informally, a string is programming lingo for text.  We've worked with numbers, both integers and decimal numbers, to drive parameters and we can do the same with text.
+
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/Dynamo-Nodes-StringInput-Large.png) | String | String | Text Box | string |
 
 
@@ -19,7 +20,7 @@ You can parse through large amounts of data quickly by querying strings.  We'll 
 **String.Split - **This action splits one string into an array of strings, based on a separator.
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-String-Split-Large.png) | String Split | String.Split | str, separator(s) | string[] |
 
 The image below considers a string of data coming from an external spreadsheet.  The string represents the vertices of a rectangle in the XY-Plane.  Let's break down some string split operations in miniature exercise:
@@ -35,7 +36,7 @@ The image below considers a string of data coming from an external spreadsheet. 
 **String.ToNumber - ** While the list of items above may look like numbers, they are still regarded as individual strings in Dynamo.  In order to create points, their data type needs to be converted from a string to a number.  This is done with the String.ToNumber node:
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-String-ToNumber-Large.png) | String To Number | String.ToNumber | str | str[]...[] |
 
 ![StringSplit](images/4-4/4-4-1-002.png)
@@ -51,7 +52,7 @@ Since a string is a generic text object, they host a wide range of applications.
 **Concatenate - **This is a method of merging two strings together in order. This takes each literal string in a list and creates one merged string.
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-String-Concat-Large.png) | Concatenate | String.Concat | string(s) | string |
 
 ![Concatenate](images/4-4/4-4-1-007.png)
@@ -62,7 +63,7 @@ Since a string is a generic text object, they host a wide range of applications.
 **Join - ** The join method is very similar to concatenate, except it has an added layer of punctuation.
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCore-String-Join-Large.png) | String Join | String.Join | separator, string (s) | string |
 
 If you've worked in Excel, you may have come across a CSV file.  This stands for comma-separated values.  One could use a comma (or in this case, two dashes) as the separator with the join node in order to create a similar data structure:

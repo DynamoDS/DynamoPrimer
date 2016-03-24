@@ -80,18 +80,21 @@ Now that the library's imported, we'll start off simple with this first exercise
 
 ![Exercise](images/10-5/Exercise/AForge- 18.png)
 > Under AForge.Imaging.AForge.Filters (in the navigation menu), you'll notice that there is a wide array of filters available.  We're going to use one of these filters now to desaturate an image based on threshold values.
-1. Drop three sliders onto the canvas, change their ranges to be from 0 to 1 and their step values to be 0.01.
+
+> 1. Drop three sliders onto the canvas, change their ranges to be from 0 to 1 and their step values to be 0.01.
 2. Add the Grayscale.Grayscale node to the canvas.  This is an AForge filter which applies a grayscale filter to an image.  Connect the three sliders from step 1 into cr, cg, and cb.  Change the top and bottom sliders to have a value of 1 and the middle slider to have a value of 0.
 3. In order to apply the Grayscale filter, we need an action to perform on our image.  For this, we use IFilter.Apply.  Connect the image into the image input and Grayscale.Grayscale into the iFilter input.
 4. Plugging into a Watch Image node, we get a desaturated image.
 
 ![Exercise](images/10-5/Exercise/AForge- 19.png)
 > We can have control over how to desaturate this image based on threshold values for red, green, and blue.  These are defined by the inputs to the Grayscale.Grayscale node.  Notice that the image looks pretty dim - this is because the green value is set to 0 from our slider.
-1. Change the top and bottom sliders to have a value of 0 and the middle slider to have a value of 1. This way we get a more legible desaturated image.
+
+> 1. Change the top and bottom sliders to have a value of 0 and the middle slider to have a value of 1. This way we get a more legible desaturated image.
 
 ![Exercise](images/10-5/Exercise/AForge- 17.png)
 > Let's use the desaturated image, and apply another filter on top of it.  The desaturated image has some contrast, so we we're going to test some edge detection.
-1. Add a SobelEdgeDetector.SobelEdgeDetector node to the canvas.  Connect this as the IFilter to a new IFilter node, and connect the desaturated image to the image input of the IFilter node.
+
+> 1. Add a SobelEdgeDetector.SobelEdgeDetector node to the canvas.  Connect this as the IFilter to a new IFilter node, and connect the desaturated image to the image input of the IFilter node.
 2. The Sobel Edge Detector has highlighted the edges in a new image.
 
 ![Exercise](images/10-5/Exercise/AForge- 16.png)
@@ -147,11 +150,11 @@ for rec in IN[0]:
 	subOUT.append(rec.Width)
 	subOUT.append(rec.Height)
 	OUT.append(subOUT)
-	```
+```
 
 ![Exercise](images/10-5/Exercise/AForge- 06.png)
 > 1. Transpose the output of the Python node from the previous step.  This creates 4 lists, each representing X,Y, Width, and Height for each rectangle.
->2. Using Code Block, we organize the data into a structure that accommodates the Rectangle.ByCornerPoints node (code below).
+2. Using Code Block, we organize the data into a structure that accommodates the Rectangle.ByCornerPoints node (code below).
 
 ```
 recData;
@@ -182,7 +185,7 @@ OUT=[]
 for rec in rectangles:
  if rec.Width>8 and rec.Height>8:
   OUT.append(rec)
-  ```
+```
 
 ![Exercise](images/10-5/Exercise/AForge- 01.png)
 > With the superfluous rectangles gone, just for kicks, let's create a surface from these rectangles and extrude them by a distance based on their areas.

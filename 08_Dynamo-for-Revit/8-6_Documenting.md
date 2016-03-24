@@ -9,7 +9,8 @@ In the exercise below, we'll use a basic deviation from plane node to create a R
 
 ### Exercise
 >Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
-1. [Documenting.dyn](datasets/8-6/Documenting.dyn)
+
+> 1. [Documenting.dyn](datasets/8-6/Documenting.dyn)
 2. [ARCH-Documenting-BaseFile.rvt](datasets/8-6/ARCH-Documenting-BaseFile.rvt)
 
 Start with the Revit file for this section (or continue from the previous section).  This file has an array of ETFE panels on the roof.  We'll reference these panels for this exercise.
@@ -25,7 +26,8 @@ Start with the Revit file for this section (or continue from the previous sectio
 
 ![Exercise](images/8-6/Exercise/15.png)
 > Just for kicks, like the previous exercise, let's set the *aperture ratio *of each panel based on its planar deviation.
-1. Add an *Element.SetParameterByName* node to the canvas and connect the adaptive components to the *element* input.  Connect a *code block* reading *"Aperture Ratio"* into the *parameterName* input.
+
+> 1. Add an *Element.SetParameterByName* node to the canvas and connect the adaptive components to the *element* input.  Connect a *code block* reading *"Aperture Ratio"* into the *parameterName* input.
 2. We cannot directly connect the deviation results into the value input because we need to remap the values to the parameter range.
 
 ![Exercise](images/8-6/Exercise/14.png)
@@ -79,7 +81,8 @@ Setting the Aperture Ratio doesn't clearly demonstrate the deviation of panels o
 
 ![Exercise](images/8-6/Exercise/05.png)
 > To write in these values, we'll do a complex list operation.  The graph itself is simple, but the concepts build heavily from the list mapping as discussed in the list chapter.
-1. Select all the adaptive components with two nodes.
+
+> 1. Select all the adaptive components with two nodes.
 2. Extract the locations of each points with *AdaptiveComponent.Locations*.
 3. Convert these points to strings.  Remember, the parameter is text-based so we need to input the correct data type.
 4. Create a list of the four strings which define the parameters to change: *XYZ1, XYZ2, XYZ3,* and *XYZ4*.

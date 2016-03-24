@@ -8,7 +8,7 @@ Numeric variables can store a whole range of different numbers. Boolean variable
 The "If" statement is a key concept in programming: "If *this* is true, then *that* happens, otherwise *something else* happens. The resulting action of the statement is driven by a boolean value. There are multiple ways to define an "If" statement in Dynamo:
 
 | Icon | Name | Syntax| Inputs | Outputs |
-| -- | -- | -- | -- | -- | -- |-- |
+| --- | --- | --- | --- | --- |
 | ![](../images/icons/DSCoreNodesUI-Logic-If-Large.png) | If | If | test, true, false | result|
 | ![](../images/icons/DSCoreNodesUI-Formula-Large.png) | Formula | IF(x,y,z) | x, y, z | result |
 | ![](../images/icons/Dynamo-Nodes-CodeBlockNodeModel-Large.png) | Code Block | (x?y:z)| x, y, z | result|
@@ -28,12 +28,12 @@ Let's use logic to separate a list of numbers into a list of even numbers and a 
 ![](images/4-3/01.png)
 > 1. **Number Range -** add a number range to the canvas.
 2. **Numbers -** add three number nodes to the canvas.  The value for each number node should be: *0.0* for *start*, *10.0* for *end*, and *1.0* for *step*.
-3. **Output - ** our output is a list of 11 numbers ranging from 0-10.
+3. **Output -** our output is a list of 11 numbers ranging from 0-10.
 4. **Modulo (%)-** *Number Range* into *x* and *2.0* into *y*.  This calculates the remainder for each number in the list divided by 2. The output from this list gives us a list of values alternating between 0 and 1.
 5. **Equality Test (==) -** add an equality test to the canvas.  Plug *modulo* output into the *x* input and *0.0* into the *y* input.
 6. **Watch -** The output of the equality test is a list of values alternating between true and false.  These are the values used to separate the items in the list.  *0* (or *true*) represents even numbers and (*1*, or *false*) represents odd numbers.
 6. **List.FilterByBoolMask -** this Node will filter the values into two different lists based on the input boolean.  Plug the original *number range* into the *list* input and the *equality test** output into the *mask* input.  The *in* output represents true values while the *out* output represents false values.
-7. **Watch - ** as a result, we now have a list of even numbers and a list of odd numbers. We've used logical operators to separate lists into patterns!
+7. **Watch -** as a result, we now have a list of even numbers and a list of odd numbers. We've used logical operators to separate lists into patterns!
 
 ###From Logic to Geometry
 Building off of the logic established in the first exercise, let's apply this setup into a modeling operation.
@@ -56,13 +56,13 @@ The method here for the inputs: use number nodes for more static properties and 
 > We're going to jump around a bit in the definition, so let's look at the end result so that we can reference what we're getting at.  The first two steps are made separately, we now want to connect the two.  We'll use the base sine curve to drive the location of the zipper components, and we'll use the true/false logic to alternate between little boxes and larger boxes.
 
 ![](images/4-3/05.png)
-> 1. **Math.RemapRange - ** Using the number sequence created in step 01, let's create a new series of numbers by remapping the range.  The original numbers from step 01 range from 0-100.  These numbers range from 0 to 1 by by the *newMin* and *newMax* inputs respectively.
+> 1. **Math.RemapRange -** Using the number sequence created in step 01, let's create a new series of numbers by remapping the range.  The original numbers from step 01 range from 0-100.  These numbers range from 0 to 1 by by the *newMin* and *newMax* inputs respectively.
 
 ![](images/4-3/06.png)
-> 1. **Curve.PointAtParameter - ** Plug *Polycurve.ByPoints* (from step 2) into *curve* and *Math.RemapRange* into *param*. This step creates points along the curve. We remapped the numbers to 0 to 1 because the input of *param* is looking for values in this range.  A value of *0* represents the start point, a value of *1* represents the end points.  All numbers in between evaluate within the *[0,1]* range.
+> 1. **Curve.PointAtParameter -** Plug *Polycurve.ByPoints* (from step 2) into *curve* and *Math.RemapRange* into *param*. This step creates points along the curve. We remapped the numbers to 0 to 1 because the input of *param* is looking for values in this range.  A value of *0* represents the start point, a value of *1* represents the end points.  All numbers in between evaluate within the *[0,1]* range.
 
 ![](images/4-3/07.png)
-> 1. **List.FilterByBoolMask - ** Plug *Curve.PointAtParameter* from the previous step into the *list* input.
+> 1. **List.FilterByBoolMask -** Plug *Curve.PointAtParameter* from the previous step into the *list* input.
 2. **Watch -** a watch node for *in* and a watch node for *out* shows that we have two lists representing even indices and odd indices.  These points are ordered in the same way on the curve, which we demonstrate in the next step.
 
 ![](images/4-3/08.png)
