@@ -39,7 +39,7 @@ The current Node works well, but it can be a little awkward to get everything wo
 4. **Code Block: ** Input values (between 0 and 1) to translate to colors.
 
 ### Color Preview
-The **Display.ByGeometry** Node gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To createa a gradient like the image above, the color input is connected to the **color range** Node.
+The **Display.ByGeometry** Node gives us the ability to color geometry in the Dynamo viewport.  This is helpful for separating different types of geometry, demonstrating a parametric concept, or defining an analysis legend for simulation.  The inputs are simple: geometry and color. To create a gradient like the image above, the color input is connected to the **color range** Node.
 
 ![](images/4-5/cuboids.png)
 
@@ -53,11 +53,11 @@ This exercise focuses on controlling color parametrically in parallel with geome
 > 1. **Code Block:** Define the two code blocks with the formulas above.  This is a quick parametric method for creating a spiral.
 2. **Point.ByCoordinates:**Plug the three outputs from the code block into the coordinates for the Node.
 
-We now see an array of points creating a helix.  The next step is to create a curve through the poitns so that we can visualize the helix.
+We now see an array of points creating a helix.  The next step is to create a curve through the points so that we can visualize the helix.
 
 ![](images/4-5/4-5-5/10.png)
 > 1. **PolyCurve.ByPoints:** Connect the *Point.ByCoordinates* output into the *points* input for the Node.  We get a helical curve.
-2. **Curve.PointAtParameter:** Connect the *PolyCurve.ByPoints* output into the *curve* input. The purpose of this step is to create a parametric attractor point which slides along the curve.  Since the curve is evaluating a point at parameter, we'll need to input a *param* value betwen 0 and 1.
+2. **Curve.PointAtParameter:** Connect the *PolyCurve.ByPoints* output into the *curve* input. The purpose of this step is to create a parametric attractor point which slides along the curve.  Since the curve is evaluating a point at parameter, we'll need to input a *param* value between 0 and 1.
 3.  **Number Slider:** After adding to the canvas, change the *min* value to *0.0*, the *max* value to *1.0*, and the *step* value to *.01*.  Plug the slider output into the *param* input for *Curve.PointAtParameter*.  We now see a point along the length of the helix, represented by a percentage of the slider (0 at the start point, 1 at the end point).
 
 With the reference point created, we now compare the distance from the reference point to the original points defining the helix.  This distance value will drive geometry as well as color.
@@ -69,7 +69,7 @@ With the reference point created, we now compare the distance from the reference
 Our next step is to drive parameters with the list of distances from the helical points to the reference point.  We use these distance values to define the radii of a series of spheres along the curve. In order to keep the spheres a suitable size, we need to *remap* the values for distance.
 
 ![](images/4-5/4-5-5/08.png)
-> 1. **Math.RemapRange:** Connect *Geometry.DistanceTo* output inot the numbers input.
+> 1. **Math.RemapRange:** Connect *Geometry.DistanceTo* output into the numbers input.
 2. **Code Block:** connect a code block with a value of *0.01* into the *newMin* input and a code block with a value of *1* into the *newMax* input.
 3. **Watch:** connect the *Math.RemapRange* output into one Node and the *Geometry.DistanceTo* output into another.  Compare the results.
 
@@ -88,7 +88,7 @@ The size of the spheres demonstrates the parametric array defined by a reference
  2. **Sphere.ByCenterPointRadius:** For the time being, let's disable the preview on this Node (*Right Click > Preview*)
 
 ![](images/4-5/4-5-5/04.png)
-> 1. **Math.RemapRange:** This process should look familiar. Connect the *Geometry.DistanceTo* output into the numnbers input.
+> 1. **Math.RemapRange:** This process should look familiar. Connect the *Geometry.DistanceTo* output into the numbers input.
 2. **Code Block:** Similar to an earlier step, create a value of *0* for the *newMin* input and a value of *1* for the *newMax* input.  Notice that we are able to define two outputs from one code block in this case.
 3. **Color Range:** Connect the *Math.RemapRange* output into the *value* input.
 

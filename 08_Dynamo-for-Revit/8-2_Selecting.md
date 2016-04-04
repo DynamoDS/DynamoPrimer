@@ -22,7 +22,7 @@ The three images below breakdown the main categories for Revit element selection
 > *Dropdown menus* create a list of all accessible elements in a Revit project.  You can use this to reference Revit elements which are not necessarily visible in a view.  This is a great tool for querying existing elements or creating new ones in a Revit project or family editor.
 
 ![UI](images/8-2/allelements.png)
-> You can also select Revit elementy by specific tiers in the *Revit hierarchy*.  This is a powerful option for customizing large arrays of data in preparation for documentation or generative instantiation and customization.
+> You can also select Revit element by specific tiers in the *Revit hierarchy*.  This is a powerful option for customizing large arrays of data in preparation for documentation or generative instantiation and customization.
 
 With the three images above in mind, let's dive into an exercise which selects elements from a basic Revit project in preparation for the parametric applications we'll create in the remaining sections of this chapter.
 

@@ -6,7 +6,7 @@ Dynamo is an active open-source development project with downloadable installers
 To download the official released version of Dynamo, visit the [Dynamo website](http://dynamobim.com/). Start the download of Version 0.8.0 immediately by clicking from the homepage or browse to the dedicated download page.
 
 ![website homepage](images/2-1/01-DynamoHomepage.png)
-> 1. Watch a video on Computational Design with Dyanmo for Architecture
+> 1. Watch a video on Computational Design with Dynamo for Architecture
 2. Or browse to the download page
 
 Here you can download the "bleeding edge" development versions or go to the [Dynamo Github](https://github.com/DynamoDS/Dynamo) project.
@@ -32,7 +32,7 @@ To launch Dynamo, browse to the Windows Start Menu > Dynamo > **Dynamo 0.8.1**. 
 2. Recent - Scroll through your recent files
 3. Samples - Check out the examples that come with the installation
 4. Ask - Get direct access to the User Forum or Dynamo Website
-5. Reference - Go further with addtional learning resources
+5. Reference - Go further with additional learning resources
 6. Code - Participate in the open-source development project
 
 Open the first sample file to open your first workspace and confirm Dynamo is working correctly. Click Samples > Basics > **Basics_Basic01.dyn**.

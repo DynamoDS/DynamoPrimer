@@ -34,11 +34,11 @@ Dynamo's Toolbar contains a series of buttons for quick access to working with f
 2. Open - Open an existing .dyn (workspace) or .dyf (custom node) file
 3. Save/Save As - Save your active .dyn or .dyf file
 4. Undo - Undo your last action
-5. Redo - Redo your the next action
+5. Redo - Redo the next action
 6. Export Workspace as Image - Export the visible workspace as a PNG file
 
 ####Library
-The Library contains all of the loaded Nodes, including the default Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Libary are organized hierarchically within libraries, categories, and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data.
+The Library contains all of the loaded Nodes, including the default Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Library are organized hierarchically within libraries, categories, and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data.
 
 #####Browsing
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
@@ -47,7 +47,7 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 
 ![NEEDS UPDATE-full width - Library Categories](images/2-2/04-LibraryCategories.png)
 >1. Analyze
-2. Builtin Functions
+2. Built-in Functions
 3. Core
 4. Geometry
 5. Migration

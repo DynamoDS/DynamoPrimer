@@ -180,4 +180,4 @@ Notice that we have a continuous process of translating data from the Revit Envi
 This may sound a little heavy handed, but the script makes it as simple as editing the curve in Revit and re-running the solver (although you may have to delete the previous beams when doing so).
 
 ![](images/9-4/Exercise/Revit/Images/RevitPython - 01.png)
-> With an update to the refernce curves in Revit, we get a new array of beams.
+> With an update to the reference curves in Revit, we get a new array of beams.

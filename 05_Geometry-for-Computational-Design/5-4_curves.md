@@ -23,7 +23,7 @@ All Curves also possess a number of properties or characteristics which can be u
 
 ![Line](images/5-4/Line.png)
 
-When we connect two Lines together, we have a **Polyline**. Here we have a straightforward represenation of what a Control Point is. Editing any of these point locations will change the shape of the Polyline. If the Polyline is closed, we have a Polygon. If the Polygon's edge lengths are all equal, it is described as regular.
+When we connect two Lines together, we have a **Polyline**. Here we have a straightforward representation of what a Control Point is. Editing any of these point locations will change the shape of the Polyline. If the Polyline is closed, we have a Polygon. If the Polygon's edge lengths are all equal, it is described as regular.
 
 ![Polyline + Polygon](images/5-4/Polyline.jpg)
 

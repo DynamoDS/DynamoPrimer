@@ -1,5 +1,5 @@
 ##What is Dynamo?
-Dynamo is, quite literally, what you make it. Working with Dynamo may include using the application, either in connection with other Autodesk software or not, engaging a Visual Programming process, or participating in a broad community of users and contributers.
+Dynamo is, quite literally, what you make it. Working with Dynamo may include using the application, either in connection with other Autodesk software or not, engaging a Visual Programming process, or participating in a broad community of users and contributors.
 
 ###The Application
 Dynamo, the application, is a software that can be downloaded and run in either stand-alone "Sandbox" mode or as a plug-in for other software like Revit or Maya. It is described as:
@@ -16,7 +16,7 @@ Once we've installed the application, Dynamo will enable us to work within a Vis
 > Add elements, connect, and we are off and running with creating Visual Programs.
 
 ###The Community
-Dynamo wouldn't be what it is without a strong group of avid users and active contributers. Engage the community by following the Blog, adding your work to the Gallery, or discussing Dynamo in the Forum.
+Dynamo wouldn't be what it is without a strong group of avid users and active contributors. Engage the community by following the Blog, adding your work to the Gallery, or discussing Dynamo in the Forum.
 
 ![The Forum](images/1-2/02-Community.png)
 
