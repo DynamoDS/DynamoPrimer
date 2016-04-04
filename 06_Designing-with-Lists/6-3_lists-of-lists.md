@@ -162,7 +162,7 @@ Transpose is a fundamental function when dealing with lists of lists. Just as in
 ![Exercise](images/6-3/Exercise/A/00.png)
 > 1. A *List.Transpose* node will switch all of the items with all of the lists in a list of lists.  This sounds complicated, but it's the same logic as transpose in Microsoft Excel: switching columns with rows in a data structure.
 2. Notice the abstract result: the transpose changed the list structure from a 5 lists with 3 items each to 3 lists with 5 items each.
-3. Notice the geometric result: using *PolyCurve.ByPoints*, we get 3 polycurves in the perependicular direction to the original curves.
+3. Notice the geometric result: using *PolyCurve.ByPoints*, we get 3 polycurves in the perpendicular direction to the original curves.
 
 ###Code Block Creation
 Code block shorthand uses "{}" to define a list.  This is a much faster and more fluid way to create list than the List.Create node. Code block is discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple expressions can be defined with code block.

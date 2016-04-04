@@ -111,7 +111,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><a href="https://github.com/ksobon/MantisShrimp">Visit the Mantis Shrimp Project GitHub</td></a>
   </tr>
   <tr>
-    <td colspan="2">Mantis Shrimp is a interoperability project that allows you to easily import Grasshopper and/or Rhino geometry into Dynamo.</td>
+    <td colspan="2">Mantis Shrimp is an interoperability project that allows you to easily import Grasshopper and/or Rhino geometry into Dynamo.</td>
     <td><img src="images/A-4/msImage.png"></img></td>
   </tr>
 </table>
