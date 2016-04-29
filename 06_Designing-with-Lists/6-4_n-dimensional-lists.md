@@ -84,7 +84,7 @@ Let's increase the complexity.  Suppose we wanted to perform an operation on the
 3. Using the *Surface.ByLoft* node, we get the same surfaces as in the previous step. Transpose is easier to use in this case, but when the data structure becomes even more complex, *List.Combine* is more reliable.
 
 ![Exercise](images/6-4/Exercise/B/00.png)
-> 1. Stepping back a few steps, if we want to switch the orienation of the curves in the ribbed structure, we want to use a List.Transpose before before connect to *NurbsCurve.ByPoints*.  This will flip the columns and rows, giving us 5 horizontal ribs.
+> 1. Stepping back a few steps, if we want to switch the orientation of the curves in the ribbed structure, we want to use a List.Transpose before connect to *NurbsCurve.ByPoints*.  This will flip the columns and rows, giving us 5 horizontal ribs.
 
 
 ###Exercise - 3D Lists
@@ -94,7 +94,7 @@ Now, we're going to go even one step further.  In this exercise, we'll work with
 > 1. Begin with the imported file from previous exercise.
 
 ![Exercise](images/6-4/Exercise/C/11.png)
-> 1. As in the previous exerice, use the *Surface.Offset* node to offset by a value of *10*.
+> 1. As in the previous exercise, use the *Surface.Offset* node to offset by a value of *10*.
 2. Notice from the output, that we've created two surfaces with the offset node.
 
 ![Exercise](images/6-4/Exercise/C/10.png)

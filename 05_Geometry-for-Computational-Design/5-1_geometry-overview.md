@@ -9,7 +9,7 @@ Geometry, traditionally defined, is the study of shape, size, relative position 
 
 Understanding geometry in the context of algorithms, computing, and complexity, may sound daunting; however, there are a few key, and relatively simple, principles that we can establish as fundamentals to start building towards more advanced applications:
 
-1. Geometry is **Data** - to the computer and Dynamo, a Bunny not much different than a number.
+1. Geometry is **Data** - to the computer and Dynamo, a Bunny not all that different from a number.
 2. Geometry relies on **Abstraction** - fundamentally, geometric elements are described by numbers, relationships, and formulas within a given spatial coordinate system
 3. Geometry has a **Hierarchy** - points come together to make lines, lines come together to make surfaces, and so on
 4.  Geometry simultaneously describes both **the Part and the Whole** - when we have a curve, it is both the shape as well as all the possible points along it

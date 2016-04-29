@@ -6,7 +6,7 @@ The **Dynamo Library** contains the Nodes we add to the Workspace to define Visu
 The Dynamo **Library** that we interface with in the application is actually a collection of functional libraries, each containing Nodes grouped by Category. While this may seem obtuse at first, it is a flexible framework for organizing the Nodes that come with the default installation of Dynamo - and it's even better down the road when we start extending this base functionality with Custom Nodes and additional Packages.
 
 ####The Organizational Scheme
-The **Library** section of the Dynamo UI is composed of hierachically organized libraries. As we drill down into the Library, we are sequentially browsing a library, the library's categories, and the category's sub-categories to find the Node.
+The **Library** section of the Dynamo UI is composed of hierarchically organized libraries. As we drill down into the Library, we are sequentially browsing a library, the library's categories, and the category's sub-categories to find the Node.
 
 ![Library Hierarchy](images/3-3/00-LibraryBrowsing.png)
 
@@ -17,7 +17,7 @@ The **Library** section of the Dynamo UI is composed of hierachically organized 
 5. A Node - The objects that are added to the Workspace to perform an action
 
 ####Naming Conventions
-The hierarchy of each library is reflected in the Name of Nodes added to the Workspace, which we can also use in the Search Field or with Code Blocks (which use the *Dynamo textual language*). Beyond using key words to try to find Nodes, we can type the heirarchy separated with a period.
+The hierarchy of each library is reflected in the Name of Nodes added to the Workspace, which we can also use in the Search Field or with Code Blocks (which use the *Dynamo textual language*). Beyond using key words to try to find Nodes, we can type the hierarchy separated with a period.
 
 Typing in different portions of the Node's place in the Library hierarchy in the ```library.category.nodeName``` format returns different results:
 
@@ -33,7 +33,7 @@ Typically the Name of the Node in the Workspace will be rendered in the ```categ
 
 > 1. ```Point.ByCoordinates``` and ```UV.ByCoordinates``` have the same Name but come from different categories
 2. Nodes from most libraries will include the category format
-3. Notable exceptions include Builtin Functions, Core.Input, Core.View, and Operators
+3. Notable exceptions include Built-in Functions, Core.Input, Core.View, and Operators
 
 ###Frequently Used Nodes
 With hundreds of Nodes included in the basic installation of Dynamo, which ones are essential for developing our Visual Programs? Let's focus on those that let us define our program's parameters (**Input**), see the results of a Node's action (**Watch**), and define inputs or functionality by way of a shortcut (**Code Block**).
