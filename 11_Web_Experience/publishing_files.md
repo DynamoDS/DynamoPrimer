@@ -14,3 +14,6 @@ Include preview geometry that makes your script easy to understand. In this exam
 
 When you are ready to publish your file, select “Publish Customizer” from the File menu. Enter a description of your file and any instructions needed to get started. Once your file is published, you can send a link to anyone with an Autodesk account.
 
+###Managing Published Files
+
+To manage your published scripts, visit https://dynamo.autodesk.com and sign in to your account. Select “Manage” from the drop down in the top right. On this page, you can edit, share, or delete customizers that you have already published.
