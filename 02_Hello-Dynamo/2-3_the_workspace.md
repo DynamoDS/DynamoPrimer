@@ -27,15 +27,17 @@ In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometr
 2. Right clicking in the Workspace and selecting *Switch to ... View*
 3. Keyboard shortcut (Ctrl + B)
 
+The 3D Preview Navigation mode also gives us the ability for **Direct Manipulation** of points, exemplified in [Getting Started](http://dynamoprimer.com/02_Hello-Dynamo/2-6_the_quick_start_guide.html).
+
 ###Hello Mouse!
 
 Based on which Preview mode is active, your mouse buttons will act differently. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking.
 
 ![Hello Mouse](images/2-3/04-HelloMouse.png)
 
->1. Right Click on the Workspace
-2. Right Click on a Node
-3. Right Click on a Note
+>1. Right Click on the Workspace.
+2. Right Click on a Node.
+3. Right Click on a Note.
 
 Here's a table of mouse interactions per Preview:
 
@@ -56,4 +58,16 @@ Using the "In-Canvas Search" will add some serious speed to your Dynamo work-flo
 >1. Right click anywhere on the canvas to bring up the search feature. While the search bar is empty, the drop-down will be a preview menu.
 2. As you type into the search bar, the drop-down menu will continuously update to show the most relevant search results.
 3. Hover over the search results to bring up their corresponding descriptions and tool-tips.
+
+## Clean Up Node Layout
+Keeping your Dynamo canvas organized becomes increasingly important as your files build in complexity. Although we have the **Align Selection** tool to work with small amounts of selected Nodes, Dynamo also features the **Cleanup Node Layout** tool to help with overall file cleanup. 
+
+#### Before Node Cleanup
+![Cleanup Node Layout](images/2-3/06-CleanupNodeLayout.png)
+>1.	Select the Nodes to be automatically organized, or leave all unselected to clean up all nodes in the file. 
+2.	The Cleanup Node Layout feature is located under the Edit tab.
+
+#### After Node Cleanup
+![Clean Layout Example](images/2-3/07-CleanupNodeLayout.png)
+>1.	The nodes will be automatically re-distributed and aligned, cleaning up any staggered or overlapping nodes and aligning them with neighboring nodes.
 

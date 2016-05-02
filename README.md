@@ -1,12 +1,12 @@
 #The Dynamo Primer
-##First Edition V1.3
+##For Dynamo v9.0
 
 ![Dynamo Logo](images/dynamo_logo_dark-trim.png)
 
 > Dynamo is an open source visual programming platform for designers.
 
 ### Welcome
-You have just opened the First Edition of the Dynamo Primer, a comprehensive guide to visual programming in Autodesk Dynamo Studio. This primer is an on-going project to share the fundamentals of programming. Topics include working with computational geometry, best practices for rules-based design, cross-disciplinary programming applications, and more with the Dynamo Platform.
+You have just opened the Dynamo Primer, a comprehensive guide to visual programming in Autodesk Dynamo Studio. This primer is an on-going project to share the fundamentals of programming. Topics include working with computational geometry, best practices for rules-based design, cross-disciplinary programming applications, and more with the Dynamo Platform.
 
 The power of Dynamo can be found in a wide variety of design-related activities. Dynamo enables an expanding list of readily accessible ways for you to get started:
 * **Explore** visual programming for the first time
@@ -32,12 +32,19 @@ Version 1.0 of this Primer includes the first ten chapters developed by Mode Lab
 This is an exciting time to be learning about, working with, and developing for Dynamo. Let's get started!
 
 ---
+
+### Open Source
+The Dynamo Primer project is open source! We're dedicated to providing quality content and appreciate any feedback you may have. If you would like to report an issue on anything at all, please post them on our git hub issue page: https://github.com/DynamoDS/DynamoPrimer/issues
+
+If you would like to contribute a new section, edits, or anything else to this project, check out the github repo to get started: https://github.com/DynamoDS/DynamoPrimer.
+
+---
 ### The Dynamo Primer Project
 The Dynamo Primer is an open source project, initiated by Matt Jezyk and the Dynamo Development team at Autodesk.
 
-**Mode Lab** was commissioned to write the First Edition of the primer. http://modelab.is
+**Mode Lab** was commissioned to write the First Edition of the primer. The team continues to work with Autodesk to provide updates in parallel with Dynamo's development.
 
-![Mode Lab Logo](images/MODELAB_Logo.png)
+[<img src="images/MODELAB_Logo.png">](http://modelab.is)
 
 ### Acknowledgments
 

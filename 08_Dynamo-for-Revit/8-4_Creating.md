@@ -85,4 +85,42 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 > And for the final test, by selecting the mass in Revit and editing instance parameters, we can change the form of the building and watch the truss follow suit.  Remember, this Dynamo graph has to be open in order to see this update, and the link will be broken as soon as it's closed.
 
 
+### DirectShape Elements
+Another method for importing parametric Dynamo geometry into Revit is with DirectShape. In summary, the DirectShape element and related classes support the ability to store externally created geometric shapes in a Revit document. The geometry can include closed solids or meshes. DirectShape is primarily intended for importing shapes from other data formats such as IFC or STEP where not enough information is available to create a "real" Revit element.  Like the IFC and STEP workflow, the DirectShape functionality works well with importing Dynamo created geometries into Revit projects as real elements. 
 
+Let's walk through and exercise for importing Dynamo geometry as a DirectShape into our Revit project. Using this method, we can assign an imported geometry's category, material, and name - all while maintaining a parametric link to our Dynamo graph.
+
+### Exercise
+> Download the example files that accompanies this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix.
+1. [DirectShape.dyn](datasets/8-4/DirectShape.dyn)
+2. [ARCH-DirectShape-BaseFile.rvt](datasets/8-4/ARCH-DirectShape-BaseFile.rvt)
+
+![Exercise](images/8-4/Exercise/DS-05.png)
+> Begin by opening the sample file for this lesson - ARCH-DirectShape-BaseFile.rvt.
+1. In the 3D view, we see our building mass from the previous lesson.
+2. Along the edge of the atrium is one reference curve, we'll use this as a curve to reference in Dynamo.
+3. Along the opposing edge of the atrium is another reference curve which we'll reference in Dynamo as well.
+
+![Exercise](images/8-4/Exercise/DS-04.png)
+>1. To reference our geometry in Dynamo, we'll use *Select Model Element* for each member in Revit. Select the mass in Revit and import the geometry into Dynamo by Using *Element.Faces* - the mass should now be visible in your Dynamo preview.
+2. Import one reference curve into Dynamo by using *Select Model Element* and *CurveElement.Curve*.
+3. Import the other reference curve into Dynamo by using *Select Model Element* and *CurveElement.Curve*.
+
+![Exercise](images/8-4/Exercise/DS-03.png)
+>1. Zooming out and panning to the right in the sample graph, we see a large group of nodes - these are geometric operations which generate the trellis roof structure visible in the Dynamo preview.  These nodes are generating using the *Node to Code* functionality as discussed in the [code block section](../07_Code-Block/7-2_Design-Script-syntax.md#Node) of the primer.
+2. The structure is driven by three major parameters - Diagonal Shift, Camber, and Radius.
+
+![Exercise](images/8-4/Exercise/DS-06.png)
+>Zooming a close-up look of the parameters for this graph.  We can flex these to get different geometry outputs.
+
+![Exercise](images/8-4/Exercise/DS-02.png)
+>1. Dropping the *DirectShape.ByGeometry* node onto the canvas, we see that it has four inputs: **geometry, category, material**, and **name**.
+2. Geometry will be the solid created from the geometry creation portion of the graph
+3. The category input is chosen using the dropdwon *Categories* node. In this case we'll use "Structural Framing".
+4. The material input is selected through the array of nodes above - although it can be more simply defined as "Default" in this case.
+
+![Exercise](images/8-4/Exercise/DS-01.png)
+>After running Dynamo, back in Revit, we have the imported geometry on the roof in our project. This is a structural framing element, rather than a generic model.  The parametric link to Dynamo remains intact.
+
+![Exercise](images/8-4/Exercise/DS-00.png)
+>1. If we "flex" the Dynamo graph by changing the "Diagonal Shift" parameter to "-2", we just run Dynamo again and get a new imported DirectShape!

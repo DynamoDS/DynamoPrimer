@@ -10,7 +10,7 @@ Before we add anything to the Dynamo Workspace, it is key that we have a solid u
 > A point that defines a distance-based relationship is commonly referred to as an "Attractor." Here the distance to our Attractor Point will be used to specify how big our circle should be.
 
 ###Adding Nodes to the Workspace
-Now that we have our Objectives and Relationships sketched we can begin creating our graph. We need the Nodes that will represent the sequence of actions Dynamo will execute. Since we know we are trying to create a circle, let's start by locating a Node that does so. Using the Search field or browing through the Library, we will find that there is more than one way to create a circle.
+Now that we have our Objectives and Relationships sketched we can begin creating our graph. We need the Nodes that will represent the sequence of actions Dynamo will execute. Since we know we are trying to create a circle, let's start by locating a Node that does so. Using the Search field or browsing through the Library, we will find that there is more than one way to create a circle.
 
 ![Browse and Search](images/2-4/01-BrowseAndSearch.png)
 > 1. Browse to Geometry > Circle > **Circle.ByPointRadius**
@@ -58,11 +58,23 @@ If our program is working, we should see a circle in the 3D Preview that is pass
 3. **Code Block** to **Circle.ByCenterPointRadius**
 
 ###Adding complexity
-Starting simple and building complexity is an effective way to incrementally develop our program. Once it is working for one circle, let's apply the power of the program to more than one circle. Instead of one center point, if we use a grid of points and accomodate the change in the resulting data structure, our program will now create many circles - each with a unique radius value defined by the calibrated distance to the Attractor Point.
+Starting simple and building complexity is an effective way to incrementally develop our program. Once it is working for one circle, let's apply the power of the program to more than one circle. Instead of one center point, if we use a grid of points and accommodate the change in the resulting data structure, our program will now create many circles - each with a unique radius value defined by the calibrated distance to the Attractor Point.
 
 ![Updated graph](images/2-4/07-AddingComplexity.png)
 >1. Add a **Number Sequence** Node and replace the inputs of **Point.ByCoordinates** - Right Click Point.ByCoordinates and select Lacing > Cross Reference
 2. Add a **Flatten** Node after  Point.ByCoordinates
 3. The 3D Preview will update with a grid of circles
 
+###Adjusting with Direct Manipulation
+Sometimes numerical manipulation isn't the right approach. Now you can manually push and pull Point geometry when navigating in the background 3D preview. We can also control other geometry that was constructed by a point.  For example, **Sphere.ByCenterPointRadius** is capable of Direct Manipulation as well. We can control the location of a point from a series of X, Y, and Z values with **Point.ByCoordinates**. With the Direct Manipulation approach, however, you are able to update the values of the sliders by manually moving the point in the **3D Preview Navigation** mode. This offers a more intuitive approach to controlling a set of discrete values that identify a point's location.
 
+![Selected Point](images/2-4/08-SelectedPoint.png)
+>1. To use **Direct Manipulation**, select the panel of the point to be moved – arrows will appear over the point selected.
+2. Switch to **3D Preview Navigation** mode.
+
+![Direct Point Manipulation](images/2-4/09-DirectPointManipulation.png)
+>1. Hover over the point and the X, Y, and Z axes will appear.
+2. Click and drag the colored arrow to move the corresponding axis, and the **Number Slider** values will update live with the manually moved point.
+
+![Updated Sliders](images/2-4/10-UpdatedSliders.png)
+>1. Note that before **Direct Manipulation** only one slider was plugged into the **Point.ByCoordinates** component. When we manually move the point in the X-direction, Dynamo will automatically generate a new **Number Slider** for the X input.

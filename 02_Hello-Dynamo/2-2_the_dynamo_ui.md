@@ -34,11 +34,11 @@ Dynamo's Toolbar contains a series of buttons for quick access to working with f
 2. Open - Open an existing .dyn (workspace) or .dyf (custom node) file
 3. Save/Save As - Save your active .dyn or .dyf file
 4. Undo - Undo your last action
-5. Redo - Redo your the next action
+5. Redo - Redo the next action
 6. Export Workspace as Image - Export the visible workspace as a PNG file
 
 ####Library
-The Library contains all of the loaded Nodes, including the default Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Libary are organized hierarchically within libraries, categories, and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data.
+The Library contains all of the loaded Nodes, including the default Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Library are organized hierarchically within libraries, categories, and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data.
 
 #####Browsing
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
@@ -47,7 +47,7 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 
 ![NEEDS UPDATE-full width - Library Categories](images/2-2/04-LibraryCategories.png)
 >1. Analyze
-2. Builtin Functions
+2. Built-in Functions
 3. Core
 4. Geometry
 5. Migration
@@ -61,12 +61,13 @@ Browse the Library by clicking through the menus. Click the Geometry > Circle. N
 2. Category
 3. Subcategory: Create/Actions/Query
 4. Node
+5. Node Description and properties - this appears when hovering over the node icon.
 
 From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The window reveals more detailed information about the Node beyond its name and icon. This offers us a quick way to understand what the Node does, what it will require for inputs, and what it will give as an output.
 
 ![Node Pop Up Window](images/2-2/06-NodePopup.png)
->1. Icon - larger version of the icon in the Library Menu
-2. Description - plain language description of the Node
+>1. Description - plain language description of the Node
+2. Icon - larger version of the icon in the Library Menu
 3. Input(s) - name,  data type, and data structure
 4. Output(s) - data type and structure
 
@@ -86,8 +87,8 @@ From geometric to user settings, these options can be found in the **Settings** 
 ![show menu](images/2-2/08-Settings.png)
 
 >1. Enabling Reporting
-2. Render Quality
-3. Number Format
+2. Number Format
+3. Render Quality
 
 ###Help
 If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to, check the version of Dynamo installed and whether it is up to date through the **About** option.

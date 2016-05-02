@@ -25,7 +25,7 @@ The step above has created a list of numbers to define the parametric domain.  T
 ![](images/4-2/4-2-5/02.png)
 > When stepping through the group of Nodes, try to pay attention to the parallel between the visual program and written equation.
 1. **Number Slider:** Add two number sliders to the canvas.  These sliders will represent the *a* and the *b* variables of the parametric equation.  These represent a constant which is flexible, or parameters which we can adjust towards a desired outcome.
-2. ** * :** The multiplication Node is represented by an aseterisk.  We'll use this repeatedly to connect multiplying variables
+2. ** * :** The multiplication Node is represented by an asterisk.  We'll use this repeatedly to connect multiplying variables
 3. **Math.RadiansToDegrees:** The '*t*' values need to be translated to degrees for their evaluation in the trigonometric functions.  Remember, Dynamo defaults to degrees for evaluating these functions.
 4. **Math.Pow:** as a function of the '*t*' and the number '*e*' this creates the Fibonacci sequence.
 5. **Math.Cos and Math.Sin:**  These two trigonmetric functions will differentiate the x-coordinate and the y-coordinate, respectively, of each parametric point.
@@ -34,10 +34,10 @@ The step above has created a list of numbers to define the parametric domain.  T
 ###From Formula to Geometry
 Now, the bulk of Nodes from the previous step will work fine, but it is a lot of work.  To create a more efficient workflow, have a look at **Code Blocks** (section 3.3.2.3) to define a string of Dynamo expressions into one node.  In this next series of steps, we'll look at using the parametric equation to draw the Fibonacci spiral.
 ![](images/4-2/4-2-5/03.png)
-> 1. **Point.ByCoordinates:** Conect the upper multiplication node into the '*x*' input and the lower into the '*y*' input. We now see a parametric spiral of points on the screen.
+> 1. **Point.ByCoordinates:** Connect the upper multiplication node into the '*x*' input and the lower into the '*y*' input. We now see a parametric spiral of points on the screen.
 
 ![](images/4-2/4-2-5/03aaa.png)
-> 1. **Polycurve.ByPoints:** Conect Point.ByCoordinates from the previous step into *points*.  We can leave *connectLastToFirst* without an input because we aren't making a closed curve.  This creates a spiral which passes through each point defined in the previous step.
+> 1. **Polycurve.ByPoints:** Connect Point.ByCoordinates from the previous step into *points*.  We can leave *connectLastToFirst* without an input because we aren't making a closed curve.  This creates a spiral which passes through each point defined in the previous step.
 
 We've now completed the Fibonacci Spiral!  Let's take this further into two separate exercises from here, which we'll call the Nautilus and the Sunflower.  These are abstractions of natural systems, but the two different applications of the Fibonacci spiral will be well represented.
 

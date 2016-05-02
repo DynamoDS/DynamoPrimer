@@ -33,7 +33,7 @@ Start with the Revit file for this section (or continue from the previous sectio
 2. Plug these results into the value input for *Element.SetParameterByName*.
 
 ![Exercise](images/8-6/Exercise/13.png)
-> Back in revit we can *kind of* make sense of the change in aperture across the surface.
+> Back in Revit we can *kind of* make sense of the change in aperture across the surface.
 
 ![Exercise](images/8-6/Exercise/13a.png)
 > Zooming in, it becomes more clear that the closed panels are weighted towards the corners of the surface. The open corners are towards the top.  The corners represent areas of larger deviation while bulge has minimal curvature, so this makes sense.
