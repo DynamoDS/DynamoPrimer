@@ -2,9 +2,17 @@
 
 Publishing your files to the web is quick and easy. However, you may want to spend some time selecting and labeling your inputs and making your file user-friendly.
 
-###Preparing to Publish
+###Exercise: Preparing to Publish
+
+>Download the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. 
+
+(image)
+
+In this exercise...
 
 To prepare your script for publishing, first decide which inputs will be accessible to users. Allowable inputs include sliders, numbers, strings, and booleans. Code Blocks and File Paths cannot be used as inputs. Turn off “Is Input” via the context menu on any inputs that you don’t want to be exposed in the Customizer. Make sure any slider inputs have reasonable minimum and maximum values.
+
+
 
 ![](images/publishing_01.png)
 >Uncheck “Is Input” via the context menu on any inputs that you don't want to be exposed in the Customizer.
