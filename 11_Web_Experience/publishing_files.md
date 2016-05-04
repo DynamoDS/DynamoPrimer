@@ -4,16 +4,14 @@ Publishing your files to the web is quick and easy. However, you may want to spe
 
 ###Exercise: Preparing to Publish
 
->Download the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. 
-
-
-(image - customizer)
->This is the customizer we are going to make. View this example on the web (link)
+>Download the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Attractor Scale](datasets/Attractor Scale.dyn)
 
 In this exercise, we will publish a Dynamo graph to the web. This file creates a grid of rectangles that are scaled based on an attractor and mapped from a base to a target surface. Surface patches are created from each rectangle, and colored based on their distance from the attractor.
 
-To prepare your script for publishing, first decide which inputs will be accessible to users. Allowable inputs include sliders, numbers, strings, and booleans. Code Blocks and File Paths cannot be used as inputs. Turn off “Is Input” via the context menu on any inputs that you don’t want to be exposed in the Customizer. Make sure any slider inputs have reasonable minimum and maximum values.
+![](images/publishing_00.png)
+>This is the customizer we are going to make. View this example on the [web](dynamo.autodesk.com/share/572a49033a47345a0407e803).
 
+To prepare your script for publishing, first decide which inputs will be accessible to users. Allowable inputs include sliders, numbers, strings, and booleans. Code Blocks and File Paths cannot be used as inputs. Turn off “Is Input” via the context menu on any inputs that you don’t want to be exposed in the Customizer. Make sure any slider inputs have reasonable minimum and maximum values.
 
 
 ![](images/publishing_01.png)
@@ -39,7 +37,7 @@ Once your file is published, you can send a link to anyone with an Autodesk acco
 
 ![](images/publishing_05.png)
 
->View this example on the web (link)
+>View this example on the [web](dynamo.autodesk.com/share/572a49033a47345a0407e803)
 
 ###Managing Published Files
 
