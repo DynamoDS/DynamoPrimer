@@ -2,6 +2,12 @@
 
 The Dynamo Customizer allows you to publish Dynamo scripts to the web for others to interact with via a pared down interface consisting of allowable inputs such as sliders, numbers, and booleans. This makes your scripts accessible to a wider group of users who may not be familiar with Dynamo or Visual Programming.
 
+
+
+(image)
+
+###Customizer UI
+
 The Customizer view consists of a menu bar, a flyout menu containing a description of the file and user inputs, and a 3D view, similar to the Dynamo workspace:
 
 ![](images/customizer_01.png)
@@ -29,7 +35,7 @@ The Customizer Menu Bar includes file information, navigation controls, and down
 The controls menu contains the inputs to the Dynamo script including numbers, sliders, strings, and booleans, as well as a short description of the file. This menu can be collapsed by clicking the arrow icon.
 
 ![](images/customizer_03.png)
-1. Collapse/expand controls
+>1. Collapse/expand controls
 2. File Description
 2. Number Input
 2. Number Sliders
