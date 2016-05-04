@@ -1,10 +1,13 @@
 ##The Customizer View
 
-The Dynamo Customizer allows you to publish Dynamo scripts to the web for others to interact with via a pared down interface consisting of allowable inputs such as sliders, numbers, and booleans. This makes your scripts accessible to a wider group of users who may not be familiar with Dynamo or Visual Programming.
+The Dynamo Customizer allows you to publish Dynamo scripts to the web for others to interact with via a pared down interface consisting of inputs such as sliders, numbers, and booleans. 
 
+By condensing complex graphs into a simple interface, the Customizer makes your scripts accessible to a wider community of users who may not be familiar with Dynamo, Visual Programming, or 3D modeling. Anyone with an Autodesk account can access your Customizer through a shared link, allowing them to interact with your script without a Dynamo license.
 
+The Customizer also allows users to export geometry as an STL mesh for rapid prototyping, or as a Dynamo file. 
 
-(image)
+![](images/customizer_00.png)
+>Some customizer examples available at https://dynamo.autodesk.com/
 
 ###Customizer UI
 
