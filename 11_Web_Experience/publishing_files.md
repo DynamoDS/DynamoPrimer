@@ -1,6 +1,6 @@
 ##Publishing Files
 
-Publishing your files to the web is as easy as a single click. However, you may want to spend some time selecting and labeling your inputs and making your file user-friendly.
+Publishing your files to the web is quick and easy. However, you may want to spend some time selecting and labeling your inputs and making your file user-friendly.
 
 ###Preparing to Publish
 
@@ -25,7 +25,6 @@ When you are ready to publish your file, select “Share Workspace” from the F
 ![](images/publishing_04.png)
 
 Enter a description of your file and any instructions needed to get started. 
-
 Once your file is published, you can send a link to anyone with an Autodesk account. The file will be published with the current input values and previews.
 
 ![](images/publishing_05.png)
@@ -33,3 +32,9 @@ Once your file is published, you can send a link to anyone with an Autodesk acco
 ###Managing Published Files
 
 To manage your published scripts, visit https://dynamo.autodesk.com and sign in to your account. Select “Manage” from the drop down in the top right. On this page, you can edit, share, or delete customizers that you have already published.
+
+![](images/publishing_07.png)
+>1. Edit Customizer
+2. Delete Customizer
+3. Share Link
+
