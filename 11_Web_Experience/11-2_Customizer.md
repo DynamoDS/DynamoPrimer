@@ -22,3 +22,15 @@ The Customizer Menu Bar includes file information, navigation controls, and down
 8.	Manage/About - Useful information about Dynamo
 9.	Logout - Log out of your account and exit the Customizer view
 
+###Controls
+
+The controls menu contains the inputs to the Dynamo script including numbers, sliders, strings, and booleans, as well as a short description of the file. This menu can be collapsed by clicking the arrow icon.
+
+![](images/customizer_03.png)
+1. Collapse/expand controls
+2. File Description
+2. Number Input
+2. Number Sliders
+3. Boolean
+4. Strings
+5. Integer Slider
