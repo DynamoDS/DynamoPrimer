@@ -8,6 +8,18 @@ Here are a list of some of the more popular packages in the Dynamo community. De
 
 <table>
   <tr>
+    <td width="10%"><img src="http://archi-lab.net/wp-content/uploads/2016/02/wordpress-logo.jpg"></img></td>
+    <td width="55%"><b>archi-lab</b></td>
+    <td><a href="http://archi-lab.net/">Visit the Official archi-lab Site</td></a>
+  </tr>
+  <tr>
+    <td colspan="2">archi-lab is a collection of over 50+ custom packages that vastly extend Dynamo's ability to interact with Revit. Nodes contained in archi-lab package vary from basic list operations to advanced Analysis Visualization Framework nodes for Revit. </td>
+    <td><img src="http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png"></img></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <td width="10%"><img src="images/A-4/logo02.png"></img></td>
     <td width="55%"><b>BUMBLEBEE FOR DYNAMO</b></td>
     <td><a href="http://archi-lab.net/bumblebee-dynamo-and-excel-interop/">Visit the Official BumbleBee Site</td></a>
@@ -108,7 +120,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   <tr>
     <td width="10%"><img src="images/A-4/mantisshrimpLogo.png"></img></td>
     <td width="55%"><b>MANTIS SHRIMP</b></td>
-    <td><a href="https://github.com/ksobon/MantisShrimp">Visit the Mantis Shrimp Project GitHub</td></a>
+    <td><a href="http://archi-lab.net/mantis-shrimp-getting-started/">Visit the official Mantis Shrimp site.</td></a>
   </tr>
   <tr>
     <td colspan="2">Mantis Shrimp is an interoperability project that allows you to easily import Grasshopper and/or Rhino geometry into Dynamo.</td>
