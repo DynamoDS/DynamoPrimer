@@ -9,7 +9,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
 <table>
   <tr>
     <td width="10%"><img src="http://archi-lab.net/wp-content/uploads/2016/02/wordpress-logo.jpg"></img></td>
-    <td width="55%"><b>archi-lab</b></td>
+    <td width="55%"><b>ARCHI-LAB</b></td>
     <td><a href="http://archi-lab.net/">Visit the Official archi-lab Site</td></a>
   </tr>
   <tr>
