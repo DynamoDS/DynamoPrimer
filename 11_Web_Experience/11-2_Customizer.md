@@ -7,11 +7,11 @@ By condensing complex graphs into a simple interface, the Customizer makes your 
 The Customizer also allows users to export geometry as an STL mesh for rapid prototyping, or as a Dynamo file. 
 
 ![](images/customizer_00.png)
->Some customizer examples available at https://dynamo.autodesk.com/
+>Customizer examples available at https://dynamo.autodesk.com/
 
 ###Customizer UI
 
-The Customizer view consists of a menu bar, a flyout menu containing a description of the file and user inputs, and a 3D view, similar to the Dynamo workspace:
+The Customizer view consists of a menu bar, a flyout menu containing a description of the file and user inputs, and a 3D view, similar to the Dynamo workspace.
 
 ![](images/customizer_01.png)
 > 1. Menu Bar
