@@ -1,49 +1,47 @@
-##Package Case Study – Mesh Toolkit
+##The Customizer View
 
-The Dynamo Mesh Toolkit provides tools to import meshes from external file formats, create a mesh from Dynamo geometry objects, and manually build meshes by their vertices and indices. The library also provides tools to modify meshes, repair meshes, or extract horizontal slices for use in fabrication.
+The Dynamo Customizer allows you to publish Dynamo scripts to the web for others to interact with via a pared down interface consisting of inputs such as sliders, numbers, and booleans. 
 
-![Import Mesh](images/10-3/mtIntro.png)
+By condensing complex graphs into a simple interface, the Customizer makes your scripts accessible to a wider community of users who may not be familiar with Dynamo, Visual Programming, or 3D modeling. Anyone with an Autodesk account can access your Customizer through a shared link, allowing them to interact with your script without a Dynamo license.
 
-The Dynamo Mesh Toolkit is part of Autodesk's ongoing mesh research, and as such will continue to grow over the coming years. Expect new methods to appear on the toolkit frequently, and feel free to reach out to the Dynamo team with comments, bugs, and suggestions for new features.
+The Customizer also allows users to export geometry as an STL mesh for rapid prototyping, or as a Dynamo file. 
 
-###Meshes vs. Solids
-The exercise below demonstrates some basic mesh operations using the Mesh Toolkit.  In the exercise, we intersect a mesh with a series of planes, which can be computationally expensive using solids.  Unlike a solid, a mesh has a set "resolution" and is not defined mathematically, but topologically, and we can define this resolution based on the task at hand.  For more details on mesh to solid relationships, you can reference the[ Geometry For Computation Design](../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.md) chapter in this primer.  For a more thorough examination of Mesh Toolkit, you can reference the [Dynamo Wiki page.](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit) Let's jump into the package in the exercise below.
+![](images/customizer_00.png)
+>Customizer examples available at https://dynamo.autodesk.com/
 
-###Install Mesh Toolkit
-![Import Mesh](images/10-3/mt.png)
-> In Dynamo, go to *Packages > Search for Packages...* in the top menu bar.  In the search field, type *"MeshToolkit"*, all one word, minding the caps.  Click the download arrow for the appropriate package for your version of Dynamo.  Simple as that!
+###Customizer UI
 
-### Exercise
->Download and unzip the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [MeshToolkit.zip](datasets/10-2/MeshToolkit.zip)
+The Customizer view consists of a menu bar, a flyout menu containing a description of the file and user inputs, and a 3D view, similar to the Dynamo workspace.
 
-Begin by opening *Mesh-Toolkit_Intersect-Mesh.dyn in Dynamo.* In this example, we will look at the Intersect node in the mesh toolkit. We will import a mesh and intersect it with a series of input planes to create slices. This is the starting point for preparing the model for fabrication on a laser cutter, waterjet cutter, or CNC mill.
+![](images/customizer_01.png)
+> 1. Menu Bar
+2.	Controls
+3.	3D Preview
 
-![Import Mesh](images/10-3/contour01.png)
->1.	**File Path:** Locate the mesh file to import (*stanford_bunny_tri.obj*). Supported file types are .mix and .obj
-2. **Mesh.ImportFile:** Connect the file path to import the mesh
+###Menu
 
-![Intersect](images/10-3/contour02.png)
-> 1. **Point.ByCoordinates:** Construct a point – this will be the center of an arc.
-2. **Arc.ByCenterPointRadiusAngle:** Construct an arc around the point. This curve will be used to position a series of planes.
+The Customizer Menu Bar includes file information, navigation controls, and download options.
 
-![Intersect](images/10-3/contour03.png)
-> 1. Code Block: Create a range of numbers between zero and one.
-2. **Curve.PointAtParameter:** Connect the arc to the *‘curve’* input and the code block output to the *‘param’* input to extract a series of points along the curve.
-3. **Curve.TangentAtParameter:** Connect the same inputs as the previous node.
-4. **Plane.ByOriginNormal:** Connect the points to the *‘origin’* input and the vectors to the *‘normal’* input to create a series of planes at each point.
+![](images/customizer_02.png)
+>1.	Title - The name of the file
+2.	Author - The owner of the file
+3.	Zoom to Extent - Zoom to the extent of the geometry
+4.	Zoom In/Out - Control the zoom
+5.	Pan/Orbit - Toggle between orbit and pan
+6.	Download - Save the file as an STL or DYN
+7.	Feedback - Send comments, suggestions, or issues
+8.	Manage/About - Useful information about Dynamo
+9.	Logout - Log out of your account and exit the Customizer view
 
-You should now see a series of planes oriented along the arc. Next, we will use these planes to intersect the mesh.
+###Controls
 
-![Intersect](images/10-3/contour04.png)
-> 1. **Mesh.Intersect:** Intersect the planes with the imported mesh, creating a series of polycurve contours.
-2. **PolyCurve.Curves:** Break the polycurves into their curve fragments.
-3. **Curve.EndPoint:** Extract the end points of each curve.
-4. **NurbsCurve.ByPoints:** Use the points to construct a nurbs curve. Use a Boolean node set to *True* to close the curves.
+The controls menu contains the inputs to the Dynamo script including numbers, sliders, strings, and booleans, as well as a short description of the file. This menu can be collapsed by clicking the arrow icon.
 
-![Intersect](images/10-3/contour05.png)
-> 1. **Surface.ByPatch:** Construct surface patches for each contour to create “slices” of the mesh.
-
-![Intersect](images/10-3/contour06.png)
-> Add a second set of slices for a waffle/egg-crate effect.
-
-You may have noticed that the intersection operations calculate faster with a mesh vs. a comparable solid. Workflows such as the one demonstrated in this exercise lend themselves well to working with meshes.
+![](images/customizer_03.png)
+>1. Collapse/expand controls
+2. File Description
+2. Number Input
+2. Number Sliders
+3. Boolean
+4. Strings
+5. Integer Slider
