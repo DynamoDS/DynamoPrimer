@@ -30,17 +30,15 @@ In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometr
 The 3D Preview Navigation mode also gives us the ability for **Direct Manipulation** of points, exemplified in [Getting Started](http://dynamoprimer.com/02_Hello-Dynamo/2-6_the_quick_start_guide.html).
 
 ###Zoom to Recenter
-If you select a node that generates geometry, then switch to 3d navigation, if you hit the zoom all icon in the navigation bar, the view will re-center around the selected geometry
-
-
+ We can easily pan, zoom and rotate freely around models in 3D Preview Navigation mode. However, to zoom specifically on an object created by a geometry node, we can use the Zoom All icon with a single node selected.
 
 ![Zoom to Recenter 1](images/2-3/03-ZoomToRecenter_1.jpg)
-> 1. Preview Toggle Buttons in the Workspace
-2. Right clicking in the Workspace and selecting 
+> 1. Select the node corresponding to the geometry  that will center the view. 
+2. Switch to the 3D Preview Navigation. 
 
 ![Zoom to Recenter 2](images/2-3/03-ZoomToRecenter_2.jpg)
-> 1. Click on the Zoom to Recenter icon in the top right.
-2. The selected geometry will center in the window.
+> 1. Click on the Zoom All icon in the top right.
+2. The selected geometry will be centered inside the view.
 
 ###Hello Mouse!
 
