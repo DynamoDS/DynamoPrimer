@@ -32,15 +32,15 @@ The 3D Preview Navigation mode also gives us the ability for **Direct Manipulati
 ###Zoom to Recenter
 If you select a node that generates geometry, then switch to 3d navigation, if you hit the zoom all icon in the navigation bar, the view will re-center around the selected geometry
 
-support image
 
+
+![Zoom to Recenter 1](images/2-3/03-ZoomToRecenter_1.jpg)
 > 1. Preview Toggle Buttons in the Workspace
 2. Right clicking in the Workspace and selecting 
 
-support image
-
-> 1. Preview Toggle Buttons in the Workspace
-2. Right clicking in the Workspace and selecting 
+![Zoom to Recenter 2](images/2-3/03-ZoomToRecenter_2.jpg)
+> 1. Click on the Zoom to Recenter icon in the top right.
+2. The selected geometry will center in the window.
 
 ###Hello Mouse!
 
