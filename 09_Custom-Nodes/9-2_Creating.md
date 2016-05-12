@@ -61,3 +61,16 @@ Now let’s select the nodes that we want to nest into a Custom Node, thinking a
 
 ![Exercise](images/9-2/UVmapping09.png)
 > The **MapPolygonsToSurface** node reflects the changes we just made.
+
+We can also add to the
+
+Custom comments
+
+default values and inputs
+
+> Double click the Custom Node to edit it. This will re-open the yellow background workspace.
+> Begin editing the Input Code Block
+
+Begin your comment with //
+
+*name : input type* i.e. *targetSurface : Surface*
