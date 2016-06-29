@@ -35,7 +35,7 @@ The Customizer Menu Bar includes file information, navigation controls, and down
 
 ###Controls
 
-The controls menu contains the inputs to the Dynamo script including numbers, sliders, strings, and booleans, as well as a short description of the file. This menu can be collapsed by clicking the arrow icon.
+The controls menu contains the inputs to the Dynamo script including numbers, sliders, strings, and booleans, as well as a short description of the file. The controls will reflect the various inputs found in the original Dynamo file and will change depending on the script. This menu can be collapsed by clicking the arrow icon.
 
 ![](images/customizer_03.png)
 >1. Collapse/expand controls
