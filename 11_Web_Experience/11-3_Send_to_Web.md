@@ -30,12 +30,12 @@ Include preview geometry that makes your script easy to understand. In this exam
 
 When you are ready to publish your file, select “Send to Web” from the File menu. 
 
-![](images/publishing_04.png)
+![](images/publishing_04.jpg)
 
 Enter a description of your file and any instructions needed to get started. 
 Once your file is published, you can send a link to anyone with an Autodesk account. The file will be published with the current input values and previews.
 
-![](images/publishing_05.png)
+![](images/publishing_05.jpg)
 
 >View this example on the [web](dynamo.autodesk.com/share/572a49033a47345a0407e803)
 
