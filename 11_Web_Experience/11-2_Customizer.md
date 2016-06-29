@@ -1,15 +1,15 @@
 ##The Customizer View
 
-The Dynamo Customizer allows you to publish Dynamo scripts to the web for others to interact with via a pared down interface consisting of inputs such as sliders, numbers, and booleans. 
+The Dynamo Customizer view allows others to interact with your Dynamo scripts on the web via a simplified, curated interface consisting of inputs such as sliders, numbers, and booleans. 
 
-By condensing complex graphs into a simple interface, the Customizer makes your scripts accessible to a wider community of users who may not be familiar with Dynamo, Visual Programming, or 3D modeling. Anyone with an Autodesk account can access your Customizer through a shared link, allowing them to interact with your script without a Dynamo license.
+By condensing complex graphs into a simple interface, the Customizer view makes your scripts accessible to a wider community of users who may not be familiar with Dynamo, Visual Programming, or 3D modeling. Anyone with an Autodesk account can access your Dynamo script in a Customizer View through a shared link, allowing them to interact with your script without a Dynamo license.
 
-The Customizer also allows users to export geometry as an STL mesh for rapid prototyping, or as a Dynamo file. 
+In the Customizer view, users can export geometry as an STL mesh for rapid prototyping, or as a Dynamo file."
 
 ![](images/customizer_00.png)
->Customizer examples available at https://dynamo.autodesk.com/
+>Customizer View examples available at https://dynamo.autodesk.com/
 
-###Customizer UI
+###Customizer View UI
 
 The Customizer view consists of a menu bar, a flyout menu containing a description of the file and user inputs, and a 3D view, similar to the Dynamo workspace.
 
@@ -35,7 +35,7 @@ The Customizer Menu Bar includes file information, navigation controls, and down
 
 ###Controls
 
-The controls menu contains the inputs to the Dynamo script including numbers, sliders, strings, and booleans, as well as a short description of the file. This menu can be collapsed by clicking the arrow icon.
+The controls menu contains the inputs to the Dynamo script including numbers, sliders, strings, and booleans, as well as a short description of the file. The controls will reflect the various inputs found in the original Dynamo file and will change depending on the script. This menu can be collapsed by clicking the arrow icon.
 
 ![](images/customizer_03.png)
 >1. Collapse/expand controls

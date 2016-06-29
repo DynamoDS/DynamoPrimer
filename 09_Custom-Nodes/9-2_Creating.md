@@ -62,12 +62,16 @@ Now let’s select the nodes that we want to nest into a Custom Node, thinking a
 ![Exercise](images/9-2/UVmapping09.png)
 > The **MapPolygonsToSurface** node reflects the changes we just made.
 
-We can also add to the robustness of the Custom Node by adding in **Custom Comments**. The comments can help to hint at the input types or explain the functionality of the node. Comments will appear when the mouse hovers over each input of the node, clarifying the inputs the Custom Node.
+We can also add to the robustness of the Custom Node by adding in **Custom Comments**. Comments can help to hint at the input and output types or explain the functionality of the node. Comments will appear when the mouse hovers over each input of the node, clarifying the inputs and outputs the Custom Node.
 
 ![Custom Comment](images/9-2/UVmapping_Custom1.jpg)
 > Double click the Custom Node to edit it. This will re-open the yellow background workspace.
 1. Begin editing the Input Code Block. To start a Comment, type "//" followed by the comment text. Type anything that may help to clarify the Node - Here we will describe the *targetSurface*. 
 2. Let's also set the default value for the *inputSurface* by setting the input type equal to a value. Here, we will set the default value to the original Surface.ByPatch set. 
+
+![Custom Comment](images/9-2/UVmapping_Custom1_.jpg)
+> Comments can also be applied to the Outputs. Begin editing the text in the Output Code Block. To start a Comment, type "//" followed by the comment text. Here we will clarify the *Polygons* and the *surfacePatches* Outputs by adding a more in-depth description. 
+
 
 ![Custom Comment](images/9-2/UVmapping_Custom2.jpg)
 > 

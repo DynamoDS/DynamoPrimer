@@ -38,8 +38,11 @@ Let's jump into the custom node environment and make a simple node to calculate 
 
 ![Custom Nodes Canvas](images/9-1/CustomNodes04.png)
 
-> 1. **Inputs:** input nodes create input ports on the custom node. The syntax for an input node is *input_name : datatype = default_value(optional)*
-2. **Outputs:** Similar to inputs, these will create and name output ports on the custom node.
+> 1. **Inputs:** input nodes create input ports on the custom node. The syntax for an input node is *input_name : datatype = default_value(optional).*
+
+>2. **Outputs:** Similar to inputs, these will create and name output ports on the custom node.
+
+> Consider adding a **Custom Comment** (section 9.2) to your Input and Output ports to hint at the Input and Output types.
 
 You can save this custom node as a .dyf (as opposed to the standard .dyn) file and it will automatically be added to your session and future sessions. You will find the custom node in your library in the category that is specified in the custom node's properties.
 
