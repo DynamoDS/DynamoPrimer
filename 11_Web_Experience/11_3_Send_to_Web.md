@@ -1,4 +1,4 @@
-##Publishing Files
+##Send to Web
 
 Publishing your files to the web is quick and easy. However, you may want to spend some time selecting and labeling your inputs and making your file user-friendly.
 
