@@ -11,7 +11,7 @@ In this exercise, we will publish a Dynamo graph to the web. This file creates a
 ![](images/publishing_00.png)
 >This is the customizer we are going to make. View this example on the [web](dynamo.autodesk.com/share/572a49033a47345a0407e803).
 
-To prepare your script for publishing, first decide which inputs will be accessible to users. Allowable inputs include sliders, numbers, strings, and booleans. Code Blocks and File Paths cannot be used as inputs. Turn off “Is Input” via the context menu on any inputs that you don’t want to be exposed in the Customizer. Make sure any slider inputs have reasonable minimum and maximum values.
+To prepare your script for publishing, first decide which inputs will be accessible to users. Allowable inputs include sliders, numbers, strings, and booleans. Code Blocks and File Paths cannot be used as inputs. Turn off “Is Input” via the context menu on any inputs that you don’t want to be exposed in the Customizer view. Make sure any slider inputs have reasonable minimum and maximum values.
 
 
 ![](images/publishing_01.png)
@@ -28,7 +28,7 @@ Include preview geometry that makes your script easy to understand. In this exam
 
 ###Publish Your File
 
-When you are ready to publish your file, select “Share Workspace” from the File menu. 
+When you are ready to publish your file, select “Send to Web” from the File menu. 
 
 ![](images/publishing_04.png)
 
