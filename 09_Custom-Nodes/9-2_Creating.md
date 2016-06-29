@@ -62,7 +62,7 @@ Now let’s select the nodes that we want to nest into a Custom Node, thinking a
 ![Exercise](images/9-2/UVmapping09.png)
 > The **MapPolygonsToSurface** node reflects the changes we just made.
 
-We can also add to the robustness of the Custom Node by adding in **Custom Comments**. The comments can help to hint at the input types or explain the functionality of the node. Comments will appear when the mouse hovers over each input of the node, clarifying the inputs the Custom Node.
+We can also add to the robustness of the Custom Node by adding in **Custom Comments**. The comments can help to hint at the input and output types or explain the functionality of the node. Comments will appear when the mouse hovers over each input of the node, clarifying the inputs the Custom Node.
 
 ![Custom Comment](images/9-2/UVmapping_Custom1.jpg)
 > Double click the Custom Node to edit it. This will re-open the yellow background workspace.
