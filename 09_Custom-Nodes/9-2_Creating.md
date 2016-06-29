@@ -69,6 +69,10 @@ We can also add to the robustness of the Custom Node by adding in **Custom Comme
 1. Begin editing the Input Code Block. To start a Comment, type "//" followed by the comment text. Type anything that may help to clarify the Node - Here we will describe the *targetSurface*. 
 2. Let's also set the default value for the *inputSurface* by setting the input type equal to a value. Here, we will set the default value to the original Surface.ByPatch set. 
 
+![Custom Comment](images/9-2/UVmapping_Custom1_.jpg)
+> Comments can also be applied to the Outputs. Begin editing the text in the Output Code Block. To start a Comment, type "//" followed by the comment text. Here we will clarify the *Polygons* and the *surfacePatches* Outputs by adding a more in-depth description. 
+
+
 ![Custom Comment](images/9-2/UVmapping_Custom2.jpg)
 > 
 1. Hover over the Custom Node Inputs to see the Comments.
