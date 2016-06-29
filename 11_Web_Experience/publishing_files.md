@@ -2,7 +2,7 @@
 
 Publishing your files to the web is quick and easy. However, you may want to spend some time selecting and labeling your inputs and making your file user-friendly.
 
-###Exercise: Preparing to Publish
+###Exercise: Preparing to 'Send to Web'
 
 >Download the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Attractor Scale](datasets/Attractor Scale.dyn)
 
