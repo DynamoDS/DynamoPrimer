@@ -42,7 +42,11 @@ Let's jump into the custom node environment and make a simple node to calculate 
 
 >2. **Outputs:** Similar to inputs, these will create and name output ports on the custom node.
 
+<<<<<<< HEAD
 > Consider adding a **Custom Comment** to your Input and Output ports to hint at the Input and Output types. This is discussed in more detail in the [Creating Custom Nodes section](9-2_Creating.md).
+=======
+> Consider adding a **Custom Comment** (section 9.2) to your Input and Output ports to hint at the Input and Output types.
+>>>>>>> parent of e15f16a... Update 09_Custom-Nodes/9-1_Introduction.md
 
 You can save this custom node as a .dyf (as opposed to the standard .dyn) file and it will automatically be added to your session and future sessions. You will find the custom node in your library in the category that is specified in the custom node's properties.
 
