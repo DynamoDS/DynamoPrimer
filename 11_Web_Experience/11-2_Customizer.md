@@ -18,7 +18,7 @@ The Customizer view consists of a menu bar, a flyout menu containing a descripti
 2.	Controls
 3.	3D Preview
 
-###Menu
+###The Customizer View's Menu
 
 The Customizer Menu Bar includes file information, navigation controls, and download options.
 
