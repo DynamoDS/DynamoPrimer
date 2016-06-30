@@ -4,7 +4,7 @@ The Dynamo Customizer view allows others to interact with your Dynamo scripts on
 
 By condensing complex graphs into a simple interface, the Customizer view makes your scripts accessible to a wider community of users who may not be familiar with Dynamo, Visual Programming, or 3D modeling. Anyone with an Autodesk account can access your Dynamo script in a Customizer View through a shared link, allowing them to interact with your script without a Dynamo license.
 
-In the Customizer view, users can export geometry as an STL mesh for rapid prototyping, or as a Dynamo file."
+In the Customizer view, users can export geometry as an STL mesh for rapid prototyping, or as a Dynamo file.
 
 ![](images/customizer_00.png)
 >Customizer View examples available at https://dynamo.autodesk.com/
