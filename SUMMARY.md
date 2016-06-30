@@ -62,7 +62,6 @@
    * [Zero-Touch Importing](10_Packages/10-5_Zero-Touch.md)
 * [Web Experience](11_Web_Experience/11-Web_Experience.md)
    * [Web Experience Introduction](11_Web_Experience/11-1_Introduction.md)
-   * [Customizer View](11_Web_Experience/11-2_Customizer.md)
 * [Appendix](Appendix/A_appendix.md)
    * [Resources](Appendix/A-1_resources.md)
    * [Index of Nodes](Appendix/A-2_index-of-nodes.md)
