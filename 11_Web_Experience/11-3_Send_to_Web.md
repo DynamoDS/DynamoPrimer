@@ -1,6 +1,6 @@
-##Send to Web
+##Send to Web (with Dynamo Studio)
 
-Publishing your files to the web is quick and easy. However, you may want to spend some time selecting and labeling your inputs and making your file user-friendly.
+Publishing your files to the web is quick and easy with Dynamo Studio. However, you may want to spend some time selecting and labeling your inputs and making your file user-friendly. If you need to download Dynamo Studio, please visit the [Autodesk website](http://www.autodesk.com/products/dynamo-studio/overview) for more information.
 
 ###Exercise: Preparing to 'Send to Web'
 
@@ -41,7 +41,7 @@ Once your file is published, you can send a link to anyone with an Autodesk acco
 
 ###Managing Published Files
 
-To manage your published scripts, visit https://dynamo.autodesk.com and sign in to your account. Select “Manage” from the drop down in the top right. On this page, you can edit, share, or delete customizers that you have already published.
+To manage your published scripts, visit https://dynamo.autodesk.com and sign in to your account. Select “Manage” from the drop down in the top right. On this page, you can edit, share, or delete customizers that you have already published. This page is also accessible via "Manage Web Workspaces" in the Dynamo Studio File menu.
 
 ![](images/publishing_07.png)
 >1. Edit Customizer
