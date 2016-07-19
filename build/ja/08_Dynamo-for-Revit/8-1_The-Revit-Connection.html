@@ -1,0 +1,1236 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Revit との関係 | Dynamo Primer</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../08_Dynamo-for-Revit/8-2_Selecting.html" />
+    
+    
+    <link rel="prev" href="../08_Dynamo-for-Revit/8_Dynamo-for-Revit.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="8.1"
+        data-chapter-title="Revit との関係"
+        data-filepath="08_Dynamo-for-Revit/8-1_The-Revit-Connection.md"
+        data-basepath=".."
+        data-revision="Tue Jul 19 2016 16:20:55 GMT-0400 (Eastern Daylight Time)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Dynamo Primer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_Introduction/1_introduction.html">
+            
+                
+                    <a href="../01_Introduction/1_introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        はじめに
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_Introduction/1-1_what_is_visual_programming.html">
+            
+                
+                    <a href="../01_Introduction/1-1_what_is_visual_programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        ビジュアル プログラミングの概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_Introduction/1-2_what_is_dynamo.html">
+            
+                
+                    <a href="../01_Introduction/1-2_what_is_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Dynamo とは
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_Introduction/1-3_dynamo_in_action.html">
+            
+                
+                    <a href="../01_Introduction/1-3_dynamo_in_action.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        DYNAMO IN ACTION
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_Hello-Dynamo/2_hello_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2_hello_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Dynamo の概要
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_Hello-Dynamo/2-1_launching_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-1_launching_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Dynamo のインストールと起動
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Dynamo ユーザ インタフェース
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_Hello-Dynamo/2-3_the_workspace.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-3_the_workspace.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        ワークスペース
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        作業を開始する
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        ビジュアル プログラムの構造
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        ノード
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_Anatomy-of-a-Dynamo-Definition/3-3_wiring_programs.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-3_wiring_programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        ワイヤ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Dynamo ライブラリ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        プログラムを管理する
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        プリセットを使用してデータを管理する
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        プログラムの構成要素
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_The-Building-Blocks-of-Programs/4-1_data.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-1_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        データ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_The-Building-Blocks-of-Programs/4-2_math.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-2_math.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        数学的方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_The-Building-Blocks-of-Programs/4-3_logic.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-3_logic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        ロジック
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_The-Building-Blocks-of-Programs/4-4_strings.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-4_strings.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        文字列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_The-Building-Blocks-of-Programs/4-5_color.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-5_color.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        色
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        計算設計用のジオメトリ
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        ジオメトリの概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_Geometry-for-Computational-Design/5-2_vectors.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-2_vectors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        ベクトル、平面、座標系
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_Geometry-for-Computational-Design/5-3_points.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-3_points.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_Geometry-for-Computational-Design/5-4_curves.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-4_curves.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        曲線
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_Geometry-for-Computational-Design/5-5_surfaces.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-5_surfaces.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        サーフェス
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_Geometry-for-Computational-Design/5-6_solids.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-6_solids.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        ソリッド
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_Geometry-for-Computational-Design/5-7_meshes.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-7_meshes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        メッシュ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_Geometry-for-Computational-Design/5-8_importing.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-8_importing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        ジオメトリの読み込み
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_Designing-with-Lists/6_designing-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6_designing-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        リストを使用した設計
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_Designing-with-Lists/6-1_whats-a-list.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-1_whats-a-list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        リストの概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06_Designing-with-Lists/6-2_working-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-2_working-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        リストの操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_Designing-with-Lists/6-3_lists-of-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-3_lists-of-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        リストのリスト
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        N 次元のリスト
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+            
+                
+                    <a href="../07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        コード ブロックと DesignScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_Code-Block/7-1_what-is-a-code-block.html">
+            
+                
+                    <a href="../07_Code-Block/7-1_what-is-a-code-block.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        コード ブロックとは
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_Code-Block/7-2_Design-Script-syntax.html">
+            
+                
+                    <a href="../07_Code-Block/7-2_Design-Script-syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        DesignScript 構文
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_Code-Block/7-3_shorthand.html">
+            
+                
+                    <a href="../07_Code-Block/7-3_shorthand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        省略表記
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_Code-Block/7-4_functions.html">
+            
+                
+                    <a href="../07_Code-Block/7-4_functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        コード ブロック関数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Revit で Dynamo を使用する
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="8.1" data-path="08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Revit との関係
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="08_Dynamo-for-Revit/8-2_Selecting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-2_Selecting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        選択
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="08_Dynamo-for-Revit/8-3_Editing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-3_Editing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        編集
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="08_Dynamo-for-Revit/8-4_Creating.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-4_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        作成
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="08_Dynamo-for-Revit/8-5_Customizing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-5_Customizing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        カスタマイズ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="08_Dynamo-for-Revit/8-6_Documenting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-6_Documenting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        設計図書の作成
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="09_Custom-Nodes/9_Custom-Nodes.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9_Custom-Nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        カスタム ノード
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="09_Custom-Nodes/9-1_Introduction.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        カスタム ノード
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="09_Custom-Nodes/9-2_Creating.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-2_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        カスタム ノードを作成する
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="09_Custom-Nodes/9-3_Library.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-3_Library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        ライブラリへの追加
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="09_Custom-Nodes/9-4_Python.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-4_Python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Python
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="09_Custom-Nodes/9-5_Python-Revit.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-5_Python-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        Python と Revit
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="10_Packages/10-Packages.html">
+            
+                
+                    <a href="../10_Packages/10-Packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        パッケージ
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="10_Packages/10-1_Introduction.html">
+            
+                
+                    <a href="../10_Packages/10-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        パッケージ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="10_Packages/10-2_Mesh-Toolkit.html">
+            
+                
+                    <a href="../10_Packages/10-2_Mesh-Toolkit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        パッケージのケーススタディ - Mesh Toolkit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="10_Packages/10-3_Developing.html">
+            
+                
+                    <a href="../10_Packages/10-3_Developing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        パッケージを開発する
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="10_Packages/10-4_Publishing.html">
+            
+                
+                    <a href="../10_Packages/10-4_Publishing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        パッケージをパブリッシュする
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="10_Packages/10-5_Zero-Touch.html">
+            
+                
+                    <a href="../10_Packages/10-5_Zero-Touch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Zero-Touch の概要
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="Appendix/A_appendix.html">
+            
+                
+                    <a href="../Appendix/A_appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        付録
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="Appendix/A-1_resources.html">
+            
+                
+                    <a href="../Appendix/A-1_resources.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        リソース
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="Appendix/A-2_index-of-nodes.html">
+            
+                
+                    <a href="../Appendix/A-2_index-of-nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        ノードの索引
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="Appendix/A-3_packages.html">
+            
+                
+                    <a href="../Appendix/A-3_packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        Dynamo パッケージ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="Appendix/A-4_example-files.html">
+            
+                
+                    <a href="../Appendix/A-4_example-files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        Dynamo のサンプル ファイル
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Dynamo Primer</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="revit-&#x3068;&#x306E;&#x95A2;&#x4FC2;">Revit &#x3068;&#x306E;&#x95A2;&#x4FC2;</h2>
+<p><img src="images/8-1/link.png" alt="&#x95A2;&#x4FC2;"> Dynamo &#x3092; Revit &#x306B;&#x7D44;&#x307F;&#x8FBC;&#x3093;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3068;&#x3001;Revit &#x306E;&#x30D3;&#x30EB;&#x30C7;&#x30A3;&#x30F3;&#x30B0; &#x30A4;&#x30F3;&#x30D5;&#x30A9;&#x30E1;&#x30FC;&#x30B7;&#x30E7;&#x30F3; &#x30E2;&#x30C7;&#x30EA;&#x30F3;&#x30B0;(BIM)&#x6A5F;&#x80FD;&#x3092;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x3068;&#x30ED;&#x30B8;&#x30C3;&#x30AF;&#x306B;&#x57FA;&#x3065;&#x304F; Dynamo &#x306E;&#x8996;&#x899A;&#x7684;&#x306A;&#x30A2;&#x30EB;&#x30B4;&#x30EA;&#x30BA;&#x30E0;&#x7DE8;&#x96C6;&#x74B0;&#x5883;&#x306B;&#x3088;&#x3063;&#x3066;&#x62E1;&#x5F35;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; Dynamo &#x306E;&#x67D4;&#x8EDF;&#x6027;&#x3092; Revit &#x306E;&#x5805;&#x7262;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x6A5F;&#x80FD;&#x3068;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x308A;&#x3001;BIM &#x306E;&#x65B0;&#x3057;&#x3044;&#x53EF;&#x80FD;&#x6027;&#x304C;&#x5E83;&#x304C;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3053;&#x306E;&#x7AE0;&#x3067;&#x306F;&#x3001;Dynamo &#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F; BIM &#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x306B;&#x3064;&#x3044;&#x3066;&#x8AAC;&#x660E;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x7AE0;&#x306E;&#x5404;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3067;&#x306F;&#x3001;&#x6F14;&#x7FD2;&#x3092;&#x884C;&#x3044;&#x306A;&#x304C;&#x3089; BIM &#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;BIM &#x306E;&#x8996;&#x899A;&#x7684;&#x306A;&#x30A2;&#x30EB;&#x30B4;&#x30EA;&#x30BA;&#x30E0;&#x7DE8;&#x96C6;&#x6A5F;&#x80FD;&#x306E;&#x4ED5;&#x7D44;&#x307F;&#x3092;&#x7406;&#x89E3;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x306E;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x5B9F;&#x969B;&#x306B;&#x64CD;&#x4F5C;&#x3059;&#x308B;&#x306E;&#x304C;&#x6700;&#x9069;&#x306A;&#x65B9;&#x6CD5;&#x3067;&#x3059;&#x3002;&#x305F;&#x3060;&#x3057;&#x305D;&#x306E;&#x524D;&#x306B;&#x3001;Dynamo &#x306E;&#x6B74;&#x53F2;&#x3092;&#x7C21;&#x5358;&#x306B;&#x8AAC;&#x660E;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h4 id="dynamo-&#x306E;&#x6B74;&#x53F2;">Dynamo &#x306E;&#x6B74;&#x53F2;</h4>
+<p><img src="images/8-1/earlyScreenshot.png" alt="&#x6B74;&#x53F2;"></p>
+<blockquote>
+<p>Dynamo &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306F;&#x3001;&#x958B;&#x767A;&#x30C1;&#x30FC;&#x30E0;&#x3068;&#x30B3;&#x30DF;&#x30E5;&#x30CB;&#x30C6;&#x30A3;&#x306E;&#x7A4D;&#x6975;&#x7684;&#x306A;&#x30B5;&#x30DD;&#x30FC;&#x30C8;&#x306B;&#x3088;&#x3063;&#x3066;&#x3053;&#x3053;&#x307E;&#x3067;&#x767A;&#x5C55;&#x3057;&#x307E;&#x3057;&#x305F;&#x304C;&#x3001;&#x6700;&#x521D;&#x306E;&#x76EE;&#x6A19;&#x306F;&#x5C0F;&#x3055;&#x306A;&#x3082;&#x306E;&#x3067;&#x3057;&#x305F;&#x3002;</p>
+</blockquote>
+<p>Dynamo &#x306F;&#x3001;&#x3082;&#x3068;&#x3082;&#x3068; Revit &#x306E;&#x8A2D;&#x8A08;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x3092;&#x5408;&#x7406;&#x5316;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x958B;&#x767A;&#x3055;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;Revit &#x3067;&#x306F;&#x3001;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3054;&#x3068;&#x306B;&#x5805;&#x7262;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3059;&#x304C;&#x3001;&#x30E6;&#x30FC;&#x30B6; &#x30A4;&#x30F3;&#x30BF;&#x30D5;&#x30A7;&#x30FC;&#x30B9;&#x306E;&#x5236;&#x7D04;&#x3092;&#x53D7;&#x3051;&#x308B;&#x3053;&#x3068;&#x306A;&#x304F;&#x3053;&#x306E;&#x60C5;&#x5831;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3059;&#x308B;&#x3053;&#x3068;&#x306F;&#x3001;&#x4E00;&#x822C;&#x7684;&#x306A;&#x30E6;&#x30FC;&#x30B6;&#x306B;&#x3068;&#x3063;&#x3066;&#x306F;&#x96E3;&#x3057;&#x3044;&#x5834;&#x5408;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;Revit &#x306B;&#x306F;&#x5305;&#x62EC;&#x7684;&#x306A; API (&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3; &#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0; &#x30A4;&#x30F3;&#x30BF;&#x30D5;&#x30A7;&#x30FC;&#x30B9;)&#x304C;&#x7528;&#x610F;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x305F;&#x3081;&#x3001;&#x30B5;&#x30FC;&#x30C9;&#x30D1;&#x30FC;&#x30C6;&#x30A3;&#x306E;&#x958B;&#x767A;&#x8005;&#x306F;&#x3053;&#x308C;&#x3089;&#x306E; API &#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;&#x30AB;&#x30B9;&#x30BF;&#x30DE;&#x30A4;&#x30BA;&#x3055;&#x308C;&#x305F;&#x30C4;&#x30FC;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DE;&#x30FC;&#x3067;&#x3042;&#x308C;&#x3070;&#x3053;&#x306E; API &#x306B;&#x306F;&#x6163;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x304C;&#x3001;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x306E;&#x7D4C;&#x9A13;&#x304C;&#x306A;&#x3044;&#x30E6;&#x30FC;&#x30B6;&#x3068;&#x3063;&#x3066;&#x306F;&#x3001;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x30D9;&#x30FC;&#x30B9;&#x306E;&#x30B9;&#x30AF;&#x30EA;&#x30D7;&#x30C8;&#x3092;&#x8A18;&#x8FF0;&#x3059;&#x308B;&#x3053;&#x3068;&#x306F;&#x7C21;&#x5358;&#x306A;&#x3053;&#x3068;&#x3067;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;Dynamo &#x306E;&#x958B;&#x767A;&#x30C1;&#x30FC;&#x30E0;&#x306F;&#x3001;&#x308F;&#x304B;&#x308A;&#x3084;&#x3059;&#x3044;&#x8996;&#x899A;&#x7684;&#x306A;&#x30A2;&#x30EB;&#x30B4;&#x30EA;&#x30BA;&#x30E0; &#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3088;&#x308A;&#x3001;Revit &#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x7C21;&#x5358;&#x306B;&#x64CD;&#x4F5C;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x76EE;&#x6307;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30AB;&#x30B9;&#x30BF;&#x30DE;&#x30A4;&#x30BA;&#x3055;&#x308C;&#x305F; Revit &#x3068; Dynamo &#x306E;&#x4E3B;&#x8981;&#x306A;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3066;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3068;&#x3001;&#x76F8;&#x4E92;&#x904B;&#x7528;&#x6027;&#x3001;&#x8A2D;&#x8A08;&#x56F3;&#x66F8;&#x4F5C;&#x6210;&#x3001;&#x89E3;&#x6790;&#x3001;&#x30E2;&#x30C7;&#x30EB;&#x751F;&#x6210;&#x306A;&#x3069;&#x306B;&#x304A;&#x3044;&#x3066;&#x3001;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x5236;&#x5FA1;&#x306B;&#x3088;&#x308B;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x306E;&#x7BC4;&#x56F2;&#x3092;&#x5927;&#x304D;&#x304F;&#x5E83;&#x3052;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;Dynamo &#x3092;&#x4F7F;&#x7528;&#x3059;&#x308C;&#x3070;&#x3001;&#x9762;&#x5012;&#x306A;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x4F5C;&#x696D;&#x3092;&#x81EA;&#x52D5;&#x5316;&#x3057;&#x3001;&#x8A2D;&#x8A08;&#x4F5C;&#x696D;&#x306B;&#x96C6;&#x4E2D;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="revit-&#x3067;-dynamo-&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;">Revit &#x3067; Dynamo &#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;</h3>
+<p><img src="images/8-1/01.png" alt="&#x95A2;&#x4FC2;"></p>
+<blockquote>
+<ol>
+<li>Revit &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30D5;&#x30A1;&#x30DF;&#x30EA; &#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3067;&#x3001;[&#x30A2;&#x30C9;&#x30A4;&#x30F3;]&#x30BF;&#x30D6;&#x304B;&#x3089;[<em>Dynamo</em>]&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002; Dynamo &#x306F;&#x3001;Dynamo &#x3092;&#x8D77;&#x52D5;&#x3057;&#x305F;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x5185;&#x3067;&#x306E;&#x307F;&#x5B9F;&#x884C;&#x3055;&#x308C;&#x308B;&#x3053;&#x3068;&#x306B;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/8-1/00.png" alt="&#x95A2;&#x4FC2;"></p>
+<blockquote>
+<ol>
+<li>Revit &#x3067; Dynamo &#x3092;&#x8D77;&#x52D5;&#x3059;&#x308B;&#x3068;&#x3001;Dynamo &#x306E;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x5185;&#x306B;[<em>Revit</em>]&#x3068;&#x3044;&#x3046;&#x65B0;&#x3057;&#x3044;&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002; &#x3053;&#x306E;&#x65B0;&#x3057;&#x3044;&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x304B;&#x3089;&#x3001;Revit &#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x5C02;&#x7528;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
+</ol>
+</blockquote>
+<p><em>*&#x6CE8;: Dynamo &#x30B0;&#x30E9;&#x30D5;&#x3067; Revit &#x56FA;&#x6709;&#x306E;&#x30D5;&#x30A1;&#x30DF;&#x30EA;&#x3092;&#x6271;&#x3046;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x5834;&#x5408;&#x3001;&#x305D;&#x306E;&#x30B0;&#x30E9;&#x30D5;&#x306F; Revit &#x3067;&#x7A3C;&#x50CD;&#x3057;&#x3066;&#x3044;&#x308B; Dynamo &#x304B;&#x3089;&#x958B;&#x3044;&#x305F;&#x3068;&#x304D;&#x306B;&#x306E;&#x307F;&#x6B63;&#x5E38;&#x306B;&#x52D5;&#x4F5C;&#x3057;&#x307E;&#x3059;&#x3002; &#x305F;&#x3068;&#x3048;&#x3070;&#x3001;Revit &#x3067;&#x7A3C;&#x50CD;&#x3057;&#x3066;&#x3044;&#x308B; Dynamo &#x306E;&#x30B0;&#x30E9;&#x30D5;&#x3092; Dynamo Sandbox &#x3067;&#x958B;&#x304F;&#x3068;&#x3001;Revit &#x30CE;&#x30FC;&#x30C9;&#x304C;&#x5931;&#x308F;&#x308C;&#x307E;&#x3059;&#x3002;</em></p>
+<h3 id="&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x30D5;&#x30EA;&#x30FC;&#x30BA;">&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x30D5;&#x30EA;&#x30FC;&#x30BA;</h3>
+<p>Revit &#x306F;&#x5805;&#x7262;&#x306A;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x7BA1;&#x7406;&#x3092;&#x63D0;&#x4F9B;&#x3059;&#x308B;&#x30D7;&#x30E9;&#x30C3;&#x30C8;&#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x3067;&#x3042;&#x308B;&#x305F;&#x3081;&#x3001;&#x5834;&#x5408;&#x306B;&#x3088;&#x3063;&#x3066;&#x306F; Dynamo &#x306E;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x64CD;&#x4F5C;&#x304C;&#x8907;&#x96D1;&#x306B;&#x306A;&#x308A;&#x3001;&#x8A08;&#x7B97;&#x901F;&#x5EA6;&#x304C;&#x4F4E;&#x4E0B;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;Dynamo &#x306B;&#x3088;&#x308B;&#x30CE;&#x30FC;&#x30C9;&#x8A08;&#x7B97;&#x3067;&#x6642;&#x9593;&#x304C;&#x304B;&#x304B;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x300C;&#x30D5;&#x30EA;&#x30FC;&#x30BA;&#x300D;&#x3059;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;&#x30B0;&#x30E9;&#x30D5;&#x306E;&#x958B;&#x767A;&#x4E2D;&#x306B; Revit &#x95A2;&#x9023;&#x64CD;&#x4F5C;&#x306E;&#x5B9F;&#x884C;&#x3092;&#x505C;&#x6B62;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x30D5;&#x30EA;&#x30FC;&#x30BA;&#x64CD;&#x4F5C;&#x306E;&#x8A73;&#x7D30;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../05_Geometry-for-Computational-Design/5-6_solids.html#freezing">&#x300C;&#x30BD;&#x30EA;&#x30C3;&#x30C9;&#x300D;&#x306E;&#x7AE0;&#x306E;&#x300C;&#x30D5;&#x30EA;&#x30FC;&#x30BA;&#x300D;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;</a>&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<h3 id="&#x30B3;&#x30DF;&#x30E5;&#x30CB;&#x30C6;&#x30A3;">&#x30B3;&#x30DF;&#x30E5;&#x30CB;&#x30C6;&#x30A3;</h3>
+<p>Dynamo &#x306F;&#x3001;&#x3082;&#x3068;&#x3082;&#x3068;&#x5EFA;&#x7BC9;&#x8A2D;&#x8A08;&#x8005;&#x3084;&#x69CB;&#x9020;&#x8A2D;&#x8A08;&#x8005;&#x5411;&#x3051;&#x306B;&#x958B;&#x767A;&#x3055;&#x308C;&#x305F;&#x30C4;&#x30FC;&#x30EB;&#x3067;&#x3059;&#x3002;Dynamo &#x306E;&#x30B3;&#x30DF;&#x30E5;&#x30CB;&#x30C6;&#x30A3;&#x306F;&#x3001;&#x5EFA;&#x8A2D;&#x696D;&#x754C;&#x306E;&#x5C02;&#x9580;&#x5BB6;&#x3068;&#x4EA4;&#x6D41;&#x3057;&#x306A;&#x304C;&#x3089;&#x5B66;&#x3076;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x5834;&#x6240;&#x3068;&#x3057;&#x3066;&#x3001;&#x73FE;&#x5728;&#x3082;&#x6210;&#x9577;&#x3092;&#x7D9A;&#x3051;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;Dynamo &#x306E;&#x30B3;&#x30DF;&#x30E5;&#x30CB;&#x30C6;&#x30A3;&#x306F;&#x3001;&#x60C5;&#x5831;&#x306E;&#x5171;&#x6709;&#x3068;&#x958B;&#x767A;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x7A4D;&#x6975;&#x7684;&#x306B;&#x53C2;&#x52A0;&#x3059;&#x308B;&#x5EFA;&#x7BC9;&#x8A2D;&#x8A08;&#x8005;&#x3001;&#x69CB;&#x9020;&#x8A2D;&#x8A08;&#x8005;&#x3001;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DE;&#x3001;&#x30C7;&#x30B6;&#x30A4;&#x30CA;&#x30FC;&#x306B;&#x3088;&#x3063;&#x3066;&#x69CB;&#x6210;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>Dynamo &#x306F;&#x3001;&#x7D99;&#x7D9A;&#x7684;&#x306B;&#x9032;&#x5316;&#x3057;&#x3066;&#x3044;&#x304F;&#x30AA;&#x30FC;&#x30D7;&#x30F3;&#x30BD;&#x30FC;&#x30B9; &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x3042;&#x308A;&#x3001;&#x305D;&#x306E;&#x958B;&#x767A;&#x306E;&#x5927;&#x90E8;&#x5206;&#x306F; Revit &#x306B;&#x95A2;&#x4FC2;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x30C7;&#x30A3;&#x30B9;&#x30AB;&#x30C3;&#x30B7;&#x30E7;&#x30F3; &#x30D5;&#x30A9;&#x30FC;&#x30E9;&#x30E0;&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3001;<a href="http://dynamobim.org/forums/forum/dyn/" target="_blank">&#x8CEA;&#x554F;&#x3092;&#x6295;&#x7A3F;</a>&#x3057;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002; &#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DE;&#x3068;&#x3057;&#x3066; Dynamo &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x53C2;&#x52A0;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x6B21;&#x306E;&#x30EA;&#x30F3;&#x30AF;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;: <a href="https://github.com/DynamoDS/Dynamo" target="_blank">GitHub &#x306E; Dynamo &#x30DA;&#x30FC;&#x30B8;</a>&#x3002; &#x307E;&#x305F;&#x3001;<a href="http://dynamopackages.com/" target="_blank">Dynamo Package Manager</a> &#x3067;&#x306F;&#x3001;&#x3055;&#x307E;&#x3056;&#x307E;&#x306A;&#x30B5;&#x30FC;&#x30C9;&#x30D1;&#x30FC;&#x30C6;&#x30A3;&#x88FD;&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x304C;&#x63D0;&#x4F9B;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002; &#x63D0;&#x4F9B;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x306E;&#x591A;&#x304F;&#x306F;&#x3001;&#x5EFA;&#x8A2D;&#x696D;&#x754C;&#x306E;&#x30EF;&#x30FC;&#x30AF;&#x30D5;&#x30ED;&#x30FC;&#x3067;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x76EE;&#x7684;&#x3068;&#x3057;&#x3066;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x5B9F;&#x969B;&#x306B;&#x3001;&#x30D1;&#x30CD;&#x30EB;&#x4F5C;&#x6210;&#x7528;&#x306E;&#x30B5;&#x30FC;&#x30C9;&#x30D1;&#x30FC;&#x30C6;&#x30A3;&#x88FD;&#x30D1;&#x30C3;&#x30B1;&#x30FC;&#x30B8;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p><img src="images/8-1/blog.png" alt="&#x30D6;&#x30ED;&#x30B0;"></p>
+<blockquote>
+<p>Dynamo &#x958B;&#x767A;&#x30C1;&#x30FC;&#x30E0;&#x306F;&#x3001;<a href="http://dynamobim.com/blog/" target="_blank">&#x30D6;&#x30ED;&#x30B0;</a>&#x3092;&#x983B;&#x7E41;&#x306B;&#x66F4;&#x65B0;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002; &#x6700;&#x8FD1;&#x306E;&#x8A18;&#x4E8B;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3001;&#x6700;&#x65B0;&#x306E;&#x958B;&#x767A;&#x60C5;&#x5831;&#x3092;&#x5165;&#x624B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../08_Dynamo-for-Revit/8_Dynamo-for-Revit.html" class="navigation navigation-prev " aria-label="Previous page: Revit で Dynamo を使用する"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../08_Dynamo-for-Revit/8-2_Selecting.html" class="navigation navigation-next " aria-label="Next page: 選択"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/favicon.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"ga":{"token":"UA-52186525-3","configuration":"auto"},"search_languages":{"lang":"jp"},"dynamo":{"customLinks":[{"label":"Download","icon":"fa fa-file-pdf-o fa-lg","url":"Appendix/DynamoPrimer-Print.pdf"}],"languages":[{"label":"English","code":"en","url":"http://dynamoprimer.com"},{"label":"Deutsch","code":"de","url":"http://dynamoprimer.com/de"}],"currentLanguage":{"code":"ja","url":"http://dynamoprimer.com/ja","switchLangLabel":"言語"},"favicon":"/images/icons/favicon.ico","facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"search-languages":{},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <script src="../gitbook/plugins/gitbook-plugin-search-languages/lunr.stemmer.support.js"></script>
+<script src="../gitbook/plugins/gitbook-plugin-search-languages/lunr.jp.js"></script>
+<script src="../gitbook/plugins/gitbook-plugin-search-languages/search.lang.js"></script>
+    </body>
+    
+</html>

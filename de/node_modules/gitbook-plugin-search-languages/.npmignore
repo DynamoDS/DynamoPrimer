@@ -1,0 +1,5 @@
+node_modules
+.vscode
+typings
+jsconfig.json
+tsd.json

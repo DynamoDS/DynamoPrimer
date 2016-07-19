@@ -1,0 +1,1349 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>選択 | Dynamo Primer</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../08_Dynamo-for-Revit/8-3_Editing.html" />
+    
+    
+    <link rel="prev" href="../08_Dynamo-for-Revit/8-1_The-Revit-Connection.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="8.2"
+        data-chapter-title="選択"
+        data-filepath="08_Dynamo-for-Revit/8-2_Selecting.md"
+        data-basepath=".."
+        data-revision="Tue Jul 19 2016 16:20:55 GMT-0400 (Eastern Daylight Time)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Dynamo Primer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_Introduction/1_introduction.html">
+            
+                
+                    <a href="../01_Introduction/1_introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        はじめに
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_Introduction/1-1_what_is_visual_programming.html">
+            
+                
+                    <a href="../01_Introduction/1-1_what_is_visual_programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        ビジュアル プログラミングの概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_Introduction/1-2_what_is_dynamo.html">
+            
+                
+                    <a href="../01_Introduction/1-2_what_is_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Dynamo とは
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_Introduction/1-3_dynamo_in_action.html">
+            
+                
+                    <a href="../01_Introduction/1-3_dynamo_in_action.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        DYNAMO IN ACTION
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_Hello-Dynamo/2_hello_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2_hello_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Dynamo の概要
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_Hello-Dynamo/2-1_launching_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-1_launching_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Dynamo のインストールと起動
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Dynamo ユーザ インタフェース
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_Hello-Dynamo/2-3_the_workspace.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-3_the_workspace.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        ワークスペース
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        作業を開始する
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        ビジュアル プログラムの構造
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        ノード
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_Anatomy-of-a-Dynamo-Definition/3-3_wiring_programs.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-3_wiring_programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        ワイヤ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Dynamo ライブラリ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        プログラムを管理する
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        プリセットを使用してデータを管理する
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        プログラムの構成要素
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_The-Building-Blocks-of-Programs/4-1_data.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-1_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        データ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_The-Building-Blocks-of-Programs/4-2_math.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-2_math.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        数学的方法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_The-Building-Blocks-of-Programs/4-3_logic.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-3_logic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        ロジック
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_The-Building-Blocks-of-Programs/4-4_strings.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-4_strings.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        文字列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_The-Building-Blocks-of-Programs/4-5_color.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-5_color.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        色
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        計算設計用のジオメトリ
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        ジオメトリの概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_Geometry-for-Computational-Design/5-2_vectors.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-2_vectors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        ベクトル、平面、座標系
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_Geometry-for-Computational-Design/5-3_points.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-3_points.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_Geometry-for-Computational-Design/5-4_curves.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-4_curves.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        曲線
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_Geometry-for-Computational-Design/5-5_surfaces.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-5_surfaces.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        サーフェス
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_Geometry-for-Computational-Design/5-6_solids.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-6_solids.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        ソリッド
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_Geometry-for-Computational-Design/5-7_meshes.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-7_meshes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        メッシュ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_Geometry-for-Computational-Design/5-8_importing.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-8_importing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        ジオメトリの読み込み
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_Designing-with-Lists/6_designing-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6_designing-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        リストを使用した設計
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_Designing-with-Lists/6-1_whats-a-list.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-1_whats-a-list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        リストの概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06_Designing-with-Lists/6-2_working-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-2_working-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        リストの操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_Designing-with-Lists/6-3_lists-of-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-3_lists-of-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        リストのリスト
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        N 次元のリスト
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+            
+                
+                    <a href="../07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        コード ブロックと DesignScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_Code-Block/7-1_what-is-a-code-block.html">
+            
+                
+                    <a href="../07_Code-Block/7-1_what-is-a-code-block.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        コード ブロックとは
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_Code-Block/7-2_Design-Script-syntax.html">
+            
+                
+                    <a href="../07_Code-Block/7-2_Design-Script-syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        DesignScript 構文
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_Code-Block/7-3_shorthand.html">
+            
+                
+                    <a href="../07_Code-Block/7-3_shorthand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        省略表記
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_Code-Block/7-4_functions.html">
+            
+                
+                    <a href="../07_Code-Block/7-4_functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        コード ブロック関数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Revit で Dynamo を使用する
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Revit との関係
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="8.2" data-path="08_Dynamo-for-Revit/8-2_Selecting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-2_Selecting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        選択
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="08_Dynamo-for-Revit/8-3_Editing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-3_Editing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        編集
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="08_Dynamo-for-Revit/8-4_Creating.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-4_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        作成
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="08_Dynamo-for-Revit/8-5_Customizing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-5_Customizing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        カスタマイズ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="08_Dynamo-for-Revit/8-6_Documenting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-6_Documenting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        設計図書の作成
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="09_Custom-Nodes/9_Custom-Nodes.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9_Custom-Nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        カスタム ノード
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="09_Custom-Nodes/9-1_Introduction.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        カスタム ノード
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="09_Custom-Nodes/9-2_Creating.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-2_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        カスタム ノードを作成する
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="09_Custom-Nodes/9-3_Library.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-3_Library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        ライブラリへの追加
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="09_Custom-Nodes/9-4_Python.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-4_Python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Python
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="09_Custom-Nodes/9-5_Python-Revit.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-5_Python-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        Python と Revit
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="10_Packages/10-Packages.html">
+            
+                
+                    <a href="../10_Packages/10-Packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        パッケージ
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="10_Packages/10-1_Introduction.html">
+            
+                
+                    <a href="../10_Packages/10-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        パッケージ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="10_Packages/10-2_Mesh-Toolkit.html">
+            
+                
+                    <a href="../10_Packages/10-2_Mesh-Toolkit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        パッケージのケーススタディ - Mesh Toolkit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="10_Packages/10-3_Developing.html">
+            
+                
+                    <a href="../10_Packages/10-3_Developing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        パッケージを開発する
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="10_Packages/10-4_Publishing.html">
+            
+                
+                    <a href="../10_Packages/10-4_Publishing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        パッケージをパブリッシュする
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="10_Packages/10-5_Zero-Touch.html">
+            
+                
+                    <a href="../10_Packages/10-5_Zero-Touch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Zero-Touch の概要
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="Appendix/A_appendix.html">
+            
+                
+                    <a href="../Appendix/A_appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        付録
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="Appendix/A-1_resources.html">
+            
+                
+                    <a href="../Appendix/A-1_resources.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        リソース
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="Appendix/A-2_index-of-nodes.html">
+            
+                
+                    <a href="../Appendix/A-2_index-of-nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        ノードの索引
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="Appendix/A-3_packages.html">
+            
+                
+                    <a href="../Appendix/A-3_packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        Dynamo パッケージ
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="Appendix/A-4_example-files.html">
+            
+                
+                    <a href="../Appendix/A-4_example-files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        Dynamo のサンプル ファイル
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Dynamo Primer</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x9078;&#x629E;">&#x9078;&#x629E;</h2>
+<p>Revit &#x306F;&#x3001;&#x975E;&#x5E38;&#x306B;&#x8C4A;&#x5BCC;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x6271;&#x3046;&#x74B0;&#x5883;&#x3067;&#x3059;&#x3002;&#x3053;&#x306E;&#x305F;&#x3081;&#x3001;&#x9078;&#x629E;&#x6A5F;&#x80FD;&#x304C;&#x300C;&#x30DD;&#x30A4;&#x30F3;&#x30C8; &#x30A2;&#x30F3;&#x30C9; &#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x300D;&#x3092;&#x306F;&#x308B;&#x304B;&#x306B;&#x8D85;&#x3048;&#x305F;&#x7BC4;&#x56F2;&#x306B;&#x307E;&#x3067;&#x62E1;&#x5F35;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x30D1;&#x30E9;&#x30E1;&#x30C8;&#x30EA;&#x30C3;&#x30AF;&#x306A;&#x64CD;&#x4F5C;&#x306E;&#x5B9F;&#x884C;&#x4E2D;&#x306B;&#x3001;Revit &#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306B;&#x30AF;&#x30A8;&#x30EA;&#x30FC;&#x3092;&#x884C;&#x3044;&#x3001;Revit &#x306E;&#x8981;&#x7D20;&#x3092; Dynamo &#x306E;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x306B;&#x52D5;&#x7684;&#x306B;&#x30EA;&#x30F3;&#x30AF;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/8-2/selectionUI.png" alt="UI"></p>
+<blockquote>
+<p>[Revit]&#x30E9;&#x30A4;&#x30D6;&#x30E9;&#x30EA;&#x306E;[&#x9078;&#x629E;]&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x304B;&#x3089;&#x3001;&#x3055;&#x307E;&#x3056;&#x307E;&#x306A;&#x65B9;&#x6CD5;&#x3067;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+</blockquote>
+<p>Revit &#x306E;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;Revit &#x306E;&#x8981;&#x7D20;&#x306E;&#x968E;&#x5C64;&#x69CB;&#x9020;&#x306B;&#x3064;&#x3044;&#x3066;&#x5341;&#x5206;&#x306B;&#x7406;&#x89E3;&#x3057;&#x3066;&#x304A;&#x304F;&#x3053;&#x3068;&#x304C;&#x5927;&#x5207;&#x3067;&#x3059;&#x3002;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x5185;&#x306E;&#x3059;&#x3079;&#x3066;&#x306E;&#x58C1;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x5358;&#x4F4D;&#x3067;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;&#x30DF;&#x30C3;&#x30C9;&#x30BB;&#x30F3;&#x30C1;&#x30E5;&#x30EA;&#x30FC; &#x30E2;&#x30C0;&#x30F3; &#x30B9;&#x30BF;&#x30A4;&#x30EB;&#x306E;&#x30ED;&#x30D3;&#x30FC;&#x306B;&#x914D;&#x7F6E;&#x3057;&#x305F;&#x30A4;&#x30FC;&#x30E0;&#x30BA; &#x30C1;&#x30A7;&#x30A2;&#x3092;&#x3059;&#x3079;&#x3066;&#x9078;&#x629E;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;&#x30D5;&#x30A1;&#x30DF;&#x30EA;&#x5358;&#x4F4D;&#x3067;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;&#x6F14;&#x7FD2;&#x306B;&#x5165;&#x308B;&#x524D;&#x306B;&#x3001;Revit &#x306E;&#x968E;&#x5C64;&#x306B;&#x3064;&#x3044;&#x3066;&#x7C21;&#x5358;&#x306B;&#x304A;&#x3055;&#x3089;&#x3044;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h4 id="revit-&#x306E;&#x968E;&#x5C64;">Revit &#x306E;&#x968E;&#x5C64;</h4>
+<p><img src="images/8-2/hierarchy.png" alt="UI"></p>
+<p>&#x751F;&#x7269;&#x5B66;&#x3067;&#x306F;&#x3042;&#x3089;&#x3086;&#x308B;&#x751F;&#x7269;&#x304C;&#x4F53;&#x7CFB;&#x7684;&#x306B;&#x5206;&#x985E;&#x3055;&#x308C;&#x3066;&#x304A;&#x308A;&#x3001;&#x305D;&#x306E;&#x5206;&#x985E;&#x6CD5;&#x306F;&#x3001;&#x4E0A;&#x4F4D;&#x304B;&#x3089;&#x4E0B;&#x4F4D;&#x306B;&#x304B;&#x3051;&#x3066;&#x3001;&#x754C;&#x3001;&#x9580;&#x3001;&#x7DB2;&#x3001;&#x76EE;&#x3001;&#x79D1;&#x3001;&#x5C5E;&#x3001;&#x7A2E;&#x3068;&#x3044;&#x3046;&#x968E;&#x5C64;&#x69CB;&#x9020;&#x304B;&#x3089;&#x6210;&#x308A;&#x7ACB;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;Revit &#x306B;&#x304A;&#x3051;&#x308B;&#x8981;&#x7D20;&#x306E;&#x5206;&#x985E;&#x6CD5;&#x306F;&#x3053;&#x308C;&#x306B;&#x4F3C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x57FA;&#x672C;&#x7684;&#x306B;&#x306F;&#x3001;Revit &#x306E;&#x968E;&#x5C64;&#x69CB;&#x9020;&#x306F;&#x3001;&#x4E0A;&#x4F4D;&#x304B;&#x3089;&#x4E0B;&#x4F4D;&#x306B;&#x304B;&#x3051;&#x3066;&#x3001;&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x3001;&#x30D5;&#x30A1;&#x30DF;&#x30EA;&#x3001;&#x30BF;&#x30A4;&#x30D7;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306B;&#x5206;&#x304B;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306F;(&#x30E6;&#x30CB;&#x30FC;&#x30AF;&#x306A; ID &#x3092;&#x6301;&#x3064;)&#x500B;&#x5225;&#x306E;&#x30E2;&#x30C7;&#x30EB;&#x8981;&#x7D20;&#x3067;&#x3059;&#x3002;&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x306F;&#x3001;&#x300C;&#x58C1;&#x300D;&#x3084;&#x300C;&#x5E8A;&#x300D;&#x306A;&#x3069;&#x306E;&#x4E00;&#x822C;&#x7684;&#x306A;&#x30B0;&#x30EB;&#x30FC;&#x30D7;&#x306E;&#x3053;&#x3068;&#x3067;&#x3059;&#x3002;&#x3053;&#x306E;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x69CB;&#x6210;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B; Revit &#x306E;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;1 &#x3064;&#x306E;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3057;&#x305F;&#x308A;&#x3001;&#x968E;&#x5C64;&#x69CB;&#x9020;&#x306E;&#x4E2D;&#x306E;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x30EC;&#x30D9;&#x30EB;&#x306B;&#x57FA;&#x3065;&#x3044;&#x3066;&#x540C;&#x7A2E;&#x306E;&#x8981;&#x7D20;&#x3092;&#x3059;&#x3079;&#x3066;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p><strong>&#x6CE8;: Revit &#x306B;&#x304A;&#x3051;&#x308B;&#x300C;&#x30BF;&#x30A4;&#x30D7;&#x300D;&#x306E;&#x5B9A;&#x7FA9;&#x306F;&#x3001;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x3067;&#x3044;&#x3046;&#x300C;&#x578B;&#x300D;&#x3068;&#x306F;&#x7570;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002; Revit &#x3067;&#x3044;&#x3046;&#x300C;&#x30BF;&#x30A4;&#x30D7;&#x300D;&#x306F;&#x3001;&#x3044;&#x308F;&#x3086;&#x308B;&#x300C;&#x30C7;&#x30FC;&#x30BF; &#x30BF;&#x30A4;&#x30D7;&#x300D;&#x3067;&#x306F;&#x306A;&#x304F;&#x3001;&#x5206;&#x985E;&#x968E;&#x5C64;&#x306B;&#x304A;&#x3051;&#x308B; 1 &#x3064;&#x306E;&#x679D;&#x3092;&#x6307;&#x3057;&#x307E;&#x3059;&#x3002;</strong></p>
+<h4 id="dynamo-&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;-&#x30CA;&#x30D3;&#x30B2;&#x30FC;&#x30B7;&#x30E7;&#x30F3;">Dynamo &#x306E;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9; &#x30CA;&#x30D3;&#x30B2;&#x30FC;&#x30B7;&#x30E7;&#x30F3;</h4>
+<p>&#x6B21;&#x306E; 3 &#x3064;&#x306E;&#x753B;&#x50CF;&#x3067;&#x306F;&#x3001;Revit &#x306E;&#x8981;&#x7D20;&#x3092; Dynamo &#x3067; &#x9078;&#x629E;&#x3059;&#x308B;&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;&#x4E3B;&#x3060;&#x3063;&#x305F;&#x65B9;&#x6CD5;&#x3092;&#x7D39;&#x4ECB;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x3089;&#x306E;&#x30C4;&#x30FC;&#x30EB;&#x3092;&#x7D44;&#x307F;&#x5408;&#x308F;&#x305B;&#x3066;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3068;&#x4FBF;&#x5229;&#x3067;&#x3059;&#x3002;&#x305D;&#x306E;&#x4E00;&#x90E8;&#x3092;&#x3053;&#x308C;&#x4EE5;&#x964D;&#x306E;&#x6F14;&#x7FD2;&#x3067;&#x5B9F;&#x969B;&#x306B;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p><img src="images/8-2/pointandclick.png" alt="UI"></p>
+<blockquote>
+<p><em>&#x30DD;&#x30A4;&#x30F3;&#x30C8; &#x30A2;&#x30F3;&#x30C9; &#x30AF;&#x30EA;&#x30C3;&#x30AF;</em>&#x306F;&#x3001;Revit &#x306E;&#x8981;&#x7D20;&#x3092;&#x76F4;&#x63A5;&#x9078;&#x629E;&#x3059;&#x308B;&#x6700;&#x3082;&#x7C21;&#x5358;&#x306A;&#x65B9;&#x6CD5;&#x3067;&#x3059;&#x3002; &#x30E2;&#x30C7;&#x30EB;&#x8981;&#x7D20;&#x5168;&#x4F53;&#x3067;&#x3042;&#x308C;&#x3001;&#x305D;&#x306E;&#x30C8;&#x30DD;&#x30ED;&#x30B8;&#x306E;&#x4E00;&#x90E8; (&#x305F;&#x3068;&#x3048;&#x3070; 1 &#x3064;&#x306E;&#x9762;&#x3084; 1 &#x3064;&#x306E;&#x30A8;&#x30C3;&#x30B8;)&#x3067;&#x3042;&#x308C;&#x3001;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x65B9;&#x6CD5;&#x3067;&#x306F; Revit &#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3078;&#x306E;&#x52D5;&#x7684;&#x306A;&#x30EA;&#x30F3;&#x30AF;&#x304C;&#x7DAD;&#x6301;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#x3001;Revit &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x5834;&#x6240;&#x3084;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x304C;&#x5909;&#x66F4;&#x3055;&#x308C;&#x308B;&#x3068;&#x3001;&#x30B0;&#x30E9;&#x30D5;&#x5185;&#x3067;&#x53C2;&#x7167;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B; Dynamo &#x306E;&#x8981;&#x7D20;&#x304C;&#x66F4;&#x65B0;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+</blockquote>
+<p><img src="images/8-2/dropdown.png" alt="UI"></p>
+<blockquote>
+<p><em>&#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x30C0;&#x30A6;&#x30F3; &#x30E1;&#x30CB;&#x30E5;&#x30FC;</em>&#x3067;&#x3001;Revit &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x5185;&#x306E;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x53EF;&#x80FD;&#x306A;&#x3059;&#x3079;&#x3066;&#x306E;&#x8981;&#x7D20;&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002; &#x30D3;&#x30E5;&#x30FC;&#x3067;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x306A;&#x3044; Revit &#x306E;&#x8981;&#x7D20;&#x3082;&#x542B;&#x3081;&#x3066;&#x3001;&#x3053;&#x308C;&#x3067;&#x53C2;&#x7167;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;Revit &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3084;&#x30D5;&#x30A1;&#x30DF;&#x30EA; &#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3067;&#x65E2;&#x5B58;&#x306E;&#x8981;&#x7D20;&#x3092;&#x30AF;&#x30A8;&#x30EA;&#x30FC;&#x3057;&#x305F;&#x308A;&#x3001;&#x65B0;&#x3057;&#x3044;&#x8981;&#x7D20;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;&#x3053;&#x306E;&#x30C4;&#x30FC;&#x30EB;&#x304C;&#x5F79;&#x306B;&#x7ACB;&#x3061;&#x307E;&#x3059;&#x3002;</p>
+</blockquote>
+<p><img src="images/8-2/allelements.png" alt="UI"></p>
+<blockquote>
+<p>Revit &#x306E;&#x8981;&#x7D20;&#x306E;&#x9078;&#x629E;&#x65B9;&#x6CD5;&#x3068;&#x3057;&#x3066;&#x306F;&#x3001;&#x4ED6;&#x306B; <em>Revit &#x306E;&#x968E;&#x5C64;&#x69CB;&#x9020;</em>&#x304B;&#x3089;&#x7279;&#x5B9A;&#x306E;&#x968E;&#x5C64;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x65B9;&#x6CD5;&#x3082;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002; &#x3053;&#x306E;&#x65B9;&#x6CD5;&#x306F;&#x3001;&#x8A2D;&#x8A08;&#x56F3;&#x66F8;&#x4F5C;&#x6210;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x306E;&#x751F;&#x6210;&#x3068;&#x30AB;&#x30B9;&#x30BF;&#x30DE;&#x30A4;&#x30BA;&#x306A;&#x3069;&#x306E;&#x305F;&#x3081;&#x306B;&#x6E96;&#x5099;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x5927;&#x898F;&#x6A21;&#x306A;&#x30C7;&#x30FC;&#x30BF;&#x914D;&#x5217;&#x3092;&#x30AB;&#x30B9;&#x30BF;&#x30DE;&#x30A4;&#x30BA;&#x3059;&#x308B;&#x306E;&#x306B;&#x3068;&#x3066;&#x3082;&#x5F79;&#x7ACB;&#x3061;&#x307E;&#x3059;&#x3002;</p>
+</blockquote>
+<p>&#x4E0A;&#x8A18;&#x306E; 3 &#x70B9;&#x306E;&#x753B;&#x50CF;&#x306B;&#x7559;&#x610F;&#x3057;&#x3066;&#x3001;&#x3053;&#x306E;&#x7AE0;&#x306E;&#x7D9A;&#x304D;&#x3067;&#x8AAC;&#x660E;&#x3059;&#x308B;&#x30D1;&#x30E9;&#x30E1;&#x30C8;&#x30EA;&#x30C3;&#x30AF; &#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x306E;&#x4F5C;&#x6210;&#x306B;&#x5099;&#x3048;&#x3066;&#x3001;&#x57FA;&#x672C;&#x7684;&#x306A; Revit &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304B;&#x3089;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x6F14;&#x7FD2;&#x3092;&#x958B;&#x59CB;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h3 id="&#x6F14;&#x7FD2;">&#x6F14;&#x7FD2;</h3>
+<blockquote>
+<p>&#x3053;&#x306E;&#x6F14;&#x7FD2;&#x306B;&#x4ED8;&#x5C5E;&#x3057;&#x3066;&#x3044;&#x308B;&#x30B5;&#x30F3;&#x30D7;&#x30EB; &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;(&#x53F3;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;[&#x540D;&#x524D;&#x3092;&#x4ED8;&#x3051;&#x3066;&#x30EA;&#x30F3;&#x30AF;&#x5148;&#x3092;&#x4FDD;&#x5B58;]&#x3092;&#x9078;&#x629E;)&#x3002;&#x3059;&#x3079;&#x3066;&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB; &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x4E00;&#x89A7;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;&#x4ED8;&#x9332;&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<ol>
+<li><a href="datasets/8-2/Selecting.dyn">Selecting.dyn</a></li>
+<li><a href="datasets/8-2/ARCH-Selecting-BaseFile.rvt">ARCH-Selecing-BaseFile.rvt</a></li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/12.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<p>&#x3053;&#x306E; Revit &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x306B;&#x306F;&#x3001;3 &#x3064;&#x306E;&#x8981;&#x7D20;&#x30BF;&#x30A4;&#x30D7;&#x304B;&#x3089;&#x6210;&#x308B; 1 &#x3064;&#x306E;&#x5358;&#x7D14;&#x306A;&#x5EFA;&#x7269;&#x30E2;&#x30C7;&#x30EB;&#x304C;&#x53CE;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x305D;&#x308C;&#x3067;&#x306F;&#x3001;&#x3053;&#x306E;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x898B;&#x672C;&#x3068;&#x3057;&#x3066;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;&#x6B21;&#x306B;&#x6319;&#x3052;&#x308B; Revit &#x306E;&#x968E;&#x5C64;&#x69CB;&#x9020;&#x306E;&#x306A;&#x304B;&#x3067; Revit &#x306E;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<ol>
+<li>&#x5EFA;&#x7269;&#x306E;&#x30DE;&#x30B9;(&#x57FA;&#x672C;&#x5F62;&#x72B6;)</li>
+<li>&#x30C8;&#x30E9;&#x30B9;(&#x30A2;&#x30C0;&#x30D7;&#x30C6;&#x30A3;&#x30D6; &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;)</li>
+<li>&#x6881;(&#x69CB;&#x9020;&#x30D5;&#x30EC;&#x30FC;&#x30E0;)</li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/11.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<p>Revit &#x306E;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8; &#x30D3;&#x30E5;&#x30FC;&#x306B;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x8981;&#x7D20;&#x304B;&#x3089;&#x3001;&#x3069;&#x306E;&#x3088;&#x3046;&#x306A;&#x7D50;&#x8AD6;&#x3092;&#x5C0E;&#x304D;&#x51FA;&#x3059;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x304B;&#x3002;&#x307E;&#x305F;&#x3001;&#x9069;&#x5207;&#x306A;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;&#x968E;&#x5C64;&#x3092;&#x3044;&#x304F;&#x3064;&#x964D;&#x308A;&#x3066;&#x3044;&#x304F;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308B;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;&#x3002;&#x8A00;&#x3046;&#x307E;&#x3067;&#x3082;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x304C;&#x3001;&#x5927;&#x898F;&#x6A21;&#x306A;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3067;&#x4F5C;&#x696D;&#x3059;&#x308B;&#x969B;&#x306B;&#x306F;&#x3053;&#x306E;&#x554F;&#x984C;&#x306F;&#x3082;&#x3063;&#x3068;&#x8907;&#x96D1;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x4F7F;&#x7528;&#x3067;&#x304D;&#x308B;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x306F;&#x305F;&#x304F;&#x3055;&#x3093;&#x3042;&#x308A;&#x3001;&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x5225;&#x3001;&#x30EC;&#x30D9;&#x30EB;&#x5225;&#x3001;&#x30D5;&#x30A1;&#x30DF;&#x30EA;&#x5225;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x5225;&#x306B;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<ol>
+<li>&#x3053;&#x3053;&#x3067;&#x306F;&#x57FA;&#x672C;&#x7684;&#x306A;&#x69CB;&#x9020;&#x3092;&#x6271;&#x3063;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067;&#x3001;Categories &#x30C9;&#x30ED;&#x30C3;&#x30D7;&#x30C0;&#x30A6;&#x30F3; &#x30CE;&#x30FC;&#x30C9;&#x3067;[<em>Mass</em>]&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x3001;&#x5EFA;&#x7269;&#x306E;&#x30DE;&#x30B9;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002; &#x3053;&#x308C;&#x306F;&#x3001;[Revit] &gt; [&#x9078;&#x629E;]&#x30BF;&#x30D6;&#x306B;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</li>
+<li>[Mass]&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x3067;&#x306F;&#x3001;&#x5358;&#x7D14;&#x306B;&#x30AB;&#x30C6;&#x30B4;&#x30EA;&#x81EA;&#x4F53;&#x304C;&#x51FA;&#x529B;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#x3001;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x5FC5;&#x8981;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;<em>All Elements of Category</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>&#x3044;&#x307E;&#x9078;&#x629E;&#x3057;&#x305F;&#x3082;&#x306E;&#x304C; BldgMass &#x3067;&#x3042;&#x308B;&#x3053;&#x3068;&#x304C; <em>Watch</em> &#x30CE;&#x30FC;&#x30C9;&#x306B;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</li>
+</ol>
+</blockquote>
+<p>&#x3053;&#x306E;&#x6642;&#x70B9;&#x3067;&#x306F;&#x3001;Dynamo &#x306B;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x3053;&#x3068;&#x306B;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;Revit &#x306E;&#x8981;&#x7D20;&#x304C;&#x65E2;&#x306B;&#x9078;&#x629E;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x304C;&#x3001;&#x307E;&#x3060; Dynamo &#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x306B;&#x5909;&#x63DB;&#x3055;&#x308C;&#x3066;&#x306F;&#x3044;&#x307E;&#x305B;&#x3093;&#x3002;&#x3053;&#x306E;&#x533A;&#x5225;&#x306F;&#x91CD;&#x8981;&#x3067;&#x3059;&#x3002;&#x591A;&#x6570;&#x306E;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x3059;&#x3079;&#x3066;&#x306E;&#x52D5;&#x4F5C;&#x304C;&#x975E;&#x5E38;&#x306B;&#x9045;&#x304F;&#x306A;&#x308B;&#x304A;&#x305D;&#x308C;&#x304C;&#x3042;&#x308B;&#x305F;&#x3081;&#x3001;&#x3059;&#x3079;&#x3066;&#x306E;&#x8981;&#x7D20;&#x3092; Dynamo &#x3067;&#x30D7;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x3059;&#x308B;&#x3053;&#x3068;&#x306F;&#x597D;&#x307E;&#x3057;&#x304F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;Dynamo &#x306F;&#x3001;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x64CD;&#x4F5C;&#x306E;&#x5B9F;&#x884C;&#x3092;&#x5FC5;&#x8981;&#x3068;&#x305B;&#x305A;&#x306B; Revit &#x306E;&#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x7BA1;&#x7406;&#x3059;&#x308B;&#x3053;&#x3068;&#x306E;&#x3067;&#x304D;&#x308B;&#x30C4;&#x30FC;&#x30EB;&#x3067;&#x3059;&#x3002;&#x305D;&#x306E;&#x3053;&#x3068;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;&#x3053;&#x306E;&#x7AE0;&#x306E;&#x6B21;&#x306E;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x3067;&#x8AAC;&#x660E;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x3053;&#x3053;&#x3067;&#x306F;&#x5358;&#x7D14;&#x306A;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x6F14;&#x7FD2;&#x3092;&#x884C;&#x3063;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067;&#x3001;Dynamo &#x306E;&#x30D7;&#x30EC;&#x30D3;&#x30E5;&#x30FC;&#x3067;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x8868;&#x793A;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3059;&#x3002;&#x4E0A;&#x8A18;&#x306E; Watch &#x30CE;&#x30FC;&#x30C9;&#x4E2D;&#x306E;&#x300C;BldgMass&#x300D;&#x306E;&#x96A3;&#x306B;&#x3001;&#x7DD1;&#x306E;&#x80CC;&#x666F;&#x8272;&#x4ED8;&#x304D;&#x3067;&#x6570;&#x5024;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;&#x3053;&#x308C;&#x306F;&#x8981;&#x7D20;&#x306E; ID &#x3092;&#x8868;&#x3057;&#x3066;&#x304A;&#x308A;&#x3001;&#x3053;&#x306E; ID &#x304B;&#x3089;&#x30E6;&#x30FC;&#x30B6;&#x304C; Dynamo &#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3067;&#x306F;&#x306A;&#x304F; Revit &#x8981;&#x7D20;&#x3092;&#x6271;&#x3063;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x308F;&#x304B;&#x308A;&#x307E;&#x3059;&#x3002;&#x6B21;&#x306E;&#x624B;&#x9806;&#x3067;&#x3001;&#x3053;&#x306E; Revit &#x8981;&#x7D20;&#x3092; Dynamo &#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x306B;&#x5909;&#x63DB;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<p><img src="images/8-2/Exercise/10.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<ol>
+<li><em>Element.Faces</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;Revit &#x306E;&#x30DE;&#x30B9;&#x306E;&#x5404;&#x9762;&#x3092;&#x8868;&#x3059;&#x30B5;&#x30FC;&#x30D5;&#x30A7;&#x30B9;&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3059;&#x3002; &#x3053;&#x308C;&#x3067;&#x3001;Dynamo &#x306E;&#x30D3;&#x30E5;&#x30FC;&#x30DD;&#x30FC;&#x30C8;&#x3067;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x8868;&#x793A;&#x3057;&#x3001;&#x305D;&#x306E;&#x9762;&#x3092;&#x30D1;&#x30E9;&#x30E1;&#x30C8;&#x30EA;&#x30C3;&#x30AF;&#x64CD;&#x4F5C;&#x306E;&#x969B;&#x306B;&#x53C2;&#x7167;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3057;&#x305F;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/09.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<p>&#x5225;&#x306E;&#x65B9;&#x6CD5;&#x3092;&#x7D39;&#x4ECB;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x5834;&#x5408;&#x306F;&#x3001;(<em>All Elements of Category</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;) Revit &#x306E;&#x968E;&#x5C64;&#x69CB;&#x9020;&#x304B;&#x3089;&#x9078;&#x629E;&#x3092;&#x884C;&#x3044;&#x3001;Revit &#x306E;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x660E;&#x793A;&#x7684;&#x306B;&#x9078;&#x629E;&#x3059;&#x308B;&#x3068;&#x3044;&#x3046;&#x65B9;&#x6CD5;&#x3092;&#x63A1;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</p>
+<ol>
+<li><em>Select Model Element</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;<a href="&#x307E;&#x305F;&#x306F;[*&#x5909;&#x66F4;*]"><em>&#x9078;&#x629E;</em></a>&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002; Revit &#x306E;&#x30D3;&#x30E5;&#x30FC;&#x30DD;&#x30FC;&#x30C8;&#x3067;&#x3001;&#x76EE;&#x7684;&#x306E;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x5834;&#x5408;&#x306F;&#x3001;&#x5EFA;&#x7269;&#x306E;&#x30DE;&#x30B9;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li><em>Element.Faces</em> &#x30CE;&#x30FC;&#x30C9;&#x3067;&#x306F;&#x306A;&#x304F; <em>Element.Geometry</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3068;&#x3001;&#x30DE;&#x30B9;&#x5168;&#x4F53;&#x3092; 1 &#x3064;&#x306E;&#x30BD;&#x30EA;&#x30C3;&#x30C9; &#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3068;&#x3057;&#x3066;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3053;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x3067;&#x306F;&#x3001;&#x305D;&#x306E;&#x30DE;&#x30B9;&#x306E;&#x5185;&#x90E8;&#x306B;&#x542B;&#x307E;&#x308C;&#x308B;&#x3059;&#x3079;&#x3066;&#x306E;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x304C;&#x9078;&#x629E;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</li>
+<li><em>Geometry.Explode</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3068;&#x3001;&#x3084;&#x306F;&#x308A;&#x30B5;&#x30FC;&#x30D5;&#x30A7;&#x30B9;&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3053;&#x308C;&#x3089; 2 &#x3064;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x306F;&#x3001;<em>Element.Faces</em> &#x3068;&#x540C;&#x69D8;&#x306E;&#x6A5F;&#x80FD;&#x306B;&#x52A0;&#x3048;&#x3066;&#x3001;Revit &#x8981;&#x7D20;&#x306E;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x6398;&#x308A;&#x4E0B;&#x3052;&#x308B;&#x306E;&#x306B;&#x5F79;&#x7ACB;&#x3064;&#x30AA;&#x30D7;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x63D0;&#x4F9B;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/08.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<ol>
+<li>&#x30EA;&#x30B9;&#x30C8;&#x306E;&#x57FA;&#x672C;&#x7684;&#x64CD;&#x4F5C;&#x3092;&#x3044;&#x304F;&#x3064;&#x304B;&#x884C;&#x3046;&#x3053;&#x3068;&#x3067;&#x3001;&#x5BFE;&#x8C61;&#x306E;&#x9762;&#x306E;&#x30AF;&#x30A8;&#x30EA;&#x30FC;&#x3092;&#x5B9F;&#x884C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
+<li>&#x307E;&#x305A; <em>List.Count</em> &#x30CE;&#x30FC;&#x30C9;&#x3067;&#x3001;&#x4F5C;&#x696D;&#x4E2D;&#x306E;&#x30DE;&#x30B9;&#x306B; 23 &#x306E;&#x30B5;&#x30FC;&#x30D5;&#x30A7;&#x30B9;&#x304C;&#x542B;&#x307E;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>&#x3053;&#x306E;&#x6570;&#x5024;&#x3092;&#x57FA;&#x6E96;&#x3068;&#x3057;&#x3066;&#x3001;<em>Integer Slider</em> &#x30CE;&#x30FC;&#x30C9;&#x306E;&#x6700;&#x5927;&#x5024;&#x3092;&#x300C;<em>22</em>&#x300D;&#x306B;&#x5909;&#x66F4;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li><em>List.GetItemAtIndex</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;&#x30EA;&#x30B9;&#x30C8;&#x3068;<em>index</em> &#x306B;&#x4F7F;&#x7528;&#x3059;&#x308B; <em>Integer Slider</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x5165;&#x529B;&#x3057;&#x307E;&#x3059;&#x3002; &#x9078;&#x629E;&#x3057;&#x305F;&#x30B9;&#x30E9;&#x30A4;&#x30C0;&#x3092; <em>index 9</em> &#x307E;&#x3067;&#x52D5;&#x304B;&#x3057;&#x3066;&#x3001;&#x30C8;&#x30E9;&#x30B9;&#x3092;&#x30DB;&#x30B9;&#x30C8;&#x3057;&#x3066;&#x3044;&#x308B;&#x30E1;&#x30A4;&#x30F3; &#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x304C;&#x9078;&#x629E;&#x8868;&#x793A;&#x3055;&#x308C;&#x305F;&#x6BB5;&#x968E;&#x3067;&#x505C;&#x6B62;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/07.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<ol>
+<li>&#x524D;&#x306E;&#x624B;&#x9806;&#x306F;&#x5C11;&#x3057;&#x3070;&#x304B;&#x308A;&#x9762;&#x5012;&#x3067;&#x3057;&#x305F;&#x3002;<em>Select Face</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3068;&#x3001;&#x540C;&#x3058;&#x3053;&#x3068;&#x3092;&#x3082;&#x3063;&#x3068;&#x3059;&#x3070;&#x3084;&#x304F;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x3053;&#x308C;&#x306B;&#x3088;&#x308A;&#x3001;Revit &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x5185;&#x3067;&#x306F;&#x305D;&#x308C;&#x81EA;&#x4F53;&#x3067; 1 &#x3064;&#x306E;&#x8981;&#x7D20;&#x3068;&#x3057;&#x3066;&#x6271;&#x308F;&#x308C;&#x306A;&#x3044;&#x9762;&#x3082;&#x9078;&#x629E;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;<em>Select Model Element</em> &#x3067;&#x3082;&#x540C;&#x69D8;&#x306E;&#x64CD;&#x4F5C;&#x3092;&#x884C;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x305F;&#x3060;&#x3057;&#x3001;&#x3053;&#x3061;&#x3089;&#x3067;&#x306F;&#x8981;&#x7D20;&#x5168;&#x4F53;&#x3067;&#x306F;&#x306A;&#x304F;&#x30B5;&#x30FC;&#x30D5;&#x30A7;&#x30B9;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/selectFaces.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<p>&#x5EFA;&#x7269;&#x306E;&#x30E1;&#x30A4;&#x30F3; &#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x306E;&#x58C1;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<em>Select Faces</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3053;&#x308C;&#x3092;&#x884C;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; [&#x9078;&#x629E;]&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;Revit &#x306E; 4 &#x3064;&#x306E;&#x30E1;&#x30A4;&#x30F3; &#x30D5;&#x30A1;&#x30B5;&#x30FC;&#x30C9;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+</blockquote>
+<p><img src="images/8-2/Exercise/finishButton-01.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<ol>
+<li>4 &#x3064;&#x306E;&#x58C1;&#x9762;&#x3092;&#x9078;&#x629E;&#x3057;&#x305F;&#x5F8C;&#x3067;&#x3001;&#x5FC5;&#x305A; Revit &#x3067;[<em>&#x7D42;&#x4E86;</em>]&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/06.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<ol>
+<li>&#x3053;&#x308C;&#x3067;&#x3001;&#x9762;&#x304C; Dynamo &#x306B;&#x30B5;&#x30FC;&#x30D5;&#x30A7;&#x30B9;&#x3068;&#x3057;&#x3066;&#x8AAD;&#x307F;&#x8FBC;&#x307E;&#x308C;&#x307E;&#x3057;&#x305F;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/05.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<ol>
+<li>&#x3055;&#x3066;&#x3001;&#x30A2;&#x30C8;&#x30EA;&#x30A6;&#x30E0;&#x306E;&#x4E0A;&#x306E;&#x6881;&#x3092;&#x898B;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<em>Select Model Element</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;&#x6881;&#x306E;&#x3046;&#x3061; 1 &#x3064;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>&#x6881;&#x306E;&#x8981;&#x7D20;&#x3092; <em>Element.Geometry</em> &#x30CE;&#x30FC;&#x30C9;&#x306B;&#x63A5;&#x7D9A;&#x3059;&#x308B;&#x3068;&#x3001;Dynamo &#x306E;&#x30D3;&#x30E5;&#x30FC;&#x30DD;&#x30FC;&#x30C8;&#x3067;&#x6881;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</li>
+<li><em>Watch3D</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x62E1;&#x5927;&#x8868;&#x793A;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;(Watch 3D &#x3067;&#x6881;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x53F3;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x304B;&#x3089;[&#x5168;&#x4F53;&#x8868;&#x793A;]&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;)&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/04.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<p>Revit &#x3068; Dynamo &#x306E;&#x4F7F;&#x7528;&#x4E2D;&#x306B;&#x3057;&#x3070;&#x3057;&#x3070;&#x751F;&#x3058;&#x308B;&#x7591;&#x554F;&#x3068;&#x3057;&#x3066;&#x3001;1 &#x3064;&#x306E;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3057;&#x3066;&#x3001;&#x305D;&#x308C;&#x306B;&#x985E;&#x4F3C;&#x3059;&#x308B;&#x3059;&#x3079;&#x3066;&#x306E;&#x8981;&#x7D20;&#x3092;&#x53D6;&#x5F97;&#x3059;&#x308B;&#x306B;&#x306F;&#x3069;&#x3046;&#x3059;&#x308C;&#x3070;&#x3044;&#x3044;&#x306E;&#x304B;&#x3001;&#x3068;&#x3044;&#x3046;&#x3082;&#x306E;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;&#x9078;&#x629E;&#x3057;&#x305F; Revit &#x8981;&#x7D20;&#x306B;&#x306F;&#x305D;&#x306E;&#x8981;&#x7D20;&#x306E;&#x968E;&#x5C64;&#x306B;&#x95A2;&#x3059;&#x308B;&#x60C5;&#x5831;&#x304C;&#x3059;&#x3079;&#x3066;&#x542B;&#x307E;&#x308C;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067;&#x3001;&#x305D;&#x306E;&#x30D5;&#x30A1;&#x30DF;&#x30EA; &#x30BF;&#x30A4;&#x30D7;&#x3092;&#x30AF;&#x30A8;&#x30EA;&#x30FC;&#x3057;&#x3066;&#x3001;&#x540C;&#x3058;&#x30BF;&#x30A4;&#x30D7;&#x306E;&#x8981;&#x7D20;&#x3092;&#x3059;&#x3079;&#x3066;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<ol>
+<li>&#x6881;&#x306E;&#x8981;&#x7D20;&#x3092; <em>FamilyInstance.Symbol</em> &#x30CE;&#x30FC;&#x30C9;&#x306B;&#x63A5;&#x7D9A;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li><em>Watch</em> &#x30CE;&#x30FC;&#x30C9;&#x3067;&#x3001;&#x51FA;&#x529B;&#x304C; Revit &#x8981;&#x7D20;&#x3067;&#x306F;&#x306A;&#x304F;&#x30D5;&#x30A1;&#x30DF;&#x30EA;&#x8A18;&#x53F7;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x304C;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
+<li><em>FamilyInstance.Symbol</em> &#x306F;&#x5358;&#x7D14;&#x306A;&#x30AF;&#x30A8;&#x30EA;&#x30FC;&#x3067;&#x3059;&#x304B;&#x3089;&#x3001;&#x30B3;&#x30FC;&#x30C9; &#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x5185;&#x3067;&#x7C21;&#x5358;&#x306B; <code>x.Symbol</code> &#x3068;&#x5165;&#x529B;&#x3057;&#x3066;&#x540C;&#x69D8;&#x306E;&#x7D50;&#x679C;&#x3092;&#x5F97;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
+</ol>
+</blockquote>
+<p><strong>&#x6CE8; - &#x30D5;&#x30A1;&#x30DF;&#x30EA;&#x8A18;&#x53F7;&#x306F; Revit API &#x3067;&#x30D5;&#x30A1;&#x30DF;&#x30EA; &#x30BF;&#x30A4;&#x30D7;&#x3092;&#x6307;&#x3059;&#x7528;&#x8A9E;&#x3067;&#x3059;&#x3002; &#x3053;&#x306E;&#x7528;&#x8A9E;&#x306F;&#x6DF7;&#x4E71;&#x3092;&#x5F15;&#x304D;&#x8D77;&#x3053;&#x3057;&#x304B;&#x306D;&#x306A;&#x3044;&#x305F;&#x3081;&#x3001;&#x4ECA;&#x5F8C;&#x306E;&#x30EA;&#x30EA;&#x30FC;&#x30B9;&#x3067;&#x5909;&#x66F4;&#x3055;&#x308C;&#x308B;&#x53EF;&#x80FD;&#x6027;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</strong></p>
+<p><img src="images/8-2/Exercise/03.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<ol>
+<li>&#x6B8B;&#x308A;&#x306E;&#x6881;&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x306B;&#x306F;&#x3001;<em>All Elements of Family Type</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+<li>Watch &#x30CE;&#x30FC;&#x30C9;&#x3067;&#x3001;5 &#x3064;&#x306E; Revit &#x8981;&#x7D20;&#x304C;&#x9078;&#x629E;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/8-2/Exercise/02.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<ol>
+<li>&#x3053;&#x308C;&#x3089; 5 &#x3064;&#x306E;&#x8981;&#x7D20;&#x3059;&#x3079;&#x3066;&#x3092; Dynamo &#x306E;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</li>
+</ol>
+</blockquote>
+<p>&#x3057;&#x304B;&#x3057;&#x3001;500 &#x672C;&#x306E;&#x6881;&#x3092;&#x5909;&#x63DB;&#x3057;&#x306A;&#x3051;&#x308C;&#x3070;&#x306A;&#x3089;&#x306A;&#x3044;&#x3068;&#x3057;&#x305F;&#x3089;&#x3001;&#x3069;&#x3046;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;&#x3002;&#x3059;&#x3079;&#x3066;&#x306E;&#x8981;&#x7D20;&#x3092; Dynamo &#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;&#x306B;&#x306F;&#x305F;&#x3044;&#x3078;&#x3093;&#x306A;&#x6642;&#x9593;&#x304C;&#x304B;&#x304B;&#x308B;&#x3067;&#x3057;&#x3087;&#x3046;&#x3002;Dynamo &#x3067;&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x8A08;&#x7B97;&#x306B;&#x81A8;&#x5927;&#x306A;&#x6642;&#x9593;&#x304C;&#x304B;&#x304B;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x300C;&#x30D5;&#x30EA;&#x30FC;&#x30BA;&#x300D;&#x3059;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;&#x30B0;&#x30E9;&#x30D5;&#x306E;&#x958B;&#x767A;&#x4E2D;&#x306B; Revit &#x95A2;&#x9023;&#x64CD;&#x4F5C;&#x306E;&#x5B9F;&#x884C;&#x3092;&#x505C;&#x6B62;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x30D5;&#x30EA;&#x30FC;&#x30BA;&#x3059;&#x308B;&#x64CD;&#x4F5C;&#x306E;&#x8A73;&#x7D30;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;<a href="../05_Geometry-for-Computational-Design/5-6_solids.html#freezing">&#x300C;&#x30BD;&#x30EA;&#x30C3;&#x30C9;&#x300D;&#x306E;&#x7AE0;&#x306E;&#x300C;&#x30D5;&#x30EA;&#x30FC;&#x30BA;&#x300D;&#x30BB;&#x30AF;&#x30B7;&#x30E7;&#x30F3;</a>&#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>&#x3044;&#x305A;&#x308C;&#x306B;&#x305B;&#x3088;&#x3001;500 &#x672C;&#x306E;&#x6881;&#x3092;&#x8AAD;&#x307F;&#x8FBC;&#x307E;&#x306A;&#x3051;&#x308C;&#x3070;&#x306A;&#x3089;&#x306A;&#x3044;&#x5834;&#x5408;&#x3001;&#x76EE;&#x7684;&#x306E;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x64CD;&#x4F5C;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x306E;&#x306B;&#x3059;&#x3079;&#x3066;&#x306E;&#x30B5;&#x30FC;&#x30D5;&#x30A7;&#x30B9;&#x306F;&#x5FC5;&#x8981;&#x3042;&#x308B;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;&#x3002;&#x305D;&#x308C;&#x3068;&#x3082;&#x3001;&#x6881;&#x304B;&#x3089;&#x57FA;&#x672C;&#x60C5;&#x5831;&#x3092;&#x62BD;&#x51FA;&#x3057;&#x3066;&#x3001;&#x57FA;&#x672C;&#x7684;&#x306A;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x751F;&#x6210;&#x30BF;&#x30B9;&#x30AF;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308C;&#x3070;&#x3088;&#x3044;&#x3067;&#x3057;&#x3087;&#x3046;&#x304B;&#x3002;&#x3053;&#x306E;&#x554F;&#x3044;&#x3092;&#x5FF5;&#x982D;&#x306B;&#x7F6E;&#x304D;&#x306A;&#x304C;&#x3089;&#x3001;&#x3053;&#x306E;&#x7AE0;&#x3067;&#x306E;&#x6F14;&#x7FD2;&#x3092;&#x9032;&#x3081;&#x3066;&#x3044;&#x304F;&#x3053;&#x3068;&#x306B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;&#x305F;&#x3068;&#x3048;&#x3070;&#x3001;&#x30C8;&#x30E9;&#x30B9; &#x30B7;&#x30B9;&#x30C6;&#x30E0;&#x306E;&#x3053;&#x3068;&#x3092;&#x8003;&#x3048;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p><img src="images/8-2/Exercise/01.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<p>&#x540C;&#x3058;&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x30B0;&#x30E9;&#x30D5;&#x3092;&#x4F7F;&#x7528;&#x3057;&#x3066;&#x3001;&#x6881;&#x8981;&#x7D20;&#x3067;&#x306F;&#x306A;&#x304F;&#x30C8;&#x30E9;&#x30B9;&#x8981;&#x7D20;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x64CD;&#x4F5C;&#x3092;&#x884C;&#x3046;&#x524D;&#x306B;&#x3001;&#x3053;&#x3053;&#x307E;&#x3067;&#x306E;&#x624B;&#x9806;&#x3067;&#x4F7F;&#x7528;&#x3057;&#x305F; Element.Geometry &#x3092;&#x524A;&#x9664;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+</blockquote>
+<p><img src="images/8-2/Exercise/00.png" alt="&#x6F14;&#x7FD2;"></p>
+<blockquote>
+<ol>
+<li><em>Watch</em> &#x30CE;&#x30FC;&#x30C9;&#x3067;&#x3001;Revit &#x304B;&#x3089;&#x9078;&#x629E;&#x3055;&#x308C;&#x305F;&#x30A2;&#x30C0;&#x30D7;&#x30C6;&#x30A3;&#x30D6; &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002; &#x57FA;&#x672C;&#x60C5;&#x5831;&#x3092;&#x62BD;&#x51FA;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;&#x307E;&#x305A;&#x306F;&#x30A2;&#x30C0;&#x30D7;&#x30C6;&#x30A3;&#x30D6;&#x70B9;&#x304B;&#x3089;&#x3068;&#x308A;&#x304B;&#x304B;&#x308A;&#x307E;&#x3059;&#x3002;</li>
+<li><em>All Elements of Family Type</em> &#x30CE;&#x30FC;&#x30C9;&#x3092; <em>AdaptiveComponent.Location</em> &#x30CE;&#x30FC;&#x30C9;&#x306B;&#x63A5;&#x7D9A;&#x3057;&#x307E;&#x3059;&#x3002; &#x3053;&#x308C;&#x306B;&#x3088;&#x3063;&#x3066;&#x30EA;&#x30B9;&#x30C8;&#x306E;&#x30EA;&#x30B9;&#x30C8;&#x304C; 1 &#x3064;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x5404;&#x30EA;&#x30B9;&#x30C8;&#x306F;&#x3001;&#x30A2;&#x30C0;&#x30D7;&#x30C6;&#x30A3;&#x30D6;&#x70B9;&#x306E;&#x5834;&#x6240;&#x3092;&#x8868;&#x3059; 3 &#x3064;&#x306E;&#x70B9;&#x304B;&#x3089;&#x69CB;&#x6210;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</li>
+<li><em>Polygon.ByPoints</em> &#x30CE;&#x30FC;&#x30C9;&#x3092;&#x63A5;&#x7D9A;&#x3059;&#x308B;&#x3068;&#x3001;&#x30DD;&#x30EA;&#x30AB;&#x30FC;&#x30D6;&#x304C;&#x8FD4;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002; &#x3053;&#x308C;&#x306F; Dynamo &#x306E;&#x30D3;&#x30E5;&#x30FC;&#x30DD;&#x30FC;&#x30C8;&#x3067;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x65B9;&#x6CD5;&#x306B;&#x3088;&#x308A;&#x3001;1 &#x3064;&#x306E;&#x8981;&#x7D20;&#x306E;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x8868;&#x793A;&#x3057;&#x3001;&#x6B8B;&#x308A;&#x306E;&#x8981;&#x7D20;&#x914D;&#x5217;&#x306E;&#x30B8;&#x30AA;&#x30E1;&#x30C8;&#x30EA;&#x3092;&#x62BD;&#x51FA;&#x3057;&#x307E;&#x3057;&#x305F;(&#x306A;&#x304A;&#x3001;&#x3053;&#x3053;&#x3067;&#x6271;&#x3063;&#x305F;&#x4F8B;&#x3088;&#x308A;&#x3082;&#x591A;&#x304F;&#x306E;&#x8981;&#x7D20;&#x3092;&#x62BD;&#x51FA;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x53EF;&#x80FD;&#x3067;&#x3059;)&#x3002;</li>
+</ol>
+</blockquote>
+<p><strong>&#x30D2;&#x30F3;&#x30C8;: Dynamo &#x3067;&#x3001;Revit &#x8981;&#x7D20;&#x306E;&#x7DD1;&#x306E;&#x80CC;&#x666F;&#x8272;&#x4ED8;&#x304D;&#x3067;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x6570;&#x5B57;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x3001;Revit &#x306E;&#x30D3;&#x30E5;&#x30FC;&#x30DD;&#x30FC;&#x30C8;&#x3067;&#x305D;&#x306E;&#x8981;&#x7D20;&#x304C;&#x62E1;&#x5927;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</strong></p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../08_Dynamo-for-Revit/8-1_The-Revit-Connection.html" class="navigation navigation-prev " aria-label="Previous page: Revit との関係"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../08_Dynamo-for-Revit/8-3_Editing.html" class="navigation navigation-next " aria-label="Next page: 編集"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/favicon.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"ga":{"token":"UA-52186525-3","configuration":"auto"},"search_languages":{"lang":"jp"},"dynamo":{"customLinks":[{"label":"Download","icon":"fa fa-file-pdf-o fa-lg","url":"Appendix/DynamoPrimer-Print.pdf"}],"languages":[{"label":"English","code":"en","url":"http://dynamoprimer.com"},{"label":"Deutsch","code":"de","url":"http://dynamoprimer.com/de"}],"currentLanguage":{"code":"ja","url":"http://dynamoprimer.com/ja","switchLangLabel":"言語"},"favicon":"/images/icons/favicon.ico","facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"search-languages":{},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <script src="../gitbook/plugins/gitbook-plugin-search-languages/lunr.stemmer.support.js"></script>
+<script src="../gitbook/plugins/gitbook-plugin-search-languages/lunr.jp.js"></script>
+<script src="../gitbook/plugins/gitbook-plugin-search-languages/search.lang.js"></script>
+    </body>
+    
+</html>
