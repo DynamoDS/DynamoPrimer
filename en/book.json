@@ -29,6 +29,16 @@
 		"label": "日本語",
 		"code": "ja",
 	    "url": "http://dynamoprimer.com/ja"
+         },
+         {
+		"label": "",
+		"code": "",
+	    "url": ""
+         },
+         {
+		"label": "",
+		"code": "",
+	    "url": ""
          }
       ],
       "currentLanguage":{
