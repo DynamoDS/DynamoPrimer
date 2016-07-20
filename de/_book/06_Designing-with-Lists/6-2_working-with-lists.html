@@ -1,0 +1,1347 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Arbeiten mit Listen | Der Dynamo Primer</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../06_Designing-with-Lists/6-3_lists-of-lists.html" />
+    
+    
+    <link rel="prev" href="../06_Designing-with-Lists/6-1_whats-a-list.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="6.2"
+        data-chapter-title="Arbeiten mit Listen"
+        data-filepath="06_Designing-with-Lists/6-2_working-with-lists.md"
+        data-basepath=".."
+        data-revision="Tue Jul 19 2016 22:08:59 GMT-0400 (Eastern Daylight Time)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Der Dynamo Primer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_Introduction/1_introduction.html">
+            
+                
+                    <a href="../01_Introduction/1_introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Einführung
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_Introduction/1-1_what_is_visual_programming.html">
+            
+                
+                    <a href="../01_Introduction/1-1_what_is_visual_programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Was ist visuelle Programmierung?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_Introduction/1-2_what_is_dynamo.html">
+            
+                
+                    <a href="../01_Introduction/1-2_what_is_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Was ist Dynamo?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_Introduction/1-3_dynamo_in_action.html">
+            
+                
+                    <a href="../01_Introduction/1-3_dynamo_in_action.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Dynamo in Aktion
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_Hello-Dynamo/2_hello_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2_hello_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Dynamo!
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_Hello-Dynamo/2-1_launching_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-1_launching_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Installieren und Starten von Dynamo
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Die Dynamo-Benutzeroberfläche
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_Hello-Dynamo/2-3_the_workspace.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-3_the_workspace.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Der Arbeitsbereich
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        ERSTE SCHRITTE
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Die Anatomie visueller Programme
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_Anatomy-of-a-Dynamo-Definition/3-3_wiring_programs.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-3_wiring_programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Drähte
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Dynamo-Bibliothek
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Verwalten von Programmem
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Verwalten von Daten mit Voreinstellungen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Grundbausteine von Programmen
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_The-Building-Blocks-of-Programs/4-1_data.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-1_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Daten
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_The-Building-Blocks-of-Programs/4-2_math.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-2_math.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Math
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_The-Building-Blocks-of-Programs/4-3_logic.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-3_logic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Logik
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_The-Building-Blocks-of-Programs/4-4_strings.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-4_strings.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Zeichenfolgen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_The-Building-Blocks-of-Programs/4-5_color.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-5_color.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Farbe
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Geometrie für Computational Design
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Geometrie – Überblick
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_Geometry-for-Computational-Design/5-2_vectors.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-2_vectors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Vektoren, Ebenen und Koordinatensysteme
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_Geometry-for-Computational-Design/5-3_points.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-3_points.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Punkte
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_Geometry-for-Computational-Design/5-4_curves.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-4_curves.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Kurven
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_Geometry-for-Computational-Design/5-5_surfaces.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-5_surfaces.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Oberflächen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_Geometry-for-Computational-Design/5-6_solids.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-6_solids.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Volumenkörper
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_Geometry-for-Computational-Design/5-7_meshes.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-7_meshes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Netze
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_Geometry-for-Computational-Design/5-8_importing.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-8_importing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Importieren von Geometrie
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_Designing-with-Lists/6_designing-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6_designing-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Entwerfen mit Listen
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_Designing-with-Lists/6-1_whats-a-list.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-1_whats-a-list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Was ist eine Liste?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.2" data-path="06_Designing-with-Lists/6-2_working-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-2_working-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Arbeiten mit Listen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_Designing-with-Lists/6-3_lists-of-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-3_lists-of-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Listen von Listen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        n-dimensionale Listen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+            
+                
+                    <a href="../07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Codeblöcke und DesignScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_Code-Block/7-1_what-is-a-code-block.html">
+            
+                
+                    <a href="../07_Code-Block/7-1_what-is-a-code-block.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Was ist ein Codeblock?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_Code-Block/7-2_Design-Script-syntax.html">
+            
+                
+                    <a href="../07_Code-Block/7-2_Design-Script-syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        DesignScript-Syntax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_Code-Block/7-3_shorthand.html">
+            
+                
+                    <a href="../07_Code-Block/7-3_shorthand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Kurzschreibweisen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_Code-Block/7-4_functions.html">
+            
+                
+                    <a href="../07_Code-Block/7-4_functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Codeblock-Funktionen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Dynamo for Revit
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Verbindung zu Revit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="08_Dynamo-for-Revit/8-2_Selecting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-2_Selecting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Auswählen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="08_Dynamo-for-Revit/8-3_Editing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-3_Editing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        Bearbeiten
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="08_Dynamo-for-Revit/8-4_Creating.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-4_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        Erstellen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="08_Dynamo-for-Revit/8-5_Customizing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-5_Customizing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        Anpassen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="08_Dynamo-for-Revit/8-6_Documenting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-6_Documenting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        Dokumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="09_Custom-Nodes/9_Custom-Nodes.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9_Custom-Nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Benutzerdefinierte Blöcke
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="09_Custom-Nodes/9-1_Introduction.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        Benutzerdefinierte Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="09_Custom-Nodes/9-2_Creating.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-2_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        Erstellen eines benutzerdefinierten Blocks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="09_Custom-Nodes/9-3_Library.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-3_Library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        Hinzufügen zu Ihrer Bibliothek
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="09_Custom-Nodes/9-4_Python.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-4_Python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Python
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="09_Custom-Nodes/9-5_Python-Revit.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-5_Python-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        Python und Revit
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="10_Packages/10-Packages.html">
+            
+                
+                    <a href="../10_Packages/10-Packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Pakete
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="10_Packages/10-1_Introduction.html">
+            
+                
+                    <a href="../10_Packages/10-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Pakete
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="10_Packages/10-2_Mesh-Toolkit.html">
+            
+                
+                    <a href="../10_Packages/10-2_Mesh-Toolkit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        Fallstudie zu Paketen: Mesh Toolkit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="10_Packages/10-3_Developing.html">
+            
+                
+                    <a href="../10_Packages/10-3_Developing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        Entwickeln von Paketen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="10_Packages/10-4_Publishing.html">
+            
+                
+                    <a href="../10_Packages/10-4_Publishing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        Veröffentlichen von Paketen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="10_Packages/10-5_Zero-Touch.html">
+            
+                
+                    <a href="../10_Packages/10-5_Zero-Touch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Was ist Zero-Touch?
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="Appendix/A_appendix.html">
+            
+                
+                    <a href="../Appendix/A_appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Anhang
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="Appendix/A-1_resources.html">
+            
+                
+                    <a href="../Appendix/A-1_resources.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        Ressourcen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="Appendix/A-2_index-of-nodes.html">
+            
+                
+                    <a href="../Appendix/A-2_index-of-nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        Index: Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="Appendix/A-3_packages.html">
+            
+                
+                    <a href="../Appendix/A-3_packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        Dynamo-Pakete
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="Appendix/A-4_example-files.html">
+            
+                
+                    <a href="../Appendix/A-4_example-files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        Dynamo-Beispieldateien
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Der Dynamo Primer</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="arbeiten-mit-listen">Arbeiten mit Listen</h2>
+<p>Im vorigen Kapitel wurde definiert, was unter einer Liste zu verstehen ist. Thema des folgenden Kapitels sind die Vorg&#xE4;nge, die f&#xFC;r Listen durchgef&#xFC;hrt werden k&#xF6;nnen. Eine Liste l&#xE4;sst sich mit einem Stapel Spielkarten vergleichen. Der Stapel ist die Liste und jede Spielkarte steht f&#xFC;r ein Element.</p>
+<p><img src="images/6-2/Playing_cards_modified.jpg" alt="Karten"></p>
+<blockquote>
+<p>Foto von <a href="https://commons.wikimedia.org/wiki/File:Playing_cards_modified.jpg" target="_blank">Christian Gidl&#xF6;f</a></p>
+</blockquote>
+<p>Welche <strong>Abfragen</strong> sind in der Liste m&#xF6;glich? Dies erm&#xF6;glicht den Zugriff auf vorhandene Eigenschaften.</p>
+<ul>
+<li>Anzahl der Karten im Stapel? 52.</li>
+<li>Anzahl der Farben? 4.</li>
+<li>Material? Papier.</li>
+<li>L&#xE4;nge? 3.5&quot; bzw. 89 mm.</li>
+<li>Breite? 2.5&quot; bzw. 64 mm.</li>
+</ul>
+<p>Welche <strong>Aktionen</strong> k&#xF6;nnen f&#xFC;r die Liste durchgef&#xFC;hrt werden? Diese bewirken &#xC4;nderungen in der Liste entsprechend der angegebenen Operation.</p>
+<ul>
+<li>Sie k&#xF6;nnen den Stapel neu mischen.</li>
+<li>Sie k&#xF6;nnen den Stapel nach Wert sortieren.</li>
+<li>Sie k&#xF6;nnen den Stapel nach Farben sortieren.</li>
+<li>Sie k&#xF6;nnen den Stapel teilen.</li>
+<li>Sie k&#xF6;nnen den Stapel unterteilen, indem Sie die Karten an verschiedene Spieler ausgeben.</li>
+<li>Sie k&#xF6;nnen eine bestimmte Karte im Stapel ausw&#xE4;hlen.</li>
+</ul>
+<p>In Dynamo sind Bl&#xF6;cke vorhanden, die den oben genannten Vorg&#xE4;ngen entsprechen und die Arbeit mit Listen von allgemeinen Daten erm&#xF6;glichen. Die Lektionen weiter unten demonstrieren einige der grundlegenden Operationen, die f&#xFC;r Listen durchgef&#xFC;hrt werden k&#xF6;nnen.</p>
+<h2 id="operationen-f&#xFC;r-listen">Operationen f&#xFC;r Listen</h2>
+<p>Das folgende Bild zeigt das Basisdiagramm, an dem grundlegende Operationen f&#xFC;r Listen gezeigt werden. Dabei wird die Verwaltung von Daten in einer Liste betrachtet, und die visuellen Ergebnisse werden angezeigt.</p>
+<h4 id="&#xFC;bungslektion-&#x2013;-operationen-f&#xFC;r-listen">&#xDC;bungslektion &#x2013; Operationen f&#xFC;r Listen</h4>
+<blockquote>
+<p>Laden Sie die zu dieser &#xDC;bungslektion geh&#xF6;rige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): <a href="datasets/6-2/List-Operations.dyn">List-Operations.dyn</a>. Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang.</p>
+</blockquote>
+<p><img src="images/6-2/Exercise/40.png" alt="&#xDC;bungslektion"></p>
+<blockquote>
+<ol>
+<li>Beginnen Sie mit einem <em>Code Block</em> mit dem Wert <code>500</code>.</li>
+<li>Verbinden Sie ihn mit der <em>x</em>-Eingabe eines <em>Point.ByCoordinates</em>-Blocks.</li>
+<li>Verbinden Sie den Block aus dem vorigen Schritt mit der origin-Eingabe eines <em>Plane.ByOriginNormal</em>-Blocks.</li>
+<li>Verbinden Sie in einem <em>Circle.ByPlaneRadius</em>-Block den Block aus dem vorigen Schritt mit dem plane-Eingang.</li>
+<li>Legen Sie mithilfe eines <em>Code Block</em> den Wert <code>50;</code> als <em>Radius</em> fest. Dadurch erstellen Sie den ersten Kreis.</li>
+<li>Verschieben Sie mithilfe eines <em>Geometry.Translate</em>-Blocks den Kreis um 100 Einheiten nach oben in z-Richtung.</li>
+<li>Definieren Sie mithilfe eines <em>Code Block</em>-Blocks einen Bereich von 10 Zahlen zwischen 0 und 1, wobei Sie die folgende Zeile verwenden: <code>0..1..#10;</code>.</li>
+<li>Verbinden Sie den Codeblock aus dem vorigen Schritt mit der <em>param</em>-Eingabe zweier <em>Curve.PointAtParameter</em>-Bl&#xF6;cke. Verbinden Sie <em>Circle.ByPlaneRadius</em> mit der curve-Eingabe des oberen Blocks und <em>Geometry.Translate</em> mit der curve-Eingabe des Blocks darunter.</li>
+<li>Verbinden Sie in einem <em>Line.ByStartPointEndPoint</em> die beiden <em>Curve.PointAtParameter</em>-Bl&#xF6;cke.</li>
+</ol>
+</blockquote>
+<p><img src="images/6-2/Exercise/38.png" alt="&#xDC;bungslektion"></p>
+<blockquote>
+<ol>
+<li>Ein <em>Watch3D</em>-Block zeigt die Ergebnisse aus <em>Line.ByStartPointEndPoint</em> an. Hier werden Linien zwischen zwei Kreisen gezeichnet, um einfache Listenoperationen darzustellen. Dieses Dynamo-Basisdiagramm wird zur Demonstration der unten genannten Listenoperationen verwendet.</li>
+</ol>
+</blockquote>
+<h3 id="listcount">List.Count</h3>
+<p><img src="images/6-2/count.png" alt="Count"></p>
+<blockquote>
+<p>Der Block <em>List.Count</em> ist einfach: Er z&#xE4;hlt die in einer Liste enthaltenen Werte und gibt ihre Anzahl zur&#xFC;ck. Bei der Arbeit mit Listen von Listen gestaltet sich die Verwendung dieses Blocks differenzierter. Dies wird in weiter unten folgenden Abschnitten gezeigt.</p>
+</blockquote>
+<h4 id="&#xFC;bungslektion&#xB7;&#x2013;-listcount">&#xDC;bungslektion&#xB7;&#x2013; List.Count</h4>
+<blockquote>
+<p>Laden Sie die zu dieser &#xDC;bungslektion geh&#xF6;rige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): <a href="datasets/6-2/List-Count.dyn">List-Count.dyn</a>. Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang.</p>
+</blockquote>
+<p><img src="images/6-2/Exercise/35.png" alt="Count"></p>
+<blockquote>
+<ol>
+<li>Der <em>List.Count</em>-Block gibt die Anzahl der Linien aus dem <em>Line.ByStartPointEndPoint</em>-Block zur&#xFC;ck. In diesem Fall betr&#xE4;gt dieser Wert 10. Dies stimmt mit der Anzahl der Punkte &#xFC;berein, die mithilfe des urspr&#xFC;nglichen <em>Code Block</em>-Blocks erstellt wurden.</li>
+</ol>
+</blockquote>
+<h3 id="listgetitematindex">List.GetItemAtIndex</h3>
+<p><img src="images/6-2/index.png" alt="index"></p>
+<blockquote>
+<p><em>List.GetItemAtIndex</em> ist ein grundlegendes Verfahren zum Abrufen von Elementen in der Liste. In der Abbildung oben wird mithilfe des Indexwerts <em>&quot;2&quot;</em> der Punkt mit der Bezeichnung <em> &quot;C&quot;</em> abgerufen.</p>
+</blockquote>
+<h4 id="&#xFC;bungslektion&#xB7;&#x2013;-listgetitematindex">&#xDC;bungslektion&#xB7;&#x2013; List.GetItemAtIndex</h4>
+<blockquote>
+<p>Laden Sie die zu dieser &#xDC;bungslektion geh&#xF6;rige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): <a href="datasets/6-2/List-GetItemAtIndex.dyn">List-GetItemAtIndex.dyn</a>. Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang.</p>
+</blockquote>
+<p><img src="images/6-2/Exercise/33.png" alt="&#xDC;bungslektion"></p>
+<blockquote>
+<ol>
+<li>Mithilfe von <em>List.GetItemAtIndex</em> wird der Index <em>&quot;0&quot;</em> bzw. das erste Element in der Liste der Linien ausgew&#xE4;hlt.</li>
+<li>Der <em>Watch3D</em>-Block zeigt an, dass genau eine Linie ausgew&#xE4;hlt wurde. Anmerkung: Um die Abbildung oben zu erhalten, m&#xFC;ssen Sie die Vorschau von <em>Line.ByStartPointEndPoint</em> deaktivieren.</li>
+</ol>
+</blockquote>
+<h3 id="listreverse">List.Reverse</h3>
+<p><img src="images/6-2/reverse.png" alt="reverse"></p>
+<blockquote>
+<p><em>List.Reverse</em> kehrt die Reihenfolge aller Elemente in der Liste um.</p>
+</blockquote>
+<h4 id="&#xFC;bungslektion-&#x2013;-listreverse">&#xDC;bungslektion &#x2013; List.Reverse</h4>
+<blockquote>
+<p>Laden Sie die zu dieser &#xDC;bungslektion geh&#xF6;rige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): <a href="datasets/6-2/List-Reverse.dyn">List-Reverse.dyn</a>. Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang.</p>
+</blockquote>
+<p><img src="images/6-2/Exercise/34.png" alt="&#xDC;bungslektion"></p>
+<blockquote>
+<ol>
+<li>Erstellen Sie f&#xFC;r eine deutlichere Darstellung der Linienliste in umgekehrter Reihenfolge weitere Linien, indem Sie den Codeblock in <code>0..1..#100;</code> &#xE4;ndern.</li>
+<li>F&#xFC;gen Sie einen <em>List.Reverse</em>-Block zwischen <em>Curve.PointAtParameter</em> und <em>Line.ByStartPointEndPoint</em> f&#xFC;r eine der beiden Punktlisten ein.</li>
+<li>Die <em>Watch3D</em>-Bl&#xF6;cke zeigen zwei unterschiedliche Ergebnisse. Der erste zeigt das Ergebnis ohne umgekehrte Liste. Die Linien verlaufen vertikal und verbinden benachbarte Punkte. Die Umkehrung einer der Listen bewirkt jedoch, dass alle Punkte in entgegengesetzter Reihenfolge mit Punkten in der anderen Liste verbunden werden.</li>
+</ol>
+</blockquote>
+<h3 id="listshiftindices">List.ShiftIndices</h3>
+<p><img src="images/6-2/shift.png" alt="shift"></p>
+<blockquote>
+<p><em>List.ShiftIndices</em> ist ein geeignetes Werkzeug zum Erstellen verdrehter oder schraubenf&#xF6;rmiger Muster oder f&#xFC;r &#xE4;hnliche Datenverarbeitungen. Dieser Block verschiebt die Elemente in einer Liste um die angegebene Anzahl von Indexpositionen.</p>
+</blockquote>
+<h4 id="&#xFC;bungslektion-&#x2013;-listshiftindices">&#xDC;bungslektion &#x2013; List.ShiftIndices</h4>
+<blockquote>
+<p>Laden Sie die zu dieser &#xDC;bungslektion geh&#xF6;rige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): <a href="datasets/6-2/List-ShiftIndices.dyn">List-ShiftIndices.dyn</a>. Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang.</p>
+</blockquote>
+<p><img src="images/6-2/Exercise/31.png" alt="&#xDC;bungslektion"></p>
+<blockquote>
+<ol>
+<li>F&#xFC;gen Sie auf dieselbe Weise wie beim Umkehren der Liste einen <em>List.ShiftIndices</em>-Block zwischen <em>Curve.PointAtParameter</em> und <em>Line.ByStartPointEndPoint</em> ein.</li>
+<li>Verwenden Sie einen <em>Code Block</em>, dem Sie den Wert <em>&quot;1&quot;</em> zuweisen, zum Verschieben der Liste um eine Indexposition.</li>
+<li>Sie erhalten keine extreme Ver&#xE4;nderung, aber s&#xE4;mtliche Linien im unteren <em>Watch3D</em>-Block wurden bei der Verbindung mit der anderen Punktgruppe um eine Indexposition versetzt.</li>
+</ol>
+</blockquote>
+<p><img src="images/6-2/Exercise/32.png" alt="&#xDC;bungslektion"></p>
+<blockquote>
+<ol>
+<li>Wenn Sie im <em>Code Block</em> einen gr&#xF6;&#xDF;eren Wert, z. B. <em>&quot;30&quot;</em> festlegen, ist ein deutlicher Unterschied in den diagonalen Linien zu erkennen. Die Verschiebung hat in diesem Fall dieselbe Wirkung wie die Irisblende einer Kamera und bewirkt eine Verdrehung der urspr&#xFC;nglichen Zylinderform.</li>
+</ol>
+</blockquote>
+<h3 id="listfilterbybooleanmask">List.FilterByBooleanMask</h3>
+<p><img src="images/6-2/cull2.png" alt="Ausblenden"></p>
+<blockquote>
+<p><em>List.FilterByBooleanMask</em> entfernt bestimmte Elemente anhand einer Liste boolescher Werte bzw. der Werte &quot;true&quot; oder &quot;false&quot;.</p>
+</blockquote>
+<h4 id="&#xFC;bungslektion-&#x2013;-listfilterbybooleanmask">&#xDC;bungslektion &#x2013; List.FilterByBooleanMask</h4>
+<blockquote>
+<p>Laden Sie die zu dieser &#xDC;bungslektion geh&#xF6;rige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): <a href="datasets/6-2/List-FilterByBooleanMask.dyn">List-FilterByBooleanMask.dyn</a>. Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang.</p>
+</blockquote>
+<p><img src="images/6-2/Exercise/30.png" alt="&#xDC;bungslektion"></p>
+<blockquote>
+<p>Um eine Liste mit true- und false-Werten zu erstellen, sind einige weitere Schritte erforderlich.</p>
+<ol>
+<li>Definieren Sie mithilfe eines <em>Code Block</em> einen Ausdruck mit der folgenden Syntax: <code>0..List.Count(list);</code>. Verbinden Sie den <em>Curve.PointAtParameter</em>-Block mit der <em>list</em>-Eingabe. Diese Einrichtung wird im Kapitel zu Codebl&#xF6;cken genauer behandelt. In diesem Fall erhalten Sie mit dieser Codezeile eine Liste mit s&#xE4;mtlichen Indizes aus dem <em>Curve.PointAtParameter</em>-Block.</li>
+<li>F&#xFC;gen Sie einen Modulo-Block (<em>&quot;%&quot;</em>) ein und verbinden Sie die Ausgabe des <em>Code Block</em> mit der <em>x</em>-Eingabe und den Wert <em>4</em> mit der <em>y</em>-Eingabe. Dadurch erhalten Sie den Rest bei der Division der Indizes in der Liste durch 4. Die Modulo-Funktion ist sehr hilfreich beim Erstellen von Mustern. Alle Werte werden als m&#xF6;gliche Reste f&#xFC;r 4 ausgegeben: 0, 1, 2, 3.</li>
+<li>Aus dem <em>Modulo</em>-Block ergibt sich, dass Indizes mit dem Wert 0 durch 4 teilbar sind (0, 4, 8...). Mithilfe eines <em>&quot;==&quot;</em>-Blocks kann die Teilbarkeit durch Vergleich mit dem Wert <em>0</em> gepr&#xFC;ft werden.</li>
+<li>Der <em>Watch</em>-Block zeigt genau dieses Ergebnis, d. h. das folgende true/false-Muster: <em>true,false,false,false...</em>.</li>
+<li>Verbinden Sie die Ausgabe mit diesem true/false-Muster mit der mask-Eingabe zweier <em>List.FilterByBooleanMask</em>-Bl&#xF6;cke.</li>
+<li>Verbinden Sie jeweils den <em>Curve.PointAtParameter</em>-Block mit der list-Eingaben des <em>List.FilterByBooleanMask</em>-Blocks.</li>
+<li>Die Ausgaben von <em>Filter.ByBooleanMask</em> lauten <em>&quot;in&quot;</em> und <em>&quot;out&quot;</em>. <em>&quot;In&quot;</em> steht f&#xFC;r Werte mit dem Maskenwert <em>&quot;true&quot;</em>, <em>&quot;out&quot;</em> f&#xFC;r Werte mit dem Wert <em>&quot;false&quot;</em>. Indem Sie die <em>&quot;in&quot;</em>-Ausgaben mit den <em>startPoint</em>- und <em>endPoint</em>-Eingaben eines <em>Line.ByStartPointEndPoint</em>-Blocks verbinden, erhalten Sie eine gefilterte Liste von Linien.</li>
+<li>Im <em>Watch3D</em>-Block ist zu erkennen, dass weniger Linien als Punkte vorhanden sind. Durch Filtern ausschlie&#xDF;lich der true-Werte wurden lediglich 25 % der Punkte ausgew&#xE4;hlt.</li>
+</ol>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../06_Designing-with-Lists/6-1_whats-a-list.html" class="navigation navigation-prev " aria-label="Previous page: Was ist eine Liste?"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../06_Designing-with-Lists/6-3_lists-of-lists.html" class="navigation navigation-next " aria-label="Next page: Listen von Listen"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/favicon.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"ga":{"token":"UA-52186525-3","configuration":"auto"},"search_languages":{"lang":"de"},"dynamo":{"customLinks":[{"label":"Download","icon":"fa fa-file-pdf-o fa-lg","url":"Appendix/DynamoPrimer-Print.pdf"}],"languages":[{"label":"English","code":"en","url":"http://dynamoprimer.com"},{"label":"日本語","code":"ja","url":"http://dynamoprimer.com/ja"}],"currentLanguage":{"code":"de","url":"http://dynamoprimer.com/de","switchLangLabel":"Sprachen"},"favicon":"/images/icons/favicon.ico","facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"search-languages":{},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <script src="../gitbook/plugins/gitbook-plugin-search-languages/lunr.stemmer.support.js"></script>
+<script src="../gitbook/plugins/gitbook-plugin-search-languages/lunr.de.js"></script>
+<script src="../gitbook/plugins/gitbook-plugin-search-languages/search.lang.js"></script>
+    </body>
+    
+</html>
