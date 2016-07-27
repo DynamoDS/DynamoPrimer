@@ -1,0 +1,1372 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Python und Revit | Der Dynamo Primer</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../10_Packages/10-Packages.html" />
+    
+    
+    <link rel="prev" href="../09_Custom-Nodes/9-4_Python.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="9.5"
+        data-chapter-title="Python und Revit"
+        data-filepath="09_Custom-Nodes/9-5_Python-Revit.md"
+        data-basepath=".."
+        data-revision="Wed Jul 20 2016 15:34:37 GMT-0400 (Eastern Daylight Time)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Der Dynamo Primer
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_Introduction/1_introduction.html">
+            
+                
+                    <a href="../01_Introduction/1_introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Einführung
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_Introduction/1-1_what_is_visual_programming.html">
+            
+                
+                    <a href="../01_Introduction/1-1_what_is_visual_programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Was ist visuelle Programmierung?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_Introduction/1-2_what_is_dynamo.html">
+            
+                
+                    <a href="../01_Introduction/1-2_what_is_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Was ist Dynamo?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_Introduction/1-3_dynamo_in_action.html">
+            
+                
+                    <a href="../01_Introduction/1-3_dynamo_in_action.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Dynamo in Aktion
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_Hello-Dynamo/2_hello_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2_hello_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Dynamo!
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_Hello-Dynamo/2-1_launching_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-1_launching_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Installieren und Starten von Dynamo
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Die Dynamo-Benutzeroberfläche
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_Hello-Dynamo/2-3_the_workspace.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-3_the_workspace.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Der Arbeitsbereich
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        ERSTE SCHRITTE
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Die Anatomie visueller Programme
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_Anatomy-of-a-Dynamo-Definition/3-3_wiring_programs.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-3_wiring_programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Drähte
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Dynamo-Bibliothek
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Verwalten von Programmem
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Verwalten von Daten mit Voreinstellungen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Grundbausteine von Programmen
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_The-Building-Blocks-of-Programs/4-1_data.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-1_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Daten
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_The-Building-Blocks-of-Programs/4-2_math.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-2_math.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Math
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_The-Building-Blocks-of-Programs/4-3_logic.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-3_logic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Logik
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_The-Building-Blocks-of-Programs/4-4_strings.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-4_strings.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Zeichenfolgen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_The-Building-Blocks-of-Programs/4-5_color.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-5_color.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Farbe
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Geometrie für Computational Design
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Geometrie – Überblick
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_Geometry-for-Computational-Design/5-2_vectors.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-2_vectors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Vektoren, Ebenen und Koordinatensysteme
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_Geometry-for-Computational-Design/5-3_points.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-3_points.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Punkte
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_Geometry-for-Computational-Design/5-4_curves.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-4_curves.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Kurven
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_Geometry-for-Computational-Design/5-5_surfaces.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-5_surfaces.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Oberflächen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_Geometry-for-Computational-Design/5-6_solids.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-6_solids.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Volumenkörper
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_Geometry-for-Computational-Design/5-7_meshes.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-7_meshes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Netze
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_Geometry-for-Computational-Design/5-8_importing.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-8_importing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Importieren von Geometrie
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_Designing-with-Lists/6_designing-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6_designing-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Entwerfen mit Listen
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_Designing-with-Lists/6-1_whats-a-list.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-1_whats-a-list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Was ist eine Liste?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06_Designing-with-Lists/6-2_working-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-2_working-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Arbeiten mit Listen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_Designing-with-Lists/6-3_lists-of-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-3_lists-of-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Listen von Listen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        n-dimensionale Listen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+            
+                
+                    <a href="../07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Codeblöcke und DesignScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_Code-Block/7-1_what-is-a-code-block.html">
+            
+                
+                    <a href="../07_Code-Block/7-1_what-is-a-code-block.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Was ist ein Codeblock?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_Code-Block/7-2_Design-Script-syntax.html">
+            
+                
+                    <a href="../07_Code-Block/7-2_Design-Script-syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        DesignScript-Syntax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_Code-Block/7-3_shorthand.html">
+            
+                
+                    <a href="../07_Code-Block/7-3_shorthand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Kurzschreibweisen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_Code-Block/7-4_functions.html">
+            
+                
+                    <a href="../07_Code-Block/7-4_functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Codeblock-Funktionen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Dynamo for Revit
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Verbindung zu Revit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="08_Dynamo-for-Revit/8-2_Selecting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-2_Selecting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Auswählen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="08_Dynamo-for-Revit/8-3_Editing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-3_Editing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        Bearbeiten
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="08_Dynamo-for-Revit/8-4_Creating.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-4_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        Erstellen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="08_Dynamo-for-Revit/8-5_Customizing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-5_Customizing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        Anpassen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="08_Dynamo-for-Revit/8-6_Documenting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-6_Documenting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        Dokumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="09_Custom-Nodes/9_Custom-Nodes.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9_Custom-Nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Benutzerdefinierte Blöcke
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="09_Custom-Nodes/9-1_Introduction.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        Benutzerdefinierte Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="09_Custom-Nodes/9-2_Creating.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-2_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        Erstellen eines benutzerdefinierten Blocks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="09_Custom-Nodes/9-3_Library.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-3_Library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        Hinzufügen zu Ihrer Bibliothek
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="09_Custom-Nodes/9-4_Python.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-4_Python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Python
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="9.5" data-path="09_Custom-Nodes/9-5_Python-Revit.html">
+            
+                
+                    <a href="../09_Custom-Nodes/9-5_Python-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        Python und Revit
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="10_Packages/10-Packages.html">
+            
+                
+                    <a href="../10_Packages/10-Packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Pakete
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="10_Packages/10-1_Introduction.html">
+            
+                
+                    <a href="../10_Packages/10-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Pakete
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="10_Packages/10-2_Mesh-Toolkit.html">
+            
+                
+                    <a href="../10_Packages/10-2_Mesh-Toolkit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        Fallstudie zu Paketen: Mesh Toolkit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="10_Packages/10-3_Developing.html">
+            
+                
+                    <a href="../10_Packages/10-3_Developing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        Entwickeln von Paketen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="10_Packages/10-4_Publishing.html">
+            
+                
+                    <a href="../10_Packages/10-4_Publishing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        Veröffentlichen von Paketen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="10_Packages/10-5_Zero-Touch.html">
+            
+                
+                    <a href="../10_Packages/10-5_Zero-Touch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Was ist Zero-Touch?
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="Appendix/A_appendix.html">
+            
+                
+                    <a href="../Appendix/A_appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Anhang
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="Appendix/A-1_resources.html">
+            
+                
+                    <a href="../Appendix/A-1_resources.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        Ressourcen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="Appendix/A-2_index-of-nodes.html">
+            
+                
+                    <a href="../Appendix/A-2_index-of-nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        Index: Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="Appendix/A-3_packages.html">
+            
+                
+                    <a href="../Appendix/A-3_packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        Dynamo-Pakete
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="Appendix/A-4_example-files.html">
+            
+                
+                    <a href="../Appendix/A-4_example-files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        Dynamo-Beispieldateien
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Der Dynamo Primer</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="python-und-revit">Python und Revit</h2>
+<p>Nachdem im vorigen Abschnitt die Verwendung von Python-Skripts in Dynamo gezeigt wurde, erhalten Sie hier eine Einf&#xFC;hrung zur Einbindung von Revit-Bibliotheken in die Skriptumgebung. Rufen Sie sich kurz ins Ged&#xE4;chtnis zur&#xFC;ck, dass Sie die Dynamo-Core-Bl&#xF6;cke mithilfe der ersten drei Zeilen im folgenden Codeabschnitt importiert haben. Um die Bl&#xF6;cke, Elemente und den Document Manager von Revit zu importieren, sind lediglich einige weitere Zeilen erforderlich:</p>
+<pre><code>import clr
+clr.AddReference(&apos;ProtoGeometry&apos;)
+from Autodesk.DesignScript.Geometry import *
+
+# Import RevitNodes
+clr.AddReference(&quot;RevitNodes&quot;)
+import Revit
+
+# Import Revit elements
+from Revit.Elements import *
+
+# Import DocumentManager
+clr.AddReference(&quot;RevitServices&quot;)
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+
+import System
+</code></pre><p>Dadurch erhalten Sie Zugriff auf die Revit-API und k&#xF6;nnen benutzerdefinierte Skripte f&#xFC;r beliebige Revit-Aufgaben erstellen. Die Kombination der visuellen Programmierung mit der Skripterstellung in der Revit-API bringt erhebliche Verbesserungen f&#xFC;r die Zusammenarbeit und die Entwicklung von Werkzeugen mit sich. So k&#xF6;nnten beispielsweise ein BIM-Manager und ein Schemaplanentwickler gemeinsam am selben Diagramm arbeiten. Bei dieser Zusammenarbeit k&#xF6;nnen sie sowohl den Entwurf als auch die Realisierung des Modells verbessern.</p>
+<p><img src="images/9-4/pythonRevit.png" alt="Exercise"></p>
+<h3 id="plattformspezifische-apis">Plattformspezifische APIs</h3>
+<p>Mit dem Dynamo-Projekt ist beabsichtigt, die M&#xF6;glichkeiten der Plattformimplementierung zu erweitern. W&#xE4;hrend Dynamo nach und nach weitere Programme in seine Palette aufnimmt, erhalten die Benutzer Zugriff auf plattformspezifische APIs aus der Python-Skriptumgebung. In diesem Abschnitt wird ein Fallbeispiel f&#xFC;r Revit behandelt. Zuk&#xFC;nftig sollen jedoch weitere Kapitel mit umfassenden Lernprogrammen zur Skripterstellung f&#xFC;r andere Plattformen bereitgestellt werden. Dar&#xFC;ber hinaus stehen jetzt zahlreiche <a href="http://ironpython.net/" target="_blank">IronPython</a>-Bibliotheken zur Verf&#xFC;gung, die Sie in Dynamo importieren k&#xF6;nnen.</p>
+<p>Die folgenden Beispiele zeigen M&#xF6;glichkeiten zur Implementierung Revit-spezifischer Vorg&#xE4;nge aus Dynamo mit Python. Eine genauere Beschreibung der Beziehung zwischen Python einerseits und Dynamo und Revit andererseits finden Sie auf der <a href="https://github.com/DynamoDS/Dynamo/wiki/Python-0.6.3-to-0.7.x-Migration" target="_blank">Wiki-Seite zu Dynamo</a>. Eine andere n&#xFC;tzliche Ressourcen f&#xFC;r Python und Revit ist das <a href="https://github.com/architecture-building-systems/revitpythonshell" target="_blank">Revit Python Shell</a>-Projekt.</p>
+<h3 id="&#xFC;bungslektion-01">&#xDC;bungslektion 01</h3>
+<blockquote>
+<p>Erstellen Sie ein neues Revit-Projekt. Laden Sie die zu dieser &#xDC;bungslektion geh&#xF6;rige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As). Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang. <a href="datasets/9-5/Revit-Doc.dyn">Revit-Doc.dyn</a></p>
+</blockquote>
+<p>In diesen &#xDC;bungen lernen Sie grundlegenden Python-Skripts in Dynamo f&#xFC;r Revit kennen. Dabei liegt das Hauptaugenmerk auf der Verarbeitung von Revit-Dateien und -Elementen sowie der Kommunikation zwischen Revit und Dynamo.</p>
+<p><img src="images/9-4/Exercise/Revit/Images/RevitPython - 10.png" alt="Exercise"></p>
+<blockquote>
+<p>Dies ist eine einfache Methode zum Abrufen von <em>doc</em>, <em>uiapp</em> und <em>app</em> f&#xFC;r die mit der Dynamo-Sitzung verkn&#xFC;pfte Revit-Datei. Programmierern, die zuvor bereits in der Revit-API gearbeitet haben, fallen eventuell die Eintr&#xE4;ge in der Liste des Watch-Blocks auf. Falls diese Eintr&#xE4;ge ungewohnt wirken, besteht kein Grund zur Beunruhigung. In den weiteren &#xDC;bungen werden andere Beispiele verwendet.</p>
+</blockquote>
+<p>Der folgende Code zeigt, wie Sie die Revit-Dienste importieren und die Dokumentdaten in Dynamo abrufen k&#xF6;nnen: <img src="images/9-4/Exercise/Revit/Images/RevitPython - 06.png" alt="Exercise"></p>
+<blockquote>
+<p>Ein Blick auf den Python-Block in Dynamo. Im Folgenden sehen Sie den kommentierten Code.</p>
+</blockquote>
+<pre><code>import clr
+# Import DocumentManager
+clr.AddReference(&quot;RevitServices&quot;)
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+
+doc = DocumentManager.Instance.CurrentDBDocument
+uiapp = DocumentManager.Instance.CurrentUIApplication
+app = uiapp.Application
+
+#Assign your output to the OUT variable
+#OUT is defined as a list of three items
+OUT=[doc,uiapp,app]
+</code></pre><h3 id="&#xFC;bungslektion-02">&#xDC;bungslektion 02</h3>
+<blockquote>
+<p>Laden Sie die zu dieser &#xDC;bungslektion geh&#xF6;rigen Beispieldateien herunter (durch Rechtsklicken und Wahl der Option Save Link As). Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang. <a href="datasets/9-5/Revit-ReferenceCurve.dyn">Revit-ReferenceCurve.dyn</a></p>
+</blockquote>
+<p>In dieser &#xDC;bung erstellen Sie mithilfe des Python-Blocks von Dynamo eine einfache Modellkurve in Revit.</p>
+<p><img src="images/9-4/Exercise/Revit/Images/RevitPython - 08.png" alt=""></p>
+<blockquote>
+<p>Beginnen Sie mit der in der Abbildung oben gezeigten Gruppe von Bl&#xF6;cken. Sie erstellen zun&#xE4;chst mithilfe von Dynamo-Bl&#xF6;cken zwei Referenzpunkte in Revit.</p>
+<p>Beginnen Sie, indem Sie in Revit eine neue Entwurfsk&#xF6;rperfamilie erstellen. Starten Sie Dynamo und erstellen Sie die Gruppe von Bl&#xF6;cken in der Abbildung oben. Sie erstellen zun&#xE4;chst mithilfe von Dynamo-Bl&#xF6;cken zwei Referenzpunkte in Revit.</p>
+<ol>
+<li><strong>Wichtiger Hinweis: Achten Sie darauf, f&#xFC;r die Ausf&#xFC;hrung von Revit-Vorg&#xE4;ngen den Ausf&#xFC;hrungsmodus Manuell einzustellen. Andernfalls st&#xFC;rzt das Programm ab.</strong></li>
+<li>Erstellen Sie einen Codeblock mit dem Wert 0.</li>
+<li>Verbinden Sie diesen Wert mit den x-, y- und z-Eingaben eines ReferencePoint.ByCoordinates-Blocks.</li>
+<li>Erstellen Sie drei Schieberegler mit dem Bereich zwischen -100 und 100 und der Schrittgr&#xF6;&#xDF;e 1.</li>
+<li>Verbinden Sie die Schieberegler mit einem ReferencePoint.ByCoordinates-Block.</li>
+<li>F&#xFC;gen Sie einen Python-Block im Arbeitsbereich hinzu, klicken Sie auf die Schaltfl&#xE4;che +, um eine weitere Eingabe hinzuzuf&#xFC;gen, und verbinden Sie die beiden Referenzpunkte mit den Eingaben. &#xD6;ffnen Sie den Python-Block.</li>
+</ol>
+</blockquote>
+<p><img src="images/9-4/Exercise/Revit/Images/RevitPython - 07.png" alt="Exercise"></p>
+<blockquote>
+<p>Ein Blick auf den Python-Block in Dynamo. Im Folgenden sehen Sie den kommentierten Code.</p>
+<ol>
+<li><strong>System.Array</strong>: F&#xFC;r Revit wird ein System-Array (anstelle einer Python-Liste) ben&#xF6;tigt. Hierf&#xFC;r gen&#xFC;gt eine weitere Codezeile. Indem Sie sorgf&#xE4;ltig auf die Argumenttypen achten, erleichtern Sie jedoch die Python-Programmierung in Revit.</li>
+</ol>
+</blockquote>
+<pre><code>import clr
+
+# Import RevitNodes
+clr.AddReference(&quot;RevitNodes&quot;)
+import Revit
+# Import Revit elements
+from Revit.Elements import *
+import System
+
+#define inputs
+startRefPt = IN[0]
+endRefPt = IN[1]
+
+#define system array to match with required inputs
+refPtArray = System.Array[ReferencePoint]([startRefPt, endRefPt])
+#create curve by reference points in Revit
+OUT = CurveByPoints.ByReferencePoints(refPtArray)
+</code></pre><p><img src="images/9-4/Exercise/Revit/Images/RevitPython - 09.png" alt="Exercise"></p>
+<blockquote>
+<p>Sie haben in Dynamo zwei Referenzpunkte erstellt und diese in Python mit einer Linie verbunden. In der n&#xE4;chsten &#xDC;bung f&#xFC;hren Sie dies weiter.</p>
+</blockquote>
+<h3 id="&#xFC;bungslektion-03">&#xDC;bungslektion 03</h3>
+<blockquote>
+<p>Laden Sie die Beispieldateien f&#xFC;r diese &#xDC;bungslektion herunter (durch Rechtsklicken und Wahl von Save Link As). Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang. <a href="datasets/9-5/Revit-StructuralFraming.zip">Revit-StructuralFraming.zip</a></p>
+<p>Diese &#xDC;bung ist relativ einfach, macht jedoch die Verbindung von Daten und Geometrie zwischen Revit und Dynamo &#x2013; in beiden Richtungen &#x2013; deutlich. &#xD6;ffnen Sie zuerst Revit-StructuralFraming.rvt. Laden Sie anschlie&#xDF;end Dynamo und &#xF6;ffnen Sie die Datei Revit-StructuralFraming.dyn.</p>
+</blockquote>
+<p><img src="images/9-4/Exercise/Revit/Images/RevitPython - 04.png" alt=""></p>
+<blockquote>
+<p>Diese Datei ist denkbar einfach. Sie umfasst zwei auf Ebene 1 und Ebene 2 gezeichnete Referenzkurven. Diese Kurven sollen in Dynamo &#xFC;bernommen werden, wobei eine Direktverkn&#xFC;pfung bestehen bleibt.</p>
+</blockquote>
+<p><img src="images/9-4/Exercise/Revit/Images/RevitPython - 01a.png" alt=""></p>
+<blockquote>
+<p>Diese Datei enth&#xE4;lt eine Gruppe von Bl&#xF6;cken, die mit f&#xFC;nf Eingaben eines Python-Blocks verbunden sind.</p>
+<ol>
+<li><strong>Select Model Element-Bl&#xF6;cke</strong>: Klicken Sie jeweils auf Ausw&#xE4;hlen.</li>
+<li><strong>Code Block</strong>: Geben Sie die Syntax <em>&quot;0..1..#x;&quot;</em> ein und verbinden Sie einen Integer Slider mit Werten zwischen 0 und 20 mit der <em>x</em>-Eingabe. Dadurch wird die Anzahl der Tr&#xE4;ger gesteuert, die zwischen den beiden Kurven gezeichnet werden sollen.</li>
+<li><strong>Structural Framing Types</strong>: W&#xE4;hlen Sie hier den vorgegebenen W12x26-Tr&#xE4;ger aus der Dropdown-Liste.</li>
+<li><strong>Levels</strong>: W&#xE4;hlen Sie die Ebene 1.</li>
+</ol>
+</blockquote>
+<p><img src="images/9-4/Exercise/Revit/Images/RevitPython - 00.png" alt=""></p>
+<blockquote>
+<p>Dieser Code in Python ist etwas komplexer, aus den darin enthaltenen Kommentaren geht jedoch hervor, wie der Prozess abl&#xE4;uft.</p>
+</blockquote>
+<pre><code>import clr
+#import Dynamo Geometry
+clr.AddReference(&apos;ProtoGeometry&apos;)
+from Autodesk.DesignScript.Geometry import *
+# Import RevitNodes
+clr.AddReference(&quot;RevitNodes&quot;)
+import Revit
+# Import Revit elements
+from Revit.Elements import *
+import System
+
+#Query Revit elements and convert them to Dynamo Curves
+crvA=IN[0].Curves[0]
+crvB=IN[1].Curves[0]
+
+#Define input Parameters
+framingType=IN[3]
+designLevel=IN[4]
+
+#Define &quot;out&quot; as a list
+OUT=[]
+
+for val in IN[2]:
+#Define Dynamo Points on each curve
+ptA=Curve.PointAtParameter(crvA,val)
+ptB=Curve.PointAtParameter(crvB,val)
+#Create Dynamo line
+beamCrv=Line.ByStartPointEndPoint(ptA,ptB)
+#create Revit Element from Dynamo Curves
+beam = StructuralFraming.BeamByCurve(beamCrv,designLevel,framingType)
+#convert Revit Element into list of Dynamo Surfaces
+OUT.append(beam.Faces)
+</code></pre><p><img src="images/9-4/Exercise/Revit/Images/RevitPython - 03.png" alt=""></p>
+<blockquote>
+<p>In Revit wird eine Reihe von Tr&#xE4;gern zwischen den beiden Kurven als Tragwerkselemente angezeigt. Anmerkung: Dies ist kein realistisches Beispiel.. Die Tragwerkselemente dienen nur als Beispiele f&#xFC;r aus Dynamo erstellte native Revit-Exemplare. <img src="images/9-4/Exercise/Revit/Images/RevitPython - 05.png" alt="">In Dynamo werden die Ergebnisse ebenfalls angezeigt. Die Tr&#xE4;ger im Watch3D-Block verweisen auf die aus den Revit-Elementen abgefragte Geometrie.</p>
+</blockquote>
+<p>Dabei werden Daten aus der Revit-Umgebung f&#xFC;r die Dynamo-Umgebung konvertiert. Zusammenfassung: Der Prozess l&#xE4;uft wie folgt ab:</p>
+<ol>
+<li>Revit-Element ausw&#xE4;hlen</li>
+<li>Revit-Element in Dynamo-Kurve konvertieren</li>
+<li>Dynamo-Kurve in eine Folge von Dynamo-Punkten unterteilen</li>
+<li>Dynamo-Linien mithilfe der Dynamo-Punkte zwischen den beiden Kurven erstellen.</li>
+<li>Revit-Tr&#xE4;ger durch Referenzieren der Dynamo-Linien erstellen</li>
+<li>Dynamo-Oberfl&#xE4;chen durch Abfragen der Geometrie der Revit-Tr&#xE4;ger ausgeben</li>
+</ol>
+<p>Dies mag etwas umst&#xE4;ndlich erscheinen. Das Skript erleichtert den Vorgang jedoch erheblich: Sie m&#xFC;ssen jetzt lediglich die Kurve in Revit bearbeiten und den Solver erneut ausf&#xFC;hren. (Es ist m&#xF6;glich, dass Sie dabei die bisherigen Tr&#xE4;ger l&#xF6;schen m&#xFC;ssen.)</p>
+<p><img src="images/9-4/Exercise/Revit/Images/RevitPython - 01.png" alt=""></p>
+<blockquote>
+<p>Werden die Referenzkurven in Revit aktualisiert, erhalten Sie eine neue Reihe von Tr&#xE4;gern.</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../09_Custom-Nodes/9-4_Python.html" class="navigation navigation-prev " aria-label="Previous page: Python"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../10_Packages/10-Packages.html" class="navigation navigation-next " aria-label="Next page: Pakete"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/favicon.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"ga":{"token":"UA-52186525-3","configuration":"auto"},"search_languages":{"lang":"de"},"dynamo":{"customLinks":[{"label":"Download","icon":"fa fa-file-pdf-o fa-lg","url":"Appendix/DynamoPrimer-Print.pdf"}],"languages":[{"label":"English","code":"en","url":"http://dynamoprimer.com"},{"label":"日本語","code":"ja","url":"http://dynamoprimer.com/ja"},{"label":"","code":"","url":""},{"label":"","code":"","url":""}],"currentLanguage":{"code":"de","url":"http://dynamoprimer.com/de","switchLangLabel":"Sprachen"},"favicon":"/images/icons/favicon.ico","facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"search-languages":{},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{}};
+    gitbook.start(config);
+});
+</script>
+
+        <script src="../gitbook/plugins/gitbook-plugin-search-languages/lunr.stemmer.support.js"></script>
+<script src="../gitbook/plugins/gitbook-plugin-search-languages/lunr.de.js"></script>
+<script src="../gitbook/plugins/gitbook-plugin-search-languages/search.lang.js"></script>
+    </body>
+    
+</html>
