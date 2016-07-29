@@ -4,7 +4,7 @@ Publishing your files to the web is quick and easy with Dynamo Studio. However, 
 
 ###Exercise: Preparing to 'Send to Web'
 
->Download the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Attractor Scale](datasets/Attractor Scale.dyn)
+>Download the example files for this exercise (Right click and "Save Link As..."). A full list of example files can be found in the Appendix. [Download the Attractor Scale Example](datasets/Attractor Scale.dyn)
 
 In this exercise, we will publish a Dynamo graph to the web. This file creates a grid of rectangles that are scaled based on an attractor and mapped from a base to a target surface. Surface patches are created from each rectangle, and colored based on their distance from the attractor.
 
@@ -41,10 +41,10 @@ Once your file is published, you can send a link to anyone with an Autodesk acco
 
 ###Managing Published Files
 
-To manage your published scripts, visit https://dynamo.autodesk.com and sign in to your account. Select “Manage” from the drop down in the top right. On this page, you can edit, share, or delete customizers that you have already published. This page is also accessible via "Manage Web Workspaces" in the Dynamo Studio File menu.
+To manage your published scripts, visit https://dynamo.autodesk.com and sign in to your account. Select “Manage” from the drop down in the top right. On this page, you can edit, share, or delete workspaces that you have already published. This page is also accessible via "Manage Web Workspaces" in the Dynamo Studio File menu.
 
 ![](images/publishing_07.png)
->1. Edit Customizer
-2. Delete Customizer
+>1. Edit Workspace
+2. Delete Workspace
 3. Share Link
 
