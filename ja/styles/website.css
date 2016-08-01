@@ -1,0 +1,161 @@
+/* CSS for website */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+
+/*
+	Main
+*/
+body {
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #323232;
+}
+
+h1,h2,h3,h4,h5,h6{
+        font-family: 'Roboto Slab', serif;
+        font-weight: 100;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h1, .book .book-body .page-wrapper .page-inner section.normal h2, .book .book-body .page-wrapper .page-inner section.normal h3, .book .book-body .page-wrapper .page-inner section.normal h4, .book .book-body .page-wrapper .page-inner section.normal h5, .book .book-body .page-wrapper .page-inner section.normal h6{
+    font-weight: 500;
+    margin: 100px 0 15px 0;
+    padding: 0;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal h2 {
+    padding-bottom: 15px;
+    font-size: 36px;
+    line-height: 1.225;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal strong {
+    font-weight: 600;
+}
+
+
+/*
+	Main Nav
+*/
+.book .book-header{
+	font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: visible;
+    height: 50px;
+    padding: 0 8px;
+    z-index: 2;
+    font-size: .85em;
+    color: #7e888b;
+    background: #454545;   
+}
+
+.book .book-header h1{
+	opacity: 1;
+}
+
+.book .book-header h1 a{
+	color: transparent;
+	opacity: 1;
+	background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+}
+
+.book .book-header h1 a:hover{
+	color: transparent;
+}
+
+.book .book-header .btn {
+    display: block;
+    height: 50px;
+    padding: 0 15px;
+    border-bottom: 0;
+    color: #ccc;
+    text-transform: uppercase;
+    line-height: 50px;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    position: relative;
+    font-size: 20px;
+}
+
+.book .book-header .btn:hover {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: 0
+}
+
+.book .book-header #font-settings-wrapper,
+.book .book-header .btn[aria-label="Share"]{
+	display: none;
+}
+
+.book .book-summary .book-search{
+	background-color: #f1f1f1;
+}
+
+/*
+	Sidebar Left
+*/
+.book .book-summary{
+	border-right: 0;
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 0;
+    color: #323232;
+    background: transparent;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+
+    outline:none;
+}
+
+.book .book-summary ul.summary li.active>a, .book .book-summary ul.summary li a:hover {
+    color: #5eb7e5;
+    background: transparent;
+    text-decoration: none;
+}
+
+
+/*
+	Inner Content
+*/
+.book .book-body .page-wrapper .page-inner section.normal{
+padding: 60px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

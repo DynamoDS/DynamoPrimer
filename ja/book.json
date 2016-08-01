@@ -1,0 +1,56 @@
+{
+  "gitbook": "2.6.x",
+  "plugins": [
+    "-sharing",
+    "ga",
+    {
+      "name": "dynamo",
+      "version": "git+https://github.com/masself/gitbook-plugin-dynamo.git"
+    },
+    "search-languages"
+  ],
+  "pluginsConfig": {
+    "ga": {
+      "token": "UA-52186525-3"
+    },
+    "search_languages": {
+	"lang": "jp"
+    },
+    "dynamo": {
+      "customLinks":[
+        {            
+          "label": "Download",
+          "icon": "fa fa-file-pdf-o fa-lg",
+          "url": "Appendix/DynamoPrimer-Print.pdf"
+        }],
+      "languages":[
+         {
+		"label": "English",
+		"code":"en",
+	    "url": "http://dynamoprimer.com"
+         },
+         {
+		"label": "Deutsch",
+		"code": "de",
+	    "url": "http://dynamoprimer.com/de"
+         },
+         {
+		"label": "",
+		"code": "",
+	    "url": ""
+         },
+         {
+		"label": "",
+		"code": "",
+	    "url": ""
+         }
+      ],
+      "currentLanguage":{
+         "code":"ja",
+         "url":"http://dynamoprimer.com/ja",
+         "switchLangLabel":"言語"
+      },
+      "favicon":"/images/icons/favicon.ico"
+    }
+  }
+}

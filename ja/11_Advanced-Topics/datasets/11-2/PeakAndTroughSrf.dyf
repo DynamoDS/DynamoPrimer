@@ -1,0 +1,34 @@
+<Workspace Version="0.8.2.2032" X="-170.69858710496" Y="298.776808060455" zoom="0.931811528498331" Name="PeakAndTroughSrf" ID="fadd4dcf-df33-4772-b913-d3fb464d6ff1" Description="" Category="Samples">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Nodes.DSFunction guid="88c8d71b-cee3-4a21-98be-f647fd0e2723" type="Dynamo.Nodes.DSFunction" nickname="NurbsSurface.ByControlPoints" x="1387.77756255161" y="132.32273860933" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.NurbsSurface.ByControlPoints@Autodesk.DesignScript.Geometry.Point[][],int,int">
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="432e4fde-1e98-4d5c-bfb5-ca31bcb67f8a" type="Dynamo.Nodes.DSFunction" nickname="Point.ByCoordinates" x="1224.26499250815" y="133.41343666708" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.CodeBlockNodeModel guid="00db5e8c-8cbe-407c-8b87-d7478d94fca2" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="841.03035882883" y="23.6889946669403" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" CodeText="uTrig=Math.RadiansToDegrees(u);&#xA;vTrig=Math.RadiansToDegrees(v);&#xA;Cx=Math.Cos(uTrig);&#xA;Cy=Math.Sin(uTrig);&#xA;Cz=v;&#xA;Sx=Math.Sin(vTrig)*Cx;&#xA;Sy=Math.Sin(vTrig)*Cy;&#xA;Sz=Math.Cos(vTrig);&#xA;x=Cz*50+50;&#xA;y=Cy*50;&#xA;z=Sx*Sy*Sz*150;" ShouldFocus="false" />
+    <Dynamo.Nodes.CodeBlockNodeModel guid="afea03d4-bb02-4d00-af4b-e02e9f832ea6" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="278" y="-46" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" CodeText="t7 = Rectangle.ByWidthLength(100,100).Patch();&#xA;t6 = (0..1..#10);&#xA;t9 = t7&lt;1&gt;.PointAtParameter(t6&lt;2&gt;, t6&lt;3&gt;);&#xA;t10 = t7.UVParameterAtPoint(t9);&#xA;t12 = MapTo(0, 1, t10.U, (-Math.PI) / 2, (Math.PI) / 2);&#xA;t14 = MapTo(0, 1, t10.V, 0, Math.PI);" ShouldFocus="false" />
+    <Dynamo.Nodes.Output guid="efe8f984-4cf4-44a2-a52d-261b338c645b" type="Dynamo.Nodes.Output" nickname="Output" x="1650.5" y="136.5" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False">
+      <Symbol value="" />
+    </Dynamo.Nodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="88c8d71b-cee3-4a21-98be-f647fd0e2723" start_index="0" end="efe8f984-4cf4-44a2-a52d-261b338c645b" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="432e4fde-1e98-4d5c-bfb5-ca31bcb67f8a" start_index="0" end="88c8d71b-cee3-4a21-98be-f647fd0e2723" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="00db5e8c-8cbe-407c-8b87-d7478d94fca2" start_index="8" end="432e4fde-1e98-4d5c-bfb5-ca31bcb67f8a" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="00db5e8c-8cbe-407c-8b87-d7478d94fca2" start_index="9" end="432e4fde-1e98-4d5c-bfb5-ca31bcb67f8a" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="00db5e8c-8cbe-407c-8b87-d7478d94fca2" start_index="10" end="432e4fde-1e98-4d5c-bfb5-ca31bcb67f8a" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="afea03d4-bb02-4d00-af4b-e02e9f832ea6" start_index="4" end="00db5e8c-8cbe-407c-8b87-d7478d94fca2" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="afea03d4-bb02-4d00-af4b-e02e9f832ea6" start_index="5" end="00db5e8c-8cbe-407c-8b87-d7478d94fca2" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="background_preview" eyeX="15.1616225573564" eyeY="-150.284192466051" eyeZ="-85.0301676645417" lookX="104.365476193511" lookY="142.872221207635" lookZ="113.894931388122" />
+  </Cameras>
+</Workspace>
