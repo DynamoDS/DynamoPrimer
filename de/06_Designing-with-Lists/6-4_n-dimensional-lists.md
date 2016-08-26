@@ -104,7 +104,7 @@ In diesem Schritt erhöhen Sie die Komplexität. Angenommen, an den Kurven aus d
 
 ![Übungslektion](images/6-4/Exercise/B/00.png)
 
-> 1. Indem Sie einige Schritte zurückgehen, können Sie die Richtung der Kurven in der gerippten Struktur ändern, indem Sie List.Transpose vor der Verbindung zu *NurbsCurve.ByPoints* einfügen. Dadurch werden Spalten und Zeilen vertauscht und Sie erhalten 5 horizontale Rippen.
+> 1. Sie können in einem der vorigen Schritte die Richtung der Kurven in der gerippten Struktur ändern, indem Sie List.Transpose vor der Verbindung zu *NurbsCurve.ByPoints* einfügen. Dadurch werden Spalten und Zeilen vertauscht und Sie erhalten 5 horizontale Rippen.
 
 ### Übungslektion: 3D-Listen
 

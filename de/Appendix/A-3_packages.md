@@ -4,6 +4,10 @@
 
 Im Folgenden sind einige der häufiger in der Dynamo Community verwendeten Pakete aufgeführt. Entwickler sind aufgefordert, diese Liste zu ergänzen. Denken Sie daran, dass es sich bei [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer) um ein Open-Source-Projekt handelt!
 
+|![](http://archi-lab.net/wp-content/uploads/2016/02/wordpress-logo.jpg)|ARCHI-LAB|[Offizielle archi-lab-Website besuchen](http://archi-lab.net/)|
+| -- | -- | -- |
+|archi-lab ist eine Sammlung mit über 50 benutzerdefinierten Paketen, die die Möglichkeiten zur Interaktion zwischen Dynamo und Revit erheblich erweitern. Die archi-lab-Pakete enthalten Blöcke mit höchst unterschiedlichen Funktionen von einfachen Listenoperationen bis hin zu Analysis Visualization Framework-Blöcken für Revit.|![](http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png)|
+
 |![](images/A-4/logo02.png)|BUMBLEBEE FOR DYNAMO|[Besuchen Sie die offizielle BumbleBee-Website.](http://archi-lab.net/bumblebee-dynamo-and-excel-interop/)|
 | -- | -- | -- |
 |Bumblebee ist ein Interoperabilitäts-Plugin für Excel und Dynamo, das die Möglichkeiten von Dynamo zum Lesen und Schreiben von Excel-Dateien erheblich verbessert.|![](images/A-4/screengrab02.png)|
@@ -36,7 +40,7 @@ Im Folgenden sind einige der häufiger in der Dynamo Community verwendeten Paket
 | -- | -- | -- |
 |LunchBox ist eine Sammlung von wiederverwendbaren Geometrie- und Datenverwaltungsblöcken. Die Werkzeuge wurden mit Dynamo 0.8.1 und Revit 2016 getestet. Das Werkzeug enthält Blöcke für Oberflächenverkleidungen, Geometrie, Revit-Datensammlungen und vieles mehr!|![](images/A-4/lunchboxImage.jpg)|
 
-|![](images/A-4/mantisshrimpLogo.png)|MANTIS SHRIMP|[Besuchen Sie den Mantis Shrimp Project GitHub.](https://github.com/ksobon/MantisShrimp)|
+|![](images/A-4/mantisshrimpLogo.png)|MANTIS SHRIMP|[Offizielle Mantis Shrimp-Website besuchen](http://archi-lab.net/mantis-shrimp-getting-started/)|
 | -- | -- | -- |
 |Mantis Shrimp ist ein Interoperabilitätsprojekt, das Ihnen den problemlosen Import von Grasshopper- und/oder Rhino-Geometrie in Dynamo ermöglicht.|![](images/A-4/msImage.png)|
 

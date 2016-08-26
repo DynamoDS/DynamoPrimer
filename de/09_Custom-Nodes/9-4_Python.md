@@ -84,7 +84,7 @@ Damit haben Sie den Körper erstellt. Fügen Sie jetzt einen Block für Python-S
 
 ![](images/9-4/Exercise/Python/python05.png)
 
-> Um dem Block weitere Eingaben hinzuzufügen, schließen Sie den Editor und klicken Sie auf das +-Symbol im Block. Die Eingaben erhalten die Namen IN[0], IN[1] usw., um anzuzeigen, dass sie für die Einträge einer Liste stehen.
+> Um dem Block weitere Eingaben hinzuzufügen, schließen Sie den Editor und klicken Sie auf das +-Symbol im Block. Die Eingaben erhalten die Namen IN[0], IN[1] usw., um anzuzeigen, dass sie Einträge in einer Liste darstellen.
 
 Sie beginnen, indem Sie die Ein- und Ausgaben definieren. Doppelklicken Sie auf den Block, um den Python-Editor zu öffnen.
 

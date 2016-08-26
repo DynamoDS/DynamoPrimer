@@ -2,7 +2,7 @@
 
 # Dynamo Primer
 
-## Dynamo v9.0 用
+## For Dynamo v1.0
 
 ![Dynamo ロゴ](images/dynamo_logo_dark-trim.png)
 

@@ -46,14 +46,15 @@ Im Folgenden erstellen Sie in der Umgebung für benutzerdefinierte Blöcke einen
 
 ![Custom Nodes Canvas](images/9-1/CustomNodes04.png)
 
-> 1. **Eingaben**: Input-Blöcke erstellen die Eingaben des benutzerdefinierten Blocks. Verwenden Sie für einen Input-Block die folgende Syntax *input_name : datatype = default_value(optional)*
-2. **Ausgaben**: Diese Blöcke funktionieren ähnlich wie Input-Blöcke, dienen jedoch zum Erstellen und Benennen der Ausgaben des benutzerdefinierten Blocks.
+> 1. **Eingaben**: Input-Blöcke erstellen die Eingaben des benutzerdefinierten Blocks. Verwenden Sie für einen Input-Block die folgende Syntax: *input_name : datatype = default_value(optional)*
+
+2. **Ausgaben**: Diese Blöcke funktionieren ähnlich wie Input-Blöcke, dienen jedoch zum Erstellen und Benennen der Ausgaben des benutzerdefinierten Blocks. Es ist sinnvoll, den Ein- und Ausgaben **benutzerdefinierte Kommentare** hinzuzufügen, um den Typ der Ein- bzw. Ausgabe zu verdeutlichen. Dies wird im Abschnitt [Erstellen eines benutzerdefinierten Blocks](9-2_Creating.md) genauer beschrieben.
 
 Sie können diesen benutzerdefinierten Block als DYF-Datei (im Gegensatz den Standard-DYN-Dateien) speichern. Er wird dann automatisch der laufenden und zukünftigen Sitzungen hinzugefügt. Der benutzerdefinierte Block befindet sich in der Bibliothek in der Kategorie, die Sie in seinen Eigenschaften angegeben haben.
 
 ![Add to Library](images/9-1/CustomNodes05.png)
 
-> Links: Kategorie Core > Math der vorgegebenen Bibliothek Rechts: Core > Math mit dem neuen benutzerdefinierten Block
+> Links: Kategorie Core > Math der vorgegebenen Bibliothek. Rechts: Core > Math mit dem neuen benutzerdefinierten Block
 
 ### Weitere Schritte
 
