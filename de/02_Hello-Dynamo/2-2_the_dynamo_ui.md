@@ -42,7 +42,7 @@ Der Dynamo Werkzeugkasten enthält eine Reihe von Schaltflächen für den Schnel
 
 #### Bibliothek
 
-Die Bibliothek enthält alle geladenen Blöcke, einschließlich der standardmäßigen Blöcke, die zum Lieferumfang gehört haben, sowie der zusätzlich geladenen benutzerdefinierten Blöcke und Pakete. Die Blöcke in der Bibliothek sind in Abhängigkeit davon, ob die Blöcke Daten **erstellen**, eine **Aktion** ausführen oder Daten **abfragen**, hierarchisch in Bibliotheken, Kategorien und ggf. Unterkategorien organisiert.
+Die Bibliothek enthält alle geladenen Blöcke, einschließlich der standardmäßigen Blöcke, die zum Lieferumfang gehört haben, sowie der zusätzlich geladenen benutzerdefinierten Blöcke und Pakete. Die Blöcke in der Bibliothek sind in Abhängigkeit davon, ob die Blöcke Daten **erstellen**, eine **Aktion** ausführen oder Daten **abfragen**, hierarchisch in Bibliotheken, Kategorien und ggf. Unterkategorien geordnet.
 
 ##### Durchsuchen
 

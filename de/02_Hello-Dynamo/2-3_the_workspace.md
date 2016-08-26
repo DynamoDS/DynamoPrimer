@@ -31,7 +31,21 @@ In Dynamo werden sowohl das Diagramm als auch die 3D-Ergebnisse des Diagramms (w
 2. Mit der rechten Maustaste in den Arbeitsbereich klicken und *Zu ...ansicht wechseln* auswählen
 3. Tastaturbefehl (Strg + B)
 
-Der Modus Navigation in 3D-Vorschau bietet uns auch die Möglichkeit zur **Direktbearbeitung** von Punkten, wie im Abschnitt [Erste Schritte](2-6_the_quick_start_guide.md) veranschaulicht wird.
+Der Modus Navigation in 3D-Vorschau bietet uns auch die Möglichkeit zur **Direktbearbeitung** von Punkten, wie im Abschnitt [Erste Schritte](http://dynamoprimer.com/de/02_Hello-Dynamo/2-6_the_quick_start_guide.html) veranschaulicht wird.
+
+### Zoomen und neu zentrieren
+
+Im Modus Navigation in 3D-Vorschau können Sie mühelos schwenken, zoomen und drehen. Sie können jedoch gezielt auf das von einem bestimmten Geometrieblock erstellte Objekt einzoomen, indem Sie den betreffenden Block auswählen und dann das Symbol Zoom alles verwenden.
+
+![Zoom to Recenter 1](images/2-3/03-ZoomToRecenter_1.jpg)
+
+> 1. Wählen Sie den Block für die Geometrie aus, die in der Ansicht zentriert werden soll.
+2. Wechseln Sie zur Navigation in der 3D-Vorschau.
+
+![Zoom to Recenter 2](images/2-3/03-ZoomToRecenter_2.jpg)
+
+> 1. Klicken Sie auf das Symbol Zoom alles in der rechten oberen Ecke.
+2. Die ausgewählte Geometrie wird in der Ansicht zentriert.
 
 ### Mausnavigation
 
@@ -73,10 +87,8 @@ Das Organisieren Ihres Dynamo-Ansichtsbereichs wird zunehmend wichtig, je komple
 
 > 1. Aktivieren Sie die Blöcke, die automatisch organisiert werden sollen, oder lassen Sie alle Blöcke deaktiviert, um alle Blöcke in der Datei zu bereinigen.
 2. Die Funktion Blocklayout bereinigen befindet sich unter der Registerkarte Bearbeiten.
-
 #### Nach der Blockbereinigung
 
 ![Beispiel für Layoutbereinigung](images/2-3/07-CleanupNodeLayout.png)
-
-> 1. Die Blöcke werden automatisch neu verteilt und ausgerichtet, indem gestapelte oder überlappende Blöcke bereinigt und mit benachbarten Blöcken ausgerichtet werden.
+3. Die Blöcke werden automatisch neu verteilt und ausgerichtet, indem gestapelte oder überlappende Blöcke bereinigt und mit benachbarten Blöcken ausgerichtet werden.
 

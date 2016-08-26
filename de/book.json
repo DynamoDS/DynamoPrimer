@@ -6,28 +6,24 @@
 		{
 			"name": "dynamo",
 			"version": "git+https://github.com/masself/gitbook-plugin-dynamo.git"
-		},
-		"search-languages"
+		}    
 	],
 	"pluginsConfig": {
 		"ga": {
 			"token": "UA-52186525-3"
-		},
-		"search_languages": {
-	"lang": "de"
 		},
 		"dynamo": {
 			"customLinks":[
 				{            
 					"label": "Download",
 					"icon": "fa fa-file-pdf-o fa-lg",
-					"url": "http://dynamoprimer.com/de/Appendix/DynamoPrimer-Print.pdf"
+					"url": "http://dynamoprimer.com/en/Appendix/DynamoPrimer-Print.pdf"
 				}],
 			"languages":[
 				 {
-		"label": "English",
-		"code":"en",
-			"url": "http://dynamoprimer.com/en"
+		"label": "Deutsch",
+		"code":"de",
+			"url": "http://dynamoprimer.com/de"
 				 },
 				 {
 		"label": "日本語",
@@ -46,9 +42,9 @@
 				 }
 			],
 			"currentLanguage":{
-				 "code":"de",
-				 "url":"http://dynamoprimer.com/de",
-				 "switchLangLabel":"Sprachen"
+				 "code":"en",
+				 "url":"http://dynamoprimer.com/en",
+				 "switchLangLabel":"Languages"
 			},
 			"favicon":"/images/icons/favicon.ico"
 		}

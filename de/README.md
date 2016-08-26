@@ -2,7 +2,7 @@
 
 # Der Dynamo Primer
 
-## Für Dynamo v9.0
+## Für Dynamo v1.0
 
 ![Dynamo-Logo](images/dynamo_logo_dark-trim.png)
 

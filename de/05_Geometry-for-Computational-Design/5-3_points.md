@@ -8,7 +8,6 @@ Wenn Geometrie gewissermaßen die Sprache für ein Modell ist, sind Punkte das A
 
 > 1. Kreis mit den Funktionen ```x=r*cos(t)``` und ```y=r*sin(t)```
 2. Sinuskurve mit den Funktionen ```x=(t)``` und ```y=r*sin(t)```
-
 ### Was ist ein Punkt?
 
 Ein Punkt wird lediglich durch einen oder mehrere Werte, die sogenannten Koordinaten, definiert. Die Anzahl der Koordinatenwerte, die zum Definieren des Punkts benötigt werden, ist vom Koordinatensystem oder Kontext abhängig, in dem er sich befindet. In Dynamo werden größtenteils Punkte verwendet, die sich im dreidimensionalen Weltkoordinatensystem befinden und drei Koordinaten [x,y,z] aufweisen.

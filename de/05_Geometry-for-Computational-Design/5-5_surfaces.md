@@ -2,7 +2,7 @@
 
 ## Oberflächen
 
-Mit dem Übergang von Kurven zu Oberflächen in einem Modell beginnen Sie, Objekte darzustellen, die in der dreidimensionalen Realität sichtbar sind. Kurven sind zwar nicht immer planar, d. h. sie können dreidimensional verlaufen. Der durch sie definierte Raum ist jedoch immer an nur eine Dimension gebunden. Mit Oberflächen kommen eine weitere Dimension und damit eine Reihe weiterer Eigenschaften hinzu, die Sie in anderen Modellierungsvorgängen nutzen können.
+Mit dem Übergang von Kurven zu Oberflächen in einem Modell beginnen Sie, Objekte darzustellen, die in der dreidimensionalen Realität sichtbar sind. Kurven sind nicht immer planar (d. h., sie sind dreidimensional), der durch sie definierte Raum ist jedoch immer an eine Dimension gebunden. Mit Oberflächen kommen eine weitere Dimension und damit eine Reihe weiterer Eigenschaften hinzu, die Sie in anderen Modellierungsvorgängen nutzen können.
 
 ### Was ist eine Oberfläche?
 

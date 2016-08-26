@@ -2,7 +2,7 @@
 
 ## DesignScript-Syntax
 
-Die Namen von Blöcken in Dynamo weisen ein gemeinsames Merkmal auf: Sie enthalten einen Punkt *"."* ohne Leerzeichen. Der Grund dafür ist, dass als Text oben in jedem Block dessen Syntax in der Skriptsprache angegeben wird. Der Punkt (*"."*) in der sogenannten *Punktnotation* trennt dabei das Element von den möglichen Methoden, die für dieses aufgerufen werden können. Dies vermittelt auf einfache Weise zwischen visueller und textbasierter Skripterstellung.
+Die Namen von Blöcken in Dynamo weisen ein gemeinsames Merkmal auf: Sie verwenden eine Syntax mit Punkt *"."* ohne Leerzeichen. Dies ist der Fall, da die tatsächliche Skript-Syntax als Text ganz oben im jeweiligen Block verwendet wird. Der Punkt *"."* (bzw. die *Punktnotation*) dient dazu, ein Element von den möglichen Methoden abzugrenzen, die aufgerufen werden können. Dies vermittelt auf einfache Weise zwischen visueller und textbasierter Skripterstellung.
 
 ![NodeNames](images/7-2/apple.jpg)
 
@@ -121,7 +121,7 @@ Zur Demonstration der Effizienz von Codeblock wird hier eine bestehende Definiti
 
 ![Übungslektion](images/7-2/Exercise/02.png)
 
-> 1. Fügen Sie der Oberfläche schließlich eine Tiefendimension hinzu, indem Sie einen Volumenkörper konstruieren: ```solid = srf.Thicken(5);```. In diesem Fall beträgt die Verdickung 5 Einheiten im Code. Sie können dies jedoch jederzeit als Variable (z. B. mit der Bezeichnung *thickness*) definieren, deren Wert anschließend über einen Schieberegler gesteuert wird.
+> 1. Schließlich fügen Sie der Oberfläche Tiefe hinzu: Dazu konstruieren Sie mithilfe von ```solid = srf.Thicken(5);``` einen Volumenkörper. In diesem Fall wurde die Oberfläche im Code um 5 Einheiten verdickt, dies kann jedoch jederzeit auch als Variable (etwa mit dem Namen *thickness*) deklariert werden, deren Wert durch einen Schieberegler gesteuert wird.
 
 ### Vereinfachen des Diagramms mit Block zu Code
 
