@@ -75,3 +75,21 @@ Als Nächstes wählen Sie die Blöcke aus, die in einem benutzerdefinierten Bloc
 
 > Im **MapPolygonsToSurface**-Block wurden die eben vorgenommenen Änderungen übernommen.
 
+Um den benutzerdefinierten Block noch zuverlässiger zu gestalten, können Sie außerdem **benutzerdefinierte Kommentare** hinzufügen. Kommentare können Aufschluss über den Typ der Ein- und Ausgaben geben oder Erläuterungen zur Funktionsweise des Blocks enthalten. Sie werden angezeigt, wenn der Benutzer den Cursor auf eine Eingabe oder Ausgabe eines benutzerdefinierten Blocks setzt.
+
+![Custom Comment](images/9-2/UVmapping_Custom1.jpg)
+
+> Doppelklicken Sie auf den benutzerdefinierten Block, um ihn zu bearbeiten. Dadurch wird erneut der Arbeitsbereich mit dem gelben Hintergrund geöffnet.
+
+> 1. Beginnen Sie mit der Bearbeitung des Codeblocks für die Eingabe. Um mit einem Kommentar zu beginnen, geben Sie "//" und anschließend den Kommentartext ein. Geben Sie Informationen ein, die das Verständnis des Blocks erleichtern können. In diesem Fall wird *targetSurface* beschrieben.
+2. Legen Sie außerdem den Vorgabewert für *inputSurface* fest, indem Sie als Eingabetyp einen Wert vorgeben. In diesem Fall wird als Vorgabewert die ursprüngliche Surface.ByPatch angegeben.
+
+![Custom Comment](images/9-2/UVmapping_Custom1_.jpg)
+
+> Kommentare können auch für Ausgaben angewendet werden. Beginnen Sie mit der Bearbeitung des Texts im Codeblock für die Ausgabe. Um mit einem Kommentar zu beginnen, geben Sie "//" und anschließend den Kommentartext ein. In diesem Fall werden die Ausgaben *Polygons* und *surfacePatches* mit ausführlicheren Beschreibungen erläutert.
+
+![Custom Comment](images/9-2/UVmapping_Custom2.jpg)
+
+> 1. Setzen Sie den Cursor auf die Eingaben des benutzerdefinierten Blocks, um die Kommentare anzuzeigen.
+2. Da für *inputSurface* ein Vorgabewert festgelegt ist, können Sie die Definition auch ohne Eingabewert für die Oberfläche ausführen.
+

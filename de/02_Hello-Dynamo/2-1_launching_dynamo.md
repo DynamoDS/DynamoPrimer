@@ -10,7 +10,7 @@ Um das offizielle Release von Dynamo herunterzuladen, besuchen Sie die [Dynamo-W
 
 ![Startseite der Website](images/2-1/01-DynamoHomepage.png)
 
-> 1. Video zur computergestützten Konstruktion mit Dyanmo in der Architektur ansehen
+> 1. Video zur computergestützten Konstruktion mit Dynamo in der Architektur ansehen
 2. Oder zur Download-Seite navigieren
 
 Hier können Sie die aktuellsten Entwicklungsversionen herunterladen oder zum [Dynamo Github](https://github.com/DynamoDS/Dynamo)-Projekt wechseln.

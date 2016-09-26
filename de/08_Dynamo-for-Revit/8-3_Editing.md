@@ -57,7 +57,7 @@ In dieser Übung bearbeiten Sie Revit-Elemente, ohne geometrische Operationen in
 ![Exercise](images/8-3/Exercise/31.png)
 
 > 1. Darüber hinaus müssen Sie Werte für die einzelnen Parameter festlegen. Fügen Sie sechs *Integer Slider*-Blöcke in den Ansichtsbereich ein und weisen Sie ihnen die Namen der entsprechenden Parameter in der Liste zu. Legen Sie außerdem in den einzelnen Schiebereglern die in der Abbildung oben gezeigten Werte fest. Dies sind die folgenden Werte (von oben nach unten: ```62, 92, 25, 22, 8, 12```.
-2. Definieren Sie einen weiteren *Code Block* mit einer Liste von derselben Länge wie die Liste der Parameternamen. In diesem Fall geben Sie dabei Variablennamen (ohne Anführungszeichen) an, wodurch Eingaben für den *Code Block* gebildet werden. Verbinden Sie die *Schieberegler* mit den dazugehörigen Eingaben: ```{bw,bl,bh,ao,io.lu};```.
+2. Definieren Sie einen weiteren *Code Block* mit einer Liste von derselben Länge wie die Liste der Parameternamen. In diesem Fall geben Sie dabei Variablennamen (ohne Anführungszeichen) an und erhalten dadurch Eingaben für den *Code Block.* Verbinden Sie die *Schieberegler* mit den dazugehörigen Eingaben: ```{bw,bl,bh,ao,io.lu};```.
 3. Verbinden Sie den *Code Block* mit dem *Element.SetParameterByName**-Block. Ist die Option Automatisch ausführen aktiviert, werden die Ergebnisse sofort angezeigt.
 
 **Anmerkung: Diese Demonstration kann nur mit Exemplarparametern, nicht jedoch mit Typenparametern durchgeführt werden.*

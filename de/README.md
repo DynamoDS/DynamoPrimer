@@ -2,7 +2,7 @@
 
 # Der Dynamo Primer
 
-## Für Dynamo v9.0
+## Für Dynamo v1.0
 
 ![Dynamo-Logo](images/dynamo_logo_dark-trim.png)
 
@@ -80,7 +80,7 @@ Dynamo@autodesk.com
 
 ### Lizenz
 
-Copyright 2015 Autodesk
+Copyright 2016 Autodesk
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

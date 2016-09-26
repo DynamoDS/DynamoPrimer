@@ -19,7 +19,7 @@ Für Codeblöcke stehen einige einfache Kurzschreibweisen zur Verfügung, die, e
 
 |Block/Blöcke|Codeblock-Entsprechung|Anmerkung|
 | -- | -- | -- |
-|Beliebiger Operator (+, &&, >=, Not, usw.)|+, &&, >=, !, usw.|Beachten Sie, dass "Not" (Nicht)durch "!" ersetzt wird, der Block jedoch zur Unterscheidung von "Fakultät" nach wie vor "Not" heißt.|
+|Beliebiger Operator (+, &&, >=, Not, usw.)|+, &&, >=, !, usw.|Beachten Sie, dass "Not" (Nicht) durch "!" ersetzt wird, der Block jedoch zur Unterscheidung von "Fakultät" nach wie vor "Not" heißt.|
 |Boolescher Wert True|true;|Anmerkung: Kleinbuchstaben|
 |Boolescher Wert False|false;|Anmerkung: Kleinbuchstaben|
 

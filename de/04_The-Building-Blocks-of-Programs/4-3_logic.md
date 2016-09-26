@@ -42,7 +42,7 @@ In diesem Beispiel teilen Sie eine Liste von Zahlen in eine Liste mit geraden un
 4. **Modulus (%)**: Verbinden Sie *Range* mit *x* und *2.0* mit *y*. Mit dieser Funktion wird für jede Zahl aus der Liste der Rest bei Division durch 2 berechnet. Die Ausgabe für diese Liste ist eine Liste, die abwechselnd die Werte 0 und 1 enthält.
 5. **Gleichheitsprüfung (==)**: Fügen Sie im Ansichtsbereich einen Block für die Gleichheitsprüfung hinzu. Verbinden Sie die Ausgabe des *Modulus*-Blocks mit der *x*-Eingabe und *0.0* mit der *y*-Eingabe.
 6. **Watch**: Die Gleichheitsprüfung gibt eine Liste aus, die abwechselnd die Werte true und false enthält. Mithilfe dieser Werte werden die Einträge aus der Zahlenliste eingeordnet. Dabei steht *0* (bzw. *true*) für gerade und (*1* bzw. *false*) für ungerade Zahlen.
-7. **List.FilterByBoolMask**: Dieser Block filtert die Werte anhand der eingegebenen Booleschen Operation in zwei Listen. Verbinden Sie den ursprünglichen *Range* mit der *list*-Eingabe und die Ausgabe der Gleichheitsprüfung mit der *mask*-Eingabe. Die *in*-Ausgabe enthält die true-Werte, die *out*-Ausgabe die false-Werte.
+7. **List.FilterByBoolMask**: Dieser Block filtert die Werte anhand der eingegebenen Booleschen Operation in zwei Listen. Verbinden Sie den ursprünglichen *Range* mit der *list*-Eingabe und die *Gleichheitsprüfung**-Ausgabe mit der *mask*-Eingabe. Die *in*-Ausgabe enthält die true-Werte, die *out*-Ausgabe die false-Werte.
 8. **Watch**: Als Ergebnis erhalten Sie eine Liste mit geraden und eine Liste mit ungeraden Zahlen. Damit haben Sie mithilfe logischer Operatoren Listen anhand eines Musters aufgeteilt.
 
 ### Aus Logik wird Geometrie

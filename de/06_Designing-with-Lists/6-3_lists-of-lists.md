@@ -224,7 +224,7 @@ In dieser Übungslektion wird ein Teil der in der vorigen Lektion erstellten Log
 
 ![Übungslektion](images/6-3/Exercise/B/05.png)
 
-> In diesem Schritt fragen Sie den Mittelpunkt des eben erstellten Rasters ab. Dazu wird die mittlere Zeile der mittleren Liste ausgewählt – ein naheliegender Schritt.
+> In diesem Schritt fragen Sie den Mittelpunkt des eben erstellten Rasters ab. Dazu wird die mittlere Zeile der mittleren Liste ausgewählt, wie es nahe liegt.
 
 > 1. Sie können auch nacheinander auf die Elemente im Beobachtungsblock klicken, um sicherzustellen, dass dies der richtige Punkt ist.
 2. Schreiben Sie im *Code Block* eine einfache Codezeile zum Abfragen einer Liste von Listen: ```points[1][2];```.
@@ -258,5 +258,5 @@ In dieser Übungslektion wird ein Teil der in der vorigen Lektion erstellten Log
 
 ![Übungslektion](images/6-3/Exercise/B/00.png)
 
-> 1. Verbinden Sie einen *Surface.ByLoft*-Block mit der Ausgabe von *NurbsCurve.ByPoints*. Damit haben Sie eine geänderte Oberfläche erstellt. Sie können den ursprünglichen *Z*-Wert von Geometry.Translate ändern und beobachten, wie sich die Geometrie verändert.
+> 1. Verbinden Sie einen *Surface.ByLoft*-Block mit der Ausgabe von *NurbsCurve.ByPoints*. Damit haben Sie eine geänderte Oberfläche erstellt. Sie können den ursprünglichen *Z*-Wert der Geometrie ändern. Beobachten Sie, wie die Geometrie durch diese Verschiebung aktualisiert wird.
 

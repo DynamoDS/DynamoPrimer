@@ -6,7 +6,7 @@ Der visuelle Programmierungsprozesses ist eine äußerst leistungsstarke, kreati
 
 ### Ausrichtung
 
-Nachdem Sie bereits zahlreiche Blöcke zum Arbeitsbereich hinzugefügt haben, möchten Sie sie möglicherweise neu anordnen, um das Layout übersichtlicher zu gestalten. Indem Sie mehrere Blöcke auswählen und mit der rechten Maustasten in den Arbeitsbereich klicken, wird ein Popup-Fenster mit dem Menü **Auswahl ausrichten** angezeigt, das Optionen zum Ausrichten und Verteilen in X- und Y-Richtung enthält.
+Nachdem Sie bereits zahlreiche Blöcke zum Arbeitsbereich hinzugefügt haben, möchten Sie sie möglicherweise neu anordnen, um das Layout übersichtlicher zu gestalten. Indem Sie mehrere Blöcke auswählen und mit der rechten Maustaste in den Arbeitsbereich klicken, wird ein Popup-Fenster mit dem Menü **Auswahl ausrichten** angezeigt, das Optionen zum Ausrichten und Verteilen in X- und Y-Richtung enthält.
 
 ![Ausrichten](images/3-4/00-Align.png)
 

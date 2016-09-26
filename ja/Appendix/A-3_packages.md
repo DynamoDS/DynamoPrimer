@@ -4,6 +4,10 @@
 
 このセクションでは、Dynamo コミュニティで人気のあるパッケージをいくつか紹介します。これ以外にも便利なパッケージがあれば、リストに追加してください。[Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer) は、オープンソース型のドキュメントです。開発者の皆様の積極的な参加をお待ちしています。
 
+|![](http://archi-lab.net/wp-content/uploads/2016/02/wordpress-logo.jpg)|ARCHI-LAB|[archi-lab の公式サイトにアクセス](http://archi-lab.net/)|
+| -- | -- | -- |
+|archi-lab には、Dynamo と Revit との対話機能を大幅に拡張する 50 個超のカスタム パッケージが含まれています。archi-lab パッケージには、基本的なリスト操作用のノードから、Revit 用の高度な Analysis Visualization Framework ノードまで、さまざまなノードが含まれています。|![](http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png)|
+
 |![](images/A-4/logo02.png)|BUMBLEBEE FOR DYNAMO|[BumbleBee の公式サイトを参照](http://archi-lab.net/bumblebee-dynamo-and-excel-interop/)|
 | -- | -- | -- |
 |Bumblebee は、Dynamo で Excel ファイルを読み書きする際の機能を大幅に向上させる、Excel と Dynamo の相互運用性プラグインです。|![](images/A-4/screengrab02.png)|
@@ -36,7 +40,7 @@
 | -- | -- | -- |
 |LunchBox は、再利用可能なジオメトリ ノードとデータ管理ノードの集合です。このツールは、Dynamo 0.8.1 と Revit 2016 で動作することがテストによって確認されています。このツールには、サーフェスのパネル化、ジオメトリ、Revit データ集合などで使用できるノードが含まれています。|![](images/A-4/lunchboxImage.jpg)|
 
-|![](images/A-4/mantisshrimpLogo.png)|MANTIS SHRIMP|[Mantis Shrimp Project GitHub を参照](https://github.com/ksobon/MantisShrimp)|
+|![](images/A-4/mantisshrimpLogo.png)|MANTIS SHRIMP|[Mantis Shrimp の公式サイトにアクセス](http://archi-lab.net/mantis-shrimp-getting-started/)|
 | -- | -- | -- |
 |Mantis Shrimp は、Grasshopper ジオメトリや Rhino ジオメトリを Dynamo に簡単に読み込むことができる、相互運用性プロジェクトです。|![](images/A-4/msImage.png)|
 
