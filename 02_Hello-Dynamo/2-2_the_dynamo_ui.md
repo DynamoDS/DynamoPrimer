@@ -99,12 +99,13 @@ If you're stuck, check out the **Help** Menu. Here you can find the sample files
 
 ![show menu](images/2-2/09-Help.png)
 
->1. Samples
-2. Report A Bug
-3. Go To Project Website
-4. Go To Project Wiki
-5. Display Start Page
-6. About
+>1. Getting Started
+2. Samples
+3. Report A Bug
+4. Go To Project Website
+5. Go To Project Wiki
+6. Display Start Page
+7. About
 
 
 
