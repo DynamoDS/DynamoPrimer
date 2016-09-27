@@ -164,7 +164,7 @@ In this exercise, we will use the List@Level feature to isolate a specific level
 2. **Use Levels** - This enables the List@Level functionality. After clicking on this option, you will be able to click through and select the input list levels you want the node to use. With this menu, you can quickly try out different level options by clicking up or down.
 3. **Keep list structure** – If enabled, you will have the option to keep that input’s level structure. Sometimes, you may have purposefully organized your data into sublists. By checking this option, you can keep your list organization intact and not lose any information.
 
-With our simple 3D grid, we can clearly access the list structure by toggling through the List Levels. Each List Level and index combination will return a different set of points from our original 3D set.
+With our simple 3D grid, we can access and visualize the list structure by toggling through the List Levels. Each List Level and index combination will return a different set of points from our original 3D set.
 
 ![List@Level](images/6-3/Exercise/ListAtLevel-03.png)
 
