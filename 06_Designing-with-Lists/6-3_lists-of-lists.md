@@ -105,6 +105,8 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 3. The results of *List.Count* now gives a list of 5 items, each with a value of 3.  This represents the length of each sublist.
 
 #### Exercise - List.Combine
+*Note: This exercise was created with a previous version of Dynamo. Much of the Combine functionality has been resolved with the addition of the List@Level feature. For more information on List@Level, See the following section.*
+
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Combine.dyn](datasets/6-3/Combine.dyn). A full list of example files can be found in the Appendix.
 
 In this exercise, we'll use a similar logic to List.Map, but with multiple elements.  In this case, we want to divide a list of curves by a unique number of points.
