@@ -105,6 +105,8 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 3. The results of *List.Count* now gives a list of 5 items, each with a value of 3.  This represents the length of each sublist.
 
 #### Exercise - List.Combine
+*Note: This exercise was created with a previous version of Dynamo. Much of the Combine functionality has been resolved with the addition of the List@Level feature. For more information on List@Level, See the following section.*
+
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Combine.dyn](datasets/6-3/Combine.dyn). A full list of example files can be found in the Appendix.
 
 In this exercise, we'll use a similar logic to List.Map, but with multiple elements.  In this case, we want to divide a list of curves by a unique number of points.
@@ -140,6 +142,39 @@ In this exercise, we'll use a similar logic to List.Map, but with multiple eleme
 5. The empty inputs of *Curve.PointAtParameter*, from top-to-bottom need to be filled in the combinator in the same order.  So, the lines are plugged into *list1* of *List.Combine*.
 6. Following suit, the parameter values are plugged into the *list2* input of *List.Combine*.
 7. The *Watch* node and the Dynamo preview shows us that we have 4 lines, each divided based on the *code block* ranges.
+
+### List@Level
+
+An alternative to List.Map, the List@Level feature allows you to directly select which level of list you want to work with right at the input port of the node. This feature can be applied to any incoming input of a node and will allow you access the levels of your lists quicker and easier than other methods. Just tell the node what level of the list you want to use as the input and let the node do the rest.
+
+#### List@Level Exercise
+
+In this exercise, we will use the List@Level feature to isolate a specific level of data.
+
+> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [UPDATE](datasets/6-3/Transpose.dyn). A full list of example files can be found in the Appendix.
+
+![List@Level](images/6-3/Exercise/ListAtLevel-01.png)
+
+>1. We will start with a simple 3D grid of points.
+2. Since the grid is constructed with a Range for X, Y and Z, we know that the data is structured with 3 tiers: an X List, Y List and Z List.
+3. These tiers exist at different **Levels**. The Levels are indicated at the bottom of the Preview Bubble. The list Levels columns correspond to the list data above to help identify which level to work within.
+4. The List Levels are organized in reverse order so that the lowest level data is always in “L1”. This will help ensure that your graphs will work as planned, even if anything is changed upstream.
+
+![List@Level](images/6-3/Exercise/ListAtLevel-02.png)
+
+>1. To use the List@Level function, click “>”. Inside this menu, you will see two checkboxes.
+2. **Use Levels** - This enables the List@Level functionality. After clicking on this option, you will be able to click through and select the input list levels you want the node to use. With this menu, you can quickly try out different level options by clicking up or down.
+3. **Keep list structure** – If enabled, you will have the option to keep that input’s level structure. Sometimes, you may have purposefully organized your data into sublists. By checking this option, you can keep your list organization intact and not lose any information.
+
+With our simple 3D grid, we can access and visualize the list structure by toggling through the List Levels. Each List Level and index combination will return a different set of points from our original 3D set.
+
+![List@Level](images/6-3/Exercise/ListAtLevel-03.png)
+
+>1. “@L2” in DesignScript allows us to select only the List at Level 2.
+2. The List at Level 2 with the index 0 includes only the first set of Y points, returning only the XZ grid.
+3. If we change the Level filter to “L1”, we will be able to see everything in the first List Level. The List at Level 1 with the index 0 includes all of our 3D points in a flat list.
+4. If we try the same for “L3” we will see only the third List Level points. The List at Level 3 with the index 0 includes only the first set of Z points, returning only an XY grid.
+5. If we try the same for “L4” we will see only the third List Level points. The List at Level 4 with the index 0 includes only the first set of X points, returning only an YZ grid.
 
 ###Transpose
 Transpose is a fundamental function when dealing with lists of lists. Just as in spreadsheet programs, a transpose flips the columns and rows of a data structure. We'll demonstrate this with a basic matrix below, and in the following section, we'll demonstrate how a transpose can be use to create geometric relationships.

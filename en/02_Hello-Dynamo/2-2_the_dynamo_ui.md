@@ -87,20 +87,25 @@ From geometric to user settings, these options can be found in the **Settings** 
 ![show menu](images/2-2/08-Settings.png)
 
 >1. Enabling Reporting
-2. Number Format
-3. Render Quality
+2. Number Format Options
+3. Change the Render Quality
+4. Show/Hide Geometry Edges
+5. Show/Hide Preview Bubbles
+6. Manage Node and Package Paths
+7. Enabling Experimental Features
 
 ###Help
 If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to, check the version of Dynamo installed and whether it is up to date through the **About** option.
 
 ![show menu](images/2-2/09-Help.png)
 
->1. Samples
-2. Report A Bug
-3. Go To Project Website
-4. Go To Project Wiki
-5. Display Start Page
-6. About
+>1. Getting Started
+2. Samples
+3. Report A Bug
+4. Go To Project Website
+5. Go To Project Wiki
+6. Display Start Page
+7. About
 
 
 
