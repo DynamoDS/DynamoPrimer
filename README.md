@@ -53,7 +53,7 @@ A special thanks to Ian Keough for initiating and guiding the Dynamo project.
 Thank you to Matt Jezyk, Ian Keough, Zach Kron, and Colin McCrone for enthusiastic collaboration and the opportunity to participate on a wide array of Dynamo projects.
 
 ### Software and Resources
-**Dynamo** The current stable release of Dynamo is Version 0.9.
+**Dynamo** The current stable release of Dynamo is Version 1.1.0.
 
 http://dynamobim.com/download/
 
@@ -70,7 +70,7 @@ https://github.com/DynamoDS/Dynamo
 Dynamo@autodesk.com
 
 ### License
-Copyright 2016 Autodesk
+Copyright 2017 Autodesk
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
