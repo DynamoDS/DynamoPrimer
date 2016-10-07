@@ -1,6 +1,7 @@
 ## 1.1 PREFACE
 
 ###1.1.1 Welcome
+歡迎
 
 Welcome Text
 - background, previous versions, ml dynamo activities
@@ -8,6 +9,10 @@ Welcome Text
 - the ambitions around the project (fundamental concepts, cross-disciplinary ie use the sandbox,
 - this is guide to the current dynamo version
 - team signature
+
+-背景, 過去版本, ooxx
+-我們很開心(?)
+
 
 ###1.1.2 About this Primer
 
