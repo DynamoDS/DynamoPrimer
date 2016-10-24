@@ -31,6 +31,9 @@ Dynamo gives an indication of the state of the execution of your Visual Program 
 2. Inactive - Grey Nodes are inactive and need to be connected with Wires to be part of the Program Flow in the active Workspace
 3. Selected - Currently selected Nodes have and Aqua highlight on their border
 4. Warning - Yellow Nodes are in an Error state
+5. Freeze - 
+6. Background - 
+7. Error State - 
 
 If your Visual Program contains warning or errors, Dynamo will provide additional information about the problem. Any Node that is Yellow will also have a tooltip above the Name. Hover your mouse over the tooltip to expand it.
 
