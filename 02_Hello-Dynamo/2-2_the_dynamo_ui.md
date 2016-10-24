@@ -86,26 +86,26 @@ From geometric to user settings, these options can be found in the **Settings** 
 
 ![show menu](images/2-2/08-Settings.png)
 
->1. Enabling Reporting
-2. Number Format Options
-3. Change the Render Quality
-4. Show/Hide Geometry Edges
-5. Show/Hide Preview Bubbles
-6. Manage Node and Package Paths
-7. Enabling Experimental Features
+>1. Enabling Reporting - Options for sharing user data to improve Dynamo.
+2. Number Format Options - Change the document settings for decimals.
+3. Render Precision - Raise or lower the document render quality.
+4. Show/Hide Geometry Edges - Toggle 3D geometry edges.
+5. Show/Hide Preview Bubbles - Toggle data preview bubbles below nodes.
+6. Manage Node and Package Paths - Manage file paths to make nodes and packages show up in the Library.
+7. Enabling Experimental Features - Use beta features new in Dynamo.
 
 ###Help
 If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to, check the version of Dynamo installed and whether it is up to date through the **About** option.
 
 ![show menu](images/2-2/09-Help.png)
 
->1. Getting Started
-2. Samples
-3. Report A Bug
-4. Go To Project Website
-5. Go To Project Wiki
-6. Display Start Page
-7. About
+>1. Getting Started - A brief introduction to using Dynamo.
+2. Samples - Reference example files.
+3. Report A Bug - Open an Issue on GitHub.
+4. Go To Project Website - View the Dynamo Project on GitHub.
+5. Go To Project Wiki - Visit the wiki for learning about development using the Dynamo API, supporting libraries and tools.
+6. Display Start Page - Return to the Dynamo start page when within a document.
+7. About - Dynamo Version data.
 
 
 
