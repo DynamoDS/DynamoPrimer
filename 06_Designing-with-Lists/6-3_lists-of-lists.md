@@ -149,7 +149,7 @@ An alternative to List.Map, the List@Level feature allows you to directly select
 #### List@Level Exercise
 In this exercise, we will use the List@Level feature to isolate a specific level of data.
 
-> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [UPDATE](datasets/6-3/Transpose.dyn). A full list of example files can be found in the Appendix.
+> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [List@Level](datasets/6-3/Listatlevel.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
 ![List@Level](images/6-3/Exercise/ListAtLevel-01.png)
 
