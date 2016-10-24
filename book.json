@@ -4,7 +4,7 @@
 		"-sharing",
 		"ga",
 		{
-			"name": "dynamo",//name
+			"name": "dynamo",
 			"version": "git+https://github.com/masself/gitbook-plugin-dynamo.git"
 		}    
 	],
