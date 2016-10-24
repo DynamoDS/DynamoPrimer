@@ -30,7 +30,7 @@ Here we need to decide if we want to include the components that connect Dynamo 
 
 ### Launching
 
-To launch Dynamo, browse to the Windows Start Menu &gt; Dynamo &gt; **Dynamo 1.1.0**. This will open the stand-alone version and present Dynamo's _Start Page_. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources.
+To launch Dynamo, browse to the Windows Start Menu &gt; Dynamo &gt; **Dynamo**. This will open the stand-alone version and present Dynamo's _Start Page_. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources.
 
 ![NEEDS UPDATE - labels Dynamo start page](images/2-1/04-DynamoStartpage.png)
 
