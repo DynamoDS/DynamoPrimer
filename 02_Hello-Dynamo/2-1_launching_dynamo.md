@@ -15,8 +15,9 @@ Here you can download the "bleeding edge" development versions or go to the [Dyn
 
 ![website downloads page](images/2-1/02-DynamoDownload.png)
 
-> 1. Download official release or daily build installers
-> 2. Get involved in the development of Dynamo on Github
+> 1. Download the official release installer
+> 2. Download the daily build installers
+> 3. Get involved in the development of Dynamo on Github
 
 ### Installing
 
