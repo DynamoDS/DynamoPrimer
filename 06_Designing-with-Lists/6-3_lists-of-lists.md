@@ -152,7 +152,6 @@ In this exercise, we will use the List@Level feature to isolate a specific level
 > Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [List@Level](datasets/6-3/Listatlevel.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
 ![List@Level](images/6-3/Exercise/ListAtLevel-01.png)
-
 >1. We will start with a simple 3D grid of points.
 2. Since the grid is constructed with a Range for X, Y and Z, we know that the data is structured with 3 tiers: an X List, Y List and Z List.
 3. These tiers exist at different **Levels**. The Levels are indicated at the bottom of the Preview Bubble. The list Levels columns correspond to the list data above to help identify which level to work within.
