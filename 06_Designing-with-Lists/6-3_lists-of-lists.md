@@ -159,7 +159,6 @@ In this exercise, we will use the List@Level feature to isolate a specific level
 4. The List Levels are organized in reverse order so that the lowest level data is always in “L1”. This will help ensure that your graphs will work as planned, even if anything is changed upstream.
 
 ![List@Level](images/6-3/Exercise/ListAtLevel-02.png)
-
 >1. To use the List@Level function, click '>'. Inside this menu, you will see two checkboxes.
 2. **Use Levels** - This enables the List@Level functionality. After clicking on this option, you will be able to click through and select the input list levels you want the node to use. With this menu, you can quickly try out different level options by clicking up or down.
 3. **Keep list structure** – If enabled, you will have the option to keep that input’s level structure. Sometimes, you may have purposefully organized your data into sublists. By checking this option, you can keep your list organization intact and not lose any information.
