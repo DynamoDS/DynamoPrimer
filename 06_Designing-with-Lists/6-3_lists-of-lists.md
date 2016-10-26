@@ -167,18 +167,17 @@ In this exercise, we will use the List@Level feature to isolate a specific level
 With our simple 3D grid, we can access and visualize the list structure by toggling through the List Levels. Each List Level and index combination will return a different set of points from our original 3D set.
 
 ![List@Level](images/6-3/Exercise/ListAtLevel-03.png)
-
 >1. “@L2” in DesignScript allows us to select only the List at Level 2.
 2. The List at Level 2 with the index 0 includes only the first set of Y points, returning only the XZ grid.
 3. If we change the Level filter to “L1”, we will be able to see everything in the first List Level. The List at Level 1 with the index 0 includes all of our 3D points in a flat list.
 4. If we try the same for “L3” we will see only the third List Level points. The List at Level 3 with the index 0 includes only the first set of Z points, returning only an XY grid.
 5. If we try the same for “L4” we will see only the third List Level points. The List at Level 4 with the index 0 includes only the first set of X points, returning only an YZ grid.
 
-Although this particular example can also be created with List.Map, List@Level greatly simplifies the interaction, making it easy to access the node data. Take a look below at the comparison between a List.Map and List@Level methods:
+Although this particular example can also be created with List.Map, List@Level greatly simplifies the interaction, making it easy to access the node data. Take a look below at a comparison between a List.Map and List@Level methods:
 
-![List@Level-vs-ListMap](images/6-3/Exercise/ListAtLevel_comparison.png)
->1. Although both of the methods will give us access to the same points, the List@Level method allows us to easily toggle between layers of data within a single node.
-2. For a 3-dimensional grid, we need to have three different ways of accessing the information - one for each set of points we want to isolate. Depending on the complexity of your Graph, this method may require several List.Map nodes plugged into one another to access a single layer of data. For our third set of points, the graph needs to have two back to back List.Map nodes, but for more complex data structures it may require many more. 
+![List@Level-vs-ListMap](images/6-3/Exercise/listAtLevel_comparison.png)
+>1. Although both methods will give us access to the same points, the List@Level method allows us to easily toggle between layers of data within a single node.
+2. For a 3-dimensional grid, we need to have three different ways to access three layers of information - one for each grid of points we want to isolate. Depending on the complexity of your Graph, this method may require several List.Map nodes plugged into one another to access a single layer of data. For our third set of points, the graph needs two back to back List.Map nodes, but for more complex data structures it may require many more. 
 
 ###Transpose
 Transpose is a fundamental function when dealing with lists of lists. Just as in spreadsheet programs, a transpose flips the columns and rows of a data structure. We'll demonstrate this with a basic matrix below, and in the following section, we'll demonstrate how a transpose can be use to create geometric relationships.
