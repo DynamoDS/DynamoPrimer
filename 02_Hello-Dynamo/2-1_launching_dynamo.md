@@ -31,7 +31,7 @@ Here we need to decide if we want to include the components that connect Dynamo 
 
 ### Launching
 
-To launch Dynamo, browse to the Windows Start Menu &gt; Dynamo &gt; **Dynamo**. This will open the stand-alone version and present Dynamo's _Start Page_. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources.
+To launch Dynamo, browse to the Windows Start Menu > Dynamo > **Dynamo**. This will open the stand-alone version and present Dynamo's _Start Page_. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources.
 
 ![NEEDS UPDATE - labels Dynamo start page](images/2-1/04-DynamoStartpage.png)
 
@@ -42,7 +42,7 @@ To launch Dynamo, browse to the Windows Start Menu &gt; Dynamo &gt; **Dynamo**. 
 > 5. Reference - Go further with additional learning resources
 > 6. Code - Participate in the open-source development project
 
-Open the first sample file to open your first workspace and confirm Dynamo is working correctly. Click Samples &gt; Basics &gt; **Basics\_Basic01.dyn**.
+Open the first sample file to open your first workspace and confirm Dynamo is working correctly. Click Samples > Basics > **Basics\_Basic01.dyn**.
 
 ![NEEDS UPDATE - Basics_Basic01](images/2-1/05-Basics_Basic01.png)
 
