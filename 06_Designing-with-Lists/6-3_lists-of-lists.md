@@ -53,7 +53,7 @@ Flatten removes all tiers of data from a data structure. This is helpful when th
 ![Exercise](images/6-3/Exercise/Flatten-30.png)
 >1. By inserting a *flatten* before the polycurve node, we've created one single list for all of the points.  The polycurve node references a list to create one curve, and since all of the points are on one list, we get one zig-zag polycurve which runs throughout the entire list of points.
 
-There are also options for flattening isolated tiers of data.  Using the List.Flatten node, you can define a set number of data tiers to flatten from the top of the hierarchy.  This is a really helpful tool if you're struggling with complex data structures which are not necessarily relevant to your workflow.  And another option is to use the flatten node as a function in List.Map.  We'll discuss List.Map more below.
+There are also options for flattening isolated tiers of data.  Using the List.Flatten node, you can define a set number of data tiers to flatten from the top of the hierarchy.  This is a really helpful tool if you're struggling with complex data structures which are not necessarily relevant to your workflow.  And another option is to use the flatten node as a function in List.Map.  We'll discuss [List.Map](#listmap-and-listcombine) more below.
 
 ###Chop
 When parametric modeling, there are also times where you'll want to add more data structure to an existing list.  There are many nodes available for this as well, and chop is the most basic version.  With chop, we can partition a list into sublists with a set number of items.
@@ -105,7 +105,7 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 3. The results of *List.Count* now gives a list of 5 items, each with a value of 3.  This represents the length of each sublist.
 
 #### Exercise - List.Combine
-*Note: This exercise was created with a previous version of Dynamo. Much of the Combine functionality has been resolved with the addition of the List@Level feature. For more information, see [List@Level](../06_Designing-with-Lists/6-3_lists-of-lists.md#List@Level) below.*
+*Note: This exercise was created with a previous version of Dynamo. Much of the Combine functionality has been resolved with the addition of the List@Level feature. For more information, see [List@Level](#list@level) below.*
 
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Combine.dyn](datasets/6-3/Combine.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
