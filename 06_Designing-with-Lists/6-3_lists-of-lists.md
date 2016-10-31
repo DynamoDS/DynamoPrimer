@@ -59,7 +59,7 @@ There are also options for flattening isolated tiers of data.  Using the List.Fl
 When parametric modeling, there are also times where you'll want to add more data structure to an existing list.  There are many nodes available for this as well, and chop is the most basic version.  With chop, we can partition a list into sublists with a set number of items.
 
 #### Exercise - List.Chop
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Chop.dyn](datasets/6-3/Chop.dyn). A full list of example files can be found in the Appendix.
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Chop.dyn](datasets/6-3/Chop.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
 ![Chop](images/6-3/chop-01.jpg)
 > A *List.Chop *with a *subLength* of 2 creates 4 lists with 2 items each.
@@ -72,7 +72,7 @@ The chop command divides lists based on a given list length. In some ways, chop 
 A List.Map/Combine applies a set function to an input list, but one step down in the hierarchy. Combinations are the same as Maps, except combinations can have multiple inputs corresponding to the input of a given function.
 
 #### Exercise - List.Map
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Map.dyn](datasets/6-3/Map.dyn). A full list of example files can be found in the Appendix.
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Map.dyn](datasets/6-3/Map.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
 As a quick introduction, let's review the List.Count node from a previous section.
 
