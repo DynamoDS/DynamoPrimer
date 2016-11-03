@@ -72,6 +72,8 @@ The chop command divides lists based on a given list length. In some ways, chop 
 A List.Map/Combine applies a set function to an input list, but one step down in the hierarchy. Combinations are the same as Maps, except combinations can have multiple inputs corresponding to the input of a given function.
 
 #### Exercise - List.Map
+*Note: This exercise was created with a previous version of Dynamo. Much of the List.Map functionality has been resolved with the addition of the List@Level feature. For more information, see [List@Level](#listlevel) below.*
+
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Map.dyn](datasets/6-3/Map.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
 As a quick introduction, let's review the List.Count node from a previous section.
@@ -105,7 +107,7 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 3. The results of *List.Count* now gives a list of 5 items, each with a value of 3.  This represents the length of each sublist.
 
 #### Exercise - List.Combine
-*Note: This exercise was created with a previous version of Dynamo. Much of the Combine functionality has been resolved with the addition of the List@Level feature. For more information, see [List@Level](#listlevel) below.*
+*Note: This exercise was created with a previous version of Dynamo. Much of the List.Combine functionality has been resolved with the addition of the List@Level feature. For more information, see [List@Level](#listlevel) below.*
 
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Combine.dyn](datasets/6-3/Combine.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
