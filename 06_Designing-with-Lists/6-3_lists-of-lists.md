@@ -80,7 +80,7 @@ As a quick introduction, let's review the List.Count node from a previous sectio
 
 ![Exercise](images/6-2/count.png)
 > The *List.Count* node counts all of the items in a list. We'll use this to demonstrate how *List.Map* works.
-
+git
 ![Exercise](images/6-3/Exercise/A/05.png)
 > 1. Insert two lines of code into the *code block*:
 ```
