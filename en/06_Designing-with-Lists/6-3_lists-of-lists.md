@@ -53,13 +53,13 @@ Flatten removes all tiers of data from a data structure. This is helpful when th
 ![Exercise](images/6-3/Exercise/Flatten-30.png)
 >1. By inserting a *flatten* before the polycurve node, we've created one single list for all of the points.  The polycurve node references a list to create one curve, and since all of the points are on one list, we get one zig-zag polycurve which runs throughout the entire list of points.
 
-There are also options for flattening isolated tiers of data.  Using the List.Flatten node, you can define a set number of data tiers to flatten from the top of the hierarchy.  This is a really helpful tool if you're struggling with complex data structures which are not necessarily relevant to your workflow.  And another option is to use the flatten node as a function in List.Map.  We'll discuss List.Map more below.
+There are also options for flattening isolated tiers of data.  Using the List.Flatten node, you can define a set number of data tiers to flatten from the top of the hierarchy.  This is a really helpful tool if you're struggling with complex data structures which are not necessarily relevant to your workflow.  And another option is to use the flatten node as a function in List.Map.  We'll discuss [List.Map](#listmap-and-listcombine) more below.
 
 ###Chop
 When parametric modeling, there are also times where you'll want to add more data structure to an existing list.  There are many nodes available for this as well, and chop is the most basic version.  With chop, we can partition a list into sublists with a set number of items.
 
 #### Exercise - List.Chop
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Chop.dyn](datasets/6-3/Chop.dyn). A full list of example files can be found in the Appendix.
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Chop.dyn](datasets/6-3/Chop.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
 ![Chop](images/6-3/chop-01.jpg)
 > A *List.Chop *with a *subLength* of 2 creates 4 lists with 2 items each.
@@ -72,13 +72,15 @@ The chop command divides lists based on a given list length. In some ways, chop 
 A List.Map/Combine applies a set function to an input list, but one step down in the hierarchy. Combinations are the same as Maps, except combinations can have multiple inputs corresponding to the input of a given function.
 
 #### Exercise - List.Map
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Map.dyn](datasets/6-3/Map.dyn). A full list of example files can be found in the Appendix.
+*Note: This exercise was created with a previous version of Dynamo. Much of the List.Map functionality has been resolved with the addition of the List@Level feature. For more information, see [List@Level](#listlevel) below.*
+
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Map.dyn](datasets/6-3/Map.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
 As a quick introduction, let's review the List.Count node from a previous section.
 
 ![Exercise](images/6-2/count.png)
 > The *List.Count* node counts all of the items in a list. We'll use this to demonstrate how *List.Map* works.
-
+ 
 ![Exercise](images/6-3/Exercise/A/05.png)
 > 1. Insert two lines of code into the *code block*:
 ```
@@ -105,9 +107,9 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 3. The results of *List.Count* now gives a list of 5 items, each with a value of 3.  This represents the length of each sublist.
 
 #### Exercise - List.Combine
-*Note: This exercise was created with a previous version of Dynamo. Much of the Combine functionality has been resolved with the addition of the List@Level feature. For more information, see **List@Level** below.*
+*Note: This exercise was created with a previous version of Dynamo. Much of the List.Combine functionality has been resolved with the addition of the List@Level feature. For more information, see [List@Level](#listlevel) below.*
 
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Combine.dyn](datasets/6-3/Combine.dyn). A full list of example files can be found in the Appendix.
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Combine.dyn](datasets/6-3/Combine.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
 In this exercise, we'll use a similar logic to List.Map, but with multiple elements.  In this case, we want to divide a list of curves by a unique number of points.
 
@@ -175,7 +177,8 @@ Although this particular example can also be created with List.Map, List@Level g
 
 ![List@Level-vs-ListMap](images/6-3/Exercise/listAtLevel_comparison.png)
 >1. Although both methods will give us access to the same points, the List@Level method allows us to easily toggle between layers of data within a single node.
-2. For a 3-dimensional grid, we need to have three different ways to access three layers of information - one for each grid of points we want to isolate. Depending on the complexity of your Graph, this method may require several List.Map nodes plugged into one another to access a single layer of data. For our third set of points, the graph needs two back to back List.Map nodes, but for more complex data structures it may require many more. 
+2. To access a point grid with List.Map, we will need a List.GetItemAtIndex node alongside the List.Map. For every list level that we are stepping down, we will need to use an additional List.Map node. Depending on the complexity of your lists, this could require you to add a significant amount of List.Map Nodes to your graph to access the right level of information.
+3. In this example, a List.GetItemAtIndex node with a List.Map node reurns the same set of points with the same list structure as the List.GetItemAtIndex with '@L3' selected.
 
 ###Transpose
 Transpose is a fundamental function when dealing with lists of lists. Just as in spreadsheet programs, a transpose flips the columns and rows of a data structure. We'll demonstrate this with a basic matrix below, and in the following section, we'll demonstrate how a transpose can be use to create geometric relationships.
