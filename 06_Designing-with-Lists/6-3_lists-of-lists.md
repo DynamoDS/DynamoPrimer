@@ -177,7 +177,7 @@ Although this particular example can also be created with List.Map, List@Level g
 
 ![List@Level-vs-ListMap](images/6-3/Exercise/listAtLevel_comparison.png)
 >1. Although both methods will give us access to the same points, the List@Level method allows us to easily toggle between layers of data within a single node.
-2. For a 3-dimensional grid, we need to have three different ways to access three layers of information - one for each grid of points we want to isolate. Depending on the complexity of your Graph, this method may require several List.Map nodes plugged into one another to access a single layer of data. For our third set of points, the graph needs two back to back List.Map nodes, but for more complex data structures it may require many more.
+2. To access a point grid with List.Map, we will need a List.GetItemAtIndex node alongside the List.Map. For every list level that we are stepping down, we will need to use an additional List.Map node. Depending on the complexity of your lists, this could require you to add a significant amount of List.Map Nodes to your graph to access the right level of information.
 3. In this example, a List.GetItemAtIndex node with a List.Map node reurns the same set of points with the same list structure as the List.GetItemAtIndex with '@L3' selected.
 
 ###Transpose
