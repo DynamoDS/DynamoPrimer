@@ -1,5 +1,5 @@
 #The Dynamo Primer
-##For Dynamo v1.0
+##For Dynamo v1.2
 
 ![Dynamo Logo](images/dynamo_logo_dark-trim.png)
 

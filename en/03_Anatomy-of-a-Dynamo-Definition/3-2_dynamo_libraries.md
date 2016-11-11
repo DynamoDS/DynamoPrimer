@@ -61,7 +61,7 @@ The Watch Nodes are essential to managing the data that is flowing through your 
 2. Watch3D - Grab the bottom right grip to resize and navigate with you mouse the same way you would in the 3D Preview
 
 ####Code Block
-**Code Block** Nodes can be used to define a block of code with lines separated by semi-colons. This can be as simple as ```X/Y```. We can also use Code Blocks as a short cut to defining a Number Input or call to another Node's functionality. The syntax to do so follows the Naming Convention of the Dynamo textual language, DesignScript, and is covered in Section 3.2.3. Let's try to make a Circle with this shortcut:
+**Code Block** Nodes can be used to define a block of code with lines separated by semi-colons. This can be as simple as ```X/Y```. We can also use Code Blocks as a short cut to defining a Number Input or call to another Node's functionality. The syntax to do so follows the Naming Convention of the Dynamo textual language, DesignScript, and is covered in Section 7.2. Let's try to make a Circle with this shortcut:
 
 ![Code Block Shortcut](images/3-3/05-CodeBlock.png)
 
