@@ -2,7 +2,7 @@
 
 # Dynamo Primer
 
-## For Dynamo v1.0
+## For Dynamo v1.2
 
 ![Dynamo ロゴ](images/dynamo_logo_dark-trim.png)
 
@@ -62,7 +62,7 @@ Dynamo プロジェクトの創立と指揮に携わった Ian Keough 氏に、�
 
 ### ソフトウェアとリソース
 
-**Dynamo**: 現在の公式リリースのバージョンは 1.0.0 です。
+**Dynamo**: 最新の公式リリースのバージョンは 1.2.0 です。
 
 [http://dynamobim.com/download/](http://dynamobim.com/download/) (英語)
 
@@ -80,7 +80,7 @@ Dynamo@autodesk.com
 
 ### License
 
-Copyright 2016 Autodesk
+Copyright 2017 Autodesk
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.You may obtain a copy of the License at
 

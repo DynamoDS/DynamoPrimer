@@ -2,7 +2,7 @@
 
 # Der Dynamo Primer
 
-## Für Dynamo v1.0
+## Für Dynamo v1.2
 
 ![Dynamo-Logo](images/dynamo_logo_dark-trim.png)
 
@@ -31,7 +31,7 @@ Version 1.0 dieses Primers enthält die ersten zehn Kapitel, die von Mode Lab en
 * **Listen, Listen, Listen** – Wie verwalte und koordiniere ich meine Datenstrukturen?
 * **Code in Blöcken** – Wie kann ich Dynamo um meinen eigenen Code erweitern?
 * **Computational BIM** – Wie kann ich Dynamo mit einem Revit-Modell verwenden?
-* **Benutzerdefinierte Blöcke**: Wie kann ich meine eigenen Blöcke erstellen?
+* **Benutzerdefinierte Blöcke** – Wie kann ich meine eigenen Blöcke erstellen?
 * **Pakete** – Wie kann ich meine Werkzeuge mit der Community austauschen?
 
 Es wird eine aufregende Zeit für Sie werden – Sie werden mehr über Dynamo erfahren, mit Dynamo arbeiten und für Dynamo entwickeln. Legen Sie einfach los!
@@ -62,7 +62,7 @@ Vielen Dank auch an Matt Jezyk, Ian Keough, Zach Kron and Colin McCrone für die
 
 ### Software und Ressourcen
 
-**Dynamo** Das aktuelle stabile Release von Dynamo ist Version 0.9.
+**Dynamo** Das aktuelle stabile Release von Dynamo ist Version 1.2.0.
 
 [http://dynamobim.com/download/](http://dynamobim.com/download/)
 
@@ -80,7 +80,7 @@ Dynamo@autodesk.com
 
 ### Lizenz
 
-Copyright 2016 Autodesk
+Copyright 2017 Autodesk
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

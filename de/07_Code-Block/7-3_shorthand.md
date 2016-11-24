@@ -93,7 +93,7 @@ In dieser Übung wenden Sie Ihre Kenntnisse der Kurzschreibweise an und erstelle
 
 ![Übungslektion](images/7-3/Exercise/09.png)
 
-> 1. Indem Sie Transpose auf den Zahlenbereich anwenden, kehren Sie die Richtung der Wellen um: ```transposeList = list.transpose(sinelist) ;```
+> 1. Indem Sie Transpose auf den Zahlenbereich anwenden, kehren Sie die Richtung der Wellen um: ```transposeList = List.Transpose(sineList);```
 
 ![Übungslektion](images/7-3/Exercise/07.png)
 
