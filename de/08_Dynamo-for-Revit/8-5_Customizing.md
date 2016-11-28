@@ -89,7 +89,7 @@ Diese parametrische Oberfläche muss jetzt in Felder unterteilt werden, damit ad
 3. Fügen Sie im Ansichtsbereich einen *AdaptiveComponent.ByPoints*-Block ein und verbinden Sie die *Panel Pts*-Ausgabe des *LunchBox Quad Grid by Face*-Blocks mit der *points*-Eingabe. Verbinden Sie den *Family Types*-Block mit der *familySymbol*-Eingabe.
 4. Klicken Sie auf *Ausführen*. Revit benötigt etwas *Zeit* zum Erstellen der Geometrie. Wenn dies zu lange dauert, reduzieren Sie den *Codeblock-Wert 15* auf eine kleinere Zahl. Dadurch erhalten Sie weniger Elemente auf dem Dach.
 
-*Anmerkung: Falls die Berechnung von Blöcken in Dynamo sehr lange dauert, können Sie die Blockfunktionen anhalten ("einfrieren") und damit die Ausführung von Revit-Vorgängen unterbrechen, während Sie Ihr Diagramm entwickeln. Weitere Informationen zum Anhalten von Blöcken finden Sie im entsprechenden Abschnitt im Kapitel Körper.*
+*Anmerkung: Falls die Berechnung von Blöcken in Dynamo sehr lange dauert, können Sie die Blockfunktionen anhalten ("einfrieren") und damit die Ausführung von Revit-Vorgängen unterbrechen, während Sie Ihr Diagramm entwickeln. Weitere Informationen zum Anhalten von Blöcken finden Sie im entsprechenden Abschnitt im Kapitel [Körper](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).*
 
 ![Exercise](images/8-5/Exercise/31.png)
 

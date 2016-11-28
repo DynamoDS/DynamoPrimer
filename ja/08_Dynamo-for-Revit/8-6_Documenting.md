@@ -41,7 +41,7 @@
 
 ![演習](images/8-6/Exercise/14.png)
 
-> 1. *Math.RemapRange ノードを使用して、偏差の値を .15* から *.45* までの範囲にマッピングし直します。
+> 1. **Math.RemapRange* ノードを使用して、偏差の値を .15* から *.45* までの範囲にマッピングし直します。
 2. そのノードの出力を *Element.SetParameterByName* の value 入力に接続します。
 
 ![演習](images/8-6/Exercise/13.png)
