@@ -68,7 +68,7 @@ Diese parametrische Oberfläche muss jetzt in Felder unterteilt werden, damit ad
 ![Exercise](images/8-5/Exercise/05a.png)
 
 > 1. Wechseln Sie zu *Pakete > Suchen nach Paket*.
-2. Suchen Sie nach *LunchBox* und laden Sie *LunchBox for Dynamo*. herunter. Die hier enthaltenen Werkzeuge sind äußerst hilfreich bei geometrischen Operationen wie dieser.
+2. Suchen Sie nach *LunchBox* und laden Sie *LunchBox for Dynamo* herunter. Die hier enthaltenen Werkzeuge sind äußerst hilfreich bei geometrischen Operationen wie dieser.
 
 ![Exercise](images/8-5/Exercise/07.png)
 

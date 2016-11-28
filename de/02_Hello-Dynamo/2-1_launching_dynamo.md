@@ -6,7 +6,7 @@ Dynamo ist ein aktives Open-Source-Entwicklungsprojekt mit herunterladbaren Inst
 
 ### Herunterladen
 
-Um das offizielle Release von Dynamo herunterzuladen, besuchen Sie die [Dynamo-Website](http://dynamobim.com/). Starten Sie den Download von Version 0.8.0 unmittelbar über die Startseite oder durch Navigieren zu der speziellen Download-Seite.
+Um das offizielle Release von Dynamo herunterzuladen, besuchen Sie die [Dynamo-Website](http://dynamobim.com/). Starten Sie den Download unmittelbar über die Startseite oder durch Navigieren zur speziellen Download-Seite.
 
 ![Startseite der Website](images/2-1/01-DynamoHomepage.png)
 
@@ -17,8 +17,9 @@ Hier können Sie die aktuellsten Entwicklungsversionen herunterladen oder zum [D
 
 ![Download-Seite der Website](images/2-1/02-DynamoDownload.png)
 
-> 1. Installationsprogramm für offizielles Release oder Daily Build herunterladen
-2. Sich an der Entwicklung von Dynamo im Zuge des Github-Projekts beteiligen
+> 1. Installationsprogramm für das offizielle Release herunterladen
+2. Installationsprogramme für tägliche Builds herunterladen
+3. Sich an der Entwicklung von Dynamo im Zuge des Github-Projekts beteiligen
 
 ### Installieren
 
