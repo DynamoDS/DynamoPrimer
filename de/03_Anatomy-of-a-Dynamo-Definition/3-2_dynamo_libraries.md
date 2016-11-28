@@ -71,7 +71,7 @@ Die Beobachtungsblöcke sind für die Verwaltung der Daten, die ein visuelles Pr
 
 #### Codeblock
 
-**Code Block**-Blöcke können verwendet werden, um einen Codeblock mit Linien durch Semikolons getrennt zu definieren. Dabei kann es sich einfach um ```X/Y``` handeln. Sie können auch Codeblöcke als Abkürzung verwenden, um einen Number Input-Block zu definieren oder eine andere Funktion des Blocks aufzurufen. Die Syntax hierfür entspricht der Benennungskonvention der textuellen Sprache von Dynamo in Abschnitt 3.2.3. Versuchen Sie, mit diesem Tastaturbefehl einen Kreis zu erstellen:
+**Code Block**-Blöcke können verwendet werden, um einen Codeblock mit Linien durch Semikolons getrennt zu definieren. Dabei kann es sich einfach um ```X/Y``` handeln. Sie können auch Codeblöcke als Abkürzung verwenden, um einen Number Input-Block zu definieren oder eine andere Funktion des Blocks aufzurufen. Die Syntax hierfür entspricht der Benennungskonvention von DesignScript, der textuellen Sprache von Dynamo wie in Abschnitt 7.2 beschrieben. Versuchen Sie, mit diesem Kurzbefehl einen Kreis zu erstellen:
 
 ![Codeblock-Tastaturbefehl](images/3-3/05-CodeBlock.png)
 

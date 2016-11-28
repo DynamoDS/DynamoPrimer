@@ -53,7 +53,7 @@ A special thanks to Ian Keough for initiating and guiding the Dynamo project.
 Thank you to Matt Jezyk, Ian Keough, Zach Kron, and Colin McCrone for enthusiastic collaboration and the opportunity to participate on a wide array of Dynamo projects.
 
 ### Software and Resources
-**Dynamo** The current stable release of Dynamo is Version 1.1.0.
+**Dynamo** The current stable release of Dynamo is Version 1.2.0.
 
 http://dynamobim.com/download/
 

@@ -11,12 +11,12 @@ In Dynamo setzen sich die meisten Blöcke aus fünf Teilen zusammen. Abgesehen v
 > 1. Name: Der Name des Blocks gemäß Category.Name-Benennungskonvention
 2. Hauptbereich: Der Hauptkörper des Blocks. Durch Klicken mit der rechten Maustaste auf diesen Bereich werden Optionen für den gesamten Block angezeigt.
 3. Anschlüsse (eingehend und ausgehend): Die Rezeptoren für Drähte, über die die eingegebenen Daten sowie die Ergebnisse von Blockaktionen an Blöcke geliefert werden.
-4. Datenvorschau: Zeigt eine QuickInfo mit den Ergebnissen von Blockaktionen durch Bewegen des Cursors oder Klicken an.
-5. Symbol Vergitterung: Zeigt die Option Vergitterung an, die für übereinstimmende Listeneingaben angegeben ist (mehr dazu später).
+4. Symbol Vergitterung: Zeigt die für die Zuordnung von Listeneingaben angegebene Vergitterungsoption an (mehr dazu später).
+5. Vorgabewert: Klicken Sie mit der rechten Maustaste auf einen Eingabeanschluss. Einige Blöcke verfügen über Vorgabewerte, die verwendet werden können, aber nicht verwendet werden müssen.
 
 ### Anschlüsse
 
-Die Eingaben und Ausgaben für Blöcke werden als Anschlüsse bezeichnet. Sie fungieren als Rezeptoren für Drähte. Daten gelangen über die Anschlüsse auf der linken Seite in Blöcke und strömen auf der rechten Seite wieder aus den Blöcken hinaus, nachdem der entsprechende Vorgang ausgeführt wurde. Anschlüsse erwarten Daten eines bestimmten Typs. Das Verbinden einer Zahl wie *2,75* mit den Anschlüssen eines Point By Coordinates-Blocks führt beispielsweise dazu, dass ein Punkt erfolgreich erstellt wird. Wenn jedoch *"Rot"* an denselben Anschluss geliefert wird, tritt ein Fehler auf.
+Die Eingaben und Ausgaben für Blöcke werden als Anschlüsse bezeichnet. Sie fungieren als Kontakte für Drähte. Daten gelangen über die Anschlüsse auf der linken Seite in Blöcke und strömen auf der rechten Seite wieder aus den Blöcken hinaus, nachdem der entsprechende Vorgang ausgeführt wurde. Anschlüsse erwarten Daten eines bestimmten Typs. Das Verbinden einer Zahl wie *2,75* mit den Anschlüssen eines Point By Coordinates-Blocks führt beispielsweise dazu, dass ein Punkt erfolgreich erstellt wird. Wenn jedoch *"Rot"* an denselben Anschluss geliefert wird, tritt ein Fehler auf.
 
 > Tipp: Bewegen Sie den Cursor auf einen Anschluss, um eine QuickInfo mit dem erwarteten Datentyp aufzurufen.
 
@@ -25,6 +25,7 @@ Die Eingaben und Ausgaben für Blöcke werden als Anschlüsse bezeichnet. Sie fu
 > 1. Anschlussbezeichnung
 2. QuickInfo
 3. Datentyp
+4. Vorgabewert
 
 ### Status
 
@@ -32,11 +33,13 @@ Dynamo gibt einen Hinweis auf den Status der Ausführung eines visuellen Program
 
 ![Status](images/3-1/02-States2.png)
 
-> 1. Inaktiv: Graue Blöcke sind inaktiv und müssen mit Drähten verbunden werden, um in den Programmablauf im aktiven Arbeitsbereich integriert zu werden.
-2. Aktiv: Blöcke, deren Namen einen dunkelgrauen Hintergrund aufweisen, sind ordnungsgemäß angeschlossen, d. h., alle Eingaben konnten erfolgreich verbunden werden.
-3. Warnung: Gelbe Blöcke weisen einen Fehlerzustand auf.
-4. Ausgewählt: Aktuell ausgewählte Blöcke weisen eine aquamarinblau hervorgehobenen Rand auf.
-5. Vorgabewert: Klicken Sie mit der rechten Maustaste auf einen Eingabeanschluss. Einige Blöcke verfügen über Vorgabewerte, die verwendet werden können, aber nicht verwendet werden müssen.
+> 1. Aktiv: Blöcke, deren Namen einen dunkelgrauen Hintergrund aufweisen, sind ordnungsgemäß angeschlossen, d. h., alle Eingaben konnten erfolgreich verbunden werden.
+2. Inaktiv: Graue Blöcke sind inaktiv und müssen mit Drähten verbunden werden, um in den Programmablauf im aktiven Arbeitsbereich integriert zu werden.
+3. Fehlerstatus: Rot weist auf einen Fehlerstatus des Blocks hin.
+4. Anhalten: Bei transparent dargestellten Blöcken ist Anhalten aktiviert, d. h., ihre Ausführung wurde unterbrochen.
+5. Ausgewählt: Aktuell ausgewählte Blöcke weisen einen aquamarinblau hervorgehobenen Rand auf.
+6. Warnung: Gelb markierte Blöcke befinden sich im Warnzustand, d. h., sie enthalten eventuell die falschen Datentypen.
+7. Hintergrundvorschau: Dunkelgrau bedeutet, dass die Geometrievorschau deaktiviert ist.
 
 Wenn Ihr visuelles Programm Warnungen oder Fehler aufweist, gibt Dynamo zusätzliche Informationen zu dem Problem an. Alle Blöcke, die in gelb angezeigt werden, verfügen auch über eine QuickInfo über dem Namen. Bewegen Sie den Cursor auf die QuickInfo, um sie zu erweitern.
 

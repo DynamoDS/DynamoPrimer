@@ -31,7 +31,7 @@ In Dynamo werden sowohl das Diagramm als auch die 3D-Ergebnisse des Diagramms (w
 2. Mit der rechten Maustaste in den Arbeitsbereich klicken und *Zu ...ansicht wechseln* auswählen
 3. Tastaturbefehl (Strg + B)
 
-Der Modus Navigation in 3D-Vorschau bietet uns auch die Möglichkeit zur **Direktbearbeitung** von Punkten, wie im Abschnitt [Erste Schritte](http://dynamoprimer.com/de/02_Hello-Dynamo/2-6_the_quick_start_guide.html) veranschaulicht wird.
+Der Modus Navigation in 3D-Vorschau bietet uns auch die Möglichkeit zur **Direktbearbeitung** von Punkten, wie im Abschnitt [Erste Schritte](http://dynamoprimer.com/02_Hello-Dynamo/2-6_the_quick_start_guide.html) veranschaulicht wird.
 
 ### Zoomen und neu zentrieren
 

@@ -60,7 +60,7 @@ Der Befehl Flatten entfernt alle Datenebenen aus einer Datenstruktur. Dies ist h
 
 > 1. Durch Einfügen von *Flatten* vor dem Block für die Polykurven entsteht eine einzelne Liste, die sämtliche Punkte enthält. Der Block für die Polykurven referenziert diese Liste und erstellt nur eine Kurve. Da alle Punkte in derselben Liste enthalten sind, entsteht eine zickzackförmige Polykurve, die durch sämtliche Punkten aus der Liste verläuft.
 
-Darüber hinaus stehen auch Optionen zum Vereinfachen isolierter Datenebenen zur Verfügung. Mithilfe des Blocks List.Flatten können Sie festlegen, wie viele Datenebenen unterhalb der ersten Hierarchieebene vereinfacht werden sollen. Dies ist sehr hilfreich bei komplexen Datenstrukturen, die für Ihren Arbeitsablauf nicht unbedingt erforderlich sind. Eine weitere Möglichkeit besteht darin, den Flatten-Block als Funktion in List.Map einzusetzen. List.Map wird weiter unten ausführlicher beschrieben.
+Darüber hinaus stehen auch Optionen zum Vereinfachen isolierter Datenebenen zur Verfügung. Mithilfe des Blocks List.Flatten können Sie festlegen, wie viele Datenebenen unterhalb der ersten Hierarchieebene vereinfacht werden sollen. Dies ist sehr hilfreich bei komplexen Datenstrukturen, die für Ihren Arbeitsablauf nicht unbedingt erforderlich sind. Eine weitere Möglichkeit besteht darin, den Flatten-Block als Funktion in List.Map einzusetzen. [List.Map](#listmap-and-listcombine) wird weiter unten ausführlicher beschrieben.
 
 ### Chop
 
@@ -68,7 +68,7 @@ Bei der parametrischen Modellierung ist es zuweilen erforderlich, die Datenstruk
 
 #### Übungslektion – List.Chop
 
-> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [Chop.dyn](datasets/6-3/Chop.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
+> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [Chop.dyn](datasets/6-3/Chop.dyn). Eine vollständige Liste der Beispieldateien finden Sie im [Anhang](../Appendix/A_appendix.md).
 
 ![Chop](images/6-3/chop-01.jpg)
 
@@ -84,7 +84,9 @@ Mit List.Map/Combine wird eine angegebene Funktion auf die eingegebene Liste ang
 
 #### Übungslektion – List.Map
 
-> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [Map.dyn](datasets/6-3/Map.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
+*Anmerkung: Diese Übung wurde mit einer früheren Version von Dynamo erstellt. Die Funktion List.Map lässt sich großenteils durch die neu hinzugefügte Funktion List@Level ersetzen. Weitere Informationen finden Sie weiter unten unter [List@Level](#listlevel).*
+
+> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [Map.dyn](datasets/6-3/Map.dyn). Eine vollständige Liste der Beispieldateien finden Sie im [Anhang](../Appendix/A_appendix.md).
 
 Ziehen Sie als kurze Einführung den List.Count-Block aus dem vorigen Abschnitt heran.
 
@@ -123,7 +125,9 @@ Der List.Count-Block gibt den Wert 5 aus. Dieser Wert ist gleich dem Wert der im
 
 #### Übungslektion – List.Combine
 
-> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [Combine.dyn](datasets/6-3/Combine.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
+*Anmerkung: Diese Übung wurde mit einer früheren Version von Dynamo erstellt. Die FunktionList.Combine lässt sich großenteils durch die neu hinzugefügte Funktion List@Level ersetzen. Weitere Informationen finden Sie weiter unten unter [List@Level](#listlevel).*
+
+> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [Combine.dyn](datasets/6-3/Combine.dyn). Eine vollständige Liste der Beispieldateien finden Sie im [Anhang](../Appendix/A_appendix.md).
 
 In dieser Übung wird eine ähnliche Logik verwendet wie für List.Map, wobei allerdings mehrere Elemente einbezogen werden. In diesem Fall soll jede der Kurven in einer Liste durch eine andere Anzahl von Punkten unterteilt werden.
 
@@ -162,6 +166,47 @@ In dieser Übung wird eine ähnliche Logik verwendet wie für List.Map, wobei al
 5. Die Reihenfolge der leeren Eingaben in *Curve.PointAtParameter* (von oben nach unten) muss auch für die Eingaben im Kombinator eingehalten werden. Die Linien müssen daher mit *List1* von *List.Combine* verbunden werden.
 6. Dementsprechend werden die Parameterwerte mit der *list2*-Eingabe von *List.Combine* verbunden.
 7. Im *Watch*-Block und in der Dynamo-Vorschau sind vier Linien zu erkennen und jede dieser Linien ist entsprechend den Bereichen aus dem *Code Block* unterteilt.
+
+### List@Level
+
+Die Funktion List@Level kann als Alternative zu List.Map eingesetzt werden und ermöglicht es, die Listenebene, mit der Sie arbeiten möchten, direkt am Eingabeanschluss zu wählen. Diese Funktion kann für jeden Eingabeanschluss eines Blocks angewendet werden und ermöglicht einen schnelleren und einfacheren Zugriff auf die Ebenen in Listen als andere Methoden. Geben Sie im Block einfach an, welche Ebene der Liste Sie als Eingabe verwenden möchten, und überlassen Sie die Ausführung dem Block.
+
+#### Übungslektion – List@Level
+
+In dieser Übung isolieren Sie mithilfe der Funktion List@Level eine bestimmte Datenebene.
+
+> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [List@Level](datasets/6-3/Listatlevel.dyn). Eine vollständige Liste der Beispieldateien finden Sie im [Anhang](../Appendix/A_appendix.md).
+
+![List@Level](images/6-3/Exercise/ListAtLevel-01.png)
+
+> 1. Sie beginnen mit einem einfachen 3D-Raster von Punkten.
+2. Da das Raster mit Bereichen für X, Y und Z konstruiert wurde, ist bekannt, dass drei Datenstufen vorhanden ist, jeweils eine Liste für X, Y und Z.
+3. Diese Stufen entsprechen verschiedenen **Ebenen**. Die Ebenen werden im unteren Bereich des Vorschaufensters angezeigt. Die Spalten für die Listenebenen entsprechen den oben angegebenen Listendaten und erleichtern es, die Ebene zu finden, auf der Sie arbeiten möchten.
+4. Die Ebenen sind in umgekehrter Reihenfolge geordnet, d. h., die unterste Datenebene ist immer "L1". Dadurch wird sichergestellt, dass Ihre Diagramme wie geplant funktionieren, auch wenn vorangehende Schritte geändert werden.
+
+![List@Level](images/6-3/Exercise/ListAtLevel-02.png)
+
+> 1. Um die Funktion List@Level zu verwenden, klicken Sie auf >. In diesem Menü werden zwei Kontrollkästchen angezeigt.
+2. **Ebenen verwenden**: Aktiviert die Funktion List@Level. Nach dem Klicken auf diese Option können Sie durch die Eingabelistenebenen navigieren und die Ebene wählen, die der Block verwenden soll. Über dieses Menü können Sie durch Navigieren nach oben oder unten rasch Optionen für verschiedene Ebenen testen.
+3. **Listenstruktur beibehalten**: Ist dies aktiviert, haben Sie die Möglichkeit, die Ebenenstruktur der Eingabe beizubehalten. In manchen Fällen haben Sie eventuell Ihre Daten absichtlich in Unterlisten geordnet. Indem Sie diese Option aktivieren, können Sie Ihre Listenstruktur beibehalten, sodass keine Informationen verloren gehen.
+
+In diesem einfachen 3D-Raster können Sie auf die Listenstruktur zugreifen und sie visualisieren, indem Sie durch die Listenebenen blättern. Mit jeder Kombination aus Listenebene und Index erhalten Sie eine andere Untergruppe von Punkten aus der ursprünglichen 3D-Punktmenge.
+
+![List@Level](images/6-3/Exercise/ListAtLevel-03.png)
+
+> 1. Mit der Angabe "@L2" in DesignScript wählen Sie ausschließlich die Liste auf Ebene 2 aus.
+2. Die Liste auf Ebene 2 mit dem Index 0 enthält nur die Gruppe von Punkten mit dem ersten Y-Wert, d. h. nur das XZ-Raster.
+3. Wenn Sie den Ebenenfilter in "L1" ändern, sind sämtliche Daten auf der ersten Listenebene sichtbar. Die Liste auf Ebene 1 mit dem Index 0 enthält alle 3D-Punkte in einer unstrukturierten Liste.
+4. Mit "L3" werden nur die Punkte auf der dritten Listenebene angezeigt. Die Liste auf Ebene 3 mit dem Index 0 enthält nur die Gruppe von Punkten mit dem ersten Z-Wert, d. h. nur das XY-Raster.
+5. Mit "L4" werden nur die Punkte auf der vierten Listenebene angezeigt. Die Liste auf Ebene 4 mit dem Index 0 enthält nur die Gruppe von Punkten mit dem ersten X-Wert, d. h. nur das YZ-Raster.
+
+Obwohl dieses Beispiel auch mithilfe von List.Map erstellt werden kann, bietet List@Level eine wesentlich einfachere Interaktion und erleichtert dadurch den Zugriff auf die Daten des Blocks. Unten sehen Sie die Methoden List.Map und List@Level im Vergleich:
+
+![List@Level-vs-ListMap](images/6-3/Exercise/listAtLevel_comparison.png)
+
+> 1. Beide Methoden ermöglichen den Zugriff auf dieselben Punkte, mit List@Level ist jedoch das mühelose Wechseln zwischen Datenebenen innerhalb desselben Blocks möglich.
+2. Für den Zugriff auf ein Punktraster mithilfe von List.Map benötigen Sie außer dem List.Map-Block selbst einen List.GetItemAtIndex-Block. Für jeden Schritt auf eine tiefere Listenebene benötigen Sie einen weiteren List.Map-Block. Dies könnte je nach Komplexität Ihrer Listen bedeuten, dass Sie Ihrem Diagramm eine größere Anzahl von List.Map-Blöcken hinzufügen müssen, um die richtige Ebene von Informationen zu erreichen.
+3. In diesem Beispiel gibt der List.GetItemAtIndex-Block zusammen mit dem List.Map-Block dieselbe Punktgruppe mit derselben Listenstruktur zurück wie List.GetItemAtIndex mit der Auswahl "L3".
 
 ### Transpose
 
