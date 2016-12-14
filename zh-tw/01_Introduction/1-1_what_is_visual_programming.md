@@ -68,6 +68,8 @@ If you were tasked with writing instructions for folding an origami crane, how w
 
 If your answer contained graphics, then **Visual Programming** is definitely for you. The process is essentially the same for both Programming and Visual Programming. They utilize the same framework of formalization; however, we define the instructions and relationships of our program through a graphical (or "Visual") user interface. Instead of typing text bound by syntax, we connect pre-packaged nodes together. Here's a comparison of the same algorithm - "draw a circle through a point" - programmed with nodes versus code:
 如果你的答案是圖形，那麼視覺化程式設計絕對是你的選擇。程式設計與視覺化程式設計在程序上基本是相同的。它們使用相同的格式框架；我們透過圖形(或視覺)的使用者介面來定義程式結構和關係，而不是輸入由語法限制的文字，我們連結已預先封裝的節點。這裡有一個相同演算法的比較-“畫一個圓通過一個點-用節點進行程式設計 VS 用文字進行程式設計。
+
+
 **Visual Program:**
 
 ![Basic Visual Program ](images/1-1/03-BasicVisualProgram.png)
