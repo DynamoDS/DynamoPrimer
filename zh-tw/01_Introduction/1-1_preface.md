@@ -11,7 +11,7 @@ Welcome Text
 - team signature
 
 -背景, 過去版本, ooxx
--我們很開心(?)
+
 
 
 ###1.1.2 About this Primer
