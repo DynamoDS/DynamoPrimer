@@ -1,6 +1,8 @@
-##The Dynamo User Interface
+##The Dynamo User Interface Dynamo使用者介面
 
-The User Interface (UI) for Dynamo is organized into five main regions, the largest of which is the workspace where we compose our visual programs.Dynamo的是由五大區域所組成的工作界面，其中最大的區域是構成我們的視覺化的工作平台。
+The User Interface (UI) for Dynamo is organized into five main regions, the largest of which is the workspace where we compose our visual programs.
+
+Dynamo是由五大區域所組成的工作界面，其中最大的區域是構成我們的視覺化的工作平台。
 
 ![User Interface Regions](images/2-2/01-UI-Regions.png)
 
@@ -16,6 +18,7 @@ Let's dive deeper into the UI and explore the functionality of each region.
 ####Menus
 
 The Dropdown Menus are a great place to find some of the basic functionality of the Dynamo application. Like most Windows software, actions related to managing files and operations for selection and content editing are found in the first two menus. The remaining menus are more specific to Dynamo.
+
 下拉選單是查詢Dynamo基本功能的地方。與大多數Windows軟體一樣，管理文件和編輯內容的功能可在前兩個選單中找到，其餘便是選項較更特殊的功能。
 
 ![Dropdown Menus](images/2-2/02-Menus.png)
@@ -31,7 +34,7 @@ The Dropdown Menus are a great place to find some of the basic functionality of 
 Dynamo's Toolbar contains a series of buttons for quick access to working with files as well as Undo [Ctrl + Z] and Redo [Ctrl + Y] commands. On the far right is another button that will export a snapshot of the workspace, which is extremely useful for documentation and sharing.
 
 Dynamo的工具列控制快速存取工作檔案及復原[Ctrl + Z]和重做[Ctrl + Y]的按鍵。
-在右側的按鍵是將工作平台匯出，對檔案和共享相當實用。
+在右側的按鍵是將工作平台截圖匯出，對檔案和共享相當實用。
 
 ![Needs Update-split location Toolbar](images/2-2/03-Toolbar.png)
 
@@ -40,14 +43,14 @@ Dynamo的工具列控制快速存取工作檔案及復原[Ctrl + Z]和重做[Ctr
 3. Save/Save As - Save your active .dyn or .dyf file 保存/另存新檔
 4. Undo - Undo your last action 復原-上一步
 5. Redo - Redo the next action 重做-下一步
-6. Export Workspace as Image - Export the visible workspace as a PNG file 匯出-匯出工作區作為成影像
+6. Export Workspace as Image - Export the visible workspace as a PNG file 匯出-匯出工作區作成影像
 
 ####Library 資源庫
 The Library contains all of the loaded Nodes, including the default Nodes that come with the installation as well as any additionally loaded Custom Nodes or Packages. The Nodes in the Library are organized hierarchically within libraries, categories, and, where appropriate, sub-categories based on whether the Nodes **Create** data, execute an **Action**, or **Query** data.
 
-資源庫控制所有被載入的節點，包含內建的按鍵及加載的按鍵。在資源庫中的這些節點根據"創建"數據, 執行"運算"或尋查資料被分別歸類在適合的分類中。
+資源庫控制所有被載入的節點，包含內建的按鍵及加載的按鍵。在資源庫中的這些節點根據各自"建立"資料、執行"運算"或"查詢"資料的功能被分別歸類在適合的分類中。
 
-#####Browsing 遊覽
+#####Browsing 瀏覽
 By default, the **Library** will contain eight categories of Nodes. **Core** and **Geometry** are great menus to begin exploring as they contain the largest quantity of Nodes.  Browsing through these categories is the fastest way to understand the hierarchy of what we can add to our Workspace and the best way to discover new Nodes you haven't used before.
 
 一般情況下，"資源庫"分別有八個類別的按鍵。"Core"與"Geometry"是最好的選項，因為它們包含最多的節點。瀏覽這些類別是最快可以理解我們可以運用在工作區的層次結構，也是最容易的方法來發現未曾使用過的節點。
@@ -65,12 +68,12 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 7. Operators 運算
 
 Browse the Library by clicking through the menus. Click the Geometry > Circle. Note the new portion of the menu that is revealed and specifically the **Create** and **Query** Labels.
-透過點選選單遊覽資源庫，點選"集合" >"圓"，注意選單中特別標示的"創造"與"詢問"的部分。
+透過點選選單瀏覽資源庫，點選"幾合" >"圓"，注意選單中特別標示的"建立"與"查詢"的部分。
 
 ![NEEDS UPDATE-use full width - Browsing the Library](images/2-2/05-LibraryBrowsing.png)
 >1. Library 資源庫
 2. Category 類別
-3. Subcategory: Create/Actions/Query 子類別:創造/執行/查詢
+3. Subcategory: Create/Actions/Query 子類別:建立/執行/查詢
 4. Node 按鍵
 5. Node Description and properties - this appears when hovering over the node icon.按鍵的描述與屬性 - 將滑鼠停留在節點上顯示
 
@@ -87,7 +90,7 @@ From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The wi
 #####Searching 搜尋
 If you know with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, or click on the item in the truncated browser, the highlighted Node is added to the center of the Workspace.
 
-如果你知道要將哪個按鍵匯入工作區，利用"搜尋"是個好方法。當你在工作區沒有編輯設定或參數時，滑鼠游標停留在工作區，輸入你想要匯入的按鍵，資源庫會同步搜尋最匹配的選項餘選單中。當你按下" Enter" 或單選顯示的選項，按鍵將會匯入於工作區內。
+如果你知道要將哪個按鍵匯入工作區，利用"搜尋"是個好方法。當你在工作區沒有編輯設定或參數時，滑鼠游標停留在工作區，輸入你想要匯入的按鍵，資源庫會同步搜尋最匹配的選項於選單中。當你按下" Enter" 或單選顯示的選項，按鍵將會匯入於工作區內。
 
 ![Searching the Library](images/2-2/07-LibrarySearching.png)
 >1. Search Field  搜尋區域
@@ -97,11 +100,11 @@ If you know with relative specificity which Node you want to add to your Workspa
 ###Settings 設定
 From geometric to user settings, these options can be found in the **Settings** menu. Here you can opt in or out for sharing your user data to improve Dynamo as well as define the application's decimal point precision and geometry render quality.
 
-從幾何到使用者設定，這些選項能在"設定"中找到。你能載入或卸載分享你的使用者數據來改善Dynamo ，以及定義小數點精度和幾何渲染品質。
+從幾何到使用者設定，這些選項能在"設定"中找到。你能載入或卸載分享你的使用者資料來改善Dynamo ，以及定義小數點精度和幾何渲染品質。
 
 > Note: Remember that Dynamo's units are generic.
 
-注意：切記Dynamo的單位是通用的。
+注意：切記Dynamo的單位是公制。
 
 ![show menu](images/2-2/08-Settings.png)
 
@@ -112,7 +115,7 @@ From geometric to user settings, these options can be found in the **Settings** 
 ###Help  說明
 If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to, check the version of Dynamo installed and whether it is up to date through the **About** option.
 
-如果你遇到困難，點選選單的"說明"。這裡提供了內建的說明文件及 Dynamo 參考的網站連結。如果有需要也可以在此點選"關於"選項理解 Dynamo 的版本。
+如果你遇到困難，點選選單的"說明"。這裡提供了內建的說明文件及 Dynamo 參考的網站連結。如果有需要也可以在此點選"關於"選項已取得Dynamo 的版本。
 
 ![show menu](images/2-2/09-Help.png)
 
