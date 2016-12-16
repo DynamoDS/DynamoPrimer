@@ -16,7 +16,7 @@ Dynamo的工作區域是我們開發視覺化程式的地方，也是我們預�
 4. Double Clicking on the Workspace
 
 >  1. 標籤
-   2. 縮放/平移按鈕
+  2. 縮放/平移按鈕
    3. 預覽模式
    4. 在工作區域點擊滑鼠左鍵兩次
 
@@ -45,9 +45,9 @@ In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometr
 2. Right clicking in the Workspace and selecting *Switch to ... View*
 3. Keyboard shortcut (Ctrl + B)
 
->  1. 右上角顯示切換開關
+>   1. 右上角顯示切換開關
    2. 在工作區域中按滑鼠右鍵並選擇 切換到...
-   3. 鍵盤快捷鍵 (Ctrl + B)
+    3. 鍵盤快捷鍵 (Ctrl + B)
 
 
 The 3D Preview Navigation mode also gives us the ability for **Direct Manipulation** of points, exemplified in [Getting Started](http://dynamoprimer.com/02_Hello-Dynamo/2-6_the_quick_start_guide.html).
@@ -64,15 +64,14 @@ The 3D Preview Navigation mode also gives us the ability for **Direct Manipulati
 > 1. Select the node corresponding to the geometry  that will center the view. 
 2. Switch to the 3D Preview Navigation. 
 
->   1. 選擇對應幾何幾物件的節點，它將會顯示在視窗的中央.
+>    1. 選擇對應幾何幾物件的節點，它將會顯示在視窗的中央.
     2. 轉換至3D預覽操作.
 
 ![Zoom to Recenter 2](images/2-3/03-ZoomToRecenter_2.jpg)
 > 1. Click on the Zoom All icon in the top right.
 2. The selected geometry will be centered inside the view.
 
->    1. 點擊右上角”Zoom All”的按鈕
-    2.被選中的幾何物件會顯示在視圖中央。
+>  (1). 點擊右上角”Zoom All”的按鈕 (2).被選中的幾何物件會顯示在視圖中央。
 
 ###Hello Mouse!
 
@@ -89,9 +88,9 @@ Based on which Preview mode is active, your mouse buttons will act differently. 
 2. Right Click on a Node.
 3. Right Click on a Note.
 
->  1. 在工作區域點擊右鍵
-   2. 在節點點擊右鍵
-   3. 在NOTE上點擊右鍵
+> (1). 在工作區域點擊右鍵
+(2). 在節點點擊右鍵
+(3). 在NOTE上點擊右鍵
 
 Here's a table of mouse interactions per Preview:
 
@@ -142,11 +141,10 @@ Keeping your Dynamo canvas organized becomes increasingly important as your file
 >1.	Select the Nodes to be automatically organized, or leave all unselected to clean up all nodes in the file. 
 2.	The Cleanup Node Layout feature is located under the Edit tab.
 
->  1.	選擇要清理的節點，如不選擇，將清理所有的節點。
-   2.	點選清理節點配置指令
+> (1).	選擇要清理的節點，如不選擇，將清理所有的節點。(2).	點選清理節點配置指令
 
 ####After Node Cleanup 
 ![Clean Layout Example](images/2-3/07-CleanupNodeLayout.png)
 >1.	The nodes will be automatically re-distributed and aligned, cleaning up any staggered or overlapping nodes and aligning them with neighboring nodes.
 
->  1.	這些節點將自動地重新配置與對齊，清理任何交錯或重疊的節點，並與鄰近的節點對齊。
+>(1).	這些節點將自動地重新配置與對齊，清理任何交錯或重疊的節點，並與鄰近的節點對齊。
