@@ -19,7 +19,7 @@ Now that we have our Objectives and Relationships sketched we can begin creating
 ![Browse and Search](images/2-4/01-BrowseAndSearch.png)
 > 1. Browse to Geometry > Circle > **Circle.ByPointRadius**
 2. Search > "Circle by Point..."
-1.瀏覽找到  Geometry > Circle > Circle.ByPointRadius
+>1.瀏覽找到  Geometry > Circle > Circle.ByPointRadius
 2.尋找  > "Circle by Point..."
 
 Let's add the **Circle.ByPointRadius** Node to the Workspace by clicking on it in the Library - this should add the Node to the center of the Workspace.
