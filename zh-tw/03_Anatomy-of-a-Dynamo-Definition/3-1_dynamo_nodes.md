@@ -62,6 +62,7 @@ If your Visual Program contains warning or errors, Dynamo will provide additiona
 > 1. Warning Tooltip - "Null" or no data cannot be understood as a Double ie. a number
 2. Use the Watch Node to examine the input data
 3. Upstream the Number Node is storing "Red" not a number
+
 >   1.	錯誤提示：”Null”或是該資料類型與double不符合，例如 a
     2.	利用watch節點去檢查輸入的資料
     3.	上游端為類型是數字的節點，但儲存的red並非數字
