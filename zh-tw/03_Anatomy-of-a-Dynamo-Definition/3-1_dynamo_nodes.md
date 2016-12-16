@@ -1,10 +1,13 @@
 ##Nodes 節點
 In Dynamo, **Nodes** are the objects you connect to form a Visual Program. Each **Node** performs an operation - sometimes that may be as simple as storing a number or it may be a more complex action such as creating or querying geometry.
 
-在dynamo中，節點是視覺化程式中的物件，每個節點都代表著一個動作（已經成形的程式碼），有時簡單如數字，有時卻可能是創造或獲取幾何形體的資訊。
+在Dynamo中，節點是視覺化程式中的物件，每個節點都代表著一個動作（已經成形的程式碼），有時簡單如數字，有時卻可能是創造或獲取幾何形體的資訊。
 
 ###Anatomy of a Node 節點剖析
 Most Nodes in Dynamo are composed of five parts. While there are exceptions, such as Input Nodes, the anatomy of each Node can be described as follows:
+
+Dynamo中絕大多數的節點皆由五個部分組成。儘管有例外存在，像是代表輸入端的節點，但大部分可以節點的結構符合以下的敘述：
+
 ![Node Breakdown Point by Coordinates](images/3-1/00-AnatomyOfANode.png)
 >1. Name - The Name of the Node with a Category.Name naming convention
 2. Main - The main body of the Node - Right-clicking here presents options at the level of the whole Node
@@ -13,10 +16,10 @@ Most Nodes in Dynamo are composed of five parts. While there are exceptions, suc
 5. Lacing Icon - Indicates the Lacing option specified for matching list inputs (more on that later)
 
 >  1.名稱 - 節點的名稱，包含來源類型。有一定的命名結構。
-2.主體 - 節點的主體 - 右鍵點擊可展示該節點在該結構層級下能進行的操作。
-3.接口(輸入＆輸出) - 接收從其他節點產生的資料及輸出該節點產生的資料。
-4.資料預覽 - 將游標移至節點上或點擊節點可預覽該節點產生的資料結果。
-5.連結選項 - 提供輸入到此節點的資料的彼此交互的方式。
+ 2.主體 - 節點的主體 - 右鍵點擊可展示該節點在該結構層級下能進行的操作。
+ 3.接口(輸入＆輸出) - 接收從其他節點產生的資料及輸出該節點產生的資料。
+ 4.資料預覽 - 將游標移至節點上或點擊節點可預覽該節點產生的資料結果。
+ 5.連結選項 - 提供輸入到此節點的資料的彼此交互的方式。
 
 ### Ports 接口
 The Inputs and Outputs for Nodes are called Ports and act as the receptors for Wires. Data comes into the Node through Ports on the left and flows out of the Node after it has executed its operation on the right. Ports expect to receive data of a certain type. For instance, connecting a number such as *2.75* to the Ports on a Point By Coordinates Node will successfully result in creating a Point; however, if we supply *"Red"* to the same Port it will result in an error.
@@ -59,10 +62,9 @@ If your Visual Program contains warning or errors, Dynamo will provide additiona
 > 1. Warning Tooltip - "Null" or no data cannot be understood as a Double ie. a number
 2. Use the Watch Node to examine the input data
 3. Upstream the Number Node is storing "Red" not a number
-> 
-1.	錯誤提示：”Null”或是該資料類型與double不符合，例如 a
-2.	利用watch節點去檢查輸入的資料
-3.	上游端為類型是數字的節點，但儲存的red並非數字
+>   1.	錯誤提示：”Null”或是該資料類型與double不符合，例如 a
+    2.	利用watch節點去檢查輸入的資料
+    3.	上游端為類型是數字的節點，但儲存的red並非數字
 
 
 
