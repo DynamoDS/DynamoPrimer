@@ -15,10 +15,10 @@ Dynamo的工作區域是我們開發視覺化程式的地方，也是我們預�
 3. Preview Mode
 4. Double Clicking on the Workspace
 
->1. 標籤
-2. 縮放/平移按鈕
-3. 預覽模式
-4. 在工作區域點擊滑鼠左鍵兩次
+>  1. 標籤
+   2. 縮放/平移按鈕
+   3. 預覽模式
+   4. 在工作區域點擊滑鼠左鍵兩次
 
 ###Tabs
 The active Workspace tab allows you to navigate and edit your program. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the *New Node by Selection* right click option when Nodes are selected (more eon this functionality later).
@@ -45,9 +45,9 @@ In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometr
 2. Right clicking in the Workspace and selecting *Switch to ... View*
 3. Keyboard shortcut (Ctrl + B)
 
-> 1. 右上角顯示切換開關
-2. 在工作區域中按滑鼠右鍵並選擇 切換到...
-3. 鍵盤快捷鍵 (Ctrl + B)
+>  1. 右上角顯示切換開關
+   2. 在工作區域中按滑鼠右鍵並選擇 切換到...
+   3. 鍵盤快捷鍵 (Ctrl + B)
 
 
 The 3D Preview Navigation mode also gives us the ability for **Direct Manipulation** of points, exemplified in [Getting Started](http://dynamoprimer.com/02_Hello-Dynamo/2-6_the_quick_start_guide.html).
@@ -57,17 +57,31 @@ The 3D Preview Navigation mode also gives us the ability for **Direct Manipulati
 ###Zoom to Recenter
  We can easily pan, zoom and rotate freely around models in 3D Preview Navigation mode. However, to zoom specifically on an object created by a geometry node, we can use the Zoom All icon with a single node selected.
 
+###縮放至中央
+3D預覽操作介面中，我們可以可以自由的的平移、縮放與旋轉模型，然而我們可針對一個幾何物件或者是在選取一個節點的狀態下進行縮放。
+
 ![Zoom to Recenter 1](images/2-3/03-ZoomToRecenter_1.jpg)
 > 1. Select the node corresponding to the geometry  that will center the view. 
 2. Switch to the 3D Preview Navigation. 
+
+>   1. 選擇對應幾何幾物件的節點，它將會顯示在視窗的中央.
+    2. 轉換至3D預覽操作.
 
 ![Zoom to Recenter 2](images/2-3/03-ZoomToRecenter_2.jpg)
 > 1. Click on the Zoom All icon in the top right.
 2. The selected geometry will be centered inside the view.
 
+>    1. 點擊右上角”Zoom All”的按鈕
+    2.被選中的幾何物件會顯示在視圖中央。
+
 ###Hello Mouse!
 
 Based on which Preview mode is active, your mouse buttons will act differently. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking.
+
+### Hello Mouse!
+
+不同的顯示模式中，滑鼠按鈕的功能也不同，一般情況下，單擊滑鼠左鍵是選擇與輸入，右鍵是彈出選單，中鍵為移動工作區。在不同的位置上點擊右鍵會有不同的選單。
+(譯註:目前知道在這幾個地方有差異，空白處，選擇節點後，選擇節點空白處，選擇複數節點等)
 
 ![Hello Mouse](images/2-3/04-HelloMouse.png)
 
@@ -75,8 +89,13 @@ Based on which Preview mode is active, your mouse buttons will act differently. 
 2. Right Click on a Node.
 3. Right Click on a Note.
 
+>  1. 在工作區域點擊右鍵
+   2. 在節點點擊右鍵
+   3. 在NOTE上點擊右鍵
+
 Here's a table of mouse interactions per Preview:
 
+滑鼠在每種視窗中的操作表
 **Mouse Action** | **Graph Preview** | **3D Preview**
 --- | --- | ---
 Left Click | Select | N/A
@@ -85,9 +104,20 @@ Middle Click | Pan | Pan
 Scroll | Zoom In/Out | Zoom In/Out
 Double Click | Create Code Block | N/A
 
+**滑鼠操作** | **圖形介面** | **3D預覽**
+--- | --- | ---
+左鍵| 選擇 | 無
+右鍵| 彈出選單 | 縮放選項
+中鍵| 平移 | 平移
+滾動中鍵 | 縮放 | 縮放
+左鍵雙擊 | 創造 Code Block | 無
+
 ###In-Canvas Search
 
 Using the "In-Canvas Search" will add some serious speed to your Dynamo work-flow by providing you access to node descriptions and tool-tips without taking you away from your place on the graph! By just right-clicking, you can access all the useful functionality of the "Library Search" from wherever you happen to be working on the canvas.
+
+###搜索區
+使用"In-Canvas Search"將會大大提高工作效率，透過他可再不離開工作區域的情況下獲得節點的輔助說明與提示！只需要點擊右鍵，就可以檢索目前所有的節點。
 
 ![In Canvas Search](images/2-3/05-InCanvasSearch.png)
 
@@ -95,13 +125,28 @@ Using the "In-Canvas Search" will add some serious speed to your Dynamo work-flo
 2. As you type into the search bar, the drop-down menu will continuously update to show the most relevant search results.
 3. Hover over the search results to bring up their corresponding descriptions and tool-tips.
 
+>   1.在空白區域點選右鍵打開搜索區，當搜索欄空白時－會顯示右鍵選單。
+   2.當輸入文字時，下拉選單會動態顯示最接近的節點匹配。
+   3.停留在節點上會顯示說明與提示文字。
+
 ##Clean Up Node Layout
 Keeping your Dynamo canvas organized becomes increasingly important as your files build in complexity. Although we have the **Align Selection** tool to work with small amounts of selected Nodes, Dynamo also features the **Cleanup Node Layout** tool to help with overall file cleanup. 
+
+##清理節點
+保持你節點的簡潔是很重要的，尤其是節點越來越複雜的時候，雖然有對齊工具可供選取的少量節點對齊之用，DYNAMO也提供了清理節點配置功能來協助我們做檔案清理。
+
+
 ####Before Node Cleanup
+####清理前
 ![Cleanup Node Layout](images/2-3/06-CleanupNodeLayout.png)
 >1.	Select the Nodes to be automatically organized, or leave all unselected to clean up all nodes in the file. 
 2.	The Cleanup Node Layout feature is located under the Edit tab.
+
+>  1.	選擇要清理的節點，如不選擇，將清理所有的節點。
+   2.	點選清理節點配置指令
+
 ####After Node Cleanup 
 ![Clean Layout Example](images/2-3/07-CleanupNodeLayout.png)
 >1.	The nodes will be automatically re-distributed and aligned, cleaning up any staggered or overlapping nodes and aligning them with neighboring nodes.
 
+>  1.	這些節點將自動地重新配置與對齊，清理任何交錯或重疊的節點，並與鄰近的節點對齊。
