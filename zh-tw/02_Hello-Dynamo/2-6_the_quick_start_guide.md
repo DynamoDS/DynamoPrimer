@@ -19,7 +19,8 @@ Now that we have our Objectives and Relationships sketched we can begin creating
 ![Browse and Search](images/2-4/01-BrowseAndSearch.png)
 > 1. Browse to Geometry > Circle > **Circle.ByPointRadius**
 2. Search > "Circle by Point..."
->1.瀏覽找到  Geometry > Circle > Circle.ByPointRadius
+
+> 1.瀏覽找到  Geometry > Circle > Circle.ByPointRadius
 2.尋找  > "Circle by Point..."
 
 Let's add the **Circle.ByPointRadius** Node to the Workspace by clicking on it in the Library - this should add the Node to the center of the Workspace.
@@ -29,7 +30,8 @@ Let's add the **Circle.ByPointRadius** Node to the Workspace by clicking on it i
 
 > 1. The Circle.ByPointandRadius Node in the Library
 2. Clicking the Node in the Library adds it to the Workspace
-1.	在資料庫裡的Circle.ByPointandRadius節點
+
+> 1.	在資料庫裡的Circle.ByPointandRadius節點
 2.	點選他並將他加入到工作空間
 
 We also will need **Point.ByCoordinates**, **Number Input**, and **Number Slider** Nodes.
@@ -52,7 +54,8 @@ Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wir
 2. **Number Sliders** to **Point.ByCoordinates**
 3. **Point.ByCoordinates** (2) to **DistanceTo**
 4. **Point.ByCoordinates** and **DistanceTo** to **Circle.ByCenterPointRadius**
-1.「Number」 連到 「Point.ByCoordinates」
+
+> 1.「Number」 連到 「Point.ByCoordinates」
 2.「Number Sliders」 連到 「Point.ByCoordinates」
 3.「Point.ByCoordinates」 連到 「DistanceTo」
 4.「Point.ByCoordinates」 和 「DistanceTo」 連到 「Circle.ByCenterPointRadius」
@@ -65,7 +68,8 @@ With our Program Flow defined, all we need to do is tell Dynamo to execute it. O
 > 1. (Click Run) - If the Execution Bar is in Manual Mode, we need to Click Run to execute the graph
 2. Node Preview - Hovering your mouse over the box on the lower right corner of a Node will give you a pop-up of the results
 3. 3D Preview - If any of our Nodes create geometry, we will see it in the 3D Preview.
-1. (點選執行) – 如果在執行欄位是顯示手動模式，我們就必須點選執行按鈕來執行
+
+> 1. (點選執行) – 如果在執行欄位是顯示手動模式，我們就必須點選執行按鈕來執行
 2. 節點預覽 – 將滑鼠游標移到節點右下角，它會跳出結果
 3. 3D預覽 – 如果有創造幾何圖形的節點，我們就會在3D預覽裡看到它
 
@@ -77,7 +81,8 @@ If our program is working, we should see a circle in the 3D Preview that is pass
 >1. **Code Block**
 2. **DistanceTo** and **Number Slider** to **Code Block**
 3. **Code Block** to **Circle.ByCenterPointRadius**
-1.「Code Block」
+
+>1.「Code Block」
 2.「DistanceTo 」和 「Number Slider」 連到 「Code Block」
 3.「Code Block」 連到 「Circle.ByCenterPointRadius」
 
@@ -89,7 +94,8 @@ Starting simple and building complexity is an effective way to incrementally dev
 >1. Add a **Number Sequence** Node and replace the inputs of **Point.ByCoordinates** - Right Click Point.ByCoordinates and select Lacing > Cross Reference
 2. Add a **Flatten** Node after  Point.ByCoordinates
 3. The 3D Preview will update with a grid of circles
-1.	加入「Number Sequence」節點後取代原本「Point.ByCoordinates」輸入的節點 – 右鍵點擊「Point.ByCoordinates」後選擇 Lacing > Cross
+
+>1.	加入「Number Sequence」節點後取代原本「Point.ByCoordinates」輸入的節點 – 右鍵點擊「Point.ByCoordinates」後選擇 Lacing > Cross
 2.	增加 「Flatten」節點在「Point.ByCoordinates」後面
 3.	在3D預覽更新成網格點
 
@@ -100,15 +106,18 @@ Sometimes numerical manipulation isn't the right approach. Now you can manually 
 ![Selected Point](images/2-4/08-SelectedPoint.png)
 >1. To use **Direct Manipulation**, select the panel of the point to be moved – arrows will appear over the point selected.
 2. Switch to **3D Preview Navigation** mode.
-1.	選擇控制移動點的那個面板並利用上述直接操作的方法 – 箭頭會在選定的那個點上面
+
+>1.	選擇控制移動點的那個面板並利用上述直接操作的方法 – 箭頭會在選定的那個點上面
 2.	切換到3D預覽模式
 
 ![Direct Point Manipulation](images/2-4/09-DirectPointManipulation.png)
 >1. Hover over the point and the X, Y, and Z axes will appear.
 2. Click and drag the colored arrow to move the corresponding axis, and the **Number Slider** values will update live with the manually moved point.
-1.	滑鼠游標移到那個點之後X,Y,Z軸會出現
+
+>1.	滑鼠游標移到那個點之後X,Y,Z軸會出現
 2.	點擊並拖住彩色的箭頭來移動座標軸，然後會看到「Number Slider 」的值會隨著手動操作而改變
 
 ![Updated Sliders](images/2-4/10-UpdatedSliders.png)
 >1. Note that before **Direct Manipulation** only one slider was plugged into the **Point.ByCoordinates** component. When we manually move the point in the X-direction, Dynamo will automatically generate a new **Number Slider** for the X input.
-1.	注意到如果再直接操作方法只用之前只有一個「Number slider」連接到「Point.ByCoordinates」，那麼當我們在手動移動點的X位置時，Dynamo會自動產生新的「Number slider」連到x輸入的位置
+
+>1.	注意到如果再直接操作方法只用之前只有一個「Number slider」連接到「Point.ByCoordinates」，那麼當我們在手動移動點的X位置時，Dynamo會自動產生新的「Number slider」連到x輸入的位置
