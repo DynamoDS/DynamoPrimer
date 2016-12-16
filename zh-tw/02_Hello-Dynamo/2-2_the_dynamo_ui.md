@@ -119,7 +119,7 @@ If you're stuck, check out the **Help** Menu. Here you can find the sample files
 
 ![show menu](images/2-2/09-Help.png)
 
->1. Samples
+>1. Samples 案例
 2. Report A Bug 問題回報
 3. Go To Project Website  專案網站連結
 4. Go To Project Wiki  專案維基連結
