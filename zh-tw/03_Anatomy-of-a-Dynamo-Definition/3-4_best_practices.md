@@ -1,17 +1,17 @@
 ##Managing Your Program
 
-程序管理
+程式管理
 
 Working within a Visual Programming process can be a powerful creative activity, but very quickly the Program Flow and key user inputs can be obscured by complexity and/or layout of the Workspace. Let's review some best practices for managing your program.
 
-使用視覺化城市編輯可唯一具有創造性的事情，但隨著項目推進，工作室很快就會變得複雜，使程序難以理解。接下來我們來預習如何管理程式。
+使用視覺化程式編輯可唯一具有創造性的事情，但隨著專案推進，工作室很快就會變得複雜，使程式難以理解。接下來我們來預習如何管理程式。
 
 ###Alignment
 
 對齊
 
 Once we have added more than a few Nodes to the Workspace, we may want to re-organize the layout of the Nodes for clarity's sake. By selecting more than one Node and right-clicking on the Workspace, the pop up window includes an **Align Selection** menu with justification and distribution options in X and Y.
-當我們加入一些節點後，我們可能想要調整節點使他清晰一些。選擇兩個以上的節點並於工作區按下右鍵，將會跳出擁有**對齊選擇**選項的菜單。
+當我們加入一些節點後，我們可能想要調整節點使他的架構清晰一些。選擇兩個以上的節點並於工作區按下右鍵，將會跳出擁有**對齊選擇**選項的菜單。
 
 ![Align](images/3-4/00-Align.png)
 > 1. Select more than one Node
@@ -25,12 +25,12 @@ Once we have added more than a few Nodes to the Workspace, we may want to re-org
 注釋
 
 With some experience, we may be able to "read" the Visual Program by reviewing the Node Names and following the Program Flow. For users of all experience levels, it is also good practice to include plain language labels and descriptions. Dynamo has a **Notes** Node with an editable text field to do so. We can add Notes to the Workspace in two ways:
-熟悉使用方式後，我們可以藉由節點名稱以及程序流程來“讀”視覺化程式。對所有用戶來說，用簡明的話敘述正在做的事情是很好的習慣。為此Dynamo提供了**Notes**節點，可以編輯節點內部內容。其添加方式有兩種：
+熟悉使用方式後，我們可以藉由節點名稱以及程式流程來“讀”視覺化程式。對所有用戶來說，用簡明的話敘述正在做的事情是很好的習慣。為此Dynamo提供了**Notes**節點，可以編輯節點內部內容。其添加方式有兩種：
 
 
 ![Notes](images/3-4/01-Notes01.png)
 > 1. Browse to the menu File > Create Note
-1.編輯菜單→建立注釋
+1.編輯選單→建立注釋
 2. Use the keyboard shortcut Ctrl+W
 2.使用快捷鍵Ctrl+W
 
