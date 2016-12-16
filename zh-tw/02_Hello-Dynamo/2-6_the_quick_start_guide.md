@@ -121,3 +121,4 @@ Sometimes numerical manipulation isn't the right approach. Now you can manually 
 > 1. Note that before **Direct Manipulation** only one slider was plugged into the **Point.ByCoordinates** component. When we manually move the point in the X-direction, Dynamo will automatically generate a new **Number Slider** for the X input.
 
 >  1.	注意到如果再直接操作方法只用之前只有一個「Number slider」連接到「Point.ByCoordinates」，那麼當我們在手動移動點的X位置時，Dynamo會自動產生新的「Number slider」連到x輸入的位置
+ooo
