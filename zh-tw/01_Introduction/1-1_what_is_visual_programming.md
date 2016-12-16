@@ -97,3 +97,6 @@ The results of our algorithm:
 The visual characteristic to programming in such a way lowers the barrier to entry and frequently speaks to designers. Dynamo falls in the Visual Programming paradigm, but as we will see later, we can still use textual programming in the application as well.
 
 演算法的視覺化特性是降低設計師與演算發之間入門的溝通門檻。Dynamo完全是視覺化程式設計的範本，但是我們仍然可以在應用程式中使用輸入文字，同樣可以很順利的進行程式設計。
+
+
+ooo
