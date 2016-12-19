@@ -29,7 +29,6 @@ import car
 seat = car.CarSeat()
 tire = car.CarTire()
 ```
-
 Good:
 ```
 import car
@@ -43,7 +42,6 @@ Bad:
 ```
 CODE EXAMPLE
 ```
-
 Good:
 ```
 CODE EXAMPLE
@@ -57,7 +55,6 @@ agents = …
 active_agents = …
 dead_agents ...
 ```
-
 Good:
 ```
 agents = …
@@ -71,7 +68,6 @@ Bad:
 ```
 CODE EXAMPLE
 ```
-
 Good:
 ```
 CODE EXAMPLE
@@ -83,7 +79,6 @@ Bad:
 ```
 CODE EXAMPLE
 ```
-
 Good:
 ```
 CODE EXAMPLE
@@ -117,6 +112,7 @@ Constants:
 ```
 ALL_CAPS_WITH_UNDERSCORES
 ```
+
 Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
 
 **Use of Blank Lines**
@@ -141,29 +137,35 @@ function(apples[1], {oranges: 2})
 ```
 
 Immediately before a comma, semicolon, or colon:
-```
-Bad:
-if x == 2 : print x , y ; x , y = y , x
 
+Bad:
+```
+if x == 2 : print x , y ; x , y = y , x
+```
 Good:
+```
 if x == 2: print x, y; x, y = y, x
 ```
 
 Immediately before the open parenthesis that starts the argument list of a function call:
-```
-Bad:
-function (1)
 
+Bad:
+```
+function (1)
+```
 Good:
+```
 function(1)
 ```
 
 Immediately before the open parenthesis that starts an indexing or slicing
-```
-# Bad:
-dict ['key'] = list [index]
 
-# Good:
+Bad:
+```
+dict ['key'] = list [index]
+```
+Good:
+```
 dict['key'] = list[index]
 ```
 
@@ -201,6 +203,7 @@ if (country_code == 'US'):
  ### display the form input for state
 print form_input_state()
 ```
+
 Good:
 ```
 ### display state selection for US users
