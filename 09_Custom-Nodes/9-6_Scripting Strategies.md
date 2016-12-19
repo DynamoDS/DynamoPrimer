@@ -72,9 +72,11 @@ Good:
 
 ###Style Consistently
 
-Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. 
+Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code. 
 
-Here are a few tips for writing clear and consistent code. Choose one of the conventions below for each type of entity in your code, and stick to it!
+**Naming Conventions**
+
+Choose one of the conventions below for each type of entity in your code, and stick to it!
 
 Variables, functions, methods, packages, modules:
 ```
@@ -98,7 +100,36 @@ ALL_CAPS_WITH_UNDERSCORES
 ```
 Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
 
+**Use of Blank Lines**
 
+Surround top-level function and class definitions with two blank lines
+
+Method definitions inside a class are surrounded by a single blank line
+
+Extra blank lines may be used (sparingly) to separate groups of related functions.
+
+**Avoid extraneous whitespace**
+
+Immediately inside parentheses, brackets or braces:
+
+Bad:
+```
+function( apples[ 1 ], { oranges: 2 } )
+```
+Good:
+```
+function(apples[1], {oranges: 2})
+```
+Immediately before a comma, semicolon, or colon
+
+Bad:
+```
+if x == 2 : print x , y ; x , y = y , x
+```
+Good:
+```
+if x == 2: print x, y; x, y = y, x
+```
 ###Structure Modularly 
 
 As your code gets longer and more complex the “big idea”, or overarching algorithm becomes increasingly illegible. It also becomes more difficult to keep track of what (and where) specific things happen, find bugs when things go wrong, integrate other code, and assign development tasks. To avoid these headaches it’s wise to embrace the utility of modularization, an organizational concept that breaks up code based on the task it executes. Here are some tips for making your scripts more manageable by way of modularization.
