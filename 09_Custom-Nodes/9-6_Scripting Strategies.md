@@ -14,11 +14,16 @@ It´s OK to use abbreviations, but explain the abbreviation with a comment.
 
 Bad:
 ```
-CODE EXAMPLE
+csfX = 1.6
+csfY= 1.3
+csfZ = 1.0
 ```
 Good:
 ```
-CODE EXAMPLE
+# column scale factor (csf)
+csfX = 1.6
+csfY= 1.3
+csfZ = 1.0
 ```
 
 Avoid redundant labeling.
