@@ -95,7 +95,7 @@ Generally speaking there is more than one way to program just about anything, th
 
 ####Naming Conventions
 
-Choose one of the conventions below for each type of entity in your code, and stick to it!
+Choose one of the conventions below for each type of entity in your code and stick to it!
 
 Variables, functions, methods, packages, modules:
 ```
@@ -118,13 +118,13 @@ Constants:
 ALL_CAPS_WITH_UNDERSCORES
 ```
 
-Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
+>Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
 
 ####Use of Blank Lines
 
-Surround top-level function and class definitions with two blank lines
+Surround top-level function and class definitions with two blank lines.
 
-Method definitions inside a class are surrounded by a single blank line
+Method definitions inside a class are surrounded by a single blank line.
 
 Extra blank lines may be used (sparingly) to separate groups of related functions.
 
