@@ -117,7 +117,6 @@ Constants:
 ```
 ALL_CAPS_WITH_UNDERSCORES
 ```
-
 >Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
 
 ####Use of Blank Lines
@@ -191,8 +190,10 @@ Limiting the required editor window width makes it possible to have several file
 Long lines can be broken over multiple lines by wrapping expressions in parentheses.
 
 ####Avoid obvious and redundant comments
-
-Code Tells You How, Comments Tell You Why.
+```
+# Comments Tell You Why
+code_tells_you_how
+```
 
 Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
 
