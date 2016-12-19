@@ -230,13 +230,13 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 If you find that your code does the same (or very similar) thing in more than once place, find ways to cluster it into a function that can be called.
 
-**Concentration on one specific task per module**
+####Concentration on one specific task per module
 
 Functions that each perform a single well-defined function.
 
 "Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
 
-**Only show what needs to be seen**
+####Only show what needs to be seen
 
 A module interface expresses the elements that are provided and required by the module.
 
@@ -246,7 +246,7 @@ Once the interfaces between the units have been defined, the detailed design of 
 
 Modules don’t know or care about each other
 
-**General forms**
+####General forms
 
 Code Grouping
 
