@@ -242,7 +242,7 @@ A module interface expresses the elements that are provided and required by the 
 
 Once the interfaces between the units have been defined, the detailed design of each unit can proceed separately.
 
-**Separability/Replaceability**
+####Separability/Replaceability
 
 Modules don’t know or care about each other
 
@@ -257,7 +257,7 @@ Classes
 
 ###Think Parametrically
 
-**Design through relationships**
+####Design through relationships
 
 Make connections between entities in your code.
 
@@ -265,7 +265,7 @@ The relationship between elements is used to manipulate and inform the design of
 
 Certain parameters or variables that can be edited to manipulate or alter the end result of an equation or system.
 
-**DRY / DIE principles**
+####DRY / DIE principles
 
 DRY: Don't Repeat Yourself.
 
@@ -275,11 +275,11 @@ DIE: Duplication is Evil.
 
 Never enter same value twice
 
-**Go to source**
+####Go to source
 
-**Minimize number of inputs (only expose key parameters)**
+####Minimize number of inputs (only expose key parameters)
 
-**Know what is being held constant**
+####Know what is being held constant
 
 ###Flex Constantly
 
@@ -291,11 +291,11 @@ Anticipate “edge cases”
 
 ###Debug Efficiently
 
-**Use watch bubble**
+####Use watch bubble
 
-**Meaningful commenting**
+####Meaningful commenting
 
-**Leverage Modular framework**
+####Leverage modular framework
 
 Once the faulty module has been identified, fixing the problem is considerably simpler.
 
