@@ -14,23 +14,61 @@ It´s OK to use abbreviations, but explain the abbreviation with a comment.
 
 Bad:
 
-```
-import car
-	seat = car.CarSeat()
-	tire = car.CarTire()
-```
-
 Good:
-
-```
-import car
-	seat = car.Seat()
-	tire = car.Tire()
-```
 
 Avoid redundant labeling.
 
+Bad:
+```
+import car
+seat = car.CarSeat()
+tire = car.CarTire()
+```
 
+Good:
+```
+import car
+seat = car.Seat()
+tire = car.Tire()
+```
+
+Use positive logic for you variable names instead of negative logic.
+
+Bad:
+
+Good:
+
+Prefer “reverse notation”. 
+
+It’s more sensible, in structural terms.
+
+Bad:
+```
+agents = …
+active_agents = …
+dead_agents ...
+```
+
+Good:
+```
+agents = …
+agents_active = …
+agents_dead = ...
+```
+
+Aliases should be used to shorten overly long, and often repeated chains.
+
+Bad:
+
+Good:
+
+Only use necessary words. 
+
+“Everything should be made as simple as possible, but not simpler.” – Albert Einstein
+
+Bad:
+
+Good:
 
 ###Style Consistently
 
