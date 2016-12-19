@@ -76,16 +76,26 @@ Generally speaking there is more than one way to program just about anything, th
 
 Here are a few tips for writing clear and consistent code. Choose one of the conventions below for each type of entity in your code, and stick to it!
 
-Variables, functions, methods, packages, modules: lower_case_with_underscores
-
-Classes and Exceptions: CapWords
-
-Protected methods and internal functions: _single_leading_underscore(self, ...)
-
-Private methods: __double_leading_underscore(self, ...)
-
-Constants: ALL_CAPS_WITH_UNDERSCORES
-
+Variables, functions, methods, packages, modules:
+```
+lower_case_with_underscores
+```
+Classes and Exceptions:
+```
+CapWords
+```
+Protected methods and internal functions:
+```
+_single_leading_underscore(self, ...)
+```
+Private methods:
+```
+__double_leading_underscore(self, ...)
+```
+Constants:
+```
+ALL_CAPS_WITH_UNDERSCORES
+```
 Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
 
 
