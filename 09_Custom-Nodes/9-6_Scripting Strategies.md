@@ -130,7 +130,7 @@ Extra blank lines may be used (sparingly) to separate groups of related function
 
 ####Avoid extraneous whitespace
 
-Immediately inside parentheses, brackets or braces:
+Immediately inside parentheses, brackets or braces.
 
 Bad:
 ```
@@ -141,7 +141,7 @@ Good:
 function(apples[1], {oranges: 2})
 ```
 
-Immediately before a comma, semicolon, or colon:
+Immediately before a comma, semicolon, or colon.
 
 Bad:
 ```
@@ -152,7 +152,7 @@ Good:
 if x == 2: print x, y; x, y = y, x
 ```
 
-Immediately before the open parenthesis that starts the argument list of a function call:
+Immediately before the open parenthesis that starts the argument list of a function call.
 
 Bad:
 ```
@@ -163,7 +163,7 @@ Good:
 function(1)
 ```
 
-Immediately before the open parenthesis that starts an indexing or slicing
+Immediately before the open parenthesis that starts an indexing or slicing.
 
 Bad:
 ```
@@ -174,7 +174,7 @@ Good:
 dict['key'] = list[index]
 ```
 
-Always surround these binary operators with a single space on either side
+Always surround these binary operators with a single space on either side.
 ```
 assignment ( = )
 augmented assignment ( += , -= etc.)
