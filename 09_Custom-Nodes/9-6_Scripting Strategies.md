@@ -12,63 +12,59 @@ While scripting, we are constantly using identifiers to denote things like varia
 
 Here are some tips to keep in mind while naming things in your script.
 
-* It´s OK to use abbreviations, but explain the abbreviation with a comment
-
- * Bad:
+* It´s OK to use abbreviations, but explain the abbreviation with a comment.
 ```
+### Bad:
 csfX = 1.6
 csfY= 1.3
 csfZ = 1.0
 ```
- * Good:
- ```
+```
+### Good:
 # column scale factor (csf)
 csfX = 1.6
 csfY= 1.3
 csfZ = 1.0
 ```
 
-* Avoid redundant labeling
-
- * Bad:
+* Avoid redundant labeling.
 ```
+### Bad:
 import car
 seat = car.CarSeat()
 tire = car.CarTire()
 ```
- * Good:
 ```
+### Good:
 import car
 seat = car.Seat()
 tire = car.Tire()
 ```
 
-* Use positive logic for your variable names instead of negative logic
-
- * Bad:
+* Use positive logic for your variable names instead of negative logic.
 ```
+### Bad:
 CODE EXAMPLE
 ```
- * Good:
 ```
+### Good:
 CODE EXAMPLE
 ```
 
-* Prefer “reverse notation”
- * It’s more sensible, in structural terms.
-
- * Bad:
+* Prefer “reverse notation”. 
 ```
+### Bad:
 agents = …
 active_agents = …
 dead_agents ...
 ```
- * Good:
 ```
+### Good:
 agents = …
 agents_active = …
 agents_dead = ...
 ```
+>It’s more sensible, in structural terms.
 
 * Aliases should be used to shorten overly long and often repeated chains
 ```
