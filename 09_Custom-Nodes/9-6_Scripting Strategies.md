@@ -259,7 +259,21 @@ Never enter same value twice
 
 ###Flex Constantly
 
+“Test ruthlessly”
 
+Check as you go
+
+Anticipate “edge cases”
 
 ###Debug Efficiently
+
+**Use watch bubble**
+
+**Meaningful commenting**
+
+**Leverage Modular framework**
+
+Once the faulty module has been identified, fixing the problem is considerably simpler.
+
+When a program must be modified, modular programming simplifies the job.
 
