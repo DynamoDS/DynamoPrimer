@@ -71,27 +71,25 @@ agents_dead = ...
 ```
 
 * Aliases should be used to shorten overly long and often repeated chains
-
- * Bad:
 ```
+### Bad:
 CODE EXAMPLE
 ```
- * Good:
 ```
+### Good:
 CODE EXAMPLE
 ```
 
 * Only use necessary words
- * “Everything should be made as simple as possible, but not simpler.” – Albert Einstein
-
- * Bad:
-```
-CODE EXAMPLE
-```
- * Good:
-```
-CODE EXAMPLE
-```
+ ```
+ ### Bad:
+ CODE EXAMPLE
+ ```
+ ```
+ ### Good:
+ CODE EXAMPLE
+ ```
+ >“Everything should be made as simple as possible, but not simpler.” – Albert Einstein
 
 ###Style Consistently
 
@@ -181,6 +179,9 @@ Booleans ( and , or , not )
  * Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
 
  * Long lines can be broken over multiple lines by wrapping expressions in parentheses.
+ ```
+ CODE EXAMPLE
+ ```
 
 * Avoid obvious and redundant comments
 ```
