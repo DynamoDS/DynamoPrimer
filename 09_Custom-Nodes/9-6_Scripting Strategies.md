@@ -8,34 +8,34 @@ This part of the guide is organized in the spirit of a journal of “best practi
 
 ###Label Carefully
 
-While scripting, we are constantly using identifiers to denote things like variables, types, functions, and other entities. Through this system of symbolic notation, while building algorithms we can conveniently refer to information by way of labels --usually made up of a sequence of characters. Naming things well plays a significant role in writing code that can be easily read and understood by others as well as your future self! Here are some tips to keep in mind while naming things in your script.
+While scripting, we are constantly using identifiers to denote things like variables, types, functions, and other entities. Through this system of symbolic notation, while building algorithms we can conveniently refer to information by way of labels --usually made up of a sequence of characters. Naming things well plays a significant role in writing code that can be easily read and understood by others as well as your future self! 
 
-It´s OK to use abbreviations, but explain the abbreviation with a comment.
+Here are some tips to keep in mind while naming things in your script.
 
-Bad:
+* It´s OK to use abbreviations, but explain the abbreviation with a comment:
+
 ```
+###Bad:
 csfX = 1.6
 csfY= 1.3
 csfZ = 1.0
-```
-Good:
-```
+
+###Good:
 # column scale factor (csf)
 csfX = 1.6
 csfY= 1.3
 csfZ = 1.0
 ```
 
-Avoid redundant labeling.
+* Avoid redundant labeling:
 
-Bad:
 ```
+###Bad:
 import car
 seat = car.CarSeat()
 tire = car.CarTire()
-```
-Good:
-```
+
+###Good:
 import car
 seat = car.Seat()
 tire = car.Tire()
