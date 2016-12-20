@@ -88,7 +88,7 @@ CODE EXAMPLE
 
 Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code. 
 
-**Naming Conventions**
+####Naming Conventions
 
 Choose one of the conventions below for each type of entity in your code, and stick to it!
 
@@ -115,7 +115,7 @@ ALL_CAPS_WITH_UNDERSCORES
 
 Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
 
-**Use of Blank Lines**
+####Use of Blank Lines
 
 Surround top-level function and class definitions with two blank lines
 
@@ -123,7 +123,7 @@ Method definitions inside a class are surrounded by a single blank line
 
 Extra blank lines may be used (sparingly) to separate groups of related functions.
 
-**Avoid extraneous whitespace**
+####Avoid extraneous whitespace
 
 Immediately inside parentheses, brackets or braces:
 
@@ -177,7 +177,7 @@ comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
 Booleans ( and , or , not )
 ```
 
-**Watch line length**
+####Watch line length
 
 Don't stress over it ~ 79 characters.
 
@@ -185,7 +185,7 @@ Limiting the required editor window width makes it possible to have several file
 
 Long lines can be broken over multiple lines by wrapping expressions in parentheses.
 
-**Avoid obvious and redundant comments**
+####Avoid obvious and redundant comments
 
 Code Tells You How, Comments Tell You Why.
 
@@ -212,11 +212,11 @@ if (country_code == 'US'):
 print form_input_state()
 ```
 
-**Check out open source code**
+####Check out open source code
 
 Open Source projects are built on the collaborative efforts of many developers. These projects need to maintain a high level of code readability so that the team can work together as efficiently as possible. Therefore, it is a good idea to browse through the source code of these projects to observe what these developers are doing.
 
-**Improve your conventions**
+####Improve your conventions
 
 Question whether or not each convention is working for the needs at hand.
 
@@ -226,7 +226,7 @@ Is functionality/efficiency being compromised?
 
 As your code gets longer and more complex the “big idea”, or overarching algorithm becomes increasingly illegible. It also becomes more difficult to keep track of what (and where) specific things happen, find bugs when things go wrong, integrate other code, and assign development tasks. To avoid these headaches it’s wise to embrace the utility of modularization, an organizational concept that breaks up code based on the task it executes. Here are some tips for making your scripts more manageable by way of modularization.
 
-**Spotting code re-use**
+####Spotting code re-use
 
 If you find that your code does the same (or very similar) thing in more than once place, find ways to cluster it into a function that can be called.
 
