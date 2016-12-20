@@ -13,13 +13,11 @@ While scripting, we are constantly using identifiers to denote things like varia
 Here are some tips to keep in mind while naming things in your script.
 
 * It´s OK to use abbreviations, but explain the abbreviation with a comment:
-
 ```
 ###Bad:
 csfX = 1.6
 csfY= 1.3
 csfZ = 1.0
-
 ###Good:
 # column scale factor (csf)
 csfX = 1.6
@@ -28,13 +26,11 @@ csfZ = 1.0
 ```
 
 * Avoid redundant labeling:
-
 ```
 ###Bad:
 import car
 seat = car.CarSeat()
 tire = car.CarTire()
-
 ###Good:
 import car
 seat = car.Seat()
@@ -42,23 +38,19 @@ tire = car.Tire()
 ```
 
 * Use positive logic for your variable names instead of negative logic:
-
 ```
 ###Bad:
 CODE EXAMPLE
-
 ###Good:
 CODE EXAMPLE
 ```
 
 * Prefer “reverse notation”. It’s more sensible, in structural terms:
-
 ```
 ###Bad:
 agents = …
 active_agents = …
 dead_agents ...
-
 ###Good:
 agents = …
 agents_active = …
@@ -66,66 +58,57 @@ agents_dead = ...
 ```
 
 * Aliases should be used to shorten overly long and often repeated chains:
-
 ```
 ###Bad:
 CODE EXAMPLE
-
 ###Good:
 CODE EXAMPLE
 ```
 
 * Only use necessary words, “Everything should be made as simple as possible, but not simpler” – Albert Einstein:
-
 ```
 ###Bad:
 CODE EXAMPLE
-
 ###Good:
 CODE EXAMPLE
 ```
 
 ###Style Consistently
 
-Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code. 
+Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. 
 
-####Naming Conventions
+Here are a few tips for writing clear and consistent code. 
 
-Choose one of the conventions below for each type of entity in your code and stick to it!
+* Naming Conventions (Choose one of the conventions below for each type of entity in your code and stick to it!)
+ 
+ * Variables, functions, methods, packages, modules:
+```lower_case_with_underscores```
 
-Variables, functions, methods, packages, modules:
-```
-lower_case_with_underscores
-```
-Classes and Exceptions:
-```
-CapWords
-```
-Protected methods and internal functions:
-```
-_single_leading_underscore(self, ...)
-```
-Private methods:
-```
-__double_leading_underscore(self, ...)
-```
-Constants:
-```
-ALL_CAPS_WITH_UNDERSCORES
-```
->Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
+ * Classes and Exceptions:
+```CapWords```
 
-####Use of Blank Lines
+ * Protected methods and internal functions:
+```_single_leading_underscore(self, ...)```
 
-Surround top-level function and class definitions with two blank lines.
+ * Private methods:
+```__double_leading_underscore(self, ...)```
 
-Method definitions inside a class are surrounded by a single blank line.
+ * Constants:
+```ALL_CAPS_WITH_UNDERSCORES```
 
-Extra blank lines may be used (sparingly) to separate groups of related functions.
+ >Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
 
-####Avoid extraneous whitespace
+* Use of Blank Lines
 
-Immediately inside parentheses, brackets or braces.
+ * Surround top-level function and class definitions with two blank lines.
+
+ * Method definitions inside a class are surrounded by a single blank line.
+
+ * Extra blank lines may be used (sparingly) to separate groups of related functions.
+
+* Avoid extraneous whitespace
+
+ * Immediately inside parentheses, brackets or braces.
 
 Bad:
 ```
