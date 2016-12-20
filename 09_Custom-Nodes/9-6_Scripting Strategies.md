@@ -41,27 +41,25 @@ seat = car.Seat()
 tire = car.Tire()
 ```
 
-Use positive logic for you variable names instead of negative logic.
+* Use positive logic for you variable names instead of negative logic:
 
-Bad:
 ```
+###Bad:
+CODE EXAMPLE
+
+###Good:
 CODE EXAMPLE
 ```
-Good:
-```
-CODE EXAMPLE
-```
 
-Prefer “reverse notation”. It’s more sensible, in structural terms.
+* Prefer “reverse notation”. It’s more sensible, in structural terms:
 
-Bad:
 ```
+###Bad:
 agents = …
 active_agents = …
 dead_agents ...
-```
-Good:
-```
+
+###Good:
 agents = …
 agents_active = …
 agents_dead = ...
