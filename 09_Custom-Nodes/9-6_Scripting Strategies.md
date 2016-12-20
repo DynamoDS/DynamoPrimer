@@ -175,9 +175,9 @@ Booleans ( and , or , not )
  * Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
 
  * Long lines can be broken over multiple lines by wrapping expressions in parentheses.
- ```
- CODE EXAMPLE
- ```
+```
+CODE EXAMPLE
+```
 
 * Avoid obvious and redundant comments.
 ```
@@ -245,11 +245,19 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 * General forms.
 
  * Code Grouping.
+```
+CODE EXAMPLE
+```
 
  * Functions.
+```
+CODE EXAMPLE
+```
 
  * Classes.
-
+```
+CODE EXAMPLE
+```
 
 ###Think Parametrically
 
@@ -290,6 +298,9 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 * Use watch bubble.
 
 * Meaningful commenting.
+```
+CODE EXAMPLE
+```
 
 * Leverage modular framework.
 
