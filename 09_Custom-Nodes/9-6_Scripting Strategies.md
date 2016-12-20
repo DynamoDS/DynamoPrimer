@@ -65,25 +65,23 @@ agents_active = …
 agents_dead = ...
 ```
 
-Aliases should be used to shorten overly long and often repeated chains.
+* Aliases should be used to shorten overly long and often repeated chains:
 
-Bad:
 ```
+###Bad:
+CODE EXAMPLE
+
+###Good:
 CODE EXAMPLE
 ```
-Good:
-```
-CODE EXAMPLE
-```
 
-Only use necessary words. “Everything should be made as simple as possible, but not simpler” – Albert Einstein.
+* Only use necessary words, “Everything should be made as simple as possible, but not simpler” – Albert Einstein:
 
-Bad:
 ```
+###Bad:
 CODE EXAMPLE
-```
-Good:
-```
+
+###Good:
 CODE EXAMPLE
 ```
 
