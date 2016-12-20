@@ -41,7 +41,7 @@ seat = car.Seat()
 tire = car.Tire()
 ```
 
-* Use positive logic for you variable names instead of negative logic:
+* Use positive logic for your variable names instead of negative logic:
 
 ```
 ###Bad:
