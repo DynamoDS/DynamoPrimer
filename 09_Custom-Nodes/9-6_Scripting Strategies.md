@@ -253,9 +253,14 @@ CODE EXAMPLE
 ```
 
  * Functions:
-```
-CODE EXAMPLE
-```
+ 
+   ```
+   function readGreeting (greeting) {
+      console.log(greeting + " everyone.");
+   }
+   
+   readGreeting("Hello")
+   ```
 
  * Classes:
 ```
