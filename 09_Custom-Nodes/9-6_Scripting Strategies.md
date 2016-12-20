@@ -308,7 +308,8 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 ###Debug Efficiently
 
-* Use watch bubble.![](/assets/watchnode.png)
+* Use watch bubble.
+![](/09_Custom-Nodes/images/watchnode.png)
 
 * Meaningful commenting.
 ```
