@@ -88,11 +88,10 @@ CODE EXAMPLE
  >“Everything should be made as simple as possible, but not simpler.” – Albert Einstein
 
 ###Style Consistently
-
-Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code. 
+Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code.
 
 * Naming Conventions (Choose one of the conventions below for each type of entity in your code and stick to it!).
- 
+
  * Variables, functions, methods, packages, modules:
 ```lower_case_with_underscores```
 
@@ -109,15 +108,15 @@ Generally speaking there is more than one way to program just about anything, th
 ```ALL_CAPS_WITH_UNDERSCORES```
 
  >Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
-
+ 
 * Use of Blank Lines.
 
  * Surround top-level function and class definitions with two blank lines.
-
+ 
  * Method definitions inside a class are surrounded by a single blank line.
-
+ 
  * Extra blank lines may be used (sparingly) to separate groups of related functions.
-
+ 
 * Avoid extraneous whitespace.
 
  * Immediately inside parentheses, brackets or braces:
@@ -129,7 +128,7 @@ Generally speaking there is more than one way to program just about anything, th
  ### Good:
  function(apples[1], {oranges: 2})
  ```
-
+ 
  * Immediately before a comma, semicolon, or colon:
  ```
  ### Bad:
@@ -139,7 +138,7 @@ Generally speaking there is more than one way to program just about anything, th
  ### Good:
  if x == 2: print x, y; x, y = y, x
  ```
-
+ 
  * Immediately before the open parenthesis that starts the argument list of a function call:
  ```
  ### Bad:
@@ -149,7 +148,7 @@ Generally speaking there is more than one way to program just about anything, th
  ### Good:
  function(1)
  ```
-
+ 
  * Immediately before the open parenthesis that starts an indexing or slicing:
  ```
  ### Bad:
@@ -159,7 +158,7 @@ Generally speaking there is more than one way to program just about anything, th
  ### Good:
  dict['key'] = list[index]
  ```
-
+ 
  * Always surround these binary operators with a single space on either side:
 ```
 assignment ( = )
@@ -167,7 +166,6 @@ augmented assignment ( += , -= etc.)
 comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
 Booleans ( and , or , not )
 ```
-
 * Watch line length.
 
  * Don't stress over it ~ 79 characters.
