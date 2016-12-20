@@ -68,24 +68,24 @@ agents_dead = ...
 
 * Aliases should be used to shorten overly long and often repeated chains:
 ```
-### Bad:
-CODE EXAMPLE
+    ### Bad:
+    CODE EXAMPLE
 ```
 ```
-### Good:
-CODE EXAMPLE
+    ### Good:
+    CODE EXAMPLE
 ```
 
 * Only use necessary words:
- ```
- ### Bad:
- CODE EXAMPLE
- ```
- ```
- ### Good:
- CODE EXAMPLE
- ```
- >“Everything should be made as simple as possible, but not simpler.” – Albert Einstein
+```
+    ### Bad:
+    CODE EXAMPLE
+```
+```
+    ### Good:
+    CODE EXAMPLE
+```
+>“Everything should be made as simple as possible, but not simpler.” – Albert Einstein
 
 ###Style Consistently
 Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code.
@@ -121,50 +121,50 @@ Generally speaking there is more than one way to program just about anything, th
 
  * Immediately inside parentheses, brackets or braces:
  ```
- ### Bad:
- function( apples[ 1 ], { oranges: 2 } )
+    ### Bad:
+    function( apples[ 1 ], { oranges: 2 } )
  ```
  ```
- ### Good:
- function(apples[1], {oranges: 2})
+    ### Good:
+    function(apples[1], {oranges: 2})
  ```
  
  * Immediately before a comma, semicolon, or colon:
  ```
- ### Bad:
- if x == 2 : print x , y ; x , y = y , x
+    ### Bad:
+    if x == 2 : print x , y ; x , y = y , x
  ```
  ```
- ### Good:
- if x == 2: print x, y; x, y = y, x
+    ### Good:
+    if x == 2: print x, y; x, y = y, x
  ```
  
  * Immediately before the open parenthesis that starts the argument list of a function call:
  ```
- ### Bad:
- function (1)
+    ### Bad:
+    function (1)
  ```
  ```
- ### Good:
- function(1)
+    ### Good:
+    function(1)
  ```
  
  * Immediately before the open parenthesis that starts an indexing or slicing:
  ```
- ### Bad:
- dict ['key'] = list [index]
+    ### Bad:
+    dict ['key'] = list [index]
  ```
  ```
- ### Good:
- dict['key'] = list[index]
+    ### Good:
+    dict['key'] = list[index]
  ```
  
  * Always surround these binary operators with a single space on either side:
 ```
-assignment ( = )
-augmented assignment ( += , -= etc.)
-comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
-Booleans ( and , or , not )
+    assignment ( = )
+    augmented assignment ( += , -= etc.)
+    comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
+    Booleans ( and , or , not )
 ```
 * Watch line length.
 
@@ -179,8 +179,8 @@ Booleans ( and , or , not )
 
 * Avoid obvious and redundant comments.
 ```
-# Comments Tell You Why
-code_tells_you_how
+    # Comments Tell You Why
+    code_tells_you_how
 ```
 
  * Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
@@ -197,11 +197,11 @@ code_tells_you_how
     print form_input_state()
  ```
  ```
- ### Good:
- # display state selection for US users
- country_code = get_country_code(address)
- if (country_code == 'US'):
- print form_input_state()
+    ### Good:
+    # display state selection for US users
+    country_code = get_country_code(address)
+    if (country_code == 'US'):
+    print form_input_state()
  ```
 
 * Check out open source code.
