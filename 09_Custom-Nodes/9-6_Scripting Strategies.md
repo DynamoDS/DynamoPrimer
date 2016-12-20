@@ -12,7 +12,7 @@ While scripting, we are constantly using identifiers to denote things like varia
 
 Here are some tips to keep in mind while naming things in your script.
 
-* It´s OK to use abbreviations, but explain the abbreviation with a comment.
+* It´s OK to use abbreviations, but explain the abbreviation with a comment:
 ```
 ### Bad:
 csfX = 1.6
@@ -27,7 +27,7 @@ csfY= 1.3
 csfZ = 1.0
 ```
 
-* Avoid redundant labeling.
+* Avoid redundant labeling:
 ```
 ### Bad:
 import car
@@ -41,7 +41,7 @@ seat = car.Seat()
 tire = car.Tire()
 ```
 
-* Use positive logic for your variable names instead of negative logic.
+* Use positive logic for your variable names instead of negative logic:
 ```
 ### Bad:
 CODE EXAMPLE
@@ -51,7 +51,7 @@ CODE EXAMPLE
 CODE EXAMPLE
 ```
 
-* Prefer “reverse notation”. 
+* Prefer “reverse notation”: 
 ```
 ### Bad:
 agents = …
@@ -66,7 +66,7 @@ agents_dead = ...
 ```
 >It’s more sensible, in structural terms.
 
-* Aliases should be used to shorten overly long and often repeated chains.
+* Aliases should be used to shorten overly long and often repeated chains:
 ```
 ### Bad:
 CODE EXAMPLE
@@ -76,7 +76,7 @@ CODE EXAMPLE
 CODE EXAMPLE
 ```
 
-* Only use necessary words.
+* Only use necessary words:
  ```
  ### Bad:
  CODE EXAMPLE
@@ -91,7 +91,7 @@ CODE EXAMPLE
 
 Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code. 
 
-* Naming Conventions (Choose one of the conventions below for each type of entity in your code and stick to it!)
+* Naming Conventions (Choose one of the conventions below for each type of entity in your code and stick to it!).
  
  * Variables, functions, methods, packages, modules:
 ```lower_case_with_underscores```
@@ -110,7 +110,7 @@ Generally speaking there is more than one way to program just about anything, th
 
  >Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
 
-* Use of Blank Lines
+* Use of Blank Lines.
 
  * Surround top-level function and class definitions with two blank lines.
 
@@ -118,9 +118,9 @@ Generally speaking there is more than one way to program just about anything, th
 
  * Extra blank lines may be used (sparingly) to separate groups of related functions.
 
-* Avoid extraneous whitespace
+* Avoid extraneous whitespace.
 
- * Immediately inside parentheses, brackets or braces.
+ * Immediately inside parentheses, brackets or braces:
  ```
  ### Bad:
  function( apples[ 1 ], { oranges: 2 } )
@@ -130,7 +130,7 @@ Generally speaking there is more than one way to program just about anything, th
  function(apples[1], {oranges: 2})
  ```
 
- * Immediately before a comma, semicolon, or colon.
+ * Immediately before a comma, semicolon, or colon:
  ```
  ### Bad:
  if x == 2 : print x , y ; x , y = y , x
@@ -140,7 +140,7 @@ Generally speaking there is more than one way to program just about anything, th
  if x == 2: print x, y; x, y = y, x
  ```
 
- * Immediately before the open parenthesis that starts the argument list of a function call.
+ * Immediately before the open parenthesis that starts the argument list of a function call:
  ```
  ### Bad:
  function (1)
@@ -150,7 +150,7 @@ Generally speaking there is more than one way to program just about anything, th
  function(1)
  ```
 
- * Immediately before the open parenthesis that starts an indexing or slicing.
+ * Immediately before the open parenthesis that starts an indexing or slicing:
  ```
  ### Bad:
  dict ['key'] = list [index]
@@ -160,7 +160,7 @@ Generally speaking there is more than one way to program just about anything, th
  dict['key'] = list[index]
  ```
 
- * Always surround these binary operators with a single space on either side.
+ * Always surround these binary operators with a single space on either side:
 ```
 assignment ( = )
 augmented assignment ( += , -= etc.)
@@ -174,12 +174,12 @@ Booleans ( and , or , not )
 
  * Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
 
- * Long lines can be broken over multiple lines by wrapping expressions in parentheses.
+ * Long lines can be broken over multiple lines by wrapping expressions in parentheses:
 ```
 CODE EXAMPLE
 ```
 
-* Avoid obvious and redundant comments.
+* Avoid obvious and redundant comments:
 ```
 # Comments Tell You Why
 code_tells_you_how
@@ -187,7 +187,7 @@ code_tells_you_how
 
  * Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
 
- * Adopting good coding habits reduces dependence on comments.
+ * Adopting good coding habits reduces dependence on comments:
  ```
  ### Bad:
  # get the country code
@@ -244,17 +244,17 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 * General forms.
 
- * Code Grouping.
+ * Code Grouping:
 ```
 CODE EXAMPLE
 ```
 
- * Functions.
+ * Functions:
 ```
 CODE EXAMPLE
 ```
 
- * Classes.
+ * Classes:
 ```
 CODE EXAMPLE
 ```
