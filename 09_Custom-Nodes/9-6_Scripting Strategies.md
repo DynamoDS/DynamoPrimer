@@ -128,33 +128,41 @@ Generally speaking there is more than one way to program just about anything, th
 
  * Immediately inside parentheses, brackets or braces.
  ```
- ###Bad:
+ ### Bad:
  function( apples[ 1 ], { oranges: 2 } )
- ###Good:
+ ```
+ ```
+ ### Good:
  function(apples[1], {oranges: 2})
  ```
 
  * Immediately before a comma, semicolon, or colon
  ```
- ###Bad:
+ ### Bad:
  if x == 2 : print x , y ; x , y = y , x
- ###Good:
+ ```
+ ```
+ ### Good:
  if x == 2: print x, y; x, y = y, x
  ```
 
  * Immediately before the open parenthesis that starts the argument list of a function call
  ```
- ###Bad:
+ ### Bad:
  function (1)
- ###Good:
+ ```
+ ```
+ ### Good:
  function(1)
  ```
 
  * Immediately before the open parenthesis that starts an indexing or slicing
  ```
- ###Bad:
+ ### Bad:
  dict ['key'] = list [index]
- ###Good:
+ ```
+ ```
+ ### Good:
  dict['key'] = list[index]
  ```
 
@@ -183,23 +191,18 @@ code_tells_you_how
  * Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
 
  * Adopting good coding habits reduces dependence on comments.
-
- * Bad:
-
  ```
- ### get the country code
+ ### Bad:
+ # get the country code
  country_code = get_country_code(address)
-
- ### if country code is US
+ # if country code is US
  if (country_code == 'US'):
-  ### display the form input for state
+  # display the form input for state
  print form_input_state()
  ```
-
- * Good:
-
  ```
- ### display state selection for US users
+ ### Good:
+ # display state selection for US users
  country_code = get_country_code(address)
  if (country_code == 'US'):
  print form_input_state()
