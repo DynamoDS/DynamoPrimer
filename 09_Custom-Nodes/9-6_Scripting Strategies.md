@@ -174,7 +174,7 @@ Booleans ( and , or , not )
 
  * Long lines can be broken over multiple lines by wrapping expressions in parentheses:
 ```
-CODE EXAMPLE
+    CODE EXAMPLE
 ```
 
 * Avoid obvious and redundant comments.
@@ -187,13 +187,14 @@ code_tells_you_how
 
  * Adopting good coding habits reduces dependence on comments:
  ```
- ### Bad:
- # get the country code
- country_code = get_country_code(address)
- # if country code is US
- if (country_code == 'US'):
-  # display the form input for state
- print form_input_state()
+    ### Bad:
+    # get the country code
+    country_code = get_country_code(address)
+    
+    # if country code is US
+    if (country_code == 'US'):
+     # display the form input for state
+    print form_input_state()
  ```
  ```
  ### Good:
@@ -227,7 +228,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
  * Functions that each perform a single well-defined function:
  ```
- CODE EXAMPLE
+    CODE EXAMPLE
  ```
 
  * "Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
@@ -247,22 +248,22 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
  * Code Grouping:
 ```
-CODE EXAMPLE
+    CODE EXAMPLE
 ```
 
  * Functions:
  
    ```
-   function readGreeting (greeting) {
+    function readGreeting (greeting) {
       console.log(greeting + " everyone.");
-   }
+    }
    
-   readGreeting("Hello")
+    readGreeting("Hello")
    ```
 
  * Classes:
 ```
-CODE EXAMPLE
+    CODE EXAMPLE
 ```
 
 ###Think Parametrically
@@ -275,8 +276,11 @@ CODE EXAMPLE
 
  * Certain parameters or variables that can be edited to manipulate or alter the end result of an equation or system.
  ```
- CODE EXAMPLE
- ```
+    # Loop through X and Y
+    for i in range(xCount):
+        # Rotate and translate the coordinate system
+        toCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i%seed)))
+```
 
 * DRY / DIE principles.
 
@@ -304,14 +308,12 @@ CODE EXAMPLE
 
 ###Debug Efficiently
 
-* Use watch bubble.
-```
-IMAGE REFERENCE
-```
+* Use watch bubble.![](/assets/watchnode.png)
 
 * Meaningful commenting.
 ```
-CODE EXAMPLE
+# Assign your output to the OUT variable.
+OUT = cubes
 ```
 
 * Leverage modular framework.
