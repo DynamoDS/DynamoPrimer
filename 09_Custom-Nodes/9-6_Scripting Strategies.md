@@ -13,8 +13,13 @@ While scripting, we are constantly using identifiers to denote things like varia
 It´s OK to use abbreviations, but explain the abbreviation with a comment.
 
 Bad:
-
+```
+CODE EXAMPLE
+```
 Good:
+```
+CODE EXAMPLE
+```
 
 Avoid redundant labeling.
 
@@ -35,12 +40,16 @@ tire = car.Tire()
 Use positive logic for you variable names instead of negative logic.
 
 Bad:
+```
+CODE EXAMPLE
+```
 
 Good:
+```
+CODE EXAMPLE
+```
 
-Prefer “reverse notation”. 
-
-It’s more sensible, in structural terms.
+Prefer “reverse notation”. It’s more sensible, in structural terms.
 
 Bad:
 ```
@@ -59,16 +68,26 @@ agents_dead = ...
 Aliases should be used to shorten overly long, and often repeated chains.
 
 Bad:
+```
+CODE EXAMPLE
+```
 
 Good:
+```
+CODE EXAMPLE
+```
 
-Only use necessary words. 
-
-“Everything should be made as simple as possible, but not simpler.” – Albert Einstein
+Only use necessary words, “Everything should be made as simple as possible, but not simpler.” – Albert Einstein
 
 Bad:
+```
+CODE EXAMPLE
+```
 
 Good:
+```
+CODE EXAMPLE
+```
 
 ###Style Consistently
 
@@ -111,29 +130,31 @@ Extra blank lines may be used (sparingly) to separate groups of related function
 **Avoid extraneous whitespace**
 
 Immediately inside parentheses, brackets or braces:
-```
-# Bad:
-function( apples[ 1 ], { oranges: 2 } )
 
-# Good:
+Bad:
+```
+function( apples[ 1 ], { oranges: 2 } )
+```
+Good:
+```
 function(apples[1], {oranges: 2})
 ```
 
 Immediately before a comma, semicolon, or colon:
 ```
-# Bad:
+Bad:
 if x == 2 : print x , y ; x , y = y , x
 
-# Good:
+Good:
 if x == 2: print x, y; x, y = y, x
 ```
 
 Immediately before the open parenthesis that starts the argument list of a function call:
 ```
-# Bad:
+Bad:
 function (1)
 
-# Good:
+Good:
 function(1)
 ```
 
