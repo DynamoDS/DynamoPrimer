@@ -127,50 +127,38 @@ Generally speaking there is more than one way to program just about anything, th
 * Avoid extraneous whitespace
 
  * Immediately inside parentheses, brackets or braces.
+ ```
+ ###Bad:
+ function( apples[ 1 ], { oranges: 2 } )
+ ###Good:
+ function(apples[1], {oranges: 2})
+ ```
 
-Bad:
-```
-function( apples[ 1 ], { oranges: 2 } )
-```
-Good:
-```
-function(apples[1], {oranges: 2})
-```
+ * Immediately before a comma, semicolon, or colon
+ ```
+ ###Bad:
+ if x == 2 : print x , y ; x , y = y , x
+ ###Good:
+ if x == 2: print x, y; x, y = y, x
+ ```
 
-Immediately before a comma, semicolon, or colon.
+ * Immediately before the open parenthesis that starts the argument list of a function call
+ ```
+ ###Bad:
+ function (1)
+ ###Good:
+ function(1)
+ ```
 
-Bad:
-```
-if x == 2 : print x , y ; x , y = y , x
-```
-Good:
-```
-if x == 2: print x, y; x, y = y, x
-```
+ * Immediately before the open parenthesis that starts an indexing or slicing
+ ```
+ ###Bad:
+ dict ['key'] = list [index]
+ ###Good:
+ dict['key'] = list[index]
+ ```
 
-Immediately before the open parenthesis that starts the argument list of a function call.
-
-Bad:
-```
-function (1)
-```
-Good:
-```
-function(1)
-```
-
-Immediately before the open parenthesis that starts an indexing or slicing.
-
-Bad:
-```
-dict ['key'] = list [index]
-```
-Good:
-```
-dict['key'] = list[index]
-```
-
-Always surround these binary operators with a single space on either side.
+ * Always surround these binary operators with a single space on either side
 ```
 assignment ( = )
 augmented assignment ( += , -= etc.)
@@ -178,130 +166,135 @@ comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
 Booleans ( and , or , not )
 ```
 
-####Watch line length
+* Watch line length
 
-Don't stress over it ~ 79 characters.
+ * Don't stress over it ~ 79 characters.
 
-Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
+ * Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
 
-Long lines can be broken over multiple lines by wrapping expressions in parentheses.
+ * Long lines can be broken over multiple lines by wrapping expressions in parentheses.
 
-####Avoid obvious and redundant comments
+* Avoid obvious and redundant comments
 ```
 # Comments Tell You Why
 code_tells_you_how
 ```
 
-Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
+ * Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
 
-Adopting good coding habits reduces dependence on comments.
+ * Adopting good coding habits reduces dependence on comments.
 
-Bad:
-```
-### get the country code
-country_code = get_country_code(address)
+ * Bad:
 
-### if country code is US
-if (country_code == 'US'):
- ### display the form input for state
-print form_input_state()
-```
+ ```
+ ### get the country code
+ country_code = get_country_code(address)
 
-Good:
-```
-### display state selection for US users
-country_code = get_country_code(address)
-if (country_code == 'US'):
-print form_input_state()
-```
+ ### if country code is US
+ if (country_code == 'US'):
+  ### display the form input for state
+ print form_input_state()
+ ```
 
-####Check out open source code
+ * Good:
 
-Open Source projects are built on the collaborative efforts of many developers. These projects need to maintain a high level of code readability so that the team can work together as efficiently as possible. Therefore, it is a good idea to browse through the source code of these projects to observe what these developers are doing.
+ ```
+ ### display state selection for US users
+ country_code = get_country_code(address)
+ if (country_code == 'US'):
+ print form_input_state()
+ ```
 
-####Improve your conventions
+* Check out open source code
 
-Question whether or not each convention is working for the needs at hand.
+ * Open Source projects are built on the collaborative efforts of many developers. These projects need to maintain a high level of code readability so that the team can work together as efficiently as possible. Therefore, it is a good idea to browse through the source code of these projects to observe what these developers are doing.
+ 
 
-Is functionality/efficiency being compromised?
+* Improve your conventions
+
+ * Question whether or not each convention is working for the needs at hand.
+
+ * Is functionality/efficiency being compromised?
 
 ###Structure Modularly 
 
 As your code gets longer and more complex the “big idea”, or overarching algorithm becomes increasingly illegible. It also becomes more difficult to keep track of what (and where) specific things happen, find bugs when things go wrong, integrate other code, and assign development tasks. To avoid these headaches it’s wise to embrace the utility of modularization, an organizational concept that breaks up code based on the task it executes. Here are some tips for making your scripts more manageable by way of modularization.
 
-####Spotting code re-use
+* Spotting code re-use
 
-If you find that your code does the same (or very similar) thing in more than once place, find ways to cluster it into a function that can be called.
+ * If you find that your code does the same (or very similar) thing in more than once place, find ways to cluster it into a function that can be called.
+ 
 
-####Concentration on one specific task per module
+* Concentration on one specific task per module
 
-Functions that each perform a single well-defined function.
+ * Functions that each perform a single well-defined function.
 
-"Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
+ * "Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
 
-####Only show what needs to be seen
+* Only show what needs to be seen
 
-A module interface expresses the elements that are provided and required by the module.
+ * A module interface expresses the elements that are provided and required by the module.
 
-Once the interfaces between the units have been defined, the detailed design of each unit can proceed separately.
+ * Once the interfaces between the units have been defined, the detailed design of each unit can proceed separately.
 
-####Separability/Replaceability
+* Separability/Replaceability
 
-Modules don’t know or care about each other
+ * Modules don’t know or care about each other.
+ 
 
-####General forms
+* General forms
 
-Code Grouping
+ * Code Grouping.
 
-Functions
+ * Functions.
 
-Classes
+ * Classes.
 
 
 ###Think Parametrically
 
-####Design through relationships
+* Design through relationships
 
-Make connections between entities in your code.
+ * Make connections between entities in your code.
 
-The relationship between elements is used to manipulate and inform the design of complex structures.
+ * The relationship between elements is used to manipulate and inform the design of complex structures.
 
-Certain parameters or variables that can be edited to manipulate or alter the end result of an equation or system.
+ * Certain parameters or variables that can be edited to manipulate or alter the end result of an equation or system.
 
-####DRY / DIE principles
+* DRY / DIE principles
 
-DRY: Don't Repeat Yourself.
+ * DRY: Don't Repeat Yourself.
 
-DIE: Duplication is Evil.
+ * DIE: Duplication is Evil.
 
-"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
+ * "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
 
-Never enter same value twice
+ * Never enter same value twice.
 
-####Go to source
+* Go to source
 
-####Minimize number of inputs (only expose key parameters)
+* Minimize number of inputs (only expose key parameters)
 
-####Know what is being held constant
+* Know what is being held constant
 
 ###Flex Constantly
 
-“Test ruthlessly”
+* “Test ruthlessly”.
 
-Check as you go
+* Check as you go.
 
-Anticipate “edge cases”
+* Anticipate “edge cases”.
 
 ###Debug Efficiently
 
-####Use watch bubble
+* Use watch bubble
 
-####Meaningful commenting
+* Meaningful commenting
 
-####Leverage modular framework
+* Leverage modular framework
 
-Once the faulty module has been identified, fixing the problem is considerably simpler.
+ * Once the faulty module has been identified, fixing the problem is considerably simpler.
 
-When a program must be modified, modular programming simplifies the job.
->You can link new or debugged modules to an existing program with the confidence that the rest of the program will not change.
+ * When a program must be modified, modular programming simplifies the job.
+ >You can link new or debugged modules to an existing program with the confidence that the rest of the program will not change.
 
