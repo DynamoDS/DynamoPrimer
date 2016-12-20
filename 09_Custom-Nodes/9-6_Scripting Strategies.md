@@ -111,32 +111,151 @@ Extra blank lines may be used (sparingly) to separate groups of related function
 **Avoid extraneous whitespace**
 
 Immediately inside parentheses, brackets or braces:
-
-Bad:
 ```
+# Bad:
 function( apples[ 1 ], { oranges: 2 } )
-```
-Good:
-```
+
+# Good:
 function(apples[1], {oranges: 2})
 ```
-Immediately before a comma, semicolon, or colon
+
+Immediately before a comma, semicolon, or colon:
+```
+# Bad:
+if x == 2 : print x , y ; x , y = y , x
+
+# Good:
+if x == 2: print x, y; x, y = y, x
+```
+
+Immediately before the open parenthesis that starts the argument list of a function call:
+```
+# Bad:
+function (1)
+
+# Good:
+function(1)
+```
+
+Immediately before the open parenthesis that starts an indexing or slicing
+```
+# Bad:
+dict ['key'] = list [index]
+
+# Good:
+dict['key'] = list[index]
+```
+
+Always surround these binary operators with a single space on either side
+```
+assignment ( = )
+augmented assignment ( += , -= etc.)
+comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
+Booleans ( and , or , not )
+```
+
+**Watch line length**
+
+Don't stress over it ~ 79 characters.
+
+Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
+
+Long lines can be broken over multiple lines by wrapping expressions in parentheses.
+
+**Avoid obvious and redundant comments**
+
+Code Tells You How, Comments Tell You Why.
+
+Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
+
+Adopting good coding habits reduces dependence on comments.
 
 Bad:
 ```
-if x == 2 : print x , y ; x , y = y , x
+### get the country code
+country_code = get_country_code(address)
+
+### if country code is US
+if (country_code == 'US'):
+ ### display the form input for state
+print form_input_state()
 ```
 Good:
 ```
-if x == 2: print x, y; x, y = y, x
+### display state selection for US users
+country_code = get_country_code(address)
+if (country_code == 'US'):
+print form_input_state()
 ```
+
+**Check out open source code**
+
+Open Source projects are built on the collaborative efforts of many developers. These projects need to maintain a high level of code readability so that the team can work together as efficiently as possible. Therefore, it is a good idea to browse through the source code of these projects to observe what these developers are doing.
+
+**Improve your conventions**
+
+Question whether or not each convention is working for the needs at hand.
+
+Is functionality/efficiency being compromised?
+
 ###Structure Modularly 
 
 As your code gets longer and more complex the “big idea”, or overarching algorithm becomes increasingly illegible. It also becomes more difficult to keep track of what (and where) specific things happen, find bugs when things go wrong, integrate other code, and assign development tasks. To avoid these headaches it’s wise to embrace the utility of modularization, an organizational concept that breaks up code based on the task it executes. Here are some tips for making your scripts more manageable by way of modularization.
 
+**Spotting code re-use**
+
+If you find that your code does the same (or very similar) thing in more than once place, find ways to cluster it into a function that can be called.
+
+**Concentration on one specific task per module**
+
+Functions that each perform a single well-defined function.
+
+"Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
+
+**Only show what needs to be seen**
+
+A module interface expresses the elements that are provided and required by the module.
+
+Once the interfaces between the units have been defined, the detailed design of each unit can proceed separately.
+
+**Separability/Replaceability**
+
+Modules don’t know or care about each other
+
+**General forms**
+
+Code Grouping
+
+Functions
+
+Classes
+
+
 ###Think Parametrically
 
+**Design through relationships**
 
+Make connections between entities in your code.
+
+The relationship between elements is used to manipulate and inform the design of complex structures.
+
+Certain parameters or variables that can be edited to manipulate or alter the end result of an equation or system.
+
+**DRY / DIE principles**
+
+DRY: Don't Repeat Yourself.
+
+DIE: Duplication is Evil.
+
+"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
+
+Never enter same value twice
+
+**Go to source**
+
+**Minimize number of inputs (only expose key parameters)**
+
+**Know what is being held constant**
 
 ###Flex Constantly
 
