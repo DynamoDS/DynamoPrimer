@@ -66,7 +66,7 @@ agents_dead = ...
 ```
 >It’s more sensible, in structural terms.
 
-* Aliases should be used to shorten overly long and often repeated chains
+* Aliases should be used to shorten overly long and often repeated chains.
 ```
 ### Bad:
 CODE EXAMPLE
@@ -76,7 +76,7 @@ CODE EXAMPLE
 CODE EXAMPLE
 ```
 
-* Only use necessary words
+* Only use necessary words.
  ```
  ### Bad:
  CODE EXAMPLE
@@ -130,7 +130,7 @@ Generally speaking there is more than one way to program just about anything, th
  function(apples[1], {oranges: 2})
  ```
 
- * Immediately before a comma, semicolon, or colon
+ * Immediately before a comma, semicolon, or colon.
  ```
  ### Bad:
  if x == 2 : print x , y ; x , y = y , x
@@ -140,7 +140,7 @@ Generally speaking there is more than one way to program just about anything, th
  if x == 2: print x, y; x, y = y, x
  ```
 
- * Immediately before the open parenthesis that starts the argument list of a function call
+ * Immediately before the open parenthesis that starts the argument list of a function call.
  ```
  ### Bad:
  function (1)
@@ -150,7 +150,7 @@ Generally speaking there is more than one way to program just about anything, th
  function(1)
  ```
 
- * Immediately before the open parenthesis that starts an indexing or slicing
+ * Immediately before the open parenthesis that starts an indexing or slicing.
  ```
  ### Bad:
  dict ['key'] = list [index]
@@ -160,7 +160,7 @@ Generally speaking there is more than one way to program just about anything, th
  dict['key'] = list[index]
  ```
 
- * Always surround these binary operators with a single space on either side
+ * Always surround these binary operators with a single space on either side.
 ```
 assignment ( = )
 augmented assignment ( += , -= etc.)
@@ -168,7 +168,7 @@ comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
 Booleans ( and , or , not )
 ```
 
-* Watch line length
+* Watch line length.
 
  * Don't stress over it ~ 79 characters.
 
@@ -179,7 +179,7 @@ Booleans ( and , or , not )
  CODE EXAMPLE
  ```
 
-* Avoid obvious and redundant comments
+* Avoid obvious and redundant comments.
 ```
 # Comments Tell You Why
 code_tells_you_how
@@ -205,12 +205,12 @@ code_tells_you_how
  print form_input_state()
  ```
 
-* Check out open source code
+* Check out open source code.
 
  * Open Source projects are built on the collaborative efforts of many developers. These projects need to maintain a high level of code readability so that the team can work together as efficiently as possible. Therefore, it is a good idea to browse through the source code of these projects to observe what these developers are doing.
  
 
-* Improve your conventions
+* Improve your conventions.
 
  * Question whether or not each convention is working for the needs at hand.
 
@@ -220,29 +220,29 @@ code_tells_you_how
 
 As your code gets longer and more complex the “big idea”, or overarching algorithm becomes increasingly illegible. It also becomes more difficult to keep track of what (and where) specific things happen, find bugs when things go wrong, integrate other code, and assign development tasks. To avoid these headaches it’s wise to embrace the utility of modularization, an organizational concept that breaks up code based on the task it executes. Here are some tips for making your scripts more manageable by way of modularization.
 
-* Spotting code re-use
+* Spotting code re-use.
 
  * If you find that your code does the same (or very similar) thing in more than once place, find ways to cluster it into a function that can be called.
  
 
-* Concentration on one specific task per module
+* Concentration on one specific task per module.
 
  * Functions that each perform a single well-defined function.
 
  * "Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
 
-* Only show what needs to be seen
+* Only show what needs to be seen.
 
  * A module interface expresses the elements that are provided and required by the module.
 
  * Once the interfaces between the units have been defined, the detailed design of each unit can proceed separately.
 
-* Separability/Replaceability
+* Separability/Replaceability.
 
  * Modules don’t know or care about each other.
  
 
-* General forms
+* General forms.
 
  * Code Grouping.
 
@@ -253,7 +253,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 ###Think Parametrically
 
-* Design through relationships
+* Design through relationships.
 
  * Make connections between entities in your code.
 
@@ -261,7 +261,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
  * Certain parameters or variables that can be edited to manipulate or alter the end result of an equation or system.
 
-* DRY / DIE principles
+* DRY / DIE principles.
 
  * DRY: Don't Repeat Yourself.
 
@@ -271,11 +271,11 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
  * Never enter same value twice.
 
-* Go to source
+* Go to source.
 
-* Minimize number of inputs (only expose key parameters)
+* Minimize number of inputs (only expose key parameters).
 
-* Know what is being held constant
+* Know what is being held constant.
 
 ###Flex Constantly
 
@@ -287,11 +287,11 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 ###Debug Efficiently
 
-* Use watch bubble
+* Use watch bubble.
 
-* Meaningful commenting
+* Meaningful commenting.
 
-* Leverage modular framework
+* Leverage modular framework.
 
  * Once the faulty module has been identified, fixing the problem is considerably simpler.
 
