@@ -276,4 +276,5 @@ Anticipate “edge cases”
 Once the faulty module has been identified, fixing the problem is considerably simpler.
 
 When a program must be modified, modular programming simplifies the job.
+>You can link new or debugged modules to an existing program with the confidence that the rest of the program will not change.
 
