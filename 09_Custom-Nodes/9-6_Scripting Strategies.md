@@ -14,55 +14,55 @@ Here are some tips to keep in mind while naming things in your script.
 
 * It´s OK to use abbreviations, but explain the abbreviation with a comment:
 ```
-### Bad:
-csfX = 1.6
-csfY= 1.3
-csfZ = 1.0
+    ### Bad:
+    csfX = 1.6
+    csfY= 1.3
+    csfZ = 1.0
 ```
 ```
-### Good:
-# column scale factor (csf)
-csfX = 1.6
-csfY= 1.3
-csfZ = 1.0
+    ### Good:
+    # column scale factor (csf)
+    csfX = 1.6
+    csfY= 1.3
+    csfZ = 1.0
 ```
 
 * Avoid redundant labeling:
 ```
-### Bad:
-import car
-seat = car.CarSeat()
-tire = car.CarTire()
+    ### Bad:
+    import car
+    seat = car.CarSeat()
+    tire = car.CarTire()
 ```
 ```
-### Good:
-import car
-seat = car.Seat()
-tire = car.Tire()
+    ### Good:
+    import car
+    seat = car.Seat()
+    tire = car.Tire()
 ```
 
 * Use positive logic for your variable names instead of negative logic:
 ```
-### Bad:
-CODE EXAMPLE
+    ### Bad:
+    CODE EXAMPLE
 ```
 ```
-### Good:
-CODE EXAMPLE
+    ### Good:
+    CODE EXAMPLE
 ```
 
 * Prefer “reverse notation”: 
 ```
-### Bad:
-agents = …
-active_agents = …
-dead_agents ...
+    ### Bad:
+    agents = …
+    active_agents = …
+    dead_agents ...
 ```
 ```
-### Good:
-agents = …
-agents_active = …
-agents_dead = ...
+    ### Good:
+    agents = …
+    agents_active = …
+    agents_dead = ...
 ```
 >It’s more sensible, in structural terms.
 
@@ -309,12 +309,11 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 ###Debug Efficiently
 
 * Use watch bubble.
-![](/09_Custom-Nodes/images/watchnode.png)
 
 * Meaningful commenting.
 ```
-# Assign your output to the OUT variable.
-OUT = cubes
+    # Assign your output to the OUT variable.
+    OUT = cubes
 ```
 
 * Leverage modular framework.
