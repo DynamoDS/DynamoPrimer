@@ -12,72 +12,90 @@ While scripting, we are constantly using identifiers to denote things like varia
 
 Here are some tips to keep in mind while naming things in your script.
 
-* It´s OK to use abbreviations, but explain the abbreviation with a comment:
+* It´s OK to use abbreviations, but explain the abbreviation with a comment
+
+ * Bad:
 ```
-###Bad:
 csfX = 1.6
 csfY= 1.3
 csfZ = 1.0
-###Good:
+```
+ * Good:
+ ```
 # column scale factor (csf)
 csfX = 1.6
 csfY= 1.3
 csfZ = 1.0
 ```
 
-* Avoid redundant labeling:
+* Avoid redundant labeling
+
+ * Bad:
 ```
-###Bad:
 import car
 seat = car.CarSeat()
 tire = car.CarTire()
-###Good:
+```
+ * Good:
+```
 import car
 seat = car.Seat()
 tire = car.Tire()
 ```
 
-* Use positive logic for your variable names instead of negative logic:
+* Use positive logic for your variable names instead of negative logic
+
+ * Bad:
 ```
-###Bad:
 CODE EXAMPLE
-###Good:
+```
+ * Good:
+```
 CODE EXAMPLE
 ```
 
-* Prefer “reverse notation”. It’s more sensible, in structural terms:
+* Prefer “reverse notation”
+ * It’s more sensible, in structural terms.
+
+ * Bad:
 ```
-###Bad:
 agents = …
 active_agents = …
 dead_agents ...
-###Good:
+```
+ * Good:
+```
 agents = …
 agents_active = …
 agents_dead = ...
 ```
 
-* Aliases should be used to shorten overly long and often repeated chains:
+* Aliases should be used to shorten overly long and often repeated chains
+
+ * Bad:
 ```
-###Bad:
 CODE EXAMPLE
-###Good:
+```
+ * Good:
+```
 CODE EXAMPLE
 ```
 
-* Only use necessary words, “Everything should be made as simple as possible, but not simpler” – Albert Einstein:
+* Only use necessary words
+ * “Everything should be made as simple as possible, but not simpler.” – Albert Einstein
+
+ * Bad:
 ```
-###Bad:
 CODE EXAMPLE
-###Good:
+```
+ * Good:
+```
 CODE EXAMPLE
 ```
 
 ###Style Consistently
 
-Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. 
-
-Here are a few tips for writing clear and consistent code. 
+Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code. 
 
 * Naming Conventions (Choose one of the conventions below for each type of entity in your code and stick to it!)
  
