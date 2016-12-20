@@ -179,7 +179,7 @@ Booleans ( and , or , not )
 CODE EXAMPLE
 ```
 
-* Avoid obvious and redundant comments:
+* Avoid obvious and redundant comments.
 ```
 # Comments Tell You Why
 code_tells_you_how
@@ -227,7 +227,10 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 * Concentration on one specific task per module.
 
- * Functions that each perform a single well-defined function.
+ * Functions that each perform a single well-defined function:
+ ```
+ CODE EXAMPLE
+ ```
 
  * "Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
 
@@ -268,6 +271,9 @@ CODE EXAMPLE
  * The relationship between elements is used to manipulate and inform the design of complex structures.
 
  * Certain parameters or variables that can be edited to manipulate or alter the end result of an equation or system.
+ ```
+ CODE EXAMPLE
+ ```
 
 * DRY / DIE principles.
 
@@ -296,6 +302,9 @@ CODE EXAMPLE
 ###Debug Efficiently
 
 * Use watch bubble.
+```
+IMAGE REFERENCE
+```
 
 * Meaningful commenting.
 ```
