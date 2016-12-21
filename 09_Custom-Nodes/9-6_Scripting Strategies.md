@@ -2,6 +2,29 @@
 img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
+##Scripting Strategies
+
+###When to Script
+
+A | Sculpting vs. Programming
+* Parametric
+ * Functions
+ * Variables
+
+B | Noding vs. Coding
+* UI/UX
+* Iteration and recursion
+| Standard Libraries vs. Dynamo Libraries
+* Flow Structures, Data Structures
+* Objects
+
+D| Dynamo Libraries
+* ProtoGeometry
+* DSCoreNodes
+* Tessellation
+* DSOffice
+
+##Deciding When to Script and Which Libraries to Us
 ##Best Practices for Scripting
 
 This part of the guide is organized in the spirit of a journal of “best practices”. It sheds light on several strategies that we have learned, through experience and research, to be most conducive to quality parametric workflows. As designers and programmers, our metric for quality is primarily concerned with the maintainability, dependability, usability, and efficiency of our tools.
