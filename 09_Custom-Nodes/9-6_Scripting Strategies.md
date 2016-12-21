@@ -2,11 +2,11 @@
 img{display:block;margin-left: auto;   margin-right: auto }
 </style>
 
-##Scripting Strategies
+## Scripting Strategies
 
-###Deciding When to Script and Which Libraries to Use
+### Deciding When to Script and Which Libraries to Use
 
-###When to Script
+### When to Script
 ![Sculpting vs. Programming](/images/9-6/sculptingvsprogramming.PNG)
 >**A | Sculpting vs. Programming**
 * Parametric
@@ -17,7 +17,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 * UI/UX
 * Iteration and recursion
 
-###Which Libraries to Use
+### Which Libraries to Use
 ![Coding](/images/9-6/coding.PNG)
 >**C | Standard Libraries vs. Dynamo Libraries**
 * Flow Structures, Data Structures
@@ -37,11 +37,11 @@ img{display:block;margin-left: auto;   margin-right: auto }
  * Functionality
  * How to import
 
-###Best Practices for Scripting
+### Best Practices for Scripting
 
 This part of the guide is organized in the spirit of a journal of “best practices”. It sheds light on several strategies that we have learned, through experience and research, to be most conducive to quality parametric workflows. As designers and programmers, our metric for quality is primarily concerned with the maintainability, dependability, usability, and efficiency of our tools.
 
-###Label Carefully
+### Label Carefully
 
 While scripting, we are constantly using identifiers to denote things like variables, types, functions, and other entities. Through this system of symbolic notation, while building algorithms we can conveniently refer to information by way of labels --usually made up of a sequence of characters. Naming things well plays a significant role in writing code that can be easily read and understood by others as well as your future self! Here are some tips to keep in mind while naming things in your script:
 
@@ -120,7 +120,7 @@ While scripting, we are constantly using identifiers to denote things like varia
 ```
 >“Everything should be made as simple as possible, but not simpler.” – Albert Einstein
 
-###Style Consistently
+### Style Consistently
 Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code.
 
 * Naming Conventions (Choose one of the conventions below for each type of entity in your code and stick to it!).
@@ -248,7 +248,7 @@ Generally speaking there is more than one way to program just about anything, th
 
  * Is functionality/efficiency being compromised?
 
-###Structure Modularly 
+### Structure Modularly 
 
 As your code gets longer and more complex the “big idea”, or overarching algorithm becomes increasingly illegible. It also becomes more difficult to keep track of what (and where) specific things happen, find bugs when things go wrong, integrate other code, and assign development tasks. To avoid these headaches it’s wise to embrace the utility of modularization, an organizational concept that breaks up code based on the task it executes. Here are some tips for making your scripts more manageable by way of modularization.
 
@@ -299,7 +299,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
     CODE EXAMPLE
 ```
 
-###Think Parametrically
+### Think Parametrically
 
 When faced with a design problem, you can promptly find a static solution via Direct Modeling or you can construct a system that can generate dynamic solutions via Parametric Modeling. Out of context, both of these methods are equally valid and come with their own respective pros and cons. However if you’ve already decided to use Dynamo--an inevitably parametric environment--it is wise to structure your nested scripts in accordance with the framework they will be living in. Here are some tips for better integrating your scripts into a larger parametric framework:
 
@@ -336,7 +336,7 @@ When faced with a design problem, you can promptly find a static solution via Di
 
  >Tip: Before duplicating entities in your script, ask yourself if you can link to the source instead.
 
-###Flex Constantly
+### Flex Constantly
 
 * “Test ruthlessly”.
 
@@ -344,7 +344,7 @@ When faced with a design problem, you can promptly find a static solution via Di
 
 * Anticipate “edge cases”.
 
-###Debug Efficiently
+### Debug Efficiently
 
 * Use watch bubble.
 
