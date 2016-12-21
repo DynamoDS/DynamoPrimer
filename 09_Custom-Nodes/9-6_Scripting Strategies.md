@@ -301,35 +301,40 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 ###Think Parametrically
 
+When faced with a design problem, you can promptly find a static solution via Direct Modeling or you can construct a system that can generate dynamic solutions via Parametric Modeling. Out of context, both of these methods are equally valid and come with their own respective pros and cons. However if you’ve already decided to use Dynamo--an inevitably parametric environment--it is wise to structure your nested scripts in accordance with the framework they will be living in. Here are some tips for better integrating your scripts into a larger parametric framework:
+
+* Identify the variables at play.
+
+ * Try to determine the given parameters in your design problem so that you can construct a model that directly builds off that data.
+ 
+ * Before programming, try to identify:
+ 
+   - The variables that will be inputted.
+  
+   - The variables that will be outputted.
+  
+   - The variables that will remain constant.
+
 * Design through relationships.
 
- * Make connections between entities in your code.
+ * Parametricism allows for certain parameters or variables to be edited in order to manipulate or alter the end result of an equation or system.
 
- * The relationship between elements is used to manipulate and inform the design of complex structures.
+ * Whenever entities in your script are logically related, aim to define them as functions of each other. This way when one is modified, the other can update proportionally.
 
- * Certain parameters or variables that can be edited to manipulate or alter the end result of an equation or system.
- ```
-    # Loop through X and Y
-    for i in range(xCount):
-        # Rotate and translate the coordinate system
-        toCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i%seed)))
-```
+ * Minimize number of inputs by only exposing key parameters
+ 
+   - If a set of parameters can be derived from more parent parameters, only expose the parent parameters as script inputs. This increases the usability of your script by reducing the complexity of its interface.
 
-* DRY / DIE principles.
+  >Tip: Place as much emphasis on the process as you do on the solution.
 
- * DRY: Don't Repeat Yourself.
+* Don't repeat yourself (DRY).
 
- * DIE: Duplication is Evil.
+ * When you have multiple ways to express the same thing in your script, at some point the duplicate representations will fall out of sync which can lead to maintenance nightmares, poor factoring, and internal contradictions.
+ 
+ * The DRY principle is stated as "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system".
+   - When this principle is successfully applied, all the related elements in your script change predictably and uniformly and all the unrelated elements do not have logical consequences on each other.
 
- * "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
-
- * Never enter same value twice.
-
-* Go to source.
-
-* Minimize number of inputs (only expose key parameters).
-
-* Know what is being held constant.
+ >Tip: Before duplicating entities in your script, ask yourself if you can link to the source instead.
 
 ###Flex Constantly
 
