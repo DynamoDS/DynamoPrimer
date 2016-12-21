@@ -7,7 +7,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 ###Deciding When to Script and Which Libraries to Use
 
 ###When to Script
-
+![Sculpting vs. Programming](/images/9-6/sculptingvsprogramming.PNG)
 >**A | Sculpting vs. Programming**
 * Parametric
  * Functions
@@ -18,8 +18,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 * Iteration and recursion
 
 ###Which Libraries to Use
-
-
+![Coding](/images/9-6/coding.PNG)
 >**C | Standard Libraries vs. Dynamo Libraries**
 * Flow Structures, Data Structures
 * Objects
