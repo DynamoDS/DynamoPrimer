@@ -325,7 +325,7 @@ When faced with a design problem, you can promptly find a static solution via Di
  
    - If a set of parameters can be derived from more parent parameters, only expose the parent parameters as script inputs. This increases the usability of your script by reducing the complexity of its interface.
 
->Tip: Place as much emphasis on the process as you do on the solution.
+ >Tip: Place as much emphasis on the process as you do on the solution.
 
 * Don't repeat yourself (DRY).
 
@@ -334,7 +334,7 @@ When faced with a design problem, you can promptly find a static solution via Di
  * The DRY principle is stated as "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system".
    - When this principle is successfully applied, all the related elements in your script change predictably and uniformly and all the unrelated elements do not have logical consequences on each other.
 
->Tip: Before duplicating entities in your script, ask yourself if you can link to the source instead.
+ >Tip: Before duplicating entities in your script, ask yourself if you can link to the source instead.
 
 ###Flex Constantly
 
