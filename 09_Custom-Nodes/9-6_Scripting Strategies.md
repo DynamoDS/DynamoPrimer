@@ -4,36 +4,47 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ##Scripting Strategies
 
-###When to Script
+###Deciding When to Script and Which Libraries to Use
 
-A | Sculpting vs. Programming
+###When to Script
+![](/assets/sculpting_vs_programming.PNG)
+**A** | Sculpting vs. Programming
 * Parametric
  * Functions
  * Variables
 
-B | Noding vs. Coding
+**B** | Noding vs. Coding
 * UI/UX
 * Iteration and recursion
-| Standard Libraries vs. Dynamo Libraries
+
+###Which Libraries to Use
+![](/assets/coding.PNG)
+
+**C** | Standard Libraries vs. Dynamo Libraries
 * Flow Structures, Data Structures
 * Objects
 
-D| Dynamo Libraries
+**D** | Dynamo Libraries
 * ProtoGeometry
+ * Functionality
+ * How to import
 * DSCoreNodes
+ * Functionality
+ * How to import
 * Tessellation
+ * Functionality
+ * How to import
 * DSOffice
+ * Functionality
+ * How to import
 
-##Deciding When to Script and Which Libraries to Us
-##Best Practices for Scripting
+###Best Practices for Scripting
 
 This part of the guide is organized in the spirit of a journal of “best practices”. It sheds light on several strategies that we have learned, through experience and research, to be most conducive to quality parametric workflows. As designers and programmers, our metric for quality is primarily concerned with the maintainability, dependability, usability, and efficiency of our tools.
 
 ###Label Carefully
 
-While scripting, we are constantly using identifiers to denote things like variables, types, functions, and other entities. Through this system of symbolic notation, while building algorithms we can conveniently refer to information by way of labels --usually made up of a sequence of characters. Naming things well plays a significant role in writing code that can be easily read and understood by others as well as your future self! 
-
-Here are some tips to keep in mind while naming things in your script.
+While scripting, we are constantly using identifiers to denote things like variables, types, functions, and other entities. Through this system of symbolic notation, while building algorithms we can conveniently refer to information by way of labels --usually made up of a sequence of characters. Naming things well plays a significant role in writing code that can be easily read and understood by others as well as your future self! Here are some tips to keep in mind while naming things in your script:
 
 * It´s OK to use abbreviations, but explain the abbreviation with a comment:
 ```
