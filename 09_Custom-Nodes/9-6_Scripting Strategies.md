@@ -7,24 +7,24 @@ img{display:block;margin-left: auto;   margin-right: auto }
 ###Deciding When to Script and Which Libraries to Use
 
 ###When to Script
-![](/assets/sculpting_vs_programming.PNG)
-**A** | Sculpting vs. Programming
+
+>**A | Sculpting vs. Programming**
 * Parametric
  * Functions
  * Variables
 
-**B** | Noding vs. Coding
+>**B | Noding vs. Coding**
 * UI/UX
 * Iteration and recursion
 
 ###Which Libraries to Use
-![](/assets/coding.PNG)
 
-**C** | Standard Libraries vs. Dynamo Libraries
+
+>**C | Standard Libraries vs. Dynamo Libraries**
 * Flow Structures, Data Structures
 * Objects
 
-**D** | Dynamo Libraries
+>**D | Dynamo Libraries**
 * ProtoGeometry
  * Functionality
  * How to import
