@@ -447,3 +447,5 @@ This script will derive the path a ball would take if released at a given point 
 6. After all the agents have either reached their limit of descent or their maximum number of steps we will create a polycurve through the points in their trail list and output the polycurve trails.
 
 ![](/09_Custom-Nodes/images/9-6/gd07.png)
+
+![](/09_Custom-Nodes/images/9-6/gd08.png)
