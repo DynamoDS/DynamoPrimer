@@ -8,7 +8,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 #### When to Script
 ![](/09_Custom-Nodes/images/9-6/sculptingvsprogramming.PNG)
-
+ 
 **A | Sculpting vs. Programming**
 * Parametric
  * Functions
@@ -129,7 +129,7 @@ CODE EXAMPLE
 #### Style Consistently
 Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code.
 
-**Naming Conventions** (Choose one of the conventions below for each type of entity in your code and stick to it!).
+**Naming conventions:** (Choose one of the conventions below for each type of entity in your code and stick to it!)
 
 * Variables, functions, methods, packages, modules:
 `lower_case_with_underscores`
@@ -148,7 +148,7 @@ Generally speaking there is more than one way to program just about anything, th
 
 >Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
  
-**Use of Blank Lines**
+**Use of blank lines:**
 
 * Surround top-level function and class definitions with two blank lines.
  
@@ -156,9 +156,9 @@ Generally speaking there is more than one way to program just about anything, th
  
  * Extra blank lines may be used (sparingly) to separate groups of related functions.
  
-* Avoid extraneous whitespace.
+**Avoid extraneous whitespace:**
 
-**Immediately inside parentheses, brackets or braces:**
+* Immediately inside parentheses, brackets or braces:
 ```
 ### Bad:
 function( apples[ 1 ], { oranges: 2 } )
@@ -168,7 +168,7 @@ function( apples[ 1 ], { oranges: 2 } )
 function(apples[1], {oranges: 2})
 ```
  
-**Immediately before a comma, semicolon, or colon:**
+* Immediately before a comma, semicolon, or colon:
 ```
 ### Bad:
 if x == 2 : print x , y ; x , y = y , x
@@ -178,7 +178,7 @@ if x == 2 : print x , y ; x , y = y , x
 if x == 2: print x, y; x, y = y, x
 ```
  
-**Immediately before the open parenthesis that starts the argument list of a function call:**
+* Immediately before the open parenthesis that starts the argument list of a function call:
 ```
 ### Bad:
 function (1)
@@ -188,7 +188,7 @@ function (1)
 function(1)
 ```
  
-**Immediately before the open parenthesis that starts an indexing or slicing:**
+* Immediately before the open parenthesis that starts an indexing or slicing:
 ```
 ### Bad:
 dict ['key'] = list [index]
@@ -198,13 +198,14 @@ dict ['key'] = list [index]
 dict['key'] = list[index]
 ```
  
-**Always surround these binary operators with a single space on either side:**
+* Always surround these binary operators with a single space on either side:
 ```
 assignment ( = )
 augmented assignment ( += , -= etc.)
 comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
 Booleans ( and , or , not )
 ```
+
 **Watch line length:**
 
 * Don't stress over it ~ 79 characters.
@@ -225,7 +226,7 @@ code_tells_you_how
 * Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
 
 * Adopting good coding habits reduces dependence on comments:
-```
+    ```
     ### Bad:
     # get the country code
     country_code = get_country_code(address)
@@ -234,14 +235,14 @@ code_tells_you_how
     if (country_code == 'US'):
      # display the form input for state
     print form_input_state()
-```
-```
+    ```
+    ```
     ### Good:
     # display state selection for US users
     country_code = get_country_code(address)
     if (country_code == 'US'):
     print form_input_state()
- ```
+    ```
 
 **Check out open source code:**
 
@@ -283,19 +284,19 @@ CODE EXAMPLE
 **General forms:**
 
 * Code Grouping:
-```
-CODE EXAMPLE
-```
+    ```
+    CODE EXAMPLE
+    ```
 
 * Functions:
-```python
+    ```python
     def get_step_size():
         area = surfIn.Area
         stepSize = math.sqrt(area)/100
         return stepSize
     
     stepSize = get_step_size()
-```
+    ```
 
 * Classes:
 ```
@@ -412,32 +413,35 @@ Let’s talk through how we want it to work.
 **2. Define Parameter Inputs:**
 
 ![](/09_Custom-Nodes/images/9-6/gd03.png)
->We will need to provide some key parameters:
-* The surface we want to walk down.
-* The number of agents we want to walk.
-* The maximum number of steps the agents are allowed to take.
+> We will need to provide some key parameters:
+
+>1. The surface we want to walk down.
+2. The number of agents we want to walk.
+3. The maximum number of steps the agents are allowed to take.
 
 **3. Define Agent Class:**
 
 ![](/09_Custom-Nodes/images/9-6/gd04.png)
->We will need to define a class, or blueprint, for an agent with the intention of walking down a surface by choosing to travel in the steepest possible direction each time it takes a step:
-* Name
-* Global attributes that all the agents share
-* Instance attributes that are unique to each agent
-* A function for taking a step
-* A function for cataloging the position of each step to a trail list
+> We will need to define a class, or blueprint, for an agent with the intention of walking down a surface by choosing to travel in the steepest possible direction each time it takes a step:
+
+> 1. Name.
+2. Global attributes that all the agents share.
+3. Instance attributes that are unique to each agent.
+4. A function for taking a step.
+5. A function for cataloging the position of each step to a trail list.
 
 **4. Initialize Agents:**
 
 ![](/09_Custom-Nodes/images/9-6/gd05.png)
->We will need to instantiate all the agents we want to observe walk down the surface and define their initial attributes:
-* Where they will start their journey on the surface.
-* An new empty trail list.
+> We will need to instantiate all the agents we want to observe walk down the surface and define their initial attributes:
+
+> 1. Where they will start their journey on the surface.
+2. A new empty trail list.
 
 **5. Update Agents:**
 
 ![](/09_Custom-Nodes/images/9-6/gd06.png)
->We will then need enter a nested loop where for each agent and for each step, we update and record their position into their trail list. At each step we will also make sure the agent hasn’t reached a point on the surface where it cannot take another step which will allow it to descend. If that condition is met, we will end that agents trip.
+>We will then need to enter a nested loop where for each agent and for each step, we update and record their position into their trail list. At each step we will also make sure the agent hasn’t reached a point on the surface where it cannot take another step which will allow it to descend. If that condition is met, we will end that agent's trip.
 
 **6. Draw Trails and Output Trails:**
 
