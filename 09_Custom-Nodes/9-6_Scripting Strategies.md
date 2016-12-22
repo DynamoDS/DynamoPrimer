@@ -126,19 +126,19 @@ Generally speaking there is more than one way to program just about anything, th
 * Naming Conventions (Choose one of the conventions below for each type of entity in your code and stick to it!).
 
  * Variables, functions, methods, packages, modules:
-```lower_case_with_underscores```
+`lower_case_with_underscores`
 
  * Classes and Exceptions:
-```CapWords```
+`CapWords`
 
  * Protected methods and internal functions:
-```_single_leading_underscore(self, ...)```
+`_single_leading_underscore(self, ...)`
 
  * Private methods:
-```__double_leading_underscore(self, ...)```
+`__double_leading_underscore(self, ...)`
 
  * Constants:
-```ALL_CAPS_WITH_UNDERSCORES```
+`ALL_CAPS_WITH_UNDERSCORES`
 
 >Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
  
@@ -260,9 +260,9 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 * Concentration on one specific task per module.
 
  * Functions that each perform a single well-defined function:
- ```
+```
     CODE EXAMPLE
- ```
+```
 
  * "Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
 
@@ -285,14 +285,12 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 ```
 
  * Functions:
- 
-   ```
-    function readGreeting (greeting) {
-      console.log(greeting + " everyone.");
-    }
-   
-    readGreeting("Hello")
-   ```
+```python
+    def get_step_size():
+        area = surfIn.Area
+        stepSize = math.sqrt(area)/100
+        return stepSize
+```
 
  * Classes:
 ```
@@ -336,13 +334,39 @@ When faced with a design problem, you can promptly find a static solution via Di
 
 >Tip: Before duplicating entities in your script, ask yourself if you can link to the source instead.
 
-### Flex Constantly
+### Flex Continuously
 
-* “Test ruthlessly”.
+While developing scripts in Dynamo, it is wise to constantly make sure that what is actually being created is in line with what you are expecting. This will ensure that unforeseen events-- syntax errors, logical discrepancies, value inaccuracies, anomalous outputs etc.-- are quickly discovered and dealt with as they surface rather than all at once at the end. Because Dynamo scripts live inside nodes on the canvas, they are already integrated into the dataflow of your visual program. This makes the successive monitoring of your script as simple as assigning data to be outputted, running the program, and evaluating what flows out of the Script Node using a Watch Node. Here are some tips for continuously inspecting your scripts as you construct them:
 
-* Check as you go.
+* Test as you go.
+
+ * Whenever you complete a cluster of functionality:
+ 
+   - Step back and inspect your code.
+ 
+     - Could a collaborator understand what this is doing?
+   
+     - Do I need to do this? Can this function be done more efficiently?
+   
+     - Am I creating unnecessary duplicates or dependencies?
+     
+   - Quickly test to make sure it is returning data that “makes sense”.
+
+ * Assign the most recent data you are working with in your script to the OUT identifier so that the node is always outputting relevant data when the script updates.
+ 
+   - Keep an eye on geometry using the Watch3D node.
+   
+   - Keep an eye on string messages using the Watch Node 
 
 * Anticipate “edge cases”.
+
+ * While scripting, crank your input parameters to the minimum and maximum values of their allotted domain to check if the program still functions under extreme conditions.
+ 
+ * Sometimes bugs and errors that reveal some underlying problem with your script will only surface during these edge cases.
+ 
+   - Understand what is causing the error and then decide if it needs to be fixed internally or if a parameter domain needs to be redefined to avoid the problem.
+   
+>Tip: Always assume the that the user will use every combination of every input value that has been exposed to him/her. This will help eliminate unwanted surprises.
 
 ### Debug Efficiently
 
