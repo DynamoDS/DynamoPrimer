@@ -442,4 +442,6 @@ Let’s talk through how we want it to work.
 ![](/09_Custom-Nodes/images/9-6/gd07.png)
 >After all the agents have either reached their limit of descent or their maximum number of steps we will create a polycurve through the points in their trail list and output the polycurve trails.
 
+**Our Script:**
+
 ![](/09_Custom-Nodes/images/9-6/gd08.png)
