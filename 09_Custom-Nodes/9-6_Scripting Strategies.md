@@ -213,15 +213,11 @@ Booleans ( and , or , not )
 * Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
 
 * Long lines can be broken over multiple lines by wrapping expressions in parentheses:
-```
-CODE EXAMPLE
-```
+    ```
+    CODE EXAMPLE
+    ```
 
 **Avoid obvious and redundant comments:**
-```
-# Comments Tell You Why
-code_tells_you_how
-```
 
 * Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
 
@@ -243,6 +239,8 @@ code_tells_you_how
     if (country_code == 'US'):
     print form_input_state()
     ```
+    
+> Tip: Comments tell you why, Code tells you how.
 
 **Check out open source code:**
 
@@ -265,9 +263,9 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 **Concentration on one specific task per module:**
 
  * Functions that each perform a single well-defined function:
-```
-CODE EXAMPLE
-```
+    ```
+    CODE EXAMPLE
+    ```
 
  * "Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
 
@@ -299,9 +297,9 @@ CODE EXAMPLE
     ```
 
 * Classes:
-```
-CODE EXAMPLE
-```
+    ```
+    CODE EXAMPLE
+    ```
 
 #### Think Parametrically
 
