@@ -210,7 +210,7 @@ Booleans ( and , or , not )
 CODE EXAMPLE
 ```
 
-**Avoid obvious and redundant comments.**
+**Avoid obvious and redundant comments:**
 ```
 # Comments Tell You Why
 code_tells_you_how
@@ -237,54 +237,52 @@ code_tells_you_how
     print form_input_state()
  ```
 
-* Check out open source code.
+**Check out open source code:**
 
- * Open Source projects are built on the collaborative efforts of many developers. These projects need to maintain a high level of code readability so that the team can work together as efficiently as possible. Therefore, it is a good idea to browse through the source code of these projects to observe what these developers are doing.
+* Open Source projects are built on the collaborative efforts of many developers. These projects need to maintain a high level of code readability so that the team can work together as efficiently as possible. Therefore, it is a good idea to browse through the source code of these projects to observe what these developers are doing.
  
 
-* Improve your conventions.
+* Improve your conventions:
 
  * Question whether or not each convention is working for the needs at hand.
 
  * Is functionality/efficiency being compromised?
 
-### Structure Modularly 
+#### Structure Modularly 
 
 As your code gets longer and more complex the “big idea”, or overarching algorithm becomes increasingly illegible. It also becomes more difficult to keep track of what (and where) specific things happen, find bugs when things go wrong, integrate other code, and assign development tasks. To avoid these headaches it’s wise to embrace the utility of modularization, an organizational concept that breaks up code based on the task it executes. Here are some tips for making your scripts more manageable by way of modularization.
 
-* Spotting code re-use.
+**Spotting code re-use:**
 
- * If you find that your code does the same (or very similar) thing in more than once place, find ways to cluster it into a function that can be called.
+* If you find that your code does the same (or very similar) thing in more than once place, find ways to cluster it into a function that can be called.
  
-
-* Concentration on one specific task per module.
+**Concentration on one specific task per module:**
 
  * Functions that each perform a single well-defined function:
 ```
-    CODE EXAMPLE
+CODE EXAMPLE
 ```
 
  * "Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
 
-* Only show what needs to be seen.
+**Only show what needs to be seen:**
 
- * A module interface expresses the elements that are provided and required by the module.
+* A module interface expresses the elements that are provided and required by the module.
 
- * Once the interfaces between the units have been defined, the detailed design of each unit can proceed separately.
+* Once the interfaces between the units have been defined, the detailed design of each unit can proceed separately.
 
-* Separability/Replaceability.
+**Separability/Replaceability:**
 
- * Modules don’t know or care about each other.
+* Modules don’t know or care about each other.
  
+**General forms:**
 
-* General forms.
-
- * Code Grouping:
+* Code Grouping:
 ```
-    CODE EXAMPLE
+CODE EXAMPLE
 ```
 
- * Functions:
+* Functions:
 ```python
     def get_step_size():
         area = surfIn.Area
@@ -294,9 +292,9 @@ As your code gets longer and more complex the “big idea”, or overarching alg
     stepSize = get_step_size()
 ```
 
- * Classes:
+* Classes:
 ```
-    CODE EXAMPLE
+CODE EXAMPLE
 ```
 
 ### Think Parametrically
