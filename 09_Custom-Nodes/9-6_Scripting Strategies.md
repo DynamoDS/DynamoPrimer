@@ -4,7 +4,6 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ## Scripting Strategies
 
-<!---
 ### 01 | Deciding When to Script and Which Libraries to Use
 
 #### When to Script
@@ -41,7 +40,6 @@ img{display:block;margin-left: auto;   margin-right: auto }
  * Functionality
    - Excel.
  * How to import: `import DSOffice`
--->
 
 ### 02 | Best Practices for Scripting
 
@@ -392,7 +390,7 @@ OUT = cubes
 
  * You can link new or debugged modules to an existing program with the confidence that the rest of the program will not change.
  
-### Dynamo and Python Example
+### 03 | Dynamo and Python Example
 
 #### Steepest Path Overview
 
@@ -402,50 +400,46 @@ This script will derive the path a ball would take if released at a given point 
 
 #### Constructing the Algorithm
 
-**Let’s talk through how we want it to work:**
+Let’s talk through how we want it to work.
 
-1. We will need to import all the libraries that we intend on using:
+**1. Import Libraries:**
 
 ![](/09_Custom-Nodes/images/9-6/gd02.png)
+>We will need to import all the libraries that we intend on using:
 
-2. We will need to provide some key parameters:
-
- * The surface we want to walk down.
- 
- * The number of agents we want to walk.
- 
- * The maximum number of steps the agents are allowed to take.
+**2. Define Parameter Inputs:**
 
 ![](/09_Custom-Nodes/images/9-6/gd03.png)
+>We will need to provide some key parameters:
+* The surface we want to walk down.
+* The number of agents we want to walk.
+* The maximum number of steps the agents are allowed to take.
 
-3. We will need to define a class, or blueprint, for an agent with the intention of walking down a surface by choosing to travel in the steepest possible direction each time it takes a step:
+**3. Define Agent Class:**
 
- * Name
- 
- * Global attributes that all the agents share
- 
- * Instance attributes that are unique to each agent
- 
- * A function for taking a step
- 
- * A function for cataloging the position of each step to a trail list
- 
 ![](/09_Custom-Nodes/images/9-6/gd04.png)
- 
-4. We will need to instantiate all the agents we want to observe walk down the surface and define their initial attributes:
+We will need to define a class, or blueprint, for an agent with the intention of walking down a surface by choosing to travel in the steepest possible direction each time it takes a step:
+* Name
+* Global attributes that all the agents share
+* Instance attributes that are unique to each agent
+* A function for taking a step
+* A function for cataloging the position of each step to a trail list
 
- * Where they will start their journey on the surface.
- 
- * An new empty trail list.
+**4. Initialize Agents:**
 
 ![](/09_Custom-Nodes/images/9-6/gd05.png)
+>We will need to instantiate all the agents we want to observe walk down the surface and define their initial attributes:
+* Where they will start their journey on the surface.
+* An new empty trail list.
 
-5. We will then need enter a nested loop where for each agent and for each step, we update and record their position into their trail list. At each step we will also make sure the agent hasn’t reached a point on the surface where it cannot take another step which will allow it to descend. If that condition is met, we will end that agents trip.
+**5. Update Agents:**
 
 ![](/09_Custom-Nodes/images/9-6/gd06.png)
+>We will then need enter a nested loop where for each agent and for each step, we update and record their position into their trail list. At each step we will also make sure the agent hasn’t reached a point on the surface where it cannot take another step which will allow it to descend. If that condition is met, we will end that agents trip.
 
-6. After all the agents have either reached their limit of descent or their maximum number of steps we will create a polycurve through the points in their trail list and output the polycurve trails.
+**6. Draw Trails and Output Trails:**
 
 ![](/09_Custom-Nodes/images/9-6/gd07.png)
+>After all the agents have either reached their limit of descent or their maximum number of steps we will create a polycurve through the points in their trail list and output the polycurve trails.
 
 ![](/09_Custom-Nodes/images/9-6/gd08.png)
