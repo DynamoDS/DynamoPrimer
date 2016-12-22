@@ -398,6 +398,7 @@ OUT = cubes
 
 This script will derive the path a ball would take if released at a given point on a surface. It will construct the paths by stitching together small and discrete steps taken by walking agents. 
 
+![](/09_Custom-Nodes/images/9-6/gd02.png)
 ![](/09_Custom-Nodes/images/9-6/gd01.png)
 
 #### Constructing the Algorithm
