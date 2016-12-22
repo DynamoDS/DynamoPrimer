@@ -8,6 +8,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 #### When to Script
 ![](/09_Custom-Nodes/images/9-6/sculptingvsprogramming.PNG)
+
 **A | Sculpting vs. Programming**
 * Parametric
  * Functions
@@ -19,6 +20,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 #### Which Libraries to Use
 ![](/09_Custom-Nodes/images/9-6/coding.PNG)
+
 **C | Standard Libraries vs. Dynamo Libraries**
 * Flow Structures, Data Structures
 * Objects
