@@ -353,15 +353,13 @@ While developing scripts in Dynamo, it is wise to constantly make sure that what
 **Test as you go:**
 
 * Whenever you complete a cluster of functionality:
-
+ 
  * Step back and inspect your code.
  
-   - Could a collaborator understand what this is doing?
-   - Do I need to do this? Can this function be done more efficiently?
-   - Am I creating unnecessary duplicates or dependencies?
-     
+ * Ask questions. Could a collaborator understand what this is doing? Do I need to do this? Can this function be done more efficiently? Am I creating unnecessary duplicates or dependencies?
+ 
  * Quickly test to make sure it is returning data that “makes sense”.
-
+ 
 * Assign the most recent data you are working with in your script to the OUT identifier so that the node is always outputting relevant data when the script updates:
  
  * Keep an eye on geometry using the Watch3D node.
