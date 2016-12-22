@@ -103,7 +103,7 @@ agents = …
 agents_active = …
 agents_dead = ...
 ```
->It’s more sensible, in structural terms.
+> It’s more sensible, in structural terms.
 
 **Aliases should be used to shorten overly long and often repeated chains:**
 ```
@@ -124,7 +124,7 @@ CODE EXAMPLE
 ### Good:
 CODE EXAMPLE
 ```
->“Everything should be made as simple as possible, but not simpler.” – Albert Einstein
+> “Everything should be made as simple as possible, but not simpler.” – Albert Einstein
 
 #### Style Consistently
 Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code.
@@ -146,7 +146,7 @@ Generally speaking there is more than one way to program just about anything, th
 * Constants:
 `ALL_CAPS_WITH_UNDERSCORES`
 
->Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
+> Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
  
 **Use of blank lines:**
 
@@ -164,7 +164,6 @@ Generally speaking there is more than one way to program just about anything, th
     ### Bad:
     function( apples[ 1 ], { oranges: 2 } )
     ```
-    
     ```
     ### Good:
     function(apples[1], {oranges: 2})
@@ -182,32 +181,35 @@ Generally speaking there is more than one way to program just about anything, th
     ```
  
 * Immediately before the open parenthesis that starts the argument list of a function call:
-```
-### Bad:
-function (1)
-```
-```
-### Good:
-function(1)
-```
+
+    ```
+    ### Bad:
+    function (1)
+    ```
+    ```
+    ### Good:
+    function(1)
+    ```
  
 * Immediately before the open parenthesis that starts an indexing or slicing:
-```
-### Bad:
-dict ['key'] = list [index]
-```
-```
-### Good:
-dict['key'] = list[index]
-```
+
+    ```
+    ### Bad:
+    dict ['key'] = list [index]
+    ```
+    ```
+    ### Good:
+    dict['key'] = list[index]
+    ```
  
 * Always surround these binary operators with a single space on either side:
-```
-assignment ( = )
-augmented assignment ( += , -= etc.)
-comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
-Booleans ( and , or , not )
-```
+
+    ```
+    assignment ( = )
+    augmented assignment ( += , -= etc.)
+    comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
+    Booleans ( and , or , not )
+    ```
 
 **Watch line length:**
 
@@ -216,6 +218,7 @@ Booleans ( and , or , not )
 * Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
 
 * Long lines can be broken over multiple lines by wrapping expressions in parentheses:
+
     ```
     CODE EXAMPLE
     ```
@@ -225,6 +228,7 @@ Booleans ( and , or , not )
 * Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
 
 * Adopting good coding habits reduces dependence on comments:
+
     ```
     ### Bad:
     # get the country code
