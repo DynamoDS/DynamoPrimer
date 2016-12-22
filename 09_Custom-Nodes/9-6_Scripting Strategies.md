@@ -26,16 +26,20 @@ img{display:block;margin-left: auto;   margin-right: auto }
 **D | Dynamo Libraries**
 * ProtoGeometry
  * Functionality
- * How to import
+   - Arc, Bounding Box, Circle, Cone, Coordinate System, Cuboid, Curve, Cylinder, Edge, Ellipse, Ellipse Arc ,Face, Geometry, Helix, Index Group, Line, Mesh, Nurbs Curve, Nurbs Surface, Plane, Point, Polygon, Rectangle, Solid, Sphere, Surface, Topology, TSpline, UV, Vector, Vertex.
+ * How to import: `import Autodesk.DesignScript.Geometry`
 * DSCoreNodes
  * Functionality
- * How to import
+   - Color, Color Range 2D, Date Time, Time Span, IO, Formula, Logic, List, Math, Quadtree, String, Thread.
+ * How to import: `import DSCore`
 * Tessellation
  * Functionality
- * How to import
+   - Convex Hull, Delaunay, Voronoi.
+ * How to import: `import Tessellation`
 * DSOffice
  * Functionality
- * How to import
+   - Excel.
+ * How to import: `import DSOffice`
 
 ### 02 | Best Practices for Scripting
 
@@ -240,7 +244,6 @@ code_tells_you_how
 **Check out open source code:**
 
 * Open Source projects are built on the collaborative efforts of many developers. These projects need to maintain a high level of code readability so that the team can work together as efficiently as possible. Therefore, it is a good idea to browse through the source code of these projects to observe what these developers are doing.
- 
 
 * Improve your conventions:
 
@@ -386,3 +389,59 @@ OUT = cubes
 * When a program must be modified, modular programming simplifies the job:
 
  * You can link new or debugged modules to an existing program with the confidence that the rest of the program will not change.
+ 
+### Dynamo and Python Example
+
+#### Steepest Path Overview
+
+This script will derive the path a ball would take if released at a given point on a surface. It will construct the paths by stitching together small and discrete steps taken by walking agents. 
+
+![](/09_Custom-Nodes/images/9-6/gd01.png)
+
+#### Constructing the Algorithm
+
+**Let’s talk through how we want it to work:**
+
+1. We will need to import all the libraries that we intend on using:
+
+![](/09_Custom-Nodes/images/9-6/gd02.png)
+
+2. We will need to provide some key parameters:
+
+ * The surface we want to walk down.
+ 
+ * The number of agents we want to walk.
+ 
+ * The maximum number of steps the agents are allowed to take.
+ 
+![](/09_Custom-Nodes/images/9-6/gd03.png)
+
+3. We will need to define a class, or blueprint, for an agent with the intention of walking down a surface by choosing to travel in the steepest possible direction each time it takes a step:
+
+ * name
+ 
+ * global attributes that all the agents share
+ 
+ * instance attributes that are unique to each agent
+ 
+ * a function for taking a step
+ 
+ * a function for cataloging the position of each step to a trail list
+ 
+![](/09_Custom-Nodes/images/9-6/gd04.png)
+ 
+4. We will need to instantiate all the agents we want to observe walk down the surface and define their initial attributes:
+
+ * where they will start their journey on the surface.
+ 
+ * an new empty trail list .
+
+![](/09_Custom-Nodes/images/9-6/gd05.png)
+
+5. We will then need enter a nested loop where for each agent and for each step, we update and record their position into their trail list. At each step we will also make sure the agent hasn’t reached a point on the surface where it cannot take another step which will allow it to descend. If that condition is met, we will end that agents trip.
+
+![](/09_Custom-Nodes/images/9-6/gd06.png)
+
+6. After all the agents have either reached their limit of descent or their maximum number of steps we will create a polycurve through the points in their trail list and output the polycurve trails.
+
+![](/09_Custom-Nodes/images/9-6/gd07.png)
