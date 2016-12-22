@@ -47,7 +47,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 This part of the guide is organized in the spirit of a journal of “best practices”. It sheds light on several strategies that we have learned, through experience and research, to be most conducive to quality parametric workflows. As designers and programmers, our metric for quality is primarily concerned with the maintainability, dependability, usability, and efficiency of our tools.
 
-#### Label Carefully
+### Label Carefully
 
 While scripting, we are constantly using identifiers to denote things like variables, types, functions, and other entities. Through this system of symbolic notation, while building algorithms we can conveniently refer to information by way of labels --usually made up of a sequence of characters. Naming things well plays a significant role in writing code that can be easily read and understood by others as well as your future self! Here are some tips to keep in mind while naming things in your script:
 
@@ -126,7 +126,7 @@ CODE EXAMPLE
 ```
 > “Everything should be made as simple as possible, but not simpler.” – Albert Einstein
 
-#### Style Consistently
+### Style Consistently
 Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code.
 
 **Naming conventions:** (Choose one of the conventions below for each type of entity in your code and stick to it!)
@@ -259,7 +259,7 @@ Generally speaking there is more than one way to program just about anything, th
 
  * Is functionality/efficiency being compromised?
 
-#### Structure Modularly 
+### Structure Modularly 
 
 As your code gets longer and more complex the “big idea”, or overarching algorithm becomes increasingly illegible. It also becomes more difficult to keep track of what (and where) specific things happen, find bugs when things go wrong, integrate other code, and assign development tasks. To avoid these headaches it’s wise to embrace the utility of modularization, an organizational concept that breaks up code based on the task it executes. Here are some tips for making your scripts more manageable by way of modularization.
 
@@ -308,7 +308,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
     CODE EXAMPLE
     ```
 
-#### Think Parametrically
+### Think Parametrically
 
 When faced with a design problem, you can promptly find a static solution via Direct Modeling or you can construct a system that can generate dynamic solutions via Parametric Modeling. Out of context, both of these methods are equally valid and come with their own respective pros and cons. However if you’ve already decided to use Dynamo--an inevitably parametric environment--it is wise to structure your nested scripts in accordance with the framework they will be living in. Here are some tips for better integrating your scripts into a larger parametric framework:
 
@@ -346,7 +346,7 @@ When faced with a design problem, you can promptly find a static solution via Di
 
 >Tip: Before duplicating entities in your script, ask yourself if you can link to the source instead.
 
-#### Flex Continuously
+### Flex Continuously
 
 While developing scripts in Dynamo, it is wise to constantly make sure that what is actually being created is in line with what you are expecting. This will ensure that unforeseen events-- syntax errors, logical discrepancies, value inaccuracies, anomalous outputs etc.-- are quickly discovered and dealt with as they surface rather than all at once at the end. Because Dynamo scripts live inside nodes on the canvas, they are already integrated into the dataflow of your visual program. This makes the successive monitoring of your script as simple as assigning data to be outputted, running the program, and evaluating what flows out of the Script Node using a Watch Node. Here are some tips for continuously inspecting your scripts as you construct them:
 
@@ -376,7 +376,7 @@ While developing scripts in Dynamo, it is wise to constantly make sure that what
    
 >Tip: Always assume the that the user will use every combination of every input value that has been exposed to him/her. This will help eliminate unwanted surprises.
 
-#### Debug Efficiently
+### Debug Efficiently
 
 **Use watch bubble:**
 
@@ -396,13 +396,13 @@ OUT = cubes
  
 ### 03 | Dynamo and Python Example
 
-#### Steepest Path Overview
+### Steepest Path Overview
 
 This script will derive the path a ball would take if released at a given point on a surface. It will construct the paths by stitching together small and discrete steps taken by walking agents. 
 
 ![](/09_Custom-Nodes/images/9-6/gd01.JPG)
 
-#### Constructing the Algorithm
+### Constructing the Algorithm
 
 Let’s talk through how we want it to work.
 
