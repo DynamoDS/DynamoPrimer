@@ -6,7 +6,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ### 01 | Deciding When to Script and Which Libraries to Use
 
-#### When to Script
+### When to Script
 ![](/09_Custom-Nodes/images/9-6/sculptingvsprogramming.PNG)
  
 **A | Sculpting vs. Programming**
@@ -18,7 +18,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 * UI/UX
 * Iteration and recursion
 
-#### Which Libraries to Use
+### Which Libraries to Use
 ![](/09_Custom-Nodes/images/9-6/coding.PNG)
 
 **C | Standard Libraries vs. Dynamo Libraries**
