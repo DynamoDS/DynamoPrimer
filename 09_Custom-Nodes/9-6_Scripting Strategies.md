@@ -405,7 +405,7 @@ Let’s talk through how we want it to work.
 **1. Import Libraries:**
 
 ![](/09_Custom-Nodes/images/9-6/gd02.png)
->We will need to import all the libraries that we intend on using:
+>We will need to import all the libraries that we intend on using.
 
 **2. Define Parameter Inputs:**
 
@@ -418,7 +418,7 @@ Let’s talk through how we want it to work.
 **3. Define Agent Class:**
 
 ![](/09_Custom-Nodes/images/9-6/gd04.png)
-We will need to define a class, or blueprint, for an agent with the intention of walking down a surface by choosing to travel in the steepest possible direction each time it takes a step:
+>We will need to define a class, or blueprint, for an agent with the intention of walking down a surface by choosing to travel in the steepest possible direction each time it takes a step:
 * Name
 * Global attributes that all the agents share
 * Instance attributes that are unique to each agent
