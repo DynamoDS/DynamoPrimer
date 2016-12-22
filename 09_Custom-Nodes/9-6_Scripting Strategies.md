@@ -355,11 +355,8 @@ While developing scripts in Dynamo, it is wise to constantly make sure that what
 * Whenever you complete a cluster of functionality:
 
  * Step back and inspect your code.
- 
    - Could a collaborator understand what this is doing?
-   
    - Do I need to do this? Can this function be done more efficiently?
-   
    - Am I creating unnecessary duplicates or dependencies?
      
  * Quickly test to make sure it is returning data that “makes sense”.
