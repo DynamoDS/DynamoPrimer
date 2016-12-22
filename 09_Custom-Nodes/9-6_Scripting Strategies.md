@@ -4,6 +4,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ## Scripting Strategies
 
+<!---
 ### 01 | Deciding When to Script and Which Libraries to Use
 
 #### When to Script
@@ -40,6 +41,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
  * Functionality
    - Excel.
  * How to import: `import DSOffice`
+-->
 
 ### 02 | Best Practices for Scripting
 
@@ -413,28 +415,28 @@ This script will derive the path a ball would take if released at a given point 
  * The number of agents we want to walk.
  
  * The maximum number of steps the agents are allowed to take.
- 
+
 ![](/09_Custom-Nodes/images/9-6/gd03.png)
 
 3. We will need to define a class, or blueprint, for an agent with the intention of walking down a surface by choosing to travel in the steepest possible direction each time it takes a step:
 
- * name
+ * Name
  
- * global attributes that all the agents share
+ * Global attributes that all the agents share
  
- * instance attributes that are unique to each agent
+ * Instance attributes that are unique to each agent
  
- * a function for taking a step
+ * A function for taking a step
  
- * a function for cataloging the position of each step to a trail list
+ * A function for cataloging the position of each step to a trail list
  
 ![](/09_Custom-Nodes/images/9-6/gd04.png)
  
 4. We will need to instantiate all the agents we want to observe walk down the surface and define their initial attributes:
 
- * where they will start their journey on the surface.
+ * Where they will start their journey on the surface.
  
- * an new empty trail list .
+ * An new empty trail list.
 
 ![](/09_Custom-Nodes/images/9-6/gd05.png)
 
