@@ -164,20 +164,21 @@ Generally speaking there is more than one way to program just about anything, th
     ### Bad:
     function( apples[ 1 ], { oranges: 2 } )
     ```
-```
-### Good:
-function(apples[1], {oranges: 2})
-```
+    ```
+    ### Good:
+    function(apples[1], {oranges: 2})
+    ```
  
 * Immediately before a comma, semicolon, or colon:
-```
-### Bad:
-if x == 2 : print x , y ; x , y = y , x
-```
-```
-### Good:
-if x == 2: print x, y; x, y = y, x
-```
+
+    ```
+    ### Bad:
+     if x == 2 : print x , y ; x , y = y , x
+    ```
+    ```
+    ### Good:
+    if x == 2: print x, y; x, y = y, x
+    ```
  
 * Immediately before the open parenthesis that starts the argument list of a function call:
 ```
