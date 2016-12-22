@@ -159,6 +159,7 @@ Generally speaking there is more than one way to program just about anything, th
 **Avoid extraneous whitespace:**
 
 * Immediately inside parentheses, brackets or braces:
+
     ```
     ### Bad:
     function( apples[ 1 ], { oranges: 2 } )
