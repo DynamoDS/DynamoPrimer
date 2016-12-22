@@ -4,9 +4,9 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ## Scripting Strategies
 
-### Deciding When to Script and Which Libraries to Use
+### 01 | Deciding When to Script and Which Libraries to Use
 
-### When to Script
+#### When to Script
 ![Sculpting vs. Programming](/images/9-6/sculptingvsprogramming.PNG)
 >**A | Sculpting vs. Programming**
 * Parametric
@@ -17,7 +17,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 * UI/UX
 * Iteration and recursion
 
-### Which Libraries to Use
+#### Which Libraries to Use
 ![Coding](/images/9-6/coding.PNG)
 >**C | Standard Libraries vs. Dynamo Libraries**
 * Flow Structures, Data Structures
@@ -37,114 +37,114 @@ img{display:block;margin-left: auto;   margin-right: auto }
  * Functionality
  * How to import
 
-### Best Practices for Scripting
+### 02 | Best Practices for Scripting
 
 This part of the guide is organized in the spirit of a journal of “best practices”. It sheds light on several strategies that we have learned, through experience and research, to be most conducive to quality parametric workflows. As designers and programmers, our metric for quality is primarily concerned with the maintainability, dependability, usability, and efficiency of our tools.
 
-### Label Carefully
+#### Label Carefully
 
 While scripting, we are constantly using identifiers to denote things like variables, types, functions, and other entities. Through this system of symbolic notation, while building algorithms we can conveniently refer to information by way of labels --usually made up of a sequence of characters. Naming things well plays a significant role in writing code that can be easily read and understood by others as well as your future self! Here are some tips to keep in mind while naming things in your script:
 
-* It´s OK to use abbreviations, but explain the abbreviation with a comment:
+**It´s OK to use abbreviations, but explain the abbreviation with a comment:**
 ```
-    ### Bad:
-    csfX = 1.6
-    csfY= 1.3
-    csfZ = 1.0
-```
-```
-    ### Good:
-    # column scale factor (csf)
-    csfX = 1.6
-    csfY= 1.3
-    csfZ = 1.0
-```
-
-* Avoid redundant labeling:
-```
-    ### Bad:
-    import car
-    seat = car.CarSeat()
-    tire = car.CarTire()
+### Bad:
+csfX = 1.6
+csfY= 1.3
+ csfZ = 1.0
 ```
 ```
-    ### Good:
-    import car
-    seat = car.Seat()
-    tire = car.Tire()
+### Good:
+# column scale factor (csf)
+csfX = 1.6
+csfY= 1.3
+csfZ = 1.0
 ```
 
-* Use positive logic for your variable names instead of negative logic:
+**Avoid redundant labeling:**
 ```
-    ### Bad:
-    CODE EXAMPLE
+### Bad:
+import car
+seat = car.CarSeat()
+tire = car.CarTire()
 ```
 ```
-    ### Good:
-    CODE EXAMPLE
+### Good:
+import car
+seat = car.Seat()
+tire = car.Tire()
 ```
 
-* Prefer “reverse notation”: 
+**Use positive logic for your variable names instead of negative logic:**
 ```
-    ### Bad:
-    agents = …
-    active_agents = …
-    dead_agents ...
+### Bad:
+CODE EXAMPLE
 ```
 ```
-    ### Good:
-    agents = …
-    agents_active = …
-    agents_dead = ...
+### Good:
+CODE EXAMPLE
+```
+
+**Prefer “reverse notation”:** 
+```
+### Bad:
+agents = …
+active_agents = …
+dead_agents ...
+```
+```
+### Good:
+agents = …
+agents_active = …
+agents_dead = ...
 ```
 >It’s more sensible, in structural terms.
 
-* Aliases should be used to shorten overly long and often repeated chains:
+**Aliases should be used to shorten overly long and often repeated chains:**
 ```
-    ### Bad:
-    CODE EXAMPLE
+### Bad:
+CODE EXAMPLE
 ```
 ```
-    ### Good:
-    CODE EXAMPLE
+### Good:
+CODE EXAMPLE
 ```
 
-* Only use necessary words:
+**Only use necessary words:**
 ```
-    ### Bad:
-    CODE EXAMPLE
+### Bad:
+CODE EXAMPLE
 ```
 ```
-    ### Good:
-    CODE EXAMPLE
+### Good:
+CODE EXAMPLE
 ```
 >“Everything should be made as simple as possible, but not simpler.” – Albert Einstein
 
-### Style Consistently
+#### Style Consistently
 Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code.
 
-* Naming Conventions (Choose one of the conventions below for each type of entity in your code and stick to it!).
+**Naming Conventions** (Choose one of the conventions below for each type of entity in your code and stick to it!).
 
- * Variables, functions, methods, packages, modules:
+* Variables, functions, methods, packages, modules:
 `lower_case_with_underscores`
 
- * Classes and Exceptions:
+* Classes and Exceptions:
 `CapWords`
 
- * Protected methods and internal functions:
+* Protected methods and internal functions:
 `_single_leading_underscore(self, ...)`
 
- * Private methods:
+* Private methods:
 `__double_leading_underscore(self, ...)`
 
- * Constants:
+* Constants:
 `ALL_CAPS_WITH_UNDERSCORES`
 
 >Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
  
-* Use of Blank Lines.
+**Use of Blank Lines**
 
- * Surround top-level function and class definitions with two blank lines.
+* Surround top-level function and class definitions with two blank lines.
  
  * Method definitions inside a class are surrounded by a single blank line.
  
@@ -152,74 +152,74 @@ Generally speaking there is more than one way to program just about anything, th
  
 * Avoid extraneous whitespace.
 
- * Immediately inside parentheses, brackets or braces:
- ```
-    ### Bad:
-    function( apples[ 1 ], { oranges: 2 } )
- ```
- ```
-    ### Good:
-    function(apples[1], {oranges: 2})
- ```
+**Immediately inside parentheses, brackets or braces:**
+```
+### Bad:
+function( apples[ 1 ], { oranges: 2 } )
+```
+```
+### Good:
+function(apples[1], {oranges: 2})
+```
  
- * Immediately before a comma, semicolon, or colon:
- ```
-    ### Bad:
-    if x == 2 : print x , y ; x , y = y , x
- ```
- ```
-    ### Good:
-    if x == 2: print x, y; x, y = y, x
- ```
+**Immediately before a comma, semicolon, or colon:**
+```
+### Bad:
+if x == 2 : print x , y ; x , y = y , x
+```
+```
+### Good:
+if x == 2: print x, y; x, y = y, x
+```
  
- * Immediately before the open parenthesis that starts the argument list of a function call:
- ```
-    ### Bad:
-    function (1)
- ```
- ```
-    ### Good:
-    function(1)
- ```
+**Immediately before the open parenthesis that starts the argument list of a function call:**
+```
+### Bad:
+function (1)
+```
+```
+### Good:
+function(1)
+```
  
- * Immediately before the open parenthesis that starts an indexing or slicing:
- ```
-    ### Bad:
-    dict ['key'] = list [index]
- ```
- ```
-    ### Good:
-    dict['key'] = list[index]
- ```
+**Immediately before the open parenthesis that starts an indexing or slicing:**
+```
+### Bad:
+dict ['key'] = list [index]
+```
+```
+### Good:
+dict['key'] = list[index]
+```
  
- * Always surround these binary operators with a single space on either side:
+**Always surround these binary operators with a single space on either side:**
 ```
-    assignment ( = )
-    augmented assignment ( += , -= etc.)
-    comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
-    Booleans ( and , or , not )
+assignment ( = )
+augmented assignment ( += , -= etc.)
+comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
+Booleans ( and , or , not )
 ```
-* Watch line length.
+**Watch line length:**
 
- * Don't stress over it ~ 79 characters.
+* Don't stress over it ~ 79 characters.
 
- * Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
+* Limiting the required editor window width makes it possible to have several files open side-by-side, and works well when using code review tools that present the two versions in adjacent columns.
 
- * Long lines can be broken over multiple lines by wrapping expressions in parentheses:
+* Long lines can be broken over multiple lines by wrapping expressions in parentheses:
 ```
-    CODE EXAMPLE
-```
-
-* Avoid obvious and redundant comments.
-```
-    # Comments Tell You Why
-    code_tells_you_how
+CODE EXAMPLE
 ```
 
- * Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
+**Avoid obvious and redundant comments.**
+```
+# Comments Tell You Why
+code_tells_you_how
+```
 
- * Adopting good coding habits reduces dependence on comments:
- ```
+* Sometimes fewer comments makes for more readable code. Especially if it forces you to use meaningful symbol names instead. 
+
+* Adopting good coding habits reduces dependence on comments:
+```
     ### Bad:
     # get the country code
     country_code = get_country_code(address)
@@ -228,8 +228,8 @@ Generally speaking there is more than one way to program just about anything, th
     if (country_code == 'US'):
      # display the form input for state
     print form_input_state()
- ```
- ```
+```
+```
     ### Good:
     # display state selection for US users
     country_code = get_country_code(address)
@@ -290,6 +290,8 @@ As your code gets longer and more complex the “big idea”, or overarching alg
         area = surfIn.Area
         stepSize = math.sqrt(area)/100
         return stepSize
+    
+    stepSize = get_step_size()
 ```
 
  * Classes:
