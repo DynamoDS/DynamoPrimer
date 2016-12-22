@@ -8,22 +8,22 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 #### When to Script
 ![Sculpting vs. Programming](/images/9-6/sculptingvsprogramming.PNG)
->**A | Sculpting vs. Programming**
+**A | Sculpting vs. Programming**
 * Parametric
  * Functions
  * Variables
 
->**B | Noding vs. Coding**
+**B | Noding vs. Coding**
 * UI/UX
 * Iteration and recursion
 
 #### Which Libraries to Use
 ![Coding](/images/9-6/coding.PNG)
->**C | Standard Libraries vs. Dynamo Libraries**
+**C | Standard Libraries vs. Dynamo Libraries**
 * Flow Structures, Data Structures
 * Objects
 
->**D | Dynamo Libraries**
+**D | Dynamo Libraries**
 * ProtoGeometry
  * Functionality
  * How to import
@@ -297,91 +297,92 @@ CODE EXAMPLE
 CODE EXAMPLE
 ```
 
-### Think Parametrically
+#### Think Parametrically
 
 When faced with a design problem, you can promptly find a static solution via Direct Modeling or you can construct a system that can generate dynamic solutions via Parametric Modeling. Out of context, both of these methods are equally valid and come with their own respective pros and cons. However if you’ve already decided to use Dynamo--an inevitably parametric environment--it is wise to structure your nested scripts in accordance with the framework they will be living in. Here are some tips for better integrating your scripts into a larger parametric framework:
 
-* Identify the variables at play.
+**Identify the variables at play:**
 
- * Try to determine the given parameters in your design problem so that you can construct a model that directly builds off that data.
+* Try to determine the given parameters in your design problem so that you can construct a model that directly builds off that data.
  
- * Before programming, try to identify:
+* Before programming, try to identify:
 
-   - The variables that will be inputted.
-  
-   - The variables that will be outputted.
-  
-   - The variables that will remain constant.
-
-* Design through relationships.
-
- * Parametricism allows for certain parameters or variables to be edited in order to manipulate or alter the end result of an equation or system.
-
- * Whenever entities in your script are logically related, aim to define them as functions of each other. This way when one is modified, the other can update proportionally.
-
- * Minimize number of inputs by only exposing key parameters
+ * The variables that will be inputted.
  
-   - If a set of parameters can be derived from more parent parameters, only expose the parent parameters as script inputs. This increases the usability of your script by reducing the complexity of its interface.
+ * The variables that will be outputted.
+ 
+ * The variables that will remain constant.
+
+**Design through relationships:**
+
+* Parametricism allows for certain parameters or variables to be edited in order to manipulate or alter the end result of an equation or system.
+
+* Whenever entities in your script are logically related, aim to define them as functions of each other. This way when one is modified, the other can update proportionally.
+
+* Minimize number of inputs by only exposing key parameters:
+
+ * If a set of parameters can be derived from more parent parameters, only expose the parent parameters as script inputs. This increases the usability of your script by reducing the complexity of its interface.
 
 >Tip: Place as much emphasis on the process as you do on the solution.
 
-* Don't repeat yourself (DRY).
+**Don't repeat yourself (DRY):**
 
- * When you have multiple ways to express the same thing in your script, at some point the duplicate representations will fall out of sync which can lead to maintenance nightmares, poor factoring, and internal contradictions.
+* When you have multiple ways to express the same thing in your script, at some point the duplicate representations will fall out of sync which can lead to maintenance nightmares, poor factoring, and internal contradictions.
  
- * The DRY principle is stated as "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system".
-   - When this principle is successfully applied, all the related elements in your script change predictably and uniformly and all the unrelated elements do not have logical consequences on each other.
+* The DRY principle is stated as "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system":
+
+ * When this principle is successfully applied, all the related elements in your script change predictably and uniformly and all the unrelated elements do not have logical consequences on each other.
 
 >Tip: Before duplicating entities in your script, ask yourself if you can link to the source instead.
 
-### Flex Continuously
+#### Flex Continuously
 
 While developing scripts in Dynamo, it is wise to constantly make sure that what is actually being created is in line with what you are expecting. This will ensure that unforeseen events-- syntax errors, logical discrepancies, value inaccuracies, anomalous outputs etc.-- are quickly discovered and dealt with as they surface rather than all at once at the end. Because Dynamo scripts live inside nodes on the canvas, they are already integrated into the dataflow of your visual program. This makes the successive monitoring of your script as simple as assigning data to be outputted, running the program, and evaluating what flows out of the Script Node using a Watch Node. Here are some tips for continuously inspecting your scripts as you construct them:
 
-* Test as you go.
+**Test as you go:**
 
- * Whenever you complete a cluster of functionality:
+* Whenever you complete a cluster of functionality:
+
+ * Step back and inspect your code.
  
-   - Step back and inspect your code.
- 
-     - Could a collaborator understand what this is doing?
+   - Could a collaborator understand what this is doing?
    
-     - Do I need to do this? Can this function be done more efficiently?
+   - Do I need to do this? Can this function be done more efficiently?
    
-     - Am I creating unnecessary duplicates or dependencies?
+   - Am I creating unnecessary duplicates or dependencies?
      
-   - Quickly test to make sure it is returning data that “makes sense”.
+ * Quickly test to make sure it is returning data that “makes sense”.
 
- * Assign the most recent data you are working with in your script to the OUT identifier so that the node is always outputting relevant data when the script updates.
+* Assign the most recent data you are working with in your script to the OUT identifier so that the node is always outputting relevant data when the script updates:
  
-   - Keep an eye on geometry using the Watch3D node.
+ * Keep an eye on geometry using the Watch3D node.
    
-   - Keep an eye on string messages using the Watch Node 
+ * Keep an eye on string messages using the Watch Node.
 
-* Anticipate “edge cases”.
+**Anticipate “edge cases”:**
 
- * While scripting, crank your input parameters to the minimum and maximum values of their allotted domain to check if the program still functions under extreme conditions.
+* While scripting, crank your input parameters to the minimum and maximum values of their allotted domain to check if the program still functions under extreme conditions.
  
- * Sometimes bugs and errors that reveal some underlying problem with your script will only surface during these edge cases.
+* Sometimes bugs and errors that reveal some underlying problem with your script will only surface during these edge cases.
  
-   - Understand what is causing the error and then decide if it needs to be fixed internally or if a parameter domain needs to be redefined to avoid the problem.
+ * Understand what is causing the error and then decide if it needs to be fixed internally or if a parameter domain needs to be redefined to avoid the problem.
    
 >Tip: Always assume the that the user will use every combination of every input value that has been exposed to him/her. This will help eliminate unwanted surprises.
 
-### Debug Efficiently
+#### Debug Efficiently
 
-* Use watch bubble.
+**Use watch bubble:**
 
-* Meaningful commenting.
+**Meaningful commenting:**
 ```
-    # Assign your output to the OUT variable.
-    OUT = cubes
+# Assign your output to the OUT variable.
+OUT = cubes
 ```
 
-* Leverage modular framework.
+**Leverage modular framework:**
 
- * Once the faulty module has been identified, fixing the problem is considerably simpler.
+* Once the faulty module has been identified, fixing the problem is considerably simpler.
 
- * When a program must be modified, modular programming simplifies the job.
+* When a program must be modified, modular programming simplifies the job:
 
-   - You can link new or debugged modules to an existing program with the confidence that the rest of the program will not change.
+ * You can link new or debugged modules to an existing program with the confidence that the rest of the program will not change.
