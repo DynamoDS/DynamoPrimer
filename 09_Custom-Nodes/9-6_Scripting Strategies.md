@@ -129,7 +129,7 @@ CODE EXAMPLE
 #### Style Consistently
 Generally speaking there is more than one way to program just about anything, therefore your “personal style” of scripting is the result of the countless small decisions you choose to make (or not make) along the way. That said, the readability and maintainability of your code is a direct result of its internal consistency as well as its adherence to general stylistic conventions. As a rule of thumb, code that looks the same in two places should work the same, too. Here are a few tips for writing clear and consistent code.
 
-**Naming conventions:** (Choose one of the conventions below for each type of entity in your code and stick to it!)
+Naming conventions: (Choose one of the conventions below for each type of entity in your code and stick to it!)
 
 * Variables, functions, methods, packages, modules:
 `lower_case_with_underscores`
@@ -148,7 +148,7 @@ Generally speaking there is more than one way to program just about anything, th
 
 > Tip: Avoid one-letter variables (esp. l, O, I) except in very short blocks, when the meaning is clearly visible from the immediate context.
  
-**Use of blank lines:**
+Use of blank lines:
 
 * Surround top-level function and class definitions with two blank lines.
  
@@ -156,7 +156,7 @@ Generally speaking there is more than one way to program just about anything, th
  
  * Extra blank lines may be used (sparingly) to separate groups of related functions.
  
-**Avoid extraneous whitespace:**
+Avoid extraneous whitespace:
 
 * Immediately inside parentheses, brackets or braces:
 
