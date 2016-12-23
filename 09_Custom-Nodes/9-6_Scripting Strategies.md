@@ -83,12 +83,12 @@ tire = car.Tire()
 **Use positive logic for your variable names instead of negative logic:**
 
 ```
-    ### BAD
-    if 'mystring' not in s:
-        print 'not found'
-    else:
-        print 'foundit'
-        print 'processing'
+### BAD
+if 'mystring' not in s:
+    print 'not found'
+else:
+    print 'foundit'
+    print 'processing'
 ```
 ```
     ### GOOD
