@@ -91,12 +91,12 @@ else:
     print 'processing'
 ```
 ```
-    ### GOOD
-    if 'mystring' in s
-        print 'foundit'
-        print 'processing'
-    else:
-        print 'not found'
+### GOOD
+if 'mystring' in s
+    print 'foundit'
+    print 'processing'
+else:
+    print 'not found'
 ```
 
 **Prefer “reverse notation”:** 
