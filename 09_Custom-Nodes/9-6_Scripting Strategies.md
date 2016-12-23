@@ -304,6 +304,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 * Functions:
     ```python
+    # EXAMPLE FUNCTION
     def get_step_size():
         area = surfIn.Area
         stepSize = math.sqrt(area)/100
@@ -314,6 +315,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 * Classes:
     ```python
+    #EXAMPLE CLASS
     class MyClass:
         i = 12345
 
