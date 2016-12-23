@@ -289,8 +289,15 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 **General forms:**
 
 * Code Grouping:
-    ```
-    CODE EXAMPLE
+    ```python
+    # IMPORT LIBRARIES
+    import random
+    import math
+    import clr
+    
+    # DEFINE PARAMETER INPUTS
+    surfIn = IN[0]
+    maxSteps = IN[1]
     ```
 
 * Functions:
