@@ -84,16 +84,16 @@ tire = car.Tire()
 
 ```
 ### BAD
-if 'mystring' not in s:
+if 'mystring' not in text:
     print 'not found'
 else:
-    print 'foundit'
+    print 'found'
     print 'processing'
 ```
 ```
 ### GOOD
-if 'mystring' in s:
-    print 'foundit'
+if 'mystring' in text:
+    print 'found'
     print 'processing'
 else:
     print 'not found'
