@@ -294,6 +294,8 @@ As your code gets longer and more complex the “big idea”, or overarching alg
     import random
     import math
     import clr
+    clr.AddReference('ProtoGeometry')
+    from Autodesk.DesignScript.Geometry import *
     
     # DEFINE PARAMETER INPUTS
     surfIn = IN[0]
