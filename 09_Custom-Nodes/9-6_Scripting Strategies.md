@@ -239,7 +239,7 @@ Generally speaking there is more than one way to program just about anything, th
      # display the form input for state
     print form_input_state()
     ```
-    ```
+    ```python
     ### Good:
     # display state selection for US users
     country_code = get_country_code(address)
@@ -315,7 +315,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 * Classes:
     ```python
-    #EXAMPLE CLASS
+    # EXAMPLE CLASS
     class MyClass:
         i = 12345
 
