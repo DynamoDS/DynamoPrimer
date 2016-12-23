@@ -52,13 +52,13 @@ This part of the guide is organized in the spirit of a journal of “best practi
 While scripting, we are constantly using identifiers to denote things like variables, types, functions, and other entities. Through this system of symbolic notation, while building algorithms we can conveniently refer to information by way of labels --usually made up of a sequence of characters. Naming things well plays a significant role in writing code that can be easily read and understood by others as well as your future self! Here are some tips to keep in mind while naming things in your script:
 
 **It´s OK to use abbreviations, but explain the abbreviation with a comment:**
-```python
+```
 ### BAD
 csfX = 1.6
 csfY= 1.3
- csfZ = 1.0
+csfZ = 1.0
 ```
-```python
+```
 ### GOOD
 # column scale factor (csf)
 csfX = 1.6
@@ -67,13 +67,13 @@ csfZ = 1.0
 ```
 
 **Avoid redundant labeling:**
-```python
+```
 ### BAD
 import car
 seat = car.CarSeat()
 tire = car.CarTire()
 ```
-```python
+```
 ### GOOD
 import car
 seat = car.Seat()
@@ -81,23 +81,23 @@ tire = car.Tire()
 ```
 
 **Use positive logic for your variable names instead of negative logic:**
-```python
+```
 ### BAD
 CODE EXAMPLE
 ```
-```python
+```
 ### GOOD
 CODE EXAMPLE
 ```
 
 **Prefer “reverse notation”:** 
-```python
+```
 ### BAD
 agents = …
 active_agents = …
 dead_agents ...
 ```
-```python
+```
 ### GOOD
 agents = …
 agents_active = …
@@ -106,21 +106,21 @@ agents_dead = ...
 > It’s more sensible, in structural terms.
 
 **Aliases should be used to shorten overly long and often repeated chains:**
-```python
+```
 ### BAD
 CODE EXAMPLE
 ```
-```python
+```
 ### GOOD
 CODE EXAMPLE
 ```
 
 **Only use necessary words:**
-```python
+```
 ### BAD
 CODE EXAMPLE
 ```
-```python
+```
 ### GOOD
 CODE EXAMPLE
 ```
@@ -160,51 +160,51 @@ Generally speaking there is more than one way to program just about anything, th
 
 * Immediately inside parentheses, brackets or braces:
 
-    ```python
+    ```
     ### BAD
     function( apples[ 1 ], { oranges: 2 } )
     ```
-    ```python
+    ```
     ### GOOD:
     function(apples[1], {oranges: 2})
     ```
  
 * Immediately before a comma, semicolon, or colon:
 
-    ```python
+    ```
     ### BAD
      if x == 2 : print x , y ; x , y = y , x
     ```
-    ```python
+    ```
     ### GOOD
     if x == 2: print x, y; x, y = y, x
     ```
  
 * Immediately before the open parenthesis that starts the argument list of a function call:
 
-    ```python
+    ```
     ### BAD
     function (1)
     ```
-    ```python
+    ```
     ### GOOD
     function(1)
     ```
  
 * Immediately before the open parenthesis that starts an indexing or slicing:
 
-    ```python
+    ```
     ### BAD
     dict ['key'] = list [index]
     ```
-    ```python
+    ```
     ### GOOD
     dict['key'] = list[index]
     ```
  
 * Always surround these binary operators with a single space on either side:
 
-    ```python
+    ```
     assignment ( = )
     augmented assignment ( += , -= etc.)
     comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
@@ -219,7 +219,7 @@ Generally speaking there is more than one way to program just about anything, th
 
 * Long lines can be broken over multiple lines by wrapping expressions in parentheses:
 
-    ```python
+    ```
     CODE EXAMPLE
     ```
 
@@ -229,7 +229,7 @@ Generally speaking there is more than one way to program just about anything, th
 
 * Adopting good coding habits reduces dependence on comments:
 
-    ```python
+    ```
     ### BAD
     # get the country code
     country_code = get_country_code(address)
@@ -239,7 +239,7 @@ Generally speaking there is more than one way to program just about anything, th
      # display the form input for state
     print form_input_state()
     ```
-    ```python
+    ```
     ### GOOD
     # display state selection for US users
     country_code = get_country_code(address)
