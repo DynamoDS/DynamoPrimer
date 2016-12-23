@@ -92,7 +92,7 @@ else:
 ```
 ```
 ### GOOD
-if 'mystring' in s
+if 'mystring' in s:
     print 'foundit'
     print 'processing'
 else:
