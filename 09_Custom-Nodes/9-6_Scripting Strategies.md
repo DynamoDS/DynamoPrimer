@@ -304,8 +304,15 @@ As your code gets longer and more complex the “big idea”, or overarching alg
     ```
 
 * Classes:
-    ```
-    CODE EXAMPLE
+    ```python
+    class MyClass:
+        i = 12345
+
+        def f(self):
+            return 'hello world'
+    
+    numbers = MyClass.i
+    greeting = MyClass.f
     ```
 
 ### Think Parametrically
@@ -348,7 +355,7 @@ When faced with a design problem, you can promptly find a static solution via Di
 
 ### Flex Continuously
 
-While developing scripts in Dynamo, it is wise to constantly make sure that what is actually being created is in line with what you are expecting. This will ensure that unforeseen events-- syntax errors, logical discrepancies, value inaccuracies, anomalous outputs etc.-- are quickly discovered and dealt with as they surface rather than all at once at the end. Because Dynamo scripts live inside nodes on the canvas, they are already integrated into the dataflow of your visual program. This makes the successive monitoring of your script as simple as assigning data to be outputted, running the program, and evaluating what flows out of the Script Node using a Watch Node. Here are some tips for continuously inspecting your scripts as you construct them:
+While developing scripts in Dynamo, it is wise to constantly make sure that what is actually being created is in line with what you are expecting. This will ensure that unforeseen events-- syntax errors, logical discrepancies, value inaccuracies, anomalous outputs etc.-- are quickly discovered and dealt with as they surface rather than all at once at the end. Because Dynamo scripts live inside nodes on the canvas, they are already integrated into the dataflow of your visual program. This makes the successive monitoring of your script as simple as assigning data to be outputted, running the program, and evaluating what flows out of the Script Node using a Watch Node. Here are some tips for continuously inspecting your scripts as you construct them.
 
 **Test as you go:**
 
