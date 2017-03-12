@@ -35,6 +35,11 @@
 			"url": "http://staging.dynamoprimer.com/de"
 				 },
 				 {
+		"label": "中國台灣",
+		"code":"zh-tw",
+			"url": "http://dynamoprimer.com/zh-tw"
+				 },
+				 {
 		"label": "",
 		"code": "",
 			"url": ""
