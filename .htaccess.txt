@@ -3,6 +3,7 @@
 RewriteEngine on
 RewriteRule ^(ja) - [L]
 RewriteRule ^(de) - [L]
+RewriteRule ^(zh-tw) - [L]
 RewriteRule ^(.*)$ /en/$1 [R=301,NC,L]
 
 # Put the following under DocumentRoot/en/.htaccess to prevent redirect forever
