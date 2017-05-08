@@ -60,7 +60,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><a href="https://github.com/MostafaElAyoubi/Data-shapes">Visit Data|Shapes on GitHub</td></a>
   </tr>
   <tr>
-    <td colspan="2"> DataShapes is a package that aims to extend the user functionality of Dynamo scripts. This has a heavy focus on adding greater functionality to Dynamo player. For more infor visit https://data-shapes.net/</td>
+    <td colspan="2"> DataShapes is a package that aims to extend the user functionality of Dynamo scripts. This has a heavy focus on adding greater functionality to Dynamo player. For more infor visit https://data-shapes.net/. Want to create awesome Dynamo player workflows? Use this package.</td>
     <td><img src="images/A-4/DataShapes_Image.png"></img></td>
   </tr>
 </table>
