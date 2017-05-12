@@ -6,14 +6,14 @@ Dynamo is an active open-source development project with downloadable installers
 
 To download the official released version of Dynamo, visit the [Dynamo website](http://dynamobim.com/). Start the download immediately by clicking from the homepage or browse to the dedicated download page.
 
-![website homepage](images/2-1/01-DynamoHomepage.png)
+![website homepage](images/2-1/01-DynamoHomepage.jpg)
 
 > 1. Watch a video on Computational Design with Dynamo for Architecture
 > 2. Or browse to the download page
 
 Here you can download the "bleeding edge" development versions or go to the [Dynamo Github](https://github.com/DynamoDS/Dynamo) project.
 
-![website downloads page](images/2-1/02-DynamoDownload.png)
+![website downloads page](images/2-1/02-DynamoDownload.jpg)
 
 > 1. Download the official release installer
 > 2. Download the daily build installers
@@ -23,7 +23,7 @@ Here you can download the "bleeding edge" development versions or go to the [Dyn
 
 Browse to the directory of the downloaded installer and run the executable file. During the installation process, the setup allows you to customize the components that will be installed.
 
-![Setup Window](images/2-1/03-InstallSetup.png)
+![Setup Window](images/2-1/03-InstallSetup.jpg)
 
 > 1. Select the Components you want to install
 
@@ -33,7 +33,7 @@ Here we need to decide if we want to include the components that connect Dynamo 
 
 To launch Dynamo, browse to the Windows Start Menu > Dynamo > **Dynamo**. This will open the stand-alone version and present Dynamo's _Start Page_. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources.
 
-![NEEDS UPDATE - labels Dynamo start page](images/2-1/04-DynamoStartpage.png)
+![NEEDS UPDATE - labels Dynamo start page](images/2-1/04-DynamoStartpage.jpg)
 
 > 1. Files - Start a new file or open an existing one
 > 2. Recent - Scroll through your recent files
@@ -44,7 +44,7 @@ To launch Dynamo, browse to the Windows Start Menu > Dynamo > **Dynamo**. This w
 
 Open the first sample file to open your first workspace and confirm Dynamo is working correctly. Click Samples > Basics > **Basics\_Basic01.dyn**.
 
-![NEEDS UPDATE - Basics_Basic01](images/2-1/05-Basics_Basic01.png)
+![NEEDS UPDATE - Basics_Basic01](images/2-1/05-Basics_Basic01.jpg)
 
 > 1. Confirm that the Execution Bar says "Automatic" or click Run
 > 2. Follow the instructions and connect the **Number** Node to the **+** Node

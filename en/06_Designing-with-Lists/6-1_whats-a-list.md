@@ -17,7 +17,7 @@ the item that corresponds to index 0.
 For example, if you were to count the number of fingers we have on our right
 hand, chances are that you would have counted from 1 to 5. However, if you were to put your fingers in a list, Dynamo would have given them indices from 0 to 4.  While this may seem a little strange to programming beginners, the zero-based index is standard practice in most computation systems.
 
-![items](images/6-1/items.png)
+![items](images/6-1/items.jpg)
 
 Note that we still have 5 items in the list; it’s just that the list is using a zero-based
 counting system. And the items being stored in the list don’t just have to be
@@ -32,7 +32,7 @@ These indices are a crucial element when working with lists.
 ### Inputs and Outputs
 Pertaining to lists, inputs and outputs vary depending on the Dynamo node being used.  As an example, let's use a list of 5 points and connect this output to two different Dynamo nodes: *PolyCurve.ByPoints* and *Circle.ByCenterPointRadius*:
 
-![Input Examples](images/6-2/PolyCurve.Inputs.png)
+![Input Examples](images/6-2/PolyCurve.Inputs.jpg)
 > 1. The *points* input for *PolyCurve.ByPoints* is looking for *"Point[]"*.  This represents a list of points.
 2. The output for *PolyCurve.ByPoints* is a single PolyCurve created from a list of five points.
 3. The *centerPoint* input for *Circle.ByCenterPointRadius* asks for *"Point"*.
@@ -62,31 +62,31 @@ As you can see there are different ways in which we can draw lines between these
 
 To demonstrate the lacing operations below, we'll use this base file to define shortest list, longest list, and cross product.
 
-![Input Examples](images/6-1/lacing.png)
+![Input Examples](images/6-1/lacing.jpg)
  > 1. We'll change the lacing on *Point.ByCoordinates*, but won't change anything else about the graph above.
 
 ####Shortest List
 The simplest way is to connect the inputs one-on-one until one of the streams runs dry. This is called the “Shortest List” algorithm. This is the default behavior for Dynamo nodes:
 
-![Input Examples](images/6-1/shortestListDiagram.png)
+![Input Examples](images/6-1/shortestListDiagram.jpg)
 
-![Input Examples](images/6-1/shortestList.png)
+![Input Examples](images/6-1/shortestList.jpg)
 > By changing the lacing to *shortest list*, we get a basic diagonal line composed of five points. Five points is the length of the lesser list, so the shortest list lacing stops after it reaches the end of one list.
 
 ####Longest List
 The “Longest List” algorithm keeps connecting inputs, reusing elements, until all streams run dry:
 
-![Input Examples](images/6-1/longestListDiagram.png)
+![Input Examples](images/6-1/longestListDiagram.jpg)
 
-![Input Examples](images/6-1/longestList.png)
+![Input Examples](images/6-1/longestList.jpg)
 > By changing the lacing to *longest list*, we get a diagonal line which extends vertically.  By the same method as the concept diagram, the last item in the list of 5 items will be repeated to reach the length of the longer list.
 
 ####Cross Product
 Finally, the “Cross Product” method makes all possible connections:
 
-![Input Examples](images/6-1/crossProductDiagram.png)
+![Input Examples](images/6-1/crossProductDiagram.jpg)
 
-![Input Examples](images/6-1/crossProduct.png)
+![Input Examples](images/6-1/crossProduct.jpg)
 > By changing the lacing to *Cross Product*, we get every combination between each list, giving us a 5x10 grid of points.  This is an equivalent data structure to the cross product as shown in the concept diagram above, except our data is now a list of lists.  By connecting a polycurve, we can see that each list is defined by its X-Value, giving us a row of vertical lines.
 
 

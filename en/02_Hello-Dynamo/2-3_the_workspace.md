@@ -4,7 +4,7 @@ The Dynamo **Workspace** is where we develop our visual programs, but it's also 
 
 > Note: Nodes and geometry have a draw order so you may have objects rendered on top of each other. This can be confusing when adding multiple nodes in sequence as they may be rendered in the same position in the Workspace.
 
-![Workspace Regions](images/2-3/01-WorkspaceRegions.png)
+![Workspace Regions](images/2-3/01-WorkspaceRegions.jpg)
 
 >1. Tabs
 2. Zoom/Pan Buttons
@@ -14,14 +14,14 @@ The Dynamo **Workspace** is where we develop our visual programs, but it's also 
 ###Tabs
 The active Workspace tab allows you to navigate and edit your program. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the *New Node by Selection* right click option when Nodes are selected (more eon this functionality later).
 
-![Tabs](images/2-3/02-Tabs.png)
+![Tabs](images/2-3/02-Tabs.jpg)
 
 > Note: You may have only one Home Workspace open at a time; however, you may have multiple Custom Node Workspaces open in additional tabs.
 
 ###Graph versus 3D Preview Navigation
 In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometry) are both rendered in the Workspace. By default the Graph is the active preview, so using the Navigation buttons or middle mouse button to pan and zoom will move us through the Graph. Toggling between active previews can be achieved three ways:
 
-![Navigation](images/2-3/03-PreviewNavigations.png)
+![Navigation](images/2-3/03-PreviewNavigations.jpg)
 
 > 1. Preview Toggle Buttons in the Workspace
 2. Right clicking in the Workspace and selecting *Switch to ... View*
@@ -44,7 +44,7 @@ The 3D Preview Navigation mode also gives us the ability for **Direct Manipulati
 
 Based on which Preview mode is active, your mouse buttons will act differently. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking.
 
-![Hello Mouse](images/2-3/04-HelloMouse.png)
+![Hello Mouse](images/2-3/04-HelloMouse.jpg)
 
 >1. Right Click on the Workspace.
 2. Right Click on a Node.
@@ -64,7 +64,7 @@ Double Click | Create Code Block | N/A
 
 Using the "In-Canvas Search" will add some serious speed to your Dynamo work-flow by providing you access to node descriptions and tool-tips without taking you away from your place on the graph! By just right-clicking, you can access all the useful functionality of the "Library Search" from wherever you happen to be working on the canvas.
 
-![In Canvas Search](images/2-3/05-InCanvasSearch.png)
+![In Canvas Search](images/2-3/05-InCanvasSearch.jpg)
 
 >1. Right click anywhere on the canvas to bring up the search feature. While the search bar is empty, the drop-down will be a preview menu.
 2. As you type into the search bar, the drop-down menu will continuously update to show the most relevant search results.
@@ -73,10 +73,10 @@ Using the "In-Canvas Search" will add some serious speed to your Dynamo work-flo
 ##Clean Up Node Layout
 Keeping your Dynamo canvas organized becomes increasingly important as your files build in complexity. Although we have the **Align Selection** tool to work with small amounts of selected Nodes, Dynamo also features the **Cleanup Node Layout** tool to help with overall file cleanup. 
 ####Before Node Cleanup
-![Cleanup Node Layout](images/2-3/06-CleanupNodeLayout.png)
+![Cleanup Node Layout](images/2-3/06-CleanupNodeLayout.jpg)
 >1.	Select the Nodes to be automatically organized, or leave all unselected to clean up all nodes in the file. 
 2.	The Cleanup Node Layout feature is located under the Edit tab.
 ####After Node Cleanup 
-![Clean Layout Example](images/2-3/07-CleanupNodeLayout.png)
+![Clean Layout Example](images/2-3/07-CleanupNodeLayout.jpg)
 >1.	The nodes will be automatically re-distributed and aligned, cleaning up any staggered or overlapping nodes and aligning them with neighboring nodes.
 

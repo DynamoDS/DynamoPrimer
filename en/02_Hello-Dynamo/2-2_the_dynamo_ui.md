@@ -2,7 +2,7 @@
 
 The User Interface (UI) for Dynamo is organized into five main regions, the largest of which is the workspace where we compose our visual programs.
 
-![User Interface Regions](images/2-2/01-UI-Regions.png)
+![User Interface Regions](images/2-2/01-UI-Regions.jpg)
 
 >1. Menus
 2. Toolbar
@@ -16,7 +16,7 @@ Let's dive deeper into the UI and explore the functionality of each region.
 
 The Dropdown Menus are a great place to find some of the basic functionality of the Dynamo application. Like most Windows software, actions related to managing files and operations for selection and content editing are found in the first two menus. The remaining menus are more specific to Dynamo.
 
-![Dropdown Menus](images/2-2/02-Menus.png)
+![Dropdown Menus](images/2-2/02-Menus.jpg)
 > 1. File
 2. Edit
 3. View
@@ -28,7 +28,7 @@ The Dropdown Menus are a great place to find some of the basic functionality of 
 
 Dynamo's Toolbar contains a series of buttons for quick access to working with files as well as Undo [Ctrl + Z] and Redo [Ctrl + Y] commands. On the far right is another button that will export a snapshot of the workspace, which is extremely useful for documentation and sharing.
 
-![Needs Update-split location Toolbar](images/2-2/03-Toolbar.png)
+![Needs Update-split location Toolbar](images/2-2/03-Toolbar.jpg)
 
 > 1. New - Create a new .dyn file
 2. Open - Open an existing .dyn (workspace) or .dyf (custom node) file
@@ -45,7 +45,7 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 
 > We will focus on the default collection of Nodes now, but note that we will extend this Library with Custom Nodes, additional libraries, and the Package Manager later.
 
-![NEEDS UPDATE-full width - Library Categories](images/2-2/04-LibraryCategories.png)
+![NEEDS UPDATE-full width - Library Categories](images/2-2/04-LibraryCategories.jpg)
 >1. Analyze
 2. Built-in Functions
 3. Core
@@ -56,7 +56,7 @@ By default, the **Library** will contain eight categories of Nodes. **Core** and
 
 Browse the Library by clicking through the menus. Click the Geometry > Circle. Note the new portion of the menu that is revealed and specifically the **Create** and **Query** Labels.
 
-![NEEDS UPDATE-use full width - Browsing the Library](images/2-2/05-LibraryBrowsing.png)
+![NEEDS UPDATE-use full width - Browsing the Library](images/2-2/05-LibraryBrowsing.jpg)
 >1. Library
 2. Category
 3. Subcategory: Create/Actions/Query
@@ -65,7 +65,7 @@ Browse the Library by clicking through the menus. Click the Geometry > Circle. N
 
 From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The window reveals more detailed information about the Node beyond its name and icon. This offers us a quick way to understand what the Node does, what it will require for inputs, and what it will give as an output.
 
-![Node Pop Up Window](images/2-2/06-NodePopup.png)
+![Node Pop Up Window](images/2-2/06-NodePopup.jpg)
 >1. Description - plain language description of the Node
 2. Icon - larger version of the icon in the Library Menu
 3. Input(s) - name,  data type, and data structure
@@ -74,7 +74,7 @@ From the same Circle menu, hover your mouse over **ByCenterPointRadius**. The wi
 #####Searching
 If you know with relative specificity which Node you want to add to your Workspace, the **Search** field is your best friend. When you are not editing settings or specifying values in the Workspace, the cursor is always present in this field. If you start typing, the Dynamo Library will reveal a selected best fit match (with breadcrumbs for where it can be found in the Node categories) and a list of alternate matches to the search. When you hit Enter, or click on the item in the truncated browser, the highlighted Node is added to the center of the Workspace.
 
-![Searching the Library](images/2-2/07-LibrarySearching.png)
+![Searching the Library](images/2-2/07-LibrarySearching.jpg)
 >1. Search Field
 2. Best Fit Result / Selected
 3. Alternate Matches
@@ -84,7 +84,7 @@ From geometric to user settings, these options can be found in the **Settings** 
 
 > Note: Remember that Dynamo's units are generic.
 
-![show menu](images/2-2/08-Settings.png)
+![show menu](images/2-2/08-Settings.jpg)
 
 >1. Enabling Reporting - Options for sharing user data to improve Dynamo.
 2. Number Format Options - Change the document settings for decimals.
@@ -97,7 +97,7 @@ From geometric to user settings, these options can be found in the **Settings** 
 ###Help
 If you're stuck, check out the **Help** Menu. Here you can find the sample files that come with your installation as well as access one of the Dynamo reference websites through your internet browser. If you need to, check the version of Dynamo installed and whether it is up to date through the **About** option.
 
-![show menu](images/2-2/09-Help.png)
+![show menu](images/2-2/09-Help.jpg)
 
 >1. Getting Started - A brief introduction to using Dynamo.
 2. Samples - Reference example files.

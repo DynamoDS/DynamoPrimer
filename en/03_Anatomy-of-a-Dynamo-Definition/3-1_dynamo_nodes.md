@@ -4,7 +4,7 @@ In Dynamo, **Nodes** are the objects you connect to form a Visual Program. Each 
 
 ###Anatomy of a Node
 Most Nodes in Dynamo are composed of five parts. While there are exceptions, such as Input Nodes, the anatomy of each Node can be described as follows:
-![Node Breakdown Point by Coordinates](images/3-1/00-AnatomyOfANode.png)
+![Node Breakdown Point by Coordinates](images/3-1/00-AnatomyOfANode.jpg)
 >1. Name - The Name of the Node with a Category.Name naming convention
 2. Main - The main body of the Node - Right-clicking here presents options at the level of the whole Node
 3. Ports (In and Out) - The receptors for Wires that supply the input data to the Node as well as the results of the Node's action
@@ -16,7 +16,7 @@ The Inputs and Outputs for Nodes are called Ports and act as the receptors for W
 
 > Tip: Hover over a Port to see a tooltip containing the data type expected.
 
-![Port Labels-Point by Coordinates](images/3-1/01-Ports.png)
+![Port Labels-Point by Coordinates](images/3-1/01-Ports.jpg)
 >1. Port Label
 2. Tool Tip
 3. Data Type
@@ -25,7 +25,7 @@ The Inputs and Outputs for Nodes are called Ports and act as the receptors for W
 ###States
 Dynamo gives an indication of the state of the execution of your Visual Program by rendering Nodes with different color schemes based on each Node's status. Furthermore, hovering or right-clicking over the Name or Ports presents additional information and options.
 
-![States](images/3-1/02-States2.png)
+![States](images/3-1/02-States2.jpg)
 
 >1. Active - Nodes with a Dark Grey Name background are well-connected and have all of their inputs successfully connected
 2. Inactive - Grey Nodes are inactive and need to be connected with Wires to be part of the Program Flow in the active Workspace
@@ -39,7 +39,7 @@ If your Visual Program contains warning or errors, Dynamo will provide additiona
 
 > Tip: With this tooltip information in hand, examine the upstream Nodes to see if the data type or data structure required is in error.
 
-![Node Errors Tooltip](images/3-1/03-WarningTooltip.png)
+![Node Errors Tooltip](images/3-1/03-WarningTooltip.jpg)
 
 > 1. Warning Tooltip - "Null" or no data cannot be understood as a Double ie. a number
 2. Use the Watch Node to examine the input data

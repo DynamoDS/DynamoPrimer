@@ -4,13 +4,13 @@
 **String - ** Formally, a String is a sequence of characters representing a literal constant or some type of variable. Informally, a string is programming lingo for text.  We've worked with numbers, both integers and decimal numbers, to drive parameters and we can do the same with text.
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
-| ![](../images/icons/Dynamo-Nodes-StringInput-Large.png) | String | String | Text Box | string |
+| ![](../images/icons/Dynamo-Nodes-StringInput-Large.jpg) | String | String | Text Box | string |
 
 
 Strings can be used for a wide range of applications, including defining custom parameters, annotating documentation sets, and parsing through text-based data sets. The string Node is located in the Core>Input Category.
 
 
-![String Examples](images/4-4/4-4-1-005.png)
+![String Examples](images/4-4/4-4-1-005.jpg)
 > The sample batteries above are strings.  A number can be represented as a string, as can a letter, or an entire array of text.
 
 ### Querying Strings
@@ -20,14 +20,14 @@ You can parse through large amounts of data quickly by querying strings.  We'll 
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
-| ![](../images/icons/DSCore-String-Split-Large.png) | String Split | String.Split | str, separator(s) | string[] |
+| ![](../images/icons/DSCore-String-Split-Large.jpg) | String Split | String.Split | str, separator(s) | string[] |
 
 The image below considers a string of data coming from an external spreadsheet.  The string represents the vertices of a rectangle in the XY-Plane.  Let's break down some string split operations in miniature exercise:
 
-![StringSplit](images/4-4/4-4-1-001.png)
+![StringSplit](images/4-4/4-4-1-001.jpg)
 > 1. The ";" separator splits each vertex of the rectangle. This creates a list with 4 items for each vertex.
 
-![StringSplit](images/4-4/4-4-1-003.png)
+![StringSplit](images/4-4/4-4-1-003.jpg)
 > 1. By hitting the "*+*" in the middle of the node, we create new separator.
 2. Add a "*,*" string to the canvas and plug in to the new separator input.
 3. Our result is now a list of ten items. The node first splits based on *separator0*, then based on *separator1*.
@@ -36,12 +36,12 @@ The image below considers a string of data coming from an external spreadsheet. 
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
-| ![](../images/icons/DSCore-String-ToNumber-Large.png) | String To Number | String.ToNumber | str | str[]...[] |
+| ![](../images/icons/DSCore-String-ToNumber-Large.jpg) | String To Number | String.ToNumber | str | str[]...[] |
 
-![StringSplit](images/4-4/4-4-1-002.png)
+![StringSplit](images/4-4/4-4-1-002.jpg)
 > 1. This node is straightforward.  Plug the String.Split results into the input.  The output doesn't look different, but the data type is now a *number* instead of a *string*.
 
-![StringToNumber](images/4-4/4-4-1-004.png)
+![StringToNumber](images/4-4/4-4-1-004.jpg)
 > 1. With some basic additional operations, we now have a rectangle drawn at the origin based on the original string input.
 
 ### Manipulating Strings
@@ -52,9 +52,9 @@ Since a string is a generic text object, they host a wide range of applications.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
-| ![](../images/icons/DSCore-String-Concat-Large.png) | Concatenate | String.Concat | string(s) | string |
+| ![](../images/icons/DSCore-String-Concat-Large.jpg) | Concatenate | String.Concat | string(s) | string |
 
-![Concatenate](images/4-4/4-4-1-007.png)
+![Concatenate](images/4-4/4-4-1-007.jpg)
 > The image above represents the concatenation of three strings:
 1. Add or subtract strings to the concatenation by clicking the +/- buttons int he center of the node.
 2. The output gives one concatenated string, with spaces and punctuation included.
@@ -63,9 +63,9 @@ Since a string is a generic text object, they host a wide range of applications.
 
 | Icon | Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- |-- |
-| ![](../images/icons/DSCore-String-Join-Large.png) | String Join | String.Join | separator, string (s) | string |
+| ![](../images/icons/DSCore-String-Join-Large.jpg) | String Join | String.Join | separator, string (s) | string |
 
 If you've worked in Excel, you may have come across a CSV file.  This stands for comma-separated values.  One could use a comma (or in this case, two dashes) as the separator with the join node in order to create a similar data structure:
-![Concatenate](images/4-4/4-4-1-006.png)
+![Concatenate](images/4-4/4-4-1-006.jpg)
 > The image above represents the joining of two strings:
 1. The separator input allows one to create a string which divides the joined strings.

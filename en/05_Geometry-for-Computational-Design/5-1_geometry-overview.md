@@ -4,7 +4,7 @@
 ### The Basics
 Geometry, traditionally defined, is the study of shape, size, relative position of figures, and the properties of space. This field has a rich history going back thousands of years. With the advent and popularization of the computer, we gained a powerful tool in defining, exploring, and generating geometry. It is now so easy to calculate the result of complex geometric interactions, the fact that we are doing so is almost transparent.
 
-![Stanford Bunny](images/5-1/StanfordBunny.png)
+![Stanford Bunny](images/5-1/StanfordBunny.jpg)
 > If you're curious to see how diverse and complex geometry can get using the power of your computer, do a quick web search for the Stanford Bunny - a canonical model used to test algorithms.
 
 Understanding geometry in the context of algorithms, computing, and complexity, may sound daunting; however, there are a few key, and relatively simple, principles that we can establish as fundamentals to start building towards more advanced applications:
@@ -19,7 +19,7 @@ In practice, these principles mean that we need to be aware of what we are worki
 ### Stepping through the Hierarchy
 Let's take a moment to look at the relationship between the Abstract and Hierarchical descriptions of Geometry. Because these two concepts are related, but not always obvious at first, we can quickly arrive at a conceptual roadblock once we start developing deeper workflows or models. For starters, let's use dimensionality as an easy descriptor of the "stuff" we model. The number of dimensions required to describe a shape gives us a window into how Geometry is organized hierarchically.
 
-![Computational Geometry](images/5-1/GeometryDimensionality.png)
+![Computational Geometry](images/5-1/GeometryDimensionality.jpg)
 > 1. A **Point** (defined by coordinates) doesn't have any dimensions to it - it's just numbers describing each coordinate
 2. A **Line** (defined by two points) now has *one* dimension - we can "walk" the line either forward (positive direction) or backward (negative direction)
 3. A **Plane** (defined by two lines) has *two* dimensions - walking more left or more right is now possible
@@ -33,12 +33,12 @@ Dimensionality is a convenient way to start categorizing Geometry but it's not n
 
 So what does this mean for using Dynamo? Understanding the Geometry types and how they are related will allow us to navigate the collection of **Geometry Nodes** available to us in the Library. The Geometry Nodes are organized alphabetically as opposed to hierarchically - here they are displayed similar to their layout in the Dynamo interface.
 
-![Geometry in Dynamo](images/5-1/GeometryOrganization2.png)
+![Geometry in Dynamo](images/5-1/GeometryOrganization2.jpg)
 
 Additionally, making models in Dynamo and connecting the preview of what we see in the Background Preview to the flow of data in our graph should become more intuitive over time.
 
 
-![Geometry in Dynamo](images/5-1/GeometryInDynamo.png)
+![Geometry in Dynamo](images/5-1/GeometryInDynamo.jpg)
 > 1. Note the assumed coordinate system rendered by the grid and colored axes
 3. Selected Nodes will render the corresponding geometry (if the Node creates geometry) in the background the highlight color
 
