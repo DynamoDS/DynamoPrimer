@@ -2,6 +2,7 @@
 	"gitbook": "2.6.x",
 	"plugins": [
 		"-sharing",
+		"popup",
 		"ga",
 		{
 			"name": "dynamo",

@@ -21,22 +21,22 @@ There are a wide variety of ways to build custom nodes in Dynamo. In the example
 ### Custom Node Environment
 Let's jump into the custom node environment and make a simple node to calculate a percentage.  The custom node environment is different from the Dynamo graph environment, but the interaction is fundamentally the same. With that said, let's create our first custom node!
 
-![Custom Nodes Intro](images/9-1/CustomNodes01.png)
+![Custom Nodes Intro](images/9-1/CustomNodes01.jpg)
 
 > To create a Custom Node from scratch, Launch Dynamo and select Custom Node, or type Ctrl + Shift + N from the canvas.
 
-![Custom Nodes Dialog](images/9-1/CustomNodes02.png)
+![Custom Nodes Dialog](images/9-1/CustomNodes02.jpg)
 
 > Assign a name, description, and category in the Custom Node Properties dialog.
 1. **Name:** Percentage
 2. **Description**: Calculate the percentage of one value in relation to another.
 3. **Category:** Core.Math
 
-![Custom Nodes Canvas](images/9-1/CustomNodes03.png)
+![Custom Nodes Canvas](images/9-1/CustomNodes03.jpg)
 
 > This will open a canvas with a yellow background, indicating that you are working inside a custom node. In this canvas you have access to all of the core Dynamo nodes, as well as the **Input** and **Output** nodes, which label the data flowing into and out of the custom node.  They can be found in *Core>Input*.
 
-![Custom Nodes Canvas](images/9-1/CustomNodes04.png)
+![Custom Nodes Canvas](images/9-1/CustomNodes04.jpg)
 
 > 1. **Inputs:** input nodes create input ports on the custom node. The syntax for an input node is *input_name : datatype = default_value(optional).*
 
@@ -45,7 +45,7 @@ Let's jump into the custom node environment and make a simple node to calculate 
 
 You can save this custom node as a .dyf (as opposed to the standard .dyn) file and it will automatically be added to your session and future sessions. You will find the custom node in your library in the category that is specified in the custom node's properties.
 
-![Add to Library](images/9-1/CustomNodes05.png)
+![Add to Library](images/9-1/CustomNodes05.jpg)
 
 > Left: The Core > Math category of the default library
 Right: Core > Math with the new custom node

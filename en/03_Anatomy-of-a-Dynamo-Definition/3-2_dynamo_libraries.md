@@ -8,7 +8,7 @@ The Dynamo **Library** that we interface with in the application is actually a c
 ####The Organizational Scheme
 The **Library** section of the Dynamo UI is composed of hierarchically organized libraries. As we drill down into the Library, we are sequentially browsing a library, the library's categories, and the category's sub-categories to find the Node.
 
-![Library Hierarchy](images/3-3/00-LibraryBrowsing.png)
+![Library Hierarchy](images/3-3/00-LibraryBrowsing.jpg)
 
 > 1. The Library - The region of the Dynamo Interface
 2. A Library - A collection of related Categories, such as **Geometry**
@@ -21,7 +21,7 @@ The hierarchy of each library is reflected in the Name of Nodes added to the Wor
 
 Typing in different portions of the Node's place in the Library hierarchy in the ```library.category.nodeName``` format returns different results:
 
-![Searching the Library - create from three "naming" pngs](images/3-3/01-LibrarySearching.png)
+![Searching the Library - create from three "naming" pngs](images/3-3/01-LibrarySearching.jpg)
 
 > 1. ```library.category.nodeName```
 2. ```category.nodeName```
@@ -29,7 +29,7 @@ Typing in different portions of the Node's place in the Library hierarchy in the
 
 Typically the Name of the Node in the Workspace will be rendered in the ```category.nodeName``` format, with some notable exceptions particularly in the Input and View Categories. Beware of similarly named Nodes and note the category difference:
 
-![Node Names](images/3-3/02-NodeNames.png)
+![Node Names](images/3-3/02-NodeNames.jpg)
 
 > 1. ```Point.ByCoordinates``` and ```UV.ByCoordinates``` have the same Name but come from different categories
 2. Nodes from most libraries will include the category format
@@ -41,7 +41,7 @@ With hundreds of Nodes included in the basic installation of Dynamo, which ones 
 ####Input
 Input Nodes are the primary means for the User of our Visual Program - be that yourself or someone else - to interface with the key parameters. Here are the Nodes available in the Input Category of the Core Library:
 
-![Input Nodes](images/3-3/03-InputNodes.png)
+![Input Nodes](images/3-3/03-InputNodes.jpg)
 > 1. Boolean
 2. Number
 3. String
@@ -55,7 +55,7 @@ The Watch Nodes are essential to managing the data that is flowing through your 
 
 > Tip: Occasionally the 3D Preview can be distracting when your Visual Program contains a lot of Nodes. Consider unchecking the Showing Background Preview option in the Settings Menu and using a Watch3D Node to preview your geometry.
 
-![Watch and Watch3D](images/3-3/04-WatchNodes.png)
+![Watch and Watch3D](images/3-3/04-WatchNodes.jpg)
 
 > 1. Watch - Note that when you select an item in the Watch Node it will be tagged in the Watch3D and 3D Previews
 2. Watch3D - Grab the bottom right grip to resize and navigate with you mouse the same way you would in the 3D Preview
@@ -63,7 +63,7 @@ The Watch Nodes are essential to managing the data that is flowing through your 
 ####Code Block
 **Code Block** Nodes can be used to define a block of code with lines separated by semi-colons. This can be as simple as ```X/Y```. We can also use Code Blocks as a short cut to defining a Number Input or call to another Node's functionality. The syntax to do so follows the Naming Convention of the Dynamo textual language, DesignScript, and is covered in Section 3.2.3. Let's try to make a Circle with this shortcut:
 
-![Code Block Shortcut](images/3-3/05-CodeBlock.png)
+![Code Block Shortcut](images/3-3/05-CodeBlock.jpg)
 
 >1. Double Click to create a **Code Block** Node
 2. Type ```Circle.ByCenterPointRadius(x,y);```

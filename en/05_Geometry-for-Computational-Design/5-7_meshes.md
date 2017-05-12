@@ -4,7 +4,7 @@ In the field of computational modeling, Meshes are one of the most pervasive for
 ### What's a Mesh?
 A Mesh is a collection of quadrilaterals and triangles that represents a surface or solid geometry. Like Solids, the structure of a Mesh object includes vertices, edges, and faces. There are additional properties that make Meshes unique as well, such as normals.
 
-![Mesh Elements](images/5-7/MeshElements2.png)
+![Mesh Elements](images/5-7/MeshElements2.jpg)
 
 > 1. Mesh vertices
 2. Mesh edges *Edges with only one adjoining face are called "Naked." All other edges are "Clothed"
@@ -13,7 +13,7 @@ A Mesh is a collection of quadrilaterals and triangles that represents a surface
 ### Mesh Elements
 Dynamo defines Meshes using a Face-Vertex data structure. At its most basic level, this structure is simply a collection of points which are grouped into polygons. The points of a Mesh are called vertices, while the surface-like polygons are called faces. To create a Mesh we need a list of vertices and a system of grouping those vertices into faces called an index group.
 
-![](images/5-7/meshFacesVertices.png)
+![](images/5-7/meshFacesVertices.jpg)
 
 > 1. List of vertices
 2. List of index groups to define faces
@@ -21,7 +21,7 @@ Dynamo defines Meshes using a Face-Vertex data structure. At its most basic leve
 ####Vertices + Vertex Normals
 The vertices of a Mesh are simply a list of points. The index of the vertices is very important when constructing a Mesh, or getting information about the structure of a Mesh. For each vertex, there is also a corresponding vertex normal (vector) which describes the average direction of the attached faces and helps us understand the "in" and "out" orientation of the Mesh. 
 
-![Vertices + Normals](images/5-7/vertexNormals.png)
+![Vertices + Normals](images/5-7/vertexNormals.jpg)
 
 >1. Vertices
 2. Vertex Normals
@@ -30,7 +30,7 @@ The vertices of a Mesh are simply a list of points. The index of the vertices is
 ####Faces
 A face is an ordered list of three or four vertices. The “surface” representation of a Mesh face is therefore implied according to the position of the vertices being indexed. We already have the list of vertices that make up the Mesh, so instead of providing individual points to define a face, we  simply use the index of the vertices. This also allows us to use the same vertex in more than one face.
 
-![](images/5-7/meshFaces.png)
+![](images/5-7/meshFaces.jpg)
 
 > 1. A quad face made with indices 0, 1, 2, and 3
 2. A triangle face made with indices 1, 4, and 2 
@@ -76,4 +76,4 @@ Dynamo's mesh capabilities can be extended by installing the [Mesh Toolkit](http
 
 See chapter 10.2 for an example using Mesh Toolkit.
 
-![Mesh Toolkit](images/5-7/MeshToolKit.png)
+![Mesh Toolkit](images/5-7/MeshToolKit.jpg)

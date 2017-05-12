@@ -1,7 +1,6 @@
 #The Dynamo Primer
-##For Dynamo v1.0
 
-![Dynamo Logo](images/dynamo_logo_dark-trim.png)
+![Dynamo Logo](images/dynamo_logo_dark-trim.jpg)
 
 > Dynamo is an open source visual programming platform for designers.
 
@@ -44,7 +43,7 @@ The Dynamo Primer is an open source project, initiated by Matt Jezyk and the Dyn
 
 **Mode Lab** was commissioned to write the First Edition of the primer. The team continues to work with Autodesk to provide updates in parallel with Dynamo's development.
 
-[<img src="images/MODELAB_Logo.png">](http://modelab.is)
+[<img src="images/MODELAB_Logo.jpg">](http://modelab.is)
 
 ### Acknowledgments
 

@@ -5,7 +5,7 @@ Designing frequently involves establishing visual, systemic, or geometric relati
 ###Algorithms in Hand
 While offering some powerful opportunities, the term **Algorithm** can carry some misconceptions with it. Algorithms can generate unexpected, wild, or cool things, but they are not magic. In fact, they are pretty plain, in and of themselves. Let's use a tangible example like an origami crane. We start with a square piece of paper (input), follow a series of folding steps (processing actions), and result in a crane (output).
 
-![Origami Crane](images/1-1/00-OrigamiCrane.png)
+![Origami Crane](images/1-1/00-OrigamiCrane.jpg)
 
 So where is the Algorithm? It is the abstract set of steps, which we can represent in a couple of ways - either textually or graphically.
 
@@ -27,7 +27,7 @@ paper, coloured side up. Fold in half and open. Then fold in half the other way.
 
 **Graphical Instructions:**
 
-![Needs Update- Origami Crane](images/1-1/01-OrigamiCraneInstructions.png)
+![Needs Update- Origami Crane](images/1-1/01-OrigamiCraneInstructions.jpg)
 
 ###Programming Defined
 Using either of these sets of instructions should result in a crane, and if you followed along yourself, you've applied an algorithm. The only difference is the way in which we read the formalization of that set of instructions and that leads us to **Programming**. Programming, frequently shortened from *Computer Programming*, is the act of formalizing the processing of a series of actions into an executable program. If we turned the above instructions for a creating crane into a format our computer can read and execute, we are Programming.
@@ -43,7 +43,7 @@ If your answer contained graphics, then **Visual Programming** is definitely for
 
 **Visual Program:**
 
-![Basic Visual Program ](images/1-1/03-BasicVisualProgram.png)
+![Basic Visual Program ](images/1-1/03-BasicVisualProgram.jpg)
 
 **Textual Program:**
 ```
@@ -56,7 +56,7 @@ myCircle = Circle.ByCenterPointRadius(myPoint,dist);
 ```
 The results of our algorithm:
 
-![Circle Through Point ](images/1-1/04-CircleThroughPoint.png)
+![Circle Through Point ](images/1-1/04-CircleThroughPoint.jpg)
 
 The visual characteristic to programming in such a way lowers the barrier to entry and frequently speaks to designers. Dynamo falls in the Visual Programming paradigm, but as we will see later, we can still use textual programming in the application as well.
 
