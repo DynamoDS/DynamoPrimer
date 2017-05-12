@@ -36,7 +36,7 @@ Eine Liste für eine Sammlung von Elementen, die in einer Struktur von Daten abg
 > 1. Ein **Number Sequence**-Block definiert eine Liste von Zahlen mithilfe der Eingaben *start*, *amount* und *step*. Mithilfe dieser beiden Blöcke wurden zwei separate Listen mit je zehn Zahlen – *100–109* und *0–9* erstellt.
 2. Mithilfe des Blocks **List.GetItemAtIndex** wird das Element an einer bestimmten Indexposition ausgewählt. Wenn Sie *0* wählen, wird das erste Element in der Liste (in diesem Fall*100*) abgerufen.
 3. In der zweiten Liste erhalten Sie mit demselben Verfahren den Wert *0*, das erste Element in der Liste.
-4. Als Nächstes führen Sie die beiden Listen mithilfe eines **List.Create**-Blocks zu einer zusammen. Beachten Sie, dass dieser Block eine *Liste von Listen* erstellt und damit die Struktur der Daten ändert.
+4. Als Nächstes führen Sie die beiden Listen mithilfe eines **List.Create**-Blocks zu einer zusammen. Mit diesem Block wird eine *Liste von Listen erstellt.* Dies verändert die Struktur der Daten.
 5. Wenn Sie **List.GetItemAtIndex** erneut mit dem Index *0* verwenden, erhalten Sie die erste der in der übergeordneten Liste enthaltenen Listen. Dieses Beispiel verdeutlicht, wie Listen behandelt werden: Sie gelten – anders als in anderen Skriptsprachen – als Objekte. Listenbearbeitung und Datenstruktur werden in den später folgenden Kapiteln genauer beschrieben.
 
 Als wichtigstes Prinzip zum Verständnis der Datenhierarchie in Dynamo gilt: **Innerhalb der Datenstruktur gelten Listen als Elemente.** In anderen Worten: In Dynamo kommt ein hierarchisch von oben nach unten geordneter Prozess für Datenstrukturen zum Einsatz. Was bedeutet das? Das folgende Beispiel soll dies verdeutlichen:

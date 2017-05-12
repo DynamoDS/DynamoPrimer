@@ -32,6 +32,11 @@
 			"url": "http://dynamoprimer.com/ja"
 				 },
 				 {
+		"label": "中文(繁體)",
+		"code":"zh-tw",
+			"url": "http://dynamoprimer.com/zh-tw"
+				 },
+				 {
 		"label": "",
 		"code": "",
 			"url": ""

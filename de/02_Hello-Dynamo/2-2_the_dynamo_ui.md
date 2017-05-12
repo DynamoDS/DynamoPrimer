@@ -97,9 +97,13 @@ Im Menü **Einstellungen** sind sowohl geometrische als auch Benutzereinstellung
 
 ![Menü anzeigen](images/2-2/08-Settings.png)
 
-> 1. Berichterstellung aktivieren
-2. Zahlenformat
-3. Renderqualität
+> 1. Berichte aktivieren: Optionen zur Weitergabe von Benutzerdaten für die Verbesserung von Dynamo.
+2. Optionen für das Zahlenformat: Ändern der Dokumenteinstellungen für Dezimalstellen.
+3. Rendergenauigkeit: Einstellen einer höheren oder niedrigen Renderqualität.
+4. Geometriekanten anzeigen/ausblenden: Ein- oder Ausblenden von 3D-Geometriekanten.
+5. Vorschaufenster anzeigen/ausblenden: Ein- oder Ausblenden der Datenvorschaufenster.
+6. Pfade für Blöcke und Pakete verwalten: Verwalten der Dateipfade, damit Blöcke und Pakete in der Bibliothek angezeigt werden.
+7. Experimentelle Funktionen aktivieren: Verwenden neuer Beta-Funktionen in Dynamo.
 
 ### Hilfe
 
@@ -107,10 +111,11 @@ Wenn Sie nicht weiterkommen, verwenden Sie das Menü **Hilfe**. Hier finden Sie 
 
 ![Menü anzeigen](images/2-2/09-Help.png)
 
-> 1. Beispiele
-2. Fehler melden
-3. Wechseln zu Projekt-Website
-4. Zu Projekt-Wiki wechseln
-5. Startseite anzeigen
-6. Info
+> 1. Erste Schritte: eine kurze Einführung in die Verwendung von Dynamo.
+2. Beispiele: Beispieldateien als Referenz.
+3. Fehler melden: Sie können Probleme auf GitHub melden.
+4. Wechseln zu Projekt-Website: Zeigen Sie das Dynamo-Projekt auf GitHub an.
+5. Zu Projekt-Wiki wechseln: Im Wiki erhalten Sie Informationen zur Entwicklung mithilfe der Dynamo-API, zu unterstützenden Bibliotheken und Tools.
+6. Startseite anzeigen: Kehren Sie von einem Dokument aus zur Dynamo-Startseite zurück.
+7. Info: Angaben zur Version von Dynamo.
 

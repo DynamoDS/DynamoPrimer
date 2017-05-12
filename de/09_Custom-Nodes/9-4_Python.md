@@ -212,8 +212,8 @@ Dadurch wird ein neuer Arbeitsbereich geöffnet, in dem Sie den benutzerdefinier
 
 ![](images/9-4/Exercise/Python/python12.png)
 
-> 1. **Eingaben**: Geben Sie den Eingaben aussagekräftigere Namen und fügen Sie Datentypen und Vorgabewerte hinzu.
-2. **Ausgabe**: Ändern Sie den Namen der Ausgabe und speichern Sie den Block als DYF-Datei.
+> 1. **Input-Blöcke**: Geben Sie den Eingaben aussagekräftigere Namen und fügen Sie Datentypen und Vorgabewerte hinzu.
+2. **Output**: Ändern Sie den Namen der Ausgabe und speichern Sie den Block als DYF-Datei.
 
 ![](images/9-4/Exercise/Python/python13.png)
 
