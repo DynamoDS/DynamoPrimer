@@ -1,6 +1,6 @@
-#The Dynamo Primer
+# The Dynamo Primer
 
-##For Dynamo v1.3
+## For Dynamo v1.3
 
 ![Dynamo Logo](images/dynamo_logo_dark-trim.jpg)
 
