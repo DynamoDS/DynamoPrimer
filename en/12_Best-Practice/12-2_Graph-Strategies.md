@@ -81,7 +81,7 @@ In addition to making your graph as simple and efficient as possible, strive for
 
 #### **Visual continuity with Node Alignment**
 
-* To reduce your work after you finished building your graph, you should try to ensure the node layout is legible by** aligning nodes often and as you go**
+* To reduce your work after you finished building your graph, you should try to ensure the node layout is legible by **aligning nodes often and as you go**
 * If others are going to be working with your graph, you should **ensure that your node-wire layout flows easily before shipping**
 * To help you with alignment, **use the "Cleanup Node Layout" feature to automatically align** your graph, though less precisely than doing it yourself
 
@@ -95,7 +95,7 @@ In addition to making your graph as simple and efficient as possible, strive for
 #### **Descriptive labeling by renaming**
 
 * Renaming inputs can help others easily understand your graph, **especially if what they plug into will be off the screen**
-* **Be wary of renaming nodes other than an inputs.** An alternative to this is creating a custom node from a node cluster and renaming that; it will be understood that it contains something else
+* **Be wary of renaming nodes other than inputs.** An alternative to this is creating a custom node from a node cluster and renaming that; it will be understood that it contains something else
 
 ![inputs](images/12-2/inputs.png)
 
@@ -140,7 +140,7 @@ It is highly likely that someone else will be opening your program at some point
 
 #### **Manage the I/O**
 
-* To ensure legibility and scalability, you should try and** minimize inputs and outputs as much as possible**
+* To ensure legibility and scalability, you should try and **minimize inputs and outputs as much as possible**
 * You should try to **strategize how you are going to build the logic by first creating a rough outline** of how the logic could work before you even add a single node to the canvas. As you develop the rough outline, you should keep track of which inputs and outputs will go into scripts
 
 #### **Use Presets to embed input values**
@@ -154,7 +154,7 @@ It is highly likely that someone else will be opening your program at some point
 
 * You should use a Custom Node if your **program can be collected into a single container**
 * You should use a a Custom Node **when a portion of the graph will be reused often** in other programs
-* You should use a Custom Node if you want to s**hare a functionality with the Dynamo Community**
+* You should use a Custom Node if you want to **share a functionality with the Dynamo Community**
 
 ![customnode](images/12-2/customnode.png)
 
