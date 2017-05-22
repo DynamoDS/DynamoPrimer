@@ -17,7 +17,7 @@ The power of Dynamo can be found in a wide variety of design-related activities.
 
 In the midst of this activity and exciting opportunity for working with Dynamo, we need a document of the same caliber, the Dynamo Primer.
 
-Version 1.0 of this Primer includes the first ten chapters developed by Mode Lab. These chapters focus on the essentials you will need to get up and running developing your own visual programs with Dynamo and key insights on how to take Dynamo further. Here's what you can expect to learn from the primer:
+This Primer includes chapters developed with Mode Lab. These chapters focus on the essentials you will need to get up and running developing your own visual programs with Dynamo and key insights on how to take Dynamo further. Here's what you can expect to learn from the primer:
 
 * **Context** - What exactly is "Visual Programming" and what are the concepts I need to understand to dive in to Dynamo?
 * **Getting Started** - How do I get Dynamo and create my first program?
@@ -54,7 +54,7 @@ A special thanks to Ian Keough for initiating and guiding the Dynamo project.
 Thank you to Matt Jezyk, Ian Keough, Zach Kron, and Colin McCrone for enthusiastic collaboration and the opportunity to participate on a wide array of Dynamo projects.
 
 ### Software and Resources
-**Dynamo** The current stable release of Dynamo is Version 1.3.0.
+**Dynamo** The current stable release of Dynamo is Version 1.3
 
 http://dynamobim.com/download/
 
