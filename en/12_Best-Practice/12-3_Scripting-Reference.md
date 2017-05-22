@@ -290,7 +290,7 @@ Generally speaking there is more than one way to program just about anything, th
 
   You only need to dispose unmanaged resources that you don't return into the graph or store a reference to. For the rest of this section, we'll refer to these objects as *intermediate geometry*. You can see an example of this class of object in the code example below. This zero touch C# function **singleCube** returns a single cube, but creates 10000 extra cubes during its execution. We can pretend this other geometry was used as some intermediate construction geometry. 
   
-  **This zero touch function will most likely crash Dynamo.** Since we created 10000 solids, but only stored one of them, and only returned that one. We should instead, dispose all of our intermediate cubes, expect the one that we return. We don't want to dipose what we return, as it will be propogated into the graph and used by other nodes.
+  **This zero touch function will most likely crash Dynamo.** Since we created 10000 solids, but only stored one of them, and only returned that one. We should instead, dispose all of our intermediate cubes, except the one that we return. We don't want to dipose what we return, as it will be propogated into the graph and used by other nodes.
   ```
   public Cuboid singleCube(){
 
