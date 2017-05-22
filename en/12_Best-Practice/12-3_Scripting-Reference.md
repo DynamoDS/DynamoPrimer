@@ -18,6 +18,7 @@ Standard libraries are external to Dynamo and are present in the programming lan
 * ProtoGeometry
   * Functionality: Arc, Bounding Box, Circle, Cone, Coordinate System, Cuboid, Curve, Cylinder, Edge, Ellipse, Ellipse Arc ,Face, Geometry, Helix, Index Group, Line, Mesh, Nurbs Curve, Nurbs Surface, Plane, Point, Polygon, Rectangle, Solid, Sphere, Surface, Topology, TSpline, UV, Vector, Vertex.
   * How to import: `import Autodesk.DesignScript.Geometry`
+  *  **Note when using ProtoGeometry through Python or C#**, you are creating unmanaged objects, which need have their memory managed manually - please see section below: **Unmanaged Objects**, for more info.
 * DSCoreNodes
   * Functionality: Color, Color Range 2D, Date Time, Time Span, IO, Formula, Logic, List, Math, Quadtree, String, Thread.
   * How to import: `import DSCore`
@@ -283,3 +284,42 @@ Generally speaking there is more than one way to program just about anything, th
 
   * This wiki specifically covers naming standards for libraries, categories, node names, port names, and abbreviations: [https://github.com/DynamoDS/Dynamo/wiki/Naming-Standards](https://github.com/DynamoDS/Dynamo/wiki/Naming-Standards)
 
+  **Unmanaged Objects:**  
+
+  When using Dynamo's Geometry library *(ProtoGeometry)* from Python or C# you will be created geometry objects which are unmanaged, and many of these objects need to be cleaned up manually. To cleanup native or unmanaged objects you can use the **Dipose** method or the **using** keyword. See this wiki entry for an overview: [https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement).
+
+  You only need to dispose unmanaged resources that you don't return into the graph or store a reference to. For the rest of this section, we'll refer to these objects as *intermediate geometry*. You can see an example of this class of object in the code example below. This zero touch C# function **singleCube** returns a single cube, but creates 10000 extra cubes during its execution. We can pretend this other geometry was used as some intermediate construction geometry. 
+  
+  **This zero touch function will most likely crash Dynamo.** Since we created 10000 solids, but only stored one of them, and only returned that one. We should instead, dispose all of our intermediate cubes, expect the one that we return. We don't want to dipose what we return, as it will be propogated into the graph and used by other nodes.
+  ```
+  public Cuboid singleCube(){
+
+    var output = Cuboid.ByLengths(1,1,1);
+
+    for(int i = 0; i<10000;i++){
+      output = Cuboid.ByLengths(1,1,1);
+    }
+    return output;
+  } 
+  ```
+
+The fixed code would look something like:
+ ```
+  public Cuboid singleCube(){
+
+    var output = Cuboid.ByLengths(1,1,1);
+    var toDispose = new List<Geometry>();
+
+    for(int i = 0; i<10000;i++){
+      toDispose.Add(Cuboid.ByLengths(1,1,1));
+    }
+
+    foreach(IDisposable item in toDispose ){
+      item.Dispose();
+    }
+
+    return output;
+  } 
+  ```
+
+  In general you only need to dispose geometry like `Surfaces`, `Curves`, and `Solids`. To be safe though, you can dispose all geometry types (`Vectors`, `Points`, `CoordinateSystems`).
