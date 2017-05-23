@@ -27,7 +27,7 @@ The image below is the base graph we will be using to demonstrate basic list ope
 #### Exercise - List Operations
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-Operations.dyn](datasets/6-2/List-Operations.dyn). A full list of example files can be found in the Appendix.
 
-![Exercise](images/6-2/Exercise/40.png)
+![Exercise](images/6-2/Exercise/40.jpg)
 > 1. Begin with a *code block* with a value of ```500;
 ```
 2. Plug into the *x* input of a *Point.ByCoordinates* node.
@@ -41,38 +41,38 @@ The image below is the base graph we will be using to demonstrate basic list ope
 8. Plug the code block from the previous step into the *param* input of two *Curve.PointAtParameter* nodes.  Plug *Circle.ByPlaneRadius* into the curve input of the top node, and *Geometry.Translate* into the curve input of the node beneath it.
 9. Using a *Line.ByStartPointEndPoint*, connect the two *Curve.PointAtParameter *nodes.
 
-![Exercise](images/6-2/Exercise/38.png)
+![Exercise](images/6-2/Exercise/38.jpg)
 >1. A *Watch3D* node shows the results of the *Line.ByStartPointEndPoint*.  We are drawing lines between two circles to represent basic list operations and will use this base Dynamo graph to walk through the list actions below.
 
 ###List.Count
-![Count](images/6-2/count.png)
+![Count](images/6-2/count.jpg)
 > The *List.Count* node is straightforward: it counts the number of values in a list and returns that number.  This node gets more nuanced as we work with lists of lists, but we'll demonstrate that in the coming sections.
 
 #### Exercise - List.Count
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-Count.dyn](datasets/6-2/List-Count.dyn). A full list of example files can be found in the Appendix.
 
-![Count](images/6-2/Exercise/35.png)
+![Count](images/6-2/Exercise/35.jpg)
 > 1. The *List.Count* node returns the number of lines in the *Line.ByStartPointEndPoint* node.  The value is 10 in this case, which agrees with the number of points created from the original *code block* node.
 
 ###List.GetItemAtIndex
-![index](images/6-2/index.png)
+![index](images/6-2/index.jpg)
 > *List.GetItemAtIndex* is a fundamental way to query an item in the list.  In the image above, we are using an index of *"2"* to query the point labeled* "C"*.
 
 #### Exercise - List.GetItemAtIndex
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-GetItemAtIndex.dyn](datasets/6-2/List-GetItemAtIndex.dyn). A full list of example files can be found in the Appendix.
 
-![Exercise](images/6-2/Exercise/33.png)
+![Exercise](images/6-2/Exercise/33.jpg)
 >1. Using the *List.GetItemAtIndex* node, we are selecting index *"0"*, or the first item in the list of lines.
 2. The *Watch3D* node reveals that we've selected one line. Note: to get the image above, be sure to disable the preview of *Line.ByStartPointEndPoint*.
 
 ###List.Reverse
-![reverse](images/6-2/reverse.png)
+![reverse](images/6-2/reverse.jpg)
 > *List.Reverse* reverses the order of all of the items in a list.
 
 #### Exercise - List.Reverse
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-Reverse.dyn](datasets/6-2/List-Reverse.dyn). A full list of example files can be found in the Appendix.
 
-![Exercise](images/6-2/Exercise/34.png)
+![Exercise](images/6-2/Exercise/34.jpg)
 >1. To properly visualize the reversed list of lines, create more lines by changing the code block to ```0..1..#100;
 ```
 2. Insert a *List.Reverse* node in between *Curve.PointAtParameter* and *Line.ByStartPointEndPoint* for one of the list of points.
@@ -80,28 +80,28 @@ The image below is the base graph we will be using to demonstrate basic list ope
 
 
 ###List.ShiftIndices
-![shift](images/6-2/shift.png)
+![shift](images/6-2/shift.jpg)
 > *List.ShiftIndices* is a good tool for creating twists or helical patterns, or any other similar data manipulation.  This node shifts the items in a list a given number of indices.
 
 #### Exercise - List.ShiftIndices
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-ShiftIndices.dyn](datasets/6-2/List-ShiftIndices.dyn). A full list of example files can be found in the Appendix.
 
-![Exercise](images/6-2/Exercise/31.png)
+![Exercise](images/6-2/Exercise/31.jpg)
 >1. In the same process as the reverse list, insert a *List.ShiftIndices* into the *Curve.PointAtParameter* and *Line.ByStartPointEndPoint*.
 2. Using a *code block*, designated a value of *"1"* to shift the list one index.
 3. Notice that the change is subtle, but all of the lines in the lower *Watch3D* node have shifted one index when connecting to the other set of points.
 
-![Exercise](images/6-2/Exercise/32.png)
+![Exercise](images/6-2/Exercise/32.jpg)
 >1. By changing to *code block* to a larger value, *"30"* for example, we notice a significant difference in the diagonal lines.  The shift is working like a camera's iris in this case, creating a twist in the original cylindrical form.
 
 ###List.FilterByBooleanMask
-![cull](images/6-2/cull2.png)
+![cull](images/6-2/cull2.jpg)
 > *List.FilterByBooleanMask* will remove certain items based on a list of booleans, or values reading "true" or "false".
 
 #### Exercise - List.FilterByBooleanMask
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [List-FilterByBooleanMask.dyn](datasets/6-2/List-FilterByBooleanMask.dyn). A full list of example files can be found in the Appendix.
 
-![Exercise](images/6-2/Exercise/30.png)
+![Exercise](images/6-2/Exercise/30.jpg)
 > In order to create a list of values reading "true" or "false", we need to a little more work...
 1. Using a *code block*, define an expression with the syntax: ```0..List.Count(list);
 ```. Connect the *Curve.PointAtParameter* node to the *list* input.  We'll walk through this setup more in the code block chapter, but the line of code in this case is giving us a list representing each index of the *Curve.PointAtParameter* node.
