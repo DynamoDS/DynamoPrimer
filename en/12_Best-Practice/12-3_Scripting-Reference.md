@@ -286,7 +286,7 @@ Generally speaking there is more than one way to program just about anything, th
 
   **Unmanaged Objects:**  
 
-  When using Dynamo's Geometry library *(ProtoGeometry)* from Python or C#  geometry objects that you create will not be managed by the virtual machine, and the memory of many of these objects will need to be cleaned up manually. To cleanup native or unmanaged objects you can use the **Dipose** method or the **using** keyword. See this wiki entry for an overview: [https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement).
+  When using Dynamo's Geometry library *(ProtoGeometry)* from Python or C#  geometry objects that you create will not be managed by the virtual machine, and the memory of many of these objects will need to be cleaned up manually. To cleanup native or unmanaged objects you can use the **Dispose** method or the **using** keyword. See this wiki entry for an overview: [https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement).
 
   You only need to dispose unmanaged resources that you don't return into the graph or store a reference to. For the rest of this section, we'll refer to these objects as *intermediate geometry*. You can see an example of this class of object in the code example below. This zero touch C# function **singleCube** returns a single cube, but creates 10000 extra cubes during its execution. We can pretend this other geometry was used as some intermediate construction geometry. 
   
