@@ -37,7 +37,7 @@ This is a method of merging two strings together in order. This takes each liter
 
 ![Concatenate](images/4-4/4-4-1-007.jpg)
 > The image above represents the concatenation of three strings:
-1. Add or subtract strings to the concatenation by clicking the +/- buttons int he center of the Node.
+1. Add or subtract strings to the concatenation by clicking the +/- buttons in the center of the Node.
 2. The output gives one concatenated string, with spaces and punctuation included.
 
 The join method is very similar to concatenate, except it has an added layer of punctuation.
