@@ -14,7 +14,7 @@ Presets are a way to take the current value of a selection of input nodes and sa
 
 ###Creating Presets
 
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Prests.dyn](datasets/3-5/Presets.dyn). A full list of example files can be found in the Appendix.
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Presets.dyn](datasets/3-5/Presets.dyn). A full list of example files can be found in the Appendix.
 
 To create a preset, select one or more input nodes. Right-click the canvas and select "Create Preset from Selection", or press Control+T. 
 Let's take a look at an example. Below is a simple graph that creates a surface by lofting through a series of circles. 
