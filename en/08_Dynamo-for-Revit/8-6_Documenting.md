@@ -47,13 +47,13 @@ Setting the Aperture Ratio doesn't clearly demonstrate the deviation of panels o
 3. Hovering over the *value* input, we can see that the values for the input must be between *0* and *1* in order to map a color to each value.  We need to remap the deviation values to this range.
 
 ![Exercise](images/8-6/Exercise/10.jpg)
-> 1. Using *Math.RemapRange*, remap the planar deviation values to a range between* 0* and *1* (note: you can use the *"MapTo"* node to define a source domains as well).
+> 1. Using *Math.RemapRange*, remap the planar deviation values to a range between* 0* and *1* (note: you can use the *"MapTo"* node to define a source domain as well).
 2. Plug the results into a *Color Range* node.
 3. Notice our output is a range of colors instead of a range of numbers.
 4. If you're set to Manual, hit *Run*.  You should be able to get away with being set to Automatic from this point forward.
 
 ![Exercise](images/8-6/Exercise/09.jpg)
-> Back in Revit, we see a much more legible gradient which is representative of planar deviation based on our color range.  But what if we want to customized the colors?  Notice that the minimum deviation values are represented in red, which seems to be the opposite of what we'd expect.  We want to have maximum deviation to be red, with minimum deviation represented by a calmer color.  Let's go back to Dynamo and fix this.
+> Back in Revit, we see a much more legible gradient which is representative of planar deviation based on our color range.  But what if we want to customize the colors?  Notice that the minimum deviation values are represented in red, which seems to be the opposite of what we'd expect.  We want to have maximum deviation to be red, with minimum deviation represented by a calmer color.  Let's go back to Dynamo and fix this.
 
 ![Exercise](images/8-6/Exercise/08.jpg)
 > 1. Using a *code block*, add two numbers on two different lines:
@@ -80,7 +80,7 @@ Setting the Aperture Ratio doesn't clearly demonstrate the deviation of panels o
 ![Exercise](images/8-6/Exercise/05.jpg)
 > To write in these values, we'll do a complex list operation.  The graph itself is simple, but the concepts build heavily from the list mapping as discussed in the list chapter.
 1. Select all the adaptive components with two nodes.
-2. Extract the locations of each points with *AdaptiveComponent.Locations*.
+2. Extract the location of each point with *AdaptiveComponent.Locations*.
 3. Convert these points to strings.  Remember, the parameter is text-based so we need to input the correct data type.
 4. Create a list of the four strings which define the parameters to change: *XYZ1, XYZ2, XYZ3,* and *XYZ4*.
 5. Plug this list into the *parameterName* input of *Element.SetParameterByName*.

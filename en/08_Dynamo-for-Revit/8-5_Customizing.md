@@ -31,7 +31,7 @@ This exercise will expand on the techniques demonstrated in the previous section
 ![Exercise](images/8-5/Exercise/01.jpg)
 > 1. Using *code block*, define a range from 0 to 1 with 10 evenly spaced values: ```0..1..#10;
 ```
-2. Plug the *code block* into the *u *and *v* inputs of a *Surface.PointAtParameter* node, and plug the *Surface.ByLoft* node into the *surface* input.  Right click the node and change the *lacing* to *Cross Product*.  This will give a gird of points on the surface.
+2. Plug the *code block* into the *u *and *v* inputs of a *Surface.PointAtParameter* node, and plug the *Surface.ByLoft* node into the *surface* input.  Right click the node and change the *lacing* to *Cross Product*.  This will give a grid of points on the surface.
 
 This grid of points serves as the control points for a parametrically defined surface.  We want to extract the u and v positions of each one of these points so that we can plug them into a parametric formula and keep the same data structure.  We can do this by querying the parameter locations of the points we just created.
 
