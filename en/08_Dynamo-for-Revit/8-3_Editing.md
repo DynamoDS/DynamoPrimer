@@ -14,7 +14,7 @@ As a quick review of parameters in Revit, we recall that there are type paramete
 Note: As you discover the wide-reaching application of editing parameters, you may want to edit a large quantity of elements in Revit with Dynamo.  This can be a *computationally expensive* operation, meaning that it can be slow. If you're editing a large number of elements, you may want to use the "freeze" node functionality in order to pause the execution of Revit operations while you develop your graph. For more information on freezing nodes, check out the "Freezing" section in the [solids chapter](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).
 
 #### Units
-As of version 0.8, Dynamo is fundamentally unitless.  This allows Dynamo to remain an abstract visual programming environment. Dynamo nodes that interact with Revit dimensions will reference The Revit project's units.  For example, if you are setting a length parameter in Revit from Dynamo, the number in Dynamo for the value will correspond to the default units in the Revit project.  The exercise below works in meters.
+As of version 0.8, Dynamo is fundamentally unitless.  This allows Dynamo to remain an abstract visual programming environment. Dynamo nodes that interact with Revit dimensions will reference the Revit project's units.  For example, if you are setting a length parameter in Revit from Dynamo, the number in Dynamo for the value will correspond to the default units in the Revit project.  The exercise below works in meters.
 
 ![Exercise](images/8-3/units.jpg)
 > For a quick conversion of units, use the *"Convert Between Units"* node.  This is a handy tool for converting Length, Area, and Volume units on the fly.
@@ -32,7 +32,7 @@ This exercise focuses on editing Revit elements without performing geometric ope
 
 ![Exercise](images/8-3/Exercise/03.jpg)
 > 1. Select the building mass with the *"Select Model Element"* node.
-2. We can query all of the parameters of this mass with the *"Element.Parmaters"* node.  This includes type and instance parameters.
+2. We can query all of the parameters of this mass with the *"Element.Parameters"* node.  This includes type and instance parameters.
 
 ![Exercise](images/8-3/Exercise/32.jpg)
 > 1. Reference the *Element.Parameters* node to find target parameters.  Or, we can view the properties panel from the previous step to choose which parameter names we want to edit.  In this case, we are looking for the parameters which affect the large geometric moves on the building mass.
@@ -43,7 +43,7 @@ This exercise focuses on editing Revit elements without performing geometric ope
 ![Exercise](images/8-3/Exercise/31.jpg)
 > 1. We also want to designate values for each parameter.  Add six *"integer sliders"* to the canvas and rename to the corresponding parameter in the list.  Also, set the values of each slider to the image above.  In order from top-to-bottom: ```62,92,25,22,8,12
 ```
-2. Define another *code block* with a list of the same length as the parameter names.  In this case, we name variables (without quotes) which create inputs for the *code block.*  Plug the *sliders* into each respective input: ```{bw,bl,bh,ao,io.lu};
+2. Define another *code block* with a list of the same length as the parameter names.  In this case, we name variables (without quotes) which create inputs for the *code block.*  Plug the *sliders* into each respective input: ```{bw,bl,bh,ao,io,lu};
 ```
 3. Connect the *code block *to the *"Element.SetParameterByName*"* node.  With run automatically checked, we will automatically see results.
 
