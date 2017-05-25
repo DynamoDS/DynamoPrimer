@@ -29,7 +29,7 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 ![Exercise](images/8-4/Exercise/10.jpg)
 > Beginning with the example file from this section (or continuing with the Revit file from the previous session), we see the same Revit mass.
 1. This is the file as opened.
-2. This is the truss system we'll created with Dynamo, linked intelligently to the Revit mass.
+2. This is the truss system we created with Dynamo, linked intelligently to the Revit mass.
 
 ![Exercise](images/8-4/Exercise/08.jpg)
 > We've used the *"Select Model Element"* and *"Select Face"* nodes, now we're taking one step further down in the geometry hierarchy and using *"Select Edge"*.  With the Dynamo solver set to run *"Automatic"*, the graph will continually update to changes in the Revit file. The edge we are selecting is tied dynamically to the Revit element topology.  As long as the topology* does not change, the connection remains linked between Revit and Dynamo.
@@ -38,7 +38,7 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 3. Do the same for the bottom edges of the facade in Revit.
 4. The *Watch* nodes reveal that we now have lines in Dynamo.  This is automatically converted to Dynamo geometry since the edges themselves are not Revit elements.  These curves are the references we'll use to instantiate adaptive trusses across the facade.
 
-**Note - to keep a consistent topology, we're referring to a model that does not have additional faces or edges added.  While parameters can change its shape, the way it which it is built remains consistent.*
+**Note - to keep a consistent topology, we're referring to a model that does not have additional faces or edges added.  While parameters can change its shape, the way in which it is built remains consistent.*
 
 ![Exercise](images/8-4/Exercise/07.jpg)
 > We first need to join the curves and merge them into one list.  This way we can *"group"* the curves to perform geometry operations.
@@ -116,7 +116,7 @@ Let's walk through and exercise for importing Dynamo geometry as a DirectShape i
 ![Exercise](images/8-4/Exercise/DS-02.jpg)
 >1. Dropping the *DirectShape.ByGeometry* node onto the canvas, we see that it has four inputs: **geometry, category, material**, and **name**.
 2. Geometry will be the solid created from the geometry creation portion of the graph
-3. The category input is chosen using the dropdwon *Categories* node. In this case we'll use "Structural Framing".
+3. The category input is chosen using the dropdown *Categories* node. In this case we'll use "Structural Framing".
 4. The material input is selected through the array of nodes above - although it can be more simply defined as "Default" in this case.
 
 ![Exercise](images/8-4/Exercise/DS-01.jpg)
