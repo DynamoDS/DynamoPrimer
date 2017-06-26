@@ -2,9 +2,9 @@
 
 # Dynamo Primer
 
-## 對於 Dynamo 1.2 版
+## 對於 Dynamo 1.3 版
 
-![Dynamo 標誌](images/dynamo_logo_dark-trim.png)
+![Dynamo 標誌](images/dynamo_logo_dark-trim.jpg)
 
 > Dynamo 是一種針對設計人員的開放程式碼視覺程式設計平台。
 
@@ -21,7 +21,7 @@
 
 在此活動期間和利用處理 Dynamo 之激動人心的機會時，我們需要具有相同標準的文件，即 Dynamo Primer。
 
-本 Primer 的 1.0 版包括「模式實驗室」所開發的前十個章節。這些章節專注於基礎內容，這些內容可協助您使用 Dynamo 開始開發您自己的視覺程式，並提供關於如何進一步發展 Dynamo 的關鍵見解。本手冊提供了以下內容供您學習：
+本手冊包括使用模式實驗室開發的章節。這些章節專注於基礎內容，這些內容可協助您使用 Dynamo 開始開發您自己的視覺程式，並提供關於如何進一步發展 Dynamo 的關鍵見解。本手冊提供了以下內容供您學習：
 
 * **環境定義** - 到底什麼是「視覺程式設計」以及要深入瞭解 Dynamo 需要理解哪些概念？
 * **入門** - 如何獲得 Dynamo 並建立我的第一個程式？
@@ -52,7 +52,7 @@ Dynamo Primer 是開放程式碼專案，由 Autodesk 的 Matt Jezyk 和 Dynamo 
 
 **模式實驗室**受託撰寫此手冊的第一個版本。 團隊會繼續與 Autodesk 配合工作以提供與 Dynamo 開發同步的更新。
 
-[![](images/MODELAB_Logo.png)](http://modelab.is)
+[![](images/MODELAB_Logo.jpg)](http://modelab.is)
 
 ### 致謝
 
@@ -62,7 +62,7 @@ Dynamo Primer 是開放程式碼專案，由 Autodesk 的 Matt Jezyk 和 Dynamo 
 
 ### 軟體和資源
 
-**Dynamo** Dynamo 目前穩定發行的版本為 1.2.0。
+**Dynamo** Dynamo 目前穩定發行的版本為 1.3。
 
 [http://dynamobim.com/download/](http://dynamobim.com/download/)
 

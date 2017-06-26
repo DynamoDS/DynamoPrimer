@@ -10,7 +10,7 @@ Dynamo では、ARGB 入力を使用して色を作成します。これは、�
 
 |アイコン|名前|構文|入力|出力|
 | -- | -- | -- | -- | -- |
-|![](../images/icons/DSCore-Color-ByARGB-Large.png)|ARGB Color|Color.ByARGB|A、R、G、B|color|
+|![](../images/icons/DSCore-Color-ByARGB-Large.jpg)|ARGB Color|Color.ByARGB|A、R、G、B|color|
 
 ### 色の値のクエリー
 
@@ -18,19 +18,19 @@ Dynamo では、ARGB 入力を使用して色を作成します。これは、�
 
 |アイコン|名前|構文|入力|出力|
 | -- | -- | -- | -- | -- |
-|![](../images/icons/DSCore-Color-Alpha-Large.png)|Alpha|Color.Alpha|color|A|
-|![](../images/icons/DSCore-Color-Red-Large.png)|Red|Color.Red|color|R|
-|![](../images/icons/DSCore-Color-Green-Large.png)|Green|Color.Green|color|G|
-|![](../images/icons/DSCore-Color-Blue-Large.png)|Blue|Color.Blue|color|B|
-|![](../images/icons/DSCore-Color-Components-Large.png)|Components|Color.Components|color|A、R、G、B|
+|![](../images/icons/DSCore-Color-Alpha-Large.jpg)|Alpha|Color.Alpha|color|A|
+|![](../images/icons/DSCore-Color-Red-Large.jpg)|Red|Color.Red|color|R|
+|![](../images/icons/DSCore-Color-Green-Large.jpg)|Green|Color.Green|color|G|
+|![](../images/icons/DSCore-Color-Blue-Large.jpg)|Blue|Color.Blue|color|B|
+|![](../images/icons/DSCore-Color-Components-Large.jpg)|Components|Color.Components|color|A、R、G、B|
 
 次の表に記載されている色は、**HSB 色空間**に対応しています。 色を、色相、彩度、明るさに分割すると、より直感的に色を解釈することができます。たとえば、最初に処理する色を決め、次にその色の彩度と明るさを設定します。このように、色相、彩度、明るさをそれぞれ個別に設定していきます。
 
 |アイコン|クエリー名|構文|入力|出力|
 | -- | -- | -- | -- | -- |
-|![](../images/icons/DSCore-Color-Hue-Large.png)|Hue|Color.Hue|color|Hue|
-|![](../images/icons/DSCore-Color-Saturation-Large.png)|Saturation|Color.Saturation|color|Saturation|
-|![](../images/icons/DSCore-Color-Brightness-Large.png)|Brightness|Color.Brightness|color|Brightness|
+|![](../images/icons/DSCore-Color-Hue-Large.jpg)|Hue|Color.Hue|color|Hue|
+|![](../images/icons/DSCore-Color-Saturation-Large.jpg)|Saturation|Color.Saturation|color|Saturation|
+|![](../images/icons/DSCore-Color-Brightness-Large.jpg)|Brightness|Color.Brightness|color|Brightness|
 
 ### 色範囲
 
@@ -38,7 +38,7 @@ Dynamo では、ARGB 入力を使用して色を作成します。これは、�
 
 現在のノードは正しく機能しますが、最初からすべてを正しく機能させるのは少し大変です。色のグラデーションを理解するための最適な方法は、色のグラデーションを対話式に試す方法です。ここでは、簡単な演習を行い、数値に対応する色の出力を使用してグラデーションを設定する方法を確認します。
 
-![](images/4-5/range.png)
+![](images/4-5/range.jpg)
 
 > 1. **3 つの色を定義する: ** Code Block ノードを使用して *0* から *255* までの適切な数値の組み合わせに接続することにより、*赤、緑、**青*を定義します。
 2. **リストを作成する:** 3 つの色を 1 つのリストにマージします。
@@ -49,7 +49,7 @@ Dynamo では、ARGB 入力を使用して色を作成します。これは、�
 
 **Display.ByGeometry** ノードを使用すると、Dynamo のビューポート内でジオメトリに色を付けることができます。 この機能は、ジオメトリの各種タイプを区別する場合、パラメータの概念を表現する場合、シミュレーション用の解析凡例を定義する場合に便利です。この場合の入力は単純で、ジオメトリと色だけです。上の図のようなグラデーションを作成するには、color 入力を **Color Range** ノードに接続します。
 
-![](images/4-5/cuboids.png)
+![](images/4-5/cuboids.jpg)
 
 ### 色の操作に関する演習
 
@@ -57,14 +57,14 @@ Dynamo では、ARGB 入力を使用して色を作成します。これは、�
 
 この演習では、パラメータを使用して、ジオメトリと並行して色の管理を行います。この演習で使用するジオメトリは、単純ならせん構造です。このらせん構造は、**Code Block** ノード (3.2.3) を使用して定義します。 これは、パラメータを使用する関数をすばやく簡単に作成するための方法です。この演習の目的は、ジオメトリではなく色を操作することであるため、コード ブロックを使用してキャンバスを見やすい状態に保ったまま、らせん構造を効率的に作成します。この手引ではより高度なマテリアルを取り上げるようになるため、ここからは、コード ブロックを頻繁に使用することになります。
 
-![](images/4-5/4-5-5/11.png)
+![](images/4-5/4-5-5/11.jpg)
 
 > 1. **Code Block** ノードを使用して、上図に示す式を持つ 2 つのコード ブロックを定義します。 これは、パラメータを使用してらせん構造をすばやく作成するための方法です。
 2. **Point.ByCoordinates** ノードの座標(x,y,z)に Code Block ノードの 3 つの出力を接続します。
 
 これで、らせん構造を形成する点の配列が表示されます。次の手順では、このらせん構造の点群から曲線を作成して、完全ならせん構造を作成します。
 
-![](images/4-5/4-5-5/10.png)
+![](images/4-5/4-5-5/10.jpg)
 
 > 1. **PolyCurve.ByPoints** ノードの *points* 入力に *Point.ByCoordinates* ノードの出力を接続します。 これにより、らせん状の曲線が作成されます。
 2. **Curve.PointAtParameter** ノードの *curve* 入力に *PolyCurve.ByPoints* ノードの出力を接続します。 この手順の目的は、曲線に沿ってスライドするパラメータのアトラクタ点を作成することです。この曲線によってパラメータの点が評価されるため、0 から 1 の範囲で *param* の値を入力する必要があります。
@@ -72,14 +72,14 @@ Dynamo では、ARGB 入力を使用して色を作成します。これは、�
 
 これで、参照点が作成されました。次に、この参照点から、らせん構造を定義する元の点までの距離を比較します。この距離により、色とジオメトリをコントロールします。
 
-![](images/4-5/4-5-5/09.png)
+![](images/4-5/4-5-5/09.jpg)
 
 > 1. **Geometry.DistanceTo** ノードの *other* 入力に *Curve.PointAtParameter* ノードの出力を接続します。 次に、*Point.ByCoordinates* ノードを Geometry.DistanceTo ノードの *geometry* 入力に接続します。
 2. **Watch** ノードに、らせん構造の曲線を構成するそれぞれの点から参照点までの距離のリストが表示されます。
 
 次の手順では、らせん構造の各点から参照点までの距離のリストを使用して、パラメータを設定します。また、これらの距離の値を使用して、曲線に沿った一連の球形の半径を定義します。これらの球形を適切なサイズに保つには、距離の値を*再マッピング*する必要があります。
 
-![](images/4-5/4-5-5/08.png)
+![](images/4-5/4-5-5/08.jpg)
 
 > 1. **Math.RemapRange** ノードの numbers 入力に *Geometry.DistanceTo* ノードの出力を接続します。
 2. 値が *0.01* の **Code Block** ノードを Math.RemapRange ノードの *newMin* 入力に接続し、値が *1* の Code Block ノードを Math.RemapRange ノードの *newMax* 入力に接続します。
@@ -87,39 +87,39 @@ Dynamo では、ARGB 入力を使用して色を作成します。これは、�
 
 この手順により、距離のリストがより狭い範囲に再マッピングされます。再マッピングの結果が適切な場合であっても、*newMin* と *newMax* の値を編集することができます。 これらの値は、範囲全体で*分布比率*を保持したまま再マッピングされます。
 
-![](images/4-5/4-5-5/07.png)
+![](images/4-5/4-5-5/07.jpg)
 
 > 1. **Sphere.ByCenterPointRadius** ノードの *radius* 入力に *Math.RemapRange* ノードの出力を接続し、元の *Point.ByCoordinates* ノードの出力を Sphere.ByCenterPointRadius ノードの *centerPoint* 入力に接続します。
 
-![](images/4-5/4-5-5/06.png)
+![](images/4-5/4-5-5/06.jpg)
 
 > 1. **Number Slider** ノードの値を変更し、球形のサイズが更新されることを確認します。 ここで、パラメータ ツールを使用します。
 
 球形のサイズは、曲線に沿った参照点によって定義されるパラメータ配列を示しています。ここでは、球形の半径と同じ考え方で、球形の色を操作してみます。
 
-![](images/4-5/4-5-5/05.png)
+![](images/4-5/4-5-5/05.jpg)
 
 > 1. **Color Range** ノードをキャンバス上に追加します。 *value* 入力にマウス ポインタを置くと、0 から 1 までの範囲で数値を指定する必要があることがわかります。 ここでは、*Geometry.DistanceTo* ノードの出力から数値を再マッピングして、それらの数値をこの範囲に対応させる必要があります。
 2. **Sphere.ByCenterPointRadius** ノードでのプレビューを一時的に無効にします(*右クリックして[プレビュー]を選択*)。
 
-![](images/4-5/4-5-5/04.png)
+![](images/4-5/4-5-5/04.jpg)
 
 > 1. **Math.RemapRange** ノードの numbers 入力にも同様に *Geometry.DistanceTo* ノードの出力を接続します。
 2. **Code Block** ノードを使用して、Math.RemapRange ノードの *newMin* 入力の値として *0* を設定し、*newMax* 入力の値として *1* を設定します。 この場合、1 つのコード ブロックで 2 つの出力を定義できることに注意してください。
 3. **Color Range** ノードの *value* 入力に *Math.RemapRange* 出力を接続します。
 
-![](images/4-5/4-5-5/03.png)
+![](images/4-5/4-5-5/03.jpg)
 
 > 1. **Color.ByARGB** ノードを使用して、2 つの色を作成します。 この手順は複雑そうに感じるかもしれませんが、他のソフトウェアで使用する RGB カラーの場合と同じです。ここでは、ビジュアル プログラミングを使用して色を処理するというだけのことです。
 2. **Code Block** ノードを使用して、*0* と *255* という 2 つの値を作成します。 次に、上の図のように、この 2 つの値を *Color.ByARGB* の各入力に接続します(または、任意の色を 2 つ作成します)。
 3. **Color Range** ノードの *colors* 入力では、色のリストが必要になります。 上の手順で作成した 2 つの色を使用して、色のリストを作成する必要があります。
 4. **List.Create** ノードを使用して、2 つの色を 1 つのリストにマージします。 次に、このノードの出力を *Color Range* ノードの *colors* 入力に接続します。
 
-![](images/4-5/4-5-5/02.png)
+![](images/4-5/4-5-5/02.jpg)
 
 > 1. **Display.ByGeometryColor** ノードの *geometry* 入力に *Sphere.ByCenterPointRadius* ノードを接続し、*Color Range* ノードを Display.ByGeometryColor ノードの *color* 入力に接続します。 これで、曲線領域全体にスムーズな色のグラデーションが適用されます。
 
-![](images/4-5/4-5-5/01.png)
+![](images/4-5/4-5-5/01.jpg)
 
 > 前の手順の *Number Slider* ノードの値を定義内で変更すると、色とサイズが変更されます。 この場合、色と半径のサイズは相互に直接関係しています。これで、2 つのパラメータ間の関係を視覚的に確認することができます。
 
@@ -127,20 +127,20 @@ Dynamo では、ARGB 入力を使用して色を作成します。これは、�
 
 **Display.BySurfaceColors** ノードを使用すると、サーフェス全体にデータを色でマッピングすることができます。 この機能により、日照解析、エネルギー解析、近接度解析など、各種の解析で取得したデータを視覚化することができます。Dynamo では、他の CAD 環境でマテリアルにテクスチャを適用する場合と同様に、サーフェスに色を適用することができます。次の簡単な演習で、このツールの使用方法を確認します。
 
-![](images/4-5/4-5-5/12.PNG)
+![](images/4-5/4-5-5/12.jpg)
 
 ### サーフェスで色を処理するための演習
 
 > この演習に付属しているサンプル ファイルをダウンロードしてください(右クリックして[名前を付けてリンク先を保存...]を選択): [Building Blocks of Programs - ColorOnSurface.zip](datasets/4-5/BuildingBlocks of Programs - ColorOnSurface.zip)。 すべてのサンプル ファイルの一覧については、付録を参照してください。
 
-![](images/4-5/4-5-5/13.png)
+![](images/4-5/4-5-5/13.jpg)
 
 > 最初に、**Display.BySurfaceColors** ノードの入力として使用するサーフェスを作成(または参照)する必要があります。 この例では、正弦曲線と余弦曲線間をロフトします。
 
 > 1. この**ノード グループ** は、Z 軸に沿って点を作成してから、正弦関数と余弦関数に基づいてそれらの点の位置を変更します。その後、2 つの点リストを使用して NURBS 曲線が生成されます。
 2. **Surface.ByLoft** ノードを使用して、NURBS 曲線のリスト間に、補間されたサーフェスを生成します。
 
-![](images/4-5/4-5-5/14.png)
+![](images/4-5/4-5-5/14.jpg)
 
 > 1. **File Path** ノードを使用して、下流のピクセル データのサンプリングを行うためのイメージ ファイルを選択します。
 2. **File.FromPath** ノードを使用してファイル パスをファイルに変換し、そのファイルを **Image.ReadFromFile** ノードに渡してサンプリング用のイメージを出力します。
@@ -148,7 +148,7 @@ Dynamo では、ARGB 入力を使用して色を作成します。これは、�
 4. **Slider** ノードを使用して、**Image.Pixels** ノードのサンプル値を指定します。
 5. **Display.BySurfaceColors** ノードを使用して、色の値の配列を、X、Y 座標に対応してサーフェス全体にマッピングします。
 
-![](images/4-5/4-5-5/15.PNG)
+![](images/4-5/4-5-5/15.jpg)
 
 > 400x300 のサンプル解像度で、出力サーフェスのプレビューを拡大します。
 

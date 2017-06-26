@@ -12,7 +12,7 @@ Die Dynamo-**Bibliothek**, mit der in der Anwendung eine Schnittstelle gebildet 
 
 Der Abschnitt **Bibliothek** der Dynamo-Benutzeroberfläche umfasst hierarchisch organisierte Bibliotheken. Um einen Block in der Bibliothek zu finden, müssen Sie tiefer in die Bibliothek eindringen und nacheinander die Bibliothek, die Kategorien der Bibliothek und die Unterkategorien einer Kategorie durchsuchen.
 
-![Bibliothekshierarchie](images/3-3/00-LibraryBrowsing.png)
+![Bibliothekshierarchie](images/3-3/00-LibraryBrowsing.jpg)
 
 > 1. Die Bibliothek: Der Bereich der Dynamo-Benutzeroberfläche
 2. Eine Bibliothek: Eine Sammlung verwandter Kategorien wie **Geometry**
@@ -26,7 +26,7 @@ Die Hierarchie der jeweiligen Bibliothek spiegelt sich im Namen der Blöcke wide
 
 Durch die Eingabe verschiedener Teile der Position des Blocks in der Bibliothekshierarchie im Format ```bibliothek.kategorie.blockname``` werden unterschiedliche Ergebnisse zurückgegeben:
 
-![Durchsuchen der Bibliothek – Aus drei "Benennungs"-PNGs erstellen](images/3-3/01-LibrarySearching.png)
+![Durchsuchen der Bibliothek – Aus drei "Benennungs"-PNGs erstellen](images/3-3/01-LibrarySearching.jpg)
 
 > 1. ```bibliothek.kategorie.blockname```
 2. ```kategorie.blockname```
@@ -34,9 +34,9 @@ Durch die Eingabe verschiedener Teile der Position des Blocks in der Bibliotheks
 
 In der Regel wird der Name eines Blocks im Arbeitsbereich im Format ```kategorie.blockname``` gerendert, wobei einige Ausnahme insbesondere bei der Eingabe- und Ansichtskategorie bestehen. Beachten Sie bei ähnlich benannten Blöcken den Kategorieunterschied:
 
-![Blocknamen](images/3-3/02-NodeNames.png)
+![Blocknamen](images/3-3/02-NodeNames.jpg)
 
-> 1. ```Point.ByCoordinates``` und ```UV.ByCoordinates``` weisen denselben Namen auf, stammen jedoch aus unterschiedlichen Kategorien
+> 1. ```Point.ByCoordinates``` und ```UV.ByCoordinates``` weisen denselben Namen auf, stammen jedoch aus unterschiedlichen Kategorien.
 2. Blöcke aus den meisten Bibliotheken schließen das Kategorieformat ein.
 3. Zu den wichtigsten Ausnahmen gehören Built-in Functions, Core.Input, Core.View und Operators.
 
@@ -48,7 +48,7 @@ Welche der zahlreichen Blöcke, die zum Lieferumfang der Basisinstallation von D
 
 Eingabeblöcke stellen das primäre Mittel für die Benutzer eines visuellen Programms – sowohl für Sie selbst als auch für andere Benutzer – zur Verwendung der Schlüsselparameter dar. Im Folgenden sind die Blöcke aufgeführt, die in der Kategorie Input der Core-Bibliothek verfügbar sind:
 
-![Eingabeblöcke](images/3-3/03-InputNodes.png)
+![Eingabeblöcke](images/3-3/03-InputNodes.jpg)
 
 > 1. Boolean
 2. Number
@@ -64,7 +64,7 @@ Die Beobachtungsblöcke sind für die Verwaltung der Daten, die ein visuelles Pr
 
 > Tipp: Die 3D-Vorschau kann bisweilen unübersichtlich sein, wenn Ihr visuelles Programm viele Blöcke enthält. Ziehen Sie in diesem Fall in Betracht, im Einstellungsmenü die Option zum Anzeigen der Hintergrundvorschau zu deaktivieren und einen Watch3D-Block zu verwenden, um eine Vorschau der Geometrie anzuzeigen.
 
-![Watch- und Watch3D-Blöcke](images/3-3/04-WatchNodes.png)
+![Watch- und Watch3D-Blöcke](images/3-3/04-WatchNodes.jpg)
 
 > 1. Watch: Beachten Sie bei Auswahl eines Elements im Watch-Block, dass das Element im Watch3D-Block und in 3D-Voransichten markiert wird.
 2. Watch3D: Ändern Sie die Größe mithilfe des Griffs rechts unten, und navigieren Sie mit der Maus wie in der 3D-Vorschau.
@@ -73,7 +73,7 @@ Die Beobachtungsblöcke sind für die Verwaltung der Daten, die ein visuelles Pr
 
 **Code Block**-Blöcke können verwendet werden, um einen Codeblock mit Linien durch Semikolons getrennt zu definieren. Dabei kann es sich einfach um ```X/Y``` handeln. Sie können auch Codeblöcke als Abkürzung verwenden, um einen Number Input-Block zu definieren oder eine andere Funktion des Blocks aufzurufen. Die Syntax hierfür entspricht der Benennungskonvention von DesignScript, der textuellen Sprache von Dynamo wie in Abschnitt 7.2 beschrieben. Versuchen Sie, mit diesem Kurzbefehl einen Kreis zu erstellen:
 
-![Codeblock-Tastaturbefehl](images/3-3/05-CodeBlock.png)
+![Codeblock-Tastaturbefehl](images/3-3/05-CodeBlock.jpg)
 
 > 1. Zum Erstellen eines **Code Block**-Blocks doppelklicken
 2. ```Circle.ByCenterPointRadius(x,y);``` eingeben

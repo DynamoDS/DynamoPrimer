@@ -8,7 +8,7 @@
 
 Die Geometrie ist nach traditioneller Definition die Studie der Form, Größe, relativen Position von Zahlen und der Eigenschaften im Raum. Dieser Bereich weist eine reiche Geschichte auf, die Tausende von Jahren zurückreicht. Mit dem Aufkommen und der Verbreitung des Computers verfügen Sie über ein leistungsstarkes Werkzeug für die Definition, Erforschung und Generierung von Geometrie. Es ist heute ein Leichtes, das Ergebnis komplexer geometrischer Interaktionen zu berechnen. Die Tatsache, dass dies getan wird, ist fast transparent.
 
-![Stanford Bunny](images/5-1/StanfordBunny.png)
+![Stanford Bunny](images/5-1/StanfordBunny.jpg)
 
 > Wenn Sie neugierig sind und mithilfe Ihres Computers herausfinden wollen, wie vielfältig und komplex Geometrie sein kann, führen Sie eine schnelle Internetsuche nach dem Stanford Bunny durch – einem kanonischen Modell zum Testen von Algorithmen.
 
@@ -25,7 +25,7 @@ In der Praxis bedeutet dies, dass uns bewusst sein muss, womit wir arbeiten (wel
 
 Nehmen Sie sich etwas Zeit, um die Beziehung zwischen der abstrakten und hierarchischen Beschreibung von Geometrie näher zu betrachten. Da diese beiden Konzepte miteinander verbunden, aber nicht immer auf den ersten Blick ersichtlich sind, können Sie schnell in eine konzeptuelle Sackgasse gelangen, sobald Sie damit beginnen, tiefergehende Arbeitsabläufe oder Modelle zu entwickeln. Verwenden Sie zunächst Dimensionalität als eine einfache Beschreibung des "Zeugs", das Sie modellieren. Die Anzahl der Bemaßungen, die erforderlich sind, um eine Form zu beschreiben, verdeutlich, wie Geometrie hierarchisch aufgebaut ist.
 
-![Rechnerische Geometrie](images/5-1/GeometryDimensionality.png)
+![Rechnerische Geometrie](images/5-1/GeometryDimensionality.jpg)
 
 > 1. Ein **Punkt** (definiert durch Koordinaten) verfügt über keine Bemaßungen, sondern weist nur Zahlen auf, die die einzelnen Koordinaten beschreiben.
 2. Eine **Linie** (definiert durch zwei Punkte) verfügt jetzt über *eine* Bemaßung – Sie können sich vorwärts (in positiver Richtung) oder rückwärts (in negativer Richtung) entlang der Linie bewegen.
@@ -40,11 +40,11 @@ Dimensionalität stellt eine praktische Möglichkeit zum Kategorisieren von Geom
 
 Was bedeutet dies für die Verwendung von Dynamo? Durch das Verstehen der Geometrietypen und der Beziehungen, die sie zueinander aufweisen, können Sie leichter durch die Sammlung der **Geometrieknoten** navigieren, die in der Bibliothek für Sie verfügbar sind. Die Geometrieknoten sind in alphabetischer Reihenfolge im Gegensatz zu hierarchischen angeordnet. Sie werden hier also ähnlich wie in ihrem Layout in der Dynamo Benutzeroberfläche angezeigt.
 
-![Geometrie in Dynamo](images/5-1/GeometryOrganization2.png)
+![Geometrie in Dynamo](images/5-1/GeometryOrganization2.jpg)
 
 Darüber hinaus sollte das Erstellen von Modellen in Dynamo und das Verbindung der Vorschau in der Hintergrundvorschau mit dem Datenstrom in unserem Diagramm im Laufe der Zeit intuitiver werden.
 
-![Geometrie in Dynamo](images/5-1/GeometryInDynamo.png)
+![Geometrie in Dynamo](images/5-1/GeometryInDynamo.jpg)
 
 > 1. Beachten Sie das angenommene Koordinatensystem, das durch das Raster und die farbigen Achsen dargestellt wird.
 2. Die ausgewählten Knoten rendern die entsprechende Geometrie (wenn der Knoten Geometrie erstellt) im Hintergrund in der Hervorhebungsfarbe.

@@ -8,7 +8,7 @@ In der Customizer-Ansicht werden komplexe Diagramme in einer einfachen Benutzero
 
 In der Customizer-Ansicht können Benutzer Geometrie als STL-Netz für die rasche Erstellung von Prototypen oder als Dynamo-Netzdatei exportieren.
 
-![](images/customizer_00.png)
+![](images/customizer_00.jpg)
 
 > Beispiele für die Customizer-Ansicht stehen auf [https://dynamo.autodesk.com/](https://dynamo.autodesk.com/) zur Verfügung.
 
@@ -16,7 +16,7 @@ In der Customizer-Ansicht können Benutzer Geometrie als STL-Netz für die rasch
 
 Die Customizer-Ansicht besteht aus einer Menüleiste, einem Flyout-Menü mit einer Beschreibung der Datei und Benutzereingaben sowie einer 3D-Ansicht, ähnlich dem Dynamo-Arbeitsbereich.
 
-![](images/customizer_01.png)
+![](images/customizer_01.jpg)
 
 > 1. Menüleiste
 2. Steuerelemente
@@ -26,7 +26,7 @@ Die Customizer-Ansicht besteht aus einer Menüleiste, einem Flyout-Menü mit ein
 
 Die Menüleiste der Customizer-Ansicht umfasst Informationen zur Datei, Steuerelemente zur Navigation sowie Download-Optionen.
 
-![](images/customizer_02.png)
+![](images/customizer_02.jpg)
 
 > 1. Titel: Name der Datei
 2. Autor: Eigentümer der Datei
@@ -42,7 +42,7 @@ Die Menüleiste der Customizer-Ansicht umfasst Informationen zur Datei, Steuerel
 
 Das Menü mit den Steuerelementen enthält die Eingaben für das Dynamo-Skript. Dazu gehören Zahlen, Schieberegler, Zeichenfolgen und boolesche Werte sowie eine kurze Beschreibung der Datei. Die Steuerelemente entsprechen den in der Dynamo-Originaldatei enthaltenen Eingaben und sind daher von Skript zu Skript unterschiedlich. Dieses Menü kann durch Klicken auf das Pfeilsymbol ausgeblendet werden.
 
-![](images/customizer_03.png)
+![](images/customizer_03.jpg)
 
 > 1. Steuerelemente ausblenden/erweitern
 2. Dateibeschreibung

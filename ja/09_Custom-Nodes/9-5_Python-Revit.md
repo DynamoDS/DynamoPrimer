@@ -26,7 +26,7 @@ import System
 
 これにより、Revit API にアクセスし、任意の Revit タスクでカスタム スクリプトを使用できるようになります。ビジュアル プログラミングのプロセスと Revit API スクリプトを組み合わせることにより、コラボレーションやツールの開発が容易になります。たとえば、BIM マネージャと回路設計者が、同じグラフを使用して同時に作業することができます。こうしたコラボレーションにより、モデルの設計と施工を改善することができます。
 
-![演習](images/9-4/pythonRevit.png)
+![演習](images/9-4/pythonRevit.jpg)
 
 ### プラットフォーム固有の API
 
@@ -40,11 +40,11 @@ Dynamo プロジェクトの背景には、プラットフォーム実装のス�
 
 これ以降の一連の演習では、Dynamo for Revit における基本的な Python スクリプトについて説明します。この演習では、Revit のファイルと要素を使用します。また、Revit と Dynamo 間の通信についても説明します。
 
-![演習](images/9-4/Exercise/Revit/Images/RevitPython - 10.png)
+![演習](images/9-4/Exercise/Revit/Images/RevitPython - 10.jpg)
 
 > ここでは、Dynamo セッションにリンクされた Revit ファイルの *doc*、*uiapp*、*app* を取得するための一般的な方法について説明します。 Revit API を使用したことのあるプログラマならば、上図の Watch リストのような項目を見たことがあるでしょう。これらの項目を見たことがなくても、特に問題はありません。これ以降の演習で、別の例を使用して説明します。
 
-RevitServices を読み込み、Dynamo のドキュメント データを取得するには、次のようなスクリプトを記述します。![演習](images/9-4/Exercise/Revit/Images/RevitPython - 06.png)
+RevitServices を読み込み、Dynamo のドキュメント データを取得するには、次のようなスクリプトを記述します。![演習](images/9-4/Exercise/Revit/Images/RevitPython - 06.jpg)
 
 > ここで、Dynamo の Python Script ノードを確認します。コメント付きのコードを次に示します。
 
@@ -70,7 +70,7 @@ OUT=[doc,uiapp,app]
 
 この演習では、Dynamo の Python Script ノードを使用して、Revit 内に単純なモデル曲線を作成します。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 08.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 08.jpg)
 
 > 最初に、上図に示す一連のノードを作成します。次に、Dynamo のノードを使用して、Revit 内に 2 つの参照点を作成します。
 
@@ -83,7 +83,7 @@ OUT=[doc,uiapp,app]
 5. 各 Number Slider ノードを ReferencePoint.ByCoordinates ノードに接続します。
 6. Python Script ノードをワークスペースに追加し、このノードの[+]ボタンをクリックして入力をもう 1 つ追加して、各入力に参照点を接続します。Python Script ノードを開きます。
 
-![演習](images/9-4/Exercise/Revit/Images/RevitPython - 07.png)
+![演習](images/9-4/Exercise/Revit/Images/RevitPython - 07.jpg)
 
 > ここで、Dynamo の Python Script ノードを確認します。コメント付きのコードを次に示します。
 
@@ -109,7 +109,7 @@ refPtArray = System.Array[ReferencePoint]([startRefPt, endRefPt])
 OUT = CurveByPoints.ByReferencePoints(refPtArray)
 ```
 
-![演習](images/9-4/Exercise/Revit/Images/RevitPython - 09.png)
+![演習](images/9-4/Exercise/Revit/Images/RevitPython - 09.jpg)
 
 > ここまでの手順で、Dynamo で Python を使用して、線分で接続された 2 つの参照点を作成しました。次の演習で、さらに操作を進めてみましょう。
 
@@ -119,11 +119,11 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 
 > この演習では、簡単な操作を実行することにより、Revit と Dynamo 間で相互にデータやジオメトリを接続する場合の要点について説明します。最初に Revit-StructuralFraming.rvt を開き、次に Dynamo を読み込んで、Revit-StructuralFraming.dyn を開きます。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 04.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 04.jpg)
 
 > この Revit ファイルは、基本的なファイルです。レベル 1 とレベル 2 にそれぞれ 1 本ずつ、2 本の異なる参照曲線が描画されています。これらの曲線を Dynamo に読み込み、ライブ リンクを作成します。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 01a.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 01a.jpg)
 
 > このファイルでは、Python Script ノードの 5 つの入力に一連のノードが接続されています。
 
@@ -132,7 +132,7 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 3. **Structural Framing Types** ノードのドロップダウン メニューで、既定の W12x26 梁を選択します。
 4. **Levels** ノードで、「Level 1」を選択します。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 00.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 00.jpg)
 
 > この Python コードは、これまでのコードよりも行数が多くなっていますが、コード行の前後のコメントを参照すると、プロセス内の処理内容を確認することができます。
 
@@ -171,9 +171,9 @@ beam = StructuralFraming.BeamByCurve(beamCrv,designLevel,framingType)
 OUT.append(beam.Faces)
 ```
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 03.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 03.jpg)
 
-> Revit で、2 つの曲線にわたる梁の配列が構造要素として作成されました。この構造要素は、Dynamo でネイティブの Revit インスタンスを作成する場合の例として使用しているもので、実際にはあり得ない構造要素であることに注意してください。![](images/9-4/Exercise/Revit/Images/RevitPython - 05.png)Dynamo でも、結果を確認することができます。 Watch 3D ノードの梁は、Revit 要素からクエリーされたジオメトリを参照します。
+> Revit で、2 つの曲線にわたる梁の配列が構造要素として作成されました。この構造要素は、Dynamo でネイティブの Revit インスタンスを作成する場合の例として使用しているもので、実際にはあり得ない構造要素であることに注意してください。![](images/9-4/Exercise/Revit/Images/RevitPython - 05.jpg)Dynamo でも、結果を確認することができます。 Watch 3D ノードの梁は、Revit 要素からクエリーされたジオメトリを参照します。
 
 このセクションでは、Revit 環境から Dynamo 環境にデータを変換する一連のプロセスを作成しました。このプロセスをまとめると、次のようになります。
 
@@ -186,7 +186,7 @@ OUT.append(beam.Faces)
 
 これは複雑なプロセスに見えるかもしれませんが、スクリプトを使用すると、Revit で曲線を編集してソルバを再実行するのと変わらないほど単純な処理になります(ただし、そのためには、元の梁を削除する必要があります)。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 01.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 01.jpg)
 
 > Revit で参照曲線を更新すると、梁の新しい配列が作成されます。
 

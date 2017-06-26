@@ -2,9 +2,9 @@
 
 # Der Dynamo Primer
 
-## Für Dynamo v1.2
+## Für Dynamo v1.3
 
-![Dynamo-Logo](images/dynamo_logo_dark-trim.png)
+![Dynamo-Logo](images/dynamo_logo_dark-trim.jpg)
 
 > Dynamo ist eine Open-Source-Plattform zur visuellen Programmierung, die für Konstrukteure konzipiert ist.
 
@@ -21,7 +21,7 @@ Der Leistungsumfang von Dynamo spiegelt sich in einer breiten Palette an konstru
 
 Vor dem Hintergrund dieser Aktivitäten und den aufregenden Möglichkeiten, die uns die Arbeit mit Dynamo bietet, benötigen wir ein Dokument desselben Kalibers, den Dynamo Primer.
 
-Version 1.0 dieses Primers enthält die ersten zehn Kapitel, die von Mode Lab entwickelt wurden. In diesen Kapiteln liegt der Schwerpunkt auf den Grundlagen, die Sie zum Entwickeln Ihrer eigenen visuellen Programme mit Dynamo benötigen, und auf wichtigen Einblicken in die weiteren Schritte mit Dynamo. Der Primer bietet die folgenden Lerninhalte:
+Dieser Leitfaden enthält Kapitel mit Mode Lab entwickelte Kapitel. In diesen Kapiteln liegt der Schwerpunkt auf den Grundlagen, die Sie zum Entwickeln Ihrer eigenen visuellen Programme mit Dynamo benötigen, und auf wichtigen Einblicken in die weiteren Schritte mit Dynamo. Der Primer bietet die folgenden Lerninhalte:
 
 * **Kontext** – Was genau ist die "Visuelle Programmierung" und mit welchen Konzepten muss ich vertraut sein, um tiefer in Dynamo einzutauchen?
 * **Erste Schritte** – Wie erhalte ich Dynamo und erstelle damit mein erstes Programm?
@@ -52,7 +52,7 @@ Dynamo Primer ist ein Open-Source-Projekt, das von Matt Jezyk und dem Dynamo-Ent
 
 **Mode Lab** wurde damit beauftragt, die erste Version dieses Primers zu verfassen. Das Team arbeitet weiterhin mit Autodesk zusammen, um Aktualisierungen parallel zu den Entwicklungen von Dynamo bereitzustellen.
 
-[![](images/MODELAB_Logo.png)](http://modelab.is)
+[![](images/MODELAB_Logo.jpg)](http://modelab.is)
 
 ### Danksagungen
 
@@ -62,7 +62,7 @@ Vielen Dank auch an Matt Jezyk, Ian Keough, Zach Kron and Colin McCrone für die
 
 ### Software und Ressourcen
 
-**Dynamo** Das aktuelle stabile Release von Dynamo ist Version 1.2.0.
+**Dynamo** Die aktuelle stabile Version von Dynamo ist Version 1.3.
 
 [http://dynamobim.com/download/](http://dynamobim.com/download/)
 

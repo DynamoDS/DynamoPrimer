@@ -10,25 +10,25 @@ Mit Dynamo Studio können Sie Ihre Dateien schnell und leicht im Internet veröf
 
 In dieser Übung veröffentlichen Sie ein Dynamo-Diagramm im Internet. In dieser Datei wird ein Raster aus Rechtecken erstellt, die mithilfe eines Attraktors skaliert und von einer Basisoberfläche ausgehend einer Zieloberfläche zugeordnet werden. Aus den einzelnen Rechtecken werden Oberflächenfelder erstellt und in Abhängigkeit von ihrer Entfernung zum Attraktor eingefärbt.
 
-![](images/publishing_00.png)
+![](images/publishing_00.jpg)
 
 > Dies ist der Customizer, den Sie hier erstellen. Sehen Sie dieses Beispiel im [Internet](dynamo.autodesk.com/share/572a49033a47345a0407e803) an.
 
 Um Ihr Skript für die Veröffentlichung vorzubereiten, entscheiden Sie zunächst, welche Eingaben für die Benutzer zugänglich sein sollen. Zu den zulässigen Eingaben gehören Schieberegler, Zahlen, Zeichenfolgen und boolesche Werte. Codeblöcke und Dateipfade können nicht als Eingaben verwendet werden. Deaktivieren Sie über das Kontextmenü die Option Ist Eingabe für alle Eingaben, die nicht in der Customizer-Ansicht angezeigt werden sollen. Achten Sie darauf, in allen Schieberegler-Eingaben angemessene Minimal- und Maximalwerte anzugeben.
 
-![](images/publishing_01.png)
+![](images/publishing_01.jpg)
 
 > Deaktivieren Sie über das Kontextmenü die Option Ist Eingabe für alle Eingaben, die nicht im Customizer angezeigt werden sollen.
 
 Zweitens müssen Sie sicherstellen, dass alle Eingaben unmissverständlich beschriftet sind.
 
-![](images/publishing_02.png)
+![](images/publishing_02.jpg)
 
 > Beschriften Sie die Eingaben, indem Sie auf den Namen des Blocks doppelklicken, um ihn zu bearbeiten.
 
 Beziehen Sie Vorschaugeometrie ein, um Ihr Skript leichter verständlich zu machen. In diesem Beispiel wird die Position des Attraktors durch eine Kugel markiert und die Oberflächen werden in Abhängigkeit von ihrer Entfernung zum Attraktor gefärbt. Dadurch ist die Wirkung des Attraktors leicht zu visualisieren und zu verstehen.
 
-![](images/publishing_03.png)
+![](images/publishing_03.jpg)
 
 ### Datei veröffentlichen
 
@@ -46,7 +46,7 @@ Geben Sie eine Beschreibung der Datei sowie gegebenenfalls Anweisungen zum Einst
 
 Um Ihre veröffentlichten Skripts zu verwalten, besuchen Sie [https://dynamo.autodesk.com](https://dynamo.autodesk.com) und melden Sie sich bei Ihrem Konto an. Wählen Sie in der Dropdown-Liste rechts oben die Option Manage. Auf dieser Seite können Sie Arbeitsbereiche, die Sie bereits veröffentlicht haben, bearbeiten, freigeben oder löschen. Sie können diese Seite auch über die Option zum Verwalten von Web-Arbeitsbereichen im Menü Datei von Dynamo Studio aufrufen.
 
-![](images/publishing_07.png)
+![](images/publishing_07.jpg)
 
 > 1. Arbeitsbereich bearbeiten
 2. Arbeitsbereich löschen

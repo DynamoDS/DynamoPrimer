@@ -14,19 +14,19 @@
 
 |圖示|名稱|語法|輸入|輸出|
 | -- | -- | -- | -- | -- |
-|![](../images/icons/DSCoreNodesUI-Logic-If-Large.png)|If|If|測試、true、false|結果|
-|![](../images/icons/DSCoreNodesUI-Formula-Large.png)|公式|IF(x,y,z)|x、y、z|結果|
-|![](../images/icons/Dynamo-Nodes-CodeBlockNodeModel-Large.png)|程式碼塊|(x?y:z)|x、y、z|結果|
+|![](../images/icons/DSCoreNodesUI-Logic-If-Large.jpg)|If|If|test、true、false|result|
+|![](../images/icons/DSCoreNodesUI-Formula-Large.jpg)|Formula|IF(x,y,z)|x、y、z|result|
+|![](../images/icons/Dynamo-Nodes-CodeBlockNodeModel-Large.jpg)|Code Block|(x?y:z)|x、y、z|result|
 
 接下來瞭解使用條件「if」陳述式的三種有效節點中每種節點的簡單範例：
 
-![](images/4-3/IFs.png)
+![](images/4-3/IFs.jpg)
 
-> 在此影像中，*布林值*設為 *true*，這意味著結果是字串*「this is the result if true」。*建立 *If* 陳述式的三個節點在這裡的工作方式完全相同。
+> 在此影像中，*boolean*設為 *true*，這意味著結果是字串*「this is the result if true」。*建立 *If* 陳述式的三個節點在這裡的工作方式完全相同。
 
-![](images/4-3/IFs2.png)
+![](images/4-3/IFs2.jpg)
 
-> 再說一次，節點的工作方式完全相同。若*布林值*變更為 *false*，則結果是數字 *Pi*，如原始 *If* 陳述式所定義。
+> 再說一次，節點的工作方式完全相同。若*boolean*變更為 *false*，則結果是數字 *Pi*，如原始 *If* 陳述式所定義。
 
 ### 篩選清單
 
@@ -34,7 +34,7 @@
 
 接下來使用邏輯將數字清單分隔為偶數清單與奇數清單。
 
-![](images/4-3/01.png)
+![](images/4-3/01.jpg)
 
 > 1. **Number Range -** 加入數字範圍至圖元區。
 2. **Numbers -** 加入三個數字節點至圖元區。每個數字節點的值應為：*0.0* (*start*)、*10.0* (*end*) 與 *1.0* (*step*)。
@@ -42,21 +42,21 @@
 4. **模除 (%)-** 將 *Number Range* 連接至 *x*，將 *2.0* 連接至 *y*。這會計算清單中的每個數字除以 2 產生的餘數。此清單的輸出是 0 與 1 交替顯示的數值清單。
 5. **相等性測試 (==)** - 加入相等性測試至圖元區。將 *模除* 輸出插入至 *x* 輸入，將 *0.0* 插入至 *y* 輸入。
 6. **Watch -** 相等性測試的輸出是 true 與 false 交替顯示的清單。這些值用於分隔清單中的項目。*0* (或 *true*) 表示偶數，*1* (或 *false*) 表示奇數。
-7. **List.FilterByBoolMask** - 此節點將根據輸入的布林值，將這些值篩選到兩個不同清單中。將原始 *數字範圍* 插入至 *list* 輸入，將 *相等性測試**輸出插入至 *mask* 輸入。輸出 *in* 表示 true 值，而輸出 *out* 表示 false 值。
+7. **List.FilterByBoolMask** - 此節點將根據輸入的布林值，將這些值篩選到兩個不同清單中。將原始 *number range* 插入至 *list* 輸入，將 *equality test* 輸出插入至 *mask* 輸入。輸出 *in* 表示 true 值，而輸出 *out* 表示 false 值。
 8. **Watch - ** 結果是我們現在產生了偶數清單與奇數清單。我們已使用邏輯運算子將清單分隔為多種樣式！
 
 ### 從邏輯到幾何圖形
 
 接下來我們將建置第一個練習中建立的邏輯，將此設置套用到塑型作業中。
 
-![](images/4-3/02.png)
+![](images/4-3/02.jpg)
 
 > 1. 我們從上一個練習開始，採用相同的節點。唯一的例外是
 2. 我們變更了格式。
 3. 輸入值已變更。
 4. 我們並未將 in 清單輸入插入至 *List.FilterByBoolMask*。暫時將這些節點放在一旁，它們在稍後的練習中會有用。
 
-![](images/4-3/03.png)
+![](images/4-3/03.jpg)
 
 > 我們先將節點連接在一起，如以上影像中所示。此節點群組表示定義曲線所用的參數式方程式。一些註記如下：
 
@@ -66,28 +66,28 @@
 
 此處採用的輸入方式：對更具靜態的性質使用數字節點，對更具彈性的性質使用數字滑棒。我們希望保留在這一步開始時定義的原始數字範圍。但是，我們在此建立的正弦曲線應具有某些彈性。我們可以移動這些滑棒以觀看曲線對其頻率與幅度的更新。
 
-![](images/4-3/04.png)
+![](images/4-3/04.jpg)
 
 > 我們將對定義進行一些調整，因此接下來看一下最終結果，以便可以參考取得的結果。之前，前兩個步驟是分別執行的，現在我們要連接兩者。我們將使用基準正弦曲線以驅動拉鍊元件的位置，並使用 true/false 邏輯實現大小方塊的交替變化。
 
-![](images/4-3/05.png)
+![](images/4-3/05.jpg)
 
 > 1. **Math.RemapRange** - 接下來使用步驟 01 中建立的數字序列，透過重新對映範圍建立新的數字系列。步驟 01 中的原始數字介於 0-100 之間。現在這些數字的範圍分別由 *newMin* 與 *newMax* 輸入限制為從 0 至 1。
 
-![](images/4-3/06.png)
+![](images/4-3/06.jpg)
 
-> 1. **Curve.PointAtParameter** - 將步驟 2 中的 *Polycurve.ByPoints* 插入至*曲線*，將 *Math.RemapRange* 插入至 *param*。此步驟將建立沿曲線的點。我們將數字重新對映到從 0 至 1 的範圍，因為 *param* 的輸入會尋找此範圍內的值。*0* 值表示起點，*1* 值表示終點。演算的所有數字都位於 *[0,1]* 範圍內。
+> 1. **Curve.PointAtParameter** - 將步驟 2 中的 *Polycurve.ByPoints* 插入至*curve*，將 *Math.RemapRange* 插入至 *param*。此步驟將建立沿曲線的點。我們將數字重新對映到從 0 至 1 的範圍，因為 *param* 的輸入會尋找此範圍內的值。*0* 值表示起點，*1* 值表示終點。演算的所有數字都位於 *[0,1]* 範圍內。
 
-![](images/4-3/07.png)
+![](images/4-3/07.jpg)
 
 > 1. **List.FilterByBoolMask** - 將上一步中的 *Curve.PointAtParameter* 插入至 *list* 輸入。
 2. **Watch -** *in* 的 Watch 節點與 *out* 的 Watch 節點將展示分別代表偶數項與奇數項的兩個清單。這些點按照在曲線上的位置順序排序，我們將在下一步中展示這一點。
 
-![](images/4-3/08.png)
+![](images/4-3/08.jpg)
 
-> 1. **Cuboid.ByLengths** - 重新建立以上影像中顯示的連接，以產生沿正弦曲線的拉鍊。立方體在這裡只是方塊，我們將根據 hte 方塊中心的曲線點定義其大小。現在，模型中應該已清晰呈現偶數/奇數的區分邏輯。
+> 1. **Cuboid.ByLengths** - 重新建立以上影像中顯示的連接，以產生沿正弦曲線的拉鍊。立方體在這裡只是方塊，我們將根據方塊中心的曲線點定義其大小。現在，模型中應該已清晰呈現偶數/奇數的區分邏輯。
 
-![](images/4-3/matrix.png)
+![](images/4-3/matrix.jpg)
 
 > 1. **Number Slider -** 返回定義的開始，我們可以調整數字滑棒，然後觀看拉鍊更新。頂部的一列影像表示頂部數字滑棒的範圍值。這是波的頻率。
 2. **Number Slider -** 底部的一列影像表示底部滑棒的範圍值。這是波的幅度。
