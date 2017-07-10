@@ -4,7 +4,7 @@
 
 Die Benutzeroberfläche (UI) von Dynamo weist fünf Hauptbereiche auf, von denen der größte der Arbeitsbereich ist, in dem Sie Ihre visuellen Programme erstellen.
 
-![Bereiche der Benutzeroberfläche](images/2-2/01-UI-Regions.png)
+![Bereiche der Benutzeroberfläche](images/2-2/01-UI-Regions.jpg)
 
 > 1. Menüs
 2. Werkzeugkasten
@@ -18,7 +18,7 @@ Machen Sie sich genauer mit der Benutzeroberfläche vertraut, und untersuchen Si
 
 In den Dropdown-Menüs können Sie einige der grundlegenden Funktionen der Dynamo-Anwendung aufrufen. Wie in fast jeder anderen Windows-Software finden Sie die Aktionen zum Verwalten von Dateien und Operationen zum Auswählen und Bearbeiten von Inhalten in den ersten beiden Menüs. Die übrigen Menüs sind für Dynamo spezifisch.
 
-![Dropdown-Menüs](images/2-2/02-Menus.png)
+![Dropdown-Menüs](images/2-2/02-Menus.jpg)
 
 > 1. Datei
 2. Bearbeiten
@@ -31,7 +31,7 @@ In den Dropdown-Menüs können Sie einige der grundlegenden Funktionen der Dynam
 
 Der Dynamo Werkzeugkasten enthält eine Reihe von Schaltflächen für den Schnellzugriff zum Arbeiten mit Dateien sowie die Befehle Rückgängig [Ctrl + Z] und Wiederholen [Ctrl + Y]. Ganz rechts befindet sich eine weitere Schaltfläche, über die Sie einen Snapshot des Arbeitsbereichs exportieren können. Dies ist für die Dokumentation und die gemeinsame Bearbeitung mit anderen äußerst nützlich.
 
-![Aktualisierung erforderlich – geteilte Position des Werkzeugkastens](images/2-2/03-Toolbar.png)
+![Aktualisierung erforderlich – geteilte Position des Werkzeugkastens](images/2-2/03-Toolbar.jpg)
 
 > 1. Neu: Neue .dyn-Datei erstellen
 2. Öffnen: Vorhandene .dyn-Datei (Arbeitsbereich) oder .dyf-Datei (benutzerdefinierter Block) öffnen
@@ -50,7 +50,7 @@ Standardmäßig enthält die **Bibliothek** acht Kategorien von Blöcken. Am bes
 
 > Konzentrieren Sie sich zunächst auf die Standardsammlung an Blöcken. Beachten Sie, dass Sie diese Bibliothek später um benutzerdefinierte Blöcke, zusätzliche Bibliotheken und den Package Manager erweitern werden.
 
-![AKTUALISIERUNG ERFORDERLICH - vollständige Breite - Bibliothekskategorien](images/2-2/04-LibraryCategories.png)
+![AKTUALISIERUNG ERFORDERLICH - vollständige Breite - Bibliothekskategorien](images/2-2/04-LibraryCategories.jpg)
 
 > 1. Analysieren
 2. Integrierte Funktionen
@@ -62,7 +62,7 @@ Standardmäßig enthält die **Bibliothek** acht Kategorien von Blöcken. Am bes
 
 Durchsuchen Sie die Bibliothek, indem Sie sich durch die Menüs klicken. Klicken Sie auf Geometry > Circle. Beachten Sie den neuen Abschnitt des Menüs, der eingeblendet wird, insbesondere die Bezeichnungen **Erstellen** und **Abfrage**.
 
-![AKTUALISIERUNG ERFORDERLICH - vollständige Breite nutzen - Durchsuchen der Bibliothek](images/2-2/05-LibraryBrowsing.png)
+![AKTUALISIERUNG ERFORDERLICH - vollständige Breite nutzen - Durchsuchen der Bibliothek](images/2-2/05-LibraryBrowsing.jpg)
 
 > 1. Bibliothek
 2. Kategorie
@@ -72,7 +72,7 @@ Durchsuchen Sie die Bibliothek, indem Sie sich durch die Menüs klicken. Klicken
 
 Bewegen Sie den Cursor im Menü Kreis auf **ByCenterPointRadius**. Das daraufhin angezeigte Fenster enthält über den Namen und das Symbol hinaus noch weitere detaillierte Informationen zu dem Block. Dadurch können Sie schnell nachvollziehen, welche Aktion der Block ausführt, welche Eingaben erforderlich sind und was von dem Block ausgegeben wird.
 
-![Popup-Fenster für Blöcke](images/2-2/06-NodePopup.png)
+![Popup-Fenster für Blöcke](images/2-2/06-NodePopup.jpg)
 
 > 1. Beschreibung: Kurze Beschreibung des Blocks
 2. Symbol: Größere Version des Symbols im Menü Bibliothek
@@ -83,7 +83,7 @@ Bewegen Sie den Cursor im Menü Kreis auf **ByCenterPointRadius**. Das daraufhin
 
 Wenn Sie relativ genau wissen, welchen Block Sie zu Ihrem Arbeitsbereich hinzufügen möchten, können Sie das Feld **Suchen** verwenden. Solange Sie keine Einstellungen bearbeiten oder Werte im Arbeitsbereich angeben, befindet sich der Cursor in diesem Feld. Sobald Sie etwas in das Feld eingeben, werden in der Dynamo-Bibliothek die beste Übereinstimmung (mit Breadcrumbs dafür, wo der Suchbegriff in den Blockkategorien gefunden werden kann) und eine Liste alternativer Übereinstimmungen der Suche angezeigt. Wenn Sie die Eingabetaste drücken oder im eingeschränkten Browser auf das Element klicken, wird der hervorgehobene Block in der Mitte des Arbeitsbereichs hinzugefügt.
 
-![Durchsuchen der Bibliothek](images/2-2/07-LibrarySearching.png)
+![Durchsuchen der Bibliothek](images/2-2/07-LibrarySearching.jpg)
 
 > 1. Suchfeld
 2. Am besten übereinstimmendes Ergebnis/Ausgewählt
@@ -95,7 +95,7 @@ Im Menü **Einstellungen** sind sowohl geometrische als auch Benutzereinstellung
 
 > Hinweis: Die Einheiten in Dynamo sind generisch.
 
-![Menü anzeigen](images/2-2/08-Settings.png)
+![Menü anzeigen](images/2-2/08-Settings.jpg)
 
 > 1. Berichte aktivieren: Optionen zur Weitergabe von Benutzerdaten für die Verbesserung von Dynamo.
 2. Optionen für das Zahlenformat: Ändern der Dokumenteinstellungen für Dezimalstellen.
@@ -109,7 +109,7 @@ Im Menü **Einstellungen** sind sowohl geometrische als auch Benutzereinstellung
 
 Wenn Sie nicht weiterkommen, verwenden Sie das Menü **Hilfe**. Hier finden Sie die Beispieldateien, die zum Lieferumfang Ihrer Installation gehört haben, und können in Ihrem Internet-Browser auf eine der Referenz-Websites von Dynamo zugreifen. Falls erforderlich, können Sie über die Option **Info** überprüfen, welche Version von Dynamo installiert ist und ob sie aktuell ist.
 
-![Menü anzeigen](images/2-2/09-Help.png)
+![Menü anzeigen](images/2-2/09-Help.jpg)
 
 > 1. Erste Schritte: eine kurze Einführung in die Verwendung von Dynamo.
 2. Beispiele: Beispieldateien als Referenz.

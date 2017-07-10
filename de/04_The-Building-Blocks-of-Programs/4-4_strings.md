@@ -8,7 +8,7 @@ Eine **Zeichenfolge** ist in der Fachsprache eine Folge von Zeichen, die für ei
 
 Zeichenfolgen können auf vielfältige Weise eingesetzt werden. Dazu gehören das Definieren benutzerdefinierter Parameter, Beschriftungen für Dokumentation sowie die Analyse mithilfe textbasierter Datensätze. Der String-Block befindet sich in der Kategorie Core > Input.
 
-![String Examples](images/4-4/4-4-1-005.png)
+![String Examples](images/4-4/4-4-1-005.jpg)
 
 > Die oben gezeigten Blöcke sind Zeichenfolgen. Zeichenfolgen können Zahlen, Buchstaben oder ganze Textabschnitte sein.
 
@@ -20,11 +20,11 @@ Sie können große Datenmengen rasch analysieren, indem Sie Zeichenfolgen abfrag
 
 Die folgende Abbildung zeigt eine Folge von Daten aus einer externen Kalkulationstabelle. Diese Zeichenfolge steht für die Scheitelpunkt eines Rechtecks in der xy-Ebene. In dieser kurzen Übung wird die Zeichenfolge geteilt:
 
-![StringSplit](images/4-4/4-4-1-001.png)
+![StringSplit](images/4-4/4-4-1-001.jpg)
 
 > 1. Das Trennzeichen ";" trennt die einzelnen Scheitelpunkte des Rechtecks voneinander. Dadurch erhalten Sie eine Liste mit vier Einträgen für die einzelnen Scheitelpunkte.
 
-![StringSplit](images/4-4/4-4-1-003.png)
+![StringSplit](images/4-4/4-4-1-003.jpg)
 
 > 1. Durch Klicken auf "*+*" in der Mitte des Blocks erstellen Sie ein neues Trennzeichen.
 2. Fügen Sie einen String-Block mit der Angabe "*,*" in den Ansichtsbereich ein und verbinden Sie ihn mit der neuen separator-Eingabe.
@@ -32,11 +32,11 @@ Die folgende Abbildung zeigt eine Folge von Daten aus einer externen Kalkulation
 
 Die Einträge in der oben gezeigten Liste sehen zwar wie Zahlen aus, werden jedoch in Dynamo nach wie vor als einzelne Zeichen betrachtet. Damit Sie Punkte erstellen können, müssen Sie ihren Datentyp aus Zeichenfolgen in Zahlen konvertieren. Dazu verwenden Sie den Block String.ToNumber.
 
-![StringSplit](images/4-4/4-4-1-002.png)
+![StringSplit](images/4-4/4-4-1-002.jpg)
 
 > 1. Dieser Block ist einfach zu verwenden. Verbinden Sie das Ergebnis von String.Split mit der Eingabe. Die Ausgabe sieht genau so aus wie zuvor, der Datentyp ist jetzt jedoch *number* anstelle von *string*.
 
-![StringToNumber](images/4-4/4-4-1-004.png)
+![StringToNumber](images/4-4/4-4-1-004.jpg)
 
 > 1. Mit einigen weiteren grundlegenden Operationen wird am Ursprungspunkt ein Rechteck gezeichnet, dem die Zeichenfolge aus der ursprünglichen Eingabe zugrunde liegt.
 
@@ -46,7 +46,7 @@ Da Zeichenfolgen allgemeine Textobjekte sind, eignen sie sich für eine Vielzahl
 
 Die folgende Methode verbindet zwei Zeichenfolgen in der angegebenen Reihenfolge. Dabei werden die einzelnen Literalzeichenfolgen in einer Liste zu einer einzigen Zeichenfolge zusammengeführt.
 
-![Concatenate](images/4-4/4-4-1-007.png)
+![Concatenate](images/4-4/4-4-1-007.jpg)
 
 > Die Abbildung oben zeigt die Verkettung dreier Zeichenfolgen.
 
@@ -55,7 +55,7 @@ Die folgende Methode verbindet zwei Zeichenfolgen in der angegebenen Reihenfolge
 
 Die Verbindung ist der Verkettung ähnlich, wobei das Ergebnis jedoch zusätzlich gegliedert wird.
 
-Aus der Arbeit mit Excel sind Sie wahrscheinlich mit CSV-Dateien vertraut. Dies steht für kommagetrennte Werte. Sie könnten im Join-Block ein Komma (oder in diesem Fall zwei Bindestriche) als Trennzeichen verwenden, um eine ähnliche Datenstruktur zu erhalten: ![Concatenate](images/4-4/4-4-1-006.png)
+Aus der Arbeit mit Excel sind Sie wahrscheinlich mit CSV-Dateien vertraut. Dies steht für kommagetrennte Werte. Sie könnten im Join-Block ein Komma (oder in diesem Fall zwei Bindestriche) als Trennzeichen verwenden, um eine ähnliche Datenstruktur zu erhalten: ![Concatenate](images/4-4/4-4-1-006.jpg)
 
 > Die Abbildung oben zeigt die Verbindung zweier Zeichenfolgen:
 
@@ -65,7 +65,7 @@ Aus der Arbeit mit Excel sind Sie wahrscheinlich mit CSV-Dateien vertraut. Dies 
 
 In dieser Übungslektion zerlegen Sie die letzte Strophe von Robert Frosts Gedicht [Stopping By Woods on a Snowy Evening](http://www.poetryfoundation.org/poem/171621) mithilfe von Methoden zum Abfragen und Bearbeiten von Zeichenfolgen. Diese zugegebenermaßen nicht unbedingt praxisnahe Anwendung verdeutlicht die grundlegenden Aktionen für Zeichenfolgen durch Anwendung auf die Zeilen mit ihrem Rhythmus und Reim, wie sie im Gedicht erscheinen.
 
-![Split String](images/4-4/4-4-4/00.png)
+![Split String](images/4-4/4-4-4/00.jpg)
 
 > Als Erstes teilen Sie einfach die Zeichenfolge, die die Strophe bildet. Zunächst fällt auf, dass der Text durch Kommas gegliedert ist. Anhand dieses Formats definieren Sie jede Zeile als eigenen Eintrag.
 
@@ -74,7 +74,7 @@ In dieser Übungslektion zerlegen Sie die letzte Strophe von Robert Frosts Gedic
 3. Fügen Sie im Ansichtsbereich einen String.Split-Block hinzu und verbinden Sie ihn mit den beiden String-Blöcken.
 4. Die Ausgabe zeigt die einzelnen Zeilen als separate Einträge.
 
-![Split String](images/4-4/4-4-4/01.png)
+![Split String](images/4-4/4-4-4/01.jpg)
 
 > Betrachten Sie jetzt den besten Teil des Gedichts – die letzten beiden Zeilen. Die ursprüngliche Strophe war ein einziges Datenelement. Diese Daten haben Sie im ersten Schritt in einzelne Einträge aufgeteilt. Als Nächstes müssen Sie nach dem gewünschten Text suchen. In diesem Fall *können* Sie dies zwar erreichen, indem Sie die letzten beiden Einträge in der Liste auswählen. In einem ganzen Buch wäre es jedoch unrealistisch, dieses komplett durchzulesen und die Elemente manuell zu isolieren.
 
@@ -82,19 +82,19 @@ In dieser Übungslektion zerlegen Sie die letzte Strophe von Robert Frosts Gedic
 2. Definieren Sie in der searchFor-Eingabe die Teilzeichenfolge, nach der Sie in der Strophe suchen. Verwenden Sie dazu einen String-Block mit dem Text "And miles".
 3. Die Ausgabe zeigt eine Liste von True- und False-Werten. Im nächsten Schritt filtern Sie die Elemente mithilfe dieser Booleschen Logik.
 
-![Split String](images/4-4/4-4-4/02.png)
+![Split String](images/4-4/4-4-4/02.jpg)
 
 > 1. Mit einem List.FilterByBoolMask-Block bereinigen Sie die True- und False-Werte. Die in-Ausgabe gibt die Aussagen mit dem Wert True für die mask-Eingabe zurück, die out-Ausgabe diejenigen mit dem Wert False.
 2. Die in-Ausgabe zeigt wie erwartet die letzten beiden Zeilen der Strophe.
 
-![Split String](images/4-4/4-4-4/03.png)
+![Split String](images/4-4/4-4-4/03.jpg)
 
 > Heben Sie jetzt die Wiederholung in der Strophe hervor, indem Sie diese beiden Zeilen zusammenführen. In der Ausgabe aus dem vorigen Schritt sehen Sie eine Liste mit zwei Einträgen.
 
 > 1. Mithilfe zweier List.GetItemAtIndex-Blöcke können Sie die Einträge durch Angabe der Werte 0 bzw. 1 für die index-Eingabe isolieren.
 2. Die Ausgabe jedes Blocks zeigt die letzten beiden Zeilen in der angegebenen Reihenfolge.
 
-![Split String](images/4-4/4-4-4/04.png)
+![Split String](images/4-4/4-4-4/04.jpg)
 
 > Verwenden Sie zum Zusammenführen der beiden Einträge einen String.Join-Block:
 

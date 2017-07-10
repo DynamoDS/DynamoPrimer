@@ -35,7 +35,7 @@ Das folgende Bild zeigt das Basisdiagramm, an dem grundlegende Operationen für 
 
 > Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [List-Operations.dyn](datasets/6-2/List-Operations.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
-![Übungslektion](images/6-2/Exercise/40.png)
+![Übungslektion](images/6-2/Exercise/40.jpg)
 
 > 1. Beginnen Sie mit einem *Code Block* mit dem Wert ```500```.
 2. Verbinden Sie ihn mit der *x*-Eingabe eines *Point.ByCoordinates*-Blocks.
@@ -47,13 +47,13 @@ Das folgende Bild zeigt das Basisdiagramm, an dem grundlegende Operationen für 
 8. Verbinden Sie den Codeblock aus dem vorigen Schritt mit der *param*-Eingabe zweier *Curve.PointAtParameter*-Blöcke. Verbinden Sie *Circle.ByPlaneRadius* mit der curve-Eingabe des oberen Blocks und *Geometry.Translate* mit der curve-Eingabe des Blocks darunter.
 9. Verbinden Sie in einem *Line.ByStartPointEndPoint* die beiden *Curve.PointAtParameter*-Blöcke.
 
-![Übungslektion](images/6-2/Exercise/38.png)
+![Übungslektion](images/6-2/Exercise/38.jpg)
 
 > 1. Ein *Watch3D*-Block zeigt die Ergebnisse aus *Line.ByStartPointEndPoint* an. Hier werden Linien zwischen zwei Kreisen gezeichnet, um einfache Listenoperationen darzustellen. Dieses Dynamo-Basisdiagramm wird zur Demonstration der unten genannten Listenoperationen verwendet.
 
 ### List.Count
 
-![Count](images/6-2/count.png)
+![Count](images/6-2/count.jpg)
 
 > Der Block *List.Count* ist einfach: Er zählt die in einer Liste enthaltenen Werte und gibt ihre Anzahl zurück. Bei der Arbeit mit Listen von Listen gestaltet sich die Verwendung dieses Blocks differenzierter. Dies wird in weiter unten folgenden Abschnitten gezeigt.
 
@@ -61,13 +61,13 @@ Das folgende Bild zeigt das Basisdiagramm, an dem grundlegende Operationen für 
 
 > Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [List-Count.dyn](datasets/6-2/List-Count.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
-![Count](images/6-2/Exercise/35.png)
+![Count](images/6-2/Exercise/35.jpg)
 
 > 1. Der *List.Count*-Block gibt die Anzahl der Linien aus dem *Line.ByStartPointEndPoint*-Block zurück. In diesem Fall beträgt dieser Wert 10. Dies stimmt mit der Anzahl der Punkte überein, die mithilfe des ursprünglichen *Code Block*-Blocks erstellt wurden.
 
 ### List.GetItemAtIndex
 
-![index](images/6-2/index.png)
+![index](images/6-2/index.jpg)
 
 > *List.GetItemAtIndex* ist ein grundlegendes Verfahren zum Abrufen von Elementen in der Liste. In der Abbildung oben wird mithilfe des Indexwerts *"2"* der Punkt mit der Bezeichnung * "C"* abgerufen.
 
@@ -75,14 +75,14 @@ Das folgende Bild zeigt das Basisdiagramm, an dem grundlegende Operationen für 
 
 > Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [List-GetItemAtIndex.dyn](datasets/6-2/List-GetItemAtIndex.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
-![Übungslektion](images/6-2/Exercise/33.png)
+![Übungslektion](images/6-2/Exercise/33.jpg)
 
 > 1. Mithilfe von *List.GetItemAtIndex* wird der Index *"0"* bzw. das erste Element in der Liste der Linien ausgewählt.
 2. Der *Watch3D*-Block zeigt an, dass genau eine Linie ausgewählt wurde. Anmerkung: Um die Abbildung oben zu erhalten, müssen Sie die Vorschau von *Line.ByStartPointEndPoint* deaktivieren.
 
 ### List.Reverse
 
-![reverse](images/6-2/reverse.png)
+![reverse](images/6-2/reverse.jpg)
 
 > *List.Reverse* kehrt die Reihenfolge aller Elemente in der Liste um.
 
@@ -90,7 +90,7 @@ Das folgende Bild zeigt das Basisdiagramm, an dem grundlegende Operationen für 
 
 > Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [List-Reverse.dyn](datasets/6-2/List-Reverse.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
-![Übungslektion](images/6-2/Exercise/34.png)
+![Übungslektion](images/6-2/Exercise/34.jpg)
 
 > 1. Erstellen Sie für eine deutlichere Darstellung der Linienliste in umgekehrter Reihenfolge weitere Linien, indem Sie den Codeblock in ```0..1..#100;``` ändern.
 2. Fügen Sie einen *List.Reverse*-Block zwischen *Curve.PointAtParameter* und *Line.ByStartPointEndPoint* für eine der beiden Punktlisten ein.
@@ -98,7 +98,7 @@ Das folgende Bild zeigt das Basisdiagramm, an dem grundlegende Operationen für 
 
 ### List.ShiftIndices
 
-![shift](images/6-2/shift.png)
+![shift](images/6-2/shift.jpg)
 
 > *List.ShiftIndices* ist ein geeignetes Werkzeug zum Erstellen verdrehter oder schraubenförmiger Muster oder für ähnliche Datenverarbeitungen. Dieser Block verschiebt die Elemente in einer Liste um die angegebene Anzahl von Indexpositionen.
 
@@ -106,19 +106,19 @@ Das folgende Bild zeigt das Basisdiagramm, an dem grundlegende Operationen für 
 
 > Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [List-ShiftIndices.dyn](datasets/6-2/List-ShiftIndices.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
-![Übungslektion](images/6-2/Exercise/31.png)
+![Übungslektion](images/6-2/Exercise/31.jpg)
 
 > 1. Fügen Sie auf dieselbe Weise wie beim Umkehren der Liste einen *List.ShiftIndices*-Block zwischen *Curve.PointAtParameter* und *Line.ByStartPointEndPoint* ein.
 2. Verwenden Sie einen *Code Block*, dem Sie den Wert *"1"* zuweisen, zum Verschieben der Liste um eine Indexposition.
 3. Sie erhalten keine extreme Veränderung, aber sämtliche Linien im unteren *Watch3D*-Block wurden bei der Verbindung mit der anderen Punktgruppe um eine Indexposition versetzt.
 
-![Übungslektion](images/6-2/Exercise/32.png)
+![Übungslektion](images/6-2/Exercise/32.jpg)
 
 > 1. Wenn Sie im *Code Block* einen größeren Wert, z. B. *"30"* festlegen, ist ein deutlicher Unterschied in den diagonalen Linien zu erkennen. Die Verschiebung hat in diesem Fall dieselbe Wirkung wie die Irisblende einer Kamera und bewirkt eine Verdrehung der ursprünglichen Zylinderform.
 
 ### List.FilterByBooleanMask
 
-![Ausblenden](images/6-2/cull2.png)
+![Ausblenden](images/6-2/cull2.jpg)
 
 > *List.FilterByBooleanMask* entfernt bestimmte Elemente anhand einer Liste boolescher Werte bzw. der Werte "true" oder "false".
 
@@ -126,7 +126,7 @@ Das folgende Bild zeigt das Basisdiagramm, an dem grundlegende Operationen für 
 
 > Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [List-FilterByBooleanMask.dyn](datasets/6-2/List-FilterByBooleanMask.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
-![Übungslektion](images/6-2/Exercise/30.png)
+![Übungslektion](images/6-2/Exercise/30.jpg)
 
 > Um eine Liste mit true- und false-Werten zu erstellen, sind einige weitere Schritte erforderlich.
 

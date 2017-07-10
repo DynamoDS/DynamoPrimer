@@ -16,6 +16,10 @@
 | -- | -- | -- |
 |Clockwork は、Dynamo ビジュアル プログラミング環境用のカスタム ノードが集まったものです。Clockwork には、Revit に関連する多数のノードに加え、リスト管理、算術演算、文字列処理、単位変換、ジオメトリの操作(主に、境界ボックス、メッシュ、平面、点、サーフェス、UV、ベクトル)、パネル作成など、さまざまな用途のノードが豊富に用意されています。|![](images/A-4/screengrab01.png)|
 
+|![](images/A-4/DataShapes_L.png)|DATA|SHAPES|[GitHub の Data|Shapes を参照](https://github.com/MostafaElAyoubi/Data-shapes)|
+| -- | -- | -- |
+|DataShapes は、Dynamo スクリプトのユーザ機能を拡張するためのパッケージです。このパッケージにより、Dynamo プレーヤーの機能が大幅に拡張されます。詳細については、https://data-shapes.net/ を参照してください。このパッケージを使用すれば、Dynamo プレーヤーで高度なワークフローを作成することができます。|![](images/A-4/DataShapes_Image.png)|
+
 |![](images/A-4/ds_L.png)|DYNAMO SAP|[Core Studio で DynamoSAP プロジェクトを参照](http://core.thorntontomasetti.com/dynamosap-is-now-open-source/)|
 | -- | -- | -- |
 |DynamoSAP は、Dynamo 上に構築された、SAP2000 用のパラメトリック インタフェースです。このプロジェクトにより、設計者とエンジニアは Dynamo で SAP モデルを駆動し、SAP 上の構造システムを生成的なアプローチで作成して解析することができます。このプロジェクトでは、付属のサンプル ファイルで説明されているように、一般的なワークフローが事前に用意されています。これらのワークフローにより、SAP における多くの一般的なタスクを自動化することができます。|![](images/A-4/sapImage.png)|

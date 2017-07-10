@@ -26,7 +26,7 @@ import System
 
 這會提供 Revit API 的存取權，以及適用於 Revit 工作的自訂腳本。透過合併視覺程式設計程序與 Revit API 腳本，將大幅改進協同合作與工具開發。例如，BIM 管理員與線路圖設計者可以針對同一圖表進行合作。透過這種協同合作，他們可以改善模型的設計與執行。
 
-![練習](images/9-4/pythonRevit.png)
+![練習](images/9-4/pythonRevit.jpg)
 
 ### 平台特定 API
 
@@ -40,11 +40,11 @@ Dynamo 專案的潛在宗旨是拓寬平台的實作範圍。隨著 Dynamo 加�
 
 在以下練習中，我們將探索 Dynamo for Revit 中的基本 Python 腳本。此練習重點是處理 Revit 檔案及元素，以及 Revit 與 Dynamo 之間的通訊。
 
-![練習](images/9-4/Exercise/Revit/Images/RevitPython - 10.png)
+![練習](images/9-4/Exercise/Revit/Images/RevitPython - 10.jpg)
 
 > 這是對連結至 Dynamo 階段作業的 Revit 檔案擷取 *doc*、*uiapp* 及 *app* 的現成方法。先前使用 Revit API 的程式設計人員可能會注意到觀看清單中的項目。如果對這些項目不熟悉，沒有問題，我們會在以下練習中使用其他範例。
 
-以下將講述在 Dynamo 中如何匯入 Revit 服務及擷取文件資料：![練習](images/9-4/Exercise/Revit/Images/RevitPython - 06.png)
+以下將講述在 Dynamo 中如何匯入 Revit 服務及擷取文件資料：![練習](images/9-4/Exercise/Revit/Images/RevitPython - 06.jpg)
 
 > 看一下 Dynamo 中的 Python 節點。註釋的程式碼如下。
 
@@ -70,7 +70,7 @@ OUT=[doc,uiapp,app]
 
 在本練習中，我們將在 Revit 內使用 Dynamo Python 節點建立簡單的模型曲線。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 08.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 08.jpg)
 
 > 從使用以上影像中的一組節點開始。我們先在 Revit 中使用 Dynamo 節點建立兩個參考點。
 
@@ -83,7 +83,7 @@ OUT=[doc,uiapp,app]
 5. 將每個滑棒連接至 ReferencePoint.ByCoordinates 節點。
 6. 加入 Python 節點至工作區，按一下節點上的「+」按鈕以加入另一個輸入，然後將兩個參考點插入至每個輸入。開啟 Python 節點。
 
-![練習](images/9-4/Exercise/Revit/Images/RevitPython - 07.png)
+![練習](images/9-4/Exercise/Revit/Images/RevitPython - 07.jpg)
 
 > 看一下 Dynamo 中的 Python 節點。註釋的程式碼如下。
 
@@ -109,7 +109,7 @@ refPtArray = System.Array[ReferencePoint]([startRefPt, endRefPt])
 OUT = CurveByPoints.ByReferencePoints(refPtArray)
 ```
 
-![練習](images/9-4/Exercise/Revit/Images/RevitPython - 09.png)
+![練習](images/9-4/Exercise/Revit/Images/RevitPython - 09.jpg)
 
 > 我們已從 Dynamo 使用 Python 建立直線連接的兩個參考點。接下來在下一個練習中更進一步。
 
@@ -119,11 +119,11 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 
 > 此練習仍很簡單，但講述了在 Revit 與 Dynamo 之間連接資料與幾何圖形的主題。我們從開啟 Revit-StructuralFraming.rvt 開始。開啟後，載入 Dynamo，並開啟檔案 Revit-StructuralFraming.dyn。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 04.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 04.jpg)
 
 > 此 Revit 檔案是基本檔案。兩條參考曲線：一條繪製在 Level 1 上，另一條繪製在 Level 2 上。我們要將這些曲線匯入 Dynamo 並保持即時連結。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 01a.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 01a.jpg)
 
 > 在此檔案中，我們將一組節點插入至 Python 節點的五個輸入。
 
@@ -132,7 +132,7 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 3. **Structural Framing Types：**在此我們將從下拉式功能表中選擇預設的 W12x26 樑。
 4. **Levels：**選取「Level 1」。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 00.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 00.jpg)
 
 > 此 Python 程式碼稍多一些，但程式碼中的註釋描述了程序的狀況：
 
@@ -171,9 +171,9 @@ beam = StructuralFraming.BeamByCurve(beamCrv,designLevel,framingType)
 OUT.append(beam.Faces)
 ```
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 03.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 03.jpg)
 
-> 在 Revit 中，我們將建立做為結構元素跨越兩條曲線的樑陣列。注意事項：這不是真實範例...結構元素用做從 Dynamo 所建立原生 Revit 例證的範例。![](images/9-4/Exercise/Revit/Images/RevitPython - 05.png)在 Dynamo 中也可以看到結果。Watch3D 節點中的樑是指從 Revit 元素查詢的幾何圖形。
+> 在 Revit 中，我們將建立做為結構元素跨越兩條曲線的樑陣列。注意事項：這不是真實範例...結構元素用做從 Dynamo 所建立原生 Revit 例證的範例。![](images/9-4/Exercise/Revit/Images/RevitPython - 05.jpg)在 Dynamo 中也可以看到結果。Watch3D 節點中的樑是指從 Revit 元素查詢的幾何圖形。
 
 請注意，我們可以採用連續的程序，將資料從 Revit 環境平移至 Dynamo 環境。總之，程序的工作方式如下：
 
@@ -186,7 +186,7 @@ OUT.append(beam.Faces)
 
 這聽上去可能有點笨拙，但腳本可讓該作業非常簡單，只需在 Revit 中編輯曲線並重新執行解析器即可 (雖然在執行此作業時，您可能不得不刪除先前的樑)。
 
-![](images/9-4/Exercise/Revit/Images/RevitPython - 01.png)
+![](images/9-4/Exercise/Revit/Images/RevitPython - 01.jpg)
 
 > 在 Revit 中更新參考曲線後，我們將取得新的樑陣列。
 

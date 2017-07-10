@@ -28,11 +28,11 @@ Zur Entwicklung benutzerdefinierter Blöcke in Dynamo steht eine große Vielfalt
 
 Im Folgenden erstellen Sie in der Umgebung für benutzerdefinierte Blöcke einen einfachen Block zur Berechnung eines Prozentwerts. Die Umgebung für benutzerdefinierte Blöcke unterscheidet sich zwar von der Umgebung für Diagramme in Dynamo, die Interaktion läuft jedoch im Wesentlichen auf dieselbe Weise ab. Mit diesen Informationen können Sie damit beginnen, Ihren ersten benutzerdefinierten Block zu erstellen.
 
-![Custom Nodes Intro](images/9-1/CustomNodes01.png)
+![Custom Nodes Intro](images/9-1/CustomNodes01.jpg)
 
 > Um einen neuen benutzerdefinierten Block zu erstellen, starten Sie Dynamo und wählen Sie Benutzerdefinierter Block oder geben Sie Strg + Umschalt + N im Ansichtsbereich ein.
 
-![Custom Nodes Dialog](images/9-1/CustomNodes02.png)
+![Custom Nodes Dialog](images/9-1/CustomNodes02.jpg)
 
 > Weisen Sie im Dialogfeld Eigenschaften für benutzerdefinierten Block einen Namen, eine Beschreibung und eine Kategorie zu.
 
@@ -40,11 +40,11 @@ Im Folgenden erstellen Sie in der Umgebung für benutzerdefinierte Blöcke einen
 2. **Beschreibung**: Berechnung des Prozentsatzes eines Werts relativ zu einem anderen.
 3. **Kategorie**: Core.Math
 
-![Custom Nodes Canvas](images/9-1/CustomNodes03.png)
+![Custom Nodes Canvas](images/9-1/CustomNodes03.jpg)
 
 > Dadurch wird ein Ansichtsbereich mit gelbem Hintergrund geöffnet, der darauf hinweist, dass Sie in einem benutzerdefinierten Block arbeiten. In diesem Ansichtsbereich haben Sie Zugriff auf alle Core-Blöcke von Dynamo sowie die Blöcke **Input** und **Output**, die zum Benennen der in den benutzerdefinierten Block und aus ihm heraus fließenden Daten dienen. Sie finden diese unter *Core > Input*.
 
-![Custom Nodes Canvas](images/9-1/CustomNodes04.png)
+![Custom Nodes Canvas](images/9-1/CustomNodes04.jpg)
 
 > 1. **Eingaben**: Input-Blöcke erstellen die Eingaben des benutzerdefinierten Blocks. Verwenden Sie für einen Input-Block die folgende Syntax: *input_name : datatype = default_value(optional)*
 
@@ -52,7 +52,7 @@ Im Folgenden erstellen Sie in der Umgebung für benutzerdefinierte Blöcke einen
 
 Sie können diesen benutzerdefinierten Block als DYF-Datei (im Gegensatz den Standard-DYN-Dateien) speichern. Er wird dann automatisch der laufenden und zukünftigen Sitzungen hinzugefügt. Der benutzerdefinierte Block befindet sich in der Bibliothek in der Kategorie, die Sie in seinen Eigenschaften angegeben haben.
 
-![Add to Library](images/9-1/CustomNodes05.png)
+![Add to Library](images/9-1/CustomNodes05.jpg)
 
 > Links: Kategorie Core > Math der vorgegebenen Bibliothek. Rechts: Core > Math mit dem neuen benutzerdefinierten Block
 

@@ -16,7 +16,7 @@ Dynamo 提供自訂節點的多種不同建立方法。您可以從頭開始建�
 
 接下來先建立我們希望巢狀插入到自訂節點中的圖表。在此範例中，我們將建立使用 UV 座標將多邊形從基準曲面對映至目標曲面的圖表。我們會經常使用此 UV 對映程序，因此該程序是建立自訂節點的良好備用程序。若要取得有關曲面與 UV 空間的更多資訊，請參閱第 5.5 節。在以上下載的 .zip 檔案中包含完整圖表 *UVmapping_Custom-Node.dyn*。
 
-![練習](images/9-2/UVmapping01.png)
+![練習](images/9-2/UVmapping01.jpg)
 
 > 1. **Code Block：**使用程式碼塊建立介於 45 與 -45 之間的一系列 10 個數字。
 2. **Point.ByCoordinates：**將 Code Block 的輸出連接至「x」與「y」輸入，並將鑲邊設定為「叉積」。現在應該已建立點的格線。
@@ -25,7 +25,7 @@ Dynamo 提供自訂節點的多種不同建立方法。您可以從頭開始建�
 
 現在應該能看到矩形的格線。接下來使用 UV 座標將這些矩形對映至目標曲面。
 
-![練習](images/9-2/UVmapping02.png)
+![練習](images/9-2/UVmapping02.jpg)
 
 > 1. **Polygon.Points：**將上一步中的矩形輸出連接至*「polygon」*輸入，以萃取每個矩形的角點。這些是將要對映至目標曲面的點。
 2. **Rectangle.ByWidthLength：**使用具有值 *100* 的 Code Block 指定矩形的長度與寬度。這將是基準曲面的邊界。
@@ -34,7 +34,7 @@ Dynamo 提供自訂節點的多種不同建立方法。您可以從頭開始建�
 
 現在，我們已建立基準曲面與一組 UV 座標，可以匯入目標曲面並在曲面之間對映點。
 
-![練習](images/9-2/UVmapping03.png)
+![練習](images/9-2/UVmapping03.jpg)
 
 > 1. **File Path：**選取要匯入的曲面的檔案路徑。檔案類型應是 .SAT。按一下*「瀏覽...」*按鈕，導覽至以上所下載 .zip 檔案中的 *UVmapping_srf.sat* 檔案。
 2. **Geometry.ImportFromSAT：**連接檔案路徑以匯入曲面。您在幾何圖形預覽中應該能看到匯入的曲面。
@@ -43,7 +43,7 @@ Dynamo 提供自訂節點的多種不同建立方法。您可以從頭開始建�
 
 最後一步是使用 3D 點來建構矩形曲面修補。
 
-![練習](images/9-2/UVmapping04.png)
+![練習](images/9-2/UVmapping04.jpg)
 
 > 1. **PolyCurve.ByPoints：**連接曲面上的點以建構通過點的 PolyCurve。
 2. **Boolean：**加入布林值至工作區，將其連接至*「connectLastToFirst」*輸入，並切換至「True」以封閉 polycurve。現在，您應該能看到對映至曲面的矩形。
@@ -51,19 +51,19 @@ Dynamo 提供自訂節點的多種不同建立方法。您可以從頭開始建�
 
 現在選取要巢狀插入至自訂節點的節點，同時考慮希望採用的節點輸入與輸出。我們希望自訂節點盡可能靈活，因此該自訂節點應該能對映任何多邊形，而不僅僅是矩形。
 
-![練習](images/9-2/UVmapping05.png)
+![練習](images/9-2/UVmapping05.jpg)
 
 > 選取以上節點 (從 *Polygon.Points* 開始)，在工作區上按一下右鍵，然後選取*「node from selection」*。
 
-![練習](images/9-2/UVmapping06.png)
+![練習](images/9-2/UVmapping06.jpg)
 
 > 在「自訂節點性質」對話方塊中，指定自訂節點的名稱、描述及品類。
 
-![練習](images/9-2/UVmapping07.png)
+![練習](images/9-2/UVmapping07.jpg)
 
 > 自訂節點已顯著清理工作區。請注意，已根據原始節點命名輸入與輸出。接下來編輯自訂節點，以便讓名稱更具描述性。
 
-![練習](images/9-2/UVmapping08.png)
+![練習](images/9-2/UVmapping08.jpg)
 
 > 按兩下「自訂節點」以對其進行編輯。這將開啟工作區，並以黃色背景表示節點內部。
 
@@ -71,7 +71,7 @@ Dynamo 提供自訂節點的多種不同建立方法。您可以從頭開始建�
 2. **Outputs：**為對映的多邊形加入其他輸出。
 > 儲存自訂節點，然後返回首頁工作區。
 
-![練習](images/9-2/UVmapping09.png)
+![練習](images/9-2/UVmapping09.jpg)
 
 > **MapPolygonsToSurface** 節點將反映我們剛剛進行的變更。
 

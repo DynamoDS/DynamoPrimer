@@ -10,41 +10,41 @@
 
 > 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「鏈結另存為...」)。附錄中提供範例檔案的完整清單。[PointsToSurface.dyf](datasets/9-3/PointsToSurface.dyf)
 
-![](images/9-3/AddingToLibrary- 05.png)
+![](images/9-3/AddingToLibrary- 05.jpg)
 
 > 開啟 PointsToSurface 自訂節點後，我們會在「Dynamo 自訂節點」編輯器中看到上圖。您也可以透過在「Dynamo 圖形編輯器」中按兩下自訂節點來開啟該自訂節點。
 
-![](images/9-3/AddingToLibrary- 04.png)
+![](images/9-3/AddingToLibrary- 04.jpg)
 
 > 1. 若要在本端發佈自訂節點，只需在畫布上按一下右鍵，然後選取*「發佈此自訂節點...」*
 
-![](images/9-3/AddingToLibrary- 03.png)
+![](images/9-3/AddingToLibrary- 03.jpg)
 
-> 參照上圖填寫相關資訊，並選取*「在本端發佈」*。請注意，「群組」欄位定義可從 Dynamo 功能表存取的主要元素。
+> 參照上圖填寫相關資訊，並選取*「在本端發佈」*. 請注意，「群組」欄位定義可從 Dynamo 功能表存取的主要元素。
 
-![](images/9-3/AddingToLibrary- 02.png)
+![](images/9-3/AddingToLibrary- 02.jpg)
 
 > 選取資料夾，以容納所有計劃在本端發佈的自訂節點。Dynamo 會在每次載入時檢查此資料夾，以便確認該資料夾位於固定位置。導覽至此資料夾，然後選擇 *「選取資料夾」。*Dynamo 節點現已在本端發佈，並將在每次載入程式時保留在 Dynamo 工具列中！
 
-![](images/9-3/AddingToLibrary- 01.png)
+![](images/9-3/AddingToLibrary- 01.jpg)
 
 > 1. 要檢查自訂節點的資料夾位置，請跳至*「設定」>「管理節點和套件路徑...」*
 
-![](images/9-3/AddingToLibrary- 00.png)
+![](images/9-3/AddingToLibrary- 00.jpg)
 
 > 在此視窗中，我們可看到兩個路徑：*AppData\Roaming\Dynamo ...*，表示線上安裝之 Dynamo 套件的預設位置。 *Documents\DynamoCustomNodes ...*，表示本端發佈之自訂節點的位置。 *
 
 > 1. 您可能想要將本端資料夾路徑在上方清單順序中下移 （透過選取資料夾路徑並按一下路徑名稱左側的向下箭頭）。頂層資料夾是套件安裝的預設路徑。因此，透過將預設 Dynamo 套件安裝路徑保留為預設資料夾，線上套件將與本端發佈的節點分離。*
 
-![](images/9-3/AddingToLibrary- 00A.png)
+![](images/9-3/AddingToLibrary- 00A.jpg)
 
 > 我們已切換路徑名稱的順序，以將 Dynamo 的預設路徑作為套件的安裝位置。
 
-![](images/9-3/AddingToLibrary- 06.png)
+![](images/9-3/AddingToLibrary- 06.jpg)
 
 > 導覽至此本端資料夾，我們可以在*「.dyf 」*資料夾中找到原始自訂節點，.dyf 是 Dynamo 自訂節點檔案的副檔名。 我們可以編輯此資料夾中的檔案，節點將在使用者介面中更新。我們還可以新增更多節點至主 *DynamoCustomNode* 資料夾，Dynamo 會在重新啟動時將其新增到您的資源庫！
 
-![](images/9-3/library.png)
+![](images/9-3/library.jpg)
 
 > Dynamo 現在每次會使用 Dynamo 資源庫*「DynamoPrimer」*組中的 *「PointsToSurface 」*進行載入。
 

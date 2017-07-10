@@ -4,5 +4,5 @@
 
 Dynamo を使用すると、ノードをワイヤで接続してビジュアル プログラムをワークスペース内に作成し、そのビジュアル プログラムの論理フローを指定できます。この章では、ビジュアル プログラムの要素、Dynamo のライブラリで使用可能なノードの編成、ノードのパーツと状態、ワークスペースのベスト プラクティスについて紹介します。
 
-![メイン構造](images/3/The Anatomy of Visual Programming-01.png)
+![メイン構造](images/3/The Anatomy of Visual Programming-01.jpg)
 

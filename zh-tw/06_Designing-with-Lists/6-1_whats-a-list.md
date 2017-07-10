@@ -18,7 +18,7 @@
 
 例如，如果您數數右手手指的數量，很可能會從 1 數到 5。但是，如果將手指放在清單中，Dynamo 會為其指定從 0 至 4 的索引。雖然這對於程式設計的初學者而言可能有些奇怪，但從零開始的索引是多數運算系統中的標準做法。
 
-![項目](images/6-1/items.png)
+![項目](images/6-1/items.jpg)
 
 請注意，我們的清單中仍有 5 個項目，清單恰好使用從零開始的計數系統。清單中正在儲存的項目不一定是數字。它們可以是 Dynamo 支援的任何資料類型，例如點、曲線、曲面、族群等。
 
@@ -30,7 +30,7 @@
 
 對清單而言，輸入與輸出視使用的 Dynamo 節點而有所不同。例如，接下來我們使用包含 5 個點的清單，並將此輸出連接至兩個不同的 Dynamo 節點：*PolyCurve.ByPoints* 與 *Circle.ByCenterPointRadius*：
 
-![輸入範例](images/6-2/PolyCurve.Inputs.png)
+![輸入範例](images/6-2/PolyCurve.Inputs.jpg)
 
 > 1. *PolyCurve.ByPoints* 的 *points* 輸入是尋找*「Point[]」*。這表示點清單。
 2. *PolyCurve.ByPoints* 的輸出是根據包含五個點的清單建立的單一 PolyCurve。
@@ -59,7 +59,7 @@
 
 為了展示以下的鑲邊作業，我們將使用此基準檔案來定義最短清單、最長清單及叉積。
 
-![輸入範例](images/6-1/lacing.png)
+![輸入範例](images/6-1/lacing.jpg)
 
 > 1. 我們將在 *Point.ByCoordinates* 上變更鑲邊，但不會變更有關以上影像的任何其他內容。
 
@@ -67,9 +67,9 @@
 
 最簡單的方式是逐一連接輸入，直到其中一個串流結束為止。這稱為「最短清單」演算法。這是 Dynamo 節點的預設行為：
 
-![輸入範例](images/6-1/shortestListDiagram.png)
+![輸入範例](images/6-1/shortestListDiagram.jpg)
 
-![輸入範例](images/6-1/shortestList.png)
+![輸入範例](images/6-1/shortestList.jpg)
 
 > 透過將鑲邊變更為*最短清單*，可以取得由五個點構成的基本對角線。五個點是較短清單的長度，因此最短清單鑲邊在到達一個清單的末尾後將停止。
 
@@ -77,9 +77,9 @@
 
 「最長清單」演算法會保持連接輸入，重複使用元素，直到所有串流結束為止：
 
-![輸入範例](images/6-1/longestListDiagram.png)
+![輸入範例](images/6-1/longestListDiagram.jpg)
 
-![輸入範例](images/6-1/longestList.png)
+![輸入範例](images/6-1/longestList.jpg)
 
 > 透過將鑲邊變更為*最長清單*，可以取得垂直延伸的對角線。運用與概念圖相同的方法，含 5 個項目的清單中的最後一個項目將重複，以達到較長清單的長度。
 
@@ -87,9 +87,9 @@
 
 最後，「叉積」方法會產生所有可能的連接：
 
-![輸入範例](images/6-1/crossProductDiagram.png)
+![輸入範例](images/6-1/crossProductDiagram.jpg)
 
-![輸入範例](images/6-1/crossProduct.png)
+![輸入範例](images/6-1/crossProduct.jpg)
 
 > 透過將鑲邊變更為*叉積*，可以取得每個清單之間的每個組合，產生點的 5x10 網格。這是與以上概念圖中所示叉積對等的資料結構，只是現在資料是清單的清單。透過連接 polycurve，我們可以看到每個清單都由其 X 值定義，因此產生一列垂直線。
 

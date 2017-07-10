@@ -8,7 +8,7 @@ Im Bereich der computergestützten Modellierung stellen Netze eine der am weites
 
 Ein Netz ist eine Sammlung von Vierecken und Dreiecken, die eine Oberfläche oder einen Volumenkörper darstellt. Wie bei Volumenkörpern enthält auch die Struktur von Netzobjekten Scheitelpunkte, Kanten und Flächen. Darüber hinaus gibt es weitere Eigenschaften, die Netze eindeutig machen, z. B. Normalen.
 
-![Netzelemente](images/5-7/MeshElements2.png)
+![Netzelemente](images/5-7/MeshElements2.jpg)
 
 > 1. Netzscheitelpunkte
 2. Netzkanten *Kanten mit nur einer angrenzenden Fläche werden als "nackt" bezeichnet. Alle anderen Kanten sind "angezogen".
@@ -18,7 +18,7 @@ Ein Netz ist eine Sammlung von Vierecken und Dreiecken, die eine Oberfläche ode
 
 Dynamo definiert Netze mit einer Flächen-Scheitelpunkt-Datenstruktur. Auf elementarster Ebene handelt es sich bei dieser Struktur einfach um eine Sammlung von Punkten, die in Polygonen gruppiert sind. Die Punkte eines Netzes werden als Scheitelpunkte bezeichnet, während die oberflächenartigen Polygone als Flächen bezeichnet werden. Um ein Netz zu erstellen, benötigen Sie eine Liste von Scheitelpunkten und ein System für die Gruppierung dieser Scheitelpunkte in Flächen. Dies wird auch als Indexgruppe bezeichnet.
 
-![](images/5-7/meshFacesVertices.png)
+![](images/5-7/meshFacesVertices.jpg)
 
 > 1. Liste von Scheitelpunkten
 2. Liste von Indexgruppen zum Definieren von Flächen
@@ -27,7 +27,7 @@ Dynamo definiert Netze mit einer Flächen-Scheitelpunkt-Datenstruktur. Auf eleme
 
 Die Scheitelpunkte eines Netzes entsprechen einfach einer Liste von Punkten. Der Index der Scheitelpunkte ist beim Konstruieren eines Netzes oder Abrufen von Informationen über die Struktur eines Netzes sehr wichtig. Für jeden Scheitelpunkt gibt es auch eine entsprechende Scheitelpunktnormale (Vektor), die die durchschnittliche Richtung der verbundenen Flächen beschreibt und Sie dabei unterstützt, die nach innen und nach außen gerichtete Orientierung des Netzes zu verstehen.
 
-![Scheitelpunkte + Normalen](images/5-7/vertexNormals.png)
+![Scheitelpunkte + Normalen](images/5-7/vertexNormals.jpg)
 
 > 1. Scheitelpunkte
 2. Scheitelpunktnormalen
@@ -36,7 +36,7 @@ Die Scheitelpunkte eines Netzes entsprechen einfach einer Liste von Punkten. Der
 
 Eine Fläche ist eine geordnete Liste von drei oder vier Scheitelpunkten. Die "Oberflächendarstellung" einer Netzfläche ist deshalb gemäß der Position der indizierten Scheitelpunkte impliziert. Sie verfügen bereits über die Liste der Scheitelpunkte, die ein Netz bilden. Statt also individuelle Punkte anzugeben, um eine Fläche zu definieren, verwenden Sie einfach den Index der Scheitelpunkte. Dies ermöglicht Ihnen auch die Verwendung desselben Scheitelpunkts in weiteren Flächen.
 
-![](images/5-7/meshFaces.png)
+![](images/5-7/meshFaces.jpg)
 
 > 1. Quadratische Fläche, die aus den Indizes 0, 1, 2 und 3 erstellt wurde
 2. Dreieckige Fläche, die aus den Indizes 1, 4 und 2 erstellt wurde. Beachten Sie, dass die Indexgruppen in ihrer Reihenfolge verschoben werden können – solange die Sequenz gegen den Uhrzeigersinn angeordnet ist, ist die Fläche korrekt definiert
@@ -83,5 +83,5 @@ Der Funktionsumfang in Bezug auf Netze von Dynamo kann durch die Installation de
 
 Siehe Kapitel 10.2 für ein Beispiel zur Verwendung von Mesh Toolkit.
 
-![Mesh Toolkit](images/5-7/MeshToolKit.png)
+![Mesh Toolkit](images/5-7/MeshToolKit.jpg)
 

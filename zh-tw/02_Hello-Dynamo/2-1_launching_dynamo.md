@@ -8,14 +8,14 @@ Dynamo 是作用中的開放程式碼開發專案，具有「正式版」和「�
 
 若要下載正式發行版本的 Dynamo，請造訪 [Dynamo 網站](http://dynamobim.com/)。 透過按一下首頁立即開始下載或瀏覽至專用下載頁面。
 
-![網站首頁](images/2-1/01-DynamoHomepage.png)
+![網站首頁](images/2-1/01-DynamoHomepage.jpg)
 
 > 1. 觀看有關 Dynamo 結構之計算設計的視訊
 2. 或瀏覽至下載頁面
 
 您可以在此處下載「最新」開發版本，或跳至 [Dynamo Github](https://github.com/DynamoDS/Dynamo) 專案。
 
-![網站下載頁面](images/2-1/02-DynamoDownload.png)
+![網站下載頁面](images/2-1/02-DynamoDownload.jpg)
 
 > 1. 下載正式發行的安裝程式
 2. 下載每日建置安裝程式
@@ -25,7 +25,7 @@ Dynamo 是作用中的開放程式碼開發專案，具有「正式版」和「�
 
 瀏覽至下載的安裝程式所在目錄並執行可執行檔。在安裝過程中，設置可讓您自訂將安裝的元件。
 
-![「設置」視窗](images/2-1/03-InstallSetup.png)
+![「設置」視窗](images/2-1/03-InstallSetup.jpg)
 
 > 1. 選取要安裝的元件
 
@@ -35,7 +35,7 @@ Dynamo 是作用中的開放程式碼開發專案，具有「正式版」和「�
 
 要啟動 Dynamo，瀏覽至 Windows 的「開始」功能表 > Dynamo > **Dynamo**。 這將開啟獨立版本 Dynamo 並顯示 Dynamo 的*「 開始」頁面*。 在此頁面上，會顯示標準功能表與工具列，以及可讓我們存取檔案功能或存取其他資源的捷徑集合。
 
-![需要更新 - 標示 Dynamo 「開始」頁面](images/2-1/04-DynamoStartpage.png)
+![需要更新 - 標示 Dynamo 「開始」頁面](images/2-1/04-DynamoStartpage.jpg)
 
 > 1. 檔案 - 建立新檔案或開啟既有的檔案
 2. 最近 - 捲動您最近使用的檔案
@@ -46,7 +46,7 @@ Dynamo 是作用中的開放程式碼開發專案，具有「正式版」和「�
 
 開啟第一個範例檔案以開啟第一個工作區，並確認 Dynamo 正確工作。按一下「範例」>「基礎知識」> **Basics_Basic01.dyn**。
 
-![需要更新 - Basics_Basic01](images/2-1/05-Basics_Basic01.png)
+![需要更新 - Basics_Basic01](images/2-1/05-Basics_Basic01.jpg)
 
 > 1. 確認執行列顯示為「自動」， 或按一下「執行 」
 2. 請遵循指示並將**Number**節點連結至 **+** 節點

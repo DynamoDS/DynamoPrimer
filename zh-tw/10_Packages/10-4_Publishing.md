@@ -2,17 +2,17 @@
 
 ## 發佈套件
 
-在先前各節中，我們詳細瞭解了如何使用自訂節點與範例檔案設置 *MapToSurface* 套件。但是，如何發佈已在本端開發的套件呢？此案例研究將演示如何發佈本端資料夾中一組檔案內的套件。![](images/10-4/Creating/Packages - 12.png)可以採用許多方式發佈套件。以下是建議的程序：**本端發佈、本端開發，然後線上發佈**。我們從包含套件中所有檔案的資料夾開始。
+在先前各節中，我們詳細瞭解了如何使用自訂節點與範例檔案設置 *MapToSurface* 套件。但是，如何發佈已在本端開發的套件呢？此案例研究將演示如何發佈本端資料夾中一組檔案內的套件。![](images/10-4/Creating/Packages - 12.jpg)可以採用許多方式發佈套件。以下是建議的程序：**本端發佈、本端開發，然後線上發佈**。我們從包含套件中所有檔案的資料夾開始。
 
 ### 解除安裝套件
 
 在對發佈 MapToSurface 套件進行瞭解之前，若您已在上一課程中安裝該套件，請將其解除安裝，以便不會使用相同的套件。
 
-![](images/10-4/Publishing/Packages - 01.png)
+![](images/10-4/Publishing/Packages - 01.jpg)
 
 > 開始先移至*「套件」>「管理套件...」*
 
-![](images/10-4/Publishing/uninstall.png)
+![](images/10-4/Publishing/uninstall.jpg)
 
 > 選取對應於*「MapToSurface」*的按鈕，然後選取*「解除安裝...」*。然後重新啟動 Dynamo。重新開啟後，若檢查*「管理套件」*視窗，會發現其中應該不再包含 *MapToSurface*。現在我們已準備好重新開始！
 
@@ -22,38 +22,38 @@
 
 > 下載並解壓縮此套件案例研究隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)。附錄中提供範例檔案的完整清單。[MapToSurface.zip](datasets/10-4/MapToSurface.zip)
 
-![](images/10-4/Publishing/Packages - 08.png)
+![](images/10-4/Publishing/Packages - 08.jpg)
 
 > 這是為套件首次提交的檔案，我們已將所有範例檔案與自訂節點置於一個資料夾中。準備好此資料夾後，我們已準備好上載至 Dynamo Package Manager。
 
 > 1. 此資料夾包含五個自訂節點 (.dyf)。
 2. 此資料夾還包含五個範例檔案 (.dyn) 與一個匯入的向量檔案 (.svg)。這些檔案將作為介紹練習，用以向使用者展示如何使用自訂節點。
 
-![](images/10-4/Publishing/Packages - 07.png)
+![](images/10-4/Publishing/Packages - 07.jpg)
 
 > 在 Dynamo 中，先按一下*「套件」>「發佈新套件...」*
 
-![](images/10-4/Publishing/Packages - 03.png)
+![](images/10-4/Publishing/Packages - 03.jpg)
 
 > 在*「發佈 Dynamo 套件」*視窗中，我們已填寫視窗左側的相關表單。
 
-> 1. 透過按一下*「加入檔案」*，我們還在畫面右側加入了資料夾結構中的檔案 (若要加入不是 .dyf 的檔案，請確保在瀏覽器視窗中將檔案類型變更為**「所有檔案」**)**。請注意，我們已經不加選擇地加入每個檔案，即自訂節點檔案 (.dyf) 或範例檔案 (.dyn)。我們發佈該套件時，Dynamo 將對這些項目進行分類。
+> 1. 透過按一下*「加入檔案」*，我們還在畫面右側加入了資料夾結構中的檔案 (若要加入不是 .dyf 的檔案，請確保在瀏覽器視窗中將檔案類型變更為**「所有檔案」**)"**. 請注意，我們已經不加選擇地加入每個檔案，即自訂節點檔案 (.dyf) 或範例檔案 (.dyn)。我們發佈該套件時，Dynamo 將對這些項目進行分類。
 2. 「群組」欄位會定義在 Dynamo 使用者介面中要尋找自訂節點的群組。
 3. 按一下「本端發佈」以發佈。若您要繼續作業，請確保按一下*「本端發佈」*，**而不是***「線上發佈」*，我們不希望 Package Manager 上存在一系列重複套件。
 
-![](images/10-4/Publishing/packages - ui.png)
+![](images/10-4/Publishing/packages - ui.jpg)
 
 > 1. 發佈後，在「DynamoPrimer」群組或 Dynamo 資源庫下應該會顯示自訂節點。
 
-![](images/10-4/Publishing/Packages - 01.png)
+![](images/10-4/Publishing/Packages - 01.jpg)
 
 > 現在，我們看一下根目錄，以瞭解 Dynamo 如何格式化我們剛剛建立的套件。按一下*「套件」>「管理套件...」*以執行此作業
 
-![](images/10-4/Publishing/packages - showRoot.png)
+![](images/10-4/Publishing/packages - showRoot.jpg)
 
 > 在「管理套件」視窗中，按一下*「MapToSurface」*右側的三個垂直點，然後選擇*「展示根目錄」。*
 
-![](images/10-4/Publishing/Packages - 02.png)
+![](images/10-4/Publishing/Packages - 02.jpg)
 
 > 請注意，根目錄位於套件的本端位置 (請記住，我們曾「本端」發佈套件)。Dynamo 目前參考此資料夾以讀取自訂節點。因此，您務必將目錄本端發佈至永久資料夾位置 (即不是您的桌面)。以下將分解講述 Dynamo 套件資料夾：
 
@@ -64,7 +64,7 @@
 
 ### 線上發佈套件
 
-![](images/10-4/Publishing/Packages - 00.png)
+![](images/10-4/Publishing/Packages - 00.jpg)
 
 > **注意事項：除非您將實際發佈自己的套件，否則請勿繼續執行此步驟！**
 
