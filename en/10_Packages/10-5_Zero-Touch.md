@@ -55,7 +55,7 @@ In this case study, we'll show how to import the [AForge](http://www.aforgenet.c
 >1. In Dynamo, create a new file and select *File > Import Library...*
 
 ![Exercise](images/10-5/folder.jpg)
->1. In the pop-up window, navigate to the release folder in your Dynamo install. This will likely be in a folder similar to this one: *C:\Program Files (x86)\AForge.NET\Framework\Release*.
+>1. In the pop-up window, navigate to the release folder in your AForge install. This will likely be in a folder similar to this one: *C:\Program Files (x86)\AForge.NET\Framework\Release*.
 2. **AForge.Imaging.dll:** We only want to use this one file from the AForge library for this case study. Select this *.dll* and hit *"Open".*
 
 ![Exercise](images/10-5/library.jpg)
@@ -76,7 +76,7 @@ Now that the library's imported, we'll start off simple with this first exercise
 > 1. The File Path node simply provides a String of the path to the image we've selected.  We need to convert this File Path to an image in the Dynamo environment.
 2. Connect the File Path node to the File.FromPath node.
 3. To convert this File into an Image, we'll use the Image.ReadFromFile node.
-4. Last, let's see the result! Drop a Watch Image node onto the canvas and connect to Image.ReadFromFile.  We haven't used AForge yet, but we've successfully imported and image into Dynamo.
+4. Last, let's see the result! Drop a Watch Image node onto the canvas and connect to Image.ReadFromFile.  We haven't used AForge yet, but we've successfully imported an image into Dynamo.
 
 ![Exercise](images/10-5/Exercise/AForge- 18.jpg)
 > Under AForge.Imaging.AForge.Filters (in the navigation menu), you'll notice that there is a wide array of filters available.  We're going to use one of these filters now to desaturate an image based on threshold values.

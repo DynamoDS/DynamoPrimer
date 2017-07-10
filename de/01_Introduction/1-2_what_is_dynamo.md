@@ -10,7 +10,7 @@ Die Anwendung Dynamo ist eine Software, die Sie herunterladen und entweder im St
 
 > Ein Tool für die visuelle Programmierung, das für Nichtprogrammierer und Programmierer gleichermaßen einsetzbar sein soll. Der Benutzer hat die Möglichkeit, visuell Skripts für das Programmverhalten zu erstellen, benutzerdefinierte Logik zu definieren sowie Skripts in verschiedenen textbasierten Programmiersprachen zu erstellen.
 
-![Dyanmo website-update number](images/1-2/00-DynamoHomepage.png)
+![Dyanmo website-update number](images/1-2/00-DynamoHomepage.jpg)
 
 > 1. Demonstration von Dynamo mit Revit
 2. Installationsprogramm herunterladen
@@ -19,7 +19,7 @@ Die Anwendung Dynamo ist eine Software, die Sie herunterladen und entweder im St
 
 Nachdem Sie die Anwendung installiert haben, haben Sie in Dynamo die Möglichkeit, in einem visuellen Programmierprozess zu arbeiten, wobei Sie Elemente miteinander verbinden und dadurch die Beziehungen und Abfolgen von Aktionen definieren, aus denen sich benutzerdefinierte Algorithmen zusammensetzen. Ihre Algorithmen können Sie für ein breites Spektrum an Verwendungszwecken von der Verarbeitung von Daten bis zum Generieren von Geometrie einsetzen – in Echtzeit und ohne eine einzige Zeile ```code``` zu schreiben.
 
-![A Visual Program](images/1-2/01-ProgramFlow.png)
+![A Visual Program](images/1-2/01-ProgramFlow.jpg)
 
 > Fügen Sie Elemente hinzu, verbinden Sie sie und schon sind Sie dabei, visuelle Programme zu erstellen
 
@@ -27,7 +27,7 @@ Nachdem Sie die Anwendung installiert haben, haben Sie in Dynamo die Möglichkei
 
 Ohne seine starke Community engagierter Benutzer und aktiver Beitragender hätte sich Dynamo nie so weit entwickelt. Engagieren auch Sie sich in der Community, indem Sie das Blog lesen, Ihre Arbeiten der Galerie hinzufügen oder an Forumsdiskussionen zu Dynamo teilnehmen.
 
-![The Forum](images/1-2/02-Community.png)
+![The Forum](images/1-2/02-Community.jpg)
 
 ### Plattform
 
@@ -35,7 +35,7 @@ Dynamo ist als visuelles Programmierungs-Tool für Designer konzipiert. Dies erm
 
 Da der Quellcode für dieses Projekt als Open Source zur Verfügung steht, können Sie seine Funktionen ganz nach Ihren Vorstellungen erweitern. Besuchen Sie das Projekt auf GitHub und sehen Sie sich die laufenden Projekte der Benutzer an, die Dynamo anpassen.
 
-![The Repo](images/1-2/03-TheRepo.png)
+![The Repo](images/1-2/03-TheRepo.jpg)
 
 > Durchsuchen, Verzweigen und Erweitern von Dynamo für Ihre Anforderungen
 

@@ -2,9 +2,9 @@
 
 # Dynamo Primer
 
-## For Dynamo v1.2
+## Dynamo v1.3
 
-![Dynamo ロゴ](images/dynamo_logo_dark-trim.png)
+![Dynamo ロゴ](images/dynamo_logo_dark-trim.jpg)
 
 > Dynamo は、設計者向けのオープン ソースのビジュアル プログラミング プラットフォームです。
 
@@ -21,7 +21,7 @@ Dynamo は、広範囲にわたる設計関連ワークフローにおいてそ�
 
 こうして Dynamo の開発を続けていくうちに、適切な資料が必要になりました。その過程で作成されたのが、この Dynamo Primer です。
 
-Dynamo Primer の初版には、Mode Lab によって開発された最初の 10 章が収録されています。各章では、Dynamo を使用してビジュアル プログラミング開発を行うために必要な基本的知識と、その知識を応用するための重要な情報を紹介しています。この手引には、次のトピックが記載されています。
+この手引きは、Mode Lab で開発された各章から構成されています。各章では、Dynamo を使用してビジュアル プログラミング開発を行うために必要な基本的知識と、その知識を応用するための重要な情報を紹介しています。この手引には、次のトピックが記載されています。
 
 * **コンテキスト** - ビジュアル プログラミングの定義と、Dynamo を使用するために理解しておく必要がある概念
 * **作業の開始** - Dynamo の入手方法と、最初のプログラムの作成方法
@@ -52,7 +52,7 @@ Dynamo Primer は、オートデスクの Matt Jezyk 氏と Dynamo 開発チー�
 
 Dynamo Primer の初版は、**Mode Lab** によって作成されました。 開発チームは、今後もオートデスクと協力しながら、Dynamo の開発と平行してこの手引を更新していく予定です。
 
-[![](images/MODELAB_Logo.png)](http://modelab.is)
+[![](images/MODELAB_Logo.jpg)](http://modelab.is)
 
 ### 謝辞
 
@@ -62,7 +62,7 @@ Dynamo プロジェクトの創立と指揮に携わった Ian Keough 氏に、�
 
 ### ソフトウェアとリソース
 
-**Dynamo**: 最新の公式リリースのバージョンは 1.2.0 です。
+**Dynamo**: 現在の公式リリースのバージョンは 1.3 です。
 
 [http://dynamobim.com/download/](http://dynamobim.com/download/) (英語)
 

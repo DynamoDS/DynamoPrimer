@@ -8,7 +8,7 @@ Dynamo 自訂程式視圖可讓其他使用者透過簡化的專業介面 (包�
 
 在自訂程式視圖中，使用者可將幾何圖形匯出為 STL 網面以進行快速原型建立，或匯出為 Dynamo 檔案。
 
-![](images/customizer_00.png)
+![](images/customizer_00.jpg)
 
 > 自訂程式視圖範例位於 [https://dynamo.autodesk.com/](https://dynamo.autodesk.com/)
 
@@ -16,7 +16,7 @@ Dynamo 自訂程式視圖可讓其他使用者透過簡化的專業介面 (包�
 
 自訂程式視圖包含功能表列、內含檔案說明和使用者輸入的蹦現式功能表和 3D 視圖（類似於 Dynamo 工作區）。
 
-![](images/customizer_01.png)
+![](images/customizer_01.jpg)
 
 > 1. 功能表列
 2. 控制項
@@ -26,7 +26,7 @@ Dynamo 自訂程式視圖可讓其他使用者透過簡化的專業介面 (包�
 
 自訂程式功能表列包括檔案資訊、導覽控制項和下載選項。
 
-![](images/customizer_02.png)
+![](images/customizer_02.jpg)
 
 > 1. 標題 - 檔案的名稱
 2. 作者 - 檔案的擁有者
@@ -42,7 +42,7 @@ Dynamo 自訂程式視圖可讓其他使用者透過簡化的專業介面 (包�
 
 控制功能表包含 Dynamo Script 的輸入（其中包括數字、滑塊、字串和布林值，以及該檔案的簡要描述）。控制項將反映原始 Dynamo 檔案中的各種輸入且將根據 Script 發生變更。可按一下箭頭圖示收合此功能表。
 
-![](images/customizer_03.png)
+![](images/customizer_03.jpg)
 
 > 1. 收合/展開控制項
 2. 檔案說明

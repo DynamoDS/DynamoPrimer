@@ -16,7 +16,7 @@ In der unten gezeigten Abbildung wird ein Punkt aus einer Oberfläche mithilfe v
 
 Sie beginnen mit einem Diagramm, das in einem benutzerdefinierten Block verschachtelt werden soll. In diesem Beispiel erstellen Sie ein Diagramm, mit dem Polygone aus einer Basisoberfläche mithilfe von UV-Koordinaten einer Zieloberfläche zugeordnet werden. Diese UV-Zuordnung wird häufig verwendet. Sie bietet sich daher für einen benutzerdefinierten Block an. Weitere Informationen zu Oberflächen und zum UV-Raum finden Sie in Abschnitt 5.5. Das vollständige Diagramm ist *UVmapping_Custom-Node.dyn* aus der ZIP-Datei, die Sie heruntergeladen haben.
 
-![Exercise](images/9-2/UVmapping01.png)
+![Exercise](images/9-2/UVmapping01.jpg)
 
 > 1. **Code Block**: Erstellen Sie in einem Codeblock einen Bereich mit 10 Zahlen zwischen 45 und -45.
 2. **Point.ByCoordinates**: Verbinden Sie die Ausgaben des Codeblocks mit den x- und y-Eingaben und legen Sie Kreuzprodukt als Vergitterung fest. Sie haben nun ein Raster von Punkten.
@@ -25,7 +25,7 @@ Sie beginnen mit einem Diagramm, das in einem benutzerdefinierten Block verschac
 
 Daraufhin müsste ein Raster aus Rechtecken angezeigt werden. Diese Rechtecke ordnen Sie mithilfe von UV-Koordinaten einer Zieloberfläche zu.
 
-![Exercise](images/9-2/UVmapping02.png)
+![Exercise](images/9-2/UVmapping02.jpg)
 
 > 1. **Polygon.Points**: Verbinden Sie die Rectangle-Ausgabe aus dem vorigen Schritt mit der *polygon*-Eingabe, um die Eckpunkte der einzelnen Rechtecke zu extrahieren. Diese Punkte sollen der Zieloberfläche zugeordnet werden.
 2. **Rectangle.ByWidthLength**: Legen Sie mithilfe eines Codeblocks mit dem Wert *100* die Breite und Länge eines Rechtecks fest. Dies definiert die Begrenzung der Basisfläche.
@@ -34,7 +34,7 @@ Daraufhin müsste ein Raster aus Rechtecken angezeigt werden. Diese Rechtecke or
 
 Damit haben Sie eine Basisoberfläche und einen Satz UV-Koordinaten erstellt. Jetzt können Sie eine Zieloberfläche importieren und die Punkte auf den Oberflächen zuordnen.
 
-![Exercise](images/9-2/UVmapping03.png)
+![Exercise](images/9-2/UVmapping03.jpg)
 
 > 1. **File Path**: Wählen Sie den Dateipfad der Oberfläche aus, den Sie importieren möchten. Die Datei muss eine SAT-Datei sein. Klicken Sie auf die Schaltfläche *Durchsuchen* und navigieren Sie zur Datei *UVmapping_srf.sat* aus der im oben beschriebenen Schritt heruntergeladenen ZIP-Datei.
 2. **Geometry.ImportFromSAT**: Verbinden Sie den Dateipfad, um die Oberfläche zu importieren. Die importierte Oberfläche sollte in der Geometrievorschau angezeigt werden.
@@ -43,7 +43,7 @@ Damit haben Sie eine Basisoberfläche und einen Satz UV-Koordinaten erstellt. Je
 
 Der letzte Schritt besteht darin, mithilfe der 3D-Punkte rechteckige Oberflächenelemente zu erstellen.
 
-![Exercise](images/9-2/UVmapping04.png)
+![Exercise](images/9-2/UVmapping04.jpg)
 
 > 1. **PolyCurve.ByPoints**: Verbinden Sie die Punkte auf der Oberfläche, um eine durch die Punkte verlaufende Polykurve zu konstruieren.
 2. **Boolean**: Fügen Sie im Ansichtsbereich einen Boolean-Block hinzu, verbinden Sie ihn mit der *connectLastToFirst*-Eingabe und legen Sie True fest, um die Polykurven zu schließen. Die Oberfläche sollte jetzt in rechteckige Felder unterteilt sein.
@@ -51,19 +51,19 @@ Der letzte Schritt besteht darin, mithilfe der 3D-Punkte rechteckige Oberfläche
 
 Als Nächstes wählen Sie die Blöcke aus, die in einem benutzerdefinierten Block verschachtelt werden sollen, wobei Sie berücksichtigen, welche Ein- und Ausgaben Sie für Ihren Block benötigen. Der benutzerdefinierte Block soll so flexibel wie möglich sein, d. h., es sollten nicht nur Rechtecke, sondern beliebige Polygone zugeordnet werden können.
 
-![Exercise](images/9-2/UVmapping05.png)
+![Exercise](images/9-2/UVmapping05.jpg)
 
 > Wählen Sie (beginnend mit *Polygon.Points*) die oben gezeigten Blöcke aus, klicken Sie mit der rechten Maustaste in den Ansichtsbereich und wählen Sie *Block aus Auswahl erstellen*.
 
-![Exercise](images/9-2/UVmapping06.png)
+![Exercise](images/9-2/UVmapping06.jpg)
 
 > Weisen Sie im Dialogfeld Eigenschaften für benutzerdefinierten Block dem benutzerdefinierten Block einen Namen, eine Beschreibung und eine Kategorie zu.
 
-![Exercise](images/9-2/UVmapping07.png)
+![Exercise](images/9-2/UVmapping07.jpg)
 
 > Der Ansichtsbereich ist mit dem benutzerdefinierten Block wesentlich übersichtlicher. Den Namen der Ein- und Ausgaben wurden die entsprechenden Angaben aus den Originalblöcken zugrunde gelegt. Bearbeiten Sie den benutzerdefinierten Block, um aussagekräftigere Namen zu erhalten.
 
-![Exercise](images/9-2/UVmapping08.png)
+![Exercise](images/9-2/UVmapping08.jpg)
 
 > Doppelklicken Sie auf den benutzerdefinierten Block, um ihn zu bearbeiten. Dadurch öffnen Sie einen Arbeitsbereich mit gelbem Hintergrund, der darauf hinweist, dass Sie im Inneren eines Blocks arbeiten.
 
@@ -71,7 +71,7 @@ Als Nächstes wählen Sie die Blöcke aus, die in einem benutzerdefinierten Bloc
 2. **Ausgabe**: Fügen Sie eine zusätzliche Ausgabe für die zugeordneten Polygone hinzu.
 > Speichern Sie den benutzerdefinierten Block, und kehren Sie zur Ausgangsansicht zurück.
 
-![Exercise](images/9-2/UVmapping09.png)
+![Exercise](images/9-2/UVmapping09.jpg)
 
 > Im **MapPolygonsToSurface**-Block wurden die eben vorgenommenen Änderungen übernommen.
 

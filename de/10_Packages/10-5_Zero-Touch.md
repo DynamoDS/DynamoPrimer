@@ -16,10 +16,10 @@ Zero-Touch-Pakete sind eine gute Ergänzung für benutzerdefinierte Blöcke. In 
 
 |Logo/Bild|Name|
 | -- | -- |
-|![](images/10-5/toolkit.png)|[Mesh Toolkit](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)|
-|![](images/10-5/unfold.png)|[Dynamo Unfold](http://dynamobim.com/dynamounfold/)|
-|![](images/10-5/rhynamo.png)|[Rhynamo](http://www.case-inc.com/blog/what-is-rhynamo)|
-|![](images/10-5/optimo.png)|[Optimo](https://github.com/BPOpt/Optimo)|
+|![](images/10-5/toolkit.jpg)|[Mesh Toolkit](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)|
+|![](images/10-5/unfold.jpg)|[Dynamo Unfold](http://dynamobim.com/dynamounfold/)|
+|![](images/10-5/rhynamo.jpg)|[Rhynamo](http://www.case-inc.com/blog/what-is-rhynamo)|
+|![](images/10-5/optimo.jpg)|[Optimo](https://github.com/BPOpt/Optimo)|
 
 ### Fallstudie: Importieren von AForge
 
@@ -29,16 +29,16 @@ In dieser Fallstudie wird der Import der externen [AForge](http://www.aforgenet.
 
 > 1. Beginnen Sie, indem Sie AForge herunterladen. Wählen Sie auf der [Download-Seite von AForge](http://www.aforgenet.com/framework/downloads.html) die Option *[Download Installer]*. Wenn der Download abgeschlossen ist, installieren Sie das Programm.
 
-![Exercise](images/10-5/import.png)
+![Exercise](images/10-5/import.jpg)
 
 > 1. Erstellen Sie in Dynamo eine neue Datei und wählen Sie *Datei > Bibliothek importieren*.
 
-![Exercise](images/10-5/folder.png)
+![Exercise](images/10-5/folder.jpg)
 
 > 1. Navigieren Sie im Popup-Fenster zum Release-Ordner in Ihrer Dynamo-Installation. Dies ist wahrscheinlich ein Ordner ähnlich dem folgenden: *C:\Program Files (x86)\AForge.NET\Framework\Release*.
 2. **AForge.Imaging.dll**: Für diese Fallstudie benötigen Sie nur diese eine Datei aus der AForge-Bibliothek. Wählen Sie diese *DLL*-Datei aus und klicken Sie auf *Öffnen*.
 
-![Exercise](images/10-5/library.png)
+![Exercise](images/10-5/library.jpg)
 
 > 1. In Dynamo sollte im Werkzeugkasten der Bibliothek jetzt eine Gruppe von Blöcken namens *AForge* hinzugekommen sein. Damit haben Sie innerhalb des visuellen Programms Zugriff auf die AForge-Imaging-Bibliothek.
 
@@ -50,18 +50,18 @@ Nachdem Sie die Bibliothek importiert haben, beginnen Sie mit der ersten, einfac
 
 Nachdem Sie die Bibliothek importiert haben, beginnen Sie mit der ersten, einfachen Übung (*01-EdgeDetection.dyn*). Sie führen einige einfache Bildverarbeitungsvorgänge an einem Beispielbild durch, um die Funktionsweise der Bildfilter in AForge zu demonstrieren. Dabei zeigen Sie die Ergebnisse in einem *Watch Image*-Block an und wenden in Dynamo Filter an, die denen von Photoshop ähnlich sind.
 
-![Exercise](images/10-5/Exercise/AForge- 23.png)
+![Exercise](images/10-5/Exercise/AForge- 23.jpg)
 
 > Als Erstes importieren Sie das Bild, mit dem Sie arbeiten möchten. Fügen Sie einen *File Path*-Block im Ansichtsbereich hinzu und wählen Sie die Datei "soapbubbles.jpg" aus dem heruntergeladenen Übungsordner (Foto: [flickr](https://www.flickr.com/photos/wwworks/667298782)).
 
-![Exercise](images/10-5/Exercise/AForge- 21.png)
+![Exercise](images/10-5/Exercise/AForge- 21.jpg)
 
 > 1. Im File Path-Block wird lediglich der Pfad zum ausgewählten Bild als Zeichenfolge angegeben. Diesen Pfad müssen Sie in ein Bild in der Dynamo-Umgebung konvertieren.
 2. Verbinden Sie den File Path-Block mit einem File.FromPath-Block.
 3. Um diese Datei in ein Bild zu konvertieren, verwenden Sie den Image.ReadFromFile-Block.
 4. Schließlich zeigen Sie das Ergebnis an. Fügen Sie einen Watch Image-Block in den Ansichtsbereich ein und verbinden Sie ihn mit dem Image.ReadFromFile-Block. Sie haben AForge noch nicht verwendet, aber das Bild erfolgreich in Dynamo importiert.
 
-![Exercise](images/10-5/Exercise/AForge- 18.png)
+![Exercise](images/10-5/Exercise/AForge- 18.jpg)
 
 > Unter AForge.Imaging.AForge.Filters (im Navigationsmenü) stehen zahlreiche Filter zur Verfügung. Sie reduzieren mithilfe eines dieser Filter die Farbsättigung des Bildes anhand von Schwellenwerten.
 
@@ -70,20 +70,20 @@ Nachdem Sie die Bibliothek importiert haben, beginnen Sie mit der ersten, einfac
 3. Damit der Graustufenfilter angewendet wird, benötigen Sie eine Aktion für das Bild. Verwenden Sie hierfür IFilter.Apply. Verbinden Sie das Bild mit der image-Eingabe und Grayscale.Grayscale mit der iFilter-Eingabe.
 4. Wenn Sie hier einen Watch Image-Block verbinden, erhalten Sie ein entsättigtes Bild.
 
-![Exercise](images/10-5/Exercise/AForge- 19.png)
+![Exercise](images/10-5/Exercise/AForge- 19.jpg)
 
 > Sie können mithilfe von Schwellenwerten für Rot, Grün und Blau steuern, wie das Bild entsättigt werden soll. Diese Werte werden über die Eingaben des Grayscale.Grayscale-Blocks definiert. Das Bild wirkt recht dunkel. Der Grund dafür ist, dass im Schieberegler für den Grün-Wert der Wert 0 eingestellt ist.
 
 > 1. Ändern Sie die Werte im oberen und unteren Schieberegler in 0 und den Wert des mittleren Schiebereglers in 1. Auf diese Weise erhalten Sie deutlicheres entsättigtes Bild.
 
-![Exercise](images/10-5/Exercise/AForge- 17.png)
+![Exercise](images/10-5/Exercise/AForge- 17.jpg)
 
 > Als Nächstes wenden Sie einen zusätzlichen Filter auf das entsättigte Bild an. Das entsättigte Bild weist einen gewissen Kontrast auf. Testen Sie daher jetzt die Kantenerkennung.
 
 > 1. Fügen Sie im Ansichtsbereich einen SobelEdgeDetector.SobelEdgeDetector-Block hinzu. Verbinden Sie diesen als IFilter mit einem neuen IFilter-Block und das entsättigte Bild mit der image-Eingabe des IFilter-Blocks.
 2. Die Sobel-Kantenerkennung hebt in einem neuen Bild die Kanten hervor.
 
-![Exercise](images/10-5/Exercise/AForge- 16.png)
+![Exercise](images/10-5/Exercise/AForge- 16.jpg)
 
 > Die vergrößerte Darstellung zeigt, dass die Kantenerkennung die Umrisse der Blasen mit Pixeln markiert. In der AForge-Bibliothek stehen Werkzeuge zur Verfügung, mit denen Sie aus Ergebnissen wie diesem Dynamo-Geometrie erstellen können. Dies wird in der nächsten Übung genauer betrachtet.
 
@@ -93,18 +93,18 @@ Nachdem Sie die Bibliothek importiert haben, beginnen Sie mit der ersten, einfac
 
 Nach dieser Einführung in einfache Bildverarbeitung wird hier gezeigt, wie Sie ein Bild dazu einsetzen können, Dynamo-Geometrie zu steuern. In dieser Übung führen Sie mithilfe von AForge und Dynamo einen einfachen *Live Trace*-Vorgang für ein Bild durch. Dieses Beispiel ist relativ einfach: Aus einem Referenzbild werden Rechtecke extrahiert. In AForge stehen jedoch auch Werkzeuge für komplexere Operationen zur Verfügung. Sie arbeiten mit der Datei *02-RectangleCreation.dyn* aus den heruntergeladenen Übungsdateien.
 
-![Exercise](images/10-5/Exercise/AForge- 15.png)
+![Exercise](images/10-5/Exercise/AForge- 15.jpg)
 
 > 1. Navigieren Sie im File Path-Block zu grid.jpg im Ordner mit den Übungen.
 2. Verbinden Sie die übrigen Blöcke der oben gezeigten Folge, um ein durch Verlaufsparameter definiertes Raster anzuzeigen.
 
 Im nächsten Schritt sollen die weißen Quadrate in diesem Bild referenziert und in Dynamo-Geometrie konvertiert werden. AForge bietet eine Vielfalt leistungsstarker Computer Vision-Werkzeuge. Hier verwenden Sie ein besonders wichtiges Werkzeug in der Bibliothek: [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
 
-![Exercise](images/10-5/Exercise/AForge- 14.png)
+![Exercise](images/10-5/Exercise/AForge- 14.jpg)
 
 > 1. Nachdem Sie einen BlobCounter-Block im Ansichtsbereich hinzugefügt haben, benötigen Sie eine Funktion zur Verarbeitung des Bildes (ähnlich das IFilter-Werkzeug in der vorigen Übung). Der Process Image-Block ist jedoch nicht direkt in der Dynamo-Bibliothek sichtbar. Der Grund hierfür ist, dass die Funktion eventuell nicht im AForge-Quellcode sichtbar ist. Dies müssen Sie mit einer Umgehungslösung beheben.
 
-![Exercise](images/10-5/Exercise/AForge- 13.png)
+![Exercise](images/10-5/Exercise/AForge- 13.jpg)
 
 > 1. Fügen Sie im Ansichtsbereich einen Python-Block hinzu.
 
@@ -120,17 +120,17 @@ OUT=bc
 
 > Fügen Sie den oben gezeigten Code in den Python-Block ein. Dieser Code importiert die AForge-Bibliothek und verarbeitet dann das importierte Bild.
 
-![Exercise](images/10-5/Exercise/AForge- 11.png)
+![Exercise](images/10-5/Exercise/AForge- 11.jpg)
 
 > Indem Sie die image-Ausgabe mit der Eingabe des Python-Blocks verbinden, erhalten Sie ein AForge.Imaging.BlobCounter-Ergebnis aus dem Python-Block.
 
 Die Vorgänge in den nächsten Schritten setzen eine gewisse Kenntnis der [AForge-Imaging-API](http://www.aforgenet.com/framework/docs/html/d087503e-77da-dc47-0e33-788275035a90.htm) voraus. Für die Arbeit mit Dynamo müssen Sie diese nicht komplett erlernen. Sie dienen vielmehr zur Demonstration der Arbeit mit externen Bibliotheken innerhalb der Dynamo-Umgebung mit ihrer großen Flexibilität.
 
-![Exercise](images/10-5/Exercise/AForge- 10.png)
+![Exercise](images/10-5/Exercise/AForge- 10.jpg)
 
 > 1. Verbinden Sie die Ausgabe des Python-Skripts mit BlobCounterBase.GetObjectRectangles. Dieser Block liest Objekte in einem Bild anhand eines Schwellenwerts und extrahiert quantifizierte Rechtecke aus dem Pixelraum.
 
-![Exercise](images/10-5/Exercise/AForge- 09.png)
+![Exercise](images/10-5/Exercise/AForge- 09.jpg)
 
 > 1. Fügen Sie einen weiteren Python-Block in den Ansichtsbereich ein, verbinden Sie ihn mit GetObjectRectangles und geben Sie den unten stehenden Code ein. Dadurch erhalten Sie eine strukturierte Liste von Dynamo-Objekten.
 
@@ -145,7 +145,7 @@ subOUT.append(rec.Height)
 OUT.append(subOUT)
 ```
 
-![Exercise](images/10-5/Exercise/AForge- 06.png)
+![Exercise](images/10-5/Exercise/AForge- 06.jpg)
 
 > 1. Vertauschen Sie die Listenebenen aus der Ausgabe des Python-Blocks aus dem vorigen Schritt mithilfe von Transpose. Dadurch erhalten Sie vier Listen, jeweils mit den x-, y-, Breiten- und Höhenwerten der einzelnen Rechtecke.
 2. Mithilfe eines Codeblocks ordnen Sie die Daten in einer für den Rectangle.ByCornerPoints-Block geeigneten Struktur (mithilfe des folgenden Codes).
@@ -164,15 +164,15 @@ p2=Autodesk.Point.ByCoordinates(x1,y1);
 p3=Autodesk.Point.ByCoordinates(x1,y0);
 ```
 
-![Exercise](images/10-5/Exercise/AForge- 05.png)
+![Exercise](images/10-5/Exercise/AForge- 05.jpg)
 
 > Die verkleinerte Darstellung zeigt ein Array aus Rechtecken, die die weißen Quadrate aus dem Bild darstellen. Durch diese Programmierung haben Sie einen Vorgang durchgeführt, der der Live Trace-Funktion von Illustrator recht nahe kommt.
 
-![Exercise](images/10-5/Exercise/AForge- 04.png)
+![Exercise](images/10-5/Exercise/AForge- 04.jpg)
 
 > Das Ergebnis muss jedoch noch bereinigt werden. Die vergrößerte Darstellung zeigt, dass einige unerwünschte kleine Rechtecke vorhanden sind.
 
-![Exercise](images/10-5/Exercise/AForge- 03.png)
+![Exercise](images/10-5/Exercise/AForge- 03.jpg)
 
 > 1. Sie entfernen die unerwünschten Rechtecke, indem Sie einen weiteren Python-Block zwischen dem GetObjectRectangles-Block und dem bestehenden Python-Block einfügen. Der Code für diesen Block wird unten gezeigt. Er entfernt alle Rechtecke, die kleiner als die angegebene Größe sind.
 
@@ -184,11 +184,11 @@ if rec.Width>8 and rec.Height>8:
 OUT.append(rec)
 ```
 
-![Exercise](images/10-5/Exercise/AForge- 01.png)
+![Exercise](images/10-5/Exercise/AForge- 01.jpg)
 
 > Damit haben Sie die überflüssigen Rechtecke beseitigt. Erstellen Sie jetzt interessehalber eine Oberfläche aus diesen Rechtecken und extrudieren Sie diese um eine Entfernung in Abhängigkeit von ihrer Fläche.
 
-![Exercise](images/10-5/Exercise/AForge- 00.png)
+![Exercise](images/10-5/Exercise/AForge- 00.jpg)
 
 > 1. Ändern Sie zum Schluss die both_sides-Eingabe in False. Damit erhalten Sie eine Extrusion in nur eine Richtung. Tauchen Sie diese Form in Kunstharz, um den perfekten Tisch für Nerds zu erhalten!
 

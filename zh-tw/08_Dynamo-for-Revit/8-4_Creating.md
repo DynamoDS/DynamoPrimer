@@ -4,13 +4,13 @@
 
 您可以在 Dynamo 中建立具有完整參數式控制的一系列 Revit 元素。藉由 Dynamo 中的 Revit 節點，可以將元素從一般幾何圖形匯入至特定的品類類型 (例如牆與地板)。在本節中，我們將著重講解使用自適應元件以參數式方式匯入彈性元素。
 
-![建立](images/8-4/creation.png)
+![建立](images/8-4/creation.jpg)
 
 ### 自適應元件
 
 自適應元件是非常適用於生產應用的彈性族群品類。在例證化之後，您可以建立由自適應點的基本位置驅動的複雜幾何元素。
 
-![AdaptiveComponent](images/8-4/ac.png)
+![AdaptiveComponent](images/8-4/ac.jpg)
 
 > 族群編輯器中的三點自適應元件範例。這將產生由每個自適應點的位置定義的桁架。在以下練習中，我們將使用此元件在正面產生一系列桁架。
 
@@ -24,7 +24,7 @@
 
 #### 多個元素與清單
 
-![練習](images/8-4/Exercise/03.png)
+![練習](images/8-4/Exercise/03.jpg)
 
 以下練習將講解 Dynamo 如何參考用於建立 Revit 元素的資料。為了產生多個自適應元件，我們定義了清單的清單，其中每個清單都包含三點，表示自適應元件的每個點。在 Dynamo 中管理資料結構時，我們將記住這一點。
 
@@ -35,14 +35,14 @@
 > 1. [Creating.dyn](datasets/8-4/Creating.dyn)
 2. [ARCH-Creating-BaseFile.rvt](datasets/8-4/ARCH-Creating-BaseFile.rvt)
 
-![練習](images/8-4/Exercise/10.png)
+![練習](images/8-4/Exercise/10.jpg)
 
 > 從本節的範例檔案開始 (或繼續使用上一節課的 Revit 檔案)，我們查看同一 Revit 量體。
 
 > 1. 這是開啟的檔案。
-2. 這是桁架系統，我們將使用 Dynamo 建立該桁架系統並採用智慧方式將其連結至 Revit 量體。
+2. 這是我們使用 Dynamo 建立的桁架系統，並採用智慧方式將其連結至 Revit 量體。
 
-![練習](images/8-4/Exercise/08.png)
+![練習](images/8-4/Exercise/08.jpg)
 
 > 我們此前使用的是*「Select Model Element」*與*「Select Face」*節點，現在我們在幾何圖形階層中更進一步，使用*「Select Edge」*。將 Dynamo 求解器設定為*「自動」*執行後，圖表會根據 Revit 檔案中的變更而持續更新。我們將選取的邊已動態連結至 Revit 元素拓樸。只要拓樸*不會變更，Revit 與 Dynamo 之間的關聯就會保持連結狀態。
 
@@ -53,7 +53,7 @@
 
 **注意：為了讓拓樸保持一致，我們將參考未加入額外面或邊的模型。雖然參數可變更其造型，但是其建置方式保持一致。*
 
-![練習](images/8-4/Exercise/07.png)
+![練習](images/8-4/Exercise/07.jpg)
 
 > 我們需要先接合曲線，並將其合併至一個清單。這樣我們可以將曲線*「分組」*以執行幾何圖形作業。
 
@@ -63,7 +63,7 @@
 4. 將 *List.Create* 元件插入至 *Polycurve.ByJoinedCurves* 節點，以便將兩條曲線接合為 polycurve。
 5. 最後，將三條主要曲線 (一條直線與兩條 PolyCurve) 接合到一個清單中。
 
-![練習](images/8-4/Exercise/06.png)
+![練習](images/8-4/Exercise/06.jpg)
 
 > 我們希望利用頂部曲線，它是直線，並能呈現正面的完整跨度。我們將沿此線建立與我們在清單中歸為一組的一組曲線相交的平面。
 
@@ -71,13 +71,13 @@
 2. 將 *integer slider * 插入至代碼區塊的輸入。您可能已猜到，這將展示桁架的數量。請注意，滑棒在定義的從 *0* 至 *1* 的範圍內控制項目數量。
 3. 將 *code block* 插入至*「Curve.PlaneAtParameter」*節點的 *param* 輸入，將頂部的邊插入至 *curve* 輸入。這會產生十個平面，均勻分佈在正面的跨度內。
 
-![練習](images/8-4/Exercise/05.png)
+![練習](images/8-4/Exercise/05.jpg)
 
 > 平面是抽象的幾何圖形，表示無限的二維空間。平面非常適合描述等高與相交，正如我們在此步驟中的設置所示。
 
 > 1. 使用 *Geometry.Intersect* 節點，將 *Curve.PlaneAtParameter* 插入至 *Geometry.Intersect* 節點的 *entity* 輸入。將主要 *List.Create* 節點插入至 *geometry* 輸入。現在，我們可以在 Dynamo 視埠中看到表示每條曲線與定義的平面相交的點。
 
-![練習](images/8-4/Exercise/04.png)
+![練習](images/8-4/Exercise/04.jpg)
 
 > 請注意，輸出是清單的清單的清單。我們為達到目的而使用的清單過多。在此，我們希望進行局部平坦化。我們需要對清單更進一步，對結果執行平坦化。為了執行此作業，我們使用 *List.Map* 作業，正如手冊的清單一章中的討論所示。
 
@@ -87,26 +87,26 @@
 4. 將 *List.Map* 插入至 *List.Transpose* 節點。現在我們已取得所需的資料輸出。
 5. 若要確認資料正確無誤，請加入 *Polygon.ByPoints* 節點至圖元區，然後詳細查看 Dynamo 預覽。
 
-![練習](images/8-4/Exercise/03.png)
+![練習](images/8-4/Exercise/03.jpg)
 
 > 我們以同樣的方式建立了多邊形，並對自適應元件進行排列。
 
 > 1. 加入 *AdaptiveComponent.ByPoints* 節點至圖元區，將 *List.Transpose* 節點插入至 *points* 輸入。
 2. 使用 *Family Types* 節點，選取*「AdaptiveTruss」*族群，並將其插入至 *AdaptiveComponent.ByPoints* 節點的 *familySymbol* 輸入。
 
-![練習](images/8-4/Exercise/02.png)
+![練習](images/8-4/Exercise/02.jpg)
 
 > 在 Revit 中查看，我們現在建立了均勻分佈在正面跨度範圍內的十個桁架。
 
-![練習](images/8-4/Exercise/01.png)
+![練習](images/8-4/Exercise/01.jpg)
 
 > 1. 「調整」圖表，透過變更 *slider* 將 *numberOfTrusses* 提高為 *40*。桁架很多，這並非很現實，但是參數式連結的確有效。
 
-![練習](images/8-4/Exercise/00.png)
+![練習](images/8-4/Exercise/00.jpg)
 
 > 1. 改良桁架系統，接下來對 *numberOfTrusses* 折衷採用值 *15*。
 
-![練習](images/8-4/Exercise/00a.png)
+![練習](images/8-4/Exercise/00a.jpg)
 
 > 在最終測試中，透過在 Revit 內選取量體並編輯例證參數，我們可以變更建築的塑形，並看到桁架與之相符。請記住，必須開啟此 Dynamo 圖表，才能看到此更新，一旦該圖表關閉，連結將中斷。
 
@@ -123,7 +123,7 @@
 > 1. [DirectShape.dyn](datasets/8-4/DirectShape.dyn)
 2. [ARCH-DirectShape-BaseFile.rvt](datasets/8-4/ARCH-DirectShape-BaseFile.rvt)
 
-![練習](images/8-4/Exercise/DS-05.png)
+![練習](images/8-4/Exercise/DS-05.jpg)
 
 > 首先，開啟本課程的範例檔案 ARCH-DirectShape-BaseFile.rvt。
 
@@ -131,33 +131,33 @@
 2. 沿著中庭的邊是一條參考曲線，我們會將其用作在 Dynamo 中參考的曲線。
 3. 沿著中庭的相對一邊是另一條參考曲線，我們也會在 Dynamo 中對其進行參考。
 
-![練習](images/8-4/Exercise/DS-04.png)
+![練習](images/8-4/Exercise/DS-04.jpg)
 
 > 1. 為了在 Dynamo 中參考幾何圖形，我們將對 Revit 中的每個成員使用*Select Model Element*。在 Revit 中選取量體，並使用 *Element.Faces* 將幾何圖形匯入至 Dynamo，現在 Dynamo 預覽中應該可以看到量體。
 2. 使用 *Select Model Element* 與 *CurveElement.Curve* 將一條參考曲線匯入至 Dynamo。
 3. 使用 *Select Model Element* 與 *CurveElement.Curve* 將另一條參考曲線匯入至 Dynamo。
 
-![練習](images/8-4/Exercise/DS-03.png)
+![練習](images/8-4/Exercise/DS-03.jpg)
 
 > 1. 拉遠並平移至範例圖表中的右側，可以看到大型節點群組，這些是幾何圖形作業，將產生 Dynamo 預覽中可見的格架屋頂結構。使用手冊的[代碼區塊一節](../07_Code-Block/7-2_Design-Script-syntax.md#Node)中討論的*要編碼的節點*功能產生這些節點。
 2. 結構由三個主要參數驅動，分別是對角線偏移、拱角與半徑。
 
-![練習](images/8-4/Exercise/DS-06.png)
+![練習](images/8-4/Exercise/DS-06.jpg)
 
 > 進行縮放，特寫查看此圖表的參數。我們可以調整這些參數，以取得不同的幾何圖形輸出。
 
-![練習](images/8-4/Exercise/DS-02.png)
+![練習](images/8-4/Exercise/DS-02.jpg)
 
-> 1. 將 *DirectShape.ByGeometry* 節點置於圖元區上，我們可以看到它有四個輸入：**幾何圖形、品類、材料**與**名稱**。
+> 1. 將 *DirectShape.ByGeometry* 節點置於圖元區上，我們可以看到它有四個輸入：**geometry、category、material**與**name**。
 2. 幾何圖形是將要從圖表的幾何圖形建立部分建立的實體
-3. 使用下拉式*品類*節點選擇品類輸入。在此案例中，我們將使用「結構框架」。
+3. 使用下拉式*Categories*節點選擇品類輸入。在此案例中，我們將使用「結構框架」。
 4. 透過以上的一系列節點選取材料輸入 (雖然在此案例中定義為「預設」會更簡單)。
 
-![練習](images/8-4/Exercise/DS-01.png)
+![練習](images/8-4/Exercise/DS-01.jpg)
 
 > 執行 Dynamo 後，返回 Revit，專案中的屋頂上已存在匯入的幾何圖形。這是結構框架元素，而不是一般模型。Dynamo 的參數式連結保持不變。
 
-![練習](images/8-4/Exercise/DS-00.png)
+![練習](images/8-4/Exercise/DS-00.jpg)
 
 > 1. 如果我們將「對角線偏移」參數變更為「-2」以「調整」Dynamo 圖表，再次執行 Dynamo 時，即可取得匯入的新 DirectShape！
 

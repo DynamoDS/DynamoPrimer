@@ -2,13 +2,13 @@
 
 ## Revit 連接
 
-![連接](images/8-1/link.png) Dynamo for Revit 使用圖形算法編輯器的資料和邏輯環境來延伸建築資訊建模。 其靈活性以及功能強大的 Revit 資料庫，為 BIM 提供了新視角。
+![連接](images/8-1/link.jpg) Dynamo for Revit 使用圖形算法編輯器的資料和邏輯環境來延伸建築資訊建模。 其靈活性以及功能強大的 Revit 資料庫，為 BIM 提供了新視角。
 
 本章的重點在於 BIM 的 Dynamo 工作流程。各小節主要基於練習，因為直接開始處理專案是熟悉 BIM 圖形算法編輯器的最佳方法。但是，首先讓我們來瞭解程式的開頭。
 
 #### Dynamo 歷程
 
-![歷程](images/8-1/earlyScreenshot.png)
+![歷程](images/8-1/earlyScreenshot.jpg)
 
 > 在專注投入的開發人員團隊和充滿熱情的社群的努力下，專案從一開始的微不足道取得了長足的發展。
 
@@ -18,11 +18,11 @@ Dynamo 最初建立的目的是為了簡化 Revit 中的 AEC 工作流程。雖�
 
 ### 在 Revit 中執行 Dynamo
 
-![連結](images/8-1/01.png)
+![連結](images/8-1/01.jpg)
 
 > 1. 在 Revit 投影儀系列編輯器中，導覽至「外掛程式」， 然後按一下 *Dynamo*。 注意：Dynamo 僅會在開啟它的檔案中執行。
 
-![連結](images/8-1/00.png)
+![連結](images/8-1/00.jpg)
 
 > 1. 當在 Revit 中開啟 Dynamo 時，有一個新類別，稱為 *「Revit」*。 這是使用者介面的全面新增組件，其中提供了專用於 Revit 工作流程的節點。*
 
@@ -36,9 +36,9 @@ Dynamo 最初建立的目的是為了簡化 Revit 中的 AEC 工作流程。雖�
 
 由於 Dynamo 最初是為 AEC 建立，其大型且不斷成長的社區是一個向行業專家學習和連線至行業專家的很棒資源。Dynamo 的社群由樂於分享和創造的建築師、工程師、程式設計人員及設計師組成。
 
-Dynamo 是不斷發展的開放程式碼專案且大量開發與 Revit 相關。如果您是新使用者，可造訪「討論論壇」並開始[發佈問題](http://dynamobim.org/forums/forum/dyn/)！如果您是程式設計人員並想要參與 Dynamo 開發，可造訪 [Github 頁面](https://github.com/DynamoDS/Dynamo)。另外，協力廠商資源庫的絕佳資源是 [Dynamo 套件管理程式](http://dynamopackages.com/)。 許多這些套件都是在 AEC 基礎上開發的，本章中我們將瞭解用於面板化的協力廠商套件。
+Dynamo 是不斷發展的開放程式碼專案且大量開發與 Revit 相關。如果您是新使用者，可造訪「討論論壇」並開始[發佈問題](http://dynamobim.org/forums/forum/dyn/)！如果您是程式設計人員並想要參與 Dynamo 開發，可造訪 [Github 頁面](https://github.com/DynamoDS/Dynamo)另外，協力廠商資源庫的絕佳資源是 [Dynamo 套件管理程式](http://dynamopackages.com/)。 許多這些套件都是在 AEC 基礎上開發的，本章中我們將瞭解用於面板化的協力廠商套件。
 
-![部落格](images/8-1/blog.png)
+![部落格](images/8-1/blog.jpg)
 
 > Dynamo 也會積極更新[部落格](http://dynamobim.com/blog/)。 讀取最新的貼文以瞭解最新開發！
 

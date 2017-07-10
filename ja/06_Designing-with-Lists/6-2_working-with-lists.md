@@ -35,7 +35,7 @@ Dynamo では、これらの操作に似た操作を実行することができ�
 
 > この演習に付属しているサンプル ファイルをダウンロードしてください(右クリックして[名前を付けてリンク先を保存...]を選択): [List-Operations.dyn](datasets/6-2/List-Operations.dyn)。 すべてのサンプル ファイルの一覧については、付録を参照してください。
 
-![演習](images/6-2/Exercise/40.png)
+![演習](images/6-2/Exercise/40.jpg)
 
 > 1. 最初に、```500;``` という値が表示されている *Code Block* ノードを使用します。
 2. 上記の Code Block ノードを *Point.ByCoordinates* ノードの *x* 入力に接続します。
@@ -47,13 +47,13 @@ Dynamo では、これらの操作に似た操作を実行することができ�
 8. 上記の Code Block ノードを 2 つの *Curve.PointAtParameter* ノードの *param* 入力に接続します。 次に、上部に配置されている方の Curve.PointAtParameter ノードの curve 入力に *Circle.ByPlaneRadius* ノードを接続し、下部に配置されている方の Curve.PointAtParameter ノードの curve 入力に *Geometry.Translate* ノードを接続します。
 9. *Line.ByStartPointEndPoint* ノードを使用して、2 つの *Curve.PointAtParameter* ノードを接続します。
 
-![演習](images/6-2/Exercise/38.png)
+![演習](images/6-2/Exercise/38.jpg)
 
 > 1. *Watch3D* ノードに、*Line.ByStartPointEndPoint* ノードの結果が表示されます。 ここからは、2 つの円の間に線分を描画して、リストの基本的な操作を実行するための基本的な Dynamo グラフを作成します。また、このグラフを使用して、リストに対する操作を詳しく見ていきます。
 
 ### List.Count
 
-![カウント](images/6-2/count.png)
+![カウント](images/6-2/count.jpg)
 
 > *List.Count* ノードは、リスト内の値の数をカウントしてその数を返すという単純なノードです。 「リストのリスト」を操作する場合は、このノードの使用方法も多少複雑になりますが、それについてはこれ以降のセクションで説明します。
 
@@ -61,13 +61,13 @@ Dynamo では、これらの操作に似た操作を実行することができ�
 
 > この演習に付属しているサンプル ファイルをダウンロードしてください(右クリックして[名前を付けてリンク先を保存...]を選択): [List-Count.dyn](datasets/6-2/List-Count.dyn)。 すべてのサンプル ファイルの一覧については、付録を参照してください。
 
-![カウント](images/6-2/Exercise/35.png)
+![カウント](images/6-2/Exercise/35.jpg)
 
 > 1. *List.Count* ノードは、*Line.ByStartPointEndPoint* ノード内の線分の数を返します。 この場合は 10 という値が返されますが、これは、元の *Code Block* ノードで作成した点の数に対応しています。
 
 ### List.GetItemAtIndex
 
-![インデックス](images/6-2/index.png)
+![インデックス](images/6-2/index.jpg)
 
 > *List.GetItemAtIndex* ノードは、リスト内の項目のクエリーを実行するための基本的な方法です。 上の図の場合、「*2*」というインデックス値を使用して、「*C*」というラベルが付いている点のクエリーを実行します。
 
@@ -75,14 +75,14 @@ Dynamo では、これらの操作に似た操作を実行することができ�
 
 > この演習に付属しているサンプル ファイルをダウンロードしてください(右クリックして[名前を付けてリンク先を保存...]を選択): [List-GetItemAtIndex.dyn](datasets/6-2/List-GetItemAtIndex.dyn)。 すべてのサンプル ファイルの一覧については、付録を参照してください。
 
-![演習](images/6-2/Exercise/33.png)
+![演習](images/6-2/Exercise/33.jpg)
 
 > 1. *List.GetItemAtIndex* ノードを使用して、インデックス値「*0*」を選択するか、線分のリスト内の先頭の項目を選択します。
 2. *Watch3D* ノードに、上記で選択した 1 本の線分が表示されます。 上の図のように表示するには、*Line.ByStartPointEndPoint* ノードのプレビューを無効にする必要があります。
 
 ### List.Reverse ノード
 
-![反転](images/6-2/reverse.png)
+![反転](images/6-2/reverse.jpg)
 
 > *List.Reverse* ノードは、リスト内のすべての項目の順序を逆にします。
 
@@ -90,7 +90,7 @@ Dynamo では、これらの操作に似た操作を実行することができ�
 
 > この演習に付属しているサンプル ファイルをダウンロードしてください(右クリックして[名前を付けてリンク先を保存...]を選択): [List-Reverse.dyn](datasets/6-2/List-Reverse.dyn)。 すべてのサンプル ファイルの一覧については、付録を参照してください。
 
-![演習](images/6-2/Exercise/34.png)
+![演習](images/6-2/Exercise/34.jpg)
 
 > 1. 順序が逆になった線分のリストをわかりやすく表示するために、コード ブロックを ```0..1..#100;``` に変更して線分の数を増やします。
 2. いずれかの点のリストで、*Curve.PointAtParameter* ノードと *Line.ByStartPointEndPoint* ノードの間に *List.Reverse* ノードを挿入します。
@@ -98,7 +98,7 @@ Dynamo では、これらの操作に似た操作を実行することができ�
 
 ### List.ShiftIndices ノード
 
-![移動](images/6-2/shift.png)
+![移動](images/6-2/shift.jpg)
 
 > *List.ShiftIndices* ノードは、ねじれパターンやらせんパターンなどを作成する場合に便利なノードです。 このノードは、指定されたインデックス値の分だけ、リスト内の項目を移動します。
 
@@ -106,19 +106,19 @@ Dynamo では、これらの操作に似た操作を実行することができ�
 
 > この演習に付属しているサンプル ファイルをダウンロードしてください(右クリックして[名前を付けてリンク先を保存...]を選択): [List-ShiftIndices.dyn](datasets/6-2/List-ShiftIndices.dyn)。 すべてのサンプル ファイルの一覧については、付録を参照してください。
 
-![演習](images/6-2/Exercise/31.png)
+![演習](images/6-2/Exercise/31.jpg)
 
 > 1. List.Reverse ノードの場合と同様に、*List.ShiftIndices* ノードを *Curve.PointAtParameter* ノードと *Line.ByStartPointEndPoint* ノードの間に挿入します。
 2. *Code Block* ノードを使用して、リストを移動するインデックス値として「*1*」を指定します。
 3. この場合の変化はわずかですが、下部に表示されている方の *Watch3D* ノード内のすべての線分が、インデックス 1 つ分だけ横にずれた点に接続されています。
 
-![演習](images/6-2/Exercise/32.png)
+![演習](images/6-2/Exercise/32.jpg)
 
 > 1. *Code Block* ノードの値を「*30*」などの大きな値に変更すると、すべての線分が大きく変化することがわかります。 元の円柱形状がこのように変化する動作は、カメラの絞りによく似ています。
 
 ### List.FilterByBooleanMask ノード
 
-![選別](images/6-2/cull2.png)
+![選別](images/6-2/cull2.jpg)
 
 > *List.FilterByBooleanMask* ノードは、ブール値のリストに基づいて、特定の項目を削除します。ブール値とは、「True」または「False」を読み取る値のことです。
 
@@ -126,7 +126,7 @@ Dynamo では、これらの操作に似た操作を実行することができ�
 
 > この演習に付属しているサンプル ファイルをダウンロードしてください(右クリックして[名前を付けてリンク先を保存...]を選択): [List-FilterByBooleanMask.dyn](datasets/6-2/List-FilterByBooleanMask.dyn)。 すべてのサンプル ファイルの一覧については、付録を参照してください。
 
-![演習](images/6-2/Exercise/30.png)
+![演習](images/6-2/Exercise/30.jpg)
 
 > 「true」または「false」を読み取る値のリストを作成するには、次の手順を実行します。
 

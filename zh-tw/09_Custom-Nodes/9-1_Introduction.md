@@ -28,11 +28,11 @@ Dynamo 為廣泛的視覺程式設計任務提供許多核心節點。有時，�
 
 讓我們跳至自訂節點環境，並建立一個簡單的節點來計算百分比。自訂節點環境不同於 Dynamo 圖形環境，但其互動根本相同。在此基礎上，讓我們建立第一個自訂節點！
 
-![自訂節點簡介](images/9-1/CustomNodes01.png)
+![自訂節點簡介](images/9-1/CustomNodes01.jpg)
 
 > 若要從頭開始建立自訂節點，啟動 Dynamo，然後選取「自訂節點」，或在畫布上按住 Ctrl + Shift + N。
 
-![「自訂節點」對話框](images/9-1/CustomNodes02.png)
+![「自訂節點」對話框](images/9-1/CustomNodes02.jpg)
 
 > 在「自訂節點內容」對話框中指定名稱、說明和類別。
 
@@ -40,11 +40,11 @@ Dynamo 為廣泛的視覺程式設計任務提供許多核心節點。有時，�
 2. **說明**：計算一個值相對於另一個值的百分比。
 3. **類別：** Core.Math
 
-![自訂節點畫布](images/9-1/CustomNodes03.png)
+![自訂節點畫布](images/9-1/CustomNodes03.jpg)
 
 > 這將開啟一個具有黃色背景的畫布，表示您正在自訂節點內工作。在此畫布上，您可以存取所有核心 Dynamo 節點，以及 **Input** 和 **Output** 節點，其標示資料流進和流出自訂節點。 它們可以在 *Core > Input* 下找到。
 
-![自訂節點畫布](images/9-1/CustomNodes04.png)
+![自訂節點畫布](images/9-1/CustomNodes04.jpg)
 
 > 1. **Input：**輸入節點用於在自訂節點上建立輸入埠。 輸入節點的語法為 *input_name : datatype = default_value（可選）*。
 
@@ -52,7 +52,7 @@ Dynamo 為廣泛的視覺程式設計任務提供許多核心節點。有時，�
 
 您可以將此自訂節點儲存為 .dyf（而非標準 .dyn）檔案，它將會自動新增至您的階段作業和將來的階段作業中。您將在資源庫中自訂節點內容指定的類別下找到自訂節點。
 
-![新增至資源庫](images/9-1/CustomNodes05.png)
+![新增至資源庫](images/9-1/CustomNodes05.jpg)
 
 > 左側：預設資源庫的「Core」>「Math 」類別 右側：新自訂節點的「Core」>「Math 」類別
 

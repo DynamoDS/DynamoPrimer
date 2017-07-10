@@ -18,7 +18,7 @@ Auf den ersten Blick scheint es ungewohnt, dass der erste Index einer Liste imme
 
 Wenn Sie etwa die Finger an Ihrer rechten zählen, würden Sie von 1 bis 5 zählen. In einer Liste in Dynamo hätten Ihre Finger jedoch die Indizes 0–4. Für Einsteiger in die Programmierung ist dies eventuell zunächst ungewohnt. Nullbasierte Indizes sind jedoch die in den meisten Rechensystemen gebräuchliche Praxis.
 
-![items](images/6-1/items.png)
+![items](images/6-1/items.jpg)
 
 Beachten Sie, dass die Liste nach wie vor 5 Einträge enthält, sie werden nur beginnend mit 0 gezählt. Die Einträge in Listen müssen nicht unbedingt Zahlen sein. Vielmehr können alle in Dynamo unterstützten Datentypen verwendet werden: Punkte, Kurven, Oberflächen, Familien usw.
 
@@ -30,7 +30,7 @@ Diese Indizes sind ein entscheidendes Element bei der Arbeit mit Listen.
 
 Ein- und Ausgaben behandeln Listen abhängig vom verwendeten Block unterschiedlich. In diesem Beispiel wird die ausgegebene Liste mit fünf Punkten mit zwei verschiedenen Dynamo-Blöcken verbunden: *PolyCurve.ByPoints* und *Circle.ByCenterPointRadius*:
 
-![Input Examples](images/6-2/PolyCurve.Inputs.png)
+![Input Examples](images/6-2/PolyCurve.Inputs.jpg)
 
 > 1. Die *points*-Eingabe von *PolyCurve.ByPoints* sucht nach *"Point[]"*. Dies entspricht einer Liste von Punkten.
 2. Die Ausgabe von *PolyCurve.ByPoints* ist eine einzelne PolyCurve, die aus den fünf Punkten aus der Liste erstellt wird.
@@ -59,7 +59,7 @@ Es ist leicht zu erkennen, dass es mehrere Möglichkeiten gibt, Linien zwischen 
 
 Zur Demonstration der unten beschriebenen Vergitterungsoptionen werden anhand dieser Basisdatei die kürzeste und die längste Liste sowie das Kreuzprodukt definiert.
 
-![Input Examples](images/6-1/lacing.png)
+![Input Examples](images/6-1/lacing.jpg)
 
 > 1. Dabei ändern Sie die Vergitterung für *Point.ByCoordinates*, nehmen jedoch keine weiteren Änderungen im oben gezeigten Diagramm vor.
 
@@ -67,9 +67,9 @@ Zur Demonstration der unten beschriebenen Vergitterungsoptionen werden anhand di
 
 Die einfachste Möglichkeit besteht darin, jedem Wert genau einen Wert aus der anderen Eingabe zuzuordnen, bis das Ende einer der Folgen erreicht ist. Dieser Algorithmus wird als "Kürzeste Liste" bezeichnet. Dies ist das vorgegebene Verhalten in Dynamo-Blöcken:
 
-![Input Examples](images/6-1/shortestListDiagram.png)
+![Input Examples](images/6-1/shortestListDiagram.jpg)
 
-![Input Examples](images/6-1/shortestList.png)
+![Input Examples](images/6-1/shortestList.jpg)
 
 > Mit der Vergitterung *Kürzeste Liste* erhalten Sie eine einfache diagonale Linie durch fünf Punkte. Die kürzere Liste umfasst fünf Einträge. Aus diesem Grund endet die Vergitterung Kürzeste Liste, sobald das Ende dieser Liste erreicht ist.
 
@@ -77,9 +77,9 @@ Die einfachste Möglichkeit besteht darin, jedem Wert genau einen Wert aus der a
 
 Der Algorithmus "Längste Liste" verbindet weiterhin Eingaben und verwendet gegebenenfalls Elemente mehrfach, bis alle Folgen aufgebraucht sind.
 
-![Input Examples](images/6-1/longestListDiagram.png)
+![Input Examples](images/6-1/longestListDiagram.jpg)
 
-![Input Examples](images/6-1/longestList.png)
+![Input Examples](images/6-1/longestList.jpg)
 
 > Mit der Vergitterung *Längste Liste* erhalten Sie eine diagonale Linie, die vertikal endet. Der letzte Eintrag in der 5 Einträge langen Liste wird genau wie im Übersichtsdiagramm so lange wiederholt, bis auch das Ende der längeren Liste erreicht ist.
 
@@ -87,9 +87,9 @@ Der Algorithmus "Längste Liste" verbindet weiterhin Eingaben und verwendet gege
 
 Mit der Methode "Kreuzprodukt" werden sämtliche möglichen Verbindungen hergestellt.
 
-![Input Examples](images/6-1/crossProductDiagram.png)
+![Input Examples](images/6-1/crossProductDiagram.jpg)
 
-![Input Examples](images/6-1/crossProduct.png)
+![Input Examples](images/6-1/crossProduct.jpg)
 
 > Bei der Vergitterung *Kreuzprodukt* erhalten Sie jede mögliche Kombination der beiden Listen. Dadurch entsteht ein Raster aus 5 x 10 Punkten. Diese Datenstruktur entspricht der Darstellung des Kreuzprodukts im Übersichtsdiagramm oben, allerdings wurden die Daten dabei in eine Liste von Listen umgewandelt. Durch Verbinden einer PolyCurve wird sichtbar, dass jede Liste durch ihren x-Wert definiert ist. Damit entsteht eine Reihe mit fünf vertikalen Linien.
 

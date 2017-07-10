@@ -16,6 +16,10 @@ Im Folgenden sind einige der häufiger in der Dynamo Community verwendeten Paket
 | -- | -- | -- |
 |Clockwork ist eine Sammlung benutzerdefinierter Blöcke für die visuelle Programmierumgebung von Dynamo. Es enthält viele Revit-bezogene Blöcke, aber auch zahlreiche Blöcke für verschiedene andere Zwecke wie Listenverwaltung, mathematische Operationen, Zeichenkettenoperationen, Einheitenumrechnungen, geometrische Operationen (vor allem Rahmen, Netze, Ebenen, Punkte, Oberflächen, UVs und Vektoren) und Anwendungen.|![](images/A-4/screengrab01.png)|
 
+|![](images/A-4/DataShapes_L.png)|DATA|SHAPES|[Besuchen Sie Data|Shapes auf GitHub](https://github.com/MostafaElAyoubi/Data-shapes)|
+| -- | -- | -- |
+|DataShapes ist ein Paket zur Erweiterung der Benutzerfunktionen von Dynamo-Skripts. Der Schwerpunkt liegt dabei hauptsächlich auf der Bereitstellung zusätzlicher Funktionen in Dynamo Player. Weitere Informationen finden Sie auf https://data-shapes.net/. Sie möchten beeindruckende Arbeitsabläufe für Dynamo Player erstellen? Verwenden Sie dieses Paket.|![](images/A-4/DataShapes_Image.png)|
+
 |![](images/A-4/ds_L.png)|DYNAMO SAP|[Besuchen Sie das DynamoSAP-Projekt in Core Studio.](http://core.thorntontomasetti.com/dynamosap-is-now-open-source/)|
 | -- | -- | -- |
 |DynamoSAP ist eine parametrische Benutzeroberfläche für SAP2000, die auf Dynamo aufsetzt. Das Projekt versetzt Konstrukteure und Ingenieure in die Lage, strukturelle Systeme auf generative Weise in SAP zu entwickeln und zu analysieren, indem das SAP-Modell mit Dynamo vorangetrieben wird. Das Projekt schreibt einige alltägliche Arbeitsabläufe vor, die in den eingeschlossenen Beispieldateien beschrieben sind, und bietet eine breite Palette an Möglichkeiten zur Automatisierung typischer Aufgaben in SAP.|![](images/A-4/sapImage.png)|
