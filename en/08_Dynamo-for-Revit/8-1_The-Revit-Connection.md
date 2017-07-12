@@ -4,6 +4,19 @@ Dynamo for Revit extends building information modeling with the data and logic e
 
 This chapter focuses on the Dynamo workflows for BIM. Sections are primarily exercise-based, since jumping right into a project is the best way to get familiar with a graphical algorithm editor for BIM.  But first, let's talk about the beginnings of the program.
 
+####Revit Version Compatibility
+As both Revit and Dynamo continue to evolve, you may notice that the Revit version you are working with is not compatible with the Dynamo version you have installed on your machine. Below outlines which versions of Dynamo are compatible with Revit.
+
+| Revit Version | Last Supported Dynamo Version |
+|---------------|-------------------------------|
+| 2013          | 0.6.3                         |
+| 2014          | 0.8.2                         |
+| 2015          | 1.2.1                         |
+| 2016          | Latest Daily Build            |
+| 2017          | Latest Daily Build            |
+| 2018          | Latest Daily Build            |
+
+
 ####History of Dynamo
 ![History](images/8-1/earlyScreenshot.jpg)
 > With a dedicated team of developers and a passionate community, the project has come a long way from its humble beginnings.
