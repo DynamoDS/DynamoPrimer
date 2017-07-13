@@ -9,9 +9,9 @@ This chapter focuses on the Dynamo workflows for BIM. Sections are primarily exe
 
 #### Revit Version Compatibility
 
-As both Revit and Dynamo continue to evolve, you may notice that the Revit version you are working with is not compatible with the Dynamo version you have installed on your machine. Below outlines which versions of Dynamo are compatible with Revit.
+As both Revit and Dynamo continue to evolve, you may notice that the Revit version you are working with is not compatible with the Dynamo for Revit version you have installed on your machine. Below outlines which versions of Dynamo for Revit are compatible with Revit.
 
-| Revit Version | Last Supported Dynamo Version |
+| Revit Version | Last Supported Dynamo for Revit Version |
 | --- | --- |
 | 2013 | 0.6.3 |
 | 2014 | 0.8.2 |
