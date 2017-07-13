@@ -16,7 +16,7 @@ As both Revit and Dynamo continue to evolve, you may notice that the Revit versi
 | 2013 | 0.6.3 |
 | 2014 | 0.8.2 |
 | 2015 | 1.2.1 |
-| 2016 | Latest Daily Build |
+| 2016 | 1.3 |
 | 2017 | Latest Daily Build |
 | 2018 | Latest Daily Build |
 
