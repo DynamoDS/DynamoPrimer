@@ -36,7 +36,7 @@ Using the core Dynamo nodes in tandem with custom Revit ones, a user can substan
 
 ![Connection](images/8-1/01.jpg)
 
-> 1. In a Revit projector family editor, navigate to Addins and click _Dynamo_. Take note: Dynamo will run only in the file in which it was opened.
+> 1. In a Revit project or family editor, navigate to Addins and click _Dynamo_. Take note: Dynamo will run only in the file in which it was opened.
 
 ![Connection](images/8-1/00.jpg)
 
