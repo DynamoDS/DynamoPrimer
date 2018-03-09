@@ -9,7 +9,7 @@ Publishing your files to the web is quick and easy with Dynamo Studio. However, 
 In this exercise, we will publish a Dynamo graph to the web. This file creates a grid of rectangles that are scaled based on an attractor and mapped from a base to a target surface. Surface patches are created from each rectangle, and colored based on their distance from the attractor.
 
 ![](images/publishing_00.jpg)
->This is the customizer we are going to make. View this example on the [web](dynamo.autodesk.com/share/572a49033a47345a0407e803).
+>This is the customizer we are going to make. View this example on the [web](https://dynamo.autodesk.com/share/572a49033a47345a0407e803).
 
 To prepare your script for publishing, first decide which inputs will be accessible to users. Allowable inputs include sliders, numbers, strings, and booleans. Code Blocks and File Paths cannot be used as inputs. Turn off “Is Input” via the context menu on any inputs that you don’t want to be exposed in the Customizer view. Make sure any slider inputs have reasonable minimum and maximum values.
 
@@ -37,7 +37,7 @@ Once your file is published, you can send a link to anyone with an Autodesk acco
 
 ![](images/publishing_05.jpg)
 
->View this example on the [web](dynamo.autodesk.com/share/572a49033a47345a0407e803)
+>View this example on the [web](https://dynamo.autodesk.com/share/572a49033a47345a0407e803)
 
 ###Managing Published Files
 

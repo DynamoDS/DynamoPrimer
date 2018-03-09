@@ -14,7 +14,7 @@ Once we have added more than a few Nodes to the Workspace, we may want to re-org
 With some experience, we may be able to "read" the Visual Program by reviewing the Node Names and following the Program Flow. For users of all experience levels, it is also good practice to include plain language labels and descriptions. Dynamo has a **Notes** Node with an editable text field to do so. We can add Notes to the Workspace in two ways:
 
 ![Notes](images/3-4/01-Notes01.jpg)
-> 1. Browse to the menu File > Create Note
+> 1. Browse to the menu Edit > Create Note
 2. Use the keyboard shortcut Ctrl+W
 
 Once the Note is added to the Workspace a text field will pop up allowing us to edit the text in the Note. After they are created, we can edit the Note by double-clicking or right-clicking the Note Node.
@@ -25,7 +25,7 @@ Once the Note is added to the Workspace a text field will pop up allowing us to 
 When our Visual Program gets big, it is helpful to identify the larger steps that will be executed. We can highlight larger collections of Nodes with a **Group** to label them with a colored rectangle in the background and a title. There are three ways to make a Group with more than one Node selected:
 
 ![Groups](images/3-4/04-Groups01.jpg)
-> 1. Browse to the menu File > Create Group
+> 1. Browse to the menu Edit > Create Group
 2. Use the keyboard shortcut Ctrl+G
 3. Right-click on the Workspace and select "Create Group"
 
