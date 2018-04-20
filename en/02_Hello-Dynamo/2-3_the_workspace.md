@@ -4,7 +4,7 @@ The Dynamo **Workspace** is where we develop our visual programs, but it's also 
 
 > Note: Nodes and geometry have a draw order so you may have objects rendered on top of each other. This can be confusing when adding multiple nodes in sequence as they may be rendered in the same position in the Workspace.
 
-![Workspace Regions](images/2-3/01-WorkspaceRegions.jpg)
+![Workspace Regions](images/2-3/01-WorkspaceRegions.png)
 
 >1. Tabs
 2. Zoom/Pan Buttons
@@ -14,14 +14,14 @@ The Dynamo **Workspace** is where we develop our visual programs, but it's also 
 ###Tabs
 The active Workspace tab allows you to navigate and edit your program. When you open a new file, by default you are opening a new **Home** Workspace. You may also open a new **Custom Node** Workspace from the File Menu or by the *New Node by Selection* right click option when Nodes are selected (more on this functionality later).
 
-![Tabs](images/2-3/02-Tabs.jpg)
+![Tabs](images/2-3/02-Tabs.png)
 
 > Note: You may have only one Home Workspace open at a time; however, you may have multiple Custom Node Workspaces open in additional tabs.
 
 ###Graph versus 3D Preview Navigation
 In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometry) are both rendered in the Workspace. By default the Graph is the active preview, so using the Navigation buttons or middle mouse button to pan and zoom will move us through the Graph. Toggling between active previews can be achieved three ways:
 
-![Navigation](images/2-3/03-PreviewNavigations.jpg)
+![Navigation](images/2-3/03-PreviewNavigations.png)
 
 > 1. Preview Toggle Buttons in the Workspace
 2. Right clicking in the Workspace and selecting *Switch to ... View*
@@ -32,11 +32,11 @@ The 3D Preview Navigation mode also gives us the ability for **Direct Manipulati
 ###Zoom to Recenter
  We can easily pan, zoom and rotate freely around models in 3D Preview Navigation mode. However, to zoom specifically on an object created by a geometry node, we can use the Zoom All icon with a single node selected.
 
-![Zoom to Recenter 1](images/2-3/03-ZoomToRecenter_1.jpg)
-> 1. Select the node corresponding to the geometry  that will center the view. 
-2. Switch to the 3D Preview Navigation. 
+![Zoom to Recenter 1](images/2-3/03-ZoomToRecenter_1.png)
+> 1. Select the node corresponding to the geometry  that will center the view.
+2. Switch to the 3D Preview Navigation.
 
-![Zoom to Recenter 2](images/2-3/03-ZoomToRecenter_2.jpg)
+![Zoom to Recenter 2](images/2-3/03-ZoomToRecenter_2.png)
 > 1. Click on the Zoom All icon in the top right.
 2. The selected geometry will be centered inside the view.
 
@@ -44,7 +44,7 @@ The 3D Preview Navigation mode also gives us the ability for **Direct Manipulati
 
 Based on which Preview mode is active, your mouse buttons will act differently. In general, the left mouse click selects and specifies inputs, the right mouse click gives access to options, and the middle mouse click allows you to navigate the Workspace. The right mouse click will present us with options based on the context of where we are clicking.
 
-![Hello Mouse](images/2-3/04-HelloMouse.jpg)
+![Hello Mouse](images/2-3/04-HelloMouse.png)
 
 >1. Right Click on the Workspace.
 2. Right Click on a Node.
@@ -71,12 +71,11 @@ Using the "In-Canvas Search" will add some serious speed to your Dynamo work-flo
 3. Hover over the search results to bring up their corresponding descriptions and tool-tips.
 
 ##Clean Up Node Layout
-Keeping your Dynamo canvas organized becomes increasingly important as your files build in complexity. Although we have the **Align Selection** tool to work with small amounts of selected Nodes, Dynamo also features the **Cleanup Node Layout** tool to help with overall file cleanup. 
+Keeping your Dynamo canvas organized becomes increasingly important as your files build in complexity. Although we have the **Align Selection** tool to work with small amounts of selected Nodes, Dynamo also features the **Cleanup Node Layout** tool to help with overall file cleanup.
 ####Before Node Cleanup
-![Cleanup Node Layout](images/2-3/06-CleanupNodeLayout.jpg)
->1.	Select the Nodes to be automatically organized, or leave all unselected to clean up all nodes in the file. 
+![Cleanup Node Layout](images/2-3/06-CleanupNodeLayout.png)
+>1.	Select the Nodes to be automatically organized, or leave all unselected to clean up all nodes in the file.
 2.	The Cleanup Node Layout feature is located under the Edit tab.
-####After Node Cleanup 
-![Clean Layout Example](images/2-3/07-CleanupNodeLayout.jpg)
+####After Node Cleanup
+![Clean Layout Example](images/2-3/07-CleanupNodeLayout.png)
 >1.	The nodes will be automatically re-distributed and aligned, cleaning up any staggered or overlapping nodes and aligning them with neighboring nodes.
-
