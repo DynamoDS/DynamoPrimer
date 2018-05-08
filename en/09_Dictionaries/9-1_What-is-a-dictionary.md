@@ -1,0 +1,21 @@
+# Dictionaries
+Dynamo 2.0 introduces the concept of separating the dictionary data type from the list data type. This change can pose some significant changes to how you create and work with data in your workflows. Prior to 2.0, dictionaries and lists were combined as a data type. In short, lists were actually dictionaries with integer keys.
+
+* #### What is a dictionary?
+A dictionary is a data type composed of a collection of key-value pairs where each key is unique in each collection. A dictionary has no order and basically you can “look things up” using a key instead of an index value like in a list. _In Dynamo 2.0, keys can only be strings._
+
+* #### What is a list?
+A list is a data type composed of a collection of ordered values. In Dynamo, lists use integers as index values.
+
+* #### Why was this change made and why should I care?
+The separation of dictionaries from lists introduces dictionaries as a first-class citizen that you can use to quickly and easily store and lookup values without needing to remember an index value or maintain a strict list structure throughout your workflow. During user testing, we saw a significant reduction in graph size when dictionaries were utilized instead of several `GetItemAtIndex` nodes.
+
+* #### What are the changes?
+  * _Syntax_ changes have occurred that change how you will initialize and work with dictionaries and lists in code blocks.
+    * Dictionaries use the following syntax `{key:value}`
+    * Lists use the following syntax `[value,value,value]`
+  * _New nodes_ have been introduced to the library to help you create, modify, and query dictionaries.
+  * Lists created in 1.x code blocks will automatically migrated on load of the script to the new list syntax that uses square brackets `[ ]` instead of curly brackets `{ }`
+
+
+![IMAGE](images/9-1/DYN20_dictionary.png)
