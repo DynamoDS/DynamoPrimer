@@ -32,7 +32,7 @@ Here we need to decide if we want to include the components that connect Dynamo 
 
 ### Launching
 
-To launch Dynamo, browse to C:\Program Files\Dynamo\Dynamo Revit\1.3, then select DynamoSandbox.exe. This will open the stand-alone version and present Dynamo's _Start Page_. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources.
+To launch Dynamo, browse to \\Program Files\Dynamo\Dynamo Revit\x.y, then select DynamoSandbox.exe. This will open the stand-alone version and present Dynamo's _Start Page_. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources.
 
 ![Dynamo start page](images/2-1/04-DynamoStartpage.jpg)
 

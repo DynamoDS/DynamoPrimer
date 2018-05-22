@@ -4,7 +4,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ## Python Templates
 
-With Dynamo 2.0 we have the ability to specify a default template `(.py extension)` to use when opening the python window for the first time.
+With Dynamo 2.0 we have the ability to specify a default template `(.py extension)` to use when opening the python window for the first time. This has been a long-desired request as this expedites the usage of Python within Dynamo. Having the ability to use a template allows us to have default imports ready to go when we want to develop a custom Python script.
 
 The location for this template is in the `APPDATA` location for your Dynamo install.
 
