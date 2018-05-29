@@ -66,7 +66,7 @@
   * [Publishing a Package](11_Packages/11-4_Publishing.md)
   * [Zero-Touch Importing](11_Packages/11-5_Zero-Touch.md)
 * [Web Experience](12_Web_Experience/12-1_Introduction.md)
-  * [Web Experience Introduction](12_Web_Experience/11-1_Introduction.md)
+  * [Web Experience Introduction](12_Web_Experience/12-1_Introduction.md)
   * [Send to Web](12_Web_Experience/12-2_Send_to_Web.md)
   * [Customizer View](12_Web_Experience/12-3_Customizer_View.md)
 * [Best Practices](13_Best-Practice/13-1_Introduction.md)
