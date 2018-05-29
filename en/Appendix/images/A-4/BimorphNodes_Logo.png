@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>DynamoPrimer/A-3_packages.md at master · DynamoDS/DynamoPrimer</title>
+  <title>DynamoPrimer/BimorphNodes_Logo.png at master · DynamoDS/DynamoPrimer</title>
     <meta name="description" content="GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -37,10 +37,10 @@
     <meta property="og:image" content="https://avatars2.githubusercontent.com/u/6528209?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="DynamoDS/DynamoPrimer" /><meta property="og:url" content="https://github.com/DynamoDS/DynamoPrimer" /><meta property="og:description" content="Contribute to DynamoPrimer development by creating an account on GitHub." />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjYyODk5MjMzOjEyOGE2NjA1YjY1YTRmODg5Mzg2NjAzNGI1YTU2MDUyNjVkM2Y1MmFhN2Q2NDZiNDI5ZDNkODk0YWZkODRmZTY=--5d9b48914165fe178a18e5c509d9003dd6547056">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjYyODk5MjMzOmU1ZWRlYmNjNTgyYTg1M2Q3M2QzNmE4MGViMzgxMTA5OTU4YTIwODU4ZjAyOTE2MDRlOTYyYTE5N2RjYThhZWU=--2cdd3fc4aafe4d2c0547927ec02274a6beb5e1ef">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="CABA:2631:5052420:91AEABC:5B0D5682" data-pjax-transient>
+  <meta name="request-id" content="CABA:2631:5053B55:91B0966:5B0D5696" data-pjax-transient>
 
 
   
@@ -52,7 +52,7 @@
   <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="CABA:2631:5052420:91AEABC:5B0D5682" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="15744724" /><meta name="octolytics-actor-login" content="sixtysecondrevit" /><meta name="octolytics-actor-hash" content="cfbe028fe23f8226bbbcef8ca1c1901c15f54635cb3f0ff6506d59050cf88555" />
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="CABA:2631:5053B55:91B0966:5B0D5696" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="15744724" /><meta name="octolytics-actor-login" content="sixtysecondrevit" /><meta name="octolytics-actor-hash" content="cfbe028fe23f8226bbbcef8ca1c1901c15f54635cb3f0ff6506d59050cf88555" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -67,7 +67,7 @@
     <meta name="user-login" content="sixtysecondrevit">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="N2VjYjhkOGFiZTZhZWVmYjMzYWNmMThhYTQwYmY3YTMyY2ZjMTg0ZmVjNTM0YjVjMmY4YWY3YjVhYmZhMDljNnx7InJlbW90ZV9hZGRyZXNzIjoiNjcuNjAuMjE1LjIiLCJyZXF1ZXN0X2lkIjoiQ0FCQToyNjMxOjUwNTI0MjA6OTFBRUFCQzo1QjBENTY4MiIsInRpbWVzdGFtcCI6MTUyNzYwMDc3MywiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="MDFkYTAyMzIyMjJmZGUxMGY0YWM2MzY3MjAwMTU1NzVkYzczMmRkZDc2ZWY3NTg2ZmU4MTU4MjViY2Y5MTNjN3x7InJlbW90ZV9hZGRyZXNzIjoiNjcuNjAuMjE1LjIiLCJyZXF1ZXN0X2lkIjoiQ0FCQToyNjMxOjUwNTNCNTU6OTFCMDk2Njo1QjBENTY5NiIsInRpbWVzdGFtcCI6MTUyNzYwMDgwMSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
     <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES,JUMP_TO">
 
@@ -84,7 +84,7 @@
   <meta name="octolytics-dimension-user_id" content="6528209" /><meta name="octolytics-dimension-user_login" content="DynamoDS" /><meta name="octolytics-dimension-repository_id" content="44689312" /><meta name="octolytics-dimension-repository_nwo" content="DynamoDS/DynamoPrimer" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="44689312" /><meta name="octolytics-dimension-repository_network_root_nwo" content="DynamoDS/DynamoPrimer" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
 
 
-    <link rel="canonical" href="https://github.com/DynamoDS/DynamoPrimer/blob/master/en/Appendix/A-3_packages.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/BimorphNodes_Logo.png" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -144,7 +144,7 @@
           aria-label="Search this repository"
           data-unscoped-placeholder="Search or jump to…"
           data-scoped-placeholder="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=v9jXCNB8MWdViEGVkmjUOLrpl4mk5RiInJpx5Uvb0i2rxk4yCYkd+uMYyEHC3JIREz/UOdgABi9CZpJsFfNZnQ=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=Rqo8LA7Ei3K6gjC7R6CQlaiQFeVUXoVwe6m/0ipFCQ5StKUW1zGn7wwSuW8XFNa8AUZWVSi7m9elVVxbdG2Cvg=="
           spellcheck="false"
           autocomplete="off"
           autocapitalize="off"
@@ -303,7 +303,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="j2dU//r4yN8LqlmnUjx4nrIEwUEMmnDeRMdD16ZYK+olWuLL6fwK4oXPy3rIHvbohKG6b5ImU8xxY3TeOZnN9w==" />
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="GIvLUQ6z5r9/UWKVkrCPNpmNFrTGRDnavC7NFWw/azmytn1lHbckgvE08EgIkgFAryhtmlj4GsiJivoc8/6NJA==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -315,7 +315,7 @@
 
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="yhxRmem68VZr6CJPrLk/rpjZNzT/Asd8qSpGihqst55gIeet+r4za+WNsJI2m7HYrnxMGmG+5G6cjnGDhW1Rgw==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="mDF4NvLWkCEswnZ0WvrkdNGvwCK0uXra6o/5Ihf3dh0yDM4C4dJSHKKn5KnA2GoC5wq7DCoFWcjfK84riDaQAA==" />
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -353,7 +353,7 @@
 
       <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="x6WbIXd7udm+lZnoG1rJ1aCW00LekhJyaqqQDPejueMuDz2Vt2OuPmKbywMZlBVJXQ6veuYI9KhHlAOsXkVcDA==" />      <input type="hidden" name="repository_id" id="repository_id" value="44689312" class="form-control" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="KcATFHpJj9w8/DZ/+mg2peA+EG3w7FfUFh0FSScR8h7AarWgulGYO+DyZJT4puo5HaZsVch2sQ47I5bpjvcX8Q==" />      <input type="hidden" name="repository_id" id="repository_id" value="44689312" class="form-control" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/DynamoDS/DynamoPrimer/subscription"
@@ -433,7 +433,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/DynamoDS/DynamoPrimer/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="oThnBBQUpqtsxCfzR7C3zMVtwZ1kKW26zNapUeORtpxp+pc2DhdK3ezuLuubZmtLu9BAcdjst/7/7nn9Uld9Ag==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/DynamoDS/DynamoPrimer/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="2RTZezyYmW7+ssztD563lSdy3Rlll6CyipSU8olbP0QR1ilJJpt1GH6YxfXTSGsSWc9c9dlSeva5rEReOJ302g==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -448,7 +448,7 @@
           22
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/DynamoDS/DynamoPrimer/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="O1ODvyBWiD5gbicEt7Y79jfOFL6eCBH+Z+4uj9itkhNODQ/90EzYDJk6OoDWjPC3cZA6FZK7ucgMaSa+vqwqwg==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/DynamoDS/DynamoPrimer/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="oBykR1Bk+leWiUHs+ogblBTtaHwmjlv+kvrjTLuMA3vVQigFoH6qZW/dXGibstDVUrNG1yo988j5fet93Y27qg==" />
       <input type="hidden" name="context" value="repository"></input>
       <button
         type="submit"
@@ -555,9 +555,9 @@
   <div class="repository-content ">
 
     
-  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/DynamoDS/DynamoPrimer/blob/35c4a1608de96c153d095ec729dc4d294a5893b3/en/Appendix/A-3_packages.md">Permalink</a>
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/DynamoDS/DynamoPrimer/blob/35c4a1608de96c153d095ec729dc4d294a5893b3/en/Appendix/images/A-4/BimorphNodes_Logo.png">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:fceddca72695a930950610906b5cb7ad -->
+  <!-- blob contrib key: blob_contributors:v21:cd25fe5716ee24cce16548b136da6336 -->
 
   <div class="file-navigation">
     
@@ -599,7 +599,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/DynamoDS/DynamoPrimer/blob/Staging-branch/en/Appendix/A-3_packages.md"
+               href="/DynamoDS/DynamoPrimer/blob/Staging-branch/en/Appendix/images/A-4/BimorphNodes_Logo.png"
                data-name="Staging-branch"
                data-skip-pjax="true"
                rel="nofollow">
@@ -609,7 +609,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/DynamoDS/DynamoPrimer/blob/V0.1/en/Appendix/A-3_packages.md"
+               href="/DynamoDS/DynamoPrimer/blob/V0.1/en/Appendix/images/A-4/BimorphNodes_Logo.png"
                data-name="V0.1"
                data-skip-pjax="true"
                rel="nofollow">
@@ -619,7 +619,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/DynamoDS/DynamoPrimer/blob/V0.3/en/Appendix/A-3_packages.md"
+               href="/DynamoDS/DynamoPrimer/blob/V0.3/en/Appendix/images/A-4/BimorphNodes_Logo.png"
                data-name="V0.3"
                data-skip-pjax="true"
                rel="nofollow">
@@ -629,7 +629,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/A-3_packages.md"
+               href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/BimorphNodes_Logo.png"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -639,7 +639,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/DynamoDS/DynamoPrimer/blob/revert-72-Support_FA16/en/Appendix/A-3_packages.md"
+               href="/DynamoDS/DynamoPrimer/blob/revert-72-Support_FA16/en/Appendix/images/A-4/BimorphNodes_Logo.png"
                data-name="revert-72-Support_FA16"
                data-skip-pjax="true"
                rel="nofollow">
@@ -650,7 +650,7 @@
             </a>
         </div>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" action="/DynamoDS/DynamoPrimer/branches" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="rPLG8KtpnQW8NB4Fs70MQLjYBliWOw7C1gQPba7p8IwrURkjvyWlod2glWvSdN1/XtQodiVTL/7jWMhUZ3vc3w==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" action="/DynamoDS/DynamoPrimer/branches" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BzzzsW5wdWfc7yo5i52uCL5YrLpTgYKQFCpnt4Zif5CAnyxiejxNw717oVfqVH83WFSClODpo6whdqCOT/BTww==" />
           <svg class="octicon octicon-git-branch select-menu-item-icon" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
             <div class="select-menu-item-text">
               <span class="select-menu-item-heading">Create branch: <span class="js-new-item-name"></span></span>
@@ -658,7 +658,7 @@
             </div>
             <input type="hidden" name="name" id="name" class="js-new-item-value">
             <input type="hidden" name="branch" id="branch" value="master">
-            <input type="hidden" name="path" id="path" value="en/Appendix/A-3_packages.md">
+            <input type="hidden" name="path" id="path" value="en/Appendix/images/A-4/BimorphNodes_Logo.png">
 </form>
       </div>
 
@@ -687,12 +687,12 @@
       </clipboard-copy>
     </div>
     <div id="blob-path" class="breadcrumb">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/DynamoDS/DynamoPrimer"><span>DynamoPrimer</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/DynamoDS/DynamoPrimer/tree/master/en"><span>en</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/DynamoDS/DynamoPrimer/tree/master/en/Appendix"><span>Appendix</span></a></span><span class="separator">/</span><strong class="final-path">A-3_packages.md</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/DynamoDS/DynamoPrimer"><span>DynamoPrimer</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/DynamoDS/DynamoPrimer/tree/master/en"><span>en</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/DynamoDS/DynamoPrimer/tree/master/en/Appendix"><span>Appendix</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/DynamoDS/DynamoPrimer/tree/master/en/Appendix/images"><span>images</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/DynamoDS/DynamoPrimer/tree/master/en/Appendix/images/A-4"><span>A-4</span></a></span><span class="separator">/</span><strong class="final-path">BimorphNodes_Logo.png</strong>
     </div>
   </div>
 
 
-  <include-fragment src="/DynamoDS/DynamoPrimer/contributors/master/en/Appendix/A-3_packages.md" class="commit-tease">
+  <include-fragment src="/DynamoDS/DynamoPrimer/contributors/master/en/Appendix/images/A-4/BimorphNodes_Logo.png" class="commit-tease">
     <div>
       Fetching contributors&hellip;
     </div>
@@ -709,25 +709,18 @@
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/A-3_packages.md">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/DynamoDS/DynamoPrimer/blame/master/en/Appendix/A-3_packages.md">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/DynamoDS/DynamoPrimer/commits/master/en/Appendix/A-3_packages.md">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/BimorphNodes_Logo.png">Download</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/DynamoDS/DynamoPrimer/commits/master/en/Appendix/images/A-4/BimorphNodes_Logo.png">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
-           href="x-github-client://openRepo/https://github.com/DynamoDS/DynamoPrimer?branch=master&amp;filepath=en%2FAppendix%2FA-3_packages.md"
+           href="x-github-client://openRepo/https://github.com/DynamoDS/DynamoPrimer?branch=master&amp;filepath=en%2FAppendix%2Fimages%2FA-4%2FBimorphNodes_Logo.png"
            aria-label="Open this file in GitHub Desktop"
            data-ga-click="Repository, open with desktop, type:windows">
             <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/DynamoDS/DynamoPrimer/edit/master/en/Appendix/A-3_packages.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Inxs742UkD3yocazY4kQWSvoLzwGVKE29UyNQ8xTHrzakZZC2MWDnak7hb3nGpNQOUWWapZp2MyHfJfBwtbIbw==" />
-            <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
-              aria-label="Edit this file" data-hotkey="e" data-disable-with>
-              <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
-            </button>
-</form>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/DynamoDS/DynamoPrimer/delete/master/en/Appendix/A-3_packages.md" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="4Y/Trv08o5pNCtEZG9UPfM/lRMAyQck++AAkDIfU7DEGQ1PFK6ej3hjovJ0Innh3mhIqHn/dBHKAtsBDGGy3DQ==" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/DynamoDS/DynamoPrimer/delete/master/en/Appendix/images/A-4/BimorphNodes_Logo.png" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="jTkm2KJl9TKEVTuU9+c39wxGh/h1WkOB2eIrRBlaWIPmitHdbGQZAdeSgpNZ9ulXjIboeN2+RXOBqPlqDoWaDw==" />
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Delete this file" data-disable-with>
             <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -735,206 +728,16 @@
 </form>  </div>
 
   <div class="file-info">
-      220 lines (191 sloc)
-      <span class="file-info-divider"></span>
-    10.7 KB
+    5.22 KB
   </div>
 </div>
 
     
-  <div id="readme" class="readme blob instapaper_body">
-    <article class="markdown-body entry-content" itemprop="text">&lt;style&gt;
-table{box-shadow: 2px 2px 2px #BBBBBB}
-thead {display: none}
-&lt;/style&gt;
-<p>##Dynamo Packages
-Here are a list of some of the more popular packages in the Dynamo community. Developers, please add to the list! Remember, the <a href="https://github.com/DynamoDS/DynamoPrimer">Dynamo Primer</a> is open-source!</p>
-<table>
-   <tbody><tr>
-      <td width="10%">
-         <a target="_blank" href="https://camo.githubusercontent.com/90883b16f7ee3121862e44a8607bd6a6af257f46/687474703a2f2f61726368692d6c61622e6e65742f77702d636f6e74656e742f75706c6f6164732f323031362f30322f776f726470726573732d6c6f676f2e6a7067"><img src="https://camo.githubusercontent.com/90883b16f7ee3121862e44a8607bd6a6af257f46/687474703a2f2f61726368692d6c61622e6e65742f77702d636f6e74656e742f75706c6f6164732f323031362f30322f776f726470726573732d6c6f676f2e6a7067" data-canonical-src="http://archi-lab.net/wp-content/uploads/2016/02/wordpress-logo.jpg" style="max-width:100%;"></a>
-      </td>
-      <td width="55%">
-         <b>ARCHI-LAB</b>
-      </td>
-      <td>
-         <a href="http://archi-lab.net/" rel="nofollow">Visit the Official archi-lab Site
-      </a></td>
-      
-   </tr>
-   <tr>
-      <td colspan="2">archi-lab is a collection of over 50+ custom packages that vastly extend Dynamo's ability to interact with Revit. Nodes contained in archi-lab package vary from basic list operations to advanced Analysis Visualization Framework nodes for Revit. </td>
-      <td>
-         <a target="_blank" href="https://camo.githubusercontent.com/ce13a851a92720c971eaddb987f67e872be7b4b6/687474703a2f2f69322e77702e636f6d2f61726368692d6c61622e6e65742f77702d636f6e74656e742f75706c6f6164732f323031352f31302f556e7469746c65642d332e706e67"><img src="https://camo.githubusercontent.com/ce13a851a92720c971eaddb987f67e872be7b4b6/687474703a2f2f69322e77702e636f6d2f61726368692d6c61622e6e65742f77702d636f6e74656e742f75706c6f6164732f323031352f31302f556e7469746c65642d332e706e67" data-canonical-src="http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png" style="max-width:100%;"></a>
-      </td>
-   </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/BimorphNodes_Logo.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/BimorphNodes_Logo.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>BIMORPH NODES</b></td>
-    <td><a href="https://bimorph.com/bimorph-nodes/" rel="nofollow">Visit the BimorphNodes Dictionary</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">BimorphNodes is a versatile collection of powerful utility nodes. The package highlights include ultra-efficient clash detection and geometry intersection nodes, ImportInstance (CAD) curve conversion nodes, and linked element collectors that resolve limitations in the Revit API. To learn about the full range of nodes available, visit the BimorphNodes dictionary.</td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Bimorph-Nodes-v2.2-Library-Catalog-header.jpg"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Bimorph-Nodes-v2.2-Library-Catalog-header.jpg" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/logo02.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/logo02.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>BUMBLEBEE FOR DYNAMO</b></td>
-    <td><a href="http://archi-lab.net/bumblebee-dynamo-and-excel-interop/" rel="nofollow">Visit the Official BumbleBee Site</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">Bumblebee is an Excel and Dynamo interoperability plugin that vastly improves Dynamo’s ability to read and write Excel files. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/screengrab02.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/screengrab02.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/logo01.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/logo01.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>CLOCKWORK FOR DYNAMO</b></td>
-    <td><a href="https://github.com/CAAD-RWTH/ClockworkForDynamo">Visit the Clockwork For Dynamo GitHub</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">Clockwork is a collection of custom nodes for the Dynamo visual programming environment. It contains many Revit-related nodes, but also lots of nodes for various other purposes such as list management, mathematical operations, string operations, unit conversions, geometric operations (mainly bounding boxes, meshes, planes, points, surfaces, UVs and vectors) and paneling. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/screengrab01.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/screengrab01.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/DataShapes_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/DataShapes_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>DATA|SHAPES</b></td>
-    <td><a href="https://github.com/MostafaElAyoubi/Data-shapes">Visit Data|Shapes on GitHub</a></td>
-  </tr>
-  <tr>
-    <td colspan="2"> DataShapes is a package that aims to extend the user functionality of Dynamo scripts. This has a heavy focus on adding greater functionality to Dynamo player. For more infor visit <a href="https://data-shapes.net/" rel="nofollow">https://data-shapes.net/</a>. Want to create awesome Dynamo player workflows? Use this package.</td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/DataShapes_Image.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/DataShapes_Image.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/ds_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/ds_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>DYNAMO SAP</b></td>
-    <td><a href="http://core.thorntontomasetti.com/dynamosap-is-now-open-source/" rel="nofollow">Visit the DynamoSAP Project at Core Studio</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">DynamoSAP is a parametric interface for SAP2000, built on top of Dynamo. The project enables designers and engineers to generatively author and analyze structural systems in SAP, using Dynamo to drive the SAP model. The project prescribes a few common workflows which are described in the included sample files, and provides a wide range of opportunities for automation of typical tasks in SAP. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/sapImage.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/sapImage.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/DynamoUnfold_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/DynamoUnfold_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>DYNAMO UNFOLD</b></td>
-    <td><a href="https://github.com/mjkkirschner/DynamoUnfold">Visit the DynamoUnfold GitHub</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">This library extends Dynamo/Revit functionality by enabling users to unfold surface and poly-surface geometry. The library allows users to first translate surfaces into planar tessellated topology, then unfold them using Protogeometry tools in Dynamo. This package also includes some experimental nodes as well as a few basic sample files. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/DynamoUnfold_S.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/DynamoUnfold_S.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Dynastrator_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Dynastrator_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>DYNASTRATOR</b></td>
-    <td><a href="http://dynamopackages.com/" rel="nofollow">Download Dynastrator at the Package Manager</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">Import vector art from Illustrator or the web using .svg.  This allows you to import manually created drawings into Dynamo for parametric operations. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/dynastratorImage.jpg"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/dynastratorImage.jpg" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/ea_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/ea_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>ENERGY ANALYSIS FOR DYNAMO</b></td>
-    <td><a href="https://github.com/tt-acm/EnergyAnalysisForDynamo">Visit the Energy Analysis for Dynamo Project on GitHub</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">Energy Analysis for Dynamo allows for parametric energy modeling and whole-building energy analysis workflows in Dynamo 0.8. Energy Analysis for Dynamo allows the user to configure the energy model from Autodesk Revit, submit to Green Building Studio for DOE2 energy analysis, and dig into the results returned from the analysis. The package is being developed by Thornton Tomasetti's CORE studio.  </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/eaImage.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/eaImage.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Firefly_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Firefly_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>FIREFLY FOR DYNAMO</b></td>
-    <td><a href="http://dynamopackages.com/" rel="nofollow">Download Firefly at the Dynamo Package Manager</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">Firefly is a collection of nodes which enable dynamo to talk to input/output devices, like the Arduino micro controller. Because the data flow happens “live”, Firefly opens up many opportunities for interactive prototyping between the digital and physical worlds through web cams, mobile phones, game controllers, sensors and more. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Firefly_S.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Firefly_S.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/LunchBox_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/LunchBox_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>LUNCHBOX FOR DYNAMO</b></td>
-    <td><a href="http://provingground.io/tools/lunchbox/" rel="nofollow">Checkout Lunchbox for Dynamo on the Proving Ground</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">LunchBox is a collection of reusable geometry and data management nodes. The tools have been tested with Dynamo 0.8.1 and Revit 2016. The tool includes nodes for surface paneling, geometry, Revit data collection, and more!</td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/lunchboxImage.jpg"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/lunchboxImage.jpg" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/mantisshrimpLogo.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/mantisshrimpLogo.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>MANTIS SHRIMP</b></td>
-    <td><a href="http://archi-lab.net/mantis-shrimp-getting-started/" rel="nofollow">Visit the official Mantis Shrimp site.</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">Mantis Shrimp is an interoperability project that allows you to easily import Grasshopper and/or Rhino geometry into Dynamo.</td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/msImage.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/msImage.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/MeshToolkit_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/MeshToolkit_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>MESH TOOLKIT</b></td>
-    <td><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Visit the Dynamo Mesh Toolkit GitHub</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">The Dynamo Mesh Toolkit provides many useful tools for working with mesh geometry. The functionality of this package includes the ability to import meshes from external file formats, generate meshes from pre-existing Dynamo geometry objects, and manually build meshes through vertices and connectivity information. Additionally, this toolkit includes tools to modify and repair mesh geometry. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/MeshToolkit_S.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/MeshToolkit_S.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Optimo_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Optimo_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>OPTIMO</b></td>
-    <td><a href="https://github.com/BPOpt/Optimo/wiki/0_-Home">Visit the Optimo GitHub</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">Optimo provides dynamo users with the capability to optimize self-defined design problems by using various evolutionary algorithms. Users can define the problem objective or set of objectives as well as specific fitness functions. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Optimo_S.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Optimo_S.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Rhynamo_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Rhynamo_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>RHYNAMO</b></td>
-    <td><a href="https://bitbucket.org/caseinc/rhynamo" rel="nofollow">Visit the Rhynamo Bitbucket</a></td>
-  </tr>
-  <tr>
-    <td colspan="2">The Rhynamo node library provides users with the ability to read and write Rhino 3DM files from within Dynamo. Rhynamo translates Rhino geometry into usable Dynamo geometry by using McNeel’s OpenNURBS library allowing for new workflows that can exchange geometry and data fluidly between Rhino and Revit. This package also contains some experimental nodes that allow for “live” access to the Rhino command line. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Rhynamo_S.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Rhynamo_S.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-<table>
-  <tbody><tr>
-    <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Rhythm_L.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Rhythm_L.png" style="max-width:100%;"></a></td>
-    <td width="55%"><b>RHYTHM</b></td>
-    <td><a href="https://github.com/sixtysecondrevit/RhythmForDynamo">Visit Rhythm on GitHub</a></td>
-  </tr>
-  <tr>
-    <td colspan="2"> At first glance, Rhythm isn't anything special. It does not involve any sophisticated code or anything of that nature. What Rhythm does represent though, is the result of practical thinking and diligence. The idea is this package helps users maintain Rhythm in Revit with Dynamo. Rhythm primarily consists of out of the box Dynamo nodes used in clever ways as they apply to the Revit environment. </td>
-    <td><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/Rhythm_Image.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/Rhythm_Image.png" style="max-width:100%;"></a></td>
-  </tr>
-</tbody></table>
-</article>
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <div class="image">
+          <span class="border-wrap"><img src="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/BimorphNodes_Logo.png?raw=true" alt="BimorphNodes_Logo.png"></span>
+      </div>
   </div>
 
   </div>
@@ -960,7 +763,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2018 <span title="0.54104s from unicorn-c5996b898-s7fn5">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2018 <span title="0.35364s from unicorn-2154839925-f9zs7">GitHub</span>, Inc.</li>
         <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
