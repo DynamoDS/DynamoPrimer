@@ -17,6 +17,3 @@ Additionally dictionaries offer amazing support for similar keys. Like obtaining
 ![IMAGE](images/9-4/9-4_roomLookupByDictionary-Levels.png)
 
 The opportunities for Dictionary use are really endless. The ability to relate your BIM data in Revit to the element itself poses a variety of use cases.
-
-Here is a video demonstrating the value of looking up rooms in this manner as well.
-https://www.youtube.com/watch?v=wSR-6nDymu0
