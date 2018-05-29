@@ -768,7 +768,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
          <a target="_blank" href="https://camo.githubusercontent.com/ce13a851a92720c971eaddb987f67e872be7b4b6/687474703a2f2f69322e77702e636f6d2f61726368692d6c61622e6e65742f77702d636f6e74656e742f75706c6f6164732f323031352f31302f556e7469746c65642d332e706e67"><img src="https://camo.githubusercontent.com/ce13a851a92720c971eaddb987f67e872be7b4b6/687474703a2f2f69322e77702e636f6d2f61726368692d6c61622e6e65742f77702d636f6e74656e742f75706c6f6164732f323031352f31302f556e7469746c65642d332e706e67" data-canonical-src="http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png" style="max-width:100%;"></a>
       </td>
    </tr>
-</tbody></table>
 <table>
   <tbody><tr>
     <td width="10%"><a target="_blank" href="/DynamoDS/DynamoPrimer/blob/master/en/Appendix/images/A-4/BimorphNodes_Logo.png"><img src="/DynamoDS/DynamoPrimer/raw/master/en/Appendix/images/A-4/BimorphNodes_Logo.png" style="max-width:100%;"></a></td>
@@ -1032,3 +1031,5 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   </body>
 </html>
 
+=======
+</table>
