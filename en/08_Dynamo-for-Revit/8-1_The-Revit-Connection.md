@@ -1,26 +1,26 @@
 ## The Revit Connection
 
-![Connection](images/8-1/link.jpg)  
-Dynamo for Revit extends building information modeling with the data and logic environment of a graphical algorithm editor.  Its flexibility, coupled with a robust Revit database, offers a new perspective for BIM.
+![Connection](images/8-1/link.png)  
+Dynamo for Revit extends buildin g information modeling with the data and logic environment of a graphical algorithm editor.  Its flexibility, coupled with a robust Revit database, offers a new perspective for BIM.
 
 This chapter focuses on the Dynamo workflows for BIM. Sections are primarily exercise-based, since jumping right into a project is the best way to get familiar with a graphical algorithm editor for BIM.  But first, let's talk about the beginnings of the program.
 
-#### 
+####
 
 #### Revit Version Compatibility
 
 As both Revit and Dynamo continue to evolve, you may notice that the Revit version you are working with is not compatible with the Dynamo for Revit version you have installed on your machine. Below outlines which versions of Dynamo for Revit are compatible with Revit.
 
-| Revit Version | Last Supported Dynamo for Revit Version |
-| --- | --- |
-| 2013 | 0.6.3 |
-| 2014 | 0.8.2 |
-| 2015 | 1.2.1 |
-| 2016 | 1.3.2 |
-| 2017 | Latest Daily Build |
-| 2018 | Latest Daily Build |
-
-#### 
+| Revit Version | First Stable Dynamo Version | Last Supported Dynamo for Revit Version |
+| --- | --- | --- |
+| 2013 | [0.6.1](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.6.1.exe) |  [0.6.3](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.6.3.exe) |
+| 2014 | [0.6.1](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.6.1.exe) | [0.8.2](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.8.2.exe) |
+| 2015 | [0.7.1](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.7.1.exe) | [1.2.1](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall1.2.1.exe) |
+| 2016 | [0.7.2](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.7.2.exe) | [1.3.2](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall1.3.2.exe) |
+| 2017 | [0.9.0](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.9.0.exe) | [Latest Daily Build](http://dynamobuilds.com/) |
+| 2018 | [1.3.0](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall1.3.0.exe) | [Latest Daily Build](http://dynamobuilds.com/) |
+| 2019 | [1.3.3](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall1.3.3.exe) | [Latest Daily Build](http://dynamobuilds.com/) |
+####
 
 #### History of Dynamo
 
@@ -40,7 +40,7 @@ Using the core Dynamo nodes in tandem with custom Revit ones, a user can substan
 
 ![Connection](images/8-1/00.jpg)
 
-> 1. When openinig Dynamo in Revit, there is a new category called _"Revit"_.  This is a comprehensive addition to the UI which offers nodes specifically catering to Revit workflows.\*
+> 1. When opening Dynamo in Revit, there is a new category called _"Revit"_.  This is a comprehensive addition to the UI which offers nodes specifically catering to Revit workflows.\*
 
 _\*Note - By using the Revit-specific family of nodes, the Dynamo graph will only  work when opening in Dynamo for Revit.  If a Dynamo for Revit graph is opened in Dynamo Sandbox for example, the Revit nodes will be missing._
 
@@ -54,9 +54,6 @@ Since Dynamo was originally created for AEC, its large and growing community is 
 
 Dynamo is an open-source project that is constantly evolving, and a lot of development is Revit-related.  If you're new to the game, get on the discussion forum and start [posting questions](http://dynamobim.org/forums/forum/dyn/)!  If you're a programmer and want to get involved in Dynamo's development, check out the [github page](https://github.com/DynamoDS/Dynamo).  Also, a great resource for third-party libraries is the [Dynamo package manager](http://dynamopackages.com/). Many of these packages are made with AEC in mind, and we'll take a look at third-party packages for panelization in this chapter.
 
-![Blog](images/8-1/blog.jpg)
+![Blog](images/8-1/blog.png)
 
 > Dynamo also maintains an active [blog](http://dynamobim.com/blog/).  Read up on recent posts to learn about the latest developments!
-
-
-

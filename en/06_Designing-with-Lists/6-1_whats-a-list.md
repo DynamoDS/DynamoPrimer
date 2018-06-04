@@ -48,7 +48,7 @@ On the other hand, the *centerPoint* input for *Circle.ByCenterPointRadius* asks
 
 
 
-###Lacing
+### Lacing
 Data matching is a problem without a clean solution. It occurs when a node has access to differently sized inputs. Changing the data matching algorithm can lead to vastly different results.
 
 Imagine a node which creates line segments between points (Line.ByStartPointEndPoint). It will have two input parameters which both supply point coordinates:
@@ -57,7 +57,7 @@ Imagine a node which creates line segments between points (Line.ByStartPointEndP
 
 As you can see there are different ways in which we can draw lines between these sets of points. Lacing options are found by right-clicking the center of a node and choosing the "Lacing" menu.
 
-###Base File
+### Base File
 >Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Lacing.dyn](datasets/6-1/Lacing.dyn). A full list of example files can be found in the Appendix.
 
 To demonstrate the lacing operations below, we'll use this base file to define shortest list, longest list, and cross product.
@@ -65,7 +65,7 @@ To demonstrate the lacing operations below, we'll use this base file to define s
 ![Input Examples](images/6-1/lacing.jpg)
  > 1. We'll change the lacing on *Point.ByCoordinates*, but won't change anything else about the graph above.
 
-####Shortest List
+#### Shortest List
 The simplest way is to connect the inputs one-on-one until one of the streams runs dry. This is called the “Shortest List” algorithm. This is the default behavior for Dynamo nodes:
 
 ![Input Examples](images/6-1/shortestListDiagram.jpg)
@@ -73,7 +73,7 @@ The simplest way is to connect the inputs one-on-one until one of the streams ru
 ![Input Examples](images/6-1/shortestList.jpg)
 > By changing the lacing to *shortest list*, we get a basic diagonal line composed of five points. Five points is the length of the lesser list, so the shortest list lacing stops after it reaches the end of one list.
 
-####Longest List
+#### Longest List
 The “Longest List” algorithm keeps connecting inputs, reusing elements, until all streams run dry:
 
 ![Input Examples](images/6-1/longestListDiagram.jpg)
@@ -81,14 +81,10 @@ The “Longest List” algorithm keeps connecting inputs, reusing elements, unti
 ![Input Examples](images/6-1/longestList.jpg)
 > By changing the lacing to *longest list*, we get a diagonal line which extends vertically.  By the same method as the concept diagram, the last item in the list of 5 items will be repeated to reach the length of the longer list.
 
-####Cross Product
+#### Cross Product
 Finally, the “Cross Product” method makes all possible connections:
 
 ![Input Examples](images/6-1/crossProductDiagram.jpg)
 
 ![Input Examples](images/6-1/crossProduct.jpg)
 > By changing the lacing to *Cross Product*, we get every combination between each list, giving us a 5x10 grid of points.  This is an equivalent data structure to the cross product as shown in the concept diagram above, except our data is now a list of lists.  By connecting a polycurve, we can see that each list is defined by its X-Value, giving us a row of vertical lines.
-
-
-
-

@@ -21,7 +21,7 @@ What **actions** can we perform on the list? This changes the list based on a gi
 
 All of the operations listed above have analogous Dynamo nodes for working with lists of generic data.  The lessons below will demonstrate some of the fundamental operations we can perform on lists.
 
-##List Operations
+## List Operations
 The image below is the base graph we will be using to demonstrate basic list operations. We'll explore how to manage data within a list and demonstrate the visual results.
 
 #### Exercise - List Operations
@@ -112,19 +112,3 @@ The image below is the base graph we will be using to demonstrate basic list ope
 7. Connect the *Curve.PointAtParameter* node into each list input for the *List.FilterByBooleanMask*.
 8. The output of *Filter.ByBooleanMask* reads *"in"* and *"out"*. *"In"* represents values which had a mask value of *"true"* while *"out"* represents values which had a value of *"false"*.  By plugging the *"in"* outputs into the *startPoint* and *endPoint* inputs of a *Line.ByStartPointEndPoint* node, we've created a filtered list of lines.
 9. The *Watch3D* node reveals that we have fewer lines than points.  We've selected only 25% of the nodes by filtering only the true values!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

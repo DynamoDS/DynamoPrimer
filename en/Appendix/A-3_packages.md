@@ -1,9 +1,4 @@
-<style>
-table{box-shadow: 2px 2px 2px #BBBBBB}
-thead {display: none}
-</style>
-
-##Dynamo Packages
+## Dynamo Packages
 Here are a list of some of the more popular packages in the Dynamo community. Developers, please add to the list! Remember, the [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer) is open-source!
 
 <table>
@@ -27,7 +22,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
    </tr>
 </table>
 
-
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/BimorphNodes_Logo.png"></img></td>
@@ -40,7 +34,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   </tr>
 </table>
 
-
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/logo02.png"></img></td>
@@ -52,8 +45,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><img src="images/A-4/screengrab02.png"></img></td>
   </tr>
 </table>
-
-
 
 <table>
   <tr>
@@ -78,7 +69,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><img src="images/A-4/DataShapes_Image.png"></img></td>
   </tr>
 </table>
-
 
 <table>
   <tr>
@@ -176,8 +166,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   </tr>
 </table>
 
-
-
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/Optimo_L.png"></img></td>
@@ -190,8 +178,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   </tr>
 </table>
 
-
-
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/Rhynamo_L.png"></img></td>
@@ -203,8 +189,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><img src="images/A-4/Rhynamo_S.png"></img></td>
   </tr>
 </table>
-
-
 
 <table>
   <tr>

@@ -1,7 +1,7 @@
 ## Selecting
 Revit is a data-rich environment.  This gives us a range of selection abilities which expands far beyond "point-and-click".  We can query the Revit database and dynamically link Revit elements to Dynamo geometry while performing parametric operations.
 
-![UI](images/8-2/selectionUI.jpg)
+![UI](images/8-2/selectionUI.png)
 > The Revit library in the UI offers a "Selection" category which enables multiple ways to select geometry.
 
 To select Revit elements properly, it's important to have a full-understanding of the Revit element hierarchy. Want to select all the walls in a project? Select by category.  Want to select every Eames chair in your mid-century modern lobby? Select by family.  Before jumping into an exercise, let's do a quick review of the Revit hierarchy.
@@ -15,7 +15,7 @@ Remember the taxonomy from Biology? Kingdom, Phylum, Class, Order, Family, Genus
 #### Database Navigation with Dynamo nodes
 The three images below breakdown the main categories for Revit element selection in Dynamo. These are great tools to use in combination, and we'll explore some of these in the following exercises.
 
-![UI](images/8-2/pointandclick.jpg)
+![UI](images/8-2/pointandclick.png)
 > *Point-and-click* is the easiest way to directly select a Revit element.  You can select a full model element, or parts of its topology (like a face or an edge).  This remains dynamically linked to that Revit object, so when the Revit file updates its location or parameters, the referenced Dynamo element will update in the graph.
 
 ![UI](images/8-2/dropdown.jpg)
@@ -31,24 +31,23 @@ With the three images above in mind, let's dive into an exercise which selects e
 1. [Selecting.dyn](datasets/8-2/Selecting.dyn)
 2. [ARCH-Selecing-BaseFile.rvt](datasets/8-2/ARCH-Selecting-BaseFile.rvt)
 
-![Exercise](images/8-2/Exercise/12.jpg)
-> In this example Revit file, we have three element types of a simple building.  We're going to use this as an example for selecting Revit elements within the context of the Revit hierachy:
+![Exercise](images/8-2/Exercise/12.png)
+> In this example Revit file, we have three element types of a simple building.  We're going to use this as an example for selecting Revit elements within the context of the Revit hierarchy:
 1. Building Mass
 2. Trusses (Adaptive Components)
 3. Beams (Structural Framing)
 
-![Exercise](images/8-2/Exercise/11.jpg)
+![Exercise](images/8-2/Exercise/11.png)
 > What conclusions can we draw from the elements currently in the Revit project view?  And how far down the hierarchy do we need to go to select the appropriate elements?  This will of course become a more complex task when working on a large project. There are a lot of options available: we can select elements by categories, levels, families, instances, etc.
 1. Since we're working with a basic setup, let's select the building mass by choosing *"Mass"* in the Categories dropdown node.  This can be found in the Revit>Selection tab.
 2. The output of the Mass category is just the category itself.  We need to select the elements.  To do this, we use the *"All Elements of Category"* node.
-3. A *Watch* node reveals that we've selected the BldgMass.
 
 At this point, notice that we don't see any geometry in Dynamo. We've selected a Revit element, but have not converted the element into Dynamo geometry.  This is an important separation.  If you were to select a large number of elements, you don't want to preview all of them in Dynamo because this would slow everything down.  Dynamo is a tool to manage a Revit project without necessarily performing geometry operations, and we'll look at that in the next section of this chapter.
 
-In this case, we're working with simple geometry, so we want to bring the geometry into the Dynamo preview.  The "BldgMass" in  the watch node above has a green number* next to it.  This represents the element's ID and tells us that we are dealing with a Revit element, not Dynamo geometry.The next step is to convert this Revit element into geometry in Dynamo.
+In this case, we're working with simple geometry, so we want to bring the geometry into the Dynamo preview.  The "BldgMass" in  the watch node above has a green number* next to it.  This represents the element's ID and tells us that we are dealing with a Revit element, not Dynamo geometry. The next step is to convert this Revit element into geometry in Dynamo.
 
-![Exercise](images/8-2/Exercise/10.jpg)
-> 1. Using the *Element.Faces* node, we get a list of surfaces representing each face of the Revit Mass.  We can now see the geometry in the Dynamo viewport and start to reference the face for parametric operations.
+![Exercise](images/8-2/Exercise/10.png)
+> 1. Using the *Element. Faces* node, we get a list of surfaces representing each face of the Revit Mass.  We can now see the geometry in the Dynamo viewport and start to reference the face for parametric operations.
 
 ![Exercise](images/8-2/Exercise/09.jpg)
 > Here's an alternative method.  In this case, we're stepping away from selecting via the Revit Hierarchy *("All Elements of Category")* and electing to explicitly select geometry in Revit.
@@ -109,8 +108,3 @@ In any case, if we were to import 500 beams, do we need all of the surfaces to p
 3.  Connecting a *"Polygon.ByPoints"* node returns a polycurve. We can see this in the Dynamo viewport.  By this method, we've visualized the geometry of one element and abstracted the geometry of the remaining array of elements (which could be larger in number than this example).
 
 **Tip: if you click on the green number of a Revit element in Dynamo, the Revit viewport will zoom to that element.*
-
-
-
-
-

@@ -1,6 +1,6 @@
 # The Dynamo Primer
 
-## For Dynamo v1.3
+## For Dynamo v2.0
 
 ![Dynamo Logo](images/dynamo_logo_dark-trim.jpg)
 
@@ -35,34 +35,37 @@ This is an exciting time to be learning about, working with, and developing for 
 ---
 
 ### Open Source
-The Dynamo Primer project is open source! We're dedicated to providing quality content and appreciate any feedback you may have. If you would like to report an issue on anything at all, please post them on our git hub issue page: https://github.com/DynamoDS/DynamoPrimer/issues
+The Dynamo Primer project is open source! We're dedicated to providing quality content and appreciate any feedback you may have. If you would like to report an issue on anything at all, please post them on our GitHub issue page: https://github.com/DynamoDS/DynamoPrimer/issues
 
-If you would like to contribute a new section, edits, or anything else to this project, check out the github repo to get started: https://github.com/DynamoDS/DynamoPrimer.
+If you would like to contribute a new section, edits, or anything else to this project, check out the GitHub repo to get started: https://github.com/DynamoDS/DynamoPrimer.
 
 ---
 ### The Dynamo Primer Project
 The Dynamo Primer is an open source project, initiated by Matt Jezyk and the Dynamo Development team at Autodesk.
 
-**Mode Lab** was commissioned to write the First Edition of the primer. The team continues to work with Autodesk to provide updates in parallel with Dynamo's development.
+**Mode Lab** was commissioned to write the First Edition of the primer. We thank them for all of their efforts in establishing this valuable resource.
 
-[<img src="images/MODELAB_Logo.jpg">](http://modelab.is)
+[<img src="images/MODELAB_Logo.png">](http://modelab.is)
 
+**John Pierson of Parallax Team** was commissioned to update the primer to reflect the Dynamo 2.0. revisions.
+
+[<img src="images/PRLX_Logo.jpg">](http://modelab.is)
 ### Acknowledgments
 
 A special thanks to Ian Keough for initiating and guiding the Dynamo project.
 
-Thank you to Matt Jezyk, Ian Keough, Zach Kron, and Colin McCrone for enthusiastic collaboration and the opportunity to participate on a wide array of Dynamo projects.
+Thank you to Matt Jezyk, Ian Keough, Zach Kron, Racel Williams and Colin McCrone for enthusiastic collaboration and the opportunity to participate on a wide array of Dynamo projects.
 
 ### Software and Resources
-**Dynamo** The current stable release of Dynamo is Version 1.3
+**Dynamo** The current stable release of Dynamo is Version 2.0
 
-http://dynamobim.com/download/
+http://dynamobim.com/download/ or http://dynamobuilds.com
 
 **DynamoBIM** The best source for additional information, learning content, and forums is the DynamoBIM website.
 
 http://dynamobim.org
 
-**Dynamo GitHub** Dynamo is an open-source development project on Github. To contribute, check out DynamoDS.
+**Dynamo GitHub** Dynamo is an open-source development project on GitHub. To contribute, check out DynamoDS.
 
 https://github.com/DynamoDS/Dynamo
 
@@ -71,7 +74,7 @@ https://github.com/DynamoDS/Dynamo
 Dynamo@autodesk.com
 
 ### License
-Copyright 2017 Autodesk
+Copyright 2018 Autodesk
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
