@@ -24,6 +24,18 @@ Here are a list of some of the more popular packages in the Dynamo community. De
 
 <table>
   <tr>
+    <td width="10%"><img src="images/A-4/BimorphNodes_Logo.png"></img></td>
+    <td width="55%"><b>BIMORPH NODES</b></td>
+    <td><a href="https://bimorph.com/bimorph-nodes/">Visit the BimorphNodes Dictionary</td></a>
+  </tr>
+  <tr>
+    <td colspan="2">BimorphNodes is a versatile collection of powerful utility nodes. The package highlights include ultra-efficient clash detection and geometry intersection nodes, ImportInstance (CAD) curve conversion nodes, and linked element collectors that resolve limitations in the Revit API. To learn about the full range of nodes available, visit the BimorphNodes dictionary.</td>
+    <td><img src="images/A-4/Bimorph-Nodes-v2.2-Library-Catalog-header.jpg"></img></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <td width="10%"><img src="images/A-4/logo02.png"></img></td>
     <td width="55%"><b>BUMBLEBEE FOR DYNAMO</b></td>
     <td><a href="http://archi-lab.net/bumblebee-dynamo-and-excel-interop/">Visit the Official BumbleBee Site</td></a>
@@ -33,8 +45,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><img src="images/A-4/screengrab02.png"></img></td>
   </tr>
 </table>
-
-
 
 <table>
   <tr>
@@ -59,7 +69,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><img src="images/A-4/DataShapes_Image.png"></img></td>
   </tr>
 </table>
-
 
 <table>
   <tr>
@@ -157,8 +166,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   </tr>
 </table>
 
-
-
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/Optimo_L.png"></img></td>
@@ -171,8 +178,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   </tr>
 </table>
 
-
-
 <table>
   <tr>
     <td width="10%"><img src="images/A-4/Rhynamo_L.png"></img></td>
@@ -184,8 +189,6 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><img src="images/A-4/Rhynamo_S.png"></img></td>
   </tr>
 </table>
-
-
 
 <table>
   <tr>
