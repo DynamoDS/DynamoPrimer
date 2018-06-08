@@ -1,6 +1,6 @@
 ## Installing and Launching Dynamo
 
-Dynamo is an active open-source development project with downloadable installers for both official and pre-release, ie. "daily build" versions. Download the official release to get started, or contribute to what Dynamo becomes through the daily builds or Github project.
+Dynamo is an active open-source development project with downloadable installers for both official and pre-release, i.e.. "daily build" versions. Download the official release to get started, or contribute to what Dynamo becomes through the daily builds or GitHub project.
 
 ### Downloading
 
@@ -17,7 +17,8 @@ Here you can download the "bleeding edge" development versions or go to the [Dyn
 
 > 1. Download the official release installer
 > 2. Download the daily build installers
-> 3. Get involved in the development of Dynamo on Github
+> 3. Check out custom packages from a community of developers
+> 4. Get involved in the development of Dynamo on GitHub
 
 ### Installing
 
@@ -31,16 +32,17 @@ Here we need to decide if we want to include the components that connect Dynamo 
 
 ### Launching
 
-To launch Dynamo, browse to the Windows Start Menu > Dynamo > **Dynamo**. This will open the stand-alone version and present Dynamo's _Start Page_. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources.
+To launch Dynamo, browse to \\Program Files\Dynamo\Dynamo Revit\x.y, then select DynamoSandbox.exe. This will open the stand-alone version and present Dynamo's _Start Page_. On this page, we see the standard menus and toolbar as well as a collection of shortcuts that allow us to access file functionality or access additional resources.
 
-![NEEDS UPDATE - labels Dynamo start page](images/2-1/04-DynamoStartpage.jpg)
+![Dynamo start page](images/2-1/04-DynamoStartpage.jpg)
 
 > 1. Files - Start a new file or open an existing one
 > 2. Recent - Scroll through your recent files
-> 3. Samples - Check out the examples that come with the installation
+> 3. Backup - Access to your backups
 > 4. Ask - Get direct access to the User Forum or Dynamo Website
 > 5. Reference - Go further with additional learning resources
 > 6. Code - Participate in the open-source development project
+> 7. Samples - Check out the examples that come with the installation
 
 Open the first sample file to open your first workspace and confirm Dynamo is working correctly. Click Samples > Basics > **Basics\_Basic01.dyn**.
 
@@ -51,4 +53,3 @@ Open the first sample file to open your first workspace and confirm Dynamo is wo
 > 3. Confirm that this Watch Node shows a result
 
 If this file successfully loads, you should be able to execute your first visual program with Dynamo.
-

@@ -3,24 +3,23 @@ Functions can be created in a code block and recalled elsewhere in a Dynamo defi
 
 ### Parent
 The first line has the key word “def”, then the function name, then the names of inputs in parentheses. Braces define the body of the function. Return a value with “return =”. Code Blocks that define a function do not have input or output ports because they are called from other Code Blocks.
-![Parents](images/7-4/21.jpg)
+![Parents](images/7-4/21.png)
 ```
 /*This is a multi-line comment,
 which continues for
 multiple lines*/
-
-def FunctionName(input1,input2)
+def FunctionName(in1,in2)
 {
 //This is a comment
-sum = input1+input2;
-return = sum;
+sum = in1+in2;
+return sum;
 };
 ```
 
 ### Children
 Call the function with another Code Block in the same file by giving the name and the same number of arguments. It works just like the out-of-the-box nodes in your library.
 
-![Children](images/7-4/20.jpg)
+![Children](images/7-4/20.png)
 ```
 FunctionName(in1,in2);
 ```
@@ -60,7 +59,8 @@ sphereRadius=inputPt.Z;
 
 ![Exercise](images/7-4/Exercise/07.jpg)
 >1. Now we call the function and create a variable called *Pt* to plug in the points created in the earlier steps:
-```sphereByZ(Pt)
+```
+sphereByZ(Pt)
 ```
 2. We notice from the output that we have all null values.  Why is this? When we defined the function, we are calculating the *sphereRadius* variable, but we did not define what the function should *return* as an *output*.  We can fix this in the next step.
 
@@ -104,19 +104,8 @@ sphereRadius=inputPt.Z/radiusRatio;
 //Define Sphere Geometry
 sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
 //Define output for function
-return = sphere;
+return sphere;
 };```
 2. Update the children code blocks by adding a *ratio* variable to the input: ```sphereByZ(Pt,ratio);
 ```
 Plug a slider into the newly created code block input and vary the size of the radii based on the radius ratio.
-
-
-
-
-
-
-
-
-
-
-

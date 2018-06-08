@@ -87,7 +87,7 @@ A List.Map/Combine applies a set function to an input list, but one step down in
 
 #### Exercise - List.Map
 
-_Note: This exercise was created with a previous version of Dynamo. Much of the List.Map functionality has been resolved with the addition of the List@Level feature. For more information, see _[_List@Level_](#listlevel)_ below._
+_Note: This exercise was created with a previous version of Dynamo. Much of the List.Map functionality has been resolved with the addition of the List@Level feature. For more information, see [List@Level](#listlevel) below._
 
 > Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [Map.dyn](datasets/6-3/Map.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
 
@@ -172,7 +172,7 @@ In this exercise, we'll use a similar logic to List.Map, but with multiple eleme
 
 ### List@Level
 
-An alternative to List.Map, the List@Level feature allows you to directly select which level of list you want to work with right at the input port of the node. This feature can be applied to any incoming input of a node and will allow you access the levels of your lists quicker and easier than other methods. Just tell the node what level of the list you want to use as the input and let the node do the rest.
+Preferred to List.Map, the List@Level feature allows you to directly select which level of list you want to work with right at the input port of the node. This feature can be applied to any incoming input of a node and will allow you access the levels of your lists quicker and easier than other methods. Just tell the node what level of the list you want to use as the input and let the node do the rest.
 
 #### List@Level Exercise
 
@@ -241,15 +241,15 @@ Transpose is a fundamental function when dealing with lists of lists. Just as in
 
 ### Code Block Creation
 
-Code block shorthand uses "{}" to define a list.  This is a much faster and more fluid way to create list than the List.Create node. Code block is discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple expressions can be defined with code block.
+Code block shorthand uses "[]" to define a list.  This is a much faster and more fluid way to create list than the List.Create node. Code block is discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple expressions can be defined with code block.
 
-![CB](images/6-3/cbCreation.jpg)
+![CB](images/6-3/cbCreation.png)
 
 ### Code Block Query
 
-Code block shorthand is uses "\[\]" as a quick and easy way to select specific items that you want from a complex data structure. Code blocks are discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple data types can be queried with code block.
+Code block shorthand uses "\[\]" as a quick and easy way to select specific items that you want from a complex data structure. Code blocks are discussed in more detail in Chapter 7.  Reference the image below to note how a list with multiple data types can be queried with code block.
 
-![CB](images/6-3/cbQuery.jpg)
+![CB](images/6-3/cbQuery.png)
 
 ### Exercise - Querying and Inserting Data
 
@@ -302,6 +302,3 @@ This exercise uses some of the logic established in the previous one to edit a s
 ![Exercise](images/6-3/Exercise/B/00.jpg)
 
 > 1. Connect a _Surface.ByLoft_ to the output from _NurbsCurve.ByPoints_.  We now have a modified surface.  We can change the original _Z_ value of Geometry. Translate and watch the geometry update!
-
-
-
