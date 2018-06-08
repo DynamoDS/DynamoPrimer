@@ -24,7 +24,7 @@ Dynamo でプログラムを作成したり、アイデアをテストする場�
 > 1. 関数グループ(青)
 2. 入力グループ(オレンジ色)
 3. スクリプト グループ(緑)
-> グループの使用方法については、「[プログラムを管理する](http://dynamoprimer.com/ja/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)」を参照してください。
+> グループの使用方法については、「[プログラムを管理する](http://primer.dynamobim.org/ja/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)」を参照してください。
 
 #### コード ブロックを使用して効率的に開発する
 
@@ -38,7 +38,7 @@ Dynamo でプログラムを作成したり、アイデアをテストする場�
 
 > 1. コード ブロックを使用して記述した設計スクリプト
 2. ノードを使用して同じスクリプトを記述した場合
-> コード ブロックの使用方法については、「[コード ブロックとは](http://dynamoprimer.com/ja/07_Code-Block/7-1_what-is-a-code-block.html)」を参照してください。
+> コード ブロックの使用方法については、「[コード ブロックとは](http://primer.dynamobim.org/ja/07_Code-Block/7-1_what-is-a-code-block.html)」を参照してください。
 
 #### ノードをコードに変換する
 
@@ -59,7 +59,7 @@ Dynamo でプログラムを作成したり、アイデアをテストする場�
 
 > 1. 既存のプログラム
 2. [ノードをコード化]機能によって作成されたコード ブロック
-> [ノードをコード化]機能の使用方法については、「[DesignScript 構文](http://dynamoprimer.com/ja/07_Code-Block/7-2_Design-Script-syntax.html)」を参照してください。
+> [ノードをコード化]機能の使用方法については、「[DesignScript 構文](http://primer.dynamobim.org/ja/07_Code-Block/7-2_Design-Script-syntax.html)」を参照してください。
 
 #### List@Level 機能を使用してデータに柔軟にアクセスする
 
@@ -72,7 +72,7 @@ Dynamo でプログラムを作成したり、アイデアをテストする場�
 
 > 1. リスト レベル 2 で True 値の数をカウント
 2. リスト レベル 3 で True 値の数をカウント
-> List@Level 機能の使用方法については、「[リストのリスト](http://dynamoprimer.com/ja/06_Designing-with-Lists/6-3_lists-of-lists.html#list@level)」を参照してください。
+> List@Level 機能の使用方法については、「[リストのリスト](http://primer.dynamobim.org/ja/06_Designing-with-Lists/6-3_lists-of-lists.html#list@level)」を参照してください。
 
 ### 見やすいプログラムにする
 
@@ -88,7 +88,7 @@ Dynamo でプログラムを作成したり、アイデアをテストする場�
 
 > 1. ノードが整理されていない画面
 2. ノードが整理されている画面
-> ノードの配置を調整する方法については、「[プログラムを管理する](http://dynamoprimer.com/ja/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)」を参照してください。
+> ノードの配置を調整する方法については、「[プログラムを管理する](http://primer.dynamobim.org/ja/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)」を参照してください。
 
 #### 名前を変更してわかりやすいラベルを付ける
 
@@ -111,11 +111,11 @@ Dynamo でプログラムを作成したり、アイデアをテストする場�
 
 > 1. 行の移動距離を返すプログラムの特定の箇所を説明するためのノート
 2. 上記の移動距離の値を正弦波にマッピングするコードを説明するためのノート
-> ノートの追加方法については、「[プログラムを管理する](http://dynamoprimer.com/ja/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)」を参照してください。
+> ノートの追加方法については、「[プログラムを管理する](http://primer.dynamobim.org/ja/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)」を参照してください。
 
 ### スクリプトを継続的にモニタリングする
 
-ビジュアル スクリプトを作成する場合、正しい値がスクリプトから返されるかどうかを確認することが重要になります。すべてのエラーが、プログラムの即時停止につながるエラーというわけではありません。特に、Null 値やゼロの値に関するエラーは、プログラムの下流部分に影響する場合があるため、注意が必要です。この方法は、「[スクリプト作成のガイドライン](http://dynamoprimer.com/ja/12_Best-Practice/12-2_Scripting-Strategies.html)」の章でも、テキスト スクリプトに関連する形で記載されています。 次の演習では、正しい結果を得る方法について確認していきます。
+ビジュアル スクリプトを作成する場合、正しい値がスクリプトから返されるかどうかを確認することが重要になります。すべてのエラーが、プログラムの即時停止につながるエラーというわけではありません。特に、Null 値やゼロの値に関するエラーは、プログラムの下流部分に影響する場合があるため、注意が必要です。この方法は、「[スクリプト作成のガイドライン](http://primer.dynamobim.org/ja/12_Best-Practice/12-2_Scripting-Strategies.html)」の章でも、テキスト スクリプトに関連する形で記載されています。 次の演習では、正しい結果を得る方法について確認していきます。
 
 #### ウォッチ バルーンとプレビュー バルーンを使用してデータをモニターする
 
@@ -127,7 +127,7 @@ Dynamo でプログラムを作成したり、アイデアをテストする場�
 
 > 1. 行の移動距離
 2. 正弦式から渡された値
-> Watch ノードの使用方法については、「[ライブラリ](http://dynamoprimer.com/ja/03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html)」を参照してください。
+> Watch ノードの使用方法については、「[ライブラリ](http://primer.dynamobim.org/ja/03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html)」を参照してください。
 
 ### 再利用しやすいプログラムを作成する
 
@@ -143,7 +143,7 @@ Dynamo でプログラムを作成したり、アイデアをテストする場�
 * **特定のオプションや条件をプログラム内に組み込む**場合は、プリセットを使用すると、迅速に作業を進めることができます。
 * また、長期間実行されるプログラム内でプリセットを使用して**特定のスライダ値をキャッシュすると、プログラムの複雑さを軽減**することができます。
 
-> プリセットの使用方法については、「[プリセットを使用してデータを管理する](http://dynamoprimer.com/ja/03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html)」を参照してください。
+> プリセットの使用方法については、「[プリセットを使用してデータを管理する](http://primer.dynamobim.org/ja/03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html)」を参照してください。
 
 #### プログラムを構成する各ノードをカスタム ノード内に収集する
 
@@ -157,7 +157,7 @@ Dynamo でプログラムを作成したり、アイデアをテストする場�
 
 > 1. 既存のアトラクタ プログラム
 2. 上記のプログラムを構成する各ノードを収集するためのカスタム ノード「PointGrid」
-> カスタム ノードの使用方法については、「[カスタム ノードの概要](http://dynamoprimer.com/ja/09_Custom-Nodes/9-1_Introduction.html)」を参照してください。
+> カスタム ノードの使用方法については、「[カスタム ノードの概要](http://primer.dynamobim.org/ja/09_Custom-Nodes/9-1_Introduction.html)」を参照してください。
 
 #### テンプレートを作成する
 

@@ -31,7 +31,7 @@ Dynamo **工作區**不但是我們開發視覺程式所在的區域，還可以
 2. 在工作區中按一下右鍵，然後選取*「切換至...視圖」*
 3. 鍵盤快速鍵 (Ctrl + B)
 
-藉由 3D 預覽導覽模式，我們也可以**直接操控**點，如[「入門」](http://dynamoprimer.com/zh-tw/02_Hello-Dynamo/2-6_the_quick_start_guide.html)中的範例所示。
+藉由 3D 預覽導覽模式，我們也可以**直接操控**點，如[「入門」](http://primer.dynamobim.org/zh-tw/02_Hello-Dynamo/2-6_the_quick_start_guide.html)中的範例所示。
 
 ### 縮放以重設中心
 
