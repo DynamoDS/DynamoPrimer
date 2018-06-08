@@ -21,23 +21,23 @@
 				{            
 					"label": "Download",
 					"icon": "fa fa-file-pdf-o fa-lg",
-					"url": "http://dynamoprimer.com/ja/Appendix/DynamoPrimer-Print.pdf"
+					"url": "http://primer.dynamobim.org/ja/Appendix/DynamoPrimer-Print.pdf"
 				}],
 			"languages":[
 				 {
 		"label": "English",
 		"code":"en",
-			"url": "http://dynamoprimer.com/en"
+			"url": "http://primer.dynamobim.org/en"
 				 },
 				 {
 		"label": "Deutsch",
 		"code": "de",
-			"url": "http://dynamoprimer.com/de"
+			"url": "http://primer.dynamobim.org/de"
 				 },
 				 {
 		"label": "中文(繁體)",
 		"code":"zh-tw",
-			"url": "http://dynamoprimer.com/zh-tw"
+			"url": "http://primer.dynamobim.org/zh-tw"
 				 },
 				 {
 		"label": "",
@@ -52,7 +52,7 @@
 			],
 			"currentLanguage":{
 				 "code":"ja",
-				 "url":"http://dynamoprimer.com/ja",
+				 "url":"http://primer.dynamobim.org/ja",
 				 "switchLangLabel":"言語"
 			},
 			"favicon":"/images/icons/favicon.ico"
