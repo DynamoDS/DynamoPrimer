@@ -1,6 +1,6 @@
-##Dynamo Example Files
+## Dynamo Example Files
 
-#####These example files accompany the Dynamo Primer, and are organized according to Chapter and Section.
+##### These example files accompany the Dynamo Primer, and are organized according to Chapter and Section.
 >Right click files and use "Save Link As..."
 
 
@@ -12,19 +12,19 @@ td:nth-child(2){width:550px;}
 table{box-shadow: 2px 2px 2px #BBBBBB}
 </style>
 
-####Introduction####
+#### Introduction ####
 |Section|Download File|
 |--|--|
 |What is Visual Programming|[Visual Programming - Circle Through Point.dyn](../01_Introduction/datasets/1-1/Visual Programming - Circle Through Point.dyn)
 
-####Anatomy of a Dynamo Definition####
+#### Anatomy of a Dynamo Definition ####
 
 |Section|Download File|
 |--|--|
 |Presets|[Presets.dyn](../03_Anatomy-of-a-Dynamo-Definition/datasets/3-5/Presets.dyn)
 
 
-####The Building Blocks of Programs####
+#### The Building Blocks of Programs ####
 
 |Section|Download File|
 |--|--|
@@ -34,7 +34,7 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 |Strings|[Building Blocks of Programs - Strings.dyn](../04_The-Building-Blocks-of-Programs/datasets/4-4/Building Blocks of Programs - Strings.dyn)
 |Color|[Building Blocks of Programs - Color.dyn](../04_The-Building-Blocks-of-Programs/datasets/4-5/Building Blocks of Programs - Color.dyn)
 
-####Geometry for Computational Design####
+#### Geometry for Computational Design ####
 |Section|Download File|
 |--|--|
 |Geometry Overview|[Geometry for Computational Design - Geometry Overview.dyn](../05_Geometry-for-Computational-Design/datasets/5-1/Geometry for Computational Design - Geometry Overview.dyn)
@@ -46,7 +46,7 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 |Surfaces|[Geometry for Computational Design - Surfaces.dyn](../05_Geometry-for-Computational-Design/datasets/5-5/Geometry for Computational Design - Surfaces.dyn)
 ||[Surface.sat](../05_Geometry-for-Computational-Design/datasets/5-5/Surface.sat)
 
-####Designing with Lists####
+#### Designing with Lists ####
 |Section|Download File|
 |--|--|
 |What's a List|[Lacing.dyn](../06_Designing-with-Lists/datasets/6-1/Lacing.dyn)
@@ -67,14 +67,14 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 ||[n-Dimensional-Lists.sat](../06_Designing-with-Lists/datasets/6-4/n-Dimensional-Lists.sat)
 
 
-####Code Blocks and DesignScript####
+#### Code Blocks and DesignScript ####
 |Section|Download File|
 |--|--|
 |DesignScript Syntax|[Dynamo-Syntax_Attractor-Surface.dyn](../07_Code-Block/datasets/7-2/Dynamo-Syntax_Attractor-Surface.dyn)
 |Shorthand|[Obsolete-Nodes_Sine-Surface.dyn](../07_Code-Block/datasets/7-3/Obsolete-Nodes_Sine-Surface.dyn)
 |Functions|[Functions_SphereByZ.dyn](../07_Code-Block/datasets/7-4/Functions_SphereByZ.dyn)
 
-####Dynamo for Revit####
+#### Dynamo for Revit ####
 |Section|Download File|
 |--|--|
 |Selecting|[Selecting.dyn](../08_Dynamo-for-Revit/datasets/8-2/Selecting.dyn)
@@ -88,19 +88,24 @@ table{box-shadow: 2px 2px 2px #BBBBBB}
 |Documenting|[Documenting.dyn](../08_Dynamo-for-Revit/datasets/8-6/Documenting.dyn)
 ||[ARCH-Documenting-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-6/ARCH-Documenting-BaseFile.rvt)
 
-####Custom Nodes####
+#### Dictionaries in Dynamo ####
 |Section|Download File|
 |--|--|
-|Creating a Custom Node|[UV-CustomNode.zip](../09_Custom-Nodes/datasets/9-2/UV-CustomNode.zip)
-|Publishing to Your Library|[PointsToSurface.dyf](../09_Custom-Nodes/datasets/9-3/PointsToSurface.dyf)
-|Python Nodes|[Python-CustomNode.dyn](../09_Custom-Nodes/datasets/9-4/Python-CustomNode.dyn)
-|Python and Revit|[Revit-Doc.dyn](../09_Custom-Nodes/datasets/9-5/Revit-Doc.dyn)
-|Python and Revit|[Revit-ReferenceCurve.dyn](../09_Custom-Nodes/datasets/9-5/Revit-ReferenceCurve.dyn)
-|Python and Revit|[Revit-StructuralFraming.zip](../09_Custom-Nodes/datasets/9-5/Revit-StructuralFraming.zip)
+| Room Dictionary | [RoomDictionary.dyn](../09_Dictionaries/datasets/9-4_roomDictionary.dyn)
 
-####Packages####
+#### Custom Nodes ####
 |Section|Download File|
 |--|--|
-|Package Case Study - Mesh Toolkit|[MeshToolkit.zip](../10_Packages/datasets/10-2/MeshToolkit.zip)
-|Publishing a Package|[MapToSurface.zip](../10_Packages/datasets/10-4/MapToSurface.zip)
-|Zero-Touch Importing|[ZeroTouchImages.zip](../10_Packages/datasets/10-5/ZeroTouchImages.zip)
+|Creating a Custom Node|[UV-CustomNode.zip](../10_Custom-Nodes/datasets/10-2/UV-CustomNode.zip)
+|Publishing to Your Library|[PointsToSurface.dyf](../10_Custom-Nodes/datasets/10-3/PointsToSurface.dyf)
+|Python Nodes|[Python-CustomNode.dyn](../10_Custom-Nodes/datasets/10-4/Python-CustomNode.dyn)
+|Python and Revit|[Revit-Doc.dyn](../10_Custom-Nodes/datasets/10-5/Revit-Doc.dyn)
+|Python and Revit|[Revit-ReferenceCurve.dyn](../10_Custom-Nodes/datasets/10-5/Revit-ReferenceCurve.dyn)
+|Python and Revit|[Revit-StructuralFraming.zip](../10_Custom-Nodes/datasets/10-5/Revit-StructuralFraming.zip)
+
+#### Packages ####
+|Section|Download File|
+|--|--|
+|Package Case Study - Mesh Toolkit|[MeshToolkit.zip](../11_Packages/datasets/11-2/MeshToolkit.zip)
+|Publishing a Package|[MapToSurface.zip](../11_Packages/datasets/11-4/MapToSurface.zip)
+|Zero-Touch Importing|[ZeroTouchImages.zip](../11_Packages/datasets/11-5/ZeroTouchImages.zip)
