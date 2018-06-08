@@ -1,6 +1,7 @@
 # The Dynamo Primer
 
 ## For Dynamo v2.0
+Download the [Dynamo v1.3 Primer here](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf)
 
 ![Dynamo Logo](images/dynamo_logo_dark-trim.jpg)
 
