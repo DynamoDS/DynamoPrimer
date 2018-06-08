@@ -27,7 +27,7 @@ In Dynamo, the Graph and the 3D results of the Graph (if we are creating geometr
 2. Right clicking in the Workspace and selecting *Switch to ... View*
 3. Keyboard shortcut (Ctrl + B)
 
-The 3D Preview Navigation mode also gives us the ability for **Direct Manipulation** of points, exemplified in [Getting Started](http://dynamoprimer.com/02_Hello-Dynamo/2-6_the_quick_start_guide.html).
+The 3D Preview Navigation mode also gives us the ability for **Direct Manipulation** of points, exemplified in [Getting Started](http://primer.dynamobim.org/02_Hello-Dynamo/2-6_the_quick_start_guide.html).
 
 ###Zoom to Recenter
  We can easily pan, zoom and rotate freely around models in 3D Preview Navigation mode. However, to zoom specifically on an object created by a geometry node, we can use the Zoom All icon with a single node selected.
