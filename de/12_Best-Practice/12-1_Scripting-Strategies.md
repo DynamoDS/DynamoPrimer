@@ -26,7 +26,7 @@ Mit Textskripts können Sie komplexere Beziehungen erstellen als durch visuelle 
 | **Python** | Ja | Ja | Teilweise | Ja | Nein |
 | **ZeroTouch (C#)** | Nein | Nein | Nein | Ja | Nein |
 
-> Unter [Referenz für die Skripterstellung](http://dynamoprimer.com/de/12_Best-Practice/12-3_Scripting-Reference.html) ist aufgelistet, worauf Sie mit welcher Dynamo-Bibliothek zugreifen können.
+> Unter [Referenz für die Skripterstellung](http://primer.dynamobim.org/de/12_Best-Practice/12-3_Scripting-Reference.html) ist aufgelistet, worauf Sie mit welcher Dynamo-Bibliothek zugreifen können.
 
 ### Parametrischer Denkansatz
 
@@ -67,7 +67,7 @@ Bei der Skripterstellung in Dynamo, einer zwangsläufig parametrischen Umgebung,
 
 ![Parameter](images/12-1/parameters.JPG)
 
-> Die Codemodule aus dem Beispiel unter [Python-Block](http://dynamoprimer.com/de/09_Custom-Nodes/9-4_Python.html).
+> Die Codemodule aus dem Beispiel unter [Python-Block](http://primer.dynamobim.org/de/09_Custom-Nodes/9-4_Python.html).
 
 > 1. Eingaben.
 2. Interne Variablen für das Skript.
@@ -205,7 +205,7 @@ Es ist sinnvoll, während der Entwicklung von Textskripts in Dynamo laufend zu �
 
 ![modules](images/12-1/flex.jpg)
 
-> Testen des Beispielcodes aus dem [Python-Block](http://dynamoprimer.com/de/09_Custom-Nodes/9-4_Python.html).
+> Testen des Beispielcodes aus dem [Python-Block](http://primer.dynamobim.org/de/09_Custom-Nodes/9-4_Python.html).
 
 > 1. Überprüfen Sie, ob alle Kanten des Volumenkörpers als Kurven zurückgegeben werden, damit ein Begrenzungsrahmen darum erstellt wird.
 2. Überprüfen Sie, ob die Count-Eingaben in Ranges konvertiert werden.
@@ -263,7 +263,7 @@ solids.append(solid.Transform(fromCoord,toCoord))
 
 ![](images/12-1/debug.jpg)
 
-> Debuggen der Beispieldatei aus dem [Python-Block](http://dynamoprimer.com/de/09_Custom-Nodes/9-4_Python.html).
+> Debuggen der Beispieldatei aus dem [Python-Block](http://primer.dynamobim.org/de/09_Custom-Nodes/9-4_Python.html).
 
 > 1. Die Eingabegeometrie gibt einen Begrenzungsrahmen zurück, der größer ist als sie selbst, wie durch Zuweisen von xDist und yDist zu OUT zu erkennen ist.
 2. Die Kantenkurven der Eingabegeometrie geben einen passenden Begrenzungsrahmen mit den richtigen Entfernungen für xDist und yDist zurück.

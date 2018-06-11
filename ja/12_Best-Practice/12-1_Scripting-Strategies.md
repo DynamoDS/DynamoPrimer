@@ -26,7 +26,7 @@
 | **Python** | 可 | 可 | 一部可 | 可 | 不可 |
 | **ZeroTouch (C#)** | 不可 | 不可 | 不可 | 可 | 不可 |
 
-> 各 Dynamo ライブラリでアクセスできるコンテンツのリストについては、「[スクリプトの参照情報](http://dynamoprimer.com/ja/12_Best-Practice/12-3_Scripting-Reference.html)」を参照してください。
+> 各 Dynamo ライブラリでアクセスできるコンテンツのリストについては、「[スクリプトの参照情報](http://primer.dynamobim.org/ja/12_Best-Practice/12-3_Scripting-Reference.html)」を参照してください。
 
 ### パラメトリックに考える
 
@@ -67,7 +67,7 @@ Dynamo でスクリプトを作成する場合は必ずパラメトリック環�
 
 ![パラメータ](images/12-1/parameters.JPG)
 
-> 上記のコードは、[Python Script ノード](http://dynamoprimer.com/ja/09_Custom-Nodes/9-4_Python.html)の「modules」というサンプル コードです。
+> 上記のコードは、[Python Script ノード](http://primer.dynamobim.org/ja/09_Custom-Nodes/9-4_Python.html)の「modules」というサンプル コードです。
 
 > 1. 入力。
 2. スクリプト内で使用される変数。
@@ -205,7 +205,7 @@ Dynamo でテキスト スクリプトを開発する場合は、目的とする
 
 ![モジュール](images/12-1/flex.jpg)
 
-> [Python ノード](http://dynamoprimer.com/ja/09_Custom-Nodes/9-4_Python.html)のサンプル コードで、次の動作を確認します。
+> [Python ノード](http://primer.dynamobim.org/ja/09_Custom-Nodes/9-4_Python.html)のサンプル コードで、次の動作を確認します。
 
 > 1. ソリッドのすべてのエッジが、境界ボックスを作成するための曲線として返されるかどうかを確認します。
 2. Count 入力が正しく Range に変換されるかどうかを確認します。
@@ -263,7 +263,7 @@ solids.append(solid.Transform(fromCoord,toCoord))
 
 ![](images/12-1/debug.jpg)
 
-> [Python ノード](http://dynamoprimer.com/ja/09_Custom-Nodes/9-4_Python.html)のサンプル ファイルをデバックすると、次のようになります。
+> [Python ノード](http://primer.dynamobim.org/ja/09_Custom-Nodes/9-4_Python.html)のサンプル ファイルをデバックすると、次のようになります。
 
 > 1. 自分よりも大きな境界ボックスを返す入力ジオメトリ(これを確認するには、xDist と yDist の値を OUT 変数に割り当てます)。
 2. xDist と yDist の正しい距離が設定された適切な境界ボックスを返す入力ジオメトリのエッジ曲線。

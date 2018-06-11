@@ -24,7 +24,7 @@ Text-scripting can establish relationships of a higher complexity than visual pr
 | **Python** | Yes | Yes | Partially | Yes | No |
 | **ZeroTouch (C#)** | No | No | No | Yes | No |
 
-> Refer to [Scripting Reference](http://dynamoprimer.com/en/12_Best-Practice/13-3_Scripting-Reference.html) for a list of what each Dynamo library gives you access to.
+> Refer to [Scripting Reference](http://primer.dynamobim.org/en/12_Best-Practice/13-3_Scripting-Reference.html) for a list of what each Dynamo library gives you access to.
 
 ### Think Parametrically
 
@@ -65,7 +65,7 @@ When scripting in Dynamo, an inevitably parametric environment, it is wise to st
 
 ![parameters](images/13-1/parameters.JPG)
 
-> The code "modules" from the example in [Python Node](http://dynamoprimer.com/en/09_Custom-Nodes/9-4_Python.html).
+> The code "modules" from the example in [Python Node](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
 > 1. Inputs.
 > 2. Variables internal to the script.
@@ -204,7 +204,7 @@ While developing text-scripts in Dynamo, it is wise to constantly make sure that
 
 ![modules](images/13-1/flex.jpg)
 
-> Flexing the example code from [Python Node](http://dynamoprimer.com/en/09_Custom-Nodes/9-4_Python.html).
+> Flexing the example code from [Python Node](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
 > 1. Check that all edges of the solid are being returned as curves to create a bounding box around.
 > 2. Check that our Count inputs are successfully being converted to Ranges.
@@ -262,7 +262,7 @@ for i in range(xCount):
 
 ![](images/13-1/debug.jpg)
 
-> Debugging the example file from [Python Node](http://dynamoprimer.com/en/09_Custom-Nodes/9-4_Python.html).
+> Debugging the example file from [Python Node](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
 > 1. The input geometry is returning a bounding box larger that itself, as we can see from assigning xDist and yDist to OUT.
 > 2. The edge curves of the input geometry return an appropriate bounding box with correct distances for xDist and yDist.

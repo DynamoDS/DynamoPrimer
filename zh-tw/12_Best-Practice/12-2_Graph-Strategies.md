@@ -24,7 +24,7 @@
 > 1. 函數群組 (藍色)
 2. 輸入群組 (橘色)
 3. 腳本群組 (綠色)
-> 若要瞭解如何使用群組，請參閱[〈管理您的程式〉](http://dynamoprimer.com/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)。
+> 若要瞭解如何使用群組，請參閱[〈管理您的程式〉](http://primer.dynamobim.org/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)。
 
 #### 使用 Code Block 有效地開發
 
@@ -38,7 +38,7 @@
 
 > 1. 使用 Code Block 編寫的設計腳本
 2. 節點中的相等程式
-> 若要瞭解如何使用 Code Block，請參閱[〈什麼是 Code Block〉](http://dynamoprimer.com/zh-tw/07_Code-Block/7-1_what-is-a-code-block.html)。
+> 若要瞭解如何使用 Code Block，請參閱[〈什麼是 Code Block〉](http://primer.dynamobim.org/zh-tw/07_Code-Block/7-1_what-is-a-code-block.html)。
 
 #### 使用 Node to Code 進行壓縮
 
@@ -59,7 +59,7 @@
 
 > 1. 既有的程式
 2. 從 Node to Code 建立的 Code Block
-> 若要瞭解如何使用 Node to Code，請參閱[〈設計腳本語法〉](http://dynamoprimer.com/zh-tw/07_Code-Block/7-2_Design-Script-syntax.html)。
+> 若要瞭解如何使用 Node to Code，請參閱[〈設計腳本語法〉](http://primer.dynamobim.org/zh-tw/07_Code-Block/7-2_Design-Script-syntax.html)。
 
 #### 使用 List@Level 存取資料彈性
 
@@ -72,7 +72,7 @@
 
 > 1. 計算 List Level 2 的 true 值
 2. 計算 List Level 3 的 true 值
-> 若要瞭解如何使用 List@Level，請參閱[〈清單的清單〉](http://dynamoprimer.com/zh-tw/06_Designing-with-Lists/6-3_lists-of-lists.html#list@level)。
+> 若要瞭解如何使用 List@Level，請參閱[〈清單的清單〉](http://primer.dynamobim.org/zh-tw/06_Designing-with-Lists/6-3_lists-of-lists.html#list@level)。
 
 ### 保持可讀性
 
@@ -88,7 +88,7 @@
 
 > 1. 未組織的圖表
 2. 對齊的圖表
-> 若要瞭解如何使用節點的對齊方式，請參閱[〈管理您的程式〉](http://dynamoprimer.com/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)。
+> 若要瞭解如何使用節點的對齊方式，請參閱[〈管理您的程式〉](http://primer.dynamobim.org/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)。
 
 #### 透過更名以進行描述性標示
 
@@ -111,11 +111,11 @@
 
 > 1. 註記描述傳回原始轉換距離的程式部分
 2. 註記描述對映這些值至正弦波形的程式碼
-> 若要瞭解如何加入註記，請參閱[〈管理您的程式〉](http://dynamoprimer.com/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)。
+> 若要瞭解如何加入註記，請參閱[〈管理您的程式〉](http://primer.dynamobim.org/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html)。
 
 ### 連續地調整
 
-建置視覺腳本時，請務必確認所傳回的與您所預期的相符。並非所有錯誤或問題都會導致程式立即失敗，尤其是可能會影響下游遠處的 null 或零值。此策略亦在 [撰寫腳本策略](http://dynamoprimer.com/zh-tw/12_Best-Practice/12-2_Scripting-Strategies.html)中以文字腳本的層面討論。以下練習將有助於確保您取得預期的內容。
+建置視覺腳本時，請務必確認所傳回的與您所預期的相符。並非所有錯誤或問題都會導致程式立即失敗，尤其是可能會影響下游遠處的 null 或零值。此策略亦在 [撰寫腳本策略](http://primer.dynamobim.org/zh-tw/12_Best-Practice/12-2_Scripting-Strategies.html)中以文字腳本的層面討論。以下練習將有助於確保您取得預期的內容。
 
 #### 使用觀看和預覽標示圈監視資料
 
@@ -127,7 +127,7 @@
 
 > 1. 原始轉換距離
 2. 通過正弦方程式的值
-> 若要瞭解如何使用 Watch，請參閱[〈資源庫〉](http://dynamoprimer.com/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html)。
+> 若要瞭解如何使用 Watch，請參閱[〈資源庫〉](http://primer.dynamobim.org/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html)。
 
 ### 確保可重複使用性
 
@@ -143,7 +143,7 @@
 * 如果您有**想要嵌入至圖表中的特定選項或條件**， 您應該使用「預置」以快速存取。
 * 您也可以使用「預置」來**降低複雜性，方法是在執行時間較長的圖表中快取特定的滑棒值**。
 
-> 若要瞭解如何使用「預置」，請參閱[〈使用「預置」管理您的資料〉](http://dynamoprimer.com/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html)。
+> 若要瞭解如何使用「預置」，請參閱[〈使用「預置」管理您的資料〉](http://primer.dynamobim.org/zh-tw/03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html)。
 
 #### 包含自訂節點的程式
 
@@ -157,7 +157,7 @@
 
 > 1. 既有牽引程式
 2. 收集此程式 「PointGrid」的自訂節點
-> 若要瞭解如何使用自訂節點，請參閱[〈自訂節點簡介〉](http://dynamoprimer.com/zh-tw/09_Custom-Nodes/9-1_Introduction.html)。
+> 若要瞭解如何使用自訂節點，請參閱[〈自訂節點簡介〉](http://primer.dynamobim.org/zh-tw/09_Custom-Nodes/9-1_Introduction.html)。
 
 #### 建立樣板
 

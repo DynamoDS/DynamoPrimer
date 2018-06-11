@@ -26,7 +26,7 @@
 | **Python** | 是 | 是 | 局部 | 是 | 否 |
 | **ZeroTouch (C#)** | 否 | 否 | 否 | 是 | 否 |
 
-> 請參閱 [腳本參考](http://dynamoprimer.com/zh-tw/12_Best-Practice/12-3_Scripting-Reference.html) 以瞭解每個 Dynamo 資源庫可以讓您存取的功能。
+> 請參閱 [腳本參考](http://primer.dynamobim.org/zh-tw/12_Best-Practice/12-3_Scripting-Reference.html) 以瞭解每個 Dynamo 資源庫可以讓您存取的功能。
 
 ### 參數化
 
@@ -67,7 +67,7 @@
 
 ![參數](images/12-1/parameters.JPG)
 
-> 來自 [Python 節點](http://dynamoprimer.com/zh-tw/09_Custom-Nodes/9-4_Python.html)中的範例的「模組」程式碼。
+> 來自 [Python 節點](http://primer.dynamobim.org/zh-tw/09_Custom-Nodes/9-4_Python.html)中的範例的「模組」程式碼。
 
 > 1. 輸入。
 2. 腳本內部的變數。
@@ -205,7 +205,7 @@ greeting = MyClass.f
 
 ![模組](images/12-1/flex.jpg)
 
-> 調整 [Python 節點](http://dynamoprimer.com/zh-tw/09_Custom-Nodes/9-4_Python.html)的範例程式碼。
+> 調整 [Python 節點](http://primer.dynamobim.org/zh-tw/09_Custom-Nodes/9-4_Python.html)的範例程式碼。
 
 > 1. 檢查實體的所有邊以曲線方式傳回，以建立一個邊界框。
 2. 檢查已將計數輸入成功轉換為範圍。
@@ -263,7 +263,7 @@ solids.append(solid.Transform(fromCoord,toCoord))
 
 ![](images/12-1/debug.jpg)
 
-> 在 [Python 節點](http://dynamoprimer.com/zh-tw/09_Custom-Nodes/9-4_Python.html)的範例檔案中進行除錯。
+> 在 [Python 節點](http://primer.dynamobim.org/zh-tw/09_Custom-Nodes/9-4_Python.html)的範例檔案中進行除錯。
 
 > 1. 當指定 xDist 和 yDist 至 OUT 時，我們可以看到輸入幾何圖形會傳回一個大於自己的邊界框。
 2. 輸入幾何圖形的邊的曲線會傳回合適的邊界框和 xDist 和 yDist 的正確距離。

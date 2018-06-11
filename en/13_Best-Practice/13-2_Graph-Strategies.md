@@ -23,7 +23,7 @@ As you develop your Dynamo graph and test ideas, it can quickly grow in size and
 > 2. Input group \(orange\)
 > 3. Script group \(green\)
 >
-> For how to use Groups, refer to [Managing Your Program](http://dynamoprimer.com/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html).
+> For how to use Groups, refer to [Managing Your Program](http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html).
 
 #### **Develop efficiently with Code Blocks**
 
@@ -38,7 +38,7 @@ As you develop your Dynamo graph and test ideas, it can quickly grow in size and
 > 1. Design Script written in Code Block
 > 2. Equivalent program in nodes
 >
-> For how to use Code Block, refer to [What's a Code Block](http://dynamoprimer.com/en/07_Code-Block/7-1_what-is-a-code-block.html).
+> For how to use Code Block, refer to [What's a Code Block](http://primer.dynamobim.org/en/07_Code-Block/7-1_what-is-a-code-block.html).
 
 #### **Condense with Node to Code**
 
@@ -59,7 +59,7 @@ As you develop your Dynamo graph and test ideas, it can quickly grow in size and
 > 1. Existing program
 > 2. Code Block created from Node to Code
 >
-> For how to use Node to Code, refer to [Design Script Syntax](http://dynamoprimer.com/en/07_Code-Block/7-2_Design-Script-syntax.html).
+> For how to use Node to Code, refer to [Design Script Syntax](http://primer.dynamobim.org/en/07_Code-Block/7-2_Design-Script-syntax.html).
 
 #### **Access data flexibly with List@Level**
 
@@ -73,7 +73,7 @@ As you develop your Dynamo graph and test ideas, it can quickly grow in size and
 > 1. Counting true values at List Level 2
 > 2. Counting true values at List Level 3
 >
-> For how to use List@Level, refer to [Lists of Lists](http://dynamoprimer.com/en/06_Designing-with-Lists/6-3_lists-of-lists.html#list@level).
+> For how to use List@Level, refer to [Lists of Lists](http://primer.dynamobim.org/en/06_Designing-with-Lists/6-3_lists-of-lists.html#list@level).
 
 ### Maintain Readability
 
@@ -90,7 +90,7 @@ In addition to making your graph as simple and efficient as possible, strive for
 > 1. Unorganized graph
 > 2. Aligned graph
 >
-> For how to use Node Alignment, refer to [Managing Your Program](http://dynamoprimer.com/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html).
+> For how to use Node Alignment, refer to [Managing Your Program](http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html).
 
 #### **Descriptive labeling by renaming**
 
@@ -115,11 +115,11 @@ In addition to making your graph as simple and efficient as possible, strive for
 > 1. A Note describing the portion of the program that returns raw translation distances
 > 2. A Note describing the code that maps those values to a Sine wave
 >
-> For how to add a Note, refer to [Managing Your Program](http://dynamoprimer.com/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html).
+> For how to add a Note, refer to [Managing Your Program](http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html).
 
 ### Flex Continuously
 
-While building your visual-script, it is important to verify that what is being returned is what you expected. Not all errors or issues will cause the program to fail immediately, especially null or zero values that could affect something far downstream. This strategy is also discussed in the context of text-scripting in [Scripting Strategies](http://dynamoprimer.com/en/12_Best-Practice/13-2_Scripting-Strategies.html). The following practice will help ensure that you are getting what you expected.
+While building your visual-script, it is important to verify that what is being returned is what you expected. Not all errors or issues will cause the program to fail immediately, especially null or zero values that could affect something far downstream. This strategy is also discussed in the context of text-scripting in [Scripting Strategies](http://primer.dynamobim.org/en/12_Best-Practice/13-2_Scripting-Strategies.html). The following practice will help ensure that you are getting what you expected.
 
 #### **Monitor data with Watch and Preview Bubbles**
 
@@ -132,7 +132,7 @@ While building your visual-script, it is important to verify that what is being 
 > 1. The raw translation distances
 > 2. The values passed through the Sine equation
 >
-> For how to use Watch, refer to [Library](http://dynamoprimer.com/en/03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html).
+> For how to use Watch, refer to [Library](http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html).
 
 ### Ensure Reusability
 
@@ -148,7 +148,7 @@ It is highly likely that someone else will be opening your program at some point
 * If there are **particular options or conditions that you want embedded in the graph**, you should use Presets for quick access
 * You can also use Presets to **reduce complexity by caching specific slider values** in a graph with long run times
 
-> For how to use Presets, refer to [Managing Your Data with Presets](http://dynamoprimer.com/en/03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html).
+> For how to use Presets, refer to [Managing Your Data with Presets](http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html).
 
 #### **Contain programs with Custom Nodes**
 
@@ -163,7 +163,7 @@ It is highly likely that someone else will be opening your program at some point
 > 1. Existing attractor program
 > 2. Custom Node that collects this program, PointGrid
 >
-> For how to use Custom Nodes, refer to [Custom Node Introduction](http://dynamoprimer.com/en/09_Custom-Nodes/9-1_Introduction.html).
+> For how to use Custom Nodes, refer to [Custom Node Introduction](http://primer.dynamobim.org/en/09_Custom-Nodes/9-1_Introduction.html).
 
 #### **Build templates**
 
