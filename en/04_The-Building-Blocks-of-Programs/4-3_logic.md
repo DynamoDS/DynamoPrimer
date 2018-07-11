@@ -39,9 +39,8 @@ Let's use logic to separate a list of numbers into a list of even numbers and a 
 Building off of the logic established in the first exercise, let's apply this setup into a modeling operation.
 
 ![](images/4-3/02.png)
-> 1. We'll jump off from the previous exercise with the same Nodes.  The only exceptions:
-2. We've changed the format.
-3. The input values have changed.
+We'll jump off from the previous exercise with the same Nodes.  The only exceptions (in addition to changing the format are):
+>3. The input values have changed.
 4. We've unplugged the in list input into *List.FilterByBoolMask*. We'll put these Nodes aside for now, but they'll come in handy later in the exercise.
 
 ![](images/4-3/03.png)

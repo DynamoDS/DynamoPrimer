@@ -8,7 +8,7 @@ Strings can be used for a wide range of applications, including defining custom 
 > The sample Nodes above are strings.  A number can be represented as a string, as can a letter, or an entire array of text.
 
 ###Querying Strings
->Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Strings.dyn](datasets/4-5/Building Blocks of Programs - Strings.dyn). A full list of example files can be found in the Appendix.
+>Download the example file that accompanies this exercise (Right click and "Save Link As..."): [Building Blocks of Programs - Strings.dyn](datasets/4-4/Building Blocks of Programs - Strings.dyn). A full list of example files can be found in the Appendix.
 
 You can parse through large amounts of data quickly by querying strings.  We'll talk about some basic operations which can speed up a workflow and help for software interoperability.
 
@@ -79,4 +79,3 @@ In this exercise, we're going to use methods of querying and manipulating string
 3. The final output has merged the last two items into one.
 
 This may seem like a lot of work to isolate the last two lines; and it's true, string operations often require some up front work.  But they are scalable, and they can be applied to large datasets with relative ease.  If you are working parametrically with spreadsheets and interoperability, be sure to keep string operations in mind.
-
