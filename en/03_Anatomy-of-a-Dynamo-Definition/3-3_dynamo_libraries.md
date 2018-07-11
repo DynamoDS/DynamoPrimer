@@ -31,8 +31,8 @@ Typically the Name of the Node in the Workspace will be rendered in the ```categ
 
 ![Node Names](images/3-3/02-NodeNames.png)
 
-> 1. ```Point.ByCoordinates``` and ```UV.ByCoordinates``` have the same Name but come from different categories
-2. Nodes from most libraries will include the category format
+> 1. Nodes from most libraries will include the category format
+2. ```Point.ByCoordinates``` and ```UV.ByCoordinates``` have the same Name but come from different categories
 3. Notable exceptions include Built-in Functions, Core.Input, Core.View, and Operators
 
 ###Frequently Used Nodes
