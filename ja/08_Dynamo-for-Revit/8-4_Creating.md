@@ -148,7 +148,7 @@ Dynamo ジオメトリを DirectShape として Revit プロジェクトに読�
 
 ![演習](images/8-4/Exercise/DS-02.jpg)
 
-> 1. *DirectShape.ByGeometry* ノードをキャンバス上にドロップすると、**geometry、category、material、name** という 4 つの入力が表示されます。
+> 1. *DirectShape.ByGeometry* ノードをキャンバス上にドロップすると、**geometry、category、material、****name** という 4 つの入力が表示されます。
 2. ジオメトリは、グラフのジオメトリ作成部分から作成されるソリッドになります。
 3. category 入力は、ドロップダウン *Categories* ノードを使用して選択されます。 ここでは、[Structural Framing]を使用します。
 4. 上記のノードの配列から material 入力が選択されます。この場合は、より単純に「既定値」として設定できます。

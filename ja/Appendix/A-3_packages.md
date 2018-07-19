@@ -8,6 +8,10 @@
 | -- | -- | -- |
 |archi-lab には、Dynamo と Revit との対話機能を大幅に拡張する 50 個超のカスタム パッケージが含まれています。archi-lab パッケージには、基本的なリスト操作用のノードから、Revit 用の高度な Analysis Visualization Framework ノードまで、さまざまなノードが含まれています。|![](http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png)|
 
+|![](images/A-4/BimorphNodes_Logo.png)|BIMORPH NODES|[BimorphNodes Dictionary を参照](https://bimorph.com/bimorph-nodes/)|
+| -- | -- | -- |
+|BimorphNodes は強力なユーティリティ ノードを集めたもので、汎用性があります。パッケージの特徴は、きわめて効率的な干渉検出とジオメトリの交差ノード、ImportInstance (CAD)の曲線変換ノード、そして、Revit API での制限を解決するリンクされた要素のコレクタにあります。利用可能なすべての範囲のノードについては、BimorphNodes Dictionary を参照してください。|![](images/A-4/Bimorph-Nodes-v2.2-Library-Catalog-header.jpg)|
+
 |![](images/A-4/logo02.png)|BUMBLEBEE FOR DYNAMO|[BumbleBee の公式サイトを参照](http://archi-lab.net/bumblebee-dynamo-and-excel-interop/)|
 | -- | -- | -- |
 |Bumblebee は、Dynamo で Excel ファイルを読み書きする際の機能を大幅に向上させる、Excel と Dynamo の相互運用性プラグインです。|![](images/A-4/screengrab02.png)|

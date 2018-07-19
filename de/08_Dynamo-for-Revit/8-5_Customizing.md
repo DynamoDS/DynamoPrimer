@@ -24,7 +24,7 @@ In Dynamo können Sie über die Positionen der Punkte von adaptiven Bauteilen ei
 
 ### Übungslektion
 
-> Laden Sie die zu dieser Übungslektion gehörigen Beispieldateien herunter (durch Rechtsklicken und Wahl der Option Save Link As). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
+> Laden Sie die zu dieser Übungslektion gehörigen Beispieldateien herunter (durch Rechtsklicken und Wahl der Option "Save Link As"). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
 > 1. [Customizing.dyn](datasets/8-5/Customizing.dyn)
 2. [ARCH-Customizing-BaseFile.rvt](datasets/8-5/ARCH-Customizing-BaseFile.rvt)

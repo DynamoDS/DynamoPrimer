@@ -8,9 +8,9 @@ Beim Entwurfsprozess müssen häufig visuelle, systemrelevante oder geometrische
 
 Algorithmen sind hocheffizient und bieten vielfältige Möglichkeiten; der Begriff **Algorithmus** kann jedoch missverstanden werden. Algorithmen generieren eventuell unerwartete, verrückte oder coole Ergebnisse, mit Zauberei haben sie jedoch nichts zu tun. Sie sind im Gegenteil an sich recht einfach. Dies wird hier an einem konkreten Beispiel erläutert: einem Origami-Kranich. Dabei beginnen Sie mit einem quadratischen Blatt Papier (Eingabe), führen eine Folge von Faltvorgängen aus (Verarbeitungsaktionen) und erhalten einen Kranich (Ausgabe).
 
-![Origami Crane](images/1-1/00-OrigamiCrane.jpg)
+![Origami-Kranich](images/1-1/00-OrigamiCrane.png)
 
-Worin besteht hier der Algorithmus? Er ist die abstrakte Folge der Schritte, die Sie auf unterschiedliche Weise darstellen können: in Textform oder grafisch.
+Worin besteht hier der Algorithmus? Er ist die abstrakte Abfolge von Schritten, die Sie auf unterschiedliche Weise darstellen können: in Textform oder grafisch.
 
 **Textanweisungen:**
 
@@ -25,12 +25,12 @@ Worin besteht hier der Algorithmus? Er ist die abstrakte Folge der Schritte, die
 9. Wiederholen Sie dies auf der anderen Seite.
 10. Falten Sie beide "Beine" des Modells nach oben, falzen Sie sie scharf und entfalten Sie sie.
 11. Falten Sie mit inneren Gegenfalten die "Beine" entlang den neuen Falzlinien.
-12. Formen Sie mit einer inneren Gegenfalte auf einer Seite den Kopf und falten Sie die Flügel nach unten
+12. Formen Sie mit einer inneren Gegenfalte auf einer Seite den Kopf und falten Sie die Flügel nach unten.
 13. Damit haben Sie einen Kranich gefaltet.
 
 **Grafische Anleitung:**
 
-![Needs Update- Origami Crane](images/1-1/01-OrigamiCraneInstructions.jpg)
+![Aktualisierung erforderlich - Origami-Kranich](images/1-1/01-OrigamiCraneInstructions.png)
 
 ### Programmierung – Definition
 
@@ -40,15 +40,15 @@ Der entscheidende Schritt und zugleich das erste Hindernis beim Programmieren be
 
 #### Visuelle Programmierung – Definition
 
-> Laden Sie die Beispieldatei für diese Übungslektion herunter (durch Rechtsklicken und Wahl von "Save Link As..."): [Visual Programming - Circle Through Point.dyn](datasets/1-1/Visual Programming - Circle Through Point.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
+> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option "Save Link As"): [Visual Programming - Circle Through Point.dyn](datasets/1-1/Visual Programming - Circle Through Point.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
 Angenommen, Sie werden aufgefordert, Anweisungen zum Falten eines Origami-Kranichs zu verfassen: Wie würden Sie vorgehen? Würden Sie Abbildungen, Text oder eine Kombination aus beiden verwenden?
 
-Wenn Sie in Ihrer Antwort Abbildungen nennen, ist die **visuelle Programmierung** definitiv für Sie geeignet. Die visuelle Programmierung folgt im Wesentlichen demselben Ablauf wie die Textprogrammierung. Beiden liegen dieselben Prinzipien der Formalisierung zugrunde. Die Anweisungen und Beziehungen des Programms werden jedoch über eine grafische ("visuelle") Benutzeroberfläche definiert. Sie geben keinen durch eine Syntax geregelten Text ein, sondern verbinden vordefinierte Blöcke miteinander. Vergleichen Sie hier die Programmierung desselben Algorithmus "Zeichne einen Kreis anhand eines Punkts" in Form von Blöcken und als Code.
+Wenn Sie in Ihrer Antwort Abbildungen nennen, ist die **visuelle Programmierung** definitiv für Sie geeignet. Die visuelle Programmierung folgt im Wesentlichen demselben Ablauf wie die Textprogrammierung. Beiden liegen dieselben Prinzipien der Formalisierung zugrunde. Die Anweisungen und Beziehungen des Programms werden jedoch über eine grafische ("visuelle") Benutzeroberfläche definiert. Sie geben keinen durch eine Syntax geregelten Text ein, sondern verbinden vordefinierte Blöcke miteinander. Vergleichen Sie hier die Programmierung desselben Algorithmus "Zeichne einen Kreis durch einen Punkt" in Form von Blöcken und als Code.
 
 **Visuelles Programm:**
 
-![Basic Visual Program ](images/1-1/03-BasicVisualProgram.jpg)
+![Einfaches visuelles Programm ](images/1-1/03-BasicVisualProgram.png)
 
 **Textprogramm:**
 
@@ -63,7 +63,7 @@ myCircle = Circle.ByCenterPointRadius(myPoint,dist);
 
 Die Ergebnisse des Algorithmus:
 
-![Circle Through Point ](images/1-1/04-CircleThroughPoint.jpg)
+![Kreis durch Punkt ](images/1-1/04-CircleThroughPoint.png)
 
-Das Visuelle an dieser Art der Programmierung erleichtert den Einstieg und Designer fühlen sich häufig davon angesprochen. Dynamo folgt dem Muster der visuellen Programmierung, Sie können jedoch, wie später gezeigt wird, nach wie vor auch die Textprogrammierung in dieser Anwendung verwenden.
+Das Visuelle an dieser Art der Programmierung erleichtert den Einstieg, und Designer fühlen sich häufig davon angesprochen. Dynamo folgt dem Muster der visuellen Programmierung. Sie können jedoch, wie später gezeigt wird, nach wie vor auch die Textprogrammierung in dieser Anwendung verwenden.
 

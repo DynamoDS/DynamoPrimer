@@ -6,18 +6,17 @@
 
 ### 親
 
-最初の行に、キーワードの「def」と関数名を続けて入力し、入力データの名前を括弧で囲んで記述します。関数の本文を定義する場合は、波括弧 {} を使用します。値を返す場合は、「return =」を指定します。関数を定義する Code Block ノードは他の Code Block ノードから呼び出されるため、入力ポートと出力ポートはありません。![親](images/7-4/21.jpg)
+最初の行に、キーワードの「def」と関数名を続けて入力し、入力データの名前を括弧で囲んで記述します。関数の本文を定義する場合は、波括弧 {} を使用します。値を返す場合は、「return =」を指定します。関数を定義する Code Block ノードは他の Code Block ノードから呼び出されるため、入力ポートと出力ポートはありません。![親](images/7-4/21.png)
 
 ```
 /*This is a multi-line comment,
 which continues for
 multiple lines*/
-
-def FunctionName(input1,input2)
+def FunctionName(in1,in2)
 {
 //This is a comment
-sum = input1+input2;
-return = sum;
+sum = in1+in2;
+return sum;
 };
 ```
 
@@ -25,7 +24,7 @@ return = sum;
 
 関数を呼び出すには、同じファイル内で別の Code Block ノードを使用して、呼び出す関数の名前と、親 Code Block ノードで定義されているものと同じ数の引数を指定します。これは、ライブラリ内に用意されているノードと同様に動作します。
 
-![子](images/7-4/20.jpg)
+![子](images/7-4/20.png)
 
 ```
 FunctionName(in1,in2);
@@ -68,7 +67,11 @@ sphereRadius=inputPt.Z;
 
 ![演習](images/7-4/Exercise/07.jpg)
 
-> 1. ```sphereByZ(Pt)``` 関数を呼び出し、*Pt* という変数を作成して、前の手順で作成した点を接続します。
+> 1. 関数を呼び出して *Pt* という変数を作成して、前の手順で作成した点を接続します。
+```
+sphereByZ(Pt)
+```
+
 2. 出力されたリストを確認すると、値がすべて NULL になっていることがわかります。なぜでしょうか。これは、この関数を定義するときに *sphereRadius* 変数は計算しましたが、この関数が何を出力として返すのかを定義しなかったためです。**** これについては、次の手順で修正します。
 
 ![演習](images/7-4/Exercise/06.jpg)
@@ -113,7 +116,7 @@ sphereRadius=inputPt.Z/radiusRatio;
 //Define Sphere Geometry
 sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
 //Define output for function
-return = sphere;
+return sphere;
 };
 ```
 
