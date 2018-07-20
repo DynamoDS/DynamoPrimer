@@ -8,6 +8,10 @@
 | -- | -- | -- |
 |archi-lab 是超過 50 種自訂套件的集合，可大幅提升 Dynamo 與 Revit 互動的能力。archi-lab 套件中包含的節點各不相同，從基本清單作業到 Revit 的進階分析可視化框架節點，不一而足。|![](http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png)|
 
+|![](images/A-4/BimorphNodes_Logo.png)|BIMORPH NODES|[造訪 BimorphNodes 字典](https://bimorph.com/bimorph-nodes/)|
+| -- | -- | -- |
+|BimorphNodes 收集各種功能強大的公用程式節點。此套件的重點功能包括非常有效率的衝突偵測和幾何圖形相交節點、ImportInstance (CAD) 曲線轉換節點，以及可解決 Revit API 局限性的連結元素收集器。若要瞭解可用的完整節點範圍，請造訪 BimorphNodes 字典。|![](images/A-4/Bimorph-Nodes-v2.2-Library-Catalog-header.jpg)|
+
 |![](images/A-4/logo02.png)|BUMBLEBEE FOR DYNAMO|[造訪官方 BumbleBee 網站](http://archi-lab.net/bumblebee-dynamo-and-excel-interop/)|
 | -- | -- | -- |
 |Bumblebee 是實現 Excel 與 Dynamo 之間互通性的外掛程式，可大幅提升 Dynamo 讀取及寫入 Excel 檔案的能力。|![](images/A-4/screengrab02.png)|

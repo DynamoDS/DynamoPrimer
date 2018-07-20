@@ -6,7 +6,7 @@ In Dynamo stellen **Blöcke** die Objekte dar, die zum Bilden eines visuellen Pr
 
 ### Anatomie von Blöcken
 
-In Dynamo setzen sich die meisten Blöcke aus fünf Teilen zusammen. Abgesehen von einigen Ausnahmen (z. B. Eingabeblöcke) kann die Anatomie eines jeden Blocks wie folgt beschrieben werden: ![Aufgliederung eines Point by Coordinates-Blocks](images/3-1/00-AnatomyOfANode.jpg)
+In Dynamo setzen sich die meisten Blöcke aus fünf Teilen zusammen. Abgesehen von einigen Ausnahmen (z. B. Eingabeblöcke) kann die Anatomie eines jeden Blocks wie folgt beschrieben werden: ![Aufgliederung eines Point by Coordinates-Blocks](images/3-1/00-AnatomyOfANode.png)
 
 > 1. Name: Der Name des Blocks gemäß Category.Name-Benennungskonvention
 2. Hauptbereich: Der Hauptkörper des Blocks. Durch Klicken mit der rechten Maustaste auf diesen Bereich werden Optionen für den gesamten Block angezeigt.
@@ -20,7 +20,7 @@ Die Eingaben und Ausgaben für Blöcke werden als Anschlüsse bezeichnet. Sie fu
 
 > Tipp: Bewegen Sie den Cursor auf einen Anschluss, um eine QuickInfo mit dem erwarteten Datentyp aufzurufen.
 
-![Anschlussbezeichnungen – Point by Coordinates](images/3-1/01-Ports.jpg)
+![Anschlussbezeichnungen – Point by Coordinates](images/3-1/01-Ports.png)
 
 > 1. Anschlussbezeichnung
 2. QuickInfo
@@ -31,7 +31,7 @@ Die Eingaben und Ausgaben für Blöcke werden als Anschlüsse bezeichnet. Sie fu
 
 Dynamo gibt einen Hinweis auf den Status der Ausführung eines visuellen Programms aus, indem Blöcke mit unterschiedlichen Farbschemata basierend auf dem Status der einzelnen Blöcke gerendert werden. Darüber hinaus werden durch Bewegen des Cursors auf den Namen bzw. die Anschlüsse oder durch Klicken mit der rechten Maustaste darauf zusätzliche Informationen und Optionen angezeigt.
 
-![Status](images/3-1/02-States2.jpg)
+![Status](images/3-1/02-States2.png)
 
 > 1. Aktiv: Blöcke, deren Namen einen dunkelgrauen Hintergrund aufweisen, sind ordnungsgemäß angeschlossen, d. h., alle Eingaben konnten erfolgreich verbunden werden.
 2. Inaktiv: Graue Blöcke sind inaktiv und müssen mit Drähten verbunden werden, um in den Programmablauf im aktiven Arbeitsbereich integriert zu werden.

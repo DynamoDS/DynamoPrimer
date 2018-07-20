@@ -4,7 +4,7 @@
 
 Revit 是資料豐富的環境。它能為我們提供許多選取功能，而不僅僅是「點選」。我們可以查詢 Revit 資料庫，並將 Revit 元素動態連結至 Dynamo 幾何圖形，同時執行參數式作業。
 
-![使用者介面](images/8-2/selectionUI.jpg)
+![使用者介面](images/8-2/selectionUI.png)
 
 > 使用者介面中的 Revit 資源庫提供「Selection」品類，藉此可採用許多方式選取幾何圖形。
 
@@ -22,7 +22,7 @@ Revit 是資料豐富的環境。它能為我們提供許多選取功能，而�
 
 以下三個影像分別展示了 Dynamo 中 Revit 元素選取的主要品類。這些是搭配使用的強大工具，我們將在後續練習中探究其中一些工具。
 
-![使用者介面](images/8-2/pointandclick.jpg)
+![使用者介面](images/8-2/pointandclick.png)
 
 > *點選*是直接選取 Revit 元素最簡單的方式。您可以選取完整的模型元素，也可以選取其拓樸的一部分 (例如一個面或一條邊)。這會與該 Revit 物件保持動態連結，因此在 Revit 檔案更新其位置或參數時，參考的 Dynamo 元素在圖表中也將更新。
 
@@ -43,7 +43,7 @@ Revit 是資料豐富的環境。它能為我們提供許多選取功能，而�
 > 1. [Selecting.dyn](datasets/8-2/Selecting.dyn)
 2. [ARCH-Selecing-BaseFile.rvt](datasets/8-2/ARCH-Selecting-BaseFile.rvt)
 
-![練習](images/8-2/Exercise/12.jpg)
+![練習](images/8-2/Exercise/12.png)
 
 > 在此範例 Revit 檔案中，包含簡單建築的三種元素類型。我們將以此為例，瞭解在 Revit 階層的環境中選取 Revit 元素：
 
@@ -51,19 +51,18 @@ Revit 是資料豐富的環境。它能為我們提供許多選取功能，而�
 2. 桁架 (自適應元件)
 3. 樑 (結構框架)
 
-![練習](images/8-2/Exercise/11.jpg)
+![練習](images/8-2/Exercise/11.png)
 
 > 根據 Revit 專案視圖中目前存在的元素，我們可以做出哪些結論？若要選取適當的元素，我們需要在階層中下移多遠？處理大型專案時，這無疑會變為更複雜的工作。提供許多選項：我們可以依品類、層級、族群、例證等選取元素。
 
-> 1. 由於我們使用基本設置，因此接下來選擇「Categories」下拉式節點中的*「Mass」*以選取建築量體。該選項位於 Revit > Selection 頁籤中。
-2. 「Mass」品類的輸出是品類自身。我們需要選取元素。為了執行此作業，我們使用*「All Elements of Category」*節點。
-3. *Watch* 節點顯示出我們已選取 BldgMass。
+> 1. 由於我們使用基本設置，因此接下來選擇「Categories」下拉式節點中的「*Mass*」以選取建築量體。該選項位於 Revit > Selection 頁籤中。
+2. 「Mass」品類的輸出是品類自身。我們需要選取元素。為了執行此作業，我們使用 *All Elements of Category*節點。
 
 此時請注意，我們在 Dynamo 中看不到任何幾何圖形。我們已選取 Revit 元素，但尚未將該元素轉換為 Dynamo 幾何圖形。這是重要的區分。若您選取大量元素，不會希望在 Dynamo 中預覽所有這些元素，因為這會拖慢所有作業的速度。Dynamo 是無需執行幾何圖形作業即可對 Revit 專案進行管理的工具，我們將在本章的下一節瞭解該功能。
 
 在此案例中，我們將使用簡單的幾何圖形，因此希望將幾何圖形引入 Dynamo 預覽。以上觀看節點中的「BldgMass」旁有綠色的數字*。這表示元素的 ID，並表明我們處理的是 Revit 元素，而不是 Dynamo 幾何圖形。下一步是將此 Revit 元素轉換為 Dynamo 中的幾何圖形。
 
-![練習](images/8-2/Exercise/10.jpg)
+![練習](images/8-2/Exercise/10.png)
 
 > 1. 我們使用 *Element.Faces* 節點，取得表示 Revit 量體每個面之曲面的清單。我們現在可以在 Dynamo 視埠中看到幾何圖形，可以開始參考用於參數式作業的面。
 

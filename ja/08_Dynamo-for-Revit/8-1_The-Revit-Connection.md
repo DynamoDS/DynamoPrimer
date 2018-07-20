@@ -2,9 +2,27 @@
 
 ## Revit との関係
 
-![関係](images/8-1/link.jpg) Dynamo を Revit に組み込んで使用すると、Revit のビルディング インフォメーション モデリング(BIM)機能を、データとロジックに基づく Dynamo の視覚的なアルゴリズム編集環境によって拡張することができます。 Dynamo の柔軟性を Revit の堅牢なデータベース機能と組み合わせることにより、BIM の新しい可能性が広がります。
+![関係](images/8-1/link.png)<br xmlns="http://www.w3.org/1999/xhtml"/>Dynamo を Revit に組み込んで使用すると、Revit のビルディング インフォメーション モデリング(BIM)機能を、データとロジックに基づく Dynamo の視覚的なアルゴリズム編集環境によって拡張することができます。Dynamo の柔軟性を Revit の堅牢なデータベース機能と組み合わせることにより、BIM の新しい可能性が広がります。
 
 この章では、Dynamo を使用した BIM ワークフローについて説明します。この章の各セクションでは、演習を行いながら BIM を確認していきます。BIM の視覚的なアルゴリズム編集機能の仕組みを理解するには、サンプルのプロジェクトで実際に操作するのが最適な方法です。ただしその前に、Dynamo の歴史を簡単に説明します。
+
+### #
+
+#### Revit のバージョンの互換性
+
+Revit と Dynamo はどちらも進化し続けているため、作業中の Revit のバージョンが、マシンにインストールされている Dynamo for Revit のバージョンと互換性がない場合があります。次の一覧は Revit と互換性のある Dynamo for Revit のバージョンの概要です。
+
+|Revit のバージョン|最も安定する Dynamo のバージョン|サポートされる最も古い Dynamo for Revit のバージョン|
+| -- | -- | -- |
+|2013|[0.6.1](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.6.1.exe)|[0.6.3](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.6.3.exe)|
+|2014|[0.6.1](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.6.1.exe)|[0.8.2](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.8.2.exe)|
+|2015|[0.7.1](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.7.1.exe)|[1.2.1](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall1.2.1.exe)|
+|2016|[0.7.2](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.7.2.exe)|[1.3.2](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall1.3.2.exe)|
+|2017|[0.9.0](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall0.9.0.exe)|[最新のプレリリース](http://dynamobuilds.com/)|
+|2018|[1.3.0](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall1.3.0.exe)|[最新のプレリリース](http://dynamobuilds.com/)|
+|2019|[1.3.3](http://dyn-builds-data.s3-us-west-2.amazonaws.com/DynamoInstall1.3.3.exe)|[最新のプレリリース](http://dynamobuilds.com/)|
+
+### #
 
 #### Dynamo の歴史
 
@@ -20,11 +38,11 @@ Dynamo は、もともと Revit の設計ワークフローを合理化するた
 
 ![関係](images/8-1/01.jpg)
 
-> 1. Revit プロジェクトのファミリ エディタで、[アドイン]タブから[*Dynamo*]をクリックします。 Dynamo は、Dynamo を起動したファイル内でのみ実行されることに注意してください。
+> 1. Revit プロジェクトやファミリ エディタで、[アドイン]タブから[*Dynamo*]をクリックします。Dynamo は、Dynamo を起動したファイル内でのみ実行されることに注意してください。
 
 ![関係](images/8-1/00.jpg)
 
-> 1. Revit で Dynamo を起動すると、Dynamo のライブラリ内に[*Revit*]という新しいカテゴリが表示されます。 この新しいカテゴリから、Revit ワークフロー専用のノードにアクセスすることができます。
+> 1. Revit で Dynamo を起動すると、Dynamo のライブラリ内に[*Revit*]という新しいカテゴリが表示されます。この新しいカテゴリから、Revit ワークフロー専用のノードにアクセスすることができます。
 
 **注: Dynamo グラフで Revit 固有のファミリを扱うノードを使用する場合、そのグラフは Revit で稼働している Dynamo から開いたときにのみ正常に動作します。 たとえば、Revit で稼働している Dynamo のグラフを Dynamo Sandbox で開くと、Revit ノードが失われます。*
 
@@ -38,7 +56,7 @@ Dynamo は、もともと建築設計者や構造設計者向けに開発され�
 
 Dynamo は、継続的に進化していくオープンソース プロジェクトであり、その開発の大部分は Revit に関係しています。ディスカッション フォーラムにアクセスし、[質問を投稿](http://dynamobim.org/forums/forum/dyn/)してみてください。 プログラマとして Dynamo プロジェクトに参加する場合は、次のリンクを参照してください: [GitHub の Dynamo ページ](https://github.com/DynamoDS/Dynamo) また、[Dynamo Package Manager](http://dynamopackages.com/) では、さまざまなサードパーティ製ライブラリが提供されています。 提供されているパッケージの多くは、建設業界のワークフローで使用することを目的として作成されています。実際に、パネル作成用のサードパーティ製パッケージを使用してみましょう。
 
-![ブログ](images/8-1/blog.jpg)
+![ブログ](images/8-1/blog.png)
 
 > Dynamo 開発チームは、[ブログ](http://dynamobim.com/blog/)を頻繁に更新しています。 最近の記事を確認し、最新の開発情報を入手してください。
 

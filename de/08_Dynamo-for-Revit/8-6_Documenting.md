@@ -14,7 +14,7 @@ In der folgenden Übung verwenden Sie einen einfachen Block für die Abweichung 
 
 ### Übungslektion
 
-> Laden Sie die zu dieser Übungslektion gehörigen Beispieldateien herunter (durch Rechtsklicken und Wahl der Option Save Link As). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
+> Laden Sie die zu dieser Übungslektion gehörigen Beispieldateien herunter (durch Rechtsklicken und Wahl der Option "Save Link As"). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
 > 1. [Documenting.dyn](datasets/8-6/Documenting.dyn)
 2. [ARCH-Documenting-BaseFile.rvt](datasets/8-6/ARCH-Documenting-BaseFile.rvt)

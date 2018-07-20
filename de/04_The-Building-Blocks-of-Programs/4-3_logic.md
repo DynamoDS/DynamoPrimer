@@ -49,14 +49,14 @@ In diesem Beispiel teilen Sie eine Liste von Zahlen in eine Liste mit geraden un
 
 In diesem Schritt wenden Sie die in der ersten Übung erstellte Logik auf einen Modellierungsvorgang an.
 
-![](images/4-3/02.jpg)
+![](images/4-3/02.png)
 
 > 1. Beginnen Sie mit den Blöcken aus der letzten Übung. Dabei bestehen jedoch einige Unterschiede:
 2. Das Format wurde geändert.
 3. Die Eingabewerte wurden geändert.
 4. Die in-Listeneingabe für *List.FilterByBoolMask* wurde entfernt. Diese Blöcke werden momentan nicht benötigt, kommen aber weiter unten in dieser Übung zum Einsatz.
 
-![](images/4-3/03.jpg)
+![](images/4-3/03.png)
 
 > Beginnen Sie, indem Sie die Blöcke wie in der Abbildung oben gezeigt miteinander verbinden. Diese Gruppe von Blöcken stellt eine parametrische Gleichung zum Definieren einer Sinuskurve dar. Einige Hinweise:
 
@@ -66,28 +66,28 @@ In diesem Schritt wenden Sie die in der ersten Übung erstellte Logik auf einen 
 
 Für die Eingaben gilt hier folgende Regel: Verwenden Sie Zahlenblöcke für statische und Schieberegler für veränderliche Eigenschaften. Der anfangs definierte ursprüngliche Zahlenbereich soll erhalten bleiben. Für die Sinuskurve, die hier erstellt werden soll, wird jedoch mehr Flexibilität benötigt. Mithilfe dieser Schieberegler können Sie die Frequenz und Amplitude der Kurve ändern.
 
-![](images/4-3/04.jpg)
+![](images/4-3/04.png)
 
 > Die Schritte dieser Definition werden hier nicht nacheinander beschrieben. Hier wird zunächst das Endergebnis gezeigt, um eine Vorstellung der fertigen Geometrie zu vermitteln. Die ersten beiden Schritte wurden separat durchgeführt und müssen jetzt zusammengeführt werden. Die Position der reißverschlussähnlichen Bauteile soll durch die zugrunde liegende Sinuskurve gesteuert werden, wobei mithilfe der True/False-Logik abwechselnd große und kleine Quader eingefügt werden.
 
-![](images/4-3/05.jpg)
+![](images/4-3/05.png)
 
 > 1. **Math.RemapRange**: Erstellen Sie aus der in Schritt 01 erstellten Zahlenfolge eine neue Zahlenfolge, indem Sie den Bereich neu zuordnen. In Schritt 01 wurden Zahlen von 0 – 100 festgelegt. Diese Zahlen liegen zwischen 0 und 1, wie mithilfe der Eingaben *newMin* und *newMax* festgelegt.
 
-![](images/4-3/06.jpg)
+![](images/4-3/06.png)
 
 > 1. **Curve.PointAtParameter**: Verbinden Sie *Polycurve.ByPoints* (aus Schritt 2) mit *curve* und *Math.RemapRange* mit *param*. Mithilfe dieses Schritts erstellen Sie Punkte entlang der Kurve. Die Zahlen mussten dem Bereich 0 bis 1 neu zugeordnet werden, da als Eingabe für *param* Werte in diesem Bereich verlangt werden. Der Wert *0* steht für den Startpunkt, der Wert *1* für die Endpunkte. Die Auswertung aller dazwischen liegenden Zahlen ergibt Werte im Bereich *[0,1]*.
 
-![](images/4-3/07.jpg)
+![](images/4-3/07.png)
 
 > 1. **List.FilterByBoolMask - ** Verbinden Sie *Curve.PointAtParameter* aus dem vorigen Schritt mit der *list*-Eingabe.
 2. **Watch**: Die Watch-Blöcke für *in* und *out* zeigen, dass zwei Listen für gerade bzw. ungerade Indizes erstellt wurden. Diese Punkte sind auf dieselbe Weise entlang der Kurve angeordnet, wie im folgenden Schritt gezeigt.
 
-![](images/4-3/08.jpg)
+![](images/4-3/08.png)
 
 > 1. **Cuboid.ByLengths**: Stellen Sie die in der Abbildung oben gezeigten Verbindungen wieder her, um eine reißverschlussähnliche Struktur entlang der Kurve zu erhalten. Sie erstellen hier einfache Quader, deren Größe jeweils durch ihren auf der Kurve liegenden Mittelpunkt definiert wird. Die Logik der Aufteilung in gerade und ungerade Werte wird damit im Modell deutlich.
 
-![](images/4-3/matrix.jpg)
+![](images/4-3/matrix.png)
 
 > 1. **Number Slider**: Wenn Sie zum Anfang dieser Definition zurückkehren, können Sie mit den Werten im Schieberegler experimentieren und beobachten, wie sich der "Reißverschluss" verändert. Die obere Reihe der Abbildungen zeigt den Wertebereich für den oberen Zahlen-Schieberegler. Er steuert die Frequenz der Welle.
 2. **Number Slider**: Die untere Reihe der Abbildungen zeigt den Wertebereich für den unteren Zahlen-Schieberegler. Er steuert die Amplitude der Welle.
