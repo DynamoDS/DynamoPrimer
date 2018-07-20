@@ -105,22 +105,28 @@
 |
 |[ARCH-Documenting-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-6/ARCH-Documenting-BaseFile.rvt)|
 
+#### Wörterbücher in Dynamo
+
+|Abschnitt|Datei herunterladen|
+| -- | -- |
+|Raum-Wörterbuch|[RoomDictionary.dyn](../09_Dictionaries/datasets/9-4_roomDictionary.dyn)|
+
 #### Benutzerdefinierte Blöcke
 
 |Abschnitt|Datei herunterladen|
 | -- | -- |
-|Erstellen eines benutzerdefinierten Blocks|[UV-CustomNode.zip](../09_Custom-Nodes/datasets/9-2/UV-CustomNode.zip)|
-|In der Bibliothek publizieren|[PointsToSurface.dyf](../09_Custom-Nodes/datasets/9-3/PointsToSurface.dyf)|
-|Python-Blöcke|[Python-CustomNode.dyn](../09_Custom-Nodes/datasets/9-4/Python-CustomNode.dyn)|
-|Python und Revit|[Revit-Doc.dyn](../09_Custom-Nodes/datasets/9-5/Revit-Doc.dyn)|
-|Python und Revit|[Revit-ReferenceCurve.dyn](../09_Custom-Nodes/datasets/9-5/Revit-ReferenceCurve.dyn)|
-|Python und Revit|[Revit-StructuralFraming.zip](../09_Custom-Nodes/datasets/9-5/Revit-StructuralFraming.zip)|
+|Erstellen eines benutzerdefinierten Blocks|[UV-CustomNode.zip](../10_Custom-Nodes/datasets/10-2/UV-CustomNode.zip)|
+|In der Bibliothek publizieren|[PointsToSurface.dyf](../10_Custom-Nodes/datasets/10-3/PointsToSurface.dyf)|
+|Python-Blöcke|[Python-CustomNode.dyn](../10_Custom-Nodes/datasets/10-4/Python-CustomNode.dyn)|
+|Python und Revit|[Revit-Doc.dyn](../10_Custom-Nodes/datasets/10-5/Revit-Doc.dyn)|
+|Python und Revit|[Revit-ReferenceCurve.dyn](../10_Custom-Nodes/datasets/10-5/Revit-ReferenceCurve.dyn)|
+|Python und Revit|[Revit-StructuralFraming.zip](../10_Custom-Nodes/datasets/10-5/Revit-StructuralFraming.zip)|
 
 #### Pakete
 
 |Abschnitt|Datei herunterladen|
 | -- | -- |
-|Fallstudie zu Paketen: Mesh Toolkit|[MeshToolkit.zip](../10_Packages/datasets/10-2/MeshToolkit.zip)|
-|Publizieren eines Pakets|[MapToSurface.zip](../10_Packages/datasets/10-4/MapToSurface.zip)|
-|Zero-Touch-Import|[ZeroTouchImages.zip](../10_Packages/datasets/10-5/ZeroTouchImages.zip)|
+|Fallstudie zu Paketen: Mesh Toolkit|[MeshToolkit.zip](../11_Packages/datasets/11-2/MeshToolkit.zip)|
+|Publizieren eines Pakets|[MapToSurface.zip](../11_Packages/datasets/11-4/MapToSurface.zip)|
+|Zero-Touch-Import|[ZeroTouchImages.zip](../11_Packages/datasets/11-5/ZeroTouchImages.zip)|
 

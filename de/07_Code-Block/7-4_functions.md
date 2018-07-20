@@ -6,18 +6,17 @@ Funktionen können in einem Codeblock erstellt und an anderer Stelle in einer Dy
 
 ### Übergeordneter Block
 
-Die erste Zeile besteht aus dem Schlüsselwort "def" und dem Namen der Funktion mit den Namen der Eingaben in Klammern. Der Hauptteil der Funktion wird in geschweiften Klammern angegeben. Verwenden Sie zum Ausgeben eines Werts "return =". In Codeblöcken, die eine Funktion definieren, sind keine Eingabe- oder Ausgabeverbindungen vorhanden, da sie über andere Codeblöcke aufgerufen werden. ![Parents](images/7-4/21.jpg)
+Die erste Zeile besteht aus dem Schlüsselwort "def" und dem Namen der Funktion mit den Namen der Eingaben in Klammern. Der Hauptteil der Funktion wird in geschweiften Klammern angegeben. Verwenden Sie zum Ausgeben eines Werts "return =". In Codeblöcken, die eine Funktion definieren, sind keine Eingabe- oder Ausgabeverbindungen vorhanden, da sie über andere Codeblöcke aufgerufen werden. ![Parents](images/7-4/21.png)
 
 ```
 /*This is a multi-line comment,
 which continues for
 multiple lines*/
-
-def FunctionName(input1,input2)
+def FunctionName(in1,in2)
 {
 //This is a comment
-sum = input1+input2;
-return = sum;
+sum = in1+in2;
+return sum;
 };
 ```
 
@@ -25,7 +24,7 @@ return = sum;
 
 Sie können die Funktion in einem anderen Codeblock in derselben Datei aufrufen, indem Sie ihren Namen und dieselbe Anzahl von Argumenten angeben. Dies funktioniert auf dieselbe Weise wie die vordefinierten Blöcke aus der Bibliothek.
 
-![Children](images/7-4/20.jpg)
+![Children](images/7-4/20.png)
 
 ```
 FunctionName(in1,in2);
@@ -33,7 +32,7 @@ FunctionName(in1,in2);
 
 ### Übungslektion
 
-> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As). Eine vollständige Liste der Beispieldateien finden Sie im Anhang. [Functions_SphereByZ.dyn](datasets/7-4/Functions_SphereByZ.dyn)
+> Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option "Save Link As..."). Eine vollständige Liste der Beispieldateien finden Sie im Anhang. [Functions_SphereByZ.dyn](datasets/7-4/Functions_SphereByZ.dyn)
 
 In dieser Übung erstellen Sie eine allgemeine Definition zum Erstellen von Kugeln aus einer eingegebenen Liste von Punkten. Der Radius dieser Kugeln wird durch die z-Eigenschaft des jeweiligen Punkts gesteuert.
 
@@ -68,7 +67,11 @@ sphereRadius=inputPt.Z;
 
 ![Exercise](images/7-4/Exercise/07.jpg)
 
-> 1. Als Nächstes erstellen Sie eine Variable mit dem Namen *Pt*, um die Verbindung zu den Punkten herzustellen, die Sie in den vorherigen Schritten erstellt haben: ```sphereByZ(Pt)```.
+> 1. Als Nächstes erstellen Sie eine Variable mit dem Namen *Pt*, um die Verbindung zu den Punkten herzustellen, die Sie in den vorherigen Schritten erstellt haben:
+```
+sphereByZ(Pt)
+```
+
 2. Die Ausgabe zeigt lediglich Nullwerte. Dies geschieht aus dem folgenden Grund: Beim Definieren der Funktion wurde festgelegt, dass die Variable *sphereRadius* berechnet werden soll, Sie haben jedoch noch nicht definiert, was die Funktion als *Ausgabe* *zurückgeben* soll. Dies beheben Sie im nächsten Schritt.
 
 ![Exercise](images/7-4/Exercise/06.jpg)
@@ -113,7 +116,7 @@ sphereRadius=inputPt.Z/radiusRatio;
 //Define Sphere Geometry
 sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
 //Define output for function
-return = sphere;
+return sphere;
 };
 ```
 

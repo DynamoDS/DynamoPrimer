@@ -30,7 +30,7 @@ In Dynamo werden ab Version 0.8 grundsätzlich keine Einheiten verwendet. Dadurc
 
 ### Übungslektion
 
-> Laden Sie die zu dieser Übungslektion gehörigen Beispieldateien herunter (durch Rechtsklicken und Wahl der Option Save Link As). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
+> Laden Sie die zu dieser Übungslektion gehörigen Beispieldateien herunter (durch Rechtsklicken und Wahl der Option "Save Link As"). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
 > 1. [Editing.dyn](datasets/8-3/Editing.dyn)
 2. [ARCH-Editing-BaseFile.rvt](datasets/8-3/ARCH-Editing-BaseFile.rvt)

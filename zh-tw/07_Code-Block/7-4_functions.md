@@ -6,18 +6,17 @@
 
 ### 父系
 
-第一行包含關鍵字「def」，然後依次是函數名稱與輸入的名稱 (在括號中)。大括號定義函數的本體。使用「return =」傳回值。定義函數的程式碼塊沒有輸入或輸出連接埠，因為會從其他程式碼塊呼叫這些程式碼塊。![父系](images/7-4/21.jpg)
+第一行包含關鍵字「def」，然後依次是函數名稱與輸入的名稱 (在括號中)。大括號定義函數的本體。使用「return =」傳回值。定義函數的程式碼塊沒有輸入或輸出連接埠，因為會從其他程式碼塊呼叫這些程式碼塊。![父系](images/7-4/21.png)
 
 ```
 /*This is a multi-line comment,
 which continues for
 multiple lines*/
-
-def FunctionName(input1,input2)
+def FunctionName(in1,in2)
 {
 //This is a comment
-sum = input1+input2;
-return = sum;
+sum = in1+in2;
+return sum;
 };
 ```
 
@@ -25,7 +24,7 @@ return = sum;
 
 使用同一檔案中的其他程式碼塊，只需提供名稱與相同數量的引數即可呼叫函數。其工作方式類似於資源庫中的現成節點。
 
-![子系](images/7-4/20.jpg)
+![子系](images/7-4/20.png)
 
 ```
 FunctionName(in1,in2);
@@ -68,7 +67,11 @@ sphereRadius=inputPt.Z;
 
 ![練習](images/7-4/Exercise/07.jpg)
 
-> 1. 現在，我們呼叫函數，並建立稱為 *Pt* 的變數以插入先前步驟中建立的點：```sphereByZ(Pt)```
+> 1. 現在，我們呼叫函數，並建立稱為 *Pt* 的變數以插入先前步驟中建立的點：
+```
+sphereByZ(Pt)
+```
+
 2. 我們注意到輸出是所有空值。為何會發生這種情況？定義函數時，我們會計算 *sphereRadius* 變數，但沒有定義函數應*傳回*哪些項目做為*輸出*。我們可以在下一步中修正此問題。
 
 ![練習](images/7-4/Exercise/06.jpg)
@@ -113,7 +116,7 @@ sphereRadius=inputPt.Z/radiusRatio;
 //Define Sphere Geometry
 sphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);
 //Define output for function
-return = sphere;
+return sphere;
 };
 ```
 

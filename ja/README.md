@@ -2,7 +2,9 @@
 
 # Dynamo Primer
 
-## Dynamo v1.3
+## Dynamo v2.0
+
+Dynamo v1.3 Primer の手引きは[こちら](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf)からダウンロードできます。
 
 ![Dynamo ロゴ](images/dynamo_logo_dark-trim.jpg)
 
@@ -50,27 +52,31 @@ Dynamo Primer は、オープン ソース プロジェクトです。高品質�
 
 Dynamo Primer は、オートデスクの Matt Jezyk 氏と Dynamo 開発チームによって開始されたオープン ソース プロジェクトです。
 
-Dynamo Primer の初版は、**Mode Lab** によって作成されました。 開発チームは、今後もオートデスクと協力しながら、Dynamo の開発と平行してこの手引を更新していく予定です。
+Dynamo Primer の初版は、**Mode Lab** によって作成されました。 このような貴重なリソースの確立に取り組んでいただいたすべての方に感謝いたします。
 
-[![](images/MODELAB_Logo.jpg)](http://modelab.is)
+[![](images/MODELAB_Logo.png)](http://modelab.is)
+
+この手引きは、Dynamo 2.0 の改訂を反映するため、**Parallax Team の John Pierson 氏**によって更新されました。
+
+[![](images/PRLX_Logo.jpg)](http://modelab.is)
 
 ### 謝辞
 
 Dynamo プロジェクトの創立と指揮に携わった Ian Keough 氏に、深く感謝いたします。
 
-さまざまな Dynamo プロジェクトで積極的に協力していただいた Matt Jezyk 氏、Ian Keough 氏、Zach Kron 氏、Colin McCrone 氏にも感謝を申し上げます。
+さまざまな Dynamo プロジェクトで積極的に協力していただいた Matt Jezyk 氏、Ian Keough 氏、Zach Kron 氏、Racel Williams 氏、Colin McCrone 氏にも感謝を申し上げます。
 
 ### ソフトウェアとリソース
 
-**Dynamo**: 現在の公式リリースのバージョンは 1.3 です。
+**Dynamo**: 現在の公式リリースのバージョンは 2.0 です。
 
-[http://dynamobim.com/download/](http://dynamobim.com/download/) (英語)
+[http://dynamobim.com/download/](http://dynamobim.com/download/)、または [http://dynamobuilds.com](http://dynamobuilds.com) (英語)
 
 **DynamoBIM**: 追加情報、ラーニング コンテンツ、フォーラムについては、DynamoBIM の Web サイトを参照してください。
 
 [http://dynamobim.org](http://dynamobim.org) (英語)
 
-**Dynamo GitHub**: Dynamo は、GitHub 上で開発されたオープン ソース プロジェクトです。 DynamoDS を確認して、開発プロジェクトに参加してください。
+**Dynamo GitHub**: Dynamo は、GitHub 上で開発されたオープン ソース プロジェクトです。DynamoDS を確認して、開発プロジェクトに参加してください。
 
 [https://github.com/DynamoDS/Dynamo](https://github.com/DynamoDS/Dynamo) (英語)
 
@@ -80,7 +86,7 @@ Dynamo@autodesk.com
 
 ### License
 
-Copyright 2017 Autodesk
+Copyright 2018 Autodesk
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.You may obtain a copy of the License at
 
