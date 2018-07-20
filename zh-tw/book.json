@@ -53,15 +53,9 @@
 				 }
 			],
 			"currentLanguage":{
-<<<<<<< HEAD
 				 "code":"zh-tw",
 				 "url":"http://staging.dynamoprimer.com/zh-tw",
 				 "switchLangLabel":"語言"
-=======
-				 "code":"en",
-				 "url":"http://primer.dynamobim.org/en",
-				 "switchLangLabel":"Languages"
->>>>>>> master
 			},
 			"favicon":"/images/icons/favicon.ico"
 		}
