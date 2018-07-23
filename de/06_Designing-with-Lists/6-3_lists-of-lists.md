@@ -98,16 +98,16 @@ Ziehen Sie als kurze Einführung den List.Count-Block aus dem vorigen Abschnitt 
 
 > 1. Fügen Sie zwei Zeilen Code in den *Codeblock* ein:
 
-```
--50..50..#Nx;
--50..50..#Ny;
-```
-
-Nach der Eingabe dieses Codes werden im Codeblock zwei Eingaben für Nx und Ny erstellt.
-
-2. Definieren Sie mit zwei *Integer Slidern* die Werte für *Nx* und *Ny*, indem Sie die Schieberegler mit dem *Codeblock* verbinden.
-3. Verbinden Sie jede Zeile des Codeblocks mit der entsprechenden *X*- bzw. *Y*-Eingabe eines *Point.ByCoordinates*-Blocks. Klicken Sie mit der rechten Maustaste auf den Block und wählen Sie zuerst Vergitterung und dann *"Kreuzprodukt"*. Dadurch wird ein Raster aus Punkten erstellt. Da der Bereich zwischen -50 und 50 definiert wurde, umfasst er das vorgabemäßige Raster von Dynamo.
-4. In einem *Watch*-Block werden die erstellten Punkte angezeigt. Beachten Sie die Datenstruktur. Es wurde eine Liste von Listen erstellt. Jede Liste entspricht einer Reihe von Punkten im Raster.
+> ```
+> -50..50..#Nx;
+> -50..50..#Ny;
+> ```
+> 
+> Nach der Eingabe dieses Codes werden im Codeblock zwei Eingaben für Nx und Ny erstellt.
+> 
+> 2. Definieren Sie mit zwei *Integer Slidern* die Werte für *Nx* und *Ny*, indem Sie die Schieberegler mit dem *Codeblock* verbinden.
+> 3. Verbinden Sie jede Zeile des Codeblocks mit der entsprechenden *X*- bzw. *Y*-Eingabe eines *Point.ByCoordinates*-Blocks. Klicken Sie mit der rechten Maustaste auf den Block und > wählen Sie zuerst Vergitterung und dann *"Kreuzprodukt"*. Dadurch wird ein Raster aus Punkten erstellt. Da der Bereich zwischen -50 und 50 definiert wurde, umfasst er das vorgabemäßige Raster von Dynamo.
+> 4. In einem *Watch*-Block werden die erstellten Punkte angezeigt. Beachten Sie die Datenstruktur. Es wurde eine Liste von Listen erstellt. Jede Liste entspricht einer Reihe von Punkten im Raster.
 
 ![Übung](images/6-3/Exercise/A/04.jpg)
 
@@ -143,15 +143,15 @@ In dieser Übung wird eine ähnliche Logik verwendet wie für List.Map, wobei al
 ![Übung](images/6-3/Exercise/Combine-32.jpg)
 
 > 1. Unter dem Diagramm für die Linienerstellung sollen mithilfe eines _code block _ vier separate Bereiche zum Unterteilen der einzelnen Linien erstellt werden. Verwenden Sie dazu die folgenden Codezeilen:
-```
-0..1..#3;
-0..1..#4;
-0..1..#5;
-0..1..#6;
-```
-
-2. Mithilfe eines *List.Create*-Blocks werden die vier Zeilen aus dem *Codeblock* in ein und derselben Liste zusammengefasst.
-3. Der *Watch*-Block zeigt eine Liste von Listen.
+> ```
+> 0..1..#3;
+> 0..1..#4;
+> 0..1..#5;
+> 0..1..#6;
+> ```
+>
+> 2. Mithilfe eines *List.Create*-Blocks werden die vier Zeilen aus dem *Codeblock* in ein und derselben Liste zusammengefasst.
+> 3. Der *Watch*-Block zeigt eine Liste von Listen.
 
 ![Übung](images/6-3/Exercise/Combine-31.jpg)
 
@@ -260,14 +260,14 @@ In dieser Übungslektion wird ein Teil der in der vorigen Lektion erstellten Log
 ![Übung](images/6-3/Exercise/B/06.jpg)
 
 > 1. Beginnen Sie mit der oben gezeigten Folge von Blöcken. Dadurch wird eine einfache, das vorgegebene Dynamo-Raster umfassende Oberfläche erstellt.
-2. Fügen Sie mithilfe eines *Codeblock* diese beiden Codezeilen ein und verbinden Sie sie mit den *u*- und *v*-Eingaben von *Surface.PointAtParameter*.
-```
--50..50..#3;
--50..50..#5;
-```
-
-3. Achten Sie darauf, als Vergitterung von *Surface.PointAtParameter* die Option *Kreuzprodukt* zu wählen.
-4. Im *Watch*-Block wird eine Liste aus drei Listen mit je fünf Elementen angezeigt.
+> 2. Fügen Sie mithilfe eines *Codeblock* diese beiden Codezeilen ein und verbinden Sie sie mit den *u*- und *v*-Eingaben von *Surface.PointAtParameter*.
+> ```
+> -50..50..#3;
+> -50..50..#5;
+> ```
+> 
+> 3. Achten Sie darauf, als Vergitterung von *Surface.PointAtParameter* die Option *Kreuzprodukt* zu wählen.
+> 4. Im *Watch*-Block wird eine Liste aus drei Listen mit je fünf Elementen angezeigt.
 
 ![Übung](images/6-3/Exercise/B/05.jpg)
 
