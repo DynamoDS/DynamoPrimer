@@ -90,5 +90,5 @@ Das Organisieren Ihres Dynamo-Ansichtsbereichs wird zunehmend wichtig, je komple
 #### Nach der Blockbereinigung
 
 ![Beispiel für Layoutbereinigung](images/2-3/07-CleanupNodeLayout.png)
-3. Die Blöcke werden automatisch neu verteilt und ausgerichtet, indem gestapelte oder überlappende Blöcke bereinigt und mit benachbarten Blöcken ausgerichtet werden.
+> 1. Die Blöcke werden automatisch neu verteilt und ausgerichtet, indem gestapelte oder überlappende Blöcke bereinigt und mit benachbarten Blöcken ausgerichtet werden.
 
