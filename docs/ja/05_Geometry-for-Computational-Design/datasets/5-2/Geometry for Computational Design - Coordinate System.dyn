@@ -1,0 +1,34 @@
+<Workspace Version="0.8.2.1770" X="-33.0993000502417" Y="-371.084851688036" zoom="1.1575" Name="Home" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Nodes.DSFunction guid="ba8bdb02-095c-414f-bcef-5fff6becadb0" type="Dynamo.Nodes.DSFunction" nickname="Point.ByCoordinates" x="415.387084276667" y="533.563586771521" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <DSCoreNodesUI.Input.DoubleSlider guid="48b49f2b-cf71-40d5-8656-909f925258a9" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Number Slider" x="68.8870842766668" y="484.563586771521" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double>0.6</System.Double>
+      <Range min="-1" max="1" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="4b21b9b7-6405-450d-8aa5-8844705e6106" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Number Slider" x="68.8870842766668" y="559.563586771521" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double>-0.2</System.Double>
+      <Range min="-1" max="1" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="73492e23-4d6c-4f4f-b763-e0639aba6968" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Number Slider" x="68.8870842766668" y="630.563586771521" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Double>0.9</System.Double>
+      <Range min="-1" max="1" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <Dynamo.Nodes.DSFunction guid="b28382e5-f366-411f-817c-36e0a80bdcee" type="Dynamo.Nodes.DSFunction" nickname="CoordinateSystem.ByOrigin" x="592.387084276667" y="534.563586771521" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.CoordinateSystem.ByOrigin@Autodesk.DesignScript.Geometry.Point">
+      <PortInfo index="0" default="True" />
+    </Dynamo.Nodes.DSFunction>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="ba8bdb02-095c-414f-bcef-5fff6becadb0" start_index="0" end="b28382e5-f366-411f-817c-36e0a80bdcee" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="48b49f2b-cf71-40d5-8656-909f925258a9" start_index="0" end="ba8bdb02-095c-414f-bcef-5fff6becadb0" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4b21b9b7-6405-450d-8aa5-8844705e6106" start_index="0" end="ba8bdb02-095c-414f-bcef-5fff6becadb0" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="73492e23-4d6c-4f4f-b763-e0639aba6968" start_index="0" end="ba8bdb02-095c-414f-bcef-5fff6becadb0" end_index="2" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+</Workspace>
