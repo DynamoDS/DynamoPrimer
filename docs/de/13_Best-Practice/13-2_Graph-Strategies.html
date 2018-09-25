@@ -1,0 +1,1652 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Vorgehensweisen für Diagramme | Dynamo Primer</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../13_Best-Practice/13-1_Scripting-Strategies.html" />
+    
+    
+    <link rel="prev" href="../13_Best-Practice/13-1_Introduction.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="13.1"
+        data-chapter-title="Vorgehensweisen für Diagramme"
+        data-filepath="13_Best-Practice/13-2_Graph-Strategies.md"
+        data-basepath=".."
+        data-revision="Sun Sep 16 2018 20:23:29 GMT-0400 (Eastern Daylight Time)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Info
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_Introduction/1_introduction.html">
+            
+                
+                    <a href="../01_Introduction/1_introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Einführung
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_Introduction/1-1_what_is_visual_programming.html">
+            
+                
+                    <a href="../01_Introduction/1-1_what_is_visual_programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Was ist visuelle Programmierung?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_Introduction/1-2_what_is_dynamo.html">
+            
+                
+                    <a href="../01_Introduction/1-2_what_is_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Was ist Dynamo?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_Introduction/1-3_dynamo_in_action.html">
+            
+                
+                    <a href="../01_Introduction/1-3_dynamo_in_action.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Dynamo in Aktion
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_Hello-Dynamo/2_hello_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2_hello_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Dynamo!
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_Hello-Dynamo/2-1_launching_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-1_launching_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Dynamo installieren und starten
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Die Benutzeroberfläche von Dynamo
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_Hello-Dynamo/2-3_the_workspace.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-3_the_workspace.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Der Arbeitsbereich
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        ERSTE SCHRITTE
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Die Anatomie visueller Programme
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_Anatomy-of-a-Dynamo-Definition/3-2_wiring_programs.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-2_wiring_programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Drähte
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_Anatomy-of-a-Dynamo-Definition/3-3_dynamo_libraries.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-3_dynamo_libraries.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Dynamo-Bibliothek
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Programme verwalten
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Grundbausteine von Programmen
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_The-Building-Blocks-of-Programs/4-1_data.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-1_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Daten
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_The-Building-Blocks-of-Programs/4-2_math.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-2_math.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Math
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04_The-Building-Blocks-of-Programs/4-3_logic.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-3_logic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Logik
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_The-Building-Blocks-of-Programs/4-4_strings.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-4_strings.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Zeichenfolgen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_The-Building-Blocks-of-Programs/4-5_color.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-5_color.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        Farbe
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Geometrie für Computational Design
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Geometrie – Überblick
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_Geometry-for-Computational-Design/5-2_vectors.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-2_vectors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Vektoren, Ebenen und Koordinatensysteme
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_Geometry-for-Computational-Design/5-3_points.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-3_points.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Punkte
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_Geometry-for-Computational-Design/5-4_curves.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-4_curves.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Kurven
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_Geometry-for-Computational-Design/5-5_surfaces.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-5_surfaces.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Oberflächen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_Geometry-for-Computational-Design/5-6_solids.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-6_solids.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        Volumenkörper
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_Geometry-for-Computational-Design/5-7_meshes.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-7_meshes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        Netze
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_Geometry-for-Computational-Design/5-8_importing.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-8_importing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        Importieren von Geometrie
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_Designing-with-Lists/6_designing-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6_designing-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Entwerfen mit Listen
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_Designing-with-Lists/6-1_whats-a-list.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-1_whats-a-list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Was ist eine Liste?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06_Designing-with-Lists/6-2_working-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-2_working-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Arbeiten mit Listen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_Designing-with-Lists/6-3_lists-of-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-3_lists-of-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Listen von Listen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        n-dimensionale Listen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+            
+                
+                    <a href="../07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Codeblöcke und DesignScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_Code-Block/7-1_what-is-a-code-block.html">
+            
+                
+                    <a href="../07_Code-Block/7-1_what-is-a-code-block.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Was ist ein Codeblock?
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_Code-Block/7-2_Design-Script-syntax.html">
+            
+                
+                    <a href="../07_Code-Block/7-2_Design-Script-syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        DesignScript-Syntax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_Code-Block/7-3_shorthand.html">
+            
+                
+                    <a href="../07_Code-Block/7-3_shorthand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Kurzschreibweisen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_Code-Block/7-4_functions.html">
+            
+                
+                    <a href="../07_Code-Block/7-4_functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        Codeblock-Funktionen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Dynamo for Revit
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Verbindung zu Revit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="08_Dynamo-for-Revit/8-2_Selecting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-2_Selecting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        Auswählen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="08_Dynamo-for-Revit/8-3_Editing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-3_Editing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        Bearbeiten
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="08_Dynamo-for-Revit/8-4_Creating.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-4_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        Erstellen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="08_Dynamo-for-Revit/8-5_Customizing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-5_Customizing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        Anpassen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="08_Dynamo-for-Revit/8-6_Documenting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-6_Documenting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        Dokumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="09_Dictionaries/9_Dictionaries-In-Dynamo.html">
+            
+                
+                    <a href="../09_Dictionaries/9_Dictionaries-In-Dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Wörterbücher in Dynamo
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="09_Dictionaries/9-1_What-is-a-dictionary.html">
+            
+                
+                    <a href="../09_Dictionaries/9-1_What-is-a-dictionary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        Wörterbücher
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="09_Dictionaries/9-2_Node-uses.html">
+            
+                
+                    <a href="../09_Dictionaries/9-2_Node-uses.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        Wörterbuch-Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="09_Dictionaries/9-3_Code-Block-Uses.html">
+            
+                
+                    <a href="../09_Dictionaries/9-3_Code-Block-Uses.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        Wörterbücher in Codeblöcken
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="09_Dictionaries/9-4_Dictionary-Use-Cases.html">
+            
+                
+                    <a href="../09_Dictionaries/9-4_Dictionary-Use-Cases.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Wörterbücher – Revit-Anwendungsfälle
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="10_Custom-Nodes/10_Custom-Nodes.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10_Custom-Nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Benutzerdefinierte Blöcke
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="10_Custom-Nodes/10-1_Introduction.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        Benutzerdefinierte Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="10_Custom-Nodes/10-2_Creating.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-2_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        Benutzerdefinierte Blöcke erstellen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="10_Custom-Nodes/10-3_Library.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-3_Library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        Hinzufügen zu Ihrer Bibliothek
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="10_Custom-Nodes/10-4_Python.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-4_Python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        Python
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="10_Custom-Nodes/10-5_Python-Revit.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-5_Python-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Python und Revit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="10_Custom-Nodes/10-6_Python-Templates.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-6_Python-Templates.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        Python-Vorlagen
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="11_Packages/11-Packages.html">
+            
+                
+                    <a href="../11_Packages/11-Packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Pakete
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="11_Packages/11-1_Introduction.html">
+            
+                
+                    <a href="../11_Packages/11-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        Pakete
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="11_Packages/11-2_Mesh-Toolkit.html">
+            
+                
+                    <a href="../11_Packages/11-2_Mesh-Toolkit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        Fallstudie zu Paketen: Mesh Toolkit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="11_Packages/11-3_Developing.html">
+            
+                
+                    <a href="../11_Packages/11-3_Developing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        Entwickeln von Paketen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="11_Packages/11-4_Publishing.html">
+            
+                
+                    <a href="../11_Packages/11-4_Publishing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        Veröffentlichen von Paketen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="11_Packages/11-5_Zero-Touch.html">
+            
+                
+                    <a href="../11_Packages/11-5_Zero-Touch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
+                        
+                        Was ist Zero-Touch?
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="12_Web_Experience/12-1_Introduction.html">
+            
+                
+                    <a href="../12_Web_Experience/12-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Dynamo im Internet
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="12_Web_Experience/12-2_Send_to_Web.html">
+            
+                
+                    <a href="../12_Web_Experience/12-2_Send_to_Web.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                        Ins Internet senden (mit Dynamo Studio)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="12_Web_Experience/12-3_Customizer_View.html">
+            
+                
+                    <a href="../12_Web_Experience/12-3_Customizer_View.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                        Customizer-Ansicht
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="13_Best-Practice/13-1_Introduction.html">
+            
+                
+                    <a href="../13_Best-Practice/13-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        Optimale Verfahren
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="13.1" data-path="13_Best-Practice/13-2_Graph-Strategies.html">
+            
+                
+                    <a href="../13_Best-Practice/13-2_Graph-Strategies.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.1.</b>
+                        
+                        Vorgehensweisen für Diagramme
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" data-path="13_Best-Practice/13-1_Scripting-Strategies.html">
+            
+                
+                    <a href="../13_Best-Practice/13-1_Scripting-Strategies.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.2.</b>
+                        
+                        Vorgehensweisen zur Skripterstellung
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.3" data-path="13_Best-Practice/13-3_Scripting-Reference.html">
+            
+                
+                    <a href="../13_Best-Practice/13-3_Scripting-Reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.3.</b>
+                        
+                        Referenz für die Skripterstellung
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="Appendix/A_appendix.html">
+            
+                
+                    <a href="../Appendix/A_appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        Anhang
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="14.1" data-path="Appendix/A-1_resources.html">
+            
+                
+                    <a href="../Appendix/A-1_resources.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.1.</b>
+                        
+                        Ressourcen
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="Appendix/A-2_index-of-nodes.html">
+            
+                
+                    <a href="../Appendix/A-2_index-of-nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.2.</b>
+                        
+                        Index: Blöcke
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="Appendix/A-3_packages.html">
+            
+                
+                    <a href="../Appendix/A-3_packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.3.</b>
+                        
+                        Dynamo-Pakete
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.4" data-path="Appendix/A-4_example-files.html">
+            
+                
+                    <a href="../Appendix/A-4_example-files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.4.</b>
+                        
+                        Dynamo-Beispieldateien
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Dynamo Primer</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="vorgehensweisen-f&#xFC;r-diagramme">Vorgehensweisen f&#xFC;r Diagramme</h2>
+<p>In den vorangegangenen Kapiteln dieses Handbuchs wurde bereits behandelt, wie Sie die leistungsstarken Funktionen zur visuellen Programmierung in Dynamo einsetzen k&#xF6;nnen. Ein gutes Verst&#xE4;ndnis dieser Funktionen ist eine solide Grundlage und der erste Schritt bei der Erstellung zuverl&#xE4;ssiger visueller Programme. Bei der Verwendung visueller Programme in der Praxis, der Weitergabe an Kollegen, der Behebung von Fehlern oder beim Testen von Grenzen m&#xFC;ssen zus&#xE4;tzliche Aspekte ber&#xFC;cksichtigt werden. Wenn andere Benutzer mit Ihrem Programm arbeiten sollen oder Sie damit rechnen, es z. B. sechs Monate sp&#xE4;ter erneut zu &#xF6;ffnen, m&#xFC;ssen seine Grafik und seine Logik unmittelbar verst&#xE4;ndlich sein. Dynamo stellt zahlreiche Werkzeuge zur Verf&#xFC;gung, die Ihnen helfen, die Komplexit&#xE4;t Ihres Programms zu bew&#xE4;ltigen. In diesem Kapitel finden Sie Richtlinien zu ihren Verwendungszwecken.</p>
+<p><img src="images/13-2/cad-chart-visual.jpg" alt="groups"></p>
+<h3 id="komplexit&#xE4;t-reduzieren">Komplexit&#xE4;t reduzieren</h3>
+<p>W&#xE4;hrend Sie Ihr Dynamo-Diagramm entwickeln und Ihre Ideen testen, kann es rasch an beachtlicher Gr&#xF6;&#xDF;e und Komplexit&#xE4;t zunehmen. Ein funktionsf&#xE4;higes Programm zu erstellen, ist entscheidend, es ist jedoch auch wichtig, dies auf m&#xF6;glichst einfachem Weg zu erreichen. Das Diagramm l&#xE4;sst sich so nicht nur schneller und besser vorhersehbar ausf&#xFC;hren, sondern seine Logik ist dadurch f&#xFC;r Sie und andere Benutzer problemlos verst&#xE4;ndlich. Im Folgenden werden einige Methoden beschrieben, mit denen Sie die Logik Ihres Diagramms verdeutlichen k&#xF6;nnen.</p>
+<h4 id="modularisieren-mit-gruppen">Modularisieren mit Gruppen</h4>
+<ul>
+<li>Gruppen erm&#xF6;glichen es, bei der Entwicklung eines Programms <strong>separate Teile mit unterschiedlichen Funktionen</strong> zu erstellen.</li>
+<li>Mithilfe von Gruppen k&#xF6;nnen Sie dar&#xFC;ber hinaus <strong>gro&#xDF;e Teile des Programms verschieben</strong>, wobei die Modularit&#xE4;t und Ausrichtung erhalten bleiben.</li>
+<li>Sie k&#xF6;nnen die <strong>Farbe einer Gruppe zur Differenzierung</strong> ihres Verwendungszwecks (Eingaben oder Funktionen) &#xE4;ndern.</li>
+<li>Gruppen k&#xF6;nnen als Ausgangspunkt beim <strong>Organisieren des Diagramms zur Vereinfachung der Erstellung benutzerdefinierter Bl&#xF6;cke</strong> verwendet werden.</li>
+</ul>
+<p><img src="images/13-2/groups.png" alt="groups"></p>
+<blockquote>
+<p>Die Farben in diesem Programm kennzeichnen den Verwendungszweck der einzelnen Gruppen. Mithilfe dieses Verfahrens k&#xF6;nnen Sie eine Hierarchie in den von Ihnen entwickelten Grafikstandards oder -vorlagen erstellen.</p>
+<ol>
+<li>Funktionsgruppe (blau)</li>
+<li>Eingabengruppe (orange)</li>
+<li>Skriptgruppe (gr&#xFC;n)
+Informationen zur Verwendung von Gruppen finden Sie unter <a href="http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html" target="_blank">Verwalten Ihres Programms</a>.</li>
+</ol>
+</blockquote>
+<h4 id="effizientere-entwicklung-mit-codebl&#xF6;cken">Effizientere Entwicklung mit Codebl&#xF6;cken</h4>
+<ul>
+<li><p>In manchen F&#xE4;llen k&#xF6;nnen Sie in einem Codeblock <strong>eine Methode f&#xFC;r eine Zahl oder einen Block schneller eingeben, als Sie nach ihr suchen k&#xF6;nnten</strong> (Point.ByCoordinates, Number, String, Formula).</p>
+</li>
+<li><p>Codebl&#xF6;cke sind n&#xFC;tzlich zum <strong>Definieren benutzerdefinierter Funktionen in DesignScript, damit weniger Bl&#xF6;cke im Diagramm ben&#xF6;tigt werden</strong>.</p>
+</li>
+</ul>
+<p><img src="images/13-2/codeblock.png" alt="codeblock"></p>
+<blockquote>
+<p>1 und 2 f&#xFC;hren dieselbe Funktion aus. Dabei nahm das Schreiben einiger Codezeilen wesentlich weniger Zeit in Anspruch als das Suchen und Hinzuf&#xFC;gen jedes einzelnen Blocks. Die Angaben im Codeblock sind dar&#xFC;ber hinaus wesentlich pr&#xE4;gnanter.</p>
+<ol>
+<li>In Codeblock geschriebenes DesignScript</li>
+<li>Entsprechendes Programm in Bl&#xF6;cken
+Informationen zur Verwendung von Codebl&#xF6;cken finden Sie unter <a href="http://primer.dynamobim.org/en/07_Code-Block/7-1_what-is-a-code-block.html" target="_blank">Was ist ein Codeblock</a>.</li>
+</ol>
+</blockquote>
+<h4 id="komprimieren-mit-block-zu-code">Komprimieren mit Block zu Code</h4>
+<ul>
+<li>Sie k&#xF6;nnen <strong>mithilfe von Block zu Code die Komplexit&#xE4;t eines Diagramms reduzieren</strong>, wobei eine Gruppe einfacher Bl&#xF6;cke zusammengefasst und das entsprechende DesignScript in einen einzigen Codeblock geschrieben wird.</li>
+<li>Block zu Code kann <strong>Code komprimieren, ohne die Verst&#xE4;ndlichkeit des Programms zu beeintr&#xE4;chtigen</strong>.</li>
+<li>Die Verwendung von Block zu Code bietet die folgenden <strong>Vorteile</strong>:</li>
+<li>Einfache Komprimierung von Code in eine einzige Komponente, die nach wie vor bearbeitet werden kann</li>
+<li>Vereinfachung eines gro&#xDF;en Teils eines Diagramms</li>
+<li>N&#xFC;tzlich, wenn das &#x201E;Mini-Programm&#x201C; nicht oft bearbeitet werden muss</li>
+<li><p>N&#xFC;tzlich f&#xFC;r die Integration anderer Codeblock-Funktionalit&#xE4;t, z. B. Funktionen</p>
+</li>
+<li><p>Die Verwendung von Block zu Code bringt die folgenden <strong>Nachteile</strong> mit sich:</p>
+</li>
+<li>Schlechtere Lesbarkeit wegen allgemeiner Benennung</li>
+<li>F&#xFC;r andere Benutzer schwieriger zu verstehen</li>
+<li>Keine einfache M&#xF6;glichkeit, zur Version aus der visuellen Programmierung zur&#xFC;ckzuwechseln</li>
+</ul>
+<p><img src="images/13-2/nodetocode.png" alt="nodetocode"></p>
+<blockquote>
+<ol>
+<li>Vorhandenes Programm</li>
+<li>Mithilfe von Block zu Code erstellter Codeblock
+Informationen zur Verwendung von Block zu Code finden Sie unter <a href="http://primer.dynamobim.org/en/07_Code-Block/7-2_Design-Script-syntax.html" target="_blank">DesignScript-Syntax</a>.</li>
+</ol>
+</blockquote>
+<h4 id="flexibler-zugriff-auf-daten-mit-listlevel">Flexibler Zugriff auf Daten mit List@Level</h4>
+<ul>
+<li>List@Level kann es Ihnen erleichtern, <strong>Ihr Diagramm durch Ersetzen der Bl&#xF6;cke List.Map und List.Combine zu vereinfachen</strong>, die viel Platz im Ansichtsbereich beanspruchen k&#xF6;nnen.</li>
+<li>List@Level bietet ein <strong>schnelleres Verfahren zum Konstruieren von Blocklogik als List.Map/List.Combine</strong>, indem es den Zugriff auf Daten auf einer beliebigen Ebene einer Liste direkt &#xFC;ber den Eingabeanschluss eines Blocks erm&#xF6;glicht.</li>
+</ul>
+<p><img src="images/13-2/listatlevel.png" alt="listatlevel"></p>
+<blockquote>
+<p>Sie k&#xF6;nnen &#xFC;berpr&#xFC;fen, wie viele True-Werte BoundingBox.Contains zur&#xFC;ckgibt und in welchen Listen diese enthalten sind, indem Sie List@Level f&#xFC;r den list-Eingang von CountTrue aktivieren. List@Level erm&#xF6;glicht es, die Ebene festzulegen, auf der die Eingabe Daten &#xFC;bernimmt. List@Level ist flexibel und effizient und wird gegen&#xFC;ber anderen Verfahren, die List.Map und List.Combine nutzen, dringend empfohlen.</p>
+<ol>
+<li>Z&#xE4;hlen der True-Werte auf Listenebene 2</li>
+<li>Z&#xE4;hlen der True-Werte auf Listenebene 3
+Informationen zur Verwendung von List@Level finden Sie unter <a href="http://primer.dynamobim.org/en/06_Designing-with-Lists/6-3_lists-of-lists.html#list@level" target="_blank">Listen von Listen</a>.</li>
+</ol>
+</blockquote>
+<h3 id="lesbarkeit-gew&#xE4;hrleisten">Lesbarkeit gew&#xE4;hrleisten</h3>
+<p>Gestalten Sie Ihr Diagramm nicht nur so einfach und effizient wie m&#xF6;glich, sondern streben Sie auch eine &#xFC;bersichtliche grafische Darstellung an. Beziehungen sind trotz Ihrer Bem&#xFC;hungen, das Diagramm intuitiv mit logischen Gruppen zu gestalten, eventuell nicht ohne Weiteres zu erkennen. Ein einfacher Block innerhalb einer Gruppe oder das Umbenennen eines Schiebereglers kann Ihnen oder anderen Benutzern unn&#xF6;tige Verwirrung oder das Suchen im gesamten Diagramm ersparen. Im Folgenden werden mehrere Verfahren beschrieben, mit deren Hilfe Sie eine einheitliche Grafik innerhalb eines Diagramms und diagramm&#xFC;bergreifend erzielen k&#xF6;nnen.</p>
+<h4 id="visuelle-kontinuit&#xE4;t-durch-ausrichten-der-bl&#xF6;cke">Visuelle Kontinuit&#xE4;t durch Ausrichten der Bl&#xF6;cke</h4>
+<ul>
+<li>Um den Arbeitsaufwand nach dem Erstellen des Diagramms zu reduzieren, achten Sie auf eine gute Leserlichkeit des Blocklayouts, indem Sie die <strong>Bl&#xF6;cke w&#xE4;hrend der Arbeit h&#xE4;ufig ausrichten</strong>.</li>
+<li>Wenn andere Benutzer mit Ihrem Diagramm arbeiten sollen, <strong>sorgen Sie vor der Bereitstellung f&#xFC;r ein Layout mit einem leicht verst&#xE4;ndlichen Ablauf aus Bl&#xF6;cken und Dr&#xE4;hten</strong>.</li>
+<li>Um die Ausrichtung zu erleichtern, <strong>verwenden Sie die Funktion Blocklayout bereinigen zur automatischen Ausrichtung</strong> des Diagramms. Durch manuelles Ausrichten erzielen Sie allerdings pr&#xE4;zisere Ergebnisse.</li>
+</ul>
+<p><img src="images/13-2/alignment.png" alt="alignment"></p>
+<blockquote>
+<ol>
+<li>Ungeordnetes Diagramm</li>
+<li>Ausgerichtetes Diagramm
+Informationen zur Verwendung der Blockausrichtung finden Sie unter <a href="http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html" target="_blank">Verwalten von Programmen</a>.</li>
+</ol>
+</blockquote>
+<h4 id="aussagekr&#xE4;ftige-beschriftung-durch-umbenennen">Aussagekr&#xE4;ftige Beschriftung durch Umbenennen</h4>
+<ul>
+<li>Durch Umbenennen von Eingaben machen Sie Ihr Diagramm f&#xFC;r andere Benutzer leicht verst&#xE4;ndlich, <strong>insbesondere, wenn Objekte, die sich au&#xDF;erhalb des Bildschirms befinden, verbunden werden sollen</strong>.</li>
+<li><strong>Benennen Sie nach M&#xF6;glichkeit nicht Bl&#xF6;cke, sondern Eingaben um.</strong> Als Alternative dazu k&#xF6;nnen Sie einen benutzerdefinierten Block aus einer Gruppe von Bl&#xF6;cken erstellen und ihn umbenennen. Dabei ist ersichtlich, dass andere Elemente darin enthalten sind.</li>
+</ul>
+<p><img src="images/13-2/inputs.png" alt="inputs"></p>
+<blockquote>
+<ol>
+<li>Eingaben f&#xFC;r die Bearbeitung der Oberfl&#xE4;che</li>
+<li>Eingaben f&#xFC;r Architekturparameter</li>
+<li>Eingaben f&#xFC;r das Skript zur Simulation der Entw&#xE4;sserung
+Um einen Block umzubenennen, klicken Sie mit der rechten Maustaste auf seinen Namen, und w&#xE4;hlen Sie Block umbenennen.</li>
+</ol>
+</blockquote>
+<h4 id="erl&#xE4;uterungen-durch-anmerkungen">Erl&#xE4;uterungen durch Anmerkungen</h4>
+<ul>
+<li>F&#xFC;gen Sie eine Anmerkung hinzu, wenn ein Bestandteil des <strong>Diagramms eine Erl&#xE4;uterung in Klartext ben&#xF6;tigt</strong>, die nicht in den Bl&#xF6;cken selbst gegeben werden kann.</li>
+<li>F&#xFC;gen Sie eine Anmerkung hinzu, wenn eine Sammlung von <strong>Bl&#xF6;cken oder eine Gruppe zu gro&#xDF; oder zu komplex ist und nicht direkt verstanden werden kann</strong>.</li>
+</ul>
+<p><img src="images/13-2/notes.png" alt="notes"></p>
+<blockquote>
+<ol>
+<li>Anmerkung zur Beschreibung des Teils des Programms, der Rohwerte der Verschiebungsstrecken zur&#xFC;ckgibt</li>
+<li>Anmerkung zur Beschreibung des Codes, der diese Werte einer Sinuswelle zuordnet
+Informationen zum Hinzuf&#xFC;gen einer Anmerkung finden Sie unter <a href="http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html" target="_blank">Verwalten von Programmen</a>.</li>
+</ol>
+</blockquote>
+<h3 id="laufendes-testen">Laufendes Testen</h3>
+<p>Es ist wichtig, w&#xE4;hrend der Entwicklung des visuellen Skripts zu &#xFC;berpr&#xFC;fen, ob die zur&#xFC;ckgegebenen Ergebnisse Ihren Erwartungen entsprechen. Nicht alle Fehler oder Probleme lassen das Programm sofort fehlschlagen, dies gilt insbesondere f&#xFC;r Nullwerte, die sich erst viel sp&#xE4;ter im weiteren Verlauf auswirken k&#xF6;nnen. Diese Vorgehensweise wird auch im Zusammenhang mit Textskripts unter <a href="http://primer.dynamobim.org/en/12_Best-Practice/13-2_Scripting-Strategies.html" target="_blank">Vorgehensweisen zur Skripterstellung</a> beschrieben. Das folgende Verfahren hilft Ihnen, sicherzustellen, dass Sie das gew&#xFC;nschte Ergebnis erzielen:</p>
+<h4 id="&#xFC;berwachen-von-daten-mit-beobachtungs-und-vorschaubl&#xF6;cken">&#xDC;berwachen von Daten mit Beobachtungs- und Vorschaubl&#xF6;cken</h4>
+<ul>
+<li>Verwenden Sie w&#xE4;hrend der Entwicklung des Programms Beobachtungs- oder Vorschaubl&#xF6;cke, um zu <strong>&#xFC;berpr&#xFC;fen, ob wichtige Ausgaben das erwartete Ergebnis zur&#xFC;ckgeben</strong>.</li>
+</ul>
+<p><img src="images/13-2/watch.png" alt="watch"></p>
+<blockquote>
+<p>Mithilfe der Beobachtungsbl&#xF6;cke werden verglichen:</p>
+<ol>
+<li>Die Rohwerte der Verschiebungsstrecken</li>
+<li>Die durch die Sinusgleichung geleiteten Werte
+Informationen zur Verwendung der Beobachtungsfunktion finden Sie unter <a href="http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-2_dynamo_libraries.html" target="_blank">Bibliothek</a>.</li>
+</ol>
+</blockquote>
+<h3 id="wiederverwendbarkeit-sicherstellen">Wiederverwendbarkeit sicherstellen</h3>
+<p>Ihr Programm wird sehr wahrscheinlich irgendwann auch von anderen Benutzern ge&#xF6;ffnet werden, selbst wenn Sie unabh&#xE4;ngig voneinander arbeiten. Diese Benutzer sollten in der Lage sein, anhand der Ein- und Ausgaben rasch zu bestimmen, was das Programm ben&#xF6;tigt und was es produziert. Dies ist besonders bei der Entwicklung benutzerdefinierter Bl&#xF6;cke wichtig, die an die Dynamo-Community weitergegeben und in Programmen anderer Benutzer verwendet werden sollen. Mit diesen Vorgehensweisen erhalten Sie zuverl&#xE4;ssige, wiederverwendbare Programme und Bl&#xF6;cke.</p>
+<h4 id="verwalten-der-ein-und-ausgaben">Verwalten der Ein- und Ausgaben</h4>
+<ul>
+<li>F&#xFC;r eine optimale Lesbarkeit und Skalierbarkeit sollten Sie <strong>die Ein- und Ausgaben auf ein Minimum beschr&#xE4;nken</strong>.</li>
+<li>Versuchen Sie, <strong>eine Strategie zur Entwicklung der Logik zu erarbeiten, indem Sie zun&#xE4;chst einen groben Plan</strong> ihrer Funktionsweise erstellen, bevor Sie den ersten Block im Ansichtsbereich einf&#xFC;gen. Behalten Sie w&#xE4;hrend der Arbeit an diesem Plan im Auge, welche Ein- und Ausgaben in den Skripts verwendet werden sollen.</li>
+</ul>
+<h4 id="verwenden-von-voreinstellungen-zum-einbetten-von-eingabewerten">Verwenden von Voreinstellungen zum Einbetten von Eingabewerten</h4>
+<ul>
+<li>Falls <strong>bestimmte Optionen oder Bedingungen vorhanden sind, die Sie in das Diagramm einbetten m&#xF6;chten</strong>, empfiehlt es sich, Voreinstellungen f&#xFC;r den schnellen Zugriff zu verwenden.</li>
+<li>Mithilfe von Voreinstellungen k&#xF6;nnen Sie dar&#xFC;ber hinaus <strong>durch Caching spezifischer Schiebereglerwerte die Komplexit&#xE4;t</strong> in Diagrammen mit langen Laufzeiten reduzieren.</li>
+</ul>
+<blockquote>
+<p>Informationen zur Verwendung von Voreinstellungen finden Sie unter <a href="http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html" target="_blank">Verwalten von Daten mit Voreinstellungen</a>.</p>
+</blockquote>
+<h4 id="verwenden-von-benutzerdefinierten-bl&#xF6;cken-als-container-f&#xFC;r-programme">Verwenden von benutzerdefinierten Bl&#xF6;cken als Container f&#xFC;r Programme</h4>
+<ul>
+<li>Verwenden Sie einen benutzerdefinierten Block, wenn das <strong>Programm in einem einzelnen Container zusammengefasst werden kann</strong>.</li>
+<li>Verwenden Sie einen benutzerdefinierten Block, <strong>wenn ein Teil des Diagramms oft in anderen Programmen wiederverwendet werden soll</strong>.</li>
+<li>Verwenden Sie einen benutzerdefinierten Block, wenn Sie <strong>eine Funktion f&#xFC;r die Dynamo-Community bereitstellen</strong> m&#xF6;chten.</li>
+</ul>
+<p><img src="images/13-2/customnode.png" alt="customnode"></p>
+<blockquote>
+<p>Indem Sie das Programm zur Verschiebung von Punkten in einem benutzerdefinierten Block zusammenfassen, wird dieses zuverl&#xE4;ssige, spezielle Programm portierbar und wesentlich leichter verst&#xE4;ndlich. Aussagekr&#xE4;ftige Namen f&#xFC;r die Eingabeanschl&#xFC;sse erleichtern es anderen Benutzern, die Verwendungsweise des Blocks zu verstehen. Achten Sie darauf, f&#xFC;r jede Eingabe eine Beschreibung und den erforderlichen Datentyp anzugeben.</p>
+<ol>
+<li>Bestehendes Programm f&#xFC;r Attraktor</li>
+<li>Benutzerdefinierter Block, in dem dieses Programm, PointGrid, enthalten ist
+Weitere Informationen zur Verwendung benutzerdefinierter Bl&#xF6;cke finden Sie unter <a href="http://primer.dynamobim.org/en/09_Custom-Nodes/9-1_Introduction.html" target="_blank">Einf&#xFC;hrung zu benutzerdefinierten Bl&#xF6;cken</a>.</li>
+</ol>
+</blockquote>
+<h4 id="vorlagen-erstellen">Vorlagen erstellen</h4>
+<ul>
+<li>Mithilfe von Vorlagen k&#xF6;nnen Sie <strong>Grafikstandards f&#xFC;r alle Ihre visuellen Diagramme einrichten, um sie Ihren Kollegen in einheitlicher, verst&#xE4;ndlicher Weise bereitzustellen</strong>.</li>
+<li>Beim Erstellen einer Vorlage k&#xF6;nnen Sie <strong>Gruppenfarben und Schriftgr&#xF6;&#xDF;en</strong> standardisieren, um Typen von Arbeitsabl&#xE4;ufen oder Datenaktionen zu kategorisieren.</li>
+<li>Sie k&#xF6;nnen beim Erstellen einer Vorlage sogar <strong>Beschriftung, Farbe oder Stil f&#xFC;r die Unterscheidung zwischen Frontend- und Backend-Arbeitsabl&#xE4;ufen</strong> in Ihrem Diagramm standardisieren.</li>
+</ul>
+<p><img src="images/13-2/templating.jpg" alt=""></p>
+<blockquote>
+<ol>
+<li>Die Benutzeroberfl&#xE4;che (das Frontend) des Programms umfasst den Projektnamen, die Eingabe-Schieberegler und die Importgeometrie.</li>
+<li>Backend des Programms.</li>
+<li>Kategorien f&#xFC;r Gruppenfarben (allgemeines Design, Eingaben, Python-Skripts, importierte Geometrie)</li>
+</ol>
+</blockquote>
+<h3 id="&#xFC;bung-&#x2013;-dach-in-der-architektur">&#xDC;bung &#x2013; Dach in der Architektur</h3>
+<blockquote>
+<p>Laden Sie die zu dieser &#xDC;bungslektion geh&#xF6;rige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As). Eine vollst&#xE4;ndige Liste der Beispieldateien finden Sie im Anhang. <a href="datasets/13-2/RoofDrainageSim.zip">RoofDrainageSim.zip</a></p>
+</blockquote>
+<p>Sie haben eine Reihe optimaler Verfahren festgelegt und wenden diese jetzt auf ein rasch zusammengestelltes Programm an. Das Programm erstellt zwar wie vorgesehen das Dach, das Diagramm stellt jedoch eher eine &#x201E;Mind-Map&#x201C; des Autors dar. Ihm fehlt die Struktur, und es gibt keine Beschreibung des Verwendungszwecks. Sie ordnen, beschreiben und analysieren das Programm unter Verwendung der optimalen Verfahren so, dass andere Benutzer seine Verwendungsweise verstehen.</p>
+<p><img src="images/13-2/1.jpg" alt="mindmap"></p>
+<blockquote>
+<p>Das Programm funktioniert, aber dem Diagramm fehlt Struktur.</p>
+</blockquote>
+<p>Bestimmen Sie als Erstes die Daten und die Geometrie, die das Programm zur&#xFC;ckgibt.</p>
+<p><img src="images/13-2/1-1.JPG" alt="data"></p>
+<blockquote>
+<p>Um logische Unterteilungen, d. h. Modularit&#xE4;t zu erzielen, m&#xFC;ssen Sie die Stellen kennen, an denen wesentliche &#xC4;nderungen an den Daten erfolgen. Analysieren Sie den Rest des Programms mithilfe von Beobachtungsbl&#xF6;cken, um festzustellen, ob Gruppen erkennbar sind, bevor Sie mit dem n&#xE4;chsten Schritt fortfahren.</p>
+<ol>
+<li>Dieser Codeblock mit einer mathematischen Gleichung scheint ein wichtiger Bestandteil des Programms zu sein. Im Beobachtungsblock ist zu erkennen, dass er Listen von Verschiebungsstrecken zur&#xFC;ckgibt.</li>
+<li>Der Zweck dieses Bereichs ist nicht ohne Weiteres ersichtlich. Die Anordnung der True-Werte auf der Listenebene L2 aus BoundingBox.Contains und das Vorhandensein von List.FilterByBoolMask lassen darauf schlie&#xDF;en, dass ein Teil des Punktrasters als Beispiel entnommen wird.</li>
+</ol>
+</blockquote>
+<p>Nachdem Sie die zugrunde liegenden Bestandteile des Programms verstanden haben, fassen Sie sie in Gruppen zusammen.</p>
+<p><img src="images/13-2/1-2.jpg" alt="groups"></p>
+<blockquote>
+<p>Gruppen erm&#xF6;glichen dem Benutzer die visuelle Unterscheidung der Programmbestandteile.</p>
+<ol>
+<li>3D-Grundst&#xFC;cksmodell importieren</li>
+<li>Punktraster entsprechend der Sinusgleichung verschieben</li>
+<li>Bestandteil des Punktrasters als Beispiel</li>
+<li>Dachoberfl&#xE4;che der Architektur erstellen</li>
+<li>Glasfassade erstellen</li>
+</ol>
+</blockquote>
+<p>Nachdem Sie die Gruppen eingerichtet haben, richten Sie die Bl&#xF6;cke innerhalb des Diagramms auf einheitliche Weise aus.</p>
+<p><img src="images/13-2/2.jpg" alt="alignment"></p>
+<blockquote>
+<p>Eine einheitliche Darstellung macht den Programmablauf und die impliziten Beziehungen zwischen den Bl&#xF6;cken f&#xFC;r den Benutzer leichter erkennbar.</p>
+</blockquote>
+<p>Machen Sie das Programm noch leichter verst&#xE4;ndlich, indem Sie eine weitere Ebene grafischer Verbesserungen hinzuf&#xFC;gen. F&#xFC;gen Sie Anmerkungen hinzu, mit denen Sie die Funktionsweise eines bestimmten Programmteils beschreiben, geben Sie den Eingaben benutzerdefinierte Namen, und weisen Sie verschiedenen Typen von Gruppen Farben zu.</p>
+<p><img src="images/13-2/2-2.jpg" alt="notes-rename"></p>
+<blockquote>
+<p>Diese grafischen Verbesserungen geben dem Benutzer genaueren Aufschluss &#xFC;ber den Verwendungszweck des Programms. Die unterschiedlichen Farben der Gruppen helfen bei der Unterscheidung von Eingaben und Funktionen.</p>
+<ol>
+<li>Anmerkungen</li>
+<li>Eingaben mit aussagekr&#xE4;ftigen Namen</li>
+</ol>
+</blockquote>
+<p>Bevor Sie damit beginnen, das Programm zusammenzufassen, suchen Sie nach einem geeigneten Platz f&#xFC;r den Python-Skript-Entw&#xE4;sserungssimulator. Verbinden Sie die Ausgabe der ersten skalierten Dachoberfl&#xE4;che mit der dazugeh&#xF6;rigen Skripteingabe.</p>
+<p><img src="images/13-2/3.jpg" alt="integratescripting"></p>
+<blockquote>
+<p>Durch die Entscheidung, das Skript an dieser Stelle des Programms zu integrieren, wird erreicht, dass die Entw&#xE4;sserungssimulation f&#xFC;r die einfache Originaloberfl&#xE4;che des Dachs durchgef&#xFC;hrt wird. Diese spezielle Oberfl&#xE4;che wird nicht in der Vorschau angezeigt, aber durch diesen Schritt entf&#xE4;llt die separate Auswahl der oberen Fl&#xE4;che in der gefasten PolySurface.</p>
+<ol>
+<li>Quellgeometrie f&#xFC;r Skripteingabe</li>
+<li>Python-Block</li>
+<li>Eingabe-Schieberegler</li>
+<li>&#x201E;Schalter&#x201C; Ein-Aus</li>
+</ol>
+</blockquote>
+<p>Damit befinden sich alle Elemente an ihrem Platz, und als N&#xE4;chstes vereinfachen Sie das Diagramm.</p>
+<p><img src="images/13-2/3-2.jpg" alt="customnode-notetocode"></p>
+<blockquote>
+<p>Durch Zusammenfassen des Programms mit Block zu Code und benutzerdefinierten Bl&#xF6;cken haben Sie das Diagramm erheblich verkleinert. Die Gruppen f&#xFC;r die Erstellung der Dachoberfl&#xE4;che und der W&#xE4;nde wurden in Code konvertiert, da sie f&#xFC;r dieses Programm hochspezifisch sind. Die Gruppe zur Verschiebung von Punkten ist in einem benutzerdefinierten Block eingeschlossen, da sie auch in anderen Programmen verwendet werden k&#xF6;nnte. Erstellen Sie in der Beispieldatei Ihren eigenen benutzerdefinierten Block aus der Gruppe zur Verschiebung von Punkten.</p>
+<ol>
+<li>Benutzerdefinierter Block als Container f&#xFC;r die Gruppe zur Verschiebung von Punkten</li>
+<li>Block zu Code f&#xFC;r die Zusammenfassung der Gruppen zum Erstellen der Oberfl&#xE4;che f&#xFC;r das Dach in der Architektur und der W&#xE4;nde</li>
+</ol>
+</blockquote>
+<p>Im letzten Schritt erstellen Sie Voreinstellungen f&#xFC;r als Beispiele zu verwendende Dachformen.</p>
+<p><img src="images/13-2/3-3.jpg" alt="presets"></p>
+<blockquote>
+<p>Diese Eingaben sind die wesentlichen Angaben zum Steuern der Dachform und geben den Benutzern Hinweise auf die M&#xF6;glichkeiten des Programms.</p>
+</blockquote>
+<p>Das Programm mit Ansichten zweier Voreinstellungen.</p>
+<p><img src="images/13-2/3-4.jpg" alt="presets"></p>
+<p><img src="images/13-2/3-5.jpg" alt="presets"></p>
+<blockquote>
+<p>Die Muster der Dachentw&#xE4;sserung bieten dem Benutzer eine analytische Ansicht der jeweiligen Voreinstellungen.</p>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../13_Best-Practice/13-1_Introduction.html" class="navigation navigation-prev " aria-label="Previous page: Optimale Verfahren"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../13_Best-Practice/13-1_Scripting-Strategies.html" class="navigation navigation-next " aria-label="Next page: Vorgehensweisen zur Skripterstellung"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/favicon.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"ga":{"token":"UA-52186525-3","configuration":"auto"},"dynamo":{"customLinks":[{"label":"Download","icon":"fa fa-file-pdf-o fa-lg","url":"http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print.pdf"}],"languages":[{"label":"Deutsch","code":"de","url":"http://primer.dynamobim.org/de"},{"label":"日本語","code":"ja","url":"http://primer.dynamobim.org/ja"},{"label":"中文(繁體)","code":"zh-tw","url":"http://primer.dynamobim.org/zh-tw"},{"label":"","code":"","url":""},{"label":"","code":"","url":""}],"currentLanguage":{"code":"en","url":"http://primer.dynamobim.org/en","switchLangLabel":"Languages"},"favicon":"/images/icons/favicon.ico","facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"popup":{},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
