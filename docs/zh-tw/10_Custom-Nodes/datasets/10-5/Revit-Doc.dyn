@@ -1,0 +1,35 @@
+<Workspace Version="0.8.3.2256" X="-1544.68109160956" Y="487.487378809831" zoom="1.44520420075695" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <DSIronPythonNode.PythonNode guid="783909ad-91ce-4a80-89eb-de8728aae8c6" type="DSIronPythonNode.PythonNode" nickname="Python Script" x="1317.86545916326" y="-79.6096809079082" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" inputcount="1">
+      <Script>import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+#The inputs to this node will be stored as a list in the IN variables.
+import clr
+
+# Import DocumentManager
+clr.AddReference("RevitServices")
+import RevitServices
+from RevitServices.Persistence import DocumentManager
+
+doc = DocumentManager.Instance.CurrentDBDocument
+uiapp = DocumentManager.Instance.CurrentUIApplication
+app = uiapp.Application
+
+#Assign your output to the OUT variable.
+OUT=[doc,uiapp,app]
+</Script>
+    </DSIronPythonNode.PythonNode>
+    <Dynamo.Nodes.Watch guid="7adee5cf-d49a-4268-a193-b1efef870136" type="Dynamo.Nodes.Watch" nickname="Watch" x="1544.04102308536" y="-78.8877870852173" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="783909ad-91ce-4a80-89eb-de8728aae8c6" start_index="0" end="7adee5cf-d49a-4268-a193-b1efef870136" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="background_preview" eyeX="35.8175010681152" eyeY="30.393461227417" eyeZ="11.3593988418579" lookX="-24.0489749908447" lookY="-30.7260799407959" lookZ="-17.7953052520752" />
+  </Cameras>
+</Workspace>

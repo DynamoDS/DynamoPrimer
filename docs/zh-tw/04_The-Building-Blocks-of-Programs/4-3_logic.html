@@ -1,0 +1,1523 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>邏輯 | Dynamo Primer</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../04_The-Building-Blocks-of-Programs/4-4_strings.html" />
+    
+    
+    <link rel="prev" href="../04_The-Building-Blocks-of-Programs/4-2_math.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.3"
+        data-chapter-title="邏輯"
+        data-filepath="04_The-Building-Blocks-of-Programs/4-3_logic.md"
+        data-basepath=".."
+        data-revision="Sun Sep 16 2018 20:27:42 GMT-0400 (Eastern Daylight Time)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        關於
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01_Introduction/1_introduction.html">
+            
+                
+                    <a href="../01_Introduction/1_introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        簡介
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01_Introduction/1-1_what_is_visual_programming.html">
+            
+                
+                    <a href="../01_Introduction/1-1_what_is_visual_programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        什麼是視覺程式設計？
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01_Introduction/1-2_what_is_dynamo.html">
+            
+                
+                    <a href="../01_Introduction/1-2_what_is_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        什麼是 Dynamo？
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_Introduction/1-3_dynamo_in_action.html">
+            
+                
+                    <a href="../01_Introduction/1-3_dynamo_in_action.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        作用中的 Dynamo
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02_Hello-Dynamo/2_hello_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2_hello_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        歡迎使用 Dynamo！
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02_Hello-Dynamo/2-1_launching_dynamo.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-1_launching_dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        安裝並啟動 Dynamo
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-2_the_dynamo_ui.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Dynamo 使用者介面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02_Hello-Dynamo/2-3_the_workspace.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-3_the_workspace.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        工作區
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+            
+                
+                    <a href="../02_Hello-Dynamo/2-6_the_quick_start_guide.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        入門
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3_anatomy-of-a-dynamo-definition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        剖析視覺程式
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-1_dynamo_nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        節點
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03_Anatomy-of-a-Dynamo-Definition/3-2_wiring_programs.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-2_wiring_programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        線路
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03_Anatomy-of-a-Dynamo-Definition/3-3_dynamo_libraries.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-3_dynamo_libraries.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Dynamo 資源庫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+            
+                
+                    <a href="../03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        管理您的程式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4_the-building-blocks-of-programs.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        程式的建置區塊
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04_The-Building-Blocks-of-Programs/4-1_data.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-1_data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        資料
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04_The-Building-Blocks-of-Programs/4-2_math.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-2_math.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        數學
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3" data-path="04_The-Building-Blocks-of-Programs/4-3_logic.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-3_logic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        邏輯
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04_The-Building-Blocks-of-Programs/4-4_strings.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-4_strings.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        字串
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04_The-Building-Blocks-of-Programs/4-5_color.html">
+            
+                
+                    <a href="../04_The-Building-Blocks-of-Programs/4-5_color.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        色彩
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        用於計算設計的幾何圖形
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-1_geometry-overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        幾何圖形概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05_Geometry-for-Computational-Design/5-2_vectors.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-2_vectors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        向量、平面與座標系統
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05_Geometry-for-Computational-Design/5-3_points.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-3_points.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        點
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05_Geometry-for-Computational-Design/5-4_curves.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-4_curves.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        曲線
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05_Geometry-for-Computational-Design/5-5_surfaces.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-5_surfaces.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        曲面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05_Geometry-for-Computational-Design/5-6_solids.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-6_solids.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        立體
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05_Geometry-for-Computational-Design/5-7_meshes.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-7_meshes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        網面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05_Geometry-for-Computational-Design/5-8_importing.html">
+            
+                
+                    <a href="../05_Geometry-for-Computational-Design/5-8_importing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        匯入幾何圖像
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06_Designing-with-Lists/6_designing-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6_designing-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        設計清單
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06_Designing-with-Lists/6-1_whats-a-list.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-1_whats-a-list.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        什麼是清單？
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06_Designing-with-Lists/6-2_working-with-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-2_working-with-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        使用清單
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06_Designing-with-Lists/6-3_lists-of-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-3_lists-of-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        清單的清單
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+            
+                
+                    <a href="../06_Designing-with-Lists/6-4_n-dimensional-lists.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        n 維清單
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+            
+                
+                    <a href="../07_Code-Block/7_Code-Blocks-and-Design-Script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        程式碼區塊和 DesignScript
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07_Code-Block/7-1_what-is-a-code-block.html">
+            
+                
+                    <a href="../07_Code-Block/7-1_what-is-a-code-block.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        什麼是程式碼區塊？
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07_Code-Block/7-2_Design-Script-syntax.html">
+            
+                
+                    <a href="../07_Code-Block/7-2_Design-Script-syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        DesignScript 語法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07_Code-Block/7-3_shorthand.html">
+            
+                
+                    <a href="../07_Code-Block/7-3_shorthand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        速寫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07_Code-Block/7-4_functions.html">
+            
+                
+                    <a href="../07_Code-Block/7-4_functions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        程式碼塊函數
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8_Dynamo-for-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Dynamo for Revit
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-1_The-Revit-Connection.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        Revit 連接
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="08_Dynamo-for-Revit/8-2_Selecting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-2_Selecting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        選取
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="08_Dynamo-for-Revit/8-3_Editing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-3_Editing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        編輯
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="08_Dynamo-for-Revit/8-4_Creating.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-4_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        建立
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="08_Dynamo-for-Revit/8-5_Customizing.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-5_Customizing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        自訂
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="08_Dynamo-for-Revit/8-6_Documenting.html">
+            
+                
+                    <a href="../08_Dynamo-for-Revit/8-6_Documenting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        記錄
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="09_Dictionaries/9_Dictionaries-In-Dynamo.html">
+            
+                
+                    <a href="../09_Dictionaries/9_Dictionaries-In-Dynamo.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Dynamo 中的字典
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="09_Dictionaries/9-1_What-is-a-dictionary.html">
+            
+                
+                    <a href="../09_Dictionaries/9-1_What-is-a-dictionary.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        字典
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="09_Dictionaries/9-2_Node-uses.html">
+            
+                
+                    <a href="../09_Dictionaries/9-2_Node-uses.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        字典節點
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="09_Dictionaries/9-3_Code-Block-Uses.html">
+            
+                
+                    <a href="../09_Dictionaries/9-3_Code-Block-Uses.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        程式碼區塊中的字典
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="09_Dictionaries/9-4_Dictionary-Use-Cases.html">
+            
+                
+                    <a href="../09_Dictionaries/9-4_Dictionary-Use-Cases.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        字典 - Revit 使用情況
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="10_Custom-Nodes/10_Custom-Nodes.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10_Custom-Nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        自訂節點
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="10_Custom-Nodes/10-1_Introduction.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        自訂節點
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="10_Custom-Nodes/10-2_Creating.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-2_Creating.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        建立自訂節點
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="10_Custom-Nodes/10-3_Library.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-3_Library.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        新增至您的資源庫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="10_Custom-Nodes/10-4_Python.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-4_Python.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        Python
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="10_Custom-Nodes/10-5_Python-Revit.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-5_Python-Revit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        Python 與 Revit
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="10_Custom-Nodes/10-6_Python-Templates.html">
+            
+                
+                    <a href="../10_Custom-Nodes/10-6_Python-Templates.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        Python 樣板
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="11_Packages/11-Packages.html">
+            
+                
+                    <a href="../11_Packages/11-Packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        套件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="11_Packages/11-1_Introduction.html">
+            
+                
+                    <a href="../11_Packages/11-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        套件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="11_Packages/11-2_Mesh-Toolkit.html">
+            
+                
+                    <a href="../11_Packages/11-2_Mesh-Toolkit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        套件案例研究 – 網面工具箱
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="11_Packages/11-3_Developing.html">
+            
+                
+                    <a href="../11_Packages/11-3_Developing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        開發套件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="11_Packages/11-4_Publishing.html">
+            
+                
+                    <a href="../11_Packages/11-4_Publishing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        發佈套件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="11_Packages/11-5_Zero-Touch.html">
+            
+                
+                    <a href="../11_Packages/11-5_Zero-Touch.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
+                        
+                        什麼是 Zero-Touch？
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="12_Web_Experience/12-1_Introduction.html">
+            
+                
+                    <a href="../12_Web_Experience/12-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Dynamo Web 體驗
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="12_Web_Experience/12-2_Send_to_Web.html">
+            
+                
+                    <a href="../12_Web_Experience/12-2_Send_to_Web.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                        傳送至 Web (使用 Dynamo Studio)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="12_Web_Experience/12-3_Customizer_View.html">
+            
+                
+                    <a href="../12_Web_Experience/12-3_Customizer_View.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                        自訂程式視圖
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="13_Best-Practice/13-1_Introduction.html">
+            
+                
+                    <a href="../13_Best-Practice/13-1_Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        最佳實踐
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="13.1" data-path="13_Best-Practice/13-2_Graph-Strategies.html">
+            
+                
+                    <a href="../13_Best-Practice/13-2_Graph-Strategies.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.1.</b>
+                        
+                        圖表策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" data-path="13_Best-Practice/13-1_Scripting-Strategies.html">
+            
+                
+                    <a href="../13_Best-Practice/13-1_Scripting-Strategies.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.2.</b>
+                        
+                        撰寫腳本策略
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13.3" data-path="13_Best-Practice/13-3_Scripting-Reference.html">
+            
+                
+                    <a href="../13_Best-Practice/13-3_Scripting-Reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.3.</b>
+                        
+                        腳本參考
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="Appendix/A_appendix.html">
+            
+                
+                    <a href="../Appendix/A_appendix.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        附錄
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="14.1" data-path="Appendix/A-1_resources.html">
+            
+                
+                    <a href="../Appendix/A-1_resources.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.1.</b>
+                        
+                        資源
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.2" data-path="Appendix/A-2_index-of-nodes.html">
+            
+                
+                    <a href="../Appendix/A-2_index-of-nodes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.2.</b>
+                        
+                        節點的索引
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.3" data-path="Appendix/A-3_packages.html">
+            
+                
+                    <a href="../Appendix/A-3_packages.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.3.</b>
+                        
+                        Dynamo 套件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14.4" data-path="Appendix/A-4_example-files.html">
+            
+                
+                    <a href="../Appendix/A-4_example-files.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.4.</b>
+                        
+                        Dynamo 範例檔案
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Dynamo Primer</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x908F;&#x8F2F;">&#x908F;&#x8F2F;</h2>
+<p>&#x85C9;&#x7531;<strong>&#x908F;&#x8F2F;</strong>&#xFF0C;&#x6216;&#x8005;&#x66F4;&#x660E;&#x78BA;&#x5730;&#x8AAA;&#xFF0C;&#x85C9;&#x7531;<strong>&#x689D;&#x4EF6;&#x908F;&#x8F2F;</strong>&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x6839;&#x64DA;&#x6E2C;&#x8A66;&#x6307;&#x5B9A;&#x55AE;&#x4E00;&#x6216;&#x4E00;&#x7D44;&#x52D5;&#x4F5C;&#x3002;&#x5728;&#x8A55;&#x4F30;&#x6E2C;&#x8A66;&#x6642;&#xFF0C;&#x5C07;&#x4F7F;&#x7528;&#x5E03;&#x6797;&#x503C;&#x8868;&#x793A; <code>True</code> &#x6216; <code>False</code>&#xFF0C;&#x53EF;&#x4EE5;&#x7531;&#x6B64;&#x63A7;&#x5236;&#x7A0B;&#x5F0F;&#x6D41;&#x7A0B;&#x3002;</p>
+<h3 id="&#x5E03;&#x6797;">&#x5E03;&#x6797;</h3>
+<p>&#x6578;&#x5B57;&#x8B8A;&#x6578;&#x53EF;&#x4EE5;&#x5132;&#x5B58;&#x6240;&#x6709;&#x7BC4;&#x570D;&#x7684;&#x4E0D;&#x540C;&#x6578;&#x5B57;&#x3002;&#x5E03;&#x6797;&#x8B8A;&#x6578;&#x53EA;&#x80FD;&#x5132;&#x5B58;&#x5169;&#x500B;&#x503C;&#xFF0C;&#x7A31;&#x70BA; True &#x6216; False&#x3001;&#x662F;&#x6216;&#x5426;&#x3001;0 &#x6216; 1&#x3002;&#x7531;&#x65BC;&#x5E03;&#x6797;&#x503C;&#x7BC4;&#x570D;&#x6709;&#x9650;&#xFF0C;&#x56E0;&#x6B64;&#x5F88;&#x5C11;&#x4F7F;&#x7528;&#x5E03;&#x6797;&#x503C;&#x57F7;&#x884C;&#x8A08;&#x7B97;&#x3002;</p>
+<h3 id="&#x689D;&#x4EF6;&#x9673;&#x8FF0;&#x5F0F;">&#x689D;&#x4EF6;&#x9673;&#x8FF0;&#x5F0F;</h3>
+<p>&#x300C;If&#x300D;&#x9673;&#x8FF0;&#x5F0F;&#x662F;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x4E2D;&#x7684;&#x95DC;&#x9375;&#x6982;&#x5FF5;&#xFF1A;&#x300C;&#x5982;&#x679C;<em>&#x9019;</em>&#x662F;&#x771F;&#x7684;&#xFF0C;&#x5247;&#x6703;&#x767C;&#x751F;<em>&#x90A3;&#x4EF6;&#x4E8B;</em>&#xFF0C;&#x5426;&#x5247;&#x6703;&#x767C;&#x751F;<em>&#x5176;&#x4ED6;&#x4E8B;</em>&#x3002;&#x300D;&#x7531;&#x5E03;&#x6797;&#x503C;&#x78BA;&#x5B9A;&#x6240;&#x7522;&#x751F;&#x7684;&#x9673;&#x8FF0;&#x5F0F;&#x52D5;&#x4F5C;&#x3002;&#x5728; Dynamo &#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x63A1;&#x7528;&#x591A;&#x7A2E;&#x65B9;&#x5F0F;&#x5B9A;&#x7FA9;&#x300C;if&#x300D;&#x9673;&#x8FF0;&#x5F0F;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5716;&#x793A;</th>
+<th>&#x540D;&#x7A31;</th>
+<th>&#x8A9E;&#x6CD5;</th>
+<th>&#x8F38;&#x5165;</th>
+<th>&#x8F38;&#x51FA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="../images/icons/DSCoreNodesUI-Logic-If-Large.jpg" alt=""></td>
+<td>If</td>
+<td>If</td>
+<td>test&#x3001;true&#x3001;false</td>
+<td>result</td>
+</tr>
+<tr>
+<td><img src="../images/icons/DSCoreNodesUI-Formula-Large.jpg" alt=""></td>
+<td>Formula</td>
+<td>IF(x,y,z)</td>
+<td>x&#x3001;y&#x3001;z</td>
+<td>result</td>
+</tr>
+<tr>
+<td><img src="../images/icons/Dynamo-Nodes-CodeBlockNodeModel-Large.jpg" alt=""></td>
+<td>Code Block</td>
+<td>(x?y:z)</td>
+<td>x&#x3001;y&#x3001;z</td>
+<td>result</td>
+</tr>
+</tbody>
+</table>
+<p>&#x63A5;&#x4E0B;&#x4F86;&#x77AD;&#x89E3;&#x4F7F;&#x7528;&#x689D;&#x4EF6;&#x300C;if&#x300D;&#x9673;&#x8FF0;&#x5F0F;&#x7684;&#x4E09;&#x7A2E;&#x6709;&#x6548;&#x7BC0;&#x9EDE;&#x4E2D;&#x6BCF;&#x7A2E;&#x7BC0;&#x9EDE;&#x7684;&#x7C21;&#x55AE;&#x7BC4;&#x4F8B;&#xFF1A;</p>
+<p><img src="images/4-3/IFs.jpg" alt=""></p>
+<blockquote>
+<p>&#x5728;&#x6B64;&#x5F71;&#x50CF;&#x4E2D;&#xFF0C;<em>boolean</em>&#x8A2D;&#x70BA; <em>true</em>&#xFF0C;&#x9019;&#x610F;&#x5473;&#x8457;&#x7D50;&#x679C;&#x662F;&#x5B57;&#x4E32;<em>&#x300C;this is the result if true&#x300D;&#x3002;</em>&#x5EFA;&#x7ACB; <em>If</em> &#x9673;&#x8FF0;&#x5F0F;&#x7684;&#x4E09;&#x500B;&#x7BC0;&#x9EDE;&#x5728;&#x9019;&#x88E1;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</p>
+</blockquote>
+<p><img src="images/4-3/IFs2.jpg" alt=""></p>
+<blockquote>
+<p>&#x518D;&#x8AAA;&#x4E00;&#x6B21;&#xFF0C;&#x7BC0;&#x9EDE;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;&#x82E5;<em>boolean</em>&#x8B8A;&#x66F4;&#x70BA; <em>false</em>&#xFF0C;&#x5247;&#x7D50;&#x679C;&#x662F;&#x6578;&#x5B57; <em>Pi</em>&#xFF0C;&#x5982;&#x539F;&#x59CB; <em>If</em> &#x9673;&#x8FF0;&#x5F0F;&#x6240;&#x5B9A;&#x7FA9;&#x3002;</p>
+</blockquote>
+<h3 id="&#x7BE9;&#x9078;&#x6E05;&#x55AE;">&#x7BE9;&#x9078;&#x6E05;&#x55AE;</h3>
+<blockquote>
+<p>&#x4E0B;&#x8F09;&#x6B64;&#x7DF4;&#x7FD2;&#x96A8;&#x9644;&#x7684;&#x7BC4;&#x4F8B;&#x6A94;&#x6848; (&#x6309;&#x4E00;&#x4E0B;&#x53F3;&#x9375;&#xFF0C;&#x7136;&#x5F8C;&#x6309;&#x4E00;&#x4E0B;&#x300C;&#x9023;&#x7D50;&#x53E6;&#x5B58;&#x70BA;...&#x300D;)&#xFF1A;<a href="datasets/4-3/Building Blocks of Programs - Logic.dyn">Building Blocks of Programs - Logic.dyn</a>&#x3002;&#x9644;&#x9304;&#x4E2D;&#x63D0;&#x4F9B;&#x7BC4;&#x4F8B;&#x6A94;&#x6848;&#x7684;&#x5B8C;&#x6574;&#x6E05;&#x55AE;&#x3002;</p>
+</blockquote>
+<p>&#x63A5;&#x4E0B;&#x4F86;&#x4F7F;&#x7528;&#x908F;&#x8F2F;&#x5C07;&#x6578;&#x5B57;&#x6E05;&#x55AE;&#x5206;&#x9694;&#x70BA;&#x5076;&#x6578;&#x6E05;&#x55AE;&#x8207;&#x5947;&#x6578;&#x6E05;&#x55AE;&#x3002;</p>
+<p><img src="images/4-3/01.jpg" alt=""></p>
+<blockquote>
+<ol>
+<li><strong>Number Range -</strong> &#x52A0;&#x5165;&#x6578;&#x5B57;&#x7BC4;&#x570D;&#x81F3;&#x5716;&#x5143;&#x5340;&#x3002;</li>
+<li><strong>Numbers -</strong> &#x52A0;&#x5165;&#x4E09;&#x500B;&#x6578;&#x5B57;&#x7BC0;&#x9EDE;&#x81F3;&#x5716;&#x5143;&#x5340;&#x3002;&#x6BCF;&#x500B;&#x6578;&#x5B57;&#x7BC0;&#x9EDE;&#x7684;&#x503C;&#x61C9;&#x70BA;&#xFF1A;<em>0.0</em> (<em>start</em>)&#x3001;<em>10.0</em> (<em>end</em>) &#x8207; <em>1.0</em> (<em>step</em>)&#x3002;</li>
+<li><strong>Output - </strong> &#x8F38;&#x51FA;&#x662F;&#x5F9E; 0 &#x5230; 10 &#x7684; 11 &#x500B;&#x6578;&#x5B57;&#x7684;&#x6E05;&#x55AE;&#x3002;</li>
+<li><strong>&#x6A21;&#x9664; (%)-</strong> &#x5C07; <em>Number Range</em> &#x9023;&#x63A5;&#x81F3; <em>x</em>&#xFF0C;&#x5C07; <em>2.0</em> &#x9023;&#x63A5;&#x81F3; <em>y</em>&#x3002;&#x9019;&#x6703;&#x8A08;&#x7B97;&#x6E05;&#x55AE;&#x4E2D;&#x7684;&#x6BCF;&#x500B;&#x6578;&#x5B57;&#x9664;&#x4EE5; 2 &#x7522;&#x751F;&#x7684;&#x9918;&#x6578;&#x3002;&#x6B64;&#x6E05;&#x55AE;&#x7684;&#x8F38;&#x51FA;&#x662F; 0 &#x8207; 1 &#x4EA4;&#x66FF;&#x986F;&#x793A;&#x7684;&#x6578;&#x503C;&#x6E05;&#x55AE;&#x3002;</li>
+<li><strong>&#x76F8;&#x7B49;&#x6027;&#x6E2C;&#x8A66; (==)</strong> - &#x52A0;&#x5165;&#x76F8;&#x7B49;&#x6027;&#x6E2C;&#x8A66;&#x81F3;&#x5716;&#x5143;&#x5340;&#x3002;&#x5C07; <em>&#x6A21;&#x9664;</em> &#x8F38;&#x51FA;&#x63D2;&#x5165;&#x81F3; <em>x</em> &#x8F38;&#x5165;&#xFF0C;&#x5C07; <em>0.0</em> &#x63D2;&#x5165;&#x81F3; <em>y</em> &#x8F38;&#x5165;&#x3002;</li>
+<li><strong>Watch -</strong> &#x76F8;&#x7B49;&#x6027;&#x6E2C;&#x8A66;&#x7684;&#x8F38;&#x51FA;&#x662F; true &#x8207; false &#x4EA4;&#x66FF;&#x986F;&#x793A;&#x7684;&#x6E05;&#x55AE;&#x3002;&#x9019;&#x4E9B;&#x503C;&#x7528;&#x65BC;&#x5206;&#x9694;&#x6E05;&#x55AE;&#x4E2D;&#x7684;&#x9805;&#x76EE;&#x3002;<em>0</em> (&#x6216; <em>true</em>) &#x8868;&#x793A;&#x5076;&#x6578;&#xFF0C;<em>1</em> (&#x6216; <em>false</em>) &#x8868;&#x793A;&#x5947;&#x6578;&#x3002;</li>
+<li><strong>List.FilterByBoolMask</strong> - &#x6B64;&#x7BC0;&#x9EDE;&#x5C07;&#x6839;&#x64DA;&#x8F38;&#x5165;&#x7684;&#x5E03;&#x6797;&#x503C;&#xFF0C;&#x5C07;&#x9019;&#x4E9B;&#x503C;&#x7BE9;&#x9078;&#x5230;&#x5169;&#x500B;&#x4E0D;&#x540C;&#x6E05;&#x55AE;&#x4E2D;&#x3002;&#x5C07;&#x539F;&#x59CB; <em>number range</em> &#x63D2;&#x5165;&#x81F3; <em>list</em> &#x8F38;&#x5165;&#xFF0C;&#x5C07; <em>equality test</em> &#x8F38;&#x51FA;&#x63D2;&#x5165;&#x81F3; <em>mask</em> &#x8F38;&#x5165;&#x3002;&#x8F38;&#x51FA; <em>in</em> &#x8868;&#x793A; true &#x503C;&#xFF0C;&#x800C;&#x8F38;&#x51FA; <em>out</em> &#x8868;&#x793A; false &#x503C;&#x3002;</li>
+<li><strong>Watch - </strong> &#x7D50;&#x679C;&#x662F;&#x6211;&#x5011;&#x73FE;&#x5728;&#x7522;&#x751F;&#x4E86;&#x5076;&#x6578;&#x6E05;&#x55AE;&#x8207;&#x5947;&#x6578;&#x6E05;&#x55AE;&#x3002;&#x6211;&#x5011;&#x5DF2;&#x4F7F;&#x7528;&#x908F;&#x8F2F;&#x904B;&#x7B97;&#x5B50;&#x5C07;&#x6E05;&#x55AE;&#x5206;&#x9694;&#x70BA;&#x591A;&#x7A2E;&#x6A23;&#x5F0F;&#xFF01;</li>
+</ol>
+</blockquote>
+<h3 id="&#x5F9E;&#x908F;&#x8F2F;&#x5230;&#x5E7E;&#x4F55;&#x5716;&#x5F62;">&#x5F9E;&#x908F;&#x8F2F;&#x5230;&#x5E7E;&#x4F55;&#x5716;&#x5F62;</h3>
+<p>&#x63A5;&#x4E0B;&#x4F86;&#x6211;&#x5011;&#x5C07;&#x5EFA;&#x7F6E;&#x7B2C;&#x4E00;&#x500B;&#x7DF4;&#x7FD2;&#x4E2D;&#x5EFA;&#x7ACB;&#x7684;&#x908F;&#x8F2F;&#xFF0C;&#x5C07;&#x6B64;&#x8A2D;&#x7F6E;&#x5957;&#x7528;&#x5230;&#x5851;&#x578B;&#x4F5C;&#x696D;&#x4E2D;&#x3002;</p>
+<p><img src="images/4-3/02.png" alt=""></p>
+<blockquote>
+<ol>
+<li>&#x6211;&#x5011;&#x5F9E;&#x4E0A;&#x4E00;&#x500B;&#x7DF4;&#x7FD2;&#x958B;&#x59CB;&#xFF0C;&#x63A1;&#x7528;&#x76F8;&#x540C;&#x7684;&#x7BC0;&#x9EDE;&#x3002;&#x552F;&#x4E00;&#x7684;&#x4F8B;&#x5916;&#x662F;</li>
+<li>&#x6211;&#x5011;&#x8B8A;&#x66F4;&#x4E86;&#x683C;&#x5F0F;&#x3002;</li>
+<li>&#x8F38;&#x5165;&#x503C;&#x5DF2;&#x8B8A;&#x66F4;&#x3002;</li>
+<li>&#x6211;&#x5011;&#x4E26;&#x672A;&#x5C07; in &#x6E05;&#x55AE;&#x8F38;&#x5165;&#x63D2;&#x5165;&#x81F3; <em>List.FilterByBoolMask</em>&#x3002;&#x66AB;&#x6642;&#x5C07;&#x9019;&#x4E9B;&#x7BC0;&#x9EDE;&#x653E;&#x5728;&#x4E00;&#x65C1;&#xFF0C;&#x5B83;&#x5011;&#x5728;&#x7A0D;&#x5F8C;&#x7684;&#x7DF4;&#x7FD2;&#x4E2D;&#x6703;&#x6709;&#x7528;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/4-3/03.png" alt=""></p>
+<blockquote>
+<p>&#x6211;&#x5011;&#x5148;&#x5C07;&#x7BC0;&#x9EDE;&#x9023;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5982;&#x4EE5;&#x4E0A;&#x5F71;&#x50CF;&#x4E2D;&#x6240;&#x793A;&#x3002;&#x6B64;&#x7BC0;&#x9EDE;&#x7FA4;&#x7D44;&#x8868;&#x793A;&#x5B9A;&#x7FA9;&#x66F2;&#x7DDA;&#x6240;&#x7528;&#x7684;&#x53C3;&#x6578;&#x5F0F;&#x65B9;&#x7A0B;&#x5F0F;&#x3002;&#x4E00;&#x4E9B;&#x8A3B;&#x8A18;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li><strong>&#x7B2C;&#x4E00;&#x500B;&#x6ED1;&#x68D2;</strong>&#x7684;&#x6700;&#x5C0F;&#x503C;&#x61C9;&#x8A72;&#x662F; 1&#xFF0C;&#x6700;&#x5927;&#x503C;&#x61C9;&#x8A72;&#x662F; 4&#xFF0C;&#x6B65;&#x9577;&#x61C9;&#x662F; 0.01&#x3002;</li>
+<li><strong>&#x7B2C;&#x4E8C;&#x500B;&#x6ED1;&#x68D2;</strong>&#x7684;&#x6700;&#x5C0F;&#x503C;&#x61C9;&#x8A72;&#x662F; 0&#xFF0C;&#x6700;&#x5927;&#x503C;&#x61C9;&#x8A72;&#x662F; 1&#xFF0C;&#x6B65;&#x9577;&#x61C9;&#x662F; 0.01&#x3002;</li>
+<li><strong>PolyCurve.ByPoints</strong> - &#x82E5;&#x8907;&#x88FD;&#x4EE5;&#x4E0A;&#x7BC0;&#x9EDE;&#x5716;&#xFF0C;&#x5728; Dynamo &#x9810;&#x89BD;&#x8996;&#x57E0;&#x4E2D;&#x7684;&#x7D50;&#x679C;&#x5C07;&#x662F;&#x6B63;&#x5F26;&#x66F2;&#x7DDA;&#x3002;</li>
+</ol>
+</blockquote>
+<p>&#x6B64;&#x8655;&#x63A1;&#x7528;&#x7684;&#x8F38;&#x5165;&#x65B9;&#x5F0F;&#xFF1A;&#x5C0D;&#x66F4;&#x5177;&#x975C;&#x614B;&#x7684;&#x6027;&#x8CEA;&#x4F7F;&#x7528;&#x6578;&#x5B57;&#x7BC0;&#x9EDE;&#xFF0C;&#x5C0D;&#x66F4;&#x5177;&#x5F48;&#x6027;&#x7684;&#x6027;&#x8CEA;&#x4F7F;&#x7528;&#x6578;&#x5B57;&#x6ED1;&#x68D2;&#x3002;&#x6211;&#x5011;&#x5E0C;&#x671B;&#x4FDD;&#x7559;&#x5728;&#x9019;&#x4E00;&#x6B65;&#x958B;&#x59CB;&#x6642;&#x5B9A;&#x7FA9;&#x7684;&#x539F;&#x59CB;&#x6578;&#x5B57;&#x7BC4;&#x570D;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x6211;&#x5011;&#x5728;&#x6B64;&#x5EFA;&#x7ACB;&#x7684;&#x6B63;&#x5F26;&#x66F2;&#x7DDA;&#x61C9;&#x5177;&#x6709;&#x67D0;&#x4E9B;&#x5F48;&#x6027;&#x3002;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x79FB;&#x52D5;&#x9019;&#x4E9B;&#x6ED1;&#x68D2;&#x4EE5;&#x89C0;&#x770B;&#x66F2;&#x7DDA;&#x5C0D;&#x5176;&#x983B;&#x7387;&#x8207;&#x5E45;&#x5EA6;&#x7684;&#x66F4;&#x65B0;&#x3002;</p>
+<p><img src="images/4-3/04.png" alt=""></p>
+<blockquote>
+<p>&#x6211;&#x5011;&#x5C07;&#x5C0D;&#x5B9A;&#x7FA9;&#x9032;&#x884C;&#x4E00;&#x4E9B;&#x8ABF;&#x6574;&#xFF0C;&#x56E0;&#x6B64;&#x63A5;&#x4E0B;&#x4F86;&#x770B;&#x4E00;&#x4E0B;&#x6700;&#x7D42;&#x7D50;&#x679C;&#xFF0C;&#x4EE5;&#x4FBF;&#x53EF;&#x4EE5;&#x53C3;&#x8003;&#x53D6;&#x5F97;&#x7684;&#x7D50;&#x679C;&#x3002;&#x4E4B;&#x524D;&#xFF0C;&#x524D;&#x5169;&#x500B;&#x6B65;&#x9A5F;&#x662F;&#x5206;&#x5225;&#x57F7;&#x884C;&#x7684;&#xFF0C;&#x73FE;&#x5728;&#x6211;&#x5011;&#x8981;&#x9023;&#x63A5;&#x5169;&#x8005;&#x3002;&#x6211;&#x5011;&#x5C07;&#x4F7F;&#x7528;&#x57FA;&#x6E96;&#x6B63;&#x5F26;&#x66F2;&#x7DDA;&#x4EE5;&#x9A45;&#x52D5;&#x62C9;&#x934A;&#x5143;&#x4EF6;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E26;&#x4F7F;&#x7528; true/false &#x908F;&#x8F2F;&#x5BE6;&#x73FE;&#x5927;&#x5C0F;&#x65B9;&#x584A;&#x7684;&#x4EA4;&#x66FF;&#x8B8A;&#x5316;&#x3002;</p>
+</blockquote>
+<p><img src="images/4-3/05.png" alt=""></p>
+<blockquote>
+<ol>
+<li><strong>Math.RemapRange</strong> - &#x63A5;&#x4E0B;&#x4F86;&#x4F7F;&#x7528;&#x6B65;&#x9A5F; 01 &#x4E2D;&#x5EFA;&#x7ACB;&#x7684;&#x6578;&#x5B57;&#x5E8F;&#x5217;&#xFF0C;&#x900F;&#x904E;&#x91CD;&#x65B0;&#x5C0D;&#x6620;&#x7BC4;&#x570D;&#x5EFA;&#x7ACB;&#x65B0;&#x7684;&#x6578;&#x5B57;&#x7CFB;&#x5217;&#x3002;&#x6B65;&#x9A5F; 01 &#x4E2D;&#x7684;&#x539F;&#x59CB;&#x6578;&#x5B57;&#x4ECB;&#x65BC; 0-100 &#x4E4B;&#x9593;&#x3002;&#x73FE;&#x5728;&#x9019;&#x4E9B;&#x6578;&#x5B57;&#x7684;&#x7BC4;&#x570D;&#x5206;&#x5225;&#x7531; <em>newMin</em> &#x8207; <em>newMax</em> &#x8F38;&#x5165;&#x9650;&#x5236;&#x70BA;&#x5F9E; 0 &#x81F3; 1&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/4-3/06.png" alt=""></p>
+<blockquote>
+<ol>
+<li><strong>Curve.PointAtParameter</strong> - &#x5C07;&#x6B65;&#x9A5F; 2 &#x4E2D;&#x7684; <em>Polycurve.ByPoints</em> &#x63D2;&#x5165;&#x81F3;<em>curve</em>&#xFF0C;&#x5C07; <em>Math.RemapRange</em> &#x63D2;&#x5165;&#x81F3; <em>param</em>&#x3002;&#x6B64;&#x6B65;&#x9A5F;&#x5C07;&#x5EFA;&#x7ACB;&#x6CBF;&#x66F2;&#x7DDA;&#x7684;&#x9EDE;&#x3002;&#x6211;&#x5011;&#x5C07;&#x6578;&#x5B57;&#x91CD;&#x65B0;&#x5C0D;&#x6620;&#x5230;&#x5F9E; 0 &#x81F3; 1 &#x7684;&#x7BC4;&#x570D;&#xFF0C;&#x56E0;&#x70BA; <em>param</em> &#x7684;&#x8F38;&#x5165;&#x6703;&#x5C0B;&#x627E;&#x6B64;&#x7BC4;&#x570D;&#x5167;&#x7684;&#x503C;&#x3002;<em>0</em> &#x503C;&#x8868;&#x793A;&#x8D77;&#x9EDE;&#xFF0C;<em>1</em> &#x503C;&#x8868;&#x793A;&#x7D42;&#x9EDE;&#x3002;&#x6F14;&#x7B97;&#x7684;&#x6240;&#x6709;&#x6578;&#x5B57;&#x90FD;&#x4F4D;&#x65BC; <em>[0,1]</em> &#x7BC4;&#x570D;&#x5167;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/4-3/07.png" alt=""></p>
+<blockquote>
+<ol>
+<li><strong>List.FilterByBoolMask</strong> - &#x5C07;&#x4E0A;&#x4E00;&#x6B65;&#x4E2D;&#x7684; <em>Curve.PointAtParameter</em> &#x63D2;&#x5165;&#x81F3; <em>list</em> &#x8F38;&#x5165;&#x3002;</li>
+<li><strong>Watch -</strong> <em>in</em> &#x7684; Watch &#x7BC0;&#x9EDE;&#x8207; <em>out</em> &#x7684; Watch &#x7BC0;&#x9EDE;&#x5C07;&#x5C55;&#x793A;&#x5206;&#x5225;&#x4EE3;&#x8868;&#x5076;&#x6578;&#x9805;&#x8207;&#x5947;&#x6578;&#x9805;&#x7684;&#x5169;&#x500B;&#x6E05;&#x55AE;&#x3002;&#x9019;&#x4E9B;&#x9EDE;&#x6309;&#x7167;&#x5728;&#x66F2;&#x7DDA;&#x4E0A;&#x7684;&#x4F4D;&#x7F6E;&#x9806;&#x5E8F;&#x6392;&#x5E8F;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x5728;&#x4E0B;&#x4E00;&#x6B65;&#x4E2D;&#x5C55;&#x793A;&#x9019;&#x4E00;&#x9EDE;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/4-3/08.png" alt=""></p>
+<blockquote>
+<ol>
+<li><strong>Cuboid.ByLengths</strong> - &#x91CD;&#x65B0;&#x5EFA;&#x7ACB;&#x4EE5;&#x4E0A;&#x5F71;&#x50CF;&#x4E2D;&#x986F;&#x793A;&#x7684;&#x9023;&#x63A5;&#xFF0C;&#x4EE5;&#x7522;&#x751F;&#x6CBF;&#x6B63;&#x5F26;&#x66F2;&#x7DDA;&#x7684;&#x62C9;&#x934A;&#x3002;&#x7ACB;&#x65B9;&#x9AD4;&#x5728;&#x9019;&#x88E1;&#x53EA;&#x662F;&#x65B9;&#x584A;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x6839;&#x64DA;&#x65B9;&#x584A;&#x4E2D;&#x5FC3;&#x7684;&#x66F2;&#x7DDA;&#x9EDE;&#x5B9A;&#x7FA9;&#x5176;&#x5927;&#x5C0F;&#x3002;&#x73FE;&#x5728;&#xFF0C;&#x6A21;&#x578B;&#x4E2D;&#x61C9;&#x8A72;&#x5DF2;&#x6E05;&#x6670;&#x5448;&#x73FE;&#x5076;&#x6578;/&#x5947;&#x6578;&#x7684;&#x5340;&#x5206;&#x908F;&#x8F2F;&#x3002;</li>
+</ol>
+</blockquote>
+<p><img src="images/4-3/matrix.png" alt=""></p>
+<blockquote>
+<ol>
+<li><strong>Number Slider -</strong> &#x8FD4;&#x56DE;&#x5B9A;&#x7FA9;&#x7684;&#x958B;&#x59CB;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x8ABF;&#x6574;&#x6578;&#x5B57;&#x6ED1;&#x68D2;&#xFF0C;&#x7136;&#x5F8C;&#x89C0;&#x770B;&#x62C9;&#x934A;&#x66F4;&#x65B0;&#x3002;&#x9802;&#x90E8;&#x7684;&#x4E00;&#x5217;&#x5F71;&#x50CF;&#x8868;&#x793A;&#x9802;&#x90E8;&#x6578;&#x5B57;&#x6ED1;&#x68D2;&#x7684;&#x7BC4;&#x570D;&#x503C;&#x3002;&#x9019;&#x662F;&#x6CE2;&#x7684;&#x983B;&#x7387;&#x3002;</li>
+<li><strong>Number Slider -</strong> &#x5E95;&#x90E8;&#x7684;&#x4E00;&#x5217;&#x5F71;&#x50CF;&#x8868;&#x793A;&#x5E95;&#x90E8;&#x6ED1;&#x68D2;&#x7684;&#x7BC4;&#x570D;&#x503C;&#x3002;&#x9019;&#x662F;&#x6CE2;&#x7684;&#x5E45;&#x5EA6;&#x3002;</li>
+</ol>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../04_The-Building-Blocks-of-Programs/4-2_math.html" class="navigation navigation-prev " aria-label="Previous page: 數學"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../04_The-Building-Blocks-of-Programs/4-4_strings.html" class="navigation navigation-next " aria-label="Next page: 字串"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-dynamo/favicon.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"ga":{"token":"UA-52186525-3","configuration":"auto"},"dynamo":{"customLinks":[{"label":"Download","icon":"fa fa-file-pdf-o fa-lg","url":"http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print.pdf"}],"languages":[{"label":"Deutsch","code":"de","url":"http://primer.dynamobim.org/de"},{"label":"日本語","code":"ja","url":"http://primer.dynamobim.org/ja"},{"label":"中文(繁體)","code":"zh-tw","url":"http://primer.dynamobim.org/zh-tw"},{"label":"","code":"","url":""},{"label":"","code":"","url":""}],"currentLanguage":{"code":"en","url":"http://primer.dynamobim.org/en","switchLangLabel":"Languages"},"favicon":"/images/icons/favicon.ico","facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"popup":{},"highlight":{},"search":{"maxIndexSize":1000000},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
