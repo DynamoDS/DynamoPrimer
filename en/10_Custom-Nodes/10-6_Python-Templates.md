@@ -8,7 +8,7 @@ With Dynamo 2.0 we have the ability to specify a default template `(.py extensio
 
 The location for this template is in the `APPDATA` location for your Dynamo install.
 
-This is typically as follows `(%appdata%/Dynamo/Core/{version}/)`.
+This is typically as follows `( %appdata%\Dynamo\Dynamo Core\{version}\ )`.
 
 
 ![Template](images/10-6/PythonTemplate - 01.png)
