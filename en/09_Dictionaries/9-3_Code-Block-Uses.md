@@ -4,7 +4,7 @@ Not only does Dynamo 2.0 introduce the nodes previously discussed for dictionari
 
 You can use syntax like below or DesignScript-based representations of the nodes.
 
-![IMAGE](images/9-1/DYN20_dictionary.png)
+![IMAGE](images/9-1/DYN20_Dictionary.png)
 
 Since a dictionary is an object type in Dynamo we can commit the following actions upon it.
 
