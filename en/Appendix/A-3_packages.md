@@ -24,7 +24,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
 
 <table>
   <tr>
-    <td width="10%"><img src="images/A-4/BimorphNodes_Logo.png"></img></td>
+    <td width="10%"><img src="images/A-4/Bimorph Digital Engineering B Logo.png"></img></td>
     <td width="55%"><b>BIMORPH NODES</b></td>
     <td><a href="https://bimorph.com/bimorph-nodes/">Visit the BimorphNodes Dictionary</td></a>
   </tr>
