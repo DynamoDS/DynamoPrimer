@@ -49,12 +49,10 @@ In diesem Beispiel teilen Sie eine Liste von Zahlen in eine Liste mit geraden un
 
 In diesem Schritt wenden Sie die in der ersten Übung erstellte Logik auf einen Modellierungsvorgang an.
 
-![](images/4-3/02.png)
+![](images/4-3/02.png) Beginnen Sie mit den Blöcken aus der letzten Übung. Die einzigen Ausnahmen (zusätzlich zum Ändern des Formats) sind:
 
-> 1. Beginnen Sie mit den Blöcken aus der letzten Übung. Dabei bestehen jedoch einige Unterschiede:
-2. Das Format wurde geändert.
-3. Die Eingabewerte wurden geändert.
-4. Die in-Listeneingabe für *List.FilterByBoolMask* wurde entfernt. Diese Blöcke werden momentan nicht benötigt, kommen aber weiter unten in dieser Übung zum Einsatz.
+> 1. Die Eingabewerte wurden geändert.
+2. Die in-Listeneingabe für *List.FilterByBoolMask* wurde entfernt. Diese Blöcke werden momentan nicht benötigt, kommen aber weiter unten in dieser Übung zum Einsatz.
 
 ![](images/4-3/03.png)
 

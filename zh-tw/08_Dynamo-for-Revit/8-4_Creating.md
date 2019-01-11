@@ -75,7 +75,7 @@
 
 > 平面是抽象的幾何圖形，表示無限的二維空間。平面非常適合描述等高與相交，正如我們在此步驟中的設置所示。
 
-> 1. 使用 *Geometry.Intersect* 節點，將 *Curve.PlaneAtParameter* 插入至 *Geometry.Intersect* 節點的 *entity* 輸入。將主要 *List.Create* 節點插入至 *geometry* 輸入。現在，我們可以在 Dynamo 視埠中看到表示每條曲線與定義的平面相交的點。
+> 1. 使用 *Geometry.Intersect* 節點 (注意跨產品的鑲邊)，將 *Curve.PlaneAtParameter* 插入至 *Geometry.Intersect* 節點的 *entity* 輸入。將主要 *List.Create* 節點插入至 *geometry* 輸入。現在，我們可以在 Dynamo 視埠中看到表示每條曲線與定義的平面相交的點。
 
 ![練習](images/8-4/Exercise/04.jpg)
 
@@ -123,7 +123,7 @@
 > 1. [DirectShape.dyn](datasets/8-4/DirectShape.dyn)
 2. [ARCH-DirectShape-BaseFile.rvt](datasets/8-4/ARCH-DirectShape-BaseFile.rvt)
 
-![練習](images/8-4/Exercise/DS-05.jpg)
+![練習](images/8-4/Exercise/DS-05.png)
 
 > 首先，開啟本課程的範例檔案 ARCH-DirectShape-BaseFile.rvt。
 
@@ -131,18 +131,18 @@
 2. 沿著中庭的邊是一條參考曲線，我們會將其用作在 Dynamo 中參考的曲線。
 3. 沿著中庭的相對一邊是另一條參考曲線，我們也會在 Dynamo 中對其進行參考。
 
-![練習](images/8-4/Exercise/DS-04.jpg)
+![練習](images/8-4/Exercise/DS-04.png)
 
 > 1. 為了在 Dynamo 中參考幾何圖形，我們將對 Revit 中的每個成員使用*Select Model Element*。在 Revit 中選取量體，並使用 *Element.Faces* 將幾何圖形匯入至 Dynamo，現在 Dynamo 預覽中應該可以看到量體。
 2. 使用 *Select Model Element* 與 *CurveElement.Curve* 將一條參考曲線匯入至 Dynamo。
 3. 使用 *Select Model Element* 與 *CurveElement.Curve* 將另一條參考曲線匯入至 Dynamo。
 
-![練習](images/8-4/Exercise/DS-03.jpg)
+![練習](images/8-4/Exercise/DS-03.png)
 
 > 1. 拉遠並平移至範例圖表中的右側，可以看到大型節點群組，這些是幾何圖形作業，將產生 Dynamo 預覽中可見的格架屋頂結構。使用手冊的[代碼區塊一節](../07_Code-Block/7-2_Design-Script-syntax.md#Node)中討論的*要編碼的節點*功能產生這些節點。
 2. 結構由三個主要參數驅動，分別是對角線偏移、拱角與半徑。
 
-![練習](images/8-4/Exercise/DS-06.jpg)
+![練習](images/8-4/Exercise/DS-06.png)
 
 > 進行縮放，特寫查看此圖表的參數。我們可以調整這些參數，以取得不同的幾何圖形輸出。
 

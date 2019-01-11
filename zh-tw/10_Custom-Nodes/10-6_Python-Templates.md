@@ -6,7 +6,7 @@
 
 此樣板的位置位於 Dynamo 安裝的 ```APPDATA``` 位置。
 
-通常是在 ```(%appdata%/Dynamo/Core/{version}/)```。
+通常是在 ```( %appdata%\Dynamo\Dynamo Core\{version}\ )```。
 
 ![樣板](images/10-6/PythonTemplate - 01.png)
 
@@ -20,7 +20,7 @@
 
 ```
 <PythonTemplateFilePath>
-C:\Users\CURRENTUSER\AppData\Roaming\Dynamo\Dynamo Core\2.0\PythonTemplate.py
+<string>C:\Users\CURRENTUSER\AppData\Roaming\Dynamo\Dynamo Core\2.0\PythonTemplate.py</string>
 </PythonTemplateFilePath>
 ```
 

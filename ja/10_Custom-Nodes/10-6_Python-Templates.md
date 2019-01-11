@@ -6,7 +6,7 @@ Dynamo 2.0 では、初めて Python ウィンドウを開く際に、既定で�
 
 このテンプレートは、Dynamo をインストールした ```APPDATA``` にあります。
 
-これは通常、```(%appdata%/Dynamo/Core/{バージョン}/)```です。
+これは通常、```(%appdata%\Dynamo\Dynamo Core\{バージョン}\)```です。
 
 ![[テンプレート]](images/10-6/PythonTemplate - 01.png)
 
@@ -20,7 +20,7 @@ Dynamo 2.0 では、初めて Python ウィンドウを開く際に、既定で�
 
 ```
 <PythonTemplateFilePath>
-C:\Users\CURRENTUSER\AppData\Roaming\Dynamo\Dynamo Core\2.0\PythonTemplate.py
+<string>C:\Users\CURRENTUSER\AppData\Roaming\Dynamo\Dynamo Core\2.0\PythonTemplate.py</string>
 </PythonTemplateFilePath>
 ```
 

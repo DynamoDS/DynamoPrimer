@@ -88,7 +88,7 @@ Durch Festlegen des Öffnungsgrads wird die Abweichung der Elemente des Dachs ni
 
 ![Exercise](images/8-6/Exercise/06.jpg)
 
-> 1. Wenn Sie eines der ETFE-Elemente in Revit auswählen, werden vier Exemplarparameter angezeigt: *XYZ1, XYZ2, XYZ3* und *XYZ4*. Diese sind nach korrekter Erstellung leer. Diese Parameter sind textbasiert und benötigen Werte. Sie schreiben mithilfe von Dynamo die Positionen der adaptiven Punkte in die einzelnen Parameter. Dies verbessert die Interoperabilität, falls die Geometrie an einen Bauingenieur oder Fassadenspezialisten weitergegeben werden soll.
+> 1. Wenn Sie eines der ETFE-Elemente in Revit auswählen, werden vier Exemplarparameter angezeigt: *XYZ1, XYZ2, XYZ3* und *XYZ4*. Diese sind nach der Erstellung leer. Diese Parameter sind textbasiert und benötigen Werte. Sie schreiben mithilfe von Dynamo die Positionen der adaptiven Punkte in die einzelnen Parameter. Dies verbessert die Interoperabilität, falls die Geometrie an einen Bauingenieur oder Fassadenspezialisten weitergegeben werden soll.
 
 ![Exercise](images/8-6/Exercise/03.jpg)
 

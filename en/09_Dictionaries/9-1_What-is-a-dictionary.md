@@ -16,7 +16,7 @@ The separation of dictionaries from lists introduces dictionaries as a first-cla
     * Lists use the following syntax `[value,value,value]`
   * _New nodes_ have been introduced to the library to help you create, modify, and query dictionaries.
   * Lists created in 1.x code blocks will automatically migrated on load of the script to the new list syntax that uses square brackets `[ ]` instead of curly brackets `{ }`
-![IMAGE](images/9-1/DYN20_dictionary.png)
+![IMAGE](images/9-1/DYN20_Dictionary.png)
 
 * #### Why should I care? What would you use these for?
 In computer science, Dictionaries - like lists- are collections of objects. While lists are in a specific order, dictionaries are _unordered_ collections. They are not reliant on sequential numbers (indices), instead, they utilize _keys._

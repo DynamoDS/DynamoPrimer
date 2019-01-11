@@ -69,7 +69,7 @@ Setting the Aperture Ratio doesn't clearly demonstrate the deviation of panels o
 ###Scheduling
 
 ![Exercise](images/8-6/Exercise/06.jpg)
-> 1. Selecting one ETFE panel in Revit, we see that there are four instance parameters, *XYZ1, XYZ2, XYZ3,* and *XYZ4*.  These are all blank after they're correctly.  These are text-based parameters and need values.  We'll use Dynamo to write the adaptive point locations to each parameter.  This helps interoperability if the geometry needs to be sent to an engineer of facade consultant.
+> 1. Selecting one ETFE panel in Revit, we see that there are four instance parameters, *XYZ1, XYZ2, XYZ3,* and *XYZ4*.  These are all blank after they're created.  These are text-based parameters and need values.  We'll use Dynamo to write the adaptive point locations to each parameter.  This helps interoperability if the geometry needs to be sent to an engineer of facade consultant.
 
 ![Exercise](images/8-6/Exercise/03.jpg)
 > In a sample sheet, we have a large, empty schedule.  The XYZ parameters are shared parameters in the Revit file, which allows us to add them to the schedule.
