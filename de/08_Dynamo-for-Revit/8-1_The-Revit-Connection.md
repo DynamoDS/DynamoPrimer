@@ -10,7 +10,7 @@ Dieses Kapitel behandelt die Dynamo-Arbeitsabläufe für BIM. Die einzelnen Absc
 
 #### Kompatibilität mit Revit-Versionen
 
-Da sich Revit und Dynamo beide immer weiterentwickeln, bemerken Sie möglicherweise, dass Ihre Revit-Version nicht mit der auf Ihrem Computer installierten Version von Dynamo for Revit kompatibel ist. Weiter unten wird erläutert, welche Versionen von Dynamo for Revit mit Revit kompatibel sind.
+Da sich sowohl Revit als auch Dynamo laufend weiterentwickeln, bemerken Sie möglicherweise, dass Ihre Revit-Version nicht mit der auf Ihrem Computer installierten Version von Dynamo for Revit kompatibel ist. Weiter unten wird erläutert, welche Versionen von Dynamo for Revit mit Revit kompatibel sind.
 
 |Revit-Version|Erste stabile Version von Dynamo|Letzte unterstützte Version von Dynamo for Revit|
 | -- | -- | -- |

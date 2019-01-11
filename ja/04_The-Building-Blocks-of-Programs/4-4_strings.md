@@ -14,7 +14,7 @@
 
 ### 文字列のクエリーを実行する
 
-> この演習に付属しているサンプル ファイルをダウンロードしてください(右クリックして[名前を付けてリンク先を保存...]を選択): [Building Blocks of Programs - Strings.dyn](datasets/4-5/Building Blocks of Programs - Strings.dyn)。 すべてのサンプルファイルの一覧については、付録を参照してください。
+> この演習に付属しているサンプル ファイルをダウンロードしてください(右クリックして[名前を付けてリンク先を保存...]を選択): [Building Blocks of Programs - Strings.dyn](datasets/4-4/Building Blocks of Programs - Strings.dyn)。 すべてのサンプルファイルの一覧については、付録を参照してください。
 
 文字列のクエリーを実行することにより、大量のデータをすばやく解析することができます。ここでは、ワークフローを促進してソフトウェアの相互運用性を向上させるための基本的な操作について説明します。
 

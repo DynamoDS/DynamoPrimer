@@ -8,7 +8,7 @@ Im Folgenden sind einige der häufiger in der Dynamo-Community verwendeten Paket
 | -- | -- | -- |
 |archi-lab ist eine Sammlung mit über 50 benutzerdefinierten Paketen, die die Möglichkeiten zur Interaktion zwischen Dynamo und Revit erheblich erweitern. Die archi-lab-Pakete enthalten Blöcke mit höchst unterschiedlichen Funktionen von einfachen Listenoperationen bis hin zu Analysis Visualization Framework-Blöcken für Revit.|![](http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png)|
 
-|![](images/A-4/BimorphNodes_Logo.png)|BIMORPH-BLÖCKE|[BimorphNodes-Wörterbuch besuchen](https://bimorph.com/bimorph-nodes/)|
+|![](images/A-4/Bimorph Digital Engineering B Logo.png)|BIMORPH-BLÖCKE|[BimorphNodes-Wörterbuch besuchen](https://bimorph.com/bimorph-nodes/)|
 | -- | -- | -- |
 |BimorphNodes ist eine vielseitige Sammlung mit leistungsfähigen Versorgungsnetzwerk-Blöcken. Zu den wichtigsten Neuerungen des Pakets gehören die hoch effiziente Kollisionserkennung, Geometrieschnittpunkt-Blöcke, ImportInstance (CAD) zur Konvertierung von Kurven und Blöcken sowie Kollektoren für verknüpfte Elementen, die Einschränkungen in der Revit-API aufheben. Weitere Informationen über die gesamte Bandbreite an verfügbaren Blöcken finden Sie im Wörterbuch auf BimorphNodes.|![](images/A-4/Bimorph-Nodes-v2.2-Library-Catalog-header.jpg)|
 

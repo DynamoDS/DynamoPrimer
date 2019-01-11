@@ -6,7 +6,7 @@ Dynamo 2.0 不只為字典引入先前討論的節點，程式碼區塊中也同
 
 您可以使用類似於下方的語法，或節點的 DesignScript 式表現法。
 
-![影像](images/9-1/DYN20_dictionary.png)
+![影像](images/9-1/DYN20_Dictionary.png)
 
 由於字典在 Dynamo 中是一種物件類型，因此我們可以對其執行以下動作。
 

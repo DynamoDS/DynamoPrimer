@@ -75,7 +75,7 @@ Dynamo では、完全なパラメトリック コントロールを使用して
 
 > 平面はジオメトリの抽象的なピースであり、無限の 2 次元空間を表します。平面は輪郭や交差の作成に適しています。実際に行ってみましょう。
 
-> 1. *Geometry.Intersect* ノードを使用して、*Curve.PlaneAtParameter* を *Geometry.Intersect* ノードの *entity* 入力に接続します。 メインの *List.Create* ノードを *geometry* 入力に接続します。 Dynamo のビューポートには、設定した平面と各曲線の交点が表示されます。
+> 1. *Geometry.Intersect* ノード(注: 外積レーシング)を使用して、*Curve.PlaneAtParameter* を *Geometry.Intersect* ノードの *entity* 入力に接続します。メインの *List.Create* ノードを *geometry* 入力に接続します。 Dynamo のビューポートには、設定した平面と各曲線の交点が表示されます。
 
 ![演習](images/8-4/Exercise/04.jpg)
 
@@ -123,7 +123,7 @@ Dynamo ジオメトリを DirectShape として Revit プロジェクトに読�
 > 1. [DirectShape.dyn](datasets/8-4/DirectShape.dyn)
 2. [ARCH-DirectShape-BaseFile.rvt](datasets/8-4/ARCH-DirectShape-BaseFile.rvt)
 
-![演習](images/8-4/Exercise/DS-05.jpg)
+![演習](images/8-4/Exercise/DS-05.png)
 
 > このレッスンのサンプル ファイル ARCH-DirectShape-BaseFile.rvt を開きます。
 
@@ -131,18 +131,18 @@ Dynamo ジオメトリを DirectShape として Revit プロジェクトに読�
 2. アトリウムのエッジに沿って見えるのは 1 つの参照曲線です。これは Dynamo で参照する曲線として使用します。
 3. アトリウムの反対側のエッジに見えるのは別の参照曲線です。これも Dynamo で参照します。
 
-![演習](images/8-4/Exercise/DS-04.jpg)
+![演習](images/8-4/Exercise/DS-04.png)
 
 > 1. Dynamo でジオメトリを参照するには、Revit の各要素に対して *Select Model Element* ノードを使用します。 Revit でマスを選択し、*Element.Faces* ノードを使用して Dynamo にジオメトリを読み込みます。マスが Dynamo プレビューに表示されます。
 2. *Select Model Element* ノードと *CurveElement.Curve* ノードを使用して、一方の参照曲線を Dynamo に読み込みます。
 3. *Select Model Element* ノードと *CurveElement.Curve* ノードを使用して、もう一方の参照曲線を Dynamo に読み込みます。
 
-![演習](images/8-4/Exercise/DS-03.jpg)
+![演習](images/8-4/Exercise/DS-03.png)
 
 > 1. 縮小して画面をサンプル グラフの右に移動すると、大きなノードのグループが見えます。これらはジオメトリを操作し、Dynamo プレビューで表示される格子状の屋根構造を生成します。これらのノードは、手引の「[コード ブロック](../07_Code-Block/7-2_Design-Script-syntax.md#Node)」セクションで説明されている[*ノードをコード化*]機能を使用して生成されます。
 2. この構造は、Diagonal Shift、Camber、Radius という 3 つの主要なパラメータでコントロールされます。
 
-![演習](images/8-4/Exercise/DS-06.jpg)
+![演習](images/8-4/Exercise/DS-06.png)
 
 > このグラフのパラメータをクローズアップします。これらを調整して、さまざまなジオメトリを出力することができます。
 
