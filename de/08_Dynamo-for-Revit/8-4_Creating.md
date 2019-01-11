@@ -75,7 +75,7 @@ In der unten stehenden Übung wird gezeigt, wie Dynamo Daten für die Erstellung
 
 > Eine Ebene ist ein abstraktes Geometrieelement, das für einen unendlichen zweidimensionalen Raum steht. Ebenen eignen sich ausgezeichnet zum Erstellen von Konturen und Schnitten wie in diesem Schritt gezeigt.
 
-> 1. Verwenden Sie als Nächstes den *Geometry.Intersect*-Block: Verbinden Sie *Curve.PlaneAtParameter* mit der *entity*-Eingabe von *Geometry.Intersect*. Verbinden Sie den *List.Create*-Block mit der *geometry*-Eingabe. Im Dynamo-Ansichtsfenster werden daraufhin die Schnittpunkte der einzelnen Kurven mit den definierten Ebenen angezeigt.
+> 1. Verwenden Sie als Nächstes den *Geometry.Intersect*-Block (beachten Sie die Kreuzprodukt-Vergitterung): Verbinden Sie *Curve.PlaneAtParameter* mit der *entity*-Eingabe von *Geometry.Intersect*. Verbinden Sie den *List.Create*-Block mit der *geometry*-Eingabe. Im Dynamo-Ansichtsfenster werden daraufhin die Schnittpunkte der einzelnen Kurven mit den definierten Ebenen angezeigt.
 
 ![Exercise](images/8-4/Exercise/04.jpg)
 
@@ -123,7 +123,7 @@ Die folgende Übung zeigt den Ablauf für den Import von Dynamo-Geometrie als Di
 > 1. [DirectShape.dyn](datasets/8-4/DirectShape.dyn)
 2. [ARCH-DirectShape-BaseFile.rvt](datasets/8-4/ARCH-DirectShape-BaseFile.rvt)
 
-![Exercise](images/8-4/Exercise/DS-05.jpg)
+![Exercise](images/8-4/Exercise/DS-05.png)
 
 > Öffnen Sie als Erstes die Beispieldatei für diese Lektion: ARCH-DirectShape-BaseFile.rvt.
 
@@ -131,18 +131,18 @@ Die folgende Übung zeigt den Ablauf für den Import von Dynamo-Geometrie als Di
 2. Entlang der Kante des Foyers verläuft eine Referenzkurve, die Sie in Dynamo referenzieren werden.
 3. Entlang der gegenüberliegenden Kante des Foyers verläuft eine zweite Referenzkurve, die ebenfalls in Dynamo referenziert werden soll.
 
-![Exercise](images/8-4/Exercise/DS-04.jpg)
+![Exercise](images/8-4/Exercise/DS-04.png)
 
 > 1. Zum Referenzieren der Geometrie in Dynamo verwenden Sie *Select Model Element* für die einzelnen Elemente in Revit. Wählen Sie den Körper in Revit aus und importieren Sie die Geometrie mithilfe von *Element.Faces* in Dynamo. Dadurch wird der Körper in der Dynamo-Vorschau angezeigt.
 2. Importieren Sie eine der Referenzkurven mithilfe von *Select Model Element* und *CurveElement.Curve* in Dynamo.
 3. Importieren Sie die andere Referenzkurve mithilfe von *Select Model Element* und *CurveElement.Curve* in Dynamo.
 
-![Exercise](images/8-4/Exercise/DS-03.jpg)
+![Exercise](images/8-4/Exercise/DS-03.png)
 
 > 1. Wenn Sie das Beispieldiagramm verkleinern und nach rechts schwenken, sehen Sie eine große Gruppe von Blöcken. Diese stehen für die geometrischen Operationen, mit denen die in der Dynamo-Vorschau gezeigte Gitterkonstruktion für das Dach generiert wird. Diese Blöcke wurden mithilfe der Funktion *Block zu Code* erstellt, die im Abschnitt zu [Codeblöcken](../07_Code-Block/7-2_Design-Script-syntax.md#Node) dieses Handbuchs beschrieben wird.
 2. Diese Konstruktion wird im Wesentlichen durch drei Parameter gesteuert: Diagonal Shift, Camber und Radius.
 
-![Exercise](images/8-4/Exercise/DS-06.jpg)
+![Exercise](images/8-4/Exercise/DS-06.png)
 
 > Vergrößern Sie die Darstellung der Parameter für dieses Diagramm. Indem Sie mit diesen experimentieren, erhalten Sie unterschiedliche Geometrie.
 

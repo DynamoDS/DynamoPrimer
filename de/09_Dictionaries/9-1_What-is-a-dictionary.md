@@ -14,7 +14,7 @@ Bei einer Liste handelt es sich um einen Datentyp, der aus einer Sammlung von so
 
 * #### Warum wurde diese Änderung vorgenommen und warum ist sie wichtig für mich?
 
-Durch die Trennung von Wörterbüchern und Listen werden Wörterbücher zu wichtigen Datentypen, mit denen Sie schnell und einfach Werte speichern und nachschlagen können, ohne die Indexwerte kennen oder eine exakte Listenstruktur durch Ihre Arbeitsabläufe beibehalten zu müssen. Während der Benutzertests sahen wir eine erhebliche Reduzierung der Diagrammgröße, wenn Wörterbüchern anstatt mehrerer ```GetItemAtIndex```-Blöcke verwendet wurden.
+Durch die Trennung von Wörterbüchern und Listen werden Wörterbücher zu wichtigen Datentypen, mit denen Sie schnell und einfach Werte speichern und nachschlagen können, ohne die Indexwerte kennen oder eine exakte Listenstruktur durch Ihre Arbeitsabläufe beibehalten zu müssen. Während der Benutzertests sahen wir eine erhebliche Reduzierung der Diagrammgröße, wenn Wörterbücher anstatt mehrerer ```GetItemAtIndex```-Blöcke verwendet wurden.
 
 * #### Welche Änderungen wurden vorgenommen?
 
@@ -23,11 +23,11 @@ Durch die Trennung von Wörterbüchern und Listen werden Wörterbücher zu wicht
 * Listen verwenden die folgende Syntax: ```[wert,wert,wert]```
 
 * Es wurden *neue Blöcke* in der Bibliothek eingeführt, mit denen Sie einfacher Wörterbücher erstellen, ändern und abfragen können.
-* Listen, die in 1.x-Codeblöcken erstellt wurden, werden automatisch beim Laden des Skripts zur neuen Syntax migriert, die eckige ```[ ]``` anstelle von geschweiften Klammern ```{ }``` verwendet. ![BILD](images/9-1/DYN20_dictionary.png)
+* Listen, die in 1.x-Codeblöcken erstellt wurden, werden automatisch beim Laden des Skripts zur neuen Syntax migriert, die eckige ```[ ]``` anstelle von geschweiften Klammern ```{ }``` verwendet. ![BILD](images/9-1/DYN20_Dictionary.png)
 
 * #### Warum ist dies wichtig für mich? Wie würde ich diese Dateitypen verwenden?
 
-In der Computerwissenschaft handelt es sich bei Wörterbüchern – wie bei Listen – um Sammlungen von Objekten. Während Listen jedoch in einer bestimmten Reihenfolge erstellt werden, sind die Sammlungen in Wörterbücher *nicht sortiert*. Es sind keine Nummernsequenzen (Indizes) erforderlich. Stattdessen werden *Schlüssel* verwendet.
+In der Computerwissenschaft handelt es sich bei Wörterbüchern – wie bei Listen – um Sammlungen von Objekten. Während Listen jedoch in einer bestimmten Reihenfolge erstellt werden, sind die Sammlungen in Wörterbüchern *nicht sortiert*. Es sind keine Nummernsequenzen (Indizes) erforderlich. Stattdessen werden *Schlüssel* verwendet.
 
 In der folgenden Abbildung sehen Sie eine mögliche Verwendung eines Wörterbuchs. Wörterbücher werden häufig genutzt, um zwei Teile von Daten zu verbinden, die vielleicht keine direkte Beziehung zueinander aufweisen. In unserem Fall verbinden wir die spanische Version eines Worts mit der englischen Version, so dass wir das Wort später nachschlagen können. ![BILD](images/9-1/9-1_dictionaryExample.png)
 

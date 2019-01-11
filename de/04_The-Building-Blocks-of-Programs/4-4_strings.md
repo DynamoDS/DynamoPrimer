@@ -14,7 +14,7 @@ Zeichenfolgen können auf vielfältige Weise eingesetzt werden. Dazu gehören da
 
 ### Abfragen von Zeichenfolgen
 
-> Laden Sie die Beispieldatei für diese Übungslektion herunter (durch Rechtsklicken und Wahl von "Save Link As..."): [Building Blocks of Programs - Strings.dyn](datasets/4-5/Building Blocks of Programs - Strings.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
+> Laden Sie die Beispieldatei für diese Übungslektion herunter (durch Rechtsklicken und Wahl von "Save Link As..."): [Building Blocks of Programs - Strings.dyn](datasets/4-4/Building Blocks of Programs - Strings.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
 Sie können große Datenmengen rasch analysieren, indem Sie Zeichenfolgen abfragen. In diesem Abschnitt werden einige grundlegende Vorgänge behandelt, die Arbeitsabläufe beschleunigen und die Interoperabilität von Software verbessern können.
 

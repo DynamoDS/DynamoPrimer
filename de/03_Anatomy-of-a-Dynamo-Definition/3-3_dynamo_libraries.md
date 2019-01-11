@@ -36,8 +36,8 @@ In der Regel wird der Name eines Blocks im Arbeitsbereich im Format ```kategorie
 
 ![Blocknamen](images/3-3/02-NodeNames.png)
 
-> 1. ```Point.ByCoordinates``` und ```UV.ByCoordinates``` weisen denselben Namen auf, stammen jedoch aus unterschiedlichen Kategorien.
-2. Blöcke aus den meisten Bibliotheken schließen das Kategorieformat ein.
+> 1. Blöcke aus den meisten Bibliotheken schließen das Kategorieformat ein.
+2. ```Point.ByCoordinates``` und ```UV.ByCoordinates``` weisen denselben Namen auf, stammen jedoch aus unterschiedlichen Kategorien.
 3. Zu den wichtigsten Ausnahmen gehören Built-in Functions, Core.Input, Core.View und Operators.
 
 ### Häufig verwendete Blöcke

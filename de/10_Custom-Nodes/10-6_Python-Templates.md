@@ -2,11 +2,11 @@
 
 ## Python-Vorlagen
 
-In Dynamo 2.0 haben Sie die Möglichkeit eine Standardvorlage ```(*.py-Erweiterung)``` festzulegen, die verwendet wird, wenn Sie das Python-Fenster zum ersten Mal öffnen. Entwickler haben sich diese Funktion schon lange gewünscht, da sie die Verwendung von Python innerhalb von Dynamo beschleunigt. Die Verwendung einer Vorlage ermöglich es uns, vorgabemäßige Imports jederzeit startbereit zu haben, wenn wir ein benutzerdefiniertes Python-Skript entwickeln möchten.
+In Dynamo 2.0 haben Sie die Möglichkeit eine Standardvorlage ```(*.py-Erweiterung)``` festzulegen, die verwendet wird, wenn Sie das Python-Fenster zum ersten Mal öffnen. Entwickler haben sich diese Funktion schon lange gewünscht, da sie die Verwendung von Python innerhalb von Dynamo beschleunigt. Durch die Verwendung einer Vorlage stehen uns vorgabemäßige Imports jederzeit einsatzbereit zur Verfügung, wenn wir ein benutzerdefiniertes Python-Skript entwickeln möchten.
 
 Die Vorlage befindet sich im Ordner ```APPDATA``` Ihrer Dynamo-Installation.
 
-Diese ist in der Regel: ```(%appdata%/Dynamo/Core/{version}/)```.
+Diese ist in der Regel: ```( %appdata%\Dynamo\Dynamo Core\{version}\ )```.
 
 ![Vorlage](images/10-6/PythonTemplate - 01.png)
 
@@ -20,7 +20,7 @@ Ersetzen Sie alle Vorkommen von ```durch das Folgende:```
 
 ```
 <PythonTemplateFilePath>
-C:\Users\CURRENTUSER\AppData\Roaming\Dynamo\Dynamo Core\2.0\PythonTemplate.py
+<string>C:\Users\CURRENTUSER\AppData\Roaming\Dynamo\Dynamo Core\2.0\PythonTemplate.py</string>
 </PythonTemplateFilePath>
 ```
 
@@ -75,7 +75,7 @@ Nach dem Erstellen der Python-Vorlage sucht Dynamo jedes Mal danach, wenn Sie ei
 
 ![Vorlage](images/10-6/PythonTemplate - 03.png)
 
-Wenn die Python-Vorlage gefunden wird (beispielsweise für Revit), werden alle Ihre vorgegebenen Elemente angezeigt, die Sie integriert haben.
+Wenn die Python-Vorlage gefunden wird (beispielsweise für Revit), werden alle vorgegebenen Elemente angezeigt, die Sie integriert haben.
 
 ![Vorlage](images/10-6/PythonTemplate - 04.png)
 

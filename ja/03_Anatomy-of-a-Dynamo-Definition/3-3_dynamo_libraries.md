@@ -36,8 +36,8 @@ Dynamo UI の**[ライブラリ]**セクションは、階層構造のライブ�
 
 ![ノードの名前](images/3-3/02-NodeNames.png)
 
-> 1. ```Point.ByCoordinates``` ノードと ```UV.ByCoordinates``` ノードは、名前は同じですがカテゴリが異なっています。
-2. ほとんどのライブラリのノードには、カテゴリ形式が含まれています。
+> 1. ほとんどのライブラリのノードには、カテゴリ形式が含まれています。
+2. ```Point.ByCoordinates``` ノードと ```UV.ByCoordinates``` ノードは、名前は同じですがカテゴリが異なっています。
 3. 注意する例外としては、Built-in Functions、Core.Input、Core.View、Operators などがあります。
 
 ### 頻繁に使用されるノード

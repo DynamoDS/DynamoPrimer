@@ -36,8 +36,8 @@ Dynamo 使用者介面的**「資源庫」**區段由按階層排列的資源庫
 
 ![節點名稱](images/3-3/02-NodeNames.png)
 
-> 1. ```Point.ByCoordinates``` 與 ```UV.ByCoordinates``` 具有相同名稱，但來自不同品類
-2. 大多數資源庫中的節點將包括品類格式
+> 1. 大多數資源庫中的節點將包括品類格式
+2. ```Point.ByCoordinates``` 與 ```UV.ByCoordinates``` 具有相同名稱，但來自不同品類
 3. 明顯的例外包括內建函數、Core.Input、Core.View 及運算子
 
 ### 常用的節點

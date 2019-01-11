@@ -14,7 +14,7 @@
 
 ### 查詢字串
 
-> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[Building Blocks of Programs - Strings.dyn](datasets/4-5/Building Blocks of Programs - Strings.dyn)。附錄中提供範例檔案的完整清單。
+> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[Building Blocks of Programs - Strings.dyn](datasets/4-4/Building Blocks of Programs - Strings.dyn)。附錄中提供範例檔案的完整清單。
 
 透過查詢字串，您可以快速剖析大量資料。我們將討論一些基本作業，這些作業可以加快工作流程，有助於提高軟體互通性。
 

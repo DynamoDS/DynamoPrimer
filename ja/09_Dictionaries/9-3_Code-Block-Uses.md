@@ -6,7 +6,7 @@ Dynamo 2.0 では、これまでに説明したディクショナリのノード
 
 ノードについて次のような、または DesignScript ベースの表現のような構文を使用できます。
 
-![画像](images/9-1/DYN20_dictionary.png)
+![画像](images/9-1/DYN20_Dictionary.png)
 
 ディクショナリは Dynamo のオブジェクト タイプであるため、次のアクションを実行できます。
 
