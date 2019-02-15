@@ -7,17 +7,19 @@ While not strictly a piece of geometry, the CoordinateSystem is an important too
 Creating a CoordinateSystem centered at a point with x = 0, y = 0, z = 0, with no rotations, scaling, or sheering transformations, simply requires calling the Identity constructor:
 
 ![](images/B-2/GeometricPrimitives_01.png)
-```C#
+
+```js
 // create a CoordinateSystem at x = 0, y = 0, z = 0,
 // no rotations, scaling, or sheering transformations
 
 cs = CoordinateSystem.Identity();
 ```
 
-CoordinateSystems with geometric transformations are beyond the scope of this chapter, though another constructor allows you to create a coordinate system at a specific point, CoordinateSystem.ByOriginVectors: 
+CoordinateSystems with geometric transformations are beyond the scope of this chapter, though another constructor allows you to create a coordinate system at a specific point, *CoordinateSystem.ByOriginVectors*: 
 
 ![](images/B-2/GeometricPrimitives_02.png)
-```C#
+
+```js
 // create a CoordinateSystem at a specific location,
 // no rotations, scaling, or sheering transformations
 x_pos = 3.6;
@@ -31,12 +33,13 @@ cs = CoordinateSystem.ByOriginVectors(origin,
     identity.XAxis, identity.YAxis, identity.ZAxis);
 ```
 
-The simplest geometric primitive is a Point, representing a zero-dimensional location in three-dimensional space.  As mentioned earlier there are several different ways to create a point in a particular coordinate system: Point.ByCoordinates creates a point with specified x, y, and z coordinates; Point.ByCartesianCoordinates creates a point with a specified x, y, and z coordinates in a specific coordinate system; Point.ByCylindricalCoordinates creates a point lying on a cylinder with radius, rotation angle, and height; and Point.BySphericalCoordinates creates a point lying on a sphere with radius and two rotation angle.
+The simplest geometric primitive is a Point, representing a zero-dimensional location in three-dimensional space.  As mentioned earlier there are several different ways to create a point in a particular coordinate system: *Point.ByCoordinates* creates a point with specified x, y, and z coordinates; *Point.ByCartesianCoordinates* creates a point with a specified x, y, and z coordinates in a specific coordinate system; *Point.ByCylindricalCoordinates* creates a point lying on a cylinder with radius, rotation angle, and height; and *Point.BySphericalCoordinates* creates a point lying on a sphere with radius and two rotation angle.
 
 This example shows points created at various coordinate systems:
 
 ![](images/B-2/GeometricPrimitives_03.png)
-```C#
+
+```js
 // create a point with x, y, and z coordinates
 x_pos = 1;
 y_pos = 2;
@@ -66,10 +69,11 @@ pSphere = Point.BySphericalCoordinates(cs, radius,
     theta, phi);
 ```
 
-The next higher dimensional Dynamo primitive is a line segment, representing an infinite number of points between two end points. Lines can be created by explicitly stating the two boundary points with the constructor Line.ByStartPointEndPoint, or by specifying a start point, direction, and length in that direction, Line.ByStartPointDirectionLength.
+The next higher dimensional Dynamo primitive is a line segment, representing an infinite number of points between two end points. Lines can be created by explicitly stating the two boundary points with the constructor *Line.ByStartPointEndPoint*, or by specifying a start point, direction, and length in that direction, *Line.ByStartPointDirectionLength*.
 
 ![](images/B-2/GeometricPrimitives_04.png)
-```C#
+
+```js
 p1 = Point.ByCoordinates(-2, -5, -10);
 p2 = Point.ByCoordinates(6, 8, 10);
 
@@ -82,10 +86,11 @@ lDir = Line.ByStartPointDirectionLength(p1,
     Vector.ByCoordinates(1, 1, 1), 10);
 ```
  
-Dynamo has objects representing the most basic types of geometric primitives in three dimensions: Cuboids, created with Cuboid.ByLengths; Cones, created with Cone.ByPointsRadius and Cone.ByPointsRadii; Cylinders, created with Cylinder.ByRadiusHeight; and Spheres, created with Sphere.ByCenterPointRadius.
+Dynamo has objects representing the most basic types of geometric primitives in three dimensions: Cuboids, created with *Cuboid.ByLengths*; Cones, created with *Cone.ByPointsRadius* and *Cone.ByPointsRadii*; Cylinders, created with *Cylinder.ByRadiusHeight*; and Spheres, created with *Sphere.ByCenterPointRadius*.
 
 ![](images/B-2/GeometricPrimitives_05.png)
-```C#
+
+```js
 // create a cuboid with specified lengths
 cs = CoordinateSystem.Identity();
 

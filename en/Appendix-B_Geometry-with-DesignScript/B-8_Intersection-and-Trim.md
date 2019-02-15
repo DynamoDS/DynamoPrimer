@@ -2,7 +2,7 @@
 
 Many of the examples so far have focused on the construction of higher dimensional geometry from lower dimensional objects. Intersection methods allow this higher dimensional geometry to generate lower dimensional objects, while the trim and select trim commands allow script to heavily modify geometric forms after they’ve been created.
 
-The Intersect method is defined on all pieces of geometry in Dynamo, meaning that in theory any piece of geometry can be intersected with any other piece of geometry. Naturally some intersections are meaningless, such as intersections involving Points, as the resulting object will always be the input Point itself. The other possible combinations of intersections between objects are outlined in the following chart. The following chart outlines the result of various intersection operations:
+The *Intersect* method is defined on all pieces of geometry in Dynamo, meaning that in theory any piece of geometry can be intersected with any other piece of geometry. Naturally some intersections are meaningless, such as intersections involving Points, as the resulting object will always be the input Point itself. The other possible combinations of intersections between objects are outlined in the following chart. The following chart outlines the result of various intersection operations:
 
 **Intersect**
 
@@ -16,7 +16,8 @@ The Intersect method is defined on all pieces of geometry in Dynamo, meaning tha
 The following very simple example demonstrates the intersection of a plane with a NurbsSurface. The intersection generates a NurbsCurve array, which can be used like any other NurbsCurve.
 
 ![](images/B-8/IntersectionAndTrim_01.png)
-```C#
+
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Appendix 1
 
@@ -33,7 +34,7 @@ crvs = surf.Intersect(pl);
 crvs_moved = crvs.Translate(0, 0, 10);
 ```
 
-The Trim method is very similar to the Intersect method, in that it is defined for almost every piece of geometry. Unlike intersect, there are far more limitations on Trim than on Intersect 
+The *Trim* method is very similar to the Intersect method, in that it is defined for almost every piece of geometry. However, there are far more limitations on *Trim* than on *Intersect*.
 
 **Trim**
 
@@ -44,10 +45,11 @@ The Trim method is very similar to the Intersect method, in that it is defined f
 | Surface   | -            | Yes   | Yes   | Yes     | Yes   |
 | Solid     | -            | -     | Yes   | Yes     | Yes   |
 
-Something to note about Trim methods is the requirement of a “select” point, a point which determines which geometry to discard, and which pieces to keep. Dynamo finds the closest side of the trimmed geometry to the select point, and this side becomes the side to discard.
+Something to note about *Trim* methods is the requirement of a “select” point, a point which determines which geometry to discard, and which pieces to keep. Dynamo finds the closest side of the trimmed geometry to the select point, and this side becomes the side to discard.
 
 ![](images/B-8/IntersectionAndTrim_02.png)
-```C#
+
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Appendix 1
 

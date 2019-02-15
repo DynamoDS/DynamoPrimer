@@ -2,10 +2,11 @@
 
 There are two fundamental ways to create free-form curves in Dynamo: specifying a collection of Points and having Dynamo interpret a smooth curve between them, or a more low-level method by specifying the underlying control points of a curve of a certain degree. Interpreted curves are useful when a designer knows exactly the form a line should take, or if the design has specific constraints for where the curve can and cannot pass through. Curves specified via control points are in essence a series of straight line segments which an algorithm smooths into a final curve form. Specifying a curve via control points can be useful for explorations of curve forms with varying degrees of smoothing, or when a smooth continuity between curve segments is required.
 
-To create an interpreted curve, simply pass in a collection of Points to the NurbsCurve.ByPoints method.
+To create an interpreted curve, simply pass in a collection of Points to the *NurbsCurve.ByPoints* method.
 
 ![](images/B-4/Curves_01.png)
-```C#
+
+```js
 num_pts = 6;
 
 s = Math.Sin(0..360..#num_pts) * 4;
@@ -18,7 +19,8 @@ int_curve = NurbsCurve.ByPoints(pts);
 The generated curve intersects each of the input points, beginning and ending at the first and last point in the collection, respectively. An optional periodic parameter can be used to create a periodic curve which is closed. Dynamo will automatically fill in the missing segment, so a duplicate end point (identical to the start point) isn’t needed.
 
 ![](images/B-4/Curves_02.png)
-```C#
+
+```js
 pts = Point.ByCoordinates(Math.Cos(0..350..#10),
     Math.Sin(0..350..#10), 0);
 
@@ -33,7 +35,8 @@ crv2 = NurbsCurve.ByPoints(pts.Translate(5, 0, 0),
 NurbsCurves are generated in much the same way, with input points represent the endpoints of a straight line segment, and a second parameter specifying the amount and type of smoothing the curve undergoes, called the degree.* A curve with degree 1 has no smoothing; it is a polyline.
 
 ![](images/B-4/Curves_03.png)
-```C#
+
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
@@ -46,7 +49,8 @@ ctrl_curve = NurbsCurve.ByControlPoints(pts, 1);
 A curve with degree 2 is smoothed such that the curve intersects and is tangent to the midpoint of the polyline segments:
 
 ![](images/B-4/Curves_04.png)
-```C#
+
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
@@ -59,7 +63,8 @@ ctrl_curve = NurbsCurve.ByControlPoints(pts, 2);
 Dynamo supports NURBS (Non-uniform rational B-spline) curves up to degree 20, and the following script illustrates the effect increasing levels of smoothing has on the shape of a curve:
 
 ![](images/B-4/Curves_05.png)
-```C#
+
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
@@ -79,7 +84,8 @@ Note that you must have at least one more control point than the degree of the c
 Another benefit of constructing curves by control vertices is the ability to maintain tangency between individual curve segments. This is done by extracting the direction between the last two control points, and continuing this direction with the first two control points of the following curve. The following example creates two separate NURBS curves which are nevertheless as smooth as one curve:
 
 ![](images/B-4/Curves_06.png)
-```C#
+
+```js
 pts_1 = {};
 
 pts_1[0] = Point.ByCoordinates(0, 0, 0);
@@ -104,6 +110,5 @@ pts_2[4] = Point.ByCoordinates(21, 0.5, 0);
 
 crv_2 = NurbsCurve.ByControlPoints(pts_2, 3);
 ```
-
 
 * This is a very simplified description of NURBS curve geometry, for a more accurate and detailed discussion see Pottmann, et al, 2007, in the references.
