@@ -45,7 +45,7 @@ The *Trim* method is very similar to the Intersect method, in that it is defined
 | Surface   | -            | Yes   | Yes   | Yes     | Yes   |
 | Solid     | -            | -     | Yes   | Yes     | Yes   |
 
-Something to note about *Trim* methods is the requirement of a “select” point, a point which determines which geometry to discard, and which pieces to keep. Dynamo finds the closest side of the trimmed geometry to the select point, and this side becomes the side to discard.
+Something to note about *Trim* methods is the requirement of a “select” point, a point which determines which geometry to discard, and which pieces to keep. Dynamo finds and discards the trimmed geometry closest to the select point.
 
 ![](images/B-8/IntersectionAndTrim_02.png)
 
@@ -62,7 +62,5 @@ tool = NurbsSurface.ByPoints(tool_pts);
 
 pick_point = Point.ByCoordinates(8, 1, 3);
 
-// trim with the tool surface, and keep the surface
-// closest to pick_point
 result = surf.Trim(tool, pick_point);
 ```
