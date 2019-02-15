@@ -49,7 +49,7 @@ c1 = NurbsCurve.ByPoints(python_points_2);
 c2 = NurbsCurve.ByPoints(python_points_3);
 c3 = NurbsCurve.ByPoints(python_points_4);
 
-loft = Surface.LoftFromCrossSections([c1, c2, c3]);
+loft = Surface.ByLoft([c1, c2, c3]);
 ```
 
 Surfaces of revolution are an additional type of surface created by sweeping a base curve around a central axis. If interpreted surfaces are the two-dimensional analog to interpreted curves, then surfaces of revolution are the two-dimensional analog to circles and arcs. 

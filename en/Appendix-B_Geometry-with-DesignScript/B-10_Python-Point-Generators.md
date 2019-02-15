@@ -19,7 +19,7 @@ for i in range(11):
 			z = 1
 		sub_points.Add(Point.ByCoordinates(i, j, z))
 	out_points.Add(sub_points)
-		
+
 OUT = out_points
 ```
 
@@ -82,6 +82,6 @@ for i in range(11):
 			z = 2
 		sub_points.Add(Point.ByCoordinates(i, j, z))
 	out_points.Add(sub_points)
-		
+
 OUT = out_points
 ```

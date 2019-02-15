@@ -26,7 +26,7 @@ s = Sphere.ByCenterPointRadius(
     CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-    CoordinateSystem.Identity().Origin.Translate(10, 0, 
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
     0), 6);
 
 result = s.Difference(tool);
@@ -41,7 +41,7 @@ s = Sphere.ByCenterPointRadius(
     CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-    CoordinateSystem.Identity().Origin.Translate(10, 0, 
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
     0), 6);
 
 result = s.Intersect(tool);

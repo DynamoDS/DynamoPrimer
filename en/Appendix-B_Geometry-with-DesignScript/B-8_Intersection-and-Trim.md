@@ -55,7 +55,7 @@ Something to note about *Trim* methods is the requirement of a “select” poin
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
-tool_pts = Point.ByCoordinates((-10..20..10)<1>, 
+tool_pts = Point.ByCoordinates((-10..20..10)<1>,
     (-10..20..10)<2>, 1);
 
 tool = NurbsSurface.ByPoints(tool_pts);
