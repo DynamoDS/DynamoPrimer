@@ -8,7 +8,7 @@ To create an interpreted surface, simply generate a two-dimensional collection o
 
 ```js
 // python_points_1 is a set of Points generated with
-// a Python script found in Appendix 1
+// a Python script found in Appendix B, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_1);
 ```
@@ -19,7 +19,7 @@ Freeform NurbsSurfaces can also be created by specifying underlying control poin
 
 ```js
 // python_points_1 is a set of Points generated with
-// a Python script found in Appendix 1
+// a Python script found in Appendix B, Section 10
 
 // create a surface of degree 2 with smooth segments
 surf = NurbsSurface.ByPoints(python_points_1, 2, 2);
@@ -31,7 +31,7 @@ We can increase the degree of the NurbsSurface to change the resulting surface g
 
 ```js
 // python_points_1 is a set of Points generated with
-// a Python script found in Appendix 1
+// a Python script found in Appendix B, Section 10
 
 // create a surface of degree 6
 surf = NurbsSurface.ByPoints(python_points_1, 6, 6);
@@ -43,13 +43,13 @@ Just as Surfaces can be created by interpreting between a set of input points, t
 
 ```js
 // python_points_2, 3, and 4 are generated with
-// Python scripts found in Appendix 1
+// Python scripts found in Appendix B, Section 10
 
 c1 = NurbsCurve.ByPoints(python_points_2);
 c2 = NurbsCurve.ByPoints(python_points_3);
 c3 = NurbsCurve.ByPoints(python_points_4);
 
-loft = Surface.LoftFromCrossSections({c1, c2, c3});
+loft = Surface.LoftFromCrossSections([c1, c2, c3]);
 ```
 
 Surfaces of revolution are an additional type of surface created by sweeping a base curve around a central axis. If interpreted surfaces are the two-dimensional analog to interpreted curves, then surfaces of revolution are the two-dimensional analog to circles and arcs. 

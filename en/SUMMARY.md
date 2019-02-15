@@ -88,3 +88,4 @@
   * [Geometric Parameterization](Appendix-B_Geometry-with-DesignScript/B-7_Geometric-Parameterization.md)
   * [Intersection and Trim](Appendix-B_Geometry-with-DesignScript/B-8_Intersection-and-Trim.md)
   * [Geometric Booleans](Appendix-B_Geometry-with-DesignScript/B-9_Geometric-Booleans.md)
+  * [Python Point Generators](Appendix-B_Geometry-with-DesignScript/B-10_Python-Point-Generators.md)

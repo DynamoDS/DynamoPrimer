@@ -4,10 +4,10 @@ In computational designs, curves and surfaces are frequently used as the underly
 
 All of the points on a curve can be thought of as having a unique parameter ranging from 0 to 1. If we were to create a NurbsCurve based off of several control or interpreted points, the first point would have the parameter 0, and the last point would have the parameter 1. It’s impossible to know in advance what the exact parameter is any intermediate point is, which may sound like a severe limitation though is mitigated by a series of utility functions. Surfaces have a similar parameterization as curves, though with two parameters instead of one, called u and v. If we were to create a surface with the following points:
 
-```C#
-pts = { {p1, p2, p3},
-        {p4, p5, p6},
-        {p7, p8, p9} };
+```js
+pts = [ [p1, p2, p3],
+        [p4, p5, p6],
+        [p7, p8, p9] ];
 ```
 
 p1 would have parameter u = 0 v = 0, while p9 would have parameters u = 1 v = 1.

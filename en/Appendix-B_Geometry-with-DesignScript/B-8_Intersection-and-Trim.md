@@ -19,7 +19,7 @@ The following very simple example demonstrates the intersection of a plane with 
 
 ```js
 // python_points_5 is a set of Points generated with
-// a Python script found in Appendix 1
+// a Python script found in Appendix B, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
@@ -51,7 +51,7 @@ Something to note about *Trim* methods is the requirement of a “select” poin
 
 ```js
 // python_points_5 is a set of Points generated with
-// a Python script found in Appendix 1
+// a Python script found in Appendix B, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
