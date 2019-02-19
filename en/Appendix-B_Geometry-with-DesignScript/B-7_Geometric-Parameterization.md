@@ -2,7 +2,7 @@
 
 In computational designs, curves and surfaces are frequently used as the underlying scaffold to construct subsequent geometry. In order for this early geometry to be used as a foundation for later geometry, the script must be able to extract qualities such as position and orientation across the entire area of the object. Both curves and surfaces support this extraction, and it is called parameterization. 
 
-All of the points on a curve can be thought of as having a unique parameter ranging from 0 to 1. If we were to create a NurbsCurve based off of several control or interpreted points, the first point would have the parameter 0, and the last point would have the parameter 1. It’s impossible to know in advance what the exact parameter is any intermediate point is, which may sound like a severe limitation though is mitigated by a series of utility functions. Surfaces have a similar parameterization as curves, though with two parameters instead of one, called u and v. If we were to create a surface with the following points:
+All of the points on a curve can be thought of as having a unique parameter ranging from 0 to 1. If we were to create a NurbsCurve based off of several control or interpolated points, the first point would have the parameter 0, and the last point would have the parameter 1. It’s impossible to know in advance what the exact parameter is any intermediate point is, which may sound like a severe limitation though is mitigated by a series of utility functions. Surfaces have a similar parameterization as curves, though with two parameters instead of one, called u and v. If we were to create a surface with the following points:
 
 ```js
 pts = [ [p1, p2, p3],

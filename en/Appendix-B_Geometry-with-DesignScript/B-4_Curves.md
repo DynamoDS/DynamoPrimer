@@ -1,8 +1,8 @@
-# Curves: Interpreted and Control Points
+# Curves: Interpolated and Control Points
 
-There are two fundamental ways to create free-form curves in Dynamo: specifying a collection of Points and having Dynamo interpret a smooth curve between them, or a more low-level method by specifying the underlying control points of a curve of a certain degree. Interpreted curves are useful when a designer knows exactly the form a line should take, or if the design has specific constraints for where the curve can and cannot pass through. Curves specified via control points are in essence a series of straight line segments which an algorithm smooths into a final curve form. Specifying a curve via control points can be useful for explorations of curve forms with varying degrees of smoothing, or when a smooth continuity between curve segments is required.
+There are two fundamental ways to create free-form curves in Dynamo: specifying a collection of Points and having Dynamo interpolate a smooth curve between them, or a more low-level method by specifying the underlying control points of a curve of a certain degree. Interpolated curves are useful when a designer knows exactly the form a line should take, or if the design has specific constraints for where the curve can and cannot pass through. Curves specified via control points are in essence a series of straight line segments which an algorithm smooths into a final curve form. Specifying a curve via control points can be useful for explorations of curve forms with varying degrees of smoothing, or when a smooth continuity between curve segments is required.
 
-To create an interpreted curve, simply pass in a collection of Points to the *NurbsCurve.ByPoints* method.
+To create an interpolated curve, simply pass in a collection of Points to the *NurbsCurve.ByPoints* method.
 
 ![](images/B-4/Curves_01.png)
 
