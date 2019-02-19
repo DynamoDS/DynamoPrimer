@@ -79,7 +79,7 @@
   * [Useful Packages](Appendix-A_Resources/A-3_packages.md)
   * [Example Files](Appendix-A_Resources/A-4_example-files.md)
 * [Appendix B: Geometry with DesignScript](Appendix-B_Geometry-with-DesignScript/B_appendix.md)
-  * [DesignScript Geometry Basics](Appendix-B_Geometry-with-DesignScript/B-1_DesignScript-Geometry_Basics.md)
+  * [DesignScript Geometry Basics](Appendix-B_Geometry-with-DesignScript/B-1_DesignScript-Geometry-Basics.md)
   * [Geometric Primitives](Appendix-B_Geometry-with-DesignScript/B-2_Geometric-Primitives.md)
   * [Vector Math](Appendix-B_Geometry-with-DesignScript/B-3_Vector-Math.md)
   * [Curves: Interpolated and Control Points](Appendix-B_Geometry-with-DesignScript/B-4_Curves.md)
