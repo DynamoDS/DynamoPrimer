@@ -37,7 +37,7 @@ We can increase the degree of the NurbsSurface to change the resulting surface g
 surf = NurbsSurface.ByPoints(python_points_1, 6, 6);
 ```
 
-Just as Surfaces can be created by interpolating between a set of input points, they can be created by interpolating between a set of base curves. This is called lofting. A lofted curve is created using the *Surface.LoftFromCrossSections* constructor, with a collection of input curves as the only parameter.
+Just as Surfaces can be created by interpolating between a set of input points, they can be created by interpolating between a set of base curves. This is called lofting. A lofted curve is created using the *Surface.ByLoft* constructor, with a collection of input curves as the only parameter.
 
 ![](images/B-6/Surfaces_04.png)
 
