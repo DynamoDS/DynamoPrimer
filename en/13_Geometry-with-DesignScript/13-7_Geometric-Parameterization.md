@@ -16,7 +16,7 @@ Parameterization isn’t particularly useful when determining points used to gen
 
 Curves have a method *PointAtParameter*, which takes a single double argument between 0 and 1, and returns the Point object at that parameter. For instance, this script finds the Points at parameters 0, .1, .2, .3, .4, .5, .6, .7, .8, .9, and 1:
 
-![](images/B-7/GeometricParameterization_01.png)
+![](images/13-7/GeometricParameterization_01.png)
 
 ```js
 pts = {};
@@ -41,7 +41,7 @@ Similarly, Surfaces have a method *PointAtParameter* which takes two arguments, 
 
 While extracting individual points on a curve and surface can be useful, scripts often require knowing the particular geometric characteristics at a parameter, such as what direction the Curve or Surface is facing. The method *CoordinateSystemAtParameter* finds not only the position but an oriented CoordinateSystem at the parameter of a Curve or Surface. For instance, the following script extracts oriented CoordinateSystems along a revolved Surface, and uses the orientation of the CoordinateSystems to generate lines which are sticking off normal to the surface:
 
-![](images/B-7/GeometricParameterization_02.png)
+![](images/13-7/GeometricParameterization_02.png)
 
 ```js
 pts = {};

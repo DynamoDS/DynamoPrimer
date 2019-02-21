@@ -2,7 +2,7 @@
 
 The following Python scripts generate point arrays for several examples. They should be pasted into a Python Script node as follows:
 
-![](images/B-10/PythonPointGenerators_01.png)
+![](images/13-10/PythonPointGenerators_01.png)
 
 **python_points_1**
 

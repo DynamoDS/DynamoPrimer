@@ -15,11 +15,11 @@ The *Intersect* method is defined on all pieces of geometry in Dynamo, meaning t
 
 The following very simple example demonstrates the intersection of a plane with a NurbsSurface. The intersection generates a NurbsCurve array, which can be used like any other NurbsCurve.
 
-![](images/B-8/IntersectionAndTrim_01.png)
+![](images/13-8/IntersectionAndTrim_01.png)
 
 ```js
 // python_points_5 is a set of Points generated with
-// a Python script found in Appendix B, Section 10
+// a Python script found in Chapter 13, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
@@ -47,11 +47,11 @@ The *Trim* method is very similar to the Intersect method, in that it is defined
 
 Something to note about *Trim* methods is the requirement of a “select” point, a point which determines which geometry to discard, and which pieces to keep. Dynamo finds and discards the trimmed geometry closest to the select point.
 
-![](images/B-8/IntersectionAndTrim_02.png)
+![](images/13-8/IntersectionAndTrim_02.png)
 
 ```js
 // python_points_5 is a set of Points generated with
-// a Python script found in Appendix B, Section 10
+// a Python script found in Chapter 13, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
