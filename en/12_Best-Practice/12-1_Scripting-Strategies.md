@@ -2,7 +2,7 @@
 
 Text-based scripting within the visual-scripting environment enables powerful and visual relationships using DesignScript, Python, and ZeroTouch (C#). The user can expose elements such as input sliders, condense large operations into DesignScript, and access powerful tools and libraries through Python or C# all within the same workspace. If managed effectively, combining these strategies can lend a great deal of customization, clarity, and efficiency to the overall program. The following are a set of guidelines to help you augment your visual-script with text-script.
 
-![](images/13-1/cad-chart-textual.jpg)
+![](images/12-1/cad-chart-textual.jpg)
 
 ### Know When to Script
 
@@ -24,7 +24,7 @@ Text-scripting can establish relationships of a higher complexity than visual pr
 | **Python** | Yes | Yes | Partially | Yes | No |
 | **ZeroTouch (C#)** | No | No | No | Yes | No |
 
-> Refer to [Scripting Reference](http://primer.dynamobim.org/en/12_Best-Practice/13-3_Scripting-Reference.html) for a list of what each Dynamo library gives you access to.
+> Refer to [Scripting Reference](http://primer.dynamobim.org/en/12_Best-Practice/12-3_Scripting-Reference.html) for a list of what each Dynamo library gives you access to.
 
 ### Think Parametrically
 
@@ -42,7 +42,7 @@ When scripting in Dynamo, an inevitably parametric environment, it is wise to st
 
   * Constants
 
-![variables](images/13-1/variables.jpg)
+![variables](images/12-1/variables.jpg)
 
 > Several variables have been established prior to writing code.
 >
@@ -63,7 +63,7 @@ When scripting in Dynamo, an inevitably parametric environment, it is wise to st
 
   * If a set of parameters can be derived from more parent parameters, only expose the parent parameters as script inputs. This increases the usability of your script by reducing the complexity of its interface.
 
-![parameters](images/13-1/parameters.JPG)
+![parameters](images/12-1/parameters.JPG)
 
 > The code "modules" from the example in [Python Node](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
@@ -114,7 +114,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 * Developing code in modules harnesses the visual, intuitive quality of Nodes as well as the complex relationships that only text-scripting can achieve.
 
-![modules](images/13-1/modules.JPG)
+![modules](images/12-1/modules.JPG)
 
 > These loops call a class named "agent" that we will develop in the exercise.
 
@@ -128,7 +128,7 @@ As your code gets longer and more complex the “big idea”, or overarching alg
 
 * "Manager" functions control program flow and primarily contain calls to "Worker" functions that handle low-level details, like moving data between structures.
 
-![](/12_Best-Practice/images/13-1/managerfunctions.jpg)
+![](/12_Best-Practice/images/12-1/managerfunctions.jpg)
 
 > This example creates spheres with radii and color based on the Z value of the center points.
 
@@ -202,7 +202,7 @@ While developing text-scripts in Dynamo, it is wise to constantly make sure that
 
 * Assign the most recent data you are working with in your script as the output so that the node is always outputting relevant data when the script updates:
 
-![modules](images/13-1/flex.jpg)
+![modules](images/12-1/flex.jpg)
 
 > Flexing the example code from [Python Node](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
@@ -260,7 +260,7 @@ for i in range(xCount):
 
   * You can insert new or debugged modules into an existing program with the confidence that the rest of the program will not change.
 
-![](images/13-1/debug.jpg)
+![](images/12-1/debug.jpg)
 
 > Debugging the example file from [Python Node](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
@@ -270,23 +270,23 @@ for i in range(xCount):
 
 ### Exercise - Steepest Path
 
-> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\). A full list of example files can be found in the Appendix. [SteepestPath.dyn](datasets/13-1/SteepestPath.dyn)
+> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\). A full list of example files can be found in the Appendix. [SteepestPath.dyn](datasets/12-1/SteepestPath.dyn)
 
 With our best practices for text-scripting in mind, let's write a rain simulation script. While we were able to apply best practices to a disorganized visual program in Graph Strategies, it is far more difficult to do that with text-scripting. Logical relationships established in text-scripting are less visible and can be almost impossible to untangle in messy code. With the power of text-scripting comes a larger responsibility in organization. We will walk through each step and apply best practices along the way.
 
-![](/12_Best-Practice/images/13-1/gd01.JPG)
+![](/12_Best-Practice/images/12-1/gd01.JPG)
 
 > Our script applied to an attractor-deformed surface.
 
 The first thing we need to do is import the necessary Dynamo libraries. Doing this first will give global access to Dynamo functionality in Python.
 
-![](/12_Best-Practice/images/13-1/gd02.jpg)
+![](/12_Best-Practice/images/12-1/gd02.jpg)
 
 > All the libraries we intend on using need to be imported here.
 
 Next we need to define the script's inputs and output, which will display as input ports on the node. These external inputs are the foundation for our script and the key to establishing a parametric environment.
 
-![](/12_Best-Practice/images/13-1/walkthrough-inputs.jpg)
+![](/12_Best-Practice/images/12-1/walkthrough-inputs.jpg)
 
 > We need to define inputs that correspond to variables in the Python script and determine a desired output:
 >
@@ -299,7 +299,7 @@ Next we need to define the script's inputs and output, which will display as inp
 
 Now let's employ the practice of modularity and create the body of our script. Simulating the shortest path down a surface for multiple start points is a significant task that will require several functions. Rather than call the different functions throughout the script, we can modularize our code by collecting them into a single class, our agent. The different functions of this class or "module" can be called with different variables or even reused in another script.
 
-![](/12_Best-Practice/images/13-1/gd04.jpg)
+![](/12_Best-Practice/images/12-1/gd04.jpg)
 
 > We will need to define a class, or blueprint, for an agent with the intention of walking down a surface by choosing to travel in the steepest possible direction each time it takes a step:
 >
@@ -311,7 +311,7 @@ Now let's employ the practice of modularity and create the body of our script. S
 
 Let's initialize the agents by defining their start location. This is a good opportunity to flex our script and make sure the agent class is working.
 
-![](/12_Best-Practice/images/13-1/gd05.jpg)
+![](/12_Best-Practice/images/12-1/gd05.jpg)
 
 > We will need to instantiate all the agents we want to observe walk down the surface and define their initial attributes:
 >
@@ -321,23 +321,23 @@ Let's initialize the agents by defining their start location. This is a good opp
 
 Update each agent at each step.
 
-![](/12_Best-Practice/images/13-1/gd06.jpg)
+![](/12_Best-Practice/images/12-1/gd06.jpg)
 
 > We will then need to enter a nested loop where for each agent and for each step, we update and record their position into their trail list. At each step we will also make sure the agent hasn’t reached a point on the surface where it cannot take another step which will allow it to descend. If that condition is met, we will end that agent's trip.
 
 Now that our agents have been fully updated, let's return geometry that represents them.
 
-![](/12_Best-Practice/images/13-1/gd07.jpg)
+![](/12_Best-Practice/images/12-1/gd07.jpg)
 
 > After all the agents have either reached their limit of descent or their maximum number of steps we will create a polycurve through the points in their trail list and output the polycurve trails.
 
 Our script for finding the steepest paths.
 
-![](/12_Best-Practice/images/13-1/gd07-02.jpg)
+![](/12_Best-Practice/images/12-1/gd07-02.jpg)
 
 > 1. A preset that simulates rainfall on the underlying surface.
 > 2. Rather than finding the steepest path, the agents can be toggled to traverse the underlying surface.
 
-![](/12_Best-Practice/images/13-1/gd08.jpg)
+![](/12_Best-Practice/images/12-1/gd08.jpg)
 
 > The full Python text-script.

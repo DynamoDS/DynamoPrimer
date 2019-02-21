@@ -2,7 +2,7 @@
 
 Prior to this chapter, the Primer has covered how to implement the powerful visual-scripting capabilities of Dynamo. A good understanding of these capabilities is a solid foundation and the first step in building robust visual programs. When we use our visual programs in the field, share them with colleagues, troubleshoot errors, or test limits we have additional issues to deal with. If someone else will be using your program or you are expecting to open it six months from now, it needs to have an immediate graphic and logical clarity. Dynamo has many tools to manage the complexity of your program, and this chapter will give guidelines on when to use them.
 
-![groups](images/13-2/cad-chart-visual.jpg)
+![groups](images/12-2/cad-chart-visual.jpg)
 
 ### Reduce Complexity
 
@@ -15,7 +15,7 @@ As you develop your Dynamo graph and test ideas, it can quickly grow in size and
 * You can change the **color of the group to differentiate** what Groups are doing \(inputs vs functions\)
 * You can use groups to start **organizing your graph to streamline Custom Node creation**
 
-![groups](images/13-2/groups.png)
+![groups](images/12-2/groups.png)
 
 > The colors in this program identify the purpose of each group. This strategy can be used to create hierarchy in any graphic standards or templates you develop.
 >
@@ -31,7 +31,7 @@ As you develop your Dynamo graph and test ideas, it can quickly grow in size and
 
 * Code Blocks are useful **when you want to define custom functions in DesignScript to reduce the number of nodes in a graph**
 
-![codeblock](images/13-2/codeblock.png)
+![codeblock](images/12-2/codeblock.png)
 
 > Both 1 and 2 perform the same function. It was much faster to write a few lines of code than it was to search for and add each node individually. The code block is also far more concise.
 >
@@ -54,7 +54,7 @@ As you develop your Dynamo graph and test ideas, it can quickly grow in size and
   * More difficult to understand for other users
   * No easy way to return to the visual programming version
 
-![nodetocode](images/13-2/nodetocode.png)
+![nodetocode](images/12-2/nodetocode.png)
 
 > 1. Existing program
 > 2. Code Block created from Node to Code
@@ -66,7 +66,7 @@ As you develop your Dynamo graph and test ideas, it can quickly grow in size and
 * Using List@Level can help you **reduce the complexity of your graph by replacing List.Map and List.Combine nodes** which might occupy a considerable amount of canvas space
 * List@Level provides you with a** quicker way than List.Map/List.Combine to construct node logic** by allowing you to access data at any level in a list right from the input port of a node
 
-![listatlevel](images/13-2/listatlevel.png)
+![listatlevel](images/12-2/listatlevel.png)
 
 > We can verify how many True values BoundingBox.Contains is returning and in which lists by activating List@Level for CountTrue's "list" input. List@Level allows the user to determine at which level the input will take data from. Using List@Level is flexible, efficient, and highly encouraged over other methods involving List.Map and List.Combine.
 >
@@ -85,7 +85,7 @@ In addition to making your graph as simple and efficient as possible, strive for
 * If others are going to be working with your graph, you should **ensure that your node-wire layout flows easily before shipping**
 * To help you with alignment, **use the "Cleanup Node Layout" feature to automatically align** your graph, though less precisely than doing it yourself
 
-![alignment](images/13-2/alignment.png)
+![alignment](images/12-2/alignment.png)
 
 > 1. Unorganized graph
 > 2. Aligned graph
@@ -97,7 +97,7 @@ In addition to making your graph as simple and efficient as possible, strive for
 * Renaming inputs can help others easily understand your graph, **especially if what they plug into will be off the screen**
 * **Be wary of renaming nodes other than inputs.** An alternative to this is creating a custom node from a node cluster and renaming that; it will be understood that it contains something else
 
-![inputs](images/13-2/inputs.png)
+![inputs](images/12-2/inputs.png)
 
 > 1. Inputs for surface manipulation
 > 2. Inputs for architectural parameters
@@ -110,7 +110,7 @@ In addition to making your graph as simple and efficient as possible, strive for
 * You should add a Note if something in the **graph requires a plain language explanation** that the nodes can not express
 * You should add a Note if a collection of **nodes or a Group is too large or complex and can’t be easily understood right away**
 
-![notes](images/13-2/notes.png)
+![notes](images/12-2/notes.png)
 
 > 1. A Note describing the portion of the program that returns raw translation distances
 > 2. A Note describing the code that maps those values to a Sine wave
@@ -119,13 +119,13 @@ In addition to making your graph as simple and efficient as possible, strive for
 
 ### Flex Continuously
 
-While building your visual-script, it is important to verify that what is being returned is what you expected. Not all errors or issues will cause the program to fail immediately, especially null or zero values that could affect something far downstream. This strategy is also discussed in the context of text-scripting in [Scripting Strategies](http://primer.dynamobim.org/en/12_Best-Practice/13-2_Scripting-Strategies.html). The following practice will help ensure that you are getting what you expected.
+While building your visual-script, it is important to verify that what is being returned is what you expected. Not all errors or issues will cause the program to fail immediately, especially null or zero values that could affect something far downstream. This strategy is also discussed in the context of text-scripting in [Scripting Strategies](http://primer.dynamobim.org/en/12_Best-Practice/12-2_Scripting-Strategies.html). The following practice will help ensure that you are getting what you expected.
 
 #### **Monitor data with Watch and Preview Bubbles**
 
 * Use Watch or Preview Bubbles as you build the program to** verify that key outputs are returning what you expected**
 
-![watch](images/13-2/watch.png)
+![watch](images/12-2/watch.png)
 
 > The Watch nodes are being used to compare:
 >
@@ -156,7 +156,7 @@ It is highly likely that someone else will be opening your program at some point
 * You should use a a Custom Node **when a portion of the graph will be reused often** in other programs
 * You should use a Custom Node if you want to **share a functionality with the Dynamo Community**
 
-![customnode](images/13-2/customnode.png)
+![customnode](images/12-2/customnode.png)
 
 > Collecting the point translation program into a Custom Node makes a robust, unique program portable and far easier to understand. Well named input ports will help other users understand how to use the node. Remember to add descriptions and required data types for each input.
 >
@@ -171,7 +171,7 @@ It is highly likely that someone else will be opening your program at some point
 * When building a template, you can standardize **group colors and font sizes** to categorize types of workflows or data actions.
 * When building a template, you can even standardize how you want to **label, color, or style the difference between front-end and back-end workflows** in your graph.
 
-![](images/13-2/templating.jpg)
+![](images/12-2/templating.jpg)
 
 > 1. The UI, or front-end, of the program includes a project name, input sliders, and import geometry.
 > 2. The back-end of the program.
@@ -179,17 +179,17 @@ It is highly likely that someone else will be opening your program at some point
 
 ### Exercise - Architectural Roof
 
-> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\). A full list of example files can be found in the Appendix. [RoofDrainageSim.zip](datasets/13-2/RoofDrainageSim.zip)
+> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\). A full list of example files can be found in the Appendix. [RoofDrainageSim.zip](datasets/12-2/RoofDrainageSim.zip)
 
 Now that we have established several best practices, let’s apply them to a program that was put together quickly. Though the program succeeds in generating the roof, the state of the graph is a "mind-map" of the author. It lacks any organization or description of its use. We will walk through our best practices to organize, describe, and analyze the program so other users can understand how to use it.
 
-![mindmap](images/13-2/1.jpg)
+![mindmap](images/12-2/1.jpg)
 
 > The program is functioning, but the graph is disorganized.
 
 Let's start by determining the data and geometry returned by the program.
 
-![data](images/13-2/1-1.JPG)
+![data](images/12-2/1-1.JPG)
 
 > Understanding when major changes to the data occur is crucial to establishing logical divisions, or modularity. Try inspecting the rest of the program with Watch nodes to see if you can determine groups before moving on to the next step.
 >
@@ -198,7 +198,7 @@ Let's start by determining the data and geometry returned by the program.
 
 Once we understand the elemental parts of the program, let's put them in Groups.
 
-![groups](images/13-2/1-2.jpg)
+![groups](images/12-2/1-2.jpg)
 
 > Groups allow the user to visually differentiate the parts of the program.
 >
@@ -210,13 +210,13 @@ Once we understand the elemental parts of the program, let's put them in Groups.
 
 With Groups established, align the nodes to create visual continuity across the graph.
 
-![alignment](images/13-2/2.jpg)
+![alignment](images/12-2/2.jpg)
 
 > Visual continuity helps the user to see the program flow and implicit relationships between nodes.
 
 Make the program more accessible by adding another layer of graphic improvements. Add notes to describe how a specific area of the program works, give inputs custom names, and assign colors to different types of groups.
 
-![notes-rename](images/13-2/2-2.jpg)
+![notes-rename](images/12-2/2-2.jpg)
 
 > These graphic improvements tell the user more about what the program is doing. The different group colors help to distinguish inputs from functions.
 >
@@ -225,7 +225,7 @@ Make the program more accessible by adding another layer of graphic improvements
 
 Before we start to condense the program, let's find a strategic location to introduce the Python script drainage simulator. Plug the output of the first scaled roof surface into the respective scripting input.
 
-![integratescripting](images/13-2/3.jpg)
+![integratescripting](images/12-2/3.jpg)
 
 > We've chosen to integrate scripting at this point in the program so the drainage simulation can be run on the original, single roof surface. That specific surface is not being previewed, but it saves us from having to choose the top surface of the chamfered Polysurface.
 >
@@ -236,7 +236,7 @@ Before we start to condense the program, let's find a strategic location to intr
 
 Let's simplify the graph now that everything is in place.
 
-![customnode-notetocode](images/13-2/3-2.jpg)
+![customnode-notetocode](images/12-2/3-2.jpg)
 
 > Condensing our program with Node to Code and Custom Node has greatly reduced the size of the graph. The groups that create the roof surface and walls have been converted to code since they are very specific to this program. The point translation group is contained in a Custom Node as it could be used in another program. In the example file, create your own custom node from the translate points group.
 >
@@ -245,14 +245,14 @@ Let's simplify the graph now that everything is in place.
 
 As a final step, create presets for exemplary roof forms.
 
-![presets](images/13-2/3-3.jpg)
+![presets](images/12-2/3-3.jpg)
 
 > These inputs are the primary drivers of the roof form and will help users see the potential of the program.
 
 Our program with views of two presets.
 
-![presets](images/13-2/3-4.jpg)
+![presets](images/12-2/3-4.jpg)
 
-![presets](images/13-2/3-5.jpg)
+![presets](images/12-2/3-5.jpg)
 
 > The roof drainage patterns give the user an analytical view of the respective presets.
