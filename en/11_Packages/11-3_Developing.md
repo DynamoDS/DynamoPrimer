@@ -3,7 +3,7 @@
 Dynamo offers a variety of ways to create a package for your personal use or for sharing with the Dynamo community.  In the case study below, we'll walk through how a package is set up by deconstructing an existing one.  This case study builds on lessons from the previous chapter, providing a set of custom nodes for mapping geometry, by UV coordinates, from one Dynamo surface to another.
 
 ###MapToSurface
-We're going to work with a sample package which demonstrates the UV mapping of points from one surface to another.  We've already built the fundamentals of the tool in the [Creating a Custom Node](../10_Custom-Nodes/11-2_Creating.md) section of this primer.  The files below demonstrate how we can take the concept of UV Mapping and develop a set of tools for a publishable library.
+We're going to work with a sample package which demonstrates the UV mapping of points from one surface to another.  We've already built the fundamentals of the tool in the [Creating a Custom Node](../10_Custom-Nodes/10-2_Creating.md) section of this primer.  The files below demonstrate how we can take the concept of UV Mapping and develop a set of tools for a publishable library.
 
 ![](images/11-4/uvMap.jpg)
 > In this image, we map a point from one surface to another using UV coordinates. The package is based on this concept, but with more complex geometry.
@@ -51,7 +51,7 @@ The example files can be found in the package's root folder (In Dynamo, navigate
 With the root directory open, navigate to the *"extra"* folder, which houses all of the files in the package which are not custom nodes.  This is where examples files (if they exist) are stored for Dynamo packages.  The screenshots below discuss the concepts demonstrated in each example file.
 
 ![](images/11-4/Creating/Packages - 06.jpg)
-> **01-PanelingWithPolygons:** This example file demonstrates how *"PointsToSurface"* may be used to panelize a surface based on a grid of rectangles.  This should look familiar, as we demonstrated a similar workflow in the [previous chapter](../09_Custom-Nodes/9-2_Creating.md).
+> **01-PanelingWithPolygons:** This example file demonstrates how *"PointsToSurface"* may be used to panelize a surface based on a grid of rectangles.  This should look familiar, as we demonstrated a similar workflow in the [previous chapter](../10_Custom-Nodes/10-2_Creating.md).
 
 ![](images/11-4/Creating/Packages - 05.jpg)
 > **02-PanelingWithPolygons-II:** Using a similar workflow, this exercise file shows a setup for mapping circles (or polygons representing circles) from one surface to another.  This uses the *"PolygonsToSurface"* node.

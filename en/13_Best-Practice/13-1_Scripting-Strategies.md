@@ -24,7 +24,7 @@ Text-scripting can establish relationships of a higher complexity than visual pr
 | **Python** | Yes | Yes | Partially | Yes | No |
 | **ZeroTouch (C#)** | No | No | No | Yes | No |
 
-> Refer to [Scripting Reference](http://primer.dynamobim.org/en/12_Best-Practice/13-3_Scripting-Reference.html) for a list of what each Dynamo library gives you access to.
+> Refer to [Scripting Reference](http://primer.dynamobim.org/en/12_Best-Practice/12-3_Scripting-Reference.html) for a list of what each Dynamo library gives you access to.
 
 ### Think Parametrically
 
