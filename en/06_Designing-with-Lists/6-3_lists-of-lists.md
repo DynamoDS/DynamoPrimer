@@ -71,7 +71,7 @@ When parametric modeling, there are also times where you'll want to add more dat
 
 #### Exercise - List.Chop
 
-> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [Chop.dyn](datasets/6-3/Chop.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
+> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [Chop.dyn](datasets/6-3/Chop.dyn). A full list of example files can be found in the Appendix.
 
 ![Chop](images/6-3/chop-01.jpg)
 
@@ -89,7 +89,7 @@ A List.Map/Combine applies a set function to an input list, but one step down in
 
 _Note: This exercise was created with a previous version of Dynamo. Much of the List.Map functionality has been resolved with the addition of the List@Level feature. For more information, see [List@Level](#listlevel) below._
 
-> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [Map.dyn](datasets/6-3/Map.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
+> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [Map.dyn](datasets/6-3/Map.dyn). A full list of example files can be found in the Appendix.
 
 As a quick introduction, let's review the List.Count node from a previous section.
 
@@ -130,7 +130,7 @@ Notice that the List.Count node gives a value of 5.  This is equal to the "Nx" v
 
 _Note: This exercise was created with a previous version of Dynamo. Much of the List.Combine functionality has been resolved with the addition of the List@Level feature. For more information, see _[_List@Level_](#listlevel)_ below._
 
-> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [Combine.dyn](datasets/6-3/Combine.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
+> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [Combine.dyn](datasets/6-3/Combine.dyn). A full list of example files can be found in the Appendix.
 
 In this exercise, we'll use a similar logic to List.Map, but with multiple elements.  In this case, we want to divide a list of curves by a unique number of points.
 
@@ -178,7 +178,7 @@ Preferred to List.Map, the List@Level feature allows you to directly select whic
 
 In this exercise, we will use the List@Level feature to isolate a specific level of data.
 
-> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [List@Level](datasets/6-3/Listatlevel.dyn). A full list of example files can be found in the [Appendix](../Appendix/A_appendix.md).
+> Download the example file that accompanies this exercise \(Right click and "Save Link As..."\): [List@Level](datasets/6-3/Listatlevel.dyn). A full list of example files can be found in the Appendix.
 
 ![List@Level](images/6-3/Exercise/ListAtLevel-01.jpg)
 

@@ -19,7 +19,7 @@ The colors in the table below query the properties used to define the color: Alp
 | ![](../images/icons/DSCore-Color-Blue-Large.jpg) | Blue | Color.Blue | color | B |
 | ![](../images/icons/DSCore-Color-Components-Large.jpg) | Components | Color.Components | color | A,R,G,B |
 
-The colors in the table below correspond to the **HSB color space**.  Dividing the color into hue, saturation, and brightness is arguably more intuitive for how we  interpret color: What color should it be? How colorful should it be? And how light or dark should the color be?  This is the breakdown of hue, saturation, and brightness respectively.
+The colors in the table below correspond to the **HSB color space**.  Dividing the color into hue, saturation, and brightness is arguably more intuitive for how we interpret color: What color should it be? How colorful should it be? And how light or dark should the color be?  This is the breakdown of hue, saturation, and brightness respectively.
 
 | Icon | Query Name | Syntax| Inputs | Outputs |
 | -- | -- | -- | -- | -- | -- | -- |
