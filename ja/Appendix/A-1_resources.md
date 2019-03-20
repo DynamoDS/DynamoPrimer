@@ -18,7 +18,7 @@
 
 プログラミング言語の主要な目的は、ロジックや計算を使用して各種の処理を表現することです。この目的に加えて、Dynamo のテキスト言語(旧 DesignScript)は、設計意図を表現する目的で開発されました。一般的に、計算による設計作業は実験的な試みだと考えられていますが、Dynamo はその取り組みをサポートするためのツールです。Dynamo は、設計上の繰り返し処理を通じて、コンセプト デザインから最終的な詳細設計まで対応できる柔軟で扱いやすい言語となることを目指しています。このマニュアルは、プログラミングの経験も建築設計のジオメトリに関する知識もないユーザ向けに構成されています。このマニュアルには、プログラミングと建築設計のジオメトリという 2 つの専門分野に関するさまざまなトピックが記載されています。
 
-[http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf](http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf) (英語)
+[http://dynamobim.org/wp-content/links/DesignScriptGuide.pdf](http://dynamobim.org/wp-content/links/DesignScriptGuide.pdf) (英語)
 
 **The Dynamo Primer Project**
 

@@ -46,7 +46,7 @@ Code Block ノードと同様に、Python Script ノードはビジュアル プ
 
 > エディタ上部の定型文は、必要なライブラリを参照する際に役立ちます。Python Script ノードの入力値は、IN 配列に格納されます。値は、OUT 変数に割り当てられて Dynamo に返されます。
 
-Autodesk.DesignScript.Geometry ライブラリにより、Code Block ノードと同様のドット表記を使用することができます。Dynamo の構文の詳細については、第 7.2 章と『[DesignScript Guide](http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf)』を参照してください。 「Point.」などのジオメトリ タイプを入力すると、点の作成や点のクエリーを実行するためのメソッドのリストが表示されます。
+Autodesk.DesignScript.Geometry ライブラリにより、Code Block ノードと同様のドット表記を使用することができます。Dynamo の構文の詳細については、第 7.2 章と『[DesignScript Guide](http://dynamobim.org/wp-content/links/DesignScriptGuide.pdf)』を参照してください。 「Point.」などのジオメトリ タイプを入力すると、点の作成や点のクエリーを実行するためのメソッドのリストが表示されます。
 
 ![](images/10-4/Exercise/Python/python14.png)
 
