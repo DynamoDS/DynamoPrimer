@@ -18,7 +18,7 @@ Dieser Blog stellt die aktuellste Sammlung an Artikeln des Dynamo-Teams dar, das
 
 Programmiersprachen werden entwickelt, um Ideen auszudrücken, die normalerweise Logik und Berechnungen einschließen. In Ergänzung dazu wurde die textuelle Sprache von Dynamo (früher DesignScript) entwickelt, um Konstruktionsabsichten auszudrücken. Es ist allgemein anerkannt, dass die computergestützte Konstruktion eine Herausforderung darstellt, bei der Dynamo Unterstützung bietet: Wir hoffen, dass die Sprache für Sie flexibel und schnell genug ist, um eine Konstruktion von der Konzeption über Designiterationen bis hin zur endgültigen Form zu entwickeln. Dieses Handbuch ist so strukturiert, dass es Benutzern ohne Kenntnisse in der Programmierung oder architektonischen Geometrie eine breite Palette an Themen in diesen beiden sich überschneidenden Bereichen bietet.
 
-[http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf](http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf)
+[http://dynamobim.org/wp-content/links/DesignScriptGuide.pdf](http://dynamobim.org/wp-content/links/DesignScriptGuide.pdf)
 
 **Das Dynamo Primer-Projekt**
 
