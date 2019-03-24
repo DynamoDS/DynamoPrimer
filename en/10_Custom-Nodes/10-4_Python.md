@@ -47,7 +47,7 @@ The Python node can be found under *Core>Scripting* in the library. Double click
 
 > You’ll notice some boilerplate text at the top, which is meant to help you reference the libraries you’ll need. Inputs are stored in the IN array. Values are returned to Dynamo by assigning them to the OUT variable.
 
-The Autodesk.DesignScript.Geometry library allows you to use dot notation similar to Code Blocks. For more information on Dynamo syntax, refer to chapter 7.2 as well as the [DesignScript Guide](http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf). Typing a geometry type such as 'Point.' will bring up a list of methods for creating and querying points.
+The Autodesk.DesignScript.Geometry library allows you to use dot notation similar to Code Blocks. For more information on Dynamo syntax, refer to chapter 7.2 as well as the [DesignScript Guide](http://dynamobim.org/wp-content/links/DesignScriptGuide.pdf). Typing a geometry type such as 'Point.' will bring up a list of methods for creating and querying points.
 
 ![](images/10-4/Exercise/Python/python14.png)
 
