@@ -46,7 +46,7 @@ OUT = solids
 
 > 您會注意到頂部有一些重複使用文字，其目的是協助您參考將需要的資源庫。輸入儲存於 IN 陣列中。透過為 OUT 變數指定值，會將這些值傳回至 Dynamo。
 
-藉由 Autodesk.DesignScript.Geometry 資源庫，您可以使用與程式碼塊類似的圓點符號。若要取得有關 Dynamo 語法的更多資訊，請參閱第 7.2 章以及 [DesignScript 指南](http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf)。鍵入幾何圖形類型，例如「Point.」。將顯示建立及查詢點的方法清單。
+藉由 Autodesk.DesignScript.Geometry 資源庫，您可以使用與程式碼塊類似的圓點符號。若要取得有關 Dynamo 語法的更多資訊，請參閱第 7.2 章以及 [DesignScript 指南](http://dynamobim.org/wp-content/links/DesignScriptGuide.pdf)。鍵入幾何圖形類型，例如「Point.」。將顯示建立及查詢點的方法清單。
 
 ![](images/10-4/Exercise/Python/python14.png)
 

@@ -18,7 +18,7 @@
 
 程式設計語言的目的在於表達創意，通常涉及到邏輯和計算。除了這些目標外，Dynamo 文字語言（以前稱為 DesignScript）的目的在於表達設計意圖。人們通常認為計算設計具有探索性，Dynamo 嘗試支援此觀點：我們希望為您提供的語言能夠靈活快速地幫助您透過反覆運算實現從概念到最終形式的設計。本手冊的結構旨在為沒有相關程式設計或建築幾何圖形知識的使用者提供有關這兩個相交領域的各種主題。
 
-[http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf](http://dynamobim.org/wp-content/uploads/forum-assets/colin-mccroneautodesk-com/07/10/Dynamo_language_guide_version_1.pdf)
+[http://dynamobim.org/wp-content/links/DesignScriptGuide.pdf](http://dynamobim.org/wp-content/links/DesignScriptGuide.pdf)
 
 **Dynamo Primer 專案**
 
