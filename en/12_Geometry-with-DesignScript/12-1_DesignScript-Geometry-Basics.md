@@ -14,7 +14,7 @@ z = -6;
 p = Point.ByCoordinates(x, y, z);
 ```
 
-Constructors in Dynamo are typically designated with the “*By*” prefix, and invoking these functions returns a newly created object of that type. This newly created object is stored in the variable named on the left side of the equal sign, and any use of that same original Point.
+Constructors in Dynamo are typically designated with the “*By*” prefix, and invoking these functions returns a newly created object of that type. This newly created object is stored in the variable named on the left side of the equal sign.
 
 Most objects have many different constructors, and we can use the *BySphericalCoordinates* constructor to create a point lying on a sphere, specified by the sphere’s radius, a first rotation angle, and a second rotation angle (specified in degrees):
 
