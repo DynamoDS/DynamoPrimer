@@ -27,7 +27,7 @@
 |**Python**|可|可|一部可|可|不可|
 |**ZeroTouch (C#)**|不可|不可|不可|可|不可|
 
-> 各 Dynamo ライブラリでアクセスできるコンテンツのリストについては、「[スクリプトの参照情報](http://primer.dynamobim.org/en/12_Best-Practice/13-3_Scripting-Reference.html)」を参照してください。
+> 各 Dynamo ライブラリでアクセスできるコンテンツのリストについては、「[スクリプトの参照情報](http://primer.dynamobim.org/en/12_Best-Practice/12-3_Scripting-Reference.html)」を参照してください。
 
 ### パラメトリックに考える
 
