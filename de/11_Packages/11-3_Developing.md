@@ -6,7 +6,7 @@ In Dynamo steht eine Reihe von Verfahren zum Entwickeln von Paketen zur Verfügu
 
 ### MapToSurface
 
-Sie arbeiten mit einem Beispielpaket, das die UV-Zuordnung von Punkten aus einer Oberfläche zu einer anderen zeigt. Sie haben die Grundfunktionen dieses Werkzeugs bereits im Abschnitt [Erstellen eines benutzerdefinierten Blocks](../10_Custom-Nodes/11-2_Creating.md) in diesem Leitfaden erstellt. In den folgenden Dateien wird gezeigt, wie Sie die UV-Zuordnung weiterentwickeln und eine Gruppe von Werkzeugen für eine Bibliothek erstellen können, die anschließend veröffentlicht werden kann.
+Sie arbeiten mit einem Beispielpaket, das die UV-Zuordnung von Punkten aus einer Oberfläche zu einer anderen zeigt. Sie haben die Grundfunktionen dieses Werkzeugs bereits im Abschnitt [Erstellen eines benutzerdefinierten Blocks](../10_Custom-Nodes/10-2_Creating.md) in diesem Leitfaden erstellt. In den folgenden Dateien wird gezeigt, wie Sie die UV-Zuordnung weiterentwickeln und eine Gruppe von Werkzeugen für eine Bibliothek erstellen können, die anschließend veröffentlicht werden kann.
 
 ![](images/11-4/uvMap.jpg)
 
@@ -70,7 +70,7 @@ Navigieren Sie im geöffneten Stammverzeichnis zum Ordner *extra*, in dem sich a
 
 ![](images/11-4/Creating/Packages - 06.jpg)
 
-> **01-PanelingWithPolygons:** Dieses Beispiel zeigt die Unterteilung einer Oberfläche anhand eines Rasters aus Rechtecken mithilfe von *PointsToSurface*. Dieser Vorgang ist Ihnen wahrscheinlich vertraut, da ein ähnlicher Arbeitsablauf im [vorigen Kapitel](../09_Custom-Nodes/9-2_Creating.md) gezeigt wurde.
+> **01-PanelingWithPolygons:** Dieses Beispiel zeigt die Unterteilung einer Oberfläche anhand eines Rasters aus Rechtecken mithilfe von *PointsToSurface*. Dieser Vorgang ist Ihnen wahrscheinlich vertraut, da ein ähnlicher Arbeitsablauf im [vorigen Kapitel](../10_Custom-Nodes/10-2_Creating.md) gezeigt wurde.
 
 ![](images/11-4/Creating/Packages - 05.jpg)
 
