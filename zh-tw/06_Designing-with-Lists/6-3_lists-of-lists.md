@@ -68,7 +68,7 @@
 
 #### 練習 - List.Chop
 
-> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[Chop.dyn](datasets/6-3/Chop.dyn)。[附錄](../Appendix/A_appendix.md)中提供範例檔案的完整清單。
+> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[Chop.dyn](datasets/6-3/Chop.dyn)。附錄中提供範例檔案的完整清單。
 
 ![細分](images/6-3/chop-01.jpg)
 
@@ -86,7 +86,7 @@ List.Map/Combine 會將一組函數套用至輸入清單 (但下一層級的清�
 
 *注意：此練習使用舊版本的 Dynamo 建立。大部分 List.Map 功能已透過加入 List@Level 功能進行解析。若要取得更多資訊，請參閱以下的 [List@Level](#listlevel)。*
 
-> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[Map.dyn](datasets/6-3/Map.dyn)。[附錄](../Appendix/A_appendix.md)中提供範例檔案的完整清單。
+> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[Map.dyn](datasets/6-3/Map.dyn)。附錄中提供範例檔案的完整清單。
 
 作為快速介紹，接下來我們檢閱上一節所述的 List.Count 節點。
 
@@ -97,17 +97,17 @@ List.Map/Combine 會將一組函數套用至輸入清單 (但下一層級的清�
 ![練習](images/6-3/Exercise/A/05.jpg)
 
 > 1. 將兩行代碼插入至 *code block*：
->
-> ```
-> -50..50..#Nx;
-> -50..50..#Ny;
-> ```
-> 
-> 輸入此代碼後，代碼區塊會建立 Nx 與 Ny 的兩個輸入。
->
-> 2. 使用兩個 *integer sliders*，將其連接至 *code block* 以定義 *Nx* 與 *Ny* 值。
-> 3. 將每行 code block 分別連接至 *Point.ByCoordinates* 節點的 *X* 與 *Y* 輸入。在節點上按一下右鍵，選取「鑲邊」，然後選擇 *「叉積」*。這會建立點的網格。由於我們定義的範圍是從 -50 到 50，因此將跨越預設的 > Dynamo 網格。
-> 4. *Watch* 節點會顯示已建立的點。請注意資料結構。我們已建立清單的清單。每個清單都代表網格的一列點。
+
+```
+-50..50..#Nx;
+-50..50..#Ny;
+```
+
+輸入此代碼後，代碼區塊會建立 Nx 與 Ny 的兩個輸入。
+
+2. 使用兩個 *integer sliders*，將其連接至 *code block* 以定義 *Nx* 與 *Ny* 值。
+3. 將每行 code block 分別連接至 *Point.ByCoordinates* 節點的 *X* 與 *Y* 輸入。在節點上按一下右鍵，選取「鑲邊」，然後選擇 *「叉積」*。這會建立點的網格。由於我們定義的範圍是從 -50 到 50，因此將跨越預設的 Dynamo 網格。
+4. *Watch* 節點會顯示已建立的點。請注意資料結構。我們已建立清單的清單。每個清單都代表網格的一列點。
 
 ![練習](images/6-3/Exercise/A/04.jpg)
 
@@ -129,7 +129,7 @@ List.Map/Combine 會將一組函數套用至輸入清單 (但下一層級的清�
 
 *注意：此練習使用舊版本的 Dynamo 建立。大部分 List.Combine 功能已透過加入 List@Level 功能進行解析。若要取得更多資訊，請參閱以下的*[*List@Level*](#listlevel)*。*
 
-> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[Combine.dyn](datasets/6-3/Combine.dyn)。[附錄](../Appendix/A_appendix.md)中提供範例檔案的完整清單。
+> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[Combine.dyn](datasets/6-3/Combine.dyn)。附錄中提供範例檔案的完整清單。
 
 在本練習中，我們將使用與 List.Map 相似的邏輯，但採用多個元素。在此案例中，我們希望根據獨特數量的點對曲線清單進行分割。
 
@@ -143,15 +143,15 @@ List.Map/Combine 會將一組函數套用至輸入清單 (但下一層級的清�
 ![練習](images/6-3/Exercise/Combine-32.jpg)
 
 > 1. 以下是建立線所用的圖表，我們要使用 code block 建立四個不同的範圍，以便採用獨特方式對線進行分割。我們使用以下代碼行執行此作業：
-> ```
-> 0..1..#3;
-> 0..1..#4;
-> 0..1..#5;
-> 0..1..#6;
-> ```
->
-> 2. 使用 *List.Create* 節點，將*代碼區塊*中的四條線合併為一個清單。
-> 3. *Watch*節點顯示出清單的清單。
+```
+0..1..#3;
+0..1..#4;
+0..1..#5;
+0..1..#6;
+```
+
+2. 使用 *List.Create* 節點，將*代碼區塊*中的四條線合併為一個清單。
+3. *Watch*節點顯示出清單的清單。
 
 ![練習](images/6-3/Exercise/Combine-31.jpg)
 
@@ -177,7 +177,7 @@ List.Map/Combine 會將一組函數套用至輸入清單 (但下一層級的清�
 
 在本練習中，我們將使用 List@Level 功能以隔離特定層級的資料。
 
-> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[List@Level](datasets/6-3/Listatlevel.dyn)。[附錄](../Appendix/A_appendix.md)中提供範例檔案的完整清單。
+> 下載此練習隨附的範例檔案 (按一下右鍵，然後按一下「連結另存為...」)：[List@Level](datasets/6-3/Listatlevel.dyn)。附錄中提供範例檔案的完整清單。
 
 ![List@Level](images/6-3/Exercise/ListAtLevel-01.jpg)
 
@@ -260,14 +260,14 @@ List.Map/Combine 會將一組函數套用至輸入清單 (但下一層級的清�
 ![練習](images/6-3/Exercise/B/06.jpg)
 
 > 1. 先從上述節點的字串開始。我們將建立跨越預設 Dynamo 網格的基本曲面。
-> 2. 使用 *code block*，插入這兩行程式碼，然後分別連接至 *Surface.PointAtParameter* 的 *u* 與 *v* 輸入：
-> ```
-> -50..50..#3;
-> -50..50..#5;
-> ```
-> 
-> 3. 請確保將 *Surface.PointAtParameter* 的鑲邊設定為*「叉積」*。
-> 4. *Watch*節點顯示出已產生 3 個清單的清單，其中每個清單包含 5 個項目。
+2. 使用 *code block*，插入這兩行程式碼，然後分別連接至 *Surface.PointAtParameter* 的 *u* 與 *v* 輸入：
+```
+-50..50..#3;
+-50..50..#5;
+```
+
+3. 請確保將 *Surface.PointAtParameter* 的鑲邊設定為*「叉積」*。
+4. *Watch*節點顯示出已產生 3 個清單的清單，其中每個清單包含 5 個項目。
 
 ![練習](images/6-3/Exercise/B/05.jpg)
 

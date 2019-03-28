@@ -8,7 +8,7 @@ Diese Referenzseite bietet ausführlichere Informationen zu Codebibliotheken, Be
 
 Standardbibliotheken sind außerhalb von Dynamo verfügbar und liegen in den Programmiersprachen Python und C# (Zerotouch) vor. Dynamo verfügt darüber hinaus über eigene Bibliotheken, die direkt seiner Blockhierarchie entsprechen und es dem Benutzer ermöglichen, alle Abläufe, die aus Blöcken und Drähten konstruiert werden können, auch in Form von Code zu erstellen. Der folgende Leitfaden zeigt, worauf Sie in den einzelnen Dynamo-Bibliotheken Zugriff erhalten und wann Sie eine Standardbibliothek verwenden sollten.
 
-![](../12_Best-Practice/images/13-4/textual-programming.jpg)
+![](images/13-4/textual-programming.jpg)
 
 **Standardbibliotheken und Dynamo-Bibliotheken**
 

@@ -4,7 +4,7 @@
 
 ## Für Dynamo 2.0
 
-Dynamo Primer v1.3 [hier](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf) herunterladen
+[Dynamo Primer v1.3 hier](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf) herunterladen
 
 ![Dynamo-Logo](images/dynamo_logo_dark-trim.jpg)
 

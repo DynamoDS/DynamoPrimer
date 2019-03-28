@@ -8,7 +8,7 @@
 
 標準資源庫位於 Dynamo 外部，存在於 Python 和 C# (Zerotouch) 等程式設計語言。Dynamo 還具有自己的一組資源庫，直接對應其節點架構，可讓使用者在程式碼中建置任何利用節點和線材來建置的內容。以下指南針對每個 Dynamo 資源庫允許存取的內容以及何時使用標準的資源庫。
 
-![](../12_Best-Practice/images/13-4/textual-programming.jpg)
+![](images/13-4/textual-programming.jpg)
 
 **標準資源庫和 Dynamo 資源庫**
 
