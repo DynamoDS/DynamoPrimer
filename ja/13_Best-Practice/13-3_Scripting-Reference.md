@@ -8,7 +8,7 @@
 
 標準ライブラリは Dynamo の外部に存在し、プログラミング言語の Python や C# (Zerotouch)の内部で使用されます。Dynamo には、ノード階層に直接対応する専用のライブラリ セットも用意されています。これらの専用ライブラリにより、ノードとワイヤを使用して作成したコード内で、あらゆる処理を記述することができます。ここからは、各 Dynamo ライブラリの内容と、どのような場合に標準ライブラリを使用するかについて説明します。
 
-![](../12_Best-Practice/images/13-4/textual-programming.jpg)
+![](images/13-4/textual-programming.jpg)
 
 **標準ライブラリと Dynamo ライブラリ**
 

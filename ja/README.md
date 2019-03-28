@@ -4,7 +4,7 @@
 
 ## Dynamo v2.0
 
-Dynamo v1.3 Primer の手引きは[こちら](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf)からダウンロードできます。
+[Dynamo v1.3 Primer の手引きは こちら](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf)からダウンロードできます。
 
 ![Dynamo ロゴ](images/dynamo_logo_dark-trim.jpg)
 

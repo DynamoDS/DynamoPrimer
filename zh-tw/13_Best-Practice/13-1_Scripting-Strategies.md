@@ -27,7 +27,7 @@
 |**Python**|是|是|局部|是|否|
 |**ZeroTouch (C#)**|否|否|否|是|否|
 
-> 請參閱 [腳本參考](http://primer.dynamobim.org/en/12_Best-Practice/13-3_Scripting-Reference.html) 以瞭解每個 Dynamo 資源庫可以讓您存取的功能。
+> 請參閱 [腳本參考](http://primer.dynamobim.org/en/12_Best-Practice/12-3_Scripting-Reference.html) 以瞭解每個 Dynamo 資源庫可以讓您存取的功能。
 
 ### 參數化
 
