@@ -41,7 +41,7 @@ crvs_moved = crvs.Translate(0, 0, 10);
 **Trim**
 
 
-|*使用：*Point|Curve|Plane|Surface|Solid|
+|    |*使用：*Point|Curve|Plane|Surface|Solid|
 | -- | -- | -- | -- | -- | -- |
 |*對：*Curve|是|否|否|否|否|
 |Polygon|-|否|是|否|否|
