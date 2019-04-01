@@ -39,9 +39,8 @@ crvs_moved = crvs.Translate(0, 0, 10);
 *Trim* 方法與 Intersect 方法非常類似之處在於幾乎是針對每個幾何圖形定義。不過，*Trim* 的限制遠比 *Intersect* 還多。
 
 **Trim**
-
-|    
-|*使用：*Point|Curve|Plane|Surface|Solid|
+   
+|    |*使用：*Point|Curve|Plane|Surface|Solid|
 | -- | -- | -- | -- | -- | -- |
 |*對：*Curve|是|否|否|否|否|
 |Polygon|-|否|是|否|否|
