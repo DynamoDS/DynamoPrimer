@@ -40,8 +40,8 @@ Die Methode *Trim* ähnelt der Methode Intersect insofern, dass sie ebenfalls f�
 
 **Trim**
 
-
-|       |*Verwendet:* Punkt|Kurve|Ebene|Oberfläche|Volumenkörper|
+|
+|*Verwendet:* Punkt|Kurve|Ebene|Oberfläche|Volumenkörper|
 | -- | -- | -- | -- | -- | -- |
 |*Auf:* Kurve|Ja|Nein|Nein|Nein|Nein|
 |Polygon|-|Nein|Ja|Nein|Nein|
