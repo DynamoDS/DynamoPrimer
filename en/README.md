@@ -50,7 +50,7 @@ The Dynamo Primer is an open source project, initiated by Matt Jezyk and the Dyn
 
 **John Pierson of Parallax Team** was commissioned to update the primer to reflect the Dynamo 2.0. revisions.
 
-[<img src="images/PRLX_Logo.jpg">](http://modelab.is)
+[<img src="images/PRLX_Logo.jpg">](http://www.parallaxteam.com/)
 ### Acknowledgments
 
 A special thanks to Ian Keough for initiating and guiding the Dynamo project.
