@@ -50,8 +50,8 @@ The exercise below will walk through how Dynamo references data for Revit elemen
 
 ![Exercise](images/8-4/Exercise/06.jpg)
 > We want to take advantage of the top curve, which is a line, and represents the full span of the facade.  We'll create planes along this line to intersect with the set of curves we've grouped together in a list.
-1. With a *code block*, define a range using the syntax: ```0..1..#numberOfTrusses;
-```
+1. With a *code block*, define a range using the syntax: ```0..1..#numberOfTrusses;```
+
 2. Plug an *integer slider *into the input for the code block.  As you could have guessed, this will represent the number of trusses. Notice that the slider controls the number of items in the range defined from *0 *to *1*.
 3. Plug the *code block* into the *param* input of a *"Curve.PlaneAtParameter"* node, and plug the top edge into the *curve* input.  This will give us ten planes, evenly distributed across the span of the facade.
 
@@ -121,6 +121,3 @@ Let's walk through and exercise for importing Dynamo geometry as a DirectShape i
 
 ![Exercise](images/8-4/Exercise/DS-01.jpg)
 >After running Dynamo, back in Revit, we have the imported geometry on the roof in our project. This is a structural framing element, rather than a generic model.  The parametric link to Dynamo remains intact.
-
-![Exercise](images/8-4/Exercise/DS-00.jpg)
->1. If we "flex" the Dynamo graph by changing the "Diagonal Shift" parameter to "-2", we just run Dynamo again and get a new imported DirectShape!

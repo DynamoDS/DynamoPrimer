@@ -50,7 +50,7 @@ The Dynamo Primer is an open source project, initiated by Matt Jezyk and the Dyn
 
 **John Pierson of Parallax Team** was commissioned to update the primer to reflect the Dynamo 2.0. revisions.
 
-[<img src="images/PRLX_Logo.jpg">](http://modelab.is)
+[<img src="images/PRLX_Logo.jpg">](http://www.parallaxteam.com/)
 ### Acknowledgments
 
 A special thanks to Ian Keough for initiating and guiding the Dynamo project.
@@ -58,9 +58,11 @@ A special thanks to Ian Keough for initiating and guiding the Dynamo project.
 Thank you to Matt Jezyk, Ian Keough, Zach Kron, Racel Williams and Colin McCrone for enthusiastic collaboration and the opportunity to participate on a wide array of Dynamo projects.
 
 ### Software and Resources
-**Dynamo** The current stable release of Dynamo is Version 2.0
+**Dynamo** The current stable* release of Dynamo is Version 2.1.0
 
 http://dynamobim.com/download/ or http://dynamobuilds.com
+
+*Note: Starting with Revit 2020, Dynamo is bundled with Revit releases, resulting in manual installation not being required. More information is available at this [blog post](https://dynamobim.org/dynamo-core-2-1-release/).
 
 **DynamoBIM** The best source for additional information, learning content, and forums is the DynamoBIM website.
 
@@ -75,7 +77,7 @@ https://github.com/DynamoDS/Dynamo
 Dynamo@autodesk.com
 
 ### License
-Copyright 2018 Autodesk
+Copyright 2019 Autodesk
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
