@@ -8,18 +8,15 @@
 
 ||||
 | -- | -- | -- |
-|![IMAGE](images/A-2/Count.Large.png)|**Count**指定されたリスト内の項目の数を返します。|![IMAGE](images/nodes/Count.png)|
-|![IMAGE](images/A-2/Flatten.Large.png)|**Flatten**入力された多次元のリストをフラットにした 1 次元のリストを返します。|![IMAGE](images/nodes/Flatten.png)|
-|![IMAGE](images/A-2/Map.Large.png)|**Map**値を入力された範囲にマッピングします。|![IMAGE](images/nodes/Map.png)|
+|![画像](images/A-2/Count.Large.png)|**Count**指定されたリスト内の項目の数を返します。|![画像](images/nodes/Count.png)|
+|![画像](images/A-2/Flatten.Large.png)|**Flatten**入力された多次元のリストをフラットにした 1 次元のリストを返します。|![画像](images/nodes/Flatten.png)|
+|![画像](images/A-2/Map.Large.png)|**Map**値を入力された範囲にマッピングします。|![画像](images/nodes/Map.png)|
 
 ## Core
 
 #### Core.Color
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |CREATE|
@@ -43,10 +40,7 @@
 
 #### Core.Display
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |CREATE|
@@ -55,10 +49,7 @@
 
 #### Core.Input
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |ACTIONS|
@@ -74,10 +65,7 @@
 
 #### Core.List
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |CREATE|
@@ -103,10 +91,7 @@
 
 #### Core.Logic
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |ACTIONS|
@@ -115,10 +100,7 @@
 
 #### Core.Math
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |ACTIONS|
@@ -132,10 +114,7 @@
 
 #### Core.Object
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |ACTIONS|
@@ -144,10 +123,7 @@
 
 #### Core.Scripting
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |ACTIONS|
@@ -156,10 +132,7 @@
 
 #### Core.String
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |ACTIONS|
@@ -172,10 +145,7 @@
 
 #### Core.View
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |ACTIONS|
@@ -187,10 +157,7 @@
 
 #### Geometry.Circle
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |CREATE|
@@ -200,10 +167,7 @@
 
 #### Geometry.CoordinateSystem
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |CREATE|
@@ -213,10 +177,7 @@
 
 #### Geometry.Cuboid
 
-|
-|
-|
-|
+||||
 | -- | -- | -- |
 |
 |CREATE|
