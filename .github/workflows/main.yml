@@ -1,0 +1,43 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world! Building DynamoPrimer for you.
+    - name: Set up Gitbook env
+      run: |
+        echo Setting up env
+        npm install -g gitbook-cli
+        npm install -g calibre
+        echo Building English
+        cd $Env:GITHUB_WORKSPACE\en
+        gitbook init
+        gitbook install
+        gitbook build
+        gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
+        echo Building Chinese
+        cd $Env:GITHUB_WORKSPACE\zh
+        gitbook init
+        gitbook install
+        gitbook build
+        gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
+        echo Building Japanese
+        cd $Env:GITHUB_WORKSPACE\ja
+        gitbook init
+        gitbook install
+        gitbook build
+        gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
+        echo Building German
+        cd $Env:GITHUB_WORKSPACE\en
+        gitbook init
+        gitbook install
+        gitbook build
+        gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
+        echo missing AWS deployment step here, check for BWF guideline before move on
