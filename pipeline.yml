@@ -1,0 +1,27 @@
+version: 0.1.1
+env:
+  - BUILD_MACHINE: "Dynamo_Win_004"
+  - SLACK_QUANTUM_BUILD_CHANNEL : "#dynamo-jenkinsbuild"
+  - SLACK_QUANTUM_BUILD_CREDENTIAL_ID : "slack-notify-token"
+  - MAIL_QUANTUM_BUILD_RECIPIENT : "dynamo.plaid.dev@autodesk.com"
+  - TEST_REPORT_FORMAT : "nunit"
+  
+check_changelog_updated_on_pr: false
+pipeline_os: "Windows"
+force_slack_notification : true
+language: csharp
+
+nuget_config:
+  config_file: dynamo-nuget.config
+  custom_feeds:
+    - "team-dynamo-nuget"
+    - "autodesk3p"
+
+build:
+  before_scripts:
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
+  scripts:
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
+  after_scripts:
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
+    
