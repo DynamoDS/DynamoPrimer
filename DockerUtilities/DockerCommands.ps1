@@ -4,8 +4,10 @@
 #>
 $ErrorActionPreference = "Stop"
 
-# Dynamo's location
+# DynamoPrimer´s location
 $PrimerRoot = "c:\WorkspacePrimer"
+
+Copy-Item "$PrimerRoot\.npmrc" -Destination "C:\Users\ContainerAdministrator"
 
 Set-Location -Path "$PrimerRoot\en"
 
