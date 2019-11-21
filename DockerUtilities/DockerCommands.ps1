@@ -7,4 +7,9 @@ $ErrorActionPreference = "Stop"
 # Dynamo's location
 $PrimerRoot = "c:\WorkspacePrimer"
 
-Set-Location -Path $PrimerRoot
+Set-Location -Path "$PrimerRoot\en"
+
+gitbook init
+gitbook install
+gitbook build
+gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
