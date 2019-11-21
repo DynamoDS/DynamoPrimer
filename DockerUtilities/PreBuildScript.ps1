@@ -6,11 +6,14 @@ $ErrorActionPreference = "Stop"
 
 try
 {
-	
 	#Docker configuration
-	docker pull mcr.microsoft.com/windows:1903
+	$DockerImage = "mcr.microsoft.com/windows:1903"
 
-	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE,target=c:\WorkspacePrimer --name build-primer mcr.microsoft.com/windows:1903
+	docker rm -f build-primer
+
+	docker pull $DockerImage
+
+	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE,target=c:\WorkspacePrimer --name build-primer $DockerImage
 }
 catch
 {
