@@ -10,7 +10,7 @@ try
 	#Docker configuration
 	docker pull mcr.microsoft.com/windows:1903
 
-	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE\DynamoPrimer,target=c:\WorkspacePrimer --name build-primer mcr.microsoft.com/windows:1903
+	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE,target=c:\WorkspacePrimer --name build-primer mcr.microsoft.com/windows:1903
 }
 catch
 {
