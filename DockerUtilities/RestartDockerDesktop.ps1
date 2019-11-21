@@ -1,3 +1,7 @@
+<#
+   Date: 21/11/2019
+   Purpose: Restart Docker Script of DynamoPrimer
+#>
 $processes = Get-Process "*docker desktop*"
 if ($processes.Count -gt 0)
 {
