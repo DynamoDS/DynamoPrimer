@@ -9,6 +9,8 @@ $PrimerRoot = "c:\WorkspacePrimer"
 
 Copy-Item "$PrimerRoot\.npmrc" -Destination "C:\Users\ContainerAdministrator"
 
+npm install gitbook-cli -g
+
 Set-Location -Path "$PrimerRoot\en"
 
 gitbook init
