@@ -6,9 +6,7 @@ $ErrorActionPreference = "Stop"
 
 try
 {
-	$WorkSpaceElements = "$env:WORKSPACE" -split '\\'
-	$WorkSpaceName = $WorkSpaceElements[$WorkSpaceElements.Length - 1]
-	docker exec build-primer powershell -command "c:\WorkspacePrimer\$WorkSpaceName\commands.ps1"
+	docker exec build-primer powershell -command "c:\WorkspacePrimer\DockerUtilities\Commands.ps1"
 }
 catch
 {
