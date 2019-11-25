@@ -9,7 +9,7 @@ try
 	#Docker configuration
 	$DockerImage = "mcr.microsoft.com/windows:1903"
 
-	docker pull $DockerImage
+	#docker pull $DockerImage
 
 	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE,target=c:\WorkspacePrimer --name build-primer $DockerImage
 }
