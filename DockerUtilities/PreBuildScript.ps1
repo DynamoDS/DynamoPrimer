@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 try
 {
 	#Docker configuration
-	$DockerImage = "mcr.microsoft.com/windows:1903"
+	$DockerImage = "dynamoprimer:1.0.0"
 
 	#docker pull $DockerImage
 
