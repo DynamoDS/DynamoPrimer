@@ -6,7 +6,6 @@ $ErrorActionPreference = "Stop"
 
 try
 {
-	docker exec build-primer powershell -command "Set-ExecutionPolicy RemoteSigned"
 	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerCommands.ps1"
 }
 catch

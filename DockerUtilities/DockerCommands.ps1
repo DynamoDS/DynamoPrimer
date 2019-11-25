@@ -7,8 +7,6 @@ $ErrorActionPreference = "Stop"
 # DynamoPrimer´s location
 $PrimerRoot = "c:\WorkspacePrimer"
 
-npm install gitbook-cli -g
-
 $array = @("de", "en", "ja","zh-tw")
 for ($i=0; $i -lt $array.length; $i++) {
    $NewLocation = "$PrimerRoot" + "\" + $array[$i];
