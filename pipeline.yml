@@ -9,13 +9,6 @@ env:
 check_changelog_updated_on_pr: false
 pipeline_os: "Windows"
 force_slack_notification : true
-language: csharp
-
-nuget_config:
-  config_file: dynamo-nuget.config
-  custom_feeds:
-    - "team-dynamo-nuget"
-    - "autodesk3p"
 
 build:
   before_scripts:
