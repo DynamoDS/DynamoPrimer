@@ -2,6 +2,8 @@
    Date: 21/11/2019
    Purpose: Run the commands inside container.
 #>
+param($language)
+
 $ErrorActionPreference = "Stop"
 
 # DynamoPrimer´s location
