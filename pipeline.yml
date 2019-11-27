@@ -10,6 +10,17 @@ check_changelog_updated_on_pr: false
 pipeline_os: "Windows"
 force_slack_notification : true
 
+job_parameters:
+    -
+      type: "choice"
+      name: "ENVIRONMENT_LANGUAGE"
+      choices: 
+        - "en"
+        - "de"
+        - "ja"
+        - "zh-tw"
+      description: ""
+
 build:
   before_scripts:
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"

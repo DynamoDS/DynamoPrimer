@@ -6,7 +6,7 @@ $ErrorActionPreference = "Stop"
 
 try
 {
-	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerCommands.ps1"
+	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerCommands.ps1 $env:ENVIRONMENT_LANGUAGE"
 }
 catch
 {
