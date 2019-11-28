@@ -8,7 +8,8 @@ $ErrorActionPreference = "Stop"
 
 # DynamoPrimer´s location
 $PrimerRoot = "c:\WorkspacePrimer"
-Set-Location "$PrimerRoot" + "\" + "$language";
+$LanguageLocation = "$PrimerRoot" + "\" + "$language"
+Set-Location $LanguageLocation
 gitbook init
 gitbook install
 gitbook build
