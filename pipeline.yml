@@ -33,4 +33,6 @@ deployment:
 -
   type: customized
   scripts:
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreDeployScript.ps1"
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
