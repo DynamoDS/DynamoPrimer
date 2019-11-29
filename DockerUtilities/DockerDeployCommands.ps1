@@ -2,7 +2,7 @@
    Date: 29/11/2019
    Purpose: Run the deploy commands inside container.
 #>
-param($language)
+param($language, $accessKey, $secretKey)
 
 $ErrorActionPreference = "Stop"
 
@@ -13,6 +13,12 @@ $PrimerRoot = "c:\WorkspacePrimer"
 $AWSPowerShellProfile = "MyNewProfile"
 $AWSRegion = "us-west-1"
 $AWSBucketName = "testprimeglb"
+
+#AWS new profile
+Set-AWSCredential `
+                 -AccessKey $accessKey `
+                 -SecretKey $secretKey `
+                 -StoreAs $AWSPowerShellProfile
 
 #AWS default configuration
 Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $AWSRegion
