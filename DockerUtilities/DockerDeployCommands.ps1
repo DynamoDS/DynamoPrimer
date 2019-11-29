@@ -41,10 +41,8 @@ if($language == "en"){
    $results = Get-ChildItem "$PrimerRoot\$language" -File -Recurse
    Write-Host "Uploading ..."
    foreach ($path in $results) {
-      $localPath = $path.FullName.Replace("$PrimerRoot\$language\","")
-         
-      $keyPath = $localPath.Replace("\","/")
-      
+      $keyPath = $path.FullName.Replace("$PrimerRoot\$language\","").Replace("\","/")
+      Write-Host $keyPath
       Write-S3Object -BucketName $AWSBucketName -File $path.FullName -Key "$language/$keyPath"
    }
    Write-Host "Upload complete"
