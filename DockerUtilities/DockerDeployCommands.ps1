@@ -48,5 +48,4 @@ if($language == "en"){
       Write-S3Object -BucketName $AWSBucketName -File $path.FullName -Key "$language/$keyPath"
    }
    Write-Host "Upload complete"
-
 }
