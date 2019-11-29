@@ -30,5 +30,13 @@ if($language == "en"){
    $array = @("Archive", "en", "gitbook","images", "styles", "index.html")
    
 } else {
+
+   $objectList = Get-S3Object -BucketName $AWSBucketName
+
+   foreach($myObject in $objectList){
+      Remove-S3Object -BucketName $AWSBucketName -Key $myObject.Key -Force
+   }
+
+   #Write-S3Object -BucketName testprimeglb -Folder C:\Repositorios\GitHub\jesusHCG\DynamoPrimer\images -KeyPrefix test/mytest/
    
 }
