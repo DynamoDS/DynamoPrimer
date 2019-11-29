@@ -29,3 +29,8 @@ build:
   after_scripts:
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
     
+deployment:
+-
+  type: customized
+  scripts:
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
