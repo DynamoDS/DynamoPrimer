@@ -31,7 +31,7 @@ if($language == "en"){
    $array = @("Archive", "en", "gitbook","images", "styles", "index.html")
    
 } else {
-   #If not english deleted everything in the Prefix
+   #If not english delete everything with this language in the key
    $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix $language
    foreach($myObject in $objectList){
       Remove-S3Object -BucketName $AWSBucketName -Key $myObject.Key -Force
