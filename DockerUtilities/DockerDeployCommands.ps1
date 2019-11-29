@@ -26,43 +26,27 @@ Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $A
 #Set credentials
 Set-AWSCredential -ProfileName $AWSPowerShellProfile
 
+
 if($language == "en"){
    $array = @("Archive", "en", "gitbook","images", "styles", "index.html")
    
 } else {
+   #If not english deleted everything in the Prefix
    $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix $language
-
    foreach($myObject in $objectList){
       Remove-S3Object -BucketName $AWSBucketName -Key $myObject.Key -Force
    }
 
-
-   Set-Location -Path "$PrimerRoot\$language"
-
-   $results = Get-ChildItem . -Recurse
+   #Get all files and upload
+   $results = Get-ChildItem "$PrimerRoot\$language" -File -Recurse
+   Write-Host "Uploading ..."
    foreach ($path in $results) {
-       try{
-   
-           $localPath = $path.FullName.Replace("$PrimerRoot\$language\","")
-           #Write-Host $path.FullName
-           #Write-Host $localPath 
-       
-           $keyPath = $localPath.Replace("\","/")
-           #Write-Host $keyPath
-       
-           Write-S3Object -BucketName $AWSBucketName -File $path.FullName -Key "$language/$keyPath"
-   
-       }
-       catch{
-           Write-Host $path.FullName
-       }    
+      $localPath = $path.FullName.Replace("$PrimerRoot\$language\","")
+         
+      $keyPath = $localPath.Replace("\","/")
+      
+      Write-S3Object -BucketName $AWSBucketName -File $path.FullName -Key "$language/$keyPath"
    }
+   Write-Host "Upload complete"
 
-
-
-
-   #Write-S3Object -BucketName testprimeglb -Folder C:\Repositorios\GitHub\jesusHCG\DynamoPrimer\images -KeyPrefix test/mytest/
-   
 }
-
-
