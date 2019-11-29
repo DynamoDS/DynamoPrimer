@@ -33,10 +33,13 @@ if($language == "en"){
 } else {
    #If not english delete everything with this language in the key
    $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix $language
+   Write-Host "Deleting ..."
    foreach($myObject in $objectList){
+      Write-Host $myObject.Key
       Remove-S3Object -BucketName $AWSBucketName -Key $myObject.Key -Force
    }
-
+   Write-Host "Deletion complete!"
+   
    #Get all files and upload
    $results = Get-ChildItem "$PrimerRoot\$language" -File -Recurse
    Write-Host "Uploading ..."
@@ -45,5 +48,5 @@ if($language == "en"){
       Write-Host $keyPath
       Write-S3Object -BucketName $AWSBucketName -File $path.FullName -Key "$language/$keyPath"
    }
-   Write-Host "Upload complete"
+   Write-Host "Upload complete!"
 }
