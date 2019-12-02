@@ -27,13 +27,7 @@ Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $A
 Set-AWSCredential -ProfileName $AWSPowerShellProfile
 
 #Remove languge folder.
-$objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$language/"
-Write-Host "Deleting ..."
-foreach($myObject in $objectList){
-   Write-Host $myObject.Key
-   Remove-S3Object -BucketName $AWSBucketName -Key $myObject.Key -Force
-}
-Write-Host "Deletion complete!"
+RemoveS3Folder($language)
 
 #Get all files and upload
 $results = Get-ChildItem "$PrimerRoot\$language" -File -Recurse
@@ -50,13 +44,7 @@ if($language == "en"){
    for ($i=0; $i -lt $folderList.length; $i++) {
       $currentFolder = $folderList[$i]
       #Remove folder.
-      $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$currentFolder/"
-      Write-Host "Deleting $currentFolder ..."
-      foreach($myObject in $objectList){
-         Write-Host $myObject.Key
-         Remove-S3Object -BucketName $AWSBucketName -Key $myObject.Key -Force
-      }
-      Write-Host "Deletion complete of $currentFolder!"
+      RemoveS3Folder($currentFolder)
 
       #Get all files and upload
       $localEnFolderLocation = "$PrimerRoot\$language\_book\$currentFolder"
@@ -77,4 +65,16 @@ if($language == "en"){
    Write-Host "Uploading index.html ..."
    Write-S3Object -BucketName $AWSBucketName -File "$PrimerRoot\$language\_book\index.html" -Key "index.html"
    Write-Host "Upload complete for index.html!"
+}
+
+Function RemoveS3Folder($prefix)
+{
+   #Remove folder.
+   $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$prefix/"
+   Write-Host "Deleting $prefix ..."
+   foreach($myObject in $objectList){
+      Write-Host $myObject.Key
+      Remove-S3Object -BucketName $AWSBucketName -Key $myObject.Key -Force
+   }
+   Write-Host "Deletion complete of $prefix!"
 }
