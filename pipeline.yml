@@ -26,13 +26,10 @@ build:
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
   scripts:
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
-  after_scripts:
-    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
     
 deployment:
 -
   type: customized
   scripts:
-    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreDeployScript.ps1"
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
