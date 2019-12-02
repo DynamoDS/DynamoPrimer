@@ -26,8 +26,7 @@ Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $A
 #Set credentials
 Set-AWSCredential -ProfileName $AWSPowerShellProfile
 
-
-#If not english delete everything with this language in the key
+#Remove languge folder.
 $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$language/"
 Write-Host "Deleting ..."
 foreach($myObject in $objectList){
