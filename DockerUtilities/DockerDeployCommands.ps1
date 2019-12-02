@@ -42,11 +42,11 @@ if($language == "en"){
    }
 
    Write-Host "Deleting index.html ..."
-   Remove-S3Object -BucketName $AWSBucketName -Key "index.html" -Force
+   RemoveS3Object("index.html")
    Write-Host "Deletion complete of index.html!"
 
    Write-Host "Uploading index.html ..."
-   Write-S3Object -BucketName $AWSBucketName -File "$PrimerRoot\$language\_book\index.html" -Key "index.html"
+   UploadS3Object("$PrimerRoot\$language\_book\index.html", "index.html")
    Write-Host "Upload complete for index.html!"
 }
 
