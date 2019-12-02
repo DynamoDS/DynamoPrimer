@@ -61,7 +61,7 @@ function RemoveS3Folder($s3Prefix)
    $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
    Write-Host "Deleting $s3Prefix ..."
    foreach($myObject in $objectList){
-      RemoveS3Object($myObject.Key)
+      RemoveS3Object -s3Key "$myObject.Key"
    }
    Write-Host "Deletion complete of $s3Prefix!"
 }
@@ -78,7 +78,7 @@ function UploadS3Folder($localFolderLocation, $s3Prefix)
    Write-Host "Uploading $s3Prefix ..."
    foreach ($path in $results) {
       $keyPath = $path.FullName.Replace("$localFolderLocation\","").Replace("\","/")
-      UploadS3Object($path.FullName, "$s3Prefix/$keyPath")
+      UploadS3Object -localPath "$path.FullName" -prefixWhitPath "$s3Prefix/$keyPath"
    }
    Write-Host "Upload complete for $s3Prefix!"   
 }
