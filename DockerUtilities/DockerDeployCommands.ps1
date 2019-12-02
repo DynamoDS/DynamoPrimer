@@ -78,7 +78,7 @@ function UploadS3Folder($localFolderLocation, $s3Prefix)
    Write-Host "Uploading $s3Prefix ..."
    foreach ($path in $results) {
       $keyPath = $path.FullName.Replace("$localFolderLocation\","").Replace("\","/")
-      UploadS3Object -localPath "$path.FullName" -prefixWhitPath "$s3Prefix/$keyPath"
+      UploadS3Object -localPath $path.FullName -prefixWhitPath "$s3Prefix/$keyPath"
    }
    Write-Host "Upload complete for $s3Prefix!"   
 }
