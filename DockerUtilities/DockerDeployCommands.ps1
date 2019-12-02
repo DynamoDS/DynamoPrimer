@@ -50,7 +50,7 @@ if($language == "en"){
    Write-Host "Upload complete for index.html!"
 }
 
-function RemoveS3Object {
+Function RemoveS3Object {
    param (
       [string]$s3Key
    )
@@ -70,7 +70,7 @@ function RemoveS3Folder {
    Write-Host "Deletion complete of $s3Prefix!"   
 }
 
-function UploadS3Object {
+Function UploadS3Object {
    param (
       [string]$localPath, [string]$prefixWhitPath
    )
