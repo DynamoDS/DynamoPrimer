@@ -67,14 +67,18 @@ if($language == "en"){
    Write-Host "Upload complete for index.html!"
 }
 
-Function RemoveS3Folder($prefix)
+Function RemoveS3Object($s3Key)
 {
-   #Remove folder.
-   $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$prefix/"
-   Write-Host "Deleting $prefix ..."
+   Write-Host $s3Key
+   Remove-S3Object -BucketName $AWSBucketName -Key $s3Key -Force
+}
+
+Function RemoveS3Folder($s3Prefix)
+{
+   $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
+   Write-Host "Deleting $s3Prefix ..."
    foreach($myObject in $objectList){
-      Write-Host $myObject.Key
-      Remove-S3Object -BucketName $AWSBucketName -Key $myObject.Key -Force
+      RemoveS3Object($myObject.Key)
    }
-   Write-Host "Deletion complete of $prefix!"
+   Write-Host "Deletion complete of $s3Prefix!"
 }
