@@ -50,35 +50,43 @@ if($language == "en"){
    Write-Host "Upload complete for index.html!"
 }
 
-function RemoveS3Object($s3Key)
-{
+function RemoveS3Object {
+   param (
+      [string]$s3Key
+   )
    Write-Host $s3Key
-   Remove-S3Object -BucketName $AWSBucketName -Key $s3Key -Force
+   Remove-S3Object -BucketName $AWSBucketName -Key $s3Key -Force  
 }
 
-function RemoveS3Folder($s3Prefix)
-{
+function RemoveS3Folder {
+   param (
+      [string]$s3Prefix
+   )
    $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
    Write-Host "Deleting $s3Prefix ..."
    foreach($myObject in $objectList){
       RemoveS3Object -s3Key "$myObject.Key"
    }
-   Write-Host "Deletion complete of $s3Prefix!"
+   Write-Host "Deletion complete of $s3Prefix!"   
 }
 
-function UploadS3Object($localPath, $prefixWhitPath)
-{
+function UploadS3Object {
+   param (
+      [string]$localPath, [string]$prefixWhitPath
+   )
    Write-Host $prefixWhitPath
-   Write-S3Object -BucketName $AWSBucketName -File $localPath -Key $prefixWhitPath
+   Write-S3Object -BucketName $AWSBucketName -File $localPath -Key $prefixWhitPath   
 }
 
-function UploadS3Folder($localFolderLocation, $s3Prefix)
-{
+function UploadS3Folder {
+   param (
+      [string]$localFolderLocation, [string]$s3Prefix
+   )
    $results = Get-ChildItem "$localFolderLocation" -File -Recurse
    Write-Host "Uploading $s3Prefix ..."
    foreach ($path in $results) {
       $keyPath = $path.FullName.Replace("$localFolderLocation\","").Replace("\","/")
       UploadS3Object -localPath $path.FullName -prefixWhitPath "$s3Prefix/$keyPath"
    }
-   Write-Host "Upload complete for $s3Prefix!"   
+   Write-Host "Upload complete for $s3Prefix!" 
 }
