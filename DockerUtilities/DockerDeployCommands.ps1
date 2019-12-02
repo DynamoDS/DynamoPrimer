@@ -28,16 +28,8 @@ Set-AWSCredential -ProfileName $AWSPowerShellProfile
 
 #Remove languge folder.
 RemoveS3Folder($language)
-
 #Get all files and upload
-$results = Get-ChildItem "$PrimerRoot\$language" -File -Recurse
-Write-Host "Uploading ..."
-foreach ($path in $results) {
-   $keyPath = $path.FullName.Replace("$PrimerRoot\$language\","").Replace("\","/")
-   Write-Host $keyPath
-   Write-S3Object -BucketName $AWSBucketName -File $path.FullName -Key "$language/$keyPath"
-}
-Write-Host "Upload complete!"
+UploadS3Folder("$PrimerRoot\$language", $language)
 
 if($language == "en"){
    $folderList = @("Archive", "gitbook", "images", "styles")
@@ -45,17 +37,8 @@ if($language == "en"){
       $currentFolder = $folderList[$i]
       #Remove folder.
       RemoveS3Folder($currentFolder)
-
       #Get all files and upload
-      $localEnFolderLocation = "$PrimerRoot\$language\_book\$currentFolder"
-      $results = Get-ChildItem $localEnFolderLocation -File -Recurse
-      Write-Host "Uploading $currentFolder ..."
-      foreach ($path in $results) {
-         $keyPath = $path.FullName.Replace("$localEnFolderLocation\","").Replace("\","/")
-         Write-Host $keyPath
-         Write-S3Object -BucketName $AWSBucketName -File $path.FullName -Key "$currentFolder/$keyPath"
-      }
-      Write-Host "Upload complete for $currentFolder!"
+      UploadS3Folder("$PrimerRoot\$language\_book\$currentFolder", $currentFolder)
    }
 
    Write-Host "Deleting index.html ..."
@@ -81,4 +64,21 @@ Function RemoveS3Folder($s3Prefix)
       RemoveS3Object($myObject.Key)
    }
    Write-Host "Deletion complete of $s3Prefix!"
+}
+
+Function UploadS3Object($localPath, $prefixWhitPath)
+{
+   Write-Host $prefixWhitPath
+   Write-S3Object -BucketName $AWSBucketName -File $localPath -Key $prefixWhitPath
+}
+
+Function UploadS3Folder($localFolderLocation, $s3Prefix)
+{
+   $results = Get-ChildItem "$localFolderLocation" -File -Recurse
+   Write-Host "Uploading $s3Prefix ..."
+   foreach ($path in $results) {
+      $keyPath = $path.FullName.Replace("$localFolderLocation\","").Replace("\","/")
+      UploadS3Object($path.FullName, "$s3Prefix/$keyPath")
+   }
+   Write-Host "Upload complete for $s3Prefix!"   
 }
