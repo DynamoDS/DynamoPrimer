@@ -50,13 +50,13 @@ if($language == "en"){
    Write-Host "Upload complete for index.html!"
 }
 
-Function RemoveS3Object($s3Key)
+function RemoveS3Object($s3Key)
 {
    Write-Host $s3Key
    Remove-S3Object -BucketName $AWSBucketName -Key $s3Key -Force
 }
 
-Function RemoveS3Folder($s3Prefix)
+function RemoveS3Folder($s3Prefix)
 {
    $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
    Write-Host "Deleting $s3Prefix ..."
@@ -66,13 +66,13 @@ Function RemoveS3Folder($s3Prefix)
    Write-Host "Deletion complete of $s3Prefix!"
 }
 
-Function UploadS3Object($localPath, $prefixWhitPath)
+function UploadS3Object($localPath, $prefixWhitPath)
 {
    Write-Host $prefixWhitPath
    Write-S3Object -BucketName $AWSBucketName -File $localPath -Key $prefixWhitPath
 }
 
-Function UploadS3Folder($localFolderLocation, $s3Prefix)
+function UploadS3Folder($localFolderLocation, $s3Prefix)
 {
    $results = Get-ChildItem "$localFolderLocation" -File -Recurse
    Write-Host "Uploading $s3Prefix ..."
