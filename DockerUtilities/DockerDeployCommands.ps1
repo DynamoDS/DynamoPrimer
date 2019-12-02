@@ -27,26 +27,26 @@ Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $A
 Set-AWSCredential -ProfileName $AWSPowerShellProfile
 
 #Remove languge folder.
-RemoveS3Folder($language)
+RemoveS3Folder -s3Prefix "$language"
 #Get all files and upload
-UploadS3Folder("$PrimerRoot\$language", $language)
+UploadS3Folder -localFolderLocation "$PrimerRoot\$language" -s3Prefix "$language"
 
 if($language == "en"){
    $folderList = @("Archive", "gitbook", "images", "styles")
    for ($i=0; $i -lt $folderList.length; $i++) {
       $currentFolder = $folderList[$i]
       #Remove folder.
-      RemoveS3Folder($currentFolder)
+      RemoveS3Folder -s3Prefix "$currentFolder"
       #Get all files and upload
-      UploadS3Folder("$PrimerRoot\$language\_book\$currentFolder", $currentFolder)
+      UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book\$currentFolder" -s3Prefix "$currentFolder"
    }
 
    Write-Host "Deleting index.html ..."
-   RemoveS3Object("index.html")
+   RemoveS3Object -s3Key "index.html"
    Write-Host "Deletion complete of index.html!"
 
    Write-Host "Uploading index.html ..."
-   UploadS3Object("$PrimerRoot\$language\_book\index.html", "index.html")
+   UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "index.html"
    Write-Host "Upload complete for index.html!"
 }
 
