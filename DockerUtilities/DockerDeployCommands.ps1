@@ -65,7 +65,7 @@ function RemoveS3Folder {
    $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
    Write-Host "Deleting $s3Prefix ..."
    foreach($myObject in $objectList){
-      RemoveS3Object -s3Key "$myObject.Key"
+      RemoveS3Object -s3Key $myObject.Key
    }
    Write-Host "Deletion complete of $s3Prefix!"   
 }
