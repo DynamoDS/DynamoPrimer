@@ -46,10 +46,35 @@ foreach ($path in $results) {
 Write-Host "Upload complete!"
 
 if($language == "en"){
-   $array = @("Archive", "en", "gitbook","images", "styles", "index.html")
-   
+   $folderList = @("Archive", "gitbook", "images", "styles")
+   for ($i=0; $i -lt $folderList.length; $i++) {
+      $currentFolder = $folderList[$i]
+      #Remove folder.
+      $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$currentFolder/"
+      Write-Host "Deleting $currentFolder ..."
+      foreach($myObject in $objectList){
+         Write-Host $myObject.Key
+         Remove-S3Object -BucketName $AWSBucketName -Key $myObject.Key -Force
+      }
+      Write-Host "Deletion complete of $currentFolder!"
 
+      #Get all files and upload
+      $localEnFolderLocation = "$PrimerRoot\$language\_book\$currentFolder"
+      $results = Get-ChildItem $localEnFolderLocation -File -Recurse
+      Write-Host "Uploading $currentFolder ..."
+      foreach ($path in $results) {
+         $keyPath = $path.FullName.Replace("$localEnFolderLocation\","").Replace("\","/")
+         Write-Host $keyPath
+         Write-S3Object -BucketName $AWSBucketName -File $path.FullName -Key "$currentFolder/$keyPath"
+      }
+      Write-Host "Upload complete for $currentFolder!"
+   }
 
+   Write-Host "Deleting index.html ..."
+   Remove-S3Object -BucketName $AWSBucketName -Key "index.html" -Force
+   Write-Host "Deletion complete of index.html!"
 
-  
-} 
+   Write-Host "Uploading index.html ..."
+   Write-S3Object -BucketName $AWSBucketName -File "$PrimerRoot\$language\_book\index.html" -Key "index.html"
+   Write-Host "Upload complete for index.html!"
+}
