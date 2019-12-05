@@ -2,7 +2,7 @@
    Date: 29/11/2019
    Purpose: Run the deploy commands inside container.
 #>
-param($language, $accessKey, $secretKey)
+param($language, $accessKey, $secretKey, $awsToken)
 $ErrorActionPreference = "Stop"
 
 Function RemoveS3Object {
@@ -50,26 +50,30 @@ Function UploadS3Folder {
 $PrimerRoot = "c:\WorkspacePrimer"
 
 #AWS variables
-$AWSPowerShellProfile = "MyNewProfile"
-$AWSRegion = "us-west-1"
-$AWSBucketName = "testprimeglb"
+#$AWSPowerShellProfile = "MyNewProfile"
+#$AWSRegion = "us-west-1"
+$AWSBucketName = "staging.dynamoprimer.com"
 
 #AWS new profile
-Set-AWSCredential -AccessKey $accessKey -SecretKey $secretKey -StoreAs $AWSPowerShellProfile
+#Set-AWSCredential -AccessKey $accessKey -SecretKey $secretKey -StoreAs $AWSPowerShellProfile
 
 #AWS default configuration
-Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $AWSRegion
+#Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $AWSRegion
 
 #Set credentials
-Set-AWSCredential -ProfileName $AWSPowerShellProfile
+#Set-AWSCredential -ProfileName $AWSPowerShellProfile
+Set-AWSCredential -AccessKey $accessKey -SecretKey $secretKey -SessionToken $awsToken
 
 #Remove languge folder.
 #RemoveS3Folder -s3Prefix "$language"
 #Get all files and upload
 #UploadS3Folder -localFolderLocation "$PrimerRoot\$language" -s3Prefix "$language"
 
-if($language == "en"){
-   $folderList = @("Archive")#, "gitbook", "images", "styles"
+Write-Host "Uploading indexPrueba.html ..."
+UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "indexPrueba.html"
+
+if($language == "none"){
+   $folderList = @("Archive", "gitbook", "images", "styles")
    for ($i=0; $i -lt $folderList.length; $i++) {
       $currentFolder = $folderList[$i]
       #Remove folder.
