@@ -9,7 +9,7 @@ try
 	#Docker configuration
 	$DockerImage = "artifactory.dev.adskengineer.net/docker-local-v2/dynamo/dynamoprimer:1.0.0"
 
-	#docker pull $DockerImage
+	docker pull $DockerImage
 
 	docker run -d -t --mount type=bind,source=$env:WORKSPACE,target=c:\WorkspacePrimer --name build-primer $DockerImage
 }
