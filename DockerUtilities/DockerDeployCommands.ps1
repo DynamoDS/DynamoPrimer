@@ -55,10 +55,7 @@ $AWSRegion = "us-west-1"
 $AWSBucketName = "testprimeglb"
 
 #AWS new profile
-Set-AWSCredential `
-                 -AccessKey $accessKey `
-                 -SecretKey $secretKey `
-                 -StoreAs $AWSPowerShellProfile
+Set-AWSCredential -AccessKey $accessKey -SecretKey $secretKey -StoreAs $AWSPowerShellProfile
 
 #AWS default configuration
 Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $AWSRegion
