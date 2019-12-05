@@ -67,12 +67,12 @@ Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $A
 Set-AWSCredential -ProfileName $AWSPowerShellProfile
 
 #Remove languge folder.
-RemoveS3Folder -s3Prefix "$language"
+#RemoveS3Folder -s3Prefix "$language"
 #Get all files and upload
-UploadS3Folder -localFolderLocation "$PrimerRoot\$language" -s3Prefix "$language"
+#UploadS3Folder -localFolderLocation "$PrimerRoot\$language" -s3Prefix "$language"
 
 if($language == "en"){
-   $folderList = @("Archive", "gitbook", "images", "styles")
+   $folderList = @("Archive")#, "gitbook", "images", "styles"
    for ($i=0; $i -lt $folderList.length; $i++) {
       $currentFolder = $folderList[$i]
       #Remove folder.
