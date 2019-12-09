@@ -6,11 +6,20 @@ param($language)
 
 $ErrorActionPreference = "Stop"
 
-# DynamoPrimer´s location
-$PrimerRoot = "c:\WorkspacePrimer"
-$LanguageLocation = "$PrimerRoot" + "\" + "$language"
-Set-Location -Path $LanguageLocation
-gitbook init
-gitbook install
-gitbook build
-gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
+try
+{
+	# DynamoPrimer´s location
+   $PrimerRoot = "c:\WorkspacePrimer"
+   $LanguageLocation = "$PrimerRoot" + "\" + "$language"
+   Set-Location -Path $LanguageLocation
+   gitbook init
+   gitbook install
+   gitbook build
+   gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
+
+}
+catch
+{
+	Write-Host $error[0]
+	throw $LASTEXITCODE
+}

@@ -7,9 +7,9 @@ $ErrorActionPreference = "Stop"
 try
 {
 	#Docker configuration
-	$DockerImage = "dynamoprimer:1.0.0"
+	$DockerImage = "artifactory.dev.adskengineer.net/docker-local-v2/dynamo/dynamoprimer:1.0.2"
 
-	#docker pull $DockerImage
+	docker pull $DockerImage
 
 	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE,target=c:\WorkspacePrimer --name build-primer $DockerImage
 }
