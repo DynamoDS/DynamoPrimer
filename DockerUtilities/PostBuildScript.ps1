@@ -1,6 +1,6 @@
 <#
    Date: 09/12/2019
-   Purpose: Pre Deploy Script of DynamoPrimer
+   Purpose: Post Build Script of DynamoPrimer
 #>
 $ErrorActionPreference = "Stop"
 
