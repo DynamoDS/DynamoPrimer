@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 try
 {
 	#Docker configuration
-	$DockerImage = "artifactory.dev.adskengineer.net/docker-local-v2/dynamo/dynamoprimer:1.0.0"
+	$DockerImage = "artifactory.dev.adskengineer.net/docker-local-v2/dynamo/dynamoprimer:1.0.2"
 
 	docker pull $DockerImage
 

@@ -2,7 +2,7 @@
    Date: 29/11/2019
    Purpose: Run the deploy commands inside container.
 #>
-param($language, $accessKey, $secretKey, $awsToken)
+param($language)
 $ErrorActionPreference = "Stop"
 
 Function RemoveS3Object {
@@ -48,21 +48,14 @@ Function UploadS3Folder {
 
 # DynamoPrimer´s location
 $PrimerRoot = "c:\WorkspacePrimer"
+$jsonToken = (Get-Content "$PrimerRoot\vault.json" -Raw) | ConvertFrom-Json
 
 #AWS variables
-#$AWSPowerShellProfile = "MyNewProfile"
 #$AWSRegion = "us-west-1"
 $AWSBucketName = "staging.dynamoprimer.com"
 
-#AWS new profile
-#Set-AWSCredential -AccessKey $accessKey -SecretKey $secretKey -StoreAs $AWSPowerShellProfile
-
-#AWS default configuration
-#Initialize-AWSDefaultConfiguration -ProfileName $AWSPowerShellProfile -Region $AWSRegion
-
 #Set credentials
-#Set-AWSCredential -ProfileName $AWSPowerShellProfile
-Set-AWSCredential -AccessKey $accessKey -SecretKey $secretKey -SessionToken $awsToken
+Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.data.secret_key -SessionToken $jsonToken.data.security_token
 
 #Remove languge folder.
 #RemoveS3Folder -s3Prefix "$language"
