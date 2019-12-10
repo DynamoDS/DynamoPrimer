@@ -21,4 +21,3 @@ catch
     Write-Host $error[0]
 	throw $LASTEXITCODE
 }
-

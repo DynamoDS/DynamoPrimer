@@ -7,13 +7,10 @@ $ErrorActionPreference = "Stop"
 try
 {
 	$bucketName = "staging.dynamoprimer.com"
-
-	if ($bucketName == "none") {
-		$bucketName = "primer.dynamobim.org"
-		#"dynamoprimer.com"
-	}
+	$DistributionID = ""
 
 	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerDeployCommands.ps1 $env:ENVIRONMENT_LANGUAGE $bucketName"
+	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerCloudFrontCommands.ps1 $DistributionID"
 }
 catch
 {
