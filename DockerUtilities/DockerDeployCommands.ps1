@@ -2,7 +2,7 @@
    Date: 29/11/2019
    Purpose: Run the deploy commands inside container.
 #>
-param($language)
+param($language, $bucketName)
 $ErrorActionPreference = "Stop"
 
 Function RemoveS3Object {
@@ -52,7 +52,7 @@ $jsonToken = (Get-Content "$PrimerRoot\vault.json" -Raw) | ConvertFrom-Json
 
 #AWS variables
 #$AWSRegion = "us-west-1"
-$AWSBucketName = "staging.dynamoprimer.com"
+$AWSBucketName = $bucketName
 
 #Set credentials
 Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.data.secret_key -SessionToken $jsonToken.data.security_token

@@ -6,7 +6,14 @@ $ErrorActionPreference = "Stop"
 
 try
 {
-	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerDeployCommands.ps1 $env:ENVIRONMENT_LANGUAGE"
+	$bucketName = "staging.dynamoprimer.com"
+
+	if ($bucketName == "none") {
+		$bucketName = "primer.dynamobim.org"
+		#"dynamoprimer.com"
+	}
+
+	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerDeployCommands.ps1 $env:ENVIRONMENT_LANGUAGE $bucketName"
 }
 catch
 {
