@@ -62,8 +62,8 @@ Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.da
 #Get all files and upload
 #UploadS3Folder -localFolderLocation "$PrimerRoot\$language" -s3Prefix "$language"
 
-Write-Host "Uploading indexPrueba.html ..."
-UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "indexPrueba.html"
+Write-Host "Uploading indexTest.html ..."
+UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "indexTest.html"
 
 if($language == "none"){
    $folderList = @("Archive", "gitbook", "images", "styles")
