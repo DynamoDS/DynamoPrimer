@@ -2,7 +2,7 @@
    Date: 29/11/2019
    Purpose: Run the deploy commands inside container.
 #>
-param($language)
+param($language, $bucketName)
 $ErrorActionPreference = "Stop"
 
 Function RemoveS3Object {
@@ -52,7 +52,7 @@ $jsonToken = (Get-Content "$PrimerRoot\vault.json" -Raw) | ConvertFrom-Json
 
 #AWS variables
 #$AWSRegion = "us-west-1"
-$AWSBucketName = "staging.dynamoprimer.com"
+$AWSBucketName = $bucketName
 
 #Set credentials
 Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.data.secret_key -SessionToken $jsonToken.data.security_token
@@ -62,8 +62,8 @@ Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.da
 #Get all files and upload
 #UploadS3Folder -localFolderLocation "$PrimerRoot\$language" -s3Prefix "$language"
 
-Write-Host "Uploading indexPrueba.html ..."
-UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "indexPrueba.html"
+Write-Host "Uploading indexTest.html ..."
+UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "indexTest.html"
 
 if($language == "none"){
    $folderList = @("Archive", "gitbook", "images", "styles")
