@@ -2,7 +2,7 @@
    Date: 29/11/2019
    Purpose: Run the vault commands inside container.
 #>
-param($ads_user_name, [Security.SecureString]$ads_user_password=$(Throw "Password required."))
+param($ads_user_name, $ads_user_password)
 $ErrorActionPreference = "Stop"
 
 # DynamoPrimer´s location
