@@ -5,9 +5,6 @@
 param($ads_user_name, $ads_user_password)
 $ErrorActionPreference = "Stop"
 
-# DynamoPrimer´s location
-$PrimerRoot = "c:\WorkspacePrimer"
-
 vault login -method=ldap -address=https://civ1.dv.adskengineer.net:8200 username=$ads_user_name password=$ads_user_password
 
-vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json account/572569678988/sts/Application-Ops ttl=15m | ConvertTo-Json -depth 100 | Out-File "$PrimerRoot\vault.json"
+vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json account/572569678988/sts/Application-Ops ttl=15m | ConvertTo-Json -depth 100 | Out-File "c:\vault.json"

@@ -48,7 +48,8 @@ Function UploadS3Folder {
 
 # DynamoPrimer´s location
 $PrimerRoot = "c:\WorkspacePrimer"
-$jsonToken = (Get-Content "$PrimerRoot\vault.json" -Raw) | ConvertFrom-Json
+$jsonToken = (Get-Content "c:\vault.json" -Raw) | ConvertFrom-Json
+Write-Host $jsonToken.request_id
 
 #AWS variables
 #$AWSRegion = "us-west-1"
