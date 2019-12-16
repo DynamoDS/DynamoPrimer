@@ -40,14 +40,14 @@ Function UploadS3Folder {
    $results = Get-ChildItem "$localFolderLocation" -File -Recurse
    Write-Host "Uploading $s3Prefix ..."
    foreach ($path in $results) {
-      $keyPath = $path.FullName.Substring($path.FullName.IndexOf("$s3Prefix\")).Replace("\","/")
-      UploadS3Object -localPath $path.FullName -prefixWhitPath "$keyPath"
+      $keyPath = $path.FullName.Replace($localFolderLocation + "\","").Replace("\","/")
+      UploadS3Object -localPath $path.FullName -prefixWhitPath "$s3Prefix/$keyPath"
    }
    Write-Host "Upload complete for $s3Prefix!" 
 }
 
-# DynamoPrimerÂ´s location
-$PrimerRoot = "c:\WorkspacePrimer"
+# DynamoPrimerÃ‚Â´s location
+$PrimerRoot = "C:\WorkspacePrimer"
 
 #Vault
 $jsonToken = &vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json /account/572569678988/sts/Application-Ops ttl=2h | ConvertFrom-Json
@@ -65,7 +65,7 @@ Write-Host "Removing language old content ..."
 RemoveS3Folder -s3Prefix "$language"
 #Get all files and upload
 Write-Host "Uploading language nes content ..."
-UploadS3Folder -localFolderLocation "$PrimerRoot\$language" -s3Prefix "$language"
+UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
 
 #Write-Host "Uploading indexTest.html ..."
 #UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "indexTest.html"
