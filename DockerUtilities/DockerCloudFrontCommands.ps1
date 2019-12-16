@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 
 try
 {    
-    New-CFInvalidation -DistributionId $distributionID -Paths_Item "/*"
+    New-CFInvalidation -DistributionId $distributionID -Paths_Item "/*" -Paths_Quantity 1
 }
 catch
 {
