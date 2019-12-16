@@ -46,7 +46,7 @@ Function UploadS3Folder {
    Write-Host "Upload complete for $s3Prefix!" 
 }
 
-# DynamoPrimerÃ‚Â´s location
+# DynamoPrimer´s location
 $PrimerRoot = "C:\WorkspacePrimer"
 
 #Vault
