@@ -46,7 +46,7 @@ Function UploadS3Folder {
    Write-Host "Upload complete for $s3Prefix!" 
 }
 
-# DynamoPrimerÃ‚Â´s location
+# DynamoPrimer´s location
 $PrimerRoot = "C:\WorkspacePrimer"
 
 #Vault
@@ -64,7 +64,7 @@ Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.da
 Write-Host "Removing language old content ..."
 RemoveS3Folder -s3Prefix "$language"
 #Get all files and upload
-Write-Host "Uploading language nes content ..."
+Write-Host "Uploading language new content ..."
 UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
 
 #Write-Host "Uploading indexTest.html ..."
