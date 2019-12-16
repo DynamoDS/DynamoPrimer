@@ -40,17 +40,17 @@ Function UploadS3Folder {
    $results = Get-ChildItem "$localFolderLocation" -File -Recurse
    Write-Host "Uploading $s3Prefix ..."
    foreach ($path in $results) {
-      $keyPath = $path.FullName.Replace("$localFolderLocation\","").Replace("\","/")
+      $keyPath = $path.FullName.Replace($localFolderLocation + "\","").Replace("\","/")
       UploadS3Object -localPath $path.FullName -prefixWhitPath "$s3Prefix/$keyPath"
    }
    Write-Host "Upload complete for $s3Prefix!" 
 }
 
-# DynamoPrimer´s location
-$PrimerRoot = "c:\WorkspacePrimer"
+# DynamoPrimerÃ‚Â´s location
+$PrimerRoot = "C:\WorkspacePrimer"
 
 #Vault
-$jsonToken = &vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json /account/572569678988/sts/Application-Ops ttl=15m | ConvertFrom-Json
+$jsonToken = &vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json /account/572569678988/sts/Application-Ops ttl=2h | ConvertFrom-Json
 Write-Host $jsonToken.request_id
 
 #AWS variables
@@ -61,15 +61,18 @@ $AWSBucketName = $bucketName
 Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.data.secret_key -SessionToken $jsonToken.data.security_token
 
 #Remove languge folder.
-#RemoveS3Folder -s3Prefix "$language"
+Write-Host "Removing language old content ..."
+RemoveS3Folder -s3Prefix "$language"
 #Get all files and upload
-#UploadS3Folder -localFolderLocation "$PrimerRoot\$language" -s3Prefix "$language"
+Write-Host "Uploading language nes content ..."
+UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
 
-Write-Host "Uploading indexTest.html ..."
-UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "indexTest.html"
+#Write-Host "Uploading indexTest.html ..."
+#UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "indexTest.html"
 
-if($language == "none"){
+if($language -eq "en"){
    $folderList = @("Archive", "gitbook", "images", "styles")
+   Write-Host "Updating root content folders"
    for ($i=0; $i -lt $folderList.length; $i++) {
       $currentFolder = $folderList[$i]
       #Remove folder.
