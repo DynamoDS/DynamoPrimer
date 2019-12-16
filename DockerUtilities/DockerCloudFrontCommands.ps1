@@ -6,8 +6,8 @@ param($distributionID)
 $ErrorActionPreference = "Stop"
 
 try
-{    
-    New-CFInvalidation -DistributionId $distributionID -Paths_Item "/*" -Paths_Quantity 1
+{   
+    New-CFInvalidation -DistributionId $distributionID -InvalidationBatch_CallerReference [long](Get-Date -Format "yyyddMMHHmm") -Paths_Item "/*" -Paths_Quantity 1
 }
 catch
 {
