@@ -46,7 +46,7 @@ Function UploadS3Folder {
    Write-Host "Upload complete for $s3Prefix!" 
 }
 
-# DynamoPrimerÂ´s location
+# DynamoPrimer´s location
 $PrimerRoot = "C:\WorkspacePrimer"
 
 #Vault
@@ -66,9 +66,6 @@ RemoveS3Folder -s3Prefix "$language"
 #Get all files and upload
 Write-Host "Uploading language new content ..."
 UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
-
-#Write-Host "Uploading indexTest.html ..."
-#UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "indexTest.html"
 
 if($language -eq "en"){
    $folderList = @("Archive", "gitbook", "images", "styles")

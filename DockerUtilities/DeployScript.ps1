@@ -10,7 +10,6 @@ try
 	$distributionID = "E1L4E92B2OBQIF"
 
 	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerDeployCommands.ps1 $env:ENVIRONMENT_LANGUAGE $bucketName $distributionID"
-	#docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerCloudFrontCommands.ps1 $distributionID"
 }
 catch
 {
