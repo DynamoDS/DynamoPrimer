@@ -2,7 +2,7 @@
    Date: 29/11/2019
    Purpose: Run the deploy commands inside container.
 #>
-param($language, $bucketName)
+param($language, $bucketName, $distributionID)
 $ErrorActionPreference = "Stop"
 
 Function RemoveS3Object {
@@ -46,7 +46,7 @@ Function UploadS3Folder {
    Write-Host "Upload complete for $s3Prefix!" 
 }
 
-# DynamoPrimer´s location
+# DynamoPrimerÂ´s location
 $PrimerRoot = "C:\WorkspacePrimer"
 
 #Vault
@@ -54,7 +54,7 @@ $jsonToken = &vault write -address=https://civ1.dv.adskengineer.net:8200 -format
 Write-Host $jsonToken.request_id
 
 #AWS variables
-#$AWSRegion = "us-west-1"
+$AWSRegion = "us-east-1"
 $AWSBucketName = $bucketName
 
 #Set credentials
@@ -89,3 +89,7 @@ if($language -eq "en"){
    UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "index.html"
    Write-Host "Upload complete for index.html!"
 }
+
+#Invalidating current CDN content to refresh it
+$invalidationLong = [long](Get-Date -Format "yyyddMMHHmm")
+New-CFInvalidation -DistributionId $distributionID -InvalidationBatch_CallerReference $invalidationLong -Paths_Item "/*" -Paths_Quantity 1 -Region $AWSRegion
