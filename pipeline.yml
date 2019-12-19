@@ -26,7 +26,7 @@ build:
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
   scripts:
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
-    - "gswin64c.exe -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -dColorImageResolution=125dpi -sOutputFile=.\\%ENVIRONMENT_LANGUAGE%\\_book\\Appendix\\DynamoPrimer-Print.pdf  .\\%ENVIRONMENT_LANGUAGE%\\_book\\Appendix\\DynamoPrimer.pdf\"
+    - "gswin64c.exe -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -dColorImageResolution=125dpi -sOutputFile=.\\%ENVIRONMENT_LANGUAGE%\\_book\\Appendix\\DynamoPrimer-Print.pdf  .\\%ENVIRONMENT_LANGUAGE%\\_book\\Appendix\\DynamoPrimer.pdf"
   after_scripts:
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
