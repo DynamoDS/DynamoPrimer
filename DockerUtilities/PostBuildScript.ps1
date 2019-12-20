@@ -7,6 +7,7 @@ $ErrorActionPreference = "Stop"
 try
 {
 	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerVaultCommands.ps1 $env:ADS_USER_NAME $env:ADS_USER_PASSWORD"
+	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerPDFCompCommands.ps1 $env:ENVIRONMENT_LANGUAGE"
 }
 catch
 {
