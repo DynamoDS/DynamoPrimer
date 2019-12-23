@@ -9,8 +9,9 @@ env:
   - PDFCOMPRESS_COLORIMAGERESOLUTION : "125dpi"
   - PDFCOMPRESS_PDFSETTINGS : "screen"
   - PDFCOMPRESS_DEVICE : "pdfwrite"
+  - BUCKETNAME : "staging.dynamoprimer.com"
+  - DISTRIBUTIONID : "E1L4E92B2OBQIF"
 
-  
 check_changelog_updated_on_pr: false
 pipeline_os: "Windows"
 force_slack_notification : true
