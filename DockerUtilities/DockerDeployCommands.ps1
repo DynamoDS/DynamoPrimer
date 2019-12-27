@@ -41,12 +41,20 @@ Function UploadS3Folder {
    Write-Host "Uploading $s3Prefix ..."
    foreach ($path in $results) {
       $keyPath = $path.FullName.Replace($localFolderLocation + "\","").Replace("\","/")
-      UploadS3Object -localPath $path.FullName -prefixWhitPath "$s3Prefix/$keyPath"
+
+      if ([string]::IsNullOrEmpty($s3Prefix))
+      {
+        UploadS3Object -localPath $path.FullName -prefixWhitPath "$keyPath"
+      }
+      else
+      {      
+        UploadS3Object -localPath $path.FullName -prefixWhitPath "$s3Prefix/$keyPath"
+      }
    }
    Write-Host "Upload complete for $s3Prefix!" 
 }
 
-# DynamoPrimer´s location
+# DynamoPrimerÂ´s location
 $PrimerRoot = "C:\WorkspacePrimer"
 
 #Vault
@@ -74,9 +82,9 @@ if($language -eq "en"){
       $currentFolder = $folderList[$i]
       #Remove folder.
       RemoveS3Folder -s3Prefix "$currentFolder"
-      #Get all files and upload
-      UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book\$currentFolder" -s3Prefix "$currentFolder"
    }
+   #Get all files and upload
+   UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
 
    Write-Host "Deleting index.html ..."
    RemoveS3Object -s3Key "index.html"
