@@ -15,9 +15,16 @@ Function RemoveS3Object {
 
 Function RemoveS3Folder {
    param (
-      [string]$s3Prefix
+      [string]$s3Prefix, $filter
    )
-   $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
+   if ([string]::IsNullOrEmpty($s3Prefix))
+   {
+      $objectList = Get-S3Object -BucketName $AWSBucketName | Where $filter
+   }
+   else
+   {
+        $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
+   }
    Write-Host "Deleting $s3Prefix ..."
    foreach($myObject in $objectList){
       RemoveS3Object -s3Key $myObject.Key
@@ -54,7 +61,7 @@ Function UploadS3Folder {
    Write-Host "Upload complete for $s3Prefix!" 
 }
 
-# DynamoPrimerÂ´s location
+# DynamoPrimerÃ‚Â´s location
 $PrimerRoot = "C:\WorkspacePrimer"
 
 #Vault
@@ -76,14 +83,13 @@ Write-Host "Uploading language new content ..."
 UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
 
 if($language -eq "en"){
-   $folderList = @("Archive", "gitbook", "images", "styles")
+   $filter = {($_.Key -NotLike "en/*" -and $_.Key -NotLike "de/*" -and $_.Key -NotLike "ja/*" -and $_.Key -NotLike "zh-tw/*")}
    Write-Host "Updating root content folders"
-   for ($i=0; $i -lt $folderList.length; $i++) {
-      $currentFolder = $folderList[$i]
-      #Remove folder.
-      RemoveS3Folder -s3Prefix "$currentFolder"
-   }
+   #Remove folders.
+   Write-Host "Removing old root content..."
+   RemoveS3Folder -s3Prefix $null -filter $filter
    #Get all files and upload
+   Write-Host "Uploading root content..."
    UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
 
    Write-Host "Deleting index.html ..."
