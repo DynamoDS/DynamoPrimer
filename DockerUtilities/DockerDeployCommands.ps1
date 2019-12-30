@@ -91,14 +91,6 @@ if($language -eq "en"){
    #Get all files and upload
    Write-Host "Uploading root content..."
    UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
-
-   Write-Host "Deleting index.html ..."
-   RemoveS3Object -s3Key "index.html"
-   Write-Host "Deletion complete of index.html!"
-
-   Write-Host "Uploading index.html ..."
-   UploadS3Object -localPath "$PrimerRoot\$language\_book\index.html" -prefixWhitPath "index.html"
-   Write-Host "Upload complete for index.html!"
 }
 
 #Invalidating current CDN content to refresh it
