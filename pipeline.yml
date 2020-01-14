@@ -43,3 +43,7 @@ deployment:
   scripts:
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
     - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
+
+code_analysis:
+  sonarqube:
+    skip: true
