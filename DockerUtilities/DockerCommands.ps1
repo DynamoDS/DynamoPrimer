@@ -10,18 +10,16 @@ $ErrorActionPreference = "Stop"
 try
 {
    # DynamoPrimer´s location
+   $PrimerRoot = "c:\WorkspacePrimer"
    Foreach ($language in $ArrayParameter)
-   {  
-      $PrimerRoot = "c:\WorkspacePrimer"
+   {        
       $LanguageLocation = "$PrimerRoot" + "\" + "$language"
       Set-Location -Path $LanguageLocation
       gitbook init
       gitbook install
       gitbook build
+      gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
    }
-
-   
-   gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
 }
 catch
 {

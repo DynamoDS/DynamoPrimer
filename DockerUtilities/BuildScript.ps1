@@ -6,6 +6,11 @@ $ErrorActionPreference = "Stop"
 
 try
 {
+	if ($env:ENVIRONMENT_LANGUAGE -eq "")
+	{
+		throw "No languages were selected."
+	}
+
 	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE"
 }
 catch
