@@ -10,7 +10,7 @@ Function RemoveS3Object {
       [string]$s3Key
    )
    Write-Host $s3Key
-   Remove-S3Object -BucketName $AWSBucketName -Key $s3Key -Force  
+   ##Remove-S3Object -BucketName $AWSBucketName -Key $s3Key -Force  
 }
 
 Function RemoveS3Folder {
@@ -23,11 +23,11 @@ Function RemoveS3Folder {
    }
    else
    {
-        $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
+      $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
    }
    Write-Host "Deleting $s3Prefix ..."
    foreach($myObject in $objectList){
-      RemoveS3Object -s3Key $myObject.Key
+      ##RemoveS3Object -s3Key $myObject.Key
    }
    Write-Host "Deletion complete of $s3Prefix!"   
 }
@@ -37,7 +37,7 @@ Function UploadS3Object {
       [string]$localPath, [string]$prefixWhitPath
    )
    Write-Host $prefixWhitPath
-   Write-S3Object -BucketName $AWSBucketName -File $localPath -Key $prefixWhitPath   
+   ##Write-S3Object -BucketName $AWSBucketName -File $localPath -Key $prefixWhitPath   
 }
 
 Function UploadS3Folder {
@@ -51,11 +51,11 @@ Function UploadS3Folder {
 
       if ([string]::IsNullOrEmpty($s3Prefix))
       {
-        UploadS3Object -localPath $path.FullName -prefixWhitPath "$keyPath"
+        ##UploadS3Object -localPath $path.FullName -prefixWhitPath "$keyPath"
       }
       else
       {      
-        UploadS3Object -localPath $path.FullName -prefixWhitPath "$s3Prefix/$keyPath"
+        ##UploadS3Object -localPath $path.FullName -prefixWhitPath "$s3Prefix/$keyPath"
       }
    }
    Write-Host "Upload complete for $s3Prefix!" 
