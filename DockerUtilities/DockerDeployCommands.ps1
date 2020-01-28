@@ -2,7 +2,7 @@
    Date: 29/11/2019
    Purpose: Run the deploy commands inside container.
 #>
-param($language, $bucketName, $distributionID)
+param([string[]]$ArrayParameter=@(), $bucketName, $distributionID)
 $ErrorActionPreference = "Stop"
 
 Function RemoveS3Object {
@@ -23,7 +23,7 @@ Function RemoveS3Folder {
    }
    else
    {
-        $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
+      $objectList = Get-S3Object -BucketName $AWSBucketName -Prefix "$s3Prefix/"
    }
    Write-Host "Deleting $s3Prefix ..."
    foreach($myObject in $objectList){
@@ -75,22 +75,26 @@ $AWSBucketName = $bucketName
 #Set credentials
 Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.data.secret_key -SessionToken $jsonToken.data.security_token
 
-#Remove languge folder.
-Write-Host "Removing language old content ..."
-RemoveS3Folder -s3Prefix "$language"
-#Get all files and upload
-Write-Host "Uploading language new content ..."
-UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
 
-if($language -eq "en"){
-   $filter = {($_.Key -NotLike "en/*" -and $_.Key -NotLike "de/*" -and $_.Key -NotLike "ja/*" -and $_.Key -NotLike "zh-tw/*")}
-   Write-Host "Updating root content folders"
-   #Remove folders.
-   Write-Host "Removing old root content..."
-   RemoveS3Folder -s3Prefix $null -filter $filter
+Foreach ($language in $ArrayParameter)
+{
+   #Remove languge folder.
+   Write-Host "Removing '$language' old content ..."
+   RemoveS3Folder -s3Prefix "$language"
    #Get all files and upload
-   Write-Host "Uploading root content..."
-   UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
+   Write-Host "Uploading '$language' new content ..."
+   UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
+
+   if($language -eq "en"){
+      $filter = {($_.Key -NotLike "en/*" -and $_.Key -NotLike "de/*" -and $_.Key -NotLike "ja/*" -and $_.Key -NotLike "zh-tw/*")}
+      Write-Host "Updating root content folders"
+      #Remove folders.
+      Write-Host "Removing old root content..."
+      RemoveS3Folder -s3Prefix $null -filter $filter
+      #Get all files and upload
+      Write-Host "Uploading root content..."
+      UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
+   }
 }
 
 #Invalidating current CDN content to refresh it
