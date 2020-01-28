@@ -18,13 +18,11 @@ force_slack_notification : true
 
 job_parameters:
     -
-      type: "choice"
+      type: "extendedChoice"
       name: "ENVIRONMENT_LANGUAGE"
-      choices: 
-        - "en"
-        - "de"
-        - "ja"
-        - "zh-tw"
+      value: "en,de,ja,zh-tw"
+      defaultValue: "en,de,ja,zh-tw"
+      delimiter: ","
       description: ""
 
 build:
