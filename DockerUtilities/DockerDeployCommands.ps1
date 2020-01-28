@@ -19,7 +19,7 @@ Function RemoveS3Folder {
    )
    if ([string]::IsNullOrEmpty($s3Prefix))
    {
-      $objectList = Get-S3Object -BucketName $AWSBucketName | Where $filter
+      $objectList = Get-S3Object -BucketName $AWSBucketName | Where-Object $filter
    }
    else
    {
