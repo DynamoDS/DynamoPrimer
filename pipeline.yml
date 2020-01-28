@@ -1,0 +1,47 @@
+version: 0.1.1
+env:
+  - BUILD_MACHINE: "Dynamo_Win_003"
+  - SLACK_QUANTUM_BUILD_CHANNEL : "#dynamo-jenkinsbuild"
+  - SLACK_QUANTUM_BUILD_CREDENTIAL_ID : "slack-notify-token"
+  - MAIL_QUANTUM_BUILD_RECIPIENT : "dynamo.plaid.dev@autodesk.com"
+  - TEST_REPORT_FORMAT : "nunit"
+  - DOCKER_IMAGE_VERSION : "1.0.3"
+  - PDFCOMPRESS_COLORIMAGERESOLUTION : "125dpi"
+  - PDFCOMPRESS_PDFSETTINGS : "screen"
+  - PDFCOMPRESS_DEVICE : "pdfwrite"
+  - BUCKETNAME : "primer.dynamobim.org"
+  - DISTRIBUTIONID : "E1L4E92B2OBQIF"
+
+check_changelog_updated_on_pr: false
+pipeline_os: "Windows"
+force_slack_notification : true
+
+job_parameters:
+    -
+      type: "extendedChoice"
+      name: "ENVIRONMENT_LANGUAGE"
+      value: "en,de,ja,zh-tw"
+      defaultValue: "en,de,ja,zh-tw"
+      delimiter: ","
+      description: ""
+
+build:
+  before_scripts:
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
+  scripts:
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
+  after_scripts:
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
+
+deployment:
+-
+  type: customized
+  scripts:
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
+    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
+
+code_analysis:
+  sonarqube:
+    skip: true
