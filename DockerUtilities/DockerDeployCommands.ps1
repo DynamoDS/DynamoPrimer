@@ -19,7 +19,7 @@ Function RemoveS3Folder {
    )
    if ([string]::IsNullOrEmpty($s3Prefix))
    {
-      $objectList = Get-S3Object -BucketName $AWSBucketName | Where $filter
+      $objectList = Get-S3Object -BucketName $AWSBucketName | Where-Object $filter
    }
    else
    {
@@ -65,7 +65,7 @@ Function UploadS3Folder {
 $PrimerRoot = "C:\WorkspacePrimer"
 
 #Vault
-$jsonToken = &vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json /account/572569678988/sts/Application-Ops ttl=45m | ConvertFrom-Json
+$jsonToken = &vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json /account/572569678988/sts/Application-Ops ttl=2h | ConvertFrom-Json
 Write-Host $jsonToken.request_id
 
 #AWS variables
