@@ -26,7 +26,7 @@ job_parameters:
       description: ""
 
 build:
-  -
+-
     scripts:
       - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
       - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
