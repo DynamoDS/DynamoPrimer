@@ -26,14 +26,15 @@ job_parameters:
       description: ""
 
 build:
-  scripts:
-    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
-    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
-    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
-    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
-    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
-    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
-    - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
+-
+    scripts:
+      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
+      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
+      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
+      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
+      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
+      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
+      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
 
 code_analysis:
   sonarqube:
