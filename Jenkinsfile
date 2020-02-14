@@ -1,4 +1,4 @@
 @Library('PSL@master')
-@Library('CILibrary@CBP/DynamoPerfTest') _
+@Library('CILibrary@mask_credentials') _
 
 StartPipeline()
