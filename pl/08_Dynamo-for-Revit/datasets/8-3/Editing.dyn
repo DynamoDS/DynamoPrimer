@@ -1,0 +1,82 @@
+<Workspace Version="0.8.2.2032" X="-427.37318389937" Y="-5467.80470390101" zoom="1.26329667318025" Name="Home" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Nodes.DSFunction guid="686ed814-0c11-44a4-bad2-6fe45c415478" type="Dynamo.Nodes.DSFunction" nickname="Element.Parameters" x="1524.41082212394" y="4226.48570477123" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="RevitNodes.dll" function="Revit.Elements.Element.Parameters" />
+    <Dynamo.Nodes.DSModelElementSelection guid="68304c92-c844-4721-8426-e84e708019f0" type="Dynamo.Nodes.DSModelElementSelection" nickname="Select Model Element" x="776.054907270128" y="4223.69486875085" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <instance id="ed1d2998-bd16-48c5-855d-3cd16246ae37-000460f5" />
+    </Dynamo.Nodes.DSModelElementSelection>
+    <Dynamo.Nodes.DSFunction guid="592db504-4a00-4709-ad9e-7a833ab78b77" type="Dynamo.Nodes.DSFunction" nickname="Element.SetParameterByName" x="1245.90183639568" y="4372.20546392146" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="RevitNodes.dll" function="Revit.Elements.Element.SetParameterByName@string,var" />
+    <Dynamo.Nodes.CodeBlockNodeModel guid="e28eeb5c-8221-4da2-aa32-d0691dcff359" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="486.143265307283" y="4402.45310034087" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" CodeText="{&quot;BldgWidth&quot;,&quot;BldgLength&quot;,&quot;BldgHeight&quot;, &quot;AtriumOffset&quot;, &quot;InsideOffset&quot;,&quot;LiftUp&quot;};" ShouldFocus="false" />
+    <DSCoreNodesUI.Input.DoubleSlider guid="0d1d196d-e8fb-447e-bee0-22fa14b15800" type="DSCoreNodesUI.Input.DoubleSlider" nickname="DblSkin_NorthOffset" x="1314.27281229658" y="4932.68881006131" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>2.29</System.Double>
+      <Range min="0" max="10" step="0.01" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="1c6019a6-8b86-4f8b-98f9-cc9f30b356bc" type="DSCoreNodesUI.Input.DoubleSlider" nickname="DblSkin_SouthOffset" x="1314.27281229658" y="4804.44098660562" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>2.68</System.Double>
+      <Range min="0" max="10" step="0.01" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="f40973b4-499b-483b-bfa6-1615d46a0b50" type="DSCoreNodesUI.Input.DoubleSlider" nickname="DblSkin_MidOffset" x="1314.27281229658" y="4868.56489833347" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>2.64</System.Double>
+      <Range min="0" max="10" step="0.01" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="af87b44f-b730-4b22-b029-49ab07d06519" type="DSCoreNodesUI.Input.DoubleSlider" nickname="InsideOffset" x="533.225394123662" y="4948.79243495619" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>8</System.Double>
+      <Range min="0" max="100" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="43654797-9453-404a-a7a7-4849b72b8cc7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="BldgWidth" x="533.225394123662" y="4649.1632966203" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>62</System.Double>
+      <Range min="0" max="100" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="821138e1-9152-4912-90dd-40a00015b0f6" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Facade Bend Location" x="1314.27281229658" y="4996.81272178916" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>0.5</System.Double>
+      <Range min="0.1" max="0.9" step="0.01" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="918fc92c-4a9a-4f99-87f8-d302c97d3be0" type="DSCoreNodesUI.Input.DoubleSlider" nickname="AtriumOffset" x="533.225394123662" y="4873.88515037222" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>22</System.Double>
+      <Range min="0" max="100" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="9beb532a-0338-441a-8405-5b8bd141103c" type="DSCoreNodesUI.Input.DoubleSlider" nickname="BldgHeight" x="533.225394123662" y="4798.97786578825" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>25</System.Double>
+      <Range min="0" max="100" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="be1fc9d3-737d-47d6-b303-4a6ce4499a33" type="DSCoreNodesUI.Input.DoubleSlider" nickname="BldgLength" x="533.225394123662" y="4724.07058120427" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>92</System.Double>
+      <Range min="0" max="100" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <Dynamo.Nodes.CodeBlockNodeModel guid="73ebb46f-c3ca-472c-ab1f-c3b47cf655d4" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1001.82685171031" y="4647.67635921098" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" CodeText="{bw,bl,bh,ao,io,lu};" ShouldFocus="false" />
+    <Dynamo.Nodes.DSFunction guid="689a0645-cee0-4209-9d15-58d32ba784d7" type="Dynamo.Nodes.DSFunction" nickname="Element.SetParameterByName" x="2355.3029321071" y="4547.79509140555" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="RevitNodes.dll" function="Revit.Elements.Element.SetParameterByName@string,var" />
+    <Dynamo.Nodes.CodeBlockNodeModel guid="32f1c091-3657-433a-8415-f8889055eccd" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1315.08669819635" y="4664.34424836343" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" CodeText="{&quot;DblSkin_SouthOffset&quot;,&quot;DblSkin_MidOffset&quot;,&quot;DblSkin_NorthOffset&quot;,&quot;Facade Bend Location&quot;};" ShouldFocus="false" />
+    <Dynamo.Nodes.CodeBlockNodeModel guid="def7a911-0a9d-4566-bff1-8e1d648aca07" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1791.45113188963" y="4842.58889830304" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" CodeText="{so,mo,no,fbl};" ShouldFocus="false" />
+    <Dynamo.Nodes.Watch guid="31f50bac-e00f-495d-8e0e-5bb32ef64f50" type="Dynamo.Nodes.Watch" nickname="Watch" x="1004.10422131537" y="4224.15518549769" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" />
+    <DSCoreNodesUI.Input.DoubleSlider guid="66b65714-2211-4fe5-b753-9c95c04a9116" type="DSCoreNodesUI.Input.DoubleSlider" nickname="LiftUp" x="534.075538283084" y="5014.5695665586" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>12</System.Double>
+      <Range min="0" max="100" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="68304c92-c844-4721-8426-e84e708019f0" start_index="0" end="31f50bac-e00f-495d-8e0e-5bb32ef64f50" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="e28eeb5c-8221-4da2-aa32-d0691dcff359" start_index="0" end="592db504-4a00-4709-ad9e-7a833ab78b77" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="0d1d196d-e8fb-447e-bee0-22fa14b15800" start_index="0" end="def7a911-0a9d-4566-bff1-8e1d648aca07" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1c6019a6-8b86-4f8b-98f9-cc9f30b356bc" start_index="0" end="def7a911-0a9d-4566-bff1-8e1d648aca07" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f40973b4-499b-483b-bfa6-1615d46a0b50" start_index="0" end="def7a911-0a9d-4566-bff1-8e1d648aca07" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="af87b44f-b730-4b22-b029-49ab07d06519" start_index="0" end="73ebb46f-c3ca-472c-ab1f-c3b47cf655d4" end_index="4" portType="0" />
+    <Dynamo.Models.ConnectorModel start="43654797-9453-404a-a7a7-4849b72b8cc7" start_index="0" end="73ebb46f-c3ca-472c-ab1f-c3b47cf655d4" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="821138e1-9152-4912-90dd-40a00015b0f6" start_index="0" end="def7a911-0a9d-4566-bff1-8e1d648aca07" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="918fc92c-4a9a-4f99-87f8-d302c97d3be0" start_index="0" end="73ebb46f-c3ca-472c-ab1f-c3b47cf655d4" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="9beb532a-0338-441a-8405-5b8bd141103c" start_index="0" end="73ebb46f-c3ca-472c-ab1f-c3b47cf655d4" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="be1fc9d3-737d-47d6-b303-4a6ce4499a33" start_index="0" end="73ebb46f-c3ca-472c-ab1f-c3b47cf655d4" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="73ebb46f-c3ca-472c-ab1f-c3b47cf655d4" start_index="0" end="592db504-4a00-4709-ad9e-7a833ab78b77" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="32f1c091-3657-433a-8415-f8889055eccd" start_index="0" end="689a0645-cee0-4209-9d15-58d32ba784d7" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="def7a911-0a9d-4566-bff1-8e1d648aca07" start_index="0" end="689a0645-cee0-4209-9d15-58d32ba784d7" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="31f50bac-e00f-495d-8e0e-5bb32ef64f50" start_index="0" end="686ed814-0c11-44a4-bad2-6fe45c415478" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="31f50bac-e00f-495d-8e0e-5bb32ef64f50" start_index="0" end="592db504-4a00-4709-ad9e-7a833ab78b77" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="31f50bac-e00f-495d-8e0e-5bb32ef64f50" start_index="0" end="689a0645-cee0-4209-9d15-58d32ba784d7" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="66b65714-2211-4fe5-b753-9c95c04a9116" start_index="0" end="73ebb46f-c3ca-472c-ab1f-c3b47cf655d4" end_index="5" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="background_preview" eyeX="10" eyeY="15" eyeZ="10" lookX="-10" lookY="-10" lookZ="-10" />
+  </Cameras>
+</Workspace>

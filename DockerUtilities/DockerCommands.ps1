@@ -9,7 +9,7 @@ $ErrorActionPreference = "Stop"
 
 try
 {
-   # DynamoPrimer's location
+   # DynamoPrimer´s location
    $PrimerRoot = "c:\WorkspacePrimer"
    Foreach ($language in $ArrayParameter)
    {        

@@ -4,7 +4,7 @@
 
 ## Für Dynamo 2.0
 
-[Dynamo Primer v1.3 hier](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf) herunterladen
+Dynamo Primer v1.3 [hier](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf) herunterladen
 
 ![Dynamo-Logo](images/dynamo_logo_dark-trim.jpg)
 
@@ -58,7 +58,7 @@ Dynamo Primer ist ein Open-Source-Projekt, das von Matt Jezyk und dem Dynamo-Ent
 
 **John Pierson von Parallax Team** wurde damit beauftragt, den Primer mit den Änderungen an Dynamo 2.0 zu aktualisieren.
 
-[![](images/PRLX_Logo.jpg)](http://modelab.is)
+[![](images/PRLX_Logo.jpg)](http://www.parallaxteam.com/)
 
 ### Danksagungen
 
@@ -68,9 +68,11 @@ Vielen Dank auch an Matt Jezyk, Ian Keough, Zach Kron, Racel Williams und Colin 
 
 ### Software und Ressourcen
 
-**Dynamo** Die aktuelle stabile Version von Dynamo ist Version 2.0.
+**Dynamo** Die aktuelle stabile* Version von Dynamo ist Version 2.1.0.
 
 [http://dynamobim.com/download/](http://dynamobim.com/download/) oder [http://dynamobuilds.com](http://dynamobuilds.com)
+
+*Anmerkung: Beginnend mit Revit 2020 ist Dynamo im Paket der Revit-Versionen enthalten, sodass keine manuelle Installation erforderlich ist. Weitere Informationen finden Sie in diesem [Blog-Post](https://dynamobim.org/dynamo-core-2-1-release/).
 
 **DynamoBIM** Die beste Quelle für zusätzliche Informationen, Lerninhalte und Foren ist die DynamoBIM-Website.
 
@@ -86,9 +88,9 @@ Dynamo@autodesk.com
 
 ### Lizenz
 
-Copyright 2018 Autodesk
+Copyright 2019 Autodesk
 
-Lizenziert unter der Apache-Lizenz, Version 2.0 (die "Lizenz"); Sie dürfen diese Datei nur unter Einhaltung der Lizenzbestimmungen verwenden. Sie erhalten die Lizenz unter:
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. Sie erhalten die Lizenz unter:
 
 [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 

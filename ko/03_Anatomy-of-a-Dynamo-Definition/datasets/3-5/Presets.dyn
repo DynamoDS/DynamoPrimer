@@ -1,0 +1,274 @@
+<Workspace Version="0.9.0.3067" X="441.220551054074" Y="310.888938865163" zoom="0.199639766544913" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Nodes.DSFunction guid="8b248160-f0c9-4376-9bf6-482da7403683" type="Dynamo.Nodes.DSFunction" nickname="Circle.ByCenterPointRadius" x="493.815480937582" y="-212.060849118114" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius@Autodesk.DesignScript.Geometry.Point,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="924f22dc-2500-4bfa-8529-727b7b97d4f8" type="Dynamo.Nodes.DSFunction" nickname="Circle.ByCenterPointRadius" x="71.4410775644319" y="155.322388684004" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius@Autodesk.DesignScript.Geometry.Point,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="4b3c5384-554f-429d-a0fb-d18659c3670f" type="Dynamo.Nodes.DSFunction" nickname="Circle.ByCenterPointRadius" x="75.1973455510839" y="-91.0275626119347" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius@Autodesk.DesignScript.Geometry.Point,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <DSCoreNodesUI.Input.DoubleSlider guid="4509318f-f62d-4846-8f03-e828446951f7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Height" x="-735.959285552091" y="324.039760774724" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>18</System.Double>
+      <Range min="0" max="20" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="59ae3d3f-3f16-453a-849f-caa0b1d41e25" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 2 Radius" x="-735.959285552091" y="-56.0875711359205" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>2.3</System.Double>
+      <Range min="0" max="15" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="6cd79933-daef-4f27-83f7-7d865b9376d2" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Top Radius" x="-735.959285552091" y="190.341593213338" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>1.3</System.Double>
+      <Range min="0" max="15" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.Input.DoubleSlider guid="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Bottom Radius" x="-735.959285552091" y="-179.30215331055" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>0.9</System.Double>
+      <Range min="0" max="15" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSCoreNodesUI.CreateList guid="c9c88244-7217-46f9-862e-9c85fcb5cacb" type="DSCoreNodesUI.CreateList" nickname="List.Create" x="817.501285277472" y="-64.4774076978542" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" inputcount="4" />
+    <Dynamo.Nodes.DSFunction guid="e282f973-7a19-4c3e-ad8a-df86c6d3a26d" type="Dynamo.Nodes.DSFunction" nickname="Surface.ByLoft" x="969.399529928415" y="-65.0085752581526" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Surface.ByLoft@Autodesk.DesignScript.Geometry.Curve[]" />
+    <Dynamo.Nodes.DSFunction guid="265d7bcf-8bf8-4910-bb3e-0f5d3bf548a8" type="Dynamo.Nodes.DSFunction" nickname="Circle.ByCenterPointRadius" x="72.4365228875897" y="33.1321564631201" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadius@Autodesk.DesignScript.Geometry.Point,double">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <DSCoreNodesUI.Input.DoubleSlider guid="838500ea-e50f-4f77-876f-f120ec2e1441" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 3 Radius" x="-735.959285552091" y="67.1270110387088" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>1.1</System.Double>
+      <Range min="0" max="15" step="0.1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <Dynamo.Nodes.CodeBlockNodeModel guid="9a1a3cc7-3fc1-43b3-bf04-ab6dc5bcd4d3" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="335.03562447905" y="-11.0753319187738" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" CodeText="x*0.3;" ShouldFocus="false" />
+    <Dynamo.Nodes.CodeBlockNodeModel guid="8426ba67-1739-402b-a33c-ff0ccc0f3765" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="337.376766845139" y="155.192429582712" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" CodeText="x*0.7;" ShouldFocus="false" />
+    <Dynamo.Nodes.DSFunction guid="993c4235-2478-4e02-9135-ee25acff543c" type="Dynamo.Nodes.DSFunction" nickname="Geometry.Translate" x="475.726230476782" y="-93.2194863421997" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Geometry.Translate@double,double,double">
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+      <PortInfo index="3" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="d843ca1a-38a5-40fd-90e2-9d0a9d218248" type="Dynamo.Nodes.DSFunction" nickname="Geometry.Translate" x="477.141885215929" y="71.3720996003951" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Geometry.Translate@double,double,double">
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+      <PortInfo index="3" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="d4865f8e-0194-4df4-af2a-c006bf00da39" type="Dynamo.Nodes.DSFunction" nickname="Geometry.Translate" x="478.897981949161" y="236.080221023725" isVisible="false" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Geometry.Translate@double,double,double">
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+      <PortInfo index="3" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <Dynamo.Nodes.DSFunction guid="4eb9a78b-12e7-4246-a82e-87e9f66e2127" type="Dynamo.Nodes.DSFunction" nickname="Geometry.Translate" x="1369.03716990458" y="-24.287428012768" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" assembly="ProtoGeometry.dll" function="Autodesk.DesignScript.Geometry.Geometry.Translate@double,double,double">
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+      <PortInfo index="3" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <DSCoreNodesUI.CreateList guid="31d016bd-c568-42e8-b2da-299f0840a20e" type="DSCoreNodesUI.CreateList" nickname="List.Create" x="1183.84697217885" y="48.4638434433541" isVisible="false" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" inputcount="3" />
+    <Dynamo.Nodes.CodeBlockNodeModel guid="c68af483-af6e-48ea-9f3f-68388267d2d7" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1320" y="192" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" CodeText="50;" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="8b248160-f0c9-4376-9bf6-482da7403683" start_index="0" end="c9c88244-7217-46f9-862e-9c85fcb5cacb" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8b248160-f0c9-4376-9bf6-482da7403683" start_index="0" end="31d016bd-c568-42e8-b2da-299f0840a20e" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="924f22dc-2500-4bfa-8529-727b7b97d4f8" start_index="0" end="d4865f8e-0194-4df4-af2a-c006bf00da39" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4b3c5384-554f-429d-a0fb-d18659c3670f" start_index="0" end="993c4235-2478-4e02-9135-ee25acff543c" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4509318f-f62d-4846-8f03-e828446951f7" start_index="0" end="8426ba67-1739-402b-a33c-ff0ccc0f3765" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4509318f-f62d-4846-8f03-e828446951f7" start_index="0" end="9a1a3cc7-3fc1-43b3-bf04-ab6dc5bcd4d3" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4509318f-f62d-4846-8f03-e828446951f7" start_index="0" end="d4865f8e-0194-4df4-af2a-c006bf00da39" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="59ae3d3f-3f16-453a-849f-caa0b1d41e25" start_index="0" end="4b3c5384-554f-429d-a0fb-d18659c3670f" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="6cd79933-daef-4f27-83f7-7d865b9376d2" start_index="0" end="924f22dc-2500-4bfa-8529-727b7b97d4f8" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" start_index="0" end="8b248160-f0c9-4376-9bf6-482da7403683" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c9c88244-7217-46f9-862e-9c85fcb5cacb" start_index="0" end="e282f973-7a19-4c3e-ad8a-df86c6d3a26d" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="e282f973-7a19-4c3e-ad8a-df86c6d3a26d" start_index="0" end="31d016bd-c568-42e8-b2da-299f0840a20e" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="265d7bcf-8bf8-4910-bb3e-0f5d3bf548a8" start_index="0" end="d843ca1a-38a5-40fd-90e2-9d0a9d218248" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="838500ea-e50f-4f77-876f-f120ec2e1441" start_index="0" end="265d7bcf-8bf8-4910-bb3e-0f5d3bf548a8" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="9a1a3cc7-3fc1-43b3-bf04-ab6dc5bcd4d3" start_index="0" end="993c4235-2478-4e02-9135-ee25acff543c" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8426ba67-1739-402b-a33c-ff0ccc0f3765" start_index="0" end="d843ca1a-38a5-40fd-90e2-9d0a9d218248" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="993c4235-2478-4e02-9135-ee25acff543c" start_index="0" end="c9c88244-7217-46f9-862e-9c85fcb5cacb" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d843ca1a-38a5-40fd-90e2-9d0a9d218248" start_index="0" end="c9c88244-7217-46f9-862e-9c85fcb5cacb" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d4865f8e-0194-4df4-af2a-c006bf00da39" start_index="0" end="c9c88244-7217-46f9-862e-9c85fcb5cacb" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d4865f8e-0194-4df4-af2a-c006bf00da39" start_index="0" end="31d016bd-c568-42e8-b2da-299f0840a20e" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="31d016bd-c568-42e8-b2da-299f0840a20e" start_index="0" end="4eb9a78b-12e7-4246-a82e-87e9f66e2127" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c68af483-af6e-48ea-9f3f-68388267d2d7" start_index="0" end="4eb9a78b-12e7-4246-a82e-87e9f66e2127" end_index="3" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets>
+    <Dynamo.Models.PresetModel Name="01" Description="" guid="0a73ee73-8865-4c66-8177-7fd48219f52e">
+      <DSCoreNodesUI.Input.DoubleSlider guid="4509318f-f62d-4846-8f03-e828446951f7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Height" x="-735.959285552091" y="324.039760774724" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>17</System.Double>
+        <Range min="0" max="20" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="59ae3d3f-3f16-453a-849f-caa0b1d41e25" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 2 Radius" x="-735.959285552091" y="-56.0875711359205" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>5</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="6cd79933-daef-4f27-83f7-7d865b9376d2" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Top Radius" x="-735.959285552091" y="190.341593213338" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>2.1</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Bottom Radius" x="-735.959285552091" y="-179.30215331055" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>3.7</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="838500ea-e50f-4f77-876f-f120ec2e1441" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 3 Radius" x="-735.959285552091" y="67.1270110387088" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>2.6</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+    </Dynamo.Models.PresetModel>
+    <Dynamo.Models.PresetModel Name="02" Description="" guid="33c53428-a811-4976-8e49-24a56d7bb3c6">
+      <DSCoreNodesUI.Input.DoubleSlider guid="4509318f-f62d-4846-8f03-e828446951f7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Height" x="-735.959285552091" y="324.039760774724" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>4.7</System.Double>
+        <Range min="0" max="20" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="59ae3d3f-3f16-453a-849f-caa0b1d41e25" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 2 Radius" x="-735.959285552091" y="-56.0875711359205" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>9.8</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="6cd79933-daef-4f27-83f7-7d865b9376d2" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Top Radius" x="-735.959285552091" y="190.341593213338" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>10.9</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Bottom Radius" x="-735.959285552091" y="-179.30215331055" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>6.5</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="838500ea-e50f-4f77-876f-f120ec2e1441" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 3 Radius" x="-735.959285552091" y="67.1270110387088" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>10.9</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+    </Dynamo.Models.PresetModel>
+    <Dynamo.Models.PresetModel Name="03" Description="" guid="2c378f79-f7d0-4d5b-876e-4308c1435e4b">
+      <DSCoreNodesUI.Input.DoubleSlider guid="4509318f-f62d-4846-8f03-e828446951f7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Height" x="-735.959285552091" y="324.039760774724" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>15</System.Double>
+        <Range min="0" max="20" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="59ae3d3f-3f16-453a-849f-caa0b1d41e25" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 2 Radius" x="-735.959285552091" y="-56.0875711359205" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>8.9</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="6cd79933-daef-4f27-83f7-7d865b9376d2" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Top Radius" x="-735.959285552091" y="190.341593213338" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>4.1</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Bottom Radius" x="-735.959285552091" y="-179.30215331055" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>5.9</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="838500ea-e50f-4f77-876f-f120ec2e1441" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 3 Radius" x="-735.959285552091" y="67.1270110387088" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>6.9</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+    </Dynamo.Models.PresetModel>
+    <Dynamo.Models.PresetModel Name="04" Description="" guid="92f7e73e-101a-4f00-a34c-02283059f357">
+      <DSCoreNodesUI.Input.DoubleSlider guid="4509318f-f62d-4846-8f03-e828446951f7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Height" x="-735.959285552091" y="324.039760774724" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>20</System.Double>
+        <Range min="0" max="20" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="59ae3d3f-3f16-453a-849f-caa0b1d41e25" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 2 Radius" x="-735.959285552091" y="-56.0875711359205" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>1.6</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="6cd79933-daef-4f27-83f7-7d865b9376d2" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Top Radius" x="-735.959285552091" y="190.341593213338" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>4.4</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Bottom Radius" x="-735.959285552091" y="-179.30215331055" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>2</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="838500ea-e50f-4f77-876f-f120ec2e1441" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 3 Radius" x="-735.959285552091" y="67.1270110387088" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>4</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+    </Dynamo.Models.PresetModel>
+    <Dynamo.Models.PresetModel Name="05" Description="" guid="f8412e38-76f3-461b-8f28-0af6f82524b0">
+      <DSCoreNodesUI.Input.DoubleSlider guid="4509318f-f62d-4846-8f03-e828446951f7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Height" x="-735.959285552091" y="324.039760774724" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>17</System.Double>
+        <Range min="0" max="20" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="59ae3d3f-3f16-453a-849f-caa0b1d41e25" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 2 Radius" x="-735.959285552091" y="-56.0875711359205" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>3.9</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="6cd79933-daef-4f27-83f7-7d865b9376d2" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Top Radius" x="-735.959285552091" y="190.341593213338" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>2.1</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Bottom Radius" x="-735.959285552091" y="-179.30215331055" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>2</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="838500ea-e50f-4f77-876f-f120ec2e1441" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 3 Radius" x="-735.959285552091" y="67.1270110387088" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>5.3</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+    </Dynamo.Models.PresetModel>
+    <Dynamo.Models.PresetModel Name="06" Description="" guid="d47c7630-c609-402e-abd9-0d77612d842e">
+      <DSCoreNodesUI.Input.DoubleSlider guid="4509318f-f62d-4846-8f03-e828446951f7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Height" x="-735.959285552091" y="324.039760774724" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>6.7</System.Double>
+        <Range min="0" max="20" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="59ae3d3f-3f16-453a-849f-caa0b1d41e25" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 2 Radius" x="-735.959285552091" y="-56.0875711359205" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>4.6</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="6cd79933-daef-4f27-83f7-7d865b9376d2" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Top Radius" x="-735.959285552091" y="190.341593213338" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>11.4</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Bottom Radius" x="-735.959285552091" y="-179.30215331055" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>3.5</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="838500ea-e50f-4f77-876f-f120ec2e1441" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 3 Radius" x="-735.959285552091" y="67.1270110387088" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>9.6</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+    </Dynamo.Models.PresetModel>
+    <Dynamo.Models.PresetModel Name="07" Description="" guid="70477330-7ebc-4ac4-9225-fb32e97fc810">
+      <DSCoreNodesUI.Input.DoubleSlider guid="4509318f-f62d-4846-8f03-e828446951f7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Height" x="-735.959285552091" y="324.039760774724" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>14</System.Double>
+        <Range min="0" max="20" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="59ae3d3f-3f16-453a-849f-caa0b1d41e25" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 2 Radius" x="-735.959285552091" y="-56.0875711359205" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>5</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="6cd79933-daef-4f27-83f7-7d865b9376d2" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Top Radius" x="-735.959285552091" y="190.341593213338" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>7.4</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Bottom Radius" x="-735.959285552091" y="-179.30215331055" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>3.1</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="838500ea-e50f-4f77-876f-f120ec2e1441" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 3 Radius" x="-735.959285552091" y="67.1270110387088" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>6.5</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+    </Dynamo.Models.PresetModel>
+    <Dynamo.Models.PresetModel Name="08" Description="" guid="7e80da28-5db8-4530-ba1b-67aa53ff0f1b">
+      <DSCoreNodesUI.Input.DoubleSlider guid="4509318f-f62d-4846-8f03-e828446951f7" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Height" x="-735.959285552091" y="324.039760774724" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>18</System.Double>
+        <Range min="0" max="20" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="59ae3d3f-3f16-453a-849f-caa0b1d41e25" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 2 Radius" x="-735.959285552091" y="-56.0875711359205" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>2.3</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="6cd79933-daef-4f27-83f7-7d865b9376d2" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Top Radius" x="-735.959285552091" y="190.341593213338" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>1.3</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="2f42e2cc-d6e5-494e-bc1e-89a4b2f0f39d" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Bottom Radius" x="-735.959285552091" y="-179.30215331055" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>0.9</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+      <DSCoreNodesUI.Input.DoubleSlider guid="838500ea-e50f-4f77-876f-f120ec2e1441" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Circle 3 Radius" x="-735.959285552091" y="67.1270110387088" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+        <System.Double>1.1</System.Double>
+        <Range min="0" max="15" step="0.1" />
+      </DSCoreNodesUI.Input.DoubleSlider>
+    </Dynamo.Models.PresetModel>
+  </Presets>
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-42.842179782256" eyeY="55.6572665056207" eyeZ="45.8292886066468" lookX="61.2180840541311" lookY="7.58564007599157" lookZ="-65.9030179419272" upX="-0.201254455168033" upY="0.955278368343272" upZ="0.216656168456205" />
+  </Cameras>
+</Workspace>

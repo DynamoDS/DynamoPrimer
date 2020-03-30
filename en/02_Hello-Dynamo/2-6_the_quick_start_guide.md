@@ -13,24 +13,24 @@ Before we add anything to the Dynamo Workspace, it is key that we have a solid u
 Now that we have our Objectives and Relationships sketched we can begin creating our graph. We need the Nodes that will represent the sequence of actions Dynamo will execute. Since we know we are trying to create a circle, let's start by locating a Node that does so. Using the Search field or browsing through the Library, we will find that there is more than one way to create a circle.
 
 ![Browse and Search](images/2-4/01-BrowseAndSearch.png)
-> 1. Browse to Geometry > Curves > Circle > **Circle.ByPointRadius**
+> 1. Browse to Geometry > Circle > **ByCenterPointRadius**
 2. Search > "ByCenterPointRadius..."
 
-Let's add the **Circle.ByPointRadius** Node to the Workspace by clicking on it in the Library - this should add the Node to the center of the Workspace.
+Let's add the **Circle.ByCenterPointRadius** Node to the Workspace by clicking on it in the Library - this should add the Node to the center of the Workspace.
 
 ![Circle Added](images/2-4/02-CircleAdded.png)
 
-> 1. The Circle.ByPointandRadius Node in the Library
+> 1. The Circle.ByCenterPointRadius Node in the Library
 2. Clicking the Node in the Library adds it to the Workspace
 
 We also will need **Point.ByCoordinates**, **Number Input**, and **Number Slider** Nodes.
 
 ![Objects Added](images/2-4/03-NodesAdded.png)
 
-> 1. Geometry > Points > Point > **Point.ByCoordinates**
+> 1. Geometry > Point > **ByCoordinates (x,y,z)**
 2. Geometry > Geometry > **DistanceTo**
-2. Input > Basic > **Number**
-3. Input > Basic > **Number Slider**
+2. Core > Input > **Number**
+3. Core > Input > **Number Slider**
 
 ###Connecting Nodes with Wires
 Now that we have a few Nodes, we need to connect the Ports of the Nodes with Wires. These connections will define the flow of data.

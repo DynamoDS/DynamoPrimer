@@ -1,6 +1,6 @@
 # Summary
 
-* [概要](README.md)
+* [Dynamo Primer](README.md)
 * [はじめに](01_Introduction/1_introduction.md)
   * [ビジュアル プログラミングの概要](01_Introduction/1-1_what_is_visual_programming.md)
   * [Dynamo とは](01_Introduction/1-2_what_is_dynamo.md)
