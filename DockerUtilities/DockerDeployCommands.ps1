@@ -97,7 +97,6 @@ Foreach ($language in $ArrayParameter)
    }
 }
 
-
 #Invalidating current CDN content to refresh it
 $invalidationLong = [long](Get-Date -Format "yyyddMMHHmm")
 New-CFInvalidation -DistributionId $distributionID -InvalidationBatch_CallerReference $invalidationLong -Paths_Item "/*" -Paths_Quantity 1 -Region $AWSRegion

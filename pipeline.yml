@@ -8,23 +8,21 @@ env:
   - PDFCOMPRESS_COLORIMAGERESOLUTION : "125dpi"
   - PDFCOMPRESS_PDFSETTINGS : "screen"
   - PDFCOMPRESS_DEVICE : "pdfwrite"
-  - BUCKETNAME : "primer.dynamobim.org"
+  - BUCKETNAME : "staging.dynamoprimer.com"
   - DISTRIBUTIONID : "E1L4E92B2OBQIF"
 
-timeout: 180
+timeout: 360
 check_changelog_updated_on_pr: false
 pipeline_os: "Windows"
 force_slack_notification : true
-  
 job_parameters:
     -
       type: "extendedChoice"
       name: "ENVIRONMENT_LANGUAGE"
-      value: "en,de,ja,zh-tw"
-      defaultValue: "en,de,ja,zh-tw"
+      value: "en,de,ja,zh-tw,cs,es,fr,it,ko,pl,pt-br,ru,zh-cn"
+      defaultValue: "en,de,ja,zh-tw,cs,es,fr,it,ko,pl,pt-br,ru,zh-cn"
       delimiter: ","
       description: ""
-  
 build:
   -
     scripts:
@@ -33,7 +31,7 @@ build:
       - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
       - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
       - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
-  
+
 code_analysis:
   sonarqube:
     skip: true
