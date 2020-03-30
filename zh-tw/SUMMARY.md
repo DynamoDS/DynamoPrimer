@@ -1,6 +1,6 @@
 # Summary
 
-* [關於](README.md)
+* [Dynamo Primer](README.md)
 * [簡介](01_Introduction/1_introduction.md)
   * [什麼是視覺程式設計？](01_Introduction/1-1_what_is_visual_programming.md)
   * [什麼是 Dynamo？](01_Introduction/1-2_what_is_dynamo.md)

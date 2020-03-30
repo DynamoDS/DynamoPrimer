@@ -1,0 +1,399 @@
+{
+  "Uuid": "214313d9-6f93-43fb-bfbd-e85314bffe8c",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "9-4_roomDictionary",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Dictionary": {
+        "Key": "DesignScript.Builtin.Dictionary",
+        "Value": "DesignScriptBuiltin.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 416,
+      "NodeType": "ExtensionNode",
+      "Id": "a23dc19186bd42a08bbc788520d1aa3a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "6b95e36b61ce466487e36325661c8bb7",
+          "Name": "Category",
+          "Description": "The selected Category.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "All built-in categories."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "a25d9400019047579a82c9508720ecfc",
+      "Inputs": [
+        {
+          "Id": "946b4b758d5140168a05953660ec1983",
+          "Name": "Category",
+          "Description": "The Category",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b9c2fb311bdd431aaf533d1c9da50a65",
+          "Name": "Elements",
+          "Description": "An element type.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Get all elements of the specified category from the model."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DesignScript.Builtin.Dictionary.ByKeysValues@string[],var[]..[]",
+      "Id": "b90ed914384c447e9c3f62440e24c4ee",
+      "Inputs": [
+        {
+          "Id": "0eb3fce7af5340afbfe7c1700032b0e9",
+          "Name": "keys",
+          "Description": "The string keys of the Dictionary\n\nstring[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "55705282fbf346cc9059563fbf4354df",
+          "Name": "values",
+          "Description": "The values of the Dictionary\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4f8debeeb7664cff80232a09c5b1302e",
+          "Name": "dictionary",
+          "Description": "The result Dictionary",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Produces a Dictionary with the supplied keys and values. The number of entries is the shorter of keys or values.\n\nDictionary.ByKeysValues (keys: string[], values: var[]..[]): Dictionary"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DesignScript.Builtin.Dictionary.ValueAtKey@string",
+      "Id": "ef66195dca17473f8cdec9889d1e1d90",
+      "Inputs": [
+        {
+          "Id": "1328ef7c046746b5b6aa7977e339530f",
+          "Name": "dictionary",
+          "Description": "DesignScript.Builtin.Dictionary",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3890972e11dd488f828b10198f7b8138",
+          "Name": "key",
+          "Description": "The key in the Dictionary to obtain.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9c2572389a72465cad0bc02de19cc6f7",
+          "Name": "value",
+          "Description": "The value at the specified key or null if it is not set.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Obtain the value at a specified key\n\nDictionary.ValueAtKey (key: string): var[]..[]"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "201",
+      "Id": "67d83f9c22d34a7aba151ba7e8c2fac4",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b510c70417454dc99cbddca9fa911bc5",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Room.Number",
+      "Id": "70fa6d5e501d4c5e9b0059305d160d5e",
+      "Inputs": [
+        {
+          "Id": "5c7ab6adea2146ed9bd8e9c94f878815",
+          "Name": "room",
+          "Description": "Revit.Elements.Room",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d1cb8b1f22f34f82af90cb7fe7c9a132",
+          "Name": "string",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get room number\n\nRoom.Number: string"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "6b95e36b61ce466487e36325661c8bb7",
+      "End": "946b4b758d5140168a05953660ec1983",
+      "Id": "028b1c50e7e44c6e955483b9f86ff052"
+    },
+    {
+      "Start": "b9c2fb311bdd431aaf533d1c9da50a65",
+      "End": "55705282fbf346cc9059563fbf4354df",
+      "Id": "a2b510f515e94dc78d3b67335b5222d9"
+    },
+    {
+      "Start": "b9c2fb311bdd431aaf533d1c9da50a65",
+      "End": "5c7ab6adea2146ed9bd8e9c94f878815",
+      "Id": "85f03a63e4db483f8ccf5d7778e4b388"
+    },
+    {
+      "Start": "4f8debeeb7664cff80232a09c5b1302e",
+      "End": "1328ef7c046746b5b6aa7977e339530f",
+      "Id": "e8a9a49e8a014692988e0d4f649c51bf"
+    },
+    {
+      "Start": "b510c70417454dc99cbddca9fa911bc5",
+      "End": "3890972e11dd488f828b10198f7b8138",
+      "Id": "2fc154f5553d470c9b25ffb651ad8d18"
+    },
+    {
+      "Start": "d1cb8b1f22f34f82af90cb7fe7c9a132",
+      "End": "0eb3fce7af5340afbfe7c1700032b0e9",
+      "Id": "dde4ca58b5d84fb9b76991d8f8b6f5b2"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.0.4654",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Categories",
+        "Id": "a23dc19186bd42a08bbc788520d1aa3a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 270.849375167373,
+        "Y": 283.017428338585
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "All Elements of Category",
+        "Id": "a25d9400019047579a82c9508720ecfc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 465.876414078514,
+        "Y": 283.017428338585
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Dictionary.ByKeysValues",
+        "Id": "b90ed914384c447e9c3f62440e24c4ee",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 950.113550851275,
+        "Y": 258.241119789851
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Dictionary.ValueAtKey",
+        "Id": "ef66195dca17473f8cdec9889d1e1d90",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1252.89376362964,
+        "Y": 328.873704213895
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "67d83f9c22d34a7aba151ba7e8c2fac4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 561.222101622136,
+        "Y": 482.186094781538
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Room.Number",
+        "Id": "70fa6d5e501d4c5e9b0059305d160d5e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 723.432713306991,
+        "Y": 195.262810949896
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "2cb4a1d416684ad6b5dcb116e4d89736",
+        "Title": "Collect all rooms in the model.",
+        "Nodes": [
+          "a23dc19186bd42a08bbc788520d1aa3a",
+          "a25d9400019047579a82c9508720ecfc"
+        ],
+        "Left": 260.849375167373,
+        "Top": 244.017428338585,
+        "Width": 389.027038911141,
+        "Height": 132.0,
+        "FontSize": 24.0,
+        "InitialTop": 283.017428338585,
+        "InitialHeight": 123.0,
+        "TextblockHeight": 29.0,
+        "Background": "#FFA4E1FF"
+      },
+      {
+        "Id": "406ca911ac7f4730a5ab0012498c2403",
+        "Title": "Create Dictionary",
+        "Nodes": [
+          "b90ed914384c447e9c3f62440e24c4ee"
+        ],
+        "Left": 940.113550851275,
+        "Top": 219.241119789851,
+        "Width": 238.0,
+        "Height": 158.0,
+        "FontSize": 24.0,
+        "InitialTop": 258.241119789851,
+        "InitialHeight": 149.0,
+        "TextblockHeight": 29.0,
+        "Background": "#FFB5B5B5"
+      },
+      {
+        "Id": "99cfebd1c9864d78b235098ce65cd876",
+        "Title": "Get the room element given it's number",
+        "Nodes": [
+          "ef66195dca17473f8cdec9889d1e1d90"
+        ],
+        "Left": 1242.89376362964,
+        "Top": 232.873704213895,
+        "Width": 231.0,
+        "Height": 215.0,
+        "FontSize": 24.0,
+        "InitialTop": 328.873704213895,
+        "InitialHeight": 149.0,
+        "TextblockHeight": 86.0,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "f9075804a61c4c56966e5bd264ac2470",
+        "Title": "Room Number To Find",
+        "Nodes": [
+          "67d83f9c22d34a7aba151ba7e8c2fac4"
+        ],
+        "Left": 551.222101622136,
+        "Top": 386.186094781538,
+        "Width": 97.213333333333338,
+        "Height": 164.0,
+        "FontSize": 24.0,
+        "InitialTop": 482.186094781538,
+        "InitialHeight": 98.0,
+        "TextblockHeight": 86.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "32b6c11aa3b74a9fb900c68b85aa4a3e",
+        "Title": "Get the room number to use as the key",
+        "Nodes": [
+          "70fa6d5e501d4c5e9b0059305d160d5e"
+        ],
+        "Left": 713.432713306991,
+        "Top": 99.262810949896,
+        "Width": 206.0,
+        "Height": 189.0,
+        "FontSize": 24.0,
+        "InitialTop": 195.262810949896,
+        "InitialHeight": 213.059744954877,
+        "TextblockHeight": 86.0,
+        "Background": "#FFB5B5B5"
+      }
+    ],
+    "X": 89.822117506839049,
+    "Y": 279.76325956495805,
+    "Zoom": 0.57967541261336586
+  }
+}

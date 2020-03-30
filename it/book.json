@@ -1,0 +1,96 @@
+{
+	"gitbook": "3.2.3",
+	"plugins": [
+		"-sharing",
+		"popup",
+		"ga",
+		{
+			"name": "dynamo",
+			"version": "git+https://github.com/masself/gitbook-plugin-dynamo.git"
+		}
+	],
+	"pluginsConfig": {
+		"ga": {
+			"token": "UA-52186525-3"
+		},
+		"theme-default": {
+			"showLevel": true
+		},
+		"dynamo": {
+			"customLinks":[
+				{            
+					"label": "Download",
+					"icon": "fa fa-file-pdf-o fa-lg",
+					"url": "https://staging.dynamoprimer.com/it/Appendix/DynamoPrimer-Print.pdf"
+				}],
+			"languages":[
+				 {
+		"label": "Deutsch",
+		"code":"de",
+			"url": "https://staging.dynamoprimer.com/de"
+				 },
+				 {
+		"label": "日本語",
+		"code": "ja",
+			"url": "https://staging.dynamoprimer.com/ja"
+				 },
+				 {
+		"label": "中文(繁體)",
+		"code":"zh-tw",
+			"url": "https://staging.dynamoprimer.com/zh-tw"
+				 },
+				 {
+		"label": "中文(简体)",
+		"code": "zh-cn",
+			"url": "https://staging.dynamoprimer.com/zh-cn"
+				 },				 
+				 {
+		"label": "Français",
+		"code": "fr",
+			"url": "https://staging.dynamoprimer.com/fr"
+				 },	
+				 {
+		"label": "Čeština",
+		"code": "cs",
+			"url": "https://staging.dynamoprimer.com/cs"
+				 },
+				 {
+		"label": "Italiano",
+		"code": "it",
+			"url": "https://staging.dynamoprimer.com/it"
+				 },
+				 {
+		"label": "한국어",
+		"code": "ko",
+			"url": "https://staging.dynamoprimer.com/ko"
+				 },
+				 {
+		"label": "Polski",
+		"code": "pl",
+			"url": "https://staging.dynamoprimer.com/pl"
+				 },
+				 {
+		"label": "Português(Brasil)",
+		"code": "pt-br",
+			"url": "https://staging.dynamoprimer.com/pt-br"
+				 },
+				 {
+		"label": "Русский",
+		"code": "ru",
+			"url": "https://staging.dynamoprimer.com/ru"
+				 },
+				 {
+		"label": "Español",
+		"code": "es",
+			"url": "https://staging.dynamoprimer.com/es"
+				 }
+			],
+			"currentLanguage":{
+				 "code":"en",
+				 "url":"https://staging.dynamoprimer.com/en",
+				 "switchLangLabel":"Languages"
+			},
+			"favicon":"/images/icons/favicon.ico"
+		}
+	}
+}
