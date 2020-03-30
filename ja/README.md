@@ -4,7 +4,7 @@
 
 ## Dynamo v2.0
 
-[Dynamo v1.3 Primer の手引きは こちら](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf)からダウンロードできます。
+Dynamo v1.3 Primer の手引きは[こちら](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print1_3.pdf)からダウンロードできます。
 
 ![Dynamo ロゴ](images/dynamo_logo_dark-trim.jpg)
 
@@ -58,7 +58,7 @@ Dynamo Primer の初版は、**Mode Lab** によって作成されました。 �
 
 この手引きは、Dynamo 2.0 の改訂を反映するため、**Parallax Team の John Pierson 氏**によって更新されました。
 
-[![](images/PRLX_Logo.jpg)](http://modelab.is)
+[![](images/PRLX_Logo.jpg)](http://www.parallaxteam.com/)
 
 ### 謝辞
 
@@ -68,9 +68,11 @@ Dynamo プロジェクトの創立と指揮に携わった Ian Keough 氏に、�
 
 ### ソフトウェアとリソース
 
-**Dynamo**: 現在の公式リリースのバージョンは 2.0 です。
+**Dynamo**: 現在の公式リリース* のバージョンは 2.1.0 です。
 
 [http://dynamobim.com/download/](http://dynamobim.com/download/)、または [http://dynamobuilds.com](http://dynamobuilds.com) (英語)
+
+*注: Revit 2020 以降、Dynamo は Revit リリースにバンドルされているため、手動でインストールする必要はありません。詳細については、この[ブログの投稿](https://dynamobim.org/dynamo-core-2-1-release/)をご覧ください。
 
 **DynamoBIM**: 追加情報、ラーニング コンテンツ、フォーラムについては、DynamoBIM の Web サイトを参照してください。
 
@@ -86,7 +88,7 @@ Dynamo@autodesk.com
 
 ### License
 
-Copyright 2018 Autodesk
+Copyright 2019 Autodesk
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.You may obtain a copy of the License at
 

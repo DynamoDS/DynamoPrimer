@@ -58,7 +58,7 @@ Dynamo Primer 是一個開放原始碼專案，由 Autodesk 的 Matt Jezyk 和 D
 
 **Parallax Team 的 John Pierson** 受託更新此手冊以反映 Dynamo 2.0 的修訂。
 
-[![](images/PRLX_Logo.jpg)](http://modelab.is)
+[![](images/PRLX_Logo.jpg)](http://www.parallaxteam.com/)
 
 ### 致謝
 
@@ -68,9 +68,11 @@ Dynamo Primer 是一個開放原始碼專案，由 Autodesk 的 Matt Jezyk 和 D
 
 ### 軟體和資源
 
-**Dynamo** Dynamo 目前的穩定版本為 2.0。
+**Dynamo** Dynamo 目前的穩定* 版本為 2.1.0。
 
 [http://dynamobim.com/download/](http://dynamobim.com/download/) 或 [http://dynamobuilds.com](http://dynamobuilds.com)
+
+*注意事項：從 Revit 2020 開始，Dynamo 會與 Revit 版本搭售，您不需要再手動安裝。如需更多資訊，請參閱此[部落格文章](https://dynamobim.org/dynamo-core-2-1-release/)。
 
 **DynamoBIM** 其他資訊、學習內容和論壇的最佳來源是 DynamoBIM 網站。
 
@@ -86,7 +88,7 @@ Dynamo@autodesk.com
 
 ### 授權
 
-Copyright 2018 Autodesk
+Copyright 2019 Autodesk
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.您可在以下網站獲取此「授權」的副本：
 

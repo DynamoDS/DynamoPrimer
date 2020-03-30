@@ -1,0 +1,88 @@
+<Workspace Version="0.8.3.2256" X="-836.59960085531" Y="-2072.14556435738" zoom="1.18691941518405" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Nodes.DSModelElementSelection guid="876ed383-e072-47dc-8e6b-bf9d30c31a3c" type="Dynamo.Nodes.DSModelElementSelection" nickname="Select Model Element" x="1140.26342405917" y="1849.71746253698" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <instance id="73a48eb7-32cc-45ad-81fb-4378d0b67407-0004b80a" />
+    </Dynamo.Nodes.DSModelElementSelection>
+    <Dynamo.Nodes.DSModelElementSelection guid="3b1a2930-dbe0-47a9-bb71-98244b5cdbd4" type="Dynamo.Nodes.DSModelElementSelection" nickname="Select Model Element" x="1140.26342405917" y="1939.06908704065" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <instance id="73a48eb7-32cc-45ad-81fb-4378d0b67407-0004b73f" />
+    </Dynamo.Nodes.DSModelElementSelection>
+    <DSCoreNodesUI.Input.DoubleSlider guid="020bf746-c48c-4d3c-9461-fb07cbcff02e" type="DSCoreNodesUI.Input.DoubleSlider" nickname="Number Slider" x="828.418602661782" y="2091.1885508226" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
+      <System.Double>11</System.Double>
+      <Range min="0" max="20" step="1" />
+    </DSCoreNodesUI.Input.DoubleSlider>
+    <DSRevitNodesUI.StructuralFramingTypes guid="436bad14-88dd-405a-a077-165c3495af68" type="DSRevitNodesUI.StructuralFramingTypes" nickname="Structural Framing Types" x="1109.26342405917" y="2241.81873570898" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" index="0:W12X26" />
+    <DSRevitNodesUI.Levels guid="ca217ec0-0088-41de-b202-e3c133cac9ae" type="DSRevitNodesUI.Levels" nickname="Levels" x="1160.26342405917" y="2328.72953036685" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" index="0:Level 1" />
+    <Dynamo.Nodes.CodeBlockNodeModel guid="13fe0c71-1665-4984-b284-c1e10f8db573" type="Dynamo.Nodes.CodeBlockNodeModel" nickname="Code Block" x="1172.26342405917" y="2091.1885508226" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" CodeText="0..1..#x;" ShouldFocus="false" />
+    <DSIronPythonNode.PythonNode guid="b37d023c-e969-450c-9042-59fa09ffe3e7" type="DSIronPythonNode.PythonNode" nickname="Python Script" x="1445.22741898277" y="2033.73472549458" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" inputcount="5">
+      <Script>import clr
+#import Dynamo Geometry
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+# Import RevitNodes
+clr.AddReference("RevitNodes")
+import Revit
+# Import Revit elements
+from Revit.Elements import *
+import System
+
+#Query Revit elements and convert them to Dynamo Curves
+crvA=IN[0].Curves[0]
+crvB=IN[1].Curves[0]
+
+#Define input Parameters
+framingType=IN[3]
+designLevel=IN[4]
+
+#Define "out" as a list
+OUT=[]
+
+for val in IN[2]:
+	#Define Dynamo Points on each curve
+	ptA=Curve.PointAtParameter(crvA,val)
+	ptB=Curve.PointAtParameter(crvB,val)
+	#Create Dynamo line
+	beamCrv=Line.ByStartPointEndPoint(ptA,ptB)
+	#create Revit Element from Dynamo Curves
+	beam = StructuralFraming.BeamByCurve(beamCrv,designLevel,framingType)
+	#convert Revit Element into list of Dynamo Surfaces
+	OUT.append(beam.Faces)</Script>
+    </DSIronPythonNode.PythonNode>
+    <Dynamo.Nodes.Watch3D guid="aceb4438-ddd7-48a5-acc2-3e91934f9dcf" type="Dynamo.Nodes.Watch3D" nickname="Watch 3D" x="1605.59823775352" y="2033.9422882877" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False">
+      <view width="612" height="410">
+        <camera pos_x="28.4599120959536" pos_y="-6.69238665631116" pos_z="22.6299712964502" look_x="-21.8347940136533" look_y="11.8307348148746" look_z="-23.0127665868871" />
+      </view>
+    </Dynamo.Nodes.Watch3D>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="876ed383-e072-47dc-8e6b-bf9d30c31a3c" start_index="0" end="b37d023c-e969-450c-9042-59fa09ffe3e7" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3b1a2930-dbe0-47a9-bb71-98244b5cdbd4" start_index="0" end="b37d023c-e969-450c-9042-59fa09ffe3e7" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="020bf746-c48c-4d3c-9461-fb07cbcff02e" start_index="0" end="13fe0c71-1665-4984-b284-c1e10f8db573" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="436bad14-88dd-405a-a077-165c3495af68" start_index="0" end="b37d023c-e969-450c-9042-59fa09ffe3e7" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ca217ec0-0088-41de-b202-e3c133cac9ae" start_index="0" end="b37d023c-e969-450c-9042-59fa09ffe3e7" end_index="4" portType="0" />
+    <Dynamo.Models.ConnectorModel start="13fe0c71-1665-4984-b284-c1e10f8db573" start_index="0" end="b37d023c-e969-450c-9042-59fa09ffe3e7" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b37d023c-e969-450c-9042-59fa09ffe3e7" start_index="0" end="aceb4438-ddd7-48a5-acc2-3e91934f9dcf" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Models.AnnotationModel guid="50f13a7c-0f82-4915-93af-7881f9911af7" annotationText="" left="1130.26342405917" top="1819.71746253698" width="189" height="213.35162450367" fontSize="14" InitialTop="1849.71746253698" InitialHeight="213.35162450367" TextblockHeight="20" backgrouund="#FFA4E1FF">
+      <Models ModelGuid="876ed383-e072-47dc-8e6b-bf9d30c31a3c" />
+      <Models ModelGuid="3b1a2930-dbe0-47a9-bb71-98244b5cdbd4" />
+    </Dynamo.Models.AnnotationModel>
+    <Dynamo.Models.AnnotationModel guid="069a8217-86e6-4891-9cf9-86833fb67841" annotationText="" left="818.418602661782" top="2061.1885508226" width="500.844821397388" height="123" fontSize="14" InitialTop="2091.1885508226" InitialHeight="123" TextblockHeight="20" backgrouund="#FFA4E1FF">
+      <Models ModelGuid="020bf746-c48c-4d3c-9461-fb07cbcff02e" />
+      <Models ModelGuid="13fe0c71-1665-4984-b284-c1e10f8db573" />
+    </Dynamo.Models.AnnotationModel>
+    <Dynamo.Models.AnnotationModel guid="f9711f84-b949-496e-8c71-9e5ed7ac79f9" annotationText="" left="1099.26342405917" top="2211.81873570898" width="220" height="209.91079465787" fontSize="14" InitialTop="2241.81873570898" InitialHeight="209.91079465787" TextblockHeight="20" backgrouund="#FFA4E1FF">
+      <Models ModelGuid="436bad14-88dd-405a-a077-165c3495af68" />
+      <Models ModelGuid="ca217ec0-0088-41de-b202-e3c133cac9ae" />
+    </Dynamo.Models.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="background_preview" eyeX="-7.00836896896362" eyeY="62.5772094726563" eyeZ="184.274337768555" lookX="-53.213436126709" lookY="-63.655200958252" lookZ="-16.7781314849854" />
+  </Cameras>
+  <Cameras>
+    <Camera Name="topControl" eyeX="28.4599120959536" eyeY="22.6299712964502" eyeZ="6.69238665631116" lookX="-21.8347940136533" lookY="-23.0127665868871" lookZ="-11.8307348148746" />
+  </Cameras>
+</Workspace>

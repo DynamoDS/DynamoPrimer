@@ -1,6 +1,6 @@
 # Summary
 
-* [Info](README.md)
+* [Dynamo Primer](README.md)
 * [Einführung](01_Introduction/1_introduction.md)
   * [Was ist visuelle Programmierung?](01_Introduction/1-1_what_is_visual_programming.md)
   * [Was ist Dynamo?](01_Introduction/1-2_what_is_dynamo.md)
