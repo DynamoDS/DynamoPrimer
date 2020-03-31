@@ -1,5 +1,5 @@
 {
-	"gitbook": "3.2.3",
+	"gitbook": "2.6.x",
 	"plugins": [
 		"-sharing",
 		"popup",
@@ -12,9 +12,6 @@
 	"pluginsConfig": {
 		"ga": {
 			"token": "UA-52186525-3"
-		},
-		"theme-default": {
-			"showLevel": true
 		},
 		"dynamo": {
 			"customLinks": [
@@ -87,8 +84,8 @@
 				}
 			],
 			"currentLanguage": {
-				"code": "en",
-				"url": "http://staging.dynamoprimer.com/en",
+				"code": "pl",
+				"url": "http://staging.dynamoprimer.com/pl",
 				"switchLangLabel": "Languages"
 			},
 			"favicon": "/images/icons/favicon.ico"
