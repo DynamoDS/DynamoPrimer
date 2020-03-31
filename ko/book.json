@@ -21,74 +21,74 @@
 				{
 					"label": "Download",
 					"icon": "fa fa-file-pdf-o fa-lg",
-					"url": "https://staging.dynamoprimer.com/ko/Appendix/DynamoPrimer-Print.pdf"
+					"url": "http://staging.dynamoprimer.com/ko/Appendix/DynamoPrimer-Print.pdf"
 				}
 			],
 			"languages": [
 				{
 					"label": "Deutsch",
 					"code": "de",
-					"url": "https://staging.dynamoprimer.com/de"
+					"url": "http://staging.dynamoprimer.com/de"
 				},
 				{
 					"label": "日本語",
 					"code": "ja",
-					"url": "https://staging.dynamoprimer.com/ja"
+					"url": "http://staging.dynamoprimer.com/ja"
 				},
 				{
 					"label": "中文(繁體)",
 					"code": "zh-tw",
-					"url": "https://staging.dynamoprimer.com/zh-tw"
+					"url": "http://staging.dynamoprimer.com/zh-tw"
 				},
 				{
 					"label": "中文(简体)",
 					"code": "zh-cn",
-					"url": "https://staging.dynamoprimer.com/zh-cn"
+					"url": "http://staging.dynamoprimer.com/zh-cn"
 				},
 				{
 					"label": "Français",
 					"code": "fr",
-					"url": "https://staging.dynamoprimer.com/fr"
+					"url": "http://staging.dynamoprimer.com/fr"
 				},
 				{
 					"label": "Čeština",
 					"code": "cs",
-					"url": "https://staging.dynamoprimer.com/cs"
+					"url": "http://staging.dynamoprimer.com/cs"
 				},
 				{
 					"label": "Italiano",
 					"code": "it",
-					"url": "https://staging.dynamoprimer.com/it"
+					"url": "http://staging.dynamoprimer.com/it"
 				},
 				{
 					"label": "한국어",
 					"code": "ko",
-					"url": "https://staging.dynamoprimer.com/ko"
+					"url": "http://staging.dynamoprimer.com/ko"
 				},
 				{
 					"label": "Polski",
 					"code": "pl",
-					"url": "https://staging.dynamoprimer.com/pl"
+					"url": "http://staging.dynamoprimer.com/pl"
 				},
 				{
 					"label": "Português(Brasil)",
 					"code": "pt-br",
-					"url": "https://staging.dynamoprimer.com/pt-br"
+					"url": "http://staging.dynamoprimer.com/pt-br"
 				},
 				{
 					"label": "Русский",
 					"code": "ru",
-					"url": "https://staging.dynamoprimer.com/ru"
+					"url": "http://staging.dynamoprimer.com/ru"
 				},
 				{
 					"label": "Español",
 					"code": "es",
-					"url": "https://staging.dynamoprimer.com/es"
+					"url": "http://staging.dynamoprimer.com/es"
 				}
 			],
 			"currentLanguage": {
 				"code": "en",
-				"url": "https://staging.dynamoprimer.com/en",
+				"url": "http://staging.dynamoprimer.com/en",
 				"switchLangLabel": "Languages"
 			},
 			"favicon": "/images/icons/favicon.ico"
