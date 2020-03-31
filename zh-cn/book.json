@@ -1,20 +1,17 @@
 {
-	"gitbook": "3.2.3",
+	"gitbook": "2.6.x",
 	"plugins": [
 		"-sharing",
 		"popup",
 		"ga",
 		{
 			"name": "dynamo",
-			"version": "git+http://github.com/masself/gitbook-plugin-dynamo.git"
+			"version": "git+https://github.com/masself/gitbook-plugin-dynamo.git"
 		}
 	],
 	"pluginsConfig": {
 		"ga": {
 			"token": "UA-52186525-3"
-		},
-		"theme-default": {
-			"showLevel": true
 		},
 		"dynamo": {
 			"customLinks": [
@@ -87,8 +84,8 @@
 				}
 			],
 			"currentLanguage": {
-				"code": "en",
-				"url": "http://staging.dynamoprimer.com/en",
+				"code": "zh-cn",
+				"url": "http://staging.dynamoprimer.com/zh-cn",
 				"switchLangLabel": "Languages"
 			},
 			"favicon": "/images/icons/favicon.ico"
