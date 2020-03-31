@@ -13,9 +13,6 @@
 		"ga": {
 			"token": "UA-52186525-3"
 		},
-		"theme-default": {
-			"showLevel": true
-		},
 		"dynamo": {
 			"customLinks": [
 				{
@@ -87,8 +84,8 @@
 				}
 			],
 			"currentLanguage": {
-				"code": "en",
-				"url": "http://staging.dynamoprimer.com/en",
+				"code": "cs",
+				"url": "http://staging.dynamoprimer.com/cs",
 				"switchLangLabel": "Languages"
 			},
 			"favicon": "/images/icons/favicon.ico"
