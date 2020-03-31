@@ -13,9 +13,6 @@
 		"ga": {
 			"token": "UA-52186525-3"
 		},
-		"theme-default": {
-			"showLevel": true
-		},
 		"dynamo": {
 			"customLinks": [
 				{
