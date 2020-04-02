@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Kurzschreibweisen
 
 Für Codeblöcke stehen einige einfache Kurzschreibweisen zur Verfügung, die, einfach ausgedrückt, die Arbeit mit den Daten *erheblich* erleichtern. Im Folgenden werden die Grundlagen genauer erläutert und beschrieben, wie die jeweilige Kurzschreibweise zum Erstellen und Abfragen von Daten verwendet werden kann.
 
-|Datentyp|Dynamo-Standarddarstellung|Codeblock-Entsprechung|
-| -- | -- | -- |
-|Zahlen|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|Zeichenfolgen|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|Sequenzen|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|Bereiche|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|Eintrag an Indexposition abrufen|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|Liste erstellen|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|Zeichenfolgen verketten|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|Bedingungsanweisungen|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>Datentyp</b></td>
+    <td width="25%"><b>Dynamo-Standarddarstellung</b> </td>
+    <td width="25%"><b>Codeblock-Entsprechung</b></td>
+  </tr>
+  <tr>
+    <td> Zahlen</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Zeichenfolgen</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Sequenzen</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Bereiche</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Eintrag an Indexposition abrufen</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Liste erstellen</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Zeichenfolgen verketten</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Bedingungsanweisungen</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### Zusätzliche Syntax
 

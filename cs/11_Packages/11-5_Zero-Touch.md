@@ -1,4 +1,8 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+thead {display: none}
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Co je funkce Zero-Touch?
 
@@ -14,12 +18,29 @@ Tato část předvádí, jak pomocí funkce Zero-Touch importovat knihovnu třet
 
 Balíčky funkce Zero-Touch jsou dobrým doplňkem k uživatelským vlastním uzlům. V tabulce níže je uvedeno několik balíčků, které používají knihovny C#. Podrobnější informace o balíčcích naleznete v [části Balíčky ](../Appendix/A-3_packages.md)v dodatku.
 
-|Logo/obrázek|Název|
-| -- | -- |
-|![](images/11-5/toolkit.jpg)|[Sada nástrojů sítí](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)|
-|![](images/11-5/unfold.jpg)|[Dynamo Unfold](http://dynamobim.com/dynamounfold/)|
-|![](images/11-5/rhynamo.jpg)|[Rhynamo](http://www.case-inc.com/blog/what-is-rhynamo)|
-|![](images/11-5/optimo.jpg)|[Optimo](https://github.com/BPOpt/Optimo)|
+
+<table width="100%">
+    <tr>
+    <td width="20%"><b>Logo/obrázek</b></td>
+    <td><b>Název</b></td>
+</tr>
+  <tr>
+    <td><img src="images/11-5/toolkit.jpg"></img></td>
+    <td><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Sada nástrojů sítí</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/unfold.jpg"></img></td>
+    <td><a href="http://dynamobim.com/dynamounfold/">Dynamo Unfold</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/rhynamo.jpg"></img></td>
+    <td><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/optimo.jpg"></img></td>
+    <td><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
+  </tr>
+</table>
 
 ### Případová studie – import položek AForge
 

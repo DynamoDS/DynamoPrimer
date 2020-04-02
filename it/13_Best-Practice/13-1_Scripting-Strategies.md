@@ -21,7 +21,7 @@ Lo scripting di testo può stabilire relazioni di maggiore complessità rispetto
 **Scegliere una linguaggio:**
 
 ||Loop|Ricorsione|Compressione di nodi|Est. Librerie|Sintassi abbreviata|
-| -- | -- | -- | -- | -- | -- |
+| -- | -- |
 |**DesignScript**|Sì|Sì|Sì|No|Sì|
 |**Python**|Sì|Sì|Parzialmente|Sì|No|
 |**ZeroTouch (C#)**|No|No|No|Sì|No|

@@ -1,5 +1,5 @@
 {
-	"gitbook": "3.2.3",
+	"gitbook": "2.6.x",
 	"plugins": [
 		"-sharing",
 		"popup",
@@ -13,84 +13,82 @@
 		"ga": {
 			"token": "UA-52186525-3"
 		},
-		"theme-default": {
-			"showLevel": true
-		},
 		"dynamo": {
-			"customLinks":[
-				{            
+			"customLinks": [
+				{
 					"label": "Download",
 					"icon": "fa fa-file-pdf-o fa-lg",
-					"url": "https://primer.dynamobim.org/en/Appendix/DynamoPrimer-Print.pdf"
-				}],
-			"languages":[
-				 {
-		"label": "Deutsch",
-		"code":"de",
-			"url": "https://primer.dynamobim.org/de"
-				 },
-				 {
-		"label": "日本語",
-		"code": "ja",
-			"url": "https://primer.dynamobim.org/ja"
-				 },
-				 {
-		"label": "中文(繁體)",
-		"code":"zh-tw",
-			"url": "https://primer.dynamobim.org/zh-tw"
-				 },
-				 {
-		"label": "中文(简体)",
-		"code": "zh-cn",
-			"url": "https://primer.dynamobim.org/zh-cn"
-				 },				 
-				 {
-		"label": "Français",
-		"code": "fr",
-			"url": "https://primer.dynamobim.org/fr"
-				 },	
-				 {
-		"label": "Čeština",
-		"code": "cs",
-			"url": "https://primer.dynamobim.org/cs"
-				 },
-				 {
-		"label": "Italiano",
-		"code": "it",
-			"url": "https://primer.dynamobim.org/it"
-				 },
-				 {
-		"label": "한국어",
-		"code": "ko",
-			"url": "https://primer.dynamobim.org/ko"
-				 },
-				 {
-		"label": "Polski",
-		"code": "pl",
-			"url": "https://primer.dynamobim.org/pl"
-				 },
-				 {
-		"label": "Português(Brasil)",
-		"code": "pt-br",
-			"url": "https://primer.dynamobim.org/pt-br"
-				 },
-				 {
-		"label": "Русский",
-		"code": "ru",
-			"url": "https://primer.dynamobim.org/ru"
-				 },
-				 {
-		"label": "Español",
-		"code": "es",
-			"url": "https://primer.dynamobim.org/es"
-				 }
+					"url": "http://staging.dynamoprimer.com/ja/Appendix/DynamoPrimer-Print.pdf"
+				}
 			],
-			"currentLanguage":{
-				 "code":"en",
-				 "url":"https://primer.dynamobim.org/en",
-				 "switchLangLabel":"Languages"
+			"languages": [
+				{
+					"label": "English",
+					"code": "en",
+					"url": "http://staging.dynamoprimer.com/en"
+				},
+				{
+					"label": "Deutsch",
+					"code": "de",
+					"url": "http://staging.dynamoprimer.com/de"
+				},
+				{
+					"label": "中文(繁體)",
+					"code": "zh-tw",
+					"url": "http://staging.dynamoprimer.com/zh-tw"
+				},
+				{
+					"label": "中文(简体)",
+					"code": "zh-cn",
+					"url": "http://staging.dynamoprimer.com/zh-cn"
+				},
+				{
+					"label": "Français",
+					"code": "fr",
+					"url": "http://staging.dynamoprimer.com/fr"
+				},
+				{
+					"label": "Čeština",
+					"code": "cs",
+					"url": "http://staging.dynamoprimer.com/cs"
+				},
+				{
+					"label": "Italiano",
+					"code": "it",
+					"url": "http://staging.dynamoprimer.com/it"
+				},
+				{
+					"label": "한국어",
+					"code": "ko",
+					"url": "http://staging.dynamoprimer.com/ko"
+				},
+				{
+					"label": "Polski",
+					"code": "pl",
+					"url": "http://staging.dynamoprimer.com/pl"
+				},
+				{
+					"label": "Português(Brasil)",
+					"code": "pt-br",
+					"url": "http://staging.dynamoprimer.com/pt-br"
+				},
+				{
+					"label": "Русский",
+					"code": "ru",
+					"url": "http://staging.dynamoprimer.com/ru"
+				},
+				{
+					"label": "Español",
+					"code": "es",
+					"url": "http://staging.dynamoprimer.com/es"
+				}
+			],
+			"currentLanguage": {
+				"code": "ja",
+				"url": "http://staging.dynamoprimer.com/ja",
+				"switchLangLabel": "言語"
 			},
-			"favicon":"/images/icons/favicon.ico"
+			"favicon": "/images/icons/favicon.ico"
 		}
 	}
 }

@@ -14,14 +14,19 @@
 			"token": "UA-52186525-3"
 		},
 		"dynamo": {
-			"customLinks":[
-				{            
+			"customLinks": [
+				{
 					"label": "Download",
 					"icon": "fa fa-file-pdf-o fa-lg",
 					"url": "http://staging.dynamoprimer.com/zh-cn/Appendix/DynamoPrimer-Print.pdf"
 				}
 			],
 			"languages": [
+				{
+					"label": "English",
+					"code": "en",
+					"url": "http://staging.dynamoprimer.com/en"
+				},
 				{
 					"label": "Deutsch",
 					"code": "de",
@@ -36,11 +41,6 @@
 					"label": "中文(繁體)",
 					"code": "zh-tw",
 					"url": "http://staging.dynamoprimer.com/zh-tw"
-				},
-				{
-					"label": "中文(简体)",
-					"code": "zh-cn",
-					"url": "http://staging.dynamoprimer.com/zh-cn"
 				},
 				{
 					"label": "Français",
@@ -84,9 +84,9 @@
 				}
 			],
 			"currentLanguage": {
-				"code": "en",
-				"url": "http://staging.dynamoprimer.com/en",
-				"switchLangLabel": "Languages"
+				"code": "zh-cn",
+				"url": "http://staging.dynamoprimer.com/zh-cn",
+				"switchLangLabel": "语言"
 			},
 			"favicon": "/images/icons/favicon.ico"
 		}

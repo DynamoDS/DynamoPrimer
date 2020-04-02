@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Sintassi abbreviata
 
 Nel blocco di codice esistono alcuni metodi di sintassi abbreviata di base che, in poche parole, rendono la gestione dei dati *molto* più facile. Le nozioni di base riportate di seguito verranno analizzate e sarà descritto come utilizzare questa sintassi abbreviata sia per la creazione che per l'esecuzione di una query sui dati.
 
-|Tipo dati|Dynamo standard|Equivalente a Code Block|
-| -- | -- | -- |
-|Numeri|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|Stringhe|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|Sequenze|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|Intervalli|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|Recupero di una voce nell'indice|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|Creazione di un elenco|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|Concatenazione di stringhe|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|Istruzioni condizionali|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>Tipo dati</b></td>
+    <td width="25%"><b>Dynamo standard</b> </td>
+    <td width="25%"><b>Equivalente a Code Block</b></td>
+  </tr>
+  <tr>
+    <td> Numeri</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Stringhe</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Sequenze</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Intervalli</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Recupero di una voce nell'indice</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Creazione di un elenco</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Concatenazione di stringhe</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Istruzioni condizionali</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### Sintassi aggiuntiva
 

@@ -34,15 +34,15 @@
 | -- | -- |
 |幾何圖形概述|[用於計算設計的幾何圖形 - 幾何圖形 Overview.dyn](../05_Geometry-for-Computational-Design/datasets/5-1/Geometry for Computational Design - Geometry Overview.dyn)|
 |向量|[用於計算設計的幾何圖形 - Vectors.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Vectors.dyn)|
-|
-|[用於計算設計的幾何圖形 - Plane.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Plane.dyn)|
-|
-|[用於計算設計的幾何圖形 - Coordinate System.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Coordinate System.dyn)|
+
+||[用於計算設計的幾何圖形 - Plane.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Plane.dyn)|
+
+||[用於計算設計的幾何圖形 - Coordinate System.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Coordinate System.dyn)|
 |點|[用於計算設計的幾何圖形 - Points.dyn](../05_Geometry-for-Computational-Design/datasets/5-3/Geometry for Computational Design - Points.dyn)|
 |曲線|[用於計算設計的幾何圖形 - Curves.dyn](../05_Geometry-for-Computational-Design/datasets/5-4/Geometry for Computational Design - Curves.dyn)|
 |平面|[用於計算設計的幾何圖形 - Surfaces.dyn](../05_Geometry-for-Computational-Design/datasets/5-5/Geometry for Computational Design - Surfaces.dyn)|
-|
-|[Surface.sat](../05_Geometry-for-Computational-Design/datasets/5-5/Surface.sat)|
+
+||[Surface.sat](../05_Geometry-for-Computational-Design/datasets/5-5/Surface.sat)|
 
 #### 設計清單
 
@@ -50,32 +50,20 @@
 | -- | -- |
 |什麼是清單|[Lacing.dyn](../06_Designing-with-Lists/datasets/6-1/Lacing.dyn)|
 |處理清單|[List-Count.dyn](../06_Designing-with-Lists/datasets/6-2/List-Count.dyn)|
-|
-|[List-FilterByBooleanMask.dyn](../06_Designing-with-Lists/datasets/6-2/List-FilterByBooleanMask.dyn)|
-|
-|[List-GetItemAtIndex.dyn](../06_Designing-with-Lists/datasets/6-2/List-GetItemAtIndex.dyn)|
-|
-|[List-Operations.dyn](../06_Designing-with-Lists/datasets/6-2/List-Operations.dyn)|
-|
-|[List-Reverse.dyn](../06_Designing-with-Lists/datasets/6-2/List-Reverse.dyn)|
-|
-|[List-ShiftIndices.dyn](../06_Designing-with-Lists/datasets/6-2/List-ShiftIndices.dyn)|
+||[List-FilterByBooleanMask.dyn](../06_Designing-with-Lists/datasets/6-2/List-FilterByBooleanMask.dyn)|
+||[List-GetItemAtIndex.dyn](../06_Designing-with-Lists/datasets/6-2/List-GetItemAtIndex.dyn)|
+||[List-Operations.dyn](../06_Designing-with-Lists/datasets/6-2/List-Operations.dyn)|
+||[List-Reverse.dyn](../06_Designing-with-Lists/datasets/6-2/List-Reverse.dyn)|
+||[List-ShiftIndices.dyn](../06_Designing-with-Lists/datasets/6-2/List-ShiftIndices.dyn)|
 |清單的清單|[Chop.dyn](../06_Designing-with-Lists/datasets/6-3/Chop.dyn)|
-|
-|[Combine.dyn](../06_Designing-with-Lists/datasets/6-3/Combine.dyn)|
-|
-|[Flatten.dyn](../06_Designing-with-Lists/datasets/6-3/Flatten.dyn)|
-|
-|[Map.dyn](../06_Designing-with-Lists/datasets/6-3/Map.dyn)|
-|
-|[ReplaceItems.dyn](../06_Designing-with-Lists/datasets/6-3/ReplaceItems.dyn)|
-|
-|[Top-Down-Hierarchy.dyn](../06_Designing-with-Lists/datasets/6-3/Top-Down-Hierarchy.dyn)|
-|
-|[Transpose.dyn](../06_Designing-with-Lists/datasets/6-3/Transpose.dyn)|
+||[Combine.dyn](../06_Designing-with-Lists/datasets/6-3/Combine.dyn)|
+||[Flatten.dyn](../06_Designing-with-Lists/datasets/6-3/Flatten.dyn)|
+||[Map.dyn](../06_Designing-with-Lists/datasets/6-3/Map.dyn)|
+||[ReplaceItems.dyn](../06_Designing-with-Lists/datasets/6-3/ReplaceItems.dyn)|
+||[Top-Down-Hierarchy.dyn](../06_Designing-with-Lists/datasets/6-3/Top-Down-Hierarchy.dyn)|
+||[Transpose.dyn](../06_Designing-with-Lists/datasets/6-3/Transpose.dyn)|
 |n-Dimensional 清單|[n-Dimensional-Lists.dyn](../06_Designing-with-Lists/datasets/6-4/n-Dimensional-Lists.dyn)|
-|
-|[n-Dimensional-Lists.sat](../06_Designing-with-Lists/datasets/6-4/n-Dimensional-Lists.sat)|
+||[n-Dimensional-Lists.sat](../06_Designing-with-Lists/datasets/6-4/n-Dimensional-Lists.sat)|
 
 #### 程式碼區塊和 DesignScript
 
@@ -90,20 +78,15 @@
 |小節|下載檔案|
 | -- | -- |
 |選取|[Selecting.dyn](../08_Dynamo-for-Revit/datasets/8-2/Selecting.dyn)|
-|
-|[ARCH-Selecing-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-2/ARCH-Selecting-BaseFile.rvt)|
+||[ARCH-Selecing-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-2/ARCH-Selecting-BaseFile.rvt)|
 |編輯|[Editing.dyn](../08_Dynamo-for-Revit/datasets/8-3/Editing.dyn)|
-|
-|[ARCH-Editing-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-3/ARCH-Editing-BaseFile.rvt)|
+||[ARCH-Editing-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-3/ARCH-Editing-BaseFile.rvt)|
 |建立|[Creating.dyn](../08_Dynamo-for-Revit/datasets/8-4/Creating.dyn)|
-|
-|[ARCH-Creating-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-4/ARCH-Creating-BaseFile.rvt)|
+||[ARCH-Creating-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-4/ARCH-Creating-BaseFile.rvt)|
 |自訂|[Customizing.dyn](../08_Dynamo-for-Revit/datasets/8-5/Customizing.dyn)|
-|
-|[ARCH-Customizing-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-5/ARCH-Customizing-BaseFile.rvt)|
+||[ARCH-Customizing-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-5/ARCH-Customizing-BaseFile.rvt)|
 |記錄|[Documenting.dyn](../08_Dynamo-for-Revit/datasets/8-6/Documenting.dyn)|
-|
-|[ARCH-Documenting-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-6/ARCH-Documenting-BaseFile.rvt)|
+||[ARCH-Documenting-BaseFile.rvt](../08_Dynamo-for-Revit/datasets/8-6/ARCH-Documenting-BaseFile.rvt)|
 
 #### Dynamo 中的字典
 
