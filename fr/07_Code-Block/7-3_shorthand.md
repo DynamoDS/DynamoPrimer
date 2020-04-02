@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Raccourci
 
 Il existe quelques méthodes de base pour raccourcir le bloc de code qui simplifient *énormément* la gestion des données. Vous allez découvrir les concepts de base ci-dessous et comprendre comment ce raccourci peut être utilisé à la fois pour créer et interroger des données.
 
-|Type de données|Dynamo standard|Bloc de code équivalent|
-| -- | -- | -- |
-|Nombres|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|Chaînes|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|Séquences|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|Intervalles|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|Obtenir l'élément au niveau de l'index|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|Création d'une liste|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|Concaténer des chaînes|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|Instructions conditionnelles|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>Type de données</b></td>
+    <td width="25%"><b>Dynamo standard</b> </td>
+    <td width="25%"><b>Bloc de code équivalent</b></td>
+  </tr>
+  <tr>
+    <td> Nombres</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Chaînes</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Séquences</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Intervalles</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Obtenir l'élément au niveau de l'index</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Création d'une liste</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Concaténer des chaînes</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Instructions conditionnelles</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### Syntaxe supplémentaire
 

@@ -23,6 +23,11 @@
 			],
 			"languages": [
 				{
+					"label": "English",
+					"code": "en",
+					"url": "http://staging.dynamoprimer.com/en"
+				},
+				{
 					"label": "Deutsch",
 					"code": "de",
 					"url": "http://staging.dynamoprimer.com/de"
@@ -36,11 +41,6 @@
 					"label": "中文(繁體)",
 					"code": "zh-tw",
 					"url": "http://staging.dynamoprimer.com/zh-tw"
-				},
-				{
-					"label": "中文(简体)",
-					"code": "zh-cn",
-					"url": "http://staging.dynamoprimer.com/zh-cn"
 				},
 				{
 					"label": "Français",
@@ -86,7 +86,7 @@
 			"currentLanguage": {
 				"code": "zh-cn",
 				"url": "http://staging.dynamoprimer.com/zh-cn",
-				"switchLangLabel": "Languages"
+				"switchLangLabel": "语言"
 			},
 			"favicon": "/images/icons/favicon.ico"
 		}

@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## 축약형
 
 code block에는 데이터 관리를 *훨씬* 더 쉽게 해주는 몇 가지 기본적인 축약 방법이 있습니다. 아래의 기본 사항을 분석하고 이러한 축약형을 데이터 작성 및 조회에 어떻게 사용할 수 있는지 알아보겠습니다.
 
-|데이터 유형|표준 Dynamo|해당하는 Code Block 항목|
-| -- | -- | -- |
-|번호|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|문자열|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|순서|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|범위|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|색인의 항목 가져오기|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|리스트 작성|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|문자열 연결|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|조건문|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>데이터 유형</b></td>
+    <td width="25%"><b>표준 Dynamo</b> </td>
+    <td width="25%"><b>해당하는 Code Block 항목</b></td>
+  </tr>
+  <tr>
+    <td> 번호</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>문자열</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>순서</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>범위</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>색인의 항목 가져오기</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>리스트 작성</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>문자열 연결</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>조건문</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### 추가 구문
 

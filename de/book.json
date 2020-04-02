@@ -86,7 +86,7 @@
 			"currentLanguage": {
 				"code": "de",
 				"url": "http://staging.dynamoprimer.com/de",
-				"switchLangLabel": "Sprachen"
+				"switchLangLabel": "Sprache"
 			},
 			"favicon": "/images/icons/favicon.ico"
 		}

@@ -21,7 +21,7 @@ Les scripts de texte peuvent établir des relations plus complexes que la progra
 **Choisissez une langue :**
 
 ||Création de boucle|Récursion|Condenser les noeuds|Bibliothèques ext.|Abréviations|
-| -- | -- | -- | -- | -- | -- |
+| -- | -- | 
 |**DesignScript**|Oui|Oui|Oui|Non|Oui|
 |**Python**|Oui|Oui|Partiellement|Oui|Non|
 |**ZeroTouch (C#)**|Non|Non|Non|Oui|Non|
