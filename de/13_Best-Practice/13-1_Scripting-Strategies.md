@@ -20,9 +20,8 @@ Mit Textskripts können Sie komplexere Beziehungen erstellen als durch visuelle 
 
 **Wählen Sie eine Sprache:**
 
-|
-|Schleifen|Rekursionen|Zusammenfassen von Blöcken|Ext. Bibliotheken|Kurzschreibweisen|
-| -- | -- | -- | -- | -- | -- |
+|    |Schleifen|Rekursionen|Zusammenfassen von Blöcken|Ext. Bibliotheken|Kurzschreibweisen|
+| -- | -- | 
 |**DesignScript**|Ja|Ja|Ja|Nein|Ja|
 |**Python**|Ja|Ja|Teilweise|Ja|Nein|
 |**ZeroTouch (C#)**|Nein|Nein|Nein|Ja|Nein|

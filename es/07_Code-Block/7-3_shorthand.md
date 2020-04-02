@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Abreviatura
 
 Existen varios métodos básicos de abreviatura en el bloque de código que, sencillamente, facilitan *mucho* la administración de datos. A continuación, vamos a desglosar los conceptos básicos y analizar cómo se puede utilizar la abreviatura para crear y consultar datos.
 
-|Tipo de datos|Dynamo estándar|Bloque de código equivalente|
-| -- | -- | -- |
-|Números|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|Cadenas|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|Secuencias|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|Rangos|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|Obtener elemento en índice|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|Crear lista|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|Concatenar cadenas|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|Instrucciones condicionales|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>Tipo de datos</b></td>
+    <td width="25%"><b>Dynamo estándar</b> </td>
+    <td width="25%"><b>Bloque de código equivalente</b></td>
+  </tr>
+  <tr>
+    <td> Números</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Cadenas</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Secuencias</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Rangos</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Obtener elemento en índice</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Crear lista</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Concatenar cadenas</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Instrucciones condicionales</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### Sintaxis adicional
 

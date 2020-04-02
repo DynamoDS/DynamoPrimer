@@ -38,11 +38,6 @@
 					"url": "http://staging.dynamoprimer.com/ja"
 				},
 				{
-					"label": "中文(繁體)",
-					"code": "zh-tw",
-					"url": "http://staging.dynamoprimer.com/zh-tw"
-				},
-				{
 					"label": "中文(简体)",
 					"code": "zh-cn",
 					"url": "http://staging.dynamoprimer.com/zh-cn"

@@ -21,7 +21,7 @@ Os scripts de texto podem estabelecer relacionamentos de maior complexidade do q
 **Escolha uma linguagem:**
 
 ||Loops|Recursão|Condensar nós|Ext. Bibliotecas|Abreviação|
-| -- | -- | -- | -- | -- | -- |
+| -- | -- |
 |**DesignScript**|Sim|Sim|Sim|Não|Sim|
 |**Python**|Sim|Sim|Parcialmente|Sim|Não|
 |**ZeroTouch (C#)**|Não|Não|Não|Sim|Não|

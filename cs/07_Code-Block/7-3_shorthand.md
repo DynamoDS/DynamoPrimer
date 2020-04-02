@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Zkratka
 
 V bloku kódu je několik základních metod zkratky, které umožňují správu dat *velice* usnadnit. Rozdělíme si základy níže a prodiskutujeme, jak lze tuto zkratku použít k vytváření a zadávání dotazů na data.
 
-|Typ dat|Standardní aplikace Dynamo|Ekvivalent bloku kódu|
-| -- | -- | -- |
-|Čísla|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|Řetězce|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|Posloupnosti|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|Rozsahy|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|Získat položku na indexu|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|Vytvořit seznam|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|Zřetězit řetězce|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|Podmíněné výrazy|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>Typ dat</b></td>
+    <td width="25%"><b>Standardní aplikace Dynamo</b> </td>
+    <td width="25%"><b>Ekvivalent bloku kódu</b></td>
+  </tr>
+  <tr>
+    <td> Čísla</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Řetězce</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Posloupnosti</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Rozsahy</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Získat položku na indexu</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Vytvořit seznam</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Zřetězit řetězce</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Podmíněné výrazy</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### Další syntaxe
 

@@ -33,11 +33,6 @@
 					"url": "http://staging.dynamoprimer.com/de"
 				},
 				{
-					"label": "日本語",
-					"code": "ja",
-					"url": "http://staging.dynamoprimer.com/ja"
-				},
-				{
 					"label": "中文(繁體)",
 					"code": "zh-tw",
 					"url": "http://staging.dynamoprimer.com/zh-tw"

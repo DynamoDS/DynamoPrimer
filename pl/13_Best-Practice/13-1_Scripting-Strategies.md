@@ -21,7 +21,7 @@ Skrypty tekstowe pozwalają tworzyć relacje o wyższej złożoności niż progr
 **Wybór języka:**
 
 ||Pętle|Rekursja|Kondensowanie węzłów|Biblioteki zewnętrzne|Krótka składnia|
-| -- | -- | -- | -- | -- | -- |
+| -- | -- | 
 |**DesignScript**|Tak|Tak|Tak|Nie|Tak|
 |**Python**|Tak|Tak|Częściowo|Tak|Nie|
 |**ZeroTouch (C#)**|Nie|Nie|Nie|Tak|Nie|

@@ -21,7 +21,7 @@ La creación de secuencias de comandos de texto puede establecer relaciones de u
 **Elija un lenguaje:**
 
 ||Creación de bucles|Repetición|Condensar nodos|Bibliotecas ext.|Abreviatura|
-| -- | -- | -- | -- | -- | -- |
+| -- | -- |
 |**DesignScript**|Sí|Sí|Sí|No|Sí|
 |**Python**|Sí|Sí|Parcialmente|Sí|No|
 |**ZeroTouch (C#)**|No|No|No|Sí|No|
