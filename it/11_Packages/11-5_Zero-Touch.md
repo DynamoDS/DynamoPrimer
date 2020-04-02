@@ -1,4 +1,8 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+thead {display: none}
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Che cos'è zero-touch?
 
@@ -14,12 +18,29 @@ In questa sezione è illustrato come utilizzare la funzione zero-touch per impor
 
 I pacchetti zero-touch sono un buon complemento ai nodi personalizzati definiti dall'utente. Nella tabella riportata di seguito sono elencati alcuni pacchetti che utilizzano le librerie C#. Per informazioni più dettagliate sui pacchetti, visitare la [sezione dei pacchetti ](../Appendix/A-3_packages.md)dell'Appendice.
 
-|Logo/Immagine|Nome|
-| -- | -- |
-|![](images/11-5/toolkit.jpg)|[Mesh Toolkit](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)|
-|![](images/11-5/unfold.jpg)|[DynamoUnfold](http://dynamobim.com/dynamounfold/)|
-|![](images/11-5/rhynamo.jpg)|[Rhynamo](http://www.case-inc.com/blog/what-is-rhynamo)|
-|![](images/11-5/optimo.jpg)|[Optimo](https://github.com/BPOpt/Optimo)|
+
+<table width="100%">
+    <tr>
+    <td width="20%"><b>Logo/Immagine</b></td>
+    <td><b>Nome</b></td>
+</tr>
+  <tr>
+    <td><img src="images/11-5/toolkit.jpg"></img></td>
+    <td><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Mesh Toolkit</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/unfold.jpg"></img></td>
+    <td><a href="http://dynamobim.com/dynamounfold/">DynamoUnfold</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/rhynamo.jpg"></img></td>
+    <td><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/optimo.jpg"></img></td>
+    <td><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
+  </tr>
+</table>
 
 ### Case study - Importazione di AForge
 

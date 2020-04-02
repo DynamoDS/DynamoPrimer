@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## 速寫
 
 代碼區塊中提供了一些基本速寫方法，簡言之，這些方法可以*顯著*降低資料管理的難度。以下我們將分類講解基本知識，並討論如何使用此速寫來建立與查詢資料。
 
-|資料類型|標準 Dynamo|代碼區塊等效|
-| -- | -- | -- |
-|數字|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|字串|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|順序|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|範圍|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|取得索引處的項目|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|建立清單|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|連接字串|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|條件陳述式|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>資料類型</b></td>
+    <td width="25%"><b>標準 Dynamo</b> </td>
+    <td width="25%"><b>代碼區塊等效</b></td>
+  </tr>
+  <tr>
+    <td> 數字</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>字串</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>順序</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>範圍</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>取得索引處的項目</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>建立清單</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>連接字串</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>條件陳述式</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### 其他語法
 

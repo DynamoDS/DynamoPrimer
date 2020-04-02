@@ -21,7 +21,7 @@ Textové skriptování může vytvořit vztahy vyšší složitosti než vizuál
 **Vyberte jazyk:**
 
 ||Smyčky|Rekurze|Zhuštění uzlů|Ext. Knihovny|Zkrácení|
-| -- | -- | -- | -- | -- | -- |
+| -- | -- | 
 |**DesignScript**|Ano|Ano|Ano|Ne|Ano|
 |**Python**|Ano|Ano|Částečně|Ano|No|
 |**ZeroTouch (C#)**|Ne|Ne|Ne|Ano|No|

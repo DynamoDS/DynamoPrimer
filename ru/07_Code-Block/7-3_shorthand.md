@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Сокращение
 
 Существует несколько основных способов сокращенной записи команд в блоке кода, что *существенно* упрощает управление данными. Далее мы подробно рассмотрим, как использовать подобные сокращенные записи для создания и запроса данных.
 
-|Тип данных|Стандартный код Dynamo|Аналог в блоке кода|
-| -- | -- | -- |
-|Цифры|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|Строки|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|Последовательности|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|Диапазоны|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|Получение элемента по индексу|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|Создание списка|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|Объединение строк|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|Условные выражения|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>Тип данных</b></td>
+    <td width="25%"><b>Стандартный код Dynamo</b> </td>
+    <td width="25%"><b>Аналог в блоке кода</b></td>
+  </tr>
+  <tr>
+    <td> Цифры</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Строки</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Последовательности</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Диапазоны</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Получение элемента по индексу</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Создание списка</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Объединение строк</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Условные выражения</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### Дополнительный синтаксис
 

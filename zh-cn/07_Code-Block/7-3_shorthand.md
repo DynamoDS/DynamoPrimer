@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## 简写
 
 简单来说，代码块中有一些基本的简写方法，这些方法使数据管理*更加*容易。我们将详细介绍下面的基础知识，并讨论如何使用此简写来创建和查询数据。
 
-|数据类型|标准 Dynamo|等效代码块|
-| -- | -- | -- |
-|数字|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|字符串|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|序列|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|范围|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|获取索引处的项目|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|创建列表|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|连接字符串|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|条件语句|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>数据类型(Data Type)</b></td>
+    <td width="25%"><b>标准 Dynamo</b> </td>
+    <td width="25%"><b>等效代码块</b></td>
+  </tr>
+  <tr>
+    <td> 数字</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>字符串</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>序列</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>范围</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>获取索引处的项目</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>创建列表</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>连接字符串</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>条件语句</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### 其他语法
 

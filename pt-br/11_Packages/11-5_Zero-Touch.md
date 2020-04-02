@@ -1,4 +1,8 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+thead {display: none}
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## O que é a funcionalidade Sem toque?
 
@@ -14,12 +18,29 @@ Esta seção demonstra como usar a funcionalidade Sem toque para importar uma bi
 
 Os pacotes sem toque são um bom complemento aos nós personalizados definidos pelo usuário. Alguns pacotes que usam bibliotecas C# são listados na tabela abaixo. Para obter informações mais detalhadas sobre os pacotes, consulte a [seção Pacotes ](../Appendix/A-3_packages.md)no Apêndice.
 
-|Logotipo/imagem|Nome|
-| -- | -- |
-|![](images/11-5/toolkit.jpg)|[Kit de ferramentas de malha](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)|
-|![](images/11-5/unfold.jpg)|[Desdobramento do Dynamo](http://dynamobim.com/dynamounfold/)|
-|![](images/11-5/rhynamo.jpg)|[Rhynamo](http://www.case-inc.com/blog/what-is-rhynamo)|
-|![](images/11-5/optimo.jpg)|[Optimo](https://github.com/BPOpt/Optimo)|
+
+<table width="100%">
+    <tr>
+    <td width="20%"><b>Logotipo/imagem</b></td>
+    <td><b>Nome</b></td>
+</tr>
+  <tr>
+    <td><img src="images/11-5/toolkit.jpg"></img></td>
+    <td><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Kit de ferramentas de malha</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/unfold.jpg"></img></td>
+    <td><a href="http://dynamobim.com/dynamounfold/">Desdobramento do Dynamo</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/rhynamo.jpg"></img></td>
+    <td><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/optimo.jpg"></img></td>
+    <td><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
+  </tr>
+</table>
 
 ### Estudo de caso – Importar o AForge
 

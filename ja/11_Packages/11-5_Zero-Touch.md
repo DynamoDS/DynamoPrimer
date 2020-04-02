@@ -1,4 +1,8 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+thead {display: none}
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Zero-Touch の概要
 
@@ -14,12 +18,29 @@ Zero-Touch により、Dynamo 用に開発されたものではないライブ�
 
 Zero-touch パッケージは、ユーザが定義するカスタム ノードを補完するパッケージです。次の図は、C# ライブラリを使用するいくつかのパッケージを示しています。パッケージの詳細については、付録の「[パッケージ](../Appendix/A-3_packages.md)」セクションを参照してください。
 
-|ロゴ/イメージ|名前|
-| -- | -- |
-|![](images/11-5/toolkit.jpg)|[Mesh Toolkit](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)|
-|![](images/11-5/unfold.jpg)|[DynamoUnfold](http://dynamobim.com/dynamounfold/)|
-|![](images/11-5/rhynamo.jpg)|[Rhynamo](http://www.case-inc.com/blog/what-is-rhynamo)|
-|![](images/11-5/optimo.jpg)|[Optimo](https://github.com/BPOpt/Optimo)|
+
+<table width="100%">
+    <tr>
+    <td width="20%"><b>ロゴ/イメージ</b></td>
+    <td><b>名前</b></td>
+</tr>
+  <tr>
+    <td><img src="images/11-5/toolkit.jpg"></img></td>
+    <td><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Mesh Toolkit</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/unfold.jpg"></img></td>
+    <td><a href="http://dynamobim.com/dynamounfold/">DynamoUnfold</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/rhynamo.jpg"></img></td>
+    <td><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/optimo.jpg"></img></td>
+    <td><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
+  </tr>
+</table>
 
 ### ケース スタディ - AForge の読み込み
 

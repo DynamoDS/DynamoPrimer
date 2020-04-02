@@ -1,4 +1,8 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+thead {display: none}
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Что такое Zero-Touch
 
@@ -14,12 +18,29 @@ Zero-Touch позволяет импортировать библиотеки, �
 
 Пакеты Zero-Touch являются хорошим дополнением к пользовательским узлам. В таблице ниже приведены некоторые пакеты, в которых используются библиотеки C#. Дополнительные сведения о пакетах см. в [соответствующем разделе приложения](../Appendix/A-3_packages.md).
 
-|Логотип/изображение|Название|
-| -- | -- |
-|![](images/11-5/toolkit.jpg)|[Dynamo Mesh Toolkit](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit)|
-|![](images/11-5/unfold.jpg)|[Dynamo Unfold](http://dynamobim.com/dynamounfold/)|
-|![](images/11-5/rhynamo.jpg)|[Rhynamo](http://www.case-inc.com/blog/what-is-rhynamo)|
-|![](images/11-5/optimo.jpg)|[Optimo](https://github.com/BPOpt/Optimo)|
+
+<table width="100%">
+    <tr>
+    <td width="20%"><b>Логотип/изображение</b></td>
+    <td><b>Название</b></td>
+</tr>
+  <tr>
+    <td><img src="images/11-5/toolkit.jpg"></img></td>
+    <td><a href="https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit">Mesh Toolkit</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/unfold.jpg"></img></td>
+    <td><a href="http://dynamobim.com/dynamounfold/">Dynamo Unfold</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/rhynamo.jpg"></img></td>
+    <td><a href="http://www.case-inc.com/blog/what-is-rhynamo">Rhynamo</td></a>
+  </tr>
+  <tr>
+    <td><img src="images/11-5/optimo.jpg"></img></td>
+    <td><a href="https://github.com/BPOpt/Optimo">Optimo</td></a>
+  </tr>
+</table>
 
 ### Практикум. Импорт AForge
 

@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## Krótka składnia
 
 W bloku kodu dostępnych jest kilka podstawowych metod o krótkiej składni, które *znacznie* ułatwiają zarządzanie danymi. Podstawy zostały szczegółowo omówione poniżej. Wyjaśniamy też, jak za pomocą tej krótkiej składni można tworzyć dane i stosować do nich zapytania.
 
-|Typ danych|Standard Dynamo|Odpowiednik w bloku kodu|
-| -- | -- | -- |
-|Liczby|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|Ciągi|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|Sekwencje|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|Przedziały|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|Pobierz element o indeksie|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|Utwórz listę|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|Scal ciągi|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|Instrukcje warunkowe|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>Typ danych</b></td>
+    <td width="25%"><b>Standard Dynamo</b> </td>
+    <td width="25%"><b>Odpowiednik w bloku kodu</b></td>
+  </tr>
+  <tr>
+    <td> Liczby</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Ciągi</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Sekwencje</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Przedziały</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Pobierz element o indeksie</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Utwórz listę</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Scal ciągi</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>Instrukcje warunkowe</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### Dodatkowa składnia
 
