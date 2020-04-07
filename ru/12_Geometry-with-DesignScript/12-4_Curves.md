@@ -1,5 +1,3 @@
-
-
 # Кривые: интерполяционные и по управляющим точкам
 
 Создавать кривые произвольной формы в Dynamo можно двумя основными способами: задать набор точек и создать сглаженную кривую между ними путем интерполяции либо, если требуется получить кривую с конкретной степенью сглаживания, задать построение по управляющим точкам. Интерполяционные кривые подходят для случаев, когда проектировщик точно знает, какой формы должна быть линия, или когда в проекте заданы конкретные зависимости, определяющие то, где кривая может проходить, а где не может. Кривые по управляющим точкам представляют собой набор прямолинейных сегментов, который путем применения алгоритма сглаживается до получения требуемой кривой. Построение кривой по управляющим точкам позволяет сравнивать варианты с разными степенями сглаживания, а также обеспечивать последовательное применение сглаживания к криволинейным сегментам.
@@ -8,7 +6,7 @@
 
 ![](images/12-4/Curves_01.png)
 
-```
+```js
 num_pts = 6;
 
 s = Math.Sin(0..360..#num_pts) * 4;
@@ -22,27 +20,27 @@ int_curve = NurbsCurve.ByPoints(pts);
 
 ![](images/12-4/Curves_02.png)
 
-```
+```js
 pts = Point.ByCoordinates(Math.Cos(0..350..#10),
-Math.Sin(0..350..#10), 0);
+    Math.Sin(0..350..#10), 0);
 
 // create an closed curve
 crv = NurbsCurve.ByPoints(pts, true);
 
 // the same curve, if left open:
 crv2 = NurbsCurve.ByPoints(pts.Translate(5, 0, 0),
-false);
+    false);
 ```
 
 Построение объектов NurbsCurve выполняется схожим образом. В качестве первого параметра задается набор точек (а именно конечных точек прямолинейных сегментов), а в качестве второго — величина и тип (т. е. степень) сглаживания кривой.* Кривая со степенью сглаживания 1 не сглаживается и представляет собой полилинию.
 
 ![](images/12-4/Curves_03.png)
 
-```
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
-Math.Sin(0..360..#num_pts) * 4, 0);
+    Math.Sin(0..360..#num_pts) * 4, 0);
 
 // a B-Spline curve with degree 1 is a polyline
 ctrl_curve = NurbsCurve.ByControlPoints(pts, 1);
@@ -52,11 +50,11 @@ ctrl_curve = NurbsCurve.ByControlPoints(pts, 1);
 
 ![](images/12-4/Curves_04.png)
 
-```
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
-Math.Sin(0..360..#num_pts) * 4, 0);
+    Math.Sin(0..360..#num_pts) * 4, 0);
 
 // a B-Spline curve with degree 2 is smooth
 ctrl_curve = NurbsCurve.ByControlPoints(pts, 2);
@@ -66,16 +64,16 @@ ctrl_curve = NurbsCurve.ByControlPoints(pts, 2);
 
 ![](images/12-4/Curves_05.png)
 
-```
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
-Math.Sin(0..360..#num_pts) * 4, 0);
+    Math.Sin(0..360..#num_pts) * 4, 0);
 
 def create_curve(pts : Point[], degree : int) 
 {
-return = NurbsCurve.ByControlPoints(pts,
-degree);
+	return = NurbsCurve.ByControlPoints(pts,
+        degree);
 }
 
 ctrl_crvs = create_curve(pts, 1..11);
@@ -87,7 +85,7 @@ ctrl_crvs = create_curve(pts, 1..11);
 
 ![](images/12-4/Curves_06.png)
 
-```
+```js
 pts_1 = {};
 
 pts_1[0] = Point.ByCoordinates(0, 0, 0);
@@ -104,7 +102,7 @@ pts_2[0] = pts_1[4];
 end_dir = pts_1[4].Subtract(pts_1[3].AsVector());
 
 pts_2[1] = Point.ByCoordinates(pts_2[0].X + end_dir.X,
-pts_2[0].Y + end_dir.Y, pts_2[0].Z + end_dir.Z);
+    pts_2[0].Y + end_dir.Y, pts_2[0].Z + end_dir.Z);
 
 pts_2[2] = Point.ByCoordinates(15, 1, 0);
 pts_2[3] = Point.ByCoordinates(18, -2, 0);

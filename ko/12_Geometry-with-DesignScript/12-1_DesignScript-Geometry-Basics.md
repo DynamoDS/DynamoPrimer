@@ -1,12 +1,10 @@
-
-
 # DesignScript 형상 기본 사항
 
 Dynamo 표준 형상 라이브러리의 가장 단순한 기하학적 객체는 점입니다. 모든 형상은 생성자라는 특수 함수를 사용하여 작성되며, 생성자는 각각 해당 특정 형상 유형의 새 인스턴스를 반환합니다. Dynamo에서 생성자는 객체 유형의 이름(이 경우 Point)으로 시작되며 뒤에 생성 메서드가 옵니다. x, y 및 z 데카르트 좌표로 지정한 3D 점을 작성하기 위해 *ByCoordinates* 생성자를 사용합니다.
 
 ![](images/12-1/GeometryBasics_01.png)
 
-```
+```js
 // create a point with the following x, y, and z
 // coordinates:
 x = 10;
@@ -22,7 +20,7 @@ Dynamo의 생성자는 일반적으로 "*By*" 접두어로 지정되고, 이러�
 
 ![](images/12-1/GeometryBasics_02.png)
 
-```
+```js
 // create a point on a sphere with the following radius,
 // theta, and phi rotation angles (specified in degrees)
 radius = 5;
@@ -31,14 +29,14 @@ phi = 120.3;
 cs = CoordinateSystem.Identity();
 
 p = Point.BySphericalCoordinates(cs, radius, theta,
-phi);
+    phi);
 ```
 
 선처럼 더 높은 차원의 형상을 생성하는 데 점을 사용할 수 있으며, *ByStartPointEndPoint* 생성자를 사용하여 두 점 간에 선 객체를 작성할 수 있습니다.
 
 ![](images/12-1/GeometryBasics_03.png)
 
-```
+```js
 // create two points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -51,7 +49,7 @@ l = Line.ByStartPointEndPoint(p1, p2);
 
 ![](images/12-1/GeometryBasics_04.png)
 
-```
+```js
 // create points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -75,7 +73,7 @@ surf = Surface.ByLoft([l1, l2, l3]);
 
 ![](images/12-1/GeometryBasics_05.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -95,7 +93,7 @@ solid = surf.Thicken(4.75, true);
 
 ![](images/12-1/GeometryBasics_06.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -110,12 +108,12 @@ surf = Surface.ByLoft([l1, l2]);
 solid = surf.Thicken(4.75, true);
 
 p = Plane.ByOriginNormal(Point.ByCoordinates(2, 0, 0),
-Vector.ByCoordinates(1, 1, 1));
+    Vector.ByCoordinates(1, 1, 1));
 
 int_surf = solid.Intersect(p);
 
 int_line = int_surf.Intersect(Plane.ByOriginNormal(
-Point.ByCoordinates(0, 0, 0),
-Vector.ByCoordinates(1, 0, 0)));
+    Point.ByCoordinates(0, 0, 0),
+    Vector.ByCoordinates(1, 0, 0)));
 ```
 

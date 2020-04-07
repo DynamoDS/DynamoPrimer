@@ -1,5 +1,3 @@
-
-
 # Intersection et ajustement
 
 Beaucoup de ces exemples se sont jusqu'ici concentrés sur la construction d'une géométrie dimensionnelle plus élevée à partir d'objets dimensionnels inférieurs. Les méthodes d'intersection permettent à cette géométrie dimensionnelle plus élevée de générer des objets dimensionnels inférieurs, tandis que les commandes d'ajustement et de sélection d'ajustement permettent au script de modifier considérablement les formes géométriques après leur création.
@@ -19,7 +17,7 @@ L'exemple très simple suivant illustre l'intersection d'un plan avec une NurbsS
 
 ![](images/12-8/IntersectionAndTrim_01.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -28,7 +26,7 @@ surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 WCS = CoordinateSystem.Identity();
 
 pl = Plane.ByOriginNormal(WCS.Origin.Translate(0, 0,
-0.5), WCS.ZAxis);
+    0.5), WCS.ZAxis);
 
 // intersect surface, generating three closed curves
 crvs = surf.Intersect(pl);
@@ -51,14 +49,14 @@ Il est à noter que les méthodes *Trim* nécessitent un point de "sélection", 
 
 ![](images/12-8/IntersectionAndTrim_02.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
 tool_pts = Point.ByCoordinates((-10..20..10)<1>,
-(-10..20..10)<2>, 1);
+    (-10..20..10)<2>, 1);
 
 tool = NurbsSurface.ByPoints(tool_pts);
 

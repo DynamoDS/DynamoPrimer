@@ -1,5 +1,3 @@
-
-
 # Curve: punti interpolati e di controllo
 
 In Dynamo vi sono due metodi fondamentali per creare curve di forma libera: la specifica di una raccolta di punti e l'impostazione del programma in modo che venga interpolata una curva levigata tra di essi oppure esiste un metodo di livello molto più basso, ossia specificare i punti di controllo sottostanti di una curva di un determinato grado. Le curve interpolate sono utili quando un progettista sa esattamente la forma che deve assumere una linea o se il progetto ha vincoli specifici per il punto in cui la curva può e non può attraversare. Le curve specificate tramite i punti di controllo sono essenzialmente una serie di segmenti di linee rette che un algoritmo leviga in una forma di curva finale. Specificare una curva tramite punti di controllo può essere utile per esplorare forme di curva con diversi gradi di levigatezza o quando è necessaria una continuità uniforme tra segmenti di curva.
@@ -8,7 +6,7 @@ Per creare una curva interpolata, è sufficiente trasferire una raccolta di punt
 
 ![](images/12-4/Curves_01.png)
 
-```
+```js
 num_pts = 6;
 
 s = Math.Sin(0..360..#num_pts) * 4;
@@ -22,27 +20,27 @@ La curva generata interseca ciascuno dei punti di input, iniziando e terminando 
 
 ![](images/12-4/Curves_02.png)
 
-```
+```js
 pts = Point.ByCoordinates(Math.Cos(0..350..#10),
-Math.Sin(0..350..#10), 0);
+    Math.Sin(0..350..#10), 0);
 
 // create an closed curve
 crv = NurbsCurve.ByPoints(pts, true);
 
 // the same curve, if left open:
 crv2 = NurbsCurve.ByPoints(pts.Translate(5, 0, 0),
-false);
+    false);
 ```
 
 Le NurbsCurve vengono generate in modo molto simile, con i punti di input che rappresentano i punti finali di un segmento di linea retta e un secondo parametro che specifica il livello e il tipo di levigatezza a cui è sottoposta la curva, denominati grado.* Una curva di grado 1 non ha alcuna levigatezza; è una polilinea.
 
 ![](images/12-4/Curves_03.png)
 
-```
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
-Math.Sin(0..360..#num_pts) * 4, 0);
+    Math.Sin(0..360..#num_pts) * 4, 0);
 
 // a B-Spline curve with degree 1 is a polyline
 ctrl_curve = NurbsCurve.ByControlPoints(pts, 1);
@@ -52,11 +50,11 @@ Una curva di grado 2 viene levigata in modo che si intersechi ed è tangente al 
 
 ![](images/12-4/Curves_04.png)
 
-```
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
-Math.Sin(0..360..#num_pts) * 4, 0);
+    Math.Sin(0..360..#num_pts) * 4, 0);
 
 // a B-Spline curve with degree 2 is smooth
 ctrl_curve = NurbsCurve.ByControlPoints(pts, 2);
@@ -66,16 +64,16 @@ Dynamo supporta curve NURBS (Non-Uniform Rational B-Spline) fino ad un massimo d
 
 ![](images/12-4/Curves_05.png)
 
-```
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
-Math.Sin(0..360..#num_pts) * 4, 0);
+    Math.Sin(0..360..#num_pts) * 4, 0);
 
 def create_curve(pts : Point[], degree : int) 
 {
-return = NurbsCurve.ByControlPoints(pts,
-degree);
+	return = NurbsCurve.ByControlPoints(pts,
+        degree);
 }
 
 ctrl_crvs = create_curve(pts, 1..11);
@@ -87,7 +85,7 @@ Un altro vantaggio della costruzione delle curve tramite vertici di controllo è
 
 ![](images/12-4/Curves_06.png)
 
-```
+```js
 pts_1 = {};
 
 pts_1[0] = Point.ByCoordinates(0, 0, 0);
@@ -104,7 +102,7 @@ pts_2[0] = pts_1[4];
 end_dir = pts_1[4].Subtract(pts_1[3].AsVector());
 
 pts_2[1] = Point.ByCoordinates(pts_2[0].X + end_dir.X,
-pts_2[0].Y + end_dir.Y, pts_2[0].Z + end_dir.Z);
+    pts_2[0].Y + end_dir.Y, pts_2[0].Z + end_dir.Z);
 
 pts_2[2] = Point.ByCoordinates(15, 1, 0);
 pts_2[3] = Point.ByCoordinates(18, -2, 0);

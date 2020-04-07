@@ -1,5 +1,3 @@
-
-
 # Matematica vettoriale
 
 Gli oggetti nelle progettazioni computazionali raramente vengono creati esplicitamente nella loro posizione e nella loro forma finali e più spesso vengono traslati, ruotati e altrimenti posizionati in base alla geometria esistente. La matematica vettoriale serve come una sorta di impalcatura geometrica per dare direzione e orientamento alla geometria, nonché per concettualizzare i movimenti attraverso lo spazio 3D senza rappresentazione visiva.
@@ -8,7 +6,7 @@ Fondamentalmente, un vettore rappresenta una posizione nello spazio 3D e spesso 
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ L'addizione vettoriale è definita come la somma dei componenti di due vettori e
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ Analogamente, due oggetti vettoriali possono essere sottratti l'uno dall'altro c
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ La moltiplicazione vettoriale può essere considerata come lo spostamento del pu
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ Spesso è necessario durante la messa in scala di un vettore avere la lunghezza 
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ Nella matematica vettoriale esistono due metodi di addizione che non hanno paral
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ Un'ulteriore funzione, sebbene più avanzata di matematica vettoriale, è il pro
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 

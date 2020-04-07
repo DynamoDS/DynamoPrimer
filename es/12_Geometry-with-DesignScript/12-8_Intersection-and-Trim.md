@@ -1,5 +1,3 @@
-
-
 # Intersección y recorte
 
 Muchos de los ejemplos mostrados hasta ahora se han centrado en la creación de geometría dimensional superior a partir de objetos dimensionales inferiores. Los métodos de intersección permiten que esta geometría dimensional superior genere objetos dimensionales inferiores, mientras que los comandos de recorte y de selección de recorte permiten que el archivo de comandos modifique las formas geométricas una vez creadas.
@@ -19,7 +17,7 @@ En el siguiente ejemplo muy sencillo, se muestra la intersección de un plano co
 
 ![](images/12-8/IntersectionAndTrim_01.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -28,7 +26,7 @@ surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 WCS = CoordinateSystem.Identity();
 
 pl = Plane.ByOriginNormal(WCS.Origin.Translate(0, 0,
-0.5), WCS.ZAxis);
+    0.5), WCS.ZAxis);
 
 // intersect surface, generating three closed curves
 crvs = surf.Intersect(pl);
@@ -51,14 +49,14 @@ Algo que se debe tener en cuenta en los métodos *Trim* es el requisito de un pu
 
 ![](images/12-8/IntersectionAndTrim_02.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
 tool_pts = Point.ByCoordinates((-10..20..10)<1>,
-(-10..20..10)<2>, 1);
+    (-10..20..10)<2>, 1);
 
 tool = NurbsSurface.ByPoints(tool_pts);
 

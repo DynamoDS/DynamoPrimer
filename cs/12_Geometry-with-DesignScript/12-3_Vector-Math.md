@@ -1,5 +1,3 @@
-
-
 # Vektorová matematika
 
 Objekty ve výpočetních návrzích se výjimečně vytvářejí přímo v jejich konečných pozicích a tvarech, většinou jsou přesouvány, otáčeny a jinak transformovány. Vektorová matematika slouží jako geometrická pomůcka, která dává geometrii směr a orientaci, a také slouží ke konceptualizaci pohybů ve 3D prostoru bez vizuální reprezentace.
@@ -8,7 +6,7 @@ Na nejzákladnější úrovni představuje vektor pozici ve 3D prostoru a často
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ Součet vektorů je definován jako součet komponent dvou vektorů a lze si jej
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ Podobně lze metodou *Subtract* od sebe dva vektorové objekty odečíst. Odečt
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ Násobení vektoru si lze představit jako přesun koncového bodu vektoru v je
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ Při změně měřítka vektoru je často potřeba, aby výsledná délka odpov�
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ Ve vektorové matematice existují dvě další metody, pro které v 1D matemat
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ Další pokročilejší funkcí vektorové matematiky je skalární součin. Ska
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 

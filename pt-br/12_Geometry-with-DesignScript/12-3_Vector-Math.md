@@ -1,5 +1,3 @@
-
-
 # Matemática de vetores
 
 Os objetos em projetos de cálculo raramente são criados explicitamente em sua posição e forma finais e são, na maioria das vezes, convertidos, rotacionados e posicionados de outra forma, com base na geometria existente. A matemática de vetores serve como um tipo de andaime geométrico para dar direção e orientação à geometria, bem como para conceituar movimentos através do espaço 3D sem representação visual.
@@ -8,7 +6,7 @@ Em seu nível mais básico, um vetor representa uma posição no espaço 3D e, m
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ A adição de vetores é definida como a soma dos componentes de dois vetores e 
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ De forma similar, dois objetos Vector podem ser subtraídos um do outro com o m�
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ A multiplicação de vetores pode ser considerada como mover a extremidade de um
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ Muitas vezes, ao dimensionar um vetor, é desejável que o comprimento resultant
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ Existem dois métodos adicionais na matemática de vetores que não têm paralel
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ Uma função adicional, embora um pouco mais avançada da matemática vetorial, 
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 

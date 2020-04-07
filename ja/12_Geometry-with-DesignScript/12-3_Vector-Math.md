@@ -1,5 +1,3 @@
-
-
 # ベクトル計算
 
 計算設計ではオブジェクトが最終的な位置や形状で明示的に作成されることはほとんどなく、通常は既存のジオメトリに基づいて、移動、回転、およびその他の方法で配置されます。ベクトル計算は、幾何学的な足場の一種として機能することで方向およびジオメトリに対する向きを示し、視覚的に表示せずに 3D 空間での動きを概念化します。
@@ -8,7 +6,7 @@
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ s = v.X + " " + v.Y + " " + v.Z;
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ c = a.Add(b);
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ c = a.Subtract(b);
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ c = a.Scale(5);
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ c の長さは正確に 5 に等しいですが、a (1, 2, 3)と同じ方向を�
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ c = a.Cross(b);
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 

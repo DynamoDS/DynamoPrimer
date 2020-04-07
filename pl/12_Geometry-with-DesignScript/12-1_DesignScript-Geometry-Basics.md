@@ -1,12 +1,10 @@
-
-
 # Geometria DesignScript — podstawy
 
 Najprostszym obiektem geometrycznym w standardowej bibliotece geometrii dodatku Dynamo jest punkt. Cała geometria jest tworzona za pomocą specjalnych funkcji zwanych konstruktorami, które zwracają nowe wystąpienia danego typu geometrii. W dodatku Dynamo konstruktory zaczynają się od nazwy typu obiektu, w tym przypadku Point (punkt), a następnie podawana jest metoda konstrukcji. Aby utworzyć trójwymiarowy punkt określony przez współrzędne kartezjańskie x, y i z, użyj konstruktora *ByCoordinates* („na podstawie współrzędnych”):
 
 ![](images/12-1/GeometryBasics_01.png)
 
-```
+```js
 // create a point with the following x, y, and z
 // coordinates:
 x = 10;
@@ -22,7 +20,7 @@ Większość obiektów ma wiele różnych konstruktorów. Można na przykład u�
 
 ![](images/12-1/GeometryBasics_02.png)
 
-```
+```js
 // create a point on a sphere with the following radius,
 // theta, and phi rotation angles (specified in degrees)
 radius = 5;
@@ -31,14 +29,14 @@ phi = 120.3;
 cs = CoordinateSystem.Identity();
 
 p = Point.BySphericalCoordinates(cs, radius, theta,
-phi);
+    phi);
 ```
 
 Punkty mogą być używane do tworzenia geometrii wyższych wymiarów, np. linii. Za pomocą konstruktora *ByStartPointEndPoint* można utworzyć obiekt linii między dwoma punktami:
 
 ![](images/12-1/GeometryBasics_03.png)
 
-```
+```js
 // create two points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -51,7 +49,7 @@ Podobnie linie mogą być używane do tworzenia geometrii powierzchni wyższych 
 
 ![](images/12-1/GeometryBasics_04.png)
 
-```
+```js
 // create points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -75,7 +73,7 @@ Także powierzchnie mogą być używane do tworzenia geometrii brył wyższych w
 
 ![](images/12-1/GeometryBasics_05.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -95,7 +93,7 @@ Polecenia *Intersection* mogą wyodrębniać geometrię niższych wymiarów z ob
 
 ![](images/12-1/GeometryBasics_06.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -110,12 +108,12 @@ surf = Surface.ByLoft([l1, l2]);
 solid = surf.Thicken(4.75, true);
 
 p = Plane.ByOriginNormal(Point.ByCoordinates(2, 0, 0),
-Vector.ByCoordinates(1, 1, 1));
+    Vector.ByCoordinates(1, 1, 1));
 
 int_surf = solid.Intersect(p);
 
 int_line = int_surf.Intersect(Plane.ByOriginNormal(
-Point.ByCoordinates(0, 0, 0),
-Vector.ByCoordinates(1, 0, 0)));
+    Point.ByCoordinates(0, 0, 0),
+    Vector.ByCoordinates(1, 0, 0)));
 ```
 

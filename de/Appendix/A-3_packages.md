@@ -1,5 +1,5 @@
 ## Dynamo-Pakete
-Im Folgenden sind einige der häufiger in der Dynamo-Community verwendeten Pakete aufgeführt. Entwickler sind aufgefordert, diese Liste zu ergänzen. Denken Sie daran, dass es sich bei [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer )um ein Open-Source-Projekt handelt.
+Im Folgenden sind einige der häufiger in der Dynamo-Community verwendeten Pakete aufgeführt. Entwickler sind aufgefordert, diese Liste zu ergänzen. Denken Sie daran, dass es sich bei [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer ) um ein Open-Source-Projekt handelt.
 
 <table>
    <tr>

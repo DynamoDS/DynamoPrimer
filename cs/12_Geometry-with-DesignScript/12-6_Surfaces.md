@@ -1,5 +1,3 @@
-
-
 # Plochy: Interpolace, řídicí body, spojení profilů, rotace
 
 Dvourozměrná varianta objektu NurbsCurve je objekt NurbsSurface, který lze stejně jako křivku Nurbs volného tvaru vytvořit dvěma základními způsoby: zadáním sady základních bodů a interpolací mezi nimi, nebo explicitním zadáním řídicích bodů plochy. Interpolované plochy jsou užitečné jako křivky volného tvaru v případě, kdy konstruktér zná přesný tvar potřebné plochy, nebo pokud musí plocha procházet určitými body. Na druhou stranu, plochy vytvořené pomocí řídicích bodů mohou být užitečnější pro průzkum různých návrhových možností a úrovní vyhlazování.
@@ -8,7 +6,7 @@ Chcete-li vytvořit interpolovanou plochu, jednoduše vygenerujte dvourozměrnou
 
 ![](images/12-6/Surfaces_01.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -19,7 +17,7 @@ Plochu Nurbs volného tvaru lze vytvořit také určením řídicích bodů ploc
 
 ![](images/12-6/Surfaces_02.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -31,7 +29,7 @@ Stupeň objektu NurbsSurface lze zvýšit a změnit tím výslednou geometrii pl
 
 ![](images/12-6/Surfaces_03.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -43,7 +41,7 @@ Podobně jako lze plochy vytvářet interpolací mezi sadou vstupních bodů, lz
 
 ![](images/12-6/Surfaces_04.png)
 
-```
+```js
 // python_points_2, 3, and 4 are generated with
 // Python scripts found in Chapter 12, Section 10
 
@@ -60,7 +58,7 @@ Plochy rotace se určují pomocí základní křivky, která reprezentuje „hra
 
 ![](images/12-6/Surfaces_05.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(3, 0, 1);
@@ -77,6 +75,6 @@ axis_origin = Point.ByCoordinates(0, 0, 0);
 axis = Vector.ByCoordinates(0, 0, 1);
 
 surf = Surface.ByRevolve(crv, axis_origin, axis, 0,
-360);
+    360);
 ```
 

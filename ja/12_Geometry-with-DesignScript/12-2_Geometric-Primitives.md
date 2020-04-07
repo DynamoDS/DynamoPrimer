@@ -1,5 +1,3 @@
-
-
 # ジオメトリ プリミティブ
 
 Dynamo が多様で複雑なジオメトリ形状を作成できる一方で、単純なジオメトリ プリミティブは、任意の計算設計の中核となり、設計された最終形状で直接表現されるか、より複雑なジオメトリを生成するための足場として使用されます。
@@ -10,7 +8,7 @@ x = 0、y = 0、z = 0 の点を中心とし、回転、スケーリング、せ�
 
 ![](images/12-2/GeometricPrimitives_01.png)
 
-```
+```js
 // create a CoordinateSystem at x = 0, y = 0, z = 0,
 // no rotations, scaling, or sheering transformations
 
@@ -21,7 +19,7 @@ cs = CoordinateSystem.Identity();
 
 ![](images/12-2/GeometricPrimitives_02.png)
 
-```
+```js
 // create a CoordinateSystem at a specific location,
 // no rotations, scaling, or sheering transformations
 x_pos = 3.6;
@@ -32,7 +30,7 @@ origin = Point.ByCoordinates(x_pos, y_pos, z_pos);
 identity = CoordinateSystem.Identity();
 
 cs = CoordinateSystem.ByOriginVectors(origin,
-identity.XAxis, identity.YAxis, identity.ZAxis);
+    identity.XAxis, identity.YAxis, identity.ZAxis);
 ```
 
 最も単純なジオメトリ プリミティブは点であり、3 次元空間でゼロ次元の場所を表します。前に説明したように、特定の座標系での点の作成には、いくつかの異なる方法があります。*Point.ByCoordinates* は X、Y、Z 座標を指定して点を作成し、*Point.ByCartesianCoordinates* は特定の座標系で X、Y、Z 座標を指定して点を作成し、*Point.ByCylindricalCoordinates* は半径、回転角度、および高さを使用して円柱上にある点を作成し、*Point.BySphericalCoordinates* は半径と 2 つの回転角度を使用して球上にある点を作成します。
@@ -41,7 +39,7 @@ identity.XAxis, identity.YAxis, identity.ZAxis);
 
 ![](images/12-2/GeometricPrimitives_03.png)
 
-```
+```js
 // create a point with x, y, and z coordinates
 x_pos = 1;
 y_pos = 2;
@@ -52,7 +50,7 @@ pCoord = Point.ByCoordinates(x_pos, y_pos, z_pos);
 // create a point in a specific coordinate system
 cs = CoordinateSystem.Identity();
 pCoordSystem = Point.ByCartesianCoordinates(cs, x_pos,
-y_pos, z_pos);
+    y_pos, z_pos);
 
 // create a point on a cylinder with the following
 // radius and height
@@ -61,21 +59,21 @@ height = 15;
 theta = 75.5;
 
 pCyl = Point.ByCylindricalCoordinates(cs, radius, theta,
-height);
+    height);
 
 // create a point on a sphere with radius and two angles
 
 phi = 120.3;
 
 pSphere = Point.BySphericalCoordinates(cs, radius, 
-theta, phi);
+    theta, phi);
 ```
 
 次に高い次元の Dynamo プリミティブは線分セグメントで、2 つの端点間にある無限の数の点を表します。*Line.ByStartPointEndPoint* コンストラクタを使用して 2 つの境界点を明示的に指定するか、*Line.ByStartPointDirectionLength* で開始点、方向、およびその方向の長さを指定することで、線分を作成できます。
 
 ![](images/12-2/GeometricPrimitives_04.png)
 
-```
+```js
 p1 = Point.ByCoordinates(-2, -5, -10);
 p2 = Point.ByCoordinates(6, 8, 10);
 
@@ -85,14 +83,14 @@ l2pts = Line.ByStartPointEndPoint(p1, p2);
 // a line segment at p1 in direction 1, 1, 1 with 
 // length 10
 lDir = Line.ByStartPointDirectionLength(p1,
-Vector.ByCoordinates(1, 1, 1), 10);
+    Vector.ByCoordinates(1, 1, 1), 10);
 ```
 
 Dynamo には、最も基本的なタイプのジオメトリ プリミティブを 3 次元で表すオブジェクトがあります。*Cuboid.ByLengths* で作成される直方体、*Cone.ByPointsRadius* および *Cone.ByPointsRadii* で作成される円錐、*Cylinder.ByRadiusHeight* で作成される円柱、*Sphere.ByCenterPointRadius* で作成される球です。
 
 ![](images/12-2/GeometricPrimitives_05.png)
 
-```
+```js
 // create a cuboid with specified lengths
 cs = CoordinateSystem.Identity();
 

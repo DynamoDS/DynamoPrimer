@@ -1,5 +1,3 @@
-
-
 # 交集和修剪
 
 到目前為止，許多範例都將重點放在從較低維度的物件建構較高維度的幾何圖形。交集的方法允許這種較高維度的幾何圖形產生較低維度的物件，而修剪和選取修剪的指令則允許腳本在建立幾何圖形後大幅修改幾何形狀。
@@ -19,7 +17,7 @@ Dynamo 針對所有幾何圖形都定義了 *Intersect* 方法，表示理論上
 
 ![](images/12-8/IntersectionAndTrim_01.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -28,7 +26,7 @@ surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 WCS = CoordinateSystem.Identity();
 
 pl = Plane.ByOriginNormal(WCS.Origin.Translate(0, 0,
-0.5), WCS.ZAxis);
+    0.5), WCS.ZAxis);
 
 // intersect surface, generating three closed curves
 crvs = surf.Intersect(pl);
@@ -52,14 +50,14 @@ crvs_moved = crvs.Translate(0, 0, 10);
 
 ![](images/12-8/IntersectionAndTrim_02.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
 tool_pts = Point.ByCoordinates((-10..20..10)<1>,
-(-10..20..10)<2>, 1);
+    (-10..20..10)<2>, 1);
 
 tool = NurbsSurface.ByPoints(tool_pts);
 

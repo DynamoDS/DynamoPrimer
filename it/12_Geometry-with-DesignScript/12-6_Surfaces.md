@@ -1,5 +1,3 @@
-
-
 # Superfici: punti interpolati e di controllo, loft, rivoluzione
 
 L'analogia bidimensionale con una NurbsCurve è la NurbsSurface e, come la NurbsCurve di forma libera, le NurbsSurface possono essere costruite con due metodi di base: l'inserimento di un insieme di punti base con l'interpolazione di Dynamo tra di essi e l'indicazione esplicita dei punti di controllo della superficie. Come per le curve a mano libera, le superfici interpolate sono utili quando un progettista conosce con precisione la forma che una superficie deve assumere o se un progetto richiede che la superficie attraversi punti di vincolo. Dall'altra parte, le superfici create mediante punti di controllo possono essere più utili per la progettazione esplorativa in diversi livelli di levigatezza.
@@ -8,7 +6,7 @@ Per creare una superficie interpolata, è sufficiente generare una raccolta bidi
 
 ![](images/12-6/Surfaces_01.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -19,7 +17,7 @@ Le NurbsSurface di forma libera possono essere create anche specificando i punti
 
 ![](images/12-6/Surfaces_02.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -31,7 +29,7 @@ surf = NurbsSurface.ByPoints(python_points_1, 2, 2);
 
 ![](images/12-6/Surfaces_03.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -43,7 +41,7 @@ Così come è possibile creare le superfici interpolando un insieme di punti di 
 
 ![](images/12-6/Surfaces_04.png)
 
-```
+```js
 // python_points_2, 3, and 4 are generated with
 // Python scripts found in Chapter 12, Section 10
 
@@ -60,7 +58,7 @@ Le superfici di rivoluzione sono specificate da una curva di base, che rappresen
 
 ![](images/12-6/Surfaces_05.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(3, 0, 1);
@@ -77,6 +75,6 @@ axis_origin = Point.ByCoordinates(0, 0, 0);
 axis = Vector.ByCoordinates(0, 0, 1);
 
 surf = Surface.ByRevolve(crv, axis_origin, axis, 0,
-360);
+    360);
 ```
 

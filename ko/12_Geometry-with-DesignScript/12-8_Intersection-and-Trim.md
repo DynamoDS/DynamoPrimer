@@ -1,5 +1,3 @@
-
-
 # 교차 및 자르기
 
 지금까지 많은 예는 더 낮은 차원의 객체에서 더 높은 차원의 형상을 생성하는 데 초점을 맞추었습니다. 교차 메서드를 사용하면 더 높은 차원의 형상에서 더 낮은 차원의 객체를 생성할 수 있으며, 자르기 및 선택 자르기 명령을 사용하면 기하학적 형태가 작성된 후에 스크립트를 통해 세밀하게 수정할 수 있습니다.
@@ -19,7 +17,7 @@
 
 ![](images/12-8/IntersectionAndTrim_01.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -28,7 +26,7 @@ surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 WCS = CoordinateSystem.Identity();
 
 pl = Plane.ByOriginNormal(WCS.Origin.Translate(0, 0,
-0.5), WCS.ZAxis);
+    0.5), WCS.ZAxis);
 
 // intersect surface, generating three closed curves
 crvs = surf.Intersect(pl);
@@ -51,14 +49,14 @@ crvs_moved = crvs.Translate(0, 0, 10);
 
 ![](images/12-8/IntersectionAndTrim_02.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
 tool_pts = Point.ByCoordinates((-10..20..10)<1>,
-(-10..20..10)<2>, 1);
+    (-10..20..10)<2>, 1);
 
 tool = NurbsSurface.ByPoints(tool_pts);
 
