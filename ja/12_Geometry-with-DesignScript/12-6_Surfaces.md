@@ -1,5 +1,3 @@
-
-
 # サーフェス: 補間、制御点、ロフト、回転
 
 2 次元のアナログから NURBS 曲線への変換が NURBS 曲面であり、フリーフォーム NURBS 曲線のように、2 つの基本的な方法で NURBS 曲面を構築できます。その方法とは、基点のセットを入力して Dynamo によってその間を補間する方法と、サーフェスの制御点を明示的に指定する方法です。また、フリーフォーム曲線のように、補間によるサーフェスは、サーフェスが取るべき形状を設計者が正確に認識している場合や、サーフェスが拘束点を通過することが必要な設計の場合に便利です。一方、制御点によって作成されたサーフェスは、さまざまなスムージング レベルで実験的な設計を行う場合に便利です。
@@ -8,7 +6,7 @@
 
 ![](images/12-6/Surfaces_01.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -19,7 +17,7 @@ surf = NurbsSurface.ByPoints(python_points_1);
 
 ![](images/12-6/Surfaces_02.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -31,7 +29,7 @@ NURBS 曲面の次数を増やして、結果として得られるサーフェ�
 
 ![](images/12-6/Surfaces_03.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -43,7 +41,7 @@ surf = NurbsSurface.ByPoints(python_points_1, 6, 6);
 
 ![](images/12-6/Surfaces_04.png)
 
-```
+```js
 // python_points_2, 3, and 4 are generated with
 // Python scripts found in Chapter 12, Section 10
 
@@ -60,7 +58,7 @@ loft = Surface.ByLoft([c1, c2, c3]);
 
 ![](images/12-6/Surfaces_05.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(3, 0, 1);
@@ -77,6 +75,6 @@ axis_origin = Point.ByCoordinates(0, 0, 0);
 axis = Vector.ByCoordinates(0, 0, 1);
 
 surf = Surface.ByRevolve(crv, axis_origin, axis, 0,
-360);
+    360);
 ```
 

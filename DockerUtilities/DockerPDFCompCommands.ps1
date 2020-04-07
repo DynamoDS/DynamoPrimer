@@ -11,6 +11,3 @@ Foreach ($language in $ArrayParameter)
     & "$GhostScript" -dColorImageResolution="$pdfcompress_colorimageresolution" -dPDFSETTINGS=/"$pdfcompress_pdfsettings" -dBATCH -dNOPAUSE -sDEVICE="$pdfcompress_device" -sOutputFile="$OutputFile" "$InputFile"
     Remove-Item -Force -Path $InputFile
 }
-
-
-

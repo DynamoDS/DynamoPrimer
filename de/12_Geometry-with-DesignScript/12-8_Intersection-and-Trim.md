@@ -1,5 +1,3 @@
-
-
 # Schnittpunkt und Stutzen
 
 Viele der bisherigen Beispiele bezogen sich auf die Konstruktion einer höherdimensionalen Geometrie aus niedrigerdimensionalen Objekten. Mit Intersection-Methoden können diese höherdimensionalen Geometrien Objekte mit niedrigerer Dimension generieren, während die Befehle Trim und SelectTrim es ermöglichen, geometrische Formen mit Skripts stark zu ändern, nachdem sie erstellt wurden.
@@ -19,7 +17,7 @@ Das folgende sehr einfache Beispiel zeigt die Überschneidung einer Ebene mit ei
 
 ![](images/12-8/IntersectionAndTrim_01.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -28,7 +26,7 @@ surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 WCS = CoordinateSystem.Identity();
 
 pl = Plane.ByOriginNormal(WCS.Origin.Translate(0, 0,
-0.5), WCS.ZAxis);
+    0.5), WCS.ZAxis);
 
 // intersect surface, generating three closed curves
 crvs = surf.Intersect(pl);
@@ -52,14 +50,14 @@ Erwähnenswert bei den *Trim*-Methoden ist die Anforderung eines Select-Punkts, 
 
 ![](images/12-8/IntersectionAndTrim_02.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
 tool_pts = Point.ByCoordinates((-10..20..10)<1>,
-(-10..20..10)<2>, 1);
+    (-10..20..10)<2>, 1);
 
 tool = NurbsSurface.ByPoints(tool_pts);
 

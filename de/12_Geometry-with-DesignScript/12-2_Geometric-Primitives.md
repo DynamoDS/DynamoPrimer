@@ -1,5 +1,3 @@
-
-
 # Geometrische Grundkörper
 
 Zwar ist Dynamo in der Lage, eine Reihe komplexer geometrischer Formen zu erstellen, jedoch bilden einfache geometrische Grundkörper die Grundlage jedes computergestützten Entwurfs: entweder als direkter Ausdruck in der endgültigen Entwurfsform oder als Gerüst für die Erstellung einer komplexeren Geometrie.
@@ -10,7 +8,7 @@ Zum Erstellen eines an einem Punkt mit x = 0, y = 0, z = 0 zentrierten Koordinat
 
 ![](images/12-2/GeometricPrimitives_01.png)
 
-```
+```js
 // create a CoordinateSystem at x = 0, y = 0, z = 0,
 // no rotations, scaling, or sheering transformations
 
@@ -21,7 +19,7 @@ Koordinatensysteme mit geometrischen Transformationen gehen über den Umfang die
 
 ![](images/12-2/GeometricPrimitives_02.png)
 
-```
+```js
 // create a CoordinateSystem at a specific location,
 // no rotations, scaling, or sheering transformations
 x_pos = 3.6;
@@ -32,7 +30,7 @@ origin = Point.ByCoordinates(x_pos, y_pos, z_pos);
 identity = CoordinateSystem.Identity();
 
 cs = CoordinateSystem.ByOriginVectors(origin,
-identity.XAxis, identity.YAxis, identity.ZAxis);
+    identity.XAxis, identity.YAxis, identity.ZAxis);
 ```
 
 Der einfachste geometrische Grundkörper ist ein Punkt, der eine nulldimensionale Position im dreidimensionalen Raum darstellt. Wie bereits erwähnt gibt es verschiedene Möglichkeiten zum Erstellen eines Punkts in einem bestimmten Koordinatensystem: *Point.ByCoordinates* erstellt einen Punkt mithilfe der gegebenen Koordinaten x, y und z, *Point.ByCartesianCoordinates* erstellt einen Punkt mithilfe der gegebenen Koordinaten x, y und z in einem bestimmten Koordinatensystem, *Point.ByCylindricalCoordinates* erstellt einen Punkt, der auf einem Zylinder mit gegebenen Werten für Radius, Drehwinkel und Höhe liegt und * Point.BySphericalCoordinates* erstellt einen Punkt auf einer Kugel mit einem gegebenen Radius und zwei Drehwinkeln.
@@ -41,7 +39,7 @@ Dieses Beispiel zeigt Punkte, die in unterschiedlichen Koordinatensystemen erste
 
 ![](images/12-2/GeometricPrimitives_03.png)
 
-```
+```js
 // create a point with x, y, and z coordinates
 x_pos = 1;
 y_pos = 2;
@@ -52,7 +50,7 @@ pCoord = Point.ByCoordinates(x_pos, y_pos, z_pos);
 // create a point in a specific coordinate system
 cs = CoordinateSystem.Identity();
 pCoordSystem = Point.ByCartesianCoordinates(cs, x_pos,
-y_pos, z_pos);
+    y_pos, z_pos);
 
 // create a point on a cylinder with the following
 // radius and height
@@ -61,21 +59,21 @@ height = 15;
 theta = 75.5;
 
 pCyl = Point.ByCylindricalCoordinates(cs, radius, theta,
-height);
+    height);
 
 // create a point on a sphere with radius and two angles
 
 phi = 120.3;
 
 pSphere = Point.BySphericalCoordinates(cs, radius, 
-theta, phi);
+    theta, phi);
 ```
 
 Der nächsthöherdimensionale Dynamo-Grundkörper ist ein Liniensegment, das eine unendliche Anzahl von Punkten zwischen zwei Endpunkten darstellt. Linien können explizit erstellt werden, indem Sie die beiden Grenzpunkte mit dem Konstruktor *Line.ByStartPointEndPoint* angeben, oder durch Angabe eines Startpunkts, einer Richtung und Länge in dieser Richtung mittels *Line.ByStartPointDirectionLength*.
 
 ![](images/12-2/GeometricPrimitives_04.png)
 
-```
+```js
 p1 = Point.ByCoordinates(-2, -5, -10);
 p2 = Point.ByCoordinates(6, 8, 10);
 
@@ -85,14 +83,14 @@ l2pts = Line.ByStartPointEndPoint(p1, p2);
 // a line segment at p1 in direction 1, 1, 1 with 
 // length 10
 lDir = Line.ByStartPointDirectionLength(p1,
-Vector.ByCoordinates(1, 1, 1), 10);
+    Vector.ByCoordinates(1, 1, 1), 10);
 ```
 
 Dynamo verfügt über Objekte, die grundlegende Typen geometrischer Grundkörper in drei Dimensionen darstellen: Quader, erstellt mit *Cuboid.ByLengths*; Kegel, erstellt mit *Cone.ByPointsRadius* und *Cone.ByPointsRadii*; Zylinder, erstellt mit *Cylinder.ByRadiusHeight* sowie Kugeln, erstellt mit *Sphere.ByCenterPointRadius*.
 
 ![](images/12-2/GeometricPrimitives_05.png)
 
-```
+```js
 // create a cuboid with specified lengths
 cs = CoordinateSystem.Identity();
 

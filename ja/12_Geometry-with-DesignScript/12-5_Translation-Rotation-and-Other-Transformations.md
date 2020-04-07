@@ -1,5 +1,3 @@
-
-
 # 移動、回転、およびその他の変換
 
 3 次元空間で X、Y、Z 座標を明示的に指定することで、特定のジオメトリ オブジェクトを作成できます。ただし、多くの場合、オブジェクト自体またはその基礎となる座標系でジオメトリ変換を使用して、ジオメトリを最終的な位置に移動します。
@@ -8,7 +6,7 @@
 
 ![](images/12-5/Transformations_01.png)
 
-```
+```js
 // create a point at x = 1, y = 2, z = 3
 p = Point.ByCoordinates(1, 2, 3);
 
@@ -22,13 +20,13 @@ Dynamo 内のすべてのオブジェクトは、オブジェクト名の末尾�
 
 ![](images/12-5/Transformations_02.png)
 
-```
+```js
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(),
-10, 10, 10);
+    10, 10, 10);
 
 new_cs = CoordinateSystem.Identity();
 new_cs2 = new_cs.Rotate(Point.ByCoordinates(0, 0),
-Vector.ByCoordinates(1,0,0.5), 25);
+    Vector.ByCoordinates(1,0,0.5), 25);
 
 // get the existing coordinate system of the cube
 old_cs = CoordinateSystem.Identity();
@@ -40,9 +38,9 @@ cube2 = cube.Transform(old_cs, new_cs2);
 
 ![](images/12-5/Transformations_03.png)
 
-```
+```js
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(),
-10, 10, 10);
+    10, 10, 10);
 
 new_cs = CoordinateSystem.Identity();
 new_cs2 = new_cs.Scale(20);
@@ -56,16 +54,16 @@ cube2 = cube.Transform(old_cs, new_cs2);
 
 ![](images/12-5/Transformations_04.png)
 
-```
+```js
 new_cs = CoordinateSystem.ByOriginVectors(
-Point.ByCoordinates(0, 0, 0),
-Vector.ByCoordinates(-1, -1, 1),
-Vector.ByCoordinates(-0.4, 0, 0));
+    Point.ByCoordinates(0, 0, 0),
+	Vector.ByCoordinates(-1, -1, 1),
+	Vector.ByCoordinates(-0.4, 0, 0));
 
 old_cs = CoordinateSystem.Identity();
 
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(), 
-5, 5, 5);
+    5, 5, 5);
 
 new_curves = cube.Transform(old_cs, new_cs);
 ```

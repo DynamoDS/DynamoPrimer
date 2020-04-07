@@ -1,19 +1,59 @@
-
+<style>
+table{box-shadow: 2px 2px 2px #BBBBBB;max-width:75%;display:block;margin-left: auto;   margin-right: auto }
+img{display:block;margin-left: auto;   margin-right: auto }
+</style>
 
 ## 省略表記
 
 コード ブロックにはデータ管理を*大幅に*容易にする基本的な省略表記方法がいくつかあります。 ここでは基本の概要を示し、この省略表記をデータの作成とクエリーの両方に使用する方法を説明します。
 
-|データ タイプ|標準 Dynamo|コード ブロックの同等表記|
-| -- | -- | -- |
-|数値|![](images/7-3/table/number.jpg)|![](images/7-3/table/numberCB.jpg)|
-|文字列|![](images/7-3/table/string.jpg)|![](images/7-3/table/stringCB.jpg)|
-|シーケンス|![](images/7-3/table/sequence.jpg)|![](images/7-3/table/sequenceCB.jpg)|
-|範囲|![](images/7-3/table/range.jpg)|![](images/7-3/table/rangeCB.jpg)|
-|インデックスでの項目の取得|![](images/7-3/table/getItem.jpg)|![](images/7-3/table/getItemCB.jpg)|
-|リストの作成|![](images/7-3/table/list.jpg)|![](images/7-3/table/listCB.jpg)|
-|文字列の連結|![](images/7-3/table/concat.jpg)|![](images/7-3/table/concatCB.jpg)|
-|条件ステートメント|![](images/7-3/table/if.jpg)|![](images/7-3/table/ifCB.jpg)|
+<table>
+    <tr>
+    <td width="50%"><b>データ タイプ</b></td>
+    <td width="25%"><b>標準 Dynamo</b> </td>
+    <td width="25%"><b>コード ブロックの同等表記</b></td>
+  </tr>
+  <tr>
+    <td> 数値</td>
+    <td><img src="images/7-3/table/number.jpg"></img> </td>
+    <td><img src="images/7-3/table/numberCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>文字列</td>
+    <td><img src="images/7-3/table/string.jpg"></img> </td>
+    <td><img src="images/7-3/table/stringCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>シーケンス</td>
+    <td><img src="images/7-3/table/sequence.jpg"></img> </td>
+    <td><img src="images/7-3/table/sequenceCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>範囲</td>
+    <td><img src="images/7-3/table/range.jpg"></img> </td>
+    <td><img src="images/7-3/table/rangeCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>インデックスでの項目の取得</td>
+    <td><img src="images/7-3/table/getItem.jpg"></img> </td>
+    <td><img src="images/7-3/table/getItemCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>リストの作成</td>
+    <td><img src="images/7-3/table/list.jpg"></img> </td>
+    <td><img src="images/7-3/table/listCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>文字列の連結</td>
+    <td><img src="images/7-3/table/concat.jpg"></img> </td>
+    <td><img src="images/7-3/table/concatCB.jpg"></img></td>
+  </tr>
+  <tr>
+    <td>条件ステートメント</td>
+    <td><img src="images/7-3/table/if.jpg"></img> </td>
+    <td><img src="images/7-3/table/ifCB.jpg"></img></td>
+  </tr>
+</table>
 
 ### その他の構文
 

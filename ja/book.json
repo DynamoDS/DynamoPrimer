@@ -7,52 +7,88 @@
 		{
 			"name": "dynamo",
 			"version": "git+https://github.com/masself/gitbook-plugin-dynamo.git"
-		}    
+		}
 	],
 	"pluginsConfig": {
 		"ga": {
 			"token": "UA-52186525-3"
 		},
 		"dynamo": {
-			"customLinks":[
-				{            
+			"customLinks": [
+				{
 					"label": "Download",
 					"icon": "fa fa-file-pdf-o fa-lg",
 					"url": "https://primer.dynamobim.org/ja/Appendix/DynamoPrimer-Print.pdf"
-				}],
-			"languages":[
-				 {
-		"label": "Deutsch",
-		"code":"de",
-			"url": "https://primer.dynamobim.org/de"
-				 },
-				 {
-		"label": "日本語",
-		"code": "ja",
-			"url": "https://primer.dynamobim.org/ja"
-				 },
-				 {
-		"label": "中文(繁體)",
-		"code":"zh-tw",
-			"url": "https://primer.dynamobim.org/zh-tw"
-				 },
-				 {
-		"label": "",
-		"code": "",
-			"url": ""
-				 },
-				 {
-		"label": "",
-		"code": "",
-			"url": ""
-				 }
+				}
 			],
-			"currentLanguage":{
-				 "code":"en",
-				 "url":"https://primer.dynamobim.org/en",
-				 "switchLangLabel":"Languages"
+			"languages": [
+				{
+					"label": "English",
+					"code": "en",
+					"url": "https://primer.dynamobim.org/en"
+				},
+				{
+					"label": "Deutsch",
+					"code": "de",
+					"url": "https://primer.dynamobim.org/de"
+				},
+				{
+					"label": "中文(繁體)",
+					"code": "zh-tw",
+					"url": "https://primer.dynamobim.org/zh-tw"
+				},
+				{
+					"label": "中文(简体)",
+					"code": "zh-cn",
+					"url": "https://primer.dynamobim.org/zh-cn"
+				},
+				{
+					"label": "Français",
+					"code": "fr",
+					"url": "https://primer.dynamobim.org/fr"
+				},
+				{
+					"label": "Čeština",
+					"code": "cs",
+					"url": "https://primer.dynamobim.org/cs"
+				},
+				{
+					"label": "Italiano",
+					"code": "it",
+					"url": "https://primer.dynamobim.org/it"
+				},
+				{
+					"label": "한국어",
+					"code": "ko",
+					"url": "https://primer.dynamobim.org/ko"
+				},
+				{
+					"label": "Polski",
+					"code": "pl",
+					"url": "https://primer.dynamobim.org/pl"
+				},
+				{
+					"label": "Português(Brasil)",
+					"code": "pt-br",
+					"url": "https://primer.dynamobim.org/pt-br"
+				},
+				{
+					"label": "Русский",
+					"code": "ru",
+					"url": "https://primer.dynamobim.org/ru"
+				},
+				{
+					"label": "Español",
+					"code": "es",
+					"url": "https://primer.dynamobim.org/es"
+				}
+			],
+			"currentLanguage": {
+				"code": "ja",
+				"url": "https://primer.dynamobim.org/ja",
+				"switchLangLabel": "言語"
 			},
-			"favicon":"/images/icons/favicon.ico"
+			"favicon": "/images/icons/favicon.ico"
 		}
 	}
 }

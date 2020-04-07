@@ -1,5 +1,3 @@
-
-
 # Vektormathematik
 
 Objekte in computergestützten Entwürfen werden selten explizit in ihrer endgültigen Position und Form erstellt, meist werden sie verschoben, gedreht und anderweitig anhand von bestehender Geometrie positioniert. Die Vektormathematik dient als eine Art geometrisches Gerüst, um der Geometrie Richtung und Ausrichtung zu verleihen sowie Bewegungen durch den dreidimensionalen Raum ohne visuelle Darstellung zu konzeptuieren.
@@ -8,7 +6,7 @@ In seiner einfachsten Form stellt ein Vektor eine Position im dreidimensionalen 
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ Vektoraddition ist definiert als die Summe der Komponenten von zwei Vektoren. Ma
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ Gleichermaßen können zwei Vektorobjekte mit der Methode *Subtract* voneinander
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ Vektormultiplikation kann man sich so vorstellen, dass der Endpunkt eines Vektor
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ Häufig ist beim Skalieren eines Vektors erwünscht, dass die Länge des resulti
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ In der Vektormathematik gibt es zwei weitere Methoden, die keine eindeutigen Par
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ Eine weitere, wenn auch fortgeschrittenere Funktion der Vektormathematik ist das
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 
