@@ -18,74 +18,74 @@
 				{
 					"label": "Download",
 					"icon": "fa fa-file-pdf-o fa-lg",
-					"url": "http://staging.dynamoprimer.com/zh-tw/Appendix/DynamoPrimer-Print.pdf"
+					"url": "https://primer.dynamobim.org/zh-tw/Appendix/DynamoPrimer-Print.pdf"
 				}
 			],
 			"languages": [
 				{
 					"label": "English",
 					"code": "en",
-					"url": "http://staging.dynamoprimer.com/en"
+					"url": "https://primer.dynamobim.org/en"
 				},
 				{
 					"label": "Deutsch",
 					"code": "de",
-					"url": "http://staging.dynamoprimer.com/de"
+					"url": "https://primer.dynamobim.org/de"
 				},
 				{
 					"label": "日本語",
 					"code": "ja",
-					"url": "http://staging.dynamoprimer.com/ja"
+					"url": "https://primer.dynamobim.org/ja"
 				},
 				{
 					"label": "中文(简体)",
 					"code": "zh-cn",
-					"url": "http://staging.dynamoprimer.com/zh-cn"
+					"url": "https://primer.dynamobim.org/zh-cn"
 				},
 				{
 					"label": "Français",
 					"code": "fr",
-					"url": "http://staging.dynamoprimer.com/fr"
+					"url": "https://primer.dynamobim.org/fr"
 				},
 				{
 					"label": "Čeština",
 					"code": "cs",
-					"url": "http://staging.dynamoprimer.com/cs"
+					"url": "https://primer.dynamobim.org/cs"
 				},
 				{
 					"label": "Italiano",
 					"code": "it",
-					"url": "http://staging.dynamoprimer.com/it"
+					"url": "https://primer.dynamobim.org/it"
 				},
 				{
 					"label": "한국어",
 					"code": "ko",
-					"url": "http://staging.dynamoprimer.com/ko"
+					"url": "https://primer.dynamobim.org/ko"
 				},
 				{
 					"label": "Polski",
 					"code": "pl",
-					"url": "http://staging.dynamoprimer.com/pl"
+					"url": "https://primer.dynamobim.org/pl"
 				},
 				{
 					"label": "Português(Brasil)",
 					"code": "pt-br",
-					"url": "http://staging.dynamoprimer.com/pt-br"
+					"url": "https://primer.dynamobim.org/pt-br"
 				},
 				{
 					"label": "Русский",
 					"code": "ru",
-					"url": "http://staging.dynamoprimer.com/ru"
+					"url": "https://primer.dynamobim.org/ru"
 				},
 				{
 					"label": "Español",
 					"code": "es",
-					"url": "http://staging.dynamoprimer.com/es"
+					"url": "https://primer.dynamobim.org/es"
 				}
 			],
 			"currentLanguage": {
 				"code": "zh-tw",
-				"url": "http://staging.dynamoprimer.com/zh-tw",
+				"url": "https://primer.dynamobim.org/zh-tw",
 				"switchLangLabel": "語言"
 			},
 			"favicon": "/images/icons/favicon.ico"
