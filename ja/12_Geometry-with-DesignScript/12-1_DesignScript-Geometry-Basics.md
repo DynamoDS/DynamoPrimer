@@ -1,12 +1,10 @@
-
-
 # DesignScript ジオメトリの基本
 
 Dynamo の標準のジオメトリ ライブラリで最も単純なジオメトリ オブジェクトは、点です。すべてのジオメトリはコンストラクタという特別な関数を使用して作成され、各関数はその特定のジオメトリ タイプの新しいインスタンスを返します。Dynamo では、コンストラクタの名前はオブジェクトのタイプ(この場合は Point)で始まり、構築メソッドが続きます。X、Y、Z のデカルト座標で指定された 3 次元の点を作成するには、次のように *ByCoordinates* コンストラクタを使用します。
 
 ![](images/12-1/GeometryBasics_01.png)
 
-```
+```js
 // create a point with the following x, y, and z
 // coordinates:
 x = 10;
@@ -22,7 +20,7 @@ Dynamo では、コンストラクタは通常、接頭表記「*By*」を使用
 
 ![](images/12-1/GeometryBasics_02.png)
 
-```
+```js
 // create a point on a sphere with the following radius,
 // theta, and phi rotation angles (specified in degrees)
 radius = 5;
@@ -31,14 +29,14 @@ phi = 120.3;
 cs = CoordinateSystem.Identity();
 
 p = Point.BySphericalCoordinates(cs, radius, theta,
-phi);
+    phi);
 ```
 
 点を使用して、線分などのより高い次元のジオメトリを構築できます。次のように *ByStartPointEndPoint* コンストラクタを使用すると、2 つの点の間に Line オブジェクトを作成できます。
 
 ![](images/12-1/GeometryBasics_03.png)
 
-```
+```js
 // create two points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -51,7 +49,7 @@ l = Line.ByStartPointEndPoint(p1, p2);
 
 ![](images/12-1/GeometryBasics_04.png)
 
-```
+```js
 // create points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -75,7 +73,7 @@ surf = Surface.ByLoft([l1, l2, l3]);
 
 ![](images/12-1/GeometryBasics_05.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -95,7 +93,7 @@ solid = surf.Thicken(4.75, true);
 
 ![](images/12-1/GeometryBasics_06.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -110,12 +108,12 @@ surf = Surface.ByLoft([l1, l2]);
 solid = surf.Thicken(4.75, true);
 
 p = Plane.ByOriginNormal(Point.ByCoordinates(2, 0, 0),
-Vector.ByCoordinates(1, 1, 1));
+    Vector.ByCoordinates(1, 1, 1));
 
 int_surf = solid.Intersect(p);
 
 int_line = int_surf.Intersect(Plane.ByOriginNormal(
-Point.ByCoordinates(0, 0, 0),
-Vector.ByCoordinates(1, 0, 0)));
+    Point.ByCoordinates(0, 0, 0),
+    Vector.ByCoordinates(1, 0, 0)));
 ```
 

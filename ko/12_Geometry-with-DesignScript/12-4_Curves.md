@@ -1,5 +1,3 @@
-
-
 # 곡선: 보간 및 제어점
 
 Dynamo에는 자유형 곡선을 만드는 두 가지 기본적인 방법이 있습니다. 점 모음을 지정하고 Dynamo에서 점 간에 부드러운 곡선을 보간하도록 하거나, 특정 차수 곡선의 기본 제어점을 지정하는 보다 쉬운 방법을 사용할 수 있습니다. 보간된 곡선은 설계자가 필요한 선의 형태를 정확히 알고 있거나 설계에 곡선이 통과할 수 있는 경우와 통과할 수 없는 경우에 대한 특정 구속조건이 있을 때 유용합니다. 제어점을 통해 지정된 곡선은 본질적으로 알고리즘이 최종 곡선 형태로 부드럽게 연결되는 일련의 직선 세그먼트입니다. 제어점을 통해 곡선을 지정하면 다듬기 차수가 다양한 곡선 형태를 살펴보거나, 곡선 세그먼트 간에 매끄럽게 연결되어야 하는 경우에 유용할 수 있습니다.
@@ -8,7 +6,7 @@ Dynamo에는 자유형 곡선을 만드는 두 가지 기본적인 방법이 있
 
 ![](images/12-4/Curves_01.png)
 
-```
+```js
 num_pts = 6;
 
 s = Math.Sin(0..360..#num_pts) * 4;
@@ -22,27 +20,27 @@ int_curve = NurbsCurve.ByPoints(pts);
 
 ![](images/12-4/Curves_02.png)
 
-```
+```js
 pts = Point.ByCoordinates(Math.Cos(0..350..#10),
-Math.Sin(0..350..#10), 0);
+    Math.Sin(0..350..#10), 0);
 
 // create an closed curve
 crv = NurbsCurve.ByPoints(pts, true);
 
 // the same curve, if left open:
 crv2 = NurbsCurve.ByPoints(pts.Translate(5, 0, 0),
-false);
+    false);
 ```
 
 NurbsCurve는 많은 부분 동일한 방식으로 생성됩니다. 입력 점이 직선 세그먼트의 끝점을 나타내고, 두 번째 매개변수가 곡선에 적용되는 다듬기의 정도와 유형을 지정합니다.* 차수가 1인 곡선은 매끄러움이 없는 폴리선입니다.
 
 ![](images/12-4/Curves_03.png)
 
-```
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
-Math.Sin(0..360..#num_pts) * 4, 0);
+    Math.Sin(0..360..#num_pts) * 4, 0);
 
 // a B-Spline curve with degree 1 is a polyline
 ctrl_curve = NurbsCurve.ByControlPoints(pts, 1);
@@ -52,11 +50,11 @@ ctrl_curve = NurbsCurve.ByControlPoints(pts, 1);
 
 ![](images/12-4/Curves_04.png)
 
-```
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
-Math.Sin(0..360..#num_pts) * 4, 0);
+    Math.Sin(0..360..#num_pts) * 4, 0);
 
 // a B-Spline curve with degree 2 is smooth
 ctrl_curve = NurbsCurve.ByControlPoints(pts, 2);
@@ -66,16 +64,16 @@ Dynamo는 차수 20까지 NURBS(비균일 유리 B-스플라인) 곡선을 지�
 
 ![](images/12-4/Curves_05.png)
 
-```
+```js
 num_pts = 6;
 
 pts = Point.ByCoordinates(1..30..#num_pts,
-Math.Sin(0..360..#num_pts) * 4, 0);
+    Math.Sin(0..360..#num_pts) * 4, 0);
 
 def create_curve(pts : Point[], degree : int) 
 {
-return = NurbsCurve.ByControlPoints(pts,
-degree);
+	return = NurbsCurve.ByControlPoints(pts,
+        degree);
 }
 
 ctrl_crvs = create_curve(pts, 1..11);
@@ -87,7 +85,7 @@ ctrl_crvs = create_curve(pts, 1..11);
 
 ![](images/12-4/Curves_06.png)
 
-```
+```js
 pts_1 = {};
 
 pts_1[0] = Point.ByCoordinates(0, 0, 0);
@@ -104,7 +102,7 @@ pts_2[0] = pts_1[4];
 end_dir = pts_1[4].Subtract(pts_1[3].AsVector());
 
 pts_2[1] = Point.ByCoordinates(pts_2[0].X + end_dir.X,
-pts_2[0].Y + end_dir.Y, pts_2[0].Z + end_dir.Z);
+    pts_2[0].Y + end_dir.Y, pts_2[0].Z + end_dir.Z);
 
 pts_2[2] = Point.ByCoordinates(15, 1, 0);
 pts_2[3] = Point.ByCoordinates(18, -2, 0);

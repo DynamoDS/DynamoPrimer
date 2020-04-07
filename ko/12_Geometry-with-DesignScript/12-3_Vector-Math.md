@@ -1,5 +1,3 @@
-
-
 # 벡터 수학
 
 계산 방식 설계의 객체는 최종 위치와 형태로 명시적으로 작성되는 경우가 드물며, 기존 형상을 기준으로 변환하고 회전되고 배치되는 경우가 많습니다. 벡터 수학은 형상에 방향을 지정할 뿐 아니라 시각적 표현 없이 3D 공간을 통한 이동을 개념화할 수 있는 일종의 기하학적 비계 역할을 합니다.
@@ -8,7 +6,7 @@
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ s = v.X + " " + v.Y + " " + v.Z;
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ c = a.Add(b);
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ c = a.Subtract(b);
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ c = a.Scale(5);
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ c는 여전히 (1, 2, 3)과 동일한 방향을 가리키지만. 길이는 정�
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ c = a.Cross(b);
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 

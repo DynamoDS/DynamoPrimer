@@ -1,5 +1,3 @@
-
-
 # Поверхности: интерполяционные, лофтированные, по управляющим точкам и поверхности вращения
 
 Объект NurbsSurface является двумерным аналогом объекта NurbsCurve. Как и объекты NurbsCurve, объекты NurbsSurfaces создаются двумя основными способами: путем интерполяции набора базовых точек либо указания управляющих точек поверхности. Аналогично кривым произвольной формы интерполяционные поверхности подходят для случаев, когда проектировщик точно знает, какой формы должна быть поверхность, или когда в проекте заданы конкретные точки зависимости, через которые плоскость должна проходить. Поверхности по управляющим точкам подходят для случаев, требующих анализа поведения поверхности при различных уровнях сглаживания.
@@ -8,7 +6,7 @@
 
 ![](images/12-6/Surfaces_01.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -19,7 +17,7 @@ surf = NurbsSurface.ByPoints(python_points_1);
 
 ![](images/12-6/Surfaces_02.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -31,7 +29,7 @@ surf = NurbsSurface.ByPoints(python_points_1, 2, 2);
 
 ![](images/12-6/Surfaces_03.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -43,7 +41,7 @@ surf = NurbsSurface.ByPoints(python_points_1, 6, 6);
 
 ![](images/12-6/Surfaces_04.png)
 
-```
+```js
 // python_points_2, 3, and 4 are generated with
 // Python scripts found in Chapter 12, Section 10
 
@@ -60,7 +58,7 @@ loft = Surface.ByLoft([c1, c2, c3]);
 
 ![](images/12-6/Surfaces_05.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(3, 0, 1);
@@ -77,6 +75,6 @@ axis_origin = Point.ByCoordinates(0, 0, 0);
 axis = Vector.ByCoordinates(0, 0, 1);
 
 surf = Surface.ByRevolve(crv, axis_origin, axis, 0,
-360);
+    360);
 ```
 

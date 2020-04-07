@@ -1,5 +1,3 @@
-
-
 # Conversion, rotation et autres transformations
 
 Certains objets de géométrie peuvent être créés en spécifiant explicitement les coordonnées X, Y et Z dans un espace tridimensionnel. Plus souvent, cependant, la géométrie est placée dans sa position finale à l'aide de transformations géométriques sur l'objet lui-même ou sur son CoordinateSystem sous-jacent.
@@ -8,7 +6,7 @@ La transformation géométrique la plus simple est une conversion qui permet de 
 
 ![](images/12-5/Transformations_01.png)
 
-```
+```js
 // create a point at x = 1, y = 2, z = 3
 p = Point.ByCoordinates(1, 2, 3);
 
@@ -22,13 +20,13 @@ Bien que tous les objets dans Dynamo puissent être convertis grâce à l'ajout 
 
 ![](images/12-5/Transformations_02.png)
 
-```
+```js
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(),
-10, 10, 10);
+    10, 10, 10);
 
 new_cs = CoordinateSystem.Identity();
 new_cs2 = new_cs.Rotate(Point.ByCoordinates(0, 0),
-Vector.ByCoordinates(1,0,0.5), 25);
+    Vector.ByCoordinates(1,0,0.5), 25);
 
 // get the existing coordinate system of the cube
 old_cs = CoordinateSystem.Identity();
@@ -40,9 +38,9 @@ Outre la conversion et la rotation, les CoordinateSystems peuvent également êt
 
 ![](images/12-5/Transformations_03.png)
 
-```
+```js
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(),
-10, 10, 10);
+    10, 10, 10);
 
 new_cs = CoordinateSystem.Identity();
 new_cs2 = new_cs.Scale(20);
@@ -56,16 +54,16 @@ Les CoordinateSystems coupés sont créés grâce à l'insertion de vecteurs non
 
 ![](images/12-5/Transformations_04.png)
 
-```
+```js
 new_cs = CoordinateSystem.ByOriginVectors(
-Point.ByCoordinates(0, 0, 0),
-Vector.ByCoordinates(-1, -1, 1),
-Vector.ByCoordinates(-0.4, 0, 0));
+    Point.ByCoordinates(0, 0, 0),
+	Vector.ByCoordinates(-1, -1, 1),
+	Vector.ByCoordinates(-0.4, 0, 0));
 
 old_cs = CoordinateSystem.Identity();
 
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(), 
-5, 5, 5);
+    5, 5, 5);
 
 new_curves = cube.Transform(old_cs, new_cs);
 ```

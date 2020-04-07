@@ -1,5 +1,3 @@
-
-
 # Пересечение и обрезка
 
 Во многих рассмотренных примерах основное внимание было уделено построению более сложных геометрических объектов на основе более простых объектов. Методы Intersect позволяют делать обратное, а именно получать простые геометрические объекты из сложных. Команды Trim и SelectTrim позволяют использовать сценарии для масштабных преобразований геометрических форм после их создания.
@@ -19,7 +17,7 @@
 
 ![](images/12-8/IntersectionAndTrim_01.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -28,7 +26,7 @@ surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 WCS = CoordinateSystem.Identity();
 
 pl = Plane.ByOriginNormal(WCS.Origin.Translate(0, 0,
-0.5), WCS.ZAxis);
+    0.5), WCS.ZAxis);
 
 // intersect surface, generating three closed curves
 crvs = surf.Intersect(pl);
@@ -51,14 +49,14 @@ crvs_moved = crvs.Translate(0, 0, 10);
 
 ![](images/12-8/IntersectionAndTrim_02.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
 tool_pts = Point.ByCoordinates((-10..20..10)<1>,
-(-10..20..10)<2>, 1);
+    (-10..20..10)<2>, 1);
 
 tool = NurbsSurface.ByPoints(tool_pts);
 

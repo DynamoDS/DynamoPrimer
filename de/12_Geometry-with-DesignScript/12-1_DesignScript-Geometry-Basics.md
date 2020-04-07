@@ -1,12 +1,10 @@
-
-
 # DesignScript-Geometriegrundlagen
 
 Das einfachste geometrische Objekt in der Dynamo-Bibliothek für Standardgeometrie ist ein Punkt. Jegliche Geometrie wird mit speziellen Funktionen namens Konstruktoren erstellt, die jeweils ein neues Exemplar dieses bestimmten Geometrietyps zurückgeben. In Dynamo beginnen Konstruktoren mit dem Namen des Objekttyps, in diesem Fall Point, gefolgt von der Konstruktionsmethode. Zum Erstellen eines dreidimensionalen Punkts, der durch die kartesischen Koordinaten x, y und z angegeben wird, verwenden Sie den Konstruktor *ByCoordinates*:
 
 ![](images/12-1/GeometryBasics_01.png)
 
-```
+```js
 // create a point with the following x, y, and z
 // coordinates:
 x = 10;
@@ -22,7 +20,7 @@ Die meisten Objekte verfügen über viele verschiedene Konstruktoren, und mit de
 
 ![](images/12-1/GeometryBasics_02.png)
 
-```
+```js
 // create a point on a sphere with the following radius,
 // theta, and phi rotation angles (specified in degrees)
 radius = 5;
@@ -31,14 +29,14 @@ phi = 120.3;
 cs = CoordinateSystem.Identity();
 
 p = Point.BySphericalCoordinates(cs, radius, theta,
-phi);
+    phi);
 ```
 
 Punkte können verwendet werden, um höherdimensionale Geometrien wie z. B. Linien zu erstellen. Mit dem Konstruktor *ByStartPointEndPoint* können wir ein Linienobjekt zwischen zwei Punkten erstellen:
 
 ![](images/12-1/GeometryBasics_03.png)
 
-```
+```js
 // create two points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -51,7 +49,7 @@ In ähnlicher Weise können mit Linien wiederum höherdimensionale Oberflächeng
 
 ![](images/12-1/GeometryBasics_04.png)
 
-```
+```js
 // create points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -75,7 +73,7 @@ Auch Oberflächen können zum Erstellen höherdimensionaler Volumenkörper-Geome
 
 ![](images/12-1/GeometryBasics_05.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -95,7 +93,7 @@ Mit den *Intersection*-Befehlen können niedrigerdimensionale Geometrien aus hö
 
 ![](images/12-1/GeometryBasics_06.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -110,12 +108,12 @@ surf = Surface.ByLoft([l1, l2]);
 solid = surf.Thicken(4.75, true);
 
 p = Plane.ByOriginNormal(Point.ByCoordinates(2, 0, 0),
-Vector.ByCoordinates(1, 1, 1));
+    Vector.ByCoordinates(1, 1, 1));
 
 int_surf = solid.Intersect(p);
 
 int_line = int_surf.Intersect(Plane.ByOriginNormal(
-Point.ByCoordinates(0, 0, 0),
-Vector.ByCoordinates(1, 0, 0)));
+    Point.ByCoordinates(0, 0, 0),
+    Vector.ByCoordinates(1, 0, 0)));
 ```
 

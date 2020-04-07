@@ -1,5 +1,5 @@
 ## Pacotes do Dynamo
-Veja a seguir uma lista de alguns dos pacotes mais populares da comunidade do Dynamo. Desenvolvedores, adicionem itens à lista! Lembre-se, o [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer )é de código aberto!
+Veja a seguir uma lista de alguns dos pacotes mais populares da comunidade do Dynamo. Desenvolvedores, adicionem itens à lista! Lembre-se, o [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer ) é de código aberto!
 
 <table>
    <tr>

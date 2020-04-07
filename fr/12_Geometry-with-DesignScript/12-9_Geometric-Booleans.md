@@ -1,5 +1,3 @@
-
-
 # Opérations booléennes géométriques
 
 Les méthodes *Intersect*, *Trim* et *SelectTrim* sont principalement utilisées sur la géométrie dimensionnelle inférieure, comme les points, les courbes et les surfaces. La géométrie solide, en revanche, dispose d'un ensemble de méthodes supplémentaires pour modifier la forme après sa construction, en soustrayant de la matière de manière comparable à la méthode *Trim* et en combinant les éléments pour former un ensemble plus grand.
@@ -8,13 +6,13 @@ La méthode *Union* prend deux objets solides et crée un objet solide unique à
 
 ![](images/12-9/GeometricBooleans_01.png)
 
-```
+```js
 s1 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 s2 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(4, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(4, 0,
+    0), 6);
 
 combined = s1.Union(s2);
 ```
@@ -23,13 +21,13 @@ La méthode *Difference*, comme *Trim*, soustrait le contenu du solide de l'outi
 
 ![](images/12-9/GeometricBooleans_02.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Difference(tool);
 ```
@@ -38,13 +36,13 @@ La méthode *Intersect* renvoie le solide se chevauchant entre deux entrées de 
 
 ![](images/12-9/GeometricBooleans_03.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Intersect(tool);
 ```

@@ -1,5 +1,3 @@
-
-
 # Calcul vectoriel
 
 Les objets dans les conceptions de calcul sont rarement créés explicitement dans leur position et leur forme finales. Le plus souvent, ils font l'objet d'opération de conversion et de rotation, et sont positionnés par rapport à la géométrie existante. Le calcul vectoriel sert d'"armature" à la géométrie en lui donnant une direction et une orientation, ainsi qu'en conceptualisant les mouvements dans l'espace 3D sans représentation visuelle.
@@ -8,7 +6,7 @@ Sous sa forme de base, un vecteur représente une position dans un espace 3D et
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ L'addition de vecteurs est définie comme la somme des composants de deux vecteu
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ De même, deux objets Vector peuvent être soustraits l'un à l'autre à l'aide 
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ La multiplication de vecteurs peut être considérée comme le déplacement de l
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ Souvent, lors de la mise à l'échelle d'un vecteur, on souhaite que la longueur
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ Deux autres méthodes, qui n'ont pas de similitudes avec les mathématiques 1D,
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ Le produit scalaire est une autre fonction plus avancée de calcul vectoriel. Le
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 

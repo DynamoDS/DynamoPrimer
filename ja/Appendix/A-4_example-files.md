@@ -34,14 +34,11 @@
 | -- | -- |
 |ジオメトリの概要|[Geometry for Computational Design - Geometry Overview.dyn](../05_Geometry-for-Computational-Design/datasets/5-1/Geometry for Computational Design - Geometry Overview.dyn)|
 |ベクトル|[Geometry for Computational Design - Vectors.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Vectors.dyn)|
-
 ||[Geometry for Computational Design - Plane.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Plane.dyn)|
-
 ||[Geometry for Computational Design - Coordinate System.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Coordinate System.dyn)|
 |点|[Geometry for Computational Design - Points.dyn](../05_Geometry-for-Computational-Design/datasets/5-3/Geometry for Computational Design - Points.dyn)|
 |曲線|[Geometry for Computational Design - Curves.dyn](../05_Geometry-for-Computational-Design/datasets/5-4/Geometry for Computational Design - Curves.dyn)|
 |サーフェス|[Geometry for Computational Design - Surfaces.dyn](../05_Geometry-for-Computational-Design/datasets/5-5/Geometry for Computational Design - Surfaces.dyn)|
-
 ||[Surface.sat](../05_Geometry-for-Computational-Design/datasets/5-5/Surface.sat)|
 
 #### リストを使用した設計

@@ -1,15 +1,13 @@
-
-
 # 기하학적 매개변수화
 
 계산 방식 설계에서 곡선과 표면은 후속 형상을 구성하기 위한 기본 비계로 자주 사용됩니다. 이러한 초기 형상을 이후 형상의 기반으로 사용하려면 스크립트는 객체의 전체 영역에서 위치 및 방향 등의 품질을 추출할 수 있어야 합니다. 곡선과 표면 모두 이러한 추출을 지원하는데, 이를 매개변수화라고 합니다.
 
 곡선의 모든 점은 0에서 1 사이의 고유한 매개변수를 갖는 것으로 간주될 수 있습니다. 여러 제어점이나 보간된 점을 기준으로 NurbsCurve를 작성하려는 경우 첫 번째 점은 매개변수 0이 되고 마지막 점은 매개변수 1이 됩니다. 정확히 어떤 매개변수가 중간점인지 미리 알 수는 없습니다. 이러한 상황은 심각한 제한 사항처럼 들릴 수 있지만, 이는 일련의 유틸리티 함수를 통해 완화될 수 있습니다. 표면은 1개가 아닌 2개의 매개변수(u 및 v)를 사용하여 곡선과 비슷하게 매개변수화됩니다. 다음과 같은 점으로 표면을 작성해야 할 경우
 
-```
+```js
 pts = [ [p1, p2, p3],
-[p4, p5, p6],
-[p7, p8, p9] ];
+        [p4, p5, p6],
+        [p7, p8, p9] ];
 ```
 
 p1에는 매개변수 u = 0 v = 0을 지정하고, p9에는 매개변수 u = 1 v = 을 지정할 수 있습니다.
@@ -20,7 +18,7 @@ p1에는 매개변수 u = 0 v = 0을 지정하고, p9에는 매개변수 u = 1 v
 
 ![](images/12-7/GeometricParameterization_01.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(6, 0, 1);
@@ -36,7 +34,7 @@ pts_at_param = crv.PointAtParameter(0..1..#11);
 
 // draw Lines to help visualize the points
 lines = Line.ByStartPointEndPoint(pts_at_param, 
-Point.ByCoordinates(4, 6, 0));
+    Point.ByCoordinates(4, 6, 0));
 ```
 
 마찬가지로 표면에는 생성된 점의 u 및 v 매개변수인 두 개의 인수를 사용하는 *PointAtParameter* 메서드가 있습니다.
@@ -45,7 +43,7 @@ Point.ByCoordinates(4, 6, 0));
 
 ![](images/12-7/GeometricParameterization_02.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(3, 0, 1);
@@ -62,17 +60,17 @@ axis_origin = Point.ByCoordinates(0, 0, 0);
 axis = Vector.ByCoordinates(0, 0, 1);
 
 surf = Surface.ByRevolve(crv, axis_origin, axis, 90,
-140);
+    140);
 
 cs_array = surf.CoordinateSystemAtParameter(
-(0..1..#7)<1>, (0..1..#7)<2>);
+    (0..1..#7)<1>, (0..1..#7)<2>);
 
 def make_line(cs : CoordinateSystem) { 
-lines_start = cs.Origin;
-lines_end = cs.Origin.Translate(cs.ZAxis, -0.75);
-
-return = Line.ByStartPointEndPoint(lines_start, 
-lines_end);
+	lines_start = cs.Origin;
+    lines_end = cs.Origin.Translate(cs.ZAxis, -0.75);
+    
+    return = Line.ByStartPointEndPoint(lines_start, 
+        lines_end);
 }
 
 lines = make_line(Flatten(cs_array));

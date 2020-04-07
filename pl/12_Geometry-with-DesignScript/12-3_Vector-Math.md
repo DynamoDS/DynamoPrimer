@@ -1,5 +1,3 @@
-
-
 # Matematyka wektorowa
 
 Obiekty w projektach obliczeniowych rzadko są tworzone jawnie w końcowym położeniu i formie. Najczęściej są przekształcane, obracane i umieszczane w oparciu o istniejącą geometrię. Matematyka wektorowa służy jako rodzaj geometrycznego rusztowania pozwalającego nadać geometrii kierunek i orientację, jak również do konceptualizowania ruchów w przestrzeni 3D bez reprezentacji wizualnej.
@@ -8,7 +6,7 @@ Podstawowy wektor reprezentuje położenie w przestrzeni 3D i zwykle jest uważa
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ Dodawanie wektorów jest zdefiniowane jako suma składników dwóch wektorów i 
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ Podobnie dwa obiekty wektorów można od siebie odjąć za pomocą metody *Subst
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ Mnożenie wektorów może być traktowane jako przesuwanie punktu końcowego wek
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ Często podczas skalowania wektora wymagane jest uzyskanie długości wynikowego
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ Istnieją dwie dodatkowe metody w matematyce wektorowej, które nie mają wyraź
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ Dodatkowa, choć nieco bardziej zaawansowana funkcja matematyki wektorowej, to i
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 

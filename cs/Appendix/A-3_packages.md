@@ -1,5 +1,5 @@
 ## Balíčky aplikace Dynamo
-Zde je seznam některých oblíbenějších balíčků v komunitě Dynamo. Vývojáři, doplňujte tento seznam. Nezapomeňte, že aplikace [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer )je open source.
+Zde je seznam některých oblíbenějších balíčků v komunitě Dynamo. Vývojáři, doplňujte tento seznam. Nezapomeňte, že aplikace [Dynamo Primer](https://github.com/DynamoDS/DynamoPrimer ) je open source.
 
 <table>
    <tr>

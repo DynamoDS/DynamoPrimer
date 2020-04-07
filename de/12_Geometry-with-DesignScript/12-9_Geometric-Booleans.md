@@ -1,5 +1,3 @@
-
-
 # Geometrische boolesche Operationen
 
 *Intersect*, *Trim* und *SelectTrim* werden hauptsächlich für niedrigerdimensionale Geometrien wie Punkte, Kurven und Oberflächen genutzt. Volumenkörper-Geometrie verfügt über einen zusätzlichen Satz von Methoden zum Ändern der Form nach ihrer Erstellung, sowohl durch Subtraktion von Material, ähnlich wie *Trim*, als auch durch Kombination von Elementen zu einem größeren Ganzen.
@@ -8,13 +6,13 @@ Die Methode *Union* nimmt zwei Volumenkörper-Objekte und erstellt ein einzelnes
 
 ![](images/12-9/GeometricBooleans_01.png)
 
-```
+```js
 s1 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 s2 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(4, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(4, 0,
+    0), 6);
 
 combined = s1.Union(s2);
 ```
@@ -23,13 +21,13 @@ Die Methode *Difference* subtrahiert ähnlich wie *Trim* die Inhalte des eingege
 
 ![](images/12-9/GeometricBooleans_02.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Difference(tool);
 ```
@@ -38,13 +36,13 @@ Die Methode *Intersect* gibt den überlappenden Volumenkörper zwischen zwei Ein
 
 ![](images/12-9/GeometricBooleans_03.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Intersect(tool);
 ```

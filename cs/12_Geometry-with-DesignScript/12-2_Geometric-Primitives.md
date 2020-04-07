@@ -1,5 +1,3 @@
-
-
 # Geometrická primitiva
 
 Aplikace Dynamo sice umožňuje vytvářet mnoho složitých geometrických útvarů, ale jednoduchá geometrická primitiva tvoří základ jakéhokoliv výpočetního návrhu: mohou být použita přímo v konečném návrhu nebo mohou sloužit jako základ pro generování složitějších geometrií.
@@ -10,7 +8,7 @@ Chcete-li vytvořit objekt CoordinateSystem na souřadnicích X = 0, Y = 0, Z = 
 
 ![](images/12-2/GeometricPrimitives_01.png)
 
-```
+```js
 // create a CoordinateSystem at x = 0, y = 0, z = 0,
 // no rotations, scaling, or sheering transformations
 
@@ -21,7 +19,7 @@ Objekty CoordinateSystems s geometrickými transformacemi jsou mimo rozsah tét
 
 ![](images/12-2/GeometricPrimitives_02.png)
 
-```
+```js
 // create a CoordinateSystem at a specific location,
 // no rotations, scaling, or sheering transformations
 x_pos = 3.6;
@@ -32,7 +30,7 @@ origin = Point.ByCoordinates(x_pos, y_pos, z_pos);
 identity = CoordinateSystem.Identity();
 
 cs = CoordinateSystem.ByOriginVectors(origin,
-identity.XAxis, identity.YAxis, identity.ZAxis);
+    identity.XAxis, identity.YAxis, identity.ZAxis);
 ```
 
 Nejjednodušším geometrickým primitivem je bod, který představuje bezrozměrné místo v trojrozměrném prostoru. Jak již bylo zmíněno, bod v určitém souřadnicovém systému lze vytvořit několika způsoby: Konstruktor *Point.ByCoordinates* vytvoří bod se zadanými souřadnicemi X, Y a Z, konstruktor *Point.ByCartesianCoordinates* vytvoří bod se zadanými souřadnicemi X, Y a Z v určitém souřadnicovém systému, konstruktor *Point.ByCylindricalCoordinates* vytvoří bod ležící na válci s poloměrem, úhlem otočení a výškou a konstruktor *Point.BySphericalCoordinates* vytvoří bod ležící na kouli s poloměrem a dvěma úhly otočení.
@@ -41,7 +39,7 @@ Tento příklad ukazuje body vytvořené v různých souřadnicových systémec
 
 ![](images/12-2/GeometricPrimitives_03.png)
 
-```
+```js
 // create a point with x, y, and z coordinates
 x_pos = 1;
 y_pos = 2;
@@ -52,7 +50,7 @@ pCoord = Point.ByCoordinates(x_pos, y_pos, z_pos);
 // create a point in a specific coordinate system
 cs = CoordinateSystem.Identity();
 pCoordSystem = Point.ByCartesianCoordinates(cs, x_pos,
-y_pos, z_pos);
+    y_pos, z_pos);
 
 // create a point on a cylinder with the following
 // radius and height
@@ -61,21 +59,21 @@ height = 15;
 theta = 75.5;
 
 pCyl = Point.ByCylindricalCoordinates(cs, radius, theta,
-height);
+    height);
 
 // create a point on a sphere with radius and two angles
 
 phi = 120.3;
 
 pSphere = Point.BySphericalCoordinates(cs, radius, 
-theta, phi);
+    theta, phi);
 ```
 
 Primitivum s vyšším rozměrem v aplikaci Dynamo je úsečka, která představuje nekonečné množství bodů mezi dvěma koncovými body. Čáry lze vytvořit explicitním zadáním dvou okrajových bodů do konstruktoru *Line.ByStartPointEndPoint* nebo zadáním počátečního bodu, směru a délky v tomto směru do konstruktoru *Line.ByStartPointDirectionLength*.
 
 ![](images/12-2/GeometricPrimitives_04.png)
 
-```
+```js
 p1 = Point.ByCoordinates(-2, -5, -10);
 p2 = Point.ByCoordinates(6, 8, 10);
 
@@ -85,14 +83,14 @@ l2pts = Line.ByStartPointEndPoint(p1, p2);
 // a line segment at p1 in direction 1, 1, 1 with 
 // length 10
 lDir = Line.ByStartPointDirectionLength(p1,
-Vector.ByCoordinates(1, 1, 1), 10);
+    Vector.ByCoordinates(1, 1, 1), 10);
 ```
 
 Aplikace Dynamo nabízí objekty reprezentující nejzákladnější trojrozměrná geometrická primitiva: kvádry vytvářené konstruktorem *Cuboid.ByLengths*, kužely vytvářené konstruktory *Cone.ByPointsRadius* a *Cone.ByPointsRadii*, válce vytvářené konstruktorem *Cylinder.ByRadiusHeight* a koule vytvářené konstruktorem *Sphere.ByCenterPointRadius*.
 
 ![](images/12-2/GeometricPrimitives_05.png)
 
-```
+```js
 // create a cuboid with specified lengths
 cs = CoordinateSystem.Identity();
 

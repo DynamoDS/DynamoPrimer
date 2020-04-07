@@ -1,5 +1,3 @@
-
-
 # 표면: 보간, 제어점, 로프트, 회전
 
 NurbsCurve의 2D 아날로그는 NurbsSurface입니다. 자유형 NurbsCurve와 마찬가지로 NurbsSurface는 두 가지 기본 방법으로 생성할 수 있습니다. 기준점 세트를 입력하고 Dynamo에서 사이를 보간하도록 하거나, 표면의 제어점을 명시적으로 지정할 수 있습니다. 또한 자유형 곡선과 마찬가지로, 보간된 표면은 설계자가 표면에 필요한 모양을 정확하게 파악하고 있거나 설계에서 표면이 제약 조건 점을 통과해야 하는 경우에 유용합니다. 반면에 제어점으로 작성된 표면은 예비 설계의 다양한 다듬기 수준에서 더 유용할 수 있습니다.
@@ -8,7 +6,7 @@ NurbsCurve의 2D 아날로그는 NurbsSurface입니다. 자유형 NurbsCurve와 
 
 ![](images/12-6/Surfaces_01.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -19,7 +17,7 @@ surf = NurbsSurface.ByPoints(python_points_1);
 
 ![](images/12-6/Surfaces_02.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -31,7 +29,7 @@ surf = NurbsSurface.ByPoints(python_points_1, 2, 2);
 
 ![](images/12-6/Surfaces_03.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -43,7 +41,7 @@ surf = NurbsSurface.ByPoints(python_points_1, 6, 6);
 
 ![](images/12-6/Surfaces_04.png)
 
-```
+```js
 // python_points_2, 3, and 4 are generated with
 // Python scripts found in Chapter 12, Section 10
 
@@ -60,7 +58,7 @@ loft = Surface.ByLoft([c1, c2, c3]);
 
 ![](images/12-6/Surfaces_05.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(3, 0, 1);
@@ -77,6 +75,6 @@ axis_origin = Point.ByCoordinates(0, 0, 0);
 axis = Vector.ByCoordinates(0, 0, 1);
 
 surf = Surface.ByRevolve(crv, axis_origin, axis, 0,
-360);
+    360);
 ```
 
