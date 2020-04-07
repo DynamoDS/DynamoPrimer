@@ -1,5 +1,3 @@
-
-
 # Posunutí, otočení a další transformace
 
 Určité geometrické objekty je možné vytvářet přímým zadáním souřadnic X, Y a Z v trojrozměrném prostoru. Geometrie se však častěji do konečné pozice přesunují pomocí geometrických transformací samotného objektu nebo souvisejícího objektu CoordinateSystem.
@@ -8,7 +6,7 @@ Nejjednodušší geometrickou transformací je posunutí, čímž se objekt posu
 
 ![](images/12-5/Transformations_01.png)
 
-```
+```js
 // create a point at x = 1, y = 2, z = 3
 p = Point.ByCoordinates(1, 2, 3);
 
@@ -22,13 +20,13 @@ Ačkoliv lze všechny objekty v aplikaci Dynamo posunout připojením metody *.
 
 ![](images/12-5/Transformations_02.png)
 
-```
+```js
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(),
-10, 10, 10);
+    10, 10, 10);
 
 new_cs = CoordinateSystem.Identity();
 new_cs2 = new_cs.Rotate(Point.ByCoordinates(0, 0),
-Vector.ByCoordinates(1,0,0.5), 25);
+    Vector.ByCoordinates(1,0,0.5), 25);
 
 // get the existing coordinate system of the cube
 old_cs = CoordinateSystem.Identity();
@@ -40,9 +38,9 @@ Kromě posunutí a otočení lze u objektů CoordinateSystem také měnit měř
 
 ![](images/12-5/Transformations_03.png)
 
-```
+```js
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(),
-10, 10, 10);
+    10, 10, 10);
 
 new_cs = CoordinateSystem.Identity();
 new_cs2 = new_cs.Scale(20);
@@ -56,16 +54,16 @@ Objekty CoordinateSystem s kolmým posunem lze vytvořit zadáním neortogonál
 
 ![](images/12-5/Transformations_04.png)
 
-```
+```js
 new_cs = CoordinateSystem.ByOriginVectors(
-Point.ByCoordinates(0, 0, 0),
-Vector.ByCoordinates(-1, -1, 1),
-Vector.ByCoordinates(-0.4, 0, 0));
+    Point.ByCoordinates(0, 0, 0),
+	Vector.ByCoordinates(-1, -1, 1),
+	Vector.ByCoordinates(-0.4, 0, 0));
 
 old_cs = CoordinateSystem.Identity();
 
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(), 
-5, 5, 5);
+    5, 5, 5);
 
 new_curves = cube.Transform(old_cs, new_cs);
 ```

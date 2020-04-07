@@ -1,5 +1,3 @@
-
-
 # Booleovské operace geometrií
 
 Metody *Intersect*, *Trim* a *SelectTrim* se používají zejména u méněrozměrných geometrií, například u bodů, křivek a ploch. Geometrie těles obsahují další sadu metod, které umožňují upravovat jejich tvar, například odebráním materiálu podobně jako u metody *Trim*, nebo prvky kombinovat a vytvářet tak větší celky.
@@ -8,13 +6,13 @@ Metoda *Union* přijímá dvě tělesa a z prostoru, který tyto objekty zaují
 
 ![](images/12-9/GeometricBooleans_01.png)
 
-```
+```js
 s1 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 s2 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(4, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(4, 0,
+    0), 6);
 
 combined = s1.Union(s2);
 ```
@@ -23,13 +21,13 @@ Metoda *Difference* funguje podobně jako metoda *Trim*, odečítá obsah vstupn
 
 ![](images/12-9/GeometricBooleans_02.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Difference(tool);
 ```
@@ -38,13 +36,13 @@ Metoda *Intersect* vrací těleso tvořené překrývajícím se prostorem dvou 
 
 ![](images/12-9/GeometricBooleans_03.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Intersect(tool);
 ```

@@ -1,5 +1,3 @@
-
-
 # Векторная математика
 
 В машинном проектировании редко бывает так, что объекты создаются сразу в своей конечной форме и конечном положении. Чаще всего созданные объекты приходится переносить, поворачивать и иным образом позиционировать относительно существующей геометрии. Векторная математика играет роль своего рода геометрического каркаса, определяющего направление и ориентацию геометрии, а также позволяющего осмыслять перемещения геометрии по 3D-пространству без их визуального представления.
@@ -8,7 +6,7 @@
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ s = v.X + " " + v.Y + " " + v.Z;
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ c = a.Add(b);
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ c = a.Subtract(b);
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ c = a.Scale(5);
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ len = c.Length;
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ c = a.Cross(b);
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 

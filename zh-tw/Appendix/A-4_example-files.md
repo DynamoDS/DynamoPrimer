@@ -34,14 +34,11 @@
 | -- | -- |
 |幾何圖形概述|[用於計算設計的幾何圖形 - 幾何圖形 Overview.dyn](../05_Geometry-for-Computational-Design/datasets/5-1/Geometry for Computational Design - Geometry Overview.dyn)|
 |向量|[用於計算設計的幾何圖形 - Vectors.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Vectors.dyn)|
-
 ||[用於計算設計的幾何圖形 - Plane.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Plane.dyn)|
-
 ||[用於計算設計的幾何圖形 - Coordinate System.dyn](../05_Geometry-for-Computational-Design/datasets/5-2/Geometry for Computational Design - Coordinate System.dyn)|
 |點|[用於計算設計的幾何圖形 - Points.dyn](../05_Geometry-for-Computational-Design/datasets/5-3/Geometry for Computational Design - Points.dyn)|
 |曲線|[用於計算設計的幾何圖形 - Curves.dyn](../05_Geometry-for-Computational-Design/datasets/5-4/Geometry for Computational Design - Curves.dyn)|
 |平面|[用於計算設計的幾何圖形 - Surfaces.dyn](../05_Geometry-for-Computational-Design/datasets/5-5/Geometry for Computational Design - Surfaces.dyn)|
-
 ||[Surface.sat](../05_Geometry-for-Computational-Design/datasets/5-5/Surface.sat)|
 
 #### 設計清單

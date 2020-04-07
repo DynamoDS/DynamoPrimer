@@ -1,12 +1,10 @@
-
-
 # Основы работы с геометрией посредством DesignScript
 
 Простейший геометрический объект, доступный в библиотеке стандартных геометрических объектов Dynamo, — это точка. Вся геометрия создается с помощью специальных функций (конструкторов), каждая из которых возвращает новый экземпляр геометрического объекта определенного типа. В Dynamo название каждого конструктора начинается с наименования типа объекта (в данном случае Point, точка), за которым следует метод построения объекта. Чтобы построить трехмерную точку на основе значений X, Y и Z в прямоугольной системе координат, используйте конструктор *ByCoordinates*:
 
 ![](images/12-1/GeometryBasics_01.png)
 
-```
+```js
 // create a point with the following x, y, and z
 // coordinates:
 x = 10;
@@ -22,7 +20,7 @@ p = Point.ByCoordinates(x, y, z);
 
 ![](images/12-1/GeometryBasics_02.png)
 
-```
+```js
 // create a point on a sphere with the following radius,
 // theta, and phi rotation angles (specified in degrees)
 radius = 5;
@@ -31,14 +29,14 @@ phi = 120.3;
 cs = CoordinateSystem.Identity();
 
 p = Point.BySphericalCoordinates(cs, radius, theta,
-phi);
+    phi);
 ```
 
 Используя точки, можно создавать геометрические объекты более высокого уровня, например отрезки. С помощью конструктора *ByStartPointEndPoint* создайте объект Line (отрезок) между двумя точками:
 
 ![](images/12-1/GeometryBasics_03.png)
 
-```
+```js
 // create two points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -51,7 +49,7 @@ l = Line.ByStartPointEndPoint(p1, p2);
 
 ![](images/12-1/GeometryBasics_04.png)
 
-```
+```js
 // create points:
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
@@ -75,7 +73,7 @@ surf = Surface.ByLoft([l1, l2, l3]);
 
 ![](images/12-1/GeometryBasics_05.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -95,7 +93,7 @@ solid = surf.Thicken(4.75, true);
 
 ![](images/12-1/GeometryBasics_06.png)
 
-```
+```js
 p1 = Point.ByCoordinates(3, 10, 2);
 p2 = Point.ByCoordinates(-15, 7, 0.5);
 
@@ -110,12 +108,12 @@ surf = Surface.ByLoft([l1, l2]);
 solid = surf.Thicken(4.75, true);
 
 p = Plane.ByOriginNormal(Point.ByCoordinates(2, 0, 0),
-Vector.ByCoordinates(1, 1, 1));
+    Vector.ByCoordinates(1, 1, 1));
 
 int_surf = solid.Intersect(p);
 
 int_line = int_surf.Intersect(Plane.ByOriginNormal(
-Point.ByCoordinates(0, 0, 0),
-Vector.ByCoordinates(1, 0, 0)));
+    Point.ByCoordinates(0, 0, 0),
+    Vector.ByCoordinates(1, 0, 0)));
 ```
 

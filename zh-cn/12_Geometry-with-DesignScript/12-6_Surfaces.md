@@ -1,5 +1,3 @@
-
-
 # 曲面：内插、控制点、放样、旋转
 
 对 NurbsCurve 的二维模拟是 NurbsSurface，与自由形式的 NurbsCurve 一样，可以使用两种基本方法构建 NurbsSurface：输入一组基点并在它们之间内插 Dynamo，然后明确指定曲面的控制点。当设计师确切知道曲面需要的形状或者设计需要曲面通过约束点时，内插曲面也与自由曲线一样非常有用。另一方面，由控制点创建的曲面对于各种平滑级别的探索式设计更为有用。
@@ -8,7 +6,7 @@
 
 ![](images/12-6/Surfaces_01.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -19,7 +17,7 @@ surf = NurbsSurface.ByPoints(python_points_1);
 
 ![](images/12-6/Surfaces_02.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -31,7 +29,7 @@ surf = NurbsSurface.ByPoints(python_points_1, 2, 2);
 
 ![](images/12-6/Surfaces_03.png)
 
-```
+```js
 // python_points_1 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -43,7 +41,7 @@ surf = NurbsSurface.ByPoints(python_points_1, 6, 6);
 
 ![](images/12-6/Surfaces_04.png)
 
-```
+```js
 // python_points_2, 3, and 4 are generated with
 // Python scripts found in Chapter 12, Section 10
 
@@ -60,7 +58,7 @@ loft = Surface.ByLoft([c1, c2, c3]);
 
 ![](images/12-6/Surfaces_05.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(3, 0, 1);
@@ -77,6 +75,6 @@ axis_origin = Point.ByCoordinates(0, 0, 0);
 axis = Vector.ByCoordinates(0, 0, 1);
 
 surf = Surface.ByRevolve(crv, axis_origin, axis, 0,
-360);
+    360);
 ```
 

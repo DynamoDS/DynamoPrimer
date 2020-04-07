@@ -1,5 +1,3 @@
-
-
 # 전환, 회전 및 기타 변환
 
 3D 공간에서 x, y, z 좌표를 명시적으로 지정하여 특정 형상 객체를 작성할 수 있습니다. 그러나 형상은 객체 자체 또는 기본 CoordinateSystem에서 기하학적 변환을 사용하여 최종 위치로 이동되는 경우가 더 많습니다.
@@ -8,7 +6,7 @@
 
 ![](images/12-5/Transformations_01.png)
 
-```
+```js
 // create a point at x = 1, y = 2, z = 3
 p = Point.ByCoordinates(1, 2, 3);
 
@@ -22,13 +20,13 @@ Dynamo의 모든 객체는 *.Translate* 메서드를 객체 이름의 끝에 추
 
 ![](images/12-5/Transformations_02.png)
 
-```
+```js
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(),
-10, 10, 10);
+    10, 10, 10);
 
 new_cs = CoordinateSystem.Identity();
 new_cs2 = new_cs.Rotate(Point.ByCoordinates(0, 0),
-Vector.ByCoordinates(1,0,0.5), 25);
+    Vector.ByCoordinates(1,0,0.5), 25);
 
 // get the existing coordinate system of the cube
 old_cs = CoordinateSystem.Identity();
@@ -40,9 +38,9 @@ CoordinateSystem은 변환 및 회전뿐 아니라 축척 또는 전단이 조�
 
 ![](images/12-5/Transformations_03.png)
 
-```
+```js
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(),
-10, 10, 10);
+    10, 10, 10);
 
 new_cs = CoordinateSystem.Identity();
 new_cs2 = new_cs.Scale(20);
@@ -56,16 +54,16 @@ cube2 = cube.Transform(old_cs, new_cs2);
 
 ![](images/12-5/Transformations_04.png)
 
-```
+```js
 new_cs = CoordinateSystem.ByOriginVectors(
-Point.ByCoordinates(0, 0, 0),
-Vector.ByCoordinates(-1, -1, 1),
-Vector.ByCoordinates(-0.4, 0, 0));
+    Point.ByCoordinates(0, 0, 0),
+	Vector.ByCoordinates(-1, -1, 1),
+	Vector.ByCoordinates(-0.4, 0, 0));
 
 old_cs = CoordinateSystem.Identity();
 
 cube = Cuboid.ByLengths(CoordinateSystem.Identity(), 
-5, 5, 5);
+    5, 5, 5);
 
 new_curves = cube.Transform(old_cs, new_cs);
 ```

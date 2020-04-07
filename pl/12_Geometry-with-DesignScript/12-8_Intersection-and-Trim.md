@@ -1,5 +1,3 @@
-
-
 # Przecięcie i ucinanie
 
 Wiele z dotychczasowych przykładów koncentrowało się na konstruowaniu geometrii wyższych wymiarów z obiektów niższych wymiarów. Metody przecięcia umożliwiają generowanie obiektów niższych wymiarów za pomocą geometrii wyższych wymiarów, natomiast polecenia ucinania i ucinania selektywnego umożliwiają skryptowi znaczne modyfikowanie form geometrycznych po ich utworzeniu.
@@ -19,7 +17,7 @@ Poniższy bardzo prosty przykład przedstawia przecięcie płaszczyzny z powierz
 
 ![](images/12-8/IntersectionAndTrim_01.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -28,7 +26,7 @@ surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 WCS = CoordinateSystem.Identity();
 
 pl = Plane.ByOriginNormal(WCS.Origin.Translate(0, 0,
-0.5), WCS.ZAxis);
+    0.5), WCS.ZAxis);
 
 // intersect surface, generating three closed curves
 crvs = surf.Intersect(pl);
@@ -51,14 +49,14 @@ W przypadku metod *Trim* warto pamiętać o wymaganiu punktu „wyboru”, okre�
 
 ![](images/12-8/IntersectionAndTrim_02.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
 tool_pts = Point.ByCoordinates((-10..20..10)<1>,
-(-10..20..10)<2>, 1);
+    (-10..20..10)<2>, 1);
 
 tool = NurbsSurface.ByPoints(tool_pts);
 

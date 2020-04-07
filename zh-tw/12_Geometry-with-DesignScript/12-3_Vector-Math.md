@@ -1,5 +1,3 @@
-
-
 # 向量數學
 
 計算設計中的物件很少會以其最終的位置和形狀明確建立，幾乎都是以既有的幾何圖形為基礎，將它們經過平移、旋轉，或以其他任何方式放在適當位置。向量數學是一種以幾何搭建鷹架的方式，對幾何圖形提供方向和方位，並且將整個 3D 空間的移動概念化而不提供視覺表現法。
@@ -8,7 +6,7 @@
 
 ![](images/12-3/VectorMath_01.png)
 
-```
+```js
 // construct a Vector object
 v = Vector.ByCoordinates(1, 2, 3);
 
@@ -21,7 +19,7 @@ Vector 物件定義了一組數學運算，讓您可以在 3D 空間中相加、
 
 ![](images/12-3/VectorMath_02.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -33,7 +31,7 @@ c = a.Add(b);
 
 ![](images/12-3/VectorMath_03.png)
 
-```
+```js
 a = Vector.ByCoordinates(5, 5, 0);
 b = Vector.ByCoordinates(4, 1, 0);
 
@@ -45,7 +43,7 @@ c = a.Subtract(b);
 
 ![](images/12-3/VectorMath_04.png)
 
-```
+```js
 a = Vector.ByCoordinates(4, 4, 0);
 
 // c has value x = 20, y = 20, z = 0
@@ -56,7 +54,7 @@ c = a.Scale(5);
 
 ![](images/12-3/VectorMath_05.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 3);
 a_len = a.Length;
 
@@ -74,7 +72,7 @@ c 還是指向與 (1, 2, 3) 相同的方向，但是現在長度等於 5。
 
 ![](images/12-3/VectorMath_06.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 0, 1);
 b = Vector.ByCoordinates(0, 1, 1);
 
@@ -86,7 +84,7 @@ c = a.Cross(b);
 
 ![](images/12-3/VectorMath_07.png)
 
-```
+```js
 a = Vector.ByCoordinates(1, 2, 1);
 b = Vector.ByCoordinates(5, -8, 4);
 

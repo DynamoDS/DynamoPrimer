@@ -1,5 +1,3 @@
-
-
 # Interseção e aparar
 
 Muitos dos exemplos até agora têm se concentrado na construção de geometria dimensional maior com base em objetos dimensionais menores. Os métodos de interseção permitem que essa geometria dimensional maior gere objetos dimensionais menores, enquanto os comandos Trim e Select Trim permitem que o script modifique fortemente as formas geométricas após a criação.
@@ -19,7 +17,7 @@ O exemplo a seguir demonstra a interseção de um plano com uma NurbsSurface. A 
 
 ![](images/12-8/IntersectionAndTrim_01.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
@@ -28,7 +26,7 @@ surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 WCS = CoordinateSystem.Identity();
 
 pl = Plane.ByOriginNormal(WCS.Origin.Translate(0, 0,
-0.5), WCS.ZAxis);
+    0.5), WCS.ZAxis);
 
 // intersect surface, generating three closed curves
 crvs = surf.Intersect(pl);
@@ -51,14 +49,14 @@ Algo a ser observado sobre os métodos *Trim* é o requisito de um ponto de “s
 
 ![](images/12-8/IntersectionAndTrim_02.png)
 
-```
+```js
 // python_points_5 is a set of Points generated with
 // a Python script found in Chapter 12, Section 10
 
 surf = NurbsSurface.ByPoints(python_points_5, 3, 3);
 
 tool_pts = Point.ByCoordinates((-10..20..10)<1>,
-(-10..20..10)<2>, 1);
+    (-10..20..10)<2>, 1);
 
 tool = NurbsSurface.ByPoints(tool_pts);
 

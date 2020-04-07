@@ -1,5 +1,3 @@
-
-
 # 幾何布林運算
 
 *Intersect*、*Trim* 和 *SelectTrim* 主要是用在較低維度的幾何圖形 (例如點、曲線和曲面)。而立體幾何圖形則有額外的一組方法，可以透過類似 *Trim* 的方法減去材料，然後將元素合併在一起形成較大的元素，在建構幾何圖形後修改形狀。
@@ -8,13 +6,13 @@
 
 ![](images/12-9/GeometricBooleans_01.png)
 
-```
+```js
 s1 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 s2 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(4, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(4, 0,
+    0), 6);
 
 combined = s1.Union(s2);
 ```
@@ -23,13 +21,13 @@ combined = s1.Union(s2);
 
 ![](images/12-9/GeometricBooleans_02.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Difference(tool);
 ```
@@ -38,13 +36,13 @@ result = s.Difference(tool);
 
 ![](images/12-9/GeometricBooleans_03.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Intersect(tool);
 ```

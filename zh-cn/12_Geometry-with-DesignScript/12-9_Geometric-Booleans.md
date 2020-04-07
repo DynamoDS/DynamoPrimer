@@ -1,5 +1,3 @@
-
-
 # 几何布尔
 
 *Intersect*、*Trim* 和 *SelectTrim* 主要用于较少维的几何体，例如点、曲线和曲面。另一方面，实体几何体还有一组附加方法用于在构造后修改形状，方法是以与 *Trim* 类似的方式减去材质，并将图元合并到一起以形成更大的整体。
@@ -8,13 +6,13 @@
 
 ![](images/12-9/GeometricBooleans_01.png)
 
-```
+```js
 s1 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 s2 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(4, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(4, 0,
+    0), 6);
 
 combined = s1.Union(s2);
 ```
@@ -23,13 +21,13 @@ combined = s1.Union(s2);
 
 ![](images/12-9/GeometricBooleans_02.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Difference(tool);
 ```
@@ -38,13 +36,13 @@ result = s.Difference(tool);
 
 ![](images/12-9/GeometricBooleans_03.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Intersect(tool);
 ```

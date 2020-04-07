@@ -1,5 +1,3 @@
-
-
 # 几何基本体
 
 尽管 Dynamo 能够创建各种复杂的几何形状，但简单的几何基本体构成任何计算设计的支柱：直接以最终设计形式表示或用作生成更复杂几何体的脚手架。
@@ -10,7 +8,7 @@
 
 ![](images/12-2/GeometricPrimitives_01.png)
 
-```
+```js
 // create a CoordinateSystem at x = 0, y = 0, z = 0,
 // no rotations, scaling, or sheering transformations
 
@@ -21,7 +19,7 @@ cs = CoordinateSystem.Identity();
 
 ![](images/12-2/GeometricPrimitives_02.png)
 
-```
+```js
 // create a CoordinateSystem at a specific location,
 // no rotations, scaling, or sheering transformations
 x_pos = 3.6;
@@ -32,7 +30,7 @@ origin = Point.ByCoordinates(x_pos, y_pos, z_pos);
 identity = CoordinateSystem.Identity();
 
 cs = CoordinateSystem.ByOriginVectors(origin,
-identity.XAxis, identity.YAxis, identity.ZAxis);
+    identity.XAxis, identity.YAxis, identity.ZAxis);
 ```
 
 最简单的几何基本体是一个点，表示三维空间中的零维位置。如前所述，可以通过几种不同的方式在特定坐标系中创建点：*Point.ByCoordinates* 使用指定的 x、y 和 z 坐标创建点；*Point.ByCartesianCoordinates* 使用指定的 x、y 和 z 坐标在特定坐标系中创建点；*Point.ByCylindricalCoordinates* 使用半径、旋转角度和高度创建位于圆柱体上的点；*Point.BySphericalCoordinates* 使用半径和两个旋转角度创建位于球体上的点。
@@ -41,7 +39,7 @@ identity.XAxis, identity.YAxis, identity.ZAxis);
 
 ![](images/12-2/GeometricPrimitives_03.png)
 
-```
+```js
 // create a point with x, y, and z coordinates
 x_pos = 1;
 y_pos = 2;
@@ -52,7 +50,7 @@ pCoord = Point.ByCoordinates(x_pos, y_pos, z_pos);
 // create a point in a specific coordinate system
 cs = CoordinateSystem.Identity();
 pCoordSystem = Point.ByCartesianCoordinates(cs, x_pos,
-y_pos, z_pos);
+    y_pos, z_pos);
 
 // create a point on a cylinder with the following
 // radius and height
@@ -75,7 +73,7 @@ theta, phi);
 
 ![](images/12-2/GeometricPrimitives_04.png)
 
-```
+```js
 p1 = Point.ByCoordinates(-2, -5, -10);
 p2 = Point.ByCoordinates(6, 8, 10);
 
@@ -85,14 +83,14 @@ l2pts = Line.ByStartPointEndPoint(p1, p2);
 // a line segment at p1 in direction 1, 1, 1 with 
 // length 10
 lDir = Line.ByStartPointDirectionLength(p1,
-Vector.ByCoordinates(1, 1, 1), 10);
+    Vector.ByCoordinates(1, 1, 1), 10);
 ```
 
 Dynamo 有表示三维中大多数基本类型的几何基本体的对象：立方体，使用 *Cuboid.ByLengths* 创建；圆锥体，使用 *Cone.ByPointsRadius* 和 *Cone.ByPointsRadius* 创建；圆柱体，使用 *Cylinder.ByRadiusHeight* 创建；球体，使用 *Sphere.ByCenterPointRadius* 创建。
 
 ![](images/12-2/GeometricPrimitives_05.png)
 
-```
+```js
 // create a cuboid with specified lengths
 cs = CoordinateSystem.Identity();
 

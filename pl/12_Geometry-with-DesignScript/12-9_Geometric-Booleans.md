@@ -1,5 +1,3 @@
-
-
 # Geometryczne wartości logiczne
 
 Metody *Intersect*, *Trim* i *SelectTrim* są używane przede wszystkim na geometriach niższych wymiarów, takich jak punkty, krzywe i powierzchnie. Natomiast geometria brył ma dodatkowy zestaw metod do modyfikowania postaci po jej utworzeniu, zarówno przez odjęcie materiału w sposób podobny do zastosowania metody *Trim*, jak i przez połączenie elementów w celu utworzenia większej części.
@@ -8,13 +6,13 @@ Metoda *Union* pobiera dwa obiekty brył i tworzy pojedynczy obiekt bryły z prz
 
 ![](images/12-9/GeometricBooleans_01.png)
 
-```
+```js
 s1 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 s2 = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(4, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(4, 0,
+    0), 6);
 
 combined = s1.Union(s2);
 ```
@@ -23,13 +21,13 @@ Metoda *Difference*, podobnie jak metoda *Trim*, odejmuje zawartość bryły wej
 
 ![](images/12-9/GeometricBooleans_02.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Difference(tool);
 ```
@@ -38,13 +36,13 @@ Metoda *Intersect* zwraca bryłę wspólną między dwiema bryłami wejściowymi
 
 ![](images/12-9/GeometricBooleans_03.png)
 
-```
+```js
 s = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin, 6);
+    CoordinateSystem.Identity().Origin, 6);
 
 tool = Sphere.ByCenterPointRadius(
-CoordinateSystem.Identity().Origin.Translate(10, 0,
-0), 6);
+    CoordinateSystem.Identity().Origin.Translate(10, 0,
+    0), 6);
 
 result = s.Intersect(tool);
 ```

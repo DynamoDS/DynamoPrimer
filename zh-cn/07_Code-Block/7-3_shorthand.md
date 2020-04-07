@@ -9,7 +9,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 <table>
     <tr>
-    <td width="50%"><b>数据类型(Data Type)</b></td>
+    <td width="50%"><b>数据类型</b></td>
     <td width="25%"><b>标准 Dynamo</b> </td>
     <td width="25%"><b>等效代码块</b></td>
   </tr>

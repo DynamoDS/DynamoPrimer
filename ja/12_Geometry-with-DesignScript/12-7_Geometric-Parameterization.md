@@ -1,15 +1,13 @@
-
-
 # ジオメトリのパラメータ化
 
 計算設計では、曲線とサーフェスが、以降のジオメトリの構築の基礎となる足場として頻繁に使用されます。この初期のジオメトリを後のジオメトリの基盤として使用するために、オブジェクトの領域全体での位置や向きなどの属性を、スクリプトによって抽出できる必要があります。曲線とサーフェスの両方によってサポートされるこの抽出はパラメータ化と呼ばれます。
 
 曲線上のすべての点は 0 から 1 までの範囲の一意のパラメータを持つと考えることができます。いくつかの制御点や補間された点に基づいて NURBS 曲線を作成する場合、最初の点のパラメータは 0、最後の点のパラメータは 1 となります。中間点の正確なパラメータを事前に知ることはできません。そのため、一連のユーティリティ関数で緩和されるものの、厳しい制限のように感じられるかもしれません。サーフェスのパラメータ化は曲線の場合と同様ですが、1 つではなく、u と v という 2 つのパラメータがあります。次の点を使用してサーフェスを作成する場合、
 
-```
+```js
 pts = [ [p1, p2, p3],
-[p4, p5, p6],
-[p7, p8, p9] ];
+        [p4, p5, p6],
+        [p7, p8, p9] ];
 ```
 
 p1 のパラメータは u = 0 v = 0 で、p9 のパラメータは u = 1 v = 1 です。
@@ -20,7 +18,7 @@ p1 のパラメータは u = 0 v = 0 で、p9 のパラメータは u = 1 v = 1 
 
 ![](images/12-7/GeometricParameterization_01.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(6, 0, 1);
@@ -36,7 +34,7 @@ pts_at_param = crv.PointAtParameter(0..1..#11);
 
 // draw Lines to help visualize the points
 lines = Line.ByStartPointEndPoint(pts_at_param, 
-Point.ByCoordinates(4, 6, 0));
+    Point.ByCoordinates(4, 6, 0));
 ```
 
 同様に、サーフェスには *PointAtParameter* メソッドがあり、生成された点の u パラメータと v パラメータという 2 つの引数を使用します。
@@ -45,7 +43,7 @@ Point.ByCoordinates(4, 6, 0));
 
 ![](images/12-7/GeometricParameterization_02.png)
 
-```
+```js
 pts = {};
 pts[0] = Point.ByCoordinates(4, 0, 0);
 pts[1] = Point.ByCoordinates(3, 0, 1);
@@ -62,17 +60,17 @@ axis_origin = Point.ByCoordinates(0, 0, 0);
 axis = Vector.ByCoordinates(0, 0, 1);
 
 surf = Surface.ByRevolve(crv, axis_origin, axis, 90,
-140);
+    140);
 
 cs_array = surf.CoordinateSystemAtParameter(
-(0..1..#7)<1>, (0..1..#7)<2>);
+    (0..1..#7)<1>, (0..1..#7)<2>);
 
 def make_line(cs : CoordinateSystem) { 
-lines_start = cs.Origin;
-lines_end = cs.Origin.Translate(cs.ZAxis, -0.75);
-
-return = Line.ByStartPointEndPoint(lines_start, 
-lines_end);
+	lines_start = cs.Origin;
+    lines_end = cs.Origin.Translate(cs.ZAxis, -0.75);
+    
+    return = Line.ByStartPointEndPoint(lines_start, 
+        lines_end);
 }
 
 lines = make_line(Flatten(cs_array));
