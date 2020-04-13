@@ -12,7 +12,7 @@ Téléchargez le [guide Dynamo v1.3 ici](http://primer.dynamobim.org/en/Appendi
 
 ### Bienvenue
 
-Vous venez d'ouvrir le guide Dynamo, un guide complet de programmation visuelle dans Autodesk Dynamo Studio. Ce guide est un projet en cours de partage des fondamentaux de la programmation. Les rubriques suivantes concernent l'utilisation de la géométrie de calcul, les recommandations pour la conception basée sur des règles, des applications de programmation pluridisciplinaires et plus encore, avec la plate-forme Dynamo.
+Vous venez d'ouvrir le guide Dynamo, un guide complet de programmation visuelle dans Autodesk Dynamo Studio. Ce guide est un projet continu visant à partager les bases de la programmation. Les rubriques suivantes concernent l'utilisation de la géométrie de calcul, les recommandations pour la conception basée sur des règles, des applications de programmation pluridisciplinaires et plus encore, avec la plate-forme Dynamo.
 
 La puissance de Dynamo est offerte par une large gamme d'activités liées à la conception. Dynamo vous offre une liste étendue de méthodes facilement accessibles pour commencer à utiliser les logiciels suivants :
 
