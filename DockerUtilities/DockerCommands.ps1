@@ -3,14 +3,13 @@
    Purpose: Run the commands inside container.
 #>
 #param($language)
-param([string[]]$ArrayParameter=@())
+param([string[]]$ArrayParameter=@(), $PrimerRoot )
 
 $ErrorActionPreference = "Stop"
 
 try
 {
    # DynamoPrimer´s location
-   $PrimerRoot = "c:\WorkspacePrimer"
    Foreach ($language in $ArrayParameter)
    {        
       $LanguageLocation = "$PrimerRoot" + "\" + "$language"

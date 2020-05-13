@@ -10,6 +10,7 @@ env:
   - PDFCOMPRESS_DEVICE : "pdfwrite"
   - BUCKETNAME : "staging.dynamoprimer.com"
   - DISTRIBUTIONID : "E1L4E92B2OBQIF"
+  - DOCKER_WORKSPACE : "C:\\WorkspacePrimer"
 
 timeout: 420
 check_changelog_updated_on_pr: false
@@ -26,11 +27,11 @@ job_parameters:
 build:
   -
     scripts:
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
 
 code_analysis:
   sonarqube:
