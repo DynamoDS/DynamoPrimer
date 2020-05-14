@@ -10,7 +10,7 @@ try
 	{
 		throw "No languages were selected."
 	}
-	docker exec build-primer powershell -command "$env:DOCKER_WORKSPACE\DockerUtilities\DockerDeployCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE $env:BUCKETNAME $env:DISTRIBUTIONID $env:DOCKER_WORKSPACE"
+	docker exec build-primer pwsh -command "$env:DOCKER_WORKSPACE\DockerUtilities\DockerDeployCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE $env:BUCKETNAME $env:DISTRIBUTIONID $env:DOCKER_WORKSPACE"
 }
 catch
 {
