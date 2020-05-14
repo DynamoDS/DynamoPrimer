@@ -4,7 +4,7 @@ env:
   - SLACK_QUANTUM_BUILD_CHANNEL : "#dynamo-jenkinsbuild"
   - SLACK_QUANTUM_BUILD_CREDENTIAL_ID : "slack-notify-token"
   - MAIL_QUANTUM_BUILD_RECIPIENT : "dynamo.plaid.dev@autodesk.com"
-  - DOCKER_IMAGE_VERSION : "1.0.4"
+  - DOCKER_IMAGE_VERSION : "1.0.5"
   - PDFCOMPRESS_COLORIMAGERESOLUTION : "125dpi"
   - PDFCOMPRESS_PDFSETTINGS : "screen"
   - PDFCOMPRESS_DEVICE : "pdfwrite"
@@ -20,8 +20,8 @@ job_parameters:
     -
       type: "extendedChoice"
       name: "ENVIRONMENT_LANGUAGE"
-      value: "en,de,ja,zh-tw,cs,es,fr,it,ko,pl,pt-br,ru,zh-cn"
-      defaultValue: "en,de,ja,zh-tw,cs,es,fr,it,ko,pl,pt-br,ru,zh-cn"
+      value: "en"
+      defaultValue: "en"
       delimiter: ","
       description: ""
 build:

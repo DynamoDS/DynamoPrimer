@@ -2,7 +2,10 @@
    Date: 29/11/2019
    Purpose: Run the vault commands inside container.
 #>
-param($ads_user_name, $ads_user_password)
+param(
+   $ads_user_name, 
+   $ads_user_password
+)
 $ErrorActionPreference = "Stop"
 
 try {

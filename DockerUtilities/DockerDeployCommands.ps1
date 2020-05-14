@@ -2,7 +2,13 @@
    Date: 29/11/2019
    Purpose: Run the deploy commands inside container.
 #>
-param([string[]]$ArrayParameter=@(), $bucketName, $distributionID, $PrimerRoot)
+param(
+   [string[]]$ArrayParameter=@(), 
+   $bucketName, 
+   $distributionID, 
+   $PrimerRoot
+)
+
 $ErrorActionPreference = "Stop"
 
 Function RemoveS3Object {

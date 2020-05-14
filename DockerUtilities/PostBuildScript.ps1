@@ -16,7 +16,7 @@ try
 }
 catch
 {
-	Invoke-Item "$env:WORKSPACE\DockerUtilities\PostDeployScript.ps1"
+	Invoke-Expression -Command "$env:WORKSPACE\DockerUtilities\PostDeployScript.ps1"
 	Write-Host $error[0]
 	throw $LASTEXITCODE
 }

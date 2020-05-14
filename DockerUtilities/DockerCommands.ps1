@@ -3,7 +3,10 @@
    Purpose: Run the commands inside container.
 #>
 #param($language)
-param([string[]]$ArrayParameter=@(), $PrimerRoot )
+param(
+   [string[]]$ArrayParameter=@(), 
+   $PrimerRoot 
+)
 
 $ErrorActionPreference = "Stop"
 
