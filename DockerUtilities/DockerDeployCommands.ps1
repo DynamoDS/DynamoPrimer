@@ -80,31 +80,30 @@ try {
    #Set credentials
    Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.data.secret_key -SessionToken $jsonToken.data.security_token
 
+   Foreach ($language in $ArrayParameter)
+   {
+      #Remove languge folder.
+      Write-Host "Removing '$language' old content ..."
+      RemoveS3Folder -s3Prefix "$language"
+      #Get all files and upload
+      Write-Host "Uploading '$language' new content ..."
+      UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
 
-   # Foreach ($language in $ArrayParameter)
-   # {
-   #    #Remove languge folder.
-   #    Write-Host "Removing '$language' old content ..."
-   #    RemoveS3Folder -s3Prefix "$language"
-   #    #Get all files and upload
-   #    Write-Host "Uploading '$language' new content ..."
-   #    UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
+      if($language -eq "en"){
+         $filter = {($_.Key -NotLike "en/*" -and $_.Key -NotLike "de/*" -and $_.Key -NotLike "ja/*" -and $_.Key -NotLike "zh-tw/*")}
+         Write-Host "Updating root content folders"
+         #Remove folders.
+         Write-Host "Removing old root content..."
+         RemoveS3Folder -s3Prefix $null -filter $filter
+         #Get all files and upload
+         Write-Host "Uploading root content..."
+         UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
+      }
+   }
 
-   #    if($language -eq "en"){
-   #       $filter = {($_.Key -NotLike "en/*" -and $_.Key -NotLike "de/*" -and $_.Key -NotLike "ja/*" -and $_.Key -NotLike "zh-tw/*")}
-   #       Write-Host "Updating root content folders"
-   #       #Remove folders.
-   #       Write-Host "Removing old root content..."
-   #       RemoveS3Folder -s3Prefix $null -filter $filter
-   #       #Get all files and upload
-   #       Write-Host "Uploading root content..."
-   #       UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
-   #    }
-   # }
-
-   # #Invalidating current CDN content to refresh it
-   # $invalidationLong = [long](Get-Date -Format "yyyddMMHHmm")
-   # New-CFInvalidation -DistributionId $distributionID -InvalidationBatch_CallerReference $invalidationLong -Paths_Item "/*" -Paths_Quantity 1 -Region $AWSRegion
+   #Invalidating current CDN content to refresh it
+   $invalidationLong = [long](Get-Date -Format "yyyddMMHHmm")
+   New-CFInvalidation -DistributionId $distributionID -InvalidationBatch_CallerReference $invalidationLong -Paths_Item "/*" -Paths_Quantity 1 -Region $AWSRegion
 
 }
 catch {
