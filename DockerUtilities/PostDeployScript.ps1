@@ -11,11 +11,11 @@ try
 }
 catch
 {
+	Invoke-Expression -Command "$env:WORKSPACE\DockerUtilities\PostDeployScript.ps1"
 	Write-Host $error[0]
 	throw $LASTEXITCODE
 }
 finally
 {
-	docker system prune -f
-	Invoke-Item "$env:WORKSPACE\DockerUtilities\RestartDockerDesktop.ps1"
+	docker container prune -f
 }
