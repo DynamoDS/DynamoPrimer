@@ -20,8 +20,8 @@ job_parameters:
     -
       type: "extendedChoice"
       name: "ENVIRONMENT_LANGUAGE"
-      value: "en"
-      defaultValue: "en"
+      value: "en,de,ja,zh-tw,cs,es,fr,it,ko,pl,pt-br,ru,zh-cn"
+      defaultValue: "en,de,ja,zh-tw,cs,es,fr,it,ko,pl,pt-br,ru,zh-cn"
       delimiter: ","
       description: ""
 build:
