@@ -8,7 +8,7 @@ env:
   - PDFCOMPRESS_COLORIMAGERESOLUTION : "125dpi"
   - PDFCOMPRESS_PDFSETTINGS : "screen"
   - PDFCOMPRESS_DEVICE : "pdfwrite"
-  - BUCKETNAME : "staging.dynamoprimer.com"
+  - BUCKETNAME : "primer.dynamobim.org"
   - DISTRIBUTIONID : "E1L4E92B2OBQIF"
   - DOCKER_WORKSPACE : "C:\\WorkspacePrimer"
 
