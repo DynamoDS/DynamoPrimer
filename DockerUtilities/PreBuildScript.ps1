@@ -11,11 +11,11 @@ try
 
 	docker pull $DockerImage
 
-	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE,target=c:\WorkspacePrimer --name build-primer $DockerImage
+	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE,target=$env:DOCKER_WORKSPACE --name build-primer $DockerImage
 }
 catch
 {
-	Invoke-Item "$env:WORKSPACE\DockerUtilities\PostDeployScript.ps1"
+	Invoke-Expression -Command "$env:WORKSPACE\DockerUtilities\PostDeployScript.ps1"
 	Write-Host $error[0]
 	throw $LASTEXITCODE
 }
