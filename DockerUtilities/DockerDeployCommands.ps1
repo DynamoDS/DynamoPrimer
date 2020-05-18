@@ -2,7 +2,13 @@
    Date: 29/11/2019
    Purpose: Run the deploy commands inside container.
 #>
-param([string[]]$ArrayParameter=@(), $bucketName, $distributionID)
+param(
+   [string[]]$ArrayParameter=@(), 
+   $bucketName, 
+   $distributionID, 
+   $PrimerRoot
+)
+
 $ErrorActionPreference = "Stop"
 
 Function RemoveS3Object {
@@ -61,42 +67,46 @@ Function UploadS3Folder {
    Write-Host "Upload complete for $s3Prefix!" 
 }
 
-# DynamoPrimerÃ‚Â´s location
-$PrimerRoot = "C:\WorkspacePrimer"
+try {
+      
+   #Vault
+   $jsonToken = &vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json /account/572569678988/sts/Application-Ops ttl=4h | ConvertFrom-Json
+   Write-Host $jsonToken.request_id
 
-#Vault
-$jsonToken = &vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json /account/572569678988/sts/Application-Ops ttl=4h | ConvertFrom-Json
-Write-Host $jsonToken.request_id
+   #AWS variables
+   $AWSRegion = "us-east-1"
+   $AWSBucketName = $bucketName
 
-#AWS variables
-$AWSRegion = "us-east-1"
-$AWSBucketName = $bucketName
+   #Set credentials
+   Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.data.secret_key -SessionToken $jsonToken.data.security_token
 
-#Set credentials
-Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.data.secret_key -SessionToken $jsonToken.data.security_token
-
-
-Foreach ($language in $ArrayParameter)
-{
-   #Remove languge folder.
-   Write-Host "Removing '$language' old content ..."
-   RemoveS3Folder -s3Prefix "$language"
-   #Get all files and upload
-   Write-Host "Uploading '$language' new content ..."
-   UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
-
-   if($language -eq "en"){
-      $filter = {($_.Key -NotLike "en/*" -and $_.Key -NotLike "de/*" -and $_.Key -NotLike "ja/*" -and $_.Key -NotLike "zh-tw/*")}
-      Write-Host "Updating root content folders"
-      #Remove folders.
-      Write-Host "Removing old root content..."
-      RemoveS3Folder -s3Prefix $null -filter $filter
+   Foreach ($language in $ArrayParameter)
+   {
+      #Remove languge folder.
+      Write-Host "Removing '$language' old content ..."
+      RemoveS3Folder -s3Prefix "$language"
       #Get all files and upload
-      Write-Host "Uploading root content..."
-      UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
-   }
-}
+      Write-Host "Uploading '$language' new content ..."
+      UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix "$language"
 
-#Invalidating current CDN content to refresh it
-$invalidationLong = [long](Get-Date -Format "yyyddMMHHmm")
-New-CFInvalidation -DistributionId $distributionID -InvalidationBatch_CallerReference $invalidationLong -Paths_Item "/*" -Paths_Quantity 1 -Region $AWSRegion
+      if($language -eq "en"){
+         $filter = {($_.Key -NotLike "en/*" -and $_.Key -NotLike "de/*" -and $_.Key -NotLike "ja/*" -and $_.Key -NotLike "zh-tw/*")}
+         Write-Host "Updating root content folders"
+         #Remove folders.
+         Write-Host "Removing old root content..."
+         RemoveS3Folder -s3Prefix $null -filter $filter
+         #Get all files and upload
+         Write-Host "Uploading root content..."
+         UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
+      }
+   }
+
+   #Invalidating current CDN content to refresh it
+   $invalidationLong = [long](Get-Date -Format "yyyddMMHHmm")
+   New-CFInvalidation -DistributionId $distributionID -InvalidationBatch_CallerReference $invalidationLong -Paths_Item "/*" -Paths_Quantity 1 -Region $AWSRegion
+
+}
+catch {
+   Write-Host $error[0]
+	throw $LASTEXITCODE
+}
