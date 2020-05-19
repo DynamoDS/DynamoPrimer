@@ -10,11 +10,11 @@ try
 	{
 		throw "No languages were selected."
 	}
-	docker exec build-primer powershell -command "C:\WorkspacePrimer\DockerUtilities\DockerDeployCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE $env:BUCKETNAME $env:DISTRIBUTIONID"
+	docker exec build-primer pwsh -command "$env:DOCKER_WORKSPACE\DockerUtilities\DockerDeployCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE $env:BUCKETNAME $env:DISTRIBUTIONID $env:DOCKER_WORKSPACE"
 }
 catch
 {
-	Invoke-Item "$env:WORKSPACE\DockerUtilities\PostDeployScript.ps1"
+	Invoke-Expression -Command "$env:WORKSPACE\DockerUtilities\PostDeployScript.ps1"
 	Write-Host $error[0]
 	throw $LASTEXITCODE
 }
