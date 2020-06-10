@@ -70,7 +70,7 @@ Dans ce cas, vous travaillez avec une géométrie simple. Vous devez donc import
 
 > Voici une autre méthode : dans ce cas, vous ne pouvez pas effectuer de sélection via la hiérarchie Revit *("All Elements of Category")* et choisissez de sélectionner explicitement la géométrie dans Revit.
 
-> 1. À l'aide du noeud *"Select Model Element"*, cliquez sur le bouton *"Sélectionner"* (ou *"Modifier"*). Dans la fenêtre Revit, sélectionnez l'élément souhaité. Dans ce cas, l'élément sélectionné est le volume du bâtiment.
+> 1. Utilisez le noeud *"Select Model Element"*, et cliquez sur le bouton *"Sélectionner"* (ou *"Modifier"*). Dans la fenêtre Revit, sélectionnez l'élément souhaité. Dans ce cas, l'élément sélectionné est le volume du bâtiment.
 2. Au lieu d'utiliser le noeud *Element.Faces*, vous pouvez sélectionner le volume complet comme géométrie solide à l'aide du noeud *Element.Geometry*. Cette opération permet de sélectionner toute la géométrie contenue dans ce volume.
 3. Le noeud *Geometry.Explode* vous permet de récupérer la liste des surfaces. Ces deux noeuds fonctionnent de la même manière que *Element.Faces*, mais offrent d'autres options permettant d'explorer la géométrie d'un élément Revit.
 

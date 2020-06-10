@@ -1,6 +1,6 @@
 
 
-## GUIDA INTRODUTTIVA
+## PER INIZIARE
 
 Ora che è stata acquisita familiarità con il layout dell'interfaccia e con l'esplorazione dell'area di lavoro, il passaggio successivo consiste nel comprendere il workflow tipico per lo sviluppo di un grafico in Dynamo. Per iniziare, creare un cerchio di dimensioni dinamiche, quindi creare una serie di cerchi con raggi variabili.
 

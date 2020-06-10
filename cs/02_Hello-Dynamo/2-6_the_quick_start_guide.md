@@ -18,14 +18,14 @@ Nyní, když máme načrtnuté cíle a vztahy, můžeme začít vytvářet náš
 
 ![Procházení a vyhledávání](images/2-4/01-BrowseAndSearch.png)
 
-> 1. Přejděte k položce Geometrie > Oblouky > Kružnice > **Circle.ByPointRadius**
+> 1. Přejděte k položce Geometrie > Kružnice > **ByCenterPointRadius**
 2. Hledat > „ByCenterPointRadius...“
 
-Kliknutím na uzel **Circle.ByPointRadius** v knihovně ho přidáme do pracovního prostoru. To by mělo uzel přidat do středu pracovního prostoru.
+Kliknutím na uzel **Circle.ByCenterPointRadius** v knihovně ho přidáme do pracovního prostoru. To by mělo uzel přidat do středu pracovního prostoru.
 
 ![Přidaná kružnice](images/2-4/02-CircleAdded.png)
 
-> 1. Uzel Circle.ByPointandRadius v knihovně
+> 1. Uzel Circle.ByCenterPointandRadius v knihovně
 2. Kliknutím na uzel v knihovně jej přidáte do pracovního prostoru
 
 Také budeme potřebovat uzly **Point.ByCoordinates**, **Number Input** a **Number Slider**.
@@ -34,10 +34,10 @@ Také budeme potřebovat uzly **Point.ByCoordinates**, **Number Input** a **Numb
 
 > 1. Geometrie > Body > Bod > **Point.ByCoordinates**
 2. Geometrie > Geometrie > **DistanceTo**
-3. Vstup > Základní > **Number**
+3. Core > Vstup > **Number**
 4. Vstup > Základní > **Number Slider**
 
-### Připojení uzlů s vodiči
+### Propojení uzlů pomocí drátů
 
 Nyní, když máme několik uzlů, je nutné propojit porty uzlů s vodiči. Tato připojení budou definovat tok dat.
 

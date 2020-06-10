@@ -12,7 +12,7 @@ Dynamo Primer v1.3 [hier](http://primer.dynamobim.org/en/Appendix/DynamoPrimer-P
 
 ### Willkommen
 
-Sie haben gerade Dynamo Primer geöffnet, die umfassende Einführung in die visuelle Programmierung in Autodesk Dynamo Studio. Bei diesem Primer handelt es sich um ein laufendes Projekt zum Austauschen der Grundlagen der Programmierung. Zu den enthaltenen Themen gehören die Verwendung der der Dynamo-Plattform für rechnerische Geometrie (Computational Geometry), Best Practices für regelbasierte Konstruktionen, interdisziplinäre Programmierungsanwendungen und andere.
+Sie haben gerade Dynamo Primer geöffnet, die umfassende Einführung in die visuelle Programmierung in Autodesk Dynamo Studio. Bei diesem Primer handelt es sich um ein laufendes Projekt zum Austauschen der Grundlagen der Programmierung. Zu den enthaltenen Themen gehören die Verwendung der Dynamo-Plattform für rechnerische Geometrie (Computational Geometry), Best Practices für regelbasierte Konstruktionen, interdisziplinäre Programmierungsanwendungen und andere.
 
 Der Leistungsumfang von Dynamo spiegelt sich in einer breiten Palette von konstruktionsbezogenen Aktivitäten wider. Dynamo bietet eine umfassende Reihe an leicht zugänglichen Möglichkeiten für den ersten Einstieg, die ständig erweitert wird:
 

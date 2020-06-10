@@ -18,14 +18,14 @@ Ahora que hemos dibujado un boceto de nuestros objetivos y relaciones, podemos e
 
 ![Examinar y buscar](images/2-4/01-BrowseAndSearch.png)
 
-> 1. Vaya a Geometría > Curvas > Círculo > **Circle.ByPointRadius**.
+> 1. Vaya a Geometría > Curvas > Círculo > **Circle.ByCenterPointRadius**.
 2. Buscar > ByCenterPointRadius...
 
-Vamos a añadir el nodo **Circle.ByPointRadius** al espacio de trabajo haciendo clic en él en la biblioteca; esta acción debería añadir el nodo en el centro del espacio de trabajo.
+Vamos a añadir el nodo **Circle.CenterByPointRadius** al espacio de trabajo haciendo clic en él en la biblioteca; esta acción debería añadir el nodo en el centro del espacio de trabajo.
 
 ![Círculo añadido](images/2-4/02-CircleAdded.png)
 
-> 1. El nodo Circle.ByPointandRadius de la biblioteca.
+> 1. El nodo Circle.ByPointCenterRadius de la biblioteca.
 2. Al hacer clic en el nodo de la biblioteca, este se añade al espacio de trabajo.
 
 También necesitaremos los nodos **Point.ByCoordinates**, **Number Input** y **Number Slider**.
@@ -34,8 +34,8 @@ También necesitaremos los nodos **Point.ByCoordinates**, **Number Input** y **N
 
 > 1. Geometría > Puntos > Punto > **Point.ByCoordinates**
 2. Geometría > Geometría > **DistanceTo**
-3. Entrada > Básico > **Number**
-4. Entrada > Básico > **Number Slider**
+3. Core > Entrada > **Number**
+4. Core > Entrada > **Number Slider**
 
 ### Conexión de nodos con cables
 
