@@ -19,7 +19,7 @@ Zde si můžete stáhnout nejnovější vývojové verze nebo přejít do projek
 
 > 1. Stažení oficiální verze instalačního programu
 2. Stažení denních vydání instalačních programů
-3. Vlastní balíky od vývojářské komunity
+3. Vlastní balíčky od vývojářské komunity
 4. Zapojit se do vývoje aplikace Dynamo na GitHubu
 
 ### Instalace

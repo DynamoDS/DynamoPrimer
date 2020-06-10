@@ -59,7 +59,7 @@ Standardmäßig enthält die **Bibliothek** acht Kategorien von Blöcken. Am bes
 4. Import/Export
 5. Eingabeblöcke (Input)
 6. Liste
-7. +Findet
+7. Übereinstimmungen
 8. Revit
 9. Skript
 10. Zeichenfolge
@@ -72,7 +72,7 @@ Durchsuchen Sie die Bibliothek, indem Sie durch die Menüs klicken. Klicken Sie 
 > 1. Bibliothek
 2. Kategorie
 3. Unterkategorie: Erstellen/Aktionen/Abfrage
-4. Punkt
+4. Block
 5. Blockbeschreibung und -eigenschaften: Wird angezeigt, wenn Sie den Cursor auf das Blocksymbol bewegen.
 
 Bewegen Sie den Cursor im Menü Circle auf **ByCenterPointRadius**. Das daraufhin angezeigte Fenster enthält über den Namen und das Symbol hinaus noch weitere detaillierte Informationen zu dem Block. Dadurch können Sie schnell nachvollziehen, welche Aktion der Block ausführt, welche Eingaben erforderlich sind und was von dem Block ausgegeben wird.

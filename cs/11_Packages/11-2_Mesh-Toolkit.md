@@ -1,6 +1,6 @@
 
 
-## Příklad balíku – sada nástrojů pro sítě
+## Příklad balíčku – sada nástrojů pro sítě
 
 Sada nástrojů pro sítě obsahuje nástroje pro import sítí ze souborů různých formátů, tvorbu sítě z objektů geometrií aplikace Dynamo a ruční tvorbu sítí z bodů a indexů. Knihovna také obsahuje nástroje pro úpravy sítí a extrahování vodorovných řezů pro použití ve výrobě.
 
@@ -10,13 +10,13 @@ Sada nástrojů pro sítě aplikace Dynamo je součástí výzkumu společnosti 
 
 ### Sítě vs. tělesa
 
-V následujícím cvičení budou demonstrovány základní operace pomocí sady nástrojů pro sítě. V tomto cvičení protneme síť řadou rovin, což by u těles bylo výpočetně náročné. Na rozdíl od tělesa má síť „rozlišení“, které není definováno matematicky, ale topologicky, a je možné ho definovat podle aktuální úlohy. Další podrobnosti o vztahu mezi sítí a tělesem naleznete v kapitole [Geometrie pro návrh výpočtu](../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.md) v této příručce Primer. Další informace o sadě nástrojů pro sítě naleznete na[wiki stránce aplikace Dynamo.](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit) Cvičení níže demonstruje práci s tímto balíkem.
+V následujícím cvičení budou demonstrovány základní operace pomocí sady nástrojů pro sítě. V tomto cvičení protneme síť řadou rovin, což by u těles bylo výpočetně náročné. Na rozdíl od tělesa má síť „rozlišení“, které není definováno matematicky, ale topologicky, a je možné ho definovat podle aktuální úlohy. Další podrobnosti o vztahu mezi sítí a tělesem naleznete v kapitole [Geometrie pro návrh výpočtu](../05_Geometry-for-Computational-Design/5_geometry-for-computational-design.md) v této příručce Primer. Další informace o sadě nástrojů pro sítě naleznete na[wiki stránce aplikace Dynamo.](https://github.com/DynamoDS/Dynamo/wiki/Dynamo-Mesh-Toolkit) Cvičení níže demonstruje práci s tímto balíčkem.
 
 ### Instalace sady nástrojů pro sítě
 
 ![Import sítě](images/11-3/mt.jpg)
 
-> V horní nabídce aplikace Dynamo vyberte možnost *Balíky > Hledat balíky...*. Do pole pro hledání zadejte slovo *„MeshToolkit“*, dbejte na velikost písmen. Klikněte na šipku ke stažení u požadovaného balíku pro danou verzi aplikace Dynamo. Je to tak jednoduché.
+> V horní nabídce aplikace Dynamo vyberte možnost *Balíčky > Hledat balíčky...*. Do pole pro hledání zadejte slovo *„MeshToolkit“*, dbejte na velikost písmen. Klikněte na šipku ke stažení u požadovaného balíku pro danou verzi aplikace Dynamo. Je to tak jednoduché.
 
 ### Cvičení
 

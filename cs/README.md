@@ -34,7 +34,7 @@ Tato příručka Primer obsahuje kapitoly od společnosti Mode Lab. Tyto kapitol
 * **Kód v uzlech** – Jak aplikaci Dynamo rozšířit o vlastní kód?
 * **Výpočetní BIM** – Jak aplikaci Dynamo použít spolu s modelem aplikace Revit?
 * **Vlastní uzly** – Jak vytvářet vlastní uzly?
-* **Balíky** – Jak sdílet vlastní nástroje s komunitou?
+* **Balíčky** – Jak sdílet vlastní nástroje s komunitou?
 
 Je to vzrušující příležitost, kdy se naučit pracovat a vyvíjet v aplikaci Dynamo. Začínáme!
 
