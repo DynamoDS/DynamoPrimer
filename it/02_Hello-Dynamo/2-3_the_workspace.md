@@ -2,7 +2,7 @@
 
 ## Area di lavoro
 
-L'**area di lavoro** di Dynamo è dove si sviluppano i programmi visivi, ma è anche dove viene visualizzata l'anteprima di qualsiasi geometria risultante. Sia che si stia lavorando in un'area di lavoro iniziale sia in un nodo personalizzato, è possibile spostarsi con il mouse o i pulsanti in alto a destra. Alternando le varie modalità all'altra in basso a destra, si passa all'anteprima in cui navigare.
+L'**area di lavoro** di Dynamo è dove si sviluppano i programmi visivi, ma è anche dove viene visualizzata l'anteprima di qualsiasi geometria risultante. Sia che si stia lavorando in un'area di lavoro iniziale sia in un nodo personalizzato, è possibile spostarsi con il mouse o i pulsanti in alto a destra. Alternando le varie modalità in basso a destra, si passa all'anteprima in cui navigare.
 
 > Nota: i nodi e la geometria presentano un ordine di visualizzazione che consente di eseguire il rendering degli oggetti uno sopra l'altro. Ciò può creare confusione durante l'aggiunta di più nodi in sequenza, poiché potrebbero essere sottoposti a rendering nella stessa posizione nell'area di lavoro.
 
@@ -31,7 +31,7 @@ In Dynamo, il grafico e i risultati 3D del grafico (se si sta creando la geometr
 2. Clic con il pulsante destro del mouse nell'area di lavoro e selezionando *Passa alla _vista geometria...*
 3. Tasto di scelta rapida (CTRL+B)
 
-La modalità di navigazione nell'anteprima 3D offre anche la possibilità di **manipolazione diretta** dei punti, come evidenziato in [Introduzione](http://primer.dynamobim.org/02_Hello-Dynamo/2-6_the_quick_start_guide.html).
+La modalità di navigazione nell'anteprima 3D offre anche la possibilità di **manipolazione diretta** dei punti, come evidenziato in [Per iniziare](http://primer.dynamobim.org/02_Hello-Dynamo/2-6_the_quick_start_guide.html).
 
 ### Zoom per la ricentratura
 

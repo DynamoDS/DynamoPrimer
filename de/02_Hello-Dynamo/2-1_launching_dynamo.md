@@ -40,7 +40,7 @@ Um Dynamo zu starten, navigieren Sie zu \Programme\Dynamo\Dynamo Revit\x.y und w
 
 > 1. Dateien: Neue Datei erstellen oder vorhandene Datei öffnen
 2. Letzte: Liste der zuletzt verwendeten Dateien
-3. Backup - Zugriff auf Ihre Sicherungsdateien
+3. Backup: Zugriff auf Ihre Sicherungsdateien
 4. Fragen: Für direkten Zugriff auf das Benutzerforum oder die Dynamo-Website
 5. Referenz: Vertiefung mithilfe zusätzlicher Schulungsressourcen
 6. Code: Zur Beteiligung am Open-Source-Entwicklungsprojekt

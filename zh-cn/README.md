@@ -8,7 +8,7 @@
 
 ![Dynamo 徽标](images/dynamo_logo_dark-trim.jpg)
 
-> Dynamo 是为设计师提供的开源可视化编程平台，
+> Dynamo 是为设计师提供的开源可视化编程平台。
 
 ### 欢迎
 
@@ -17,7 +17,7 @@
 Dynamo 的强大功能可在多种与设计相关的活动中找到。Dynamo 带有可立即访问的扩展列表，让您快速入门：
 
 * 首次**探索**可视化编程
-* 各种软件中的**连接**工作流
+* **连接**各种软件中的工作流
 * **参与**活跃的社区，其中包含用户、贡献者和开发者
 * **开发**开源平台以持续改进
 
@@ -40,7 +40,7 @@ Dynamo 的强大功能可在多种与设计相关的活动中找到。Dynamo 带
 
 ---
 
-### 打开源
+### 开源
 
 Dynamo Primer 项目是开源的！我们致力于提供高质量内容，并感谢您提供的任何反馈。如果您要报告任何方面的问题，请将其发布到我们的 GitHub 问题页面：[https://github.com/DynamoDS/DynamoPrimer/issues](https://github.com/DynamoDS/DynamoPrimer/issues)
 
@@ -64,7 +64,7 @@ Dynamo Primer 是一个开源项目，由 Matt Jezyk 和 Autodesk 的 Dynamo 开
 
 尤其感谢 Ian Keough 启动和引导 Dynamo 项目。
 
-感谢 Matt Jezyk、Ian Keough、Zach Kron、Racel Williams 和 Colin McCrone 进行热情协作，并有机会参与各种 Dynamo 项目。
+感谢 Matt Jezyk、Ian Keough、Zach Kron、Racel Williams 和 Colin McCrone 进行热情协作，并让大家有机会参与各种 Dynamo 项目。
 
 ### 软件和资源
 
