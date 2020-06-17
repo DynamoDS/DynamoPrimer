@@ -22,7 +22,7 @@ Observação: Depois de descobrir a aplicação abrangente de edição de parâm
 
 #### Unidades
 
-A partir da versão 0.8, o Dynamo é fundamentalmente sem unidades. Isso permite que o Dynamo continue sendo um ambiente de programação visual abstrato. Os nós do Dynamo que interagem com as cotas do Revit farão referência às unidades do projeto do Revit. Por exemplo, se você estiver definindo um parâmetro de comprimento no Revit no Dynamo, o número no Dynamo para o valor corresponderá às unidades padrão no projeto do Revit. O exercício abaixo funciona em metros.
+A partir da versão 0.8, o Dynamo tem como base a ausência de unidades. Isso permite que o Dynamo continue sendo um ambiente de programação visual abstrato. Os nós do Dynamo que interagem com as cotas do Revit farão referência às unidades do projeto do Revit. Por exemplo, se você estiver definindo um parâmetro de comprimento no Revit no Dynamo, o número no Dynamo para o valor corresponderá às unidades padrão no projeto do Revit. O exercício abaixo funciona em metros.
 
 ![Exercício](images/8-3/units.jpg)
 

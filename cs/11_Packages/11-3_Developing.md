@@ -74,11 +74,11 @@ S otevřeným kořenovým adresářem přejděte do složky *extra*, která obs
 
 ![](images/11-4/Creating/Packages - 05.jpg)
 
-> **02-PanelingWithPolygonons-II:** Pomocí podobného pracovního postupu se v tomto souboru cvičení zobrazí nastavení pro mapování kružnic (nebo polygonů reprezentujících kružnice) z jednoho povrchu na druhý. Používá se uzel *PolygononsToSurface*.
+> **02-PanelingWithPolygonons-II:** Pomocí podobného pracovního postupu se v tomto souboru cvičení zobrazí nastavení pro mapování kružnic (nebo polygonů reprezentujících kružnice) z jednoho povrchu na druhý. Používá se uzel *PolygonsToSurface*.
 
 ![](images/11-4/Creating/Packages - 04.jpg)
 
-> **03-NurbsCrvsAndSurface:** Tento příklad přidává určitou složitost při práci s uzlem NurbsCrvToSurface. Cílový povrch je odsazen o danou vzdálenost a křivka nurbs je mapována na původní cílový povrch a odsazený povrch. Od této chvíle jsou oba mapované oblouky šablonovány, aby vytvořily povrch, který bude poté zesílen. Výsledné těleso má zaoblení, které je reprezentativní pro normály cílového povrchu.
+> **03-NurbsCrvsAndSurface:** Tento příklad přidává určitou složitost při práci s uzlem NurbsCrvToSurface. Cílový povrch je odsazen o danou vzdálenost a křivka nurbs je mapována na původní cílový povrch a odsazený povrch. Od této chvíle jsou obě mapované křivky šablonovány, aby vytvořily povrch, který bude poté zesílen. Výsledné těleso má zaoblení, které je reprezentativní pro normály cílového povrchu.
 
 ![](images/11-4/Creating/Packages - 03A.jpg)
 

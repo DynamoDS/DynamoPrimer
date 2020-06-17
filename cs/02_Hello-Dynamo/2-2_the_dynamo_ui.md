@@ -65,7 +65,7 @@ Ve výchozím nastavení bude **knihovna** obsahovat osm kategorií uzlů. **Tv�
 10. Řetězec
 11. Doplňky
 
-Procházejte knihovnu kliknutím v nabídkách. Klikněte na položky Geometrie > Křivky > Kružnice. Všimněte si nové části zobrazené nabídky, konkrétně popisků **Vytvořit** a **Dotaz**.
+Procházejte knihovnu kliknutím v nabídkách. Klikněte na položky Geometry > Curves > Circle. Všimněte si nové části zobrazené nabídky, konkrétně popisků **Vytvořit** a **Dotaz**.
 
 ![Procházení knihovny](images/2-2/05-LibraryBrowsing.png)
 
@@ -118,7 +118,7 @@ Pokud máte problém, podívejte se do nabídky **Nápověda**. Zde najdete uká
 ![zobrazit nabídku](images/2-2/09-Help.png)
 
 > 1. Začínáme – Stručný úvod do používání aplikace Dynamo.
-2. Ukázky – Vzorové soubory reference.
+2. Samples – Vzorové referenční soubory.
 3. Otevřít slovník aplikace Dynamo – Zdroj s dokumentací o všech uzlech.
 4. Hlášení chyby – Otevře problém v úložišti GitHub.
 5. Přejít na web projektu – Zobrazení projektu aplikace Dynamo v úložišti GitHub.

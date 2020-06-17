@@ -30,7 +30,7 @@ Nyní byste měli vidět mřížku obdélníků. Tyto obdélníky namapujeme na 
 > 1. **Polygon.Points:** Spojením výstupu obdélníku z předchozího kroku se vstupem *polygon* lze extrahovat rohové body každého obdélníku. Jedná se o body, které namapujeme na cílový povrch.
 2. **Rectangle.ByWidthLength:** Pomocí bloku kódu s hodnotou *100* určete šířku a délku obdélníku. Toto bude hranice našeho základního povrchu.
 3. **Surface.ByPatch:** Připojte obdélník z předchozího kroku k vstupu *closedCurve* a vytvořte tak základní povrch.
-4. **Surface.UVParameterAtPoint:** Připojte výstup *Point* uzlu *Polygon.Points* a výstupu *Surface* uzlu *Surface.ByPatch* k vrácení parametru UV v každém bodu.
+4. **Surface.UVParameterAtPoint:** Připojte výstup *Point* uzlu *Polygon.Points* a výstup *Surface* uzlu *Surface.ByPatch* k vrácení parametru UV v každém bodu.
 
 Nyní, když máme základní povrch a sadu souřadnic UV, můžete importovat cílový povrch a mapovat body mezi povrchy.
 
@@ -67,13 +67,13 @@ Nyní vybereme uzly, které chceme vnořit do vlastního uzlu, a zvážíme, co 
 
 > Dvakrát klikněte na vlastní uzel, který chcete upravit. Tím se otevře pracovní prostor se žlutým pozadím, které představuje vnitřek uzlu.
 
-> 1. **Vstupy:** Změňte vstupní názvy na *baseSurface* a *targetSurface*.
+> 1. **Vstupy:** Změňte vstupů názvy na *baseSurface* a *targetSurface*.
 2. **Výstupy:** Přidejte další výstup pro mapované polygony.
 > Uložte vlastní uzel a vraťte se do domovského pracovního prostoru.
 
 ![Cvičení](images/10-2/UVmapping09.jpg)
 
-> Uzel **MapPolygononsToSurface** odráží změny, které jsme právě provedli.
+> Uzel **MapPolygonsToSurface** odráží změny, které jsme právě provedli.
 
 Robustnost vlastního uzlu lze také zvýšit přidáním hodnot **Vlastní komentáře**. Komentáře mohou pomoci u typů vstupů a výstupů nebo vysvětlovat funkci uzlu. Komentáře se zobrazí, když uživatel umístí kurzor nad vstup, nebo výstup vlastního uzlu.
 
