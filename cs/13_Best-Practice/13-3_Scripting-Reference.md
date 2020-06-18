@@ -209,7 +209,7 @@ function (1)
 function(1)
 ```
 
-* Bezprostředně před otevřenou závorkou, která začíná indexování nebo řezy:
+* Bezprostředně před otvírací závorkou, která začíná indexování nebo řezy:
 
 ```
 ### BAD
@@ -230,7 +230,7 @@ comparisons ( == , < , > , != , <> , <= , >= , in , not in , is , is not )
 Booleans ( and , or , not )
 ```
 
-**Délka čáry sledování:**
+**Dávejte pozor na délku řádků:**
 
 * Nepřekračujte cca 79 znaků.
 
@@ -285,7 +285,7 @@ print form_input_state()
 
   **Nespravované objekty:**
 
-  Při používání knihovny geometrie aplikace Dynamo *(ProtoGeometry)* z geometrie aplikace Python nebo C# nebudou vytvářené objekty spravovány virtuálním počítačem a paměť mnoha těchto objektů bude nutné vyčistit ručně. Chcete-li vyčistit nativní nebo nespravované objekty, můžete použít metodu **Dispose** nebo klíčové slovo **using**. Přehled najdete v této položce Wiki: [https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement).
+  Při používání knihovny geometrie aplikace Dynamo *(ProtoGeometry)* z geometrických objektů v jazyce Python nebo C# nebudou vytvářené objekty spravovány virtuálním počítačem a paměť mnoha těchto objektů bude nutné vyčistit ručně. Chcete-li vyčistit nativní nebo nespravované objekty, můžete použít metodu **Dispose** nebo klíčové slovo **using**. Přehled najdete v této položce Wiki: [https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development#dispose--using-statement).
 
   Je nutné pouze zpracovat nespravované zdroje, které se nevrací do grafu, nebo se na ně neukládá odkaz. Ve zbytku této části odkazujeme na tyto objekty jako *mezilehlou geometrii*. Příklad této třídy objektu je uveden v příkladu kódu níže. Tato funkce **singleCube** s nulovým dotykem C# vrací jednu krychli, ale během provádění vytvoří 10000 dalších krychlí. Můžeme předstírat, že tato jiná geometrie byla použita jako mezilehlá konstrukční geometrie.
 
@@ -323,5 +323,5 @@ return output;
 }
 ```
 
-Obecně je nutné odstranit pouze geometrii, například ```Povrchy```, ```Křivky``` a ```Tělesa```. Pro jistotu však můžete odstranit všechny typy geometrie (```Vektory```, ```Body```, ```Souřadnicové systémy```).
+Obecně je nutné odstranit pouze geometrii, například ```Povrchy```, ```Křivky``` a ```Tělesa```. Pro jistotu však můžete odstranit všechny typy geometrie (```Vectors```, ```Points```, ```CoordinateSystem```).
 

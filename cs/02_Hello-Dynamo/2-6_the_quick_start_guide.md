@@ -14,12 +14,12 @@ Než přidáme cokoli do pracovního prostoru aplikace Dynamo, je důležité, a
 
 ### Přidání uzlů do pracovního prostoru
 
-Nyní, když máme načrtnuté cíle a vztahy, můžeme začít vytvářet náš graf. Potřebujeme uzly, které představují posloupnost akcí, která bude aplikací Dynamo provedena. Protože víme, že se pokoušíme vytvořit kružnici, začneme vyhledáním uzlu, který to dělá. Pomocí pole Vyhledat nebo procházením knihovny zjistíte, že existuje více než jeden způsob vytvoření kružnice.
+Když máme nyní načrtnuté cíle a vztahy, můžeme začít vytvářet náš graf. Potřebujeme uzly, které představují posloupnost akcí, která bude aplikací Dynamo provedena. Protože víme, že se pokoušíme vytvořit kružnici, začneme vyhledáním uzlu, který to dělá. Pomocí pole Vyhledat nebo procházením knihovny zjistíte, že existuje více než jeden způsob vytvoření kružnice.
 
 ![Procházení a vyhledávání](images/2-4/01-BrowseAndSearch.png)
 
 > 1. Přejděte k položce Geometrie > Kružnice > **ByCenterPointRadius**
-2. Hledat > „ByCenterPointRadius...“
+2. Vyhledejte > „ByCenterPointRadius...“
 
 Kliknutím na uzel **Circle.ByCenterPointRadius** v knihovně ho přidáme do pracovního prostoru. To by mělo uzel přidat do středu pracovního prostoru.
 
@@ -39,7 +39,7 @@ Také budeme potřebovat uzly **Point.ByCoordinates**, **Number Input** a **Numb
 
 ### Propojení uzlů pomocí drátů
 
-Nyní, když máme několik uzlů, je nutné propojit porty uzlů s vodiči. Tato připojení budou definovat tok dat.
+Nyní, když máme několik uzlů, je nutné propojit porty uzlů pomocí drátů. Tato připojení budou definovat tok dat.
 
 ![Provedená připojení](images/2-4/04-NodesConnected.png)
 
@@ -50,7 +50,7 @@ Nyní, když máme několik uzlů, je nutné propojit porty uzlů s vodiči. Ta
 
 ### Spuštění programu
 
-Když je definován náš tok programu, stačí říct aplikaci Dynamo, aby jej provedla. Po spuštění programu (buď automaticky, nebo po kliknutí na tlačítko Spustit v ručním režimu) budou data procházet vodiči a výsledky by měly být zobrazeny v 3D náhledu.
+Když je definován náš tok programu, stačí říct aplikaci Dynamo, aby jej provedla. Po spuštění programu (buď automaticky, nebo po kliknutí na tlačítko Spustit v ručním režimu) budou data procházet přes dráty a výsledky by měly být zobrazeny v 3D náhledu.
 
 ![Po spuštění](images/2-4/05-GraphExecuted.png)
 
@@ -81,7 +81,7 @@ Začít jednoduše a přidávat složitost je efektivní způsob, jak průběžn
 
 ### Přizpůsobení pomocí přímé manipulace
 
-Někdy číselná manipulace není správný přístup. Nyní můžete ručně tlačit a táhnout bodovou geometrii při procházení 3D náhledu pozadí. Také můžeme ovládat další geometrii, která byla vytvořena pomocí bodu. Například uzel **Sphere.ByCenterPointRadius** je také schopen přímé manipulace. Umístění bodu lze řídit z posloupností hodnot X, Y a Z pomocí **Point.ByCoordinates**. Při použití přímé manipulace však můžete hodnoty posuvníků aktualizovat ručním přesunutím bodu v režimu **Navigace 3D náhledu**. To nabízí intuitivnější přístup k ovládání sady diskrétních hodnot, které určují umístění bodu.
+Někdy číselná manipulace není správný přístup. Nyní můžete ručně tlačit a táhnout bodovou geometrii při procházení 3D náhledu v pozadí. Také můžeme ovládat další geometrii, která byla vytvořena pomocí bodu. Například uzel **Sphere.ByCenterPointRadius** je také schopen přímé manipulace. Umístění bodu lze řídit z posloupností hodnot X, Y a Z pomocí **Point.ByCoordinates**. Při použití přímé manipulace však můžete hodnoty posuvníků aktualizovat ručním přesunutím bodu v režimu **Navigace 3D náhledu**. To nabízí intuitivnější přístup k ovládání sady diskrétních hodnot, které určují umístění bodu.
 
 ![Vybraný bod](images/2-4/08-SelectedPoint.png)
 

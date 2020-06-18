@@ -12,11 +12,11 @@ Křivky jsou první krytý geometrický datový typ, který má známé sady vla
 4. Kružnice
 5. Elipsa
 6. Křivka NURBS
-7. Objekt PolyCurve
+7. PolyCurve
 
 ### Co je křivka?
 
-Termín **křivka** obvykle označuje všechny různé křivé (i rovné) tvary. Křivka s velkým K je nadřazená kategorizace všech těchto typů tvarů – úseček, kružnic, spline atd. Přesněji řečeno, Křivka popisuje každý možný bod, který lze najít vložením „t“ do kolekce funkcí, která může být v rozsahu od jednoduchých (```x = -1,26*t, y = t```) až po funkce zahrnující infinitezimální počet. Bez ohledu na to, s jakým typem Křivky pracujeme, je tento **parametr** s názvem „t“ vlastnost, kterou můžeme vyhodnotit. Kromě toho, bez ohledu na vzhled tvaru, mají všechny Křivky také počáteční a koncový bod, který je shodný s minimálními a maximálními hodnotami t použitými k vytvoření Křivky. To nám také pomůže pochopit její směr.
+Termín **křivka** obvykle označuje všechny různé křivé (i rovné) tvary. Křivka s velkým K je nadřazená kategorizace všech těchto typů tvarů – úseček, kružnic, spline atd. Přesněji řečeno, Křivka popisuje každý možný bod, který lze najít vložením „t“ do kolekce funkcí, která může být v rozsahu od jednoduchých (```x = -1.26*t, y = t```) až po funkce zahrnující infinitezimální počet. Bez ohledu na to, s jakým typem Křivky pracujeme, je tento **parametr** s názvem „t“ vlastnost, kterou můžeme vyhodnotit. Kromě toho, bez ohledu na vzhled tvaru, mají všechny Křivky také počáteční a koncový bod, který je shodný s minimálními a maximálními hodnotami t použitými k vytvoření Křivky. To nám také pomůže pochopit její směr.
 
 ![Parametr křivky](images/5-4/CurveParameter.jpg)
 
@@ -62,7 +62,7 @@ Když přidáváme více složitosti k parametrickým funkcím, které definuj�
 
 Všimněte si, že čím vyšší je hodnota stupně, tím více řídících bodů se používá k interpolaci výsledného oblouku.
 
-Poďme v aplikaci Dynamo pomocí dvou různých metod vytvořit křivku NURBS ve tvaru sinusoidy a porovnat výsledky.
+Pojďme v aplikaci Dynamo pomocí dvou různých metod vytvořit křivku NURBS ve tvaru sinusoidy a porovnat výsledky.
 
 ![NURBS v aplikaci Dynamo](images/5-4/Dynamo_Curves.jpg)
 

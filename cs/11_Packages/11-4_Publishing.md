@@ -24,7 +24,7 @@ Před přechodem k publikování balíčku MapToSurface nejprve odinstalujte ba
 
 ![](images/11-4/Publishing/Packages - 08.jpg)
 
-> Toto je první odeslání pro náš balíček a všechny ukázkové soubory a vlastní uzly souborů jsme umístili do jedné složky. S přípravou této složky jsme připraveni k odeslání do správce Dynamo Package Manager.
+> Toto je první odeslání pro náš balíček a všechny ukázkové soubory a vlastní uzly souborů jsme umístili do jedné složky. Když je tato složka připravena, jsme připraveni k odeslání do správce Dynamo Package Manager.
 
 > 1. Tato složka obsahuje pět vlastních uzlů (.dyf).
 2. Tato složka také obsahuje pět vzorových souborů (.dyn) a jeden importovaný vektorový soubor (.svg). Tyto soubory budou sloužit jako úvodní cvičení, která uživateli ukážou, jak pracovat s vlastními uzly.

@@ -8,7 +8,7 @@ Možná jste si všimli běžného tématu v názvech uzlů v aplikaci Dynamo:
 
 Jak v rámci obecné analogie tečkové notace postupovat u parametrického jablka v aplikaci Dynamo? Níže je uvedeno několik metod, které použijeme na jablko než se rozhodneme, zda je sníst. (Poznámka: Nejedná se o skutečné metody aplikace Dynamo):
 
-|Člověkem čitelný zápis|Zadání s tečkami|Výstup|
+|Člověkem čitelný zápis|Tečková notace|Výstup|
 | -- | -- | -- |
 |Jakou barvu má jablko?|Jablko.barva|červená|
 |Je jablko zralé?|Jablko.jeZrale|ano|

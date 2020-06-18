@@ -8,7 +8,7 @@ Textové skriptování v prostředí vizuálního skriptování umožňuje tvor
 
 ### Kdy používat skripty
 
-Textové skriptování může vytvořit vztahy vyšší složitosti než vizuální programování, ale jejich možnosti se také značně překrývají. Toto dává smysl, protože uzly jsou efektivně předem zabalený kód a pravděpodobně bychom mohli napsat celý program aplikace Dynamo v aplikaci DesignScript nebo v jazyce Python. Vizuální skriptování však používáme kvůli tomu, že rozhraní uzlů a drátů vytváří intuitivní tok grafických informací. Pokud víte, kde možnosti textového skriptování jdou nad rámec vizuálního skriptování, budete mít k dispozici hlavní vodítka pro případy, kdy by se mělo textové skriptování použít, aniž by bylo nutné předvídat intuitivní povahu uzlů a vodičů. Níže jsou uvedeny pokyny, kdy se má skriptovat a jaký jazyk k tomu použít.
+Textové skriptování může vytvořit vztahy vyšší složitosti než vizuální programování, ale jejich možnosti se také značně překrývají. Toto dává smysl, protože uzly jsou efektivně předem zabalený kód a pravděpodobně bychom mohli napsat celý program aplikace Dynamo v aplikaci DesignScript nebo v jazyce Python. Vizuální skriptování však používáme kvůli tomu, že rozhraní uzlů a drátů vytváří intuitivní tok grafických informací. Pokud víte, kde možnosti textového skriptování jdou nad rámec vizuálního skriptování, budete mít k dispozici hlavní vodítka pro případy, kdy by se mělo textové skriptování použít, aniž by bylo nutné předvídat intuitivní povahu uzlů a drátů. Níže jsou uvedeny pokyny, kdy se má skriptovat a jaký jazyk k tomu použít.
 
 **Použití textového skriptování pro:**
 
@@ -30,7 +30,7 @@ Textové skriptování může vytvořit vztahy vyšší složitosti než vizuál
 
 ### Uvažujte parametricky
 
-Při skriptování v aplikaci Dynamo, což je nezbytně parametrické prostředí, je moudré strukturovat kód podle systému uzlů a vodičů, ve kterých bude kód existovat. Uzel obsahující textový skript je třeba považovat za uzel jako každý jiný v programu s několika specifickými vstupy, funkcí a předpokládaným výstupem. Kód uvnitř uzlu díky tomu ihned obdrží malou sadu proměnných, se kterými se bude pracovat, což je klíč k čistě parametrickému systému. Zde jsou některé pokyny pro lepší integraci kódu do vizuálního programu.
+Při skriptování v aplikaci Dynamo, což je nezbytně parametrické prostředí, je rozumné strukturovat kód podle systému uzlů a drátů, ve kterých bude kód existovat. Uzel obsahující textový skript je třeba považovat za uzel jako každý jiný v programu s několika specifickými vstupy, funkcí a předpokládaným výstupem. Kód uvnitř uzlu díky tomu ihned obdrží malou sadu proměnných, se kterými se bude pracovat, což je klíč k čistě parametrickému systému. Zde jsou některé pokyny pro lepší integraci kódu do vizuálního programu.
 
 **Určení externích proměnných:**
 
@@ -189,7 +189,7 @@ greeting = MyClass.f
 
 ### Neustále kontrolujte data
 
-Při vývoji textových skriptů v aplikaci Dynamo je moudré neustále kontrolovat, že to, co se vytváří, je v souladu s tím, co očekáváte. Tím se zajistí, že nepředvídané události – syntaktické chyby, logické nesrovnalosti, nepřesnosti hodnot, nepředvídané výstupy atd.– jsou rychle objeveny a řeší se ihned, jak vyjdou najevo, nikoli všechny najednou na konci. Vzhledem k tomu, že jsou textové skripty uloženy uvnitř uzlů na kreslicí ploše, jsou již integrovány do datového toku vašeho vizuálního programu. Díky tomu můžete snadno sledovat skript, přičemž budete přiřazovat data, která budou na výstupu, spouštět program a vyhodnocovat vytvořený výstup skriptu pomocí uzlu Watch. Následují několik tipů pro průběžnou kontrolu skriptů při jejich tvorbě.
+Při vývoji textových skriptů v aplikaci Dynamo je moudré neustále kontrolovat, že to, co se vytváří, je v souladu s tím, co očekáváte. Tím se zajistí, že nepředvídané události – syntaktické chyby, logické nesrovnalosti, nepřesnosti hodnot, nepředvídané výstupy atd.– jsou rychle objeveny a řeší se ihned, jak vyjdou najevo, nikoli všechny najednou na konci. Vzhledem k tomu, že jsou textové skripty uloženy uvnitř uzlů na pracovní ploše, jsou již integrovány do datového toku vašeho vizuálního programu. Díky tomu můžete snadno sledovat skript, přičemž budete přiřazovat data, která budou na výstupu, spouštět program a vyhodnocovat vytvořený výstup skriptu pomocí uzlu Watch. Následují několik tipů pro průběžnou kontrolu skriptů při jejich tvorbě.
 
 **Během tvorby provádějte testy:**
 
@@ -207,7 +207,7 @@ Při vývoji textových skriptů v aplikaci Dynamo je moudré neustále kontrol
 
 > Kontrola dat u vzorového kódu z [uzlu jazyka Python](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
-> 1. Zkontrolujte, zda jsou všechny hrany tělesa, kolem kterého se má vytvořit hraniční obdélník, vráceny jako křivky.
+> 1. Zkontrolujte, zda jsou všechny hrany tělesa, kolem kterého se má vytvořit hraniční kvádr, vráceny jako křivky.
 2. Zkontrolujte, zda jsou vstupní hodnoty počtu úspěšně převedeny na rozsahy.
 3. Zkontrolujte, zda byly souřadnicové systémy v této smyčce správně převedeny a otočeny.
 

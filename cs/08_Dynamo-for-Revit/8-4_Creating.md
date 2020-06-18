@@ -44,7 +44,7 @@ Níže uvedené cvičení znázorňuje, jak aplikace Dynamo odkazuje na data pro
 
 ![Cvičení](images/8-4/Exercise/08.jpg)
 
-> Byly použity uzly *„Vybrat prvek modelu“* a *„Vybrat plochu“* a nyní pokračujeme o jeden krok v hierarchii geometrie níže a použijeme příkaz *„Vybrat hranu“*. Pokud je spouštění řešiče aplikace Dynamo nastaveno na hodnotu *Automaticky“*, graf se bude průběžně aktualizovat podle změn v souboru aplikace Revit. Vybraná hrana je dynamicky svázána s topologií prvků aplikace Revit. Dokud se topologie* nezmění, připojení mezi aplikacemi Revit a Dynamo zůstane aktivní.
+> Byly použity uzly *„Vybrat prvek modelu“* a *„Vybrat plochu“* a nyní pokračujeme o jeden krok v hierarchii geometrie níže a použijeme příkaz *„Vybrat hranu“*. Pokud je spouštění výpočetního modulu aplikace Dynamo nastaveno na hodnotu *Automaticky“*, graf se bude průběžně aktualizovat podle změn v souboru aplikace Revit. Vybraná hrana je dynamicky svázána s topologií prvků aplikace Revit. Dokud se topologie* nezmění, připojení mezi aplikacemi Revit a Dynamo zůstane aktivní.
 
 > 1. Vyberte nejhornější křivku proskleného průčelí. Tato křivka se táhne přes celou délku budovy. Pokud máte s výběrem hrany potíže, nezapomeňte, že můžete vybrat výběr v aplikaci Revit přesunutím kurzoru nad hranu a opakovaným stisknutím klávesy *„Tab“*, dokud se nezvýrazní požadovaná hrana.
 2. Pomocí dvou uzlů *„Vybrat hranu“* vyberte každou hranu představující náklon uprostřed průčelí.
@@ -58,9 +58,9 @@ Níže uvedené cvičení znázorňuje, jak aplikace Dynamo odkazuje na data pro
 > Nejprve je potřeba spojit křivky a sloučit je do jednoho seznamu. Tímto způsobem je možné *„seskupit“* křivky za účelem provedení operací geometrie.
 
 > 1. Vytvořte seznam pro dvě křivky uprostřed průčelí.
-2. Spojte tyto dvě křivky do objektu Polycurve připojením komponenty *List.Create* do uzlu *Polycurve.ByConnectedCurves*.
+2. Spojte tyto dvě křivky do objektu Polycurve připojením komponenty *List.Create* do uzlu *Polycurve.ByJoinedCurves*.
 3. Vytvořte seznam pro dvě křivky v dolní části průčelí.
-4. Spojte tyto dvě křivky do objektu Polycurve připojením komponenty *List.Create* do uzlu *Polycurve.ByConnectedCurves*.
+4. Spojte tyto dvě křivky do objektu Polycurve připojením komponenty *List.Create* do uzlu *Polycurve.ByJoinedCurves*.
 5. Nakonec spojte tři hlavní křivky (jednu úsečku a dva objekty polycurve) do jednoho seznamu.
 
 ![Cvičení](images/8-4/Exercise/06.jpg)
