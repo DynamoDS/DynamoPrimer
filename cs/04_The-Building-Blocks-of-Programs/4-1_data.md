@@ -47,7 +47,7 @@ Základní koncept pro pochopení hierarchie dat v aplikaci Dynamo: **S ohledem
 
 V tomto prvním příkladu sestavíme válec se skořepinou, který prochází hierarchií geometrie, o níž se v této části pojednává. ![](images/4-1/1.png)
 
-> 1. **Point.ByCoordinates –** po přidání uzlu na kreslicí plochu vidíme bod v počátku rastru náhledu aplikace Dynamo. Výchozí hodnoty vstupů *x, y* a *z* jsou *0,0*, což nám dává bod v tomto umístění.
+> 1. **Point.ByCoordinates –** po přidání uzlu na pracovní plochu vidíme bod v počátku rastru náhledu aplikace Dynamo. Výchozí hodnoty vstupů *x, y* a *z* jsou *0,0*, což nám dává bod v tomto umístění.
 
 ![](images/4-1/2.png)
 
@@ -69,18 +69,18 @@ V tomto prvním příkladu sestavíme válec se skořepinou, který prochází 
 ![](images/4-1/6.png)
 
 > 1. **Number Slider –** Místo použití výchozích hodnot pro všechny tyto vstupy přidejte do modelu parametrický ovládací prvek.
-2. **Domain Edit – **po přidání posuvníku čísla na kreslicí plochu klikněte na stříšku v levé horní části a zobrazte možnosti domény.
-3. **Min/Max/Krok –** změňte hodnoty *min*, *max* a *step* na *0*,*2* a *0,01*. Toto provedeme, abychom mohli řídit velikost celkové geometrie.
+2. **Domain Edit – **po přidání posuvníku čísla na pracovní plochu klikněte na stříšku v levé horní části a zobrazte možnosti domény.
+3. **Min/Max/Krok –** změňte hodnoty *min*, *max* a *step* na *0*,*2* a *0.01*. Toto provedeme, abychom mohli řídit velikost celkové geometrie.
 
 ![](images/4-1/7.png)
 
-> 1. **Number Sliders –** Ve všech výchozích vstupech zkopírujte a vložte tento posuvník čísla (vyberte posuvník, stiskněte Ctrl+C a pak Ctrl+V) několikrát, dokud nebudou mít všechny vstupy s výchozími hodnotami posuvník. Aby definice fungovala, některé hodnoty posuvníku musí být větší než nula (například k zesílení povrchu je potřeba hloubka vysunutí).
+> 1. **Number Sliders –** Ve všech výchozích vstupech zkopírujte a vložte tento posuvník čísla (vyberte posuvník, stiskněte Ctrl+C a pak Ctrl+V) několikrát, dokud nebudou mít všechny vstupy s výchozími hodnotami posuvník. Aby definice fungovala, některé hodnoty posuvníku musí být větší než nula (například k zesílení plochy je potřeba hloubka vysunutí).
 
 Nyní jsme vytvořili parametrický válec se skořepinou s těmito posuvníky. Zkuste některé z těchto parametrů změnit a sledujte, jak se geometrie dynamicky aktualizuje ve výřezu aplikace Dynamo.
 
 ![](images/4-1/8.png)
 
-> 1. **Number Sliders – ** přidali jsme na plochu hodně posuvníků a je potřeba vyčistit rozhraní nástroje, který jsme právě vytvořili. Klikněte pravým tlačítkem na jeden posuvník, vyberte položku Přejmenovat... a změňte každý posuvník na vhodný název pro jeho parametr. Na obrázek výše se můžete odkazovat pro názvy.
+> 1. **Number Sliders – ** přidali jsme na plochu hodně posuvníků a je potřeba vyčistit rozhraní nástroje, který jsme právě vytvořili. Klikněte pravým tlačítkem na jeden posuvník, vyberte položku Přejmenovat... a změňte každý posuvník na vhodný název pro jeho parametr. Názvy najdete v&nbsp;obrázku nahoře.
 
 V tomto okamžiku jsme vytvořili úžasnou věc s rozšiřujícím se válcem. Toto je aktuálně jeden objekt, podívejme se, jak vytvořit pole válců, které zůstávají dynamicky propojeny. Za tímto účelem vytvoříme seznam válců, místo práce s jednou položkou.
 
@@ -93,7 +93,7 @@ V tomto okamžiku jsme vytvořili úžasnou věc s rozšiřujícím se válcem
 > Tento krok je mnohem náročnější, takže ho projdeme pomalu: cílem je vytvořit seznam čísel, která definují umístění každého válce v řadě.
 
 > 1. **Multiplication – ** Nejprve chceme vynásobit hodnotu z předchozího kroku hodnotou 2. Hodnota z předchozího kroku představuje poloměr a chceme válec posunout o plný průměr.
-2. **Number Sequence – ** Pomocí tohoto uzlu vytvoříme pole čísel. První vstup je uzel *multiplication* z předchozího kroku do hodnoty *step*. Hodnotu *start* lze nastavit na *0,0* pomocí uzlu *number*.
+2. **Number Sequence – ** Pomocí tohoto uzlu vytvoříme pole čísel. První vstup je uzel *multiplication* z předchozího kroku do hodnoty *step*. Hodnotu *start* lze nastavit na *0.0* pomocí uzlu *number*.
 3. **Integer Slider – ** Pro hodnotu *množství* připojíme posuvník celého čísla. Tím se definuje počet vytvořených válců.
 4. **Output – ** Tento seznam zobrazuje vzdálenost přesunutou pro každý válec v poli a je parametricky řízen původními posuvníky.
 

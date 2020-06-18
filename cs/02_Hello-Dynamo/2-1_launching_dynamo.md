@@ -44,9 +44,9 @@ Pro spuštění aplikace Dynamo přejděte do složky \Program Files\Dynamo\Dyna
 4. Zeptat se – přímý přístup na uživatelské fórum nebo web aplikace Dynamo
 5. Literatura – další výukové materiály
 6. Kód – umožňuje podílet se na vývoji projektu s otevřeným zdrojovým kódem
-7. Příklady – příklady, které jsou dodávány spolu s instalací
+7. Samples – příklady, které jsou dodávány spolu s instalací
 
-Otevřete první soubor v části příklady, zobrazí se pracovní plocha, na které si můžete ověřit, že aplikace Dynamo funguje správně. Klikněte na možnost Příklady > Základy > **Basics_Basic01.dyn**.
+Otevřete první soubor v části příklady, zobrazí se pracovní plocha, na které si můžete ověřit, že aplikace Dynamo funguje správně. Klikněte na Samples Basics > Základy > **Basics_Basic01.dyn**.
 
 ![NUTNO AKTUALIZOVAT – Basics_Basic01](images/2-1/05-Basics_Basic01.jpg)
 
