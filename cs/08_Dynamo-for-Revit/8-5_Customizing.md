@@ -2,7 +2,7 @@
 
 ## Přizpůsobení
 
-Zatímco v předchozích částech byl kladen důraz na úpravu základního objemu budovy, tato část se zabývá více propojením aplikací Dynamo a Revit, konkrétně úpravou velkého počtu prvků najednou. Přizpůsobení ve velkém měřítku je čím dál složitější během toho, jak datové struktury vyžadují pokročilejší operace seznamů. Základní principy za jejich prováděním však zůstávají v podstatě stejné. Následuje popis několika příležitostí k analýze v sadě adaptivních komponent.
+Zatímco v předchozích částech byl kladen důraz na úpravu základního objemu budovy, tato část se zabývá více propojením aplikací Dynamo a Revit, konkrétně úpravou velkého počtu prvků najednou. Přizpůsobení ve velkém měřítku je čím dál složitější tím, jak datové struktury vyžadují čím dál pokročilejší operace seznamů. Základní principy za jejich prováděním však zůstávají v podstatě stejné. Následuje popis několika příležitostí k analýze v sadě adaptivních komponent.
 
 #### Umístění bodu
 
@@ -65,10 +65,10 @@ U parametrického povrchu nyní chceme definovat způsob, jak z něj vytvořit
 
 ![Cvičení](images/8-5/Exercise/05a.jpg)
 > 1. Přejděte do umístění *Balíčky > Vyhledat balíček...*
-2. Hledejte řetězec *„LunchBox“* a stáhněte si balíček *„LunchBox for Dynamo“*. Jedná se o skutečně užitečnou sadu nástrojů pro operace geometrií, jako je právě tato.
+2. Vyhledejte řetězec *„LunchBox“* a stáhněte si balíček *„LunchBox for Dynamo“*. Jedná se o skutečně užitečnou sadu nástrojů pro operace geometrií, jako je právě tato.
 
 ![Cvičení](images/8-5/Exercise/07.jpg)
-> 1. Po stažení máte nyní plný přístup k sadě LunchBox. hledejte řetězec *„Quad Grid“* a vyberte položku *„LunchBox Quad Grid By Face“*. Připojte parametrický povrch ke vstupu *surface* a nastavte podíly *U* a *V* na hodnotu *15*. Nyní byste v náhledu aplikace Dynamo měli vidět povrch se čtyřmi panely.
+> 1. Po stažení máte nyní plný přístup k sadě LunchBox. Vyhledejte řetězec *„Quad Grid“* a vyberte položku *„LunchBox Quad Grid By Face“*. Připojte parametrický povrch ke vstupu *surface* a nastavte podíly *U* a *V* na hodnotu *15*. Nyní byste v náhledu aplikace Dynamo měli vidět povrch se čtyřmi panely.
 
 ![Cvičení](images/8-5/Exercise/customNode.jpg)
 > Pokud vás zajímá nastavení tohoto balíčku, klikněte dvakrát na uzel *Lunch Box* a zjistěte, jak funguje.
@@ -85,7 +85,7 @@ U parametrického povrchu nyní chceme definovat způsob, jak z něj vytvořit
 *Poznámka: Pokud aplikaci Dynamo trvá výpočet uzlů dlouho, bude možná užitečné využít funkce uzlu „freeze“, která pozastaví provádění operací aplikace Revit, zatímco vyvíjíte graf. Další informace o zmrazení uzlů naleznete v části „Zmrazení“ v [kapitole Tělesa](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).*
 
 ![Cvičení](images/8-5/Exercise/31.jpg)
-> Opět v aplikaci Revit je k dispozici pole panelů na střeše.
+> Zpátky v aplikaci Revit máme pole panelů na střeše.
 
 ![Cvičení](images/8-5/Exercise/30.jpg)
 
@@ -95,10 +95,10 @@ U parametrického povrchu nyní chceme definovat způsob, jak z něj vytvořit
 
 ![Cvičení](images/8-5/Exercise/16.jpg)
 
-> 1. V rámci pokračování z předchozího kroku nastavte otvor každého panelu podle jeho vystavení slunci. Pokud přiblížíte pohled v aplikaci Revit a vyberete jeden panel, uvidíte na panelu vlastností, že je zde parametr s názvem *Poměr otvoru*. Rodina je nastavena, tak aby měl otvor rozsah zhruba od *0,05* do *0,45*.
+> 1. V rámci pokračování z předchozího kroku nastavte otvor každého panelu podle jeho vystavení slunci. Pokud přiblížíte pohled v aplikaci Revit a vyberete jeden panel, uvidíte na panelu vlastností, že je zde parametr s názvem *Aperture Ratio*. Rodina je nastavena, tak aby měl otvor rozsah zhruba od *0,05* do *0,45*.
 
 ![Cvičení](images/8-5/Exercise/17.jpg)
-> 1. Pokud zapnete dráhu slunce, uvidíte aktuální umístění slunce v aplikaci Revit.
+> 1. Pokud zapnete dráhu slunce, uvidíte v aplikaci Revit aktuální polohu slunce.
 
 ![Cvičení](images/8-5/Exercise/13.jpg)
 > 1. Na tuto polohu slunce se můžete odkázat pomocí uzlu *SunSettings.Current*.
@@ -111,7 +111,7 @@ U parametrického povrchu nyní chceme definovat způsob, jak z něj vytvořit
 
 ![Cvičení](images/8-5/Exercise/14.jpg)
 
-> 1. Při pohledu na *skalární součin* je vidět, že máme k dispozici velký rozsah čísel. Chceme použít jejich relativní rozložení, ale je potřeba zhustit čísla do vhodného rozsahu parametru *„Poměr otvoru“*, který chceme upravit.
+> 1. Při pohledu na *skalární součin* je vidět, že máme k dispozici velký rozsah čísel. Chceme použít jejich relativní rozložení, ale je potřeba zhustit čísla do vhodného rozsahu parametru *„Aperture Ratio“*, který chceme upravit.
 2. K tomuto účelu se skvěle hodí uzel *Math.RemapRange*. Ten vezme vstupní seznam a přemapuje jeho hranice na dvě cílové hodnoty.
 3. Definujte cílové hodnoty *0.15* a *0.45* v *bloku kódu*.
 4. Klikněte na možnost *Spustit*.

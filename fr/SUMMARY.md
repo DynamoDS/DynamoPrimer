@@ -59,7 +59,7 @@
    * [Noeuds Python](10_Custom-Nodes/10-4_Python.md)
    * [Python et Revit](10_Custom-Nodes/10-5_Python-Revit.md)
    * [Gabarits Python dans Dynamo 2.0](10_Custom-Nodes/10-6_Python-Templates.md)
-* [Paquets de partage](11_Packages/11-Packages.md)
+* [Packages](11_Packages/11-Packages.md)
    * [Présentation des packages](11_Packages/11-1_Introduction.md)
    * [Étude de cas de package – Mesh Toolkit](11_Packages/11-2_Mesh-Toolkit.md)
    * [Développement d'un module](11_Packages/11-3_Developing.md)

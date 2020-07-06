@@ -69,7 +69,7 @@ Toto cvičení je zaměřeno na úpravy prvků aplikace Revit bez provedení geo
 ![Cvičení](images/8-3/Exercise/30.jpg)
 
 > 1. Zkopírujme graf a zaměřme se na fasádové zasklení, které bude obsahovat systém příhradových nosníků. V tomto případě izolujeme čtyři parametry: ```{DblSkin_SouthOffset,DblSkin_MidOffset,DblSkin_NorthOffset,Facade Bend Location};```
-2. Dále vytvoříme *posuvníky čísel* a přejmenujeme je na příslušné parametry. První tři posuvníky shora dolů by měly být přemapovány na doménu s obsahem [0,10], zatímco poslední posuvník *Facade Bend Location* by měl být přemapován na doménu s obsahem [0,1]. Tyto hodnoty by měly odshora dolů vycházet z těchto hodnot (i když jsou libovolné): ```2,68,2.64,2.29,0.5```
+2. Dále vytvoříme *posuvníky čísel* a přejmenujeme je na příslušné parametry. První tři posuvníky shora dolů by měly být přemapovány na doménu s obsahem [0,10], zatímco poslední posuvník *Facade Bend Location* by měl být přemapován na doménu s obsahem [0,1]. Tyto hodnoty by měly odshora dolů vycházet z těchto hodnot (i když jsou libovolné): ```2.68,2.64,2.29,0.5```
 3. Definujte nový *blok kódu* a připojte posuvníky: ```{so,mo,no,fbl};```
 
 ![Cvičení](images/8-3/Exercise/00.jpg)

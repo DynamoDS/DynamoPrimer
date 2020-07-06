@@ -40,7 +40,7 @@ Este es un momento emocionante para aprender a usar Dynamo, trabajar con él y d
 
 ---
 
-### Abrir origen
+### Código abierto
 
 El proyecto Dynamo Primer es de código abierto. Nos hemos dedicado a proporcionar contenido de calidad y agradeceremos cualquier comentario que pueda tener. Si desea informar de un problema sobre cualquier aspecto, publíquelo en la página de problemas de GitHub: [https://github.com/DynamoDS/DynamoPrimer/issues](https://github.com/DynamoDS/DynamoPrimer/issues).
 
@@ -82,7 +82,7 @@ Deseamos agradecer a Matt Jezyk, Ian Keough, Zach Kron, Racel Williams y Colin M
 
 [https://github.com/DynamoDS/Dynamo](https://github.com/DynamoDS/Dynamo)
 
-**Contacto** Infórmenos de cualquier problemas relacionado con este documento.
+**Contacto** Infórmenos de cualquier problema relacionado con este documento.
 
 Dynamo@autodesk.com
 

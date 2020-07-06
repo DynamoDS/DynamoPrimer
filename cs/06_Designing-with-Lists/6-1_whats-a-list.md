@@ -91,5 +91,5 @@ Metoda „Vektorový součin“ provede všechna možná připojení:
 
 ![Příklady vstupu](images/6-1/crossProduct.jpg)
 
-> Změnou vázání na *Vektorový součin* získáte všechny kombinace mezi všemi seznamy, což vytvoří osnovu bodů o rozměrech 5x10. Jedná se o datovou strukturu ekvivalentní k vektorovému součinu, jak je ukázáno v koncepčním diagramu výše, až na to, že data jsou nyní seznamy seznamů. Pokud připojíme objekt PolyCurve uvidíme, že každý seznam je definovaný hodnotou X, což znamená, že máme řadu vertikálních čar.
+> Změnou vázání na *Vektorový součin* získáte všechny kombinace mezi všemi seznamy, což vytvoří osnovu bodů o rozměrech 5x10. Jedná se o datovou strukturu ekvivalentní k vektorovému součinu, jak je ukázáno v koncepčním diagramu výše, až na to, že data jsou nyní seznamy seznamů. Pokud připojíme objekt PolyCurve, uvidíme, že každý seznam je definovaný hodnotou X, což znamená, že máme řadu vertikálních čar.
 

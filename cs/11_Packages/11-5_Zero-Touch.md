@@ -65,29 +65,29 @@ Tato případová studie popisuje, jak importovat [AForge](http://www.aforgenet.
 
 ### Cvičení 1 – Detekce hran
 
-Jakmile bude knihovna importovaná, začněte jednoduše tímto prvním cvičením. V něm provedeme základní zpracování obrázků s ukázkovým obrázkem a ukážeme si, jak fungují filtry obrázků AForge. Pomocí uzlu *„Watch Image“* zobrazíme výsledky a v aplikaci Dynamo použijeme filtry podobné těm, které jsou v aplikaci Photoshop.
+Jakmile bude knihovna importována, začněte jednoduše tímto prvním cvičením. V něm provedeme základní zpracování obrázků s ukázkovým obrázkem a ukážeme si, jak fungují filtry obrázků AForge. Pomocí uzlu *„Watch Image“* zobrazíme výsledky a v aplikaci Dynamo použijeme filtry podobné těm, které jsou v aplikaci Photoshop.
 
 > Stáhněte a rozbalte ukázkové soubory, které jsou připojeny k této případové studii balíčku (klikněte pravým tlačítkem a vyberte příkaz „Uložit odkaz jako...“). Úplný seznam vzorových souborů naleznete v dodatku. [ZeroTouchImages.zip](datasets/11-5/ZeroTouchImages.zip)
 
-Jakmile bude knihovna importovaná, začněte jednoduše tímto prvním cvičením (*01-EdgeDetection.dyn*). V něm provedeme základní zpracování obrázků s ukázkovým obrázkem a ukážeme si, jak fungují filtry obrázků AForge. Pomocí uzlu *„Watch Image“* zobrazíme výsledky a v aplikaci Dynamo použijeme filtry podobné těm, které jsou v aplikaci Photoshop.
+Jakmile bude knihovna importována, začněte jednoduše tímto prvním cvičením (*01-EdgeDetection.dyn*). V něm provedeme základní zpracování obrázků s ukázkovým obrázkem a ukážeme si, jak fungují filtry obrázků AForge. Pomocí uzlu *„Watch Image“* zobrazíme výsledky a v aplikaci Dynamo použijeme filtry podobné těm, které jsou v aplikaci Photoshop.
 
 ![Cvičení](images/11-5/Exercise/AForge- 23.jpg)
 
-> Nejprve je potřeba importovat obrázek, se kterým chcete pracovat. Přidejte na kreslicí plochu uzel *File Path* a ve složce staženého cvičení vyberte soubor „soapbubble.jpg“ (autor fotografie: [flickr](https://www.flickr.com/photos/wwworks/667298782)).
+> Nejprve je potřeba importovat obrázek, se kterým chcete pracovat. Přidejte na pracovní plochu uzel *File Path* a ve složce staženého cvičení vyberte soubor „soapbubble.jpg“ (autor fotografie: [flickr](https://www.flickr.com/photos/wwworks/667298782)).
 
 ![Cvičení](images/11-5/Exercise/AForge- 21.jpg)
 
 > 1. Uzel File Path jednoduše předá řetězec s cestou k vybranému obrázku. Tuto cestu k souboru je třeba převést na obrázek v prostředí aplikace Dynamo.
 2. Připojte uzel File Path k uzlu File.FromPath.
 3. K převodu tohoto souboru na obrázek použijte uzel Image.ReadFromFile.
-4. Nakonec zobrazte výsledek. Přetáhněte uzel Watch Image na kreslicí plochu a připojte jej k uzlu Image.ReadFromFile. Ještě jsme nepoužili příkaz AForge, ale úspěšně jsme importovali obrázek do aplikace Dynamo.
+4. Nakonec zobrazte výsledek. Přetáhněte uzel Watch Image na pracovní plochu a připojte jej k uzlu Image.ReadFromFile. Ještě jsme nepoužili příkaz AForge, ale úspěšně jsme importovali obrázek do aplikace Dynamo.
 
 ![Cvičení](images/11-5/Exercise/AForge- 18.jpg)
 
 > Pod uzlem AForge.Imaging.AForge.Filters (v navigační nabídce) si všimněte, že je k dispozici celá řada filtrů. Nyní pomocí jednoho z těchto filtrů odbarvíme obrázek podle hodnot prahů.
 
-> 1. Umístěte tři posuvníky na kreslicí plochu, změňte jejich rozsahy na 0 až 1 a jejich hodnoty kroku na 0,01.
-2. Přidejte na kreslicí plochu uzel Grayscale.Grayscale. Jedná se o filtr AForge, který na obrázek použije filtr odstínů šedé. Spojte tři posuvníky z kroku 1 ke vstupům cr, cg a cb. Změňte horní a dolní posuvník, tak aby měly hodnotu 1, a střední posuvník, tak aby měl hodnotu 0.
+> 1. Umístěte tři posuvníky na pracovní plochu, změňte jejich rozsahy na 0 až 1 a jejich hodnoty kroku na 0,01.
+2. Přidejte na pracovní plochu uzel Grayscale.Grayscale. Jedná se o filtr AForge, který na obrázek použije filtr odstínů šedé. Spojte tři posuvníky z kroku 1 ke vstupům cr, cg a cb. Změňte horní a dolní posuvník, tak aby měly hodnotu 1, a střední posuvník, tak aby měl hodnotu 0.
 3. Aby bylo možné použít filtr odstínů šedi, je nutné provést s obrázkem určitou akci. K tomuto účelu použijeme příkaz IFilter.Apply. Připojte obrázek ke vstupu obrázku a uzel Grayscale.Grayscale ke vstupu uzlu iFilter.
 4. Připojením k uzlu Watch Image získáte odbarvený obrázek.
 
@@ -101,7 +101,7 @@ Jakmile bude knihovna importovaná, začněte jednoduše tímto prvním cvičen�
 
 > Nyní na odbarvený obrázek použijeme další filtr. Odbarvený obrázek má určitý kontrast, čili nyní otestujeme detekci hran.
 
-> 1. Přidejte na kreslicí plochu uzel SobelEdgeDetector.SobelEdgeDetector. Připojte jej jako IFilter k novému uzlu IFilter a připojte upravený obrázek ke vstupu obrázku uzlu IFilter.
+> 1. Přidejte na pracovní plochu uzel SobelEdgeDetector.SobelEdgeDetector. Připojte jej jako IFilter k novému uzlu IFilter a připojte upravený obrázek ke vstupu obrázku uzlu IFilter.
 2. Detektor hran Sobel zvýraznil hrany v novém obrázku.
 
 ![Cvičení](images/11-5/Exercise/AForge- 16.jpg)
@@ -123,11 +123,11 @@ V následujícím kroku je potřeba se odkázat na bílé čtverce v obrázku,
 
 ![Cvičení](images/11-5/Exercise/AForge- 14.jpg)
 
-> 1. Po přidání objektu BlobCounter na kreslicí plochu je třeba zpracovat obrázek (podobně jako u nástroje IFilter v předchozím cvičení). Uzel „Process Image“ však bohužel není ihned viditelný v knihovně aplikace Dynamo. Je tomu tak proto, že funkce nemusí být ve zdrojovém kódu AForge viditelná. Tento problém vyřešíte prostřednictvím náhradního řešení.
+> 1. Po přidání objektu BlobCounter na pracovní plochu je třeba zpracovat obrázek (podobně jako u nástroje IFilter v předchozím cvičení). Uzel „Process Image“ však bohužel není ihned viditelný v knihovně aplikace Dynamo. Je tomu tak proto, že funkce nemusí být ve zdrojovém kódu AForge viditelná. Tento problém vyřešíte prostřednictvím náhradního řešení.
 
 ![Cvičení](images/11-5/Exercise/AForge- 13.jpg)
 
-> 1. Přidejte na kreslicí plochu uzel Python.
+> 1. Přidejte na pracovní plochu uzel Python.
 
 ```
 import clr

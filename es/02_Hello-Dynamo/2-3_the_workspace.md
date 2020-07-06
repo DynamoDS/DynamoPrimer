@@ -11,7 +11,7 @@ El **espacio de trabajo** de Dynamo es donde se desarrollan los programas visual
 > 1. Fichas
 2. Botones de zoom/encuadre
 3. Modo de vista preliminar
-4. Hacer doble clic en el espacio de trabajo.
+4. Haga doble clic en el espacio de trabajo
 
 ### Fichas
 

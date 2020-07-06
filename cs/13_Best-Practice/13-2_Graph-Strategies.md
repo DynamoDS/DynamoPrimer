@@ -63,7 +63,7 @@ Při vývoji grafu aplikace Dynamo a zkušebních nápadů může rychle dojít 
 
 #### Flexibilní přístup k datům pomocí funkce List@Level
 
-* Funkce List@Level usnadní **snížení složitosti grafu nahrazením uzlů List.Map a List.Combine**, které mohou zabírat značné množství místa na kreslicí ploše
+* Funkce List@Level usnadní **snížení složitosti grafu nahrazením uzlů List.Map a List.Combine**, které mohou zabírat značné množství místa na pracovní ploše
 * List@Level nabízí** rychlejší způsob, jak vytvořit logiku uzlu konstrukce, než u uzlů List.Map/List.Combine**, umožněním přístupu k datům na libovolné úrovni v seznamu přímo ze vstupního portu uzlu
 
 ![Llist at level](images/13-2/listatlevel.png)
@@ -123,7 +123,7 @@ Při tvorbě vizuálního skriptu je důležité ověřit, zda skript vrací oč
 
 ![Sledovací bublina](images/13-2/watch.png)
 
-> K porovnání se použijí uzly Watch Node:
+> K porovnání se použijí uzly Watch:
 
 > 1. Nezpracované vzdálenosti posunu
 2. Hodnoty, které prošly rovnicí sinu
@@ -136,7 +136,7 @@ Je vysoce pravděpodobné, váš program otevře i někdo jiný, a to i v př
 #### Správa vstupů a výstupů
 
 * Aby byla zajištěna čitelnost a škálovatelnost, měli byste se pokusit **co nejvíce minimalizovat vstupy a výstupy**.
-* Měli byste zkusit **stanovit strategii tvorby logiky tím, že nejprve vytvoříte hrubý obrys** toho, jak logika může fungovat, než vůbec přidáte na kreslicí plochu jakýkoli uzel. Při vývoji hrubého obrysu byste měli sledovat, které vstupy a výstupy budou vloženy do skriptů.
+* Měli byste zkusit **stanovit strategii tvorby logiky tím, že nejprve vytvoříte hrubý obrys** toho, jak logika může fungovat, než vůbec přidáte na pracovní plochu jakýkoli uzel. Při vývoji hrubého obrysu byste měli sledovat, které vstupy a výstupy budou vloženy do skriptů.
 
 #### Vložení vstupních hodnot pomocí předvoleb
 
@@ -145,7 +145,7 @@ Je vysoce pravděpodobné, váš program otevře i někdo jiný, a to i v př
 
 > Postup použití předvoleb naleznete v části [Správa dat s předvolbami](http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html).
 
-#### Izolace programů s vlastními uzly
+#### Izolace programů pomocí vlastních uzlů
 
 * Pokud je možné **program shromáždit do jednoho kontejneru**, měli byste použít vlastní uzel.
 * Vlastní uzel byste měli použít i v případě, **že se část grafu často znovu používá** v jiných aplikacích.
@@ -175,7 +175,7 @@ Je vysoce pravděpodobné, váš program otevře i někdo jiný, a to i v př
 
 > Stáhněte si vzorový soubor, který je přiložen k tomuto cvičení (klikněte pravým tlačítkem a vyberte příkaz „Uložit odkaz jako...“). Úplný seznam vzorových souborů naleznete v dodatku. [RoofDrainageSim.zip](datasets/13-2/RoofDrainageSim.zip)
 
-Nyní, když bylo stanoveno několik osvědčených postupů, použijeme tyto postupy na program, který sestaven rychle. I když program při generování střechy uspěje, stav grafu je „mapou mysli“ autora. Chybí jakákoli organizace a popis použití. Projdeme si nejlepší postupy organizace, popisu a analýzy programu, aby ostatní uživatelé mohli porozumět tomu, jak se tento program používá.
+Nyní, když bylo stanoveno několik osvědčených postupů, použijeme tyto postupy na rychle sestavený program, který sestaven rychle. I když program při generování střechy uspěje, stav grafu je „mapou mysli“ autora. Chybí jakákoli organizace a popis použití. Projdeme si nejlepší postupy organizace, popisu a analýzy programu, aby ostatní uživatelé mohli porozumět tomu, jak se tento program používá.
 
 ![Myšlenková mapa](images/13-2/1.jpg)
 
@@ -237,7 +237,7 @@ Nyní, když je vše připraveno, zjednodušíme graf.
 > 1. Vlastní uzel, který má obsahovat skupinu „osnovy převodu bodů“
 2. Možnost Uzel na kód ke zhuštění skupin „tvorby povrchu architektonické střechy a obvodového pláště“
 
-Jako poslední krok vytvořte předvolby pro exemplární tvary střechy.
+Jako poslední krok vytvořte předvolby pro ukázkové tvary střechy.
 
 ![předvolby](images/13-2/3-3.jpg)
 
