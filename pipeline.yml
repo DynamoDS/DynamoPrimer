@@ -11,6 +11,7 @@ env:
   - BUCKETNAME : "primer.dynamobim.org"
   - DISTRIBUTIONID : "E1L4E92B2OBQIF"
   - DOCKER_WORKSPACE : "C:\\WorkspacePrimer"
+  - LIBRARIES_FOLDER : "WSThirdPartyLibraries"
 
 timeout: 420
 check_changelog_updated_on_pr: false
@@ -31,6 +32,7 @@ build:
     scripts:
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\CopyLibrariesToHostScript.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
@@ -38,3 +40,17 @@ build:
 code_analysis:
   sonarqube:
     skip: true
+soc2:
+  run_on_any_branch : true
+  white_source:    
+    skip: false
+    fail_on_audit_failure: true
+    team: Dynamo
+    project_name: "DynamoPrimer"
+    hidden_email_list: dynamo_ws_access
+  third_party_lib_paths:
+    - "%WORKSPACE%\\%LIBRARIES_FOLDER%\\gs9.50"
+    - "%WORKSPACE%\\%LIBRARIES_FOLDER%\\Modules"
+    - "%WORKSPACE%\\%LIBRARIES_FOLDER%\\gitbook-cli"
+    - "%WORKSPACE%\\%LIBRARIES_FOLDER%\\Calibre2"
+    - "%WORKSPACE%\\%LIBRARIES_FOLDER%\\Vault"
