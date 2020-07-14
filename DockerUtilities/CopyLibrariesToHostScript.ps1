@@ -7,7 +7,7 @@
 - Vault Libraries
 #>
 
-#This variables need to be set up before stoping the container (because are env variables inside the container)
+#The container env variables need to be fetch and store them in powershell variables before stoping the container (They are system env variables already created inside the docker container)
 $appData= docker exec build-primer cmd /C echo "%APPDATA%"
 $documentsFolder = docker exec build-primer pwsh -Command "[Environment]::GetFolderPath('MyDocuments')"
 $programFiles = docker exec build-primer cmd /C echo "%PROGRAMFILES%"
@@ -26,11 +26,11 @@ $calibreLibraries = Join-Path -Path $programFiles -ChildPath "Calibre2"
 $vaultLibraries = "C:\Vault"
 $PSAWSLibraries = Join-Path -Path $documentsFolder -ChildPath "PowerShell\Modules"
 
-#Creates an String array with all the library paths created previously (CONSIDER THAT THE NODEJS LIBRARIES IS NOT INCLUDED)
+#Creates an String array with all the library paths created previously (CONSIDER THAT THE NODEJS LIBRARIES ARE NOT INCLUDED)
 $LibrariesArray = @($ghostScriptLibraries, $calibreLibraries, $vaultLibraries, $PSAWSLibraries)
 $librariesFolderPath = Join-Path -Path $workFolder -ChildPath $env:LIBRARIES_FOLDER
 
-#Create a new folder named "$FolderName" in the specified path "$Path", if the folder already exist it will just send a message
+#Create a new folder named "$FolderName" in the specified path "$Path", if the folder already exist will just send a message
 Function CreateNewFolder([string]$Path, [string]$FolderName) {
     $fullPath = Join-Path -Path $Path -ChildPath $FolderName
     if (-not (Test-Path -LiteralPath $fullPath)) {  
@@ -55,7 +55,7 @@ CreateNewFolder $workFolder $env:LIBRARIES_FOLDER\"gitbook-cli"
 
 #Check if the folder WSThirdPartyLibraries already exists, then proceed to copy the libraries
 if (Test-Path -LiteralPath $librariesFolderPath ) { 
-#Copy the folder path (in the array) from the container to the host
+#Copy the folder path (in the array) content from the container to the host
     Foreach ($library in $LibrariesArray)
     {
         docker cp build-primer:$library $librariesFolderPath
@@ -63,7 +63,7 @@ if (Test-Path -LiteralPath $librariesFolderPath ) {
     }
 }
 
-#This section will copy each subfolder in the gitbook-cli folder 
+#This section will copy each subfolder (and it's contents) in the gitbook-cli folder 
 Foreach ($subFolder in $gitbookFolders)
 {
     #gitbook-cli subfolders
@@ -71,7 +71,7 @@ Foreach ($subFolder in $gitbookFolders)
     docker cp build-primer:$subFolder $librariesFolderPath\"gitbook-cli"
 }
 
-#Copy the each subfolder from the node_modules folder (due that npm folder has large nested subfolders that makes the docker cp crash
+#Copy the each subfolder from the node_modules folder (due that npm folder has large nested subfolders that makes the docker cp crash)
 Foreach ($subFolder in $gitbookNodeModulesFolders)
 {
     #The npm folder has a very large nested subfolders that make the docker cp command crash
