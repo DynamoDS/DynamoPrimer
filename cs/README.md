@@ -34,7 +34,7 @@ Tato příručka Primer obsahuje kapitoly od společnosti Mode Lab. Tyto kapitol
 * **Kód v uzlech** – Jak aplikaci Dynamo rozšířit o vlastní kód?
 * **Výpočetní BIM** – Jak aplikaci Dynamo použít spolu s modelem aplikace Revit?
 * **Vlastní uzly** – Jak vytvářet vlastní uzly?
-* **Balíky** – Jak sdílet vlastní nástroje s komunitou?
+* **Balíčky** – Jak sdílet vlastní nástroje s komunitou?
 
 Je to vzrušující příležitost, kdy se naučit pracovat a vyvíjet v aplikaci Dynamo. Začínáme!
 
@@ -42,7 +42,7 @@ Je to vzrušující příležitost, kdy se naučit pracovat a vyvíjet v aplika
 
 ### Otevřený zdrojový kód
 
-Projekt Dynamo Primer má otevřený zdrojový kód. Našim cílem je nabídnout uživatelům kvalitní obsah a oceníme jakoukoliv zpětnou vazbu. Pokud chcete ohlásit problém nebo připomínku, vložte ji na stránku s problémy na GitHubu: [https://github.com/DynamoDS/DynamoPrimer/issues](https://github.com/DynamoDS/DynamoPrimer/issues)
+Projekt Dynamo Primer má otevřený zdrojový kód. Naším cílem je nabídnout uživatelům kvalitní obsah a oceníme jakoukoliv zpětnou vazbu. Pokud chcete ohlásit problém nebo připomínku, vložte ji na stránku s problémy na GitHubu: [https://github.com/DynamoDS/DynamoPrimer/issues](https://github.com/DynamoDS/DynamoPrimer/issues)
 
 Pokud do projektu chcete přidat novou část, úpravy nebo něco jiného, začněte u našeho repozitáře na GitHubu: [https://github.com/DynamoDS/DynamoPrimer](https://github.com/DynamoDS/DynamoPrimer).
 
@@ -64,7 +64,7 @@ Společnost **Mode Lab** sepsala první edici příručky Primer. Děkujeme jim 
 
 Zvláštní poděkování Ianu Keoughovi za vytvoření a řízení projektu Dynamo.
 
-Děkujeme Mattu Jezykovi, Ianu Keoughovi, Zachu Kronovi, Racel Williamsové and Colinu McCroneeovi za jejich spolupráci a účast na celé řadě projektů aplikace Dynamo.
+Děkujeme Mattu Jezykovi, Ianu Keoughovi, Zachu Kronovi, Racel Williamsové and Colinu McCroneovi za jejich spolupráci a účast na celé řadě projektů aplikace Dynamo.
 
 ### Software a zdroje
 

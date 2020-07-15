@@ -4,7 +4,7 @@
 
 Dynamo es un proyecto de desarrollo activo de código abierto con instaladores descargables tanto para versiones oficiales como para versiones preliminares, es decir, versiones de "compilación diaria". Descargue la versión oficial para empezar o contribuya al futuro de Dynamo a través de las compilaciones diarias o del proyecto de GitHub.
 
-### Descargando
+### Descarga
 
 Para descargar la versión oficial de Dynamo, visite el [sitio web de Dynamo](http://dynamobim.com/). Inicie la descarga al instante. Para ello, haga clic en la página de inicio o vaya a la página de descarga específica.
 

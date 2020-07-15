@@ -14,7 +14,7 @@ Geometria, definiowana tradycyjnie, stanowi analizę kształtu, rozmiaru, wzglę
 
 Zrozumienie geometrii w kontekście algorytmów, obliczeń i złożoności może wydawać się prawdziwym wyzwaniem. Istnieje jednak kilka kluczowych i stosunkowo prostych zasad stanowiących podstawy do rozpoczęcia tworzenia bardziej zaawansowanych aplikacji:
 
-1. Geometria to **dane** — zarówno dla komputera, jaki dla dodatku Dynamo królik nie różni się zbytnio od liczby.
+1. Geometria to **dane** — zarówno dla komputera, jak i dla dodatku Dynamo królik nie różni się zbytnio od liczby.
 2. Geometria bazuje na **abstrakcji** — zasadniczo elementy geometryczne są opisywane przez liczby, zależności i wzory w ramach danego przestrzennego układu współrzędnych
 3. Geometria ma **hierarchię** — punkty łączą się, tworząc linie, linie stykają się ze sobą, tworząc powierzchnie itd.
 4. Geometria jednocześnie opisuje **część i całość** — kiedy mamy daną krzywą, jest to zarówno kształt, jak i wszystkie możliwe punkty wzdłuż niej

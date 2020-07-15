@@ -46,9 +46,9 @@ Passez maintenant à l'environnement de noeud personnalisé et créez un noeud s
 
 ![Zone de dessin de noeuds personnalisés](images/10-1/CustomNodes04.jpg)
 
-> 1. **Entrées :** les noeuds d'entrée créent des ports d'entrée sur le noeud personnalisé. La syntaxe d'un noeud d'entrée est *nom_entrée : typededonnées = valeur_défaut (facultatif).*
+> 1. **Inputs :** les noeuds d'entrée créent des ports d'entrée sur le noeud personnalisé. La syntaxe d'un noeud d'entrée est *nom_entrée : typededonnées = valeur_défaut (facultatif).*
 
-2. **Sorties :** semblables aux entrées, elles créent et nomment des ports de sortie sur le noeud personnalisé. Ajoutez un **commentaire personnalisé** aux ports d'entrée et de sortie pour indiquer les types d'entrée et de sortie. Cette opération est décrite plus en détail dans la section [Création de noeuds personnalisés](10-2_Creating.md).
+2. **Outputs :** semblables aux entrées, elles créent et nomment des ports de sortie sur le noeud personnalisé. Ajoutez un **commentaire personnalisé** aux ports d'entrée et de sortie pour indiquer les types d'entrée et de sortie. Cette opération est décrite plus en détail dans la section [Création de noeuds personnalisés](10-2_Creating.md).
 
 Vous pouvez enregistrer ce noeud personnalisé en tant que fichier .dyf (par opposition au fichier .dyn standard) et il sera automatiquement ajouté à votre session et aux sessions ultérieures. Le noeud personnalisé se trouve dans votre bibliothèque, dans la catégorie spécifiée dans les propriétés du noeud personnalisé.
 

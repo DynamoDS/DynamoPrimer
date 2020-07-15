@@ -4,12 +4,14 @@ env:
   - SLACK_QUANTUM_BUILD_CHANNEL : "#dynamo-jenkinsbuild"
   - SLACK_QUANTUM_BUILD_CREDENTIAL_ID : "slack-notify-token"
   - MAIL_QUANTUM_BUILD_RECIPIENT : "dynamo.plaid.dev@autodesk.com"
-  - DOCKER_IMAGE_VERSION : "1.0.4"
+  - DOCKER_IMAGE_VERSION : "1.0.5"
   - PDFCOMPRESS_COLORIMAGERESOLUTION : "125dpi"
   - PDFCOMPRESS_PDFSETTINGS : "screen"
   - PDFCOMPRESS_DEVICE : "pdfwrite"
   - BUCKETNAME : "primer.dynamobim.org"
   - DISTRIBUTIONID : "E1L4E92B2OBQIF"
+  - DOCKER_WORKSPACE : "C:\\WorkspacePrimer"
+  - LIBRARIES_FOLDER : "WSThirdPartyLibraries"
 
 timeout: 420
 check_changelog_updated_on_pr: false
@@ -28,12 +30,27 @@ job_parameters:
 build:
   -
     scripts:
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
-      - "powershell.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\CopyLibrariesToHostScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
   
 code_analysis:
   sonarqube:
     skip: true
+soc2:
+  run_on_any_branch : true
+  white_source:    
+    skip: false
+    fail_on_audit_failure: true
+    team: Dynamo
+    project_name: "DynamoPrimer"
+    hidden_email_list: dynamo_ws_access
+    third_party_lib_paths:
+      - "%LIBRARIES_FOLDER%\\gs9.50"
+      - "%LIBRARIES_FOLDER%\\Modules"
+      - "%LIBRARIES_FOLDER%\\gitbook-cli"
+      - "%LIBRARIES_FOLDER%\\Calibre2"
+      - "%LIBRARIES_FOLDER%\\Vault"

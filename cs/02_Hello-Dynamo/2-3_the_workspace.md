@@ -67,19 +67,19 @@ Zde je tabulka interakcí myši v náhledu:
 |Posun|Zvětšení/Zmenšení|Zvětšení/Zmenšení|
 |Dvojité kliknutí|Vytvořit blok kódu|Není použito|
 
-### Hledání na kreslicí ploše
+### Hledání na pracovní ploše
 
-Použití funkce „Hledání na kreslicí ploše“ výrazně zrychluje pracovní postup aplikace Dynamo, protože vám nabízí přístup k popiskům uzlů a nápovědám, aniž byste se museli vzdálit od vašeho místa na grafu. Kliknutím pravým tlačítkem myši získáte přístup ke všem užitečným funkcím vyhledávání v knihovně, ať už pracujete kdekoli na kreslicí ploše.
+Použití funkce „Hledání na pracovní ploše“ výrazně zrychluje pracovní postup aplikace Dynamo, protože vám nabízí přístup k popiskům uzlů a nápovědám, aniž byste se museli vzdálit od vašeho místa na grafu. Kliknutím pravým tlačítkem myši získáte přístup ke všem užitečným funkcím vyhledávání v knihovně, ať už pracujete kdekoli na pracovní ploše.
 
 ![Vyhledávání na kreslicí ploše](images/2-3/05-InCanvasSearch.jpg)
 
-> 1. Kliknutím pravým tlačítkem myši na kreslicí plochu zobrazíte vyhledávací funkci. Pokud je panel vyhledávání prázdný, rozevírací seznam bude zobrazovat nabídku náhledu.
+> 1. Kliknutím pravým tlačítkem myši na pracovní plochu zobrazíte vyhledávací funkci. Pokud je panel vyhledávání prázdný, rozevírací seznam bude zobrazovat nabídku náhledu.
 2. Při psaní do panelu vyhledávání se rozevírací nabídka průběžně aktualizuje, aby zobrazovala nejvhodnější výsledky vyhledávání.
 3. Přesunutím ukazatele myši nad výsledky vyhledávání zobrazíte odpovídající popisy a popisky nástrojů.
 
-## Rozvržení uzlů vyčištění
+## Vyčištění rozvržení uzlů
 
-Uspořádání kreslicí plochy aplikace Dynamo je tím důležitější, čím složitějšími se budou stávat vaše soubory. Ačkoli máme nástroj **Zarovnat výběr**, který umožňuje pracovat s malým množstvím vybraných uzlů, aplikace Dynamo také obsahuje nástroj **Rozvržení uzlů vyčištění**, který pomáhá při celkovém vyčištění souboru.
+Uspořádání pracovní plochy aplikace Dynamo je tím důležitější, čím složitějšími se budou stávat vaše soubory. Ačkoli máme nástroj **Zarovnat výběr**, který umožňuje pracovat s malým množstvím vybraných uzlů, aplikace Dynamo také obsahuje nástroj **Rozvržení uzlů vyčištění**, který pomáhá při celkovém vyčištění souboru.
 
 #### Před vyčištěním uzlu
 
