@@ -22,7 +22,7 @@ Rozevírací nabídky jsou skvělým místem k vyhledání některých základn
 
 > 1. Soubor
 2. Upravit
-3. View
+3. Zobrazení
 4. Balíčky
 5. Nastavení
 6. Nápověda
@@ -43,7 +43,7 @@ Panel nástrojů aplikace Dynamo obsahuje řadu tlačítek pro rychlý přístup
 
 #### Knihovna
 
-Knihovna obsahuje všechny načtené uzly, včetně výchozích uzlů, které jsou dodávány s instalací, a všech dalších načtených vlastních uzlů nebo balíčků. Uzly v knihovně jsou hierarchicky uspořádány v knihovnách, kategoriích a případně podkategoriích podle toho, zda jsou data uzlů **Create** provádí data **Action** nebo **Query**.
+Knihovna obsahuje všechny načtené uzly, včetně výchozích uzlů, které jsou dodávány s instalací, a všech dalších načtených vlastních uzlů nebo balíčků. Uzly v knihovně jsou hierarchicky uspořádány v knihovnách, kategoriích a případně podkategoriích podle toho, zda uzly vytvářejí data **Create** provádějí nějakou akci **Action** nebo dotazují nějaká data **Query**.
 
 ##### Procházení
 
@@ -59,13 +59,13 @@ Ve výchozím nastavení bude **knihovna** obsahovat osm kategorií uzlů. **Tv�
 4. ImportExport
 5. Vstup
 6. Seznam
-7. Odpovídá
+7. Matematika
 8. Revit
-9. Demo
+9. Skript
 10. Řetězec
 11. Doplňky
 
-Procházejte knihovnu kliknutím v nabídkách. Klikněte na položky Geometrie > Křivky > Kružnice. Všimněte si nové části zobrazené nabídky, konkrétně popisků **Vytvořit** a **Dotaz**.
+Procházejte knihovnu kliknutím v nabídkách. Klikněte na položky Geometry > Curves > Circle. Všimněte si nové části zobrazené nabídky, konkrétně popisků **Vytvořit** a **Dotaz**.
 
 ![Procházení knihovny](images/2-2/05-LibraryBrowsing.png)
 
@@ -96,13 +96,13 @@ Pokud s relativní specificitou víte, který uzel chcete přidat do pracovníh
 
 ### Nastavení
 
-Z geometrických nastavení na uživatelská nastavení jsou tyto možnosti uvedeny v nabídce **Nastavení**. Zde se můžete rozhodnout, zda chcete sdílet svá uživatelská data, abyste aplikaci Dynamo vylepšili, a také definovat přesnost desetinné tečky aplikace a kvalitu rendrování geometrie.
+Z geometrických nastavení na uživatelská nastavení jsou tyto možnosti uvedeny v nabídce **Nastavení**. Zde se můžete rozhodnout, zda chcete sdílet svá uživatelská data, abyste aplikaci Dynamo vylepšili, a také definovat přesnost výpočtů v aplikaci (počet desetinných míst) a kvalitu rendrování geometrie.
 
 ![zobrazit nabídku](images/2-2/08-Settings.png)
 
 > 1. Zapnutí vytváření zpráv – Možnosti sdílení uživatelských dat za účelem zlepšení aplikace Dynamo.
 2. Zobrazit náhled spuštění – Zobrazí náhled stavu provádění grafu. Uzly naplánované pro provedení budou v grafu zvýrazněny.
-3. Možnosti formátu čísla – Změní nastavení dokumentu pro desetinná místa.
+3. Možnosti formátu čísla – Změní nastavení počtu desetinných míst pro dokument.
 4. Přesnost rendrování – Zvýší nebo sníží kvalitu rendrování dokumentu.
 5. Nastavení měřítka geometrie – Výběr rozsahu geometrie, na které pracujete.
 6. Izolovat vybranou geometrii – Izolovaná geometrie pozadí na základě výběru uzlu.
@@ -118,7 +118,7 @@ Pokud máte problém, podívejte se do nabídky **Nápověda**. Zde najdete uká
 ![zobrazit nabídku](images/2-2/09-Help.png)
 
 > 1. Začínáme – Stručný úvod do používání aplikace Dynamo.
-2. Ukázky – Vzorové soubory reference.
+2. Samples – Vzorové referenční soubory.
 3. Otevřít slovník aplikace Dynamo – Zdroj s dokumentací o všech uzlech.
 4. Hlášení chyby – Otevře problém v úložišti GitHub.
 5. Přejít na web projektu – Zobrazení projektu aplikace Dynamo v úložišti GitHub.

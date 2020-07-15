@@ -2,7 +2,7 @@
 
 ## Vlastní uzly
 
-Aplikace Dynamo nabízí širokou škálu uzlů pro úkony vizuálního programování. Někdy však může být rychlejší a elegantnější vytvořit si uzly vlastní. Tyto uzly pak můžete používat v různých projektech, dosáhnout díky nim přehlednějšího grafu a odeslat je do správce balíků a sdílet s komunitou aplikace Dynamo.
+Aplikace Dynamo nabízí širokou škálu uzlů pro úkony vizuálního programování. Někdy však může být rychlejší a elegantnější vytvořit si uzly vlastní. Tyto uzly pak můžete používat v různých projektech, dosáhnout díky nim přehlednějšího grafu a odeslat je do správce balíčků a sdílet s komunitou aplikace Dynamo.
 
 ![](images/10-1/cn.jpg)
 
@@ -42,7 +42,7 @@ V této části přejdeme do prostředí vlastního uzlu a vytvoříme jednoduc
 
 ![Pracovní plocha vlastních uzlů](images/10-1/CustomNodes03.jpg)
 
-> Tím se otevře pracovní plocha se žlutým pozadím, která naznačuje, že pracujete ve vlastním uzlu. Na této pracovní ploše máte přístup ke všem uzlům aplikace Dynamo a také k uzlům v kategoriích **Input** a **Output**, které slouží k nastavení vstupu a výstupu dat u vlastních uzlů. Tyto uzly se nacházejí v části *Core>Input*.
+> Tím se otevře pracovní plocha se žlutým pozadím, která naznačuje, že pracujete ve vlastním uzlu. Na této pracovní ploše máte přístup ke všem základním uzlům aplikace Dynamo a také k uzlům v kategoriích **Input** a **Output**, které slouží k nastavení vstupu a výstupu dat u vlastních uzlů. Tyto uzly se nacházejí v části *Core>Input*.
 
 ![Pracovní plocha vlastních uzlů](images/10-1/CustomNodes04.jpg)
 

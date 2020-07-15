@@ -49,7 +49,7 @@ Im Modus Navigation in 3D-Vorschau können Sie mühelos schwenken, zoomen und dr
 
 ### Mausnavigation
 
-Ihre Maustasten verhalten sich je nach dem aktiven Vorschaumodus unterschiedlich. Im Allgemeinen können Sie durch Klicken mit der linken Maustaste Eingaben auswählen und angegeben, durch Klicken mit der rechten Maustaste auf Optionen zugreifen und durch Klicken mit der mittleren Maustaste durch den Arbeitsbereich navigieren. Die Optionen, die durch Klicken mit der rechten Maustaste angezeigt werden, basieren auf dem Kontext, in dem Sie geklickt haben.
+Ihre Maustasten verhalten sich je nach dem aktiven Vorschaumodus unterschiedlich. Im Allgemeinen können Sie durch Klicken mit der linken Maustaste Eingaben auswählen und angeben, durch Klicken mit der rechten Maustaste auf Optionen zugreifen und durch Klicken mit der mittleren Maustaste durch den Arbeitsbereich navigieren. Die Optionen, die durch Klicken mit der rechten Maustaste angezeigt werden, basieren auf dem Kontext, in dem Sie geklickt haben.
 
 ![Mausnavigation](images/2-3/04-HelloMouse.png)
 

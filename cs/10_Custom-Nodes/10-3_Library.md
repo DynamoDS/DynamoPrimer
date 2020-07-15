@@ -2,7 +2,7 @@
 
 ## Přidání do knihovny
 
-Vytvořili jsme vlastní uzel a použili jej na proces v grafu aplikace Dynamo. Nyní tento uzel chceme zachovat v knihovně aplikace Dynamo pro později použití v dalších grafech. Z tohoto důvodu provedeme místní publikování uzlu. Tento postup je podobný jako publikování balíku, další informace budou uvedeny v další kapitole.
+Vytvořili jsme vlastní uzel a použili jej na proces v grafu aplikace Dynamo. Nyní tento uzel chceme zachovat v knihovně aplikace Dynamo pro později použití v dalších grafech. Z tohoto důvodu provedeme místní publikování uzlu. Tento postup je podobný jako publikování balíčku, další informace budou uvedeny v další kapitole.
 
 ### Místní publikování vlastního uzlu
 
@@ -28,17 +28,17 @@ V této části budeme pokračovat v práci s vlastním uzlem vytvořeným d�
 
 ![](images/10-3/AddingToLibrary- 01.jpg)
 
-> 1. Chcete-li zjistit umístění složky vlastních uzlů, vyberte možnost *Nastavení > Spravovat cesty uzlů a balíků...*
+> 1. Chcete-li zjistit umístění složky vlastních uzlů, vyberte možnost *Nastavení > Spravovat cesty uzlů a balíčků...*
 
 ![](images/10-3/AddingToLibrary- 00.jpg)
 
-> V tomto okně se zobrazují dvě cesty: *AppData\Roaming\Dynamo...* odkazuje na výchozí umístění balíků aplikace Dynamo nainstalovaných online. *Dokumenty\DynamoCustomNodes...* odkazuje na umístění místně publikovaných vlastních uzlů. *
+> V tomto okně se zobrazují dvě cesty: *AppData\Roaming\Dynamo...* odkazuje na výchozí umístění balíčků aplikace Dynamo nainstalovaných online. *Dokumenty\DynamoCustomNodes...* odkazuje na umístění místně publikovaných vlastních uzlů. *
 
-> 1. Cestu k vaší místní složce v seznamu výše je užitečné přesunout dolů (výběrem cesty ke složce a kliknutím na šipku dolů). Složka uvedená nejvýše se používá jako výchozí složka pro instalace balíků. Pokud jako výchozí složku nastavíte výchozí cestu pro instalaci balíků aplikace Dynamo, online balíky budou odděleny od místně publikovaných uzlů.*
+> 1. Cestu k vaší místní složce v seznamu výše je užitečné přesunout dolů (výběrem cesty ke složce a kliknutím na šipku dolů). Složka uvedená nejvýše se používá jako výchozí složka pro instalace balíčků. Pokud jako výchozí složku nastavíte výchozí cestu pro instalaci balíků aplikace Dynamo, online balíky budou odděleny od místně publikovaných uzlů.*
 
 ![](images/10-3/AddingToLibrary- 00A.jpg)
 
-> Změnili jsme pořadí cest, aby se pro instalaci balíků použila výchozí cesta aplikace Dynamo.
+> Změnili jsme pořadí cest, aby se pro instalaci balíčků použila výchozí cesta aplikace Dynamo.
 
 ![](images/10-3/AddingToLibrary- 06.jpg)
 

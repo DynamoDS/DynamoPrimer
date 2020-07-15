@@ -73,7 +73,7 @@ Změny měřítka a kolmý posun jsou mnohem složitější geometrické transfo
 |Třída|CoordinateSystem s nerovnoměrně změněným měřítkem|CoordinateSystem s kolmým posunem|
 | -- | -- | -- |
 |Oblouk|Ne|Ne|
-|Křivka Nurbs|Ano|Ano|
+|NurbsSurface|Ano|Ano|
 |Plocha Nurbs|Ne|Ne|
 |Kružnice|Ne|Ne|
 |Úsečka|Ano|Ano|

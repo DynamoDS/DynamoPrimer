@@ -40,9 +40,9 @@ Este é um momento empolgante para aprender, trabalhar e desenvolver no Dynamo. 
 
 ---
 
-### Abrir origem
+### Código aberto
 
-O projeto Dynamo Primer é de código aberto. Estamos dedicados a fornecer conteúdo de qualidade e a avaliar qualquer feedback que você possa ter. Se você desejar relatar algum tipo de problema, poste-o em nossa página de problemas do GitHub: [https://github.com/DynamoDS/DynamoPrimer/issues](https://github.com/DynamoDS/DynamoPrimer/issues)
+O projeto Dynamo Primer é de código aberto. Estamos empenhados em fornecer conteúdo de qualidade e agradecemos se enviar seus comentários sobre o projeto. Se você desejar relatar algum tipo de problema, poste-o em nossa página de problemas do GitHub: [https://github.com/DynamoDS/DynamoPrimer/issues](https://github.com/DynamoDS/DynamoPrimer/issues)
 
 Se você desejar contribuir com uma nova seção, edições ou qualquer outra coisa para este projeto, confira o repositório GitHub para começar: [https://github.com/DynamoDS/DynamoPrimer](https://github.com/DynamoDS/DynamoPrimer).
 
@@ -90,9 +90,9 @@ Dynamo@autodesk.com
 
 Copyright 2019 Autodesk
 
-Licenciado da licença Apache, versão 2.0 ("License"); não é possível utilizar esse a quivo, exceto em conformidade com a licença. Você pode obter uma cópia da licença em
+Licenciado com base na licença Apache, versão 2.0 ("Licença"); não é possível utilizar esse arquivo, exceto em conformidade com a licença. Você pode obter uma cópia da licença em:
 
 [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-A menos que exigido pela lei aplicável ou estabelecido em acordo escrito, o software distribuído sob a Licença é distribuído NO ESTADO EM QUE SE ENCONTRA, SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, expressas ou implícitas. Consulte a licença para o idioma específica que controla as permissões e limitações sob a licença.
+A menos que exigido pela lei aplicável ou estabelecido em acordo escrito, o software distribuído sob a Licença é distribuído NO ESTADO EM QUE SE ENCONTRA, SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, expressas ou implícitas. Consulte a licença para o idioma específico que controla as permissões e limitações sob a licença.
 
