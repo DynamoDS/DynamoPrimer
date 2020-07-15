@@ -71,6 +71,12 @@ try {
       
    #Vault
    $jsonToken = &vault write -address=https://civ1.dv.adskengineer.net:8200 -format=json /account/572569678988/sts/Application-Ops ttl=4h | ConvertFrom-Json
+   
+   if($LASTEXITCODE -ne 0)
+	{
+		throw "The Vault Write to get ASW token failed"
+   }
+   
    Write-Host $jsonToken.request_id
 
    #AWS variables

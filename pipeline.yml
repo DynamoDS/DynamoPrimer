@@ -12,6 +12,7 @@ env:
   - DISTRIBUTIONID : "E1L4E92B2OBQIF"
   - DOCKER_WORKSPACE : "C:\\WorkspacePrimer"
   - LIBRARIES_FOLDER : "WSThirdPartyLibraries"
+  - DOCKER_CONTAINER : "build-primer"
 
 timeout: 420
 check_changelog_updated_on_pr: false
