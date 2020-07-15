@@ -48,9 +48,9 @@ soc2:
     team: Dynamo
     project_name: "DynamoPrimer"
     hidden_email_list: dynamo_ws_access
-  third_party_lib_paths:
-    - "%LIBRARIES_FOLDER%\\gs9.50"
-    - "%LIBRARIES_FOLDER%\\Modules"
-    - "%LIBRARIES_FOLDER%\\gitbook-cli"
-    - "%LIBRARIES_FOLDER%\\Calibre2"
-    - "%LIBRARIES_FOLDER%\\Vault"
+    third_party_lib_paths:
+      - "%LIBRARIES_FOLDER%\\gs9.50"
+      - "%LIBRARIES_FOLDER%\\Modules"
+      - "%LIBRARIES_FOLDER%\\gitbook-cli"
+      - "%LIBRARIES_FOLDER%\\Calibre2"
+      - "%LIBRARIES_FOLDER%\\Vault"
