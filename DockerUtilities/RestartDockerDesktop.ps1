@@ -1,6 +1,7 @@
 $ErrorActionPreference = "Stop"
 
-try {
+try 
+{
 
     Write-Host "Looking for docker process"
     $processes = Get-Process "*docker desktop*"
@@ -20,7 +21,8 @@ try {
     Write-Host "Cleaning the containers that are not started"
     docker container prune -f
 }
-catch {
+catch 
+{
     Write-Host $error[0]
 	throw $LASTEXITCODE
 }
