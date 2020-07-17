@@ -74,7 +74,7 @@ try {
    
    if($LASTEXITCODE -ne 0)
    {
-      throw "The Vault Write to get ASW token failed"
+      throw "The Vault Write to get AWS token failed"
    }
    
    Write-Host $jsonToken.request_id
