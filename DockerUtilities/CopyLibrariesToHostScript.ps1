@@ -8,16 +8,16 @@
 #>
 
 #The container env variables need to be fetch and store them in powershell variables before stoping the container (They are system env variables already created inside the docker container)
-$appData= docker exec build-primer cmd /C echo "%APPDATA%"
-$documentsFolder = docker exec build-primer pwsh -Command "[Environment]::GetFolderPath('MyDocuments')"
-$programFiles = docker exec build-primer cmd /C echo "%PROGRAMFILES%"
+$appData= docker exec $env:DOCKER_CONTAINER cmd /C echo "%APPDATA%"
+$documentsFolder = docker exec $env:DOCKER_CONTAINER pwsh -Command "[Environment]::GetFolderPath('MyDocuments')"
+$programFiles = docker exec $env:DOCKER_CONTAINER cmd /C echo "%PROGRAMFILES%"
 $workFolder = $env:WORKSPACE
-$gitbookFolders = @(docker exec build-primer pwsh -Command "Get-ChildItem -Directory -Path $appData\npm\node_modules\gitbook-cli  | Select FullName -ExpandProperty FullName")
-$gitbookNodeModulesFolders = @(docker exec build-primer pwsh -Command "Get-ChildItem -Directory -Path $appData\npm\node_modules\gitbook-cli\node_modules | Select FullName -ExpandProperty FullName")
+$gitbookFolders = @(docker exec $env:DOCKER_CONTAINER pwsh -Command "Get-ChildItem -Directory -Path $appData\npm\node_modules\gitbook-cli  | Select FullName -ExpandProperty FullName")
+$gitbookNodeModulesFolders = @(docker exec $env:DOCKER_CONTAINER pwsh -Command "Get-ChildItem -Directory -Path $appData\npm\node_modules\gitbook-cli\node_modules | Select FullName -ExpandProperty FullName")
 #Check if container is running, then stop it
-if (docker inspect -f "{{.State.Running}}" build-primer ) 
+if (docker inspect -f "{{.State.Running}}" $env:DOCKER_CONTAINER ) 
 {
-    docker stop build-primer
+    docker stop $env:DOCKER_CONTAINER
 }
 
 #Create the paths to the libraries folders
@@ -31,19 +31,24 @@ $LibrariesArray = @($ghostScriptLibraries, $calibreLibraries, $vaultLibraries, $
 $librariesFolderPath = Join-Path -Path $workFolder -ChildPath $env:LIBRARIES_FOLDER
 
 #Create a new folder named "$FolderName" in the specified path "$Path", if the folder already exist will just send a message
-Function CreateNewFolder([string]$Path, [string]$FolderName) {
+Function CreateNewFolder([string]$Path, [string]$FolderName) 
+{
     $fullPath = Join-Path -Path $Path -ChildPath $FolderName
-    if (-not (Test-Path -LiteralPath $fullPath)) {  
-        try {
+    if (-not (Test-Path -LiteralPath $fullPath)) 
+    {  
+        try 
+        {
             #This will create a libraries folder in which all the third party libraries will be copied
             New-Item -Path $Path -Name $FolderName  -ItemType "directory"
             Write-Host "New Folder Created: $fullPath"
         }
-        catch {
+        catch 
+        {
             Write-Host -Message "Unable to create directory '$FolderName'. Error was: $_" -ErrorAction Stop
         }
     }
-    else {
+    else 
+    {
         Write-Host -Message "Directory already existed"
     }
 }
@@ -54,11 +59,12 @@ CreateNewFolder $workFolder $env:LIBRARIES_FOLDER
 CreateNewFolder $workFolder $env:LIBRARIES_FOLDER\"gitbook-cli"
 
 #Check if the folder WSThirdPartyLibraries already exists, then proceed to copy the libraries
-if (Test-Path -LiteralPath $librariesFolderPath ) { 
+if (Test-Path -LiteralPath $librariesFolderPath ) 
+{ 
 #Copy the folder path (in the array) content from the container to the host
     Foreach ($library in $LibrariesArray)
     {
-        docker cp build-primer:$library $librariesFolderPath
+        docker cp $env:DOCKER_CONTAINER:$library $librariesFolderPath
         Write-Host "Library copied: $library"
     }
 }
@@ -68,7 +74,7 @@ Foreach ($subFolder in $gitbookFolders)
 {
     #gitbook-cli subfolders
     Write-Host "Library folder copied: $subFolder"
-    docker cp build-primer:$subFolder $librariesFolderPath\"gitbook-cli"
+    docker cp $env:DOCKER_CONTAINER:$subFolder $librariesFolderPath\"gitbook-cli"
 }
 
 #Copy the each subfolder from the node_modules folder (due that npm folder has large nested subfolders that makes the docker cp crash)
@@ -79,8 +85,8 @@ Foreach ($subFolder in $gitbookNodeModulesFolders)
     {
         #gitbook-cli\node_modules subfolders
         Write-Host "Library folder copied: $subFolder"
-        docker cp build-primer:$subFolder $librariesFolderPath\"gitbook-cli\node_modules"
+        docker cp $env:DOCKER_CONTAINER:$subFolder $librariesFolderPath\"gitbook-cli\node_modules"
     } 
 }
 
-docker start build-primer
+docker start $env:DOCKER_CONTAINER
