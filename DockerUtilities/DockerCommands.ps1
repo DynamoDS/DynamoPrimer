@@ -20,7 +20,18 @@ try
       gitbook init
       gitbook install
       gitbook build
+      
+      if($LASTEXITCODE -ne 0)
+      {
+         throw "The content generation failed"
+      }
+      
       gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
+      
+      if($LASTEXITCODE -ne 0)
+      {
+         throw "The PDF generation failed"
+      }
    }
 }
 catch
