@@ -29,6 +29,7 @@ job_parameters:
 build:
   -
     scripts:
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\SetupHost.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\CopyLibrariesToHostScript.ps1"
