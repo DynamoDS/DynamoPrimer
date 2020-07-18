@@ -12,6 +12,7 @@ env:
   - DISTRIBUTIONID : "E1L4E92B2OBQIF"
   - DOCKER_WORKSPACE : "C:\\WorkspacePrimer"
   - LIBRARIES_FOLDER : "WSThirdPartyLibraries"
+  - DOCKER_CONTAINER : "build-primer"
 
 timeout: 420
 check_changelog_updated_on_pr: false
@@ -28,6 +29,7 @@ job_parameters:
 build:
   -
     scripts:
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\SetupHost.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\CopyLibrariesToHostScript.ps1"
