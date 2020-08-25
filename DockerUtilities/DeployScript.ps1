@@ -10,7 +10,12 @@ try
 	{
 		throw "No languages were selected."
 	}
-	docker exec build-primer pwsh -command "$env:DOCKER_WORKSPACE\DockerUtilities\DockerDeployCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE $env:BUCKETNAME $env:DISTRIBUTIONID $env:DOCKER_WORKSPACE"
+	docker exec $env:DOCKER_CONTAINER pwsh -command "$env:DOCKER_WORKSPACE\DockerUtilities\DockerDeployCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE $env:BUCKETNAME $env:DISTRIBUTIONID $env:DOCKER_WORKSPACE"
+
+	if($LASTEXITCODE -ne 0)
+	{
+		throw "The AWS Deploy failed"
+	}
 }
 catch
 {
