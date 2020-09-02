@@ -16,6 +16,11 @@ try {
 
         & gswin64c.exe -dColorImageResolution="$pdfcompress_colorimageresolution" -dPDFSETTINGS=/"$pdfcompress_pdfsettings" -dBATCH -dNOPAUSE -sDEVICE="$pdfcompress_device" -sOutputFile="$OutputFile" "$InputFile"
 
+        if($LASTEXITCODE -ne 0)
+        {
+            throw "The PDF compression failed"
+        }
+
         Remove-Item -Force -Path $InputFile
     }
 

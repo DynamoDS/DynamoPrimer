@@ -11,7 +11,8 @@ try
 
 	docker pull $DockerImage
 
-	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE,target=$env:DOCKER_WORKSPACE --name build-primer $DockerImage
+	docker run -m 8GB -d -t --mount type=bind,source=$env:WORKSPACE,target=$env:DOCKER_WORKSPACE --name $env:DOCKER_CONTAINER $DockerImage
+
 }
 catch
 {

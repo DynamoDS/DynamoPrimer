@@ -6,12 +6,12 @@ $ErrorActionPreference = "Stop"
 
 try
 {
-	docker container stop build-primer
-	docker container rm build-primer
+	docker container stop $env:DOCKER_CONTAINER
+	docker container rm $env:DOCKER_CONTAINER
 }
 catch
 {
-	Invoke-Expression -Command "$env:WORKSPACE\DockerUtilities\PostDeployScript.ps1"
+	Invoke-Expression -Command "$env:WORKSPACE\DockerUtilities\RestartDockerDesktop.ps1"
 	Write-Host $error[0]
 	throw $LASTEXITCODE
 }

@@ -11,7 +11,12 @@ try
 		throw "No languages were selected."
 	}
 
-	docker exec build-primer pwsh -command "$env:DOCKER_WORKSPACE\DockerUtilities\DockerCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE -PrimerRoot $env:DOCKER_WORKSPACE"
+	docker exec $env:DOCKER_CONTAINER pwsh -command "$env:DOCKER_WORKSPACE\DockerUtilities\DockerCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE -PrimerRoot $env:DOCKER_WORKSPACE"
+	
+	if($LASTEXITCODE -ne 0)
+	{
+		throw "The build-generation process failed"
+	}
 }
 catch
 {
