@@ -17,7 +17,7 @@ $gitbookNodeModulesFolders = @(docker exec $env:DOCKER_CONTAINER pwsh -Command "
 #Check if container is running, then stop it
 if (docker inspect -f "{{.State.Running}}" $env:DOCKER_CONTAINER ) 
 {
-    docker stop $env:DOCKER_CONTAINER
+    docker stop ${env:DOCKER_CONTAINER}
 }
 
 #Create the paths to the libraries folders
@@ -64,7 +64,7 @@ if (Test-Path -LiteralPath $librariesFolderPath )
 #Copy the folder path (in the array) content from the container to the host
     Foreach ($library in $LibrariesArray)
     {
-        docker cp $env:DOCKER_CONTAINER:$library $librariesFolderPath
+        docker cp ${env:DOCKER_CONTAINER}:$library $librariesFolderPath
         Write-Host "Library copied: $library"
     }
 }
@@ -74,7 +74,7 @@ Foreach ($subFolder in $gitbookFolders)
 {
     #gitbook-cli subfolders
     Write-Host "Library folder copied: $subFolder"
-    docker cp $env:DOCKER_CONTAINER:$subFolder $librariesFolderPath\"gitbook-cli"
+    docker cp ${env:DOCKER_CONTAINER}:$subFolder $librariesFolderPath\"gitbook-cli"
 }
 
 #Copy the each subfolder from the node_modules folder (due that npm folder has large nested subfolders that makes the docker cp crash)
@@ -85,8 +85,8 @@ Foreach ($subFolder in $gitbookNodeModulesFolders)
     {
         #gitbook-cli\node_modules subfolders
         Write-Host "Library folder copied: $subFolder"
-        docker cp $env:DOCKER_CONTAINER:$subFolder $librariesFolderPath\"gitbook-cli\node_modules"
+        docker cp ${env:DOCKER_CONTAINER}:$subFolder $librariesFolderPath\"gitbook-cli\node_modules"
     } 
 }
 
-docker start $env:DOCKER_CONTAINER
+docker start ${env:DOCKER_CONTAINER}
