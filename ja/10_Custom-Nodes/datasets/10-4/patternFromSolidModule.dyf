@@ -1,90 +1,321 @@
-<Workspace Version="0.8.3.2391" X="253.152416173717" Y="-142.535580977078" zoom="2.12842063749437" Name="patternFromSolidModule" Description="Creates a pattern by arraying and rotating a solid module" ID="967d774a-9958-4e57-bbb8-c46d1924d7af" Category="Geometry.Solid">
-  <NamespaceResolutionMap>
-    <ClassMap partialName="Point" resolvedName="Autodesk.DesignScript.Geometry.Point" assemblyName="ProtoGeometry.dll" />
-    <ClassMap partialName="Rectangle" resolvedName="Autodesk.DesignScript.Geometry.Rectangle" assemblyName="ProtoGeometry.dll" />
-    <ClassMap partialName="Surface" resolvedName="Autodesk.DesignScript.Geometry.Surface" assemblyName="ProtoGeometry.dll" />
-    <ClassMap partialName="Sphere" resolvedName="Autodesk.DesignScript.Geometry.Sphere" assemblyName="ProtoGeometry.dll" />
-    <ClassMap partialName="Cylinder" resolvedName="Autodesk.DesignScript.Geometry.Cylinder" assemblyName="ProtoGeometry.dll" />
-    <ClassMap partialName="Line" resolvedName="Autodesk.DesignScript.Geometry.Line" assemblyName="ProtoGeometry.dll" />
-    <ClassMap partialName="Vector" resolvedName="Autodesk.DesignScript.Geometry.Vector" assemblyName="ProtoGeometry.dll" />
-    <ClassMap partialName="PolyCurve" resolvedName="Autodesk.DesignScript.Geometry.PolyCurve" assemblyName="ProtoGeometry.dll" />
-    <ClassMap partialName="Solid" resolvedName="Autodesk.DesignScript.Geometry.Solid" assemblyName="ProtoGeometry.dll" />
-  </NamespaceResolutionMap>
-  <Elements>
-    <DSIronPythonNode.PythonNode guid="bf17d902-d1be-4f99-bc77-8d2ca3ba1079" type="DSIronPythonNode.PythonNode" nickname="Python Script" x="189.043467200351" y="123.630151030275" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" inputcount="4">
-      <Script>import clr
-clr.AddReference('ProtoGeometry')
-from Autodesk.DesignScript.Geometry import *
-
-#The inputs to this node will be stored as a list in the IN variables.
-solid = IN[0]
-val = IN[1]
-xCount = IN[2]
-yCount = IN[3]
-
-#create an empty list for the arrayed solids
-solids = []
-#create an empty list for the edge curves
-crvs = []
-#create number ranges for X and Y
-xRange = list(range(xCount))
-yRange = list(range(yCount))
-
-#Get edges and convert to curve geometry - we need these curves due to a bounding box bug
-edges = solid.Edges
-for edge in edges:
-	crvs.append(edge.CurveGeometry)
-	
-#Get the bounding box of the curves
-bbox = BoundingBox.ByGeometry(crvs)
-
-#Get the X and Y translation distance based on the bounding box
-yDist = bbox.MaxPoint.Y-bbox.MinPoint.Y
-xDist = bbox.MaxPoint.X-bbox.MinPoint.X
-
-#Loop through X and Y
-for i in xRange:
-	for j in yRange:
-		#get the source coordinate system
-		fromCoord = solid.ContextCoordinateSystem
-		#Rotate and translate the coordinate system
-		toCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i+j%val)))
-		vec = Vector.ByCoordinates((xDist*i),(yDist*j),0)
-		toCoord = toCoord.Translate(vec)
-		#Transform the solid from the source coordinate system to the target coordinate system and append to the list
-		solids.append(solid.Transform(fromCoord,toCoord))
-
-
-#Assign your output to the OUT variable.
-OUT = solids</Script>
-    </DSIronPythonNode.PythonNode>
-    <Dynamo.Nodes.Symbol guid="0de6a940-9292-491b-a0f4-7ff512ddefcd" type="Dynamo.Nodes.Symbol" nickname="Input" x="-28.9275126138078" y="88.7794351420717" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
-      <Symbol value="solid:Solid" />
-    </Dynamo.Nodes.Symbol>
-    <Dynamo.Nodes.Symbol guid="fba0b290-6222-41a1-ad7e-90ae4ef144d6" type="Dynamo.Nodes.Symbol" nickname="Input" x="-30.4451097957236" y="150" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
-      <Symbol value="seed:int = 3" />
-    </Dynamo.Nodes.Symbol>
-    <Dynamo.Nodes.Symbol guid="894e8d8d-cbc7-425b-ae42-379701e9d5e7" type="Dynamo.Nodes.Symbol" nickname="Input" x="-30.4451097957236" y="211.220564857928" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
-      <Symbol value="xCount:int = 10" />
-    </Dynamo.Nodes.Symbol>
-    <Dynamo.Nodes.Symbol guid="15f1b2fc-6aed-464a-8cef-6c1e9364d44b" type="Dynamo.Nodes.Symbol" nickname="Input" x="-30.4451097957236" y="271.682331124899" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True">
-      <Symbol value="yCount:int = 10" />
-    </Dynamo.Nodes.Symbol>
-    <Dynamo.Nodes.Output guid="bca76fe1-a69e-423a-88bc-7e28bc502327" type="Dynamo.Nodes.Output" nickname="Output" x="388.843467200351" y="123.630151030275" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False">
-      <Symbol value="solids" />
-    </Dynamo.Nodes.Output>
-  </Elements>
-  <Connectors>
-    <Dynamo.Models.ConnectorModel start="bf17d902-d1be-4f99-bc77-8d2ca3ba1079" start_index="0" end="bca76fe1-a69e-423a-88bc-7e28bc502327" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="0de6a940-9292-491b-a0f4-7ff512ddefcd" start_index="0" end="bf17d902-d1be-4f99-bc77-8d2ca3ba1079" end_index="0" portType="0" />
-    <Dynamo.Models.ConnectorModel start="fba0b290-6222-41a1-ad7e-90ae4ef144d6" start_index="0" end="bf17d902-d1be-4f99-bc77-8d2ca3ba1079" end_index="1" portType="0" />
-    <Dynamo.Models.ConnectorModel start="894e8d8d-cbc7-425b-ae42-379701e9d5e7" start_index="0" end="bf17d902-d1be-4f99-bc77-8d2ca3ba1079" end_index="2" portType="0" />
-    <Dynamo.Models.ConnectorModel start="15f1b2fc-6aed-464a-8cef-6c1e9364d44b" start_index="0" end="bf17d902-d1be-4f99-bc77-8d2ca3ba1079" end_index="3" portType="0" />
-  </Connectors>
-  <Notes />
-  <Annotations />
-  <Presets />
-  <Cameras>
-    <Camera Name="Background Preview" eyeX="2057.98366385335" eyeY="1191.13345732301" eyeZ="-876.282631778849" lookX="-837.115156074734" lookY="-1187.05015198435" lookZ="872.935613180809" upX="-0.110660669552309" upY="0.987136286649364" upZ="0.115395879591157" />
-  </Cameras>
-</Workspace>
+{
+  "Uuid": "3cd3ee8f-2976-47d0-9f78-dbb84c5198cc",
+  "IsCustomNode": true,
+  "Category": "DynamoPrimer.Geometry.Solid",
+  "Description": "Create petterns by arraying and rotating a solid module.",
+  "Name": "patternFromSolidModule",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Solid": {
+        "Key": "Autodesk.DesignScript.Geometry.Solid",
+        "Value": "ProtoGeometry.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "import clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n#The inputs to this node will be stored as a list in the IN variables.\r\nsolid = IN[0]\r\nseed = IN[1]\r\nxCount = IN[2]\r\nyCount = IN[3]\r\n\r\nsolids = []\r\ncrvs = []\r\n\r\nedges = solid.Edges\r\nfor edge in edges:\r\n\tcrvs.append(edge.CurveGeometry)\r\n\t\r\nbbox = BoundingBox.ByGeometry(crvs)\r\nyDist = bbox.MaxPoint.Y-bbox.MinPoint.Y\r\nxDist = bbox.MaxPoint.X-bbox.MinPoint.X\r\n\r\nxRange = list(range(xCount))\r\nyRange = list(range(yCount))\r\n\r\nfromCoord = solid.ContextCoordinateSystem\r\n \r\n#Loop through X and Y\r\nfor i in xRange:\r\n\tfor j in yRange:\r\n\t\t#Rotate and translate the coordinate system\r\n\t\ttoCoord = fromCoord.Rotate(solid.ContextCoordinateSystem.Origin,Vector.ByCoordinates(0,0,1),(90*(i+j%seed)))\r\n\t\tvec = Vector.ByCoordinates((xDist*i),(yDist*j),0)\r\n\t\ttoCoord = toCoord.Translate(vec)\r\n\t\t#Transform the solid from the source coordinate system to the target coordinate system and append to the list\r\n\t\tsolids.append(solid.Transform(fromCoord,toCoord))\r\n\r\n\r\n#Assign your output to the OUT variable.\r\nOUT = solids",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "8c5a10cfd1524b2ab8788c8ac8696e41",
+      "Inputs": [
+        {
+          "Id": "88c0694a2dd84496a456db0280ebb602",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4ece6164c73b4ab9a88c20a7cf558e26",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "9c6222dbd7f741bb9be77ca4e4d9cf13",
+          "Name": "IN[2]",
+          "Description": "Input #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "3a7d4110136b43f5b96528419cc79dca",
+          "Name": "IN[3]",
+          "Description": "Input #3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "0811731dbda848f895c415b401fc1859",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded IronPython script."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Output, DynamoCore",
+      "NodeType": "OutputNode",
+      "ElementResolver": null,
+      "Symbol": "//the resulting solids\r\nsolids",
+      "Id": "ab2f83a154674181a182c366e35d968e",
+      "Inputs": [
+        {
+          "Id": "ad89c46bb7dc44e1b27c0240412507fa",
+          "Name": "",
+          "Description": "",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [],
+      "Replication": "Disabled",
+      "Description": "A function output, use with custom nodes"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "solid",
+        "TypeName": "Autodesk.DesignScript.Geometry.Solid",
+        "TypeRank": 0,
+        "DefaultValue": null,
+        "Description": "the solid to use"
+      },
+      "Id": "186684cf79f74cce997832284a1fb53d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "18ea852dea454c37ac47280a97053b42",
+          "Name": "",
+          "Description": "Symbol",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "seed",
+        "TypeName": "int",
+        "TypeRank": 0,
+        "DefaultValue": "3",
+        "Description": "seed to provide options"
+      },
+      "Id": "f23d6d499e5341d2b8c27d311eb1b7d7",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c898c28f26e24717be9e9e4d2e9a151b",
+          "Name": "",
+          "Description": "Symbol",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "xCount",
+        "TypeName": "int",
+        "TypeRank": 0,
+        "DefaultValue": "10",
+        "Description": "number in the x direction"
+      },
+      "Id": "a1038bf156dd42888e1d733575014264",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "abf67ea84c4d4f2dbb4c7d7919cde7f9",
+          "Name": "",
+          "Description": "Symbol",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "yCount",
+        "TypeName": "int",
+        "TypeRank": 0,
+        "DefaultValue": "10",
+        "Description": "number in the y direction"
+      },
+      "Id": "8add07e783594f70ad09da7621c69f26",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "5b1e8704d7184a9bba3c2e0e26f5d73c",
+          "Name": "",
+          "Description": "Symbol",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "0811731dbda848f895c415b401fc1859",
+      "End": "ad89c46bb7dc44e1b27c0240412507fa",
+      "Id": "5602035235e24ece95dd9f974e50aad5"
+    },
+    {
+      "Start": "18ea852dea454c37ac47280a97053b42",
+      "End": "88c0694a2dd84496a456db0280ebb602",
+      "Id": "f7bc3671f88b428ba5c45f5b442d1fe4"
+    },
+    {
+      "Start": "c898c28f26e24717be9e9e4d2e9a151b",
+      "End": "4ece6164c73b4ab9a88c20a7cf558e26",
+      "Id": "7ca0477bd2a44e90966fcfea5c39e230"
+    },
+    {
+      "Start": "abf67ea84c4d4f2dbb4c7d7919cde7f9",
+      "End": "9c6222dbd7f741bb9be77ca4e4d9cf13",
+      "Id": "1a776d6d4fdc4bf3896ec5009b1a041b"
+    },
+    {
+      "Start": "5b1e8704d7184a9bba3c2e0e26f5d73c",
+      "End": "3a7d4110136b43f5b96528419cc79dca",
+      "Id": "7a3d4c43ef9045188967eeaaad8638ef"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": false,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.8.0.2182",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": 1490.0556640625,
+      "EyeY": 1219.111328125,
+      "EyeZ": -1081.98681640625,
+      "LookX": -1038.1268310546875,
+      "LookY": -1540.7208251953125,
+      "LookZ": 1177.5238037109375,
+      "UpX": -0.10573132336139679,
+      "UpY": 0.98713624477386475,
+      "UpZ": 0.11992865055799484
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Python Script",
+        "Id": "8c5a10cfd1524b2ab8788c8ac8696e41",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 904.31902899644649,
+        "Y": 253.05331764796256
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Output",
+        "Id": "ab2f83a154674181a182c366e35d968e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1122.3190289964464,
+        "Y": 262.05331764796256
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Input",
+        "Id": "186684cf79f74cce997832284a1fb53d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 655.75306591994649,
+        "Y": 171.62168254786218
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Input",
+        "Id": "f23d6d499e5341d2b8c27d311eb1b7d7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 602.18846437234163,
+        "Y": 264.94959017773715
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Input",
+        "Id": "a1038bf156dd42888e1d733575014264",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 574.81087235438542,
+        "Y": 360.92944429597873
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Input",
+        "Id": "8add07e783594f70ad09da7621c69f26",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 575.47767419306354,
+        "Y": 465.2306364735548
+      }
+    ],
+    "Annotations": [],
+    "X": -263.98332102963235,
+    "Y": 84.33685086560952,
+    "Zoom": 0.54145293516128312
+  }
+}
