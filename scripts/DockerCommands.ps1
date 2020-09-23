@@ -18,7 +18,7 @@ try
 
    if(Test-Path -Path $pathjs)
    {
-      Copy-Item -Path $PrimerRoot\$CommonResourcesDir\utils\polyfills.js -Destination $pathjs -Force
+      Copy-Item -Path "$PrimerRoot\$CommonResourcesDir\utils\polyfills.js" -Destination $pathjs -Force
    }
 
    # DynamoPrimer´s location
