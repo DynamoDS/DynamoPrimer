@@ -5,7 +5,8 @@
 #param($language)
 param(
    [string[]]$ArrayParameter=@(), 
-   $PrimerRoot 
+   $PrimerRoot,
+   $CommonResourcesDir 
 )
 
 $ErrorActionPreference = "Stop"
@@ -17,7 +18,7 @@ try
 
    if(Test-Path -Path $pathjs)
    {
-      Copy-Item -Path $env:WORKSPACE\$env:COMMON_RESOURCES_DIR\utils\polyfills.js -Destination $pathjs -Force
+      Copy-Item -Path $PrimerRoot\$CommonResourcesDir\utils\polyfills.js -Destination $pathjs -Force
    }
 
    # DynamoPrimer´s location

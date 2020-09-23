@@ -11,7 +11,7 @@ try
 		throw "No languages were selected."
 	}
 
-	docker exec $env:DOCKER_CONTAINER pwsh -command "$env:DOCKER_WORKSPACE\$env:COMMON_RESOURCES_DIR\scripts\DockerCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE -PrimerRoot $env:DOCKER_WORKSPACE"
+	docker exec $env:DOCKER_CONTAINER pwsh -command "$env:DOCKER_WORKSPACE\$env:COMMON_RESOURCES_DIR\scripts\DockerCommands.ps1 -a $env:ENVIRONMENT_LANGUAGE -PrimerRoot $env:DOCKER_WORKSPACE -CommonResourcesDir $env:COMMON_RESOURCES_DIR"
 	
 	if($LASTEXITCODE -ne 0)
 	{
