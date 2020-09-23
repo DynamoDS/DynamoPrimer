@@ -18,7 +18,7 @@ try
 
    if(Test-Path -Path $pathjs)
    {
-      (Get-Content -Path $pathjs) | ForEach-Object {$_ -Replace "fs.stat = statFix", "// fs.stat = statFix" ` -Replace "fs.fstat = statFix", "// fs.fstat = statFix" ` -Replace "fs.lstat = statFix", "// fs.lstat = statFix"} | Set-Content -Path $pathjs
+      (Get-Content -Path $pathjs) | ForEach-Object {$_ -Replace "fs.stat = statFix", "// fs.stat = statFix" ` -Replace "fs.fstat = statFix", "// fs.fstat = statFix" ` -Replace "fs.lstat = statFix", "// fs.lstat = statFix"} | Set-Content -Path $pathjs -Encoding utf8
    }
 
    # DynamoPrimer´s location
