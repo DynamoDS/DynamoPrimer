@@ -18,7 +18,7 @@ try
 
    if(Test-Path -Path $pathjs)
    {
-      Copy-Item -Path "$PrimerRoot\$CommonResourcesDir\utils\polyfills.js" -Destination $pathjs -Force
+      (Get-Content -Path $pathjs) | ForEach-Object {$_ -Replace "fs.stat = statFix", "//fs.stat = statFix" ` -Replace "fs.fstat = statFix", "//fs.fstat = statFix" ` -Replace "fs.lstat = statFix", "//fs.lstat = statFix"} | Set-Content -Path $pathjs
    }
 
    # DynamoPrimer´s location
