@@ -14,7 +14,7 @@ env:
   - LIBRARIES_FOLDER : "WSThirdPartyLibraries"
   - DOCKER_CONTAINER : "build-primer"
   - COMMON_RESOURCES_DIR : "cicdresources"
-  - URL_REPO_TOOLS : "https://github.com/alfredo-pozo/DynamoPrimer"
+  - URL_REPO_TOOLS : "https://github.com/DynamoDS/DynamoPrimer"
   - BRANCH_TOOLS : "cicdresources"
 
 
