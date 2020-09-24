@@ -18,7 +18,7 @@ try
 
    if(Test-Path -Path $pathjs)
    {
-      Write-Output "PathJS: $pathjs"
+      Write-Output "Patch for Node12: $pathjs"
 
       (Get-Content -Path $pathjs) | ForEach-Object {$_ -Replace 'fs.stat =', '// fs.stat =' ` -Replace 'fs.fstat =', '// fs.fstat =' ` -Replace 'fs.lstat =', '// fs.lstat ='} | Set-Content -Path "c:\temp\new.js" -Encoding utf8 -Force
    }
