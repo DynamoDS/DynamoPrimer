@@ -14,7 +14,7 @@ $ErrorActionPreference = "Stop"
 try
 {
    #Patch for Node12
-   $pathjs = "$env:APPDATA\npm\node_modules\gitbook-cli\node_modules\graceful-fs\polyfills.js"
+   $pathjs = "$env:APPDATA\npm\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js"
 
    if(Test-Path -Path $pathjs)
    {
