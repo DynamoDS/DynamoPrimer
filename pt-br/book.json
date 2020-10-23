@@ -1,5 +1,5 @@
 {
-	"gitbook": "2.6.x",
+	"gitbook": "3.2.x",
 	"plugins": [
 		"-sharing",
 		"popup",
