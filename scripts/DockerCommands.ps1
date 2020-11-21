@@ -28,7 +28,7 @@ try
    }
 
    #Copy npmrc with ADSK registry
-   Copy-Item -Path $env:USERPROFILE\.npmrc -Destination $PrimerRoot
+   Copy-Item -Path $env:USERPROFILE\.npmrc -Destination $PrimerRoot -Force
 
    # DynamoPrimer´s location
    Foreach ($language in $ArrayParameter)
