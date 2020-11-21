@@ -3,7 +3,7 @@ env:
   - JENKINS_NODE_WIN: "Dynamo_Win_Perf"
   - SLACK_QUANTUM_BUILD_CHANNEL : "#dynamo-jenkinsbuild"
   - SLACK_QUANTUM_BUILD_CREDENTIAL_ID : "slack-notify-token"
-  - MAIL_QUANTUM_BUILD_RECIPIENT : "dynamo.plaid.dev@autodesk.com"
+  - MAIL_QUANTUM_BUILD_RECIPIENT : "dynamo.dev@autodesk.com"
   - DOCKER_IMAGE_VERSION : "1.0.5"
   - PDFCOMPRESS_COLORIMAGERESOLUTION : "125dpi"
   - PDFCOMPRESS_PDFSETTINGS : "screen"
@@ -13,6 +13,9 @@ env:
   - DOCKER_WORKSPACE : "C:\\WorkspacePrimer"
   - LIBRARIES_FOLDER : "WSThirdPartyLibraries"
   - DOCKER_CONTAINER : "build-primer"
+  - COMMON_RESOURCES_DIR : "cicdresources"
+  - URL_REPO_TOOLS : "https://github.com/DynamoDS/DynamoPrimer"
+  - BRANCH_TOOLS : "cicdresources"
 
 timeout: 420
 check_changelog_updated_on_pr: false
@@ -31,13 +34,14 @@ job_parameters:
 build:
   -
     scripts:
-      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\SetupHost.ps1"
-      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PreBuildScript.ps1"
-      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\BuildScript.ps1"
-      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\CopyLibrariesToHostScript.ps1"
-      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostBuildScript.ps1"
-      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\DeployScript.ps1"
-      - "pwsh.exe -ExecutionPolicy ByPass -File .\\DockerUtilities\\PostDeployScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\utils\\DownloadCICDResources.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\%COMMON_RESOURCES_DIR%\\scripts\\SetupHost.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\%COMMON_RESOURCES_DIR%\\scripts\\PreBuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\%COMMON_RESOURCES_DIR%\\scripts\\BuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\%COMMON_RESOURCES_DIR%\\scripts\\CopyLibrariesToHostScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\%COMMON_RESOURCES_DIR%\\scripts\\PostBuildScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\%COMMON_RESOURCES_DIR%\\scripts\\DeployScript.ps1"
+      - "pwsh.exe -ExecutionPolicy ByPass -File .\\%COMMON_RESOURCES_DIR%\\scripts\\PostDeployScript.ps1"
   
 code_analysis:
   sonarqube:
