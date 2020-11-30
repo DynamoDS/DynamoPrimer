@@ -14,14 +14,21 @@ $ErrorActionPreference = "Stop"
 try
 {
    #Patch for Node12
+   $ndOutPut = & node -v | Out-String
+   $ndOutPut = $ndOutPut -replace "v"
+   $nodeVersion = [System.Version]::Parse($ndOutPut).Major
    $pathjs = "$env:APPDATA\npm\node_modules\gitbook-cli\node_modules\npm\node_modules\graceful-fs\polyfills.js"
 
-   if(Test-Path -Path $pathjs)
+   #if Node version is greater than 6 the patch will be applied
+   if($nodeVersion -gt 6 && Test-Path -Path $pathjs)
    {
       Write-Output "Patch for Node12: $pathjs"
 
       (Get-Content -Path $pathjs) | ForEach-Object {$_ -Replace 'fs.stat =', '// fs.stat =' ` -Replace 'fs.fstat =', '// fs.fstat =' ` -Replace 'fs.lstat =', '// fs.lstat ='} | Set-Content -Path $pathjs -Encoding utf8 -Force
    }
+
+   #Copy npmrc with ADSK registry
+   Copy-Item -Path $env:USERPROFILE\.npmrc -Destination $PrimerRoot -Force
 
    # DynamoPrimer´s location
    Foreach ($language in $ArrayParameter)
