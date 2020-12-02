@@ -197,7 +197,19 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><a href="https://github.com/sixtysecondrevit/RhythmForDynamo">Visit Rhythm on GitHub</td></a>
   </tr>
   <tr>
-    <td colspan="2"> At first glance, Rhythm isn't anything special. It does not involve any sophisticated code or anything of that nature. What Rhythm does represent though, is the result of practical thinking and diligence. The idea is this package helps users maintain Rhythm in Revit with Dynamo. Rhythm primarily consists of out of the box Dynamo nodes used in clever ways as they apply to the Revit environment. </td>
+    <td colspan="2"> Rhythm is a set of useful nodes to help your Revit project maintain a good rhythm with Dynamo. basically it does some pretty okay stuff. Rhythm is open source and primarily built in C#, and adds Revit nodes, core nodes and a view extension to your Dynamo.  </td>
     <td><img src="images/A-4/Rhythm_Image.png"></img></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="10%"><img src="images/A-4/Springs_L.png"></img></td>
+    <td width="55%"><b>Spring Nodes</b></td>
+    <td><a href="https://github.com/dimven/SpringNodes">Visit Spring Nodes on GitHub</td></a>
+  </tr>
+  <tr>
+    <td colspan="2"> Spring nodes main focus is to improve Dynamo's interaction with Revit. The wider goal is to explore any and all means that can help accelerate BIM focused work-flows. Many of the nodes use either IronPython or DesignScript and can be a good starting point for learning the specific syntax and finer points of both.</td>
+    <td><img src="images/A-4/springNodes_image.jpg"></img></td>
   </tr>
 </table>
