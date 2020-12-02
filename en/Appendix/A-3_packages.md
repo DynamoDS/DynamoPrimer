@@ -15,7 +15,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
       </a>
    </tr>
    <tr>
-      <td colspan="2">archi-lab is a collection of over 50+ custom packages that vastly extend Dynamo's ability to interact with Revit. Nodes contained in archi-lab package vary from basic list operations to advanced Analysis Visualization Framework nodes for Revit. </td>
+      <td colspan="2">archi-lab is a collection of over 50+ custom packages that vastly extend Dynamo's ability to interact with Revit. Nodes contained in archi-lab package vary from basic list operations to advanced Analysis Visualization Framework nodes for Revit. archi-lab is available on the package manager</td>
       <td>
          <img src="images/A-4/archilabImage.png"></img>
       </td>
