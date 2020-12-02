@@ -4,7 +4,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
 <table>
    <tr>
       <td width="10%">
-         <img src="http://archi-lab.net/wp-content/uploads/2016/02/wordpress-logo.jpg"></img>
+         <img src="images/A-4/archilab_L.jpg"></img>
       </td>
       <td width="55%">
          <b>ARCHI-LAB</b>
@@ -15,9 +15,9 @@ Here are a list of some of the more popular packages in the Dynamo community. De
       </a>
    </tr>
    <tr>
-      <td colspan="2">archi-lab is a collection of over 50+ custom packages that vastly extend Dynamo's ability to interact with Revit. Nodes contained in archi-lab package vary from basic list operations to advanced Analysis Visualization Framework nodes for Revit. </td>
+      <td colspan="2">archi-lab is a collection of over 50+ custom packages that vastly extend Dynamo's ability to interact with Revit. Nodes contained in archi-lab package vary from basic list operations to advanced Analysis Visualization Framework nodes for Revit. archi-lab is available on the package manager</td>
       <td>
-         <img src="http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png"></img>
+         <img src="images/A-4/archilabImage.png"></img>
       </td>
    </tr>
 </table>
@@ -29,7 +29,7 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><a href="https://bimorph.com/bimorph-nodes/">Visit the BimorphNodes Dictionary</td></a>
   </tr>
   <tr>
-    <td colspan="2">BimorphNodes is a versatile collection of powerful utility nodes. The package highlights include ultra-efficient clash detection and geometry intersection nodes, ImportInstance (CAD) curve conversion nodes, and linked element collectors that resolve limitations in the Revit API. To learn about the full range of nodes available, visit the BimorphNodes dictionary.</td>
+    <td colspan="2">BimorphNodes is a versatile collection of powerful utility nodes. The package highlights include ultra-efficient clash detection and geometry intersection nodes, ImportInstance (CAD) curve conversion nodes, and linked element collectors that resolve limitations in the Revit API. To learn about the full range of nodes available, visit the BimorphNodes dictionary. BimorphNodes is available on the package manager.</td>
     <td><img src="images/A-4/Bimorph-Nodes-v2.2-Library-Catalog-header.jpg"></img></td>
   </tr>
 </table>
@@ -168,6 +168,18 @@ Here are a list of some of the more popular packages in the Dynamo community. De
 
 <table>
   <tr>
+    <td width="10%">🧐</td>
+    <td width="55%"><b>MONOCLE</b></td>
+    <td><a href="https://github.com/johnpierson/MonocleForDynamo">Visit the Monocle GitHub</td></a>
+  </tr>
+  <tr>
+    <td colspan="2">Monocle is a View Extension for Dynamo 2.0.x. Monocle contains a set of useful tools for package identification, graph cleanup and more! Monocle aims to add functionality to the Dynamo UI in a seemless way that leaves you thinking, <i>"is this built into dynamo?"</i>. Monocle is available on the package manager.</td>
+    <td><img src="images/A-4/monocleImage.png"></img></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <td width="10%"><img src="images/A-4/Optimo_L.png"></img></td>
     <td width="55%"><b>OPTIMO</b></td>
     <td><a href="https://github.com/BPOpt/Optimo/wiki/0_-Home">Visit the Optimo GitHub</td></a>
@@ -197,7 +209,19 @@ Here are a list of some of the more popular packages in the Dynamo community. De
     <td><a href="https://github.com/sixtysecondrevit/RhythmForDynamo">Visit Rhythm on GitHub</td></a>
   </tr>
   <tr>
-    <td colspan="2"> At first glance, Rhythm isn't anything special. It does not involve any sophisticated code or anything of that nature. What Rhythm does represent though, is the result of practical thinking and diligence. The idea is this package helps users maintain Rhythm in Revit with Dynamo. Rhythm primarily consists of out of the box Dynamo nodes used in clever ways as they apply to the Revit environment. </td>
+    <td colspan="2"> Rhythm is a set of useful nodes to help your Revit project maintain a good rhythm with Dynamo. basically it does some pretty okay stuff. Rhythm is open source and primarily built in C#, and adds Revit nodes, core nodes and a view extension to your Dynamo.  Rhythm is available on the package manager.</td>
     <td><img src="images/A-4/Rhythm_Image.png"></img></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="10%"><img src="images/A-4/Springs_L.png"></img></td>
+    <td width="55%"><b>Spring Nodes</b></td>
+    <td><a href="https://github.com/dimven/SpringNodes">Visit Spring Nodes on GitHub</td></a>
+  </tr>
+  <tr>
+    <td colspan="2"> Spring nodes main focus is to improve Dynamo's interaction with Revit. The wider goal is to explore any and all means that can help accelerate BIM focused work-flows. Many of the nodes use either IronPython or DesignScript and can be a good starting point for learning the specific syntax and finer points of both. Spring nodes is available on the package manager.</td>
+    <td><img src="images/A-4/springNodes_image.jpg"></img></td>
   </tr>
 </table>
