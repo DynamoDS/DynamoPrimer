@@ -52,7 +52,7 @@ Les **NURBS** (splines de base rationnelles non uniformes) sont des représentat
 
 **Poids** : les points de contrôle sont associés à un nombre appelé poids. Les poids sont généralement des nombres positifs. Lorsque les points de contrôle d'une courbe ont tous le même poids (généralement 1), la courbe est appelée non rationnelle. Dans le cas contraire, la courbe est appelée rationnelle. La plupart des courbes NURBS ne sont pas rationnelles.
 
-**Noeuds** : les noeuds sont une liste de nombres (degré + N-1), où N représente le nombre de points de contrôle. Les noeuds sont utilisés conjointement avec les poids afin de contrôler l'influence des points de contrôle sur la courbe obtenue. L'une des utilisations possibles des noeuds consiste à créer des boucles à certains points de la courbe.
+**Nœuds** : les nœuds sont une liste de nombres (degré + N-1), où N représente le nombre de points de contrôle. Les nœuds sont utilisés conjointement avec les poids afin de contrôler l'influence des points de contrôle sur la courbe obtenue. L'une des utilisations possibles des nœuds consiste à créer des boucles à certains points de la courbe.
 
 ![Degré des courbes NURBS](images/5-4/NURBScurve_Degree.jpg)
 

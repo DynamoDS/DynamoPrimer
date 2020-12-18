@@ -2,7 +2,7 @@
 
 # Générateurs de points Python
 
-Les scripts Python suivants génèrent des réseaux de points pour plusieurs exemples. Ils doivent être collés dans un noeud de script Python comme suit :
+Les scripts Python suivants génèrent des réseaux de points pour plusieurs exemples. Ils doivent être collés dans un nœud de script Python comme suit :
 
 ![](images/12-10/PythonPointGenerators_01.png)
 
@@ -19,8 +19,8 @@ for i in range(11):
 			z = 1
 		elif (i == 8 and j == 2):
 			z = 1
-		sub_points.append(Point.ByCoordinates(i, j, z))
-	out_points.append(sub_points)
+		sub_points.Add(Point.ByCoordinates(i, j, z))
+	out_points.Add(sub_points)
 
 OUT = out_points
 ```
@@ -34,7 +34,7 @@ for i in range(11):
 	z = 0
 	if (i == 2):
 		z = 1
-	out_points.append(Point.ByCoordinates(i, 0, z))
+	out_points.Add(Point.ByCoordinates(i, 0, z))
 
 OUT = out_points
 ```
@@ -48,7 +48,7 @@ for i in range(11):
 	z = 0
 	if (i == 7):
 		z = -1
-	out_points.append(Point.ByCoordinates(i, 5, z))
+	out_points.Add(Point.ByCoordinates(i, 5, z))
 
 OUT = out_points
 ```
@@ -62,7 +62,7 @@ for i in range(11):
 	z = 0
 	if (i == 5):
 		z = 1
-	out_points.append(Point.ByCoordinates(i, 10, z))
+	out_points.Add(Point.ByCoordinates(i, 10, z))
 
 OUT = out_points
 ```
@@ -82,8 +82,8 @@ for i in range(11):
 			z = 2
 		elif (i == 2 and j == 6):
 			z = 2
-		sub_points.append(Point.ByCoordinates(i, j, z))
-	out_points.append(sub_points)
+		sub_points.Add(Point.ByCoordinates(i, j, z))
+	out_points.Add(sub_points)
 
 OUT = out_points
 ```

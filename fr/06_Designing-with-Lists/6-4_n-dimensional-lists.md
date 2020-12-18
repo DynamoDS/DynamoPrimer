@@ -16,7 +16,7 @@ Les listes à n dimensions sont difficiles à expliquer visuellement, mais vous
 
 Le mappage est sans doute la partie la plus complexe de la gestion des données dans Dynamo, et est particulièrement utile lorsque vous travaillez avec des hiérarchies de listes complexes. Grâce à la série d'exercices ci-dessous, vous allez découvrir quand utiliser le mappage et les combinaisons à mesure que les données deviennent multidimensionnelles.
 
-Les noeuds List.Map et List.Combine sont présentés dans la section précédente. Dans le dernier exercice ci-dessous, vous allez utiliser ces noeuds sur une structure de données complexe.
+Les nœuds List.Map et List.Combine sont présentés dans la section précédente. Dans le dernier exercice ci-dessous, vous allez utiliser ces nœuds sur une structure de données complexe.
 
 ### Exercice - Listes 2D - Basique
 
@@ -28,14 +28,14 @@ Cet exercice est le premier d'une série de trois exercices axés sur l'articula
 
 ![Exercice](images/6-4/Exercise/A/04.jpg)
 
-> 1. Commencez par le fichier .sat dans le dossier des fichiers d'exercice. Vous pouvez sélectionner ce fichier à l'aide du noeud *File Path*.
+> 1. Commencez par le fichier .sat dans le dossier des fichiers d'exercice. Vous pouvez sélectionner ce fichier à l'aide du nœud *File Path*.
 2. Avec *Geometry.ImportFromSAT*, la géométrie est importée dans l'aperçu Dynamo en tant que deux surfaces.
 
 ![Exercice](images/6-4/Exercise/A/03.jpg)
 
 > Dans le cadre de cet exercice, utilisez l'une des surfaces pour faire simple.
 
-> 1. Sélectionnez l'index de *1* pour sélectionner la surface supérieure. Pour ce faire, utilisez le noeud *List.GetItemAtIndex*.
+> 1. Sélectionnez l'index de *1* pour sélectionner la surface supérieure. Pour ce faire, utilisez le nœud *List.GetItemAtIndex*.
 
 ![Exercice](images/6-4/Exercise/A/02.jpg)
 
@@ -47,17 +47,17 @@ Cet exercice est le premier d'une série de trois exercices axés sur l'articula
 0..1..#5;
 ```
 
-2. Avec le noeud *Surface.PointAtParameter*, connectez les deux valeurs de bloc de code à *u* et *v*. Définissez la *combinaison* de ce noeud sur *"Produit vectoriel"*.
+2. Avec le nœud *Surface.PointAtParameter*, connectez les deux valeurs de bloc de code à *u* et *v*. Définissez la *combinaison* de ce nœud sur *"Produit vectoriel"*.
 3. La sortie révèle la structure des données, également visible dans l'aperçu Dynamo.
 
 ![Exercice](images/6-4/Exercise/A/01.jpg)
 
-> 1. Pour voir comment la structure de données est organisée, connectez un noeud *NurbsCurve.ByPoints* à la sortie de *Surface.PointAtParameter*.
+> 1. Pour voir comment la structure de données est organisée, connectez un nœud *NurbsCurve.ByPoints* à la sortie de *Surface.PointAtParameter*.
 2. Dix courbes sont placées verticalement le long de la surface.
 
 ![Exercice](images/6-4/Exercise/A/00.jpg)
 
-> 1. Un noeud *List.Transpose* de base permet d'inverser les colonnes et les lignes d'une liste de listes.
+> 1. Un nœud *List.Transpose* de base permet d'inverser les colonnes et les lignes d'une liste de listes.
 2. Lorsque vous connectez la sortie de *List.Transpose* à *NurbsCurve.ByPoints*, vous obtenez cinq courbes placées horizontalement sur la surface.
 
 ### Exercice - Listes 2D - Avancé
@@ -66,11 +66,11 @@ Passons aux choses sérieuses. Imaginez que vous souhaitiez effectuer une opéra
 
 ![Exercice](images/6-4/Exercise/B/07.jpg)
 
-> 1. Commencez par une étape de l'exercice précédent : isolez la surface supérieure de la géométrie importée grâce au noeud *List.GetItemAtIndex*.
+> 1. Commencez par une étape de l'exercice précédent : isolez la surface supérieure de la géométrie importée grâce au nœud *List.GetItemAtIndex*.
 
 ![Exercice](images/6-4/Exercise/B/06.jpg)
 
-> 1. À l'aide du noeud *Surface.Offset*, décalez la surface par une valeur de *10*.
+> 1. À l'aide du nœud *Surface.Offset*, décalez la surface par une valeur de *10*.
 
 ![Exercice](images/6-4/Exercise/B/05.jpg)
 
@@ -80,33 +80,33 @@ Passons aux choses sérieuses. Imaginez que vous souhaitiez effectuer une opéra
 0..1..#5;
 ```
 
-2. Connectez ces sorties à deux noeuds *Surface.PointAtParameter* dont la *combinaison* est définie sur *"Produit vectoriel"*. L'un de ces noeuds est connecté à la surface d'origine, tandis que l'autre est connecté à la surface décalée.
+2. Connectez ces sorties à deux nœuds *Surface.PointAtParameter* dont la *combinaison* est définie sur *"Produit vectoriel"*. L'un de ces nœuds est connecté à la surface d'origine, tandis que l'autre est connecté à la surface décalée.
 
 ![Exercice](images/6-4/Exercise/B/04.jpg)
 
-> 1. Comme dans l'exercice précédent, connectez les sorties à deux noeuds *NurbsCurve.ByPoints*.
+> 1. Comme dans l'exercice précédent, connectez les sorties à deux nœuds *NurbsCurve.ByPoints*.
 2. L'aperçu Dynamo affiche deux courbes, correspondant à deux surfaces.
 
 ![Exercice](images/6-4/Exercise/B/03.jpg)
 
-> 1. Le noeud *List.Create* vous permet de combiner les deux jeux de courbes en une liste de listes.
+> 1. Le nœud *List.Create* vous permet de combiner les deux jeux de courbes en une liste de listes.
 2. La sortie affiche deux listes contenant chacune dix éléments, représentant chaque ensemble de connexions de courbes NURBS.
-3. Grâce au noeud *Surface.ByLoft*, vous pouvez visualiser cette structure de données. Le noeud lisse toutes les courbes de chaque sous-liste.
+3. Grâce au nœud *Surface.ByLoft*, vous pouvez visualiser cette structure de données. Le nœud lisse toutes les courbes de chaque sous-liste.
 
 ![Exercice](images/6-4/Exercise/B/02.jpg)
 
-> 1. Si vous utilisez le noeud *List.Transpose*, n'oubliez pas qu'il permet de retourner toutes les colonnes et les lignes. Ce noeud convertit deux listes de dix courbes en dix listes de deux courbes. Chaque courbe NURBS est désormais liée à la courbe voisine sur l'autre surface.
-2. Le noeud *Surface.ByLoft* vous permet d'obtenir une structure nervurée.
+> 1. Si vous utilisez le nœud *List.Transpose*, n'oubliez pas qu'il permet de retourner toutes les colonnes et les lignes. Ce nœud convertit deux listes de dix courbes en dix listes de deux courbes. Chaque courbe NURBS est désormais liée à la courbe voisine sur l'autre surface.
+2. Le nœud *Surface.ByLoft* vous permet d'obtenir une structure nervurée.
 
 ![Exercice](images/6-4/Exercise/B/01.jpg)
 
-> 1. Le noeud *List.Combine* constitue une alternative au noeud *List.Transpose*. Il exécute un *"combinateur"* sur chaque sous-liste.
+> 1. Le nœud *List.Combine* constitue une alternative au nœud *List.Transpose*. Il exécute un *"combinateur"* sur chaque sous-liste.
 2. Dans ce cas, vous utilisez *List.Create* en tant que *"combinateur"* qui va créer une liste de chaque élément dans les sous-listes.
-3. Le noeud *Surface.ByLoft* vous permet d'obtenir les mêmes surfaces que lors de l'étape précédente. L'option Transposer est plus facile à utiliser dans ce cas, mais lorsque la structure de données devient encore plus complexe, le noeud *List.Combine* s'avère plus fiable.
+3. Le nœud *Surface.ByLoft* vous permet d'obtenir les mêmes surfaces que lors de l'étape précédente. L'option Transposer est plus facile à utiliser dans ce cas, mais lorsque la structure de données devient encore plus complexe, le nœud *List.Combine* s'avère plus fiable.
 
 ![Exercice](images/6-4/Exercise/B/00.jpg)
 
-> 1. Si vous souhaitez inverser l'orientation des courbes dans la structure nervurée, utilisez un noeud List.Transpose avant de les connecter à *NurbsCurve.ByPoints*. Cette action permet d'inverser les colonnes et les lignes et d'obtenir 5 nervures horizontales.
+> 1. Si vous souhaitez inverser l'orientation des courbes dans la structure nervurée, utilisez un nœud List.Transpose avant de les connecter à *NurbsCurve.ByPoints*. Cette action permet d'inverser les colonnes et les lignes et d'obtenir 5 nervures horizontales.
 
 ### Exercice - Listes 3D
 
@@ -118,8 +118,8 @@ Vous allez désormais aller encore un peu plus loin. Dans cet exercice, vous all
 
 ![Exercice](images/6-4/Exercise/C/11.jpg)
 
-> 1. Comme dans l'exercice précédent, utilisez le noeud *Surface.Offset* pour effectuer un décalage d'une valeur de *10*.
-2. Dans la sortie, vous pouvez voir que le noeud de décalage a créé deux surfaces.
+> 1. Comme dans l'exercice précédent, utilisez le nœud *Surface.Offset* pour effectuer un décalage d'une valeur de *10*.
+2. Dans la sortie, vous pouvez voir que le nœud de décalage a créé deux surfaces.
 
 ![Exercice](images/6-4/Exercise/C/10.jpg)
 
@@ -129,31 +129,31 @@ Vous allez désormais aller encore un peu plus loin. Dans cet exercice, vous all
 0..1..#10;
 ```
 
-2. Connectez ces sorties à deux noeuds *Surface.PointAtParameter* dont la combinaison est définie sur *"Produit vectoriel"*. L'un de ces noeuds est connecté aux surfaces d'origine, tandis que l'autre est connecté aux surfaces décalées.
+2. Connectez ces sorties à deux nœuds *Surface.PointAtParameter* dont la combinaison est définie sur *"Produit vectoriel"*. L'un de ces nœuds est connecté aux surfaces d'origine, tandis que l'autre est connecté aux surfaces décalées.
 
 ![Exercice](images/6-4/Exercise/C/09.jpg)
 
-> 1. Comme dans l'exercice précédent, connectez les sorties à deux noeuds *NurbsCurve.ByPoints*.
+> 1. Comme dans l'exercice précédent, connectez les sorties à deux nœuds *NurbsCurve.ByPoints*.
 2. Observez la sortie de *NurbsCurve.ByPoints* : il s'agit d'une liste de deux listes, ce qui est plus complexe que l'exercice précédent. Étant donné que les données sont classées par la surface sous-jacente, un autre niveau a été ajouté à la structure des données.
-3. Les choses deviennent plus complexes dans le noeud *Surface.PointAtParameter*. Dans ce cas, vous avez une liste de listes de listes.
+3. Les choses deviennent plus complexes dans le nœud *Surface.PointAtParameter*. Dans ce cas, vous avez une liste de listes de listes.
 
 ![Exercice](images/6-4/Exercise/C/08.jpg)
 
-> 1. À l'aide du noeud *List.Create*, fusionnez les courbes NURBS en une structure de données, créant ainsi une liste de listes de listes.
-2. Lorsque vous connectez un noeud *Surface.ByLoft*, vous obtenez une version des surfaces d'origine, car elles restent toutes dans leur propre liste telle qu'elle a été créée à partir de la structure de données d'origine.
+> 1. À l'aide du nœud *List.Create*, fusionnez les courbes NURBS en une structure de données, créant ainsi une liste de listes de listes.
+2. Lorsque vous connectez un nœud *Surface.ByLoft*, vous obtenez une version des surfaces d'origine, car elles restent toutes dans leur propre liste telle qu'elle a été créée à partir de la structure de données d'origine.
 
 ![Exercice](images/6-4/Exercise/C/07.jpg)
 
-> 1. Dans l'exercice précédent, le fichier *List.Transpose* a été utilisé pour créer une structure nervurée. Ce ne sera pas possible ici. Vous devez utiliser une transposition sur une liste bidimensionnelle. Étant donné que vous avez une liste tridimensionnelle, une opération de "basculement des colonnes et des lignes" ne fonctionnera pas aussi facilement. N'oubliez pas que les listes sont des objets. Par conséquent, le noeud *List.Transpose* inverse vos listes sans les sous-listes, mais n'inverse pas les courbes NURBS d'une liste plus bas dans la hiérarchie.
+> 1. Dans l'exercice précédent, le fichier *List.Transpose* a été utilisé pour créer une structure nervurée. Ce ne sera pas possible ici. Vous devez utiliser une transposition sur une liste bidimensionnelle. Étant donné que vous avez une liste tridimensionnelle, une opération de "basculement des colonnes et des lignes" ne fonctionnera pas aussi facilement. N'oubliez pas que les listes sont des objets. Par conséquent, le nœud *List.Transpose* inverse vos listes sans les sous-listes, mais n'inverse pas les courbes NURBS d'une liste plus bas dans la hiérarchie.
 
 ![Exercice](images/6-4/Exercise/C/06.jpg)
 
-> 1. Le noeud *List.Combine* fonctionne mieux ici. Lorsque vous obtenez des structures de données plus complexes, utilisez les noeuds *List.Map* et *List.Combine*.
-2. L'utilisation du noeud *List.Create* comme *"combinateur"* vous permet de créer une structure de données plus appropriée.
+> 1. Le nœud *List.Combine* fonctionne mieux ici. Lorsque vous obtenez des structures de données plus complexes, utilisez les nœuds *List.Map* et *List.Combine*.
+2. L'utilisation du nœud *List.Create* comme *"combinateur"* vous permet de créer une structure de données plus appropriée.
 
 ![Exercice](images/6-4/Exercise/C/05.jpg)
 
-> 1. La structure de données doit toujours être transposée à une étape inférieure de la hiérarchie. Pour ce faire, utilisez *List.Map*. Ce noeud fonctionne comme *List.Combine*, sauf qu'il utilise une liste d'entrées, au lieu de deux listes ou plus.
+> 1. La structure de données doit toujours être transposée à une étape inférieure de la hiérarchie. Pour ce faire, utilisez *List.Map*. Ce nœud fonctionne comme *List.Combine*, sauf qu'il utilise une liste d'entrées, au lieu de deux listes ou plus.
 2. La fonction appliquée à *List.Map* est *List.Transpose*, permettant d'inverser les colonnes et les lignes des sous-listes dans la liste principale.
 
 ![Exercice](images/6-4/Exercise/C/04.jpg)
@@ -162,7 +162,7 @@ Vous allez désormais aller encore un peu plus loin. Dans cet exercice, vous all
 
 ![Exercice](images/6-4/Exercise/C/03.jpg)
 
-> 1. Ajoutez de la profondeur à la géométrie grâce au noeud *Surface.Thicken*.
+> 1. Ajoutez de la profondeur à la géométrie grâce au nœud *Surface.Thicken*.
 
 ![Exercice](images/6-4/Exercise/C/02.jpg)
 

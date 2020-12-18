@@ -2,11 +2,11 @@
 
 ## Fonctions de bloc de code
 
-Les fonctions peuvent être créées dans un bloc de code et rappelées ailleurs dans une définition Dynamo. Cela permet de créer un autre calque de contrôle dans un fichier paramétrique et de l'afficher en tant que version de texte d'un noeud personnalisé. Dans ce cas, le bloc de code "parent" est facilement accessible et peut être situé n'importe où sur le graphique. Aucun fil n'est nécessaire.
+Les fonctions peuvent être créées dans un bloc de code et rappelées ailleurs dans une définition Dynamo. Cela permet de créer un autre calque de contrôle dans un fichier paramétrique et de l'afficher en tant que version de texte d'un nœud personnalisé. Dans ce cas, le bloc de code "parent" est facilement accessible et peut être situé n'importe où sur le graphique. Aucun fil n'est nécessaire.
 
 ### Parent
 
-La première ligne comporte le mot clé "def", puis le nom de la fonction, puis les noms des entrées entre parenthèses. Les contreventements définissent le corps de la fonction et renvoient une valeur avec "return =". Les noeuds Code Block qui définissent une fonction ne disposent pas de ports d'entrée ou de sortie, car ils sont appelés à partir d'autres noeuds Code Block. ![Parents](images/7-4/21.png)
+La première ligne comporte le mot clé "def", puis le nom de la fonction, puis les noms des entrées entre parenthèses. Les contreventements définissent le corps de la fonction et renvoient une valeur avec "return =". Les nœuds Code Block qui définissent une fonction ne disposent pas de ports d'entrée ou de sortie, car ils sont appelés à partir d'autres nœuds Code Block. ![Parents](images/7-4/21.png)
 
 ```
 /*This is a multi-line comment,
@@ -22,7 +22,7 @@ return sum;
 
 ### Enfants
 
-Appelez la fonction avec un autre noeud Code Block dans le même fichier en donnant le nom et le même nombre d'arguments. Cela fonctionne comme les noeuds prêts à l'emploi de votre bibliothèque.
+Appelez la fonction avec un autre nœud Code Block dans le même fichier en donnant le nom et le même nombre d'arguments. Cela fonctionne comme les nœuds prêts à l'emploi de votre bibliothèque.
 
 ![Enfants](images/7-4/20.png)
 
@@ -38,11 +38,11 @@ Dans cet exercice, vous allez créer une définition générique permettant d'ob
 
 ![Exercice](images/7-4/Exercise/11.jpg)
 
-> Commencez par une plage de dix valeurs allant de 0 à 100. Connectez-les à un noeud *Point.ByCoordinates* afin de créer une ligne diagonale.
+> Commencez par une plage de dix valeurs allant de 0 à 100. Connectez-les à un nœud *Point.ByCoordinates* afin de créer une ligne diagonale.
 
 ![Exercice](images/7-4/Exercise/10.jpg)
 
-> 1. Créez un noeud *Code Block* et introduisez la définition en utilisant la ligne de code suivante :
+> 1. Créez un nœud *Code Block* et introduisez la définition en utilisant la ligne de code suivante :
 ```
 def sphereByZ(inputPt){
 };
@@ -77,7 +77,7 @@ sphereByZ(Pt)
 ![Exercice](images/7-4/Exercise/06.jpg)
 
 > 1. Une étape importante consiste à définir la sortie de la fonction en ajoutant la ligne ```return = sphereRadius;``` à la fonction *sphereByZ*.
-2. La sortie du noeud *Code Block* indique désormais les coordonnées Z de chaque point.
+2. La sortie du nœud *Code Block* indique désormais les coordonnées Z de chaque point.
 
 ![Exercice](images/7-4/Exercise/05.jpg)
 
@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![Exercice](images/7-4/Exercise/03.jpg)
 
-> 1. Sur le noeud *Point.ByCoordinates*, remplacez la combinaison *Liste la plus courte* par * Produit vectoriel* afin de créer une grille de points. La fonction *sphereByZ* reste pleinement effective, de sorte que tous les points créent des sphères avec des rayons fondés sur des valeurs Z.
+> 1. Sur le nœud *Point.ByCoordinates*, remplacez la combinaison *Liste la plus courte* par * Produit vectoriel* afin de créer une grille de points. La fonction *sphereByZ* reste pleinement effective, de sorte que tous les points créent des sphères avec des rayons fondés sur des valeurs Z.
 
 ![Exercice](images/7-4/Exercise/02.jpg)
 

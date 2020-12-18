@@ -6,17 +6,17 @@ img{display:block;margin-left: auto;   margin-right: auto }
 
 ## Qu'est-ce que le Zero Touch ?
 
-L'importation Zero Touch fait référence à une méthode pointer-cliquer simple permettant d'importer des bibliothèques C#. Dynamo lit les méthodes publiques d'un fichier *.dll* et les convertit en noeuds Dynamo. Vous pouvez utiliser le Zero Touch pour développer vos propres noeuds et packages personnalisés, et importer des bibliothèques externes dans l'environnement Dynamo.
+L'importation Zero Touch fait référence à une méthode pointer-cliquer simple permettant d'importer des bibliothèques C#. Dynamo lit les méthodes publiques d'un fichier *.dll* et les convertit en nœuds Dynamo. Vous pouvez utiliser le Zero Touch pour développer vos propres nœuds et packages personnalisés, et importer des bibliothèques externes dans l'environnement Dynamo.
 
 ![](images/11-5/annotate.jpg)
 
-Le Zero Touch vous permet d'importer une bibliothèque qui n'a pas été nécessairement développée pour Dynamo, et de créer une suite de nouveaux noeuds. La fonctionnalité Zero Touch actuelle montre le caractère multi-plateforme du projet Dynamo.
+Le Zero Touch vous permet d'importer une bibliothèque qui n'a pas été nécessairement développée pour Dynamo, et de créer une suite de nouveaux nœuds. La fonctionnalité Zero Touch actuelle montre le caractère multi-plateforme du projet Dynamo.
 
 Cette section explique comment utiliser le Zero Touch pour importer une bibliothèque tierce. Pour plus d'informations sur le développement de votre propre bibliothèque Zero Touch, consultez la [page wiki de Dynamo](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development).
 
 ### Packages Zero Touch
 
-Les packages Zero Touch sont un complément utile aux noeuds personnalisés définis par l'utilisateur. Le tableau ci-dessous présente quelques packages qui utilisent des bibliothèques C#. Pour plus d'informations sur les packages, consultez la [section Packages ](../Appendix/A-3_packages.md)de l'annexe.
+Les packages Zero Touch sont un complément utile aux nœuds personnalisés définis par l'utilisateur. Le tableau ci-dessous présente quelques packages qui utilisent des bibliothèques C#. Pour plus d'informations sur les packages, consultez la [section Packages ](../Appendix/A-3_packages.md)de l'annexe.
 
 
 <table width="100%">
@@ -61,39 +61,39 @@ Dans cette étude de cas, vous découvrirez comment importer la bibliothèque *.
 
 ![Exercice](images/11-5/library.jpg)
 
-> 1. De retour dans Dynamo, un groupe de noeuds *"AForge" *doit apparaître dans la barre d'outils de la bibliothèque. Vous avez désormais accès à la bibliothèque d'images AForge à partir du programme visuel.
+> 1. De retour dans Dynamo, un groupe de nœuds *"AForge" *doit apparaître dans la barre d'outils de la bibliothèque. Vous avez désormais accès à la bibliothèque d'images AForge à partir du programme visuel.
 
 ### Exercice 1 - Détection des arêtes
 
-Maintenant que la bibliothèque a été importée, commencez le premier exercice. Vous effectuerez quelques traitements d'images de base sur une image d'exemple pour découvrir comment les filtres d'images AForge sont appliqués. Vous allez utiliser le noeud *"Watch Image"* pour afficher les résultats et appliquer dans Dynamo des filtres semblables à ceux de Photoshop.
+Maintenant que la bibliothèque a été importée, commencez le premier exercice. Vous effectuerez quelques traitements d'images de base sur une image d'exemple pour découvrir comment les filtres d'images AForge sont appliqués. Vous allez utiliser le nœud *"Watch Image"* pour afficher les résultats et appliquer dans Dynamo des filtres semblables à ceux de Photoshop.
 
 > Téléchargez et décompressez les fichiers d'exemple joints à cette étude de cas de package (cliquez avec le bouton droit de la souris et sélectionnez "Enregistrer le lien sous..."). Vous trouverez la liste complète des fichiers d'exemple dans l'annexe. [ZeroTouchImages.zip](datasets/11-5/ZeroTouchImages.zip)
 
-Maintenant que la bibliothèque a été importée, commencez simplement par le premier exercice (*01-EdgeDetection.dyn*). Vous effectuerez quelques traitements d'images de base sur une image d'exemple pour découvrir comment les filtres d'images AForge sont appliqués. Vous allez utiliser le noeud *"Watch Image"* pour afficher les résultats et appliquer dans Dynamo des filtres semblables à ceux de Photoshop.
+Maintenant que la bibliothèque a été importée, commencez simplement par le premier exercice (*01-EdgeDetection.dyn*). Vous effectuerez quelques traitements d'images de base sur une image d'exemple pour découvrir comment les filtres d'images AForge sont appliqués. Vous allez utiliser le nœud *"Watch Image"* pour afficher les résultats et appliquer dans Dynamo des filtres semblables à ceux de Photoshop.
 
 ![Exercice](images/11-5/Exercise/AForge- 23.jpg)
 
-> Tout d'abord, importez une image à utiliser. Ajoutez un noeud *File Path* dans la zone de dessin et sélectionnez "soapbubbles.jpg" dans le dossier des exercices téléchargés (crédit photo : [flickr](https://www.flickr.com/photos/wwworks/667298782)).
+> Tout d'abord, importez une image à utiliser. Ajoutez un nœud *File Path* dans la zone de dessin et sélectionnez "soapbubbles.jpg" dans le dossier des exercices téléchargés (crédit photo : [flickr](https://www.flickr.com/photos/wwworks/667298782)).
 
 ![Exercice](images/11-5/Exercise/AForge- 21.jpg)
 
-> 1. Le noeud File Path fournit simplement une chaîne du chemin d'accès à l'image sélectionnée. Vous devez convertir ce noeud File Path en image dans l'environnement Dynamo.
-2. Connectez le noeud File Path au noeud File.FromPath.
-3. Pour convertir ce noeud File Path, utilisez le noeud Image.ReadFromFile.
-4. Enfin, découvrez le résultat ! Déposez un noeud Watch Image sur la zone de dessin et connectez-vous à Image.ReadFromFile. Vous n'avez pas encore utilisé AForge, mais vous avez importé une image dans Dynamo.
+> 1. Le nœud File Path fournit simplement une chaîne du chemin d'accès à l'image sélectionnée. Vous devez convertir ce nœud File Path en image dans l'environnement Dynamo.
+2. Connectez le nœud File Path au nœud File.FromPath.
+3. Pour convertir ce nœud File Path, utilisez le nœud Image.ReadFromFile.
+4. Enfin, découvrez le résultat ! Déposez un nœud Watch Image sur la zone de dessin et connectez-vous à Image.ReadFromFile. Vous n'avez pas encore utilisé AForge, mais vous avez importé une image dans Dynamo.
 
 ![Exercice](images/11-5/Exercise/AForge- 18.jpg)
 
 > Sous AForge.Imaging.AForge.Filters (dans le menu de navigation), un large éventail de filtres est disponible. Vous allez utiliser l'un de ces filtres pour désaturer une image en fonction des valeurs de seuil.
 
 > 1. Déposez trois curseurs sur la zone de dessin, modifiez leur intervalle pour qu'il soit compris entre 0 et 1 et leur valeur de pas pour qu'elle soit de 0.01.
-2. Ajoutez le noeud Grayscale.Grayscale à la zone de dessin. Il s'agit d'un filtre AForge qui applique un filtre de nuances de gris à une image. Connectez les trois curseurs de l'étape 1 à cr, cg et cb. Définissez la valeur des curseurs supérieur et inférieur sur 1 et celle du curseur central sur 0.
+2. Ajoutez le nœud Grayscale.Grayscale à la zone de dessin. Il s'agit d'un filtre AForge qui applique un filtre de nuances de gris à une image. Connectez les trois curseurs de l'étape 1 à cr, cg et cb. Définissez la valeur des curseurs supérieur et inférieur sur 1 et celle du curseur central sur 0.
 3. Pour appliquer le filtre Nuances de gris, vous devez effectuer une action sur l'image. Pour ce faire, utilisez IFilter.Apply. Connectez l'image à l'entrée de l'image et Grayscale.Grayscale à l'entrée iFilter.
-4. Lorsque vous connectez le noeud Watch Image, vous obtenez une image désaturée.
+4. Lorsque vous connectez le nœud Watch Image, vous obtenez une image désaturée.
 
 ![Exercice](images/11-5/Exercise/AForge- 19.jpg)
 
-> Vous pouvez contrôler la désaturation de cette image en fonction des valeurs de seuil pour le rouge, le vert et le bleu. Ces paramètres sont définis par les entrées du noeud Grayscale.Grayscale. L'image semble assez sombre, car la valeur du vert est définie sur 0 dans le curseur.
+> Vous pouvez contrôler la désaturation de cette image en fonction des valeurs de seuil pour le rouge, le vert et le bleu. Ces paramètres sont définis par les entrées du nœud Grayscale.Grayscale. L'image semble assez sombre, car la valeur du vert est définie sur 0 dans le curseur.
 
 > 1. Définissez la valeur des curseurs supérieur et inférieur sur 0 et celle du curseur central sur 1. De cette manière, vous obtenez une image désaturée plus lisible.
 
@@ -101,7 +101,7 @@ Maintenant que la bibliothèque a été importée, commencez simplement par le p
 
 > Utilisez l'image désaturée et appliquez-lui un autre filtre. Étant donné que l'image désaturée est un peu contrastée, testez la détection des arêtes.
 
-> 1. Ajoutez un noeud SobelEdgeDetector.SobelEdgeDetector à la zone de dessin. Connectez-le en tant que IFilter à un nouveau noeud IFilter et connectez l'image désaturée à l'entrée de l'image du noeud IFilter.
+> 1. Ajoutez un nœud SobelEdgeDetector.SobelEdgeDetector à la zone de dessin. Connectez-le en tant que IFilter à un nouveau nœud IFilter et connectez l'image désaturée à l'entrée de l'image du nœud IFilter.
 2. Le filtre de détection d'arêtes Sobel a mis en surbrillance les arêtes dans une nouvelle image.
 
 ![Exercice](images/11-5/Exercise/AForge- 16.jpg)
@@ -116,18 +116,18 @@ Maintenant que vous avez découvert le traitement d'images de base, vous allez u
 
 ![Exercice](images/11-5/Exercise/AForge- 15.jpg)
 
-> 1. À l'aide du noeud File Path, accédez au fichier grid.jpg dans le dossier des exercices.
-2. Connectez les séries de noeuds restantes ci-dessus pour afficher une grille paramétrique de parcours.
+> 1. À l'aide du nœud File Path, accédez au fichier grid.jpg dans le dossier des exercices.
+2. Connectez les séries de nœuds restantes ci-dessus pour afficher une grille paramétrique de parcours.
 
 Dans cette étape, vous allez référencer les carrés blancs de l'image et les convertir en géométrie Dynamo réelle. AForge dispose d'un grand nombre d'outils puissants de vision par ordinateur. Ici, vous allez utiliser un outil particulièrement important pour la bibliothèque appelé [BlobCounter](http://www.aforgenet.com/framework/docs/html/d7d5c028-7a23-e27d-ffd0-5df57cbd31a6.htm).
 
 ![Exercice](images/11-5/Exercise/AForge- 14.jpg)
 
-> 1. Après avoir ajouté un outil BlobCounter à la zone de dessin, vous devez procéder au traitement de l'image (de la même façon qu'avec l'outil IFilter dans l'exercice précédent). Malheureusement, le noeud "Process Image" n'est pas immédiatement visible dans la bibliothèque Dynamo. Cela est dû au fait que la fonction n'est peut-être pas visible dans le code source AForge. Pour résoudre ce problème, vous devez trouver une solution.
+> 1. Après avoir ajouté un outil BlobCounter à la zone de dessin, vous devez procéder au traitement de l'image (de la même façon qu'avec l'outil IFilter dans l'exercice précédent). Malheureusement, le nœud "Process Image" n'est pas immédiatement visible dans la bibliothèque Dynamo. Cela est dû au fait que la fonction n'est peut-être pas visible dans le code source AForge. Pour résoudre ce problème, vous devez trouver une solution.
 
 ![Exercice](images/11-5/Exercise/AForge- 13.jpg)
 
-> 1. Ajoutez un noeud Python à la zone de dessin.
+> 1. Ajoutez un nœud Python à la zone de dessin.
 
 ```
 import clr
@@ -139,11 +139,11 @@ bc.ProcessImage(IN[0])
 OUT=bc
 ```
 
-> Ajoutez le code ci-dessus au noeud Python. Ce code importe la bibliothèque AForge, puis traite l'image importée.
+> Ajoutez le code ci-dessus au nœud Python. Ce code importe la bibliothèque AForge, puis traite l'image importée.
 
 ![Exercice](images/11-5/Exercise/AForge- 11.jpg)
 
-> Lorsque vous connectez la sortie de l'image à l'entrée du noeud Python, vous obtenez un résultat AForge.Imaging.BlobCounter à partir du noeud Python.
+> Lorsque vous connectez la sortie de l'image à l'entrée du nœud Python, vous obtenez un résultat AForge.Imaging.BlobCounter à partir du nœud Python.
 
 Les étapes suivantes vous montreront quelques astuces pour vous permettre de vous familiariser avec l'[API AForge Imaging](http://www.aforgenet.com/framework/docs/html/d087503e-77da-dc47-0e33-788275035a90.htm). Il n'est pas nécessaire de savoir faire tout ça pour travailler sur Dynamo. Cette démonstration sert davantage à montrer l'utilisation de bibliothèques externes au sein de l'environnement Dynamo.
 
@@ -153,7 +153,7 @@ Les étapes suivantes vous montreront quelques astuces pour vous permettre de vo
 
 ![Exercice](images/11-5/Exercise/AForge- 09.jpg)
 
-> 1. Ajoutez un autre noeud Python à la zone de dessin, connectez-vous à GetObjectRectangles et entrez le code ci-dessous. Cela permet de créer une liste organisée d'objets Dynamo.
+> 1. Ajoutez un autre nœud Python à la zone de dessin, connectez-vous à GetObjectRectangles et entrez le code ci-dessous. Cela permet de créer une liste organisée d'objets Dynamo.
 
 ```
 OUT = []
@@ -168,8 +168,8 @@ OUT.append(subOUT)
 
 ![Exercice](images/11-5/Exercise/AForge- 06.jpg)
 
-> 1. Transposez la sortie du noeud Python de l'étape précédente. Cela crée 4 listes, chacune représentant X, Y, Largeur et Hauteur pour chaque rectangle.
-2. À l'aide d'un bloc de code, organisez les données dans une structure qui s'adapte au noeud Rectangle.ByCornerPoints (code ci-dessous).
+> 1. Transposez la sortie du nœud Python de l'étape précédente. Cela crée 4 listes, chacune représentant X, Y, Largeur et Hauteur pour chaque rectangle.
+2. À l'aide d'un bloc de code, organisez les données dans une structure qui s'adapte au nœud Rectangle.ByCornerPoints (code ci-dessous).
 
 ```
 recData;
@@ -195,7 +195,7 @@ p3=Autodesk.Point.ByCoordinates(x1,y0);
 
 ![Exercice](images/11-5/Exercise/AForge- 03.jpg)
 
-> 1. Pour supprimer les rectangles non souhaités, insérez un noeud Python entre le noeud GetObjectRectangles et un autre noeud Python. Le code du noeud est indiqué ci-dessous. Il supprime tous les rectangles dont la taille est inférieure à la taille définie.
+> 1. Pour supprimer les rectangles non souhaités, insérez un nœud Python entre le nœud GetObjectRectangles et un autre nœud Python. Le code du nœud est indiqué ci-dessous. Il supprime tous les rectangles dont la taille est inférieure à la taille définie.
 
 ```
 rectangles=IN[0]

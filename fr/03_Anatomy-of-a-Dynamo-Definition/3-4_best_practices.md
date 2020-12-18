@@ -6,30 +6,30 @@ Le processus de programmation visuelle peut être une activité créative puissa
 
 ### Alignement
 
-Une fois que vous avez ajouté plusieurs noeuds à l'espace de travail, vous pouvez réorganiser la disposition des noeuds pour plus de clarté. Lorsque vous sélectionnez plusieurs noeuds et cliquez avec le bouton droit de la souris sur l'espace de travail, la fenêtre contextuelle inclut un menu **Aligner la sélection** avec les options de justification et de distribution dans X et Y.
+Une fois que vous avez ajouté plusieurs nœuds à l'espace de travail, vous pouvez réorganiser la disposition des nœuds pour plus de clarté. Lorsque vous sélectionnez plusieurs nœuds et cliquez avec le bouton droit de la souris sur l'espace de travail, la fenêtre contextuelle inclut un menu **Aligner la sélection** avec les options de justification et de distribution dans X et Y.
 
 ![Aligner](images/3-4/00-Align.png)
 
-> 1. Sélectionnez plusieurs noeuds.
+> 1. Sélectionnez plusieurs nœuds.
 2. Cliquez avec le bouton droit de la souris sur l'espace de travail.
 3. Utilisez les options de **Aligner la sélection**.
 
 ### Remarques
 
-Avec une certaine expérience, vous pourrez probablement "lire" le programme visuel en examinant les noms des noeuds et en suivant le flux du programme. Pour les utilisateurs de tous niveaux, il est également recommandé d'inclure des libellés et des descriptions en texte simple. Pour ce faire, Dynamo possède un noeud **Notes** avec un champ de texte modifiable. Vous pouvez ajouter des notes à l'espace de travail de deux manières :
+Avec une certaine expérience, vous pourrez probablement "lire" le programme visuel en examinant les noms des nœuds et en suivant le flux du programme. Pour les utilisateurs de tous niveaux, il est également recommandé d'inclure des libellés et des descriptions en texte simple. Pour ce faire, Dynamo possède un nœud **Notes** avec un champ de texte modifiable. Vous pouvez ajouter des notes à l'espace de travail de deux manières :
 
 ![Remarques](images/3-4/01-Notes01.png)
 
 > 1. Accédez au menu Modifier > Créer une note.
 2. Utiliser le raccourci clavier Ctrl+W.
 
-Une fois la note ajoutée à l'espace de travail, un champ de texte s'affiche pour vous permettre de modifier le texte de la note. Une fois la note créée, vous pouvez la modifier en double-cliquant sur le noeud Note ou en cliquant dessus avec le bouton droit de la souris.
+Une fois la note ajoutée à l'espace de travail, un champ de texte s'affiche pour vous permettre de modifier le texte de la note. Une fois la note créée, vous pouvez la modifier en double-cliquant sur le nœud Note ou en cliquant dessus avec le bouton droit de la souris.
 
 ![Modification des notes](images/3-4/02-Notes02.png)
 
 ### Groupement
 
-Lorsque votre programme visuel est grand, il est utile d'identifier les étapes plus importantes qui seront exécutées. Vous pouvez mettre en surbrillance des ensembles de noeuds plus grands avec un **groupe** pour les libeller avec un rectangle de couleur en arrière-plan et un titre. Il existe trois méthodes pour créer un groupe avec plus d'un noeud sélectionné :
+Lorsque votre programme visuel est grand, il est utile d'identifier les étapes plus importantes qui seront exécutées. Vous pouvez mettre en surbrillance des ensembles de nœuds plus grands avec un **groupe** pour les libeller avec un rectangle de couleur en arrière-plan et un titre. Il existe trois méthodes pour créer un groupe avec plus d'un nœud sélectionné :
 
 ![Groupes](images/3-4/04-Groups01.png)
 

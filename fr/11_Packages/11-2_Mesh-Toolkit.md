@@ -22,7 +22,7 @@ L'exercice ci-dessous présente certaines opérations de maillage de base à l'a
 
 > Téléchargez et décompressez les fichiers d'exemple de cet exercice (cliquez avec le bouton droit de la souris et choisissez "Enregistrer le lien sous..."). Vous trouverez la liste complète des fichiers d'exemple dans l'annexe. [MeshToolkit.zip](datasets/11-2/MeshToolkit.zip)
 
-Commencez par ouvrir *Mesh-Toolkit_Intersect-Mesh.dyn dans Dynamo.* Dans cet exemple, nous allons examiner le noeud Intersect dans Mesh Toolkit. Nous allons importer un maillage et l'entrecouper avec une série de plans d'entrée pour créer des sections. Il s'agit du point de départ pour préparer le modèle pour la fabrication sur un découpeur au laser, une machine de coupe à jet d'eau ou une fraiseuse commandée par ordinateur.
+Commencez par ouvrir *Mesh-Toolkit_Intersect-Mesh.dyn dans Dynamo.* Dans cet exemple, nous allons examiner le nœud Intersect dans Mesh Toolkit. Nous allons importer un maillage et l'entrecouper avec une série de plans d'entrée pour créer des sections. Il s'agit du point de départ pour préparer le modèle pour la fabrication sur un découpeur au laser, une machine de coupe à jet d'eau ou une fraiseuse commandée par ordinateur.
 
 ![Importer le maillage](images/11-3/contour01.jpg)
 
@@ -38,7 +38,7 @@ Commencez par ouvrir *Mesh-Toolkit_Intersect-Mesh.dyn dans Dynamo.* Dans cet exe
 
 > 1. Code Block : crée une plage de nombres entre zéro et un.
 2. **Curve.PointAtParameter :** connectez l'arc à l'entrée *‘curve’* et le bloc de code de sortie à l'entrée *‘param’* pour extraire une série de points le long de la courbe.
-3. **Curve.TangentAtParameter :** connectez les mêmes entrées que le noeud précédent.
+3. **Curve.TangentAtParameter :** connectez les mêmes entrées que le nœud précédent.
 4. **Plan.ByOriginNormal :** connectez les points à l'entrée *‘origin’* et les vecteurs à l'entrée *‘normal’* pour créer une série de plans à chaque point.
 
 Vous devriez maintenant voir une série de plans orientés le long de l'arc. Vous allez ensuite utiliser ces plans pour entrecouper le maillage.
@@ -48,7 +48,7 @@ Vous devriez maintenant voir une série de plans orientés le long de l'arc. Vou
 > 1. **Mesh.Intersect :** entrecoupez les plans avec le maillage importé, ce qui crée une série de contours de polycourbe.
 2. **PolyCurve.Curves :** divisez les polycourbes en fragments de courbe.
 3. **Curve.EndPoint :** extrayez les points de fin de chaque courbe.
-4. **NurbsCurve.ByPoints :** utilisez les points pour construire une courbe NURBS. Utilisez un noeud booléen défini sur *Vrai (True)* pour fermer les courbes.
+4. **NurbsCurve.ByPoints :** utilisez les points pour construire une courbe NURBS. Utilisez un nœud booléen défini sur *Vrai (True)* pour fermer les courbes.
 
 ![Intersect](images/11-3/contour05.jpg)
 

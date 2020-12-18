@@ -18,15 +18,15 @@ Une puissante fonction de Dynamo est la possibilité de modifier les paramètres
 
 Pour rappel, Revit comprend des paramètres de type et des paramètres d'occurrence. Les deux peuvent être modifiés à partir de Dynamo, mais vous allez utiliser les paramètres d'occurrence dans l'exercice ci-dessous.
 
-Remarque : lorsque vous découvrez l'application complète de paramètres de modification, vous pouvez modifier un grand nombre d'éléments dans Revit avec Dynamo. Il peut s'agir d'une opération *coûteuse en ressources informatiques*, ce qui signifie qu'elle peut être lente. Si vous modifiez un grand nombre d'éléments, vous pouvez utiliser la fonctionnalité de noeud "Geler" pour interrompre l'exécution des opérations Revit lorsque vous développez votre graphique. Pour plus d'informations sur le gel des noeuds, consultez la section "Gel" du [chapitre Solides](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).
+Remarque : lorsque vous découvrez l'application complète de paramètres de modification, vous pouvez modifier un grand nombre d'éléments dans Revit avec Dynamo. Il peut s'agir d'une opération *coûteuse en ressources informatiques*, ce qui signifie qu'elle peut être lente. Si vous modifiez un grand nombre d'éléments, vous pouvez utiliser la fonctionnalité de nœud "Geler" pour interrompre l'exécution des opérations Revit lorsque vous développez votre graphique. Pour plus d'informations sur le gel des nœuds, consultez la section "Gel" du [chapitre Solides](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).
 
 #### Unités
 
-À partir de la version 0.8, Dynamo est fondamentalement sans unité. Dynamo reste ainsi un environnement de programmation visuel abstrait. Les noeuds Dynamo qui interagissent avec les cotes Revit font référence aux unités du projet Revit. Par exemple, si vous définissez un paramètre de longueur dans Revit à partir de Dynamo, le numéro de la valeur dans Dynamo correspondra aux unités par défaut dans le projet Revit. L'exercice ci-dessous utilise les mètres.
+À partir de la version 0.8, Dynamo est fondamentalement sans unité. Dynamo reste ainsi un environnement de programmation visuel abstrait. Les nœuds Dynamo qui interagissent avec les cotes Revit font référence aux unités du projet Revit. Par exemple, si vous définissez un paramètre de longueur dans Revit à partir de Dynamo, le numéro de la valeur dans Dynamo correspondra aux unités par défaut dans le projet Revit. L'exercice ci-dessous utilise les mètres.
 
 ![Exercice](images/8-3/units.jpg)
 
-> Pour une conversion rapide des unités, utilisez le noeud *"Convert Between Units"*. Cet outil est pratique pour convertir des unités de longueur, de surface et de volume à la volée.
+> Pour une conversion rapide des unités, utilisez le nœud *"Convert Between Units"*. Cet outil est pratique pour convertir des unités de longueur, de surface et de volume à la volée.
 
 ### Exercice
 
@@ -35,7 +35,7 @@ Remarque : lorsque vous découvrez l'application complète de paramètres de mo
 > 1. [Editing.dyn](datasets/8-3/Editing.dyn)
 2. [ARCH-Editing-BaseFile.rvt](datasets/8-3/ARCH-Editing-BaseFile.rvt)
 
-Cet exercice est consacré à la modification d'éléments Revit sans effectuer d'opération géométrique dans Dynamo. Vous n'importez pas la géométrie Dynamo ici, mais modifiez simplement les paramètres dans un projet Revit. Il s'agit d'un exercice de base et pour les utilisateurs de Revit les plus avancés, notez qu'il s'agit de paramètres d'occurrence d'un volume, mais la même logique peut être appliquée à un réseau d'éléments à personnaliser à grande échelle. Cette opération est effectuée à l'aide du noeud "Element.SetParameterByName".
+Cet exercice est consacré à la modification d'éléments Revit sans effectuer d'opération géométrique dans Dynamo. Vous n'importez pas la géométrie Dynamo ici, mais modifiez simplement les paramètres dans un projet Revit. Il s'agit d'un exercice de base et pour les utilisateurs de Revit les plus avancés, notez qu'il s'agit de paramètres d'occurrence d'un volume, mais la même logique peut être appliquée à un réseau d'éléments à personnaliser à grande échelle. Cette opération est effectuée à l'aide du nœud "Element.SetParameterByName".
 
 ![Exercice](images/8-3/Exercise/04.jpg)
 
@@ -45,20 +45,20 @@ Cet exercice est consacré à la modification d'éléments Revit sans effectuer 
 
 ![Exercice](images/8-3/Exercise/03.jpg)
 
-> 1. Sélectionnez le volume du bâtiment à l'aide du noeud *"Select Model Element"*.
-2. Vous pouvez rechercher tous les paramètres de ce volume à l'aide du noeud *"Element.Parameters"*. Cela inclut les paramètres de type et d'occurrence.
+> 1. Sélectionnez le volume du bâtiment à l'aide du nœud *"Select Model Element"*.
+2. Vous pouvez rechercher tous les paramètres de ce volume à l'aide du nœud *"Element.Parameters"*. Cela inclut les paramètres de type et d'occurrence.
 
 ![Exercice](images/8-3/Exercise/32.jpg)
 
-> 1. Référencez le noeud *Element.Parameters* pour rechercher les paramètres cibles. Vous pouvez également afficher le groupe de fonctions Propriétés de l'étape précédente pour choisir les noms de paramètres à modifier. Dans ce cas, vous recherchez les paramètres qui ont une incidence sur les grands déplacements géométriques sur le volume du bâtiment.
-2. Modifiez l'élément Revit à l'aide du noeud *Element.SetParameterByName*.
-3. À l'aide du *bloc de code*, définissez une liste de ces paramètres, avec des guillemets autour de chaque élément pour indiquer une chaîne. Vous pouvez également utiliser le noeud List.Create avec une série de noeuds *"String"* connectés à plusieurs entrées. Le bloc de code est simplement plus rapide et plus simple. Assurez-vous que la chaîne correspond au nom exact dans Revit, en faisant attention à la casse : ```{"BldgWidth","BldgLength","BldgHeight", "AtriumOffset", "InsideOffset","LiftUp"};```
+> 1. Référencez le nœud *Element.Parameters* pour rechercher les paramètres cibles. Vous pouvez également afficher le groupe de fonctions Propriétés de l'étape précédente pour choisir les noms de paramètres à modifier. Dans ce cas, vous recherchez les paramètres qui ont une incidence sur les grands déplacements géométriques sur le volume du bâtiment.
+2. Modifiez l'élément Revit à l'aide du nœud *Element.SetParameterByName*.
+3. À l'aide du *bloc de code*, définissez une liste de ces paramètres, avec des guillemets autour de chaque élément pour indiquer une chaîne. Vous pouvez également utiliser le nœud List.Create avec une série de nœuds *"String"* connectés à plusieurs entrées. Le bloc de code est simplement plus rapide et plus simple. Assurez-vous que la chaîne correspond au nom exact dans Revit, en faisant attention à la casse : ```{"BldgWidth","BldgLength","BldgHeight", "AtriumOffset", "InsideOffset","LiftUp"};```
 
 ![Exercice](images/8-3/Exercise/31.jpg)
 
 > 1. Vous devez également désigner des valeurs pour chaque paramètre. Ajoutez six *curseurs d'entier* à la zone de dessin et renommez-les en fonction du paramètre correspondant dans la liste. Définissez également les valeurs de chaque curseur tel qu'illustré ci-dessus. Dans l'ordre de haut en bas : ```62,92,25,22,8,12```
 2. Définissez un autre *bloc de code* avec une liste de la même longueur que les noms des paramètres. Dans ce cas, nommez les variables (sans guillemets) qui créent des entrées pour le *bloc de code.* Connectez les *curseurs* à chaque entrée respective : ```{bw,bl,bh,ao,io,lu};```
-3. Connectez le *bloc de code* au noeud *"Element.SetParameterByName*"*. Lorsque l'option Exécuter automatiquement est activée, les résultats sont automatiquement affichés.
+3. Connectez le *bloc de code* au nœud *"Element.SetParameterByName*"*. Lorsque l'option Exécuter automatiquement est activée, les résultats sont automatiquement affichés.
 
 **Remarque : cette démonstration fonctionne avec les paramètres d'occurrence, mais pas avec les paramètres de type.*
 

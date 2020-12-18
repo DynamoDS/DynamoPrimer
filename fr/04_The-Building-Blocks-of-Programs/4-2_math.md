@@ -25,13 +25,13 @@ Les opérateurs sont un ensemble de composants qui utilisent des fonctions algé
 
 > 1. **Number Sequence :** définissez une séquence de nombres reposant sur les trois entrées *start, amount* et *step*. Cette séquence représente le "t" dans l'équation paramétrique. Vous devez donc utiliser une liste suffisamment grande pour définir une clothoïde.
 
-L'étape ci-dessus a permis de créer une liste de nombres pour définir le domaine paramétrique. La clothoïde dorée est définie comme l'équation suivante : ![](images/4-2/4-2-5/x.gif)=![](images/4-2/4-2-5/goldenSpiral.gif) et ![](images/4-2/4-2-5/y.gif)=![](images/4-2/4-2-5/goldenSpiral2.gif). Le groupe de noeuds ci-dessous représente cette équation sous forme de programmation visuelle.
+L'étape ci-dessus a permis de créer une liste de nombres pour définir le domaine paramétrique. La clothoïde dorée est définie comme l'équation suivante : ![](images/4-2/4-2-5/x.gif)=![](images/4-2/4-2-5/goldenSpiral.gif) et ![](images/4-2/4-2-5/y.gif)=![](images/4-2/4-2-5/goldenSpiral2.gif). Le groupe de nœuds ci-dessous représente cette équation sous forme de programmation visuelle.
 
 ![](images/4-2/4-2-5/02.png)
 
-> Lorsque vous parcourez le groupe de noeuds, essayez de faire le parallèle entre le programme visuel et l'équation écrite.
+> Lorsque vous parcourez le groupe de nœuds, essayez de faire le parallèle entre le programme visuel et l'équation écrite.
 1. **Number Slider :** ajoutez deux curseurs de numérotation dans la zone de dessin. Ces curseurs représentent les variables *a* et *b* de l'équation paramétrique. Elles représentent une constante flexible, ou des paramètres que vous pouvez ajuster afin d'obtenir le résultat souhaité.
-2. *** :** le noeud de multiplication est représenté par un astérisque. Vous utiliserez ce noeud à plusieurs reprises pour connecter des variables de multiplication.
+2. *** :** le nœud de multiplication est représenté par un astérisque. Vous utiliserez ce nœud à plusieurs reprises pour connecter des variables de multiplication.
 3. **Math.RadiansToDegrees :** les valeurs "*t*" doivent être converties en degrés pour être évaluées dans les fonctions trigonométriques. N'oubliez pas que Dynamo utilise par défaut les degrés pour évaluer ces fonctions.
 4. **Math.Pow :** la fonction de "*t*" et le numéro "*e*" permettent de créer la séquence Fibonacci.
 5. **Math.Cos et Math.Sin :** ces deux fonctions trigonométriques différencient respectivement la coordonnée x et la coordonnée y de chaque point paramétrique.
@@ -39,8 +39,8 @@ L'étape ci-dessus a permis de créer une liste de nombres pour définir le doma
 
 ### De la formule à la géométrie
 
-Le bloc de noeuds de l'étape précédente fonctionne correctement, mais cela demande beaucoup de travail. Pour créer un workflow plus efficace, consultez la section **Blocs de code** (section 3.3.2.3) pour définir une chaîne d'expressions Dynamo en un noeud. Dans cette prochaine série d'étapes, vous allez utiliser l'équation paramétrique pour dessiner la clothoïde Fibonacci. ![](images/4-2/4-2-5/03.png)
-> 1. **Point.ByCoordinates :** connectez le noeud de multiplication supérieur à l'entrée "*x*" et le noeud inférieur à l'entrée "*y*". Une clothoïde paramétrique de points apparaît à l'écran.
+Le bloc de nœuds de l'étape précédente fonctionne correctement, mais cela demande beaucoup de travail. Pour créer un workflow plus efficace, consultez la section **Blocs de code** (section 3.3.2.3) pour définir une chaîne d'expressions Dynamo en un nœud. Dans cette prochaine série d'étapes, vous allez utiliser l'équation paramétrique pour dessiner la clothoïde Fibonacci. ![](images/4-2/4-2-5/03.png)
+> 1. **Point.ByCoordinates :** connectez le nœud de multiplication supérieur à l'entrée "*x*" et le nœud inférieur à l'entrée "*y*". Une clothoïde paramétrique de points apparaît à l'écran.
 
 ![](images/4-2/4-2-5/03aaa.png)
 > 1. **Polycurve.ByPoints :** connectez Point.ByCoordinates de l'étape précédente à *points*. Vous pouvez laisser *connectLastToFirst* sans entrée, car vous ne créez pas de courbe fermée. Cela permet de créer une spirale qui passe par chaque point défini à l'étape précédente.
@@ -50,11 +50,11 @@ La clothoïde de Fibonacci est désormais terminée. Vous allez désormais effec
 ### De la clothoïde au Nautilus
 
 ![](images/4-2/4-2-5/03.png)
-> 1. Comme point de départ, commencez par la même étape qu'à l'exercice précédent : la création d'un réseau de points en forme de spirale avec le noeud **Point.ByCoordinates**.
+> 1. Comme point de départ, commencez par la même étape qu'à l'exercice précédent : la création d'un réseau de points en forme de spirale avec le nœud **Point.ByCoordinates**.
 
 ![](images/4-2/4-2-5/03aa.png)
-> 1. **Polycurve.ByPoints :** il s'agit également du noeud de l'exercice précédent, utilisé comme référence.
-2. **Circle.ByCenterPointRadius :** utilisez un noeud circulaire avec les mêmes entrées que celles de l'étape précédente. Étant donné que la valeur du rayon par défaut est de *1,0*, un réseau de cercles apparaît immédiatement. La façon dont les points divergent à partir du point d'origine est immédiatement lisible.
+> 1. **Polycurve.ByPoints :** il s'agit également du nœud de l'exercice précédent, utilisé comme référence.
+2. **Circle.ByCenterPointRadius :** utilisez un nœud circulaire avec les mêmes entrées que celles de l'étape précédente. Étant donné que la valeur du rayon par défaut est de *1,0*, un réseau de cercles apparaît immédiatement. La façon dont les points divergent à partir du point d'origine est immédiatement lisible.
 
 ![](images/4-2/4-2-5/03a.png)
 > 1. **Circle.ByCenterPointRadius :** pour créer un réseau de cercles plus dynamique, connectez la séquence de nombres d'origine (séquence "*t*") à la valeur de rayon.
@@ -65,18 +65,18 @@ La clothoïde de Fibonacci est désormais terminée. Vous allez désormais effec
 Maintenant que vous avez créé une coque Nautilus circulaire, passez aux grilles paramétriques. Vous allez utiliser une rotation de base sur la clothoïde Fibonacci pour créer une grille Fibonacci, et le résultat est modélisé après la [croissance des graines de tournesol](http://ms.unimelb.edu.au/~segerman/papers/sunflower_spiral_fibonacci_metric.pdf).
 
 ![](images/4-2/4-2-5/03.png)
-> 1. Comme point de départ ici aussi, commencez par la même étape qu'à l'exercice précédent : la création d'un réseau de points en forme de spirale avec le noeud **Point.ByCoordinates**.
+> 1. Comme point de départ ici aussi, commencez par la même étape qu'à l'exercice précédent : la création d'un réseau de points en forme de spirale avec le nœud **Point.ByCoordinates**.
 
 ![](images/4-2/4-2-5/04.png)
-> 1. **Géométrie.Rotation :** il existe plusieurs options Geometry.Rotate. Assurez-vous d'avoir choisi le noeud avec les entrées *geometry*, *basePlane* et *degrees*. Connectez **Point.ByCoordinates** à l'entrée geometry.
+> 1. **Géométrie.Rotation :** il existe plusieurs options Geometry.Rotate. Assurez-vous d'avoir choisi le nœud avec les entrées *geometry*, *basePlane* et *degrees*. Connectez **Point.ByCoordinates** à l'entrée geometry.
 2. **Plane.XY :** connexion à l'entrée *basePlane*. Vous allez effectuer une rotation autour de l'origine, servant également de base pour la clothoïde.
 3. **Intervalle de nombres :** pour la saisie des degrés, vous devez créer plusieurs rotations. Pour ce faire, il suffit d'utiliser un composant Number Range. Connectez-le à l'entrée *degrees*.
-4. **Number :** pour définir l'intervalle de nombres, ajoutez trois noeuds Number à la zone de dessin dans l'ordre vertical. De haut en bas, affectez respectivement les valeurs *0.0,360.0,* et *120.0*. Elles pilotent la rotation de la clothoïde. Après avoir connecté les trois noeuds Number au noeud Range, observez les sorties du noeud **Number Range**.
+4. **Number :** pour définir l'intervalle de nombres, ajoutez trois nœuds Number à la zone de dessin dans l'ordre vertical. De haut en bas, affectez respectivement les valeurs *0.0,360.0,* et *120.0*. Elles pilotent la rotation de la clothoïde. Après avoir connecté les trois nœuds Number au nœud Range, observez les sorties du nœud **Number Range**.
 
 Le résultat obtenu commence à ressembler à un tourbillon. Ajustez certains paramètres de **Number Range** et observez le changement des résultats : 
 ![](images/4-2/4-2-5/05.png)
-> 1. Modifiez la taille du pas du noeud **Number Range** de *120.0* à *36.0*. Cette action crée davantage de rotations et permet donc d'obtenir une grille plus dense.
+> 1. Modifiez la taille du pas du nœud **Number Range** de *120.0* à *36.0*. Cette action crée davantage de rotations et permet donc d'obtenir une grille plus dense.
 
 ![](images/4-2/4-2-5/06.png)
-> 1. Modifiez la taille du pas du noeud **Number Range** de *36,0* à *3,6*. Vous obtenez une grille beaucoup plus dense, et la direction de la clothoïde n'est pas claire. Bravo, vous avez créé un tournesol.
+> 1. Modifiez la taille du pas du nœud **Number Range** de *36,0* à *3,6*. Vous obtenez une grille beaucoup plus dense, et la direction de la clothoïde n'est pas claire. Bravo, vous avez créé un tournesol.
 

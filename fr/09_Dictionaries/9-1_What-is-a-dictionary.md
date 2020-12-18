@@ -8,13 +8,13 @@ Un dictionnaire est un type de données composé d'un ensemble de paires clé-va
 Une liste est un type de données composé d'un ensemble de valeurs ordonnées. Dans Dynamo, les listes utilisent des entiers comme valeurs d'index.
 
 * #### Pourquoi ce changement a-t-il été fait et en quoi suis-je concerné ?
-La séparation des dictionnaires et des listes place les dictionnaires comme citoyens de première classe que vous pouvez utiliser pour stocker et rechercher rapidement et facilement des valeurs, sans avoir à mémoriser une valeur d'index ou à maintenir une structure de listes stricte tout au long de votre workflow. Lors des tests utilisateur, nous avons constaté une réduction significative de la taille du graphique lorsque les dictionnaires étaient utilisés à la place de plusieurs noeuds ```GetItemAtIndex```.
+La séparation des dictionnaires et des listes place les dictionnaires comme citoyens de première classe que vous pouvez utiliser pour stocker et rechercher rapidement et facilement des valeurs, sans avoir à mémoriser une valeur d'index ou à maintenir une structure de listes stricte tout au long de votre workflow. Lors des tests utilisateur, nous avons constaté une réduction significative de la taille du graphique lorsque les dictionnaires étaient utilisés à la place de plusieurs nœuds ```GetItemAtIndex```.
 
 * #### Quels sont les changements ?
   * Des modifications de *syntaxe* ont été apportées. Elles changent la façon dont vous allez initialiser et utiliser les dictionnaires et les listes dans les blocs de code.
     * Les dictionnaires utilisent la syntaxe suivante : ```{key:value}```
     * Les listes utilisent la syntaxe suivante ```[value,value,value]```
-  * De *nouveaux noeuds* ont été introduits dans la bibliothèque pour vous aider à créer et à modifier les dictionnaires, ainsi qu'à leur envoyer des requêtes.
+  * De *nouveaux nœuds* ont été introduits dans la bibliothèque pour vous aider à créer et à modifier les dictionnaires, ainsi qu'à leur envoyer des requêtes.
   * Les listes créées dans les blocs de code 1.x seront automatiquement migrées au chargement du script vers la nouvelle syntaxe de liste qui utilise des crochets ```[ ]``` au lieu des accolades ```{ }``` ![IMAGE](images/9-1/DYN20_Dictionary.png)
 
 * #### En quoi suis-je concerné ? Dans quel but dois-je les utiliser ?

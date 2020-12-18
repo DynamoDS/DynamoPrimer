@@ -44,7 +44,7 @@ La clé, mais aussi le premier obstacle de la programmation, est de s'appuyer su
 
 Si vous étiez chargé d'écrire des instructions de pliage afin de créer une grue en origami, comment procéderiez-vous ? Voulez-vous les créer sous forme de graphiques, de texte ou une combinaison des deux ?
 
-Si votre réponse contenait des graphiques, alors la **programmation visuelle** est certainement pour vous. Le processus est pratiquement le même pour la programmation que pour la programmation visuelle. Elles utilisent le même cadre d'application ; cependant, vous définissez les instructions et les relations de votre programme par le biais d'une interface utilisateur graphique (ou "visuelle"). Au lieu de taper du texte lié par syntaxe, vous connectez des noeuds pré-intégrés ensemble. Voici une comparaison de l'algorithme "dessiner un cercle par point" programmé avec des noeuds ou du code :
+Si votre réponse contenait des graphiques, alors la **programmation visuelle** est certainement pour vous. Le processus est pratiquement le même pour la programmation que pour la programmation visuelle. Elles utilisent le même cadre d'application ; cependant, vous définissez les instructions et les relations de votre programme par le biais d'une interface utilisateur graphique (ou "visuelle"). Au lieu de taper du texte lié par syntaxe, vous connectez des nœuds pré-intégrés ensemble. Voici une comparaison de l'algorithme "dessiner un cercle par point" programmé avec des nœuds ou du code :
 
 **Programme visuel :**
 

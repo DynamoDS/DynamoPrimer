@@ -15,7 +15,7 @@ Lorsque vous développez votre graphique Dynamo et testez vos idées, la taille 
 * Les groupes vous permettent de **créer des pièces fonctionnellement distinctes** lorsque vous construisez un programme
 * Les groupes vous permettent de **déplacer de grandes parties du programme** tout en maintenant la modularité et l'alignement
 * Vous pouvez modifier la **couleur du groupe pour différencier** ce que font les groupes (entrées et fonctions)
-* Vous pouvez utiliser des groupes pour commencer à **organiser votre graphique afin de simplifier la création de noeuds personnalisés**
+* Vous pouvez utiliser des groupes pour commencer à **organiser votre graphique afin de simplifier la création de nœuds personnalisés**
 
 ![groupes](images/13-2/groups.png)
 
@@ -28,43 +28,43 @@ Lorsque vous développez votre graphique Dynamo et testez vos idées, la taille 
 
 #### Développement efficace avec les blocs de code
 
-* Vous pouvez parfois utiliser un bloc de code pour **saisir un nombre ou une méthode de noeud plus rapidement qu'en effectuant une recherche** (Point.ByCoordinates, Number, String, Formula)
+* Vous pouvez parfois utiliser un bloc de code pour **saisir un nombre ou une méthode de nœud plus rapidement qu'en effectuant une recherche** (Point.ByCoordinates, Number, String, Formula)
 
-* Les blocs de code sont utiles **lorsque vous souhaitez définir des fonctions personnalisées dans DesignScript afin de réduire le nombre de noeuds dans un graphique**
+* Les blocs de code sont utiles **lorsque vous souhaitez définir des fonctions personnalisées dans DesignScript afin de réduire le nombre de nœuds dans un graphique**
 
 ![bloc de code](images/13-2/codeblock.png)
 
-> Les deux encadrés exécutent la même fonction. Il était beaucoup plus rapide d'écrire quelques lignes de code que de rechercher et d'ajouter chaque noeud individuellement. Le bloc de code est également beaucoup plus concis.
+> Les deux encadrés exécutent la même fonction. Il était beaucoup plus rapide d'écrire quelques lignes de code que de rechercher et d'ajouter chaque nœud individuellement. Le bloc de code est également beaucoup plus concis.
 
 > 1. Script de conception écrit en bloc de code
-2. Programme équivalent en noeuds
+2. Programme équivalent en nœuds
 > Pour savoir comment utiliser le bloc de code, reportez-vous à la rubrique [Définition d'un bloc de code](http://primer.dynamobim.org/en/07_Code-Block/7-1_what-is-a-code-block.html).
 
-#### Condenser grâce à Noeud vers code
+#### Condenser grâce à Nœud vers code
 
-* Vous pouvez **réduire la complexité d'un graphique en utilisant la fonctionnalité Noeud vers code** : elle permet de sélectionner un ensemble de noeuds simples et d'en écrire le DesignScript correspondant dans un bloc de code unique
-* La fonctionnalité Noeud vers code permet de ** condenser du code sans éliminer la clarté du programme**
-* Voici les **avantages** de l'utilisation de Noeud vers code :
+* Vous pouvez **réduire la complexité d'un graphique en utilisant la fonctionnalité Nœud vers code** : elle permet de sélectionner un ensemble de nœuds simples et d'en écrire le DesignScript correspondant dans un bloc de code unique
+* La fonctionnalité Nœud vers code permet de ** condenser du code sans éliminer la clarté du programme**
+* Voici les **avantages** de l'utilisation de Nœud vers code :
 * Condense facilement du code en un composant qui reste modifiable
 * Peut simplifier une partie significative du graphique
 * Utile si le mini-programme ne sera pas souvent modifié
 * Utile pour intégrer d'autres fonctionnalités de bloc de code, telles que des fonctions
 
-* Voici les **inconvénients** de l'utilisation de Noeud vers code :
+* Voici les **inconvénients** de l'utilisation de Nœud vers code :
 * L'attribution de noms génériques réduit la lisibilité
 * Plus difficile à comprendre pour les autres utilisateurs
 * Aucun moyen simple de revenir à la version de programmation visuelle
 
-![noeud vers code](images/13-2/nodetocode.png)
+![nœud vers code](images/13-2/nodetocode.png)
 
 > 1. Programme existant
-2. Bloc de code créé à partir de Noeud vers code
-> Pour savoir comment utiliser la fonctionnalité Noeud vers code, reportez-vous à la rubrique [Syntaxe du script de conception](http://primer.dynamobim.org/en/07_Code-Block/7-2_Design-Script-syntax.html).
+2. Bloc de code créé à partir de Nœud vers code
+> Pour savoir comment utiliser la fonctionnalité Nœud vers code, reportez-vous à la rubrique [Syntaxe du script de conception](http://primer.dynamobim.org/en/07_Code-Block/7-2_Design-Script-syntax.html).
 
 #### Accès aux données en toute flexibilité grâce à List@Level
 
-* L'utilisation de List@Level vous permet de **réduire la complexité de votre graphique en remplaçant les noeuds List.Map et List.Combine** qui peuvent occuper une grande partie de la zone de dessin
-* List@Level fournit une **méthode plus rapide que List.Map/List.Combine pour construire la logique de noeud** en vous permettant d'accéder aux données à n'importe quel niveau d'une liste, directement à partir du port d'entrée d'un noeud
+* L'utilisation de List@Level vous permet de **réduire la complexité de votre graphique en remplaçant les nœuds List.Map et List.Combine** qui peuvent occuper une grande partie de la zone de dessin
+* List@Level fournit une **méthode plus rapide que List.Map/List.Combine pour construire la logique de nœud** en vous permettant d'accéder aux données à n'importe quel niveau d'une liste, directement à partir du port d'entrée d'un nœud
 
 ![listatlevel](images/13-2/listatlevel.png)
 
@@ -78,34 +78,34 @@ Lorsque vous développez votre graphique Dynamo et testez vos idées, la taille 
 
 En plus de rendre le graphique aussi simple et efficace que possible, essayez d'améliorer la clarté graphique. Malgré vos efforts pour rendre votre graphique intuitif grâce à des regroupements logiques, les relations risquent de ne pas être évidentes. L'insertion d'une note simple dans un groupe ou l'attribution de nouveaux noms aux curseurs permet aux utilisateurs d'éviter tout malentendu ou mouvement panoramique inutile sur le graphique. Les méthodes suivantes vous aideront à appliquer la cohérence graphique dans vos graphiques.
 
-#### Continuité visuelle grâce à l'alignement des noeuds
+#### Continuité visuelle grâce à l'alignement des nœuds
 
-* Pour réduire votre charge de travail après avoir créé votre graphique, assurez-vous que la disposition des noeuds est lisible en **alignant les noeuds régulièrement et au fur et à mesure de votre travail**
-* Si d'autres utilisateurs vont travailler avec votre graphique, **assurez-vous que la disposition des liaisons de noeud s'enchaîne facilement avant la livraison**
-* Pour vous aider avec la tâche d'alignement, **utilisez la fonction "Arranger l'affichage des noeuds" pour aligner automatiquement** votre graphique, même si elle est moins précise que vous-même
+* Pour réduire votre charge de travail après avoir créé votre graphique, assurez-vous que la disposition des nœuds est lisible en **alignant les nœuds régulièrement et au fur et à mesure de votre travail**
+* Si d'autres utilisateurs vont travailler avec votre graphique, **assurez-vous que la disposition des liaisons de nœud s'enchaîne facilement avant la livraison**
+* Pour vous aider avec la tâche d'alignement, **utilisez la fonction "Arranger l'affichage des nœuds" pour aligner automatiquement** votre graphique, même si elle est moins précise que vous-même
 
 ![axe](images/13-2/alignment.png)
 
 > 1. Graphique non organisé
 2. Graphe aligné
-> Pour utiliser l'alignement de noeud, reportez-vous à la rubrique [Gestion de votre programme](http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html).
+> Pour utiliser l'alignement de nœud, reportez-vous à la rubrique [Gestion de votre programme](http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-4_best_practices.html).
 
 #### Étiquetage descriptif par changement de nom
 
 * L'attribution de nouveaux noms aux entrées permet aux autres utilisateurs de comprendre facilement votre graphique, **notamment si ce qu'ils connectent n'est pas affiché à l'écran**
-* **Veillez à renommer les noeuds en plus des entrées.** Une autre solution consiste à créer un noeud personnalisé à partir d'un cluster de noeuds et à le renommer. Il sera alors évident qu'il contient autre chose
+* **Veillez à renommer les nœuds en plus des entrées.** Une autre solution consiste à créer un nœud personnalisé à partir d'un cluster de nœuds et à le renommer. Il sera alors évident qu'il contient autre chose
 
 ![entrées](images/13-2/inputs.png)
 
 > 1. Entrées pour la manipulation de surfaces
 2. Entrées pour les paramètres architecturaux
 3. Entrées du script de simulation de drainage
-> Pour renommer un noeud, cliquez avec le bouton droit de la souris sur son nom et sélectionnez "Renommer le noeud...".
+> Pour renommer un nœud, cliquez avec le bouton droit de la souris sur son nom et sélectionnez "Renommer le nœud...".
 
 #### Explication avec des notes
 
-* Vous devez ajouter une note si quelque chose dans le **graphique requiert une explication en langage simple** que les noeuds ne peuvent pas exprimer
-* Vous devez ajouter une note si un ensemble de **noeuds ou de groupes est trop volumineux ou trop complexe et ne peut pas être facilement compris immédiatement**
+* Vous devez ajouter une note si quelque chose dans le **graphique requiert une explication en langage simple** que les nœuds ne peuvent pas exprimer
+* Vous devez ajouter une note si un ensemble de **nœuds ou de groupes est trop volumineux ou trop complexe et ne peut pas être facilement compris immédiatement**
 
 ![note](images/13-2/notes.png)
 
@@ -123,7 +123,7 @@ Lors de la création de votre script visuel, il est important de vérifier que l
 
 ![watch](images/13-2/watch.png)
 
-> Les noeuds Watch sont utilisés pour comparer :
+> Les nœuds Watch sont utilisés pour comparer :
 
 > 1. Distances de conversion brutes
 2. Valeurs transmises par l'équation sinusoïdale
@@ -131,12 +131,12 @@ Lors de la création de votre script visuel, il est important de vérifier que l
 
 ### Garantir la réutilisation
 
-Il est fort probable qu'une autre personne ouvre votre programme à un moment donné, même si vous travaillez indépendamment. Cette personne doit pouvoir comprendre rapidement ce dont le programme a besoin et ce qu'il produit à partir de ses entrées et sorties. Cela est particulièrement important lorsque vous développez un noeud personnalisé à partager avec la communauté Dynamo et à utiliser dans le programme d'un autre utilisateur. Ces pratiques permettent de construire des programmes et des noeuds robustes et réutilisables.
+Il est fort probable qu'une autre personne ouvre votre programme à un moment donné, même si vous travaillez indépendamment. Cette personne doit pouvoir comprendre rapidement ce dont le programme a besoin et ce qu'il produit à partir de ses entrées et sorties. Cela est particulièrement important lorsque vous développez un nœud personnalisé à partager avec la communauté Dynamo et à utiliser dans le programme d'un autre utilisateur. Ces pratiques permettent de construire des programmes et des nœuds robustes et réutilisables.
 
 #### Gérer les E/S
 
 * Pour garantir la lisibilité et l'évolutivité, essayez de **réduire les entrées et les sorties autant que possible**
-* Essayez de **déterminer la méthode de création de la logique en créant d'abord une ébauche** de la manière dont la logique peut fonctionner avant d'ajouter un noeud à la zone de dessin. Lorsque vous développez la première ébauche, effectuez un suivi des entrées et des sorties qui seront converties en scripts
+* Essayez de **déterminer la méthode de création de la logique en créant d'abord une ébauche** de la manière dont la logique peut fonctionner avant d'ajouter un nœud à la zone de dessin. Lorsque vous développez la première ébauche, effectuez un suivi des entrées et des sorties qui seront converties en scripts
 
 #### Utiliser les valeurs prédéfinies pour incorporer les valeurs d'entrée
 
@@ -145,19 +145,19 @@ Il est fort probable qu'une autre personne ouvre votre programme à un moment do
 
 > Pour savoir comment utiliser les valeurs prédéfinies, reportez-vous à la rubrique [Gestion des données grâce aux valeurs prédéfinies](http://primer.dynamobim.org/en/03_Anatomy-of-a-Dynamo-Definition/3-5_presets.html).
 
-#### Limiter les programmes grâce aux noeuds personnalisés
+#### Limiter les programmes grâce aux nœuds personnalisés
 
-* Vous devez utiliser un noeud personnalisé si votre **programme peut être regroupé dans un seul conteneur**
-* Vous devez utiliser un noeud personnalisé **lorsqu'une partie du graphique sera réutilisée souvent** dans d'autres programmes
-* Vous devez utiliser un noeud personnalisé pour **partager une fonctionnalité avec la communauté Dynamo**
+* Vous devez utiliser un nœud personnalisé si votre **programme peut être regroupé dans un seul conteneur**
+* Vous devez utiliser un nœud personnalisé **lorsqu'une partie du graphique sera réutilisée souvent** dans d'autres programmes
+* Vous devez utiliser un nœud personnalisé pour **partager une fonctionnalité avec la communauté Dynamo**
 
 ![nœud personnalisé](images/13-2/customnode.png)
 
-> La collecte du programme de conversion de points dans un noeud personnalisé permet de simplifier et de rendre transférable un programme robuste et unique. Les ports d'entrée bien nommés aideront d'autres utilisateurs à comprendre comment utiliser le noeud. N'oubliez pas d'ajouter des descriptions et des types de données requis pour chaque entrée.
+> La collecte du programme de conversion de points dans un nœud personnalisé permet de simplifier et de rendre transférable un programme robuste et unique. Les ports d'entrée bien nommés aideront d'autres utilisateurs à comprendre comment utiliser le nœud. N'oubliez pas d'ajouter des descriptions et des types de données requis pour chaque entrée.
 
 > 1. Programme d'attraction existant
-2. Noeud personnalisé qui collecte ce programme, PointGrid
-> Pour savoir comment utiliser les noeuds personnalisés, reportez-vous à la rubrique [Introduction aux noeuds personnalisés](http://primer.dynamobim.org/en/09_Custom-Nodes/9-1_Introduction.html).
+2. Nœud personnalisé qui collecte ce programme, PointGrid
+> Pour savoir comment utiliser les nœuds personnalisés, reportez-vous à la rubrique [Introduction aux nœuds personnalisés](http://primer.dynamobim.org/en/09_Custom-Nodes/9-1_Introduction.html).
 
 #### Créer des gabarits
 
@@ -185,9 +185,9 @@ Commençons par déterminer les données et la géométrie renvoyées par le pro
 
 ![données](images/13-2/1-1.JPG)
 
-> Comprendre quand des modifications importantes des données se produisent est crucial pour établir des divisions logiques, ou des modularités. Inspectez le reste du programme avec les noeuds Watch pour voir si vous pouvez déterminer les groupes avant de passer à l'étape suivante.
+> Comprendre quand des modifications importantes des données se produisent est crucial pour établir des divisions logiques, ou des modularités. Inspectez le reste du programme avec les nœuds Watch pour voir si vous pouvez déterminer les groupes avant de passer à l'étape suivante.
 
-> 1. Ce bloc de code avec une équation mathématique semble être un élément crucial du programme. Un noeud Watch indique qu'il renvoie des listes de distances de conversion.
+> 1. Ce bloc de code avec une équation mathématique semble être un élément crucial du programme. Un nœud Watch indique qu'il renvoie des listes de distances de conversion.
 2. L'objectif de cette zone n'est pas évident. La disposition des valeurs True au niveau de la liste L2 de BoundingBox.Contains et la présence de List.FilterByBoolMask suggèrent que vous échantillonnez une partie de la grille de points.
 
 Une fois que vous avez identifié les composantes essentielles du programme, placez-les dans des groupes.
@@ -202,11 +202,11 @@ Une fois que vous avez identifié les composantes essentielles du programme, pla
 4. Créer une surface de toit architecturale
 5. Créer un mur-rideau en verre
 
-Lorsque les groupes sont établis, alignez les noeuds pour créer une continuité visuelle sur le graphique.
+Lorsque les groupes sont établis, alignez les nœuds pour créer une continuité visuelle sur le graphique.
 
 ![alignement](images/13-2/2.jpg)
 
-> La continuité visuelle aide l'utilisateur à voir le flux du programme et les relations implicites entre les noeuds.
+> La continuité visuelle aide l'utilisateur à voir le flux du programme et les relations implicites entre les nœuds.
 
 Rendez le programme plus accessible en ajoutant un autre calque d'améliorations graphiques. Ajoutez des notes pour décrire le fonctionnement d'une zone spécifique du programme, donnez des noms personnalisés aux entrées et affectez des couleurs à différents types de groupes.
 
@@ -224,7 +224,7 @@ Avant de commencer à condenser le programme, identifions un emplacement straté
 > Vous avez choisi d'intégrer les scripts à ce stade du programme afin que la simulation de drainage puisse être exécutée sur la surface de toit unique d'origine. Cette surface spécifique n'est pas affichée en aperçu, mais elle vous évite d'avoir à choisir la surface supérieure de la polysurface chanfreinée.
 
 > 1. Géométrie source pour l'entrée du script
-2. Noeud Python
+2. Nœud Python
 3. Curseurs d'entrée
 4. "Commutateur" activé/désactivé
 
@@ -232,10 +232,10 @@ Maintenant que tout est en place, simplifions le graphique.
 
 ![customnode-notetocode](images/13-2/3-2.jpg)
 
-> La condensation du programme grâce à Noeud vers code et à Noeud personnalisé a permis de réduire considérablement la taille du graphique. Les groupes qui créent la surface du toit et les murs ont été convertis en code, car ils sont très spécifiques de ce programme. Le groupe de conversion de points est contenu dans un noeud personnalisé, car il peut être utilisé dans un autre programme. Dans le fichier d'exemple, créez votre propre noeud personnalisé à partir du groupe Convertir les points.
+> La condensation du programme grâce à Nœud vers code et à Nœud personnalisé a permis de réduire considérablement la taille du graphique. Les groupes qui créent la surface du toit et les murs ont été convertis en code, car ils sont très spécifiques de ce programme. Le groupe de conversion de points est contenu dans un nœud personnalisé, car il peut être utilisé dans un autre programme. Dans le fichier d'exemple, créez votre propre nœud personnalisé à partir du groupe Convertir les points.
 
-> 1. Noeud personnalisé contenant le groupe "Convertir la grille de points"
-2. Noeud vers code permettant de condenser les groupes "Créer une surface de toit architecturale et un mur-rideau"
+> 1. Nœud personnalisé contenant le groupe "Convertir la grille de points"
+2. Nœud vers code permettant de condenser les groupes "Créer une surface de toit architecturale et un mur-rideau"
 
 Pour finir, créez des valeurs prédéfinies pour des formes de toit représentatives.
 
