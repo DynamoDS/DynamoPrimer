@@ -2,9 +2,9 @@
 
 # Dictionnaires dans les blocs de code
 
-Dynamo 2.0 introduit non seulement les noeuds précédemment abordés dans les dictionnaires, mais aussi les blocs de code.
+Dynamo 2.0 introduit non seulement les nœuds précédemment abordés dans les dictionnaires, mais aussi les blocs de code.
 
-Vous pouvez utiliser une syntaxe semblable à celle présentée ci-dessous ou des représentations de noeuds basées sur DesignScript.
+Vous pouvez utiliser une syntaxe semblable à celle présentée ci-dessous ou des représentations de nœuds basées sur DesignScript.
 
 ![IMAGE](images/9-1/DYN20_Dictionary.png)
 

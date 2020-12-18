@@ -15,7 +15,7 @@ Voici la liste de certains des packages les plus populaires de la communauté Dy
       </a>
    </tr>
    <tr>
-      <td colspan="2">archi-lab est un ensemble de plus de 50 packages personnalisés qui étendent considérablement la capacité de Dynamo à interagir avec Revit. Les noeuds contenus dans le package archi-lab varient d'une liste d'opérations de base à des noeuds Analysis Visualization Framework avancés pour Revit. </td>
+      <td colspan="2">archi-lab est un ensemble de plus de 50 packages personnalisés qui étendent considérablement la capacité de Dynamo à interagir avec Revit. Les nœuds contenus dans le package archi-lab varient d'une liste d'opérations de base à des nœuds Analysis Visualization Framework avancés pour Revit. </td>
       <td>
          <img src="http://i2.wp.com/archi-lab.net/wp-content/uploads/2015/10/Untitled-3.png"></img>
       </td>
@@ -29,7 +29,7 @@ Voici la liste de certains des packages les plus populaires de la communauté Dy
     <td><a href="https://bimorph.com/bimorph-nodes/">Consulter le dictionnaire BimorphNodes</td></a>
   </tr>
   <tr>
-    <td colspan="2">BimorphNodes est un ensemble polyvalent de noeuds utilitaires puissants. Le package comprend notamment des noeuds d'intersection de géométrie et de détection des conflits très efficaces, des noeuds de conversion de courbes ImportInstance (CAO), et des collecteurs d'éléments liés qui résolvent les limitations dans l'API Revit. Pour en savoir plus sur la gamme complète des noeuds disponibles, consultez le dictionnaire BimorphNodes.</td>
+    <td colspan="2">BimorphNodes est un ensemble polyvalent de nœuds utilitaires puissants. Le package comprend notamment des nœuds d'intersection de géométrie et de détection des conflits très efficaces, des nœuds de conversion de courbes ImportInstance (CAO), et des collecteurs d'éléments liés qui résolvent les limitations dans l'API Revit. Pour en savoir plus sur la gamme complète des nœuds disponibles, consultez le dictionnaire BimorphNodes.</td>
     <td><img src="images/A-4/Bimorph-Nodes-v2.2-Library-Catalog-header.jpg"></img></td>
   </tr>
 </table>
@@ -53,7 +53,7 @@ Voici la liste de certains des packages les plus populaires de la communauté Dy
     <td><a href="https://github.com/CAAD-RWTH/ClockworkForDynamo">Consulter l'outil Clockwork for Dynamo sur GitHub</td></a>
   </tr>
   <tr>
-    <td colspan="2">Clockwork est un ensemble de noeuds personnalisés dédiés à l'environnement de programmation visuelle Dynamo. Il contient un grand nombre de noeuds liés à Revit, mais également de nombreux noeuds permettant d'effectuer d'autres opérations, telles que la gestion des listes, les opérations mathématiques, les opérations de chaîne, les conversions d'unités, les opérations géométriques (principalement des zones de délimitation, des maillages, des plans, des points, des surfaces, des UV et des vecteurs) et la création de panneaux. </td>
+    <td colspan="2">Clockwork est un ensemble de nœuds personnalisés dédiés à l'environnement de programmation visuelle Dynamo. Il contient un grand nombre de nœuds liés à Revit, mais également de nombreux nœuds permettant d'effectuer d'autres opérations, telles que la gestion des listes, les opérations mathématiques, les opérations de chaîne, les conversions d'unités, les opérations géométriques (principalement des zones de délimitation, des maillages, des plans, des points, des surfaces, des UV et des vecteurs) et la création de panneaux. </td>
     <td><img src="images/A-4/screengrab01.png"></img></td>
   </tr>
 </table>
@@ -89,7 +89,7 @@ Voici la liste de certains des packages les plus populaires de la communauté Dy
     <td><a href="https://github.com/mjkkirschner/DynamoUnfold">Consulter l'outil DynamoUnfold sur GitHub</td></a>
   </tr>
   <tr>
-    <td colspan="2">Cette bibliothèque étend les fonctionnalités de Dynamo/Revit en permettant aux utilisateurs de déployer la géométrie de surface et de polysurface. La bibliothèque permet aux utilisateurs de convertir d'abord des surfaces en topologie de maillage par approximation planaire, puis de les déployer à l'aide des outils de protogéométrie dans Dynamo. Ce package inclut également des noeuds expérimentaux ainsi que quelques fichiers d'exemple de base. </td>
+    <td colspan="2">Cette bibliothèque étend les fonctionnalités de Dynamo/Revit en permettant aux utilisateurs de déployer la géométrie de surface et de polysurface. La bibliothèque permet aux utilisateurs de convertir d'abord des surfaces en topologie de maillage par approximation planaire, puis de les déployer à l'aide des outils de protogéométrie dans Dynamo. Ce package inclut également des nœuds expérimentaux ainsi que quelques fichiers d'exemple de base. </td>
     <td><img src="images/A-4/DynamoUnfold_S.png"></img></td>
   </tr>
 </table>
@@ -125,7 +125,7 @@ Voici la liste de certains des packages les plus populaires de la communauté Dy
     <td><a href="http://dynamopackages.com/">Télécharger Firefly dans le gestionnaire de package Dynamo</td></a>
   </tr>
   <tr>
-    <td colspan="2">Firefly est un ensemble de noeuds qui permettent à Dynamo de communiquer avec des périphériques d'entrée/de sortie, comme le micro contrôleur Arduino. Étant donné que le flux de données est "actif", Firefly ouvre de nombreuses opportunités de prototypage interactif entre les environnements numérique et physique, via des webcams, des téléphones mobiles, des contrôleurs de jeu, des capteurs, etc. </td>
+    <td colspan="2">Firefly est un ensemble de nœuds qui permettent à Dynamo de communiquer avec des périphériques d'entrée/de sortie, comme le micro contrôleur Arduino. Étant donné que le flux de données est "actif", Firefly ouvre de nombreuses opportunités de prototypage interactif entre les environnements numérique et physique, via des webcams, des téléphones mobiles, des contrôleurs de jeu, des capteurs, etc. </td>
     <td><img src="images/A-4/Firefly_S.png"></img></td>
   </tr>
 </table>
@@ -137,7 +137,7 @@ Voici la liste de certains des packages les plus populaires de la communauté Dy
     <td><a href="http://provingground.io/tools/lunchbox/">Télécharger Lunchbox for Dynamo depuis Proving Ground</td></a>
   </tr>
   <tr>
-    <td colspan="2">LunchBox est un ensemble de noeuds de gestion des données et de géométrie réutilisables. Les outils ont été testés avec Dynamo 0.8.1 et Revit 2016. L'outil inclut des noeuds pour la création de panneaux de surface, la géométrie, la collecte de données Revit, etc.</td>
+    <td colspan="2">LunchBox est un ensemble de nœuds de gestion des données et de géométrie réutilisables. Les outils ont été testés avec Dynamo 0.8.1 et Revit 2016. L'outil inclut des nœuds pour la création de panneaux de surface, la géométrie, la collecte de données Revit, etc.</td>
     <td><img src="images/A-4/lunchboxImage.jpg"></img></td>
   </tr>
 </table>
@@ -185,7 +185,7 @@ Voici la liste de certains des packages les plus populaires de la communauté Dy
     <td><a href="https://bitbucket.org/caseinc/rhynamo">Consulter l'outil Rhynamo Bitbucket</td></a>
   </tr>
   <tr>
-    <td colspan="2">La bibliothèque de noeuds Rhynamo permet aux utilisateurs de lire et d'écrire des fichiers Rhino 3DM dans Dynamo. Rhynamo convertit la géométrie Rhino en géométrie Dynamo utilisable grâce à la bibliothèque OpenNURBS de McNeel, qui permet d'échanger facilement des géométries et des données entre Rhino et Revit. Ce package contient également des noeuds expérimentaux qui permettent un accès "en direct" à la ligne de commande Rhino. </td>
+    <td colspan="2">La bibliothèque de nœuds Rhynamo permet aux utilisateurs de lire et d'écrire des fichiers Rhino 3DM dans Dynamo. Rhynamo convertit la géométrie Rhino en géométrie Dynamo utilisable grâce à la bibliothèque OpenNURBS de McNeel, qui permet d'échanger facilement des géométries et des données entre Rhino et Revit. Ce package contient également des nœuds expérimentaux qui permettent un accès "en direct" à la ligne de commande Rhino. </td>
     <td><img src="images/A-4/Rhynamo_S.png"></img></td>
   </tr>
 </table>
@@ -197,7 +197,7 @@ Voici la liste de certains des packages les plus populaires de la communauté Dy
     <td><a href="https://github.com/sixtysecondrevit/RhythmForDynamo">Consulter Rhythm sur GitHub</td></a>
   </tr>
   <tr>
-    <td colspan="2"> À première vue, Rhythm n'a rien de spécial. Il ne comprend aucun code sophistiqué ou autre élément de cette nature. Cependant, Rhythm est le résultat d'expérience et de réflexion. Ce package aide les utilisateurs à conserver le rythme dans Revit avec Dynamo. Rhythm se compose principalement de noeuds Dynamo prêts à l'emploi utilisés de manière intelligente lorsqu'ils s'appliquent à l'environnement Revit. </td>
+    <td colspan="2"> À première vue, Rhythm n'a rien de spécial. Il ne comprend aucun code sophistiqué ou autre élément de cette nature. Cependant, Rhythm est le résultat d'expérience et de réflexion. Ce package aide les utilisateurs à conserver le rythme dans Revit avec Dynamo. Rhythm se compose principalement de nœuds Dynamo prêts à l'emploi utilisés de manière intelligente lorsqu'ils s'appliquent à l'environnement Revit. </td>
     <td><img src="images/A-4/Rhythm_Image.png"></img></td>
   </tr>
 </table>

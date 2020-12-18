@@ -8,7 +8,7 @@ Une autre méthode d'importation de géométrie utilise un processus appelé *Co
 
 ### Importation d'une géométrie depuis un fichier DWG
 
-Les noeuds permettant d'importer un fichier DWG dans l'environnement Dynamo sont disponibles sous l'onglet *Conversion* (remarque : ces outils sont uniquement disponibles dans [Dynamo Studio](http://www.autodesk.com/products/dynamo-studio/overview)). Les exemples suivants montrent une série de composants utilisés pour rechercher un fichier, en importer le contenu et le convertir en géométrie Dynamo utilisable. Dynamo vous permet également de filtrer et de sélectionner des objets spécifiques à importer à partir d'un fichier DWG, comme vous allez le voir ci-dessous. Pour plus d'informations sur l'importation de géométrie à partir d'un fichier DWG, consultez le [billet de blog de Ben Goh ici](http://dynamobim.org/dwg-import-in-dynamo-studio-0-9-1/).
+Les nœuds permettant d'importer un fichier DWG dans l'environnement Dynamo sont disponibles sous l'onglet *Conversion* (remarque : ces outils sont uniquement disponibles dans [Dynamo Studio](http://www.autodesk.com/products/dynamo-studio/overview)). Les exemples suivants montrent une série de composants utilisés pour rechercher un fichier, en importer le contenu et le convertir en géométrie Dynamo utilisable. Dynamo vous permet également de filtrer et de sélectionner des objets spécifiques à importer à partir d'un fichier DWG, comme vous allez le voir ci-dessous. Pour plus d'informations sur l'importation de géométrie à partir d'un fichier DWG, consultez le [billet de blog de Ben Goh ici](http://dynamobim.org/dwg-import-in-dynamo-studio-0-9-1/).
 
 ### Obtention d'objets importés
 
@@ -25,9 +25,9 @@ Comme illustré dans l'image ci-dessus, tous les types de géométrie du fichier
 
 ### Filtre d'objet
 
-Pour spécifier quelles géométries sont importées à partir du fichier DWG, des noeuds **ObjectFilter** supplémentaires peuvent être ajoutés à la définition. Le noeud **ObjectFilter** est compatible avec le noeud **FileLoader** ou une liste de noeuds **ImportedObject**, et génère une liste **ImportedObject**.
+Pour spécifier quelles géométries sont importées à partir du fichier DWG, des nœuds **ObjectFilter** supplémentaires peuvent être ajoutés à la définition. Le nœud **ObjectFilter** est compatible avec le nœud **FileLoader** ou une liste de nœuds **ImportedObject**, et génère une liste **ImportedObject**.
 
-Les images suivantes montrent les instructions conditionnelles dans chaque noeud **ObjectFilter**. Tout noeud **ImportedObject** qui satisfait à l'une des conditions répertoriées passera par le filtre. Le filtrage peut être basé sur le libellé de la couche (nom de la couche, par exemple), le type de géométrie, la couleur diffuse, etc., et peut être utilisé conjointement avec d'autres filtres pour affiner la sélection.
+Les images suivantes montrent les instructions conditionnelles dans chaque nœud **ObjectFilter**. Tout nœud **ImportedObject** qui satisfait à l'une des conditions répertoriées passera par le filtre. Le filtrage peut être basé sur le libellé de la couche (nom de la couche, par exemple), le type de géométrie, la couleur diffuse, etc., et peut être utilisé conjointement avec d'autres filtres pour affiner la sélection.
 
 ![ObjectFilter1](images/5-8/ObjectFilter01.jpg)
 
@@ -44,7 +44,7 @@ En ajoutant deux filtres avec des instructions conditionnelles différentes, vou
 
 ### Sélection d'objets explicites
 
-Le noeud **ObjectSelector** propose une autre méthode pour importer des objets à partir du fichier DWG. Au lieu d'utiliser des filtres, cette méthode nous permet de choisir précisément les objets et les calques à importer dans Dynamo.
+Le nœud **ObjectSelector** propose une autre méthode pour importer des objets à partir du fichier DWG. Au lieu d'utiliser des filtres, cette méthode nous permet de choisir précisément les objets et les calques à importer dans Dynamo.
 
 ![Point à courbe](images/5-8/ObjectSelector.jpg)
 

@@ -2,7 +2,7 @@
 
 ## Packages
 
-En résumé, un package est un ensemble de noeuds personnalisés. Le gestionnaire de package Dynamo est un portail permettant à la communauté de télécharger tout package publié en ligne. Ces jeux d'outils sont développés par des tiers afin d'étendre les fonctionnalités clés de Dynamo, accessibles à tous, et prêts à être téléchargés en un clic.
+En résumé, un package est un ensemble de nœuds personnalisés. Le gestionnaire de package Dynamo est un portail permettant à la communauté de télécharger tout package publié en ligne. Ces jeux d'outils sont développés par des tiers afin d'étendre les fonctionnalités clés de Dynamo, accessibles à tous, et prêts à être téléchargés en un clic.
 
 ![](images/11-1/dpm.jpg)
 
@@ -22,7 +22,7 @@ La méthode la plus simple pour installer un package consiste à utiliser la bar
 
 ![](images/11-1/buildz.jpg)
 
-> 1. Vous avez maintenant un autre groupe appelé *"buildz"* dans la bibliothèque Dynamo. Son nom fait référence au [développeur](http://buildz.blogspot.com/) du package. Le noeud personnalisé est placé dans ce groupe. Vous pouvez commencer à l'utiliser immédiatement.
+> 1. Vous avez maintenant un autre groupe appelé *"buildz"* dans la bibliothèque Dynamo. Son nom fait référence au [développeur](http://buildz.blogspot.com/) du package. Le nœud personnalisé est placé dans ce groupe. Vous pouvez commencer à l'utiliser immédiatement.
 
 ![](images/11-1/example.jpg)
 
@@ -30,7 +30,7 @@ La méthode la plus simple pour installer un package consiste à utiliser la bar
 
 ### Dossiers de packages
 
-L'exemple ci-dessus est axé sur un package avec un noeud personnalisé, mais vous utilisez le même processus pour télécharger des packages avec plusieurs noeuds personnalisés et des fichiers de données de prise en charge. Démontrez-le maintenant avec un package plus complet : Dynamo Unfold.
+L'exemple ci-dessus est axé sur un package avec un nœud personnalisé, mais vous utilisez le même processus pour télécharger des packages avec plusieurs nœuds personnalisés et des fichiers de données de prise en charge. Démontrez-le maintenant avec un package plus complet : Dynamo Unfold.
 
 ![](images/11-1/unfold.jpg)
 
@@ -38,7 +38,7 @@ L'exemple ci-dessus est axé sur un package avec un noeud personnalisé, mais vo
 
 ![](images/11-1/unfoldLibrary.jpg)
 
-> La bibliothèque Dynamo contient un groupe *DynamoUnfold* avec plusieurs catégories et noeuds personnalisés.
+> La bibliothèque Dynamo contient un groupe *DynamoUnfold* avec plusieurs catégories et nœuds personnalisés.
 
 ![](images/11-1/manage.jpg)
 
@@ -48,8 +48,8 @@ L'exemple ci-dessus est axé sur un package avec un noeud personnalisé, mais vo
 
 > Cette action permet d'accéder au répertoire racine du package. Il contient trois dossiers et un fichier.
 
-> 1. Le dossier *bin* contient les fichiers .dll. Ce package Dynamo a été développé à l'aide de la commande Zero Touch, de sorte que les noeuds personnalisés sont conservés dans ce dossier.
-2. Le dossier *dyf* contient les noeuds personnalisés. Ce package n'a pas été développé à l'aide de noeuds personnalisés Dynamo. Ce dossier est donc vide pour ce package.
+> 1. Le dossier *bin* contient les fichiers .dll. Ce package Dynamo a été développé à l'aide de la commande Zero Touch, de sorte que les nœuds personnalisés sont conservés dans ce dossier.
+2. Le dossier *dyf* contient les nœuds personnalisés. Ce package n'a pas été développé à l'aide de nœuds personnalisés Dynamo. Ce dossier est donc vide pour ce package.
 3. Le dossier supplémentaire contient tous les fichiers supplémentaires, y compris les fichiers d'exemple.
 4. Le fichier pkg est un fichier texte de base qui définit les paramètres du package. Pour l'instant, vous pouvez l'ignorer.
 
@@ -73,7 +73,7 @@ Vous pouvez également télécharger les fichiers de package à partir du gestio
 
 ### Où sont les fichiers stockés localement ?
 
-Si vous téléchargez des fichiers à partir du gestionnaire de package Dynamo ou si vous souhaitez voir où sont conservés tous vos fichiers de package, cliquez sur *Paramètres > Gérer les chemins d'accès de noeud et de package...*. En cliquant sur les points de suspension situés à côté du répertoire de dossiers, vous pouvez copier le dossier racine et explorer le package dans la fenêtre de l'explorateur. Par défaut, les modules sont installés dans un emplacement similaire à celui du dossier suivant : *C:/Utilisateurs/[nom d'utilisateur]/AppData/Itinérance/Dynamo/[Version Dynamo]*.
+Si vous téléchargez des fichiers à partir du gestionnaire de package Dynamo ou si vous souhaitez voir où sont conservés tous vos fichiers de package, cliquez sur *Paramètres > Gérer les chemins d'accès de nœud et de package...*. En cliquant sur les points de suspension situés à côté du répertoire de dossiers, vous pouvez copier le dossier racine et explorer le package dans la fenêtre de l'explorateur. Par défaut, les modules sont installés dans un emplacement similaire à celui du dossier suivant : *C:/Utilisateurs/[nom d'utilisateur]/AppData/Itinérance/Dynamo/[Version Dynamo]*.
 
 ### Repousser les limites des modules
 

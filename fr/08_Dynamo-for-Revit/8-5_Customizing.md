@@ -10,7 +10,7 @@ Imaginez que vous avez créé une série de composants adaptatifs et que vous so
 
 ![Points](images/8-5/points.jpg)
 
-> Interrogez les points adaptatifs d'un composant adaptatif sélectionné à l'aide du noeud *AdaptiveComponent.Locations*. Cela vous permet de travailler avec une version abstraite d'un élément Revit pour l'analyse.
+> Interrogez les points adaptatifs d'un composant adaptatif sélectionné à l'aide du nœud *AdaptiveComponent.Locations*. Cela vous permet de travailler avec une version abstraite d'un élément Revit pour l'analyse.
 
 En extrayant l'emplacement des points des composants adaptatifs, vous pouvez exécuter une série d'analyses pour cet élément. Par exemple, un composant adaptatif à quatre points vous permet d'étudier l'écart par rapport au plan d'un panneau donné.
 
@@ -33,22 +33,22 @@ Cet exercice fournit des informations sur les techniques présentées dans la se
 
 ![Exercice](images/8-5/Exercise/00.jpg)
 
-> 1. Sélectionnez d'abord deux arêtes avec le noeud *"Select Edge"*. Les deux arêtes sont les longues travées de l'atrium.
-2. Combinez les deux arêtes dans une liste avec le noeud *List.Create*.
-3. Créez une surface entre les deux arêtes avec un noeud *surface.ByLoft*.
+> 1. Sélectionnez d'abord deux arêtes avec le nœud *"Select Edge"*. Les deux arêtes sont les longues travées de l'atrium.
+2. Combinez les deux arêtes dans une liste avec le nœud *List.Create*.
+3. Créez une surface entre les deux arêtes avec un nœud *surface.ByLoft*.
 
 ![Exercice](images/8-5/Exercise/01.jpg)
 
 > 1. À l'aide du *bloc de code*, définissez une plage comprise entre 0 et 1 avec 10 valeurs équidistantes : ```0..1..#10;```
-2. Connectez le *bloc de code* aux entrées *u* et *v* d'un noeud *Surface.PointAtParameter*, puis connectez le noeud *Surface.ByLoft* à l'entrée *surface*. Cliquez avec le bouton droit de la souris sur le noeud et définissez la *combinaison* sur *Produit vectoriel*. Cette action permet de créer une grille de points sur la surface.
+2. Connectez le *bloc de code* aux entrées *u* et *v* d'un nœud *Surface.PointAtParameter*, puis connectez le nœud *Surface.ByLoft* à l'entrée *surface*. Cliquez avec le bouton droit de la souris sur le nœud et définissez la *combinaison* sur *Produit vectoriel*. Cette action permet de créer une grille de points sur la surface.
 
 Cette grille de points sert de points de contrôle pour une surface définie de manière paramétrique. Vous devez extraire les positions u et v de chacun de ces points afin de pouvoir les relier à une formule paramétrique et conserver la même structure de données. Pour ce faire, vous pouvez interroger les emplacements des paramètres des points que vous venez de créer.
 
 ![Exercice](images/8-5/Exercise/02.jpg)
 
-> 1. Ajoutez un noeud *Surface.ParameterAtPoint* à la zone de dessin et connectez les entrées comme indiqué ci-dessus.
-2. Interrogez les valeurs *u* de ces paramètres avec le noeud *UV.U*.
-3. Interrogez les valeurs *v* de ces paramètres avec le noeud *UV.V*.
+> 1. Ajoutez un nœud *Surface.ParameterAtPoint* à la zone de dessin et connectez les entrées comme indiqué ci-dessus.
+2. Interrogez les valeurs *u* de ces paramètres avec le nœud *UV.U*.
+3. Interrogez les valeurs *v* de ces paramètres avec le nœud *UV.V*.
 4. Les sorties montrent les valeurs *u* et *v* correspondantes pour chaque point de la surface. Vous disposez à présent d'une plage de *0* à *1* pour chaque valeur dans la structure de données appropriée. Vous êtes prêts à appliquer un algorithme paramétrique.
 
 ![Exercice](images/8-5/Exercise/03.jpg)
@@ -60,8 +60,8 @@ Cette grille de points sert de points de contrôle pour une surface définie de 
 
 ![Exercice](images/8-5/Exercise/04.jpg)
 
-> 1. La liste des valeurs définies par l'algorithme est maintenant disponible. Utilisez cette liste de valeurs pour déplacer les points vers le haut dans la direction *+Z*. À l'aide de *Geometry.Translate*, connectez le *bloc de code* à *zTranslation* et le noeud *Surface.PointAtParameter* à l'entrée *geometry*. Les nouveaux points doivent s'afficher dans l'aperçu Dynamo.
-2. Enfin, créez une surface avec le noeud *NurbsSurface.ByPoints* en connectant le noeud de l'étape précédente à l'entrée des points. Vous obtenez une surface paramétrique. N'hésitez pas à déplacer le curseur pour observer la taille du monticule diminuer ou augmenter.
+> 1. La liste des valeurs définies par l'algorithme est maintenant disponible. Utilisez cette liste de valeurs pour déplacer les points vers le haut dans la direction *+Z*. À l'aide de *Geometry.Translate*, connectez le *bloc de code* à *zTranslation* et le nœud *Surface.PointAtParameter* à l'entrée *geometry*. Les nouveaux points doivent s'afficher dans l'aperçu Dynamo.
+2. Enfin, créez une surface avec le nœud *NurbsSurface.ByPoints* en connectant le nœud de l'étape précédente à l'entrée des points. Vous obtenez une surface paramétrique. N'hésitez pas à déplacer le curseur pour observer la taille du monticule diminuer ou augmenter.
 
 En ce qui concerne la surface paramétrique, vous devez définir un moyen de la paneliser afin de mettre en réseau les composants adaptatifs à quatre points. Étant donné que Dynamo ne dispose pas de fonctionnalités prêtes à l'emploi pour la panelisation des surfaces, contactez la communauté pour des packages Dynamo utiles.
 
@@ -76,7 +76,7 @@ En ce qui concerne la surface paramétrique, vous devez définir un moyen de la 
 
 ![Exercice](images/8-5/Exercise/customNode.jpg)
 
-> Si vous souhaitez en savoir plus sur la configuration, cliquez deux fois sur le noeud *Lunch Box* pour voir comment il est créé.
+> Si vous souhaitez en savoir plus sur la configuration, cliquez deux fois sur le nœud *Lunch Box* pour voir comment il est créé.
 
 ![Exercice](images/8-5/Exercise/08.jpg)
 
@@ -85,11 +85,11 @@ En ce qui concerne la surface paramétrique, vous devez définir un moyen de la 
 ![Exercice](images/8-5/Exercise/09.jpg)
 
 > 1. Étant donné que vous allez instancier un grand nombre de géométries dans Revit, veillez à définir le solveur Dynamo sur *Manuel*.
-2. Ajoutez un noeud *Family Types* à la zone de dessin et sélectionnez *"ROOF-PANEL-4PT"*.
-3. Ajoutez un noeud *AdaptiveComponent.ByPoints* à la zone de dessin, connectez les points *Panel Pts* de la sortie *"LunchBox Quad Grid by Face"* à l'entrée *points*. Connectez le noeud *Family Types* à l'entrée *FamilySymbol*.
+2. Ajoutez un nœud *Family Types* à la zone de dessin et sélectionnez *"ROOF-PANEL-4PT"*.
+3. Ajoutez un nœud *AdaptiveComponent.ByPoints* à la zone de dessin, connectez les points *Panel Pts* de la sortie *"LunchBox Quad Grid by Face"* à l'entrée *points*. Connectez le nœud *Family Types* à l'entrée *FamilySymbol*.
 4. Cliquez sur *Exécuter*. La création de la géométrie nécessite un peu de *temps* sur Revit. Si l'opération est trop longue, réduisez la valeur du bloc de code qui est égale à *15*. Cela permet de réduire le nombre de panneaux sur le toit.
 
-*Remarque : si Dynamo prend trop de temps pour calculer les noeuds, vous pouvez utiliser la fonctionnalité "geler" du noeud pour interrompre l'exécution des opérations Revit lorsque vous développez votre graphique. Pour plus d'informations sur le gel des noeuds, consultez la section "Gel" du [chapitre Solides](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).*
+*Remarque : si Dynamo prend trop de temps pour calculer les nœuds, vous pouvez utiliser la fonctionnalité "geler" du nœud pour interrompre l'exécution des opérations Revit lorsque vous développez votre graphique. Pour plus d'informations sur le gel des nœuds, consultez la section "Gel" du [chapitre Solides](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).*
 
 ![Exercice](images/8-5/Exercise/31.jpg)
 
@@ -111,7 +111,7 @@ En ce qui concerne la surface paramétrique, vous devez définir un moyen de la 
 
 ![Exercice](images/8-5/Exercise/13.jpg)
 
-> 1. Vous pouvez référencer l'emplacement du soleil à l'aide du noeud *SunSettings.Current*.
+> 1. Vous pouvez référencer l'emplacement du soleil à l'aide du nœud *SunSettings.Current*.
 2. Connectez l'entrée SunSettings à *Sunsetting.SunDirection* pour obtenir le vecteur solaire.
 3. À partir des points *Panel Pts* utilisés pour créer les composants adaptatifs, ayez recours à *Plane.ByBaestFitThroughPoints* pour obtenir une approximation du plan du composant.
 4. Interrogez la *normale* de ce plan.
@@ -128,7 +128,7 @@ En ce qui concerne la surface paramétrique, vous devez définir un moyen de la 
 
 ![Exercice](images/8-5/Exercise/33.jpg)
 
-> 1. Connectez les valeurs remappées à un noeud *Element.SetParameterByName*.
+> 1. Connectez les valeurs remappées à un nœud *Element.SetParameterByName*.
 2. Connectez la chaîne *"Aperture Ratio"* à l'entrée *parameterName*.
 3. Connectez les *composants adaptatifs* à l'entrée *element*.
 4. Cliquez sur *Exécuter*.

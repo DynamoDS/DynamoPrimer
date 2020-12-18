@@ -1,13 +1,13 @@
 
 
-# Noeuds de dictionnaire
+# Nœuds de dictionnaire
 
-Dynamo 2.0 présente une variété de noeuds de dictionnaire à notre disposition. Cela inclut les noeuds *create, action et query*.
+Dynamo 2.0 présente une variété de nœuds de dictionnaire à notre disposition. Cela inclut les nœuds *create, action et query*.
 
 ![IMAGE](images/9-2/9-2_dictionaryNodes.png)
 
 * ```Dictionary.ByKeysValues``` crée un dictionnaire avec les valeurs et les clés fournies. *(Le nombre d'entrées correspond à la liste d'entrées la plus courte possible)*
-* ```Dictionary.Components``` produira les composants du dictionnaire d'entrée. *(Il s'agit de l'inverse du noeud create.)*
+* ```Dictionary.Components``` produira les composants du dictionnaire d'entrée. *(Il s'agit de l'inverse du nœud create.)*
 * ```Dictionary.RemoveKeys``` crée un objet de dictionnaire dont les clés d'entrée ont été supprimées.
 * ```Dictionary.SetValueAtKeys``` crée un dictionnaire basé sur les clés d'entrée et les valeurs pour remplacer la valeur en cours au niveau des clés correspondantes.
 * ```Dictionary.ValueAtKey``` renvoie la valeur à la clé d'entrée.

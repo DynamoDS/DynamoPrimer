@@ -2,9 +2,9 @@
 
 ## L'espace de travail
 
-L'**espace de travail** Dynamo permet de développer des programmes visuels, mais également d'afficher un aperçu de la géométrie obtenue. Que vous travailliez dans un espace de travail d'accueil ou un noeud personnalisé, utilisez la souris ou les boutons situés en haut à droite pour naviguer dans l'interface. Basculer entre les modes situés en bas à droite permet de basculer entre les différents aperçus que vous naviguez.
+L'**espace de travail** Dynamo permet de développer des programmes visuels, mais également d'afficher un aperçu de la géométrie obtenue. Que vous travailliez dans un espace de travail d'accueil ou un nœud personnalisé, utilisez la souris ou les boutons situés en haut à droite pour naviguer dans l'interface. Basculer entre les modes situés en bas à droite permet de basculer entre les différents aperçus que vous naviguez.
 
-> Remarque : étant donné que les noeuds et la géométrie ont un ordre de tracé, vous pouvez avoir des objets rendus les uns sur les autres. Cela peut être difficile lorsque vous ajoutez plusieurs noeuds dans l'ordre, car ils peuvent être rendus dans la même position dans l'espace de travail.
+> Remarque : étant donné que les nœuds et la géométrie ont un ordre de tracé, vous pouvez avoir des objets rendus les uns sur les autres. Cela peut être difficile lorsque vous ajoutez plusieurs nœuds dans l'ordre, car ils peuvent être rendus dans la même position dans l'espace de travail.
 
 ![Zones de l'espace de travail](images/2-3/01-WorkspaceRegions.png)
 
@@ -15,11 +15,11 @@ L'**espace de travail** Dynamo permet de développer des programmes visuels, mai
 
 ### Onglets
 
-L'onglet Espace de travail actif vous permet de parcourir et de modifier votre programme. Lorsque vous ouvrez un nouveau fichier, vous ouvrez par défaut un nouvel espace de travail d'**accueil**. Vous pouvez également ouvrir un nouvel espace de travail **Noeud personnalisé** à partir du menu Fichier ou de l'option *Nouveau noeud de la sélection* accessible par un clic droit lorsque les noeuds sont sélectionnés (plus d'informations sur cette fonctionnalité ultérieurement).
+L'onglet Espace de travail actif vous permet de parcourir et de modifier votre programme. Lorsque vous ouvrez un nouveau fichier, vous ouvrez par défaut un nouvel espace de travail d'**accueil**. Vous pouvez également ouvrir un nouvel espace de travail **Nœud personnalisé** à partir du menu Fichier ou de l'option *Nouveau nœud de la sélection* accessible par un clic droit lorsque les nœuds sont sélectionnés (plus d'informations sur cette fonctionnalité ultérieurement).
 
 ![Onglets](images/2-3/02-Tabs.png)
 
-> Remarque : il se peut que vous n'ayez qu'un seul espace de travail d'accueil ouvert à la fois. Toutefois, plusieurs espaces de travail de noeud personnalisés peuvent être ouverts dans d'autres onglets.
+> Remarque : il se peut que vous n'ayez qu'un seul espace de travail d'accueil ouvert à la fois. Toutefois, plusieurs espaces de travail de nœud personnalisés peuvent être ouverts dans d'autres onglets.
 
 ### Navigation entre le graphique et l'aperçu 3D
 
@@ -35,11 +35,11 @@ Le mode de navigation de l'aperçu 3D permet également de **manipuler directem
 
 ### Zoom pour recentrer
 
-En mode de navigation de l'aperçu 3D, vous pouvez facilement effectuer des panoramiques, des zooms et des rotations autour des modèles. Toutefois, pour effectuer un zoom spécifique sur un objet créé par un noeud de géométrie, utilisez l'icône Zoom tout avec un seul noeud sélectionné.
+En mode de navigation de l'aperçu 3D, vous pouvez facilement effectuer des panoramiques, des zooms et des rotations autour des modèles. Toutefois, pour effectuer un zoom spécifique sur un objet créé par un nœud de géométrie, utilisez l'icône Zoom tout avec un seul nœud sélectionné.
 
 ![Zoom pour recentrer 1](images/2-3/03-ZoomToRecenter_1.png)
 
-> 1. Sélectionnez le noeud correspondant à la géométrie qui permet de centrer la vue.
+> 1. Sélectionnez le nœud correspondant à la géométrie qui permet de centrer la vue.
 2. Passez à la navigation de l'aperçu 3D.
 
 ![Zoom pour recentrer 2](images/2-3/03-ZoomToRecenter_2.png)
@@ -54,7 +54,7 @@ En fonction du mode d'aperçu actif, les boutons de la souris permettent d'effec
 ![Utilisation de la souris](images/2-3/04-HelloMouse.png)
 
 > 1. Cliquez avec le bouton droit sur l'espace de travail.
-2. Cliquez avec le bouton droit sur un noeud.
+2. Cliquez avec le bouton droit sur un nœud.
 3. Cliquez avec le bouton droit sur une note.
 
 Voici un tableau des interactions de la souris par aperçu :
@@ -69,7 +69,7 @@ Voici un tableau des interactions de la souris par aperçu :
 
 ### Recherche dans la zone de dessin
 
-La fonctionnalité "Recherche dans la zone de dessin" vous permet d'accélérer le workflow Dynamo en vous offrant un accès aux descriptions des noeuds et aux info-bulles sans vous déplacer dans le graphique ! En cliquant avec le bouton droit de la souris, vous pouvez accéder à toutes les fonctionnalités utiles de la "recherche de bibliothèques", où que vous soyez dans la zone de dessin.
+La fonctionnalité "Recherche dans la zone de dessin" vous permet d'accélérer le workflow Dynamo en vous offrant un accès aux descriptions des nœuds et aux info-bulles sans vous déplacer dans le graphique ! En cliquant avec le bouton droit de la souris, vous pouvez accéder à toutes les fonctionnalités utiles de la "recherche de bibliothèques", où que vous soyez dans la zone de dessin.
 
 ![Recherche dans la zone de dessin](images/2-3/05-InCanvasSearch.jpg)
 
@@ -77,18 +77,18 @@ La fonctionnalité "Recherche dans la zone de dessin" vous permet d'accélérer 
 2. Lorsque vous saisissez du texte dans la barre de recherche, le menu déroulant est mis à jour en continu et affiche les résultats de recherche les plus pertinents.
 3. Placez le curseur sur les résultats de la recherche afin d'afficher les descriptions et les info-bulles correspondantes.
 
-## Arrangement de l'affichage des noeuds
+## Arrangement de l'affichage des nœuds
 
-L'organisation de votre zone de dessin Dynamo devient de plus en plus importante à mesure que vos fichiers se complexifient. Bien que l'outil **Aligner la sélection** soit disponible pour de petites quantités de noeuds sélectionnées, Dynamo comprend également l'outil **Arranger l'affichage des noeuds** qui permet de faciliter le nettoyage global des fichiers.
+L'organisation de votre zone de dessin Dynamo devient de plus en plus importante à mesure que vos fichiers se complexifient. Bien que l'outil **Aligner la sélection** soit disponible pour de petites quantités de nœuds sélectionnées, Dynamo comprend également l'outil **Arranger l'affichage des nœuds** qui permet de faciliter le nettoyage global des fichiers.
 
-#### Avant l'arrangement des noeuds
+#### Avant l'arrangement des nœuds
 
-![Arranger l'affichage des noeuds](images/2-3/06-CleanupNodeLayout.png)
+![Arranger l'affichage des nœuds](images/2-3/06-CleanupNodeLayout.png)
 
-> 1. Sélectionnez les noeuds à organiser automatiquement ou laissez-les tous désélectionnés pour tous les nettoyer du fichier.
-2. La fonction Arranger l'affichage des noeuds se trouve sous l'onglet Modifier.
-#### Après l'arrangement des noeuds
+> 1. Sélectionnez les nœuds à organiser automatiquement ou laissez-les tous désélectionnés pour tous les nettoyer du fichier.
+2. La fonction Arranger l'affichage des nœuds se trouve sous l'onglet Modifier.
+#### Après l'arrangement des nœuds
 
 ![Exemple d'affichage organisé](images/2-3/07-CleanupNodeLayout.png)
-3. Les noeuds sont automatiquement répartis et alignés. Les noeuds décalés ou se chevauchant sont réarrangés et alignés avec les noeuds voisins.
+3. Les nœuds sont automatiquement répartis et alignés. Les nœuds décalés ou se chevauchant sont réarrangés et alignés avec les nœuds voisins.
 

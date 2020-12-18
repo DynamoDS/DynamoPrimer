@@ -14,7 +14,7 @@ Dans Dynamo, les couleurs sont créées à l'aide des entrées ARVB. Cet acronym
 
 ### Interrogation des valeurs de couleur
 
-Les couleurs du tableau ci-dessous recherchent les propriétés utilisées pour définir la couleur : Alpha, Rouge, Vert et Bleu. Étant donné que le noeud Color.Components donne les quatre sorties différentes, ce noeud est préférable pour l'interrogation des propriétés d'une couleur.
+Les couleurs du tableau ci-dessous recherchent les propriétés utilisées pour définir la couleur : Alpha, Rouge, Vert et Bleu. Étant donné que le nœud Color.Components donne les quatre sorties différentes, ce nœud est préférable pour l'interrogation des propriétés d'une couleur.
 
 |Icône|Nom|Syntaxe|Entrées|Sorties|
 | -- | -- | -- | -- | -- |
@@ -34,20 +34,20 @@ Les couleurs du tableau ci-dessous correspondent à l'**espace de couleurs HSB**
 
 ### Intervalles de couleurs
 
-L'intervalle de couleurs est semblable au noeud **Remap Range** de la section 4.2 : il remappe une liste de nombres dans un autre domaine. Au lieu d'effectuer le mappage vers un domaine *nombre*, il mappe vers un *dégradé de couleurs* basé sur des numéros d'entrée allant de 0 à 1.
+L'intervalle de couleurs est semblable au nœud **Remap Range** de la section 4.2 : il remappe une liste de nombres dans un autre domaine. Au lieu d'effectuer le mappage vers un domaine *nombre*, il mappe vers un *dégradé de couleurs* basé sur des numéros d'entrée allant de 0 à 1.
 
-Le noeud actuel fonctionne bien, mais il peut être un peu délicat de tout faire fonctionner la première fois. La meilleure façon de se familiariser avec le dégradé de couleurs est de le tester de manière interactive. Vous allez faire un exercice rapide pour découvrir comment configurer un dégradé avec des couleurs de sortie correspondant aux nombres.
+Le nœud actuel fonctionne bien, mais il peut être un peu délicat de tout faire fonctionner la première fois. La meilleure façon de se familiariser avec le dégradé de couleurs est de le tester de manière interactive. Vous allez faire un exercice rapide pour découvrir comment configurer un dégradé avec des couleurs de sortie correspondant aux nombres.
 
 ![](images/4-5/range.jpg)
 
-> 1. **Définir trois couleurs : **à l'aide d'un noeud de bloc de code, définissez *rouge, vert* et *bleu* en connectant les combinaisons appropriées de *0* et *255*.
+> 1. **Définir trois couleurs : **à l'aide d'un nœud de bloc de code, définissez *rouge, vert* et *bleu* en connectant les combinaisons appropriées de *0* et *255*.
 2. **Créer une liste :** fusionnez les trois couleurs dans une liste.
 3. **Définir les index :** créez une liste pour définir les positions des poignées de chaque couleur (de 0 à 1). Notez la valeur 0.75 pour le vert. La couleur verte est ainsi placée aux trois quarts du dégradé horizontal dans le curseur de l'intervalle de couleurs.
 4. **Bloc de code : **valeurs d'entrée (entre 0 et 1) pour convertir en couleurs.
 
 ### Aperçu des couleurs
 
-Le noeud **Display.ByGeometry** permet de colorer la géométrie dans la fenêtre Dynamo. Ce noeud est utile pour séparer différents types de géométrie, présenter un concept paramétrique ou définir une légende d'analyse pour la simulation. Les entrées sont simples : geometry et color. Pour créer un dégradé comme l'image ci-dessus, l'entrée color est connectée au noeud **Color Range**.
+Le nœud **Display.ByGeometry** permet de colorer la géométrie dans la fenêtre Dynamo. Ce nœud est utile pour séparer différents types de géométrie, présenter un concept paramétrique ou définir une légende d'analyse pour la simulation. Les entrées sont simples : geometry et color. Pour créer un dégradé comme l'image ci-dessus, l'entrée color est connectée au nœud **Color Range**.
 
 ![](images/4-5/cuboids.jpg)
 
@@ -60,13 +60,13 @@ Cet exercice est axé sur le contrôle paramétrique de la couleur parallèlemen
 ![](images/4-5/4-5-5/11.jpg)
 
 > 1. **Bloc de code :** définissez les deux blocs de code avec les formules susmentionnées. Il s'agit d'une méthode paramétrique rapide de création d'une clothoïde.
-2. **Point.ByCoordinates :** connectez les trois sorties du bloc de code aux coordonnées du noeud.
+2. **Point.ByCoordinates :** connectez les trois sorties du bloc de code aux coordonnées du nœud.
 
 Un réseau de points est maintenant visible, créant une hélice. L'étape suivante consiste à créer une courbe passant par les points afin de pouvoir visualiser l'hélice.
 
 ![](images/4-5/4-5-5/10.jpg)
 
-> 1. **PolyCurve.ByPoints :** connectez la sortie *Point.ByCoordinates* à l'entrée *points* du noeud. Vous obtenez une courbe hélicoïdale.
+> 1. **PolyCurve.ByPoints :** connectez la sortie *Point.ByCoordinates* à l'entrée *points* du nœud. Vous obtenez une courbe hélicoïdale.
 2. **Curve.PointAtParameter** : connectez la sortie *PolyCurve.ByPoints* à l'entrée *curve*. L'objectif de cette étape est de créer un point d'attraction paramétrique qui glisse le long de la courbe. Puisque la courbe évalue un point au paramètre, vous devez entrer une valeur *param* comprise entre 0 et 1.
 3. **Number Slider :** après l'ajout à la zone de dessin, remplacez la valeur *min* par *0.0*, la valeur *max* par *1.0* et la valeur *step* par *.01*. Connectez la sortie du curseur à l'entrée *param* pour *Curve.PointAtParameter*. Un point apparaît désormais sur la longueur de l'hélice, représenté par un pourcentage du curseur (0 au point de départ, 1 au point d'arrivée).
 
@@ -83,7 +83,7 @@ L'étape suivante consiste à piloter les paramètres avec la liste des distance
 
 > 1. **Math.RemapRange :** connectez la sortie *Geometry.DistanceTo* à l'entrée numbers.
 2. **Bloc de code :** connectez un bloc de code avec une valeur de *0.01* à l'entrée *newMin* et un bloc de code avec une valeur de *1* à l'entrée *newMax*.
-3. **Watch :** connectez la sortie *Math.RemapRange* à un noeud et la sortie *Geometry.DistanceTo* à un autre noeud. Comparez les résultats.
+3. **Watch :** connectez la sortie *Math.RemapRange* à un nœud et la sortie *Geometry.DistanceTo* à un autre nœud. Comparez les résultats.
 
 Cette étape a permis de remapper la liste de distance pour qu'elle soit plus petite. Vous pouvez modifier les valeurs *newMin* et *newMax* comme bon vous semble. Les valeurs sont remappées et auront le même *rapport de distribution* sur le domaine.
 
@@ -100,7 +100,7 @@ La taille des sphères montre le réseau paramétrique défini par un point de r
 ![](images/4-5/4-5-5/05.jpg)
 
 > 1. **Color Range :** à ajouter en haut de la zone de dessin. Lorsque vous passez le curseur sur l'entrée *value*, vous remarquez que les nombres demandés sont compris entre 0 et 1. Vous devez remapper les numéros de la sortie *Geometry.DistanceTo* afin qu'ils soient compatibles avec ce domaine.
-2. **Sphere.ByCenterPointRadius :** pour le moment, désactivez l'aperçu sur ce noeud (*cliquez avec le bouton droit de la souris > Aperçu*).
+2. **Sphere.ByCenterPointRadius :** pour le moment, désactivez l'aperçu sur ce nœud (*cliquez avec le bouton droit de la souris > Aperçu*).
 
 ![](images/4-5/4-5-5/04.jpg)
 
@@ -125,7 +125,7 @@ La taille des sphères montre le réseau paramétrique défini par un point de r
 
 ### Couleur sur les surfaces
 
-Le noeud **Display.BySurfaceColors** permet de mapper des données sur une surface grâce à la couleur. Cette fonctionnalité présente de nombreuses possibilités pour visualiser des données obtenues par analyse discrète, comme le soleil, l'énergie et la proximité. Dans Dynamo, l'application d'une couleur à une surface revient à appliquer une texture à un matériau dans d'autres environnements de CAO. Dans le court exercice ci-dessous, vous allez découvrir comment utiliser cet outil.
+Le nœud **Display.BySurfaceColors** permet de mapper des données sur une surface grâce à la couleur. Cette fonctionnalité présente de nombreuses possibilités pour visualiser des données obtenues par analyse discrète, comme le soleil, l'énergie et la proximité. Dans Dynamo, l'application d'une couleur à une surface revient à appliquer une texture à un matériau dans d'autres environnements de CAO. Dans le court exercice ci-dessous, vous allez découvrir comment utiliser cet outil.
 
 ![](images/4-5/4-5-5/12.jpg)
 
@@ -135,9 +135,9 @@ Le noeud **Display.BySurfaceColors** permet de mapper des données sur une surfa
 
 ![](images/4-5/4-5-5/13.jpg)
 
-> Tout d'abord, créez (ou référencez) une surface à utiliser comme entrée pour le noeud **Display.BySurfaceColors**. Dans cet exemple, vous allez effectuer un lissage entre une courbe sinus et cosinus.
+> Tout d'abord, créez (ou référencez) une surface à utiliser comme entrée pour le nœud **Display.BySurfaceColors**. Dans cet exemple, vous allez effectuer un lissage entre une courbe sinus et cosinus.
 
-> 1. Ce **groupe** de noeuds crée des points le long de l'axe Z, puis les déplace selon les fonctions de sinus et cosinus. Les deux listes de points sont ensuite utilisées pour générer des courbes NURBS.
+> 1. Ce **groupe** de nœuds crée des points le long de l'axe Z, puis les déplace selon les fonctions de sinus et cosinus. Les deux listes de points sont ensuite utilisées pour générer des courbes NURBS.
 2. **Surface.ByLoft** : générez une surface interpolée entre la liste des courbes NURBS.
 
 ![](images/4-5/4-5-5/14.jpg)

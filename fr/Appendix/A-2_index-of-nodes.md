@@ -9,9 +9,9 @@ td img{width:100%}
 thead {display: none}
 </style>
 
-# INDEX DES NOEUDS
+# INDEX DES NœudS
 
-##### Cet index fournit des informations supplémentaires sur tous les noeuds utilisés dans ce guide, ainsi que sur les autres composants que vous trouverez utiles. Il s'agit juste d'une introduction de quelques-uns des 500 noeuds disponibles dans Dynamo.
+##### Cet index fournit des informations supplémentaires sur tous les nœuds utilisés dans ce guide, ainsi que sur les autres composants que vous trouverez utiles. Il s'agit juste d'une introduction de quelques-uns des 500 nœuds disponibles dans Dynamo.
 
 ## Fonctions intégrées
 
@@ -133,7 +133,7 @@ thead {display: none}
 ||||
 | -- | -- | -- |
 ||ACTIONS||
-|![IMAGE](images/A-2/Dynamo.Nodes.Watch.Large.png)|**View.Watch**<br>Visualiser la sortie du noeud.|![IMAGE](images/nodes/Watch.png)|
+|![IMAGE](images/A-2/Dynamo.Nodes.Watch.Large.png)|**View.Watch**<br>Visualiser la sortie du nœud.|![IMAGE](images/nodes/Watch.png)|
 |![IMAGE](images/A-2/Dynamo.Nodes.Watch3D.Large.png)|**View.Watch 3D**<br>Affiche un aperçu dynamique de la géométrie.|![IMAGE](images/nodes/Watch3D.png)|
 
 ## Geometry
@@ -258,8 +258,8 @@ thead {display: none}
 ||||
 | -- | -- | -- |
 ||CREER||
-|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.ByLoft.Curve1.Large.png)|**Surface.ByLoft**<br>Créer un noeud Surface par lissage entre les noeuds Curves de profil de coupe d'entrée|![IMAGE](images/nodes/Surface.ByLoft.png)|
-|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.ByPatch.Large.png)|**Surface.ByPatch**<br>Créer un noeud Surface en remplissant l'intérieur d'un contour fermé défini par les noeuds Curves d'entrée.|![IMAGE](images/nodes/Surface.ByPatch.png)|
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.ByLoft.Curve1.Large.png)|**Surface.ByLoft**<br>Créer un nœud Surface par lissage entre les nœuds Curves de profil de coupe d'entrée|![IMAGE](images/nodes/Surface.ByLoft.png)|
+|![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.ByPatch.Large.png)|**Surface.ByPatch**<br>Créer un nœud Surface en remplissant l'intérieur d'un contour fermé défini par les nœuds Curves d'entrée.|![IMAGE](images/nodes/Surface.ByPatch.png)|
 ||ACTIONS||
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.Offset.Large.png)|**Surface.Offset**<br>Décaler la surface dans la direction de la normale de surface selon une distance spécifiée|![IMAGE](images/nodes/Surface.Offset.png)|
 |![IMAGE](images/A-2/Autodesk.DesignScript.Geometry.Surface.PointAtParameter.Large.png)|**Surface.PointAtParameter**<br>Renvoyer le point avec les paramètres U et V indiqués.|![IMAGE](images/nodes/Surface.PointAtParameter.png)|
