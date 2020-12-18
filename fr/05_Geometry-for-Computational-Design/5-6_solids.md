@@ -18,7 +18,7 @@ Les solides sont constitués d'une ou de plusieurs surfaces contenant un volume 
 
 ### Topologie
 
-Les solides sont constitués de trois types d'éléments : sommets, arêtes et faces. Les faces sont les surfaces qui constituent le solide. Les arêtes sont des courbes qui définissent la connexion entre des faces adjacentes et les sommets sont les points de départ et d'arrivée de ces courbes. Les noeuds Topology peuvent être utilisés pour envoyer des requêtes à ces éléments.
+Les solides sont constitués de trois types d'éléments : sommets, arêtes et faces. Les faces sont les surfaces qui constituent le solide. Les arêtes sont des courbes qui définissent la connexion entre des faces adjacentes et les sommets sont les points de départ et d'arrivée de ces courbes. Les nœuds Topology peuvent être utilisés pour envoyer des requêtes à ces éléments.
 
 ![Topologie](images/5-6/Solid-topology.jpg)
 
@@ -49,7 +49,7 @@ Cela rend les objets booléens solides extrêmement efficaces. Il existe trois o
 2. **Différence** : soustrayez un solide à un autre. Le solide à soustraire est appelé outil. Notez que vous pouvez redéfinir quel solide est l'outil pour conserver le volume inverse.
 3. **Intersection** : conservez uniquement le volume d'intersection des deux solides.
 
-Outre ces trois opérations, Dynamo dispose des noeuds **Solid.DifferenceAll** et **Solid.UnionAll** pour effectuer des opérations de différence et d'union avec plusieurs solides. ![](images/5-6/BooleanAll.jpg)
+Outre ces trois opérations, Dynamo dispose des nœuds **Solid.DifferenceAll** et **Solid.UnionAll** pour effectuer des opérations de différence et d'union avec plusieurs solides. ![](images/5-6/BooleanAll.jpg)
 
 > 1. **UnionAll** : opération d'union avec une sphère et des cônes orientés vers l'extérieur
 2. **DifferenceAll** : opération de différence avec une sphère et des cônes orientés vers l'intérieur
@@ -68,7 +68,7 @@ Utilisez quelques opérations booléennes pour créer une balle hérisson.
 
 ### Gel
 
-Les opérations booléennes sont complexes et peuvent être lentes à calculer. Utilisez la fonctionnalité Geler pour suspendre l'exécution des noeuds sélectionnés et affectés aux noeuds en aval.
+Les opérations booléennes sont complexes et peuvent être lentes à calculer. Utilisez la fonctionnalité Geler pour suspendre l'exécution des nœuds sélectionnés et affectés aux nœuds en aval.
 
 ![Gel](images/5-6/freeze-01.jpg)
 
@@ -76,13 +76,13 @@ Les opérations booléennes sont complexes et peuvent être lentes à calculer. 
 
 ![Gel](images/5-6/freeze-02.jpg)
 
-> Le noeud sélectionné et tous les noeuds en aval s'affichent en mode fantôme gris clair et les fils affectés en tant que lignes en pointillés. Le mode fantôme sera également appliqué à l'aperçu de la géométrie concernée. Vous pouvez maintenant modifier les valeurs en amont sans calculer l'union booléenne.
+> Le nœud sélectionné et tous les nœuds en aval s'affichent en mode fantôme gris clair et les fils affectés en tant que lignes en pointillés. Le mode fantôme sera également appliqué à l'aperçu de la géométrie concernée. Vous pouvez maintenant modifier les valeurs en amont sans calculer l'union booléenne.
 
 ![Gel](images/5-6/freeze-03.jpg)
 
-> Pour dégeler les noeuds, cliquez avec le bouton droit de la souris et désactivez l'option Geler.
+> Pour dégeler les nœuds, cliquez avec le bouton droit de la souris et désactivez l'option Geler.
 
 ![Gel](images/5-6/freeze-04.jpg)
 
-> Tous les noeuds concernés et les aperçus de géométrie associés sont mis à jour et reviendront en mode d'aperçu standard.
+> Tous les nœuds concernés et les aperçus de géométrie associés sont mis à jour et reviendront en mode d'aperçu standard.
 

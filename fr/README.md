@@ -31,9 +31,9 @@ Il comprend des chapitres développés avec Mode Lab. Ces chapitres portent sur
 * **Blocs de construction** : que sont les données et quels en sont les types fondamentaux à utiliser dans mes programmes ?
 * **Géométrie pour la conception** : comment utiliser les éléments géométriques dans Dynamo ?
 * **Listes, listes, listes** : comment gérer et coordonner les structures de données ?
-* **Code dans les noeuds** : comment commencer à étendre Dynamo avec son propre code ?
+* **Code dans les nœuds** : comment commencer à étendre Dynamo avec son propre code ?
 * **Solution informatique BIM** : comment utiliser Dynamo avec un modèle Revit ?
-* **Noeuds personnalisés** : comment créer ses propres noeuds ?
+* **Nœuds personnalisés** : comment créer ses propres nœuds ?
 * **Packages** : comment partager ses outils avec la communauté ?
 
 C'est une occasion passionnante de découvrir Dynamo, de travailler avec Dynamo et de faire du développement pour Dynamo. C'est parti !

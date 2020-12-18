@@ -2,7 +2,7 @@
 
 ## Python et Revit
 
-Maintenant que vous savez comment utiliser les scripts Python dans Dynamo, découvrez comment connecter les bibliothèques Revit à l'environnement de script. Rappelez-vous que vous avez importé vos noeuds Dynamo avec les trois premières lignes du bloc de code ci-dessous. Pour importer les noeuds Revit, les éléments Revit et le gestionnaire de documents Revit, il vous suffit d'ajouter quelques lignes supplémentaires :
+Maintenant que vous savez comment utiliser les scripts Python dans Dynamo, découvrez comment connecter les bibliothèques Revit à l'environnement de script. Rappelez-vous que vous avez importé vos nœuds Dynamo avec les trois premières lignes du bloc de code ci-dessous. Pour importer les nœuds Revit, les éléments Revit et le gestionnaire de documents Revit, il vous suffit d'ajouter quelques lignes supplémentaires :
 
 ```
 import clr
@@ -46,7 +46,7 @@ Dans ces exercices, vous allez explorer les scripts élémentaires de Python dan
 
 Voici comment importer les services Revit et récupérer les données du document dans Dynamo : ![Exercice](images/10-4/Exercise/Revit/Images/RevitPython - 06.png)
 
-> Aperçu du noeud Python dans Dynamo. Le code commenté est ci-dessous.
+> Aperçu du nœud Python dans Dynamo. Le code commenté est ci-dessous.
 
 ```
 # Enable Python support and load DesignScript library
@@ -69,23 +69,23 @@ OUT = [doc,uiapp,app]
 
 > Téléchargez les fichiers d'exemple joints à cet exercice (cliquez avec le bouton droit de la souris et choisissez "Enregistrer le lien sous..."). Vous trouverez la liste complète des fichiers d'exemple dans l'annexe. [Revit-ReferenceCurve.dyn](datasets/10-5/Revit-ReferenceCurve.dyn)
 
-Dans cet exercice, vous allez créer une courbe de modèle simple dans Revit à l'aide du noeud Dynamo Python.
+Dans cet exercice, vous allez créer une courbe de modèle simple dans Revit à l'aide du nœud Dynamo Python.
 
 ![](images/10-4/Exercise/Revit/Images/RevitPython - 08.png)
 
-> Commencez par le jeu de noeuds dans l'image ci-dessus. Vous allez d'abord créer deux points de référence dans Revit à partir de noeuds Dynamo.
+> Commencez par le jeu de nœuds dans l'image ci-dessus. Vous allez d'abord créer deux points de référence dans Revit à partir de nœuds Dynamo.
 
-> Commencez par créer une famille de volumes conceptuels dans Revit. Lancez Dynamo et créez le jeu de noeuds dans l'image ci-dessus. Vous allez d'abord créer deux points de référence dans Revit à partir de noeuds Dynamo.
+> Commencez par créer une famille de volumes conceptuels dans Revit. Lancez Dynamo et créez le jeu de nœuds dans l'image ci-dessus. Vous allez d'abord créer deux points de référence dans Revit à partir de nœuds Dynamo.
 
 > 1. Créez un bloc de code et attribuez-lui la valeur "0;".
-2. Connectez cette valeur dans un noeud ReferencePoint.ByCoordinates pour les entrées X, Y et Z.
+2. Connectez cette valeur dans un nœud ReferencePoint.ByCoordinates pour les entrées X, Y et Z.
 3. Créez trois curseurs, compris entre -100 et 100, avec une taille de pas de 1.
-4. Connectez chaque curseur à un noeud ReferencePoint.ByCoordinates.
-5. Ajoutez un noeud Python à l'espace de travail, cliquez sur le bouton "+" du noeud pour ajouter une autre entrée et connectez les deux points de référence dans chaque entrée. Ouvrez le noeud Python.
+4. Connectez chaque curseur à un nœud ReferencePoint.ByCoordinates.
+5. Ajoutez un nœud Python à l'espace de travail, cliquez sur le bouton "+" du nœud pour ajouter une autre entrée et connectez les deux points de référence dans chaque entrée. Ouvrez le nœud Python.
 
 ![Exercice](images/10-4/Exercise/Revit/Images/RevitPython - 07.png)
 
-> Aperçu du noeud Python dans Dynamo. Le code commenté est ci-dessous.
+> Aperçu du nœud Python dans Dynamo. Le code commenté est ci-dessous.
 
 > 1. **System.Array :** Revit requiert un réseau système comme entrée (et non une liste Python). Il s'agit juste d'une ligne de code supplémentaire, mais prêter attention aux types d'argument facilite la programmation Python dans Revit.
 
@@ -125,9 +125,9 @@ OUT = CurveByPoints.ByReferencePoints(refPtArray)
 
 ![](images/10-4/Exercise/Revit/Images/RevitPython - 01a.png)
 
-> Ce fichier contient un ensemble de noeuds connectés à cinq entrées d'un noeud Python.
+> Ce fichier contient un ensemble de nœuds connectés à cinq entrées d'un nœud Python.
 
-> 1. **Noeuds Select Model Element :** cliquez sur le bouton Sélectionner de chaque noeud et sélectionnez une courbe correspondante dans Revit.
+> 1. **Nœuds Select Model Element :** cliquez sur le bouton Sélectionner de chaque nœud et sélectionnez une courbe correspondante dans Revit.
 2. **Code Block :** à l'aide de la syntaxe *"0..1..#x;"*, connectez un curseur de type entier compris entre 0 et 20 à l'entrée *x*. Celui-ci indique le nombre de poutres à dessiner entre les deux courbes.
 3. **Structural Framing Types :** choisissez la poutre W12x26 par défaut dans le menu déroulant.
 4. **Levels :** sélectionnez "Level 1".
@@ -173,7 +173,7 @@ OUT.append(beam.Faces)
 
 ![](images/10-4/Exercise/Revit/Images/RevitPython - 03.png)
 
-> Dans Revit, un réseau de poutres s'étend sur les deux courbes en tant qu'éléments structurels. Remarque : cet exemple n'est pas réaliste... Les éléments structurels sont utilisés comme exemple pour les occurrences Revit d'origine créées à partir de Dynamo. ![](images/10-4/Exercise/Revit/Images/RevitPython - 05.png) Dans Dynamo, les résultats sont également visibles. Les poutres du noeud Watch3D font référence à la géométrie interrogée à partir des éléments Revit.
+> Dans Revit, un réseau de poutres s'étend sur les deux courbes en tant qu'éléments structurels. Remarque : cet exemple n'est pas réaliste... Les éléments structurels sont utilisés comme exemple pour les occurrences Revit d'origine créées à partir de Dynamo. ![](images/10-4/Exercise/Revit/Images/RevitPython - 05.png) Dans Dynamo, les résultats sont également visibles. Les poutres du nœud Watch3D font référence à la géométrie interrogée à partir des éléments Revit.
 
 Il existe un processus continu de conversion des données de l'environnement Revit vers l'environnement Dynamo. En résumé, voici comment le processus se déroule :
 
@@ -184,7 +184,7 @@ Il existe un processus continu de conversion des données de l'environnement Rev
 5. Créez des poutres Revit en référençant les lignes Dynamo.
 6. Générez des surfaces Dynamo en interrogeant la géométrie des poutres Revit.
 
-Ce processus peut sembler compliqué, mais grâce au script, il est aussi simple que modifier la courbe dans Revit et exécuter à nouveau le solveur (pour ce faire, vous devrez peut-être supprimer les poutres précédentes). *Cela est dû au placement des poutres dans Python, ce qui rompt l'association des noeuds OOTB.*
+Ce processus peut sembler compliqué, mais grâce au script, il est aussi simple que modifier la courbe dans Revit et exécuter à nouveau le solveur (pour ce faire, vous devrez peut-être supprimer les poutres précédentes). *Cela est dû au placement des poutres dans Python, ce qui rompt l'association des nœuds OOTB.*
 
 ![](images/10-4/Exercise/Revit/Images/RevitPython - 01.png)
 

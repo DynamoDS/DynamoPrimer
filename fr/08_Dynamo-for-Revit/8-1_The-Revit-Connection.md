@@ -32,7 +32,7 @@ Comme Revit et Dynamo évoluent encore, il se peut que vous constatiez que la ve
 
 Dynamo a été créé à l'origine pour rationaliser les workflows AEC dans Revit. Bien que Revit crée une base de données solide pour chaque projet, il peut être difficile pour un utilisateur lambda d'accéder à ces informations en dehors des contraintes de l'interface. Revit héberge une API (Application Program Interface) complète, permettant aux développeurs tiers de créer des outils personnalisés. Les programmeurs utilisent cette API depuis des années, mais les scripts basés sur du texte ne sont pas accessibles à tous. Dynamo vise à démocratiser les données Revit via un éditeur d'algorithmes graphiques abordable.
 
-En utilisant les principaux noeuds Dynamo conjointement avec des noeuds Revit personnalisés, un utilisateur peut considérablement étendre les workflows paramétriques pour l'interopérabilité, la documentation, l'analyse et la génération. Avec Dynamo, les workflows fastidieux peuvent être automatisés tandis que les explorations de conception peuvent se développer.
+En utilisant les principaux nœuds Dynamo conjointement avec des nœuds Revit personnalisés, un utilisateur peut considérablement étendre les workflows paramétriques pour l'interopérabilité, la documentation, l'analyse et la génération. Avec Dynamo, les workflows fastidieux peuvent être automatisés tandis que les explorations de conception peuvent se développer.
 
 ### Exécution de Dynamo dans Revit
 
@@ -42,13 +42,13 @@ En utilisant les principaux noeuds Dynamo conjointement avec des noeuds Revit pe
 
 ![Connexion](images/8-1/00.jpg)
 
-> 1. Lors de l'ouverture de Dynamo dans Revit, une nouvelle catégorie appelée *Revit* apparaît. Il s'agit d'un ajout complet à l'interface utilisateur qui offre des noeuds spécifiquement conçus pour les workflows Revit.*
+> 1. Lors de l'ouverture de Dynamo dans Revit, une nouvelle catégorie appelée *Revit* apparaît. Il s'agit d'un ajout complet à l'interface utilisateur qui offre des nœuds spécifiquement conçus pour les workflows Revit.*
 
-**Remarque : en utilisant la famille de noeuds propre à Revit, le graphique Dynamo fonctionne uniquement lorsqu'il est ouvert dans Dynamo for Revit. Si un graphique Dynamo for Revit est ouvert dans Dynamo Sandbox par exemple, les noeuds Revit sont manquants.*
+**Remarque : en utilisant la famille de nœuds propre à Revit, le graphique Dynamo fonctionne uniquement lorsqu'il est ouvert dans Dynamo for Revit. Si un graphique Dynamo for Revit est ouvert dans Dynamo Sandbox par exemple, les nœuds Revit sont manquants.*
 
-### Gel des noeuds
+### Gel des nœuds
 
-Revit étant une plate-forme qui fournit une gestion de projet robuste, les opérations paramétriques dans Dynamo peuvent être complexes et lentes à calculer. Si Dynamo met du temps pour calculer des noeuds, vous pouvez utiliser la fonctionnalité "geler" du noeud pour interrompre l'exécution des opérations Revit lorsque vous développez votre graphique. Pour plus d'informations sur le gel des noeuds, consultez la section "Gel" du [chapitre Solides](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).
+Revit étant une plate-forme qui fournit une gestion de projet robuste, les opérations paramétriques dans Dynamo peuvent être complexes et lentes à calculer. Si Dynamo met du temps pour calculer des nœuds, vous pouvez utiliser la fonctionnalité "geler" du nœud pour interrompre l'exécution des opérations Revit lorsque vous développez votre graphique. Pour plus d'informations sur le gel des nœuds, consultez la section "Gel" du [chapitre Solides](../05_Geometry-for-Computational-Design/5-6_solids.md#freezing).
 
 ### Communauté
 

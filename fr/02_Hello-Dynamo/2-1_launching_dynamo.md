@@ -51,8 +51,8 @@ Ouvrez le premier fichier d'exemple pour ouvrir votre premier espace de travail 
 ![MISE À JOUR REQUISE - Basics_Basic01](images/2-1/05-Basics_Basic01.jpg)
 
 > 1. Vérifiez que la barre d'exécution indique "Automatique" ou cliquez sur Exécuter.
-2. Suivez les instructions et connectez le noeud **Number** au noeud **+**.
-3. Vérifiez que ce noeud Watch affiche un résultat.
+2. Suivez les instructions et connectez le nœud **Number** au nœud **+**.
+3. Vérifiez que ce nœud Watch affiche un résultat.
 
 Si ce fichier se charge correctement, vous devriez pouvoir exécuter votre premier programme visuel avec Dynamo.
 

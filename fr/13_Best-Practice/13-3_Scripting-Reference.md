@@ -4,14 +4,14 @@ Cette page de référence présente les meilleures pratiques décrites dans la s
 
 ### Bibliothèques à utiliser
 
-Les bibliothèques standard sont externes à Dynamo et sont présentes dans les langages de programmation Python et C# (Zerotouch). Dynamo possède également son propre ensemble de bibliothèques qui correspondent directement à sa hiérarchie de noeuds, permettant à l'utilisateur de coder tout ce qui peut être fait avec des noeuds et des fils. Voici un guide qui présente le contenu auquel chaque bibliothèque Dynamo permet d'accéder et qui explique quand utiliser une bibliothèque standard.
+Les bibliothèques standard sont externes à Dynamo et sont présentes dans les langages de programmation Python et C# (Zerotouch). Dynamo possède également son propre ensemble de bibliothèques qui correspondent directement à sa hiérarchie de nœuds, permettant à l'utilisateur de coder tout ce qui peut être fait avec des nœuds et des fils. Voici un guide qui présente le contenu auquel chaque bibliothèque Dynamo permet d'accéder et qui explique quand utiliser une bibliothèque standard.
 
 ![](images/13-4/textual-programming.jpg)
 
 **Bibliothèques standard et bibliothèques Dynamo**
 
 * Les bibliothèques standard de Python et C# peuvent être utilisées pour créer des données avancées et des structures de flux dans l'environnement Dynamo.
-* Les bibliothèques Dynamo correspondent directement à la hiérarchie des noeuds pour la création de géométries et d'autres objets Dynamo.
+* Les bibliothèques Dynamo correspondent directement à la hiérarchie des nœuds pour la création de géométries et d'autres objets Dynamo.
 
 **Bibliothèques Dynamo**
 
@@ -281,7 +281,7 @@ print form_input_state()
 
   * Cette page wiki traite de certaines normes générales de codage pour la documentation et le test de votre code : [https://github.com/DynamoDS/Dynamo/wiki/Coding-Standards](https://github.com/DynamoDS/Dynamo/wiki/Coding-Standards)
 
-  * Cette page wiki traite spécifiquement des normes d'attribution de noms pour les bibliothèques, les catégories, les noms de noeuds, les noms de ports et les abréviations : [https://github.com/DynamoDS/Dynamo/wiki/Naming-Standards](https://github.com/DynamoDS/Dynamo/wiki/Naming-Standards)
+  * Cette page wiki traite spécifiquement des normes d'attribution de noms pour les bibliothèques, les catégories, les noms de nœuds, les noms de ports et les abréviations : [https://github.com/DynamoDS/Dynamo/wiki/Naming-Standards](https://github.com/DynamoDS/Dynamo/wiki/Naming-Standards)
 
   **Objets non gérés :**
 
@@ -289,7 +289,7 @@ print form_input_state()
 
   Il vous suffit de supprimer les ressources non gérées que vous ne renvoyez pas dans le graphique ou pour lesquelles vous n'enregistrez pas de référence. Le reste de cette section fait référence à ces objets comme étant une *géométrie intermédiaire*. Vous pouvez voir un exemple de cette classe d'objets dans l'exemple de code ci-dessous. La fonction C# Zero Touch **singleCube** renvoie un seul cube, mais permet de créer 10 000 cubes supplémentaires au cours de son exécution. Il est possible que cette autre géométrie ait été utilisée comme géométrie de construction intermédiaire.
 
-  **Cette fonction Zero Touch risque de bloquer Dynamo**, étant donné que vous avez créé 10 000 solides, mais n'avez enregistré qu'un seul d'entre eux et n'avez renvoyé que celui-ci. Vous devez plutôt éliminer tous les cubes intermédiaires, sauf celui renvoyé. Il est préférable de ne pas supprimer les objets renvoyés, car ces derniers sont propagés dans le graphique et utilisés par d'autres noeuds.
+  **Cette fonction Zero Touch risque de bloquer Dynamo**, étant donné que vous avez créé 10 000 solides, mais n'avez enregistré qu'un seul d'entre eux et n'avez renvoyé que celui-ci. Vous devez plutôt éliminer tous les cubes intermédiaires, sauf celui renvoyé. Il est préférable de ne pas supprimer les objets renvoyés, car ces derniers sont propagés dans le graphique et utilisés par d'autres nœuds.
 
 ```
 public Cuboid singleCube(){

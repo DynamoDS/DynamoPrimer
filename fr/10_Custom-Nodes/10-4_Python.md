@@ -6,7 +6,7 @@
 
 ### Programmation visuelle et textuelle
 
-Pourquoi utiliser la programmation textuelle dans l'environnement de programmation visuelle de Dynamo ? Comme vous l'avez vu au chapitre 1.1, la programmation visuelle présente de nombreux avantages. Elle vous permet de créer des programmes sans avoir à apprendre la syntaxe spéciale dans une interface visuelle intuitive. Toutefois, un programme visuel peut être encombré et peut parfois ne pas fonctionner correctement. Par exemple, Python propose des méthodes beaucoup plus efficaces pour écrire des instructions conditionnelles (if/then) et des boucles. Python est un outil puissant qui permet d'étendre les capacités de Dynamo et de remplacer de nombreux noeuds par quelques lignes de code concises.
+Pourquoi utiliser la programmation textuelle dans l'environnement de programmation visuelle de Dynamo ? Comme vous l'avez vu au chapitre 1.1, la programmation visuelle présente de nombreux avantages. Elle vous permet de créer des programmes sans avoir à apprendre la syntaxe spéciale dans une interface visuelle intuitive. Toutefois, un programme visuel peut être encombré et peut parfois ne pas fonctionner correctement. Par exemple, Python propose des méthodes beaucoup plus efficaces pour écrire des instructions conditionnelles (if/then) et des boucles. Python est un outil puissant qui permet d'étendre les capacités de Dynamo et de remplacer de nombreux nœuds par quelques lignes de code concises.
 
 **Programme visuel :** ![](images/10-4/python-nodes.jpg)
 
@@ -38,9 +38,9 @@ solids.append(solid.Transform(fromCoord,toCoord))
 OUT = solids
 ```
 
-### Noeud Python
+### Nœud Python
 
-Comme les blocs de code, les noeuds Python sont une interface de script au sein d'un environnement de programmation visuelle. Le noeud Python se trouve sous *Core > Scripting* dans la bibliothèque. Un double-clic sur le noeud permet d'ouvrir l'éditeur de script Python (vous pouvez également cliquer avec le bouton droit sur le noeud et sélectionner *Éditer...*).
+Comme les blocs de code, les nœuds Python sont une interface de script au sein d'un environnement de programmation visuelle. Le nœud Python se trouve sous *Core > Scripting* dans la bibliothèque. Un double-clic sur le nœud permet d'ouvrir l'éditeur de script Python (vous pouvez également cliquer avec le bouton droit sur le nœud et sélectionner *Éditer...*).
 
 ![Éditeur de script](images/10-4/Exercise/Python/python04.png)
 
@@ -56,7 +56,7 @@ La bibliothèque Autodesk.DesignScript.Geometry vous permet d'utiliser la notati
 
 > Téléchargez le fichier d'exemple joint à cet exercice (cliquez avec le bouton droit de la souris et choisissez "Enregistrer le lien sous..."). Vous trouverez la liste complète des fichiers d'exemple dans l'annexe. [Python_Custom-Node.dyn](datasets/10-4/Python-CustomNode.dyn)
 
-Dans cet exemple, vous allez écrire un script Python qui crée des motifs à partir d'un module solide, et le transformer en noeud personnalisé. Commencer par créer le module solide à l'aide de noeuds Dynamo.
+Dans cet exemple, vous allez écrire un script Python qui crée des motifs à partir d'un module solide, et le transformer en nœud personnalisé. Commencer par créer le module solide à l'aide de nœuds Dynamo.
 
 ![](images/10-4/Exercise/Python/python01.png)
 
@@ -80,13 +80,13 @@ Maintenant que vous avez les surfaces supérieures et inférieures, effectuez un
 3. **List.Create :** connectez les surfaces supérieures, inférieures et latérales aux entrées d'index pour créer une liste de surfaces.
 4. **Solid.ByJoiningSurfaces :** joignez les surfaces pour créer le module solide.
 
-Maintenant que le solide est créé, déposez un noeud de script Python dans l'espace de travail.
+Maintenant que le solide est créé, déposez un nœud de script Python dans l'espace de travail.
 
 ![](images/10-4/Exercise/Python/python05.png)
 
-> Pour ajouter des entrées supplémentaires au noeud, fermez l'éditeur et cliquez sur l'icône + sur le noeud. Les entrées sont nommées IN[0], IN[1], etc. pour indiquer qu'elles représentent des éléments dans une liste.
+> Pour ajouter des entrées supplémentaires au nœud, fermez l'éditeur et cliquez sur l'icône + sur le nœud. Les entrées sont nommées IN[0], IN[1], etc. pour indiquer qu'elles représentent des éléments dans une liste.
 
-Commencez par définir les entrées et la sortie. Double-cliquez sur le noeud pour ouvrir l'éditeur Python.
+Commencez par définir les entrées et la sortie. Double-cliquez sur le nœud pour ouvrir l'éditeur Python.
 
 ![](images/10-4/Exercise/Python/python06.png)
 
@@ -118,7 +118,7 @@ Ce code sera plus pertinent à mesure que vous progresserez dans l'exercice. Ens
 
 ![](images/10-4/Exercise/Python/python07.png)
 
-> Aperçu du noeud Python dans Dynamo. La syntaxe utilisée est la même que celle utilisée dans les titres des noeuds dans Dynamo. Le code commenté est ci-dessous.
+> Aperçu du nœud Python dans Dynamo. La syntaxe utilisée est la même que celle utilisée dans les titres des nœuds dans Dynamo. Le code commenté est ci-dessous.
 
 ```
 # Enable Python support and load DesignScript library
@@ -155,11 +155,11 @@ xDist = bbox.MaxPoint.X-bbox.MinPoint.X
 OUT = solids
 ```
 
-Puisque vous allez convertir et faire pivoter les modules solides, utilisez l'opération Geometry.Transform. Examinez le noeud Geometry.Transform : vous savez que vous avez besoin d'un système de coordonnées source et d'un système de coordonnées cible pour transformer le solide. La source est le système de coordonnées contextuel du solide, alors que la cible est un système de coordonnées différent pour chaque module en réseau. Cela signifie que vous devez parcourir les valeurs x et y pour modifier le système de coordonnées à chaque fois.
+Puisque vous allez convertir et faire pivoter les modules solides, utilisez l'opération Geometry.Transform. Examinez le nœud Geometry.Transform : vous savez que vous avez besoin d'un système de coordonnées source et d'un système de coordonnées cible pour transformer le solide. La source est le système de coordonnées contextuel du solide, alors que la cible est un système de coordonnées différent pour chaque module en réseau. Cela signifie que vous devez parcourir les valeurs x et y pour modifier le système de coordonnées à chaque fois.
 
 ![](images/10-4/Exercise/Python/python15.png)
 
-> Aperçu du noeud Python dans Dynamo. Le code commenté est ci-dessous.
+> Aperçu du nœud Python dans Dynamo. Le code commenté est ci-dessous.
 
 ```
 # Enable Python support and load DesignScript library
@@ -210,26 +210,26 @@ OUT = solids
 
 ![](images/10-4/Exercise/Python/python09.png)
 
-> Cliquez sur Exécuter sur le noeud Python pour permettre au code d'exécuter l'opération.
+> Cliquez sur Exécuter sur le nœud Python pour permettre au code d'exécuter l'opération.
 
 ![](images/10-4/Exercise/Python/python10.png)
 
 > Modifiez la valeur de départ pour créer différents motifs. Vous pouvez également modifier les paramètres du module solide lui-même pour créer différents effets. Dans Dynamo 2.0, il vous suffit de modifier la valeur de départ et de cliquer sur Exécuter sans fermer la fenêtre Python.
 
-Maintenant que vous avez créé un script Python utile, enregistrez-le en tant que noeud personnalisé. Sélectionnez le noeud de script Python, cliquez avec le bouton droit de la souris et choisissez "Nouveau noeud de la sélection".
+Maintenant que vous avez créé un script Python utile, enregistrez-le en tant que nœud personnalisé. Sélectionnez le nœud de script Python, cliquez avec le bouton droit de la souris et choisissez "Nouveau nœud de la sélection".
 
 ![](images/10-4/Exercise/Python/python11.png)
 
 > Attribuez un nom, une description et une catégorie.
 
-Un nouvel espace de travail s'ouvre dans lequel vous pouvez modifier le noeud personnalisé.
+Un nouvel espace de travail s'ouvre dans lequel vous pouvez modifier le nœud personnalisé.
 
 ![](images/10-4/Exercise/Python/python12.png)
 
 > 1. **Entrées :** modifiez les noms d'entrée pour qu'ils soient plus descriptifs et ajoutez des types de données et des valeurs par défaut.
-2. **Sortie :** modifiez le nom de sortie. Enregistrez le noeud en tant que fichier .dyf.
+2. **Sortie :** modifiez le nom de sortie. Enregistrez le nœud en tant que fichier .dyf.
 
 ![](images/10-4/Exercise/Python/python13.png)
 
-> Le noeud personnalisé reflète les modifications apportées.
+> Le nœud personnalisé reflète les modifications apportées.
 
