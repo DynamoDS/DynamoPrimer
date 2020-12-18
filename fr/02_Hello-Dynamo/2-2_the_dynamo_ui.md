@@ -35,7 +35,7 @@ La barre d'outils de Dynamo contient une série de boutons permettant d'accéder
 ![Mise à jour nécessaire – Barre d'outils de l'emplacement de la scission](images/2-2/03-Toolbar.png)
 
 > 1. Nouveau : permet de créer un fichier .dyn.
-2. Ouvrir : permet d'ouvrir un fichier .dyn (espace de travail) ou .dyf (noeud personnalisé) existant.
+2. Ouvrir : permet d'ouvrir un fichier .dyn (espace de travail) ou .dyf (nœud personnalisé) existant.
 3. Enregistrer/Enregistrer sous : permet d'enregistrer votre fichier .dyn ou .dyf actif.
 4. Annuler : permet d'annuler la dernière action.
 5. Rétablir : permet de rétablir la prochaine action.
@@ -43,13 +43,13 @@ La barre d'outils de Dynamo contient une série de boutons permettant d'accéder
 
 #### Bibliothèque
 
-La bibliothèque contient tous les noeuds chargés, y compris les noeuds par défaut fournis avec l'installation, ainsi que tous les autres noeuds ou packages personnalisés chargés. Les noeuds de la bibliothèque sont organisés de manière hiérarchique dans les bibliothèques, les catégories et, le cas échéant, les sous-catégories selon que les noeuds **créent** des données, exécutent une **action** ou **interrogent** des données.
+La bibliothèque contient tous les nœuds chargés, y compris les nœuds par défaut fournis avec l'installation, ainsi que tous les autres nœuds ou packages personnalisés chargés. Les nœuds de la bibliothèque sont organisés de manière hiérarchique dans les bibliothèques, les catégories et, le cas échéant, les sous-catégories selon que les nœuds **créent** des données, exécutent une **action** ou **interrogent** des données.
 
 ##### Navigation
 
-Par défaut, la **bibliothèque** contient huit catégories de noeuds. **Core** et **Geometry** sont d'excellents menus à explorer en premier, car ils contiennent la plus grande quantité de noeuds. Parcourir ces catégories est la manière la plus rapide de comprendre la hiérarchie des éléments que vous pouvez ajouter à votre espace de travail et la meilleure façon de découvrir les nouveaux noeuds que vous n'avez pas utilisés auparavant.
+Par défaut, la **bibliothèque** contient huit catégories de nœuds. **Core** et **Geometry** sont d'excellents menus à explorer en premier, car ils contiennent la plus grande quantité de nœuds. Parcourir ces catégories est la manière la plus rapide de comprendre la hiérarchie des éléments que vous pouvez ajouter à votre espace de travail et la meilleure façon de découvrir les nouveaux nœuds que vous n'avez pas utilisés auparavant.
 
-> Passez maintenant à l'ensemble de noeuds par défaut. Notez que nous étendrons ultérieurement cette bibliothèque avec des noeuds personnalisés, des bibliothèques supplémentaires et le gestionnaire de package.
+> Passez maintenant à l'ensemble de nœuds par défaut. Notez que nous étendrons ultérieurement cette bibliothèque avec des nœuds personnalisés, des bibliothèques supplémentaires et le gestionnaire de package.
 
 ![MISE À JOUR NÉCESSAIRE, largeur totale – Catégories de bibliothèques](images/2-2/04-LibraryCategories.png)
 
@@ -72,21 +72,21 @@ Parcourez la bibliothèque en cliquant sur les menus. Cliquez sur Geometry > Cu
 > 1. Bibliothèque
 2. Catégorie
 3. Sous-catégorie : Create/Actions/Query
-4. Noeud
-5. Description du noeud et propriétés : cet encadré s'affiche lorsque vous placez le curseur sur l'icône du noeud.
+4. Nœud
+5. Description du nœud et propriétés : cet encadré s'affiche lorsque vous placez le curseur sur l'icône du nœud.
 
-Dans le même menu Circle, placez le curseur de la souris sur **ByCenterPointRadius**. La fenêtre affiche des informations plus détaillées sur le noeud, en plus de son nom et de son icône. Ces informations permettent de comprendre ce que fait le noeud, ce qu'il requiert pour les entrées et ce qu'il va donner en sortie.
+Dans le même menu Circle, placez le curseur de la souris sur **ByCenterPointRadius**. La fenêtre affiche des informations plus détaillées sur le nœud, en plus de son nom et de son icône. Ces informations permettent de comprendre ce que fait le nœud, ce qu'il requiert pour les entrées et ce qu'il va donner en sortie.
 
-![Fenêtre contextuelle Noeud](images/2-2/06-NodePopup.png)
+![Fenêtre contextuelle Nœud](images/2-2/06-NodePopup.png)
 
-> 1. Description : description du noeud en langage simple
+> 1. Description : description du nœud en langage simple
 2. Icône : version plus grande de l'icône dans le menu de la bibliothèque
 3. Entrée(s) : nom, type de données et structure de données
 4. Sortie(s) : type de données et structure
 
 ##### Recherche
 
-Si vous avez une idée du noeud que vous souhaitez ajouter à votre espace de travail, le champ **Rechercher** est votre meilleur ami. Lorsque vous ne modifiez pas les paramètres ni ne spécifiez de valeurs dans l'espace de travail, le curseur est toujours présent dans ce champ. Si vous commencez à taper, la bibliothèque Dynamo affiche la meilleure correspondance sélectionnée (avec les chemins de navigation afin de savoir où elle se trouve dans les catégories de noeud) et une liste d'autres correspondances avec la recherche. Lorsque vous appuyez sur Entrée ou cliquez sur l'article dans le navigateur tronqué, le noeud mis en surbrillance est ajouté au centre de l'espace de travail.
+Si vous avez une idée du nœud que vous souhaitez ajouter à votre espace de travail, le champ **Rechercher** est votre meilleur ami. Lorsque vous ne modifiez pas les paramètres ni ne spécifiez de valeurs dans l'espace de travail, le curseur est toujours présent dans ce champ. Si vous commencez à taper, la bibliothèque Dynamo affiche la meilleure correspondance sélectionnée (avec les chemins de navigation afin de savoir où elle se trouve dans les catégories de nœud) et une liste d'autres correspondances avec la recherche. Lorsque vous appuyez sur Entrée ou cliquez sur l'article dans le navigateur tronqué, le nœud mis en surbrillance est ajouté au centre de l'espace de travail.
 
 ![Recherche dans la bibliothèque](images/2-2/07-LibrarySearching.png)
 
@@ -101,14 +101,14 @@ Ces options, de la géométrie aux paramètres utilisateur, sont disponibles dan
 ![Menu Afficher](images/2-2/08-Settings.png)
 
 > 1. Activation de la génération de rapports : options de partage des données utilisateur permettant d'améliorer Dynamo.
-2. Afficher l'aperçu d'exécution : permet d'afficher un aperçu de l'état d'exécution du graphique. Les noeuds programmés pour l'exécution sont mis en surbrillance dans le graphique.
+2. Afficher l'aperçu d'exécution : permet d'afficher un aperçu de l'état d'exécution du graphique. Les nœuds programmés pour l'exécution sont mis en surbrillance dans le graphique.
 3. Options de format de nombre : permet de modifier les paramètres du document concernant les décimales.
 4. Précision du rendu : permet d'augmenter ou de réduire la qualité du rendu du document.
 5. Mise à l'échelle de géométrie : permet de sélectionner la plage de géométrie sur laquelle vous travaillez.
-6. Isoler la géométrie sélectionnée : géométrie d'arrière-plan isolée fondée sur votre sélection de noeuds.
+6. Isoler la géométrie sélectionnée : géométrie d'arrière-plan isolée fondée sur votre sélection de nœuds.
 7. Afficher/masquer les arêtes de géométrie : permet d'activer ou de désactiver les arêtes de géométrie 3D.
-8. Afficher/masquer les bulles d'aperçu : permet d'activer ou de désactiver les bulles d'aperçu des données sous les noeuds.
-9. Gérer les chemins de noeud et de package : permet de gérer les chemins d'accès aux fichiers pour que les noeuds et les packages s'affichent dans la bibliothèque.
+8. Afficher/masquer les bulles d'aperçu : permet d'activer ou de désactiver les bulles d'aperçu des données sous les nœuds.
+9. Gérer les chemins de nœud et de package : permet de gérer les chemins d'accès aux fichiers pour que les nœuds et les packages s'affichent dans la bibliothèque.
 10. Activation des fonctionnalités expérimentales : utilisez les nouvelles fonctionnalités bêta de Dynamo.
 
 ### Aide
@@ -119,7 +119,7 @@ Si vous êtes bloqué, consultez le menu **Aide**. Vous pouvez trouver ici les f
 
 > 1. Mise en route : brève introduction à l'utilisation de Dynamo.
 2. Exemples : fichiers d'exemple de référence.
-3. Ouvrir le dictionnaire Dynamo : ressource avec documentation sur tous les noeuds.
+3. Ouvrir le dictionnaire Dynamo : ressource avec documentation sur tous les nœuds.
 4. Signaler un bogue : permet d'ouvrir un problème sur GitHub.
 5. Accéder au site Web du projet : permet d'afficher le projet Dynamo sur GitHub.
 6. Accéder au wiki du projet : permet de consulter le wiki pour en savoir plus sur le développement à l'aide de l'API Dynamo, qui prend en charge les bibliothèques et les outils.

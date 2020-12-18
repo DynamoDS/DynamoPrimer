@@ -57,9 +57,9 @@ Il existe quelques méthodes de base pour raccourcir le bloc de code qui simplif
 
 ### Syntaxe supplémentaire
 
-|Noeud(s)|Bloc de code équivalent|Remarque|
+|Nœud(s)|Bloc de code équivalent|Remarque|
 | -- | -- | -- |
-|Tout opérateur (+, &&, >=, Not, etc.)|+, &&, >=, !, etc.|Notez que "Not" devient "!" mais que le noeud est appelé "Not" pour faire la distinction avec "Factorial"|
+|Tout opérateur (+, &&, >=, Not, etc.)|+, &&, >=, !, etc.|Notez que "Not" devient "!" mais que le nœud est appelé "Not" pour faire la distinction avec "Factorial"|
 |Valeur booléenne True|true;|Minuscules|
 |Valeur booléenne False|false;|Minuscules|
 
@@ -105,23 +105,23 @@ La gestion de listes imbriquées est un processus similaire. Veillez à l'ordre 
 
 > Téléchargez le fichier d'exemple joint à cet exercice (cliquez avec le bouton droit de la souris et choisissez "Enregistrer le lien sous..."). Vous trouverez la liste complète des fichiers d'exemple dans l'annexe. [Obsolete-Nodes_Sine-Surface.dyn](datasets/7-3/Obsolete-Nodes_Sine-Surface.dyn)
 
-Dans cet exercice, vous allez perfectionner vos nouvelles compétences en concevant une super surface en coquille d'oeuf définie par des intervalles et des formules. Au cours de cet exercice, vous découvrirez comment utiliser le bloc de code et les noeuds Dynamo existants en tandem : le bloc de code est utilisé pour le gros volume de données, tandis que les noeuds Dynamo sont visuellement disposés pour la lisibilité de la définition.
+Dans cet exercice, vous allez perfectionner vos nouvelles compétences en concevant une super surface en coquille d'oeuf définie par des intervalles et des formules. Au cours de cet exercice, vous découvrirez comment utiliser le bloc de code et les nœuds Dynamo existants en tandem : le bloc de code est utilisé pour le gros volume de données, tandis que les nœuds Dynamo sont visuellement disposés pour la lisibilité de la définition.
 
 ![Exercice](images/7-3/Exercise/13.jpg)
 
-> Commencez par créer une surface en connectant les noeuds ci-dessus. Au lieu d'utiliser un noeud Number pour définir la largeur et la longueur, cliquez deux fois sur la zone de dessin et tapez ```100;``` dans un bloc de code.
+> Commencez par créer une surface en connectant les nœuds ci-dessus. Au lieu d'utiliser un nœud Number pour définir la largeur et la longueur, cliquez deux fois sur la zone de dessin et tapez ```100;``` dans un bloc de code.
 
 ![Exercice](images/7-3/Exercise/12.jpg)
 
 > 1. Définissez un intervalle compris entre 0 et 1 et 50 divisions en tapant ```0..1..#50``` dans un bloc de code.
-2. Connectez l'intervalle à *Surface.PointAtParameter*, qui prend les valeurs *u* et *v* entre 0 et 1 sur la surface. Pensez à définir la *combinaison* sur *Produit vectoriel* en cliquant avec le bouton droit de la souris sur le noeud *Surface.PointAtParameter*.
+2. Connectez l'intervalle à *Surface.PointAtParameter*, qui prend les valeurs *u* et *v* entre 0 et 1 sur la surface. Pensez à définir la *combinaison* sur *Produit vectoriel* en cliquant avec le bouton droit de la souris sur le nœud *Surface.PointAtParameter*.
 
 ![Exercice](images/7-3/Exercise/11.jpg)
 
 > Dans cette étape, vous allez utiliser votre première fonction pour déplacer la grille de points vers le haut sur l'axe Z. Cette grille pilotera une surface générée reposant sur la fonction sous-jacente.
 
-> 1. Ajoutez les noeuds visuels à la zone de dessin, comme illustré dans l'image ci-dessus.
-2. Au lieu d'utiliser un noeud Formula, utilisez un bloc de code avec la ligne : ```(0..Math.Sin(x*360)..#50)*5;```. Pour décomposer rapidement cet intervalle, définissez un intervalle contenant une formule. Cette formule est la fonction Sinus. La fonction Sinus reçoit les entrées de degrés dans Dynamo. Ainsi, pour obtenir une onde sinusoïdale complète, multipliez les valeurs *x* (valeur d'entrée de l'intervalle de 0 à 1) par *360*. Ensuite, utilisez le même nombre de divisions que les points de grille de contrôle pour chaque ligne. Définissez donc 50 sous-divisions avec *#50*. Enfin, le multiplicateur de 5 augmente simplement l'amplitude de la translation de sorte que l'effet soit visible dans l'aperçu Dynamo.
+> 1. Ajoutez les nœuds visuels à la zone de dessin, comme illustré dans l'image ci-dessus.
+2. Au lieu d'utiliser un nœud Formula, utilisez un bloc de code avec la ligne : ```(0..Math.Sin(x*360)..#50)*5;```. Pour décomposer rapidement cet intervalle, définissez un intervalle contenant une formule. Cette formule est la fonction Sinus. La fonction Sinus reçoit les entrées de degrés dans Dynamo. Ainsi, pour obtenir une onde sinusoïdale complète, multipliez les valeurs *x* (valeur d'entrée de l'intervalle de 0 à 1) par *360*. Ensuite, utilisez le même nombre de divisions que les points de grille de contrôle pour chaque ligne. Définissez donc 50 sous-divisions avec *#50*. Enfin, le multiplicateur de 5 augmente simplement l'amplitude de la translation de sorte que l'effet soit visible dans l'aperçu Dynamo.
 
 ![Exercice](images/7-3/Exercise/06.jpg)
 
@@ -145,7 +145,7 @@ Dans cet exercice, vous allez perfectionner vos nouvelles compétences en concev
 
 ![Exercice](images/7-3/Exercise/04.jpg)
 
-> 1. Enfin, recherchez des parties isolées des données avec le bloc de code. Pour régénérer la surface avec un intervalle de points spécifique, ajoutez le bloc de code ci-dessus entre le noeud *Geometry.Translate* et le noeud *NurbsSurface.ByPoints*. Cette ligne contient la ligne de texte : ```sinusBandes[0..15..1];```. Cela permet de sélectionner les 16 premières lignes de points (sur 50). Recréez la surface. Vous pouvez voir que vous avez généré une partie isolée de la grille de points.
+> 1. Enfin, recherchez des parties isolées des données avec le bloc de code. Pour régénérer la surface avec un intervalle de points spécifique, ajoutez le bloc de code ci-dessus entre le nœud *Geometry.Translate* et le nœud *NurbsSurface.ByPoints*. Cette ligne contient la ligne de texte : ```sinusBandes[0..15..1];```. Cela permet de sélectionner les 16 premières lignes de points (sur 50). Recréez la surface. Vous pouvez voir que vous avez généré une partie isolée de la grille de points.
 
 ![Exercice](images/7-3/Exercise/03.jpg)
 
@@ -163,8 +163,8 @@ Dans cet exercice, vous allez perfectionner vos nouvelles compétences en concev
 
 > En examinant le graphique obtenu, vous pouvez mettre en surbrillance les blocs de code et voir chacune de leurs fonctions.
 
-> 1. Le premier bloc de code remplace le noeud *Number*.
-2. Le deuxième bloc de code remplace le noeud *Number Range*.
-3. Le troisième bloc de code remplace le noeud *Formula* (ainsi que *List.Transpose*, *List.Count* et *Number Range*).
-4. Le quatrième bloc de code interroge une liste de listes, remplaçant ainsi le noeud *List.GetItemAtIndex*.
+> 1. Le premier bloc de code remplace le nœud *Number*.
+2. Le deuxième bloc de code remplace le nœud *Number Range*.
+3. Le troisième bloc de code remplace le nœud *Formula* (ainsi que *List.Transpose*, *List.Count* et *Number Range*).
+4. Le quatrième bloc de code interroge une liste de listes, remplaçant ainsi le nœud *List.GetItemAtIndex*.
 

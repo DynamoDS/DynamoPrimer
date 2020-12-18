@@ -28,7 +28,7 @@ Dynamo Primer est un projet open source, initié par Matt Jezyk et l'équipe d
 
 **Développement du complément Zero Touch pour Dynamo**
 
-Cette page décrit le processus de développement d'un noeud Dynamo personnalisé en C# à l'aide de l'interface "Zero Touch". Dans la plupart des cas, les classes et les méthodes statiques C# peuvent être importées sans modification. Si votre bibliothèque doit simplement appeler des fonctions et non construire de nouveaux objets, cela peut être facilement réalisé à l'aide de méthodes statiques. Lorsque Dynamo charge votre DLL, il supprime l'espace de noms de vos classes et expose toutes les méthodes statiques en tant que noeuds.
+Cette page décrit le processus de développement d'un nœud Dynamo personnalisé en C# à l'aide de l'interface "Zero Touch". Dans la plupart des cas, les classes et les méthodes statiques C# peuvent être importées sans modification. Si votre bibliothèque doit simplement appeler des fonctions et non construire de nouveaux objets, cela peut être facilement réalisé à l'aide de méthodes statiques. Lorsque Dynamo charge votre DLL, il supprime l'espace de noms de vos classes et expose toutes les méthodes statiques en tant que nœuds.
 
 [https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development](https://github.com/DynamoDS/Dynamo/wiki/Zero-Touch-Plugin-Development)
 

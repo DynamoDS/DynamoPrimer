@@ -38,7 +38,7 @@ La cotation est un moyen pratique de commencer à catégoriser la géométrie, m
 
 ### Géométrie dans Dynamo Studio
 
-Qu'est-ce que cela implique pour l'utilisation de Dynamo ? La compréhension des types de géométrie et de leur relation vous permettra de naviguer dans l'ensemble des **noeuds de géométrie** disponibles dans la bibliothèque. Les noeuds de géométrie sont organisés par ordre alphabétique et non hiérarchisé. Ici, l'affichage des noeuds est similaire à leur présentation dans l'interface Dynamo.
+Qu'est-ce que cela implique pour l'utilisation de Dynamo ? La compréhension des types de géométrie et de leur relation vous permettra de naviguer dans l'ensemble des **nœuds de géométrie** disponibles dans la bibliothèque. Les nœuds de géométrie sont organisés par ordre alphabétique et non hiérarchisé. Ici, l'affichage des nœuds est similaire à leur présentation dans l'interface Dynamo.
 
 ![Géométrie dans Dynamo](images/5-1/GeometryOrganization2.jpg)
 
@@ -47,12 +47,12 @@ De plus, la création de modèles dans Dynamo et la connexion de l'aperçu de ce
 ![Géométrie dans Dynamo](images/5-1/GeometryInDynamo.jpg)
 
 > 1. Observez le système de coordonnées spécifique rendu par la grille et les axes de couleur.
-2. Les noeuds sélectionnés génèrent le rendu de la géométrie correspondante (si le noeud crée une géométrie) à l'arrière-plan (couleur de surbrillance).
+2. Les nœuds sélectionnés génèrent le rendu de la géométrie correspondante (si le nœud crée une géométrie) à l'arrière-plan (couleur de surbrillance).
 > Téléchargez le fichier d'exemple qui accompagne cette image (cliquez avec le bouton droit de la souris et choisissez "Enregistrer le lien sous...") : [Geometry for Computational Design - Geometry Overview.dyn](datasets/5-1/Geometry for Computational Design - Geometry Overview.dyn). Vous trouverez la liste complète des fichiers d'exemple dans l'annexe.
 
 ### Aller plus loin avec la géométrie
 
-La création de modèles dans Dynamo ne se limite pas à ce que vous pouvez générer avec des noeuds. Voici quelques méthodes essentielles pour faire passer votre processus à la phase suivante avec la géométrie :
+La création de modèles dans Dynamo ne se limite pas à ce que vous pouvez générer avec des nœuds. Voici quelques méthodes essentielles pour faire passer votre processus à la phase suivante avec la géométrie :
 
 1. Dynamo vous permet d'importer des fichiers : essayez d'utiliser un fichier CSV pour les nuages de points ou SAT pour importer des surfaces.
 2. Lorsque vous travaillez avec Revit, vous pouvez référencer des éléments Revit à utiliser dans Dynamo.

@@ -71,7 +71,7 @@ Une fois cela fait, enregistrez ce fichier sous le nom ```PythonTemplate.py``` �
 
 ### Comportement du script Python par la suite
 
-Une fois le gabarit Python défini, Dynamo le recherche à chaque fois qu'un noeud Python est positionné. Si le gabarit est introuvable, l'affichage sera comparable à la fenêtre Python par défaut.
+Une fois le gabarit Python défini, Dynamo le recherche à chaque fois qu'un nœud Python est positionné. Si le gabarit est introuvable, l'affichage sera comparable à la fenêtre Python par défaut.
 
 ![Gabarit](images/10-6/PythonTemplate - 03.png)
 

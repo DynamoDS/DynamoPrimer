@@ -22,13 +22,13 @@ Par exemple, si vous comptez le nombre de doigts de votre main droite, il y a de
 
 La liste contient toujours 5 éléments : elle utilise un système de comptage de base 0. Les éléments stockés dans la liste ne sont pas nécessairement des nombres. Il peut s'agir de tout type de données pris en charge par Dynamo, tel que des points, des courbes, des surfaces, des familles, etc.
 
-Souvent, la méthode la plus simple pour examiner le type de données stockées dans une liste consiste à connecter un noeud Watch à la sortie d'un autre noeud. Par défaut, le noeud Watch affiche automatiquement tous les index sur le côté gauche de la liste et affiche les éléments de données sur la droite.
+Souvent, la méthode la plus simple pour examiner le type de données stockées dans une liste consiste à connecter un nœud Watch à la sortie d'un autre nœud. Par défaut, le nœud Watch affiche automatiquement tous les index sur le côté gauche de la liste et affiche les éléments de données sur la droite.
 
 Ces index sont un élément crucial lorsque vous travaillez avec des listes.
 
 ### Entrées et sorties
 
-En ce qui concerne les listes, les entrées et sorties varient en fonction du noeud Dynamo utilisé. Par exemple, utilisez une liste de 5 points et connectez cette sortie à deux noeuds Dynamo différents, *PolyCurve.ByPoints* et *Circle.ByCenterPointRadius* :
+En ce qui concerne les listes, les entrées et sorties varient en fonction du nœud Dynamo utilisé. Par exemple, utilisez une liste de 5 points et connectez cette sortie à deux nœuds Dynamo différents, *PolyCurve.ByPoints* et *Circle.ByCenterPointRadius* :
 
 ![Exemples d'entrée](images/6-2/PolyCurve.Inputs.jpg)
 
@@ -37,21 +37,21 @@ En ce qui concerne les listes, les entrées et sorties varient en fonction du no
 3. L'entrée *centerPoint* de *Circle.ByCenterPointRadius* demande *"Point"*.
 4. La sortie de *Circle.ByCenterPointRadius* est une liste de cinq cercles, dont les centres correspondent à la liste de points d'origine.
 
-Les données d'entrée de *PolyCurve.ByPoints* et de *Circle.ByCenterPointRadius* sont identiques. Cependant, le noeud Polycurve vous donne une polycourbe, tandis que le noeud Circle vous donne 5 cercles dont les centres correspondent aux points. À première vue, ce résultat est logique : la polycourbe est dessinée en tant que courbe reliant les 5 points, tandis que les cercles créent un cercle différent à chaque point. Qu'est-ce qui se passe avec les données ?
+Les données d'entrée de *PolyCurve.ByPoints* et de *Circle.ByCenterPointRadius* sont identiques. Cependant, le nœud Polycurve vous donne une polycourbe, tandis que le nœud Circle vous donne 5 cercles dont les centres correspondent aux points. À première vue, ce résultat est logique : la polycourbe est dessinée en tant que courbe reliant les 5 points, tandis que les cercles créent un cercle différent à chaque point. Qu'est-ce qui se passe avec les données ?
 
-Lorsque vous placez le curseur sur l'entrée *points* de *Polycurve.ByPoints*, vous pouvez constater que l'entrée recherche *"Point[]"*. Observez les crochets à la fin. Ils représentent une liste de points. Pour créer une polycourbe, l'entrée doit être une liste pour chaque polycourbe. Ce noeud va ainsi condenser chaque liste en une seule polycourbe.
+Lorsque vous placez le curseur sur l'entrée *points* de *Polycurve.ByPoints*, vous pouvez constater que l'entrée recherche *"Point[]"*. Observez les crochets à la fin. Ils représentent une liste de points. Pour créer une polycourbe, l'entrée doit être une liste pour chaque polycourbe. Ce nœud va ainsi condenser chaque liste en une seule polycourbe.
 
-En revanche, l'entrée *centerPoint* de *Circle.ByCenterPointRadius* demande *"Point"*. Ce noeud recherche un point, en tant qu'élément, pour définir le point central du cercle. C'est la raison pour laquelle vous obtenez cinq cercles à partir des données d'entrée. Reconnaître cette différence avec les entrées de Dynamo permet de mieux comprendre le fonctionnement des noeuds lors de la gestion des données.
+En revanche, l'entrée *centerPoint* de *Circle.ByCenterPointRadius* demande *"Point"*. Ce nœud recherche un point, en tant qu'élément, pour définir le point central du cercle. C'est la raison pour laquelle vous obtenez cinq cercles à partir des données d'entrée. Reconnaître cette différence avec les entrées de Dynamo permet de mieux comprendre le fonctionnement des nœuds lors de la gestion des données.
 
 ### Combinaison
 
-Sans solution de nettoyage, la correspondance des données est un problème. C'est le cas lorsqu'un noeud a accès à des entrées de taille différente. La modification de l'algorithme de correspondance des données peut entraîner des résultats très différents.
+Sans solution de nettoyage, la correspondance des données est un problème. C'est le cas lorsqu'un nœud a accès à des entrées de taille différente. La modification de l'algorithme de correspondance des données peut entraîner des résultats très différents.
 
-Imaginez un noeud qui crée des segments de ligne entre les points (Line.ByStartPointEndPoint). Il comporte deux paramètres d'entrée qui définissent les coordonnées du point d'entrée :
+Imaginez un nœud qui crée des segments de ligne entre les points (Line.ByStartPointEndPoint). Il comporte deux paramètres d'entrée qui définissent les coordonnées du point d'entrée :
 
 ![Exemples d'entrée](images/6-1/laceBase.jpg)
 
-Comme vous pouvez le voir, il existe différentes manières de dessiner des lignes entre ces jeux de points. Pour accéder aux options de combinaison, cliquez avec le bouton droit de la souris sur le centre d'un noeud et sélectionnez le menu "Combinaison".
+Comme vous pouvez le voir, il existe différentes manières de dessiner des lignes entre ces jeux de points. Pour accéder aux options de combinaison, cliquez avec le bouton droit de la souris sur le centre d'un nœud et sélectionnez le menu "Combinaison".
 
 ### Fichier de base
 
@@ -65,7 +65,7 @@ Pour découvrir les opérations de combinaison ci-dessous, vous allez utiliser c
 
 #### Liste la plus courte
 
-La méthode la plus simple consiste à connecter les entrées une par une jusqu'à ce que l'un des flux soit épuisé. Cette méthode s'appelle l'algorithme "Liste la plus courte". Il s'agit du comportement par défaut des noeuds Dynamo :
+La méthode la plus simple consiste à connecter les entrées une par une jusqu'à ce que l'un des flux soit épuisé. Cette méthode s'appelle l'algorithme "Liste la plus courte". Il s'agit du comportement par défaut des nœuds Dynamo :
 
 ![Exemples d'entrée](images/6-1/shortestListDiagram.jpg)
 

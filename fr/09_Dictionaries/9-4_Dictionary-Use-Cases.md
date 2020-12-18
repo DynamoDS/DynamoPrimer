@@ -25,7 +25,7 @@ Avez-vous déjà voulu rechercher quelque chose dans Revit à partir d'un élém
 
 ![IMAGE](images/9-4/9-4_roomDictionary-03.png)Vous allez maintenant créer le dictionnaire avec les clés et les éléments donnés.
 
-> * Le noeud ```Dictionary.ByKeysValues``` crée un dictionnaire en fonction des entrées appropriées.
+> * Le nœud ```Dictionary.ByKeysValues``` crée un dictionnaire en fonction des entrées appropriées.
 * ```Keys``` doit être une chaîne, tandis que ```values``` peut être une variété de types d'objets.
 
 ![IMAGE](images/9-4/9-4_roomDictionary-04.png) Enfin, vous pouvez extraire une pièce du dictionnaire avec son numéro de pièce.

@@ -8,7 +8,7 @@ L'utilisation de scripts basés sur du texte dans l'environnement de script visu
 
 ### Quand écrire un script ?
 
-Les scripts de texte peuvent établir des relations plus complexes que la programmation visuelle, même si certaines de leurs fonctionnalités sont assez comparables. Cela est logique car les noeuds correspondent effectivement à du code pré-intégré, et nous pourrions probablement écrire un programme Dynamo dans DesignScript ou Python. Toutefois, nous utilisons les scripts visuels, car l'interface des noeuds et des fils crée un flux intuitif d'informations graphiques. Le fait de savoir quand les fonctionnalités du script de texte dépassent celles du script visuel vous permettra de déterminer lorsque ce script doit être utilisé sans renoncer à la nature intuitive des noeuds et des fils. Les instructions suivantes indiquent quand écrire des scripts et le langage à utiliser.
+Les scripts de texte peuvent établir des relations plus complexes que la programmation visuelle, même si certaines de leurs fonctionnalités sont assez comparables. Cela est logique car les nœuds correspondent effectivement à du code pré-intégré, et nous pourrions probablement écrire un programme Dynamo dans DesignScript ou Python. Toutefois, nous utilisons les scripts visuels, car l'interface des nœuds et des fils crée un flux intuitif d'informations graphiques. Le fait de savoir quand les fonctionnalités du script de texte dépassent celles du script visuel vous permettra de déterminer lorsque ce script doit être utilisé sans renoncer à la nature intuitive des nœuds et des fils. Les instructions suivantes indiquent quand écrire des scripts et le langage à utiliser.
 
 **Utilisez les scripts de texte aux fins suivantes :**
 
@@ -20,7 +20,7 @@ Les scripts de texte peuvent établir des relations plus complexes que la progra
 
 **Choisissez une langue :**
 
-||Création de boucle|Récursion|Condenser les noeuds|Bibliothèques ext.|Abréviations|
+||Création de boucle|Récursion|Condenser les nœuds|Bibliothèques ext.|Abréviations|
 | -- | -- | 
 |**DesignScript**|Oui|Oui|Oui|Non|Oui|
 |**Python**|Oui|Oui|Partiellement|Oui|Non|
@@ -30,7 +30,7 @@ Les scripts de texte peuvent établir des relations plus complexes que la progra
 
 ### Penser de manière paramétrique
 
-Lorsque vous créez des scripts dans Dynamo, un environnement inévitablement paramétrique, il est judicieux de structurer votre code par rapport à la structure des noeuds et des fils dans lesquels il se trouvera. Considérez le noeud contenant votre script de texte comme s'il s'agissait d'un autre noeud du programme avec quelques entrées spécifiques, une fonction et une sortie attendue. Cela donne immédiatement à votre code à l'intérieur du noeud un petit jeu de variables à partir duquel travailler. C'est la clé d'un système paramétrique propre. Voici quelques conseils pour une meilleure intégration du code dans un programme visuel.
+Lorsque vous créez des scripts dans Dynamo, un environnement inévitablement paramétrique, il est judicieux de structurer votre code par rapport à la structure des nœuds et des fils dans lesquels il se trouvera. Considérez le nœud contenant votre script de texte comme s'il s'agissait d'un autre nœud du programme avec quelques entrées spécifiques, une fonction et une sortie attendue. Cela donne immédiatement à votre code à l'intérieur du nœud un petit jeu de variables à partir duquel travailler. C'est la clé d'un système paramétrique propre. Voici quelques conseils pour une meilleure intégration du code dans un programme visuel.
 
 **Identifiez les variables externes :**
 
@@ -52,7 +52,7 @@ Lorsque vous créez des scripts dans Dynamo, un environnement inévitablement pa
 2. Le nombre de gouttes de pluie (agents) que nous voulons.
 3. La distance que nous voulons que les gouttes de pluie parcourent.
 4. Le basculement entre descendre le parcours le plus raide ou traverser la surface.
-5. Le noeud Python avec le nombre d'entrées correspondant.
+5. Le nœud Python avec le nombre d'entrées correspondant.
 6. Un bloc de code rendant les courbes renvoyées bleues.
 
 **Concevez les relations internes :**
@@ -67,7 +67,7 @@ Lorsque vous créez des scripts dans Dynamo, un environnement inévitablement pa
 
 ![paramètres](images/13-1/parameters.JPG)
 
-> "Modules" de code issus de l'exemple dans [Noeud Python](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
+> "Modules" de code issus de l'exemple dans [Nœud Python](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
 > 1. Entrées.
 2. Variables internes au script.
@@ -109,11 +109,11 @@ Lorsque votre code devient de plus long et plus complexe, l'idée principale ou 
 
 **Écrivez du code dans des modules :**
 
-* Un "module" est un groupe de lignes de code qui effectue une tâche spécifique et qui est semblable à un noeud Dynamo dans l'espace de travail.
+* Un "module" est un groupe de lignes de code qui effectue une tâche spécifique et qui est semblable à un nœud Dynamo dans l'espace de travail.
 
 * Il peut s'agir de tout ce qui doit être visuellement séparé du code adjacent (une fonction, une classe, un groupe d'entrées ou les bibliothèques que vous importez).
 
-* Le développement de code dans des modules exploite la qualité visuelle intuitive des noeuds, ainsi que les relations complexes que seuls les scripts de texte peuvent atteindre.
+* Le développement de code dans des modules exploite la qualité visuelle intuitive des nœuds, ainsi que les relations complexes que seuls les scripts de texte peuvent atteindre.
 
 ![modules](images/13-1/modules.JPG)
 
@@ -189,7 +189,7 @@ greeting = MyClass.f
 
 ### Flexibilité continue
 
-Lors du développement de scripts de texte dans Dynamo, il est préférable de s'assurer en permanence que ce que vous créez est conforme à vos attentes. Ainsi, vous vous assurez que des événements inattendus, tels que des erreurs de syntaxe, des écarts logiques, des inexactitudes de valeur, des sorties inhabituelles, etc.,sont rapidement détectés et sont traités au fur et à mesure, et non en une seule fois à la fin. Comme les scripts de texte figurent dans les noeuds de la zone de dessin, ils sont déjà intégrés au flux de données de votre programme visuel. La surveillance successive de votre script est facilitée : il suffit d'attribuer des données à générer, d'exécuter le programme et d'évaluer les flux découlant du script à l'aide d'un noeud Watch. Voici quelques conseils pour inspecter en continu vos scripts au fur et à mesure de leur construction.
+Lors du développement de scripts de texte dans Dynamo, il est préférable de s'assurer en permanence que ce que vous créez est conforme à vos attentes. Ainsi, vous vous assurez que des événements inattendus, tels que des erreurs de syntaxe, des écarts logiques, des inexactitudes de valeur, des sorties inhabituelles, etc.,sont rapidement détectés et sont traités au fur et à mesure, et non en une seule fois à la fin. Comme les scripts de texte figurent dans les nœuds de la zone de dessin, ils sont déjà intégrés au flux de données de votre programme visuel. La surveillance successive de votre script est facilitée : il suffit d'attribuer des données à générer, d'exécuter le programme et d'évaluer les flux découlant du script à l'aide d'un nœud Watch. Voici quelques conseils pour inspecter en continu vos scripts au fur et à mesure de leur construction.
 
 **Testez en fonction de vos besoins :**
 
@@ -201,11 +201,11 @@ Lors du développement de scripts de texte dans Dynamo, il est préférable de s
 
   * Testez rapidement votre code pour vérifier qu'il renvoie des données "logiques".
 
-* Affectez les données les plus récentes que vous utilisez dans votre script comme sortie afin que le noeud génère toujours les données pertinentes lors de la mise à jour du script :
+* Affectez les données les plus récentes que vous utilisez dans votre script comme sortie afin que le nœud génère toujours les données pertinentes lors de la mise à jour du script :
 
 ![modules](images/13-1/flex.jpg)
 
-> Ajustement de l'exemple de code issu de [Noeud Python](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
+> Ajustement de l'exemple de code issu de [Nœud Python](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
 > 1. Vérifiez que toutes les arêtes du solide sont renvoyées en tant que courbes pour créer une zone de contour.
 2. Vérifiez que les entrées sous forme de nombres sont converties en intervalles.
@@ -263,7 +263,7 @@ solids.append(solid.Transform(fromCoord,toCoord))
 
 ![](images/13-1/debug.jpg)
 
-> Débogage du fichier d'exemple issu de [Noeud Python](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
+> Débogage du fichier d'exemple issu de [Nœud Python](http://primer.dynamobim.org/en/09_Custom-Nodes/9-4_Python.html).
 
 > 1. Comme vous pouvez le voir lors de l'affectation de xDist et yDist à OUT, la géométrie d'entrée renvoie une zone de contour plus grande qu'elle.
 2. Les courbes d'arête de la géométrie d'entrée renvoient une zone de contour appropriée avec des distances correctes pour xDist et yDist.
@@ -285,7 +285,7 @@ La première chose à faire est d'importer les bibliothèques Dynamo nécessaire
 
 > Toutes les bibliothèques que vous voulez utiliser doivent être importées ici.
 
-Ensuite, vous devez définir les entrées et la sortie du script, qui s'afficheront comme ports d'entrée sur le noeud. Ces entrées externes constituent la base de votre script et la clé pour établir un environnement paramétrique.
+Ensuite, vous devez définir les entrées et la sortie du script, qui s'afficheront comme ports d'entrée sur le nœud. Ces entrées externes constituent la base de votre script et la clé pour établir un environnement paramétrique.
 
 ![](../12_Best-Practice/images/13-1/walkthrough-inputs.jpg)
 
@@ -295,7 +295,7 @@ Ensuite, vous devez définir les entrées et la sortie du script, qui s'afficher
 2. Le nombre d'agents que nous voulons voir marcher.
 3. Le nombre maximal de pas que les agents sont autorisés à effectuer.
 4. Une option permettant de prendre le chemin le plus court vers le bas de la surface ou de la parcourir.
-5. Le noeud Python avec des identificateurs d'entrée qui correspondent aux entrées du script (IN[0], IN[1]).
+5. Le nœud Python avec des identificateurs d'entrée qui correspondent aux entrées du script (IN[0], IN[1]).
 6. Les courbes de sortie pouvant être affichées avec une couleur différente.
 
 Vous allez maintenant utiliser la modularité et créer le corps de votre script. La simulation du chemin le plus court vers le bas d'une surface pour plusieurs points de départ est une tâche importante qui nécessitera plusieurs fonctions. Plutôt que d'appeler les différentes fonctions dans le script, vous pouvez modulariser votre code en les regroupant dans une classe unique, votre agent. Les différentes fonctions de cette classe ou de ce "module" peuvent être appelées avec différentes variables ou même réutilisées dans un autre script.

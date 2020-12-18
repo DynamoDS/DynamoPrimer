@@ -91,13 +91,13 @@
 | -- | -- |
 |Dictionnaire de pièces|[RoomDictionary.dyn](../09_Dictionaries/datasets/9-4_roomDictionary.dyn)|
 
-#### Noeuds personnalisés
+#### Nœuds personnalisés
 
 |Section|Télécharger le fichier|
 | -- | -- |
-|Création d'un noeud personnalisé|[UV-CustomNode.zip](../10_Custom-Nodes/datasets/10-2/UV-CustomNode.zip)|
+|Création d'un nœud personnalisé|[UV-CustomNode.zip](../10_Custom-Nodes/datasets/10-2/UV-CustomNode.zip)|
 |Publication dans votre bibliothèque|[PointsToSurface.dyf](../10_Custom-Nodes/datasets/10-3/PointsToSurface.dyf)|
-|Noeuds Python|[Python-CustomNode.dyn](../10_Custom-Nodes/datasets/10-4/Python-CustomNode.dyn)|
+|Nœuds Python|[Python-CustomNode.dyn](../10_Custom-Nodes/datasets/10-4/Python-CustomNode.dyn)|
 |Python et Revit|[Revit-Doc.dyn](../10_Custom-Nodes/datasets/10-5/Revit-Doc.dyn)|
 |Python et Revit|[Revit-ReferenceCurve.dyn](../10_Custom-Nodes/datasets/10-5/Revit-ReferenceCurve.dyn)|
 |Python et Revit|[Revit-StructuralFraming.zip](../10_Custom-Nodes/datasets/10-5/Revit-StructuralFraming.zip)|

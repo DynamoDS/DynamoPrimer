@@ -68,7 +68,7 @@ Les maillages, en revanche, sont constitués d'un nombre distinct de sommets et 
 
 ### Influence locale et globale
 
-Une autre différence importante est la mesure dans laquelle une modification locale de la géométrie de maillage ou NURBS affecte l'ensemble de la forme. Le déplacement d'un sommet d'un maillage affecte uniquement les faces adjacentes à ce sommet. Dans les surfaces NURBS, l'étendue de l'influence est plus complexe et dépend du degré de la surface ainsi que des poids et des noeuds des points de contrôle. En général, cependant, le déplacement d'un seul point de contrôle dans une surface NURBS crée un changement plus lisse et plus important de la géométrie.
+Une autre différence importante est la mesure dans laquelle une modification locale de la géométrie de maillage ou NURBS affecte l'ensemble de la forme. Le déplacement d'un sommet d'un maillage affecte uniquement les faces adjacentes à ce sommet. Dans les surfaces NURBS, l'étendue de l'influence est plus complexe et dépend du degré de la surface ainsi que des poids et des nœuds des points de contrôle. En général, cependant, le déplacement d'un seul point de contrôle dans une surface NURBS crée un changement plus lisse et plus important de la géométrie.
 
 ![Modification](images/5-7/NURBSvsMESH-02.jpg)
 
