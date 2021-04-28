@@ -22,6 +22,7 @@ timeout: 420
 check_changelog_updated_on_pr: false
 pipeline_os: "Windows"
 force_slack_notification : true
+
 job_parameters:
     -
       type: "extendedChoice"
@@ -30,6 +31,7 @@ job_parameters:
       defaultValue: "en,de,ja,zh-tw,cs,es,fr,it,ko,pl,pt-br,ru,zh-cn"
       delimiter: ","
       description: ""
+
 build:
   -
     scripts:
@@ -42,16 +44,9 @@ build:
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\%COMMON_RESOURCES_DIR%\\scripts\\DeployScript.ps1"
       - "pwsh.exe -ExecutionPolicy ByPass -File .\\%COMMON_RESOURCES_DIR%\\scripts\\PostDeployScript.ps1"
 
-code_analysis:
-  sonarqube:
-    skip: true
 soc2:
   run_on_any_branch : true
-  white_source:    
-    skip: false
-    fail_on_audit_failure: true
-    team: Dynamo
-    project_name: "DynamoPrimer"
+  harmony:
     hidden_email_list: dynamo_ws_access
     third_party_lib_paths:
       - "%LIBRARIES_FOLDER%\\gs9.50"
@@ -59,5 +54,6 @@ soc2:
       - "%LIBRARIES_FOLDER%\\gitbook-cli"
       - "%LIBRARIES_FOLDER%\\Calibre2"
       - "%LIBRARIES_FOLDER%\\Vault"
+
 schedule:
   cron_schedule: "once_a_month"
