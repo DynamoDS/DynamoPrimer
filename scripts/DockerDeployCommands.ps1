@@ -86,7 +86,7 @@ try {
    #Set credentials
    Set-AWSCredential -AccessKey $jsonToken.data.access_key -SecretKey $jsonToken.data.secret_key -SessionToken $jsonToken.data.security_token
 
-   if($ENVIRONMENT_LANGUAGE.Length -gt 1)
+   if($ArrayParameter.length -gt 1)
    {
       Foreach ($language in $ArrayParameter)
       {
@@ -108,8 +108,7 @@ try {
             UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
          }
       }
-   }
-   else 
+   }else 
    {
       #Remove language folder.
       Write-Host "Removing '$language' old content ..."
