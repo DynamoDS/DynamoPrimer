@@ -32,6 +32,7 @@ try
 
    # DynamoPrimer´s location
    if($ArrayParameter.length -gt 1)
+
    { 
       Foreach ($language in $ArrayParameter)
       {        
@@ -54,6 +55,26 @@ try
          }
       }
    }else 
+   {
+         $LanguageLocation = "$PrimerRoot" + "\" + "$language"
+         Set-Location -Path $LanguageLocation
+         gitbook init
+         gitbook install
+         gitbook build
+      
+         if($LASTEXITCODE -ne 0)
+         {
+            throw "The content generation failed"
+         }
+      
+         gitbook pdf . .\_book\Appendix\DynamoPrimer.pdf
+      
+         if($LASTEXITCODE -ne 0)
+         {
+            throw "The PDF generation failed"
+         }
+   }
+   else 
    {
          $LanguageLocation = "$PrimerRoot" + "\" + "$language"
          Set-Location -Path $LanguageLocation
