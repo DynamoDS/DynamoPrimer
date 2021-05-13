@@ -9,7 +9,7 @@ $ErrorActionPreference = "Stop"
 
 try {
         
-    if($ENVIRONMENT_LANGUAGE.Length -gt 1)
+    if($ArrayParameter.length -gt 1)
     {
         Foreach ($language in $ArrayParameter)
         {
@@ -25,8 +25,7 @@ try {
 
             Remove-Item -Force -Path $InputFile
         }
-    }
-    else 
+    }else 
     {
         $InputFile = "$PrimerRoot\$language\_book\Appendix\DynamoPrimer.pdf"
         $OutputFile = "$PrimerRoot\$language\_book\Appendix\DynamoPrimer-Print.pdf"
