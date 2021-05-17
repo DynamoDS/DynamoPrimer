@@ -38,7 +38,7 @@ try
       gitbook init
       gitbook install
       gitbook build
-      
+
       if($LASTEXITCODE -ne 0)
       {
          throw "The content generation failed"
