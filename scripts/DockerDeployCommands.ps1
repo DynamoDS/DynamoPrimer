@@ -107,6 +107,10 @@ try {
       }
    }
 
+   #Copy DynamoPrimer legacy PDF
+   Write-Host "Uploading Legacy DynamoPrimer1_3 pdf version" 
+   UploadS3ObWject -localPath "en/legacy/DynamoPrimer-Print1_3.pdf" -prefixWhitPath "en/Appendix/DynamoPrimer-Print1_3.pdf"
+
    #Invalidating current CDN content to refresh it
    $invalidationLong = [long](Get-Date -Format "yyyddMMHHmm")
    New-CFInvalidation -DistributionId $distributionID -InvalidationBatch_CallerReference $invalidationLong -Paths_Item "/*" -Paths_Quantity 1 -Region $AWSRegion
