@@ -104,12 +104,12 @@ try {
          #Get all files and upload
          Write-Host "Uploading root content..."
          UploadS3Folder -localFolderLocation "$PrimerRoot\$language\_book" -s3Prefix $null
+
+         #Copy DynamoPrimer legacy PDF
+         Write-Host "Uploading Legacy DynamoPrimer1_3 pdf version" 
+         UploadS3Object -localPath "$PrimerRoot\legacy\DynamoPrimer-Print1_3.pdf" -prefixWhitPath "en/Appendix/DynamoPrimer-Print1_3.pdf"
       }
    }
-
-   #Copy DynamoPrimer legacy PDF
-   Write-Host "Uploading Legacy DynamoPrimer1_3 pdf version" 
-   UploadS3Object -localPath "en/legacy/DynamoPrimer-Print1_3.pdf" -prefixWhitPath "en/Appendix/DynamoPrimer-Print1_3.pdf"
 
    #Invalidating current CDN content to refresh it
    $invalidationLong = [long](Get-Date -Format "yyyddMMHHmm")
