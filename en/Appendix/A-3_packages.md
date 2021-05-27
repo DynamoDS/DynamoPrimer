@@ -134,10 +134,10 @@ Here are a list of some of the more popular packages in the Dynamo community. De
   <tr>
     <td width="10%"><img src="images/A-4/LunchBox_L.png"></img></td>
     <td width="55%"><b>LUNCHBOX FOR DYNAMO</b></td>
-    <td><a href="http://provingground.io/tools/lunchbox/">Checkout Lunchbox for Dynamo on the Proving Ground</td></a>
+    <td>Lunchbox is provided <a href="https://github.com/DynamoDS/DynamoPrimer/blob/master/assets/LunchboxforDynamo.zip">in the primer</a> as a resource.</td>
   </tr>
   <tr>
-    <td colspan="2">LunchBox is a collection of reusable geometry and data management nodes. The tools have been tested with Dynamo 0.8.1 and Revit 2016. The tool includes nodes for surface paneling, geometry, Revit data collection, and more!</td>
+    <td colspan="2">LunchBox is a collection of reusable geometry and data management nodes. The tool includes nodes for surface paneling, geometry, Revit data collection, and more! You can read all about Lunchbox at <a href="https://provingground.io/tools/lunchbox/"> Proving Ground</a>.</td>
     <td><img src="images/A-4/lunchboxImage.jpg"></img></td>
   </tr>
 </table>
