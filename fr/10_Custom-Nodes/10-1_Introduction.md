@@ -48,7 +48,7 @@ Passez maintenant à l'environnement de nœud personnalisé et créez un nœud s
 
 > 1. **Inputs :** les nœuds d'entrée créent des ports d'entrée sur le nœud personnalisé. La syntaxe d'un nœud d'entrée est *nom_entrée : typededonnées = valeur_défaut (facultatif).*
 
-2. **Outputs :** semblables aux entrées, elles créent et nomment des ports de sortie sur le nœud personnalisé. Ajoutez un **commentaire personnalisé** aux ports d'entrée et de sortie pour indiquer les types d'entrée et de sortie. Cette opération est décrite plus en détail dans la section [Création de nœuds personnalisés](10-2_Creating.md).
+>2. **Outputs :** semblables aux entrées, elles créent et nomment des ports de sortie sur le nœud personnalisé. Ajoutez un **commentaire personnalisé** aux ports d'entrée et de sortie pour indiquer les types d'entrée et de sortie. Cette opération est décrite plus en détail dans la section [Création de nœuds personnalisés](10-2_Creating.md).
 
 Vous pouvez enregistrer ce nœud personnalisé en tant que fichier .dyf (par opposition au fichier .dyn standard) et il sera automatiquement ajouté à votre session et aux sessions ultérieures. Le nœud personnalisé se trouve dans votre bibliothèque, dans la catégorie spécifiée dans les propriétés du nœud personnalisé.
 
