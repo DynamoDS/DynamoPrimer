@@ -45,7 +45,7 @@ En revanche, l'entrée *centerPoint* de *Circle.ByCenterPointRadius* demande *"P
 
 ### Combinaison
 
-Sans solution de nettoyage, la correspondance des données est un problème. C'est le cas lorsqu'un nœud a accès à des entrées de taille différente. La modification de l'algorithme de correspondance des données peut entraîner des résultats très différents.
+Le couplage de données est problématique en l'absence de solution claire. C'est le cas lorsqu'un nœud a accès à des entrées de taille différente. La modification de l'algorithme de correspondance des données peut entraîner des résultats très différents.
 
 Imaginez un nœud qui crée des segments de ligne entre les points (Line.ByStartPointEndPoint). Il comporte deux paramètres d'entrée qui définissent les coordonnées du point d'entrée :
 
