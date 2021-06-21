@@ -40,7 +40,7 @@ In dieser Übung entwickeln Sie die im vorigen Abschnitt entwickelten Verfahren 
 ![Exercise](images/8-5/Exercise/01.jpg)
 
 > 1. Definieren Sie in einem *Code Block* einen Bereich von 0 bis 1 mit 10 gleichmäßig verteilten Werten: ```0..1..#10;```.
-2. Verbinden Sie den *Code Block* mit den *u*- und *v*-Eingaben eines *Surface.PointAtParameter*-Blocks und verbinden Sie den *Surface.ByLoft*-Block mit der *surface*-Eingabe. Klicken Sie mit der rechten Maustaste auf den Block und ändern Sie die *Vergitterung* in *Kreuzprodukt*. Dadurch erhalten Sie ein Raster aus Punkten auf der Oberfläche.
+2. Verbinden Sie den *Code Block* mit den *u*- und *v*-Eingaben eines *Surface.PointAtParameter*-Blocks und verbinden Sie den *Surface.ByLoft*-Block mit der *surface*-Eingabe. Klicken Sie mit der rechten Maustaste auf den Block und ändern Sie die *Vergitterung* in *Kartesisches Produkt*. Dadurch erhalten Sie ein Raster aus Punkten auf der Oberfläche.
 
 Die Punkte in diesem Raster werden als Steuerpunkte für eine parametrisch definierte Oberfläche genutzt. Als Nächstes extrahieren Sie die u- und v-Positionen dieser Punkte, damit Sie sie mit einer parametrischen Formel verbinden und dabei die bestehende Datenstruktur beibehalten können. Dies ist durch Abfragen der Parameterpositionen der eben erstellten Punkte möglich.
 

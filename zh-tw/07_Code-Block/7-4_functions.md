@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![練習](images/7-4/Exercise/03.jpg)
 
-> 1. 在 *Point.ByCoordinates* 節點上，透過將鑲邊從*最短清單*變更為*叉積*，我們將建立點的格線。*sphereByZ* 函數仍完全有效，因此所有點會建立半徑以 Z 值為基礎的圓球。
+> 1. 在 *Point.ByCoordinates* 節點上，將交織從*最短清單*變更為*笛卡兒積*，我們要建立點的格線。*sphereByZ* 函數仍完全有效，因此所有點會建立半徑以 Z 值為基礎的圓球。
 
 ![練習](images/7-4/Exercise/02.jpg)
 

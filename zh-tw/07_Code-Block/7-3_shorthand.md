@@ -114,7 +114,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 ![練習](images/7-3/Exercise/12.jpg)
 
 > 1. 在代碼區塊中輸入 ```0..1..#50```，以定義介於 0 至 1 之間且分為 50 份的範圍。
-2. 將該範圍連接至 *Surface.PointAtParameter*，這會在曲面內為 *u* 與 *v* 指定介於 0 與 1 之間的值。請記住在 *Surface.PointAtParameter* 節點上按一下右鍵，以便將 *Lacing* 變更為 *Cross Product*。
+2. 將該範圍連接至 *Surface.PointAtParameter*，這會在曲面內為 *u* 與 *v* 指定介於 0 與 1 之間的值。請記得在 *Surface.PointAtParameter* 節點上按一下右鍵，將 *交織* 變更為 *笛卡兒積*。
 
 ![練習](images/7-3/Exercise/11.jpg)
 

@@ -40,7 +40,7 @@ To ćwiczenie przedstawia rozszerzenie technik omówionych w poprzedniej sekcji.
 ![Ćwiczenie](images/8-5/Exercise/01.jpg)
 
 > 1. Używając węzła *Code Block*, zdefiniuj zakres od 0 do 1 z 10 wartościami w równych odstępach: ```0..1..#10;```
-2. Połącz węzeł *Code Block* z elementami wejściowymi *u* i *v* węzła *Surface.PointAtParameter*, a węzeł *Surface.ByLoft* z elementem wejściowym *surface*. Kliknij węzeł prawym przyciskiem myszy i zmień opcję *skratowania* na *Iloczyn wektorowy*. W ten sposób na powierzchni zostanie umieszczona siatka punktów.
+2. Połącz węzeł *Code Block* z elementami wejściowymi *u* i *v* węzła *Surface.PointAtParameter*, a węzeł *Surface.ByLoft* z elementem wejściowym *surface*. Kliknij węzeł prawym przyciskiem myszy i zmień opcję *skratowania* na *Iloczyn kartezjański*. W ten sposób na powierzchni zostanie umieszczona siatka punktów.
 
 Ta siatka punktów posłuży jako punkty sterujące dla powierzchni zdefiniowanej parametrycznie. Chcemy wyodrębnić położenia u i v każdego z tych punktów, aby można je było wstawić do wzoru parametrycznego i zachować tę samą strukturę danych. Można to zrobić za pomocą zapytania o położenia parametrów punktów, które właśnie utworzyliśmy.
 

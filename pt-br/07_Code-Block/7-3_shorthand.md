@@ -114,7 +114,7 @@ Neste exercício, flexibilizaremos nossas novas habilidades de abreviação para
 ![Exercício](images/7-3/Exercise/12.jpg)
 
 > 1. Defina um intervalo entre 0 e 1 com 50 divisões digitando ```0..1..#50``` em um bloco de código.
-2. Conecte o intervalo a *Surface.PointAtParameter*, que usa os valores *u* e *v* entre 0 e 1 na superfície. Lembre-se de alterar a *Amarra* para *Produto transversal* clicando com o botão direito no nó *Surface.PointAtParameter*.
+2. Conecte o intervalo a *Surface.PointAtParameter*, que usa os valores *u* e *v* entre 0 e 1 na superfície. Lembre-se de alterar a *Amarra* para *Produto cartesiano* clicando com o botão direito no nó *Surface.PointAtParameter*.
 
 ![Exercício](images/7-3/Exercise/11.jpg)
 

@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![演習](images/7-4/Exercise/03.jpg)
 
-> 1. *Point.ByCoordinates* ノードでレーシングを[*最短リスト*]から[*外積*]に変更して、点のグリッドを作成します。 *sphereByZ* 関数により、すべての点で Z 値に基づいた半径の円が作成されます。
+> 1. *Point.ByCoordinates* ノードでレーシングを[*最短リスト*]から[*直積*]に変更して、点のグリッドを作成します。 *sphereByZ* 関数により、すべての点で Z 値に基づいた半径の円が作成されます。
 
 ![演習](images/7-4/Exercise/02.jpg)
 

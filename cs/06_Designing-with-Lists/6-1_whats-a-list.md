@@ -57,7 +57,7 @@ Jak vidíte, existují různé způsoby kreslení čar mezi těmito množinami b
 
 > Stáhněte si vzorový soubor, který je přiložen k tomuto cvičení (klikněte pravým tlačítkem a vyberte příkaz „Uložit odkaz jako...“): [Lacing.dyn](datasets/6-1/Lacing.dyn). Úplný seznam vzorových souborů naleznete v dodatku.
 
-Pomocí tohoto základního souboru znázorníme níže operace vázání tím, že definujeme nejkratší seznam, nejdelší seznam a vektorový součin.
+Pomocí tohoto základního souboru znázorníme níže operace vázání tím, že definujeme nejkratší seznam, nejdelší seznam a kartézský součin.
 
 ![Příklady vstupu](images/6-1/lacing.jpg)
 
@@ -83,13 +83,13 @@ Algoritmus „Nejdelší seznam“ připojuje vstupy a opakovaně využívá prv
 
 > Změnou vázání na *nejdelší seznam* získáte diagonální čáru, která se vertikálně rozšíří. Poslední položka v seznamu 5 položek bude opakována tak dlouho, dokud nebude dosaženo délky delšího seznamu, což je stejné chování jako metoda koncepčního diagramu.
 
-#### Vektorový součin
+#### Kartézský součin
 
-Metoda „Vektorový součin“ provede všechna možná připojení:
+Metoda „Kartézský součin“ provede všechna možná připojení:
 
 ![Příklady vstupu](images/6-1/crossProductDiagram.jpg)
 
 ![Příklady vstupu](images/6-1/crossProduct.jpg)
 
-> Změnou vázání na *Vektorový součin* získáte všechny kombinace mezi všemi seznamy, což vytvoří osnovu bodů o rozměrech 5x10. Jedná se o datovou strukturu ekvivalentní k vektorovému součinu, jak je ukázáno v koncepčním diagramu výše, až na to, že data jsou nyní seznamy seznamů. Pokud připojíme objekt PolyCurve, uvidíme, že každý seznam je definovaný hodnotou X, což znamená, že máme řadu vertikálních čar.
+> Změnou vázání na *Kartézský součin* získáte všechny kombinace mezi všemi seznamy, což vytvoří osnovu bodů o rozměrech 5x10. Jedná se o datovou strukturu ekvivalentní ke kartézskému součinu, jak je ukázáno v koncepčním diagramu výše, až na to, že data jsou nyní seznamy seznamů. Pokud připojíme objekt PolyCurve, uvidíme, že každý seznam je definovaný hodnotou X, což znamená, že máme řadu vertikálních čar.
 

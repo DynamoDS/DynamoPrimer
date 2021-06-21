@@ -75,7 +75,7 @@ Nell'esercizio seguente viene illustrato come Dynamo fa riferimento ai dati per 
 
 > Un piano è un elemento di geometria astratto, che rappresenta uno spazio bidimensionale infinito. I piani sono ideali per le curve di livello e l'intersezione, come vengono impostati in questo passaggio.
 
-> 1. Utilizzando il nodo *Geometry.Intersect* (notare il collegamento Globale), inserire *Curve.PlaneAtParameter* nell'input *entity* del nodo *Geometry.Intersect*. Inserire il nodo *List.Create* principale all'input *geometry*. Nella finestra di Dynamo vengono ora visualizzati i punti che rappresentano l'intersezione di ogni curva con i piani definiti.
+> 1. Utilizzando il nodo *Geometry.Intersect* (notare il collegamento Prodotto cartesiano), inserire *Curve.PlaneAtParameter* nell'input *entity* del nodo *Geometry.Intersect*. Inserire il nodo *List.Create* principale all'input *geometry*. Nella finestra di Dynamo vengono ora visualizzati i punti che rappresentano l'intersezione di ogni curva con i piani definiti.
 
 ![Esercizio](images/8-4/Exercise/04.jpg)
 

@@ -40,7 +40,7 @@ En este ejercicio se amplían las técnicas mostradas en la sección anterior. E
 ![Ejercicio](images/8-5/Exercise/01.jpg)
 
 > 1. Mediante el *bloque de código*, defina un rango de 0 a 1 con 10 valores espaciados uniformemente: ```0..1..#10;```
-2. Conecte el *bloque de código* a las entradas *u* y *v* de un nodo *Surface.PointAtParameter* y conecte el nodo *Surface.ByLoft* a la entrada *surface*. Haga clic con el botón derecho en el nodo y cambie el *encaje* a *Producto vectorial*. Esto proporcionará una rejilla de puntos en la superficie.
+2. Conecte el *bloque de código* a las entradas *u* y *v* de un nodo *Surface.PointAtParameter* y conecte el nodo *Surface.ByLoft* a la entrada *surface*. Haga clic con el botón derecho en el nodo y cambie el *encaje* a *Producto cartesiano*. Esto proporcionará una rejilla de puntos en la superficie.
 
 Esta rejilla de puntos sirve como puntos de control para una superficie definida paramétricamente. Queremos extraer las posiciones u y v de cada uno de estos puntos para poder conectarlos a una fórmula paramétrica y mantener la misma estructura de datos. Para ello, podemos consultar las ubicaciones de parámetros de los puntos que acabamos de crear.
 

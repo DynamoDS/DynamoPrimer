@@ -40,7 +40,7 @@ Questo esercizio verterà sulle tecniche illustrate nella sezione precedente. In
 ![Esercizio](images/8-5/Exercise/01.jpg)
 
 > 1. Utilizzando *Code Block*, definire un intervallo da 0 a 1 con 10 valori a spaziatura uniforme: ```0..1..#10;```.
-2. Collegare *Code Block* agli input *u *e *v* di un nodo *Surface.PointAtParameter* e collegare il nodo *Surface.ByLoft* all'input *surface*. Fare clic con il pulsante destro del mouse sul nodo e modificare *Collegamento* in *Globale*. In questo modo si ottiene una griglia di punti sulla superficie.
+2. Collegare *Code Block* agli input *u *e *v* di un nodo *Surface.PointAtParameter* e collegare il nodo *Surface.ByLoft* all'input *surface*. Fare clic con il pulsante destro del mouse sul nodo e modificare *Collegamento* in *Prodotto cartesiano*. In questo modo si ottiene una griglia di punti sulla superficie.
 
 Questa griglia di punti funge da punti di controllo per una superficie definita in modo parametrico. Si desidera estrarre le posizioni u e v di ciascuno di questi punti in modo da poterle collegare ad una formula parametrica e mantenere la stessa struttura di dati. A tale scopo, è possibile eseguire una query sulle posizioni dei parametri dei punti appena creati.
 

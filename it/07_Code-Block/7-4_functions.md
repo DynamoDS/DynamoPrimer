@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![Esercizio](images/7-4/Exercise/03.jpg)
 
-> 1. Nel nodo *Point.ByCoordinates*, modificando il collegamento da *Più breve* a *Globale*, verrà creata una griglia di punti. La funzione *sphereByZ* è ancora attiva, per cui tutti i punti creano sfere con i raggi basati sui valori Z.
+> 1. Nel nodo *Point.ByCoordinates*, modificando il collegamento da *Più breve* a *Prodotto cartesiano*, verrà creata una griglia di punti. La funzione *sphereByZ* è ancora attiva, per cui tutti i punti creano sfere con i raggi basati sui valori Z.
 
 ![Esercizio](images/7-4/Exercise/02.jpg)
 

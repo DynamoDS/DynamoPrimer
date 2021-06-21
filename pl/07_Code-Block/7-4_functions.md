@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![Ćwiczenie](images/7-4/Exercise/03.jpg)
 
-> 1. W węźle *Point.ByCoordinates* tworzymy siatkę punktów, zmieniając skratowanie z *Shortest List* (Najkrótsza lista) na *Cross Product* (Iloczyn wektorowy). Funkcja *sphereByZ* nadal w pełni działa, dlatego wszystkie punkty tworzą sfery z promieniami na podstawie wartości Z.
+> 1. W węźle *Point.ByCoordinates* tworzymy siatkę punktów, zmieniając skratowanie z *Shortest List* (Najkrótsza lista) na *Cross Product* (Iloczyn kartezjański). Funkcja *sphereByZ* nadal w pełni działa, dlatego wszystkie punkty tworzą sfery z promieniami na podstawie wartości Z.
 
 ![Ćwiczenie](images/7-4/Exercise/02.jpg)
 
