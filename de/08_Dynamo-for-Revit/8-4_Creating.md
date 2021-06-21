@@ -75,7 +75,7 @@ In der unten stehenden Übung wird gezeigt, wie Dynamo Daten für die Erstellung
 
 > Eine Ebene ist ein abstraktes Geometrieelement, das für einen unendlichen zweidimensionalen Raum steht. Ebenen eignen sich ausgezeichnet zum Erstellen von Konturen und Schnitten wie in diesem Schritt gezeigt.
 
-> 1. Verwenden Sie als Nächstes den *Geometry.Intersect*-Block (beachten Sie die Kreuzprodukt-Vergitterung): Verbinden Sie *Curve.PlaneAtParameter* mit der *entity*-Eingabe von *Geometry.Intersect*. Verbinden Sie den *List.Create*-Block mit der *geometry*-Eingabe. Im Dynamo-Ansichtsfenster werden daraufhin die Schnittpunkte der einzelnen Kurven mit den definierten Ebenen angezeigt.
+> 1. Verwenden Sie als Nächstes den *Geometry.Intersect*-Block (beachten Sie die Vergitterungsmethode Kartesisches Produkt): Verbinden Sie *Curve.PlaneAtParameter* mit der *entity*-Eingabe von *Geometry.Intersect*. Verbinden Sie den *List.Create*-Block mit der *geometry*-Eingabe. Im Dynamo-Ansichtsfenster werden daraufhin die Schnittpunkte der einzelnen Kurven mit den definierten Ebenen angezeigt.
 
 ![Exercise](images/8-4/Exercise/04.jpg)
 

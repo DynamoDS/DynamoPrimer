@@ -75,7 +75,7 @@ L'exercice ci-dessous vous expliquera comment Dynamo référence les données po
 
 > Un plan est un élément abstrait de la géométrie, représentant un espace 2D infini. Les plans sont idéaux pour le contour et l'intersection, à mesure que vous effectuez la configuration dans cette étape.
 
-> 1. À l'aide du nœud *Geometry.Intersect* (notez la combinaison du produit vectoriel), connectez le nœud *Curve.PlaneAtParameter* à l'entrée *entity* du nœud *Geometry.Intersect*. Connectez le nœud principal *List.Create* à l'entrée *geometry*. Les points sont maintenant affichés dans la fenêtre Dynamo. Ils représentent l'intersection de chaque courbe avec les plans définis.
+> 1. À l'aide du nœud *Geometry.Intersect* (notez la liaison Produit cartésien), connectez le nœud *Curve.PlaneAtParameter* à l'entrée *entity* du nœud *Geometry.Intersect*. Connectez le nœud principal *List.Create* à l'entrée *geometry*. Les points sont maintenant affichés dans la fenêtre Dynamo. Ils représentent l'intersection de chaque courbe avec les plans définis.
 
 ![Exercice](images/8-4/Exercise/04.jpg)
 

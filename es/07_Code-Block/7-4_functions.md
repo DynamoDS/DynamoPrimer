@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![Ejercicio](images/7-4/Exercise/03.jpg)
 
-> 1. En el nodo *Point.ByCoordinates*, al cambiar el encaje de *Más corto* a *Producto vectorial*, creamos una rejilla de puntos. La función *sphereByZ* sigue estando totalmente activa, por lo que todos los puntos crean esferas con radios basados en valores Z.
+> 1. En el nodo *Point.ByCoordinates*, al cambiar el encaje de *Más corto* a *Producto cartesiano*, creamos una rejilla de puntos. La función *sphereByZ* sigue estando totalmente activa, por lo que todos los puntos crean esferas con radios basados en valores Z.
 
 ![Ejercicio](images/7-4/Exercise/02.jpg)
 

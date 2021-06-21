@@ -75,7 +75,7 @@ O exercício abaixo detalhará como o Dynamo referencia os dados para a criaçã
 
 > Um plano é uma parte abstrata da geometria, representando um espaço bidimensional infinito. Os planos são excelentes para contorno e interseção, conforme configuramos nesta etapa.
 
-> 1. Usando o nó *Geometry.Intersect* (observe a amarra do produto transversal), conecte *Curve.PlaneAtParameter* à entrada *entidade* do nó *Geometry.Intersect*. Conecte o nó principal *List.Create* à entrada de *geometria*. Agora, vemos pontos na viewport do Dynamo que representam a interseção de cada curva com os planos definidos.
+> 1. Usando o nó *Geometry.Intersect* (observe a amarra do produto cartesiano), conecte *Curve.PlaneAtParameter* à entrada *entidade* do nó *Geometry.Intersect*. Conecte o nó principal *List.Create* à entrada de *geometria*. Agora, vemos pontos na viewport do Dynamo que representam a interseção de cada curva com os planos definidos.
 
 ![Exercício](images/8-4/Exercise/04.jpg)
 

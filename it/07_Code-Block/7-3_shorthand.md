@@ -114,7 +114,7 @@ In questo esercizio, si mostreranno le nuove competenze in termini di sintassi a
 ![Esercizio](images/7-3/Exercise/12.jpg)
 
 > 1. Definire un intervallo compreso tra 0 e 1 con 50 divisioni digitando ```0..1..#50``` in un blocco di codice.
-2. Collegare l'intervallo a *Surface.PointAtParameter*, che utilizza i valori *u* e *v* compresi tra 0 e 1 sulla superficie. Ricordarsi di modificare *Collegamento* in *Globale* facendo clic con il pulsante destro del mouse sul nodo *Surface.PointAtParameter*.
+2. Collegare l'intervallo a *Surface.PointAtParameter*, che utilizza i valori *u* e *v* compresi tra 0 e 1 sulla superficie. Ricordarsi di modificare *Collegamento* in *Prodotto cartesiano* facendo clic con il pulsante destro del mouse sul nodo *Surface.PointAtParameter*.
 
 ![Esercizio](images/7-3/Exercise/11.jpg)
 

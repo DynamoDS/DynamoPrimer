@@ -114,7 +114,7 @@ W tym ćwiczeniu przećwiczymy nowe umiejętności dotyczące krótkiej składni
 ![Ćwiczenie](images/7-3/Exercise/12.jpg)
 
 > 1. Zdefiniuj zakres od 0 do 1 z 50 podziałami, wpisując ```0..1..#50``` w bloku kodu.
-2. Połącz ten zakres z węzłem *Surface.PointAtParameter*, który pobiera wartości *u* i *v* z zakresu od 0 do 1 na powierzchni. Pamiętaj, aby zmienić *Skratowanie* na *Iloczyn wektorowy*, klikając prawym przyciskiem myszy węzeł *Surface.PointAtParameter*.
+2. Połącz ten zakres z węzłem *Surface.PointAtParameter*, który pobiera wartości *u* i *v* z zakresu od 0 do 1 na powierzchni. Pamiętaj, aby zmienić *Skratowanie* na *Iloczyn kartezjański*, klikając prawym przyciskiem myszy węzeł *Surface.PointAtParameter*.
 
 ![Ćwiczenie](images/7-3/Exercise/11.jpg)
 

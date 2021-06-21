@@ -69,7 +69,7 @@ Metody typu Query pobierają właściwość obiektu. Ponieważ sam obiekt jest e
 Skratowanie w przypadku węzłów i bloków kodu nieco się różni. W przypadku węzłów użytkownik klika prawym przyciskiem myszy węzeł i wybiera opcję skratowania, którą chce zastosować. W bloku kodu użytkownik ma znacznie większą kontrolę nad strukturą danych. W krótkiej składni metody w bloku kodu wykorzystuje się *prowadnice replikacji* do określenia, w jaki sposób połączyć w pary kilka jednowymiarowych list. Numery w nawiasach ostrych „<>” definiują hierarchię wynikowej listy zagnieżdżonej: <1>,<2>,<3> i tak dalej. 
 ![Skratowanie](images/7-2/lacing.jpg)
 
-> 1. W tym przykładzie użyjemy krótkiej składni do zdefiniowania dwóch zakresów (więcej informacji na temat krótkiej składni przedstawiono w następnej sekcji tego rozdziału). W skrócie ```0..1;``` odpowiada składni ```{0,1}```, a ```–3..–7 ```odpowiada składni ```{–3,–4,–5,–6,–7}```. W wyniku tej operacji zostaną zwrócone listy 2 wartości x i 5 wartości y. Jeśli nie użyjemy prowadnic replikacji z tymi niedopasowanymi listami, otrzymamy listę dwóch punktów, ponieważ tyle wynosi długość najkrótszej listy. Za pomocą prowadnic replikacji można znaleźć wszystkie możliwe kombinacje 2 i 5 współrzędnych (czyli **iloczyn wektorowy**).
+> 1. W tym przykładzie użyjemy krótkiej składni do zdefiniowania dwóch zakresów (więcej informacji na temat krótkiej składni przedstawiono w następnej sekcji tego rozdziału). W skrócie ```0..1;``` odpowiada składni ```{0,1}```, a ```–3..–7 ```odpowiada składni ```{–3,–4,–5,–6,–7}```. W wyniku tej operacji zostaną zwrócone listy 2 wartości x i 5 wartości y. Jeśli nie użyjemy prowadnic replikacji z tymi niedopasowanymi listami, otrzymamy listę dwóch punktów, ponieważ tyle wynosi długość najkrótszej listy. Za pomocą prowadnic replikacji można znaleźć wszystkie możliwe kombinacje 2 i 5 współrzędnych (czyli **Iloczyn kartezjański**).
 2. Użycie składni ```Point.ByCoordinates(x_vals<1>,y_vals<2>);``` umożliwia uzyskanie **dwóch** list, z których każda zawiera **pięć** elementów.
 3. Użycie składni ```Point.ByCoordinates(x_vals<2>,y_vals<1>);``` umożliwia uzyskanie **pięciu** list, z których każda zawiera **dwa** elementy.
 
@@ -89,7 +89,7 @@ Aby pokazać możliwości bloków kodu, przekształcimy istniejącą definicję 
 
 > Rozpocznij od odtworzenia definicji z powyższego rysunku (lub otwarcia pliku przykładowego).
 
-> 1. Zwróć uwagę, że skratowanie węzła *Point.ByCoordinates* zostało ustawione na *iloczyn wektorowy*.
+> 1. Zwróć uwagę, że skratowanie węzła *Point.ByCoordinates* zostało ustawione na *Iloczyn kartezjański*.
 2. Każdy punkt na siatce jest przesunięty w górę w kierunku Z na podstawie odległości od punktu odniesienia.
 3. Po odtworzeniu i pogrubieniu powierzchni w geometrii powstaje wypukłość zależna od odległości od punktu odniesienia.
 
@@ -105,7 +105,7 @@ Aby pokazać możliwości bloków kodu, przekształcimy istniejącą definicję 
 
 ![Ćwiczenie](images/7-2/Exercise/05.jpg)
 
-> 1. Teraz chcemy utworzyć siatkę punktów na podstawie sekwencji *coordsXY*. W tym celu chcemy użyć składni *Point.ByCoordinates*, ale musimy też utworzyć *iloczyn wektorowy* listy w taki sam sposób, jak w skrypcie wizualnym. W tym celu należy wpisać wiersz kodu: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Nawiasy ostre oznaczają odniesienie do iloczynu wektorowego.
+> 1. Teraz chcemy utworzyć siatkę punktów na podstawie sekwencji *coordsXY*. W tym celu chcemy użyć składni *Point.ByCoordinates*, ale musimy też utworzyć *Iloczyn kartezjański* listy w taki sam sposób, jak w skrypcie wizualnym. W tym celu należy wpisać wiersz kodu: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Nawiasy ostre oznaczają odniesienie do iloczynu kartezjańskiego.
 2. W węźle *Watch 3D* widać, że na siatce dodatku Dynamo znajduje się siatka punktów.
 
 ![Ćwiczenie](images/7-2/Exercise/04.jpg)

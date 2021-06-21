@@ -75,7 +75,7 @@ Níže uvedené cvičení znázorňuje, jak aplikace Dynamo odkazuje na data pro
 
 > Rovina je abstraktní část geometrie, která představuje dvourozměrný prostor, který je nekonečný. Roviny jsou skvělé k tvorbě obrysů a protínání, což provedeme i v tomto kroku.
 
-> 1. Pomocí uzlu *Geometry.Intersect* (všimněte si vázání vektorového součinu) připojte uzel *Curve.PlaneAtParameter* do vstupu *entity* uzlu *Geometry.Intersect*. Připojte hlavní uzel *List.Create* ke vstupu *geometry*. Nyní jsou ve výřezu aplikace Dynamo zobrazeny body, které představují průsečík každé křivky s definovanými rovinami.
+> 1. Pomocí uzlu *Geometry.Intersect* (všimněte si vázání kartézského součinu) připojte uzel *Curve.PlaneAtParameter* do vstupu *entity* uzlu *Geometry.Intersect*. Připojte hlavní uzel *List.Create* ke vstupu *geometry*. Nyní jsou ve výřezu aplikace Dynamo zobrazeny body, které představují průsečík každé křivky s definovanými rovinami.
 
 ![Cvičení](images/8-4/Exercise/04.jpg)
 

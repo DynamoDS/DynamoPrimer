@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![Exercise](images/7-4/Exercise/03.jpg)
 
-> 1. Indem Sie im *Point.ByCoordinates*-Block die Vergitterung von *Kürzeste* in *Kreuzprodukt* ändern, erstellen Sie ein Raster aus Punkten. Die *sphereByZ*-Funktion ist weiterhin uneingeschränkt wirksam, d. h., für alle Punkte werden Kugeln mit von ihren z-Werten abhängigen Radien erstellt.
+> 1. Indem Sie im *Point.ByCoordinates*-Block die Vergitterung von *Kürzeste* in *Kartesisches Produkt* ändern, erstellen Sie ein Raster aus Punkten. Die *sphereByZ*-Funktion ist weiterhin uneingeschränkt wirksam, d. h., für alle Punkte werden Kugeln mit von ihren z-Werten abhängigen Radien erstellt.
 
 ![Exercise](images/7-4/Exercise/02.jpg)
 

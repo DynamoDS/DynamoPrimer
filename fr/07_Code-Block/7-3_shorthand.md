@@ -114,7 +114,7 @@ Dans cet exercice, vous allez perfectionner vos nouvelles compétences en concev
 ![Exercice](images/7-3/Exercise/12.jpg)
 
 > 1. Définissez un intervalle compris entre 0 et 1 et 50 divisions en tapant ```0..1..#50``` dans un bloc de code.
-2. Connectez l'intervalle à *Surface.PointAtParameter*, qui prend les valeurs *u* et *v* entre 0 et 1 sur la surface. Pensez à définir la *combinaison* sur *Produit vectoriel* en cliquant avec le bouton droit de la souris sur le nœud *Surface.PointAtParameter*.
+2. Connectez l'intervalle à *Surface.PointAtParameter*, qui prend les valeurs *u* et *v* entre 0 et 1 sur la surface. Pensez à définir la *liaison* sur *Produit cartésien* en cliquant avec le bouton droit de la souris sur le nœud *Surface.PointAtParameter*.
 
 ![Exercice](images/7-3/Exercise/11.jpg)
 

@@ -57,7 +57,7 @@ Como puede ver, existen diferentes métodos para dibujar líneas entre estos con
 
 > Descargue el archivo de ejemplo que acompaña a este ejercicio (haga clic con el botón derecho y seleccione "Guardar enlace como..."): [Lacing.dyn](datasets/6-1/Lacing.dyn). En el Apéndice se incluye una lista completa de los archivos de ejemplo.
 
-Para realizar una demostración de las operaciones de encaje desarrolladas a continuación, utilizaremos este archivo base para definir la lista más corta, la más larga y el producto vectorial.
+Para realizar una demostración de las operaciones de encaje desarrolladas a continuación, utilizaremos este archivo base para definir la lista más corta, la más larga y el producto cartesiano.
 
 ![Ejemplos de entrada](images/6-1/lacing.jpg)
 
@@ -83,13 +83,13 @@ El algoritmo "Lista más larga" sigue conectando entradas, reutilizando elemento
 
 > Al cambiar el encaje a la *lista más larga*, obtenemos una línea diagonal que se extiende verticalmente. Con el mismo método que el diagrama conceptual, el último elemento de la lista de 5 elementos se repetirá para alcanzar la longitud de la lista más larga.
 
-#### Producto vectorial
+#### Producto cartesiano
 
-Por último, el método "Producto vectorial" hace todas las conexiones posibles:
+Por último, el método "Producto cartesiano" hace todas las conexiones posibles:
 
 ![Ejemplos de entrada](images/6-1/crossProductDiagram.jpg)
 
 ![Ejemplos de entrada](images/6-1/crossProduct.jpg)
 
-> Al cambiar el encaje a *Producto vectorial*, obtenemos todas las combinaciones entre cada lista, lo que nos proporciona una rejilla de puntos de 5 x 10. Esta es una estructura de datos equivalente al producto vectorial que se muestra en el diagrama de conceptos anterior, excepto que nuestros datos son ahora una lista de listas. Al conectar una PolyCurve, podemos ver que cada lista está definida por su valor X, lo que nos da una fila de líneas verticales.
+> Al cambiar el encaje a *Producto cartesiano*, obtenemos todas las combinaciones entre cada lista, lo que nos proporciona una rejilla de puntos de 5 x 10. Esta es una estructura de datos equivalente al producto cartesiano que se muestra en el diagrama de conceptos anterior, excepto que nuestros datos son ahora una lista de listas. Al conectar una PolyCurve, podemos ver que cada lista está definida por su valor X, lo que nos da una fila de líneas verticales.
 

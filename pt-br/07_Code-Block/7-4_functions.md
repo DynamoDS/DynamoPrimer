@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![Exercício](images/7-4/Exercise/03.jpg)
 
-> 1. No nó *Point.ByCoordinates*, alterando a lacuna de *Shortest List* para *Cross Product*, criamos uma grade de pontos. A função *sphereByZ* ainda está em pleno efeito, de modo que todos os pontos criam esferas com raios com base em valores Z.
+> 1. No nó *Point.ByCoordinates*, alterando a lacuna de *Lista mais curta* para *Produto cartesiano*, criamos uma grade de pontos. A função *sphereByZ* ainda está em pleno efeito, de modo que todos os pontos criam esferas com raios com base em valores Z.
 
 ![Exercício](images/7-4/Exercise/02.jpg)
 

@@ -69,7 +69,7 @@ I metodi di tipo Query consentono di ottenere una proprietà di un oggetto. Poic
 Il collegamento con i nodi è piuttosto diverso dal collegamento con il blocco di codice. Con i nodi, l'utente fa clic con il pulsante destro del mouse sul nodo e seleziona l'opzione Collegamento da eseguire. Con il blocco di codice, l'utente dispone di un maggiore controllo sulla modalità di strutturazione dei dati. Il metodo abbreviato del blocco di codice utilizza *guide di replica* per impostare il modo in cui occorre associare diversi elenchi unidimensionali. I numeri tra parentesi angolari "<>" definiscono la gerarchia dell'elenco nidificato risultante: <1>,<2>,<3> e così via. 
 ![Collegamento](images/7-2/lacing.jpg)
 
-> 1. In questo esempio, si utilizza un metodo abbreviato per definire due intervalli (ulteriori informazioni sul metodo abbreviato saranno fornite nella sezione seguente di questo capitolo). In breve, ```0..1;``` è equivalente a ```{0,1}``` e ```-3..-7```è equivalente a ```{-3,-4,-5,-6,-7}```. Il risultato offre un elenco di 2 valori X e 5 valori Y. Se non si utilizzano le guide di replica con questi elenchi non corrispondenti, si ottiene un elenco di due punti, che rappresenta la lunghezza dell'elenco più breve. Utilizzando le guide di replica, è possibile trovare tutte le combinazioni possibili di 2 e 5 coordinate (o un collegamento **Globale**).
+> 1. In questo esempio, si utilizza un metodo abbreviato per definire due intervalli (ulteriori informazioni sul metodo abbreviato saranno fornite nella sezione seguente di questo capitolo). In breve, ```0..1;``` è equivalente a ```{0,1}``` e ```-3..-7```è equivalente a ```{-3,-4,-5,-6,-7}```. Il risultato offre un elenco di 2 valori X e 5 valori Y. Se non si utilizzano le guide di replica con questi elenchi non corrispondenti, si ottiene un elenco di due punti, che rappresenta la lunghezza dell'elenco più breve. Utilizzando le guide di replica, è possibile trovare tutte le combinazioni possibili di 2 e 5 coordinate (o **Prodotto cartesiano**).
 2. Utilizzando la sintassi ```Point.ByCoordinates(x_vals<1>,y_vals<2>);``` si ottengono **due** elenchi con **cinque** voci in ogni elenco.
 3. Utilizzando la sintassi ```Point.ByCoordinates(x_vals<2>,y_vals<1>);``` si ottengono **cinque** elenchi con **due** voci in ogni elenco.
 
@@ -89,7 +89,7 @@ Per mostrare l'efficacia del blocco di codice, verrà convertita una definizione
 
 > Iniziare ricreando la definizione nell'immagine riportata sopra (o aprendo il file di esempio).
 
-> 1. Notare che il collegamento in *Point.ByCoordinates* è stato impostato su *Globale*.
+> 1. Notare che il collegamento in *Point.ByCoordinates* è stato impostato su *Prodotto cartesiano*.
 2. Ogni punto di una griglia viene spostato verso l'alto nella direzione Z in base alla sua distanza dal punto di riferimento.
 3. Viene ricreata e ispessita una superficie, creando una bombatura nella geometria rispetto alla distanza dal punto di riferimento.
 
@@ -105,7 +105,7 @@ Per mostrare l'efficacia del blocco di codice, verrà convertita una definizione
 
 ![Esercizio](images/7-2/Exercise/05.jpg)
 
-> 1. A questo punto, si desidera creare una griglia di punti dalla sequenza *coordsXY*. A tale scopo, si desidera utilizzare la sintassi di *Point.ByCoordinates*, ma è anche necessario avviare un collegamento *Globale* dell'elenco nello stesso modo di quello utilizzato nello script visivo. A tale scopo, digitare la riga: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Le parentesi angolari indicano il riferimento Globale.
+> 1. A questo punto, si desidera creare una griglia di punti dalla sequenza *coordsXY*. A tale scopo, si desidera utilizzare la sintassi di *Point.ByCoordinates*, ma è anche necessario avviare un *Prodotto cartesiano* dell'elenco nello stesso modo di quello utilizzato nello script visivo. A tale scopo, digitare la riga: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Le parentesi angolari indicano il riferimento Prodotto cartesiano.
 2. Notare nel nodo *Watch3D* che è presente una griglia di punti nella griglia di Dynamo.
 
 ![Esercizio](images/7-2/Exercise/04.jpg)

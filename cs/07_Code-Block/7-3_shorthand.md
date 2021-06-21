@@ -114,7 +114,7 @@ V tomto cvičení vyzkoušíme naše nové dovednosti zápisu a vytvoříme zá
 ![Cvičení](images/7-3/Exercise/12.jpg)
 
 > 1. Definujte rozsah mezi 0 a 1 s 50 děleními zadáním hodnoty ```0..1..#50``` do bloku kódu.
-2. Spojte rozsah s hodnotami *Surface.PointAtParameter*, které přebírají hodnoty *u* a *v* mezi 0 a 1 napříč povrchem. Nezapomeňte změnit hodnotu *Lacing* na *Cross Product* kliknutím pravým tlačítkem na uzel *Surface.PointAtParameter*.
+2. Spojte rozsah s hodnotami *Surface.PointAtParameter*, které přebírají hodnoty *u* a *v* mezi 0 a 1 napříč povrchem. Nezapomeňte změnit hodnotu *Vázání* na *Kartézský součin* kliknutím pravým tlačítkem na uzel *Surface.PointAtParameter*.
 
 ![Cvičení](images/7-3/Exercise/11.jpg)
 

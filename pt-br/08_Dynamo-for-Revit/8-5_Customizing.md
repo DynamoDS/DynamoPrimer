@@ -40,7 +40,7 @@ Este exercício expandirá as técnicas demonstradas na seção anterior. Neste 
 ![Exercício](images/8-5/Exercise/01.jpg)
 
 > 1. Usando o *bloco de código*, defina um intervalo de 0 a 1 com 10 valores uniformemente espaçados: ```0..1..#10;```
-2. Conecte o *bloco de código* às entradas *u *e *v* de um nó *Surface.PointAtParameter* e conecte o nó *Surface.ByLoft* à entrada *superfície*. Clique com o botão direito do mouse no nó e altere a *amarra* para *Produto transversal*. Isso fornecerá uma grade de pontos na superfície.
+2. Conecte o *bloco de código* às entradas *u* e *v* de um nó *Surface.PointAtParameter* e conecte o nó *Surface.ByLoft* à entrada *superfície*. Clique com o botão direito do mouse no nó e altere a *amarra* para *Produto cartesiano*. Isso fornecerá uma grade de pontos na superfície.
 
 Essa grade de pontos serve como os pontos de controle para uma superfície definida parametricamente. Queremos extrair as posições “u” e “v” de cada um desses pontos para que possamos conectá-los em uma fórmula paramétrica e manter a mesma estrutura de dados. É possível fazer isso consultando as localizações dos parâmetros dos pontos que acabamos de criar.
 

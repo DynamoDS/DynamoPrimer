@@ -69,7 +69,7 @@ Os métodos de tipo consulta obtêm uma propriedade de um objeto. Como o própri
 A amarra com nós é um pouco diferente da amarra com bloco de código. Com nós, o usuário clica com o botão direito do mouse no nó e seleciona a opção de amarra a ser executada. Com o bloco de código, o usuário tem muito mais controle sobre como os dados são estruturados. O método abreviado do bloco de código usa *guias de replicação* para definir como várias listas unidimensionais devem ser emparelhadas. Os números entre colchetes angulares “<>” definem a hierarquia da lista aninhada resultante: <1>,<2>,<3> etc. 
 ![Amarra](images/7-2/lacing.jpg)
 
-> 1. Neste exemplo, usaremos uma abreviação para definir duas faixas (poderá obter mais informações sobre a abreviação na seção seguinte deste capítulo). Em suma, ```0..1;``` é equivalente a ```{0,1}``` e ```-3..-7``` é equivalente a ```{-3,-4,-5,-6,-7}```. O resultado nos fornece listas de dois valores x e cinco valores y. Se não usarmos guias de replicação com estas listas não coincidentes, obteremos uma lista de dois pontos, que é o comprimento da lista mais curta. Usando guias de replicação, podemos encontrar todas as possíveis combinações de coordenadas 2 e 5 (ou um **Produto transversal**).
+> 1. Neste exemplo, usaremos uma abreviação para definir duas faixas (poderá obter mais informações sobre a abreviação na seção seguinte deste capítulo). Em suma, ```0..1;``` é equivalente a ```{0,1}``` e ```-3..-7``` é equivalente a ```{-3,-4,-5,-6,-7}```. O resultado nos fornece listas de dois valores x e cinco valores y. Se não usarmos guias de replicação com estas listas não coincidentes, obteremos uma lista de dois pontos, que é o comprimento da lista mais curta. Usando guias de replicação, podemos encontrar todas as possíveis combinações de coordenadas 2 e 5 (ou um **Produto cartesiano**).
 2. Usando a sintaxe ```Point.ByCoordinates(x_vals<1>,y_vals<2>);```, obtemos **duas** listas com **cinco** itens em cada lista.
 3. Usando a sintaxe ```Point.ByCoordinates(x_vals<2>,y_vals<1>);```, obtemos **cinco** listas com **dois** itens em cada lista.
 
@@ -89,7 +89,7 @@ Para mostrar as capacidades do bloco de código, vamos converter uma definição
 
 > Comece recriando a definição na imagem acima (ou abrindo o arquivo de amostra).
 
-> 1. Observe que a amarra em *Point.ByCoordinates* foi definida como *Produto transversal*.
+> 1. Observe que a amarra em *Point.ByCoordinates* foi definida como *Produto cartesiano*.
 2. Cada ponto em uma grade é movido para cima na direção Z com base em sua distância até o ponto de referência.
 3. É recriada uma superfície e tornada mais espessa, criando uma convexidade na geometria relacionada à distância até o ponto de referência.
 
@@ -105,7 +105,7 @@ Para mostrar as capacidades do bloco de código, vamos converter uma definição
 
 ![Exercício](images/7-2/Exercise/05.jpg)
 
-> 1. Agora, queremos criar uma grade de pontos com base na sequência *coordsXY*. Para fazer isso, queremos usar a sintaxe *Point.ByCoordinates*, mas também precisamos iniciar um *Produto transversal* da lista da mesma maneira que fizemos no script visual. Para fazer isso, digitamos a linha: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Os colchetes angulares indicam a referência do produto transversal.
+> 1. Agora, queremos criar uma grade de pontos com base na sequência *coordsXY*. Para fazer isso, queremos usar a sintaxe *Point.ByCoordinates*, mas também precisamos iniciar um *Produto cartesiano* da lista da mesma maneira que fizemos no script visual. Para fazer isso, digitamos a linha: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Os colchetes angulares indicam a referência do produto cartesiano.
 2. Observe no nó *Watch3D* que temos uma grade de pontos através da grade do Dynamo.
 
 ![Exercício](images/7-2/Exercise/04.jpg)

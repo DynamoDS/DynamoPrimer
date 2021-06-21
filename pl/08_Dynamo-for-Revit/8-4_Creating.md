@@ -75,7 +75,7 @@ W poniższym ćwiczeniu omówimy sposób, w jaki dodatek Dynamo odnosi się do d
 
 > Płaszczyzna jest abstrakcyjną częścią geometrii, która reprezentuje nieskończoną przestrzeń dwuwymiarową. Płaszczyzny ułatwią nam tworzenie warstwic i przecięć potrzebnych w tym kroku.
 
-> 1. Przy użyciu węzła *Geometry.Intersect* (zauważ skratowanie oparte na iloczynie wektorowym) połącz węzeł *Curve.PlaneAtParameter* z wejściem *entity* (element) węzła *Geometry.Intersect*. Połącz główny węzeł *List.Create* z wejściem *geometry* (geometria). W rzutni dodatku Dynamo widać teraz punkty reprezentujące przecięcia poszczególnych krzywych ze zdefiniowanymi płaszczyznami.
+> 1. Przy użyciu węzła *Geometry.Intersect* (zauważ skratowanie oparte na iloczynie kartezjańskim) połącz węzeł *Curve.PlaneAtParameter* z wejściem *entity* (element) węzła *Geometry.Intersect*. Połącz główny węzeł *List.Create* z wejściem *geometry* (geometria). W rzutni dodatku Dynamo widać teraz punkty reprezentujące przecięcia poszczególnych krzywych ze zdefiniowanymi płaszczyznami.
 
 ![Ćwiczenie](images/8-4/Exercise/04.jpg)
 

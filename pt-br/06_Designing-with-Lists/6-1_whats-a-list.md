@@ -57,7 +57,7 @@ Como você pode ver, há diferentes maneiras de desenhar linhas entre estes conj
 
 > Faça o download do arquivo de exemplo que acompanha este exercício (clique com o botão direito do mouse e selecione “Salvar link como...”): [Lacing.dyn](datasets/6-1/Lacing.dyn). É possível encontrar uma lista completa de arquivos de exemplo no Apêndice.
 
-Para demonstrar as operações de amarra abaixo, vamos usar esse arquivo base para definir a lista mais curta, a lista mais longa e o produto transversal.
+Para demonstrar as operações de amarra abaixo, vamos usar esse arquivo base para definir a lista mais curta, a lista mais longa e o produto cartesiano.
 
 ![Exemplos de entrada](images/6-1/lacing.jpg)
 
@@ -83,13 +83,13 @@ O algoritmo “Lista mais longa” continua conectando entradas, reutilizando el
 
 > Ao alterar a amarra para *lista mais longa*, obtemos uma linha diagonal que se estende verticalmente. Pelo mesmo método que o diagrama conceitual, o último item na lista de cinco itens será repetido para alcançar o comprimento da lista mais longa.
 
-#### Produto transversal
+#### Produto cartesiano
 
-Por fim, o método “Produto transversal” torna todas as conexões possíveis:
+Por fim, o método “Produto cartesiano” torna todas as conexões possíveis:
 
 ![Exemplos de entrada](images/6-1/crossProductDiagram.jpg)
 
 ![Exemplos de entrada](images/6-1/crossProduct.jpg)
 
-> Ao alterar a amarra para *Produto transversal*, temos todas as combinações entre cada lista, dando-nos uma grade de pontos 5x10. Essa é uma estrutura de dados equivalente ao produto transversal, como mostrado no diagrama do conceito acima, exceto que nossos dados agora são uma lista de listas. Ao conectar uma policurva, podemos ver que cada lista é definida pelo seu valor X, dando-nos uma linha de linhas verticais.
+> Ao alterar a amarra para *Produto cartesiano*, temos todas as combinações entre cada lista, dando-nos uma grade de pontos 5x10. Essa é uma estrutura de dados equivalente ao produto cartesiano, como mostrado no diagrama do conceito acima, exceto que nossos dados agora são uma lista de listas. Ao conectar uma policurva, podemos ver que cada lista é definida pelo seu valor X, dando-nos uma linha de linhas verticais.
 

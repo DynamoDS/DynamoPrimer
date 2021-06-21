@@ -57,7 +57,7 @@ Jak widać, istnieją różne sposoby rysowania linii między tymi zbiorami punk
 
 > Pobierz plik przykładowy do tego ćwiczenia (kliknij prawym przyciskiem myszy i wybierz opcję Zapisz element docelowy jako): [Lacing.dyn](datasets/6-1/Lacing.dyn). Pełna lista plików przykładowych znajduje się w Załączniku.
 
-Aby zademonstrować poniżej operacje skratowania, użyjemy tego pliku bazowego do zdefiniowania najkrótszej listy, najdłuższej listy i iloczynu wektorowego.
+Aby zademonstrować poniżej operacje skratowania, użyjemy tego pliku bazowego do zdefiniowania najkrótszej listy, najdłuższej listy i iloczynu kartezjańskiego.
 
 ![Przykłady danych wejściowych](images/6-1/lacing.jpg)
 
@@ -83,13 +83,13 @@ Algorytm „najdłuższa lista” kontynuuje łączenie elementów wejściowych 
 
 > Po zmianie skratowania na opcję *najdłuższa lista* otrzymujemy linię ukośną, która dalej przebiega pionowo. Tak samo, jak na diagramie koncepcyjnym, ostatni element z listy 5 elementów będzie używany ponownie do momentu osiągnięcia długości dłuższej listy.
 
-#### Iloczyn wektorowy
+#### Iloczyn kartezjański
 
-Metoda iloczynu wektorowego służy do wykonania wszystkich możliwych połączeń:
+Metoda Iloczynu kartezjańskiego służy do wykonania wszystkich możliwych połączeń:
 
 ![Przykłady danych wejściowych](images/6-1/crossProductDiagram.jpg)
 
 ![Przykłady danych wejściowych](images/6-1/crossProduct.jpg)
 
-> Po zmianie opcji skratowania na *iloczyn wektorowy* otrzymujemy wszystkie kombinacje wszystkich list, co daje siatkę punktów 5x10. Jest to struktura danych równoważna wobec iloczynu wektorowego pokazanego na powyższym diagramie koncepcyjnym, z tą różnicą, że dane stanowią teraz listę list. Po połączeniu w krzywą PolyCurve widzimy, że każda lista jest zdefiniowana przez wartość X, co daje rząd pionowych linii.
+> Po zmianie opcji skratowania na *Iloczyn kartezjański* otrzymujemy wszystkie kombinacje wszystkich list, co daje siatkę punktów 5x10. Jest to struktura danych równoważna wobec iloczynu kartezjańskiego pokazanego na powyższym diagramie koncepcyjnym, z tą różnicą, że dane stanowią teraz listę list. Po połączeniu w krzywą PolyCurve widzimy, że każda lista jest zdefiniowana przez wartość X, co daje rząd pionowych linii.
 

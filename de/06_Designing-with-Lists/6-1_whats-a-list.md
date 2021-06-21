@@ -57,7 +57,7 @@ Es ist leicht zu erkennen, dass es mehrere Möglichkeiten gibt, Linien zwischen 
 
 > Laden Sie die zu dieser Übungslektion gehörige Beispieldatei herunter (durch Rechtsklicken und Wahl der Option Save Link As): [Lacing.dyn](datasets/6-1/Lacing.dyn). Eine vollständige Liste der Beispieldateien finden Sie im Anhang.
 
-Zur Demonstration der unten beschriebenen Vergitterungsoptionen werden anhand dieser Basisdatei die kürzeste und die längste Liste sowie das Kreuzprodukt definiert.
+Zur Demonstration der unten beschriebenen Vergitterungsoptionen werden anhand dieser Basisdatei die kürzeste und die längste Liste sowie das kartesische Produkt definiert.
 
 ![Input Examples](images/6-1/lacing.jpg)
 
@@ -83,13 +83,13 @@ Der Algorithmus "Längste Liste" verbindet weiterhin Eingaben und verwendet gege
 
 > Mit der Vergitterung *Längste Liste* erhalten Sie eine diagonale Linie, die vertikal endet. Der letzte Eintrag in der 5 Einträge langen Liste wird genau wie im Übersichtsdiagramm so lange wiederholt, bis auch das Ende der längeren Liste erreicht ist.
 
-#### Kreuzprodukt
+#### Kartesisches Produkt
 
-Mit der Methode "Kreuzprodukt" werden sämtliche möglichen Verbindungen hergestellt.
+Mit der Methode "Kartesisches Produkt" werden sämtliche möglichen Verbindungen hergestellt.
 
 ![Input Examples](images/6-1/crossProductDiagram.jpg)
 
 ![Input Examples](images/6-1/crossProduct.jpg)
 
-> Bei der Vergitterung *Kreuzprodukt* erhalten Sie jede mögliche Kombination der beiden Listen. Dadurch entsteht ein Raster aus 5 x 10 Punkten. Diese Datenstruktur entspricht der Darstellung des Kreuzprodukts im Übersichtsdiagramm oben, allerdings wurden die Daten dabei in eine Liste von Listen umgewandelt. Durch Verbinden einer PolyCurve wird sichtbar, dass jede Liste durch ihren x-Wert definiert ist. Damit entsteht eine Reihe mit fünf vertikalen Linien.
+> Bei der Vergitterung *Kartesisches Produkt* erhalten Sie jede mögliche Kombination der beiden Listen. Dadurch entsteht ein Raster aus 5 x 10 Punkten. Diese Datenstruktur entspricht der Darstellung des Kartesischen Produkts im Übersichtsdiagramm oben, allerdings wurden die Daten dabei in eine Liste von Listen umgewandelt. Durch Verbinden einer PolyCurve wird sichtbar, dass jede Liste durch ihren x-Wert definiert ist. Damit entsteht eine Reihe mit fünf vertikalen Linien.
 

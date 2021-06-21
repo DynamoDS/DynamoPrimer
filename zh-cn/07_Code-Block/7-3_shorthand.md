@@ -114,7 +114,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 ![练习](images/7-3/Exercise/12.jpg)
 
 > 1. 通过在代码块中键入 ```0..1..#50```，定义一个介于 0 和 1 之间的范围（其中包含 50 个划分）。
-2. 将该范围连接到 *Surface.PointAtParameter*，该范围在曲面上提取介于 0 和 1 之间的 *u* 和 *v* 值。请记得通过在 *Surface.PointAtParameter* 节点上单击鼠标右键，将*“连缀”*更改为*“叉积”*。
+2. 将该范围连接到 *Surface.PointAtParameter*，该范围在曲面上提取介于 0 和 1 之间的 *u* 和 *v* 值。请记得通过在 *Surface.PointAtParameter* 节点上单击鼠标右键，将*“连缀”*更改为*“笛卡尔积”*。
 
 ![练习](images/7-3/Exercise/11.jpg)
 

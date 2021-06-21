@@ -75,7 +75,7 @@ Dynamo では、完全なパラメトリック コントロールを使用して
 
 > 平面はジオメトリの抽象的なピースであり、無限の 2 次元空間を表します。平面は輪郭や交差の作成に適しています。実際に行ってみましょう。
 
-> 1. *Geometry.Intersect* ノード(注: 外積レーシング)を使用して、*Curve.PlaneAtParameter* を *Geometry.Intersect* ノードの *entity* 入力に接続します。メインの *List.Create* ノードを *geometry* 入力に接続します。 Dynamo のビューポートには、設定した平面と各曲線の交点が表示されます。
+> 1. *Geometry.Intersect* ノード(注: 直積レーシング)を使用して、*Curve.PlaneAtParameter* を *Geometry.Intersect* ノードの *entity* 入力に接続します。メインの *List.Create* ノードを *geometry* 入力に接続します。 Dynamo のビューポートには、設定した平面と各曲線の交点が表示されます。
 
 ![演習](images/8-4/Exercise/04.jpg)
 

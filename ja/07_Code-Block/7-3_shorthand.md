@@ -114,7 +114,7 @@ img{display:block;margin-left: auto;   margin-right: auto }
 ![演習](images/7-3/Exercise/12.jpg)
 
 > 1. Code Block に ```0..1..#50``` と入力して、0 から 1 の範囲を 50 個に分割するように設定します。
-2. 範囲を *Surface.PointAtParameter* ノードに接続します。これは 0 から 1 の範囲内にある *u* と *v* の値を取得してサーフェス全体に設定します。 *Surface.PointAtParameter* ノードを右クリックし、*レーシング*を*外積*に変更します。
+2. 範囲を *Surface.PointAtParameter* ノードに接続します。これは 0 から 1 の範囲内にある *u* と *v* の値を取得してサーフェス全体に設定します。 *Surface.PointAtParameter* ノードを右クリックし、*レーシング*を[*直積*]に変更します。
 
 ![演習](images/7-3/Exercise/11.jpg)
 

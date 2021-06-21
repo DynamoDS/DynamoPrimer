@@ -69,7 +69,7 @@ Los métodos de consulta obtienen una propiedad de un objeto. Dado que el objeto
 El encaje con nodos es algo diferente al encaje con el bloque de código. Con los nodos, el usuario hace clic con el botón derecho en el nodo y selecciona la opción de encaje que se va a utilizar. Con el bloque de código, el usuario tiene mucho más control sobre la estructura de los datos. El método de abreviatura del bloque de código utiliza *guías de replicación* para definir cómo se deben emparejar varias listas unidimensionales. Los números entre corchetes angulares "<>" definen la jerarquía de la lista anidada resultante: <1>,<2>,<3>, etc. 
 ![Encaje](images/7-2/lacing.jpg)
 
-> 1. En este ejemplo, se utiliza un método abreviado para definir dos rangos (la siguiente sección de este capítulo contiene más información sobre el método abreviado). En síntesis, ```0..1;``` es equivalente a ```{0,1}``` y ```-3..-7```es equivalente a ```{-3,-4,-5,-6,-7}```. El resultado nos proporciona listas de 2 valores X y 5 valores Y. Si no utilizamos guías de replicación con estas listas no coincidentes, obtenemos una lista de dos puntos, que es la longitud de la lista más corta. Con las guías de replicación, podemos encontrar todas las combinaciones posibles de 2 y 5 coordenadas (o un **producto vectorial**).
+> 1. En este ejemplo, se utiliza un método abreviado para definir dos rangos (la siguiente sección de este capítulo contiene más información sobre el método abreviado). En síntesis, ```0..1;``` es equivalente a ```{0,1}``` y ```-3..-7```es equivalente a ```{-3,-4,-5,-6,-7}```. El resultado nos proporciona listas de 2 valores X y 5 valores Y. Si no utilizamos guías de replicación con estas listas no coincidentes, obtenemos una lista de dos puntos, que es la longitud de la lista más corta. Con las guías de replicación, podemos encontrar todas las combinaciones posibles de 2 y 5 coordenadas (o un **Producto cartesiano**).
 2. Utilizando la sintaxis ```Point.ByCoordinates(x_vals<1>,y_vals<2>);``` se obtienen **dos** listas con **cinco** elementos en cada lista.
 3. Utilizando la sintaxis ```Point.ByCoordinates(x_vals<2>,y_vals<1>);``` se obtienen **cinco** listas con **dos** elementos en cada lista.
 
@@ -89,7 +89,7 @@ Para mostrar la eficacia del bloque de código, vamos a convertir una definició
 
 > Comience volviendo a crear la definición de la imagen anterior (o abriendo el archivo de muestra).
 
-> 1. Observe que el encaje en *Point.ByCoordinates* se ha establecido en *Producto vectorial*.
+> 1. Observe que el encaje en *Point.ByCoordinates* se ha establecido en *Producto cartesiano*.
 2. Cada punto de una rejilla se desplaza hacia arriba en la dirección Z en función de su distancia con respecto al punto de referencia.
 3. Se vuelve a crear una superficie y se engrosa, lo cual genera una curvatura en la geometría relativa a la distancia con respecto al punto de referencia.
 
@@ -105,7 +105,7 @@ Para mostrar la eficacia del bloque de código, vamos a convertir una definició
 
 ![Ejercicio](images/7-2/Exercise/05.jpg)
 
-> 1. Ahora vamos a crear una rejilla de puntos a partir de la secuencia *coordsXY*. Para ello, vamos a utilizar la sintaxis *Point.ByCoordinates*, pero también debemos iniciar un *producto vectorial* de la lista de la misma forma que lo hicimos en la secuencia de comandos visual. Para hacerlo, se escribe la línea: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Los corchetes angulares indican la referencia del producto vectorial.
+> 1. Ahora vamos a crear una rejilla de puntos a partir de la secuencia *coordsXY*. Para ello, vamos a utilizar la sintaxis *Point.ByCoordinates*, pero también debemos iniciar un *Producto cartesiano* de la lista de la misma forma que lo hicimos en la secuencia de comandos visual. Para hacerlo, se escribe la línea: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Los corchetes angulares indican la referencia del producto cartesiano.
 2. Observe en el nodo *Watch3D* que tenemos una rejilla de puntos en la rejilla de Dynamo.
 
 ![Ejercicio](images/7-2/Exercise/04.jpg)

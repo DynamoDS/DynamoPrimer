@@ -68,7 +68,7 @@ len = c.Length;
 
 c punta ancora nella stessa direzione di a (1, 2, 3), anche se ora ha una lunghezza esattamente uguale a 5.
 
-Nella matematica vettoriale esistono due metodi di addizione che non hanno paralleli chiari con la matematica 1D, il prodotto incrociato e il prodotto punto. Il prodotto incrociato è un mezzo per generare un vettore ortogonale (a 90 gradi) rispetto a due vettori esistenti. Ad esempio, il prodotto incrociato degli assi x e y è l'asse x, sebbene i due vettori di input non debbano essere ortogonali tra loro. Viene calcolato un vettore del prodotto incrociato con il metodo *Cross*.
+Nella matematica vettoriale esistono due metodi di addizione che non hanno paralleli chiari con la matematica 1D, il prodotto vettoriale e il prodotto punto. Il prodotto vettoriale è un mezzo per generare un vettore ortogonale (a 90 gradi) rispetto a due vettori esistenti. Ad esempio, il prodotto vettoriale degli assi x e y è l'asse x, sebbene i due vettori di input non debbano essere ortogonali tra loro. Viene calcolato un vettore del prodotto vettoriale con il metodo *Cross*.
 
 ![](images/12-3/VectorMath_06.png)
 

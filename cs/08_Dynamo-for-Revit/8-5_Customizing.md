@@ -40,7 +40,7 @@ Toto cvičení rozšiřuje techniky znázorněné v předchozí části. V tom
 ![Cvičení](images/8-5/Exercise/01.jpg)
 
 > 1. Pomocí *bloku kódu* definujte rozsah od 0 do 1 s 10 rovnoměrně rozmístěnými hodnotami: ```0..1..#10;```
-2. Připojte *blok kódu* ke vstupům *u* a *v* uzlu *Surface.PointAtParameter* a připojte uzel *Surface.ByLoft* ke vstupu *surface*. Klikněte pravým tlačítkem na uzel a změňte *vázání* na *Vektorový součin*. Tím se vytvoří osnova bodů na povrchu.
+2. Připojte *blok kódu* ke vstupům *u* a *v* uzlu *Surface.PointAtParameter* a připojte uzel *Surface.ByLoft* ke vstupu *surface*. Klikněte pravým tlačítkem na uzel a změňte *vázání* na *Kartézský součin*. Tím se vytvoří osnova bodů na povrchu.
 
 Tato osnova bodů slouží jako řídicí body parametricky definovaného povrchu. Je třeba extrahovat pozice u a v každého z těchto bodů, aby bylo možné je připojit k parametrickému vzorci a zachovat stejnou datovou strukturu. Toho dosáhnete zadáním dotazu na umístění parametrů bodů, které jste právě vytvořili.
 

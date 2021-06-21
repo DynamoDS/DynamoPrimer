@@ -57,7 +57,7 @@ Come si può vedere, esistono diversi modi in cui è possibile disegnare linee t
 
 > Scaricare il file di esempio fornito con questo esercizio (fare clic con il pulsante destro del mouse e scegliere Salva link con nome...): [Lacing.dyn](datasets/6-1/Lacing.dyn). Un elenco completo di file di esempio è disponibile nell'Appendice.
 
-Per dimostrare le operazioni di collegamento riportate di seguito, si utilizzerà questo file di base per definire l'elenco più breve, l'elenco più lungo e il collegamento globale.
+Per dimostrare le operazioni di collegamento riportate di seguito, si utilizzerà questo file di base per definire l'elenco più breve, l'elenco più lungo e il prodotto cartesiano.
 
 ![Esempi di input](images/6-1/lacing.jpg)
 
@@ -83,13 +83,13 @@ L'algoritmo "l'elenco più lungo" continua a collegare gli input e a riutilizzar
 
 > Modificando il collegamento in *Più lungo*, si ottiene una linea diagonale che si estende verticalmente. Con lo stesso metodo del diagramma concettuale, l'ultima voce nell'elenco di 5 voci verrà ripetuta per raggiungere la lunghezza dell'elenco più lungo.
 
-#### Globale
+#### Prodotto cartesiano
 
-Infine, il metodo Globale rende possibili tutti i collegamenti:
+Infine, il metodo Prodotto cartesiano rende possibili tutti i collegamenti:
 
 ![Esempi di input](images/6-1/crossProductDiagram.jpg)
 
 ![Esempi di input](images/6-1/crossProduct.jpg)
 
-> Modificando il collegamento in *Globale*, si ottiene ogni combinazione tra ciascun elenco, fornendo una griglia di punti 5 x 10. Si tratta di una struttura di dati equivalente secondo il metodo globale come mostrato nel diagramma concettuale riportato sopra, tranne per il fatto che i dati sono ora un elenco di elenchi. Collegando una PolyCurve, è possibile vedere che ogni elenco viene definito dal relativo valore X, restituendo una riga di linee verticali.
+> Modificando il collegamento in *Prodotto cartesiano*, si ottiene ogni combinazione tra ciascun elenco, fornendo una griglia di punti 5 x 10. Si tratta di una struttura di dati equivalente per il prodotto cartesiano come mostrato nel diagramma concettuale riportato sopra, tranne per il fatto che i dati sono ora un elenco di elenchi. Collegando una PolyCurve, è possibile vedere che ogni elenco viene definito dal relativo valore X, restituendo una riga di linee verticali.
 

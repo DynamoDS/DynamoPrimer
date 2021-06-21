@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![练习](images/7-4/Exercise/03.jpg)
 
-> 1. 在 *Point.ByCoordinates* 节点上，通过将连缀从*“最短列表”*更改为*“叉积”*，我们将创建点栅格。*sphereByZ* 函数仍然完全有效，因此所有点都会使用基于 Z 值的半径创建球体。
+> 1. 在 *Point.ByCoordinates* 节点上，通过将连缀从*“最短列表”*更改为*“笛卡尔积”*，我们将创建点栅格。*sphereByZ* 函数仍然完全有效，因此所有点都会使用基于 Z 值的半径创建球体。
 
 ![练习](images/7-4/Exercise/02.jpg)
 

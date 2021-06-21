@@ -68,7 +68,7 @@ Abfragemethoden rufen eine Eigenschaft eines Objekts ab. Da das Objekt selbst di
 
 Die Funktionsweise der Vergitterung in Blöcken unterscheidet sich von derjenigen in Codeblöcken. In Blöcken klickt der Benutzer mit der rechten Maustaste auf den jeweiligen Block und wählt die benötigte Vergitterungsoption. Codeblöcke bieten wesentlich mehr Kontrolle über die Strukturierung der Daten. In der Codeblock-Kurzschreibweise wird die Zuordnung mehrerer eindimensionaler Listen mithilfe von *Replikationsanleitungen* festgelegt,. Die Hierarchie innerhalb der resultierenden verschachtelten Liste wird durch Zahlen in spitzen Klammern "< >" definiert:<1>,<2>,<3> usw. ![Lacing](images/7-2/lacing.jpg)</3></2></1>
 
-> 1. In diesem Beispiel werden mithilfe der Kurzschreibweise zwei Bereiche definiert. (Genauere Informationen zu Kurzschreibweisen erhalten Sie im folgenden Abschnitt dieses Kapitels.) Kurz gefasst: ```0..1;``` entspricht ```{0,1}``` und ```-3..-7```entspricht ```{-3,-4,-5,-6,-7}```. Als Ergebnis erhalten Sie Listen mit zwei x- und 5 y-Werten. Ohne Replikationsanleitungen wird aus diesen nicht übereinstimmenden Listen eine Liste mit zwei Punkten erstellt, was der Länge der kürzesten Liste entspricht. Mithilfe der Replikationsanleitungen werden sämtliche möglichen Kombinationen aus zwei und fünf Koordinaten (d. h. ihr **Kreuzprodukt**) ermittelt.
+> 1. In diesem Beispiel werden mithilfe der Kurzschreibweise zwei Bereiche definiert. (Genauere Informationen zu Kurzschreibweisen erhalten Sie im folgenden Abschnitt dieses Kapitels.) Kurz gefasst: ```0..1;``` entspricht ```{0,1}``` und ```-3..-7```entspricht ```{-3,-4,-5,-6,-7}```. Als Ergebnis erhalten Sie Listen mit zwei x- und 5 y-Werten. Ohne Replikationsanleitungen wird aus diesen nicht übereinstimmenden Listen eine Liste mit zwei Punkten erstellt, was der Länge der kürzesten Liste entspricht. Mithilfe der Replikationsanleitungen werden sämtliche möglichen Kombinationen aus zwei und fünf Koordinaten (d. h. ihr **Kartesisches Produkt**) ermittelt.
 2. Mit der Syntax ```Point.ByCoordinates(x_vals<1>,y_vals<2>);``` erhalten Sie **zwei** Listen mit je **fünf** Einträgen.
 3. Mit der Syntax ```Point.ByCoordinates(x_vals<2>,y_vals<1>);``` erhalten Sie **fünf** Listen mit je **zwei** Einträgen.
 
@@ -88,7 +88,7 @@ Zur Demonstration der Effizienz von Codeblock wird hier eine bestehende Definiti
 
 > Erstellen Sie zuerst die in der Abbildung oben gezeigte Definition (oder öffnen Sie die Beispieldatei).
 
-> 1. Als Vergitterung für *Point.ByCoordinates* wurde *Kreuzprodukt* eingestellt.
+> 1. Als Vergitterung für *Point.ByCoordinates* wurde *Kartesisches Produkt* eingestellt.
 2. Die einzelnen Punkte eines Rasters werden in Abhängigkeit von ihrer Entfernung zum Referenzpunkt in z-Richtung nach oben verschoben.
 3. Eine Oberfläche wird erstellt und verdickt, sodass die Geometrie relativ zur Entfernung vom Referenzpunkt ausgebeult wird.
 
@@ -104,7 +104,7 @@ Zur Demonstration der Effizienz von Codeblock wird hier eine bestehende Definiti
 
 ![Übungslektion](images/7-2/Exercise/05.jpg)
 
-> 1. Als Nächstes erstellen Sie ein Raster aus Punkten aus der *coordsXY*-Folge. Hierfür soll die Syntax *Point.ByCoordinates* verwendet werden, Sie müssen jedoch außerdem genau wie im visuellen Skript das *Kreuzprodukt* aus der Liste erstellen. Geben Sie zu diesem Zweck die folgende Zeile ein: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Die spitzen Klammern geben die Referenz im Kreuzprodukt an.
+> 1. Als Nächstes erstellen Sie ein Raster aus Punkten aus der *coordsXY*-Folge. Hierfür soll die Syntax *Point.ByCoordinates* verwendet werden, Sie müssen jedoch außerdem genau wie im visuellen Skript das *Kartesische Produkt* aus der Liste erstellen. Geben Sie zu diesem Zweck die folgende Zeile ein: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Die spitzen Klammern geben die Referenz im Kartesischen Produkt an.
 2. Im *Watch3D*-wird jetzt ein Raster von Punkten über das gesamte Dynamo-Raster angezeigt.
 
 ![Übungslektion](images/7-2/Exercise/04.jpg)

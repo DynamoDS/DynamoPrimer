@@ -114,7 +114,7 @@ In dieser Übung wenden Sie Ihre Kenntnisse der Kurzschreibweise an und erstelle
 ![Übungslektion](images/7-3/Exercise/12.jpg)
 
 > 1. Definieren Sie einen Bereich zwischen 0 und 1 mit 50 Unterteilungen, indem Sie ```0..1..#50``` in einen Codeblock eingeben.
-2. Verbinden Sie den Bereich mit *Surface.PointAtParameter*. Dieser Block benötigt *u*- und *v*-Werte zwischen 0 und 1 für die gesamte Oberfläche. Sie müssen die *Vergitterung* in *Kreuzprodukt* ändern. Klicken Sie dazu mit der rechten Maustaste auf den *Surface.PointAtParameter*-Block.
+2. Verbinden Sie den Bereich mit *Surface.PointAtParameter*. Dieser Block benötigt *u*- und *v*-Werte zwischen 0 und 1 für die gesamte Oberfläche. Sie müssen die *Vergitterung* in *Kartesisches Produkt* ändern. Klicken Sie dazu mit der rechten Maustaste auf den *Surface.PointAtParameter*-Block.
 
 ![Übungslektion](images/7-3/Exercise/11.jpg)
 

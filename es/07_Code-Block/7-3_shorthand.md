@@ -114,7 +114,7 @@ En este ejercicio, vamos a poner en práctica nuestras nuevas habilidades de abr
 ![Ejercicio](images/7-3/Exercise/12.jpg)
 
 > 1. Defina un rango entre 0 y 1 con 50 divisiones escribiendo ```0..1..#50``` en un bloque de código.
-2. Conecte el rango en *Surface.PointAtParameter*, que toma los valores *u* y *v* entre 0 y 1 a lo largo de la superficie. No olvide cambiar el *encaje* a *Producto vectorial* haciendo clic con el botón derecho en el nodo *Surface.PointAtParameter*.
+2. Conecte el rango en *Surface.PointAtParameter*, que toma los valores *u* y *v* entre 0 y 1 a lo largo de la superficie. No olvide cambiar el *encaje* a *Producto cartesiano* haciendo clic con el botón derecho en el nodo *Surface.PointAtParameter*.
 
 ![Ejercicio](images/7-3/Exercise/11.jpg)
 

@@ -75,7 +75,7 @@
 
 > 平面是几何图形的抽象部分，表示无限的二维空间。由于我们在此步骤中进行设置，因此平面非常适合轮廓和相交。
 
-> 1. 使用 *Geometry.Intersect* 节点（注意叉积连缀），将 *Curve.PlaneAtParameter* 插入到 *Geometry.Intersect* 节点的*实体*输入。将主 *List.Create* 节点插入到*几何图形*输入。现在，我们在 Dynamo 视口中会看到代表每个曲线与定义平面相交的点。
+> 1. 使用 *Geometry.Intersect* 节点（注意笛卡尔积连缀），将 *Curve.PlaneAtParameter* 插入到 *Geometry.Intersect* 节点的*实体*输入。将主 *List.Create* 节点插入到*几何图形*输入。现在，我们在 Dynamo 视口中会看到代表每个曲线与定义平面相交的点。
 
 ![练习](images/8-4/Exercise/04.jpg)
 

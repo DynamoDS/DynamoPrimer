@@ -69,7 +69,7 @@ Les méthodes de type Query permettent d'obtenir une propriété d'un objet. Pui
 Avec des nœuds, la combinaison est légèrement différente de celle avec le bloc de code. Avec les nœuds, l'utilisateur clique avec le bouton droit de la souris sur le nœud et sélectionne l'option de combinaison à effectuer. Avec le bloc de code, l'utilisateur dispose d'un contrôle bien plus précis sur la structure des données. La méthode de raccourci du bloc de code utilise des *guides de réplication* pour définir la manière dont plusieurs listes unidimensionnelles sont associées. Les nombres mis entre crochets angulaires "<>" définissent la hiérarchie de la liste imbriquée obtenue : <1>,<2>,<3>, etc. 
 ![Combinaison](images/7-2/lacing.jpg)
 
-> 1. Dans cet exemple, un raccourci est utilisé pour définir deux intervalles (vous trouverez plus d'informations sur le raccourci dans la section suivante de ce chapitre). En résumé, ```0..1;``` équivaut à ```{0,1}``` et ```-3...-7```équivaut à ```{-3,-4,-5,-6,-7}```. Le résultat vous donne des listes de 2 valeurs X et 5 valeurs Y. Si vous n'utilisez pas de guides de réplication avec ces listes incohérentes, vous obtenez une liste de deux points, correspondant à la longueur de la liste la plus courte. Les guides de réplication vous permettent de trouver toutes les combinaisons possibles de 2 et 5 coordonnées (ou, un **Produit vectoriel**).
+> 1. Dans cet exemple, un raccourci est utilisé pour définir deux intervalles (vous trouverez plus d'informations sur le raccourci dans la section suivante de ce chapitre). En résumé, ```0..1;``` équivaut à ```{0,1}``` et ```-3...-7```équivaut à ```{-3,-4,-5,-6,-7}```. Le résultat vous donne des listes de 2 valeurs X et 5 valeurs Y. Si vous n'utilisez pas de guides de réplication avec ces listes incohérentes, vous obtenez une liste de deux points, correspondant à la longueur de la liste la plus courte. Les guides de réplication vous permettent de trouver toutes les liaisons possibles de 2 et 5 coordonnées (ou, un **Produit cartésien**).
 2. La syntaxe ```Point.ByCoordinates(x_vals<1>,y_vals<2>);``` vous permet d'obtenir **deux** listes contenant chacune **cinq** éléments.
 3. La syntaxe ```Point.ByCoordinates(x_vals<2>,y_vals<1>);``` vous permet d'obtenir **cinq** listes contenant chacune **deux** éléments.
 
@@ -89,7 +89,7 @@ Pour afficher la puissance du bloc de code, vous allez convertir une définition
 
 > Commencez par recréer la définition dans l'image ci-dessus (ou en ouvrant le fichier d'exemple).
 
-> 1. Notez que la combinaison sur *Point.ByCoordinates* a été définie sur *Produit vectoriel*.
+> 1. Notez que la liaison sur *Point.ByCoordinates* a été définie sur *Produit cartésien*.
 2. Chaque point d'une grille est déplacé vers le haut dans la direction Z en fonction de sa distance par rapport au point de référence.
 3. Une surface est recréée et épaissie, créant ainsi un renflement dans la géométrie par rapport à la distance par rapport au point de référence.
 
@@ -105,7 +105,7 @@ Pour afficher la puissance du bloc de code, vous allez convertir une définition
 
 ![Exercice](images/7-2/Exercise/05.jpg)
 
-> 1. Vous devez désormais créer une grille de points à partir de la séquence *coordsXY*. Pour ce faire, utilisez la syntaxe *Point.ByCoordinates*, et lancez un *produit vectoriel* de la liste de la même manière que dans le script visuel. Pour ce faire, entrez la ligne : ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Les crochets angulaires indiquent la référence du produit vectoriel.
+> 1. Vous devez désormais créer une grille de points à partir de la séquence *coordsXY*. Pour ce faire, utilisez la syntaxe *Point.ByCoordinates*, et lancez un *Produit cartésien* de la liste de la même manière que dans le script visuel. Pour ce faire, entrez la ligne : ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Les crochets angulaires indiquent la référence du produit cartésien.
 2. Le nœud *Watch3D* présente une grille de points sur la grille Dynamo.
 
 ![Exercice](images/7-2/Exercise/04.jpg)

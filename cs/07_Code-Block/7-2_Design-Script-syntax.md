@@ -69,7 +69,7 @@ Metody typu Dotaz získají vlastnost objektu. Vzhledem k tomu, že objekt samo
 Vázání na uzly se poněkud liší od vázání na blok kódu. U uzlů klikne uživatel pravým tlačítkem na uzel a vybere možnost vázání, kterou chce provést. Díky bloku kódu má uživatel mnohem větší kontrolu nad tím, jak jsou data strukturována. Metoda zkratky bloku kódu používá *vodítka replikací* k nastavení způsobu, jakým by mělo být párováno několik jednorozměrných seznamů. Čísla v ostrých závorkách „<>“ definují hierarchii výsledného vnořeného seznamu: <1>,<2>,<3> atd. 
 ![Vázání](images/7-2/lacing.jpg)
 
-> 1. V tomto příkladu definujeme dva rozsahy pomocí zkratky (více o zkratkách naleznete v následující části této kapitoly). Ve zkratce výraz ```0..1;``` je ekvivalentní k hodnotě ```{0,1}``` a výraz ```-3..-7``` je ekvivalentní k hodnotě ```{-3,-4,-5,-6,-7}```. Výsledkem je seznam 2 hodnot X a 5 hodnot Y. Pokud se nepoužijí vodítka replikací společně s těmito neshodujícími se seznamy, vznikne seznam dvou bodů, který má délku nejkratšího seznamu. Pomocí vodítek replikací je možné najít všechny možné kombinace 2 a 5 souřadnic (neboli **vektorový součin**).
+> 1. V tomto příkladu definujeme dva rozsahy pomocí zkratky (více o zkratkách naleznete v následující části této kapitoly). Ve zkratce výraz ```0..1;``` je ekvivalentní k hodnotě ```{0,1}``` a výraz ```-3..-7``` je ekvivalentní k hodnotě ```{-3,-4,-5,-6,-7}```. Výsledkem je seznam 2 hodnot X a 5 hodnot Y. Pokud se nepoužijí vodítka replikací společně s těmito neshodujícími se seznamy, vznikne seznam dvou bodů, který má délku nejkratšího seznamu. Pomocí vodítek replikací je možné najít všechny možné kombinace 2 a 5 souřadnic (neboli **kartézský součin**).
 2. Pomocí syntaxe ```Point.ByCoordinates(x_vals<1>,y_vals<2>);``` získáte **dva** seznamy s **pěti** položkami v každém seznamu.
 3. Pomocí syntaxe ```Point.ByCoordinates(x_vals<2>,y_vals<1>);``` získáte **pět** seznamů s **dvěma** položkami v každém seznamu.
 
@@ -89,7 +89,7 @@ Nyní demonstrujeme sílu bloku kódu převedením existující definice pole at
 
 > Začněte znovuvytvořením definice na obrázku výše (nebo otevřením vzorového souboru).
 
-> 1. Všimněte si, že vázání uzlu *Point.ByCoordinates* bylo nastaveno na hodnotu *Vektorový součin*.
+> 1. Všimněte si, že vázání uzlu *Point.ByCoordinates* bylo nastaveno na hodnotu *Kartézský součin*.
 2. Každý bod v osnově se posune nahoru ve směru Z podle jeho vzdálenosti od referenčního bodu.
 3. Povrch je znovu vytvořen a zesílen, čímž se vytvoří vyboulení v geometrii relativně ke vzdálenosti od referenčního bodu.
 
@@ -105,7 +105,7 @@ Nyní demonstrujeme sílu bloku kódu převedením existující definice pole at
 
 ![Cvičení](images/7-2/Exercise/05.jpg)
 
-> 1. Nyní chceme vytvořit osnovu z bodů v posloupnosti položek *coordsXY*. Za tímto účelem je vhodné použít syntaxi *Point.ByCoordinates*, ale také je nutné spustit *Vektorový součin* seznamu stejným způsobem, jako to bylo provedeno ve vizuálním skriptu. Toto provedete zadáním následujícího řádku kódu: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Ostré závorky označují referenci vektorového součinu.
+> 1. Nyní chceme vytvořit osnovu z bodů v posloupnosti položek *coordsXY*. Za tímto účelem je vhodné použít syntaxi *Point.ByCoordinates*, ale také je nutné spustit *Kartézský součin* seznamu stejným způsobem, jako to bylo provedeno ve vizuálním skriptu. Toto provedete zadáním následujícího řádku kódu: ```gridPts = Point.ByCoordinates(coordsXY<1>,coordsXY<2>,0);```. Ostré závorky označují referenci kartézského součinu.
 2. Všimněte si, že v uzlu *Watch3D* se nachází osnova bodů přes celou osnovu aplikace Dynamo.
 
 ![Cvičení](images/7-2/Exercise/04.jpg)

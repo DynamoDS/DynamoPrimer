@@ -40,7 +40,7 @@ Cet exercice fournit des informations sur les techniques présentées dans la se
 ![Exercice](images/8-5/Exercise/01.jpg)
 
 > 1. À l'aide du *bloc de code*, définissez une plage comprise entre 0 et 1 avec 10 valeurs équidistantes : ```0..1..#10;```
-2. Connectez le *bloc de code* aux entrées *u* et *v* d'un nœud *Surface.PointAtParameter*, puis connectez le nœud *Surface.ByLoft* à l'entrée *surface*. Cliquez avec le bouton droit de la souris sur le nœud et définissez la *combinaison* sur *Produit vectoriel*. Cette action permet de créer une grille de points sur la surface.
+2. Connectez le *bloc de code* aux entrées *u* et *v* d'un nœud *Surface.PointAtParameter*, puis connectez le nœud *Surface.ByLoft* à l'entrée *surface*. Cliquez avec le bouton droit de la souris sur le nœud et définissez la *liaison* sur *Produit cartésien*. Cette action permet de créer une grille de points sur la surface.
 
 Cette grille de points sert de points de contrôle pour une surface définie de manière paramétrique. Vous devez extraire les positions u et v de chacun de ces points afin de pouvoir les relier à une formule paramétrique et conserver la même structure de données. Pour ce faire, vous pouvez interroger les emplacements des paramètres des points que vous venez de créer.
 

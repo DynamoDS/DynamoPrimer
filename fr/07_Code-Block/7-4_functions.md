@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![Exercice](images/7-4/Exercise/03.jpg)
 
-> 1. Sur le nœud *Point.ByCoordinates*, remplacez la combinaison *Liste la plus courte* par * Produit vectoriel* afin de créer une grille de points. La fonction *sphereByZ* reste pleinement effective, de sorte que tous les points créent des sphères avec des rayons fondés sur des valeurs Z.
+> 1. Sur le nœud *Point.ByCoordinates*, remplacez la liaison *Liste la plus courte* par *Produit cartésien* afin de créer une grille de points. La fonction *sphereByZ* reste pleinement effective, de sorte que tous les points créent des sphères avec des rayons fondés sur des valeurs Z.
 
 ![Exercice](images/7-4/Exercise/02.jpg)
 

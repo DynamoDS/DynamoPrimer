@@ -75,7 +75,7 @@ En el siguiente ejercicio, se describe cómo Dynamo consulta los datos para la c
 
 > Un plano es una unidad abstracta de geometría que representa un espacio bidimensional infinito. Los planos son ideales para la creación de contornos y la intersección, tal y como los vamos a configurar en este paso.
 
-> 1. Con el nodo *Geometry.Intersect* (observe el encaje de producto vectorial), conecte *Curve.PlaneAtParameter* a la entrada *entity* del nodo *Geometry.Intersect*. Conecte el nodo *List.Create* principal a la entrada *geometry*. Ahora aparecen puntos en la ventana gráfica de Dynamo que representan la intersección de cada curva con los planos definidos.
+> 1. Con el nodo *Geometry.Intersect* (observe el encaje de producto cartesiano), conecte *Curve.PlaneAtParameter* a la entrada *entity* del nodo *Geometry.Intersect*. Conecte el nodo *List.Create* principal a la entrada *geometry*. Ahora aparecen puntos en la ventana gráfica de Dynamo que representan la intersección de cada curva con los planos definidos.
 
 ![Ejercicio](images/8-4/Exercise/04.jpg)
 
