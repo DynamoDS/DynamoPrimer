@@ -37,7 +37,7 @@ Voici le concept fondamental à retenir de cette section : **Dynamo traite les 
 ![de haut en bas](images/6-3/top-down.jpg)
 
 > 1. Grâce au *bloc de code*, vous avez défini deux intervalles : "0..2; 0..3; "
-2. Ces intervalles sont connectés à un nœud *Point.ByCoordinates* avec la combinaison définie sur *"Produit vectoriel"*. Cela crée une grille de points et renvoie également une liste de listes sous forme de sortie.
+2. Ces intervalles sont connectés à un nœud *Point.ByCoordinates* avec la liaison définie sur *"Produit vectoriel"*. Cela crée une grille de points et renvoie également une liste de listes sous forme de sortie.
 3. Le nœud *Watch* donne 3 listes contenant chacune 4 éléments.
 4. Lorsque vous utilisez *List.GetItemAtIndex* avec un index de 0, Dynamo sélectionne la première liste et tout son contenu. D'autres programmes peuvent sélectionner le premier élément de chaque liste dans la structure de données, mais Dynamo utilise une hiérarchie verticale lorsque vous travaillez avec des données.
 
@@ -52,7 +52,7 @@ Le nœud Flatten permet de supprimer tous les niveaux de données d'une structur
 ![Exercice](images/6-3/Exercise/Flatten-31.jpg)
 
 > 1. Insérez une ligne de code pour définir un intervalle dans le *bloc de code* : "-250..-150..#4; "
-2. En connectant le *bloc de code* aux entrées *x* et *y* d'un nœud *Point.ByCoordinates*, vous définissez la combinaison sur *"Produit vectoriel"* pour obtenir une grille de points.
+2. En connectant le *bloc de code* aux entrées *x* et *y* d'un nœud *Point.ByCoordinates*, vous définissez la liaison sur *"Produit vectoriel"* pour obtenir une grille de points.
 3. Le nœud *Watch* indique que vous avez une liste de listes.
 4. Un nœud *PolyCurve.ByPoints* référence chaque liste et crée une polycourbe respective. Dans l'aperçu Dynamo, vous pouvez remarquer que quatre polycourbes représentent chaque ligne de la grille.
 
@@ -106,7 +106,7 @@ Pour une introduction rapide, examinons le nœud List.Count d'une section préc�
 Une fois le code saisi, le bloc de code créera deux entrées pour Nx et Ny.
 
 2. Avec deux *curseurs d'entier*, définissez les valeurs *Nx* et *Ny* en les connectant au *bloc de code*.
-3. Connectez chaque ligne du bloc de code aux entrées *X* et *Y* respectives d'un nœud *Point.ByCoordinates*. Cliquez avec le bouton droit de la souris sur le nœud, sélectionnez "Combinaison", puis *"Produit vectoriel"*. Cela crée une grille de points. Étant donné que vous avez défini l'intervalle de -50 à 50, élargissez la grille Dynamo par défaut.
+3. Connectez chaque ligne du bloc de code aux entrées *X* et *Y* respectives d'un nœud *Point.ByCoordinates*. Cliquez avec le bouton droit de la souris sur le nœud, sélectionnez "Liaison", puis *"Produit vectoriel"*. Cela crée une grille de points. Étant donné que vous avez défini l'intervalle de -50 à 50, élargissez la grille Dynamo par défaut.
 4. Un nœud *Watch* révèle les points créés. Observez la structure des données. Vous avez créé une liste de listes. Chaque liste représente une ligne de points de la grille.
 
 ![Exercice](images/6-3/Exercise/A/04.jpg)
@@ -266,7 +266,7 @@ Cet exercice utilise une partie de la logique établie dans l'exercice précéde
 -50..50..#5;
 ```
 
-3. Veillez à définir la combinaison de *Surface.PointAtParameter* sur *"Produit vectoriel"*.
+3. Veillez à définir la liaison de *Surface.PointAtParameter* sur *"Produit vectoriel"*.
 4. Le nœud *Watch* indique que vous avez une liste de 3 listes, chacune comportant 5 éléments.
 
 ![Exercice](images/6-3/Exercise/B/05.jpg)

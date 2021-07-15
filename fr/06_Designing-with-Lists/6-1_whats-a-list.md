@@ -43,7 +43,7 @@ Lorsque vous placez le curseur sur l'entrée *points* de *Polycurve.ByPoints*, v
 
 En revanche, l'entrée *centerPoint* de *Circle.ByCenterPointRadius* demande *"Point"*. Ce nœud recherche un point, en tant qu'élément, pour définir le point central du cercle. C'est la raison pour laquelle vous obtenez cinq cercles à partir des données d'entrée. Reconnaître cette différence avec les entrées de Dynamo permet de mieux comprendre le fonctionnement des nœuds lors de la gestion des données.
 
-### Combinaison
+### Liaison
 
 Le couplage de données est un problème en l'absence de solution claire. C’est le cas lorsqu'un nœud a accès à des entrées qui ne sont pas en nombre égal. La modification de l’algorithme de couplage des données peut entraîner des résultats très différents.
 
@@ -51,7 +51,7 @@ Imaginez un nœud qui crée des segments de ligne entre les points (Line.ByStart
 
 ![Exemples d'entrée](images/6-1/laceBase.jpg)
 
-Comme vous pouvez le voir, il existe différentes manières de dessiner des lignes entre ces jeux de points. Pour accéder aux options de combinaison, cliquez avec le bouton droit de la souris sur le centre d'un nœud et sélectionnez le menu "Combinaison".
+Comme vous pouvez le voir, il existe différentes manières de dessiner des lignes entre ces jeux de points. Pour accéder aux options de liaison, cliquez avec le bouton droit de la souris sur le centre d'un nœud et sélectionnez le menu "Liaison".
 
 ### Fichier de base
 
@@ -61,7 +61,7 @@ Pour découvrir les opérations de liaison ci-dessous, vous allez utiliser ce fi
 
 ![Exemples d'entrée](images/6-1/lacing.jpg)
 
-> 1. Vous allez modifier la combinaison sur *Point.ByCoordinates*, mais sans modifier d'autres paramètres du graphique ci-dessus.
+> 1. Vous allez modifier la liaison sur *Point.ByCoordinates*, mais sans modifier d'autres paramètres du graphique ci-dessus.
 
 #### Liste la plus courte
 
@@ -71,7 +71,7 @@ La méthode la plus simple consiste à connecter les entrées une par une jusqu'
 
 ![Exemples d'entrée](images/6-1/shortestList.jpg)
 
-> En définissant la combinaison sur *Le plus court*, vous obtenez une ligne diagonale de base composée de cinq points. Étant donné que la liste la plus courte contient cinq points, la combinaison de la liste la plus courte s'arrête après avoir atteint la fin d'une liste.
+> En définissant la liaison sur *Le plus court*, vous obtenez une ligne diagonale de base composée de cinq points. Étant donné que la liste la plus courte contient cinq points, la liaison de la liste la plus courte s'arrête après avoir atteint la fin d'une liste.
 
 #### Liste la plus longue
 
@@ -81,7 +81,7 @@ L'algorithme "Liste la plus longue" continue à connecter les entrées, réutili
 
 ![Exemples d'entrée](images/6-1/longestList.jpg)
 
-> En définissant la combinaison sur *Le plus long*, vous obtenez une ligne diagonale qui s'étend verticalement. De la même façon que pour le diagramme de concept, le dernier élément de la liste des 5 éléments sera répété pour atteindre la longueur de la liste la plus longue.
+> En définissant la liaison sur *Le plus long*, vous obtenez une ligne diagonale qui s'étend verticalement. De la même façon que pour le diagramme de concept, le dernier élément de la liste des 5 éléments sera répété pour atteindre la longueur de la liste la plus longue.
 
 #### Produit cartésien
 

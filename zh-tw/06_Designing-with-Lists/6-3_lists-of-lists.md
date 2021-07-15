@@ -37,7 +37,7 @@
 ![由上而下](images/6-3/top-down.jpg)
 
 > 1. 我們已使用 *code block* 定義兩個範圍：``` 0..2; 0..3; ```
-2. 這些範圍已連接至 *Point.ByCoordinates* 節點，並將鑲邊設定為*「叉積」*。這會建立點的網格，也會傳回清單的清單作為輸出。
+2. 這些範圍在交織設定為 *「笛卡兒積」* 的狀況下會連接到*Point.ByCoordinates* 節點。這會建立點的網格，也會傳回清單的清單作為輸出。
 3. 請注意，*Watch* 節點可產生 3 個清單，每個清單中包含 4 個項目。
 4. 使用 *List.GetItemAtIndex* 時，透過索引 0，Dynamo 會選取第一個清單及其所有內容。其他程式可能會在資料結構中選取每個清單的第一個項目，但 Dynamo 在處理資料時，採用由上而下的階層。
 
@@ -52,7 +52,7 @@
 ![練習](images/6-3/Exercise/Flatten-31.jpg)
 
 > 1. 插入一行程式碼以定義 *code block* 中的範圍：``` -250..-150..#4; ```
-2. 透過將 *code block* 插入至 *Point.ByCoordinates* 節點的 *x* 與 *y* 輸入，我們將鑲邊設定為 *「叉積」* 以取得點的網格。
+2. 將 *code block* 連接到 *Point.ByCoordinates* 節點的 *x* 與 *y* 輸入，我們將交織設定為 *「笛卡兒積」* 以取得點格線。
 3. *Watch* 節點顯示出已產生清單的清單。
 4. *PolyCurve.ByPoints* 節點將參考每個清單，並建立各自的 polycurve。請注意，在 Dynamo 預覽中有四個 polycurve，分別代表網格的每一列。
 
@@ -106,7 +106,7 @@ List.Map/Combine 會將一組函數套用至輸入清單 (但下一層級的清�
 輸入此代碼後，代碼區塊會建立 Nx 與 Ny 的兩個輸入。
 
 2. 使用兩個 *integer sliders*，將其連接至 *code block* 以定義 *Nx* 與 *Ny* 值。
-3. 將每行 code block 分別連接至 *Point.ByCoordinates* 節點的 *X* 與 *Y* 輸入。在節點上按一下右鍵，選取「鑲邊」，然後選擇 *「叉積」*。這會建立點的網格。由於我們定義的範圍是從 -50 到 50，因此將跨越預設的 Dynamo 網格。
+3. 將每行 code block 分別連接至 *Point.ByCoordinates* 節點的 *X* 與 *Y* 輸入。在節點上按一下右鍵，選取「交織」，然後選擇 *「笛卡兒積」*。這會建立點的網格。由於我們定義的範圍是從 -50 到 50，因此將跨越預設的 Dynamo 網格。
 4. *Watch* 節點會顯示已建立的點。請注意資料結構。我們已建立清單的清單。每個清單都代表網格的一列點。
 
 ![練習](images/6-3/Exercise/A/04.jpg)
@@ -266,7 +266,7 @@ List.Map/Combine 會將一組函數套用至輸入清單 (但下一層級的清�
 -50..50..#5;
 ```
 
-3. 請確保將 *Surface.PointAtParameter* 的鑲邊設定為*「叉積」*。
+3. 請確保將 *Surface.PointAtParameter* 的「交織」設定為*「笛卡兒積」*。
 4. *Watch*節點顯示出已產生 3 個清單的清單，其中每個清單包含 5 個項目。
 
 ![練習](images/6-3/Exercise/B/05.jpg)

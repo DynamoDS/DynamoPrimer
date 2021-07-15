@@ -11,7 +11,7 @@ La plupart des nœuds de Dynamo sont composés de cinq éléments. Bien qu'il ex
 > 1. Nom : nom du nœud conforme à la convention d'appellation Category.Name
 2. Principal : corps principal du nœud. Cliquez ici avec le bouton droit de la souris pour afficher les options au niveau du nœud entier
 3. Ports (entrants et sortants) : récepteurs des fils qui fournissent les données d'entrée au nœud, ainsi que les résultats de l'action du nœud
-4. Icône de combinaison : indique l'option de combinaison spécifiée pour les entrées de liste correspondantes (plus d'informations sur cette option ultérieurement)
+4. Icône de liaison : indique l'option de liaison spécifiée pour les entrées de liste correspondantes (plus d'informations sur cette option ultérieurement)
 5. Valeur par défaut : cliquez avec le bouton droit de la souris sur un port d'entrée. Certains nœuds ont des valeurs par défaut qui peuvent être utilisées ou non.
 
 ### Ports
