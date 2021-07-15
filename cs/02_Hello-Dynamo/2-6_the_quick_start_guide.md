@@ -75,7 +75,7 @@ Začít jednoduše a přidávat složitost je efektivní způsob, jak průběžn
 
 ![Aktualizovaný graf](images/2-4/07-AddingComplexity.png)
 
-> 1. Přidejte uzel **Number Sequence** a nahraďte vstupy položky **Point.ByCoordinates** – klikněte pravým tlačítkem na položku Point.ByCoordinates a vyberte možnost Lacing > Cross Reference
+> 1. Přidejte uzel **Number Sequence** a nahraďte vstupy položky **Point.ByCoordinates** – klikněte pravým tlačítkem na položku Point.ByCoordinates a vyberte možnost Vázání > Křížový odkaz
 2. Přidejte uzel **Flatten** za položku Point.ByCoordinates. Chcete-li seznam zcela rozvinout, ponechte pro vstup ```amt``` výchozí hodnotu ```-1```
 3. 3D náhled se aktualizuje s rastrem kružnic
 

@@ -92,7 +92,7 @@ sphereByZ(Pt)
 
 ![Cvičení](images/7-4/Exercise/03.jpg)
 
-> 1. V uzlu *Point.ByCoordinates* změnou vzoru z položky *Nejkratší seznam* na *Kartézský součin* vytvoříme rastr bodů. Funkce *sphereByZ* je stále plně funkční, takže všechny body vytvářejí koule s poloměry na základě hodnot Z.
+> 1. V uzlu *Point.ByCoordinates*  změnou vázání z *Nejkratší seznam* na *Kartézský součin* vytvoříme rastr bodů. Funkce *sphereByZ* je stále plně funkční, takže všechny body vytvářejí koule s poloměry na základě hodnot Z.
 
 ![Cvičení](images/7-4/Exercise/02.jpg)
 

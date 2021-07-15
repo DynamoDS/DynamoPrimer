@@ -45,7 +45,7 @@
 0..1..#5;
 ```
 
-2. 使用 *Surface.PointAtParameter*，將兩個代碼區塊值連接至 *u* 與 *v*。將此節點的*鑲邊*變更為*「叉積」*。
+2. 使用 *Surface.PointAtParameter*，將兩個Code Block值連接至 *u* 與 *v*。將此節點的*交織*變更為*「笛卡兒積」*。
 3. 輸出顯示了資料結構，在 Dynamo 預覽中也可以看到資料結構。
 
 ![練習](images/6-4/Exercise/A/01.jpg)
@@ -78,7 +78,7 @@
 0..1..#5;
 ```
 
-2. 將這些輸出連接至兩個 *Surface.PointAtParameter* 節點 (每個節點的*鑲邊*設定為*「叉積」*)。其中一個節點連接至原始曲面，而另一個連接至偏移曲面。
+2. 將這些輸出連接到兩個 *Surface.PointAtParameter* 節點 (每個節點的*交織*設定為*「笛卡兒積」*)。其中一個節點連接至原始曲面，而另一個連接至偏移曲面。
 
 ![練習](images/6-4/Exercise/B/04.jpg)
 

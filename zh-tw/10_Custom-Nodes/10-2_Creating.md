@@ -19,7 +19,7 @@ Dynamo 提供自訂節點的多種不同建立方法。您可以從頭開始建�
 ![練習](images/10-2/UVmapping01.jpg)
 
 > 1. **Code Block：**使用程式碼塊建立介於 45 與 -45 之間的一系列 10 個數字。
-2. **Point.ByCoordinates：**將 Code Block 的輸出連接至「x」與「y」輸入，並將鑲邊設定為「叉積」。現在應該已建立點的格線。
+2. **Point.ByCoordinates：**將 Code Block 的輸出連接到「x」與「y」輸入，並將交織設定為「交互參考」。現在應該已建立點的格線。
 3. **Plane.ByOriginNormal：**將*「Point」*輸出連接至*「origin」*輸入，以便在每個點處建立平面。將使用預設的法線向量 (0,0,1)。
 4. **Rectangle.ByWidthLength：**將上一步中的平面連接至*「plane」*輸入，並使用具有值 *10* 的 Code Block 指定寬度與長度。
 

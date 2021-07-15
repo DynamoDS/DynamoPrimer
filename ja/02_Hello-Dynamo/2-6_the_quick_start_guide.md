@@ -75,7 +75,7 @@
 
 ![更新されたグラフ](images/2-4/07-AddingComplexity.png)
 
-> 1. **Number Sequence** ノードを追加して **Point.ByCoordinates** ノードの入力を置き換え、Point.ByCoordinates ノードを右クリックして[レーシング] > [外積]を選択します。
+> 1. **Number Sequence** ノードを追加して **Point.ByCoordinates** ノードの入力を置き換え、Point.ByCoordinates ノードを右クリックして[レーシング] > [直積]を選択します。
 2. Point.ByCoordinates ノードの後に **Flatten** ノードを追加します。リストを完全にフラット化するには、```amt``` 入力を既定の ```-1``` のままにします。
 3. 3D プレビューが円のグリッドによって更新されます。
 

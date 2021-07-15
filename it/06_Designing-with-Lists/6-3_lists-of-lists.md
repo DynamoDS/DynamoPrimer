@@ -37,7 +37,7 @@ Il concetto fondamentale da apprendere da questa sezione: **Dynamo tratta gli el
 ![Dall'alto verso il basso](images/6-3/top-down.jpg)
 
 > 1. Con *Code Block*, sono stati definiti due intervalli:``` 0..2; 0..3; ```
-2. Questi intervalli sono connessi ad un nodo *Point.ByCoordinates* con il collegamento impostato su *Globale*. In questo modo viene creata una griglia di punti e viene inoltre restituito un elenco di elenchi come output.
+2. Questi intervalli sono connessi ad un nodo *Point.ByCoordinates* con il collegamento impostato su *Prodotto vettoriale*. In questo modo viene creata una griglia di punti e viene inoltre restituito un elenco di elenchi come output.
 3. Notare che il nodo *Watch* fornisce 3 elenchi con 4 elementi in ogni elenco.
 4. Quando si utilizza *List.GetItemAtIndex*, con un indice 0, Dynamo seleziona il primo elenco e tutto il relativo contenuto. Altri programmi possono selezionare il primo elemento di ogni elenco nella struttura di dati, ma Dynamo utilizza una gerarchia dall'alto verso il basso durante la gestione dei dati.
 
@@ -52,7 +52,7 @@ Livella rimuove tutti i livelli di dati da una struttura di dati. Ciò è utile 
 ![Esercizio](images/6-3/Exercise/Flatten-31.jpg)
 
 > 1. Inserire una riga di codice per definire un intervallo nel *blocco di codice*:``` -250..-150..#4; ```
-2. Se si inserisce il *blocco di codice* nell'input *x* e *y* di un nodo *Point.ByCoordinates*, è necessario impostare il collegamento su *Globale* per ottenere una griglia di punti.
+2. Se si inserisce il *blocco di codice* nell'input *x* e *y* di un nodo *Point.ByCoordinates*, è necessario impostare il collegamento su *Prodotto vettoriale* per ottenere una griglia di punti.
 3. Il nodo *Watch* mostra che è presente un elenco di elenchi.
 4. Un nodo *PolyCurve.ByPoints* farà riferimento a ciascun elenco e creerà la rispettiva PolyCurve. Nell'anteprima di Dynamo, sono presenti quattro PolyCurve che rappresentano ogni riga della griglia.
 
@@ -106,7 +106,7 @@ Come introduzione rapida, si esaminerà il nodo List.Count di una sezione preced
 Dopo aver digitato questo codice, il blocco di codice creerà due input per Nx e Ny.
 
 2. Con due *dispositivi di scorrimento dei numeri interi*, definire i valori *Nx* e *Ny* collegandoli al *blocco di codice*.
-3. Collegare ogni riga del blocco di codice ai rispettivi input *X* e *Y* di un nodo *Point.ByCoordinates*. Fare clic con il pulsante destro del mouse sul nodo, selezionare Collegamento e scegliere *Globale*. In questo modo viene creata una griglia di punti. Poiché è stato definito l'intervallo da -50 a 50, la griglia di Dynamo di default viene estesa.
+3. Collegare ogni riga del blocco di codice ai rispettivi input *X* e *Y* di un nodo *Point.ByCoordinates*. Fare clic con il pulsante destro del mouse sul nodo e modificare Collegamento in *Prodotto vettoriale*. In questo modo viene creata una griglia di punti. Poiché è stato definito l'intervallo da -50 a 50, la griglia di Dynamo di default viene estesa.
 4. Un nodo *Watch* mostra i punti creati. Notare la struttura di dati. È stato creato un elenco di elenchi. Ogni elenco rappresenta una riga di punti della griglia.
 
 ![Esercizio](images/6-3/Exercise/A/04.jpg)
@@ -266,7 +266,7 @@ In questo esercizio viene utilizzata una parte della logica stabilita in un eser
 -50..50..#5;
 ```
 
-3. Assicurarsi di impostare il collegamento di *Surface.PointAtParameter* su *Globale*.
+3. Assicurarsi di impostare il collegamento di *Surface.PointAtParameter* su *Prodotto vettoriale*.
 4. Il nodo *Watch* mostra che è presente un elenco di tre elenchi, ciascuno con 5 elementi.
 
 ![Esercizio](images/6-3/Exercise/B/05.jpg)
