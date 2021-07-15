@@ -75,7 +75,7 @@
 
 ![已更新的圖表](images/2-4/07-AddingComplexity.png)
 
-> 1. 加入 **Number Sequence** 節點，並取代 **Point.ByCoordinates** 的輸入 - 在 Point.ByCoordinates 上按一下右鍵，然後選取「鑲邊」>「交互參考」
+> 1. 新增一個 **Number Sequence** 節點，並取代 **Point.ByCoordinates** 的輸入 - 在 Point.ByCoordinates 上按一下右鍵，然後選取「交織」>「交互參考」
 2. 在 Point.ByCoordinates 後加入 **Flatten** 節點。若要完全展平清單，請將 ```amt``` 輸入保留為預設的 ```-1```
 3. 3D 預覽將更新，以顯示圓的格線
 

@@ -134,5 +134,5 @@ La fonctionnalité "Nœud vers code" permet d'automatiser d'un simple clic l'ens
 
 ![Exercice](images/7-2/Exercise/08.jpg)
 
-> Dynamo a automatisé une version texte du graphique visuel, de la combinaison, etc. Testez cette opération sur vos scripts visuels et libérez la puissance du bloc de code !
+> Dynamo a automatisé une version texte du graphique visuel, de la liaison, etc. Testez cette opération sur vos scripts visuels et libérez la puissance du bloc de code !
 

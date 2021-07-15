@@ -64,7 +64,7 @@ I metodi di tipo Query consentono di ottenere una proprietà di un oggetto. Poic
 
 ![Nomi di nodi](images/7-2/cbn05.jpg)
 
-### Informazioni su collegamento
+### Informazioni sul collegamento
 
 Il collegamento con i nodi è piuttosto diverso dal collegamento con il blocco di codice. Con i nodi, l'utente fa clic con il pulsante destro del mouse sul nodo e seleziona l'opzione Collegamento da eseguire. Con il blocco di codice, l'utente dispone di un maggiore controllo sulla modalità di strutturazione dei dati. Il metodo abbreviato del blocco di codice utilizza *guide di replica* per impostare il modo in cui occorre associare diversi elenchi unidimensionali. I numeri tra parentesi angolari "<>" definiscono la gerarchia dell'elenco nidificato risultante: <1>,<2>,<3> e così via. 
 ![Collegamento](images/7-2/lacing.jpg)

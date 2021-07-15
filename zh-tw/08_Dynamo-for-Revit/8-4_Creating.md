@@ -75,7 +75,7 @@
 
 > 平面是抽象的幾何圖形，表示無限的二維空間。平面非常適合描述等高與相交，正如我們在此步驟中的設置所示。
 
-> 1. 使用 *Geometry.Intersect* 節點 (注意是笛卡兒積交織)，將 *Curve.PlaneAtParameter* 插入 *Geometry.Intersect* 節點的 *entity* 輸入。將主要 *List.Create* 節點插入至 *geometry* 輸入。現在，我們可以在 Dynamo 視埠中看到表示每條曲線與定義的平面相交的點。
+> 1. 使用 *Geometry.Intersect* 節點 (注意是笛卡兒積交織)，將 *Curve.PlaneAtParameter* 連接到 *Geometry.Intersect* 節點的 *entity* 輸入。將主要 *List.Create* 節點插入至 *geometry* 輸入。現在，我們可以在 Dynamo 視埠中看到表示每條曲線與定義的平面相交的點。
 
 ![練習](images/8-4/Exercise/04.jpg)
 

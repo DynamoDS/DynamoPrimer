@@ -19,7 +19,7 @@ Commencez par créer un graphique à imbriquer dans un nœud personnalisé. Dans
 ![Exercice](images/10-2/UVmapping01.jpg)
 
 > 1. **Bloc de code :** créez un intervalle de 10 nombres compris entre 45 et -45 à l'aide d'un bloc de code.
-2. **Point.ByCoordinates :** connectez la sortie du bloc de code aux entrées "x" et "y" et définissez la combinaison sur Référence croisée. Vous devez maintenant avoir une grille de points.
+2. **Point.ByCoordinates :** connectez la sortie du bloc de code aux entrées "x" et "y" et définissez la liaison sur Référence croisée. Vous devez maintenant avoir une grille de points.
 3. **Plane.ByOriginNormal :** connectez la sortie *"Point"* à l'entrée *"origin"* pour créer un plan au niveau de chacun des points. Le vecteur normal par défaut de (0,0,1) est utilisé.
 4. **Rectangle.ByWidthLength :** connectez les plans de l'étape précédente à l'entrée *"plan"*, puis utilisez un bloc de code avec une valeur de *10* pour spécifier la largeur et la longueur.
 

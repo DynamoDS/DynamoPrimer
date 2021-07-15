@@ -47,7 +47,7 @@ Questo esercizio è il primo di una serie di tre che si concentra sull'articolaz
 0..1..#5;
 ```
 
-2. Con *Surface.PointAtParameter*, collegare i due valori di Code Block a *u *e *v*. Modificare il *collegamento* di questo nodo in *Globale*.
+2. Con *Surface.PointAtParameter*, collegare i due valori di Code Block a *u *e *v*. Modificare il *collegamento* di questo nodo in *Prodotto vettoriale*.
 3. L'output mostra la struttura di dati, visibile anche nell'anteprima di Dynamo.
 
 ![Esercizio](images/6-4/Exercise/A/01.jpg)
@@ -80,7 +80,7 @@ Viene aumentata la complessità. Si supponga di voler eseguire un'operazione sul
 0..1..#5;
 ```
 
-2. Collegare questi output a due nodi *Surface.PointAtParameter*, ciascuno con il *collegamento* impostato su *Globale*. Uno di questi nodi è collegato alla superficie originale, mentre l'altro è collegato alla superficie di offset.
+2. Collegare questi output a due nodi *Surface.PointAtParameter*, ciascuno con il *collegamento* impostato su *Prodotto vettoriale*. Uno di questi nodi è collegato alla superficie originale, mentre l'altro è collegato alla superficie di offset.
 
 ![Esercizio](images/6-4/Exercise/B/04.jpg)
 

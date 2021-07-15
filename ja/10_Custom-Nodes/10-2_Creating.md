@@ -19,7 +19,7 @@ Dynamo では、いくつかの方法でカスタム ノードを作成するこ
 ![演習](images/10-2/UVmapping01.jpg)
 
 > 1. **Code Block** ノードを使用して、-45 ～ 45 の範囲内で 10 個の数値を作成します。
-2. **Point.ByCoordinates** ノードの x 入力と y 入力に Code Block ノードの出力を接続し、[レーシング]を[外積]に設定します。 これで、点のグリッドが作成されます。
+2. **Point.ByCoordinates** ノードの x 入力と y 入力に Code Block ノードの出力を接続し、[レーシング]を[直積]に設定します。 これで、点のグリッドが作成されます。
 3. **Plane.ByOriginNormal** ノードの *origin* 入力に Point.ByCoordinates ノードの *Point* 出力を接続して、各点に平面を作成します。 この操作では、既定の法線ベクトル(0,0,1)が使用されます。
 4. **Rectangle.ByWidthLength** ノードの *plane* 入力に前の手順で作成した平面を接続し、別の Code Block ノードで値 *10* を指定して幅と長さを設定します。
 

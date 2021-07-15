@@ -47,7 +47,7 @@ Cet exercice est le premier d'une série de trois exercices axés sur l'articula
 0..1..#5;
 ```
 
-2. Avec le nœud *Surface.PointAtParameter*, connectez les deux valeurs de bloc de code à *u* et *v*. Définissez la *combinaison* de ce nœud sur *"Produit vectoriel"*.
+2. Avec le nœud *Surface.PointAtParameter*, connectez les deux valeurs de bloc de code à *u* et *v*. Définissez la *liaison* de ce nœud sur *"Produit vectoriel"*.
 3. La sortie révèle la structure des données, également visible dans l'aperçu Dynamo.
 
 ![Exercice](images/6-4/Exercise/A/01.jpg)
@@ -80,7 +80,7 @@ Passons aux choses sérieuses. Imaginez que vous souhaitiez effectuer une opéra
 0..1..#5;
 ```
 
-2. Connectez ces sorties à deux nœuds *Surface.PointAtParameter* dont la *combinaison* est définie sur *"Produit vectoriel"*. L'un de ces nœuds est connecté à la surface d'origine, tandis que l'autre est connecté à la surface décalée.
+2. Connectez ces sorties à deux nœuds *Surface.PointAtParameter* dont la *liaison* est définie sur *"Produit vectoriel"*. L'un de ces nœuds est connecté à la surface d'origine, tandis que l'autre est connecté à la surface décalée.
 
 ![Exercice](images/6-4/Exercise/B/04.jpg)
 
