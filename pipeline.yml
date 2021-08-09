@@ -16,6 +16,7 @@ env:
   - COMMON_RESOURCES_DIR : "cicdresources"
   - URL_REPO_TOOLS : "https://github.com/DynamoDS/DynamoPrimer"
   - BRANCH_TOOLS : "cicdresources"
+  - HARMONY_REPO : "DynamoDS/DynamoPrimer"
 
 timeout: 420
 check_changelog_updated_on_pr: false
@@ -47,6 +48,7 @@ soc2:
   run_on_any_branch : true
   harmony:    
     hidden_email_list: dynamo_ws_access
+    repository: env.HARMONY_REPO
     third_party_lib_paths:
       - "%LIBRARIES_FOLDER%\\gs9.50"
       - "%LIBRARIES_FOLDER%\\Modules"
