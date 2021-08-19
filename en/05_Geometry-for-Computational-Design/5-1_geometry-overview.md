@@ -29,7 +29,7 @@ Dimensionality is a convenient way to start categorizing Geometry but it's not n
 
 ![Geometry Hierarchy](images/5-1/GeometryHierarchy.jpg)
 
-### Geometry in Dynamo Studio
+### Geometry in Dynamo Sandbox
 
 So what does this mean for using Dynamo? Understanding the Geometry types and how they are related will allow us to navigate the collection of **Geometry Nodes** available to us in the Library. The Geometry Nodes are organized alphabetically as opposed to hierarchically - here they are displayed similar to their layout in the Dynamo interface.
 
