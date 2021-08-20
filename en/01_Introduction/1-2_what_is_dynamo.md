@@ -29,7 +29,7 @@ Dynamo wouldn't be what it is without a strong group of avid users and active co
 
 ### The Platform
 
-Dynamo is envisioned as a visual programming tool for designers, allowing us to make tools that make use of external libraries or any Autodesk product that has an API. With Dynamo Studio we can develop programs in a "Sandbox" style application - but the Dynamo ecosystem continues to grow.
+Dynamo is envisioned as a visual programming tool for designers, allowing us to make tools that make use of external libraries or any Autodesk product that has an API. With Dynamo Sandbox we can develop programs in a "Sandbox" style application - but the Dynamo ecosystem continues to grow.
 
 The source code for the project is open-source, enabling us to extend its functionality to our hearts content. Check out the project on GitHub and browse the Works in Progress of users customizing Dynamo.
 
