@@ -37,7 +37,7 @@ try
       Set-Location -Path $LanguageLocation
       gitbook init
       gitbook install
-      gitbook build
+      gitbook build ./ --log=debug --debug
 
       if($LASTEXITCODE -ne 0)
       {
