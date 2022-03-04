@@ -1,0 +1,963 @@
+{
+  "Uuid": "3c9d0464-8643-5ffe-96e5-ab1769818209",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Functions_SphereByZ",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Sphere": {
+        "Key": "Autodesk.DesignScript.Geometry.Sphere",
+        "Value": "ProtoGeometry.dll"
+      },
+      "Math": {
+        "Key": "DSCore.Math",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Math.PI": {
+        "Key": "DSCore.Math",
+        "Value": "DSCoreNodes.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "20ffe7523cc34ccb98ec3ec430d23cfb",
+      "Inputs": [
+        {
+          "Id": "8ddec1769d7c4f4bb9243b50f7fbcb7f",
+          "Name": "x",
+          "Description": "X coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "09e3ba333fb449779f87af8bcadde4a7",
+          "Name": "y",
+          "Description": "Y coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bb8cf507a214447080204be72990882c",
+          "Name": "z",
+          "Description": "Z coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1556b659d7d642e6b7bac854435a310a",
+          "Name": "Point",
+          "Description": "Point created by coordinates",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "CrossProduct",
+      "Description": "Form a Point given 3 cartesian coordinates\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0..100..#5;",
+      "Id": "faa5b8a9a374478d8ebaa7df12dceaef",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3538c44a695d4b1fb1bb8eca83f23824",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "sphereByZ(thePoint);",
+      "Id": "b965b4d7b45649d28a2430965f54732b",
+      "Inputs": [
+        {
+          "Id": "b3eab3fdca994e3fb6e3c60f3ffc8bfa",
+          "Name": "thePoint",
+          "Description": "thePoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3c386acf6dd443b9b4050ec3a5ffbcb5",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "00bd8cabcaba412cb785805c2ee05d3a",
+      "Inputs": [
+        {
+          "Id": "9e449bb4a84d4fd6b15d8fa713dd466b",
+          "Name": "x",
+          "Description": "X coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b871b5abfad448b0989d5995534dfd4a",
+          "Name": "y",
+          "Description": "Y coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bb2563c3d16d467dad9397e1522b0a90",
+          "Name": "z",
+          "Description": "Z coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6897efebf5624e15ba7e62f6fd5cace1",
+          "Name": "Point",
+          "Description": "Point created by coordinates",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Form a Point given 3 cartesian coordinates\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "sphereByZ(thePoint);",
+      "Id": "0187426f1fe1436cad89b7f47348e725",
+      "Inputs": [
+        {
+          "Id": "2b26e550d7d247ae9e78923aac10559c",
+          "Name": "thePoint",
+          "Description": "thePoint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b2bffb673e14487c94177610a2da9559",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0..100..#5;",
+      "Id": "42e18f3bef6f4a3c8dd99e8b8586e03a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3dc48e4d28f74fd088f0435d28ca2100",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "2b95664cd00f4427b8d363348f337dc3",
+      "Inputs": [
+        {
+          "Id": "8b69dcee0b5d4f509fb1c8397d4b2b10",
+          "Name": "x",
+          "Description": "X coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f3e523da04c14e4693303aa0ae2d22d4",
+          "Name": "y",
+          "Description": "Y coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "55a56fbb240249c69a3870e8c456616a",
+          "Name": "z",
+          "Description": "Z coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "faf3b6938f184c699e5b65b5e8a226aa",
+          "Name": "Point",
+          "Description": "Point created by coordinates",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "CrossProduct",
+      "Description": "Form a Point given 3 cartesian coordinates\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0..100..#5;",
+      "Id": "3fed147eaf72435cb9aca79af64cdb65",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b75b55ea537745478a4652c0ec78aa61",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "2fd2ea94b4fd47dab618358647e387ec",
+      "Inputs": [
+        {
+          "Id": "dfc74ff2e642442ba2780f4490dfb803",
+          "Name": "x",
+          "Description": "X coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "89145ab7b094429b9c6cb471eb114fd5",
+          "Name": "y",
+          "Description": "Y coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "bb7ef291b13f47daa9ff36caa138a357",
+          "Name": "z",
+          "Description": "Z coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3c8e778846314ecdbab5c3d6e9ea85bc",
+          "Name": "Point",
+          "Description": "Point created by coordinates",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "CrossProduct",
+      "Description": "Form a Point given 3 cartesian coordinates\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "-100..0..#5;",
+      "Id": "a0be5b2133fa4369849929afbbcad351",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c61be581b1bf42a2ba8ad555c78fa23d",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "/* This is the parent\ncode block, defining a function.\nThe text here is a multi-line comment\nand does not affect the code. */\n\ndef sphereByZ(inputPt)\n{\n\t//get inputPt variables\n\tsphereRadius=(inputPt.Z)/20;\n\n\t//define sphere\n\tsphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);\n\t//finally, define the function's output with 'return'\n\treturn=sphere;\n};",
+      "Id": "c80645abdbcc4aeda113266671dcacf4",
+      "Inputs": [],
+      "Outputs": [],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "def sphereByZ(inputPt)\n{\n//get Z Value, use it to drive radius of sphere\nsphereRadius=inputPt.Z/radiusRatio;\nsphere=Sphere.ByCenterPointRadius(inputPt,sphereRadius);\nreturn=sphere;\n};",
+      "Id": "63cae41f364d40149c3dd22dc3bfea00",
+      "Inputs": [],
+      "Outputs": [],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "sphereByZ(Pt,ratio);",
+      "Id": "b83f325699da4f7b9642451d69dfd087",
+      "Inputs": [
+        {
+          "Id": "9e3ffcfa31d04218a7231de403939356",
+          "Name": "Pt",
+          "Description": "Pt",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "855287f0ca324b83a269654d2334ab26",
+          "Name": "ratio",
+          "Description": "ratio",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1b0f73d9ca524dab8f2d9d386287529f",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0..100..#100;",
+      "Id": "428293c2fb504263b8ee5fa57a4ee414",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "42a7e6863bef4f8491898e51db1ccc31",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "t;\n10*Math.Sin(Math.RadiansToDegrees(t/Math.PI));\n10*Math.Cos(Math.RadiansToDegrees(t/Math.PI))-50;",
+      "Id": "6de98025ced948bfb05705444fc84842",
+      "Inputs": [
+        {
+          "Id": "e55d1d53212048629216a60b73aefdbe",
+          "Name": "t",
+          "Description": "t",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4a6b7a54f15a4520b344fa1d6a671bc6",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "95d7eac5981d4bd086ac3c856efb7408",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "78b4ff22f6af4d5eb684e78657ccdad4",
+          "Name": "",
+          "Description": "Value of expression at line 3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "sphereByZ(Pt,ratio);",
+      "Id": "779bfb90ee144e6f9082a48ba83d0c8e",
+      "Inputs": [
+        {
+          "Id": "cc1672ea9250413387af1c5e53f6f581",
+          "Name": "Pt",
+          "Description": "Pt",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "12b5f27997b94a62b53c69beea8587ae",
+          "Name": "ratio",
+          "Description": "ratio",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "dad28bc60bdb49d498eeda08d5ecda8e",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Point.ByCoordinates@double,double,double",
+      "Id": "d861fde8c7374af8baf2fd865b9b5403",
+      "Inputs": [
+        {
+          "Id": "2c00a939ce0648d6be735025bbd2beeb",
+          "Name": "x",
+          "Description": "X coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1c630c80957d45df86764681ffd198b9",
+          "Name": "y",
+          "Description": "Y coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "683a2cd7050c4420b89b78dd810b66f2",
+          "Name": "z",
+          "Description": "Z coordinate\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "83359224036940b6900182c68891395a",
+          "Name": "Point",
+          "Description": "Point created by coordinates",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "CrossProduct",
+      "Description": "Form a Point given 3 cartesian coordinates\n\nPoint.ByCoordinates (x: double = 0, y: double = 0, z: double = 0): Point"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 7.0,
+      "Id": "b78979a0356842f28b1d7262024577cf",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "e034e49eaf2549a4a34f8a40a1a8c29d",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 100.0,
+      "MinimumValue": 0.0,
+      "StepValue": 0.1,
+      "InputValue": 30.0,
+      "Id": "c7723a86fd7d4814902bc39293219095",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "fe74a35ca82c47c28f91f0d822fafe3b",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A slider that produces numeric values."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "1556b659d7d642e6b7bac854435a310a",
+      "End": "b3eab3fdca994e3fb6e3c60f3ffc8bfa",
+      "Id": "643d2210cb694ca6b13dbcaba3f2028b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3538c44a695d4b1fb1bb8eca83f23824",
+      "End": "8ddec1769d7c4f4bb9243b50f7fbcb7f",
+      "Id": "c451cd41556543b78d0a8b92f9439c6d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3538c44a695d4b1fb1bb8eca83f23824",
+      "End": "bb8cf507a214447080204be72990882c",
+      "Id": "1bf0c30880e040fba01dd061de0ff57b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6897efebf5624e15ba7e62f6fd5cace1",
+      "End": "2b26e550d7d247ae9e78923aac10559c",
+      "Id": "de978849a0604b1d8d4a5fe57688ed63",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3dc48e4d28f74fd088f0435d28ca2100",
+      "End": "bb2563c3d16d467dad9397e1522b0a90",
+      "Id": "60edbf0c075d4cc5817aeafa62d08335",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3dc48e4d28f74fd088f0435d28ca2100",
+      "End": "b871b5abfad448b0989d5995534dfd4a",
+      "Id": "22ca115c04e942aa95cabb46607cdf6d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "faf3b6938f184c699e5b65b5e8a226aa",
+      "End": "9e3ffcfa31d04218a7231de403939356",
+      "Id": "f89b6a0a0fd242ef92d989ea301b1747",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b75b55ea537745478a4652c0ec78aa61",
+      "End": "f3e523da04c14e4693303aa0ae2d22d4",
+      "Id": "890d58f6b0e4477493bbe98b6fc4f2aa",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b75b55ea537745478a4652c0ec78aa61",
+      "End": "55a56fbb240249c69a3870e8c456616a",
+      "Id": "95ee9e22c8904e33977c7fa04f859db5",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b75b55ea537745478a4652c0ec78aa61",
+      "End": "8b69dcee0b5d4f509fb1c8397d4b2b10",
+      "Id": "2546b0d3340f44e691c362268c02cbfa",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "42a7e6863bef4f8491898e51db1ccc31",
+      "End": "e55d1d53212048629216a60b73aefdbe",
+      "Id": "253d8dd457d74bfe9d6031e687b480be",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "4a6b7a54f15a4520b344fa1d6a671bc6",
+      "End": "683a2cd7050c4420b89b78dd810b66f2",
+      "Id": "3d8582852a85422cabf3e8d51f1d5c38",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "95d7eac5981d4bd086ac3c856efb7408",
+      "End": "1c630c80957d45df86764681ffd198b9",
+      "Id": "d2a52e3c6edf4448bb14c45b44798d80",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "78b4ff22f6af4d5eb684e78657ccdad4",
+      "End": "2c00a939ce0648d6be735025bbd2beeb",
+      "Id": "f6c425b8464c47cab8618a66893769f3",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "83359224036940b6900182c68891395a",
+      "End": "cc1672ea9250413387af1c5e53f6f581",
+      "Id": "93904638476d4e66a102fcf064397dbd",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "e034e49eaf2549a4a34f8a40a1a8c29d",
+      "End": "12b5f27997b94a62b53c69beea8587ae",
+      "Id": "d5e95038f7c34201b6a1f3f090a5e63f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "fe74a35ca82c47c28f91f0d822fafe3b",
+      "End": "855287f0ca324b83a269654d2334ab26",
+      "Id": "409e676632674bd2a2e4795ed409a514",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": null,
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.13",
+      "Data": {}
+    }
+  ],
+  "Author": "None provided",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": false,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.13.0.3485",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -124.76657104492188,
+      "EyeY": 172.62677001953125,
+      "EyeZ": 219.35140991210938,
+      "LookX": 38.150032043457031,
+      "LookY": -167.47148132324219,
+      "LookZ": -215.86123657226563,
+      "UpX": 0.073551148176193237,
+      "UpY": 0.906307578086853,
+      "UpZ": -0.41616922616958618
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "Point.ByCoordinates",
+        "ShowGeometry": false,
+        "Id": "20ffe7523cc34ccb98ec3ec430d23cfb",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 813.44071632874829,
+        "Y": 2179.5094154343133
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": false,
+        "Id": "faa5b8a9a374478d8ebaa7df12dceaef",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 548.10738299541481,
+        "Y": 2213.3369154343131
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": false,
+        "Id": "b965b4d7b45649d28a2430965f54732b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1138.1073829954148,
+        "Y": 2179.5094154343133
+      },
+      {
+        "Name": "Point.ByCoordinates",
+        "ShowGeometry": false,
+        "Id": "00bd8cabcaba412cb785805c2ee05d3a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 805.57311450916177,
+        "Y": 1947.5204708320732
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": false,
+        "Id": "0187426f1fe1436cad89b7f47348e725",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1130.2397811758283,
+        "Y": 1947.5204708320732
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": false,
+        "Id": "42e18f3bef6f4a3c8dd99e8b8586e03a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 540.23978117582828,
+        "Y": 1998.3479708320733
+      },
+      {
+        "Name": "Point.ByCoordinates",
+        "ShowGeometry": true,
+        "Id": "2b95664cd00f4427b8d363348f337dc3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 635.25186106573233,
+        "Y": -14.595595528371746
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "3fed147eaf72435cb9aca79af64cdb65",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 361.91852773239896,
+        "Y": 19.231904471628255
+      },
+      {
+        "Name": "Point.ByCoordinates",
+        "ShowGeometry": true,
+        "Id": "2fd2ea94b4fd47dab618358647e387ec",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2085.419796757878,
+        "Y": 1458.2528953922745
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "a0be5b2133fa4369849929afbbcad351",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1760.753130091211,
+        "Y": 1490.0803953922746
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": false,
+        "Id": "c80645abdbcc4aeda113266671dcacf4",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 163.37299167577294,
+        "Y": 1581.370023819554
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "63cae41f364d40149c3dd22dc3bfea00",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 361.91852773239896,
+        "Y": -233.89924263480714
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "b83f325699da4f7b9642451d69dfd087",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 947.199630500594,
+        "Y": 48.7377378049616
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "428293c2fb504263b8ee5fa57a4ee414",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 358.55042967487429,
+        "Y": 291.94462658125366
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "6de98025ced948bfb05705444fc84842",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 635.25186106573233,
+        "Y": 292.11712658125367
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "779bfb90ee144e6f9082a48ba83d0c8e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1553.217096341541,
+        "Y": 274.63462658125371
+      },
+      {
+        "Name": "Point.ByCoordinates",
+        "ShowGeometry": true,
+        "Id": "d861fde8c7374af8baf2fd865b9b5403",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 1228.5504296748743,
+        "Y": 274.63462658125371
+      },
+      {
+        "Name": "Number Slider",
+        "ShowGeometry": true,
+        "Id": "b78979a0356842f28b1d7262024577cf",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1110.5504296748743,
+        "Y": 462.19475731938576
+      },
+      {
+        "Name": "Number Slider",
+        "ShowGeometry": true,
+        "Id": "c7723a86fd7d4814902bc39293219095",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 517.25186106573233,
+        "Y": 169.55614463147629
+      }
+    ],
+    "Annotations": [],
+    "X": -301.80550699739013,
+    "Y": 271.205931176866,
+    "Zoom": 0.95225528889400712
+  }
+}
